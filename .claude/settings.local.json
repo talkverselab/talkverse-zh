@@ -1,0 +1,30 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(xargs ls -lh)",
+      "Bash(jobs -l)",
+      "Bash(set -e)",
+      "Bash(cp -v __TRACKED_VAR__/zh/north/dialogues/*.json __TRACKED_VAR__/assets/data/dialogues/north/)",
+      "Bash(flutter create *)",
+      "Read(//d/OneDrive/**)",
+      "Bash(flutter pub *)",
+      "Bash(flutter analyze *)",
+      "Bash(flutter build *)",
+      "Bash(adb install *)",
+      "Bash(adb shell *)",
+      "Bash(adb kill-server *)",
+      "Bash(adb start-server *)",
+      "Bash(adb devices *)",
+      "Bash(Get-ChildItem -Path \"D:/OneDrive\" -Directory)",
+      "Bash(Select-Object Name)",
+      "Read(//tmp/**)",
+      "Bash(python -c \"import sys, json; chars = [l.strip\\(\\) for l in sys.stdin if l.strip\\(\\)]; print\\(json.dumps\\({'hanzi': {c: f'assets/audio/hanzi/{c}.mp3' for c in chars}}, ensure_ascii=False, indent=2\\)\\)\")",
+      "Bash(dart run *)",
+      "Bash(git init *)",
+      "Bash(git config *)",
+      "Bash(git add *)",
+      "Bash(git rm *)",
+      "Bash(git commit -m 'Initial commit: 중국어유니버스 Flutter 앱 scaffold *)"
+    ]
+  }
+}

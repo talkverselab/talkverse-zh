@@ -1,0 +1,63 @@
+name: chinese_universe
+description: "중국어유니버스 — 한국 화자 중국어 학습 앱"
+publish_to: 'none'
+version: 0.1.0+1
+
+environment:
+  sdk: ^3.11.5
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+
+  # Audio
+  audioplayers: ^6.1.0
+
+  # Storage
+  shared_preferences: ^2.3.2
+  path_provider: ^2.1.4
+  sqflite: ^2.4.0
+
+  # Util
+  csv: ^6.0.0
+
+  # Drift (SQLite ORM)
+  drift: ^2.20.3
+  drift_flutter: ^0.2.0
+  sqlite3_flutter_libs: ^0.5.24
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+  # Drift codegen
+  drift_dev: ^2.20.3
+  build_runner: ^2.4.13
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/data/audio_manifest.json
+    - assets/data/dialogues/north/L1.json
+    - assets/data/dialogues/north/L2.json
+    - assets/data/dialogues/north/L3.json
+    - assets/data/dialogues/north/_meta.json
+    - assets/data/hanzi/cliff/hanzi_top500_final.txt
+    - assets/data/hanzi/cliff/hanzi_top107.txt
+    - assets/data/hanzi/hskk_209hanzi_distribution.tsv
+    - assets/data/hanzi/hskk_summary.json
+    - assets/data/freq/lang_zh_top2500.csv
+    - assets/data/freq/lang_zh_with_regions.csv
+    - assets/data/freq/FINAL_wordset_for_conversation_app.tsv
+    - assets/data/freq/FINAL_169_core_wordset.tsv
+    - assets/data/hsk/HSK_hanzi_1.txt
+    - assets/data/hsk/HSK_hanzi_2.txt
+    - assets/data/hsk/HSK_hanzi_3.txt
+    - assets/data/hsk/HSK_zispace_2021.txt
+    - assets/data/hsk/HSK_1.txt
+    - assets/data/hsk/HSK_2.txt
+    - assets/data/hsk/HSK_3.txt
+    - assets/audio/hanzi/

@@ -1,0 +1,31 @@
+{
+  "level": "L3",
+  "dialect": "north",
+  "version": "v4-2026-05-17",
+  "schema": "v4-L3-23dial5block",
+  "title": "L3 — 사랑 narrative (304 turn)",
+  "description": "Mark·小丽 사랑 narrative. 23 dialogue × 5 block ≈ 304 turn. 5-ep 흐름의 깊이 확장.",
+  "kpi": {
+    "dialogues_target": 23,
+    "blocks_per_dialogue": 5,
+    "turns_total_target": 304,
+    "turns_total_current": 0,
+    "progress_pct": 0
+  },
+  "narrative_arc": {
+    "act1": "약속·소개 (L1 후속)",
+    "act2": "친밀 시기·서로 알아감",
+    "act3": "갈등·재결합·결혼 계획"
+  },
+  "characters": {
+    "_NOTE": "L3 카스트 = L1 + 가족 (할머니·할아버지) + 친구 + 회사 동료 (王哥)"
+  },
+  "tone_distribution": {
+    "긍정": 0.45,
+    "카오스": 0.3,
+    "부정": 0.25,
+    "_source": "_shared/dialogue_principles.md §4"
+  },
+  "dialogues": [],
+  "todo": "23 dial 시나리오 + arc 매핑 + 304 turn 작성"
+}

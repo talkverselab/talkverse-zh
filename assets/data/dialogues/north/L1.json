@@ -1,0 +1,40 @@
+{
+  "level": "L1",
+  "dialect": "north",
+  "version": "v4-2026-05-17",
+  "schema": "v4-L1-5ep40turn",
+  "title": "L1 — 매칭 narrative (200 turn)",
+  "description": "외국인 Mark 와 중국 여성 小丽 의 첫 만남 → 약속 → 가족 → 갈등 → 미래. 5 ep × 40 turn = 200.",
+  "kpi": {
+    "episodes_target": 5,
+    "turns_per_episode": 40,
+    "turns_total_target": 200,
+    "turns_total_current": 4,
+    "progress_pct": 2.0
+  },
+  "characters": {
+    "A": { "name": "Mark", "role": "외국인 학습자(남)", "gender": "male", "voice": "Chinese (Mandarin)_Pure-hearted_Boy" },
+    "B": { "name": "小丽 / Lily", "role": "중국 여성(여)", "gender": "female", "voice": "Chinese (Mandarin)_Soft_Girl" }
+  },
+  "particles": ["啊", "吗", "吧", "呀", "呢", "啦", "嗯", "哦", "哪", "嘛", "喂", "嘿", "嗨"],
+  "function_words": ["是", "的", "了", "有", "没", "会", "要", "想", "给", "可以"],
+  "episodes": [
+    {
+      "id": "ep1",
+      "title": "매칭",
+      "emoji": "💕",
+      "scenario": "Mark 매칭앱 첫 메시지 → 小丽 자기소개 → 약속 호출 → Lily↔小丽 hook",
+      "turns": [
+        { "num": 1, "speaker": "A", "zh": "你好啊!", "pinyin": "Nǐ hǎo a!", "ko": "안녕하세요!", "note": "어기조사 啊 (감정·친근)", "tags": ["greeting", "particle:啊"] },
+        { "num": 2, "speaker": "A", "zh": "我叫 Mark, 你呢?", "pinyin": "Wǒ jiào Mark, nǐ ne?", "ko": "저는 Mark입니다, 당신은요?", "note": "어기조사 呢 (되묻기)", "tags": ["self-intro", "particle:呢"] },
+        { "num": 3, "speaker": "B", "zh": "我叫小丽, 也可以叫我 Lily。", "pinyin": "Wǒ jiào Xiǎolì, yě kěyǐ jiào wǒ Lily.", "ko": "저는 샤오리예요, Lily라고 불러도 돼요.", "note": "자기소개 + 也…可以. Lily↔小丽 hook", "tags": ["self-intro", "hook:naming"] },
+        { "num": 4, "speaker": "A", "zh": "想认识你, 可以吗?", "pinyin": "Xiǎng rènshi nǐ, kěyǐ ma?", "ko": "알고 지내고 싶어요, 괜찮을까요?", "note": "想 의지 + 吗 의문", "tags": ["request", "particle:吗"] }
+      ],
+      "todo": "remaining 36 turns (예시 4턴만 작성)"
+    },
+    { "id": "ep2", "title": "식사", "emoji": "🍽️", "scenario": "Mark·Lily 첫 데이트 식당 (양사·메뉴·계산)", "turns": [], "todo": "40 turn 미작성" },
+    { "id": "ep3", "title": "가족", "emoji": "👨‍👩‍👧", "scenario": "Lily 가족 만남 (您 정중·친족 호칭)", "turns": [], "todo": "40 turn 미작성" },
+    { "id": "ep4", "title": "갈등", "emoji": "⚡", "scenario": "약속 어그러짐·오해 (부정 不/没·의문 吗/呢)", "turns": [], "todo": "40 turn 미작성" },
+    { "id": "ep5", "title": "미래", "emoji": "🌅", "scenario": "결혼·이주 계획 (시제 了/过·미래)", "turns": [], "todo": "40 turn 미작성" }
+  ]
+}

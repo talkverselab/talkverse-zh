@@ -1,0 +1,26 @@
+{
+  "level": "L2",
+  "dialect": "north",
+  "version": "v4-2026-05-17",
+  "schema": "v4-L2-23dial5block",
+  "title": "L2 — 카오스 chat (300 turn)",
+  "description": "메신저·일상 카오스. 23 dialogue × 5 block ≈ 300 turn. 톤: 캐주얼·약어·짧은 응답.",
+  "kpi": {
+    "dialogues_target": 23,
+    "blocks_per_dialogue": 5,
+    "turns_total_target": 300,
+    "turns_total_current": 0,
+    "progress_pct": 0
+  },
+  "characters": {
+    "_NOTE": "L2 카스트 = L1 + 친구·동료 확장 (small group chat 가능)"
+  },
+  "tone_distribution": {
+    "긍정": 0.4,
+    "카오스": 0.4,
+    "부정": 0.2,
+    "_source": "_shared/dialogue_principles.md §4"
+  },
+  "dialogues": [],
+  "todo": "23 dial × 5 block 시나리오 outline 작성 + 각 dial 14 turn 평균"
+}

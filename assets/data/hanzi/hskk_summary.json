@@ -1,0 +1,111 @@
+{
+  "method": "HSKK has no published vocabulary syllabus; we use 新HSK 3.0 (2021) as the official proxy. HSKK 初级 = HSK1+2, 中级 = HSK3+4, 高级 = HSK5+6 (per Hanban / 汉考国际 guidelines).",
+  "talkverse_inputs": {
+    "core_hanzi_count": 209,
+    "dialog_files": [
+      "ep1_matching.md",
+      "ep2_meal.md",
+      "ep3_family.md",
+      "ep4_conflict.md",
+      "ep5_future.md"
+    ],
+    "dialog_sentences": 196,
+    "dialog_unique_tokens": 231,
+    "dialog_total_tokens": 747,
+    "dialog_unique_hanzi": 206
+  },
+  "hskk_tier_sizes": {
+    "HSKK_elementary": {
+      "words": 1259,
+      "chars": 599
+    },
+    "HSKK_intermediate": {
+      "words": 1956,
+      "chars": 600
+    },
+    "HSKK_advanced": {
+      "words": 2203,
+      "chars": 600
+    }
+  },
+  "hanzi_209_by_hsk_level": {
+    "HSK1": 143,
+    "HSK2": 46,
+    "HSK3": 13,
+    "HSK7-9": 1,
+    "HSK4": 2,
+    "HSK5": 1,
+    "HSK6": 2,
+    "outside_HSK": 1
+  },
+  "dialog_token_types_by_hsk_level": {
+    "HSK1": 102,
+    "HSK2": 31,
+    "HSK6": 6,
+    "outside_HSK": 66,
+    "HSK7-9": 5,
+    "HSK4": 7,
+    "HSK3": 11,
+    "HSK5": 3
+  },
+  "dialog_token_freq_by_hsk_level": {
+    "HSK1": 461,
+    "HSK2": 85,
+    "HSK6": 29,
+    "outside_HSK": 118,
+    "HSK7-9": 20,
+    "HSK4": 15,
+    "HSK3": 15,
+    "HSK5": 4
+  },
+  "coverage_by_hskk_tier": {
+    "HSKK_elementary": {
+      "tier_label": "HSKK 初级",
+      "hsk_levels_used": [
+        "HSK1",
+        "HSK2"
+      ],
+      "tier_word_total": 1259,
+      "tier_char_total": 599,
+      "covered_words": 133,
+      "covered_chars": 189,
+      "word_cov_pct": 10.56,
+      "char_cov_pct": 31.55
+    },
+    "HSKK_intermediate": {
+      "tier_label": "HSKK 中级",
+      "hsk_levels_used": [
+        "HSK3",
+        "HSK4"
+      ],
+      "tier_word_total": 1956,
+      "tier_char_total": 600,
+      "covered_words": 28,
+      "covered_chars": 15,
+      "word_cov_pct": 1.43,
+      "char_cov_pct": 2.5
+    },
+    "HSKK_advanced": {
+      "tier_label": "HSKK 高级",
+      "hsk_levels_used": [
+        "HSK5",
+        "HSK6"
+      ],
+      "tier_word_total": 2203,
+      "tier_char_total": 600,
+      "covered_words": 10,
+      "covered_chars": 3,
+      "word_cov_pct": 0.45,
+      "char_cov_pct": 0.5
+    }
+  },
+  "dialog_outside_hskk": {
+    "unique_tokens": 71,
+    "unique_pct": 30.74,
+    "token_pct": 18.47
+  },
+  "dialog_hanzi_outside_209": {
+    "unique_chars": 85,
+    "occurrences": 192
+  }
+}

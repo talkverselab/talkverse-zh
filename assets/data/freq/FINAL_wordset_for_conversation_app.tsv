@@ -1,0 +1,4540 @@
+word	opus_rank	hsk_level	pos	lccc_rank	is_foreign_name	is_foreign_score3	tier	dialog_priority
+的	1	HSK1	助	1	0	0	A_essential	1
+我	2	HSK1	代	2	0	0	A_essential	1
+你	3	HSK1	代	3	0	0	A_essential	1
+了	4	HSK3	动	4	0	0	A_essential	1
+是	5	HSK1	动	5	0	0	A_essential	1
+在	6	HSK1	动、介、副	12	0	0	A_essential	1
+他	7	HSK1	代	41	0	0	A_essential	1
+我们	8	HSK1	代	38	0	0	A_essential	1
+吗	9	HSK1	助	17	0	0	A_essential	1
+不	10	HSK1	副	7	0	0	A_essential	1
+什么	11	HSK1	代	24	0	0	A_essential	1
+好	12	HSK4	动	9	0	0	A_essential	1
+就	13	HSK1	副	8	0	0	A_essential	1
+吧	14	HSK1	助	15	0	0	A_essential	1
+有	15	HSK1	动	13	0	0	A_essential	1
+这	16	HSK1	代	32	0	0	A_essential	1
+说	17	HSK1	动	18	0	0	A_essential	1
+她	18	HSK1	代	72	0	0	A_essential	1
+知道	19	HSK1	动	42	0	0	A_essential	1
+都	20	HSK1	副	10	0	0	A_essential	1
+去	21	HSK1	动	14	0	0	A_essential	1
+要	22	HSK4	连	20	0	0	A_essential	1
+很	23	HSK1	副	28	0	0	A_essential	1
+他们	24	HSK1	代	170	0	0	A_essential	1
+会	25	HSK2	名	48	0	0	A_essential	1
+那	26	HSK2	连	21	0	0	A_essential	1
+也	27	HSK1	副	11	0	0	A_essential	1
+来	28	HSK1	动	36	0	0	A_essential	1
+啊	29	HSK4	叹	6	0	0	A_essential	1
+想	30	HSK1	动	26	0	0	A_essential	1
+人	31	HSK1	名	31	0	0	A_essential	1
+对	32	HSK2	介、动	45	0	0	A_essential	1
+一个	33			46	0	0	A_essential_extra_HSK	1
+和	34	HSK1	介、连	54	0	0	A_essential	1
+没有	35	HSK1	动、副	35	0	0	A_essential	1
+把	36	HSK3	量	78	0	0	A_essential	1
+给	37	HSK1	动、介	37	0	0	A_essential	1
+让	38	HSK2	动、介	86	0	0	A_essential	1
+不是	39			33	0	0	A_essential_extra_HSK	1
+做	40	HSK1	动	77	0	0	A_essential	1
+你们	41	HSK1	代	65	0	0	A_essential	1
+还	42	HSK1	动	16	0	0	A_essential	1
+可以	43	HSK2	动	29	0	0	A_essential	1
+现在	44	HSK1	名	47	0	0	A_essential	1
+这个	45			57	0	0	A_essential_extra_HSK	1
+到	46	HSK1	动	56	0	0	A_essential	1
+怎么	47	HSK1	代	49	0	0	A_essential	1
+没	48	HSK1	副、动	19	0	0	A_essential	1
+呢	49	HSK1	助	23	0	0	A_essential	1
+走	50	HSK1	动	104	0	0	A_essential	1
+能	51	HSK1	动	61	0	0	A_essential	1
+跟	52	HSK1	介、连、动	75	0	0	A_essential	1
+就是	53	HSK3	连	39	0	0	A_essential	1
+这样	54	HSK2	代	85	0	0	A_essential	1
+这里	55	HSK1	代	335	0	0	A_essential	1
+个	56	HSK1	量	74	0	0	A_essential	1
+但	57	HSK2	连	184	0	0	A_essential	1
+上	58	HSK1	名、动	79	0	0	A_essential	1
+如果	59	HSK2	连	192	0	0	A_essential	1
+被	60	HSK3	介	80	0	0	A_essential	1
+看	61	HSK6	动	25	0	0	A_essential_extra_HSK	1
+得	62	HSK4	动	76	0	0	A_essential	1
+它	63	HSK2	代	238	0	0	A_essential	1
+过	64	HSK2	助	66	0	0	A_essential	1
+谁	65	HSK1	代	93	0	0	A_essential	1
+不会	66			89	0	0	A_essential_extra_HSK	1
+事	67	HSK1	名	226	0	0	A_essential	1
+自己	68	HSK2	代	50	0	0	A_essential	1
+着	69	HSK4	动	67	0	0	A_essential	1
+告诉	70	HSK1	动	201	0	0	A_essential	1
+为什么	71	HSK2		124	0	0	A_essential	1
+不要	72	HSK2	副	73	0	0	A_essential	1
+不能	73			107	0	0	A_essential_extra_HSK	1
+已经	74	HSK2	副	92	0	0	A_essential	1
+再	75	HSK1	副	91	0	0	A_essential	1
+谢谢	76	HSK1	动	83	0	0	A_essential	1
+真的	77	HSK1		62	0	0	A_essential	1
+快	78	HSK1	形、副	101	0	0	A_essential	1
+这是	79			289	0	0	A_essential_extra_HSK	1
+这么	80	HSK2	代	59	0	0	A_essential	1
+别	81	HSK4	动	179	0	0	A_essential	1
+只是	82	HSK3	副、连	154	0	0	A_essential	1
+先生	83	HSK1	名	2239	0	0	A_essential	1
+那个	84			103	0	0	A_essential_extra_HSK	1
+因为	85	HSK2	连、介	112	0	0	A_essential	1
+叫	86	HSK3	介	109	0	0	A_essential	1
+喜欢	87	HSK1	动	58	0	0	A_essential	1
+我要	88			147	0	0	A_essential_extra_HSK	1
+听	89	HSK1	动	178	0	0	A_essential	1
+像	90	HSK7-9	名	194	0	0	A_essential_extra_HSK	1
+还有	91	HSK1		98	0	0	A_essential	1
+东西	92	HSK1	名	157	0	0	A_essential	1
+又	93	HSK2	副	53	0	0	A_essential	1
+找	94	HSK1	动	82	0	0	A_essential	1
+需要	95	HSK3	动、名	223	0	0	A_essential	1
+请	96	HSK1	动	134	0	0	A_essential	1
+我会	97			331	0	0	A_essential_extra_HSK	1
+里	98	HSK1	名	183	0	0	A_essential	1
+时候	99	HSK1	名	64	0	0	A_essential	1
+等	100	HSK2	助、名	71	0	0	A_essential	1
+可能	101	HSK2	动、形、名	117	0	0	A_essential	2
+从	102	HSK1	介	248	0	0	A_essential	2
+这些	103	HSK1	代	393	0	0	A_essential	2
+应该	104	HSK2	动	106	0	0	A_essential	2
+觉得	105	HSK1	动	63	0	0	A_essential	2
+但是	106	HSK2	连	113	0	0	A_essential	2
+死	107	HSK3	动、形	174	0	0	A_essential	2
+多	108	HSK2	副	55	0	0	A_essential	2
+那么	109	HSK2	代	90	0	0	A_essential	2
+一起	110	HSK1	副、名	96	0	0	A_essential	2
+所以	111	HSK2	连	110	0	0	A_essential	2
+为	112	HSK3	介	269	0	0	A_essential	2
+一下	113			111	0	0	A_essential_extra_HSK	2
+一样	114	HSK1	形	115	0	0	A_essential	2
+还是	115	HSK1	副、连	52	0	0	A_essential	2
+问题	116	HSK2	名	163	0	0	A_essential	2
+才	117	HSK4	名	68	0	0	A_essential	2
+用	118	HSK1	动	120	0	0	A_essential	2
+看到	119	HSK1		99	0	0	A_essential	2
+哦	120	HSK7-9	叹	51	0	0	A_essential_extra_HSK	2
+开始	121	HSK3	动、名	161	0	0	A_essential	2
+回来	122	HSK1		81	0	0	A_essential	2
+真	123	HSK1	副、形	116	0	0	A_essential	2
+孩子	124	HSK1	名	229	0	0	A_essential	2
+当	125	HSK6	动	297	0	0	A_essential_extra_HSK	2
+一定	126	HSK2	形、副	152	0	0	A_essential	2
+看看	127			156	0	0	A_essential_extra_HSK	2
+拿	128	HSK1	动	253	0	0	A_essential	2
+帮	129	HSK1	动	244	0	0	A_essential	2
+吃	130	HSK1	动	22	0	0	A_essential	2
+而	131	HSK4	连	491	0	0	A_essential	2
+当然	132	HSK3	形、副	320	0	0	A_essential	2
+然后	133	HSK2	连	142	0	0	A_essential	2
+地方	134	HSK4	名	236	0	0	A_essential	2
+没事	135			219	0	0	A_essential_extra_HSK	2
+今天	136	HSK1	名	70	0	0	A_essential	2
+点	137	HSK1	量、动、名	127	0	0	A_essential	2
+朋友	138	HSK1	名	155	0	0	A_essential	2
+只	139	HSK3	量	175	0	0	A_essential	2
+的话	140	HSK2	助	210	0	0	A_essential	2
+起来	141	HSK1		146	0	0	A_essential	2
+工作	142	HSK1	动、名	193	0	0	A_essential	2
+不想	143			177	0	0	A_essential_extra_HSK	2
+希望	144	HSK3	动、名	202	0	0	A_essential	2
+中	145	HSK1	名	279	0	0	A_essential	2
+时间	146	HSK1	名	132	0	0	A_essential	2
+离开	147	HSK2		893	0	0	A_essential	2
+一	148	HSK1	数	138	0	0	A_essential	2
+一点	149			198	0	0	A_essential_extra_HSK	2
+们	150			556	0	0	A_essential_extra_HSK	2
+对不起	151	HSK1	动	867	0	0	A_essential	2
+一直	152	HSK2	副	119	0	0	A_essential	2
+将	153	HSK5	副、介	1439	0	0	A_essential_extra_HSK	2
+最	154	HSK1	副	140	0	0	A_essential	2
+找到	155	HSK1		404	0	0	A_essential	2
+哪	156	HSK4	助	126	0	0	A_essential	2
+太	157	HSK1	副	94	0	0	A_essential	2
+爱	158	HSK1	动	95	0	0	A_essential	2
+打	159	HSK5	介	128	0	0	A_essential_extra_HSK	2
+那些	160	HSK1	代	504	0	0	A_essential	2
+明白	161	HSK1	形、动	572	0	0	A_essential	2
+相信	162	HSK2	动	418	0	0	A_essential	2
+该	163	HSK7-9	代	323	0	0	A_essential_extra_HSK	2
+出来	164	HSK1		121	0	0	A_essential	2
+发生	165	HSK3	动	963	0	0	A_essential	2
+大	166	HSK1	形	87	0	0	A_essential	2
+所有	167	HSK2	形	697	0	0	A_essential	2
+钱	168	HSK1	名	187	0	0	A_essential	2
+下	169	HSK2	量	129	0	0	A_essential	2
+事情	170	HSK2	名	381	0	0	A_essential	2
+可	171	HSK5	副、连	231	0	0	A_essential_extra_HSK	2
+哪里	172	HSK1	代	123	0	0	A_essential	2
+你好	173			243	0	0	A_essential_extra_HSK	2
+准备	174	HSK1	动	204	0	0	A_essential	2
+更	175	HSK2	副	171	0	0	A_essential	2
+带	176	HSK2	动	131	0	0	A_essential	2
+那里	177	HSK1	代	440	0	0	A_essential	2
+过来	178	HSK2	动	292	0	0	A_essential	2
+大家	179	HSK2	代	263	0	0	A_essential	2
+真是	180			242	0	0	A_essential_extra_HSK	2
+天	181	HSK1	名、量	273	0	0	A_essential	2
+呀	182	HSK4	助	44	0	0	A_essential	2
+一切	183	HSK3	代	740	0	0	A_essential	2
+有人	184	HSK2		324	0	0	A_essential	2
+妈妈	185	HSK1	名	584	0	0	A_essential	2
+啦	186	HSK6	助	30	0	0	A_essential_extra_HSK	2
+必须	187	HSK2	副	232	0	0	A_essential	2
+后	188	HSK1	名	286	0	0	A_essential	2
+想要	189			407	0	0	A_essential_extra_HSK	2
+不过	190	HSK2	连	122	0	0	A_essential	2
+认为	191	HSK2	动	1059	0	0	A_essential	2
+为了	192	HSK3	介	339	0	0	A_essential	2
+意思	193	HSK2	名	277	0	0	A_essential	2
+时	194	HSK3	名	473	0	0	A_essential	2
+快点	195			672	0	0	A_essential_extra_HSK	2
+杀	196	HSK5	动	1322	0	0	A_essential_extra_HSK	2
+您	197	HSK1	代	264	0	0	A_essential	2
+以为	198	HSK2	动	185	0	0	A_essential	2
+嗯	199			43	0	0	A_essential_extra_HSK	2
+只有	200	HSK3	连	228	0	0	A_essential	2
+嘿	201	HSK7-9	叹	2009	0	0	A_essential_extra_HSK	2
+也许	202	HSK2	副	918	0	0	A_essential	2
+爸爸	203	HSK1	名		0	0	A_essential	2
+怎么样	204	HSK2	代	412	0	0	A_essential	2
+抱歉	205	HSK6	形	1924	0	0	A_essential_extra_HSK	2
+这种	206			206	0	0	A_essential_extra_HSK	2
+非常	207	HSK1	副	561	0	0	A_essential	2
+一次	208			239	0	0	A_essential_extra_HSK	2
+比	209	HSK1	介、动	130	0	0	A_essential	2
+问	210	HSK1	动	189	0	0	A_essential	2
+两个	211			246	0	0	A_essential_extra_HSK	2
+见	212	HSK1	动	222	0	0	A_essential	2
+并	213	HSK4	动	394	0	0	A_essential	2
+这儿	214	HSK1	代	1367	0	0	A_essential	2
+很多	215			211	0	0	A_essential_extra_HSK	2
+女人	216	HSK1	名	444	0	0	A_essential	2
+感觉	217	HSK2	动、名	97	0	0	A_essential	2
+小	218	HSK1	形	100	0	0	A_essential	2
+记得	219	HSK1	动	213	0	0	A_essential	2
+妈	220	HSK1	名		0	0	A_essential	2
+与	221	HSK6	介、连	618	0	0	A_essential_extra_HSK	2
+不用	222	HSK1	副	225	0	0	A_essential	2
+不错	223	HSK2	形	168	0	0	A_essential	2
+一些	224	HSK1		586	0	0	A_essential	2
+是不是	225	HSK1		125	0	0	A_essential	2
+名字	226	HSK1	名	388	0	0	A_essential	2
+前	227	HSK1	名	352	0	0	A_essential	2
+先	228	HSK1	副	260	0	0	A_essential	2
+向	229	HSK2	介、动	1000	0	0	A_essential	2
+认识	230	HSK1	动、名	281	0	0	A_essential	2
+发现	231	HSK2	动、名	220	0	0	A_essential	2
+最后	232	HSK1	名	299	0	0	A_essential	2
+担心	233	HSK4		775	0	0	A_essential	2
+可是	234	HSK2	连	181	0	0	A_essential	2
+不行	235	HSK2	动、形	266	0	0	A_essential	2
+住	236	HSK1	动	337	0	0	A_essential	2
+出去	237	HSK1		304	0	0	A_essential	2
+最好	238	HSK1	副	467	0	0	A_essential	2
+再见	239	HSK1	动	701	0	0	A_essential	2
+任何	240	HSK3	代	1320	0	0	A_essential	2
+没错	241	HSK4		718	0	0	A_essential	2
+得到	242	HSK1		941	0	0	A_essential	2
+有点	243			151	0	0	A_essential_extra_HSK	2
+马上	244	HSK1	副	462	0	0	A_essential	2
+等等	245			1399	0	0	A_essential_extra_HSK	2
+干什么	246	HSK1		1533	0	0	A_essential	2
+跑	247	HSK1	动	265	0	0	A_essential	2
+而且	248	HSK2	连	278	0	0	A_essential	2
+之前	249	HSK4	名	256	0	0	A_essential	2
+继续	250	HSK3	动	353	0	0	A_essential	2
+生活	251	HSK2	名、动	285	0	0	A_essential	2
+世界	252	HSK3	名	470	0	0	A_essential	2
+听到	253	HSK1		949	0	0	A_essential	2
+高兴	254	HSK1	形	817	0	0	A_essential	2
+那样	255	HSK2	代	761	0	0	A_essential	2
+新	256	HSK1	形	348	0	0	A_essential	2
+男人	257	HSK1	名	401	0	0	A_essential	2
+过去	258	HSK3	名	356	0	0	A_essential	2
+喂	259	HSK4	动	705	0	0	A_essential	2
+明天	260	HSK1	名	102	0	0	A_essential	2
+地	261	HSK1	名	497	0	0	A_essential	2
+只要	262	HSK2	连	457	0	0	A_essential	2
+到底	263	HSK3	副	537	0	0	A_essential	2
+年	264	HSK1	量	284	0	0	A_essential	2
+说话	265	HSK1		349	0	0	A_essential	2
+干	266	HSK1	动	430	0	0	A_essential	2
+多少	267	HSK1	代	261	0	0	A_essential	2
+回家	268	HSK1		136	0	0	A_essential	2
+干嘛	269			257	0	0	A_essential_extra_HSK	2
+怎样	270	HSK2	代	642	0	0	A_essential	2
+重要	271	HSK1	形	438	0	0	A_essential	2
+以前	272	HSK2	名	283	0	0	A_essential	2
+好像	273	HSK2	副、动	160	0	0	A_essential	2
+出	274	HSK1	动	340	0	0	A_essential	2
+嗨	275			534	0	0	A_essential_extra_HSK	2
+正在	276	HSK1	副	760	0	0	A_essential	2
+亲爱	277	HSK4	形	423	0	0	A_essential	2
+小心	278	HSK2	形、动	530	0	0	A_essential	2
+却	279	HSK4	副	645	0	0	A_essential	2
+回去	280	HSK1		159	0	0	A_essential	2
+买	281	HSK1	动	69	0	0	A_essential	2
+肯定	282	HSK5	动、形	200	0	0	A_essential_extra_HSK	2
+电话	283	HSK1	名	549	0	0	A_essential	2
+我能	284			820	0	0	A_essential_extra_HSK	2
+永远	285	HSK2	副	552	0	0	A_essential	2
+我来	286			709	0	0	A_essential_extra_HSK	2
+别人	287	HSK1	代	176	0	0	A_essential	2
+如何	288	HSK3	代	711	0	0	A_essential	2
+见到	289	HSK2		668	0	0	A_essential	2
+今晚	290			392	0	0	A_essential_extra_HSK	2
+或	291	HSK2	连	1468	0	0	A_essential	2
+看见	292	HSK1		347	0	0	A_essential	2
+没什么	293	HSK1		607	0	0	A_essential	2
+父亲	294	HSK3	名	5191	0	0	A_essential	2
+不到	295			240	0	0	A_essential_extra_HSK	2
+之后	296	HSK4	名	434	0	0	A_essential	2
+哪儿	297	HSK1	代	469	0	0	A_essential	2
+怎么办	298	HSK2		408	0	0	A_essential	2
+该死	299				0	0	A_essential_extra_HSK	2
+嘛	300	HSK6	助	60	0	0	A_essential_extra_HSK	2
+家伙	301	HSK7-9	名	3333	0	0	A_essential_extra_HSK	3
+月	302	HSK1	名	197	0	0	A_essential	3
+里面	303	HSK3	名	429	0	0	A_essential	3
+送	304	HSK1	动	249	0	0	A_essential	3
+看起来	305	HSK3		881	0	0	A_essential	3
+放	306	HSK1	动	360	0	0	A_essential	3
+有没有	307	HSK6		319	0	0	A_essential_extra_HSK	3
+写	308	HSK1	动	258	0	0	A_essential	3
+小姐	309	HSK1	名		0	0	A_essential	3
+坐	310	HSK1	动	387	0	0	A_essential	3
+所	311	HSK6	助	1524	0	0	A_essential_extra_HSK	3
+错	312	HSK1	形、名	449	0	0	A_essential	3
+噢	313			280	0	0	A_essential_extra_HSK	3
+机会	314	HSK2	名	322	0	0	A_essential	3
+上帝	315	HSK6	名	3880	0	0	A_essential_extra_HSK	3
+儿子	316	HSK1	名	762	0	0	A_essential	3
+结束	317	HSK3	动	757	0	0	A_essential	3
+了解	318	HSK4	动	563	0	0	A_essential	3
+还好	319			275	0	0	A_essential_extra_HSK	3
+一天	320			218	0	0	A_essential_extra_HSK	3
+开	321	HSK1	动	301	0	0	A_essential	3
+完全	322	HSK2	形、副	503	0	0	A_essential	3
+好好	323	HSK3	形、副	145	0	0	A_essential	3
+办法	324	HSK2	名	448	0	0	A_essential	3
+女孩	325			917	0	0	A_essential_extra_HSK	3
+玩	326			108	0	0	A_essential_extra_HSK	3
+决定	327	HSK3	动、名	748	0	0	A_essential	3
+成为	328	HSK2	动	1264	0	0	A_essential	3
+总是	329	HSK3	副	566	0	0	A_essential	3
+医生	330	HSK1	名	812	0	0	A_essential	3
+其他	331	HSK2	代	454	0	0	A_essential	3
+行	332	HSK3	量	327	0	0	A_essential	3
+进来	333	HSK1		2856	0	0	A_essential	3
+情况	334	HSK3	名	522	0	0	A_essential	3
+要是	335	HSK3	连	363	0	0	A_essential	3
+它们	336	HSK2	代	2067	0	0	A_essential	3
+晚上	337	HSK1	名	135	0	0	A_essential	3
+那边	338	HSK1	代	510	0	0	A_essential	3
+站	339	HSK2	动	573	0	0	A_essential	3
+清楚	340	HSK2	形	736	0	0	A_essential	3
+穿	341	HSK1	动	165	0	0	A_essential	3
+无法	342	HSK4	动	1021	0	0	A_essential	3
+喝	343	HSK1	动	205	0	0	A_essential	3
+小时	344	HSK1	名	350	0	0	A_essential	3
+有些	345			535	0	0	A_essential_extra_HSK	3
+根本	346	HSK3	副、形、名	634	0	0	A_essential	3
+警察	347	HSK3	名	1709	0	0	A_essential	3
+家	348	HSK1	名、量	334	0	0	A_essential	3
+拜托	349	HSK7-9	动	2585	0	0	A_essential_extra_HSK	3
+不管	350	HSK4	连	547	0	0	A_essential	3
+下来	351	HSK3		650	0	0	A_essential	3
+看着	352			424	0	0	A_essential_extra_HSK	3
+麻烦	353	HSK3	动、形	647	0	0	A_essential	3
+其实	354	HSK3	副	141	0	0	A_essential	3
+每个	355			611	0	0	A_essential_extra_HSK	3
+怎么回事	356			2107	0	0	A_essential_extra_HSK	3
+确定	357	HSK3	形、动	653	0	0	A_essential	3
+或者	358	HSK2	连	446	0	0	A_essential	3
+号	359	HSK1	名、量	186	0	0	A_essential	3
+他妈的	360				0	0	A_essential_extra_HSK	3
+进去	361	HSK1		862	0	0	A_essential	3
+懂	362	HSK2	动	153	0	0	A_essential	3
+漂亮	363	HSK2	形	403	0	0	A_essential	3
+回	364	HSK2	量	133	0	0	A_essential	3
+打电话	365	HSK1		678	0	0	A_essential	3
+不好	366			167	0	0	A_essential_extra_HSK	3
+搞	367	HSK5	动	439	0	0	A_essential_extra_HSK	3
+弄	368	HSK2	动	465	0	0	A_essential	3
+混蛋	369				0	0	A_essential_extra_HSK	3
+来说	370			925	0	0	A_essential_extra_HSK	3
+以后	371	HSK2	名	148	0	0	A_essential	3
+美国	372				0	1	A_essential_extra_HSK	3
+就要	373	HSK2	副	451	0	0	A_essential	3
+连	374	HSK3	动、副	460	0	0	A_essential	3
+安全	375	HSK2	形、名	1166	0	0	A_essential	3
+这次	376			595	0	0	A_essential_extra_HSK	3
+听说	377	HSK2	动	558	0	0	A_essential	3
+完	378	HSK2	动	139	0	0	A_essential	3
+话	379	HSK1	名	208	0	0	A_essential	3
+以	380	HSK7-9	介、连	1143	0	0	A_essential_extra_HSK	3
+还要	381			276	0	0	A_essential_extra_HSK	3
+愿意	382	HSK2	动	662	0	0	A_essential	3
+唯一	383	HSK5	形	1577	0	0	A_essential_extra_HSK	3
+已	384	HSK3	副	749	0	0	A_essential	3
+车	385	HSK1	名	508	0	0	A_essential	3
+计划	386	HSK2	名、动	1105	0	0	A_essential	3
+不了	387			251	0	0	A_essential_extra_HSK	3
+帮助	388	HSK2	动	2590	0	0	A_essential	3
+够	389	HSK2	动、副	525	0	0	A_essential	3
+疯	390	HSK5	形	769	0	0	A_essential_extra_HSK	3
+兄弟	391	HSK4	名	791	0	0	A_essential	3
+么	392			40	0	0	A_essential_extra_HSK	3
+刚才	393	HSK2	名	990	0	0	A_essential	3
+注意	394	HSK3		336	0	0	A_essential	3
+没关系	395	HSK1		851	0	0	A_essential	3
+有个	396			627	0	0	A_essential_extra_HSK	3
+睡	397	HSK1	动	84	0	0	A_essential	3
+宝贝	398	HSK4	名	631	0	0	A_essential	3
+关于	399	HSK4	介	2665	0	0	A_essential	3
+房间	400	HSK1	名	1736	0	0	A_essential	3
+害怕	401	HSK3		778	0	0	A_essential	3
+如此	402	HSK5	代	853	0	0	A_essential_extra_HSK	3
+那儿	403	HSK1	代	1732	0	0	A_essential	3
+改变	404	HSK2	动、名	1321	0	0	A_essential	3
+手	405	HSK1	名	540	0	0	A_essential	3
+女儿	406	HSK1	名	991	0	0	A_essential	3
+几个	407			366	0	0	A_essential_extra_HSK	3
+样子	408	HSK2	名	417	0	0	A_essential	3
+他会	409			2906	0	0	A_essential_extra_HSK	3
+真正	410	HSK2	形	1199	0	0	A_essential	3
+人们	411	HSK2	名	3480	0	0	A_essential	3
+特别	412	HSK2	形、副	241	0	0	A_essential	3
+甚至	413	HSK4	连	2768	0	0	A_essential	3
+外面	414	HSK3	名	580	0	0	A_essential	3
+变成	415	HSK2		766	0	0	A_essential	3
+房子	416	HSK1	名	1030	0	0	A_essential	3
+衣服	417	HSK1	名	308	0	0	A_essential	3
+是因为	418			593	0	0	A_essential_extra_HSK	3
+伙计	419			11640	0	0	A_essential_extra_HSK	3
+忘	420	HSK1	动	419	0	0	A_essential	3
+老	421	HSK2	副	215	0	0	A_essential	3
+讲	422	HSK2	动	476	0	0	A_essential	3
+忙	423	HSK1	形	330	0	0	A_essential	3
+一种	424			649	0	0	A_essential_extra_HSK	3
+救	425	HSK3	动	2147	0	0	A_essential	3
+由	426	HSK3	介	3792	0	0	A_essential	3
+从来	427	HSK3	副	950	0	0	A_essential	3
+回到	428	HSK1	动	1252	0	0	A_essential	3
+另	429	HSK6	代、副	1370	0	0	A_essential_extra_HSK	3
+这边	430	HSK1	代	464	0	0	A_essential	3
+出现	431	HSK2	动	741	0	0	A_essential	3
+欢迎	432	HSK2	动	526	0	0	A_essential	3
+保证	433	HSK3	动、名	2045	0	0	A_essential	3
+接受	434	HSK2	动	764	0	0	A_essential	3
+打算	435	HSK2	动、名	472	0	0	A_essential	3
+别的	436	HSK1	代	559	0	0	A_essential	3
+很快	437			1033	0	0	A_essential_extra_HSK	3
+些	438	HSK4	量	986	0	0	A_essential	3
+身上	439	HSK1	名	1006	0	0	A_essential	3
+选择	440	HSK4	动、名	694	0	0	A_essential	3
+关系	441	HSK3	名、动	604	0	0	A_essential	3
+抓	442	HSK3	动	827	0	0	A_essential	3
+整个	443	HSK3	形	1004	0	0	A_essential	3
+闭嘴	444			2360	0	0	A_essential_extra_HSK	3
+下去	445	HSK3		670	0	0	A_essential	3
+太好了	446			1327	0	0	A_essential_extra_HSK	3
+一件	447			1050	0	0	A_essential_extra_HSK	3
+失去	448	HSK3	动	1804	0	0	A_essential	3
+这件	449			1520	0	0	A_essential_extra_HSK	3
+虽然	450	HSK2	连	402	0	0	A_essential	3
+难道	451	HSK3	副	313	0	0	A_essential	3
+故事	452	HSK2	名	751	0	0	A_essential	3
+声音	453	HSK2	名	866	0	0	A_essential	3
+那种	454			364	0	0	A_essential_extra_HSK	3
+帮忙	455	HSK1		1396	0	0	A_essential	3
+危险	456	HSK3	形、名	2182	0	0	A_essential	3
+开心	457	HSK2	形、动	137	0	0	A_essential	3
+才能	458	HSK3	名	531	0	0	A_essential	3
+生命	459	HSK3	名	1688	0	0	A_essential	3
+看来	460	HSK4		370	0	0	A_essential	3
+保护	461	HSK3	动	1342	0	0	A_essential	3
+正	462	HSK3	形	847	0	0	A_essential	3
+倒	463	HSK2	动	477	0	0	A_essential	3
+奇怪	464	HSK3	形	1081	0	0	A_essential	3
+是否	465	HSK4	副	2012	0	0	A_essential	3
+枪	466	HSK5	名	5450	0	0	A_essential_extra_HSK	3
+原因	467	HSK2	名	821	0	0	A_essential	3
+成功	468	HSK3	动、形	706	0	0	A_essential	3
+进	469	HSK1	动	896	0	0	A_essential	3
+当时	470	HSK2	名	628	0	0	A_essential	3
+公司	471	HSK2	名	544	0	0	A_essential	3
+至少	472	HSK3	副	930	0	0	A_essential	3
+绝对	473	HSK3	副	666	0	0	A_essential	3
+母亲	474	HSK3	名		0	0	A_essential	3
+刚刚	475	HSK2	副	456	0	0	A_essential	3
+打开	476	HSK1		1532	0	0	A_essential	3
+笑	477	HSK1	动	294	0	0	A_essential	3
+结婚	478	HSK3		317	0	0	A_essential	3
+照顾	479	HSK2	动	723	0	0	A_essential	3
+上面	480	HSK3	名	1094	0	0	A_essential	3
+眼睛	481	HSK2	名	435	0	0	A_essential	3
+谈谈	482			5912	0	0	A_essential_extra_HSK	3
+不同	483	HSK2		801	0	0	A_essential	3
+而已	484	HSK7-9	助	365	0	0	A_essential_extra_HSK	3
+岁	485	HSK1	量	638	0	0	A_essential	3
+她们	486	HSK1	代	780	0	0	A_essential	3
+处理	487	HSK3	动、名	1843	0	0	A_essential	3
+开玩笑	488	HSK1		988	0	0	A_essential	3
+待	489	HSK7-9	动	882	0	0	A_essential_extra_HSK	3
+只能	490	HSK2		296	0	0	A_essential	3
+长官	491			39083	0	0	A_essential_extra_HSK	3
+简单	492	HSK3	形	730	0	0	A_essential	3
+后面	493	HSK3	名	564	0	0	A_essential	3
+参加	494	HSK2	动	921	0	0	A_essential	3
+第一次	495			550	0	0	A_essential_extra_HSK	3
+讨厌	496	HSK5		498	0	0	A_essential_extra_HSK	3
+进行	497	HSK2	动	3156	0	0	A_essential	3
+各位	498	HSK3	代	3787	0	0	A_essential	3
+感到	499	HSK2	动	2688	0	0	A_essential	3
+曾经	500	HSK3	副	1234	0	0	A_essential	3
+结果	501	HSK7-9		410	0	0	B_core_extra_HSK	3
+容易	502	HSK3	形	377	0	0	B_core	3
+三个	503			630	0	0	B_core_extra_HSK	3
+掉	504	HSK2	动	515	0	0	B_core	3
+早	505	HSK1	形	180	0	0	B_core	3
+最近	506	HSK2	名	143	0	0	B_core	3
+喔	507			396	0	0	B_core_extra_HSK	3
+成	508	HSK6	量	610	0	0	B_core_extra_HSK	3
+挺	509	HSK4	动	149	0	0	B_core	3
+完成	510	HSK2		2448	0	0	B_core	3
+或许	511	HSK4	副	1531	0	0	B_core	3
+留下	512	HSK2		1930	0	0	B_core	3
+国家	513	HSK1	名	1406	0	0	B_core	3
+哇	514	HSK6	助	144	0	0	B_core_extra_HSK	3
+再说	515	HSK6	动、连	601	0	0	B_core_extra_HSK	3
+多久	516	HSK2	代	688	0	0	B_core	3
+学校	517	HSK1	名	158	0	0	B_core	3
+放在	518			1547	0	0	B_core_extra_HSK	3
+不再	519	HSK6	动	2128	0	0	B_core_extra_HSK	3
+之	520	HSK7-9	助	1045	0	0	B_core_extra_HSK	3
+猜	521	HSK5	动	383	0	0	B_core_extra_HSK	3
+于	522	HSK6	介	1712	0	0	B_core_extra_HSK	3
+全部	523	HSK2	名	1121	0	0	B_core	3
+行动	524	HSK2	动、名	2618	0	0	B_core	3
+终于	525	HSK3	副	421	0	0	B_core	3
+靠	526	HSK2	动		0	0	B_core	3
+替	527	HSK4	动、介	1192	0	0	B_core	3
+谈	528	HSK3	动	1527	0	0	B_core	3
+头	529	HSK3	形	829	0	0	B_core	3
+起	530	HSK1	动	368	0	0	B_core	3
+刚	531	HSK2	副	312	0	0	B_core	3
+每	532	HSK3	代、副	1002	0	0	B_core	3
+赢	533	HSK3	动	756	0	0	B_core	3
+就算	534	HSK6	连	676	0	0	B_core_extra_HSK	3
+收到	535	HSK2		773	0	0	B_core	3
+除了	536	HSK3	介	562	0	0	B_core	3
+进入	537	HSK2	动	2677	0	0	B_core	3
+高	538	HSK1	形	310	0	0	B_core	3
+家里	539	HSK1		414	0	0	B_core	3
+路	540	HSK1	名、量	624	0	0	B_core	3
+内	541	HSK3	名	1295	0	0	B_core	3
+伤害	542	HSK4	动	1224	0	0	B_core	3
+活着	543			1365	0	0	B_core_extra_HSK	3
+直到	544	HSK3	动	3877	0	0	B_core	3
+像是	545			2542	0	0	B_core_extra_HSK	3
+身体	546	HSK1	名	427	0	0	B_core	3
+更好	547			689	0	0	B_core_extra_HSK	3
+曾	548	HSK4	副	2814	0	0	B_core	3
+留在	549			3176	0	0	B_core_extra_HSK	3
+每天	550			250	0	0	B_core_extra_HSK	3
+要求	551	HSK2	动、名	840	0	0	B_core	3
+为何	552	HSK6	副	1263	0	0	B_core_extra_HSK	3
+早上	553	HSK1	名	367	0	0	B_core	3
+停	554	HSK2	动	1340	0	0	B_core	3
+小孩	555			975	0	0	B_core_extra_HSK	3
+妻子	556	HSK4	名	9991	0	0	B_core	3
+我爱你	557			1293	0	0	B_core_extra_HSK	3
+拉	558	HSK2	动	416	0	0	B_core	3
+坐下	559	HSK1		4746	0	0	B_core	3
+任何人	560			5444	0	0	B_core_extra_HSK	3
+抓住	561	HSK3		3118	0	0	B_core	3
+休息	562	HSK1	动	268	0	0	B_core	3
+冷静	563	HSK4	形	2698	0	0	B_core	3
+突然	564	HSK3	形	374	0	0	B_core	3
+主意	565	HSK3	名	2897	0	0	B_core	3
+有趣	566	HSK4	形	2074	0	0	B_core	3
+跳	567	HSK3	动	875	0	0	B_core	3
+能够	568	HSK2	动	2051	0	0	B_core	3
+本来	569	HSK3	形、副	305	0	0	B_core	3
+求	570	HSK2	动	259	0	0	B_core	3
+可爱	571	HSK2	形	169	0	0	B_core	3
+带来	572	HSK2		2164	0	0	B_core	3
+狗	573	HSK2	名	255	0	0	B_core	3
+解释	574	HSK4	动	908	0	0	B_core	3
+睡觉	575	HSK1		188	0	0	B_core	3
+回答	576	HSK1	动、名	919	0	0	B_core	3
+答应	577	HSK2	动	2086	0	0	B_core	3
+个人	578	HSK3	名	625	0	0	B_core	3
+怕	579	HSK3	副	230	0	0	B_core	3
+照片	580	HSK2	名	233	0	0	B_core	3
+努力	581	HSK2	形	329	0	0	B_core	3
+同意	582	HSK3	动	1238	0	0	B_core	3
+保持	583	HSK3	动	1278	0	0	B_core	3
+使	584	HSK3	动	1776	0	0	B_core	3
+来到	585	HSK1	动	3683	0	0	B_core	3
+女士	586	HSK4	名	6717	0	0	B_core	3
+消息	587	HSK3	名	1114	0	0	B_core	3
+花	588	HSK4	形	548	0	0	B_core	3
+通过	589	HSK2	介、动	2311	0	0	B_core	3
+之间	590	HSK4	名	1907	0	0	B_core	3
+晚安	591	HSK2	动	191	0	0	B_core	3
+爸	592	HSK1	名	1360	0	0	B_core	3
+不好意思	593	HSK2		512	0	0	B_core	3
+解决	594	HSK3	动	1212	0	0	B_core	3
+放弃	595	HSK5	动	772	0	0	B_core_extra_HSK	3
+太太	596	HSK2	名	2990	0	0	B_core	3
+派	597	HSK3	动、名	3057	0	0	B_core	3
+来自	598	HSK2	动	2129	0	0	B_core	3
+方式	599	HSK3	名	1519	0	0	B_core	3
+做到	600	HSK2		1416	0	0	B_core	3
+聪明	601	HSK5	形	870	0	0	B_core_extra_HSK	3
+卖	602	HSK2	动	433	0	0	B_core	3
+电影	603	HSK1	名	413	0	0	B_core	3
+夫人	604	HSK4	名	5422	0	0	B_core	3
+大概	605	HSK3	形、副	533	0	0	B_core	3
+俩	606	HSK4		486	0	0	B_core	3
+年轻	607	HSK2	形	545	0	0	B_core	3
+作为	608	HSK4	介、动	1084	0	0	B_core	3
+脸	609	HSK2	名	333	0	0	B_core	3
+老婆	610	HSK4	名	685	0	0	B_core	3
+否则	611	HSK4	连	3388	0	0	B_core	3
+所有人	612			2499	0	0	B_core_extra_HSK	3
+比较	613	HSK3	副、动	221	0	0	B_core	3
+随便	614	HSK2	形	570	0	0	B_core	3
+呆	615	HSK5	形	667	0	0	B_core_extra_HSK	3
+想想	616			579	0	0	B_core_extra_HSK	3
+存在	617	HSK3	动	880	0	0	B_core	3
+死亡	618	HSK6	动		0	0	B_core_extra_HSK	3
+人类	619	HSK3	名	2019	0	0	B_core	3
+变得	620			1597	0	0	B_core_extra_HSK	3
+确实	621	HSK3	形、副	362	0	0	B_core	3
+一位	622			3367	0	0	B_core_extra_HSK	3
+忘记	623	HSK1	动	680	0	0	B_core	3
+分钟	624	HSK2	量	948	0	0	B_core	3
+自由	625	HSK2	名、形	1107	0	0	B_core	3
+坐在	626			2099	0	0	B_core_extra_HSK	3
+这位	627			1537	0	0	B_core_extra_HSK	3
+其他人	628			2521	0	0	B_core_extra_HSK	3
+一只	629			746	0	0	B_core_extra_HSK	3
+不够	630	HSK2	动、副	493	0	0	B_core	3
+负责	631	HSK3	动、形	1331	0	0	B_core	3
+厉害	632	HSK5	形	235	0	0	B_core_extra_HSK	3
+小子	633			5870	0	0	B_core_extra_HSK	3
+感谢	634	HSK2	动	768	0	0	B_core	3
+拍	635	HSK3	动	190	0	0	B_core	3
+丈夫	636	HSK4	名	11061	0	0	B_core	3
+医院	637	HSK1	名	799	0	0	B_core	3
+控制	638	HSK5	动	1259	0	0	B_core_extra_HSK	3
+证明	639	HSK3	动、名	1303	0	0	B_core	3
+理解	640	HSK3	动	487	0	0	B_core	3
+看过	641			585	0	0	B_core_extra_HSK	3
+记住	642	HSK1		1448	0	0	B_core	3
+想法	643	HSK2	名	938	0	0	B_core	3
+不该	644			2166	0	0	B_core_extra_HSK	3
+到处	645	HSK2	副	1145	0	0	B_core	3
+跟着	646			1256	0	0	B_core_extra_HSK	3
+秘密	647	HSK4	形、名	1811	0	0	B_core	3
+昨晚	648			461	0	0	B_core_extra_HSK	3
+考虑	649	HSK4	动	660	0	0	B_core	3
+原来	650	HSK2	形、副	295	0	0	B_core	3
+三	651	HSK1	数	693	0	0	B_core	3
+方法	652	HSK2	名	1392	0	0	B_core	3
+一条	653			905	0	0	B_core_extra_HSK	3
+身边	654	HSK2	名	747	0	0	B_core	3
+紧张	655	HSK3	形	1185	0	0	B_core	3
+放下	656	HSK2		1883	0	0	B_core	3
+门	657	HSK1	名、量	1708	0	0	B_core	3
+父母	658	HSK3	名	962	0	0	B_core	3
+糟糕	659	HSK5	形	5496	0	0	B_core_extra_HSK	3
+离	660	HSK2	动、介	809	0	0	B_core	3
+不然	661	HSK4	连	411	0	0	B_core	3
+安静	662	HSK2	形、动	2119	0	0	B_core	3
+呃	663			887	0	0	B_core_extra_HSK	3
+开枪	664	HSK7-9		19942	0	0	B_core_extra_HSK	3
+想到	665	HSK2		684	0	0	B_core	3
+老板	666	HSK3	名	614	0	0	B_core	3
+水	667	HSK1	名	726	0	0	B_core	3
+快乐	668	HSK2	形	282	0	0	B_core	3
+任务	669	HSK3	名	2450	0	0	B_core	3
+直接	670	HSK2	形	307	0	0	B_core	3
+那天	671			635	0	0	B_core_extra_HSK	3
+其中	672	HSK2	名	2924	0	0	B_core	3
+交给	673	HSK2		3051	0	0	B_core	3
+简直	674	HSK3	副	596	0	0	B_core	3
+拥有	675	HSK5	动	1677	0	0	B_core_extra_HSK	3
+停止	676	HSK3	动	5591	0	0	B_core	3
+开车	677	HSK1		885	0	0	B_core	3
+日	678	HSK1	名		0	0	B_core	3
+疯狂	679	HSK5	形	1515	0	0	B_core_extra_HSK	3
+陪	680	HSK5	动	344	0	0	B_core_extra_HSK	3
+家人	681	HSK1	名	1390	0	0	B_core	3
+附近	682	HSK4	名	1093	0	0	B_core	3
+拿到	683	HSK2		2026	0	0	B_core	3
+鬼	684	HSK5	名	699	0	0	B_core_extra_HSK	3
+接	685	HSK2	动	842	0	0	B_core	3
+比赛	686	HSK3	动、名	992	0	0	B_core	3
+本	687	HSK6	代、副	1355	0	0	B_core_extra_HSK	3
+可怕	688	HSK2	形	671	0	0	B_core	3
+哭	689	HSK2	动	270	0	0	B_core	3
+目标	690	HSK3	名	1612	0	0	B_core	3
+从没	691	HSK6		4030	0	0	B_core_extra_HSK	3
+一场	692			1267	0	0	B_core_extra_HSK	3
+反正	693	HSK3	副	287	0	0	B_core	3
+早就	694	HSK2		641	0	0	B_core	3
+飞机	695	HSK1	名	856	0	0	B_core	3
+听见	696	HSK1		2952	0	0	B_core	3
+下面	697	HSK3	名	1181	0	0	B_core	3
+报告	698	HSK3	动、名	2892	0	0	B_core	3
+丢	699	HSK5	动	669	0	0	B_core_extra_HSK	3
+检查	700	HSK2	动、名	2410	0	0	B_core	3
+放开	701			3739	0	0	B_core_extra_HSK	4
+消失	702	HSK3	动	2138	0	0	B_core	4
+教	703	HSK1	动	806	0	0	B_core	4
+可怜	704	HSK5	形、动	463	0	0	B_core_extra_HSK	4
+昨天	705	HSK1	名	224	0	0	B_core	4
+痛苦	706	HSK3	形	958	0	0	B_core	4
+试试	707			471	0	0	B_core_extra_HSK	4
+即使	708	HSK5	连	2352	0	0	B_core_extra_HSK	4
+走开	709	HSK2		1865	0	0	B_core	4
+音乐	710	HSK2	名	1434	0	0	B_core	4
+未来	711	HSK4	名	967	0	0	B_core	4
+游戏	712	HSK3	名	783	0	0	B_core	4
+吃饭	713	HSK1		203	0	0	B_core	4
+后来	714	HSK2	名	546	0	0	B_core	4
+正常	715	HSK2	形	524	0	0	B_core	4
+战争	716	HSK4	名	7998	0	0	B_core	4
+坏	717	HSK1	形	795	0	0	B_core	4
+遇到	718	HSK4		518	0	0	B_core	4
+心	719	HSK3	名	496	0	0	B_core	4
+耶	720			717	0	0	B_core_extra_HSK	4
+算	721	HSK2	动	541	0	0	B_core	4
+武器	722	HSK3	名	8596	0	0	B_core	4
+别动	723			9937	0	0	B_core_extra_HSK	4
+咱们	724	HSK2	代	643	0	0	B_core	4
+长	725	HSK2	形	300	0	0	B_core	4
+别说	726	HSK7-9	连	1151	0	0	B_core_extra_HSK	4
+代表	727	HSK3	名、动	1221	0	0	B_core	4
+日子	728	HSK2	名	674	0	0	B_core	4
+因此	729	HSK3	连	8692	0	0	B_core	4
+重新	730	HSK2	副	1276	0	0	B_core	4
+老师	731	HSK1	名	209	0	0	B_core	4
+事实	732	HSK3	名	1144	0	0	B_core	4
+经常	733	HSK2	副	517	0	0	B_core	4
+办公室	734	HSK2	名	1620	0	0	B_core	4
+除非	735	HSK5	连、介	2171	0	0	B_core_extra_HSK	4
+远	736	HSK1	形	648	0	0	B_core	4
+安排	737	HSK3	动、名	1109	0	0	B_core	4
+骗	738	HSK5	动	750	0	0	B_core_extra_HSK	4
+杀死	739				0	0	B_core_extra_HSK	4
+加入	740	HSK4	动	2030	0	0	B_core	4
+一年	741			445	0	0	B_core_extra_HSK	4
+阻止	742	HSK4	动	5232	0	0	B_core	4
+很棒	743			1191	0	0	B_core_extra_HSK	4
+打扰	744	HSK5	动	1692	0	0	B_core_extra_HSK	4
+位置	745	HSK4	名	1202	0	0	B_core	4
+再也	746	HSK5		1029	0	0	B_core_extra_HSK	4
+美丽	747	HSK3	形	889	0	0	B_core	4
+似乎	748	HSK4	副	2638	0	0	B_core	4
+面前	749	HSK2	名	1728	0	0	B_core	4
+属于	750	HSK3	动	1281	0	0	B_core	4
+全都	751	HSK5	副	2722	0	0	B_core_extra_HSK	4
+对于	752	HSK4	介	1330	0	0	B_core	4
+若	753	HSK6	连	2919	0	0	B_core_extra_HSK	4
+二	754	HSK1	数	923	0	0	B_core	4
+有关	755	HSK6	动	3047	0	0	B_core_extra_HSK	4
+加油	756	HSK2		118	0	0	B_core	4
+另外	757	HSK3	代、副、连	1412	0	0	B_core	4
+换	758	HSK2	动	214	0	0	B_core	4
+命令	759	HSK5	名、动	17572	0	0	B_core_extra_HSK	4
+太棒了	760			3032	0	0	B_core_extra_HSK	4
+生气	761	HSK1		789	0	0	B_core	4
+完美	762	HSK3	形	1130	0	0	B_core	4
+放松	763	HSK4	动	2002	0	0	B_core	4
+舒服	764	HSK2	形	606	0	0	B_core	4
+往	765	HSK2	动、介	1449	0	0	B_core	4
+来看	766			933	0	0	B_core_extra_HSK	4
+有事	767	HSK6	动	1371	0	0	B_core_extra_HSK	4
+几天	768			216	0	0	B_core_extra_HSK	4
+一张	769			591	0	0	B_core_extra_HSK	4
+严重	770	HSK4	形	932	0	0	B_core	4
+久	771	HSK3	形	637	0	0	B_core	4
+原谅	772	HSK6	动	1118	0	0	B_core_extra_HSK	4
+伟大	773	HSK3	形	2953	0	0	B_core	4
+使用	774	HSK2	动	2593	0	0	B_core	4
+受伤	775	HSK3		2004	0	0	B_core	4
+男孩	776			2073	0	0	B_core_extra_HSK	4
+必要	777	HSK3	形、名	1273	0	0	B_core	4
+差不多	778	HSK2	形、副	380	0	0	B_core	4
+建议	779	HSK3	动、名	982	0	0	B_core	4
+调查	780	HSK3	动、名	6795	0	0	B_core	4
+礼物	781	HSK2	名	845	0	0	B_core	4
+人生	782	HSK3	名	521	0	0	B_core	4
+不必	783	HSK3	副	3911	0	0	B_core	4
+星期	784	HSK1	名	857	0	0	B_core	4
+酒	785	HSK2	名	1011	0	0	B_core	4
+坚持	786	HSK3	动	528	0	0	B_core	4
+认真	787	HSK1	形	661	0	0	B_core	4
+发誓	788	HSK7-9		6311	0	0	B_core_extra_HSK	4
+很大	789			1027	0	0	B_core_extra_HSK	4
+上去	790	HSK3		1012	0	0	B_core	4
+逼	791	HSK6	动		0	0	B_core_extra_HSK	4
+信	792	HSK3	动	722	0	0	B_core	4
+家庭	793	HSK2	名	2248	0	0	B_core	4
+力量	794	HSK3	名	2488	0	0	B_core	4
+幸运	795	HSK3	形	1661	0	0	B_core	4
+变	796	HSK2	动	574	0	0	B_core	4
+每次	797			376	0	0	B_core_extra_HSK	4
+剩下	798	HSK5		1725	0	0	B_core_extra_HSK	4
+的确	799	HSK4	副	1279	0	0	B_core	4
+第一个	800			1222	0	0	B_core_extra_HSK	4
+总	801	HSK3	副	511	0	0	B_core	4
+适合	802	HSK3	动	501	0	0	B_core	4
+啥	803			88	0	0	B_core_extra_HSK	4
+介绍	804	HSK1	动	640	0	0	B_core	4
+不知	805	HSK7-9	动	1160	0	0	B_core_extra_HSK	4
+关心	806	HSK2	动	868	0	0	B_core	4
+一份	807			1513	0	0	B_core_extra_HSK	4
+屁股	808				0	0	B_core_extra_HSK	4
+吓	809	HSK5	动	743	0	0	B_core_extra_HSK	4
+通知	810	HSK2	动、名	1106	0	0	B_core	4
+几乎	811	HSK4	副	1598	0	0	B_core	4
+钥匙	812	HSK7-9	名	3222	0	0	B_core_extra_HSK	4
+不准	813	HSK7-9		1657	0	0	B_core_extra_HSK	4
+开门	814			2713	0	0	B_core_extra_HSK	4
+哥哥	815	HSK1	名	358	0	0	B_core	4
+首先	816	HSK3	副	2285	0	0	B_core	4
+哪个	817			302	0	0	B_core_extra_HSK	4
+并且	818	HSK3	连	2503	0	0	B_core	4
+联系	819	HSK3	动、名	609	0	0	B_core	4
+动	820	HSK1	动	1487	0	0	B_core	4
+我家	821			291	0	0	B_core_extra_HSK	4
+见面	822	HSK1		1016	0	0	B_core	4
+约翰	823				1	0	X_excluded_foreign	4
+下次	824	HSK1		196	0	0	B_core	4
+者	825			3689	0	0	B_core_extra_HSK	4
+偷	826	HSK5	动、副	1229	0	0	B_core_extra_HSK	4
+那时	827	HSK2		2621	0	0	B_core	4
+书	828	HSK1	名	786	0	0	B_core	4
+怪	829	HSK5	动	636	0	0	B_core_extra_HSK	4
+表现	830	HSK3	动、名	1681	0	0	B_core	4
+分	831	HSK2	动	502	0	0	B_core	4
+是从	832			2078	0	0	B_core_extra_HSK	4
+实在	833	HSK2	形	681	0	0	B_core	4
+有时	834	HSK1	副	1750	0	0	B_core	4
+咖啡	835	HSK3	名	1471	0	0	B_core	4
+女	836	HSK1	形	443	0	0	B_core	4
+城市	837	HSK3	名	912	0	0	B_core	4
+怀疑	838	HSK4	动	1341	0	0	B_core	4
+住手	839			26663	0	0	B_core_extra_HSK	4
+按	840	HSK3	动、介	1104	0	0	B_core	4
+笨蛋	841	HSK7-9	名		0	0	B_core_extra_HSK	4
+客气	842	HSK5	形、动	495	0	0	B_core_extra_HSK	4
+正确	843	HSK2	形	2769	0	0	B_core	4
+一会儿	844	HSK2	副	1387	0	0	B_core	4
+谢	845			1153	0	0	B_core_extra_HSK	4
+精神	846	HSK3	形、名	1060	0	0	B_core	4
+错误	847	HSK3	形、名	2818	0	0	B_core	4
+等待	848	HSK3	动	1566	0	0	B_core	4
+仍然	849	HSK3	副	7357	0	0	B_core	4
+好了吗	850			3389	0	0	B_core_extra_HSK	4
+事实上	851	HSK3		8979	0	0	B_core	4
+白痴	852				0	1	B_core_extra_HSK	4
+跟我来	853			24139	0	0	B_core_extra_HSK	4
+碰	854	HSK2	动	2554	0	0	B_core	4
+以及	855	HSK4	连	3133	0	0	B_core	4
+没用	856	HSK3	动	976	0	0	B_core	4
+管	857	HSK3	动	970	0	0	B_core	4
+值得	858	HSK3		890	0	0	B_core	4
+好多	859	HSK2	数	247	0	0	B_core	4
+前面	860	HSK3	名	1005	0	0	B_core	4
+律师	861	HSK4	名	6073	0	0	B_core	4
+意义	862	HSK3	名	1459	0	0	B_core	4
+出发	863	HSK2	动	1495	0	0	B_core	4
+敢	864	HSK3	动	720	0	0	B_core	4
+挂	865	HSK3	动	907	0	0	B_core	4
+约	866	HSK3	动	212	0	0	B_core	4
+受到	867	HSK2		3950	0	0	B_core	4
+老兄	868			18751	0	0	B_core_extra_HSK	4
+多么	869	HSK2	副	1442	0	0	B_core	4
+头发	870	HSK2	名	341	0	0	B_core	4
+而是	871	HSK4		1971	0	0	B_core	4
+正是	872	HSK2	动	4438	0	0	B_core	4
+既然	873	HSK4	连	1245	0	0	B_core	4
+经过	874	HSK2	动、名	2437	0	0	B_core	4
+理由	875	HSK3	名	1248	0	0	B_core	4
+算了	876	HSK6	动	742	0	0	B_core_extra_HSK	4
+攻击	877	HSK6	动	2998	0	0	B_core_extra_HSK	4
+拒绝	878	HSK5	动	924	0	0	B_core_extra_HSK	4
+足够	879	HSK3	动	2837	0	0	B_core	4
+带走	880			2981	0	0	B_core_extra_HSK	4
+没人	881			790	0	0	B_core_extra_HSK	4
+赶快	882	HSK3	副	1900	0	0	B_core	4
+研究	883	HSK4	动	1558	0	0	B_core	4
+难	884	HSK1	形	657	0	0	B_core	4
+有时候	885	HSK1	副	754	0	0	B_core	4
+跳舞	886	HSK3		2512	0	0	B_core	4
+尸体	887	HSK7-9	名		0	0	B_core_extra_HSK	4
+最大	888			1630	0	0	B_core_extra_HSK	4
+同样	889	HSK2	形、连	1889	0	0	B_core	4
+受	890	HSK3	动	1584	0	0	B_core	4
+许多	891	HSK2	数	3935	0	0	B_core	4
+著	892				0	0	B_core_extra_HSK	4
+或是	893	HSK5	连	6573	0	0	B_core_extra_HSK	4
+指	894	HSK3	动	1738	0	0	B_core	4
+不如	895	HSK2	动	644	0	0	B_core	4
+饿	896	HSK1	形、动	346	0	0	B_core	4
+老天	897			6264	0	0	B_core_extra_HSK	4
+食物	898	HSK2	名	2483	0	0	B_core	4
+什么样	899	HSK2	代	1357	0	0	B_core	4
+放心	900	HSK2		700	0	0	B_core	4
+承认	901	HSK4	动	1128	0	0	B_core	4
+长大	902	HSK2		793	0	0	B_core	4
+此	903	HSK4	代	3092	0	0	B_core	4
+监狱	904	HSK7-9	名		0	0	B_core_extra_HSK	4
+只会	905			1455	0	0	B_core_extra_HSK	4
+唱	906	HSK1	动	578	0	0	B_core	4
+杀人	907				0	0	B_core_extra_HSK	4
+支持	908	HSK3	动	626	0	0	B_core	4
+可不是	909	HSK7-9	副	2130	0	0	B_core_extra_HSK	4
+戴	910	HSK4	动	1186	0	0	B_core	4
+能力	911	HSK3	名	1350	0	0	B_core	4
+搞定	912			2562	0	0	B_core_extra_HSK	4
+第	913			2617	0	0	B_core_extra_HSK	4
+马	914	HSK3	名	2466	0	0	B_core	4
+少	915	HSK1	形、动	399	0	0	B_core	4
+影响	916	HSK2	动、名	904	0	0	B_core	4
+梦	917	HSK4	名、动	553	0	0	B_core	4
+一生	918	HSK2	名	1613	0	0	B_core	4
+寻找	919	HSK4	动	3919	0	0	B_core	4
+接下来	920	HSK2		2750	0	0	B_core	4
+藏	921	HSK6	动	2888	0	0	B_core_extra_HSK	4
+不让	922			725	0	0	B_core_extra_HSK	4
+不见	923	HSK6	动	1051	0	0	B_core_extra_HSK	4
+同时	924	HSK2	连、名	2229	0	0	B_core	4
+上次	925	HSK1		538	0	0	B_core	4
+喝酒	926			704	0	0	B_core_extra_HSK	4
+杰克	927				1	0	X_excluded_foreign	4
+梦想	928	HSK4	动、名	1236	0	0	B_core	4
+慢慢	929	HSK3		554	0	0	B_core	4
+表演	930	HSK3	动、名	2288	0	0	B_core	4
+信任	931	HSK3	动	4257	0	0	B_core	4
+第一	932			763	0	0	B_core_extra_HSK	4
+享受	933	HSK5	动、名	1086	0	0	B_core_extra_HSK	4
+字幕	934	HSK7-9	名	7104	0	0	B_core_extra_HSK	4
+腿	935	HSK2	名	422	0	0	B_core	4
+躺	936	HSK4	动	745	0	0	B_core	4
+恨	937	HSK5	动	911	0	0	B_core_extra_HSK	4
+证据	938	HSK3	名	3398	0	0	B_core	4
+生	939	HSK3	形	620	0	0	B_core	4
+敌人	940	HSK4	名	8337	0	0	B_core	4
+失败	941	HSK4	动、形	1664	0	0	B_core	4
+再次	942	HSK5	副	3106	0	0	B_core_extra_HSK	4
+纽约	943			6139	0	1	B_core_extra_HSK	4
+叔叔	944	HSK4	名	1032	0	0	B_core	4
+迟到	945	HSK4	动	1485	0	0	B_core	4
+瞧	946	HSK5	动	4231	0	0	B_core_extra_HSK	4
+美	947	HSK3	形	274	0	0	B_core	4
+要说	948			1853	0	0	B_core_extra_HSK	4
+妹妹	949	HSK1	名	567	0	0	B_core	4
+立刻	950	HSK3	副	4792	0	0	B_core	4
+允许	951	HSK6	动	2165	0	0	B_core_extra_HSK	4
+不在乎	952	HSK4	动	4031	0	0	B_core	4
+真实	953	HSK3	形	1671	0	0	B_core	4
+活	954	HSK3	形、动	1039	0	0	B_core	4
+提供	955	HSK4	动	3271	0	0	B_core	4
+姐姐	956	HSK1	名	234	0	0	B_core	4
+人家	957	HSK4	代	217	0	0	B_core	4
+无论	958	HSK4	连	2661	0	0	B_core	4
+意外	959	HSK3	形、名	2191	0	0	B_core	4
+救命	960	HSK6		9159	0	0	B_core_extra_HSK	4
+还给	961			2126	0	0	B_core_extra_HSK	4
+道歉	962	HSK6		2364	0	0	B_core_extra_HSK	4
+学习	963	HSK1	动	957	0	0	B_core	4
+全	964	HSK2	副、形	1491	0	0	B_core	4
+行为	965	HSK2	名	3196	0	0	B_core	4
+求求	966			4138	0	0	B_core_extra_HSK	4
+一会	967			863	0	0	B_core_extra_HSK	4
+一块	968			1134	0	0	B_core_extra_HSK	4
+随时	969	HSK2	副	1247	0	0	B_core	4
+大学	970	HSK1	名	466	0	0	B_core	4
+请问	971	HSK1	动	425	0	0	B_core	4
+干净	972	HSK1	形	1243	0	0	B_core	4
+接近	973	HSK3	动	4007	0	0	B_core	4
+扔	974	HSK5	动	1345	0	0	B_core_extra_HSK	4
+居然	975	HSK5	副	332	0	0	B_core_extra_HSK	4
+你别	976			1690	0	0	B_core_extra_HSK	4
+利用	977	HSK3	动	5341	0	0	B_core	4
+一般	978	HSK2	形	345	0	0	B_core	4
+找个	979			690	0	0	B_core_extra_HSK	4
+脚	980	HSK2	名	1141	0	0	B_core	4
+根据	981	HSK4	动、介、名	3869	0	0	B_core	4
+面对	982	HSK3	动	2018	0	0	B_core	4
+电视	983	HSK1	名	1332	0	0	B_core	4
+呼吸	984	HSK4	动	3844	0	0	B_core	4
+想象	985	HSK4	名、动	1288	0	0	B_core	4
+借	986	HSK2	动	999	0	0	B_core	4
+留	987	HSK2	动	770	0	0	B_core	4
+便	988	HSK6	副、连	2824	0	0	B_core_extra_HSK	4
+感受	989	HSK3	名、动	878	0	0	B_core	4
+路上	990	HSK1	名	658	0	0	B_core	4
+间	991	HSK1	量	3567	0	0	B_core	4
+幸福	992	HSK3	形、名	252	0	0	B_core	4
+傻	993	HSK5	形	519	0	0	B_core_extra_HSK	4
+味道	994	HSK2	名	656	0	0	B_core	4
+约会	995	HSK4	动、名	1800	0	0	B_core	4
+生意	996	HSK3	名	3149	0	0	B_core	4
+兴趣	997	HSK4	名	1498	0	0	B_core	4
+姑娘	998	HSK3	名	708	0	0	B_core	4
+画	999	HSK2	动	664	0	0	B_core	4
+经历	1000	HSK3	动、名	1010	0	0	B_core	4
+如	1001	HSK6	动、连	1885	0	0	B_core_extra_HSK	4
+目前	1002	HSK3	名	1133	0	0	B_core	4
+躲	1003	HSK5	动	2103	0	0	B_core_extra_HSK	4
+一杯	1004			2160	0	0	B_core_extra_HSK	4
+客人	1005	HSK2	名	4755	0	0	B_core	4
+警告	1006	HSK5	动、名	11218	0	0	B_core_extra_HSK	4
+不得不	1007	HSK3		2838	0	0	B_core	4
+好吃	1008	HSK1	形	162	0	0	B_core	4
+操	1009				0	0	B_core_extra_HSK	4
+翻译	1010	HSK4	动、名	2247	0	0	B_core	4
+棒	1011	HSK5	形	655	0	0	B_core_extra_HSK	4
+看上去	1012	HSK3		3563	0	0	B_core	4
+差点	1013			996	0	0	B_core_extra_HSK	4
+没想到	1014	HSK4		1206	0	0	B_core	4
+滚	1015	HSK5	动		0	0	B_core_extra_HSK	4
+上来	1016	HSK3		1798	0	0	B_core	4
+究竟	1017	HSK4	副	4928	0	0	B_core	4
+政府	1018	HSK4	名		0	0	B_core	4
+令	1019	HSK5	动	9080	0	0	B_core_extra_HSK	4
+尽管	1020	HSK5	副、连	4576	0	0	B_core_extra_HSK	4
+好看	1021	HSK1	形	114	0	0	B_core	4
+一遍	1022			1241	0	0	B_core_extra_HSK	4
+很漂亮	1023			2122	0	0	B_core_extra_HSK	4
+一名	1024			5259	0	0	B_core_extra_HSK	4
+无	1025	HSK4	动	673	0	0	B_core	4
+哈	1026			150	0	0	B_core_extra_HSK	4
+下午	1027	HSK1	名	298	0	0	B_core	4
+讨论	1028	HSK2	动	2197	0	0	B_core	4
+灵魂	1029	HSK7-9	名	2749	0	0	B_core_extra_HSK	4
+在家	1030	HSK1	动	326	0	0	B_core	4
+可不	1031			1553	0	0	B_core_extra_HSK	4
+道	1032	HSK2	量	1809	0	0	B_core	4
+我刚	1033			835	0	0	B_core_extra_HSK	4
+越来越	1034	HSK2		485	0	0	B_core	4
+可惜	1035	HSK5	形	500	0	0	B_core_extra_HSK	4
+仍	1036	HSK3	副	6570	0	0	B_core	4
+多谢	1037			1486	0	0	B_core_extra_HSK	4
+大人	1038	HSK2	名	1545	0	0	B_core	4
+因	1039	HSK6	介、连	5084	0	0	B_core_extra_HSK	4
+船	1040	HSK2	名	6501	0	0	B_core	4
+早上好	1041			1203	0	0	B_core_extra_HSK	4
+好人	1042	HSK2	名	1301	0	0	B_core	4
+恭喜	1043	HSK7-9	动	391	0	0	B_core_extra_HSK	4
+女朋友	1044	HSK1	名	437	0	0	B_core	4
+不敢	1045			314	0	0	B_core_extra_HSK	4
+习惯	1046	HSK2	名、动	997	0	0	B_core	4
+一家	1047			1232	0	0	B_core_extra_HSK	4
+真相	1048	HSK5	名	1766	0	0	B_core_extra_HSK	4
+照	1049	HSK3	动、介	777	0	0	B_core	4
+对方	1050	HSK3	名	1420	0	0	B_core	4
+地球	1051	HSK2	名	2226	0	0	B_core	4
+英雄	1052	HSK6	名	2123	0	0	B_core_extra_HSK	4
+竟然	1053	HSK4	副	492	0	0	B_core	4
+追	1054	HSK3	动	811	0	0	B_core	4
+学生	1055	HSK1	名	732	0	0	B_core	4
+停下	1056	HSK4		12667	0	0	B_core	4
+我该	1057			4558	0	0	B_core_extra_HSK	4
+动物	1058	HSK2	名	1753	0	0	B_core	4
+斯	1059			10542	0	0	B_core_extra_HSK	4
+那家伙	1060				0	0	B_core_extra_HSK	4
+收拾	1061	HSK5	动	1260	0	0	B_core_extra_HSK	4
+就行了	1062			1019	0	0	B_core_extra_HSK	4
+一半	1063	HSK1	数	1158	0	0	B_core	4
+老爸	1064			2820	0	0	B_core_extra_HSK	4
+方向	1065	HSK2	名	2112	0	0	B_core	4
+恶心	1066	HSK4	形、动		0	0	B_core	4
+愚蠢	1067	HSK7-9	形	8114	0	0	B_core_extra_HSK	4
+没法	1068			1196	0	0	B_core_extra_HSK	4
+事件	1069	HSK3	名	4379	0	0	B_core	4
+旁边	1070	HSK1	名	776	0	0	B_core	4
+弟弟	1071	HSK1	名	956	0	0	B_core	4
+用来	1072	HSK5		2333	0	0	B_core_extra_HSK	4
+一边	1073	HSK1	名、副	1073	0	0	B_core	4
+欠	1074	HSK5	动	1575	0	0	B_core_extra_HSK	4
+搬	1075	HSK3	动	971	0	0	B_core	4
+心里	1076	HSK2	名	436	0	0	B_core	4
+破坏	1077	HSK3	动		0	0	B_core	4
+实际上	1078	HSK3	副	6252	0	0	B_core	4
+记录	1079	HSK3	名、动	2652	0	0	B_core	4
+阿	1080			237	0	0	B_core_extra_HSK	4
+美好	1081	HSK3	形	716	0	0	B_core	4
+关	1082	HSK4	名	1316	0	0	B_core	4
+病	1083	HSK1	名、动	1085	0	0	B_core	4
+答案	1084	HSK4	名	1685	0	0	B_core	4
+邀请	1085	HSK5	动、名	2392	0	0	B_core_extra_HSK	4
+合作	1086	HSK3	动	3296	0	0	B_core	4
+神	1087	HSK5	名	1562	0	0	B_core_extra_HSK	4
+总统	1088	HSK4	名	20710	0	0	B_core	4
+新闻	1089	HSK2	名	1619	0	0	B_core	4
+拿走	1090	HSK6		4566	0	0	B_core_extra_HSK	4
+留下来	1091			5431	0	0	B_core_extra_HSK	4
+婊子	1092				0	0	B_core_extra_HSK	4
+血	1093	HSK3	名	3258	0	0	B_core	4
+脑袋	1094	HSK4	名	2132	0	0	B_core	4
+之一	1095	HSK4	名	2792	0	0	B_core	4
+次	1096	HSK4	形	1052	0	0	B_core	4
+将会	1097			17645	0	0	B_core_extra_HSK	4
+没见	1098			683	0	0	B_core_extra_HSK	4
+一旦	1099	HSK5	名、副	6319	0	0	B_core_extra_HSK	4
+失望	1100	HSK4	形	1431	0	0	B_core	4
+祝	1101	HSK3	动	431	0	0	B_core	4
+上车	1102	HSK1		2390	0	0	B_core	4
+装	1103	HSK2	动	855	0	0	B_core	4
+一句	1104			490	0	0	B_core_extra_HSK	4
+博士	1105	HSK5	名	3224	0	0	B_core_extra_HSK	4
+晚	1106	HSK1	形	507	0	0	B_core	4
+令人	1107			6054	0	0	B_core_extra_HSK	4
+算是	1108	HSK6	副	1356	0	0	B_core_extra_HSK	4
+办	1109	HSK2	动	1049	0	0	B_core	4
+假	1110	HSK2	形	527	0	0	B_core	4
+傻瓜	1111	HSK7-9	名		0	0	B_core_extra_HSK	4
+飞	1112	HSK1	动	633	0	0	B_core	4
+字	1113	HSK1	名	483	0	0	B_core	4
+就让	1114			2125	0	0	B_core_extra_HSK	4
+恐怕	1115	HSK3	副	3966	0	0	B_core	4
+历史	1116	HSK4	名	2382	0	0	B_core	4
+派对	1117			19342	0	0	B_core_extra_HSK	4
+不少	1118	HSK2		1193	0	0	B_core	4
+冷	1119	HSK1	形	303	0	0	B_core	4
+充满	1120	HSK3	动	2797	0	0	B_core	4
+毁	1121	HSK6	动	2569	0	0	B_core_extra_HSK	4
+训练	1122	HSK3	动、名	2655	0	0	B_core	4
+超过	1123	HSK2	动	2139	0	0	B_core	4
+疯子	1124	HSK7-9	名	5510	0	0	B_core_extra_HSK	4
+接着	1125	HSK2	动、副	2025	0	0	B_core	4
+不介意	1126			2761	0	0	B_core_extra_HSK	4
+包括	1127	HSK4	动	2967	0	0	B_core	4
+地狱	1128	HSK7-9	名	7124	0	0	B_core_extra_HSK	4
+一把	1129			1258	0	0	B_core_extra_HSK	4
+自杀	1130	HSK5	动		0	0	B_core_extra_HSK	4
+遗憾	1131	HSK6	形、名	1484	0	0	B_core_extra_HSK	4
+对付	1132	HSK4	动	8003	0	0	B_core	4
+愉快	1133	HSK6	形	849	0	0	B_core_extra_HSK	4
+系统	1134	HSK4	名、形	1440	0	0	B_core	4
+战斗	1135	HSK4	动、名	5719	0	0	B_core	4
+不敢相信	1136			6817	0	0	B_core_extra_HSK	4
+组织	1137	HSK5	动、名	1555	0	0	B_core_extra_HSK	4
+获得	1138	HSK4	动	5747	0	0	B_core	4
+法律	1139	HSK4	名		0	0	B_core	4
+去过	1140			767	0	0	B_core_extra_HSK	4
+从未	1141	HSK7-9	副	5214	0	0	B_core_extra_HSK	4
+难过	1142	HSK2	形	615	0	0	B_core	4
+到达	1143	HSK3	动	5035	0	0	B_core	4
+男	1144	HSK1	形	342	0	0	B_core	4
+街	1145	HSK2	名	1981	0	0	B_core	4
+份	1146	HSK2	量	2385	0	0	B_core	4
+目的	1147	HSK2	名	3126	0	0	B_core	4
+做好	1148			1189	0	0	B_core_extra_HSK	4
+想起	1149	HSK2		914	0	0	B_core	4
+说真的	1150	HSK7-9		2871	0	0	B_core_extra_HSK	4
+威胁	1151	HSK6	动	5569	0	0	B_core_extra_HSK	4
+臭	1152	HSK5	形	1625	0	0	B_core_extra_HSK	4
+确认	1153	HSK4	动	3891	0	0	B_core	4
+反应	1154	HSK3	动、名	1284	0	0	B_core	4
+责任	1155	HSK3	名	3308	0	0	B_core	4
+有钱	1156			612	0	0	B_core_extra_HSK	4
+靠近	1157	HSK5	动		0	0	B_core_extra_HSK	4
+加	1158	HSK2	动	516	0	0	B_core	4
+提	1159	HSK2	动	1516	0	0	B_core	4
+名	1160	HSK2	名、量	2178	0	0	B_core	4
+两	1161	HSK2	量	1226	0	0	B_core	4
+意识	1162	HSK5	名、动	3109	0	0	B_core_extra_HSK	4
+卡	1163	HSK7-9	动	920	0	0	B_core_extra_HSK	4
+一辈子	1164	HSK5	名	1129	0	0	B_core_extra_HSK	4
+抱	1165	HSK4	动	543	0	0	B_core	4
+种	1166	HSK4	动	1840	0	0	B_core	4
+恩	1167			315	0	0	B_core_extra_HSK	4
+身份	1168	HSK4	名	3422	0	0	B_core	4
+意味着	1169	HSK5	动	7692	0	0	B_core_extra_HSK	4
+读	1170	HSK1	动	1040	0	0	B_core	4
+这事	1171			3553	0	0	B_core_extra_HSK	4
+区	1172	HSK3	名	1778	0	0	B_core	4
+尝试	1173	HSK5	动、名	1656	0	0	B_core_extra_HSK	4
+浪费	1174	HSK3	动	1037	0	0	B_core	4
+出生	1175	HSK2	动	2994	0	0	B_core	4
+好极了	1176			20423	0	0	B_core_extra_HSK	4
+中国	1177	HSK1	名		0	0	B_core	4
+动作	1178	HSK1	名	2694	0	0	B_core	4
+轻松	1179	HSK4	形	1694	0	0	B_core	4
+穿着	1180	HSK7-9	名	1936	0	0	B_core_extra_HSK	4
+资料	1181	HSK4	名	2833	0	0	B_core	4
+好不好	1182			651	0	0	B_core_extra_HSK	4
+银行	1183	HSK2	名	3014	0	0	B_core	4
+说谎	1184	HSK7-9		5048	0	0	B_core_extra_HSK	4
+手机	1185	HSK1	名	182	0	0	B_core	4
+公平	1186	HSK2	形	2821	0	0	B_core	4
+于是	1187	HSK4	连	2932	0	0	B_core	4
+说得对	1188			5386	0	0	B_core_extra_HSK	4
+干得	1189			10736	0	0	B_core_extra_HSK	4
+药	1190	HSK2	名	1480	0	0	B_core	4
+停下来	1191			7490	0	0	B_core_extra_HSK	4
+糟	1192	HSK5	形	9153	0	0	B_core_extra_HSK	4
+命	1193	HSK7-9	动	2624	0	0	B_core_extra_HSK	4
+显然	1194	HSK3	形	5508	0	0	B_core	4
+选	1195	HSK2	动	909	0	0	B_core	4
+抢	1196	HSK5	动	532	0	0	B_core_extra_HSK	4
+米	1197	HSK3	名	926	0	0	B_core	4
+酒吧	1198	HSK4	名	2875	0	0	B_core	4
+黑暗	1199	HSK4	形	3574	0	0	B_core	4
+意见	1200	HSK2	名	1946	0	0	B_core	4
+最终	1201	HSK6	名	3673	0	0	B_core_extra_HSK	4
+表示	1202	HSK2	动、名	598	0	0	B_core	4
+热	1203	HSK1	形、动	384	0	0	B_core	4
+吹	1204	HSK2	动	839	0	0	B_core	4
+自然	1205	HSK3	名、形、副	966	0	0	B_core	4
+不可	1206			2135	0	0	B_core_extra_HSK	4
+军队	1207	HSK6	名	18457	0	0	B_core_extra_HSK	4
+无聊	1208	HSK4	形	468	0	0	B_core	4
+学	1209	HSK1	动	509	0	0	B_core	4
+中心	1210	HSK2	名	3347	0	0	B_core	4
+送给	1211	HSK2		1564	0	0	B_core	4
+现场	1212	HSK3	名	1155	0	0	B_core	4
+上班	1213	HSK1		166	0	0	B_core	4
+越	1214	HSK2	副	613	0	0	B_core	4
+自从	1215	HSK3	介	2230	0	0	B_core	4
+撞	1216	HSK5	动	1921	0	0	B_core_extra_HSK	4
+吻	1217	HSK7-9	名、动	2611	0	0	B_core_extra_HSK	4
+某个	1218			3773	0	0	B_core_extra_HSK	4
+块	1219	HSK1	名、量	1096	0	0	B_core	4
+晚餐	1220	HSK2	名	3073	0	0	B_core	4
+子弹	1221	HSK5	名	11437	0	0	B_core_extra_HSK	4
+赚	1222	HSK6	动	1601	0	0	B_core_extra_HSK	4
+死去	1223				0	0	B_core_extra_HSK	4
+不幸	1224	HSK5	形	6270	0	0	B_core_extra_HSK	4
+交易	1225	HSK3	名		0	0	B_core	4
+权利	1226	HSK4	名	4170	0	0	B_core	4
+部分	1227	HSK2	名	2716	0	0	B_core	4
+提醒	1228	HSK4		1165	0	0	B_core	4
+警官	1229	HSK7-9	名	13687	0	0	B_core_extra_HSK	4
+信息	1230	HSK2	名	1536	0	0	B_core	4
+明显	1231	HSK3	形	818	0	0	B_core	4
+做出	1232			5619	0	0	B_core_extra_HSK	4
+时刻	1233	HSK3	名、副	2686	0	0	B_core	4
+四个	1234			1194	0	0	B_core_extra_HSK	4
+垃圾	1235	HSK4	名	1113	0	0	B_core	4
+好玩	1236			568	0	0	B_core_extra_HSK	4
+辛苦	1237	HSK5	形、动	378	0	0	B_core_extra_HSK	4
+一步	1238			2117	0	0	B_core_extra_HSK	4
+多年	1239	HSK4		1441	0	0	B_core	4
+称	1240			3945	0	0	B_core_extra_HSK	4
+造成	1241	HSK3	动	4171	0	0	B_core	4
+这点	1242			2089	0	0	B_core_extra_HSK	4
+黑	1243	HSK2	形	306	0	0	B_core	4
+通常	1244	HSK3	形	4767	0	0	B_core	4
+方面	1245	HSK2	名	2198	0	0	B_core	4
+老实	1246	HSK4	形	2468	0	0	B_core	4
+将军	1247	HSK6	名	9504	0	0	B_core_extra_HSK	4
+不断	1248	HSK3	动、副	3139	0	0	B_core	4
+服务	1249	HSK2	动	2620	0	0	B_core	4
+命运	1250	HSK3	名	4705	0	0	B_core	4
+从不	1251	HSK6		3054	0	0	B_core_extra_HSK	4
+状况	1252	HSK3	名	4537	0	0	B_core	4
+撒谎	1253	HSK7-9		8236	0	0	B_core_extra_HSK	4
+荣幸	1254	HSK7-9	形	3756	0	0	B_core_extra_HSK	4
+见鬼	1255			12416	0	0	B_core_extra_HSK	4
+人会	1256			3541	0	0	B_core_extra_HSK	4
+心情	1257	HSK2	名	369	0	0	B_core	4
+其它	1258			3551	0	0	B_core_extra_HSK	4
+老大	1259	HSK7-9	名、副	1088	0	0	B_core_extra_HSK	4
+感情	1260	HSK3	名	759	0	0	B_core	4
+错过	1261	HSK6	动	1047	0	0	B_core_extra_HSK	4
+哎	1262	HSK7-9	叹	164	0	0	B_core_extra_HSK	4
+年轻人	1263			1795	0	0	B_core_extra_HSK	4
+爱情	1264	HSK2	名	787	0	0	B_core	4
+国王	1265	HSK6	名	13539	0	0	B_core_extra_HSK	4
+两天	1266			390	0	0	B_core_extra_HSK	4
+正好	1267	HSK2	形、副	984	0	0	B_core	4
+这场	1268			6562	0	0	B_core_extra_HSK	4
+万	1269	HSK2	数	1763	0	0	B_core	4
+其	1270	HSK5	代	3596	0	0	B_core_extra_HSK	4
+盯	1271	HSK7-9	动	3366	0	0	B_core_extra_HSK	4
+很难	1272			1762	0	0	B_core_extra_HSK	4
+好事	1273	HSK2	名	1819	0	0	B_core	4
+叫做	1274			3955	0	0	B_core_extra_HSK	4
+看不到	1275			940	0	0	B_core_extra_HSK	4
+试图	1276	HSK5	动	11609	0	0	B_core_extra_HSK	4
+转	1277	HSK6	动	838	0	0	B_core_extra_HSK	4
+别管	1278			10296	0	0	B_core_extra_HSK	4
+手上	1279			2963	0	0	B_core_extra_HSK	4
+英国	1280			2636	0	0	B_core_extra_HSK	4
+听听	1281			2170	0	0	B_core_extra_HSK	4
+只不过	1282	HSK5	副	2071	0	0	B_core_extra_HSK	4
+同	1283	HSK6	形、副、介	858	0	0	B_core_extra_HSK	4
+干掉	1284			10355	0	0	B_core_extra_HSK	4
+问问	1285			807	0	0	B_core_extra_HSK	4
+不停	1286	HSK5		2649	0	0	B_core_extra_HSK	4
+拯救	1287	HSK7-9	动	2766	0	0	B_core_extra_HSK	4
+制作	1288	HSK3	动	4731	0	0	B_core	4
+见过	1289	HSK2		2865	0	0	B_core	4
+好处	1290	HSK2	名	2905	0	0	B_core	4
+活动	1291	HSK2	动、名	703	0	0	B_core	4
+女士们	1292			102699	0	0	B_core_extra_HSK	4
+剩	1293	HSK5	动	1424	0	0	B_core_extra_HSK	4
+法国	1294			3677	0	0	B_core_extra_HSK	4
+床上	1295			989	0	0	B_core_extra_HSK	4
+赶紧	1296	HSK3	副	379	0	0	B_core	4
+相当	1297	HSK3	副、动	1902	0	0	B_core	4
+兴奋	1298	HSK4	形	2023	0	0	B_core	4
+总之	1299	HSK4	连	2656	0	0	B_core	4
+有意思	1300	HSK2		1502	0	0	B_core	4
+干杯	1301	HSK2		8592	0	0	B_core	4
+处	1302	HSK4	名	3350	0	0	B_core	4
+还会	1303			1150	0	0	B_core_extra_HSK	4
+带到	1304			6779	0	0	B_core_extra_HSK	4
+生日	1305	HSK1	名	447	0	0	B_core	4
+及	1306	HSK7-9	连	2827	0	0	B_core_extra_HSK	4
+可恶	1307	HSK7-9	形	5183	0	0	B_core_extra_HSK	4
+干吗	1308	HSK3	代	4436	0	0	B_core	4
+旅行	1309	HSK2	动	1261	0	0	B_core	4
+主人	1310	HSK2	名	2096	0	0	B_core	4
+惹	1311	HSK7-9	动	1074	0	0	B_core_extra_HSK	4
+日本	1312				0	1	B_core_extra_HSK	4
+你家	1313			389	0	0	B_core_extra_HSK	4
+男朋友	1314	HSK1	名	328	0	0	B_core	4
+困难	1315	HSK3	名、形	2650	0	0	B_core	4
+尽快	1316	HSK4	副	4127	0	0	B_core	4
+厕所	1317	HSK6	名	1083	0	0	B_core_extra_HSK	4
+庆祝	1318	HSK3	动	3307	0	0	B_core	4
+警方	1319			27286	0	0	B_core_extra_HSK	4
+主	1320	HSK7-9	名	3846	0	0	B_core_extra_HSK	4
+动手	1321	HSK5		3148	0	0	B_core_extra_HSK	4
+队	1322	HSK2	名	3180	0	0	B_core	4
+发	1323	HSK2	动	272	0	0	B_core	4
+请求	1324	HSK2	动、名	8920	0	0	B_core	4
+太阳	1325	HSK2	名	729	0	0	B_core	4
+德	1326	HSK7-9	名	6946	0	0	B_core_extra_HSK	4
+反对	1327	HSK3	动	5650	0	0	B_core	4
+嘴	1328	HSK2	名	1099	0	0	B_core	4
+想像	1329			7327	0	0	B_core_extra_HSK	4
+两年	1330			978	0	0	B_core_extra_HSK	4
+四	1331	HSK1	数	1990	0	0	B_core	4
+祈祷	1332	HSK7-9	动	3339	0	0	B_core_extra_HSK	4
+爆炸	1333	HSK6	动	2409	0	0	B_core_extra_HSK	4
+醒来	1334	HSK7-9		2137	0	0	B_core_extra_HSK	4
+这才	1335			2236	0	0	B_core_extra_HSK	4
+周围	1336	HSK3	名	2485	0	0	B_core	4
+不怕	1337			555	0	0	B_core_extra_HSK	4
+送到	1338	HSK2		4365	0	0	B_core	4
+不许	1339	HSK5	动	1972	0	0	B_core_extra_HSK	4
+下车	1340	HSK1		2726	0	0	B_core	4
+创造	1341	HSK3	动、名	6203	0	0	B_core	4
+差	1342	HSK1	动、形	576	0	0	B_core	4
+说明	1343	HSK2	动、名	779	0	0	B_core	4
+件	1344	HSK2	量	2717	0	0	B_core	4
+让开	1345			20137	0	0	B_core_extra_HSK	4
+滚开	1346				0	0	B_core_extra_HSK	4
+案子	1347			14930	0	0	B_core_extra_HSK	4
+达	1348			3067	0	0	B_core_extra_HSK	4
+世上	1349			5667	0	0	B_core_extra_HSK	4
+逮捕	1350	HSK7-9	动	39824	0	0	B_core_extra_HSK	4
+尊重	1351	HSK5	动	1826	0	0	B_core_extra_HSK	4
+特	1352	HSK6	副	1862	0	0	B_core_extra_HSK	4
+猫	1353	HSK2	名	458	0	0	B_core	4
+节目	1354	HSK2	名	944	0	0	B_core	4
+未	1355	HSK7-9	副	2189	0	0	B_core_extra_HSK	4
+讲话	1356	HSK2		2946	0	0	B_core	4
+私人	1357	HSK5	名	4843	0	0	B_core_extra_HSK	4
+亲自	1358	HSK3	副	3963	0	0	B_core	4
+地上	1359	HSK1		2344	0	0	B_core	4
+炸弹	1360	HSK6	名		0	0	B_core_extra_HSK	4
+暂时	1361	HSK5	形	1361	0	0	B_core_extra_HSK	4
+谋杀	1362				0	0	B_core_extra_HSK	4
+十分	1363	HSK2	副	2375	0	0	B_core	4
+不去	1364			947	0	0	B_core_extra_HSK	4
+那好	1365			2200	0	0	B_core_extra_HSK	4
+不算	1366	HSK7-9		960	0	0	B_core_extra_HSK	4
+啤酒	1367	HSK3	名	2430	0	0	B_core	4
+颜色	1368	HSK2	名	784	0	0	B_core	4
+这会	1369			3594	0	0	B_core_extra_HSK	4
+顺利	1370	HSK2	形	1372	0	0	B_core	4
+记忆	1371	HSK5	动、名	2442	0	0	B_core_extra_HSK	4
+条	1372	HSK2	量	1841	0	0	B_core	4
+玩笑	1373			2763	0	0	B_core_extra_HSK	4
+压力	1374	HSK3	名	891	0	0	B_core	4
+停车	1375	HSK2		5562	0	0	B_core	4
+婚礼	1376	HSK4	名	1922	0	0	B_core	4
+一群	1377			1901	0	0	B_core_extra_HSK	4
+上床	1378				0	0	B_core_extra_HSK	4
+联络	1379	HSK5	动	15730	0	0	B_core_extra_HSK	4
+普通	1380	HSK2	形	1737	0	0	B_core	4
+文件	1381	HSK3	名	7192	0	0	B_core	4
+惊喜	1382	HSK6	形、名	1775	0	0	B_core_extra_HSK	4
+球	1383	HSK1	名	1758	0	0	B_core	4
+所说	1384			8002	0	0	B_core_extra_HSK	4
+学会	1385	HSK6	名	1404	0	0	B_core_extra_HSK	4
+他来	1386			7013	0	0	B_core_extra_HSK	4
+恐惧	1387	HSK7-9	形	4734	0	0	B_core_extra_HSK	4
+废话	1388	HSK7-9	名	2220	0	0	B_core_extra_HSK	4
+收	1389	HSK2	动	1007	0	0	B_core	4
+牺牲	1390	HSK6	动、名	5009	0	0	B_core_extra_HSK	4
+疼	1391	HSK2	动	665	0	0	B_core	4
+别忘了	1392			3290	0	0	B_core_extra_HSK	4
+一点点	1393	HSK2		1169	0	0	B_core	4
+周末	1394	HSK2	名	372	0	0	B_core	4
+社会	1395	HSK3	名	916	0	0	B_core	4
+治疗	1396	HSK4	动	3173	0	0	B_core	4
+了不起	1397	HSK4	形	3016	0	0	B_core	4
+拿来	1398			2273	0	0	B_core_extra_HSK	4
+假装	1399	HSK7-9	动	2052	0	0	B_core_extra_HSK	4
+包	1400	HSK1	名、量、动	663	0	0	B_core	4
+设计	1401	HSK3	动、名	1965	0	0	B_core	4
+几年	1402			1101	0	0	B_core_extra_HSK	4
+一部分	1403	HSK2		3554	0	0	B_core	4
+麦克	1404				1	0	X_excluded_foreign	4
+想念	1405	HSK4	动	1173	0	0	B_core	4
+制造	1406	HSK3	动	8152	0	0	B_core	4
+张	1407	HSK3	量、动	873	0	0	B_core	4
+非常感谢	1408			6679	0	0	B_core_extra_HSK	4
+尤其	1409	HSK5	副	1654	0	0	B_core_extra_HSK	4
+合适	1410	HSK2	形	937	0	0	B_core	4
+整天	1411	HSK3	名	1959	0	0	B_core	4
+一个月	1412			599	0	0	B_core_extra_HSK	4
+期待	1413	HSK4	动	426	0	0	B_core	4
+火车	1414	HSK1	名	1091	0	0	B_core	4
+号码	1415	HSK4	名	2551	0	0	B_core	4
+健康	1416	HSK2	形、名	934	0	0	B_core	4
+全世界	1417	HSK5		2174	0	0	B_core_extra_HSK	4
+机器	1418	HSK3	名	3501	0	0	B_core	4
+五	1419	HSK1	数	2228	0	0	B_core	4
+彼此	1420	HSK5	代	2730	0	0	B_core_extra_HSK	4
+移动	1421	HSK4	动	2813	0	0	B_core	4
+教授	1422	HSK4	名	4506	0	0	B_core	4
+跟踪	1423	HSK7-9	动	12867	0	0	B_core_extra_HSK	4
+喝一杯	1424			6999	0	0	B_core_extra_HSK	4
+碰到	1425	HSK2		1476	0	0	B_core	4
+输	1426	HSK3	动	1215	0	0	B_core	4
+重复	1427	HSK2	动	3823	0	0	B_core	4
+嫁给	1428			2775	0	0	B_core_extra_HSK	4
+所谓	1429	HSK7-9	形	2423	0	0	B_core_extra_HSK	4
+大声	1430	HSK2		3042	0	0	B_core	4
+秒	1431	HSK5	量	1028	0	0	B_core_extra_HSK	4
+今年	1432	HSK1	名	395	0	0	B_core	4
+大哥	1433	HSK4	名	632	0	0	B_core	4
+失踪	1434	HSK7-9		6013	0	0	B_core_extra_HSK	4
+由于	1435	HSK3	介、连	6441	0	0	B_core	4
+自	1436	HSK4	介	2628	0	0	B_core	4
+勇敢	1437	HSK4	形	2509	0	0	B_core	4
+主要	1438	HSK2	形	452	0	0	B_core	4
+咬	1439	HSK5	动	803	0	0	B_core_extra_HSK	4
+第二	1440			2208	0	0	B_core_extra_HSK	4
+天堂	1441	HSK6	名	4189	0	0	B_core_extra_HSK	4
+汽车	1442	HSK1	名	3662	0	0	B_core	4
+喝点	1443			1742	0	0	B_core_extra_HSK	4
+把手	1444	HSK7-9	名	7159	0	0	B_core_extra_HSK	4
+厨房	1445	HSK5	名	3560	0	0	B_core_extra_HSK	4
+小时候	1446	HSK2	名	860	0	0	B_core	4
+测试	1447	HSK4	动、名	4120	0	0	B_core	4
+等到	1448	HSK2	介	1053	0	0	B_core	4
+似的	1449	HSK4	助	1445	0	0	B_core	4
+报纸	1450	HSK2	名	7211	0	0	B_core	4
+快去	1451			2435	0	0	B_core_extra_HSK	4
+鱼	1452	HSK2	名	1127	0	0	B_core	4
+比如	1453	HSK2	动	1251	0	0	B_core	4
+激动	1454	HSK4	形、动	755	0	0	B_core	4
+酒店	1455	HSK2	名	1188	0	0	B_core	4
+奶奶	1456	HSK1	名	1472	0	0	B_core	4
+踢	1457	HSK6	动	2180	0	0	B_core_extra_HSK	4
+骄傲	1458	HSK6	形、名	1767	0	0	B_core_extra_HSK	4
+价值	1459	HSK3	名	4362	0	0	B_core	4
+累	1460	HSK1	形	428	0	0	B_core	4
+之中	1461	HSK5	名	8409	0	0	B_core_extra_HSK	4
+从来不	1462	HSK7-9		1682	0	0	B_core_extra_HSK	4
+怪物	1463	HSK7-9	名	9762	0	0	B_core_extra_HSK	4
+作	1464	HSK6	动	2237	0	0	B_core_extra_HSK	4
+公寓	1465	HSK7-9	名	6237	0	0	B_core_extra_HSK	4
+在乎	1466	HSK4	动	2700	0	0	B_core	4
+恢复	1467	HSK5	动	1898	0	0	B_core_extra_HSK	4
+好笑	1468	HSK7-9	形	2782	0	0	B_core_extra_HSK	4
+查	1469	HSK2	动	1802	0	0	B_core	4
+恐怖	1470	HSK7-9	形	1277	0	0	B_core_extra_HSK	4
+做些	1471			9553	0	0	B_core_extra_HSK	4
+带上	1472			1228	0	0	B_core_extra_HSK	4
+教堂	1473	HSK6	名	11585	0	0	B_core_extra_HSK	4
+玩意	1474			2681	0	0	B_core_extra_HSK	4
+说实话	1475	HSK6		1493	0	0	B_core_extra_HSK	4
+大约	1476	HSK3	副	6386	0	0	B_core	4
+车子	1477			3982	0	0	B_core_extra_HSK	4
+洗	1478	HSK1	动	707	0	0	B_core	4
+一辆	1479			5229	0	0	B_core_extra_HSK	4
+正式	1480	HSK3	形	2711	0	0	B_core	4
+人来	1481			4177	0	0	B_core_extra_HSK	4
+爬	1482	HSK2	动	1175	0	0	B_core	4
+退后	1483			29759	0	0	B_core_extra_HSK	4
+电脑	1484	HSK1	名	728	0	0	B_core	4
+凶手	1485	HSK6	名	12371	0	0	B_core_extra_HSK	4
+受不了	1486	HSK4	动	1140	0	0	B_core	4
+复杂	1487	HSK3	形	2109	0	0	B_core	4
+美元	1488	HSK3	名		0	0	B_core	4
+乔治	1489				1	0	X_excluded_foreign	4
+抽	1490	HSK4	动		0	0	B_core	4
+何时	1491	HSK7-9		3044	0	0	B_core_extra_HSK	4
+后悔	1492	HSK5	动	828	0	0	B_core_extra_HSK	4
+搞砸	1493			33508	0	0	B_core_extra_HSK	4
+关闭	1494	HSK4	动	7381	0	0	B_core	4
+不像	1495			1759	0	0	B_core_extra_HSK	4
+执行	1496	HSK5	动		0	0	B_core_extra_HSK	4
+之类	1497	HSK6	名	1693	0	0	B_core_extra_HSK	4
+人民	1498	HSK3	名		0	0	B_core	4
+两次	1499			1269	0	0	B_core_extra_HSK	4
+士兵	1500	HSK4	名	18602	0	0	B_core	4
+提到	1501	HSK2		4976	0	0	C_expansion	5
+专家	1502	HSK3	名	6571	0	0	C_expansion	5
+取消	1503	HSK3	动	2202	0	0	C_expansion	5
+作品	1504	HSK3	名	2252	0	0	C_expansion	5
+做爱	1505				0	0	C_expansion_extra_HSK	5
+谈论	1506	HSK7-9	动	19402	0	0	C_expansion_extra_HSK	5
+巴黎	1507			4546	0	1	C_expansion_extra_HSK	5
+急	1508	HSK2	形	981	0	0	C_expansion	5
+气	1509	HSK2	动、名	1056	0	0	C_expansion	5
+时代	1510	HSK3	名	1948	0	0	C_expansion	5
+好运	1511	HSK5	名	2033	0	0	C_expansion_extra_HSK	5
+分开	1512	HSK2		1964	0	0	C_expansion	5
+去世	1513	HSK3	动	6394	0	0	C_expansion	5
+状态	1514	HSK3	名	1023	0	0	C_expansion	5
+车上	1515	HSK1		2047	0	0	C_expansion	5
+犯	1516	HSK6	动	4275	0	0	C_expansion_extra_HSK	5
+甜心	1517			11162	0	0	C_expansion_extra_HSK	5
+尽量	1518	HSK3	副	1595	0	0	C_expansion	5
+冒险	1519	HSK7-9		12542	0	0	C_expansion_extra_HSK	5
+尽力	1520	HSK4		3469	0	0	C_expansion	5
+满意	1521	HSK2	动	2069	0	0	C_expansion	5
+年纪	1522	HSK3	名	1110	0	0	C_expansion	5
+不可思议	1523	HSK7-9		9086	0	0	C_expansion_extra_HSK	5
+老公	1524	HSK4	名	539	0	0	C_expansion	5
+超级	1525	HSK3	形	420	0	0	C_expansion	5
+别碰	1526			28608	0	0	C_expansion_extra_HSK	5
+伦敦	1527			5910	0	0	C_expansion_extra_HSK	5
+想过	1528			5056	0	0	C_expansion_extra_HSK	5
+想着	1529			1072	0	0	C_expansion_extra_HSK	5
+两位	1530			7600	0	0	C_expansion_extra_HSK	5
+人员	1531	HSK3	名	6351	0	0	C_expansion	5
+懂吗	1532			4931	0	0	C_expansion_extra_HSK	5
+冲	1533	HSK6	介、动	2010	0	0	C_expansion_extra_HSK	5
+满足	1534	HSK3	动	1309	0	0	C_expansion	5
+睡着	1535	HSK4		739	0	0	C_expansion	5
+妳	1536			2104	0	0	C_expansion_extra_HSK	5
+即将	1537	HSK4	副	3640	0	0	C_expansion	5
+伤	1538	HSK3	动、名	1807	0	0	C_expansion	5
+地点	1539	HSK1	名	3283	0	0	C_expansion	5
+黑体	1540			91952	0	0	C_expansion_extra_HSK	5
+现实	1541	HSK3	名	1089	0	0	C_expansion	5
+非	1542	HSK4	副	1808	0	0	C_expansion	5
+乱	1543	HSK3	形	1219	0	0	C_expansion	5
+巨大	1544	HSK4	形	6753	0	0	C_expansion	5
+怀孕	1545	HSK7-9			0	0	C_expansion_extra_HSK	5
+死定了	1546				0	0	C_expansion_extra_HSK	5
+嘘	1547			3124	0	0	C_expansion_extra_HSK	5
+做事	1548			4341	0	0	C_expansion_extra_HSK	5
+报警	1549	HSK5		2822	0	0	C_expansion_extra_HSK	5
+那位	1550			2883	0	0	C_expansion_extra_HSK	5
+特殊	1551	HSK4	形	3416	0	0	C_expansion	5
+尽	1552	HSK7-9	动、副	3930	0	0	C_expansion_extra_HSK	5
+条件	1553	HSK2	名	2039	0	0	C_expansion	5
+要死	1554				0	0	C_expansion_extra_HSK	5
+谈话	1555	HSK3		12332	0	0	C_expansion	5
+我用	1556			1467	0	0	C_expansion_extra_HSK	5
+痛	1557	HSK7-9	副	1061	0	0	C_expansion_extra_HSK	5
+无关	1558	HSK6	动	3620	0	0	C_expansion_extra_HSK	5
+愿	1559	HSK5	动	1541	0	0	C_expansion_extra_HSK	5
+天才	1560	HSK5	名	4073	0	0	C_expansion_extra_HSK	5
+穿过	1561	HSK7-9	动	4445	0	0	C_expansion_extra_HSK	5
+有用	1562	HSK1	动	2187	0	0	C_expansion	5
+距离	1563	HSK4	动、名	1860	0	0	C_expansion	5
+速度	1564	HSK3	名	1292	0	0	C_expansion	5
+公主	1565	HSK6	名	1974	0	0	C_expansion_extra_HSK	5
+单独	1566	HSK4	副	3261	0	0	C_expansion	5
+夜晚	1567	HSK7-9	名	4427	0	0	C_expansion_extra_HSK	5
+全是	1568			1171	0	0	C_expansion_extra_HSK	5
+显示	1569	HSK3	动	1934	0	0	C_expansion	5
+地址	1570	HSK4	名	1149	0	0	C_expansion	5
+中间	1571	HSK1	名	1489	0	0	C_expansion	5
+难以置信	1572	HSK7-9		19068	0	0	C_expansion_extra_HSK	5
+介意	1573	HSK7-9		4561	0	0	C_expansion_extra_HSK	5
+德国	1574			2663	0	0	C_expansion_extra_HSK	5
+耍	1575	HSK7-9	动	565	0	0	C_expansion_extra_HSK	5
+帽子	1576	HSK4	名	1647	0	0	C_expansion	5
+这份	1577			5839	0	0	C_expansion_extra_HSK	5
+鸟	1578	HSK2	名	1300	0	0	C_expansion	5
+邪恶	1579	HSK7-9	形	3491	0	0	C_expansion_extra_HSK	5
+顺便	1580	HSK7-9	副	1015	0	0	C_expansion_extra_HSK	5
+放手	1581			4889	0	0	C_expansion_extra_HSK	5
+娶	1582	HSK7-9	动	1606	0	0	C_expansion_extra_HSK	5
+手指	1583	HSK3	名	3536	0	0	C_expansion	5
+犯罪	1584	HSK6			0	0	C_expansion_extra_HSK	5
+队长	1585	HSK2	名	4856	0	0	C_expansion	5
+站住	1586	HSK2		21455	0	0	C_expansion	5
+烧	1587	HSK4	动	1926	0	0	C_expansion	5
+早安	1588			605	0	0	C_expansion_extra_HSK	5
+常	1589	HSK1	副	4162	0	0	C_expansion	5
+边	1590	HSK2	名	1266	0	0	C_expansion	5
+一片	1591			2108	0	0	C_expansion_extra_HSK	5
+仔细	1592	HSK5	形	1667	0	0	C_expansion_extra_HSK	5
+逃跑	1593	HSK5	动	11393	0	0	C_expansion_extra_HSK	5
+早点	1594			398	0	0	C_expansion_extra_HSK	5
+同学	1595	HSK1	名	375	0	0	C_expansion	5
+无所谓	1596	HSK4	动	1673	0	0	C_expansion	5
+看不见	1597			1586	0	0	C_expansion_extra_HSK	5
+它会	1598			9696	0	0	C_expansion_extra_HSK	5
+规矩	1599	HSK7-9	名、形	8345	0	0	C_expansion_extra_HSK	5
+光	1600	HSK3	副、名、形	1777	0	0	C_expansion	5
+记者	1601	HSK3	名	5007	0	0	C_expansion	5
+去年	1602	HSK1	名	679	0	0	C_expansion	5
+真是太	1603			3443	0	0	C_expansion_extra_HSK	5
+监视	1604	HSK7-9	动	25847	0	0	C_expansion_extra_HSK	5
+伤心	1605	HSK3		848	0	0	C_expansion	5
+更加	1606	HSK3	副	2301	0	0	C_expansion	5
+天使	1607	HSK7-9	名	2828	0	0	C_expansion_extra_HSK	5
+赌	1608	HSK6	动	4108	0	0	C_expansion_extra_HSK	5
+打死	1609				0	0	C_expansion_extra_HSK	5
+醒醒	1610			3471	0	0	C_expansion_extra_HSK	5
+不太	1611	HSK2		1691	0	0	C_expansion	5
+刀	1612	HSK3	名	2778	0	0	C_expansion	5
+搭	1613	HSK6	动	1608	0	0	C_expansion_extra_HSK	5
+无论如何	1614	HSK7-9		11304	0	0	C_expansion_extra_HSK	5
+练习	1615	HSK2	动、名	6189	0	0	C_expansion	5
+烂	1616	HSK5	形		0	0	C_expansion_extra_HSK	5
+离婚	1617	HSK3		2923	0	0	C_expansion	5
+早餐	1618	HSK2	名	1246	0	0	C_expansion	5
+技术	1619	HSK3	名	1065	0	0	C_expansion	5
+产生	1620	HSK3	动	4633	0	0	C_expansion	5
+红色	1621	HSK2	名	1462	0	0	C_expansion	5
+吵	1622	HSK3	形、动	1794	0	0	C_expansion	5
+石头	1623	HSK3	名	3434	0	0	C_expansion	5
+胡说	1624	HSK7-9	动、名	4957	0	0	C_expansion_extra_HSK	5
+片名	1625			27567	0	0	C_expansion_extra_HSK	5
+参与	1626	HSK4	动	3782	0	0	C_expansion	5
+爷爷	1627	HSK1	名	1957	0	0	C_expansion	5
+宣布	1628	HSK3	动	9821	0	0	C_expansion	5
+思考	1629	HSK4	动	1652	0	0	C_expansion	5
+天气	1630	HSK1	名	529	0	0	C_expansion	5
+方便	1631	HSK2	形	877	0	0	C_expansion	5
+孤独	1632	HSK6	形	1413	0	0	C_expansion_extra_HSK	5
+以来	1633	HSK3	名	5017	0	0	C_expansion	5
+导演	1634	HSK3	动、名	2645	0	0	C_expansion	5
+运气	1635	HSK4	名	1580	0	0	C_expansion	5
+赢得	1636	HSK4	动	14466	0	0	C_expansion	5
+心脏	1637	HSK6	名	3807	0	0	C_expansion_extra_HSK	5
+一周	1638			1022	0	0	C_expansion_extra_HSK	5
+脸上	1639			1511	0	0	C_expansion_extra_HSK	5
+快要	1640	HSK2	副	2422	0	0	C_expansion	5
+哥们	1641			2576	0	0	C_expansion_extra_HSK	5
+窗户	1642	HSK4	名	4206	0	0	C_expansion	5
+餐厅	1643	HSK5	名	3516	0	0	C_expansion_extra_HSK	5
+前进	1644	HSK3	动	6721	0	0	C_expansion	5
+我妈	1645			695	0	0	C_expansion_extra_HSK	5
+外	1646	HSK1	名	2859	0	0	C_expansion	5
+楼上	1647	HSK1		2784	0	0	C_expansion	5
+旧	1648	HSK3	形	2954	0	0	C_expansion	5
+付	1649	HSK3	动	5373	0	0	C_expansion	5
+杀手	1650	HSK7-9	名		0	0	C_expansion_extra_HSK	5
+唱歌	1651	HSK1		977	0	0	C_expansion	5
+胜利	1652	HSK3	动、名	4039	0	0	C_expansion	5
+运动	1653	HSK2	动、名	792	0	0	C_expansion	5
+俱乐部	1654	HSK5	名	8601	0	0	C_expansion_extra_HSK	5
+一段	1655			1877	0	0	C_expansion_extra_HSK	5
+大卫	1656				0	0	C_expansion_extra_HSK	5
+一段时间	1657			1857	0	0	C_expansion_extra_HSK	5
+袭击	1658	HSK7-9	动	25815	0	0	C_expansion_extra_HSK	5
+金	1659	HSK3	名	2185	0	0	C_expansion	5
+信号	1660	HSK2	名	2968	0	0	C_expansion	5
+一间	1661			7438	0	0	C_expansion_extra_HSK	5
+空间	1662	HSK4	名	1847	0	0	C_expansion	5
+机场	1663	HSK1	名	1348	0	0	C_expansion	5
+凭	1664	HSK5	动、介	1715	0	0	C_expansion_extra_HSK	5
+一分钟	1665			3858	0	0	C_expansion_extra_HSK	5
+赶	1666	HSK3	动	1797	0	0	C_expansion	5
+刺激	1667	HSK4	动、名		0	0	C_expansion	5
+提出	1668	HSK2		6322	0	0	C_expansion	5
+和平	1669	HSK3	名	4524	0	0	C_expansion	5
+付钱	1670			6629	0	0	C_expansion_extra_HSK	5
+确保	1671	HSK3	动	21687	0	0	C_expansion	5
+发展	1672	HSK3	动、名	1637	0	0	C_expansion	5
+经验	1673	HSK3	名	1534	0	0	C_expansion	5
+紧急	1674	HSK3	形	18605	0	0	C_expansion	5
+引起	1675	HSK4	动	4483	0	0	C_expansion	5
+副	1676	HSK6	量	4421	0	0	C_expansion_extra_HSK	5
+病人	1677	HSK1	名	5503	0	0	C_expansion	5
+线索	1678	HSK5	名	21087	0	0	C_expansion_extra_HSK	5
+祝你好运	1679			3645	0	0	C_expansion_extra_HSK	5
+克	1680	HSK2	量	3037	0	0	C_expansion	5
+声	1681	HSK5	名、量	3078	0	0	C_expansion_extra_HSK	5
+手下	1682			18185	0	0	C_expansion_extra_HSK	5
+将来	1683	HSK3	名	3286	0	0	C_expansion	5
+手里	1684	HSK4		2979	0	0	C_expansion	5
+带你去	1685			1574	0	0	C_expansion_extra_HSK	5
+奇迹	1686	HSK7-9	名	4507	0	0	C_expansion_extra_HSK	5
+万一	1687	HSK4	名、连	1385	0	0	C_expansion	5
+加上	1688	HSK5	连	1884	0	0	C_expansion_extra_HSK	5
+彻底	1689	HSK4	形	2403	0	0	C_expansion	5
+车里	1690			6555	0	0	C_expansion_extra_HSK	5
+吸引	1691	HSK4	动	2720	0	0	C_expansion	5
+千万	1692	HSK3	副	2640	0	0	C_expansion	5
+三年	1693			1333	0	0	C_expansion_extra_HSK	5
+立即	1694	HSK4	副	11340	0	0	C_expansion	5
+街上	1695			3894	0	0	C_expansion_extra_HSK	5
+启动	1696	HSK5	动	11091	0	0	C_expansion_extra_HSK	5
+太多	1697			1220	0	0	C_expansion_extra_HSK	5
+随	1698	HSK3	动	2378	0	0	C_expansion	5
+琌	1699				0	0	C_expansion_extra_HSK	5
+肉	1700	HSK1	名	371	0	0	C_expansion	5
+人物	1701	HSK5	名	2517	0	0	C_expansion_extra_HSK	5
+欣赏	1702	HSK5	动	1679	0	0	C_expansion_extra_HSK	5
+背后	1703	HSK3	名	2996	0	0	C_expansion	5
+接到	1704	HSK2		4603	0	0	C_expansion	5
+一部	1705			2150	0	0	C_expansion_extra_HSK	5
+建立	1706	HSK3	动	8302	0	0	C_expansion	5
+骗子	1707	HSK5	名	2211	0	0	C_expansion_extra_HSK	5
+破	1708	HSK3	形、动	1379	0	0	C_expansion	5
+上学	1709	HSK1		931	0	0	C_expansion	5
+桌子	1710	HSK1	名	2363	0	0	C_expansion	5
+小伙子	1711	HSK4	名	2508	0	0	C_expansion	5
+感激	1712	HSK7-9	动	8683	0	0	C_expansion_extra_HSK	5
+乐意	1713	HSK7-9	动、形	3860	0	0	C_expansion_extra_HSK	5
+亲	1714	HSK3	形	207	0	0	C_expansion	5
+方正	1715				0	1	C_expansion_extra_HSK	5
+太久	1716			1916	0	0	C_expansion_extra_HSK	5
+美女	1717	HSK4	名		0	0	C_expansion	5
+实现	1718	HSK2	动	1920	0	0	C_expansion	5
+说出	1719			2271	0	0	C_expansion_extra_HSK	5
+印象	1720	HSK3	名	1539	0	0	C_expansion	5
+空气	1721	HSK2	名	1816	0	0	C_expansion	5
+关掉	1722	HSK7-9		9321	0	0	C_expansion_extra_HSK	5
+不肯	1723	HSK7-9		4043	0	0	C_expansion_extra_HSK	5
+生存	1724	HSK3	动	5763	0	0	C_expansion	5
+一颗	1725			1752	0	0	C_expansion_extra_HSK	5
+左右	1726	HSK3	名、动	841	0	0	C_expansion	5
+场	1727	HSK2	量	2419	0	0	C_expansion	5
+土地	1728	HSK4	名	12137	0	0	C_expansion	5
+分享	1729	HSK5	动		0	0	C_expansion_extra_HSK	5
+发出	1730	HSK3	动	2262	0	0	C_expansion	5
+逃走	1731	HSK5	动	23552	0	0	C_expansion_extra_HSK	5
+各种	1732	HSK3	代	506	0	0	C_expansion	5
+打赌	1733			10651	0	0	C_expansion_extra_HSK	5
+勇气	1734	HSK4	名	1823	0	0	C_expansion	5
+毫无	1735	HSK7-9		3555	0	0	C_expansion_extra_HSK	5
+歌	1736	HSK1	名	822	0	0	C_expansion	5
+头上	1737			3630	0	0	C_expansion_extra_HSK	5
+会议	1738	HSK3	名	10114	0	0	C_expansion	5
+好消息	1739			2917	0	0	C_expansion_extra_HSK	5
+惩罚	1740	HSK7-9	动、名	6080	0	0	C_expansion_extra_HSK	5
+班	1741	HSK1	名、量	753	0	0	C_expansion	5
+规则	1742	HSK4	名、形	6224	0	0	C_expansion	5
+都行	1743			2337	0	0	C_expansion_extra_HSK	5
+家族	1744	HSK7-9	名	6087	0	0	C_expansion_extra_HSK	5
+角色	1745	HSK4	名	2387	0	0	C_expansion	5
+精彩	1746	HSK3	形	2218	0	0	C_expansion	5
+火	1747	HSK4	形	1483	0	0	C_expansion	5
+一对	1748			3100	0	0	C_expansion_extra_HSK	5
+强	1749	HSK3	形	1418	0	0	C_expansion	5
+互相	1750	HSK3	副	1450	0	0	C_expansion	5
+性感	1751				0	0	C_expansion_extra_HSK	5
+女孩子	1752			1131	0	0	C_expansion_extra_HSK	5
+承诺	1753	HSK6	动	7163	0	0	C_expansion_extra_HSK	5
+小孩子	1754			1970	0	0	C_expansion_extra_HSK	5
+惊讶	1755	HSK7-9	形	4768	0	0	C_expansion_extra_HSK	5
+这太	1756			21950	0	0	C_expansion_extra_HSK	5
+推	1757	HSK2	动	2434	0	0	C_expansion	5
+汤姆	1758				1	0	X_excluded_foreign	5
+茶	1759	HSK1	名	1430	0	0	C_expansion	5
+做过	1760			6056	0	0	C_expansion_extra_HSK	5
+行李	1761	HSK3	名	3294	0	0	C_expansion	5
+邻居	1762	HSK5	名	3697	0	0	C_expansion_extra_HSK	5
+免费	1763	HSK4		1242	0	0	C_expansion	5
+耳朵	1764	HSK5	名	1929	0	0	C_expansion_extra_HSK	5
+裤子	1765	HSK3	名	1079	0	0	C_expansion	5
+用力	1766	HSK7-9		5786	0	0	C_expansion_extra_HSK	5
+想见	1767			3282	0	0	C_expansion_extra_HSK	5
+演出	1768	HSK3	动、名	3083	0	0	C_expansion	5
+说不定	1769	HSK4	动、副	1161	0	0	C_expansion	5
+绝不	1770			6354	0	0	C_expansion_extra_HSK	5
+逃	1771	HSK5	动	4230	0	0	C_expansion_extra_HSK	5
+很少	1772			1036	0	0	C_expansion_extra_HSK	5
+乔	1773			10738	0	0	C_expansion_extra_HSK	5
+某些	1774			3202	0	0	C_expansion_extra_HSK	5
+猪	1775	HSK3	名	702	0	0	C_expansion	5
+这条	1776			2274	0	0	C_expansion_extra_HSK	5
+查理	1777			46398	0	0	C_expansion_extra_HSK	5
+重点	1778	HSK2	名、副	859	0	0	C_expansion	5
+拜	1779			4515	0	0	C_expansion_extra_HSK	5
+关键	1780	HSK5	名	876	0	0	C_expansion_extra_HSK	5
+鼻子	1781	HSK5	名	1829	0	0	C_expansion_extra_HSK	5
+故意	1782	HSK2	副	1497	0	0	C_expansion	5
+红	1783	HSK2	形	901	0	0	C_expansion	5
+同事	1784	HSK2	名	1043	0	0	C_expansion	5
+接触	1785	HSK5	动	2759	0	0	C_expansion_extra_HSK	5
+遇见	1786	HSK4	动	1335	0	0	C_expansion	5
+到来	1787	HSK5	动	4288	0	0	C_expansion_extra_HSK	5
+事儿	1788			1014	0	0	C_expansion_extra_HSK	5
+时光	1789	HSK5	名	1698	0	0	C_expansion_extra_HSK	5
+元	1790	HSK1	量	1727	0	0	C_expansion	5
+过程	1791	HSK3	名	2006	0	0	C_expansion	5
+背叛	1792	HSK7-9	动	7996	0	0	C_expansion_extra_HSK	5
+这有	1793			3660	0	0	C_expansion_extra_HSK	5
+当心	1794	HSK7-9	动	5936	0	0	C_expansion_extra_HSK	5
+店	1795	HSK2	名	959	0	0	C_expansion	5
+对待	1796	HSK3	动	3751	0	0	C_expansion	5
+瞧瞧	1797			5844	0	0	C_expansion_extra_HSK	5
+放到	1798	HSK3		4373	0	0	C_expansion	5
+到时候	1799			581	0	0	C_expansion_extra_HSK	5
+回头	1800	HSK5	副	1138	0	0	C_expansion_extra_HSK	5
+近	1801	HSK2	形	994	0	0	C_expansion	5
+旅馆	1802	HSK3	名	11187	0	0	C_expansion	5
+蛋糕	1803	HSK5	名	998	0	0	C_expansion_extra_HSK	5
+看吧	1804			2040	0	0	C_expansion_extra_HSK	5
+强大	1805	HSK3	形	1864	0	0	C_expansion	5
+风	1806	HSK1	名	1452	0	0	C_expansion	5
+点儿	1807			1500	0	0	C_expansion_extra_HSK	5
+放过	1808	HSK7-9		2929	0	0	C_expansion_extra_HSK	5
+远离	1809	HSK6	动	3805	0	0	C_expansion_extra_HSK	5
+抽烟	1810	HSK4	动		0	0	C_expansion	5
+史	1811			12465	0	0	C_expansion_extra_HSK	5
+持续	1812	HSK3	动	4128	0	0	C_expansion	5
+一堆	1813			1425	0	0	C_expansion_extra_HSK	5
+分手	1814	HSK4		589	0	0	C_expansion	5
+揍	1815	HSK7-9	动	1779	0	0	C_expansion_extra_HSK	5
+摸	1816	HSK4	动	1315	0	0	C_expansion	5
+毕竟	1817	HSK5	副	482	0	0	C_expansion_extra_HSK	5
+朝	1818	HSK3	介、动	6639	0	0	C_expansion	5
+脖子	1819	HSK7-9	名	2028	0	0	C_expansion_extra_HSK	5
+生病	1820	HSK1		1265	0	0	C_expansion	5
+留给	1821			2984	0	0	C_expansion_extra_HSK	5
+则	1822	HSK7-9	量	5442	0	0	C_expansion_extra_HSK	5
+三天	1823			1117	0	0	C_expansion_extra_HSK	5
+至	1824	HSK5	动	5040	0	0	C_expansion_extra_HSK	5
+人人	1825			2511	0	0	C_expansion_extra_HSK	5
+观众	1826	HSK3	名	2793	0	0	C_expansion	5
+神奇	1827	HSK5	形	1636	0	0	C_expansion_extra_HSK	5
+五分钟	1828			4937	0	0	C_expansion_extra_HSK	5
+变化	1829	HSK3	动、名	2042	0	0	C_expansion	5
+半	1830	HSK1	数	1147	0	0	C_expansion	5
+肚子	1831	HSK4	名	872	0	0	C_expansion	5
+一支	1832			5624	0	0	C_expansion_extra_HSK	5
+找出	1833	HSK2		13733	0	0	C_expansion	5
+说好	1834			939	0	0	C_expansion_extra_HSK	5
+打败	1835	HSK4	动	6171	0	0	C_expansion	5
+看法	1836	HSK2	名	3487	0	0	C_expansion	5
+演员	1837	HSK3	名	1773	0	0	C_expansion	5
+按照	1838	HSK3	介	3377	0	0	C_expansion	5
+安	1839	HSK4	动、形	1227	0	0	C_expansion	5
+干活	1840			2847	0	0	C_expansion_extra_HSK	5
+我爸	1841			1563	0	0	C_expansion_extra_HSK	5
+罢了	1842	HSK6	助	2438	0	0	C_expansion_extra_HSK	5
+这张	1843			1600	0	0	C_expansion_extra_HSK	5
+笑话	1844	HSK2	动	2216	0	0	C_expansion	5
+发射	1845	HSK5	动		0	0	C_expansion_extra_HSK	5
+做点	1846			5627	0	0	C_expansion_extra_HSK	5
+打个	1847			2332	0	0	C_expansion_extra_HSK	5
+年前	1848	HSK5	名	2850	0	0	C_expansion_extra_HSK	5
+不太好	1849			1905	0	0	C_expansion_extra_HSK	5
+要么	1850	HSK6	连	1382	0	0	C_expansion_extra_HSK	5
+艺术	1851	HSK3	名	2666	0	0	C_expansion	5
+狗屎	1852				0	0	C_expansion_extra_HSK	5
+他人	1853	HSK7-9	代	3986	0	0	C_expansion_extra_HSK	5
+乖	1854	HSK7-9	形	738	0	0	C_expansion_extra_HSK	5
+不久	1855	HSK2	形	3592	0	0	C_expansion	5
+清理	1856	HSK5	动	5598	0	0	C_expansion_extra_HSK	5
+森林	1857	HSK4	名	6432	0	0	C_expansion	5
+趴下	1858			11260	0	0	C_expansion_extra_HSK	5
+摧毁	1859	HSK7-9	动	24476	0	0	C_expansion_extra_HSK	5
+成员	1860	HSK3	名	9162	0	0	C_expansion	5
+擦	1861	HSK4	动		0	0	C_expansion	5
+十年	1862			1904	0	0	C_expansion_extra_HSK	5
+长得	1863			788	0	0	C_expansion_extra_HSK	5
+简体	1864			32627	0	0	C_expansion_extra_HSK	5
+同志	1865	HSK7-9	名	2965	0	0	C_expansion_extra_HSK	5
+然而	1866	HSK4	连	900	0	0	C_expansion	5
+知不知道	1867			5424	0	0	C_expansion_extra_HSK	5
+室	1868	HSK3	名	9993	0	0	C_expansion	5
+重	1869	HSK3	副	1235	0	0	C_expansion	5
+婚姻	1870	HSK7-9	名	3896	0	0	C_expansion_extra_HSK	5
+床	1871	HSK1	名	1895	0	0	C_expansion	5
+自我	1872	HSK6	代	2547	0	0	C_expansion_extra_HSK	5
+真不错	1873			4851	0	0	C_expansion_extra_HSK	5
+不来	1874			782	0	0	C_expansion_extra_HSK	5
+左边	1875	HSK1	名	2772	0	0	C_expansion	5
+折磨	1876	HSK7-9	动	2755	0	0	C_expansion_extra_HSK	5
+抛弃	1877	HSK7-9	动	2336	0	0	C_expansion_extra_HSK	5
+优秀	1878	HSK4	形	1132	0	0	C_expansion	5
+帮帮我	1879			16678	0	0	C_expansion_extra_HSK	5
+乖乖	1880			1408	0	0	C_expansion_extra_HSK	5
+词	1881	HSK2	名	2292	0	0	C_expansion	5
+几次	1882			1069	0	0	C_expansion_extra_HSK	5
+不信	1883			1025	0	0	C_expansion_extra_HSK	5
+哼	1884	HSK7-9	动	385	0	0	C_expansion_extra_HSK	5
+尿	1885	HSK7-9	动、名		0	0	C_expansion_extra_HSK	5
+想干什么	1886			14056	0	0	C_expansion_extra_HSK	5
+摆	1887	HSK4	动	2361	0	0	C_expansion	5
+聚会	1888	HSK4	动、名	2203	0	0	C_expansion	5
+宁愿	1889	HSK7-9	副	2810	0	0	C_expansion_extra_HSK	5
+也好	1890	HSK5	助	733	0	0	C_expansion_extra_HSK	5
+拜拜	1891			1978	0	0	C_expansion_extra_HSK	5
+怎	1892			5025	0	0	C_expansion_extra_HSK	5
+真棒	1893			2015	0	0	C_expansion_extra_HSK	5
+那条	1894			2672	0	0	C_expansion_extra_HSK	5
+熟悉	1895	HSK5	动	1642	0	0	C_expansion_extra_HSK	5
+懂得	1896	HSK2	动	1475	0	0	C_expansion	5
+过得	1897			1496	0	0	C_expansion_extra_HSK	5
+女性	1898	HSK5	名		0	0	C_expansion_extra_HSK	5
+职业	1899	HSK3	名	2317	0	0	C_expansion	5
+内心	1900	HSK3	名	1120	0	0	C_expansion	5
+走路	1901	HSK1		1701	0	0	C_expansion	5
+玛丽	1902				1	0	X_excluded_foreign	5
+神秘	1903	HSK4	形	4773	0	0	C_expansion	5
+便宜	1904	HSK2	形、名	659	0	0	C_expansion	5
+说服	1905	HSK4	动	6945	0	0	C_expansion	5
+估计	1906	HSK5	动	290	0	0	C_expansion_extra_HSK	5
+回忆	1907	HSK5	动	1298	0	0	C_expansion_extra_HSK	5
+当成	1908	HSK6	动	4696	0	0	C_expansion_extra_HSK	5
+算了吧	1909			3386	0	0	C_expansion_extra_HSK	5
+一声	1910			1507	0	0	C_expansion_extra_HSK	5
+情报	1911	HSK7-9	名		0	0	C_expansion_extra_HSK	5
+不要紧	1912	HSK4	形	5491	0	0	C_expansion	5
+带我去	1913			1716	0	0	C_expansion_extra_HSK	5
+误会	1914	HSK4	动、名	2339	0	0	C_expansion	5
+某种	1915			13644	0	0	C_expansion_extra_HSK	5
+哎呀	1916	HSK7-9	叹	560	0	0	C_expansion_extra_HSK	5
+专业	1917	HSK3	名	639	0	0	C_expansion	5
+不吃	1918			587	0	0	C_expansion_extra_HSK	5
+付出	1919	HSK4	动	2224	0	0	C_expansion	5
+伙伴	1920	HSK4	名	6296	0	0	C_expansion	5
+蓝色	1921	HSK2	名	2209	0	0	C_expansion	5
+起床	1922	HSK1		654	0	0	C_expansion	5
+无辜	1923	HSK7-9	形、名	4352	0	0	C_expansion_extra_HSK	5
+救救	1924			10809	0	0	C_expansion_extra_HSK	5
+搞错	1925			5366	0	0	C_expansion_extra_HSK	5
+一套	1926			1640	0	0	C_expansion_extra_HSK	5
+天空	1927	HSK3	名	3027	0	0	C_expansion	5
+法庭	1928	HSK6	名	20168	0	0	C_expansion_extra_HSK	5
+释放	1929	HSK7-9	动	8454	0	0	C_expansion_extra_HSK	5
+洗澡	1930	HSK2		1098	0	0	C_expansion	5
+独自	1931	HSK4	副	5532	0	0	C_expansion	5
+妓女	1932				0	0	C_expansion_extra_HSK	5
+出事	1933	HSK6		5329	0	0	C_expansion_extra_HSK	5
+坏人	1934	HSK2	名	1765	0	0	C_expansion	5
+去死吧	1935				0	0	C_expansion_extra_HSK	5
+锁	1936	HSK5	名、动	4219	0	0	C_expansion_extra_HSK	5
+彼得	1937				0	1	C_expansion_extra_HSK	5
+保重	1938	HSK7-9	动	2054	0	0	C_expansion_extra_HSK	5
+王八蛋	1939				0	1	C_expansion_extra_HSK	5
+卡车	1940	HSK7-9	名	16272	0	0	C_expansion_extra_HSK	5
+耶稣	1941				0	1	C_expansion_extra_HSK	5
+打架	1942	HSK5		2843	0	0	C_expansion_extra_HSK	5
+试试看	1943			3804	0	0	C_expansion_extra_HSK	5
+醒	1944	HSK4	动	617	0	0	C_expansion	5
+本书	1945			2557	0	0	C_expansion_extra_HSK	5
+拖	1946	HSK6	动	1748	0	0	C_expansion_extra_HSK	5
+环境	1947	HSK3	名	1394	0	0	C_expansion	5
+哥	1948	HSK1	名	406	0	0	C_expansion	5
+老鼠	1949			2697	0	0	C_expansion_extra_HSK	5
+最高	1950			2802	0	0	C_expansion_extra_HSK	5
+道理	1951	HSK2	名	865	0	0	C_expansion	5
+呼叫	1952			9622	0	0	C_expansion_extra_HSK	5
+为此	1953	HSK6	连	13616	0	0	C_expansion_extra_HSK	5
+高中	1954	HSK2	名	955	0	0	C_expansion	5
+山	1955	HSK1	名	2368	0	0	C_expansion	5
+那会	1956			2798	0	0	C_expansion_extra_HSK	5
+一人	1957			2121	0	0	C_expansion_extra_HSK	5
+意大利	1958			3448	0	1	C_expansion_extra_HSK	5
+小女孩	1959			4360	0	0	C_expansion_extra_HSK	5
+黑人	1960			4604	0	0	C_expansion_extra_HSK	5
+举行	1961	HSK2	动	15026	0	0	C_expansion	5
+客户	1962	HSK5	名	3269	0	0	C_expansion_extra_HSK	5
+白	1963	HSK3	副	765	0	0	C_expansion	5
+部队	1964	HSK6	名		0	0	C_expansion_extra_HSK	5
+一面	1965	HSK7-9	名、副	2281	0	0	C_expansion_extra_HSK	5
+心中	1966	HSK2	名	2212	0	0	C_expansion	5
+之外	1967	HSK5	名	5533	0	0	C_expansion_extra_HSK	5
+校对	1968			46549	0	0	C_expansion_extra_HSK	5
+同性恋	1969				0	0	C_expansion_extra_HSK	5
+黑色	1970	HSK2	名	1307	0	0	C_expansion	5
+喝醉	1971			3769	0	0	C_expansion_extra_HSK	5
+害	1972	HSK5	名、动	3105	0	0	C_expansion_extra_HSK	5
+司机	1973	HSK2	名	1211	0	0	C_expansion	5
+一根	1974			3210	0	0	C_expansion_extra_HSK	5
+做个	1975			2272	0	0	C_expansion_extra_HSK	5
+地区	1976	HSK3	名	4329	0	0	C_expansion	5
+刚好	1977	HSK6	副	1112	0	0	C_expansion_extra_HSK	5
+申请	1978	HSK4	动	1979	0	0	C_expansion	5
+相同	1979	HSK2	形	5967	0	0	C_expansion	5
+规定	1980	HSK3	动、名	3909	0	0	C_expansion	5
+而言	1981			7064	0	0	C_expansion_extra_HSK	5
+毕业	1982	HSK4		354	0	0	C_expansion	5
+聊	1983	HSK6	动	898	0	0	C_expansion_extra_HSK	5
+洞	1984	HSK5	名	5445	0	0	C_expansion_extra_HSK	5
+名单	1985	HSK2	名	8565	0	0	C_expansion	5
+生物	1986	HSK7-9	名	4450	0	0	C_expansion_extra_HSK	5
+导致	1987	HSK4	动	3000	0	0	C_expansion	5
+公园	1988	HSK2	名	2803	0	0	C_expansion	5
+魔鬼	1989	HSK7-9	名	7578	0	0	C_expansion_extra_HSK	5
+阳光	1990	HSK3	名	1312	0	0	C_expansion	5
+杂志	1991	HSK3	名	5103	0	0	C_expansion	5
+毒品	1992	HSK6	名		0	0	C_expansion_extra_HSK	5
+悲伤	1993	HSK5	形	2214	0	0	C_expansion_extra_HSK	5
+试着	1994			6362	0	0	C_expansion_extra_HSK	5
+明明	1995	HSK5	副	488	0	0	C_expansion_extra_HSK	5
+我见	1996			3842	0	0	C_expansion_extra_HSK	5
+回事	1997			2534	0	0	C_expansion_extra_HSK	5
+仅仅	1998	HSK3	副	7332	0	0	C_expansion	5
+完毕	1999	HSK7-9	动	4424	0	0	C_expansion_extra_HSK	5
+数字	2000	HSK2	名	3439	0	0	C_expansion	5
+这么久	2001			1554	0	0	C_expansion_extra_HSK	5
+混乱	2002	HSK6	形	5749	0	0	C_expansion_extra_HSK	5
+想来	2003			3091	0	0	C_expansion_extra_HSK	5
+比尔	2004				1	0	X_excluded_foreign	5
+巧克力	2005	HSK4	名	1761	0	0	C_expansion	5
+完蛋	2006	HSK7-9		3785	0	0	C_expansion_extra_HSK	5
+没想	2007			2168	0	0	C_expansion_extra_HSK	5
+教训	2008	HSK4	动、名	5583	0	0	C_expansion	5
+早晨	2009	HSK2	名	2582	0	0	C_expansion	5
+大部分	2010	HSK2	名	1943	0	0	C_expansion	5
+礼拜	2011	HSK5	名、动	1987	0	0	C_expansion_extra_HSK	5
+见见	2012			3816	0	0	C_expansion_extra_HSK	5
+变态	2013				0	0	C_expansion_extra_HSK	5
+面包	2014	HSK1	名	1756	0	0	C_expansion	5
+交流	2015	HSK3	动、名	1849	0	0	C_expansion	5
+正要	2016			12990	0	0	C_expansion_extra_HSK	5
+脱	2017	HSK4	动	2787	0	0	C_expansion	5
+午餐	2018	HSK2	名	3960	0	0	C_expansion	5
+线	2019	HSK3	名	1422	0	0	C_expansion	5
+事业	2020	HSK3	名	3046	0	0	C_expansion	5
+地图	2021	HSK1	名	3608	0	0	C_expansion	5
+掌握	2022	HSK5	动	6598	0	0	C_expansion_extra_HSK	5
+有空	2023			499	0	0	C_expansion_extra_HSK	5
+打破	2024	HSK3		8917	0	0	C_expansion	5
+达到	2025	HSK3		3481	0	0	C_expansion	5
+密码	2026	HSK4	名	3365	0	0	C_expansion	5
+礼貌	2027	HSK5	名、形	2977	0	0	C_expansion_extra_HSK	5
+宝宝	2028	HSK4	名	318	0	0	C_expansion	5
+明星	2029	HSK2	名	1172	0	0	C_expansion	5
+赚钱	2030	HSK6		1325	0	0	C_expansion_extra_HSK	5
+滚出去	2031				0	0	C_expansion_extra_HSK	5
+小组	2032	HSK2	名	11106	0	0	C_expansion	5
+象	2033			5285	0	0	C_expansion_extra_HSK	5
+我怕	2034			871	0	0	C_expansion_extra_HSK	5
+毁灭	2035	HSK7-9	动	13460	0	0	C_expansion_extra_HSK	5
+损失	2036	HSK5	动、名	7049	0	0	C_expansion_extra_HSK	5
+既	2037	HSK4	副、连	3102	0	0	C_expansion	5
+罗	2038	HSK7-9	名、动	3706	0	0	C_expansion_extra_HSK	5
+鞋子	2039			1482	0	0	C_expansion_extra_HSK	5
+西	2040	HSK1	名	2412	0	0	C_expansion	5
+杀掉	2041			21637	0	0	C_expansion_extra_HSK	5
+空	2042	HSK4	动、形	2049	0	0	C_expansion	5
+五个	2043			2354	0	0	C_expansion_extra_HSK	5
+好奇	2044	HSK3	形	1291	0	0	C_expansion	5
+双手	2045	HSK5		5571	0	0	C_expansion_extra_HSK	5
+隐藏	2046	HSK6	动	4562	0	0	C_expansion_extra_HSK	5
+感兴趣	2047	HSK4		4178	0	0	C_expansion	5
+王子	2048	HSK6	名	3546	0	0	C_expansion_extra_HSK	5
+之内	2049	HSK5	名	6220	0	0	C_expansion_extra_HSK	5
+保罗	2050				1	0	X_excluded_foreign	5
+坚强	2051	HSK3	形	1710	0	0	C_expansion	5
+骂	2052	HSK5	动	409	0	0	C_expansion_extra_HSK	5
+为止	2053	HSK5	动	7248	0	0	C_expansion_extra_HSK	5
+性	2054				0	0	C_expansion_extra_HSK	5
+英语	2055	HSK2	名	951	0	0	C_expansion	5
+长时间	2056			3349	0	0	C_expansion_extra_HSK	5
+楼下	2057	HSK1		1326	0	0	C_expansion	5
+前往	2058	HSK3	动	14283	0	0	C_expansion	5
+谈过	2059			12679	0	0	C_expansion_extra_HSK	5
+欧洲	2060			4358	0	1	C_expansion_extra_HSK	5
+唉	2061	HSK7-9	叹	321	0	0	C_expansion_extra_HSK	5
+禁止	2062	HSK4	动	7203	0	0	C_expansion	5
+态度	2063	HSK2	名	1771	0	0	C_expansion	5
+指挥	2064	HSK4	动、名	13025	0	0	C_expansion	5
+对手	2065	HSK3	名	5109	0	0	C_expansion	5
+追踪	2066	HSK7-9	动	23776	0	0	C_expansion_extra_HSK	5
+谎言	2067	HSK7-9	名	10216	0	0	C_expansion_extra_HSK	5
+果然	2068	HSK3	副	714	0	0	C_expansion	5
+脑子	2069	HSK5	名	1008	0	0	C_expansion_extra_HSK	5
+游泳	2070	HSK3	名、动	1369	0	0	C_expansion	5
+盖	2071	HSK4	动	2146	0	0	C_expansion	5
+吐	2072	HSK5	动	843	0	0	C_expansion_extra_HSK	5
+出口	2073	HSK4		4392	0	0	C_expansion	5
+夏天	2074	HSK2	名	600	0	0	C_expansion	5
+喊	2075	HSK2	动	616	0	0	C_expansion	5
+右边	2076	HSK1	名	3002	0	0	C_expansion	5
+信心	2077	HSK2	名	2846	0	0	C_expansion	5
+走进	2078	HSK2		7456	0	0	C_expansion	5
+欺骗	2079	HSK7-9	动	3383	0	0	C_expansion_extra_HSK	5
+留言	2080	HSK6	动、名	2443	0	0	C_expansion_extra_HSK	5
+说完	2081			3942	0	0	C_expansion_extra_HSK	5
+法官	2082	HSK4	名	21488	0	0	C_expansion	5
+内容	2083	HSK3	名	2056	0	0	C_expansion	5
+依然	2084	HSK4	副	1658	0	0	C_expansion	5
+忍受	2085	HSK5	动	6317	0	0	C_expansion_extra_HSK	5
+笨	2086	HSK4	形	2345	0	0	C_expansion	5
+上校	2087			58222	0	0	C_expansion_extra_HSK	5
+摆脱	2088	HSK4	动	7947	0	0	C_expansion	5
+大多数	2089	HSK2	名	3235	0	0	C_expansion	5
+政治	2090	HSK4	名		0	0	C_expansion	5
+愤怒	2091	HSK6	形	5107	0	0	C_expansion_extra_HSK	5
+度过	2092	HSK4	动	3742	0	0	C_expansion	5
+你们好	2093			4816	0	0	C_expansion_extra_HSK	5
+婴儿	2094	HSK7-9	名	6041	0	0	C_expansion_extra_HSK	5
+低	2095	HSK2	形、动	1054	0	0	C_expansion	5
+定	2096	HSK4	动	1182	0	0	C_expansion	5
+混	2097	HSK6	动、副	1405	0	0	C_expansion_extra_HSK	5
+丢下	2098			13716	0	0	C_expansion_extra_HSK	5
+程序	2099	HSK4	名	5257	0	0	C_expansion	5
+马克	2100				1	0	X_excluded_foreign	5
+骑	2101	HSK2	动	1643	0	0	C_expansion	5
+绑架	2102	HSK7-9	动		0	0	C_expansion_extra_HSK	5
+面	2103			1310	0	0	C_expansion_extra_HSK	5
+至于	2104	HSK6	动、介	2849	0	0	C_expansion_extra_HSK	5
+说法	2105	HSK5	名	2944	0	0	C_expansion_extra_HSK	5
+权力	2106	HSK6	名	11559	0	0	C_expansion_extra_HSK	5
+常常	2107	HSK1	副	5637	0	0	C_expansion	5
+神父	2108				0	0	C_expansion_extra_HSK	5
+进展	2109	HSK3	动	10317	0	0	C_expansion	5
+恶魔	2110			8240	0	0	C_expansion_extra_HSK	5
+在场	2111	HSK5	动	12270	0	0	C_expansion_extra_HSK	5
+门口	2112	HSK1	名	1490	0	0	C_expansion	5
+某人	2113			1868	0	0	C_expansion_extra_HSK	5
+真想	2114			2502	0	0	C_expansion_extra_HSK	5
+子	2115			1744	0	0	C_expansion_extra_HSK	5
+暴力	2116	HSK6	名		0	0	C_expansion_extra_HSK	5
+不管怎样	2117			7059	0	0	C_expansion_extra_HSK	5
+抱怨	2118	HSK5	动	3922	0	0	C_expansion_extra_HSK	5
+宇宙	2119	HSK7-9	名	3444	0	0	C_expansion_extra_HSK	5
+尊敬	2120	HSK5	动、形	8926	0	0	C_expansion_extra_HSK	5
+烟	2121	HSK3	名	5292	0	0	C_expansion	5
+超	2122	HSK6	动	557	0	0	C_expansion_extra_HSK	5
+有所	2123	HSK7-9	动	6122	0	0	C_expansion_extra_HSK	5
+白色	2124	HSK2	名	1549	0	0	C_expansion	5
+几点	2125			830	0	0	C_expansion_extra_HSK	5
+左	2126	HSK1	名	2348	0	0	C_expansion	5
+正如	2127	HSK5	动	16179	0	0	C_expansion_extra_HSK	5
+借口	2128	HSK7-9	动、名	2296	0	0	C_expansion_extra_HSK	5
+安娜	2129				1	0	X_excluded_foreign	5
+再来	2130			3179	0	0	C_expansion_extra_HSK	5
+集中	2131	HSK3	动、形	6393	0	0	C_expansion	5
+布	2132	HSK3	名	8580	0	0	C_expansion	5
+大脑	2133	HSK5	名	4984	0	0	C_expansion_extra_HSK	5
+情绪	2134	HSK6	名	1887	0	0	C_expansion_extra_HSK	5
+陌生人	2135			3108	0	0	C_expansion_extra_HSK	5
+这辈子	2136			1969	0	0	C_expansion_extra_HSK	5
+教育	2137	HSK2	动、名	1793	0	0	C_expansion	5
+交	2138	HSK2	动	1672	0	0	C_expansion	5
+证人	2139	HSK7-9	名	16649	0	0	C_expansion_extra_HSK	5
+细节	2140	HSK4	名	2989	0	0	C_expansion	5
+语言	2141	HSK2	名	2413	0	0	C_expansion	5
+在意	2142	HSK7-9		2076	0	0	C_expansion_extra_HSK	5
+哪来	2143			1873	0	0	C_expansion_extra_HSK	5
+观察	2144	HSK3	动	3228	0	0	C_expansion	5
+同一个	2145			2290	0	0	C_expansion_extra_HSK	5
+害死	2146				0	0	C_expansion_extra_HSK	5
+念	2147	HSK3	动	3274	0	0	C_expansion	5
+箱子	2148	HSK4	名	3603	0	0	C_expansion	5
+椅子	2149	HSK2	名	6195	0	0	C_expansion	5
+出门	2150	HSK2		513	0	0	C_expansion	5
+冠军	2151	HSK5	名	3219	0	0	C_expansion_extra_HSK	5
+有效	2152	HSK3	动	4028	0	0	C_expansion	5
+罪犯	2153	HSK7-9	名		0	0	C_expansion_extra_HSK	5
+幻想	2154	HSK6	动、名	3441	0	0	C_expansion_extra_HSK	5
+渴望	2155	HSK5	动	5869	0	0	C_expansion_extra_HSK	5
+度	2156	HSK2	名、量	874	0	0	C_expansion	5
+飞行	2157	HSK3	动	6993	0	0	C_expansion	5
+女生	2158	HSK1	名	475	0	0	C_expansion	5
+挑战	2159	HSK4		3151	0	0	C_expansion	5
+拍摄	2160	HSK5	动	4310	0	0	C_expansion_extra_HSK	5
+浪漫	2161	HSK5	形	2085	0	0	C_expansion_extra_HSK	5
+微笑	2162	HSK4	动	2619	0	0	C_expansion	5
+战士	2163	HSK4	名	8019	0	0	C_expansion	5
+表达	2164	HSK3	动	1282	0	0	C_expansion	5
+船上	2165			16284	0	0	C_expansion_extra_HSK	5
+假如	2166	HSK4	连	5836	0	0	C_expansion	5
+对此	2167			17924	0	0	C_expansion_extra_HSK	5
+思想	2168	HSK3	名	2358	0	0	C_expansion	5
+科学	2169	HSK2	名、形	2633	0	0	C_expansion	5
+范围	2170	HSK3	名	4107	0	0	C_expansion	5
+踩	2171	HSK6	动	1739	0	0	C_expansion_extra_HSK	5
+这话	2172			1135	0	0	C_expansion_extra_HSK	5
+相处	2173	HSK4	动	3387	0	0	C_expansion	5
+没人会	2174			10449	0	0	C_expansion_extra_HSK	5
+只好	2175	HSK3	副	3397	0	0	C_expansion	5
+美妙	2176	HSK7-9	形	9275	0	0	C_expansion_extra_HSK	5
+关门	2177			3815	0	0	C_expansion_extra_HSK	5
+艾	2178			9869	0	0	C_expansion_extra_HSK	5
+杀害	2179	HSK7-9	动	29247	0	0	C_expansion_extra_HSK	5
+增加	2180	HSK3	动	3888	0	0	C_expansion	5
+迷人	2181	HSK5	形	4327	0	0	C_expansion_extra_HSK	5
+两人	2182			4531	0	0	C_expansion_extra_HSK	5
+趁	2183	HSK7-9	介	2703	0	0	C_expansion_extra_HSK	5
+绝不会	2184			18494	0	0	C_expansion_extra_HSK	5
+您好	2185			1986	0	0	C_expansion_extra_HSK	5
+聊天	2186			804	0	0	C_expansion_extra_HSK	5
+多次	2187	HSK4		1894	0	0	C_expansion	5
+清醒	2188	HSK4	形、动	2701	0	0	C_expansion	5
+开火	2189			18817	0	0	C_expansion_extra_HSK	5
+理论	2190	HSK3	名	3741	0	0	C_expansion	5
+票	2191	HSK1	名	727	0	0	C_expansion	5
+回家吧	2192			4991	0	0	C_expansion_extra_HSK	5
+试	2193	HSK1	动	2114	0	0	C_expansion	5
+作用	2194	HSK2	名	4029	0	0	C_expansion	5
+愿望	2195	HSK3	名	2320	0	0	C_expansion	5
+六	2196	HSK1	数	3363	0	0	C_expansion	5
+能否	2197	HSK6	动	5196	0	0	C_expansion_extra_HSK	5
+展示	2198	HSK5	动	6200	0	0	C_expansion_extra_HSK	5
+浪费时间	2199			5830	0	0	C_expansion_extra_HSK	5
+城	2200	HSK3	名	2915	0	0	C_expansion	5
+蠢	2201	HSK7-9	形	2920	0	0	C_expansion_extra_HSK	5
+毛	2202	HSK3	名	582	0	0	C_expansion	5
+原本	2203	HSK7-9	副	4040	0	0	C_expansion_extra_HSK	5
+罪	2204	HSK6	名		0	0	C_expansion_extra_HSK	5
+船长	2205	HSK6	名	14758	0	0	C_expansion_extra_HSK	5
+信仰	2206	HSK6	动		0	0	C_expansion_extra_HSK	5
+流血	2207	HSK7-9	动	9235	0	0	C_expansion_extra_HSK	5
+养	2208	HSK2	动	675	0	0	C_expansion	5
+组	2209	HSK2	动、名	4602	0	0	C_expansion	5
+位	2210	HSK2	量	5099	0	0	C_expansion	5
+挑	2211	HSK4	动	1438	0	0	C_expansion	5
+做梦	2212	HSK4		1068	0	0	C_expansion	5
+这句	2213			719	0	0	C_expansion_extra_HSK	5
+签名	2214	HSK5		1665	0	0	C_expansion_extra_HSK	5
+树	2215	HSK1	名	3024	0	0	C_expansion	5
+代价	2216	HSK5	名	5610	0	0	C_expansion_extra_HSK	5
+需	2217	HSK7-9	动	5205	0	0	C_expansion_extra_HSK	5
+英里	2218			42009	0	1	C_expansion_extra_HSK	5
+国际	2219	HSK2	名	3426	0	0	C_expansion	5
+伤口	2220	HSK6	名	6381	0	0	C_expansion_extra_HSK	5
+一切都是	2221			5892	0	0	C_expansion_extra_HSK	5
+挡	2222	HSK5	动	3528	0	0	C_expansion_extra_HSK	5
+当中	2223	HSK3	名	7742	0	0	C_expansion	5
+香港	2224				0	1	C_expansion_extra_HSK	5
+应付	2225	HSK7-9	动	10782	0	0	C_expansion_extra_HSK	5
+关上	2226	HSK1		14295	0	0	C_expansion	5
+太晚	2227			2287	0	0	C_expansion_extra_HSK	5
+等一等	2228			33758	0	0	C_expansion_extra_HSK	5
+尼克	2229				1	0	X_excluded_foreign	5
+总会	2230			1704	0	0	C_expansion_extra_HSK	5
+档案	2231	HSK6	名	10779	0	0	C_expansion_extra_HSK	5
+年代	2232	HSK3	名	3694	0	0	C_expansion	5
+失陪	2233			123996	0	0	C_expansion_extra_HSK	5
+资格	2234	HSK3	名	2283	0	0	C_expansion	5
+表情	2235	HSK4	名	588	0	0	C_expansion	5
+菜	2236	HSK1	名	813	0	0	C_expansion	5
+认得	2237	HSK3	动	3412	0	0	C_expansion	5
+白人	2238			24789	0	0	C_expansion_extra_HSK	5
+千万别	2239			2959	0	0	C_expansion_extra_HSK	5
+我试	2240			5831	0	0	C_expansion_extra_HSK	5
+四处	2241	HSK6	名	8841	0	0	C_expansion_extra_HSK	5
+毛病	2242	HSK3	名	1200	0	0	C_expansion	5
+有种	2243			1881	0	0	C_expansion_extra_HSK	5
+并非	2244	HSK7-9	动	12635	0	0	C_expansion_extra_HSK	5
+慢点	2245			5540	0	0	C_expansion_extra_HSK	5
+鞋	2246	HSK2	名	1592	0	0	C_expansion	5
+不仅	2247	HSK3	连	2777	0	0	C_expansion	5
+犯人	2248			17345	0	0	C_expansion_extra_HSK	5
+退出	2249	HSK3	动	5270	0	0	C_expansion	5
+课	2250	HSK1	名	831	0	0	C_expansion	5
+绑	2251	HSK7-9	动	4911	0	0	C_expansion_extra_HSK	5
+城里	2252	HSK5	名	6492	0	0	C_expansion_extra_HSK	5
+现金	2253	HSK3	名	7529	0	0	C_expansion	5
+荒谬	2254	HSK7-9	形	42966	0	0	C_expansion_extra_HSK	5
+部	2255	HSK3	名、量	5458	0	0	C_expansion	5
+外套	2256	HSK4	名	1764	0	0	C_expansion	5
+灯	2257	HSK2	名	3447	0	0	C_expansion	5
+硂	2258				0	0	C_expansion_extra_HSK	5
+乐队	2259	HSK3	名	8218	0	0	C_expansion	5
+口袋	2260	HSK4	名	5954	0	0	C_expansion	5
+年龄	2261	HSK5	名	1324	0	0	C_expansion_extra_HSK	5
+生日快乐	2262			351	0	0	C_expansion_extra_HSK	5
+一刻	2263			6654	0	0	C_expansion_extra_HSK	5
+管理	2264	HSK3	动	3635	0	0	C_expansion	5
+报道	2265	HSK3	动、名	2602	0	0	C_expansion	5
+说些	2266			7757	0	0	C_expansion_extra_HSK	5
+护士	2267	HSK4	名	3582	0	0	C_expansion	5
+别闹	2268			2395	0	0	C_expansion_extra_HSK	5
+哟	2269			271	0	0	C_expansion_extra_HSK	5
+大量	2270	HSK2	形	9394	0	0	C_expansion	5
+雷	2271			5192	0	0	C_expansion_extra_HSK	5
+类似	2272	HSK3	动、形	2898	0	0	C_expansion	5
+射击	2273	HSK5	动、名		0	0	C_expansion_extra_HSK	5
+受够了	2274			19797	0	0	C_expansion_extra_HSK	5
+詹姆斯	2275				1	0	X_excluded_foreign	5
+基地	2276	HSK5	名	8027	0	0	C_expansion_extra_HSK	5
+楼	2277	HSK1	名	1832	0	0	C_expansion	5
+背	2278	HSK3	名	1216	0	0	C_expansion	5
+报	2279	HSK7-9	动	1272	0	0	C_expansion_extra_HSK	5
+鸡	2280	HSK2	名		0	0	C_expansion	5
+传统	2281	HSK4	名、形	4839	0	0	C_expansion	5
+饭	2282	HSK1	名	494	0	0	C_expansion	5
+当作	2283	HSK6	动	7321	0	0	C_expansion_extra_HSK	5
+接电话	2284			7739	0	0	C_expansion_extra_HSK	5
+出色	2285	HSK4	形	14085	0	0	C_expansion	5
+罗马	2286			13719	0	1	C_expansion_extra_HSK	5
+整理	2287	HSK3	动	3113	0	0	C_expansion	5
+退休	2288	HSK3		4859	0	0	C_expansion	5
+记	2289	HSK1	动	2306	0	0	C_expansion	5
+惨	2290	HSK6	形	1286	0	0	C_expansion_extra_HSK	5
+屋里	2291			2950	0	0	C_expansion_extra_HSK	5
+世纪	2292	HSK3	名	5669	0	0	C_expansion	5
+不止	2293	HSK5	动	1747	0	0	C_expansion_extra_HSK	5
+事物	2294	HSK4	名	6747	0	0	C_expansion	5
+舞会	2295			36745	0	0	C_expansion_extra_HSK	5
+总部	2296	HSK6	名	11375	0	0	C_expansion_extra_HSK	5
+活下去	2297			7133	0	0	C_expansion_extra_HSK	5
+眼前	2298	HSK3	名	4307	0	0	C_expansion	5
+这下	2299			4461	0	0	C_expansion_extra_HSK	5
+全国	2300	HSK2	名	2627	0	0	C_expansion	5
+支援	2301	HSK6	动、名	10973	0	0	C_expansion_extra_HSK	5
+想不到	2302	HSK6	动	4428	0	0	C_expansion_extra_HSK	5
+阿姨	2303	HSK4	名	575	0	0	C_expansion	5
+承受	2304	HSK4	动	3419	0	0	C_expansion	5
+维持	2305	HSK4	动	7367	0	0	C_expansion	5
+区域	2306	HSK5	名	8837	0	0	C_expansion_extra_HSK	5
+各	2307	HSK3	代、副	3011	0	0	C_expansion	5
+玩具	2308	HSK3	名	3970	0	0	C_expansion	5
+牛	2309	HSK5	形	1213	0	0	C_expansion_extra_HSK	5
+签	2310	HSK7-9	名	2734	0	0	C_expansion_extra_HSK	5
+葬礼	2311	HSK7-9	名	25984	0	0	C_expansion_extra_HSK	5
+哈利	2312				1	0	X_excluded_foreign	5
+万岁	2313			7924	0	0	C_expansion_extra_HSK	5
+煮	2314	HSK6	动	1009	0	0	C_expansion_extra_HSK	5
+洛杉矶	2315			15383	0	1	C_expansion_extra_HSK	5
+硬	2316	HSK5	形、副	2149	0	0	C_expansion_extra_HSK	5
+结局	2317	HSK7-9	名	1933	0	0	C_expansion_extra_HSK	5
+挖	2318	HSK6	动	2100	0	0	C_expansion_extra_HSK	5
+热情	2319	HSK2	名、形	3111	0	0	C_expansion	5
+看好	2320	HSK6	动	1653	0	0	C_expansion_extra_HSK	5
+肯	2321	HSK6	动	9106	0	0	C_expansion_extra_HSK	5
+掩护	2322	HSK7-9	动	26549	0	0	C_expansion_extra_HSK	5
+部门	2323	HSK3	名	3820	0	0	C_expansion	5
+老头	2324			4754	0	0	C_expansion_extra_HSK	5
+期望	2325	HSK5	动	6627	0	0	C_expansion_extra_HSK	5
+手臂	2326	HSK7-9	名	5305	0	0	C_expansion_extra_HSK	5
+射	2327	HSK5	动		0	0	C_expansion_extra_HSK	5
+七	2328	HSK1	数	3249	0	0	C_expansion	5
+市场	2329	HSK3	名	2986	0	0	C_expansion	5
+改	2330	HSK2	动	897	0	0	C_expansion	5
+新鲜	2331	HSK4	形	2539	0	0	C_expansion	5
+进攻	2332	HSK6	动	16473	0	0	C_expansion_extra_HSK	5
+全身	2333	HSK2	名	3053	0	0	C_expansion	5
+耐心	2334	HSK5	形、名	2457	0	0	C_expansion_extra_HSK	5
+打来	2335			20354	0	0	C_expansion_extra_HSK	5
+爱人	2336	HSK2	名	3430	0	0	C_expansion	5
+不愿	2337			4835	0	0	C_expansion_extra_HSK	5
+聊聊	2338			2556	0	0	C_expansion_extra_HSK	5
+皮肤	2339	HSK5	名	942	0	0	C_expansion_extra_HSK	5
+平静	2340	HSK4	形	4956	0	0	C_expansion	5
+烦	2341	HSK4	形、动	1374	0	0	C_expansion	5
+王	2342	HSK4	名	1624	0	0	C_expansion	5
+手中	2343			10071	0	0	C_expansion_extra_HSK	5
+话题	2344	HSK3	名	1417	0	0	C_expansion	5
+稍微	2345	HSK5	副	1820	0	0	C_expansion_extra_HSK	5
+老是	2346	HSK2	副	2068	0	0	C_expansion	5
+投降	2347	HSK7-9	动	15896	0	0	C_expansion_extra_HSK	5
+眼神	2348	HSK7-9	名	1240	0	0	C_expansion_extra_HSK	5
+脱掉	2349			9909	0	0	C_expansion_extra_HSK	5
+砸	2350	HSK7-9	动	1346	0	0	C_expansion_extra_HSK	5
+驾驶	2351	HSK5	动	9808	0	0	C_expansion_extra_HSK	5
+陛下	2352			9023	0	0	C_expansion_extra_HSK	5
+关注	2353	HSK3	动	359	0	0	C_expansion	5
+发疯	2354			9840	0	0	C_expansion_extra_HSK	5
+平常	2355	HSK2	名、形	3075	0	0	C_expansion	5
+亨利	2356				1	0	X_excluded_foreign	5
+晓得	2357	HSK6	动	577	0	0	C_expansion_extra_HSK	5
+那次	2358			3382	0	0	C_expansion_extra_HSK	5
+期间	2359	HSK4	名	3545	0	0	C_expansion	5
+大事	2360	HSK5	名	3204	0	0	C_expansion_extra_HSK	5
+归	2361	HSK4	动	3479	0	0	C_expansion	5
+一座	2362			8179	0	0	C_expansion_extra_HSK	5
+取	2363	HSK2	动	3065	0	0	C_expansion	5
+塔	2364	HSK6	名	9648	0	0	C_expansion_extra_HSK	5
+手术	2365	HSK4	名	3355	0	0	C_expansion	5
+慢	2366	HSK1	形	1908	0	0	C_expansion	5
+屁	2367			1119	0	0	C_expansion_extra_HSK	5
+几分钟	2368			4528	0	0	C_expansion_extra_HSK	5
+区别	2369	HSK3	名、动	1702	0	0	C_expansion	5
+拿出	2370	HSK2		3912	0	0	C_expansion	5
+极了	2371			6409	0	0	C_expansion_extra_HSK	5
+演	2372	HSK3	动	1594	0	0	C_expansion	5
+一顿	2373			1174	0	0	C_expansion_extra_HSK	5
+假设	2374	HSK7-9	动、名	12151	0	0	C_expansion_extra_HSK	5
+弗兰克	2375				1	0	X_excluded_foreign	5
+如今	2376	HSK4	名	4404	0	0	C_expansion	5
+温柔	2377	HSK7-9	形	1176	0	0	C_expansion_extra_HSK	5
+老朋友	2378	HSK2		9691	0	0	C_expansion	5
+诅咒	2379			3504	0	0	C_expansion_extra_HSK	5
+冒	2380	HSK5	动	2452	0	0	C_expansion_extra_HSK	5
+货	2381	HSK4	名	2727	0	0	C_expansion	5
+打击	2382	HSK5	动	2258	0	0	C_expansion_extra_HSK	5
+当初	2383	HSK3	名	1610	0	0	C_expansion	5
+引擎	2384	HSK7-9	名	34278	0	0	C_expansion_extra_HSK	5
+右	2385	HSK1	名	6307	0	0	C_expansion	5
+犹太人	2386			44317	0	0	C_expansion_extra_HSK	5
+电梯	2387	HSK4	名	3866	0	0	C_expansion	5
+案件	2388	HSK7-9	名	20845	0	0	C_expansion_extra_HSK	5
+把门	2389			14364	0	0	C_expansion_extra_HSK	5
+指示	2390	HSK5	名、动	19187	0	0	C_expansion_extra_HSK	5
+哈哈	2391	HSK3	拟声	27	0	0	C_expansion	5
+断	2392	HSK3	动	2629	0	0	C_expansion	5
+工厂	2393	HSK3	名	7439	0	0	C_expansion	5
+肮脏	2394			15445	0	0	C_expansion_extra_HSK	5
+砍	2395	HSK7-9	动	3163	0	0	C_expansion_extra_HSK	5
+团队	2396	HSK6	名	3848	0	0	C_expansion_extra_HSK	5
+就行	2397			1201	0	0	C_expansion_extra_HSK	5
+星球	2398			8433	0	0	C_expansion_extra_HSK	5
+法	2399	HSK4	名	5161	0	0	C_expansion	5
+抓到	2400			10099	0	0	C_expansion_extra_HSK	5
+对抗	2401	HSK6	动	16505	0	0	C_expansion_extra_HSK	5
+采取	2402	HSK3	动	22019	0	0	C_expansion	5
+女子	2403	HSK3	名	3175	0	0	C_expansion	5
+第二个	2404			3214	0	0	C_expansion_extra_HSK	5
+卡尔	2405				1	0	X_excluded_foreign	5
+杯	2406	HSK1	量	3299	0	0	C_expansion	5
+牛奶	2407	HSK1	名	1985	0	0	C_expansion	5
+打扮	2408	HSK5	动	3590	0	0	C_expansion_extra_HSK	5
+圣诞节	2409	HSK6	名	3701	0	0	C_expansion_extra_HSK	5
+五年	2410			3119	0	0	C_expansion_extra_HSK	5
+请原谅	2411			15739	0	0	C_expansion_extra_HSK	5
+出卖	2412	HSK7-9	动	7237	0	0	C_expansion_extra_HSK	5
+恋爱	2413	HSK5	动、名	961	0	0	C_expansion_extra_HSK	5
+擅长	2414	HSK7-9	动	6873	0	0	C_expansion_extra_HSK	5
+稍	2415	HSK5	副	7406	0	0	C_expansion_extra_HSK	5
+协助	2416	HSK6	动	24769	0	0	C_expansion_extra_HSK	5
+屋顶	2417	HSK7-9	名	14368	0	0	C_expansion_extra_HSK	5
+每年	2418			2036	0	0	C_expansion_extra_HSK	5
+佬	2419			7421	0	0	C_expansion_extra_HSK	5
+著名	2420	HSK4	形	11937	0	0	C_expansion	5
+偶尔	2421	HSK5	副	993	0	0	C_expansion_extra_HSK	5
+可笑	2422	HSK7-9	形	5154	0	0	C_expansion_extra_HSK	5
+广告	2423	HSK2	名	1415	0	0	C_expansion	5
+儿	2424			846	0	0	C_expansion_extra_HSK	5
+饮料	2425	HSK5	名	2799	0	0	C_expansion_extra_HSK	5
+男子	2426	HSK3	名	6376	0	0	C_expansion	5
+实验	2427	HSK3	动、名	3250	0	0	C_expansion	5
+很长	2428			3393	0	0	C_expansion_extra_HSK	5
+直升机	2429	HSK6	名	15867	0	0	C_expansion_extra_HSK	5
+埋	2430	HSK6	动	3490	0	0	C_expansion_extra_HSK	5
+尝尝	2431			2473	0	0	C_expansion_extra_HSK	5
+好孩子	2432			3245	0	0	C_expansion_extra_HSK	5
+别想	2433			3413	0	0	C_expansion_extra_HSK	5
+一向	2434	HSK5	副	4129	0	0	C_expansion_extra_HSK	5
+一趟	2435			2269	0	0	C_expansion_extra_HSK	5
+寄	2436	HSK4	动	1116	0	0	C_expansion	5
+协议	2437	HSK5	动、名		0	0	C_expansion_extra_HSK	5
+情人	2438	HSK7-9	名	3300	0	0	C_expansion_extra_HSK	5
+英尺	2439			77468	0	0	C_expansion_extra_HSK	5
+抢劫	2440	HSK7-9	动		0	0	C_expansion_extra_HSK	5
+屋子	2441	HSK3	名	6914	0	0	C_expansion	5
+教会	2442			9765	0	0	C_expansion_extra_HSK	5
+对象	2443	HSK3	名	691	0	0	C_expansion	5
+取得	2444	HSK2	动	10493	0	0	C_expansion	5
+半个	2445			1020	0	0	C_expansion_extra_HSK	5
+后果	2446	HSK3	名	4998	0	0	C_expansion	5
+保险	2447	HSK3	形、名	4398	0	0	C_expansion	5
+地下	2448	HSK4	名	5536	0	0	C_expansion	5
+天天	2449			254	0	0	C_expansion_extra_HSK	5
+指望	2450	HSK7-9	动、名	4285	0	0	C_expansion_extra_HSK	5
+快来	2451			1344	0	0	C_expansion_extra_HSK	5
+小家伙	2452			7292	0	0	C_expansion_extra_HSK	5
+一口	2453			1363	0	0	C_expansion_extra_HSK	5
+从前	2454	HSK3	名	4349	0	0	C_expansion	5
+返回	2455	HSK5	动	10376	0	0	C_expansion_extra_HSK	5
+戒指	2456	HSK7-9	名	4623	0	0	C_expansion_extra_HSK	5
+奴隶	2457	HSK7-9	名	17441	0	0	C_expansion_extra_HSK	5
+保佑	2458	HSK7-9	动	3420	0	0	C_expansion_extra_HSK	5
+工具	2459	HSK3	名	5039	0	0	C_expansion	5
+事要	2460			13703	0	0	C_expansion_extra_HSK	5
+谢谢你们	2461			7389	0	0	C_expansion_extra_HSK	5
+传说	2462	HSK3	动、名	2255	0	0	C_expansion	5
+女友	2463			2800	0	0	C_expansion_extra_HSK	5
+农场	2464	HSK7-9	名	16294	0	0	C_expansion_extra_HSK	5
+打断	2465	HSK6	动	7980	0	0	C_expansion_extra_HSK	5
+坐牢	2466			13705	0	0	C_expansion_extra_HSK	5
+道路	2467	HSK2	名	5128	0	0	C_expansion	5
+座位	2468	HSK2	名	3947	0	0	C_expansion	5
+满	2469	HSK2	形	1791	0	0	C_expansion	5
+教练	2470	HSK3	名	1949	0	0	C_expansion	5
+确信	2471	HSK7-9	动	27920	0	0	C_expansion_extra_HSK	5
+更糟	2472			39387	0	0	C_expansion_extra_HSK	5
+追求	2473	HSK4	动	2366	0	0	C_expansion	5
+稳定	2474	HSK4	形	3069	0	0	C_expansion	5
+探员	2475			151167	0	0	C_expansion_extra_HSK	5
+消灭	2476	HSK6	动	5187	0	0	C_expansion_extra_HSK	5
+能量	2477	HSK5	名	1378	0	0	C_expansion_extra_HSK	5
+身	2478			3915	0	0	C_expansion_extra_HSK	5
+交换	2479	HSK4	动	5469	0	0	C_expansion	5
+名叫	2480			6718	0	0	C_expansion_extra_HSK	5
+公开	2481	HSK3	形、动	3943	0	0	C_expansion	5
+杂种	2482				0	0	C_expansion_extra_HSK	5
+处于	2483	HSK4	动	5387	0	0	C_expansion	5
+被捕	2484	HSK7-9	动	90504	0	0	C_expansion_extra_HSK	5
+偷走	2485			10824	0	0	C_expansion_extra_HSK	5
+带给	2486			3907	0	0	C_expansion_extra_HSK	5
+分析	2487	HSK5	动	3401	0	0	C_expansion_extra_HSK	5
+总有一天	2488			5235	0	0	C_expansion_extra_HSK	5
+合法	2489	HSK3	形	9589	0	0	C_expansion	5
+屎	2490				0	0	C_expansion_extra_HSK	5
+警长	2491			17805	0	0	C_expansion_extra_HSK	5
+一整天	2492			3958	0	0	C_expansion_extra_HSK	5
+玻璃	2493	HSK5	名	3251	0	0	C_expansion_extra_HSK	5
+骗人	2494	HSK7-9		1828	0	0	C_expansion_extra_HSK	5
+就是说	2495	HSK6		2760	0	0	C_expansion_extra_HSK	5
+发明	2496	HSK3	动、名	9354	0	0	C_expansion	5
+倒霉	2497	HSK7-9		3372	0	0	C_expansion_extra_HSK	5
+用于	2498	HSK5		23928	0	0	C_expansion_extra_HSK	5
+这座	2499			14157	0	0	C_expansion_extra_HSK	5
+判断	2500	HSK3	动、名	4733	0	0	C_expansion	5
+快到	2501			2581	0	0	C_expansion_extra_HSK	5
+来源	2502	HSK4	名	12117	0	0	C_expansion	5
+反抗	2503	HSK6	动	8234	0	0	C_expansion_extra_HSK	5
+好点	2504			1426	0	0	C_expansion_extra_HSK	5
+战场	2505	HSK6	名	7394	0	0	C_expansion_extra_HSK	5
+走运	2506			22762	0	0	C_expansion_extra_HSK	5
+地板	2507	HSK6	名	5905	0	0	C_expansion_extra_HSK	5
+开口	2508	HSK7-9		4467	0	0	C_expansion_extra_HSK	5
+牧师	2509			35510	0	0	C_expansion_extra_HSK	5
+收集	2510	HSK5	动	6202	0	0	C_expansion_extra_HSK	5
+反	2511	HSK4	形、动、副	2721	0	0	C_expansion	5
+姓	2512	HSK2	名、动	2878	0	0	C_expansion	5
+绿色	2513	HSK2	名	2393	0	0	C_expansion	5
+镜头	2514	HSK4	名	1812	0	0	C_expansion	5
+一眼	2515	HSK7-9		1638	0	0	C_expansion_extra_HSK	5
+保留	2516	HSK3	动	7249	0	0	C_expansion	5
+下班	2517	HSK1		646	0	0	C_expansion	5
+人能	2518			5988	0	0	C_expansion_extra_HSK	5
+贱人	2519				0	0	C_expansion_extra_HSK	5
+瞎	2520	HSK7-9	动、副	879	0	0	C_expansion_extra_HSK	5
+整晚	2521			11817	0	0	C_expansion_extra_HSK	5
+陷入	2522	HSK6	动	8626	0	0	C_expansion_extra_HSK	5
+尖叫	2523			7191	0	0	C_expansion_extra_HSK	5
+祝贺	2524	HSK5	动	4714	0	0	C_expansion_extra_HSK	5
+成长	2525	HSK3	动	2001	0	0	C_expansion	5
+山姆	2526			44035	0	1	C_expansion_extra_HSK	5
+解开	2527	HSK3		12359	0	0	C_expansion	5
+酷	2528	HSK6	形	3005	0	0	C_expansion_extra_HSK	5
+吉米	2529				0	1	C_expansion_extra_HSK	5
+闻到	2530			5588	0	0	C_expansion_extra_HSK	5
+财产	2531	HSK4	名		0	0	C_expansion	5
+即	2532	HSK7-9	副	4681	0	0	C_expansion_extra_HSK	5
+走走	2533			1976	0	0	C_expansion_extra_HSK	5
+审判	2534	HSK7-9	动	27470	0	0	C_expansion_extra_HSK	5
+孤单	2535	HSK7-9	形	2900	0	0	C_expansion_extra_HSK	5
+玩意儿	2536	HSK7-9	名	4465	0	0	C_expansion_extra_HSK	5
+救护车	2537	HSK7-9	名		0	0	C_expansion_extra_HSK	5
+一路	2538	HSK5	名、副	1492	0	0	C_expansion_extra_HSK	5
+商量	2539	HSK2	动	3352	0	0	C_expansion	5
+大楼	2540	HSK4		12785	0	0	C_expansion	5
+此事	2541	HSK6	名	14414	0	0	C_expansion_extra_HSK	5
+妈咪	2542			5172	0	0	C_expansion_extra_HSK	5
+避免	2543	HSK4	动	5755	0	0	C_expansion	5
+坏事	2544	HSK7-9	名	4801	0	0	C_expansion_extra_HSK	5
+很久	2545			2785	0	0	C_expansion_extra_HSK	5
+将要	2546	HSK5	副	23213	0	0	C_expansion_extra_HSK	5
+那晚	2547			9945	0	0	C_expansion_extra_HSK	5
+有权	2548			23686	0	0	C_expansion_extra_HSK	5
+午饭	2549	HSK1	名	2088	0	0	C_expansion	5
+第三	2550			4966	0	0	C_expansion_extra_HSK	5
+转移	2551	HSK4	动	4046	0	0	C_expansion	5
+修好	2552			5460	0	0	C_expansion_extra_HSK	5
+称呼	2553	HSK7-9	动、名	4012	0	0	C_expansion_extra_HSK	5
+头脑	2554	HSK3	名	6158	0	0	C_expansion	5
+保安	2555	HSK3	名	3784	0	0	C_expansion	5
+大街	2556	HSK6	名	4173	0	0	C_expansion_extra_HSK	5
+敬	2557	HSK7-9	动	8332	0	0	C_expansion_extra_HSK	5
+黄金	2558	HSK4	名	3287	0	0	C_expansion	5
+抓紧	2559	HSK4		2774	0	0	C_expansion	5
+寂寞	2560	HSK7-9	形	1115	0	0	C_expansion_extra_HSK	5
+轮到	2561				0	0	C_expansion_extra_HSK	5
+欺负	2562	HSK6	动	802	0	0	C_expansion_extra_HSK	5
+证实	2563	HSK5	动	14960	0	0	C_expansion_extra_HSK	5
+温暖	2564	HSK3	形、动	1393	0	0	C_expansion	5
+尴尬	2565	HSK7-9	形	834	0	0	C_expansion_extra_HSK	5
+程度	2566	HSK3	名	2710	0	0	C_expansion	5
+某	2567	HSK3	代	2322	0	0	C_expansion	5
+回报	2568	HSK5	动	4628	0	0	C_expansion_extra_HSK	5
+华盛顿	2569				0	1	C_expansion_extra_HSK	5
+嫉妒	2570	HSK7-9	动	715	0	0	C_expansion_extra_HSK	5
+字幕组	2571			25608	0	0	C_expansion_extra_HSK	5
+效果	2572	HSK3	名	833	0	0	C_expansion	5
+大不了	2573			4369	0	0	C_expansion_extra_HSK	5
+基本	2574	HSK3	形	781	0	0	C_expansion	5
+下雨	2575	HSK1		505	0	0	C_expansion	5
+神圣	2576	HSK7-9	形	14634	0	0	C_expansion_extra_HSK	5
+墨西哥	2577			14251	0	0	C_expansion_extra_HSK	5
+那有	2578			3748	0	0	C_expansion_extra_HSK	5
+作家	2579	HSK2	名	8628	0	0	C_expansion	5
+盒子	2580	HSK5	名	3302	0	0	C_expansion_extra_HSK	5
+专门	2581	HSK3	副	1627	0	0	C_expansion	5
+我敢	2582			10643	0	0	C_expansion_extra_HSK	5
+有着	2583	HSK5	动	9189	0	0	C_expansion_extra_HSK	5
+来不及	2584	HSK4	动	2153	0	0	C_expansion	5
+本人	2585	HSK5	代	1302	0	0	C_expansion_extra_HSK	5
+李	2586			3087	0	0	C_expansion_extra_HSK	5
+牌	2587	HSK4	名	3423	0	0	C_expansion	5
+大门	2588	HSK2	名	6112	0	0	C_expansion	5
+狗屁	2589				0	0	C_expansion_extra_HSK	5
+不对劲	2590			10030	0	0	C_expansion_extra_HSK	5
+吵架	2591	HSK3		1837	0	0	C_expansion	5
+儿童	2592	HSK4	名	4004	0	0	C_expansion	5
+随着	2593	HSK5	介	7372	0	0	C_expansion_extra_HSK	5
+委员会	2594	HSK7-9	名		0	0	C_expansion_extra_HSK	5
+棒极了	2595			17915	0	0	C_expansion_extra_HSK	5
+心灵	2596	HSK6	名	3418	0	0	C_expansion_extra_HSK	5
+要不然	2597	HSK6	连	2177	0	0	C_expansion_extra_HSK	5
+白天	2598	HSK1	名	888	0	0	C_expansion	5
+第二次	2599			3082	0	0	C_expansion_extra_HSK	5
+幸会	2600			20955	0	0	C_expansion_extra_HSK	5
+死者	2601				0	0	C_expansion_extra_HSK	5
+吃掉	2602			3445	0	0	C_expansion_extra_HSK	5
+联邦	2603	HSK7-9	名	84763	0	0	C_expansion_extra_HSK	5
+交谈	2604	HSK7-9	动	19774	0	0	C_expansion_extra_HSK	5
+袋子	2605			4917	0	0	C_expansion_extra_HSK	5
+领导	2606	HSK3	动、名		0	0	C_expansion	5
+墙	2607	HSK2	名	4047	0	0	C_expansion	5
+蛮	2608	HSK7-9	副	603	0	0	C_expansion_extra_HSK	5
+乐趣	2609	HSK4	名	3338	0	0	C_expansion	5
+玩得	2610			3427	0	0	C_expansion_extra_HSK	5
+我想	2611			3140	0	0	C_expansion_extra_HSK	5
+受害者	2612			10335	0	0	C_expansion_extra_HSK	5
+糖	2613	HSK3	名	1349	0	0	C_expansion	5
+诚实	2614	HSK4	形	4621	0	0	C_expansion	5
+蛋	2615	HSK2	名	1784	0	0	C_expansion	5
+称为	2616	HSK3		11639	0	0	C_expansion	5
+拥抱	2617	HSK5	动	2819	0	0	C_expansion_extra_HSK	5
+紧	2618	HSK3	形	3431	0	0	C_expansion	5
+荣誉	2619	HSK7-9	名	16826	0	0	C_expansion_extra_HSK	5
+开会	2620	HSK1		2213	0	0	C_expansion	5
+投资	2621	HSK4	名	5803	0	0	C_expansion	5
+绳子	2622	HSK7-9	名	6849	0	0	C_expansion_extra_HSK	5
+会见	2623	HSK6	动	9870	0	0	C_expansion_extra_HSK	5
+楼梯	2624	HSK4	名	7307	0	0	C_expansion	5
+最新	2625			4422	0	0	C_expansion_extra_HSK	5
+却是	2626	HSK6		5751	0	0	C_expansion_extra_HSK	5
+走出	2627			7291	0	0	C_expansion_extra_HSK	5
+比利	2628				0	1	C_expansion_extra_HSK	5
+房	2629			3040	0	0	C_expansion_extra_HSK	5
+设备	2630	HSK3	名	4936	0	0	C_expansion	5
+惊人	2631	HSK6	形	8703	0	0	C_expansion_extra_HSK	5
+十分钟	2632			4058	0	0	C_expansion_extra_HSK	5
+深	2633	HSK3	形	1850	0	0	C_expansion	5
+牙齿	2634	HSK7-9	名	2808	0	0	C_expansion_extra_HSK	5
+废物	2635	HSK7-9	名		0	0	C_expansion_extra_HSK	5
+经理	2636	HSK2	名	5600	0	0	C_expansion	5
+要来	2637			3081	0	0	C_expansion_extra_HSK	5
+降落	2638	HSK4	动	11610	0	0	C_expansion	5
+中央	2639	HSK5	名		0	0	C_expansion_extra_HSK	5
+后退	2640	HSK7-9	动	20306	0	0	C_expansion_extra_HSK	5
+提起	2641	HSK5	动	8671	0	0	C_expansion_extra_HSK	5
+一阵子	2642			6146	0	0	C_expansion_extra_HSK	5
+一项	2643			8898	0	0	C_expansion_extra_HSK	5
+这样的话	2644			5217	0	0	C_expansion_extra_HSK	5
+队伍	2645	HSK6	名	5149	0	0	C_expansion_extra_HSK	5
+裙子	2646	HSK3	名	1026	0	0	C_expansion	5
+也就是说	2647	HSK7-9		10007	0	0	C_expansion_extra_HSK	5
+小小的	2648			5146	0	0	C_expansion_extra_HSK	5
+威尔	2649				1	0	X_excluded_foreign	5
+提议	2650	HSK7-9	动、名	10949	0	0	C_expansion_extra_HSK	5
+捡	2651	HSK6	动	1623	0	0	C_expansion_extra_HSK	5
+蠢货	2652			12728	0	0	C_expansion_extra_HSK	5
+上课	2653	HSK1		453	0	0	C_expansion	5
+干脆	2654	HSK5	形、副	3127	0	0	C_expansion_extra_HSK	5
+主演	2655	HSK7-9	动、名	8963	0	0	C_expansion_extra_HSK	5
+智慧	2656	HSK6	名	4557	0	0	C_expansion_extra_HSK	5
+单位	2657	HSK2	名	1180	0	0	C_expansion	5
+要不是	2658	HSK7-9	连	3063	0	0	C_expansion_extra_HSK	5
+很久以前	2659			11002	0	0	C_expansion_extra_HSK	5
+泡	2660	HSK6	动、名	1352	0	0	C_expansion_extra_HSK	5
+制服	2661	HSK7-9	名	6036	0	0	C_expansion_extra_HSK	5
+上尉	2662			105583	0	0	C_expansion_extra_HSK	5
+用不着	2663	HSK5	动	7763	0	0	C_expansion_extra_HSK	5
+地面	2664	HSK4	名	9089	0	0	C_expansion	5
+开除	2665	HSK7-9	动	10037	0	0	C_expansion_extra_HSK	5
+祝福	2666	HSK4	动	621	0	0	C_expansion	5
+事故	2667	HSK3	名	7866	0	0	C_expansion	5
+报导	2668			66739	0	0	C_expansion_extra_HSK	5
+海滩	2669	HSK7-9	名	9682	0	0	C_expansion_extra_HSK	5
+当年	2670	HSK5	名	1523	0	0	C_expansion_extra_HSK	5
+职责	2671	HSK6	名	20992	0	0	C_expansion_extra_HSK	5
+描述	2672	HSK4	动	4300	0	0	C_expansion	5
+员工	2673	HSK3	名	4319	0	0	C_expansion	5
+神经病	2674				0	0	C_expansion_extra_HSK	5
+八	2675	HSK1	数	2776	0	0	C_expansion	5
+平时	2676	HSK2	名	814	0	0	C_expansion	5
+手段	2677	HSK5	名	8943	0	0	C_expansion_extra_HSK	5
+很酷	2678			4789	0	0	C_expansion_extra_HSK	5
+一本	2679			2459	0	0	C_expansion_extra_HSK	5
+克里斯	2680				1	0	X_excluded_foreign	5
+吸	2681	HSK4	动	3584	0	0	C_expansion	5
+那就好	2682			1195	0	0	C_expansion_extra_HSK	5
+威廉	2683				1	0	X_excluded_foreign	5
+有何	2684			9378	0	0	C_expansion_extra_HSK	5
+岛	2685	HSK6	名	4390	0	0	C_expansion_extra_HSK	5
+慢慢来	2686	HSK7-9		1818	0	0	C_expansion_extra_HSK	5
+以外	2687	HSK2	名	5782	0	0	C_expansion	5
+适应	2688	HSK3	动	1963	0	0	C_expansion	5
+强烈	2689	HSK3	形	4249	0	0	C_expansion	5
+只想	2690			2401	0	0	C_expansion_extra_HSK	5
+海	2691	HSK2	名	3150	0	0	C_expansion	5
+没人能	2692			11879	0	0	C_expansion_extra_HSK	5
+空中	2693	HSK5	名	10649	0	0	C_expansion_extra_HSK	5
+高级	2694	HSK2	形	2389	0	0	C_expansion	5
+没来	2695			2376	0	0	C_expansion_extra_HSK	5
+快速	2696	HSK3	形	6385	0	0	C_expansion	5
+老妈	2697			2855	0	0	C_expansion_extra_HSK	5
+成熟	2698	HSK3	形	1461	0	0	C_expansion	5
+听著	2699				0	0	C_expansion_extra_HSK	5
+喝杯	2700			7174	0	0	C_expansion_extra_HSK	5
+血液	2701	HSK6	名		0	0	C_expansion_extra_HSK	5
+闭上	2702			20844	0	0	C_expansion_extra_HSK	5
+丹尼	2703				1	0	X_excluded_foreign	5
+转过	2704			8413	0	0	C_expansion_extra_HSK	5
+商店	2705	HSK1	名	7918	0	0	C_expansion	5
+真心	2706	HSK7-9	名	590	0	0	C_expansion_extra_HSK	5
+之下	2707	HSK5	名	10923	0	0	C_expansion_extra_HSK	5
+理想	2708	HSK2	名	2480	0	0	C_expansion	5
+镇	2709	HSK6	动、名	6433	0	0	C_expansion_extra_HSK	5
+报仇	2710	HSK7-9		11553	0	0	C_expansion_extra_HSK	5
+电话号码	2711			8160	0	0	C_expansion_extra_HSK	5
+印度	2712			6686	0	0	C_expansion_extra_HSK	5
+起飞	2713	HSK2	动	4151	0	0	C_expansion	5
+撑	2714	HSK6	动	1726	0	0	C_expansion_extra_HSK	5
+可不可以	2715			2679	0	0	C_expansion_extra_HSK	5
+毁掉	2716			21296	0	0	C_expansion_extra_HSK	5
+同情	2717	HSK4	动	3174	0	0	C_expansion	5
+学到	2718			4305	0	0	C_expansion_extra_HSK	5
+才行	2719			3727	0	0	C_expansion_extra_HSK	5
+手枪	2720	HSK7-9	名		0	0	C_expansion_extra_HSK	5
+跟我走	2721			7093	0	0	C_expansion_extra_HSK	5
+洗手间	2722	HSK1	名	14058	0	0	C_expansion	5
+非法	2723	HSK7-9	形		0	0	C_expansion_extra_HSK	5
+吉姆	2724				1	0	X_excluded_foreign	5
+圣	2725			21003	0	0	C_expansion_extra_HSK	5
+放进	2726			12507	0	0	C_expansion_extra_HSK	5
+咯	2727			195	0	0	C_expansion_extra_HSK	5
+甩	2728	HSK7-9	动	2186	0	0	C_expansion_extra_HSK	5
+在于	2729	HSK4	动	4095	0	0	C_expansion	5
+段	2730	HSK2	量	3254	0	0	C_expansion	5
+姐妹	2731	HSK4	名	1899	0	0	C_expansion	5
+独立	2732	HSK4	动		0	0	C_expansion	5
+迷路	2733	HSK7-9		4041	0	0	C_expansion_extra_HSK	5
+仪式	2734	HSK6	名	10774	0	0	C_expansion_extra_HSK	5
+应	2735	HSK5	动	5727	0	0	C_expansion_extra_HSK	5
+大师	2736	HSK6	名	1925	0	0	C_expansion_extra_HSK	5
+作战	2737	HSK6	动	13403	0	0	C_expansion_extra_HSK	5
+共同	2738	HSK3	形	4380	0	0	C_expansion	5
+魔法	2739			9293	0	0	C_expansion_extra_HSK	5
+神经	2740	HSK5	名		0	0	C_expansion_extra_HSK	5
+强壮	2741	HSK6	形、动	9103	0	0	C_expansion_extra_HSK	5
+角度	2742	HSK2	名	1570	0	0	C_expansion	5
+一瓶	2743			2331	0	0	C_expansion_extra_HSK	5
+当地	2744	HSK3	名	4804	0	0	C_expansion	5
+风险	2745	HSK3	名	6691	0	0	C_expansion	5
+从小	2746	HSK2	副	2176	0	0	C_expansion	5
+天呐	2747			2863	0	0	C_expansion_extra_HSK	5
+本事	2748	HSK3	名	1815	0	0	C_expansion	5
+天生	2749	HSK7-9	形	2957	0	0	C_expansion_extra_HSK	5
+警局	2750			30023	0	0	C_expansion_extra_HSK	5
+搜查	2751	HSK7-9	动	84240	0	0	C_expansion_extra_HSK	5
+风格	2752	HSK4	名	1377	0	0	C_expansion	5
+自动	2753	HSK3	形、副	1855	0	0	C_expansion	5
+媒体	2754	HSK3	名	4205	0	0	C_expansion	5
+绝望	2755	HSK5		1745	0	0	C_expansion_extra_HSK	5
+警察局	2756			25148	0	0	C_expansion_extra_HSK	5
+吓坏	2757			8375	0	0	C_expansion_extra_HSK	5
+闻	2758	HSK2	动	5400	0	0	C_expansion	5
+数据	2759	HSK4	名	2966	0	0	C_expansion	5
+明早	2760			2270	0	0	C_expansion_extra_HSK	5
+跟上	2761	HSK7-9		6157	0	0	C_expansion_extra_HSK	5
+新来	2762			8741	0	0	C_expansion_extra_HSK	5
+舞	2763	HSK5	名、动	3730	0	0	C_expansion_extra_HSK	5
+时期	2764	HSK6	名	4763	0	0	C_expansion_extra_HSK	5
+对面	2765	HSK2	名	1662	0	0	C_expansion	5
+盾	2766			27053	0	0	C_expansion_extra_HSK	5
+六个	2767			4293	0	0	C_expansion_extra_HSK	5
+魅力	2768	HSK7-9	名	2574	0	0	C_expansion_extra_HSK	5
+人才	2769	HSK3	名	1980	0	0	C_expansion	5
+呵呵	2770			172	0	0	C_expansion_extra_HSK	5
+抵达	2771	HSK6	动	12747	0	0	C_expansion_extra_HSK	5
+式	2772	HSK5	名	5474	0	0	C_expansion_extra_HSK	5
+听过	2773			4054	0	0	C_expansion_extra_HSK	5
+撤退	2774			17960	0	0	C_expansion_extra_HSK	5
+商业	2775	HSK3	名	6614	0	0	C_expansion	5
+赶到	2776	HSK3		10059	0	0	C_expansion	5
+遵守	2777	HSK5	动	13568	0	0	C_expansion_extra_HSK	5
+一架	2778			4900	0	0	C_expansion_extra_HSK	5
+饼干	2779	HSK5	名	3088	0	0	C_expansion_extra_HSK	5
+星星	2780	HSK2	名	2195	0	0	C_expansion	5
+浴室	2781	HSK7-9	名	10775	0	0	C_expansion_extra_HSK	5
+内部	2782	HSK4	名	6547	0	0	C_expansion	5
+艰难	2783	HSK5	形	3679	0	0	C_expansion_extra_HSK	5
+最佳	2784	HSK6	形	4458	0	0	C_expansion_extra_HSK	5
+啰	2785			7846	0	0	C_expansion_extra_HSK	5
+据说	2786	HSK3	动	1257	0	0	C_expansion	5
+送来	2787			5000	0	0	C_expansion_extra_HSK	5
+今日	2788	HSK5	名	2566	0	0	C_expansion_extra_HSK	5
+心理	2789	HSK4	名	1995	0	0	C_expansion	5
+性命	2790	HSK7-9	名		0	0	C_expansion_extra_HSK	5
+猴子	2791			2057	0	0	C_expansion_extra_HSK	5
+皮	2792	HSK3	名	1092	0	0	C_expansion	5
+向前	2793	HSK5		5287	0	0	C_expansion_extra_HSK	5
+搜索	2794	HSK5	动	3873	0	0	C_expansion_extra_HSK	5
+男友	2795			1962	0	0	C_expansion_extra_HSK	5
+装置	2796	HSK4	动、名	30314	0	0	C_expansion	5
+瞄准	2797	HSK7-9		31083	0	0	C_expansion_extra_HSK	5
+谢天谢地	2798			16014	0	0	C_expansion_extra_HSK	5
+发动	2799	HSK3	动	12862	0	0	C_expansion	5
+威士忌	2800			22359	0	1	C_expansion_extra_HSK	5
+小说	2801	HSK2	名	1102	0	0	C_expansion	5
+璶	2802				0	0	C_expansion_extra_HSK	5
+天赋	2803	HSK7-9	动、名	5070	0	0	C_expansion_extra_HSK	5
+问过	2804			5045	0	0	C_expansion_extra_HSK	5
+经济	2805	HSK3	名、形	3267	0	0	C_expansion	5
+远点	2806			8259	0	0	C_expansion_extra_HSK	5
+爸妈	2807			1035	0	0	C_expansion_extra_HSK	5
+难以	2808	HSK5	动	5264	0	0	C_expansion_extra_HSK	5
+以上	2809	HSK2	名	2142	0	0	C_expansion	5
+小镇	2810			8086	0	0	C_expansion_extra_HSK	5
+代替	2811	HSK4	动	5807	0	0	C_expansion	5
+格	2812	HSK7-9	名	11415	0	0	C_expansion_extra_HSK	5
+那件事	2813			19126	0	0	C_expansion_extra_HSK	5
+身为	2814			5294	0	0	C_expansion_extra_HSK	5
+香槟	2815			20310	0	0	C_expansion_extra_HSK	5
+争取	2816	HSK3	动	1703	0	0	C_expansion	5
+修	2817	HSK3	动	1602	0	0	C_expansion	5
+项目	2818	HSK4	名	2796	0	0	C_expansion	5
+指挥官	2819			138430	0	0	C_expansion_extra_HSK	5
+修理	2820	HSK4	动	15840	0	0	C_expansion	5
+标准	2821	HSK3	名、形	2055	0	0	C_expansion	5
+迟	2822	HSK5	形	2564	0	0	C_expansion_extra_HSK	5
+观点	2823	HSK2	名	3190	0	0	C_expansion	5
+三次	2824			2902	0	0	C_expansion_extra_HSK	5
+有件事	2825			47653	0	0	C_expansion_extra_HSK	5
+建筑	2826	HSK5	动、名	5708	0	0	C_expansion_extra_HSK	5
+老人	2827	HSK1	名	2429	0	0	C_expansion	5
+来过	2828			9443	0	0	C_expansion_extra_HSK	5
+画面	2829	HSK5	名	2553	0	0	C_expansion_extra_HSK	5
+胡说八道	2830			7912	0	0	C_expansion_extra_HSK	5
+地盘	2831			6514	0	0	C_expansion_extra_HSK	5
+正义	2832	HSK5	名、形	5091	0	0	C_expansion_extra_HSK	5
+相反	2833	HSK4	形、连	5250	0	0	C_expansion	5
+俄罗斯	2834			5686	0	1	C_expansion_extra_HSK	5
+卧室	2835	HSK5	名	8535	0	0	C_expansion_extra_HSK	5
+敏感	2836	HSK5	形		0	0	C_expansion_extra_HSK	5
+崩溃	2837	HSK7-9	动	1983	0	0	C_expansion_extra_HSK	5
+解雇	2838	HSK7-9	动	75859	0	0	C_expansion_extra_HSK	5
+指控	2839			120272	0	0	C_expansion_extra_HSK	5
+打仗	2840	HSK7-9		9783	0	0	C_expansion_extra_HSK	5
+女王	2841			3406	0	0	C_expansion_extra_HSK	5
+钱包	2842	HSK1	名	2704	0	0	C_expansion	5
+饭店	2843	HSK1	名	4612	0	0	C_expansion	5
+一头	2844	HSK7-9	副、名	5427	0	0	C_expansion_extra_HSK	5
+难受	2845	HSK2	形	686	0	0	C_expansion	5
+九	2846	HSK1	数	4059	0	0	C_expansion	5
+隔壁	2847	HSK5	名	2151	0	0	C_expansion_extra_HSK	5
+违反	2848	HSK5	动	18997	0	0	C_expansion_extra_HSK	5
+本身	2849	HSK6	代	2415	0	0	C_expansion_extra_HSK	5
+注定	2850	HSK7-9	动	2982	0	0	C_expansion_extra_HSK	5
+走廊	2851	HSK7-9	名	10800	0	0	C_expansion_extra_HSK	5
+自豪	2852	HSK5	形	6664	0	0	C_expansion_extra_HSK	5
+厌倦	2853	HSK7-9	动	11331	0	0	C_expansion_extra_HSK	5
+很久没	2854			2325	0	0	C_expansion_extra_HSK	5
+捉	2855	HSK6	动	3509	0	0	C_expansion_extra_HSK	5
+麦	2856			6199	0	0	C_expansion_extra_HSK	5
+嘲笑	2857	HSK7-9	动	2882	0	0	C_expansion_extra_HSK	5
+逃避	2858	HSK7-9	动	6345	0	0	C_expansion_extra_HSK	5
+占	2859	HSK2	动	2295	0	0	C_expansion	5
+不得	2860			980	0	0	C_expansion_extra_HSK	5
+月亮	2861	HSK2	名	2059	0	0	C_expansion	5
+不是故意	2862			6301	0	0	C_expansion_extra_HSK	5
+段时间	2863			1988	0	0	C_expansion_extra_HSK	5
+美味	2864	HSK7-9	名	3473	0	0	C_expansion_extra_HSK	5
+烦恼	2865	HSK7-9	形	1997	0	0	C_expansion_extra_HSK	5
+经典	2866	HSK4	名	2647	0	0	C_expansion	5
+针对	2867	HSK4	动	4088	0	0	C_expansion	5
+剑	2868	HSK6	名	5165	0	0	C_expansion_extra_HSK	5
+实验室	2869	HSK3	名	5216	0	0	C_expansion	5
+花园	2870	HSK2	名	5417	0	0	C_expansion	5
+一笔	2871			6284	0	0	C_expansion_extra_HSK	5
+拍照	2872	HSK4		608	0	0	C_expansion	5
+卖掉	2873			8570	0	0	C_expansion_extra_HSK	5
+时机	2874	HSK5	名	9610	0	0	C_expansion_extra_HSK	5
+钻石	2875	HSK7-9	名	3570	0	0	C_expansion_extra_HSK	5
+机器人	2876	HSK5	名	1882	0	0	C_expansion_extra_HSK	5
+包围	2877	HSK5	动	15066	0	0	C_expansion_extra_HSK	5
+如同	2878	HSK5	动	10412	0	0	C_expansion_extra_HSK	5
+这部	2879			2425	0	0	C_expansion_extra_HSK	5
+拜访	2880	HSK5	动	11642	0	0	C_expansion_extra_HSK	5
+批准	2881	HSK3	动		0	0	C_expansion	5
+采访	2882	HSK4	动、名	3699	0	0	C_expansion	5
+饶	2883	HSK7-9	动	9083	0	0	C_expansion_extra_HSK	5
+完整	2884	HSK3	形	3604	0	0	C_expansion	5
+一号	2885			3380	0	0	C_expansion_extra_HSK	5
+短	2886	HSK2	形	1044	0	0	C_expansion	5
+残忍	2887	HSK7-9	形	3253	0	0	C_expansion_extra_HSK	5
+何不	2888			15573	0	0	C_expansion_extra_HSK	5
+配合	2889	HSK3	动	2757	0	0	C_expansion	5
+读书	2890	HSK1		892	0	0	C_expansion	5
+善良	2891	HSK4	形	1210	0	0	C_expansion	5
+交往	2892	HSK3	动	6834	0	0	C_expansion	5
+炸	2893	HSK7-9	动	1684	0	0	C_expansion_extra_HSK	5
+一家人	2894	HSK7-9	名	4038	0	0	C_expansion_extra_HSK	5
+不仅仅	2895	HSK6		9518	0	0	C_expansion_extra_HSK	5
+暗	2896	HSK4	形	8333	0	0	C_expansion	5
+扯	2897	HSK7-9	动	1989	0	0	C_expansion_extra_HSK	5
+数	2898	HSK2	动	2987	0	0	C_expansion	5
+翻	2899	HSK4	动	852	0	0	C_expansion	5
+闹	2900	HSK4	形、动	1401	0	0	C_expansion	5
+艺术家	2901			6811	0	0	C_expansion_extra_HSK	5
+戏	2902	HSK5	名	1937	0	0	C_expansion_extra_HSK	5
+开个	2903			2489	0	0	C_expansion_extra_HSK	5
+幸好	2904	HSK7-9	副	2367	0	0	C_expansion_extra_HSK	5
+网络	2905	HSK4	名	1740	0	0	C_expansion	5
+墙上	2906			7172	0	0	C_expansion_extra_HSK	5
+舌头	2907	HSK6	名	4992	0	0	C_expansion_extra_HSK	5
+遭到	2908	HSK6		15524	0	0	C_expansion_extra_HSK	5
+胡扯	2909			15292	0	0	C_expansion_extra_HSK	5
+顿	2910	HSK3	量	6842	0	0	C_expansion	5
+感动	2911	HSK2	形、动	796	0	0	C_expansion	5
+封信	2912			27211	0	0	C_expansion_extra_HSK	5
+具有	2913	HSK3	动	15647	0	0	C_expansion	5
+类型	2914	HSK4	名	2887	0	0	C_expansion	5
+良好	2915	HSK4	形	7643	0	0	C_expansion	5
+价钱	2916	HSK3	名	4544	0	0	C_expansion	5
+难怪	2917	HSK7-9	副、动	1956	0	0	C_expansion_extra_HSK	5
+但愿	2918	HSK7-9	动	2601	0	0	C_expansion_extra_HSK	5
+下周	2919	HSK2		913	0	0	C_expansion	5
+底下	2920	HSK3	名	3992	0	0	C_expansion	5
+才刚	2921			4092	0	0	C_expansion_extra_HSK	5
+塞	2922	HSK6	动	2110	0	0	C_expansion_extra_HSK	5
+熟	2923	HSK2	形	1833	0	0	C_expansion	5
+般	2924			11087	0	0	C_expansion_extra_HSK	5
+安慰	2925	HSK5	动、形	794	0	0	C_expansion_extra_HSK	5
+保密	2926	HSK4		7110	0	0	C_expansion	5
+我本	2927			10908	0	0	C_expansion_extra_HSK	5
+臭小子	2928			21527	0	0	C_expansion_extra_HSK	5
+冲动	2929	HSK5	名、形	2529	0	0	C_expansion_extra_HSK	5
+眼镜	2930	HSK4	名	1650	0	0	C_expansion	5
+爱上	2931			2781	0	0	C_expansion_extra_HSK	5
+一枪	2932			21642	0	0	C_expansion_extra_HSK	5
+太大	2933			1993	0	0	C_expansion_extra_HSK	5
+会来	2934			7851	0	0	C_expansion_extra_HSK	5
+散步	2935	HSK3		3843	0	0	C_expansion	5
+致命	2936	HSK7-9	动	10806	0	0	C_expansion_extra_HSK	5
+沙漠	2937	HSK5	名	7526	0	0	C_expansion_extra_HSK	5
+仅	2938	HSK3	副	6767	0	0	C_expansion	5
+下手	2939	HSK7-9		3991	0	0	C_expansion_extra_HSK	5
+嘴巴	2940	HSK4	名	1852	0	0	C_expansion	5
+工人	2941	HSK1	名	10878	0	0	C_expansion	5
+隐瞒	2942	HSK7-9	动	16866	0	0	C_expansion_extra_HSK	5
+不安	2943	HSK3	形	7694	0	0	C_expansion	5
+很小	2944			2964	0	0	C_expansion_extra_HSK	5
+好久	2945	HSK2	形	415	0	0	C_expansion	5
+小朋友	2946	HSK1	名	1274	0	0	C_expansion	5
+下降	2947	HSK4	动	6745	0	0	C_expansion	5
+好听	2948	HSK1	形	935	0	0	C_expansion	5
+冷静下来	2949				0	0	C_expansion_extra_HSK	5
+他杀	2950			46586	0	0	C_expansion_extra_HSK	5
+型	2951	HSK4	名	2691	0	0	C_expansion	5
+听不懂	2952			1960	0	0	C_expansion_extra_HSK	5
+封锁	2953	HSK7-9	动	34742	0	0	C_expansion_extra_HSK	5
+奥	2954			2275	0	0	C_expansion_extra_HSK	5
+男生	2955	HSK1	名	629	0	0	C_expansion	5
+支付	2956	HSK3	动		0	0	C_expansion	5
+文化	2957	HSK3	名	1275	0	0	C_expansion	5
+娜	2958			4493	0	0	C_expansion_extra_HSK	5
+搭档	2959	HSK6	动、名	10096	0	0	C_expansion_extra_HSK	5
+哪位	2960			3322	0	0	C_expansion_extra_HSK	5
+费	2961	HSK3	动、名	3572	0	0	C_expansion	5
+辞职	2962	HSK5		1861	0	0	C_expansion_extra_HSK	5
+贵	2963	HSK1	形	752	0	0	C_expansion	5
+今早	2964			4081	0	0	C_expansion_extra_HSK	5
+首歌	2965			2011	0	0	C_expansion_extra_HSK	5
+装备	2966	HSK6	动、名	4451	0	0	C_expansion_extra_HSK	5
+莎拉	2967				1	0	X_excluded_foreign	5
+传	2968	HSK7-9	名	2745	0	0	C_expansion_extra_HSK	5
+汤	2969	HSK3	名	1903	0	0	C_expansion	5
+瞒	2970	HSK7-9	动	9496	0	0	C_expansion_extra_HSK	5
+敲	2971	HSK5	动	2699	0	0	C_expansion_extra_HSK	5
+重大	2972	HSK3	形	10592	0	0	C_expansion	5
+第一天	2973			2175	0	0	C_expansion_extra_HSK	5
+这家	2974			2232	0	0	C_expansion_extra_HSK	5
+这来	2975			9733	0	0	C_expansion_extra_HSK	5
+小鬼	2976			9740	0	0	C_expansion_extra_HSK	5
+古怪	2977	HSK7-9	形	33665	0	0	C_expansion_extra_HSK	5
+狼	2978	HSK7-9	名	2862	0	0	C_expansion_extra_HSK	5
+莫	2979			2242	0	0	C_expansion_extra_HSK	5
+扶	2980	HSK5	动	4025	0	0	C_expansion_extra_HSK	5
+嘴里	2981			4091	0	0	C_expansion_extra_HSK	5
+州	2982			20027	0	0	C_expansion_extra_HSK	5
+等于	2983	HSK2	动	2874	0	0	C_expansion	5
+人去	2984			2072	0	0	C_expansion_extra_HSK	5
+坦白	2985	HSK7-9	形、动	16082	0	0	C_expansion_extra_HSK	5
+回应	2986	HSK6	动	5142	0	0	C_expansion_extra_HSK	5
+忠诚	2987	HSK7-9	形、名	15755	0	0	C_expansion_extra_HSK	5
+陷阱	2988	HSK7-9	名	17264	0	0	C_expansion_extra_HSK	5
+夺走	2989			29714	0	0	C_expansion_extra_HSK	5
+第二天	2990			1614	0	0	C_expansion_extra_HSK	5
+尼	2991			5927	0	0	C_expansion_extra_HSK	5
+感染	2992	HSK7-9	动	7655	0	0	C_expansion_extra_HSK	5
+知	2993			3320	0	0	C_expansion_extra_HSK	5
+忘掉	2994	HSK7-9		7591	0	0	C_expansion_extra_HSK	5
+猜猜	2995			3475	0	0	C_expansion_extra_HSK	5
+功夫	2996	HSK3	名	4391	0	0	C_expansion	5
+载	2997			8042	0	0	C_expansion_extra_HSK	5
+西班牙	2998			4414	0	0	C_expansion_extra_HSK	5
+卷	2999	HSK4	量	1649	0	0	C_expansion	5
+投入	3000	HSK4	动、名	6320	0	0	C_expansion	5
+骨头	3001	HSK4	名	3710	0	0	D_hsk_only	5
+从此	3003	HSK4	副	4093	0	0	D_hsk_only	5
+集合	3004	HSK4	动	5545	0	0	D_hsk_only	5
+沙发	3009	HSK3	名		0	0	D_hsk_only	5
+提前	3011	HSK3	动	652	0	0	D_hsk_only	5
+提高	3012	HSK2		3212	0	0	D_hsk_only	5
+发表	3021	HSK3	动	3862	0	0	D_hsk_only	5
+晚饭	3022	HSK1	名	1836	0	0	D_hsk_only	5
+始终	3025	HSK3	副	4324	0	0	D_hsk_only	5
+一共	3026	HSK2	副	2916	0	0	D_hsk_only	5
+衬衫	3033	HSK3	名	3849	0	0	D_hsk_only	5
+实际	3041	HSK2	名、形	3080	0	0	D_hsk_only	5
+胖	3044	HSK3	形	245	0	0	D_hsk_only	5
+中午	3056	HSK1	名	474	0	0	D_hsk_only	5
+雨	3063	HSK1	名	1164	0	0	D_hsk_only	5
+专心	3070	HSK4	形	5359	0	0	D_hsk_only	5
+市	3073	HSK2	名	6864	0	0	D_hsk_only	5
+全体	3076	HSK2	名	16665	0	0	D_hsk_only	5
+调整	3079	HSK3	动	2505	0	0	D_hsk_only	5
+反而	3083	HSK4	副	2266	0	0	D_hsk_only	5
+桥	3089	HSK3	名	4525	0	0	D_hsk_only	5
+不论	3091	HSK3	连	8949	0	0	D_hsk_only	5
+舞台	3093	HSK3	名	4247	0	0	D_hsk_only	5
+保存	3095	HSK3	动	3354	0	0	D_hsk_only	5
+轻易	3098	HSK4	形、副	3764	0	0	D_hsk_only	5
+成就	3099	HSK3	名、动	6520	0	0	D_hsk_only	5
+晚点	3102	HSK4		1942	0	0	D_hsk_only	5
+口	3103	HSK1	量、名	1951	0	0	D_hsk_only	5
+全球	3104	HSK3	名	8078	0	0	D_hsk_only	5
+展开	3106	HSK3		16754	0	0	D_hsk_only	5
+基本上	3108	HSK3	副	2418	0	0	D_hsk_only	5
+街道	3109	HSK4	名	12077	0	0	D_hsk_only	5
+大海	3116	HSK2	名	4340	0	0	D_hsk_only	5
+官	3120	HSK4	名	7420	0	0	D_hsk_only	5
+访问	3128	HSK3	动	13948	0	0	D_hsk_only	5
+准确	3132	HSK2	形	4487	0	0	D_hsk_only	5
+认出	3133	HSK3		5315	0	0	D_hsk_only	5
+否认	3139	HSK3	动	5711	0	0	D_hsk_only	5
+药物	3143	HSK4	名		0	0	D_hsk_only	5
+新娘	3144	HSK4	名	5528	0	0	D_hsk_only	5
+夫妇	3145	HSK4	名	9649	0	0	D_hsk_only	5
+公里	3147	HSK2	量	2971	0	0	D_hsk_only	5
+帅哥	3152	HSK4	名	886	0	0	D_hsk_only	5
+转身	3154	HSK4		5594	0	0	D_hsk_only	5
+笔	3156	HSK2	名、量	4106	0	0	D_hsk_only	5
+主席	3157	HSK4	名		0	0	D_hsk_only	5
+吃惊	3158	HSK4		12514	0	0	D_hsk_only	5
+英文	3159	HSK2	名	2930	0	0	D_hsk_only	5
+合理	3164	HSK3	形	4635	0	0	D_hsk_only	5
+纪念	3167	HSK3	动、名	5086	0	0	D_hsk_only	5
+参观	3168	HSK2	动	5479	0	0	D_hsk_only	5
+苹果	3171	HSK3	名	895	0	0	D_hsk_only	5
+平安	3172	HSK2	形	1927	0	0	D_hsk_only	5
+作出	3174	HSK4		24369	0	0	D_hsk_only	5
+比如说	3180	HSK2		6160	0	0	D_hsk_only	5
+镜子	3182	HSK4	名	3231	0	0	D_hsk_only	5
+台	3184	HSK3	名、量	2736	0	0	D_hsk_only	5
+出租车	3188	HSK2	名	5501	0	0	D_hsk_only	5
+成绩	3191	HSK2	名	1366	0	0	D_hsk_only	5
+贴	3198	HSK4	动	899	0	0	D_hsk_only	5
+打扫	3203	HSK4	动	6172	0	0	D_hsk_only	5
+深刻	3205	HSK3	形	3468	0	0	D_hsk_only	5
+冰箱	3207	HSK4	名	2453	0	0	D_hsk_only	5
+守	3209	HSK4	动	4471	0	0	D_hsk_only	5
+十	3215	HSK1	数	5962	0	0	D_hsk_only	5
+文章	3216	HSK3	名	2939	0	0	D_hsk_only	5
+广场	3217	HSK2	名	2231	0	0	D_hsk_only	5
+车站	3219	HSK1	名	3527	0	0	D_hsk_only	5
+回复	3223	HSK4	动	338	0	0	D_hsk_only	5
+刺	3227	HSK4	动、名	7565	0	0	D_hsk_only	5
+考试	3228	HSK1		405	0	0	D_hsk_only	5
+对话	3229	HSK2	动、名	3272	0	0	D_hsk_only	5
+顾客	3231	HSK2	名		0	0	D_hsk_only	5
+相关	3232	HSK3	动	4403	0	0	D_hsk_only	5
+鸡蛋	3239	HSK1	名	1528	0	0	D_hsk_only	5
+选手	3241	HSK3	名	5833	0	0	D_hsk_only	5
+天上	3243	HSK2	名	4190	0	0	D_hsk_only	5
+燃烧	3244	HSK4	动	8605	0	0	D_hsk_only	5
+冬天	3247	HSK2	名	594	0	0	D_hsk_only	5
+科	3249	HSK2	名	7347	0	0	D_hsk_only	5
+难看	3255	HSK2	形	2371	0	0	D_hsk_only	5
+人群	3261	HSK3	名	5784	0	0	D_hsk_only	5
+脏	3263	HSK2	形	3502	0	0	D_hsk_only	5
+有名	3274	HSK1		6035	0	0	D_hsk_only	5
+以下	3275	HSK2	名	4355	0	0	D_hsk_only	5
+投	3277	HSK4	动	2342	0	0	D_hsk_only	5
+姓名	3278	HSK2	名	13701	0	0	D_hsk_only	5
+收回	3279	HSK4		6933	0	0	D_hsk_only	5
+举	3282	HSK2	动	3940	0	0	D_hsk_only	5
+知识	3285	HSK1	名	2644	0	0	D_hsk_only	5
+路线	3286	HSK3	名	2522	0	0	D_hsk_only	5
+胖子	3287	HSK4	名	922	0	0	D_hsk_only	5
+例如	3290	HSK2	动	9134	0	0	D_hsk_only	5
+进步	3292	HSK3	动、形	2347	0	0	D_hsk_only	5
+诗	3298	HSK4	名	2608	0	0	D_hsk_only	5
+哪怕	3304	HSK4	连	3813	0	0	D_hsk_only	5
+自信	3305	HSK4	动	1402	0	0	D_hsk_only	5
+经营	3311	HSK3	动		0	0	D_hsk_only	5
+切	3315	HSK4	动	869	0	0	D_hsk_only	5
+上楼	3316	HSK4		10859	0	0	D_hsk_only	5
+影片	3319	HSK2	名	13721	0	0	D_hsk_only	5
+零	3320	HSK1	数	4478	0	0	D_hsk_only	5
+级	3321	HSK2	名	2113	0	0	D_hsk_only	5
+任	3325	HSK3	连	5152	0	0	D_hsk_only	5
+表	3327	HSK2	名	2041	0	0	D_hsk_only	5
+原则	3335	HSK4	名	4831	0	0	D_hsk_only	5
+可靠	3338	HSK3	形		0	0	D_hsk_only	5
+纪录	3343	HSK3	名	16243	0	0	D_hsk_only	5
+系	3351	HSK4	动	972	0	0	D_hsk_only	5
+调	3357	HSK3	动	2235	0	0	D_hsk_only	5
+承担	3358	HSK4	动	7250	0	0	D_hsk_only	5
+护照	3363	HSK2	名	5437	0	0	D_hsk_only	5
+树林	3365	HSK4	名	25411	0	0	D_hsk_only	5
+周	3370	HSK2	量	1568	0	0	D_hsk_only	5
+家乡	3377	HSK3	名	2988	0	0	D_hsk_only	5
+背景	3380	HSK4	名	2719	0	0	D_hsk_only	5
+值	3381	HSK3	动	3463	0	0	D_hsk_only	5
+明年	3383	HSK1	名	619	0	0	D_hsk_only	5
+联合	3387	HSK3	动	14377	0	0	D_hsk_only	5
+医疗	3389	HSK4	动		0	0	D_hsk_only	5
+福	3390	HSK3	名	2053	0	0	D_hsk_only	5
+准时	3392	HSK4	形	4634	0	0	D_hsk_only	5
+形容	3395	HSK4	动	2935	0	0	D_hsk_only	5
+成立	3399	HSK3	动	10707	0	0	D_hsk_only	5
+片	3401	HSK2	量	2922	0	0	D_hsk_only	5
+顶	3402	HSK4	名、动、量	2102	0	0	D_hsk_only	5
+流行	3405	HSK2	动、形	3457	0	0	D_hsk_only	5
+计算	3406	HSK3	动	9388	0	0	D_hsk_only	5
+夫妻	3413	HSK4	名	4051	0	0	D_hsk_only	5
+地位	3414	HSK4	名	4958	0	0	D_hsk_only	5
+技巧	3415	HSK4	名	5582	0	0	D_hsk_only	5
+情感	3417	HSK3	名	3828	0	0	D_hsk_only	5
+迅速	3427	HSK4	形	6675	0	0	D_hsk_only	5
+具体	3430	HSK3	形	1328	0	0	D_hsk_only	5
+整整	3434	HSK3	副	5391	0	0	D_hsk_only	5
+公路	3435	HSK2	名	11121	0	0	D_hsk_only	5
+力气	3438	HSK4	名	2840	0	0	D_hsk_only	5
+演讲	3439	HSK4	动	10706	0	0	D_hsk_only	5
+价格	3440	HSK3	名	1323	0	0	D_hsk_only	5
+亲人	3441	HSK3	名	4752	0	0	D_hsk_only	5
+怀念	3442	HSK4	动	1550	0	0	D_hsk_only	5
+眼里	3454	HSK4	名	2172	0	0	D_hsk_only	5
+孙子	3456	HSK4	名	5555	0	0	D_hsk_only	5
+居民	3473	HSK4	名	20336	0	0	D_hsk_only	5
+机构	3474	HSK4	名		0	0	D_hsk_only	5
+春天	3475	HSK2	名	1313	0	0	D_hsk_only	5
+面临	3478	HSK4	动	10453	0	0	D_hsk_only	5
+秘书	3479	HSK4	名	8492	0	0	D_hsk_only	5
+分别	3485	HSK3	动、副	6167	0	0	D_hsk_only	5
+日期	3489	HSK1	名	5707	0	0	D_hsk_only	5
+标志	3492	HSK4	动、名	8076	0	0	D_hsk_only	5
+阶段	3495	HSK4	名	3284	0	0	D_hsk_only	5
+单	3496	HSK4	形、副	3396	0	0	D_hsk_only	5
+体验	3497	HSK3	动	1521	0	0	D_hsk_only	5
+身材	3502	HSK4	名	1063	0	0	D_hsk_only	5
+表明	3505	HSK3	动	9401	0	0	D_hsk_only	5
+符合	3506	HSK4	动	2975	0	0	D_hsk_only	5
+走过	3507	HSK2		3612	0	0	D_hsk_only	5
+至今	3509	HSK3	副	3405	0	0	D_hsk_only	5
+先进	3516	HSK3	形、名	11772	0	0	D_hsk_only	5
+连续	3523	HSK3	动	2477	0	0	D_hsk_only	5
+练	3524	HSK2	动	1090	0	0	D_hsk_only	5
+眼	3525	HSK2	名、量	2550	0	0	D_hsk_only	5
+带领	3526	HSK3	动	11905	0	0	D_hsk_only	5
+纸	3528	HSK2	名	1645	0	0	D_hsk_only	5
+退	3529	HSK3	动	1473	0	0	D_hsk_only	5
+蓝	3533	HSK2	形	1687	0	0	D_hsk_only	5
+灯光	3539	HSK4	名	5404	0	0	D_hsk_only	5
+临时	3542	HSK4	形、副	3452	0	0	D_hsk_only	5
+产品	3545	HSK4	名	2857	0	0	D_hsk_only	5
+表面	3548	HSK3	名	4586	0	0	D_hsk_only	5
+冰	3549	HSK4	名	2455	0	0	D_hsk_only	5
+赞成	3550	HSK4	动	9579	0	0	D_hsk_only	5
+入口	3557	HSK2	名	9279	0	0	D_hsk_only	5
+胸部	3564	HSK4	名		0	0	D_hsk_only	5
+队员	3569	HSK3	名	10060	0	0	D_hsk_only	5
+广播	3572	HSK3	动、名	6558	0	0	D_hsk_only	5
+企业	3578	HSK4	名	6222	0	0	D_hsk_only	5
+材料	3581	HSK4	名	3035	0	0	D_hsk_only	5
+发挥	3584	HSK4	动	4003	0	0	D_hsk_only	5
+上午	3591	HSK1	名	1317	0	0	D_hsk_only	5
+部长	3592	HSK3	名	6291	0	0	D_hsk_only	5
+较	3599	HSK3	副	6981	0	0	D_hsk_only	5
+做法	3601	HSK2	名	4712	0	0	D_hsk_only	5
+过分	3604	HSK4		1731	0	0	D_hsk_only	5
+限制	3606	HSK4	动、名	3410	0	0	D_hsk_only	5
+歌手	3610	HSK3	名	2901	0	0	D_hsk_only	5
+油	3611	HSK2	名	1790	0	0	D_hsk_only	5
+办事	3612	HSK4		5601	0	0	D_hsk_only	5
+尺	3613	HSK4	名、量	27604	0	0	D_hsk_only	5
+出席	3619	HSK4	动	15607	0	0	D_hsk_only	5
+上升	3621	HSK3	动	5291	0	0	D_hsk_only	5
+黄	3623	HSK2	形	1651	0	0	D_hsk_only	5
+市长	3626	HSK2	名		0	0	D_hsk_only	5
+主题	3628	HSK4	名	3975	0	0	D_hsk_only	5
+辆	3629	HSK2	量	14400	0	0	D_hsk_only	5
+开放	3631	HSK3	动	4411	0	0	D_hsk_only	5
+操作	3640	HSK4	动		0	0	D_hsk_only	5
+公民	3641	HSK3	名	5819	0	0	D_hsk_only	5
+谈判	3645	HSK3	动、名	17122	0	0	D_hsk_only	5
+兵	3648	HSK4	名	11412	0	0	D_hsk_only	5
+杯子	3651	HSK1	名	2715	0	0	D_hsk_only	5
+明确	3657	HSK3	形、动	6770	0	0	D_hsk_only	5
+文明	3659	HSK3	名、形	3577	0	0	D_hsk_only	5
+雪	3660	HSK2	名	1038	0	0	D_hsk_only	5
+及时	3663	HSK3	形	3712	0	0	D_hsk_only	5
+费用	3676	HSK3	名	5728	0	0	D_hsk_only	5
+响	3681	HSK2	形	6074	0	0	D_hsk_only	5
+图	3683	HSK3	名	536	0	0	D_hsk_only	5
+巴士	3684	HSK4	名	11465	0	0	D_hsk_only	5
+学院	3686	HSK1	名	2141	0	0	D_hsk_only	5
+水平	3689	HSK2	名	1556	0	0	D_hsk_only	5
+校长	3698	HSK2	名	4441	0	0	D_hsk_only	5
+假期	3699	HSK2	名	915	0	0	D_hsk_only	5
+形象	3701	HSK3	名、形	1984	0	0	D_hsk_only	5
+上周	3702	HSK2		3403	0	0	D_hsk_only	5
+影子	3705	HSK4	名	5649	0	0	D_hsk_only	5
+法院	3711	HSK4	名		0	0	D_hsk_only	5
+登记	3719	HSK4			0	0	D_hsk_only	5
+工资	3724	HSK3	名	1075	0	0	D_hsk_only	5
+直	3732	HSK3	形、动、副	1733	0	0	D_hsk_only	5
+固定	3740	HSK4	形、动	4601	0	0	D_hsk_only	5
+形式	3743	HSK3	名	7073	0	0	D_hsk_only	5
+国	3745	HSK1	名	4737	0	0	D_hsk_only	5
+手套	3750	HSK4	名	4642	0	0	D_hsk_only	5
+显得	3751	HSK3	动	2064	0	0	D_hsk_only	5
+眼泪	3760	HSK4	名	2159	0	0	D_hsk_only	5
+感冒	3761	HSK3	名、动	602	0	0	D_hsk_only	5
+轮	3762	HSK4	名、动、量		0	0	D_hsk_only	5
+生产	3763	HSK3	动	8056	0	0	D_hsk_only	5
+其余	3769	HSK4	代		0	0	D_hsk_only	5
+合同	3775	HSK4	名		0	0	D_hsk_only	5
+被迫	3776	HSK4	动	8275	0	0	D_hsk_only	5
+沉默	3784	HSK4	形、动	4848	0	0	D_hsk_only	5
+双	3792	HSK3	量、形	2190	0	0	D_hsk_only	5
+图书馆	3794	HSK1	名	1436	0	0	D_hsk_only	5
+邮件	3801	HSK3	名	6039	0	0	D_hsk_only	5
+相机	3802	HSK2	名	1217	0	0	D_hsk_only	5
+龙	3803	HSK3	名	4322	0	0	D_hsk_only	5
+暗示	3804	HSK4	动	4596	0	0	D_hsk_only	5
+亲密	3806	HSK4	形	9065	0	0	D_hsk_only	5
+组成	3808	HSK2	动	15307	0	0	D_hsk_only	5
+招呼	3810	HSK4	动	6934	0	0	D_hsk_only	5
+结合	3817	HSK3	动	8113	0	0	D_hsk_only	5
+一致	3818	HSK4	形、副	5362	0	0	D_hsk_only	5
+南方	3819	HSK2	名	1031	0	0	D_hsk_only	5
+前途	3822	HSK4	名	4228	0	0	D_hsk_only	5
+性格	3825	HSK3	名	1743	0	0	D_hsk_only	5
+哪些	3829	HSK1	代	3674	0	0	D_hsk_only	5
+黄色	3830	HSK2	名		0	0	D_hsk_only	5
+大小	3836	HSK2	名	3731	0	0	D_hsk_only	5
+唱片	3844	HSK4	名	20717	0	0	D_hsk_only	5
+全家	3848	HSK2	名	3534	0	0	D_hsk_only	5
+财富	3850	HSK4	名		0	0	D_hsk_only	5
+声明	3859	HSK3	动、名	12358	0	0	D_hsk_only	5
+这时候	3861	HSK2		3656	0	0	D_hsk_only	5
+毛巾	3866	HSK4	名	7166	0	0	D_hsk_only	5
+破产	3871	HSK4		7587	0	0	D_hsk_only	5
+舒适	3872	HSK4	形	9328	0	0	D_hsk_only	5
+负担	3875	HSK4	动、名	6382	0	0	D_hsk_only	5
+早已	3876	HSK3	副	4587	0	0	D_hsk_only	5
+无数	3877	HSK4	形	6190	0	0	D_hsk_only	5
+一点儿	3878	HSK1		4332	0	0	D_hsk_only	5
+闪	3886	HSK4	动	4217	0	0	D_hsk_only	5
+欢乐	3888	HSK3	形	2433	0	0	D_hsk_only	5
+事先	3895	HSK4	名	11222	0	0	D_hsk_only	5
+利益	3900	HSK4	名		0	0	D_hsk_only	5
+海边	3912	HSK2		2535	0	0	D_hsk_only	5
+河	3919	HSK2	名	7055	0	0	D_hsk_only	5
+征服	3928	HSK4	动	7909	0	0	D_hsk_only	5
+逐渐	3930	HSK4	副	11004	0	0	D_hsk_only	5
+手表	3932	HSK2	名	5092	0	0	D_hsk_only	5
+星期天	3940	HSK1	名	3130	0	0	D_hsk_only	5
+主动	3945	HSK3	形	1622	0	0	D_hsk_only	5
+风景	3953	HSK4	名	1646	0	0	D_hsk_only	5
+航班	3956	HSK4	名	4124	0	0	D_hsk_only	5
+考验	3961	HSK3	动	5262	0	0	D_hsk_only	5
+最初	3962	HSK4	名	7671	0	0	D_hsk_only	5
+网上	3964	HSK1		837	0	0	D_hsk_only	5
+严格	3966	HSK4	形、动	5179	0	0	D_hsk_only	5
+停车场	3967	HSK2	名	10581	0	0	D_hsk_only	5
+形成	3968	HSK3	动	9912	0	0	D_hsk_only	5
+播放	3974	HSK3	动	7501	0	0	D_hsk_only	5
+搬家	3981	HSK3		2659	0	0	D_hsk_only	5
+信用卡	3984	HSK2	名		0	0	D_hsk_only	5
+自行车	3989	HSK2	名	2379	0	0	D_hsk_only	5
+课程	3995	HSK3	名	5756	0	0	D_hsk_only	5
+力	3996	HSK3	名	2945	0	0	D_hsk_only	5
+现象	4000	HSK3	名	5407	0	0	D_hsk_only	5
+排	4005	HSK3	动	1867	0	0	D_hsk_only	5
+全面	4007	HSK3	形	6040	0	0	D_hsk_only	5
+流	4014	HSK2	动	3703	0	0	D_hsk_only	5
+排队	4015	HSK2		1512	0	0	D_hsk_only	5
+友好	4019	HSK2	形	4727	0	0	D_hsk_only	5
+光明	4025	HSK3	形、名	5907	0	0	D_hsk_only	5
+湿	4027	HSK4	形	5197	0	0	D_hsk_only	5
+进一步	4030	HSK3	副	16714	0	0	D_hsk_only	5
+租	4034	HSK2	动	2973	0	0	D_hsk_only	5
+个性	4035	HSK3	名	3863	0	0	D_hsk_only	5
+资金	4038	HSK3	名	9090	0	0	D_hsk_only	5
+北方	4044	HSK2	名	906	0	0	D_hsk_only	5
+位于	4050	HSK4	动	32765	0	0	D_hsk_only	5
+订	4052	HSK3	动	2826	0	0	D_hsk_only	5
+苦	4055	HSK4	形	1557	0	0	D_hsk_only	5
+少年	4057	HSK2	名	1504	0	0	D_hsk_only	5
+南	4059	HSK1	名	4075	0	0	D_hsk_only	5
+保守	4060	HSK4	动、形	9484	0	0	D_hsk_only	5
+共	4061	HSK4	副	9022	0	0	D_hsk_only	5
+丰富	4067	HSK3	形	2408	0	0	D_hsk_only	5
+帅	4068	HSK4	形	551	0	0	D_hsk_only	5
+告别	4070	HSK3		5457	0	0	D_hsk_only	5
+做饭	4071	HSK2		1268	0	0	D_hsk_only	5
+升	4075	HSK3	动	4556	0	0	D_hsk_only	5
+半夜	4076	HSK2	名	1064	0	0	D_hsk_only	5
+齐	4080	HSK3	形、动	3667	0	0	D_hsk_only	5
+身份证	4081	HSK3	名	2470	0	0	D_hsk_only	5
+电台	4082	HSK3	名	7206	0	0	D_hsk_only	5
+依靠	4083	HSK4	动、名		0	0	D_hsk_only	5
+电	4100	HSK1	名	2244	0	0	D_hsk_only	5
+动力	4103	HSK3	名	1914	0	0	D_hsk_only	5
+现代	4104	HSK3	名	6454	0	0	D_hsk_only	5
+服装	4110	HSK3	名	6525	0	0	D_hsk_only	5
+建	4123	HSK3	动	7922	0	0	D_hsk_only	5
+官方	4131	HSK4	名		0	0	D_hsk_only	5
+激烈	4133	HSK4	形	7878	0	0	D_hsk_only	5
+双方	4145	HSK3	名	6118	0	0	D_hsk_only	5
+热爱	4149	HSK3	动	4671	0	0	D_hsk_only	5
+包裹	4154	HSK4	名、动	7960	0	0	D_hsk_only	5
+设置	4155	HSK4	动	2353	0	0	D_hsk_only	5
+从事	4169	HSK3	动	11687	0	0	D_hsk_only	5
+单纯	4173	HSK4	形	1559	0	0	D_hsk_only	5
+相互	4175	HSK3	副	4248	0	0	D_hsk_only	5
+亮	4180	HSK2	形、动	2316	0	0	D_hsk_only	5
+作业	4189	HSK2	名	854	0	0	D_hsk_only	5
+轻	4191	HSK2	形	4094	0	0	D_hsk_only	5
+足球	4202	HSK3	名	4254	0	0	D_hsk_only	5
+香	4206	HSK3	形	1945	0	0	D_hsk_only	5
+收入	4211	HSK2	动、名	5317	0	0	D_hsk_only	5
+来得及	4212	HSK4	动	2277	0	0	D_hsk_only	5
+着火	4226	HSK4		11767	0	0	D_hsk_only	5
+造	4228	HSK3	动	4974	0	0	D_hsk_only	5
+诗人	4239	HSK4	名	5393	0	0	D_hsk_only	5
+根	4240	HSK4	量、名	5758	0	0	D_hsk_only	5
+迎接	4269	HSK3	动	4172	0	0	D_hsk_only	5
+宣传	4270	HSK3	动、名	2463	0	0	D_hsk_only	5
+人数	4271	HSK2	名	7467	0	0	D_hsk_only	5
+指导	4273	HSK3	动	4102	0	0	D_hsk_only	5
+薄	4275	HSK4	形	3343	0	0	D_hsk_only	5
+隔	4276	HSK4	动	2405	0	0	D_hsk_only	5
+防止	4279	HSK3	动	8226	0	0	D_hsk_only	5
+减少	4283	HSK4	动	6893	0	0	D_hsk_only	5
+问候	4290	HSK4	动	4241	0	0	D_hsk_only	5
+日记	4293	HSK4	名	5845	0	0	D_hsk_only	5
+外国	4294	HSK1	名	4878	0	0	D_hsk_only	5
+铁	4301	HSK3	名	4157	0	0	D_hsk_only	5
+观看	4304	HSK3	动	10144	0	0	D_hsk_only	5
+中学	4315	HSK1	名	4631	0	0	D_hsk_only	5
+东	4316	HSK1	名	5676	0	0	D_hsk_only	5
+大夫	4318	HSK3	名	6983	0	0	D_hsk_only	5
+食品	4322	HSK3	名	5124	0	0	D_hsk_only	5
+省	4336	HSK2	动	1835	0	0	D_hsk_only	5
+挑选	4355	HSK4	动	15406	0	0	D_hsk_only	5
+架	4357	HSK3	量、名、动	4898	0	0	D_hsk_only	5
+渐渐	4361	HSK4	副	7631	0	0	D_hsk_only	5
+可乐	4362	HSK3	名	2355	0	0	D_hsk_only	5
+功能	4366	HSK3	名	2514	0	0	D_hsk_only	5
+网站	4367	HSK2	名	3472	0	0	D_hsk_only	5
+作者	4378	HSK3	名	3628	0	0	D_hsk_only	5
+结论	4383	HSK4	名	8129	0	0	D_hsk_only	5
+吸烟	4389	HSK4	动	10655	0	0	D_hsk_only	5
+得出	4395	HSK2		7171	0	0	D_hsk_only	5
+亿	4399	HSK2	数	6389	0	0	D_hsk_only	5
+植物	4402	HSK4	名	4710	0	0	D_hsk_only	5
+把握	4404	HSK3	动、名	5121	0	0	D_hsk_only	5
+好友	4413	HSK4	名	1198	0	0	D_hsk_only	5
+决心	4417	HSK3	名、动	6536	0	0	D_hsk_only	5
+美金	4419	HSK4	名	18900	0	0	D_hsk_only	5
+义务	4422	HSK4	名	7887	0	0	D_hsk_only	5
+旅游	4423	HSK2	动	712	0	0	D_hsk_only	5
+独特	4424	HSK4	形	5989	0	0	D_hsk_only	5
+战胜	4427	HSK4	动	10233	0	0	D_hsk_only	5
+水果	4430	HSK1	名	1453	0	0	D_hsk_only	5
+担任	4433	HSK4	动	47634	0	0	D_hsk_only	5
+基础	4458	HSK3	名	3325	0	0	D_hsk_only	5
+深入	4467	HSK3	动、形	8849	0	0	D_hsk_only	5
+证件	4480	HSK3	名		0	0	D_hsk_only	5
+维护	4481	HSK4	动	5073	0	0	D_hsk_only	5
+今后	4493	HSK2	名	9254	0	0	D_hsk_only	5
+创作	4499	HSK3	动、名	8231	0	0	D_hsk_only	5
+通	4502	HSK2	动、形	5271	0	0	D_hsk_only	5
+扫	4510	HSK4	动	3248	0	0	D_hsk_only	5
+草	4513	HSK2	名		0	0	D_hsk_only	5
+收获	4515	HSK4	动、名	3229	0	0	D_hsk_only	5
+梦见	4519	HSK4		1680	0	0	D_hsk_only	5
+体会	4521	HSK3	动、名	1912	0	0	D_hsk_only	5
+盘子	4522	HSK4	名	5123	0	0	D_hsk_only	5
+座	4529	HSK2	量	4302	0	0	D_hsk_only	5
+无限	4530	HSK4	形	3036	0	0	D_hsk_only	5
+组合	4532	HSK3	动	5029	0	0	D_hsk_only	5
+工程师	4533	HSK3	名	12855	0	0	D_hsk_only	5
+居住	4534	HSK4	动	13916	0	0	D_hsk_only	5
+相似	4546	HSK3	形	5852	0	0	D_hsk_only	5
+预测	4554	HSK4	动	6500	0	0	D_hsk_only	5
+商人	4557	HSK2	名	19430	0	0	D_hsk_only	5
+闪电	4558	HSK4	名	4008	0	0	D_hsk_only	5
+汽油	4563	HSK4	名	18558	0	0	D_hsk_only	5
+大陆	4565	HSK4	名	5297	0	0	D_hsk_only	5
+总共	4568	HSK4	副	6710	0	0	D_hsk_only	5
+举办	4572	HSK3	动	14653	0	0	D_hsk_only	5
+疑问	4573	HSK4	名	6977	0	0	D_hsk_only	5
+收音机	4580	HSK3	名	12361	0	0	D_hsk_only	5
+数量	4582	HSK3	名	6349	0	0	D_hsk_only	5
+开发	4584	HSK3	动	5973	0	0	D_hsk_only	5
+不满	4585	HSK2	形	5265	0	0	D_hsk_only	5
+试验	4588	HSK3	动	14087	0	0	D_hsk_only	5
+千	4590	HSK2	数	9194	0	0	D_hsk_only	5
+录音	4592	HSK3	动、名	6666	0	0	D_hsk_only	5
+大型	4593	HSK4	形	8791	0	0	D_hsk_only	5
+购物	4595	HSK4	动	4730	0	0	D_hsk_only	5
+夜	4598	HSK2	名	3101	0	0	D_hsk_only	5
+高潮	4600	HSK4	名		0	0	D_hsk_only	5
+甜	4606	HSK3	形	964	0	0	D_hsk_only	5
+着急	4617	HSK4		1400	0	0	D_hsk_only	5
+喜爱	4620	HSK4	动	7652	0	0	D_hsk_only	5
+没事儿	4626	HSK1		2037	0	0	D_hsk_only	5
+出售	4635	HSK4	动		0	0	D_hsk_only	5
+量	4637	HSK4	动	2709	0	0	D_hsk_only	5
+绿	4641	HSK2	形	1722	0	0	D_hsk_only	5
+科技	4642	HSK3	名	5473	0	0	D_hsk_only	5
+交通	4644	HSK2	名	5180	0	0	D_hsk_only	5
+瓶	4645	HSK2	名、量	3700	0	0	D_hsk_only	5
+争论	4652	HSK4	动	10036	0	0	D_hsk_only	5
+歌声	4653	HSK3	名	7261	0	0	D_hsk_only	5
+发言	4661	HSK3	动、名	8068	0	0	D_hsk_only	5
+列车	4669	HSK4	名	10625	0	0	D_hsk_only	5
+发送	4670	HSK3	动	8925	0	0	D_hsk_only	5
+此外	4681	HSK4	连	43447	0	0	D_hsk_only	5
+落后	4682	HSK3		6265	0	0	D_hsk_only	5
+奖金	4683	HSK4	名	7680	0	0	D_hsk_only	5
+尾巴	4689	HSK4	名	3600	0	0	D_hsk_only	5
+西部	4695	HSK3	名	11611	0	0	D_hsk_only	5
+电视台	4701	HSK3	名	6808	0	0	D_hsk_only	5
+房租	4702	HSK3	名	7492	0	0	D_hsk_only	5
+各自	4713	HSK3	代	4459	0	0	D_hsk_only	5
+晚会	4714	HSK2	名	4643	0	0	D_hsk_only	5
+领先	4719	HSK3		15405	0	0	D_hsk_only	5
+评价	4723	HSK3	动、名	2369	0	0	D_hsk_only	5
+典型	4728	HSK4	名、形	7014	0	0	D_hsk_only	5
+童年	4736	HSK4	名	3514	0	0	D_hsk_only	5
+燃料	4743	HSK4	名	63259	0	0	D_hsk_only	5
+青春	4752	HSK4	名	1080	0	0	D_hsk_only	5
+瓶子	4753	HSK2	名	3335	0	0	D_hsk_only	5
+登	4777	HSK4	动	7336	0	0	D_hsk_only	5
+购买	4778	HSK4	动	4747	0	0	D_hsk_only	5
+途中	4781	HSK4	名	11520	0	0	D_hsk_only	5
+例子	4791	HSK2	名	6168	0	0	D_hsk_only	5
+失业	4794	HSK4		5347	0	0	D_hsk_only	5
+输入	4802	HSK3	动	8190	0	0	D_hsk_only	5
+咱	4805	HSK2	代	903	0	0	D_hsk_only	5
+长期	4806	HSK3	名	4482	0	0	D_hsk_only	5
+功课	4807	HSK3	名	6608	0	0	D_hsk_only	5
+配	4809	HSK3	动	1858	0	0	D_hsk_only	5
+阅读	4810	HSK4	动	2931	0	0	D_hsk_only	5
+车辆	4813	HSK2	名	12825	0	0	D_hsk_only	5
+运动员	4815	HSK4	名	7793	0	0	D_hsk_only	5
+西方	4824	HSK2	名	15132	0	0	D_hsk_only	5
+需求	4825	HSK3	名	5605	0	0	D_hsk_only	5
+透	4828	HSK4	动、形	4199	0	0	D_hsk_only	5
+休假	4831	HSK2		2428	0	0	D_hsk_only	5
+南部	4832	HSK3	名		0	0	D_hsk_only	5
+这时	4840	HSK2		14112	0	0	D_hsk_only	5
+奖	4844	HSK4	动、名	4661	0	0	D_hsk_only	5
+牙	4846	HSK4	名	2300	0	0	D_hsk_only	5
+夜里	4849	HSK2	名	4209	0	0	D_hsk_only	5
+人口	4857	HSK2	名	9438	0	0	D_hsk_only	5
+不但	4865	HSK2	连	7916	0	0	D_hsk_only	5
+方案	4867	HSK4	名	8865	0	0	D_hsk_only	5
+家长	4882	HSK2	名	1821	0	0	D_hsk_only	5
+宝贵	4884	HSK4	形	10950	0	0	D_hsk_only	5
+工程	4885	HSK4	名	5552	0	0	D_hsk_only	5
+面试	4886	HSK4	动	1233	0	0	D_hsk_only	5
+引导	4896	HSK4	动	11248	0	0	D_hsk_only	5
+获取	4898	HSK4	动	18634	0	0	D_hsk_only	5
+指出	4899	HSK3		12286	0	0	D_hsk_only	5
+能干	4906	HSK4	形	5240	0	0	D_hsk_only	5
+袜子	4907	HSK4	名	2157	0	0	D_hsk_only	5
+球队	4913	HSK2	名	5485	0	0	D_hsk_only	5
+请客	4920	HSK2		1780	0	0	D_hsk_only	5
+字母	4922	HSK4	名	9393	0	0	D_hsk_only	5
+大会	4924	HSK4	名	5695	0	0	D_hsk_only	5
+里头	4931	HSK2	名	9455	0	0	D_hsk_only	5
+写作	4937	HSK3	动	11344	0	0	D_hsk_only	5
+木头	4942	HSK3	名	7902	0	0	D_hsk_only	5
+热闹	4950	HSK4	形、动	2584	0	0	D_hsk_only	5
+羊	4951	HSK3	名	3319	0	0	D_hsk_only	5
+套	4954	HSK2	量	3071	0	0	D_hsk_only	5
+得分	4958	HSK3	动、名	12607	0	0	D_hsk_only	5
+实力	4960	HSK3	名	2240	0	0	D_hsk_only	5
+概念	4963	HSK3	名	4077	0	0	D_hsk_only	5
+钟	4969	HSK3	名	5005	0	0	D_hsk_only	5
+移民	4972	HSK4	动、名		0	0	D_hsk_only	5
+页	4977	HSK1	量	9061	0	0	D_hsk_only	5
+初	4979	HSK3	副	4016	0	0	D_hsk_only	5
+名人	4984	HSK4	名	10180	0	0	D_hsk_only	5
+光临	4994	HSK4	动	13483	0	0	D_hsk_only	5
+北	5003	HSK1	名	5184	0	0	D_hsk_only	5
+相比	5010	HSK3	动	6405	0	0	D_hsk_only	5
+整	5013	HSK3	形、动	2083	0	0	D_hsk_only	5
+院子	5022	HSK2	名	6280	0	0	D_hsk_only	5
+打工	5025	HSK2		2404	0	0	D_hsk_only	5
+考	5027	HSK1	动	442	0	0	D_hsk_only	5
+主持	5035	HSK3	动	4454	0	0	D_hsk_only	5
+代	5054	HSK3	动、名	6532	0	0	D_hsk_only	5
+团	5060	HSK3	名、量	2307	0	0	D_hsk_only	5
+积极	5077	HSK3	形	3687	0	0	D_hsk_only	5
+几	5090	HSK1	数、代	1517	0	0	D_hsk_only	5
+销售	5092	HSK4	动	5395	0	0	D_hsk_only	5
+台上	5104	HSK4	名	7109	0	0	D_hsk_only	5
+温度	5105	HSK2	名	1886	0	0	D_hsk_only	5
+矮	5107	HSK4	形	2044	0	0	D_hsk_only	5
+团结	5120	HSK3	动	9709	0	0	D_hsk_only	5
+克服	5122	HSK3	动	9805	0	0	D_hsk_only	5
+多数	5135	HSK2	名	8282	0	0	D_hsk_only	5
+类	5141	HSK3	名、量	1729	0	0	D_hsk_only	5
+分散	5143	HSK4	动、形	13633	0	0	D_hsk_only	5
+传来	5154	HSK3		18847	0	0	D_hsk_only	5
+图片	5163	HSK2	名		0	0	D_hsk_only	5
+编	5164	HSK4	动	4605	0	0	D_hsk_only	5
+家具	5168	HSK3	名	7483	0	0	D_hsk_only	5
+领	5176	HSK3	动	3066	0	0	D_hsk_only	5
+大众	5179	HSK4	名	3143	0	0	D_hsk_only	5
+团体	5185	HSK3	名	17070	0	0	D_hsk_only	5
+打听	5188	HSK3	动	7217	0	0	D_hsk_only	5
+成人	5194	HSK4	名		0	0	D_hsk_only	5
+握手	5199	HSK3		3435	0	0	D_hsk_only	5
+堵	5204	HSK4	动	2268	0	0	D_hsk_only	5
+国内	5206	HSK3		1362	0	0	D_hsk_only	5
+半年	5210	HSK1		1470	0	0	D_hsk_only	5
+放学	5211	HSK1		3836	0	0	D_hsk_only	5
+医学	5215	HSK4	名	11033	0	0	D_hsk_only	5
+降低	5217	HSK4	动	8785	0	0	D_hsk_only	5
+乐观	5222	HSK3	形	3634	0	0	D_hsk_only	5
+传播	5229	HSK3	动	9001	0	0	D_hsk_only	5
+主任	5232	HSK3	名	4588	0	0	D_hsk_only	5
+红酒	5260	HSK3	名	4682	0	0	D_hsk_only	5
+地铁	5261	HSK2	名	1231	0	0	D_hsk_only	5
+优势	5262	HSK3	名	5817	0	0	D_hsk_only	5
+缺少	5279	HSK3	动	6591	0	0	D_hsk_only	5
+各地	5285	HSK3	名	7503	0	0	D_hsk_only	5
+石油	5287	HSK3	名	17035	0	0	D_hsk_only	5
+充分	5288	HSK4	形	9322	0	0	D_hsk_only	5
+松	5304	HSK4	形、动	6800	0	0	D_hsk_only	5
+英勇	5308	HSK4	形	23465	0	0	D_hsk_only	5
+加强	5310	HSK3	动	7296	0	0	D_hsk_only	5
+农民	5312	HSK3	名	8011	0	0	D_hsk_only	5
+转告	5316	HSK4	动	10740	0	0	D_hsk_only	5
+行业	5319	HSK4	名	4119	0	0	D_hsk_only	5
+画家	5327	HSK2	名	12738	0	0	D_hsk_only	5
+检测	5335	HSK4	动	9259	0	0	D_hsk_only	5
+小学	5337	HSK1	名	1108	0	0	D_hsk_only	5
+名片	5339	HSK4	名	18134	0	0	D_hsk_only	5
+缺	5341	HSK3	动	1501	0	0	D_hsk_only	5
+打球	5349	HSK1		1451	0	0	D_hsk_only	5
+资源	5357	HSK4	名	1605	0	0	D_hsk_only	5
+相片	5375	HSK4	名	5738	0	0	D_hsk_only	5
+遗传	5377	HSK4	动	5663	0	0	D_hsk_only	5
+自身	5385	HSK3	名	6308	0	0	D_hsk_only	5
+痛快	5389	HSK4	形	6560	0	0	D_hsk_only	5
+压	5390	HSK3	动	3728	0	0	D_hsk_only	5
+文字	5395	HSK3	名	2324	0	0	D_hsk_only	5
+教师	5400	HSK2	名	4082	0	0	D_hsk_only	5
+暖和	5403	HSK3	形	1700	0	0	D_hsk_only	5
+实施	5408	HSK4	动	17134	0	0	D_hsk_only	5
+虫子	5417	HSK4	名	4366	0	0	D_hsk_only	5
+忽然	5419	HSK2	副	3408	0	0	D_hsk_only	5
+动物园	5428	HSK2	名	4654	0	0	D_hsk_only	5
+男女	5433	HSK4	名	2914	0	0	D_hsk_only	5
+奋斗	5434	HSK4	动	2632	0	0	D_hsk_only	5
+场合	5446	HSK3	名	8795	0	0	D_hsk_only	5
+香蕉	5456	HSK3	名	3079	0	0	D_hsk_only	5
+修改	5457	HSK3	动	7125	0	0	D_hsk_only	5
+计算机	5463	HSK2	名	5245	0	0	D_hsk_only	5
+有利	5469	HSK3	形	16779	0	0	D_hsk_only	5
+有的是	5471	HSK3		4565	0	0	D_hsk_only	5
+复制	5472	HSK4	动		0	0	D_hsk_only	5
+培养	5492	HSK4	动	4130	0	0	D_hsk_only	5
+投诉	5495	HSK4	动		0	0	D_hsk_only	5
+纯	5498	HSK4	形	2907	0	0	D_hsk_only	5
+路边	5503	HSK2		3932	0	0	D_hsk_only	5
+机票	5514	HSK1	名	1683	0	0	D_hsk_only	5
+牌子	5516	HSK3	名	1197	0	0	D_hsk_only	5
+大多	5522	HSK4	副	4443	0	0	D_hsk_only	5
+安装	5523	HSK3	动	6956	0	0	D_hsk_only	5
+补充	5524	HSK3	动、名	4722	0	0	D_hsk_only	5
+乐	5526	HSK3	动	2597	0	0	D_hsk_only	5
+批评	5533	HSK3	动	4693	0	0	D_hsk_only	5
+姐	5535	HSK1	名	432	0	0	D_hsk_only	5
+季节	5544	HSK4	名	2162	0	0	D_hsk_only	5
+使劲	5552	HSK4		3540	0	0	D_hsk_only	5
+极	5558	HSK4	副	8094	0	0	D_hsk_only	5
+快点儿	5561	HSK2		18556	0	0	D_hsk_only	5
+青年	5572	HSK2	名	2265	0	0	D_hsk_only	5
+布置	5573	HSK4	动	7495	0	0	D_hsk_only	5
+放假	5576	HSK1		309	0	0	D_hsk_only	5
+摇	5587	HSK4	动	5203	0	0	D_hsk_only	5
+预计	5599	HSK3	动	6998	0	0	D_hsk_only	5
+录	5605	HSK3	动	3262	0	0	D_hsk_only	5
+重视	5608	HSK2	动	6996	0	0	D_hsk_only	5
+汇报	5620	HSK4	动、名	5800	0	0	D_hsk_only	5
+后天	5624	HSK1	名	805	0	0	D_hsk_only	5
+北部	5626	HSK3	名	23375	0	0	D_hsk_only	5
+村	5629	HSK3	名	4131	0	0	D_hsk_only	5
+下楼	5631	HSK4		4711	0	0	D_hsk_only	5
+玉米	5635	HSK4	名	3218	0	0	D_hsk_only	5
+环	5643	HSK3	名	11534	0	0	D_hsk_only	5
+教室	5654	HSK2	名	2471	0	0	D_hsk_only	5
+改造	5661	HSK3	动	10480	0	0	D_hsk_only	5
+上个月	5664	HSK4		4328	0	0	D_hsk_only	5
+天真	5674	HSK4	形	4298	0	0	D_hsk_only	5
+游	5678	HSK3	动	2472	0	0	D_hsk_only	5
+体重	5679	HSK4	名	1214	0	0	D_hsk_only	5
+下个月	5680	HSK4		1381	0	0	D_hsk_only	5
+超市	5685	HSK2	名	1429	0	0	D_hsk_only	5
+湖	5687	HSK2	名	5054	0	0	D_hsk_only	5
+穷人	5694	HSK4	名	4870	0	0	D_hsk_only	5
+生长	5695	HSK3	动	5573	0	0	D_hsk_only	5
+老家	5696	HSK4	名	1878	0	0	D_hsk_only	5
+一块儿	5699	HSK1	名、副	6387	0	0	D_hsk_only	5
+精力	5711	HSK4	名	3953	0	0	D_hsk_only	5
+辣	5716	HSK4	形	687	0	0	D_hsk_only	5
+肥	5728	HSK4	形	1124	0	0	D_hsk_only	5
+结构	5736	HSK4	名	11008	0	0	D_hsk_only	5
+电源	5744	HSK4	名	8931	0	0	D_hsk_only	5
+宁静	5757	HSK4	形	11209	0	0	D_hsk_only	5
+出院	5761	HSK2		7279	0	0	D_hsk_only	5
+有限	5770	HSK4	形	4571	0	0	D_hsk_only	5
+改善	5776	HSK4	动	5767	0	0	D_hsk_only	5
+担保	5777	HSK4	动、名		0	0	D_hsk_only	5
+形状	5789	HSK3	名	6486	0	0	D_hsk_only	5
+公布	5792	HSK3	动	4497	0	0	D_hsk_only	5
+遗产	5797	HSK4	名		0	0	D_hsk_only	5
+方	5819	HSK4	形、名	4868	0	0	D_hsk_only	5
+重量	5824	HSK4	名	7946	0	0	D_hsk_only	5
+民族	5829	HSK3	名		0	0	D_hsk_only	5
+发烧	5830	HSK4		1918	0	0	D_hsk_only	5
+东方	5859	HSK2	名	4666	0	0	D_hsk_only	5
+碗	5865	HSK2	名	1542	0	0	D_hsk_only	5
+市区	5866	HSK4	名	3312	0	0	D_hsk_only	5
+跑步	5870	HSK3		1077	0	0	D_hsk_only	5
+合	5872	HSK3	动	5609	0	0	D_hsk_only	5
+大自然	5874	HSK2	名	8279	0	0	D_hsk_only	5
+成果	5878	HSK3	名	7835	0	0	D_hsk_only	5
+寒冷	5883	HSK4	形	8281	0	0	D_hsk_only	5
+国外	5887	HSK1		2173	0	0	D_hsk_only	5
+圆	5907	HSK4	形、名	1966	0	0	D_hsk_only	5
+推进	5914	HSK3	动	26627	0	0	D_hsk_only	5
+论文	5918	HSK4	名	1055	0	0	D_hsk_only	5
+封闭	5930	HSK4	动、形	11788	0	0	D_hsk_only	5
+遍	5931	HSK2	量	3789	0	0	D_hsk_only	5
+平等	5938	HSK2	形	9271	0	0	D_hsk_only	5
+爱好	5940	HSK1	动、名	2807	0	0	D_hsk_only	5
+早饭	5944	HSK1	名	1697	0	0	D_hsk_only	5
+院长	5945	HSK2	名		0	0	D_hsk_only	5
+板	5953	HSK3	名	6590	0	0	D_hsk_only	5
+倍	5955	HSK4	量	6655	0	0	D_hsk_only	5
+设施	5958	HSK4	名	15511	0	0	D_hsk_only	5
+笔记	5964	HSK2	名	4523	0	0	D_hsk_only	5
+装修	5980	HSK4	动	2500	0	0	D_hsk_only	5
+东部	5995	HSK3	名	17550	0	0	D_hsk_only	5
+盐	6003	HSK4	名	5075	0	0	D_hsk_only	5
+高速公路	6020	HSK3		20238	0	0	D_hsk_only	5
+凉	6028	HSK2	形	1503	0	0	D_hsk_only	5
+填	6030	HSK4	动	4195	0	0	D_hsk_only	5
+运用	6033	HSK4	动	19828	0	0	D_hsk_only	5
+马路	6035	HSK1	名	4841	0	0	D_hsk_only	5
+期	6036	HSK3	量	3086	0	0	D_hsk_only	5
+云	6042	HSK2	名	2077	0	0	D_hsk_only	5
+转变	6060	HSK3	动	11374	0	0	D_hsk_only	5
+常见	6075	HSK2		7914	0	0	D_hsk_only	5
+尺寸	6076	HSK4	名	7082	0	0	D_hsk_only	5
+准	6083	HSK3	形、副	3466	0	0	D_hsk_only	5
+未必	6091	HSK4	副	4126	0	0	D_hsk_only	5
+模型	6098	HSK4	名	8558	0	0	D_hsk_only	5
+公斤	6105	HSK2	量	5356	0	0	D_hsk_only	5
+各个	6117	HSK4	代、副	5959	0	0	D_hsk_only	5
+供应	6120	HSK4	动	18966	0	0	D_hsk_only	5
+暑假	6125	HSK4	名	721	0	0	D_hsk_only	5
+种子	6144	HSK3	名	5116	0	0	D_hsk_only	5
+缺点	6151	HSK3	名	4988	0	0	D_hsk_only	5
+两边	6152	HSK4	名	4805	0	0	D_hsk_only	5
+顺序	6154	HSK4	名	7410	0	0	D_hsk_only	5
+游客	6164	HSK2	名	7314	0	0	D_hsk_only	5
+沉重	6176	HSK4	形	10079	0	0	D_hsk_only	5
+大规模	6179	HSK4		26956	0	0	D_hsk_only	5
+措施	6181	HSK4	名	13418	0	0	D_hsk_only	5
+穷	6186	HSK4	形	1294	0	0	D_hsk_only	5
+音乐会	6197	HSK2	名	11562	0	0	D_hsk_only	5
+治	6202	HSK4	动	4513	0	0	D_hsk_only	5
+大衣	6220	HSK2	名	3345	0	0	D_hsk_only	5
+航空	6226	HSK4	动	8771	0	0	D_hsk_only	5
+下载	6234	HSK4	动	1544	0	0	D_hsk_only	5
+制度	6243	HSK3	名		0	0	D_hsk_only	5
+宝石	6252	HSK4	名	13426	0	0	D_hsk_only	5
+首都	6271	HSK3	名	6466	0	0	D_hsk_only	5
+腰	6276	HSK4	名	1481	0	0	D_hsk_only	5
+果汁	6280	HSK3	名	6661	0	0	D_hsk_only	5
+信封	6285	HSK3	名	18854	0	0	D_hsk_only	5
+宽	6287	HSK4	形	3780	0	0	D_hsk_only	5
+应当	6288	HSK3	动	16903	0	0	D_hsk_only	5
+迷	6290	HSK3	动	3370	0	0	D_hsk_only	5
+锻炼	6293	HSK4	动	1456	0	0	D_hsk_only	5
+妹	6304	HSK1	名	1655	0	0	D_hsk_only	5
+秋天	6312	HSK2	名	2225	0	0	D_hsk_only	5
+形势	6315	HSK4	名	13935	0	0	D_hsk_only	5
+菜单	6323	HSK2	名	10935	0	0	D_hsk_only	5
+直播	6324	HSK3	动	734	0	0	D_hsk_only	5
+补	6332	HSK3	动	1187	0	0	D_hsk_only	5
+引	6335	HSK4	动	18468	0	0	D_hsk_only	5
+网	6338	HSK2	名	2062	0	0	D_hsk_only	5
+阳台	6361	HSK4	名	3483	0	0	D_hsk_only	5
+拉开	6364	HSK4		14551	0	0	D_hsk_only	5
+请教	6368	HSK3	动	3291	0	0	D_hsk_only	5
+极其	6376	HSK4	副	9398	0	0	D_hsk_only	5
+半天	6393	HSK1		1343	0	0	D_hsk_only	5
+公共	6404	HSK3	形	8782	0	0	D_hsk_only	5
+转弯	6405	HSK4		15634	0	0	D_hsk_only	5
+制定	6416	HSK3	动	24721	0	0	D_hsk_only	5
+待遇	6431	HSK4	名	3826	0	0	D_hsk_only	5
+高尚	6438	HSK4	形	8502	0	0	D_hsk_only	5
+景色	6449	HSK3	名	4876	0	0	D_hsk_only	5
+箱	6450	HSK4	量	10461	0	0	D_hsk_only	5
+层	6456	HSK2	量	8340	0	0	D_hsk_only	5
+大爷	6484	HSK4	名		0	0	D_hsk_only	5
+袋	6488	HSK4	名、量	8727	0	0	D_hsk_only	5
+包含	6492	HSK4	动	11818	0	0	D_hsk_only	5
+厚	6493	HSK4	形	1906	0	0	D_hsk_only	5
+小声	6495	HSK2		12910	0	0	D_hsk_only	5
+特征	6501	HSK4	名	14902	0	0	D_hsk_only	5
+抄	6502	HSK4	动	2501	0	0	D_hsk_only	5
+减肥	6505	HSK4		355	0	0	D_hsk_only	5
+分配	6529	HSK3	动	6597	0	0	D_hsk_only	5
+卫生间	6533	HSK3	名	8571	0	0	D_hsk_only	5
+老太太	6538	HSK3	名	5942	0	0	D_hsk_only	5
+器官	6552	HSK4	名		0	0	D_hsk_only	5
+演唱会	6566	HSK3	名	1159	0	0	D_hsk_only	5
+晒	6583	HSK4	动	816	0	0	D_hsk_only	5
+决赛	6596	HSK3	动、名	4849	0	0	D_hsk_only	5
+弯	6600	HSK4	形、动	3392	0	0	D_hsk_only	5
+鲜花	6602	HSK4	名	7682	0	0	D_hsk_only	5
+短信	6604	HSK2	名	2087	0	0	D_hsk_only	5
+采用	6627	HSK3	动	20937	0	0	D_hsk_only	5
+往往	6630	HSK3	副	5083	0	0	D_hsk_only	5
+划	6636	HSK4	动	7312	0	0	D_hsk_only	5
+住院	6665	HSK2		4869	0	0	D_hsk_only	5
+女孩儿	6669	HSK1	名	8210	0	0	D_hsk_only	5
+北边	6674	HSK1	名	12139	0	0	D_hsk_only	5
+运输	6680	HSK3	动	25587	0	0	D_hsk_only	5
+难题	6718	HSK2	名	12350	0	0	D_hsk_only	5
+球场	6722	HSK2	名	8640	0	0	D_hsk_only	5
+工业	6724	HSK3	名	11058	0	0	D_hsk_only	5
+铁路	6726	HSK3	名	8354	0	0	D_hsk_only	5
+扩大	6729	HSK4	动	16343	0	0	D_hsk_only	5
+汽水	6733	HSK4	名	12032	0	0	D_hsk_only	5
+弱	6734	HSK4	形	3256	0	0	D_hsk_only	5
+通信	6758	HSK3		16437	0	0	D_hsk_only	5
+危害	6780	HSK3	动、名	14178	0	0	D_hsk_only	5
+大姐	6783	HSK4	名	1669	0	0	D_hsk_only	5
+加班	6787	HSK4		744	0	0	D_hsk_only	5
+少数	6796	HSK2	名	8117	0	0	D_hsk_only	5
+名称	6799	HSK2	名	11831	0	0	D_hsk_only	5
+上网	6802	HSK1		1879	0	0	D_hsk_only	5
+北京	6813	HSK1	名	288	0	0	D_hsk_only	5
+忽视	6841	HSK4	动	10993	0	0	D_hsk_only	5
+存	6852	HSK3	动	3702	0	0	D_hsk_only	5
+外边	6853	HSK1	名	6809	0	0	D_hsk_only	5
+青少年	6861	HSK2	名	20246	0	0	D_hsk_only	5
+步行	6867	HSK4	动	9886	0	0	D_hsk_only	5
+强调	6891	HSK3	动	5335	0	0	D_hsk_only	5
+反复	6898	HSK3	副、名	6052	0	0	D_hsk_only	5
+玩儿	6906	HSK1	动	1137	0	0	D_hsk_only	5
+沉	6914	HSK4	动、形	6515	0	0	D_hsk_only	5
+巧	6924	HSK3	形	1845	0	0	D_hsk_only	5
+收看	6928	HSK3	动	21771	0	0	D_hsk_only	5
+神话	6951	HSK4	名	14209	0	0	D_hsk_only	5
+小型	6964	HSK4	形	15275	0	0	D_hsk_only	5
+新郎	6987	HSK4	名	8186	0	0	D_hsk_only	5
+将近	6991	HSK3	副	5090	0	0	D_hsk_only	5
+不光	7006	HSK3	副、连	6132	0	0	D_hsk_only	5
+接待	7011	HSK3	动	6029	0	0	D_hsk_only	5
+美食	7023	HSK3	名	1409	0	0	D_hsk_only	5
+角	7030	HSK2	量、名	9786	0	0	D_hsk_only	5
+会员	7039	HSK3	名	1070	0	0	D_hsk_only	5
+亲切	7041	HSK3	形	4624	0	0	D_hsk_only	5
+厂	7056	HSK3	名	10136	0	0	D_hsk_only	5
+影视	7066	HSK3	名	11982	0	0	D_hsk_only	5
+商场	7071	HSK1	名	4464	0	0	D_hsk_only	5
+难听	7083	HSK2	形	3610	0	0	D_hsk_only	5
+场所	7086	HSK3	名	20120	0	0	D_hsk_only	5
+商品	7091	HSK3	名		0	0	D_hsk_only	5
+针	7094	HSK4	名	5889	0	0	D_hsk_only	5
+色彩	7098	HSK4	名	7205	0	0	D_hsk_only	5
+系列	7111	HSK4	名	2370	0	0	D_hsk_only	5
+增长	7137	HSK3	动	11632	0	0	D_hsk_only	5
+旅客	7138	HSK2	名	14190	0	0	D_hsk_only	5
+句	7155	HSK2	量	2997	0	0	D_hsk_only	5
+推销	7158	HSK4	动	9829	0	0	D_hsk_only	5
+里边	7165	HSK1	名	7141	0	0	D_hsk_only	5
+奖学金	7170	HSK4	名	6802	0	0	D_hsk_only	5
+优点	7175	HSK3	名	4897	0	0	D_hsk_only	5
+群	7177	HSK3	量	2343	0	0	D_hsk_only	5
+收费	7190	HSK3	动	3010	0	0	D_hsk_only	5
+反映	7191	HSK4	动、名	7551	0	0	D_hsk_only	5
+统一	7198	HSK4	动、形	4109	0	0	D_hsk_only	5
+辩论	7212	HSK4	动、名	10614	0	0	D_hsk_only	5
+手续	7218	HSK3	名	12092	0	0	D_hsk_only	5
+提问	7224	HSK3	动	7752	0	0	D_hsk_only	5
+认可	7234	HSK3	动	6846	0	0	D_hsk_only	5
+陆地	7236	HSK4	名	24432	0	0	D_hsk_only	5
+电影院	7256	HSK1	名	2811	0	0	D_hsk_only	5
+照相	7258	HSK2		2795	0	0	D_hsk_only	5
+粮食	7264	HSK4	名	7804	0	0	D_hsk_only	5
+表格	7268	HSK3	名	17923	0	0	D_hsk_only	5
+吸收	7273	HSK4	动	6786	0	0	D_hsk_only	5
+安置	7278	HSK4	动	33353	0	0	D_hsk_only	5
+支	7282	HSK4	动	11138	0	0	D_hsk_only	5
+必然	7301	HSK3	形	3744	0	0	D_hsk_only	5
+建设	7302	HSK3	动、名	7818	0	0	D_hsk_only	5
+笔记本	7305	HSK2	名	5974	0	0	D_hsk_only	5
+家属	7310	HSK3	名	5635	0	0	D_hsk_only	5
+新年	7314	HSK1	名	2461	0	0	D_hsk_only	5
+质量	7331	HSK4	名	1831	0	0	D_hsk_only	5
+海水	7332	HSK4	名	11947	0	0	D_hsk_only	5
+上衣	7335	HSK3	名	6533	0	0	D_hsk_only	5
+情景	7344	HSK4	名	10982	0	0	D_hsk_only	5
+合格	7362	HSK3	形	7056	0	0	D_hsk_only	5
+体育	7366	HSK2	名	3638	0	0	D_hsk_only	5
+房屋	7380	HSK3	名	32569	0	0	D_hsk_only	5
+大使馆	7382	HSK3	名		0	0	D_hsk_only	5
+色	7394	HSK4	名	2223	0	0	D_hsk_only	5
+播出	7399	HSK3		6134	0	0	D_hsk_only	5
+故乡	7400	HSK3	名	7883	0	0	D_hsk_only	5
+饱	7404	HSK2	形	2152	0	0	D_hsk_only	5
+善于	7419	HSK4	动	8455	0	0	D_hsk_only	5
+分数	7427	HSK2	名	4087	0	0	D_hsk_only	5
+步	7429	HSK3	名、量	7785	0	0	D_hsk_only	5
+男士	7454	HSK4	名	8858	0	0	D_hsk_only	5
+平均	7465	HSK4	动、形	5966	0	0	D_hsk_only	5
+大学生	7473	HSK1	名	2978	0	0	D_hsk_only	5
+动摇	7475	HSK4	动	13385	0	0	D_hsk_only	5
+节日	7478	HSK2	名	3498	0	0	D_hsk_only	5
+电视机	7482	HSK1	名	10864	0	0	D_hsk_only	5
+文学	7503	HSK3	名	6371	0	0	D_hsk_only	5
+加油站	7514	HSK4	名	19121	0	0	D_hsk_only	5
+车票	7517	HSK1	名	3760	0	0	D_hsk_only	5
+得意	7527	HSK4	形	5519	0	0	D_hsk_only	5
+联合国	7529	HSK3	名		0	0	D_hsk_only	5
+毫米	7539	HSK4	量	26771	0	0	D_hsk_only	5
+沙子	7542	HSK3	名	9017	0	0	D_hsk_only	5
+气球	7543	HSK4	名	5061	0	0	D_hsk_only	5
+草地	7546	HSK2	名		0	0	D_hsk_only	5
+开花	7557	HSK4		4702	0	0	D_hsk_only	5
+胜	7559	HSK3	动	9457	0	0	D_hsk_only	5
+身高	7561	HSK4	名	1391	0	0	D_hsk_only	5
+记载	7569	HSK4	动	41189	0	0	D_hsk_only	5
+高速	7571	HSK3	形	2884	0	0	D_hsk_only	5
+集体	7582	HSK3	名	4655	0	0	D_hsk_only	5
+期限	7588	HSK4	名		0	0	D_hsk_only	5
+维修	7592	HSK4	动	8799	0	0	D_hsk_only	5
+另一方面	7593	HSK3		27924	0	0	D_hsk_only	5
+校园	7616	HSK2	名	4670	0	0	D_hsk_only	5
+推迟	7621	HSK4	动		0	0	D_hsk_only	5
+刷	7646	HSK4	动	737	0	0	D_hsk_only	5
+替代	7656	HSK4	动	12004	0	0	D_hsk_only	5
+毛衣	7666	HSK4	名	2249	0	0	D_hsk_only	5
+稳	7692	HSK4	形	2741	0	0	D_hsk_only	5
+路口	7693	HSK1	名	6430	0	0	D_hsk_only	5
+列	7703	HSK4	动、量	6163	0	0	D_hsk_only	5
+古	7706	HSK3	形	12668	0	0	D_hsk_only	5
+古代	7724	HSK3	名	8350	0	0	D_hsk_only	5
+子女	7784	HSK3	名	10174	0	0	D_hsk_only	5
+看不起	7789	HSK4	动	3830	0	0	D_hsk_only	5
+结实	7792	HSK3	形	9186	0	0	D_hsk_only	5
+下雪	7800	HSK2		800	0	0	D_hsk_only	5
+规律	7809	HSK4	名	4001	0	0	D_hsk_only	5
+窗子	7830	HSK4	名	15598	0	0	D_hsk_only	5
+含义	7836	HSK4	名	8063	0	0	D_hsk_only	5
+短裤	7839	HSK3	名	3273	0	0	D_hsk_only	5
+热烈	7842	HSK3	形	16547	0	0	D_hsk_only	5
+否定	7893	HSK3	动、形	6026	0	0	D_hsk_only	5
+熟人	7896	HSK3	名	3939	0	0	D_hsk_only	5
+宝	7924	HSK4	名	2599	0	0	D_hsk_only	5
+奶	7930	HSK1	名	3184	0	0	D_hsk_only	5
+实行	7939	HSK3	动	16087	0	0	D_hsk_only	5
+业余	7953	HSK4	形		0	0	D_hsk_only	5
+一路顺风	7960	HSK2		2406	0	0	D_hsk_only	5
+出国	7963	HSK2		2219	0	0	D_hsk_only	5
+营业	7968	HSK4	动	10006	0	0	D_hsk_only	5
+泪水	7980	HSK4	名	9000	0	0	D_hsk_only	5
+加快	7981	HSK3	动	17888	0	0	D_hsk_only	5
+学费	8007	HSK3	名	5774	0	0	D_hsk_only	5
+举手	8028	HSK2	动	6737	0	0	D_hsk_only	5
+规模	8030	HSK4	名	17612	0	0	D_hsk_only	5
+其次	8034	HSK3	代	6556	0	0	D_hsk_only	5
+符号	8045	HSK4	名	14095	0	0	D_hsk_only	5
+按时	8052	HSK4	副	4049	0	0	D_hsk_only	5
+出租	8103	HSK2	动	8872	0	0	D_hsk_only	5
+召开	8104	HSK4	动	52953	0	0	D_hsk_only	5
+人工	8117	HSK3	名、形	7129	0	0	D_hsk_only	5
+南边	8142	HSK1	名	13372	0	0	D_hsk_only	5
+东边	8151	HSK1	名	13734	0	0	D_hsk_only	5
+整体	8161	HSK3	名	5630	0	0	D_hsk_only	5
+推动	8163	HSK3		27760	0	0	D_hsk_only	5
+房东	8175	HSK3	名	7815	0	0	D_hsk_only	5
+延续	8182	HSK4	动	15482	0	0	D_hsk_only	5
+门票	8183	HSK1	名	2445	0	0	D_hsk_only	5
+班长	8186	HSK2	名	2634	0	0	D_hsk_only	5
+读者	8193	HSK3	名	10249	0	0	D_hsk_only	5
+逛	8212	HSK4	动	1306	0	0	D_hsk_only	5
+底	8214	HSK4	名	3898	0	0	D_hsk_only	5
+粗	8230	HSK4	形	1589	0	0	D_hsk_only	5
+项	8236	HSK4	量	22043	0	0	D_hsk_only	5
+交朋友	8251	HSK2		7390	0	0	D_hsk_only	5
+听众	8255	HSK3	名	14905	0	0	D_hsk_only	5
+构成	8257	HSK4	动	23369	0	0	D_hsk_only	5
+移	8258	HSK4	动	15569	0	0	D_hsk_only	5
+孙女	8277	HSK4	名	15272	0	0	D_hsk_only	5
+学期	8289	HSK2	名	1464	0	0	D_hsk_only	5
+回国	8290	HSK2		1565	0	0	D_hsk_only	5
+纪律	8292	HSK4	名	25015	0	0	D_hsk_only	5
+健身	8293	HSK4	动	1432	0	0	D_hsk_only	5
+轮椅	8304	HSK4	名		0	0	D_hsk_only	5
+观念	8310	HSK3	名	8468	0	0	D_hsk_only	5
+属	8332	HSK3	动	5678	0	0	D_hsk_only	5
+中文	8347	HSK1	名	3187	0	0	D_hsk_only	5
+称赞	8352	HSK4	动	14197	0	0	D_hsk_only	5
+大方	8362	HSK4	形	4299	0	0	D_hsk_only	5
+模特儿	8364	HSK4	名	38899	0	0	D_hsk_only	5
+总理	8365	HSK4	名		0	0	D_hsk_only	5
+标题	8398	HSK3	名	8714	0	0	D_hsk_only	5
+坚决	8401	HSK3	形	4084	0	0	D_hsk_only	5
+西边	8426	HSK1	名	11996	0	0	D_hsk_only	5
+报名	8427	HSK2		1825	0	0	D_hsk_only	5
+动人	8448	HSK3	形	10527	0	0	D_hsk_only	5
+保	8457	HSK3	动	9009	0	0	D_hsk_only	5
+节省	8464	HSK4	动	15757	0	0	D_hsk_only	5
+碰见	8484	HSK2		5219	0	0	D_hsk_only	5
+赞助	8492	HSK4	动	5488	0	0	D_hsk_only	5
+会计	8494	HSK4	名	3589	0	0	D_hsk_only	5
+参考	8512	HSK4	动	4368	0	0	D_hsk_only	5
+塑料	8514	HSK4	名	4509	0	0	D_hsk_only	5
+演唱	8543	HSK3	动	19973	0	0	D_hsk_only	5
+含	8559	HSK4	动	8208	0	0	D_hsk_only	5
+品质	8566	HSK4	名	7755	0	0	D_hsk_only	5
+降	8579	HSK4	动	6269	0	0	D_hsk_only	5
+台阶	8592	HSK4	名	8900	0	0	D_hsk_only	5
+围巾	8593	HSK4	名	3648	0	0	D_hsk_only	5
+不大	8598	HSK1		4064	0	0	D_hsk_only	5
+伞	8607	HSK4	名	2362	0	0	D_hsk_only	5
+利息	8609	HSK4	名		0	0	D_hsk_only	5
+电子邮件	8623	HSK3			0	0	D_hsk_only	5
+图案	8644	HSK4	名	7698	0	0	D_hsk_only	5
+幼儿园	8662	HSK4	名	1973	0	0	D_hsk_only	5
+延长	8694	HSK4	动	14638	0	0	D_hsk_only	5
+平	8707	HSK2	形	4759	0	0	D_hsk_only	5
+银	8711	HSK3	名	2832	0	0	D_hsk_only	5
+多种	8715	HSK4		6911	0	0	D_hsk_only	5
+录取	8718	HSK4	动	6299	0	0	D_hsk_only	5
+获	8723	HSK4	动	38563	0	0	D_hsk_only	5
+剧场	8741	HSK3	名	14531	0	0	D_hsk_only	5
+造型	8779	HSK4	名	2662	0	0	D_hsk_only	5
+外交	8782	HSK3	名	43006	0	0	D_hsk_only	5
+空调	8787	HSK3	名	823	0	0	D_hsk_only	5
+气候	8792	HSK3	名	7437	0	0	D_hsk_only	5
+酸	8809	HSK4	形	2207	0	0	D_hsk_only	5
+日常	8826	HSK3	形	1572	0	0	D_hsk_only	5
+整齐	8869	HSK3	形	7864	0	0	D_hsk_only	5
+周年	8874	HSK2	名	9369	0	0	D_hsk_only	5
+刷牙	8883	HSK4		5277	0	0	D_hsk_only	5
+志愿者	8894	HSK3	名	5389	0	0	D_hsk_only	5
+看望	8902	HSK4	动	8516	0	0	D_hsk_only	5
+预订	8944	HSK4	动	8193	0	0	D_hsk_only	5
+营养	8966	HSK3	名	2908	0	0	D_hsk_only	5
+培训	8978	HSK4	动	1632	0	0	D_hsk_only	5
+关机	8982	HSK2		3334	0	0	D_hsk_only	5
+争	8997	HSK3	动	7019	0	0	D_hsk_only	5
+主张	9021	HSK3	动、名	25542	0	0	D_hsk_only	5
+性别	9030	HSK3	名	3900	0	0	D_hsk_only	5
+用途	9058	HSK4	名	23473	0	0	D_hsk_only	5
+困	9060	HSK3	形、动	1813	0	0	D_hsk_only	5
+充电	9070	HSK4		2594	0	0	D_hsk_only	5
+缩小	9128	HSK4	动	16856	0	0	D_hsk_only	5
+透明	9156	HSK4	形	4724	0	0	D_hsk_only	5
+前后	9163	HSK3	名	5299	0	0	D_hsk_only	5
+快递	9165	HSK4	名	1003	0	0	D_hsk_only	5
+适用	9174	HSK3	形	11297	0	0	D_hsk_only	5
+离不开	9196	HSK4		5499	0	0	D_hsk_only	5
+大大	9198	HSK2	副	1781	0	0	D_hsk_only	5
+老百姓	9201	HSK3	名	6708	0	0	D_hsk_only	5
+骑车	9202	HSK2		2893	0	0	D_hsk_only	5
+统计	9218	HSK4	动	9177	0	0	D_hsk_only	5
+叶子	9219	HSK4	名	3298	0	0	D_hsk_only	5
+共有	9256	HSK3	动	46749	0	0	D_hsk_only	5
+皮包	9281	HSK3	名	29866	0	0	D_hsk_only	5
+实习	9314	HSK2	动、名	1142	0	0	D_hsk_only	5
+年级	9318	HSK2	名	7385	0	0	D_hsk_only	5
+互联网	9323	HSK3	名	10311	0	0	D_hsk_only	5
+书店	9331	HSK1	名	5534	0	0	D_hsk_only	5
+渴	9345	HSK1	形	12260	0	0	D_hsk_only	5
+初步	9373	HSK3	形	15646	0	0	D_hsk_only	5
+改进	9381	HSK3	动	10383	0	0	D_hsk_only	5
+比例	9415	HSK3	名	5513	0	0	D_hsk_only	5
+证	9432	HSK3	名	4707	0	0	D_hsk_only	5
+体育馆	9436	HSK2	名	7353	0	0	D_hsk_only	5
+综合	9438	HSK4	动	7434	0	0	D_hsk_only	5
+爱心	9453	HSK3	名	2830	0	0	D_hsk_only	5
+具备	9524	HSK4	动	12906	0	0	D_hsk_only	5
+前天	9532	HSK1	名	1928	0	0	D_hsk_only	5
+流传	9541	HSK4	动	19540	0	0	D_hsk_only	5
+个子	9550	HSK2	名	4638	0	0	D_hsk_only	5
+性质	9553	HSK4	名	7210	0	0	D_hsk_only	5
+网球	9621	HSK2	名	9403	0	0	D_hsk_only	5
+突出	9625	HSK3	形、动	7094	0	0	D_hsk_only	5
+请假	9631	HSK1		1561	0	0	D_hsk_only	5
+智力	9674	HSK4	名	15966	0	0	D_hsk_only	5
+后边	9697	HSK1	名	8187	0	0	D_hsk_only	5
+棵	9717	HSK4	量	15652	0	0	D_hsk_only	5
+球迷	9724	HSK3	名	2537	0	0	D_hsk_only	5
+篇	9725	HSK2	量	7477	0	0	D_hsk_only	5
+童话	9769	HSK4	名	7917	0	0	D_hsk_only	5
+减	9797	HSK4	动	1458	0	0	D_hsk_only	5
+邮局	9821	HSK4	名	13176	0	0	D_hsk_only	5
+种类	9831	HSK4	名	10763	0	0	D_hsk_only	5
+外卖	9833	HSK2	名、动	1514	0	0	D_hsk_only	5
+衬衣	9844	HSK3	名	6415	0	0	D_hsk_only	5
+请进	9891	HSK1			0	0	D_hsk_only	5
+课堂	9902	HSK2	名	13456	0	0	D_hsk_only	5
+常识	9904	HSK4	名	6360	0	0	D_hsk_only	5
+卫生	9913	HSK3	形、名	5058	0	0	D_hsk_only	5
+被子	9923	HSK3	名	1596	0	0	D_hsk_only	5
+特色	9924	HSK3	名	3318	0	0	D_hsk_only	5
+设立	9937	HSK3	动		0	0	D_hsk_only	5
+静	9939	HSK3	形、动	5753	0	0	D_hsk_only	5
+难免	9948	HSK4	形	7241	0	0	D_hsk_only	5
+县	9949	HSK4	名	10946	0	0	D_hsk_only	5
+赞赏	10003	HSK4	动	18406	0	0	D_hsk_only	5
+轮子	10007	HSK4	名		0	0	D_hsk_only	5
+热心	10050	HSK4	形	11122	0	0	D_hsk_only	5
+百	10061	HSK1	数	6522	0	0	D_hsk_only	5
+点头	10088	HSK2		8950	0	0	D_hsk_only	5
+组长	10101	HSK2	名	12043	0	0	D_hsk_only	5
+题目	10111	HSK3	名	4096	0	0	D_hsk_only	5
+倒闭	10120	HSK4	动	7422	0	0	D_hsk_only	5
+发达	10148	HSK3	形	5825	0	0	D_hsk_only	5
+树叶	10151	HSK4	名	11858	0	0	D_hsk_only	5
+篮球	10166	HSK2	名	3708	0	0	D_hsk_only	5
+测量	10167	HSK4	动		0	0	D_hsk_only	5
+赏	10197	HSK4	动	5972	0	0	D_hsk_only	5
+金牌	10312	HSK3	名	14166	0	0	D_hsk_only	5
+优美	10325	HSK4	形	16388	0	0	D_hsk_only	5
+折	10331	HSK4	动	3629	0	0	D_hsk_only	5
+夏季	10385	HSK4	名	11394	0	0	D_hsk_only	5
+密	10405	HSK4	形	18145	0	0	D_hsk_only	5
+密切	10423	HSK4	形、动	25238	0	0	D_hsk_only	5
+爱国	10430	HSK4		1311	0	0	D_hsk_only	5
+牙刷	10444	HSK4	名	8555	0	0	D_hsk_only	5
+叫作	10496	HSK2	动	39072	0	0	D_hsk_only	5
+坚固	10516	HSK4	形	30144	0	0	D_hsk_only	5
+浓	10521	HSK4	形	5135	0	0	D_hsk_only	5
+海关	10529	HSK3	名	10384	0	0	D_hsk_only	5
+进口	10542	HSK4	动、名	7715	0	0	D_hsk_only	5
+下课	10558	HSK1		2658	0	0	D_hsk_only	5
+味儿	10582	HSK4	名	3910	0	0	D_hsk_only	5
+可见	10629	HSK4	连	5743	0	0	D_hsk_only	5
+难度	10636	HSK3	名	3518	0	0	D_hsk_only	5
+收听	10685	HSK3	动	20378	0	0	D_hsk_only	5
+西瓜	10687	HSK4	名	1593	0	0	D_hsk_only	5
+手工	10691	HSK4	名	5913	0	0	D_hsk_only	5
+型号	10697	HSK4	名	4237	0	0	D_hsk_only	5
+防	10751	HSK3	动	8833	0	0	D_hsk_only	5
+厘米	10752	HSK4	量	4672	0	0	D_hsk_only	5
+星期日	10855	HSK1	名	12551	0	0	D_hsk_only	5
+个别	10865	HSK4	形	6822	0	0	D_hsk_only	5
+潮湿	10919	HSK4	形	9304	0	0	D_hsk_only	5
+咸	10950	HSK4	形	3803	0	0	D_hsk_only	5
+公交车	10981	HSK2	名	2912	0	0	D_hsk_only	5
+教学	11003	HSK2	名	8157	0	0	D_hsk_only	5
+延期	11040	HSK4			0	0	D_hsk_only	5
+中部	11062	HSK3	名	21255	0	0	D_hsk_only	5
+句子	11086	HSK2	名	7403	0	0	D_hsk_only	5
+定期	11088	HSK3	动、形	11886	0	0	D_hsk_only	5
+征求	11104	HSK4	动	26848	0	0	D_hsk_only	5
+瓜	11139	HSK4	名	3537	0	0	D_hsk_only	5
+弟	11154	HSK1	名	3882	0	0	D_hsk_only	5
+院	11157	HSK2	名	6772	0	0	D_hsk_only	5
+豆腐	11185	HSK4	名	3458	0	0	D_hsk_only	5
+外地	11201	HSK2	名	2725	0	0	D_hsk_only	5
+预防	11227	HSK3	动	12534	0	0	D_hsk_only	5
+以内	11229	HSK4	名	8315	0	0	D_hsk_only	5
+消费	11241	HSK3	动	3506	0	0	D_hsk_only	5
+富	11264	HSK3	形	4504	0	0	D_hsk_only	5
+含有	11278	HSK4	动	29172	0	0	D_hsk_only	5
+毕业生	11285	HSK4	名	7982	0	0	D_hsk_only	5
+报到	11289	HSK3		9253	0	0	D_hsk_only	5
+凉快	11290	HSK2	形	1607	0	0	D_hsk_only	5
+细	11298	HSK4	形	2731	0	0	D_hsk_only	5
+本领	11322	HSK3	名	19251	0	0	D_hsk_only	5
+电视剧	11324	HSK3	名	1152	0	0	D_hsk_only	5
+新型	11327	HSK4	形	50503	0	0	D_hsk_only	5
+排名	11329	HSK3		5289	0	0	D_hsk_only	5
+总结	11345	HSK3	动、名	3134	0	0	D_hsk_only	5
+打针	11371	HSK4		3351	0	0	D_hsk_only	5
+调皮	11393	HSK4	形	2570	0	0	D_hsk_only	5
+耳机	11414	HSK4	名	2297	0	0	D_hsk_only	5
+体现	11442	HSK3	动	4687	0	0	D_hsk_only	5
+消化	11506	HSK4	动	3684	0	0	D_hsk_only	5
+上门	11511	HSK4		7661	0	0	D_hsk_only	5
+后头	11537	HSK4	名	10515	0	0	D_hsk_only	5
+邮票	11567	HSK3	名	15069	0	0	D_hsk_only	5
+变为	11606	HSK3		32280	0	0	D_hsk_only	5
+家务	11610	HSK4	名	6760	0	0	D_hsk_only	5
+语音	11618	HSK4	名	3575	0	0	D_hsk_only	5
+应用	11637	HSK3	动	7243	0	0	D_hsk_only	5
+一方面	11649	HSK3	名	11518	0	0	D_hsk_only	5
+气温	11664	HSK2	名	5066	0	0	D_hsk_only	5
+潮流	11687	HSK4	名	6567	0	0	D_hsk_only	5
+推开	11690	HSK3		15134	0	0	D_hsk_only	5
+构造	11695	HSK4	名	21491	0	0	D_hsk_only	5
+上边	11715	HSK1	名	11166	0	0	D_hsk_only	5
+看病	11716	HSK1		5355	0	0	D_hsk_only	5
+自觉	11733	HSK3	形	4346	0	0	D_hsk_only	5
+字典	11789	HSK2	名	14361	0	0	D_hsk_only	5
+打印	11803	HSK2	动	4492	0	0	D_hsk_only	5
+讲究	11841	HSK4	动、形	5553	0	0	D_hsk_only	5
+缓解	11847	HSK4	动	6804	0	0	D_hsk_only	5
+特点	11853	HSK2	名	7274	0	0	D_hsk_only	5
+开学	11877	HSK2		622	0	0	D_hsk_only	5
+建成	11905	HSK3		32218	0	0	D_hsk_only	5
+列入	11921	HSK4	动	22097	0	0	D_hsk_only	5
+一再	11957	HSK4	副	18907	0	0	D_hsk_only	5
+客观	11960	HSK3	形	5524	0	0	D_hsk_only	5
+浅	12019	HSK4	形	5901	0	0	D_hsk_only	5
+筷子	12052	HSK2	名	5071	0	0	D_hsk_only	5
+果实	12079	HSK4	名	18224	0	0	D_hsk_only	5
+坏处	12086	HSK2	名	15537	0	0	D_hsk_only	5
+大妈	12096	HSK4	名	2075	0	0	D_hsk_only	5
+高价	12101	HSK4	名	12940	0	0	D_hsk_only	5
+办理	12131	HSK3	动	7447	0	0	D_hsk_only	5
+普遍	12154	HSK3	形	5577	0	0	D_hsk_only	5
+书包	12157	HSK1	名	5327	0	0	D_hsk_only	5
+环保	12158	HSK3	名、形	7391	0	0	D_hsk_only	5
+志愿	12186	HSK3	名	6480	0	0	D_hsk_only	5
+暖气	12257	HSK4	名	1711	0	0	D_hsk_only	5
+创新	12284	HSK3	动、名	9431	0	0	D_hsk_only	5
+效率	12297	HSK4	名	6215	0	0	D_hsk_only	5
+词语	12305	HSK2	名	11694	0	0	D_hsk_only	5
+倒车	12318	HSK4		15055	0	0	D_hsk_only	5
+智能	12333	HSK4	名	5882	0	0	D_hsk_only	5
+完善	12367	HSK3	形、动	12284	0	0	D_hsk_only	5
+全场	12383	HSK3	名	6147	0	0	D_hsk_only	5
+闹钟	12397	HSK4	名	3181	0	0	D_hsk_only	5
+药片	12409	HSK2	名	32223	0	0	D_hsk_only	5
+初中	12420	HSK3	名	1376	0	0	D_hsk_only	5
+月份	12488	HSK2	名	1735	0	0	D_hsk_only	5
+一般来说	12554	HSK4		15599	0	0	D_hsk_only	5
+熟练	12586	HSK4	形	11042	0	0	D_hsk_only	5
+邮箱	12711	HSK3	名	5268	0	0	D_hsk_only	5
+著作	12723	HSK4	名		0	0	D_hsk_only	5
+理发	12765	HSK3		9385	0	0	D_hsk_only	5
+冬季	12774	HSK4	名	7489	0	0	D_hsk_only	5
+工夫	12826	HSK3	名	38640	0	0	D_hsk_only	5
+海鲜	12886	HSK4	名	2880	0	0	D_hsk_only	5
+个体	12910	HSK4	名	17538	0	0	D_hsk_only	5
+开机	12921	HSK2		5791	0	0	D_hsk_only	5
+末	12928	HSK4	名	11299	0	0	D_hsk_only	5
+划船	12939	HSK3	动	13008	0	0	D_hsk_only	5
+种植	12943	HSK4	动	24064	0	0	D_hsk_only	5
+议论	13029	HSK4	动、名	20905	0	0	D_hsk_only	5
+列为	13043	HSK4		43809	0	0	D_hsk_only	5
+对比	13063	HSK4	动、名	3234	0	0	D_hsk_only	5
+体操	13066	HSK4	名		0	0	D_hsk_only	5
+泪	13130	HSK4	名	2825	0	0	D_hsk_only	5
+中奖	13142	HSK4			0	0	D_hsk_only	5
+那会儿	13176	HSK2	代	4240	0	0	D_hsk_only	5
+促进	13184	HSK4	动	16383	0	0	D_hsk_only	5
+默默	13194	HSK4	副	1167	0	0	D_hsk_only	5
+月底	13229	HSK4	名	1551	0	0	D_hsk_only	5
+公共汽车	13236	HSK2		43666	0	0	D_hsk_only	5
+简历	13239	HSK4	名	5614	0	0	D_hsk_only	5
+表扬	13301	HSK4	动	3317	0	0	D_hsk_only	5
+美术	13306	HSK3	名	5376	0	0	D_hsk_only	5
+东北	13307	HSK2	名	682	0	0	D_hsk_only	5
+平稳	13312	HSK4	形	26715	0	0	D_hsk_only	5
+西北	13335	HSK2	名	7413	0	0	D_hsk_only	5
+聚	13378	HSK4	动	2578	0	0	D_hsk_only	5
+地铁站	13432	HSK2	名	5358	0	0	D_hsk_only	5
+实用	13471	HSK4	形	6392	0	0	D_hsk_only	5
+爱护	13482	HSK4	动	8885	0	0	D_hsk_only	5
+食堂	13502	HSK4	名	1338	0	0	D_hsk_only	5
+圆满	13512	HSK4	形	5683	0	0	D_hsk_only	5
+常用	13520	HSK2		12297	0	0	D_hsk_only	5
+玉	13547	HSK4	名	8989	0	0	D_hsk_only	5
+紧密	13566	HSK4	形	62542	0	0	D_hsk_only	5
+摆动	13592	HSK4	动	49408	0	0	D_hsk_only	5
+近期	13631	HSK3	名	5322	0	0	D_hsk_only	5
+收益	13647	HSK4	名		0	0	D_hsk_only	5
+词汇	13666	HSK4	名	9998	0	0	D_hsk_only	5
+农村	13736	HSK3	名	2476	0	0	D_hsk_only	5
+班级	13750	HSK3	名	6827	0	0	D_hsk_only	5
+败	13754	HSK4	动	8481	0	0	D_hsk_only	5
+季	13772	HSK4	名	4456	0	0	D_hsk_only	5
+复习	13791	HSK2	动	2293	0	0	D_hsk_only	5
+围	13895	HSK3	动	14011	0	0	D_hsk_only	5
+洗衣机	13947	HSK2	名	6604	0	0	D_hsk_only	5
+彩色	14015	HSK3	名	8416	0	0	D_hsk_only	5
+纷纷	14029	HSK4	副	16616	0	0	D_hsk_only	5
+米饭	14069	HSK1	名	3015	0	0	D_hsk_only	5
+所长	14078	HSK3	名	19878	0	0	D_hsk_only	5
+图画	14088	HSK3	名	27987	0	0	D_hsk_only	5
+分为	14166	HSK4		25243	0	0	D_hsk_only	5
+点名	14199	HSK4		4357	0	0	D_hsk_only	5
+打折	14221	HSK4		2835	0	0	D_hsk_only	5
+中年	14239	HSK2	名	4885	0	0	D_hsk_only	5
+导游	14292	HSK4	动、名	3522	0	0	D_hsk_only	5
+复印	14308	HSK3	动	13575	0	0	D_hsk_only	5
+听力	14324	HSK3	名	5052	0	0	D_hsk_only	5
+原料	14343	HSK4	名	15644	0	0	D_hsk_only	5
+堵车	14387	HSK4		4009	0	0	D_hsk_only	5
+积累	14392	HSK4	动	7570	0	0	D_hsk_only	5
+题	14436	HSK2	名	2692	0	0	D_hsk_only	5
+黄瓜	14450	HSK4	名	4020	0	0	D_hsk_only	5
+短期	14454	HSK3	名		0	0	D_hsk_only	5
+公务员	14462	HSK3	名		0	0	D_hsk_only	5
+体育场	14465	HSK2	名	11025	0	0	D_hsk_only	5
+小孩儿	14466	HSK1	名	8474	0	0	D_hsk_only	5
+单元	14504	HSK3	名	14305	0	0	D_hsk_only	5
+机遇	14538	HSK4	名	18544	0	0	D_hsk_only	5
+爬山	14591	HSK2		2904	0	0	D_hsk_only	5
+一路平安	14609	HSK2		4929	0	0	D_hsk_only	5
+年底	14627	HSK3	名	2712	0	0	D_hsk_only	5
+开业	14632	HSK3		5874	0	0	D_hsk_only	5
+零食	14684	HSK4	名	1834	0	0	D_hsk_only	5
+下边	14702	HSK1	名	12485	0	0	D_hsk_only	5
+学术	14719	HSK4	名	7318	0	0	D_hsk_only	5
+登录	14723	HSK4	动	7514	0	0	D_hsk_only	5
+本子	14725	HSK1	名	5390	0	0	D_hsk_only	5
+农业	14791	HSK3	名	20951	0	0	D_hsk_only	5
+歌迷	14794	HSK3	名	7521	0	0	D_hsk_only	5
+缩短	14798	HSK4	动	25020	0	0	D_hsk_only	5
+推广	14836	HSK3	动	8894	0	0	D_hsk_only	5
+格外	14944	HSK4	副	7221	0	0	D_hsk_only	5
+培育	14953	HSK4	动	36954	0	0	D_hsk_only	5
+比分	14976	HSK4	名	11669	0	0	D_hsk_only	5
+生动	14985	HSK3	形	11808	0	0	D_hsk_only	5
+套餐	15028	HSK4	名	3266	0	0	D_hsk_only	5
+武术	15073	HSK3	名	24162	0	0	D_hsk_only	5
+学问	15104	HSK4	名	13747	0	0	D_hsk_only	5
+开展	15170	HSK3	动	20733	0	0	D_hsk_only	5
+排列	15185	HSK4	动	26932	0	0	D_hsk_only	5
+淡	15223	HSK4	形	4408	0	0	D_hsk_only	5
+面积	15322	HSK3	名	7003	0	0	D_hsk_only	5
+扩展	15357	HSK4	动	29869	0	0	D_hsk_only	5
+描写	15361	HSK4	动	18497	0	0	D_hsk_only	5
+迫切	15372	HSK4	形	16150	0	0	D_hsk_only	5
+登山	15441	HSK4		17037	0	0	D_hsk_only	5
+考察	15451	HSK4	动、名	8349	0	0	D_hsk_only	5
+药店	15475	HSK2	名	12543	0	0	D_hsk_only	5
+日报	15493	HSK2	名		0	0	D_hsk_only	5
+避	15502	HSK4	动	19345	0	0	D_hsk_only	5
+药水	15540	HSK2	名	19821	0	0	D_hsk_only	5
+趋势	15544	HSK4	名		0	0	D_hsk_only	5
+体检	15558	HSK4	动	3145	0	0	D_hsk_only	5
+酸奶	15562	HSK4	名	2035	0	0	D_hsk_only	5
+加工	15605	HSK3		13390	0	0	D_hsk_only	5
+男孩儿	15694	HSK1	名	17078	0	0	D_hsk_only	5
+自主	15739	HSK3	动	10428	0	0	D_hsk_only	5
+含量	15758	HSK4	名	18003	0	0	D_hsk_only	5
+秋季	15759	HSK4	名	15235	0	0	D_hsk_only	5
+春季	15829	HSK4	名	15453	0	0	D_hsk_only	5
+矿泉水	15843	HSK4	名	7096	0	0	D_hsk_only	5
+中介	15913	HSK4	名		0	0	D_hsk_only	5
+前头	15921	HSK4	名	24022	0	0	D_hsk_only	5
+特价	15922	HSK4	名	11919	0	0	D_hsk_only	5
+促使	15928	HSK4	动	49238	0	0	D_hsk_only	5
+研制	15990	HSK4	动	37504	0	0	D_hsk_only	5
+商务	16036	HSK4	名		0	0	D_hsk_only	5
+西南	16079	HSK2	名	8028	0	0	D_hsk_only	5
+日历	16293	HSK4	名	10438	0	0	D_hsk_only	5
+民间	16319	HSK3	名	16561	0	0	D_hsk_only	5
+交际	16342	HSK4	动	19253	0	0	D_hsk_only	5
+二手	16400	HSK4	形	6714	0	0	D_hsk_only	5
+过年	16500	HSK2		455	0	0	D_hsk_only	5
+改正	16558	HSK4	动	12392	0	0	D_hsk_only	5
+优良	16600	HSK4	形	28050	0	0	D_hsk_only	5
+课本	16635	HSK1	名	11604	0	0	D_hsk_only	5
+小吃	16817	HSK4	名	3358	0	0	D_hsk_only	5
+分布	16838	HSK4	动	26541	0	0	D_hsk_only	5
+打雷	16852	HSK4		5423	0	0	D_hsk_only	5
+长途	16883	HSK4	形、名	8651	0	0	D_hsk_only	5
+松树	16906	HSK4	名	41025	0	0	D_hsk_only	5
+世界杯	16919	HSK3	名	4703	0	0	D_hsk_only	5
+住房	16924	HSK2	名	28612	0	0	D_hsk_only	5
+潮	16973	HSK4	名、形	7153	0	0	D_hsk_only	5
+留学	16991	HSK3		5828	0	0	D_hsk_only	5
+规范	17040	HSK3	形、名、动		0	0	D_hsk_only	5
+引进	17062	HSK4	动	17370	0	0	D_hsk_only	5
+公元	17124	HSK4	名		0	0	D_hsk_only	5
+外语	17169	HSK1	名	13244	0	0	D_hsk_only	5
+小学生	17172	HSK1	名	2660	0	0	D_hsk_only	5
+晴天	17210	HSK2	名	3558	0	0	D_hsk_only	5
+吸管	17219	HSK4	名	9769	0	0	D_hsk_only	5
+零下	17223	HSK2		2812	0	0	D_hsk_only	5
+操场	17296	HSK4	名		0	0	D_hsk_only	5
+风俗	17303	HSK4	名	17660	0	0	D_hsk_only	5
+外交官	17321	HSK4	名	59019	0	0	D_hsk_only	5
+黑板	17360	HSK2	名	11253	0	0	D_hsk_only	5
+获奖	17361	HSK4	动	13961	0	0	D_hsk_only	5
+测	17468	HSK4	动	8754	0	0	D_hsk_only	5
+节约	17528	HSK3	动	8761	0	0	D_hsk_only	5
+遇	17551	HSK4	动	5415	0	0	D_hsk_only	5
+包子	17711	HSK1	名	2723	0	0	D_hsk_only	5
+流利	17762	HSK2	形	26396	0	0	D_hsk_only	5
+做客	17764	HSK3		7894	0	0	D_hsk_only	5
+开水	17862	HSK4	名	6359	0	0	D_hsk_only	5
+东南	18128	HSK2	名	14708	0	0	D_hsk_only	5
+显著	18236	HSK4	形	322750	0	0	D_hsk_only	5
+诚信	18257	HSK4	形	12817	0	0	D_hsk_only	5
+陆续	18369	HSK4	副	13169	0	0	D_hsk_only	5
+饺子	18450	HSK2	名	1585	0	0	D_hsk_only	5
+粗心	18474	HSK4	形	19994	0	0	D_hsk_only	5
+快餐	18626	HSK2	名	13767	0	0	D_hsk_only	5
+单调	18669	HSK4	形	13249	0	0	D_hsk_only	5
+就业	18768	HSK3		7797	0	0	D_hsk_only	5
+发票	18819	HSK4	名	7502	0	0	D_hsk_only	5
+阴	18850	HSK2	形	8641	0	0	D_hsk_only	5
+塑料袋	18855	HSK4	名	10584	0	0	D_hsk_only	5
+广大	18864	HSK3	形	9639	0	0	D_hsk_only	5
+百货	18933	HSK4	名	17843	0	0	D_hsk_only	5
+茶叶	18951	HSK4	名	8826	0	0	D_hsk_only	5
+初级	19004	HSK3	形	10258	0	0	D_hsk_only	5
+行人	19006	HSK2	名	12017	0	0	D_hsk_only	5
+批	19197	HSK4	量	7067	0	0	D_hsk_only	5
+饭馆	19229	HSK2	名	19038	0	0	D_hsk_only	5
+电灯	19271	HSK4	名	34967	0	0	D_hsk_only	5
+讲座	19343	HSK4	名	8809	0	0	D_hsk_only	5
+促销	19367	HSK4	动		0	0	D_hsk_only	5
+打车	19421	HSK1		3199	0	0	D_hsk_only	5
+江	19434	HSK4	名	9175	0	0	D_hsk_only	5
+研究生	19626	HSK4	名	2304	0	0	D_hsk_only	5
+一律	19628	HSK4	副	13788	0	0	D_hsk_only	5
+代表团	19796	HSK3	名	87147	0	0	D_hsk_only	5
+逐步	19806	HSK4	副	30510	0	0	D_hsk_only	5
+宽广	19831	HSK4	形	18720	0	0	D_hsk_only	5
+午睡	19852	HSK2	名、动	4785	0	0	D_hsk_only	5
+旅行社	19982	HSK3	名	10300	0	0	D_hsk_only	5
+话剧	20102	HSK3	名	8970	0	0	D_hsk_only	5
+冰雪	20149	HSK4	名、形	10310	0	0	D_hsk_only	5
+干活儿	20253	HSK2			0	0	D_hsk_only	5
+阵	20292	HSK4	量	21209	0	0	D_hsk_only	5
+再三	20405	HSK4	副	28309	0	0	D_hsk_only	5
+创业	20440	HSK3	动	4945	0	0	D_hsk_only	5
+率先	20478	HSK4	副	59946	0	0	D_hsk_only	5
+老年	20508	HSK2	名	6697	0	0	D_hsk_only	5
+作文	20663	HSK2	名	3905	0	0	D_hsk_only	5
+养成	20673	HSK4	动	6671	0	0	D_hsk_only	5
+细致	20724	HSK4	形	11421	0	0	D_hsk_only	5
+书架	20854	HSK3	名	18463	0	0	D_hsk_only	5
+户	20871	HSK4	量	21827	0	0	D_hsk_only	5
+老头儿	21069	HSK3	名	27056	0	0	D_hsk_only	5
+球鞋	21097	HSK2	名	13276	0	0	D_hsk_only	5
+数码	21155	HSK4	名	14047	0	0	D_hsk_only	5
+深厚	21190	HSK4	形	16722	0	0	D_hsk_only	5
+大巴	21311	HSK4	名	4393	0	0	D_hsk_only	5
+刷子	21312	HSK4	名	14465	0	0	D_hsk_only	5
+随手	21439	HSK4	副	5550	0	0	D_hsk_only	5
+长处	21615	HSK3	名		0	0	D_hsk_only	5
+季度	21777	HSK4	名		0	0	D_hsk_only	5
+红包	21965	HSK4	名		0	0	D_hsk_only	5
+语法	22144	HSK4	名	12393	0	0	D_hsk_only	5
+及格	22366	HSK4		6901	0	0	D_hsk_only	5
+长城	22707	HSK3	名	7787	0	0	D_hsk_only	5
+连续剧	22847	HSK3	名	16740	0	0	D_hsk_only	5
+带动	23159	HSK3	动	13348	0	0	D_hsk_only	5
+前边	23289	HSK1	名	16055	0	0	D_hsk_only	5
+学年	23332	HSK4	名	25310	0	0	D_hsk_only	5
+网友	23345	HSK1	名	2607	0	0	D_hsk_only	5
+严	23483	HSK4	形	8132	0	0	D_hsk_only	5
+奶茶	23521	HSK3	名	1479	0	0	D_hsk_only	5
+专题	23540	HSK3	名		0	0	D_hsk_only	5
+矮小	23971	HSK4	形	38912	0	0	D_hsk_only	5
+抽奖	24054	HSK4			0	0	D_hsk_only	5
+中学生	24115	HSK1	名	18365	0	0	D_hsk_only	5
+好玩儿	24126	HSK1	形	5475	0	0	D_hsk_only	5
+动画片	24394	HSK4	名	6436	0	0	D_hsk_only	5
+概括	24690	HSK4	动、形	14479	0	0	D_hsk_only	5
+学分	24776	HSK4	名	11409	0	0	D_hsk_only	5
+轮船	24846	HSK4	名		0	0	D_hsk_only	5
+售货员	24926	HSK4	名	39698	0	0	D_hsk_only	5
+疗养	24931	HSK4	动	28631	0	0	D_hsk_only	5
+试卷	25047	HSK4	名	7423	0	0	D_hsk_only	5
+票价	25470	HSK3	名	7820	0	0	D_hsk_only	5
+华人	25500	HSK3	名	14540	0	0	D_hsk_only	5
+制订	25567	HSK4	动	63354	0	0	D_hsk_only	5
+斤	25568	HSK2	量	824	0	0	D_hsk_only	5
+普通话	25657	HSK2	名	3432	0	0	D_hsk_only	5
+衣架	25920	HSK3	名	18172	0	0	D_hsk_only	5
+白菜	26062	HSK3	名	4564	0	0	D_hsk_only	5
+问路	26176	HSK2	动	15942	0	0	D_hsk_only	5
+方针	26316	HSK4	名	63851	0	0	D_hsk_only	5
+晴	26320	HSK2	形	6794	0	0	D_hsk_only	5
+急忙	26350	HSK4	副	32588	0	0	D_hsk_only	5
+前年	26572	HSK2	名	6823	0	0	D_hsk_only	5
+束	26586	HSK3	量	40595	0	0	D_hsk_only	5
+隔开	26647	HSK4	动	33682	0	0	D_hsk_only	5
+全年	26714	HSK2	名	11607	0	0	D_hsk_only	5
+分组	26907	HSK3		8759	0	0	D_hsk_only	5
+中餐	27248	HSK2	名	12605	0	0	D_hsk_only	5
+鲜明	27962	HSK4	形	26523	0	0	D_hsk_only	5
+运动会	28325	HSK4	名	5100	0	0	D_hsk_only	5
+排球	28376	HSK2	名	9492	0	0	D_hsk_only	5
+音节	28392	HSK2	名	82347	0	0	D_hsk_only	5
+光盘	28592	HSK4	名	17639	0	0	D_hsk_only	5
+人民币	28656	HSK3	名		0	0	D_hsk_only	5
+平方	28919	HSK4	名、量	14433	0	0	D_hsk_only	5
+千克	29356	HSK2	量	51359	0	0	D_hsk_only	5
+伙	29361	HSK4	量	28255	0	0	D_hsk_only	5
+汇	29475	HSK4	动	17896	0	0	D_hsk_only	5
+通知书	29490	HSK4	名		0	0	D_hsk_only	5
+年初	29927	HSK3	名	8285	0	0	D_hsk_only	5
+鲜	29982	HSK4	形	12587	0	0	D_hsk_only	5
+毫升	30224	HSK4	量	15423	0	0	D_hsk_only	5
+充电器	30533	HSK4	名	7821	0	0	D_hsk_only	5
+红茶	30578	HSK3	名	8573	0	0	D_hsk_only	5
+国庆	33402	HSK3	名	1347	0	0	D_hsk_only	5
+降价	33670	HSK4		9214	0	0	D_hsk_only	5
+汉字	33797	HSK1	名	11591	0	0	D_hsk_only	5
+降温	33849	HSK4		2518	0	0	D_hsk_only	5
+交警	33870	HSK3	名	6530	0	0	D_hsk_only	5
+预报	33875	HSK3	动、名	11040	0	0	D_hsk_only	5
+教材	34001	HSK3	名	12363	0	0	D_hsk_only	5
+窗台	34221	HSK4	名	20043	0	0	D_hsk_only	5
+词典	34498	HSK2	名	24277	0	0	D_hsk_only	5
+多云	34809	HSK2	名	14092	0	0	D_hsk_only	5
+晚报	34844	HSK2	名	32953	0	0	D_hsk_only	5
+听写	34944	HSK1	动	34347	0	0	D_hsk_only	5
+凉水	35177	HSK3	名	11141	0	0	D_hsk_only	5
+汉语	35532	HSK1	名	9629	0	0	D_hsk_only	5
+网址	35592	HSK4	名	6341	0	0	D_hsk_only	5
+绿茶	35917	HSK3	名	6383	0	0	D_hsk_only	5
+抄写	37042	HSK4	动	42466	0	0	D_hsk_only	5
+职工	37407	HSK3	名	40854	0	0	D_hsk_only	5
+春节	38090	HSK2	名	2561	0	0	D_hsk_only	5
+口语	38180	HSK4	名	5626	0	0	D_hsk_only	5
+五颜六色	38642	HSK4		19224	0	0	D_hsk_only	5
+普及	38798	HSK3	动、形	8390	0	0	D_hsk_only	5
+近代	38804	HSK4	名	77882	0	0	D_hsk_only	5
+期末	39642	HSK4	名	3978	0	0	D_hsk_only	5
+内科	39778	HSK4	名		0	0	D_hsk_only	5
+银行卡	39815	HSK2	名	7911	0	0	D_hsk_only	5
+听讲	40747	HSK2		12557	0	0	D_hsk_only	5
+方便面	40973	HSK2	名	3936	0	0	D_hsk_only	5
+银牌	42092	HSK3	名	81622	0	0	D_hsk_only	5
+中医	42936	HSK2	名	5153	0	0	D_hsk_only	5
+留学生	43120	HSK2	名	13432	0	0	D_hsk_only	5
+读音	43629	HSK2	名	30936	0	0	D_hsk_only	5
+没法儿	44362	HSK4	动	20084	0	0	D_hsk_only	5
+跳高	44814	HSK3	动	35479	0	0	D_hsk_only	5
+考生	44842	HSK2	名	6713	0	0	D_hsk_only	5
+中级	46041	HSK2	形	18079	0	0	D_hsk_only	5
+尺子	46314	HSK4	名	24232	0	0	D_hsk_only	5
+阴天	46816	HSK2	名	3632	0	0	D_hsk_only	5
+西餐	47096	HSK2	名	11083	0	0	D_hsk_only	5
+本科	47377	HSK4	名	3921	0	0	D_hsk_only	5
+片面	47948	HSK4	形	19484	0	0	D_hsk_only	5
+多样	48217	HSK4	形	37908	0	0	D_hsk_only	5
+寒假	48733	HSK4	名	1334	0	0	D_hsk_only	5
+汇率	48852	HSK4	名		0	0	D_hsk_only	5
+预习	49333	HSK3	动	17859	0	0	D_hsk_only	5
+括号	49784	HSK4	名	20424	0	0	D_hsk_only	5
+微信	51478	HSK4	名		0	0	D_hsk_only	5
+外汇	51559	HSK4	名		0	0	D_hsk_only	5
+期中	52030	HSK4	名	21112	0	0	D_hsk_only	5
+培训班	54754	HSK4	名	14348	0	0	D_hsk_only	5
+课文	56464	HSK1	名	15543	0	0	D_hsk_only	5
+不一会儿	57830	HSK2		64620	0	0	D_hsk_only	5
+电动车	58202	HSK4	名	6410	0	0	D_hsk_only	5
+连忙	59494	HSK3	副	61994	0	0	D_hsk_only	5
+西医	61346	HSK2	名	21309	0	0	D_hsk_only	5
+短处	64199	HSK3	名	53157	0	0	D_hsk_only	5
+跳远	66247	HSK3	动	22546	0	0	D_hsk_only	5
+教学楼	67113	HSK1	名	11842	0	0	D_hsk_only	5
+中华民族	67118	HSK3			0	0	D_hsk_only	5
+京剧	68856	HSK3	名	18450	0	0	D_hsk_only	5
+画儿	72179	HSK2	名	65502	0	0	D_hsk_only	5
+试题	82025	HSK3	名	31933	0	0	D_hsk_only	5
+外文	84364	HSK3	名	28325	0	0	D_hsk_only	5
+空儿	85349	HSK3	名		0	0	D_hsk_only	5
+高铁	92350	HSK4	名	1678	0	0	D_hsk_only	5
+交费	94200	HSK3	动	25890	0	0	D_hsk_only	5
+纯净水	96793	HSK4	名	28814	0	0	D_hsk_only	5
+名牌儿		HSK4	名		0	0	D_hsk_only	5
+者（志愿者）		HSK3	后缀		0	0	D_hsk_only	5
+…极了		HSK3			0	0	D_hsk_only	5
+能不能		HSK3			0	0	D_hsk_only	5
+请坐		HSK1			0	0	D_hsk_only	5
+有（一）些		HSK1	代		0	0	D_hsk_only	5
+有的		HSK1	代		0	0	D_hsk_only	5
+…分之…		HSK4			0	0	D_hsk_only	5
+初（初一）		HSK3	前缀		0	0	D_hsk_only	5
+性（积极性）		HSK3	后缀		0	0	D_hsk_only	5
+不一定		HSK2	副		0	0	D_hsk_only	5
+有劲儿		HSK4			0	0	D_hsk_only	5
+面2		HSK2	名		0	0	D_hsk_only	5
+不客气		HSK1			0	0	D_hsk_only	5
+面1		HSK2	名、量		0	0	D_hsk_only	5
+化（现代化）		HSK3	后缀		0	0	D_hsk_only	5
+那时候		HSK2			0	0	D_hsk_only	5
+称1		HSK2	动		0	0	D_hsk_only	5
+有空儿		HSK2	动		0	0	D_hsk_only	5
+不对		HSK1	形		0	0	D_hsk_only	5
+子（桌子）		HSK1	后缀		0	0	D_hsk_only	5
+员（服务员）		HSK3	后缀		0	0	D_hsk_only	5
+老（老王）		HSK2	前缀		0	0	D_hsk_only	5
+头（里头）		HSK2	后缀		0	0	D_hsk_only	5
+穿上		HSK4			0	0	D_hsk_only	5
+第（第二）		HSK1	前缀		0	0	D_hsk_only	5
+挺好		HSK2			0	0	D_hsk_only	5
+笑话儿		HSK2	名		0	0	D_hsk_only	5
+家（科学家）		HSK2	后缀		0	0	D_hsk_only	5
+后年		HSK3	名		0	0	D_hsk_only	5
+们（朋友们）		HSK1	后缀		0	0	D_hsk_only	5
+〇		HSK1	数		0	0	D_hsk_only	5
+有（一）点儿		HSK2	副		0	0	D_hsk_only	5
+小（小王）		HSK2	前缀		0	0	D_hsk_only	5
+生词	125868	HSK2	名	58569	0	0	D_hsk_only	5
+中小学	131454	HSK2		32129	0	0	D_hsk_only	5
+亚运会	141305	HSK4	名	51475	0	0	D_hsk_only	5
+学时	144073	HSK4	名	43885	0	0	D_hsk_only	5
+填空	149968	HSK4		18604	0	0	D_hsk_only	5
+面条儿	199949	HSK1	名	116211	0	0	D_hsk_only	5

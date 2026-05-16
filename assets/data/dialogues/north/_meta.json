@@ -1,0 +1,28 @@
+{
+  "lang": "zh",
+  "dialect": "north",
+  "label": "보통화 (中国大陆 普通话) / 간체자 (简体字)",
+  "version": "v4-2026-05-17",
+  "schema": "v4",
+  "levels": {
+    "L1": { "file": "L1.json", "schema": "5ep40turn", "target_turns": 200, "current_turns": 5, "status": "초안" },
+    "L2": { "file": "L2.json", "schema": "23dial5block", "target_turns": 300, "current_turns": 0, "status": "skeleton" },
+    "L3": { "file": "L3.json", "schema": "23dial5block", "target_turns": 304, "current_turns": 0, "status": "skeleton" },
+    "L4": { "file": null, "schema": "TBD", "target_turns": null, "status": "미결정" }
+  },
+  "deprecated_levels": ["L5", "L6"],
+  "characters_canonical": {
+    "A": { "name": "Mark", "role": "외국인 학습자(남)", "voice_minimax": "Chinese (Mandarin)_Pure-hearted_Boy" },
+    "B": { "name": "小丽 / Lily", "role": "중국 여성(여)", "voice_minimax": "Chinese (Mandarin)_Soft_Girl" }
+  },
+  "particles_distribution": {
+    "L1": ["啊", "吗", "吧", "呀", "呢", "啦", "嗯", "哦", "哪"],
+    "L2_add": ["嘛", "喂", "嘿", "嗨"],
+    "_note": "L1 5 ep 안에서 13개 중 9개 풀 노출. 嘛·喂·嘿·嗨 는 L2 카오스에서 자연 노출."
+  },
+  "function_words": ["是", "的", "了", "有", "没", "会", "要", "想", "给", "可以"],
+  "principles_source": "../../../rules/dialogue_principles.md",
+  "content_spec": "../../../../memo/03-Languages/zh/content-spec.md",
+  "created": "2026-05-17",
+  "notes": "v4 schema (L5/L6 폐지). 옛 ep6_routine.md 는 v4 L1 200 안 들어감 (5×40=200, ep6 = 보너스 또는 L2 흡수)."
+}

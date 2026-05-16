@@ -1,0 +1,32 @@
+{
+  "expo": {
+    "name": "중국어유니버스",
+    "slug": "talkverse-lab-zh",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "scheme": "talkverse-zh",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "icon": "./assets/branding/icon.png",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.talkverse.zh"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/branding/icon.png",
+        "backgroundColor": "#DE2910"
+      },
+      "package": "com.talkverse.zh"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-router"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
