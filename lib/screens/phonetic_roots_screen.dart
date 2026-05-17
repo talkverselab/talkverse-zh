@@ -29,7 +29,7 @@ class PhoneticRootsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: AppColors.xuanZhi,
-      appBar: AppBar(title: const Text('声旁部首')),
+      appBar: AppBar(title: const Text('발음부 + 한국 한자음')),
       body: Stack(
         children: [
           const Positioned.fill(child: CloudPattern(opacity: 0.05)),
@@ -37,7 +37,7 @@ class PhoneticRootsScreen extends StatelessWidget {
             padding: const EdgeInsets.all(16),
             children: [
               ChineseCard(
-                title: '声旁 + 韓國 漢字音 매핑',
+                title: '발음부 + 한국 한자음 매핑',
                 sealText: '声旁',
                 accent: const Color(0xFF6A1B9A),
                 child: Text(
@@ -51,7 +51,7 @@ class PhoneticRootsScreen extends StatelessWidget {
               const BrushDivider(),
               const SizedBox(height: 14),
               Text(
-                '样本声旁 · 16 (총 200 placeholder)',
+                '발음부 샘플 16 (총 200 placeholder)',
                 style: TextStyle(fontWeight: FontWeight.w800, color: AppColors.mo, letterSpacing: 2),
               ),
               const SizedBox(height: 10),
@@ -75,7 +75,7 @@ class PhoneticRootsScreen extends StatelessWidget {
                   border: Border.all(color: AppColors.jin.withValues(alpha: 0.5)),
                 ),
                 child: Text(
-                  '🔧 200 개 전체 声旁 데이터셋 작업 중.\n발음부 cluster (木 25자 · 心 26자 · 口 34자 …) + mnemonic 25주 손작성 예정.',
+                  '🔧 200개 전체 발음부 데이터셋 작업 중.\ncluster (木 25자 · 心 26자 · 口 34자 …) + 발음부별 mnemonic 25주 손작성 예정.',
                   style: const TextStyle(color: AppColors.moLight, fontSize: 11, height: 1.5),
                 ),
               ),

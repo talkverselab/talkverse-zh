@@ -10,7 +10,7 @@ class ProfileScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: AppColors.xuanZhi,
-      appBar: AppBar(title: const Text('个人 设置')),
+      appBar: AppBar(title: const Text('프로필 · 설정')),
       body: ListView(
         padding: const EdgeInsets.all(16),
         children: [
@@ -31,7 +31,7 @@ class ProfileScreen extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        '学习者',
+                        '학습자',
                         style: TextStyle(
                           color: AppColors.xuanZhi,
                           fontSize: 20,
@@ -41,7 +41,7 @@ class ProfileScreen extends StatelessWidget {
                       ),
                       const SizedBox(height: 4),
                       Text(
-                        'Day 1 · 入门',
+                        'Day 1 · 입문',
                         style: TextStyle(
                           color: AppColors.jinBright,
                           fontSize: 13,
@@ -56,7 +56,7 @@ class ProfileScreen extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 18),
-          Text('设置',
+          Text('설정',
               style: TextStyle(
                 fontWeight: FontWeight.w800,
                 fontSize: 15,
@@ -65,12 +65,12 @@ class ProfileScreen extends StatelessWidget {
               )),
           const SizedBox(height: 8),
           _SettingsGroup(items: [
-            _SettingItem(icon: Icons.translate, title: '方言', subtitle: '北 · 简体字 (대륙 보통화)'),
-            _SettingItem(icon: Icons.volume_up, title: 'TTS 音声', subtitle: 'zh-CN-XiaoxiaoNeural'),
-            _SettingItem(icon: Icons.palette, title: '主题', subtitle: '日 · 中国风 #DE2910'),
+            _SettingItem(icon: Icons.translate, title: '방언', subtitle: '北 · 간체자 (대륙 보통화)'),
+            _SettingItem(icon: Icons.volume_up, title: 'TTS 음성', subtitle: 'zh-CN-XiaoxiaoNeural'),
+            _SettingItem(icon: Icons.palette, title: '테마', subtitle: '낮 · 중국풍 #DE2910'),
           ]),
           const SizedBox(height: 16),
-          Text('信息',
+          Text('정보',
               style: TextStyle(
                 fontWeight: FontWeight.w800,
                 fontSize: 15,
@@ -79,9 +79,9 @@ class ProfileScreen extends StatelessWidget {
               )),
           const SizedBox(height: 8),
           _SettingsGroup(items: [
-            _SettingItem(icon: Icons.info_outline, title: 'App 버전', subtitle: '0.2.0 · alpha 中国风'),
+            _SettingItem(icon: Icons.info_outline, title: '앱 버전', subtitle: '0.2.0 · alpha 중국풍'),
             _SettingItem(icon: Icons.code, title: 'Stack', subtitle: 'Flutter 3.41 · Material 3 · SQLite'),
-            _SettingItem(icon: Icons.copyright, title: '版权', subtitle: '中国语宇宙 · 2026'),
+            _SettingItem(icon: Icons.copyright, title: '저작권', subtitle: '중국어유니버스 · 2026'),
           ]),
           const SizedBox(height: 20),
           const BrushDivider(),
@@ -92,11 +92,11 @@ class ProfileScreen extends StatelessWidget {
           const SizedBox(height: 4),
           Center(
             child: Text(
-              '学海无涯',
+              '학해무애 · 学海无涯',
               style: TextStyle(
                 color: AppColors.moLight,
                 fontSize: 11,
-                letterSpacing: 6,
+                letterSpacing: 4,
               ),
             ),
           ),

@@ -58,7 +58,7 @@ class _Hanzi209ScreenState extends State<Hanzi209Screen> {
     return Scaffold(
       backgroundColor: AppColors.xuanZhi,
       appBar: AppBar(
-        title: Text('二阶汉字 ${_chars.length} 字'),
+        title: Text('회화 시작점 한자 ${_chars.length}자'),
       ),
       body: _loading
           ? const Center(child: CircularProgressIndicator(color: AppColors.zhuHong))
@@ -82,7 +82,7 @@ class _Hanzi209ScreenState extends State<Hanzi209Screen> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
-                              '会话覆盖 89%',
+                              '회화 청취 89% 커버',
                               style: TextStyle(
                                 fontSize: 18,
                                 fontWeight: FontWeight.w900,
@@ -92,7 +92,7 @@ class _Hanzi209ScreenState extends State<Hanzi209Screen> {
                             ),
                             const SizedBox(height: 4),
                             Text(
-                              'opus zh_cn 88M tokens · CD-weighted\nPhase 2 sweet spot · 탭 → 발음',
+                              'opus zh_cn 88M tokens · CD-weighted\nPhase 2 sweet spot · 탭하면 발음 재생',
                               style: TextStyle(
                                 fontSize: 11,
                                 color: AppColors.xuanZhi.withValues(alpha: 0.9),

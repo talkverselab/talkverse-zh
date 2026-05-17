@@ -35,7 +35,7 @@ class _ConversationScreenState extends State<ConversationScreen> {
     return Scaffold(
       backgroundColor: AppColors.xuanZhi,
       appBar: AppBar(
-        title: const Text('核心会话 · L1'),
+        title: const Text('회화 L1'),
       ),
       body: _loading
           ? const Center(child: CircularProgressIndicator(color: AppColors.zhuHong))
@@ -55,7 +55,7 @@ class _ConversationScreenState extends State<ConversationScreen> {
       padding: const EdgeInsets.all(16),
       children: [
         ChineseCard(
-          title: 'L1 · 매칭 narrative 200 turn',
+          title: 'L1 · 매칭 narrative 200턴',
           sealText: 'L1',
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -85,7 +85,7 @@ class _ConversationScreenState extends State<ConversationScreen> {
               ),
               const SizedBox(height: 6),
               Text(
-                '进度 $progress / $target',
+                '진도 $progress / $target',
                 style: const TextStyle(fontSize: 11, color: AppColors.moLight),
               ),
             ],
@@ -129,7 +129,7 @@ class _EpisodeCard extends StatelessWidget {
             ),
           ),
           subtitle: Text(
-            '${turns.length} / 40 turn',
+            '${turns.length} / 40턴',
             style: const TextStyle(color: AppColors.moLight, fontSize: 11),
           ),
           initiallyExpanded: turns.isNotEmpty,

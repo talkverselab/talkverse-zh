@@ -10,7 +10,7 @@ class ToneMatrixScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: AppColors.xuanZhi,
-      appBar: AppBar(title: const Text('声调矩阵 4×4')),
+      appBar: AppBar(title: const Text('4성 매트릭스')),
       body: Stack(
         children: [
           const Positioned.fill(child: CloudPattern(opacity: 0.05)),
@@ -18,10 +18,10 @@ class ToneMatrixScreen extends StatelessWidget {
             padding: const EdgeInsets.all(16),
             children: [
               ChineseCard(
-                title: '声调 (Tone) 4×4 + 轻声 4',
+                title: '성조 4×4 + 경성 4',
                 sealText: '调',
                 child: Text(
-                  '2字 단어의 성조 조합 16 칸 + 경성 4 칸 = 20 셀.\n셀 당 10 단어 예시. 총 160 단어 학습 트랙.',
+                  '2글자 단어 성조 조합 16 칸 + 경성 4 칸 = 20 셀.\n셀 당 10 단어 예시. 총 160 단어 학습 트랙.',
                   style: TextStyle(color: AppColors.moLight, fontSize: 12, height: 1.5),
                 ),
               ),
@@ -30,7 +30,7 @@ class ToneMatrixScreen extends StatelessWidget {
               const SizedBox(height: 12),
               const BrushDivider(),
               const SizedBox(height: 14),
-              Text('主矩阵 4×4',
+              Text('메인 매트릭스 4×4',
                   style: TextStyle(fontWeight: FontWeight.w800, color: AppColors.mo, letterSpacing: 2)),
               const SizedBox(height: 8),
               GridView.builder(
@@ -50,7 +50,7 @@ class ToneMatrixScreen extends StatelessWidget {
                 },
               ),
               const SizedBox(height: 18),
-              Text('轻声 (Neutral)',
+              Text('경성',
                   style: TextStyle(fontWeight: FontWeight.w800, color: AppColors.mo, letterSpacing: 2)),
               const SizedBox(height: 8),
               GridView.builder(
@@ -81,11 +81,11 @@ class _ToneLegend extends StatelessWidget {
       spacing: 10,
       runSpacing: 8,
       children: [
-        _legend(1, '一声 高平 mā'),
-        _legend(2, '二声 上升 má'),
-        _legend(3, '三声 V  mǎ'),
-        _legend(4, '四声 下降 mà'),
-        _legend(0, '轻声 ma'),
+        _legend(1, '1성 高平 mā'),
+        _legend(2, '2성 上昇 má'),
+        _legend(3, '3성 V mǎ'),
+        _legend(4, '4성 下降 mà'),
+        _legend(0, '경성 ma'),
       ],
     );
   }
@@ -165,7 +165,7 @@ class _ToneCell extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(
-                col == 0 ? '$row·轻' : '$row·$col',
+                col == 0 ? '$row·경' : '$row·$col',
                 style: const TextStyle(
                   fontSize: 9,
                   fontWeight: FontWeight.w800,

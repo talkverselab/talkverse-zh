@@ -1,6 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
     <application
-        android:label="中国语宇宙"
+        android:label="중국어유니버스"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

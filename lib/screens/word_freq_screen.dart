@@ -18,7 +18,7 @@ class _WordFreqScreenState extends State<WordFreqScreen> {
   String _filter = 'ALL';
 
   static const Map<String, _Region> _regions = {
-    'ALL': _Region('全部', AppColors.mo, 0, 2500),
+    'ALL': _Region('전체', AppColors.mo, 0, 2500),
     'R1': _Region('R1 · 1-433', AppColors.zhuHong, 1, 433),
     'R2': _Region('R2 · 434-616', AppColors.zhuHongLight, 434, 616),
     'R3': _Region('R3 · 617-1238', AppColors.jin, 617, 1238),
@@ -60,7 +60,7 @@ class _WordFreqScreenState extends State<WordFreqScreen> {
 
     return Scaffold(
       backgroundColor: AppColors.xuanZhi,
-      appBar: AppBar(title: const Text('词频 2500')),
+      appBar: AppBar(title: const Text('단어 빈도 2500')),
       body: _loading
           ? const Center(child: CircularProgressIndicator(color: AppColors.zhuHong))
           : Column(
@@ -140,7 +140,7 @@ class _WordFreqScreenState extends State<WordFreqScreen> {
                                     ),
                                   ),
                                   Text(
-                                    '累计 ${w.cumPct.toStringAsFixed(2)}%',
+                                    '누적 ${w.cumPct.toStringAsFixed(2)}%',
                                     style: const TextStyle(fontSize: 10, color: AppColors.moLight),
                                   ),
                                 ],

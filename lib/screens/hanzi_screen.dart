@@ -54,7 +54,7 @@ class _HanziScreenState extends State<HanziScreen> {
     return Scaffold(
       backgroundColor: AppColors.xuanZhi,
       appBar: AppBar(
-        title: const Text('常用汉字 Top 500'),
+        title: const Text('한자 빈도 Top 500'),
       ),
       body: _loading
           ? const Center(child: CircularProgressIndicator(color: AppColors.zhuHong))

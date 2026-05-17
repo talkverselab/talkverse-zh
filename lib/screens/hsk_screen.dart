@@ -13,12 +13,12 @@ class HskScreen extends StatefulWidget {
 
 class _HskScreenState extends State<HskScreen> {
   final List<_Level> _levels = const [
-    _Level('HSK 汉字 一级', 'assets/data/hsk/HSK_hanzi_1.txt', '一', AppColors.zhuHong),
-    _Level('HSK 汉字 二级', 'assets/data/hsk/HSK_hanzi_2.txt', '二', AppColors.zhuHongLight),
-    _Level('HSK 汉字 三级', 'assets/data/hsk/HSK_hanzi_3.txt', '三', AppColors.jin),
-    _Level('HSK 词汇 一级', 'assets/data/hsk/HSK_1.txt', 'A', AppColors.feiCui),
-    _Level('HSK 词汇 二级', 'assets/data/hsk/HSK_2.txt', 'B', AppColors.jinDeep),
-    _Level('HSK 词汇 三级', 'assets/data/hsk/HSK_3.txt', 'C', AppColors.moLight),
+    _Level('HSK 한자 1급', 'assets/data/hsk/HSK_hanzi_1.txt', '一', AppColors.zhuHong),
+    _Level('HSK 한자 2급', 'assets/data/hsk/HSK_hanzi_2.txt', '二', AppColors.zhuHongLight),
+    _Level('HSK 한자 3급', 'assets/data/hsk/HSK_hanzi_3.txt', '三', AppColors.jin),
+    _Level('HSK 단어 1급', 'assets/data/hsk/HSK_1.txt', 'A', AppColors.feiCui),
+    _Level('HSK 단어 2급', 'assets/data/hsk/HSK_2.txt', 'B', AppColors.jinDeep),
+    _Level('HSK 단어 3급', 'assets/data/hsk/HSK_3.txt', 'C', AppColors.moLight),
   ];
 
   String? _selectedAsset;
@@ -49,7 +49,7 @@ class _HskScreenState extends State<HskScreen> {
       backgroundColor: AppColors.xuanZhi,
       appBar: AppBar(
         title: Text(_selectedAsset == null
-            ? 'HSK 等级'
+            ? 'HSK 분급'
             : _levels.firstWhere((l) => l.asset == _selectedAsset).title),
         leading: _selectedAsset != null
             ? IconButton(
@@ -70,10 +70,10 @@ class _HskScreenState extends State<HskScreen> {
       padding: const EdgeInsets.all(16),
       children: [
         ChineseCard(
-          title: 'HSK · 新汉语水平考试',
+          title: 'HSK · 한어수평고시',
           sealText: 'HSK',
           child: Text(
-            '中华人民共和国 国家汉办 시험 분급.\n신HSK 2021 — 一级 ~ 七至九级.',
+            '중국 국가한판 (国家汉办) 공식 분급.\n신HSK 2021 — 1급 ~ 7-9급.',
             style: TextStyle(color: AppColors.moLight, fontSize: 12, height: 1.5),
           ),
         ),
