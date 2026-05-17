@@ -1,0 +1,1565 @@
+{
+  "lesson": 2,
+  "title": "L2 — 어기조사·부사·필수단어 (실제 챗 기반)",
+  "subtitle": "LCCC 실측 + 209자 필터 / 86 카테고리 × 3 = 258 문장",
+  "data_source": "LCCC test + valid sets (silver), 209-char filter",
+  "char_set_size": 209,
+  "categories": [
+    {
+      "kind": "particle",
+      "key": "啊",
+      "label": "어기조사 啊",
+      "examples_raw": [
+        {
+          "zh": "就是我说的啊",
+          "quality": 1.0
+        },
+        {
+          "zh": "对啊不要钱",
+          "quality": 1.0
+        },
+        {
+          "zh": "但是你有钱拿啊",
+          "quality": 1.0
+        }
+      ]
+    },
+    {
+      "kind": "particle",
+      "key": "吗",
+      "label": "어기조사 吗",
+      "examples_raw": [
+        {
+          "zh": "你不要说话好吗",
+          "quality": 1.0
+        },
+        {
+          "zh": "成都今天人多吗",
+          "quality": 1.0
+        },
+        {
+          "zh": "我们会被打吗",
+          "quality": 1.0
+        }
+      ]
+    },
+    {
+      "kind": "particle",
+      "key": "吧",
+      "label": "어기조사 吧",
+      "examples_raw": [
+        {
+          "zh": "你请我吃吧别带了",
+          "quality": 1.0
+        },
+        {
+          "zh": "我没来晚吧",
+          "quality": 1.0
+        },
+        {
+          "zh": "应该也就那样吧",
+          "quality": 1.0
+        }
+      ]
+    },
+    {
+      "kind": "particle",
+      "key": "呀",
+      "label": "어기조사 呀",
+      "examples_raw": [
+        {
+          "zh": "我会吃你呀",
+          "quality": 1.0
+        },
+        {
+          "zh": "在哪看到呀",
+          "quality": 1.0
+        },
+        {
+          "zh": "你来呀来呀",
+          "quality": 1.0
+        }
+      ]
+    },
+    {
+      "kind": "particle",
+      "key": "呢",
+      "label": "어기조사 呢",
+      "examples_raw": [
+        {
+          "zh": "那在家干嘛呢",
+          "quality": 1.0
+        },
+        {
+          "zh": "你的最爱呢",
+          "quality": 1.0
+        },
+        {
+          "zh": "你现在哪儿呢",
+          "quality": 1.0
+        }
+      ]
+    },
+    {
+      "kind": "particle",
+      "key": "啦",
+      "label": "어기조사 啦",
+      "examples_raw": [
+        {
+          "zh": "嗯嗯帮我问下啦",
+          "quality": 1.0
+        },
+        {
+          "zh": "你今年不回来啦",
+          "quality": 1.0
+        },
+        {
+          "zh": "吃好吃的啦",
+          "quality": 1.0
+        }
+      ]
+    },
+    {
+      "kind": "particle",
+      "key": "嗯",
+      "label": "어기조사 嗯",
+      "examples_raw": [
+        {
+          "zh": "嗯嗯谢谢哦",
+          "quality": 1.0
+        },
+        {
+          "zh": "嗯嗯你这么说我好点了",
+          "quality": 1.0
+        },
+        {
+          "zh": "嗯我知道你只告诉我",
+          "quality": 1.0
+        }
+      ]
+    },
+    {
+      "kind": "particle",
+      "key": "哦",
+      "label": "어기조사 哦",
+      "examples_raw": [
+        {
+          "zh": "我也喜欢你哦",
+          "quality": 1.0
+        },
+        {
+          "zh": "不说这样的话哦",
+          "quality": 1.0
+        },
+        {
+          "zh": "哦哦对对对",
+          "quality": 1.0
+        }
+      ]
+    },
+    {
+      "kind": "particle",
+      "key": "哪",
+      "label": "어기조사 哪",
+      "examples_raw": [
+        {
+          "zh": "现在住在哪儿",
+          "quality": 1.0
+        },
+        {
+          "zh": "你今天去哪里",
+          "quality": 1.0
+        },
+        {
+          "zh": "在哪里看到",
+          "quality": 1.0
+        }
+      ]
+    },
+    {
+      "kind": "particle",
+      "key": "嘛",
+      "label": "어기조사 嘛",
+      "examples_raw": [
+        {
+          "zh": "看嘛看嘛不是我一个人说",
+          "quality": 1.0
+        },
+        {
+          "zh": "说的很对好嘛",
+          "quality": 1.0
+        },
+        {
+          "zh": "你到哪点嘛",
+          "quality": 1.0
+        }
+      ]
+    },
+    {
+      "kind": "particle",
+      "key": "喂",
+      "label": "어기조사 喂",
+      "examples_raw": []
+    },
+    {
+      "kind": "particle",
+      "key": "嘿",
+      "label": "어기조사 嘿",
+      "examples_raw": []
+    },
+    {
+      "kind": "particle",
+      "key": "嗨",
+      "label": "어기조사 嗨",
+      "examples_raw": []
+    },
+    {
+      "kind": "particle",
+      "key": "咯",
+      "label": "어기조사 咯",
+      "examples_raw": []
+    },
+    {
+      "kind": "adverb",
+      "key": "很",
+      "label": "부사 很",
+      "examples_raw": [
+        {
+          "zh": "我会想很多",
+          "quality": 1.0
+        },
+        {
+          "zh": "有没有很多可以吃的",
+          "quality": 1.0
+        },
+        {
+          "zh": "我以后会很开心",
+          "quality": 1.0
+        }
+      ]
+    },
+    {
+      "kind": "adverb",
+      "key": "真",
+      "label": "부사 真",
+      "examples_raw": [
+        {
+          "zh": "感觉是真的",
+          "quality": 1.0
+        },
+        {
+          "zh": "你朋友真多",
+          "quality": 1.0
+        },
+        {
+          "zh": "这真不喜欢",
+          "quality": 1.0
+        }
+      ]
+    },
+    {
+      "kind": "adverb",
+      "key": "太",
+      "label": "부사 太",
+      "examples_raw": [
+        {
+          "zh": "是的，所以就看小方太你了",
+          "quality": 0.917
+        },
+        {
+          "zh": "你太能吃了",
+          "quality": 1.0
+        },
+        {
+          "zh": "时间过起来真的太快了",
+          "quality": 1.0
+        }
+      ]
+    },
+    {
+      "kind": "adverb",
+      "key": "最",
+      "label": "부사 最",
+      "examples_raw": [
+        {
+          "zh": "不是最看是最快",
+          "quality": 1.0
+        },
+        {
+          "zh": "你是最好的",
+          "quality": 1.0
+        },
+        {
+          "zh": "最后什么也都不要了",
+          "quality": 1.0
+        }
+      ]
+    },
+    {
+      "kind": "adverb",
+      "key": "都",
+      "label": "부사 都",
+      "examples_raw": [
+        {
+          "zh": "有钱一切都好",
+          "quality": 1.0
+        },
+        {
+          "zh": "一切都会成为过去",
+          "quality": 1.0
+        },
+        {
+          "zh": "不错啊这都知道",
+          "quality": 1.0
+        }
+      ]
+    },
+    {
+      "kind": "adverb",
+      "key": "也",
+      "label": "부사 也",
+      "examples_raw": [
+        {
+          "zh": "怎么走我也想走过去",
+          "quality": 1.0
+        },
+        {
+          "zh": "我也要去做做看",
+          "quality": 1.0
+        },
+        {
+          "zh": "我也只有那一次见到",
+          "quality": 1.0
+        }
+      ]
+    },
+    {
+      "kind": "adverb",
+      "key": "还",
+      "label": "부사 还",
+      "examples_raw": [
+        {
+          "zh": "他还需要一个女儿吗",
+          "quality": 1.0
+        },
+        {
+          "zh": "你还能和谁也就是她",
+          "quality": 1.0
+        },
+        {
+          "zh": "是今天的吗还是以前的",
+          "quality": 1.0
+        }
+      ]
+    },
+    {
+      "kind": "adverb",
+      "key": "又",
+      "label": "부사 又",
+      "examples_raw": [
+        {
+          "zh": "我现在正好又大晚上",
+          "quality": 1.0
+        },
+        {
+          "zh": "好又不关你事",
+          "quality": 1.0
+        },
+        {
+          "zh": "明晚又有了",
+          "quality": 1.0
+        }
+      ]
+    },
+    {
+      "kind": "adverb",
+      "key": "再",
+      "label": "부사 再",
+      "examples_raw": [
+        {
+          "zh": "别再见面了",
+          "quality": 1.0
+        },
+        {
+          "zh": "那就再等两天吧",
+          "quality": 1.0
+        },
+        {
+          "zh": "你现在再来用用",
+          "quality": 1.0
+        }
+      ]
+    },
+    {
+      "kind": "adverb",
+      "key": "已",
+      "label": "부사 已",
+      "examples_raw": [
+        {
+          "zh": "来真的呀，我就说说而已",
+          "quality": 0.909
+        },
+        {
+          "zh": "你已经走啦",
+          "quality": 1.0
+        },
+        {
+          "zh": "我已经看了",
+          "quality": 1.0
+        }
+      ]
+    },
+    {
+      "kind": "adverb",
+      "key": "先",
+      "label": "부사 先",
+      "examples_raw": [
+        {
+          "zh": "给我找个工作先",
+          "quality": 1.0
+        },
+        {
+          "zh": "先别说我，你最想做什么",
+          "quality": 0.909
+        },
+        {
+          "zh": "好先进啊,",
+          "quality": 0.8
+        }
+      ]
+    },
+    {
+      "kind": "adverb",
+      "key": "常",
+      "label": "부사 常",
+      "examples_raw": [
+        {
+          "zh": "是的呢小时候经常吃",
+          "quality": 1.0
+        },
+        {
+          "zh": "你正常吗",
+          "quality": 0.8
+        },
+        {
+          "zh": "你没常来呀",
+          "quality": 1.0
+        }
+      ]
+    },
+    {
+      "kind": "adverb",
+      "key": "更",
+      "label": "부사 更",
+      "examples_raw": [
+        {
+          "zh": "我不去你不是更好",
+          "quality": 1.0
+        },
+        {
+          "zh": "当然会更",
+          "quality": 0.8
+        },
+        {
+          "zh": "想更好的工作",
+          "quality": 1.0
+        }
+      ]
+    },
+    {
+      "kind": "adverb",
+      "key": "只",
+      "label": "부사 只",
+      "examples_raw": [
+        {
+          "zh": "等你来只要你来",
+          "quality": 1.0
+        },
+        {
+          "zh": "好像只能想想了",
+          "quality": 1.0
+        },
+        {
+          "zh": "你只是来了而已",
+          "quality": 1.0
+        }
+      ]
+    },
+    {
+      "kind": "adverb",
+      "key": "别",
+      "label": "부사 别",
+      "examples_raw": [
+        {
+          "zh": "别说哪个是我",
+          "quality": 1.0
+        },
+        {
+          "zh": "我想知道别人是谁",
+          "quality": 1.0
+        },
+        {
+          "zh": "你请我吃吧别带了",
+          "quality": 1.0
+        }
+      ]
+    },
+    {
+      "kind": "adverb",
+      "key": "快",
+      "label": "부사 快",
+      "examples_raw": [
+        {
+          "zh": "小的吃得快",
+          "quality": 1.0
+        },
+        {
+          "zh": "快点到来吧",
+          "quality": 1.0
+        },
+        {
+          "zh": "快点跟我回家",
+          "quality": 1.0
+        }
+      ]
+    },
+    {
+      "kind": "adverb",
+      "key": "多",
+      "label": "부사 多",
+      "examples_raw": [
+        {
+          "zh": "很多很多事情要干",
+          "quality": 1.0
+        },
+        {
+          "zh": "大晚上看到这么多吃的",
+          "quality": 1.0
+        },
+        {
+          "zh": "我没有多的",
+          "quality": 1.0
+        }
+      ]
+    },
+    {
+      "kind": "adverb",
+      "key": "当然",
+      "label": "부사 当然",
+      "examples_raw": [
+        {
+          "zh": "那当然是吃了",
+          "quality": 1.0
+        },
+        {
+          "zh": "当然有~就不告诉你是谁",
+          "quality": 0.909
+        },
+        {
+          "zh": "当然要，必须要呀。",
+          "quality": 0.778
+        }
+      ]
+    },
+    {
+      "kind": "adverb",
+      "key": "马上",
+      "label": "부사 马上",
+      "examples_raw": []
+    },
+    {
+      "kind": "adverb",
+      "key": "一直",
+      "label": "부사 一直",
+      "examples_raw": [
+        {
+          "zh": "干嘛一直叫我啊。",
+          "quality": 0.875
+        },
+        {
+          "zh": "我一直在这里等你",
+          "quality": 1.0
+        },
+        {
+          "zh": "我们一直在",
+          "quality": 1.0
+        }
+      ]
+    },
+    {
+      "kind": "adverb",
+      "key": "永远",
+      "label": "부사 永远",
+      "examples_raw": []
+    },
+    {
+      "kind": "adverb",
+      "key": "从来",
+      "label": "부사 从来",
+      "examples_raw": [
+        {
+          "zh": "也是从来没有过",
+          "quality": 1.0
+        },
+        {
+          "zh": "从来不用。。",
+          "quality": 0.667
+        },
+        {
+          "zh": "从来没有过！",
+          "quality": 0.833
+        }
+      ]
+    },
+    {
+      "kind": "word",
+      "key": "什么",
+      "label": "필수 단어 什么",
+      "examples_raw": [
+        {
+          "zh": "我说点什么呢",
+          "quality": 1.0
+        },
+        {
+          "zh": "什么意思啊",
+          "quality": 1.0
+        },
+        {
+          "zh": "你在说什么",
+          "quality": 1.0
+        }
+      ]
+    },
+    {
+      "kind": "word",
+      "key": "知道",
+      "label": "필수 단어 知道",
+      "examples_raw": [
+        {
+          "zh": "只是不知道该怎么做了",
+          "quality": 1.0
+        },
+        {
+          "zh": "我都不知道回不回了",
+          "quality": 1.0
+        },
+        {
+          "zh": "我不想知道",
+          "quality": 1.0
+        }
+      ]
+    },
+    {
+      "kind": "word",
+      "key": "怎么",
+      "label": "필수 단어 怎么",
+      "examples_raw": [
+        {
+          "zh": "只是不知道该怎么做了",
+          "quality": 1.0
+        },
+        {
+          "zh": "你怎么知道",
+          "quality": 1.0
+        },
+        {
+          "zh": "你看我怎么样",
+          "quality": 1.0
+        }
+      ]
+    },
+    {
+      "kind": "word",
+      "key": "喜欢",
+      "label": "필수 단어 喜欢",
+      "examples_raw": [
+        {
+          "zh": "我也喜欢你",
+          "quality": 1.0
+        },
+        {
+          "zh": "你没看到怎么能说喜欢",
+          "quality": 1.0
+        },
+        {
+          "zh": "你什么都喜欢",
+          "quality": 1.0
+        }
+      ]
+    },
+    {
+      "kind": "word",
+      "key": "可以",
+      "label": "필수 단어 可以",
+      "examples_raw": [
+        {
+          "zh": "呢你可以多给我点",
+          "quality": 1.0
+        },
+        {
+          "zh": "你要想的话也不是不可以",
+          "quality": 1.0
+        },
+        {
+          "zh": "你可以走了",
+          "quality": 1.0
+        }
+      ]
+    },
+    {
+      "kind": "word",
+      "key": "真的",
+      "label": "필수 단어 真的",
+      "examples_raw": [
+        {
+          "zh": "真的啊回了什么啊",
+          "quality": 1.0
+        },
+        {
+          "zh": "大家好才是真的好",
+          "quality": 1.0
+        },
+        {
+          "zh": "真的会很开心么",
+          "quality": 1.0
+        }
+      ]
+    },
+    {
+      "kind": "word",
+      "key": "不是",
+      "label": "필수 단어 不是",
+      "examples_raw": [
+        {
+          "zh": "一看你就不是个正经人",
+          "quality": 1.0
+        },
+        {
+          "zh": "错了错了是他们不是你",
+          "quality": 1.0
+        },
+        {
+          "zh": "你再说什么你不是个好孩子",
+          "quality": 1.0
+        }
+      ]
+    },
+    {
+      "kind": "word",
+      "key": "没有",
+      "label": "필수 단어 没有",
+      "examples_raw": [
+        {
+          "zh": "怎么没有呢",
+          "quality": 1.0
+        },
+        {
+          "zh": "可是没有如果",
+          "quality": 1.0
+        },
+        {
+          "zh": "也是从来没有过",
+          "quality": 1.0
+        }
+      ]
+    },
+    {
+      "kind": "word",
+      "key": "这样",
+      "label": "필수 단어 这样",
+      "examples_raw": [
+        {
+          "zh": "不说这样的话哦",
+          "quality": 1.0
+        },
+        {
+          "zh": "谁叫你要问这样的问题",
+          "quality": 1.0
+        },
+        {
+          "zh": "我还真有这样一个朋友",
+          "quality": 1.0
+        }
+      ]
+    },
+    {
+      "kind": "word",
+      "key": "现在",
+      "label": "필수 단어 现在",
+      "examples_raw": [
+        {
+          "zh": "就知道你会出现在这里",
+          "quality": 1.0
+        },
+        {
+          "zh": "现在知道了也没用了",
+          "quality": 1.0
+        },
+        {
+          "zh": "你现在在哪儿",
+          "quality": 1.0
+        }
+      ]
+    },
+    {
+      "kind": "word",
+      "key": "一起",
+      "label": "필수 단어 一起",
+      "examples_raw": [
+        {
+          "zh": "不你和我一起",
+          "quality": 1.0
+        },
+        {
+          "zh": "家里人一起吗",
+          "quality": 1.0
+        },
+        {
+          "zh": "我们就没有在一起过啊",
+          "quality": 1.0
+        }
+      ]
+    },
+    {
+      "kind": "word",
+      "key": "不要",
+      "label": "필수 단어 不要",
+      "examples_raw": [
+        {
+          "zh": "要不要一起",
+          "quality": 1.0
+        },
+        {
+          "zh": "那我要不要回家了呢",
+          "quality": 1.0
+        },
+        {
+          "zh": "你觉得不要钱就是不要钱啊",
+          "quality": 1.0
+        }
+      ]
+    },
+    {
+      "kind": "word",
+      "key": "回来",
+      "label": "필수 단어 回来",
+      "examples_raw": [
+        {
+          "zh": "前天晚上回来的",
+          "quality": 1.0
+        },
+        {
+          "zh": "亲我回来了",
+          "quality": 1.0
+        },
+        {
+          "zh": "什么时候回来",
+          "quality": 1.0
+        }
+      ]
+    },
+    {
+      "kind": "word",
+      "key": "觉得",
+      "label": "필수 단어 觉得",
+      "examples_raw": [
+        {
+          "zh": "我觉得快了，你我都知道",
+          "quality": 0.909
+        },
+        {
+          "zh": "我觉得你很可爱",
+          "quality": 1.0
+        },
+        {
+          "zh": "我也觉得是",
+          "quality": 1.0
+        }
+      ]
+    },
+    {
+      "kind": "word",
+      "key": "哪里",
+      "label": "필수 단어 哪里",
+      "examples_raw": [
+        {
+          "zh": "你去哪里哦",
+          "quality": 1.0
+        },
+        {
+          "zh": "你是走哪里的",
+          "quality": 1.0
+        },
+        {
+          "zh": "你今天去哪里",
+          "quality": 1.0
+        }
+      ]
+    },
+    {
+      "kind": "word",
+      "key": "就是",
+      "label": "필수 단어 就是",
+      "examples_raw": [
+        {
+          "zh": "那就是没问题",
+          "quality": 1.0
+        },
+        {
+          "zh": "知错就是好孩子",
+          "quality": 1.0
+        },
+        {
+          "zh": "我就是喜欢他",
+          "quality": 1.0
+        }
+      ]
+    },
+    {
+      "kind": "word",
+      "key": "时候",
+      "label": "필수 단어 时候",
+      "examples_raw": [
+        {
+          "zh": "等我什么时候有钱了",
+          "quality": 1.0
+        },
+        {
+          "zh": "到时候就知道了",
+          "quality": 1.0
+        },
+        {
+          "zh": "你什么时候",
+          "quality": 1.0
+        }
+      ]
+    },
+    {
+      "kind": "word",
+      "key": "不会",
+      "label": "필수 단어 不会",
+      "examples_raw": [
+        {
+          "zh": "不会叫你的",
+          "quality": 1.0
+        },
+        {
+          "zh": "不会吧，应该快来了吧",
+          "quality": 0.9
+        },
+        {
+          "zh": "你不会还是女孩儿吧",
+          "quality": 1.0
+        }
+      ]
+    },
+    {
+      "kind": "word",
+      "key": "谢谢",
+      "label": "필수 단어 谢谢",
+      "examples_raw": [
+        {
+          "zh": "谢谢谢谢啦",
+          "quality": 1.0
+        },
+        {
+          "zh": "我真是要谢谢你",
+          "quality": 1.0
+        },
+        {
+          "zh": "带我回去谢谢",
+          "quality": 1.0
+        }
+      ]
+    },
+    {
+      "kind": "word",
+      "key": "自己",
+      "label": "필수 단어 自己",
+      "examples_raw": [
+        {
+          "zh": "那你自己说",
+          "quality": 1.0
+        },
+        {
+          "zh": "自己回去的啊",
+          "quality": 1.0
+        },
+        {
+          "zh": "嗯自己在家干嘛呢",
+          "quality": 1.0
+        }
+      ]
+    },
+    {
+      "kind": "word",
+      "key": "应该",
+      "label": "필수 단어 应该",
+      "examples_raw": [
+        {
+          "zh": "这时候你不应该问我出的去吗",
+          "quality": 0.8
+        },
+        {
+          "zh": "你应该请我们吃好吃的",
+          "quality": 1.0
+        },
+        {
+          "zh": "明个应该会下吧？",
+          "quality": 0.875
+        }
+      ]
+    },
+    {
+      "kind": "word",
+      "key": "这么",
+      "label": "필수 단어 这么",
+      "examples_raw": [
+        {
+          "zh": "就知道你要这么说来来来",
+          "quality": 1.0
+        },
+        {
+          "zh": "你一开始可不是这么说的",
+          "quality": 1.0
+        },
+        {
+          "zh": "这么哪里都有你",
+          "quality": 1.0
+        }
+      ]
+    },
+    {
+      "kind": "word",
+      "key": "不知道",
+      "label": "필수 단어 不知道",
+      "examples_raw": [
+        {
+          "zh": "我是真心不知道该说些什么",
+          "quality": 1.0
+        },
+        {
+          "zh": "下了不知道现在在不在下",
+          "quality": 1.0
+        },
+        {
+          "zh": "不知道今天回不回的来",
+          "quality": 1.0
+        }
+      ]
+    },
+    {
+      "kind": "word",
+      "key": "这个",
+      "label": "필수 단어 这个",
+      "examples_raw": [
+        {
+          "zh": "这个我也想吃",
+          "quality": 1.0
+        },
+        {
+          "zh": "这个很可以可以",
+          "quality": 1.0
+        },
+        {
+          "zh": "这个说的好",
+          "quality": 1.0
+        }
+      ]
+    },
+    {
+      "kind": "word",
+      "key": "没事",
+      "label": "필수 단어 没事",
+      "examples_raw": [
+        {
+          "zh": "哦。没事了。",
+          "quality": 0.667
+        },
+        {
+          "zh": "没事…再说吧",
+          "quality": 0.833
+        },
+        {
+          "zh": "没事别找我",
+          "quality": 1.0
+        }
+      ]
+    },
+    {
+      "kind": "word",
+      "key": "当然",
+      "label": "필수 단어 当然",
+      "examples_raw": [
+        {
+          "zh": "当然没有",
+          "quality": 0.8
+        },
+        {
+          "zh": "那当然了！",
+          "quality": 0.8
+        },
+        {
+          "zh": "当然没有我在这我在这",
+          "quality": 1.0
+        }
+      ]
+    },
+    {
+      "kind": "word",
+      "key": "一个",
+      "label": "필수 단어 一个",
+      "examples_raw": [
+        {
+          "zh": "最后一个了",
+          "quality": 1.0
+        },
+        {
+          "zh": "可我只有你一个女朋友啊",
+          "quality": 1.0
+        },
+        {
+          "zh": "你不是最后一个",
+          "quality": 1.0
+        }
+      ]
+    },
+    {
+      "kind": "word",
+      "key": "你们",
+      "label": "필수 단어 你们",
+      "examples_raw": [
+        {
+          "zh": "能帮到你们就好",
+          "quality": 1.0
+        },
+        {
+          "zh": "你们走了吗",
+          "quality": 1.0
+        },
+        {
+          "zh": "今天你们都干嘛了呢",
+          "quality": 1.0
+        }
+      ]
+    },
+    {
+      "kind": "word",
+      "key": "我们",
+      "label": "필수 단어 我们",
+      "examples_raw": [
+        {
+          "zh": "明晚我们一起",
+          "quality": 1.0
+        },
+        {
+          "zh": "我们在一起吧",
+          "quality": 1.0
+        },
+        {
+          "zh": "看看我们在干嘛",
+          "quality": 1.0
+        }
+      ]
+    },
+    {
+      "kind": "word",
+      "key": "一定",
+      "label": "필수 단어 一定",
+      "examples_raw": [
+        {
+          "zh": "看到我了一定是。。",
+          "quality": 0.778
+        },
+        {
+          "zh": "一定是这样",
+          "quality": 1.0
+        },
+        {
+          "zh": "好。哪天一定去吃好吃的。",
+          "quality": 0.833
+        }
+      ]
+    },
+    {
+      "kind": "word",
+      "key": "为什么",
+      "label": "필수 단어 为什么",
+      "examples_raw": [
+        {
+          "zh": "为什么不带我",
+          "quality": 1.0
+        },
+        {
+          "zh": "为什么没叫我",
+          "quality": 1.0
+        },
+        {
+          "zh": "为什么不叫上我？",
+          "quality": 0.875
+        }
+      ]
+    },
+    {
+      "kind": "word",
+      "key": "看到",
+      "label": "필수 단어 看到",
+      "examples_raw": [
+        {
+          "zh": "你没看到怎么能说喜欢",
+          "quality": 1.0
+        },
+        {
+          "zh": "那就是就是你能看到了啊",
+          "quality": 1.0
+        },
+        {
+          "zh": "我也是看到了就来了",
+          "quality": 1.0
+        }
+      ]
+    },
+    {
+      "kind": "word",
+      "key": "一样",
+      "label": "필수 단어 一样",
+      "examples_raw": [
+        {
+          "zh": "说到自己不是一样",
+          "quality": 1.0
+        },
+        {
+          "zh": "我们不一样",
+          "quality": 1.0
+        },
+        {
+          "zh": "我跟你不一样",
+          "quality": 1.0
+        }
+      ]
+    },
+    {
+      "kind": "word",
+      "key": "还是",
+      "label": "필수 단어 还是",
+      "examples_raw": [
+        {
+          "zh": "是今天的吗还是以前的",
+          "quality": 1.0
+        },
+        {
+          "zh": "我个人认为还是正常呢啊！",
+          "quality": 0.917
+        },
+        {
+          "zh": "不好吃，你还是别吃了",
+          "quality": 0.9
+        }
+      ]
+    },
+    {
+      "kind": "word",
+      "key": "问题",
+      "label": "필수 단어 问题",
+      "examples_raw": [
+        {
+          "zh": "到时候能不能找到你都是个问题",
+          "quality": 0.8
+        },
+        {
+          "zh": "谁叫你要问这样的问题",
+          "quality": 1.0
+        },
+        {
+          "zh": "哪里出问题了你才出问题了",
+          "quality": 1.0
+        }
+      ]
+    },
+    {
+      "kind": "word",
+      "key": "已经",
+      "label": "필수 단어 已经",
+      "examples_raw": [
+        {
+          "zh": "你已经说话了",
+          "quality": 1.0
+        },
+        {
+          "zh": "我已经好了",
+          "quality": 1.0
+        },
+        {
+          "zh": "你的我已经记下了",
+          "quality": 1.0
+        }
+      ]
+    },
+    {
+      "kind": "word",
+      "key": "一直",
+      "label": "필수 단어 一直",
+      "examples_raw": [
+        {
+          "zh": "我一直是真的喜欢你",
+          "quality": 1.0
+        },
+        {
+          "zh": "对我来说一直都没有",
+          "quality": 1.0
+        },
+        {
+          "zh": "一直没去过，看着不错",
+          "quality": 0.9
+        }
+      ]
+    },
+    {
+      "kind": "word",
+      "key": "因为",
+      "label": "필수 단어 因为",
+      "examples_raw": [
+        {
+          "zh": "因为不会啊！",
+          "quality": 0.833
+        },
+        {
+          "zh": "因为有好多都想发",
+          "quality": 1.0
+        },
+        {
+          "zh": "可能是因为有钱吧",
+          "quality": 1.0
+        }
+      ]
+    },
+    {
+      "kind": "word",
+      "key": "看看",
+      "label": "필수 단어 看看",
+      "examples_raw": [
+        {
+          "zh": "好想看看你",
+          "quality": 1.0
+        },
+        {
+          "zh": "没事看看就想看了",
+          "quality": 1.0
+        },
+        {
+          "zh": "一会看看去",
+          "quality": 1.0
+        }
+      ]
+    },
+    {
+      "kind": "word",
+      "key": "告诉",
+      "label": "필수 단어 告诉",
+      "examples_raw": [
+        {
+          "zh": "你还没告诉我你是谁呢",
+          "quality": 1.0
+        },
+        {
+          "zh": "找不回来也不告诉我",
+          "quality": 1.0
+        },
+        {
+          "zh": "你是个什么人用你来告诉我",
+          "quality": 1.0
+        }
+      ]
+    },
+    {
+      "kind": "word",
+      "key": "可能",
+      "label": "필수 단어 可能",
+      "examples_raw": [
+        {
+          "zh": "怎么可能？",
+          "quality": 0.8
+        },
+        {
+          "zh": "可能比你女友大",
+          "quality": 1.0
+        },
+        {
+          "zh": "怎么可能",
+          "quality": 0.8
+        }
+      ]
+    },
+    {
+      "kind": "word",
+      "key": "所以",
+      "label": "필수 단어 所以",
+      "examples_raw": [
+        {
+          "zh": "所以不是我的错",
+          "quality": 1.0
+        },
+        {
+          "zh": "所以是为什么！我现在都不知道",
+          "quality": 0.743
+        },
+        {
+          "zh": "对啊所以我是啊是啊没错啊",
+          "quality": 1.0
+        }
+      ]
+    },
+    {
+      "kind": "word",
+      "key": "不能",
+      "label": "필수 단어 不能",
+      "examples_raw": [
+        {
+          "zh": "朋友是不能做了",
+          "quality": 1.0
+        },
+        {
+          "zh": "为什么不能去？",
+          "quality": 0.857
+        },
+        {
+          "zh": "到时候能不能找到你都是个问题",
+          "quality": 0.8
+        }
+      ]
+    },
+    {
+      "kind": "word",
+      "key": "那么",
+      "label": "필수 단어 那么",
+      "examples_raw": [
+        {
+          "zh": "怎么了那么开心",
+          "quality": 1.0
+        },
+        {
+          "zh": "你还那么小",
+          "quality": 1.0
+        },
+        {
+          "zh": "我也想那么现在一切就不一样了",
+          "quality": 0.8
+        }
+      ]
+    },
+    {
+      "kind": "word",
+      "key": "还有",
+      "label": "필수 단어 还有",
+      "examples_raw": [
+        {
+          "zh": "那还有希望",
+          "quality": 1.0
+        },
+        {
+          "zh": "还有就是小时候吃多了～",
+          "quality": 0.909
+        },
+        {
+          "zh": "没事想想我还有一年",
+          "quality": 1.0
+        }
+      ]
+    },
+    {
+      "kind": "word",
+      "key": "地方",
+      "label": "필수 단어 地方",
+      "examples_raw": [
+        {
+          "zh": "你是住在什么地方",
+          "quality": 1.0
+        },
+        {
+          "zh": "你去的地方好多",
+          "quality": 1.0
+        },
+        {
+          "zh": "好多地方有了现在",
+          "quality": 1.0
+        }
+      ]
+    },
+    {
+      "kind": "word",
+      "key": "需要",
+      "label": "필수 단어 需要",
+      "examples_raw": [
+        {
+          "zh": "所以需要有人一起去",
+          "quality": 1.0
+        },
+        {
+          "zh": "你女朋友需要吗",
+          "quality": 1.0
+        },
+        {
+          "zh": "我们也需要你，回来吧",
+          "quality": 0.9
+        }
+      ]
+    },
+    {
+      "kind": "word",
+      "key": "东西",
+      "label": "필수 단어 东西",
+      "examples_raw": [
+        {
+          "zh": "这东西看着真不错",
+          "quality": 1.0
+        },
+        {
+          "zh": "什么东西？",
+          "quality": 0.8
+        },
+        {
+          "zh": "那个是什么东西",
+          "quality": 1.0
+        }
+      ]
+    },
+    {
+      "kind": "word",
+      "key": "孩子",
+      "label": "필수 단어 孩子",
+      "examples_raw": [
+        {
+          "zh": "你在家带孩子呢吗",
+          "quality": 1.0
+        },
+        {
+          "zh": "女孩子你好！",
+          "quality": 0.833
+        },
+        {
+          "zh": "我是好孩子",
+          "quality": 1.0
+        }
+      ]
+    },
+    {
+      "kind": "word",
+      "key": "这是",
+      "label": "필수 단어 这是",
+      "examples_raw": [
+        {
+          "zh": "这是当然d",
+          "quality": 0.8
+        },
+        {
+          "zh": "问一下，这是在哪？",
+          "quality": 0.778
+        },
+        {
+          "zh": "请相信，这是最后一次了~",
+          "quality": 0.833
+        }
+      ]
+    }
+  ]
+}

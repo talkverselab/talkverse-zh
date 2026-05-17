@@ -27,7 +27,29 @@
       "Bash(git commit -m 'Initial commit: 중국어유니버스 Flutter 앱 scaffold *)",
       "Bash(git commit -m 'Add: 발음부 화면 + Hanzi Top500 음원 연결 + git config *)",
       "Bash(git commit -m 'Style: 完全中国风 — 朱红+金+墨+宣纸 팔레트, 印章/卷轴/雲紋/灯笼 데코 *)",
-      "Bash(git commit -m 'i18n: 한국 학습자 대상 — UI 라벨 한글 primary 전환 *)"
+      "Bash(git commit -m 'i18n: 한국 학습자 대상 — UI 라벨 한글 primary 전환 *)",
+      "Read(//c/Users/Administrator/Desktop/**)",
+      "Bash(python -c \"from PIL import Image; im = Image.open\\(r'C:/Users/Administrator/Desktop/a955f5b7-ecf0-4329-becd-88cf63ade7ef.png'\\); print\\(im.size, im.mode\\)\")",
+      "Bash(python *)",
+      "Bash(pip install *)",
+      "Bash(where inkscape *)",
+      "Bash(where magick *)",
+      "Bash(where chrome *)",
+      "Read(//c/Program Files/Google/Chrome/Application/**)",
+      "Read(//c/Program Files \\(x86\\)/Google/Chrome/Application/**)",
+      "Bash(where potrace *)",
+      "Bash(where vtracer *)",
+      "Bash(pip show *)",
+      "Bash(curl -sL -o /tmp/cgpt_file -w \"HTTP %{http_code}\\\\nContent-Type: %{content_type}\\\\nSize: %{size_download}\\\\n\" \"https://chatgpt.com/backend-api/estuary/content?id=file_00000000fb387209b012e08f262d4935&ts=494162&p=fs&cid=1&sig=1bf1942d8eb9cbbe5f5b67a58860ace20e477fb3727977b1a15fc85aa7cccd5c&v=0\")",
+      "Bash(adb uninstall *)",
+      "Bash(PYTHONIOENCODING=utf-8 python data/scripts/gen_grammar_l1.py)",
+      "Bash(PYTHONIOENCODING=utf-8 python data/scripts/tokenize_chunks.py)",
+      "Bash(PYTHONIOENCODING=utf-8 python)",
+      "Bash(PYTHONIOENCODING=utf-8 python data/scripts/mine_lccc_l2.py)",
+      "Bash(PYTHONIOENCODING=utf-8 python data/scripts/gen_grammar_l2.py)",
+      "Bash(PYTHONIOENCODING=utf-8 python data/scripts/mine_lccc_dialogues.py)",
+      "Bash(PYTHONIOENCODING=utf-8 python data/scripts/gen_conv_lccc.py)",
+      "Bash(git commit -m 'feat: 문법 L1+L2 · 한자 209 10단계 · LCCC 실측 회화 · 마스코트 12감정·아이콘 *)"
     ]
   }
 }

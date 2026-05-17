@@ -2,12 +2,17 @@ import 'package:flutter/material.dart';
 
 import '../core/theme.dart';
 import '../widgets/chinese_decor.dart';
+import '../widgets/mascot.dart';
+import '../widgets/today_mission.dart';
 import 'conversation_screen.dart';
+import 'conversation_wordset_screen.dart';
+import 'flashcard_screen.dart';
+import 'grammar_lesson_screen.dart';
 import 'hanzi_209_screen.dart';
-import 'hanzi_screen.dart';
-import 'hsk_screen.dart';
+import 'hanzi_stages_screen.dart';
 import 'phonetic_roots_screen.dart';
 import 'profile_screen.dart';
+import 'progress_screen.dart';
 import 'tone_matrix_screen.dart';
 import 'word_freq_screen.dart';
 
@@ -23,17 +28,15 @@ class _MainScreenState extends State<MainScreen> {
 
   static const List<Widget> _screens = [
     HomeScreen(),
-    ConversationScreen(),
-    HanziScreen(),
-    HskScreen(),
+    LearnScreen(),
+    ProgressScreen(),
     ProfileScreen(),
   ];
 
   static const List<NavigationDestination> _tabs = [
     NavigationDestination(icon: Icon(Icons.home_outlined), selectedIcon: Icon(Icons.home), label: '홈'),
-    NavigationDestination(icon: Icon(Icons.chat_bubble_outline), selectedIcon: Icon(Icons.chat_bubble), label: '회화'),
-    NavigationDestination(icon: Icon(Icons.text_fields_outlined), selectedIcon: Icon(Icons.text_fields), label: '한자'),
-    NavigationDestination(icon: Icon(Icons.school_outlined), selectedIcon: Icon(Icons.school), label: 'HSK'),
+    NavigationDestination(icon: Icon(Icons.menu_book_outlined), selectedIcon: Icon(Icons.menu_book), label: '학습'),
+    NavigationDestination(icon: Icon(Icons.bar_chart_outlined), selectedIcon: Icon(Icons.bar_chart), label: '진행'),
     NavigationDestination(icon: Icon(Icons.person_outline), selectedIcon: Icon(Icons.person), label: '프로필'),
   ];
 
@@ -57,384 +60,427 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: AppColors.xuanZhi,
-      appBar: AppBar(
-        title: const Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            Text('中', style: TextStyle(fontSize: 22, fontWeight: FontWeight.w900, color: AppColors.jinBright)),
-            SizedBox(width: 8),
-            Text('중국어유니버스', style: TextStyle(fontSize: 16, fontWeight: FontWeight.w700, letterSpacing: 1)),
-          ],
-        ),
-        backgroundColor: AppColors.zhuHong,
-        actions: const [
-          Padding(
-            padding: EdgeInsets.only(right: 8),
-            child: Center(child: Lantern(size: 22)),
-          ),
-        ],
-      ),
       body: Stack(
         children: [
           const Positioned.fill(child: CloudPattern(opacity: 0.06)),
-          ListView(
-            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
-            children: [
-              const _HeroBanner(),
-              const SizedBox(height: 16),
-              const _StatsBar(),
-              const SizedBox(height: 20),
-              const GreekKeyDivider(),
-              const SizedBox(height: 12),
-              Row(
-                children: [
-                  const SealStamp(text: '学', size: 24),
-                  const SizedBox(width: 10),
-                  Text(
-                    '학습 모듈',
+          SafeArea(
+            child: ListView(
+              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+              children: [
+                Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Row(
+                            children: [
+                              Text(
+                                '你好!',
+                                style: TextStyle(
+                                  fontSize: 26,
+                                  fontWeight: FontWeight.w900,
+                                  color: AppColors.zhuHong,
+                                ),
+                              ),
+                              const SizedBox(width: 6),
+                              const Text('👋', style: TextStyle(fontSize: 22)),
+                            ],
+                          ),
+                          const SizedBox(height: 2),
+                          Text(
+                            '한국 학습자, 오늘도 시작해요',
+                            style: TextStyle(
+                              fontSize: 13,
+                              color: AppColors.moLight,
+                              fontWeight: FontWeight.w500,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    const StreakChip(days: 1),
+                    const SizedBox(width: 8),
+                    Container(
+                      width: 36,
+                      height: 36,
+                      decoration: BoxDecoration(
+                        color: AppColors.xuanZhi,
+                        border: Border.all(color: AppColors.jin),
+                        shape: BoxShape.circle,
+                      ),
+                      child: const Icon(Icons.person, color: AppColors.zhuHong, size: 20),
+                    ),
+                  ],
+                ),
+                const SizedBox(height: 18),
+                Text(
+                  "오늘의 학습",
+                  style: TextStyle(
+                    fontSize: 14,
+                    fontWeight: FontWeight.w800,
+                    color: AppColors.mo,
+                    letterSpacing: 1.5,
+                  ),
+                ),
+                const SizedBox(height: 8),
+                TodayMissionCard(
+                  level: 'BEGINNER 1',
+                  lessonTitle: 'L1 · 매칭',
+                  lessonSubtitle: 'Mark · 小丽 첫 인사',
+                  progress: 4,
+                  total: 40,
+                  onTap: () => Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (_) => const ConversationScreen()),
+                  ),
+                ),
+                const SizedBox(height: 22),
+                Row(
+                  children: [
+                    const SealStamp(text: '学', size: 22),
+                    const SizedBox(width: 8),
+                    Text(
+                      '메인 메뉴',
+                      style: TextStyle(
+                        fontSize: 14,
+                        fontWeight: FontWeight.w800,
+                        color: AppColors.mo,
+                        letterSpacing: 2,
+                      ),
+                    ),
+                  ],
+                ),
+                const SizedBox(height: 10),
+                _MenuGrid(),
+                const SizedBox(height: 28),
+                const BrushDivider(),
+                const SizedBox(height: 12),
+                Center(
+                  child: Text(
+                    '중국어유니버스 · 2026',
                     style: TextStyle(
-                      fontSize: 18,
-                      fontWeight: FontWeight.w800,
-                      color: AppColors.mo,
-                      letterSpacing: 2,
+                      color: AppColors.moLight,
+                      fontSize: 11,
+                      letterSpacing: 4,
                     ),
                   ),
-                ],
-              ),
-              const SizedBox(height: 12),
-              _ModuleCard(
-                title: '핵심 회화 200',
-                subtitle: 'Mark · 小丽 매칭 → 미래. 5 ep × 40 turn.',
-                sealText: '会话',
-                accent: AppColors.zhuHong,
-                onTap: () => Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (_) => const ConversationScreen()),
                 ),
-              ),
-              _ModuleCard(
-                title: '⭐ 회화 시작점 한자 209',
-                subtitle: '회화 토큰 89% 청취. Talkverse 차별화 IP.',
-                sealText: '209',
-                accent: const Color(0xFFC62828),
-                onTap: () => Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (_) => const Hanzi209Screen()),
-                ),
-              ),
-              _ModuleCard(
-                title: '한자 빈도 Top 500',
-                subtitle: 'opus zh_cn 빈도. HSK 분급 컬러.',
-                sealText: '常用',
-                accent: AppColors.jin,
-                onTap: () => Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (_) => const HanziScreen()),
-                ),
-              ),
-              _ModuleCard(
-                title: '4성 매트릭스',
-                subtitle: '4×4 + 경성 4. 160 단어 학습 트랙.',
-                sealText: '声调',
-                accent: const Color(0xFF1565C0),
-                onTap: () => Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (_) => const ToneMatrixScreen()),
-                ),
-              ),
-              _ModuleCard(
-                title: '단어 빈도 2500',
-                subtitle: 'R1·R2·R3·R4 구간. opus CD-weighted.',
-                sealText: '词频',
-                accent: AppColors.feiCui,
-                onTap: () => Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (_) => const WordFreqScreen()),
-                ),
-              ),
-              _ModuleCard(
-                title: '발음부 + 한국 한자음',
-                subtitle: '발음부 200 → HSK1-5 1500자. ⭐ 차별화 IP.',
-                sealText: '声旁',
-                accent: const Color(0xFF6A1B9A),
-                onTap: () => Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (_) => const PhoneticRootsScreen()),
-                ),
-              ),
-              _ModuleCard(
-                title: 'HSK 한자 1-7급',
-                subtitle: '신HSK 2021 분급 (krmanik).',
-                sealText: 'HSK',
-                accent: AppColors.jinDeep,
-                onTap: () => Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (_) => const HskScreen()),
-                ),
-              ),
-              const SizedBox(height: 24),
-              const BrushDivider(),
-              const SizedBox(height: 12),
-              Center(
-                child: Text(
-                  '중국어유니버스 · 2026',
-                  style: TextStyle(
-                    color: AppColors.moLight,
-                    fontSize: 11,
-                    letterSpacing: 4,
-                  ),
-                ),
-              ),
-              const SizedBox(height: 32),
-            ],
-          ),
-        ],
-      ),
-    );
-  }
-}
-
-class _HeroBanner extends StatelessWidget {
-  const _HeroBanner();
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      decoration: BoxDecoration(
-        gradient: const LinearGradient(
-          colors: [AppColors.zhuHongDeep, AppColors.zhuHong],
-          begin: Alignment.topLeft,
-          end: Alignment.bottomRight,
-        ),
-        border: Border.all(color: AppColors.jin, width: 1.5),
-        boxShadow: [
-          BoxShadow(
-            color: AppColors.zhuHong.withValues(alpha: 0.3),
-            blurRadius: 12,
-            offset: const Offset(0, 4),
-          ),
-        ],
-      ),
-      child: Stack(
-        children: [
-          Positioned(
-            top: 14,
-            right: 14,
-            child: Row(
-              children: const [
-                ChineseStar(size: 18, color: AppColors.jinBright),
-                SizedBox(width: 4),
-                ChineseStar(size: 10, color: AppColors.jinBright),
-                SizedBox(width: 4),
-                ChineseStar(size: 10, color: AppColors.jinBright),
-                SizedBox(width: 4),
-                ChineseStar(size: 10, color: AppColors.jinBright),
-                SizedBox(width: 4),
-                ChineseStar(size: 10, color: AppColors.jinBright),
+                const SizedBox(height: 120),
               ],
             ),
           ),
-          const Positioned(
-            bottom: 14,
-            right: 14,
-            child: SealStamp(text: '正', size: 44),
-          ),
-          Padding(
-            padding: const EdgeInsets.fromLTRB(20, 24, 80, 20),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  '한국 학습자 전용',
-                  style: TextStyle(
-                    color: AppColors.jinBright,
-                    fontSize: 12,
-                    fontWeight: FontWeight.w700,
-                    letterSpacing: 4,
+          Builder(builder: (ctx) {
+            return ChineseMascot(
+              size: 110,
+              initialPosition: const Offset(250, 540),
+              emotion: MascotEmotion.excited,
+              cycleOnTap: true,
+              onTap: () {
+                ScaffoldMessenger.of(ctx).clearSnackBars();
+                ScaffoldMessenger.of(ctx).showSnackBar(
+                  const SnackBar(
+                    content: Text('🎭 다음 감정으로 — 탭 계속! 끌어서 이동도 가능'),
+                    duration: Duration(milliseconds: 900),
+                    backgroundColor: AppColors.zhuHongDeep,
                   ),
-                ),
-                const SizedBox(height: 6),
-                Text(
-                  '200자, 20일.',
-                  style: TextStyle(
-                    color: AppColors.xuanZhi,
-                    fontSize: 32,
-                    fontWeight: FontWeight.w900,
-                    height: 1.1,
-                  ),
-                ),
-                const SizedBox(height: 4),
-                Text(
-                  '진짜 회화 시작점.',
-                  style: TextStyle(
-                    color: AppColors.xuanZhi.withValues(alpha: 0.92),
-                    fontSize: 17,
-                    fontWeight: FontWeight.w600,
-                  ),
-                ),
-                const SizedBox(height: 12),
-                Container(width: 40, height: 2, color: AppColors.jinBright),
-                const SizedBox(height: 10),
-                Text(
-                  '한자 209자로 회화 토큰 89% 청취.\nPhase 2 sweet spot 진입.',
-                  style: TextStyle(
-                    color: AppColors.xuanZhi.withValues(alpha: 0.88),
-                    fontSize: 12,
-                    height: 1.6,
-                  ),
-                ),
-              ],
-            ),
-          ),
+                );
+              },
+            );
+          }),
         ],
       ),
     );
   }
 }
 
-class _StatsBar extends StatelessWidget {
-  const _StatsBar();
-
+class _MenuGrid extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      decoration: BoxDecoration(
-        color: AppColors.xuanZhiDeep,
-        border: Border.all(color: AppColors.jin.withValues(alpha: 0.5)),
+    final items = <_MenuItem>[
+      _MenuItem(label: '회화', sub: 'Conversation', seal: '会话', color: AppColors.zhuHong,
+        builder: (_) => const ConversationScreen()),
+      _MenuItem(label: '문법 L1', sub: '기능어 40×3', seal: '文法', color: const Color(0xFF8B0000),
+        builder: (_) => const GrammarLessonScreen(lessonNum: 1)),
+      _MenuItem(label: '문법 L2', sub: '어기조사·부사·단어', seal: 'L2', color: const Color(0xFFAD1457),
+        builder: (_) => const GrammarLessonScreen(lessonNum: 2)),
+      _MenuItem(label: '한자 209', sub: '20×10 + 4지선다', seal: '209', color: const Color(0xFFC62828),
+        builder: (_) => const HanziStagesScreen()),
+      _MenuItem(label: '단어', sub: 'Vocabulary', seal: '词频', color: AppColors.feiCui,
+        builder: (_) => const WordFreqScreen()),
+      _MenuItem(label: '회화 어휘', sub: 'Conversation', seal: '会话', color: AppColors.jinDeep,
+        builder: (_) => const ConversationWordsetScreen()),
+      _MenuItem(label: '발음', sub: 'Pronunciation', seal: '声调', color: const Color(0xFF1565C0),
+        builder: (_) => const ToneMatrixScreen()),
+      _MenuItem(label: '발음부', sub: 'Phonetic', seal: '声旁', color: const Color(0xFF6A1B9A),
+        builder: (_) => const PhoneticRootsScreen()),
+      _MenuItem(label: '복습', sub: 'Flashcard', seal: '复习', color: AppColors.jin,
+        builder: (_) => const FlashcardScreen()),
+    ];
+
+    return GridView.builder(
+      shrinkWrap: true,
+      physics: const NeverScrollableScrollPhysics(),
+      gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+        crossAxisCount: 3,
+        mainAxisSpacing: 10,
+        crossAxisSpacing: 10,
+        childAspectRatio: 0.95,
       ),
-      child: Row(
-        children: [
-          _StatCell(value: '209', label: '핵심 한자'),
-          _Divider(),
-          _StatCell(value: '89%', label: '청취 커버'),
-          _Divider(),
-          _StatCell(value: '2500', label: '단어 풀'),
-        ],
-      ),
+      itemCount: items.length,
+      itemBuilder: (context, i) => _MenuTile(item: items[i]),
     );
   }
 }
 
-class _Divider extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Container(width: 0.6, height: 56, color: AppColors.jin.withValues(alpha: 0.5));
-  }
-}
-
-class _StatCell extends StatelessWidget {
-  final String value;
+class _MenuItem {
   final String label;
-  const _StatCell({required this.value, required this.label});
+  final String sub;
+  final String seal;
+  final Color color;
+  final WidgetBuilder builder;
+  _MenuItem({
+    required this.label,
+    required this.sub,
+    required this.seal,
+    required this.color,
+    required this.builder,
+  });
+}
+
+class _MenuTile extends StatelessWidget {
+  final _MenuItem item;
+  const _MenuTile({required this.item});
 
   @override
   Widget build(BuildContext context) {
-    return Expanded(
-      child: Padding(
-        padding: const EdgeInsets.symmetric(vertical: 14),
-        child: Column(
-          children: [
-            Text(
-              value,
-              style: const TextStyle(
-                fontSize: 22,
-                fontWeight: FontWeight.w900,
-                color: AppColors.zhuHong,
-              ),
-            ),
-            const SizedBox(height: 4),
-            Text(
-              label,
-              style: const TextStyle(
-                fontSize: 11,
-                color: AppColors.moLight,
-                letterSpacing: 2,
-                fontWeight: FontWeight.w600,
-              ),
+    return InkWell(
+      onTap: () => Navigator.push(context, MaterialPageRoute(builder: item.builder)),
+      child: Container(
+        decoration: BoxDecoration(
+          color: AppColors.xuanZhi,
+          border: Border.all(color: AppColors.jin.withValues(alpha: 0.5)),
+          boxShadow: [
+            BoxShadow(
+              color: AppColors.mo.withValues(alpha: 0.06),
+              blurRadius: 6,
+              offset: const Offset(1, 2),
             ),
           ],
         ),
+        child: Padding(
+          padding: const EdgeInsets.all(10),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              SealStamp(text: item.seal, size: 44, color: item.color),
+              const SizedBox(height: 8),
+              Text(
+                item.label,
+                style: const TextStyle(
+                  fontSize: 13,
+                  fontWeight: FontWeight.w800,
+                  color: AppColors.mo,
+                ),
+              ),
+              const SizedBox(height: 2),
+              Text(
+                item.sub,
+                style: const TextStyle(
+                  fontSize: 9,
+                  color: AppColors.moLight,
+                  letterSpacing: 0.5,
+                ),
+              ),
+            ],
+          ),
+        ),
       ),
     );
   }
 }
 
-class _ModuleCard extends StatelessWidget {
-  final String title;
-  final String subtitle;
-  final String sealText;
-  final Color accent;
-  final VoidCallback? onTap;
-  const _ModuleCard({
-    required this.title,
-    required this.subtitle,
-    required this.sealText,
-    required this.accent,
-    this.onTap,
-  });
+// ────────── Learn 탭 ──────────
+
+class LearnScreen extends StatefulWidget {
+  const LearnScreen({super.key});
+
+  @override
+  State<LearnScreen> createState() => _LearnScreenState();
+}
+
+class _LearnScreenState extends State<LearnScreen> {
+  String _filter = '전체';
+  final List<String> _filters = const ['전체', '회화', '한자', '발음', '단어', 'HSK'];
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.only(bottom: 10),
-      child: InkWell(
-        onTap: onTap,
-        child: Container(
-          decoration: BoxDecoration(
-            color: AppColors.xuanZhi,
-            border: Border.all(color: AppColors.jin.withValues(alpha: 0.45), width: 0.8),
-            boxShadow: [
-              BoxShadow(
-                color: AppColors.mo.withValues(alpha: 0.05),
-                blurRadius: 6,
-                offset: const Offset(1, 2),
-              ),
-            ],
+    final lessons = _LessonItem.sample;
+    return Scaffold(
+      backgroundColor: AppColors.xuanZhi,
+      appBar: AppBar(
+        backgroundColor: AppColors.xuanZhi,
+        foregroundColor: AppColors.mo,
+        elevation: 0,
+        title: const Text('학습', style: TextStyle(color: AppColors.mo)),
+        centerTitle: true,
+        actions: [
+          IconButton(icon: const Icon(Icons.search, color: AppColors.mo), onPressed: () {}),
+        ],
+      ),
+      body: Column(
+        children: [
+          SizedBox(
+            height: 44,
+            child: ListView.separated(
+              scrollDirection: Axis.horizontal,
+              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 6),
+              itemCount: _filters.length,
+              separatorBuilder: (_, __) => const SizedBox(width: 8),
+              itemBuilder: (context, i) {
+                final f = _filters[i];
+                final selected = f == _filter;
+                return GestureDetector(
+                  onTap: () => setState(() => _filter = f),
+                  child: Container(
+                    padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 4),
+                    decoration: BoxDecoration(
+                      color: selected ? AppColors.zhuHong : AppColors.xuanZhi,
+                      border: Border.all(
+                        color: selected ? AppColors.zhuHong : AppColors.jin.withValues(alpha: 0.6),
+                      ),
+                    ),
+                    alignment: Alignment.center,
+                    child: Text(
+                      f,
+                      style: TextStyle(
+                        color: selected ? AppColors.xuanZhi : AppColors.mo,
+                        fontWeight: FontWeight.w700,
+                        fontSize: 13,
+                      ),
+                    ),
+                  ),
+                );
+              },
+            ),
           ),
-          child: Row(
-            children: [
-              Container(
-                width: 56,
-                height: 56,
-                color: accent,
-                alignment: Alignment.center,
-                child: SealStamp(text: sealText, size: 40, color: accent),
-              ),
-              const SizedBox(width: 12),
-              Expanded(
-                child: Padding(
-                  padding: const EdgeInsets.symmetric(vertical: 10),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        title,
-                        style: const TextStyle(
-                          fontSize: 15,
-                          fontWeight: FontWeight.w700,
-                          color: AppColors.mo,
-                        ),
-                      ),
-                      const SizedBox(height: 3),
-                      Text(
-                        subtitle,
-                        style: const TextStyle(
-                          fontSize: 11,
-                          color: AppColors.moLight,
-                          height: 1.4,
-                        ),
-                      ),
-                    ],
+          const GreekKeyDivider(height: 10),
+          const SizedBox(height: 6),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 16),
+            child: Row(
+              children: [
+                const SealStamp(text: 'BEG', size: 24),
+                const SizedBox(width: 8),
+                Text(
+                  'Beginner 1',
+                  style: TextStyle(
+                    fontSize: 16,
+                    fontWeight: FontWeight.w800,
+                    color: AppColors.mo,
                   ),
                 ),
-              ),
-              const Padding(
-                padding: EdgeInsets.only(right: 12),
-                child: Icon(Icons.chevron_right, color: AppColors.zhuHong, size: 20),
-              ),
-            ],
+              ],
+            ),
           ),
+          Expanded(
+            child: ListView.separated(
+              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
+              itemCount: lessons.length,
+              separatorBuilder: (_, __) => const SizedBox(height: 8),
+              itemBuilder: (context, i) => _LessonRow(lesson: lessons[i]),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+enum _LessonState { done, current, locked }
+
+class _LessonItem {
+  final String id;
+  final String title;
+  final _LessonState state;
+  _LessonItem(this.id, this.title, this.state);
+
+  static List<_LessonItem> get sample => [
+        _LessonItem('Lesson 1', '인사', _LessonState.done),
+        _LessonItem('Lesson 2', '자기소개', _LessonState.done),
+        _LessonItem('Lesson 3', '매칭', _LessonState.current),
+        _LessonItem('Lesson 4', '식사', _LessonState.locked),
+        _LessonItem('Lesson 5', '가족', _LessonState.locked),
+        _LessonItem('Lesson 6', '갈등', _LessonState.locked),
+        _LessonItem('Lesson 7', '미래', _LessonState.locked),
+      ];
+}
+
+class _LessonRow extends StatelessWidget {
+  final _LessonItem lesson;
+  const _LessonRow({required this.lesson});
+
+  @override
+  Widget build(BuildContext context) {
+    Color bg;
+    Color border;
+    Color textColor;
+    Widget trailing;
+    switch (lesson.state) {
+      case _LessonState.done:
+        bg = AppColors.xuanZhi;
+        border = AppColors.feiCui;
+        textColor = AppColors.mo;
+        trailing = const Icon(Icons.check_circle, color: AppColors.feiCui);
+        break;
+      case _LessonState.current:
+        bg = AppColors.zhuHong;
+        border = AppColors.zhuHongDeep;
+        textColor = AppColors.xuanZhi;
+        trailing = const Icon(Icons.arrow_forward, color: AppColors.xuanZhi);
+        break;
+      case _LessonState.locked:
+        bg = AppColors.xuanZhiDeep;
+        border = AppColors.jin.withValues(alpha: 0.3);
+        textColor = AppColors.moLight;
+        trailing = const Icon(Icons.lock, color: AppColors.moLight, size: 18);
+        break;
+    }
+    return InkWell(
+      onTap: lesson.state == _LessonState.locked
+          ? null
+          : () => Navigator.push(
+                context,
+                MaterialPageRoute(builder: (_) => const ConversationScreen()),
+              ),
+      child: Container(
+        padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 14),
+        decoration: BoxDecoration(
+          color: bg,
+          border: Border.all(color: border, width: lesson.state == _LessonState.current ? 1.5 : 0.8),
+        ),
+        child: Row(
+          children: [
+            SizedBox(
+              width: 70,
+              child: Text(
+                lesson.id,
+                style: TextStyle(fontSize: 12, color: textColor.withValues(alpha: 0.75)),
+              ),
+            ),
+            Expanded(
+              child: Text(
+                lesson.title,
+                style: TextStyle(
+                  fontSize: 15,
+                  fontWeight: FontWeight.w700,
+                  color: textColor,
+                ),
+              ),
+            ),
+            trailing,
+          ],
         ),
       ),
     );

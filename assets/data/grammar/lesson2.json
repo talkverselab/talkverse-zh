@@ -1,0 +1,6205 @@
+{
+  "lesson": 2,
+  "title": "L2 — 어기조사·부사·필수 단어",
+  "subtitle": "LCCC 실측 챗 기반 + 209-char 필터 / 82 카테고리 × 3 = 246 문장",
+  "data_source": "LCCC silver test+valid (filtered) + manual selection + Korean translation",
+  "char_set_size": 209,
+  "tts_lang": "zh-CN",
+  "stages": [
+    {
+      "stage": 1,
+      "title": "어기조사 (1)",
+      "range_start": 0,
+      "range_end": 10
+    },
+    {
+      "stage": 2,
+      "title": "부사 (1)",
+      "range_start": 10,
+      "range_end": 22
+    },
+    {
+      "stage": 3,
+      "title": "부사 (2) + 필수 단어 핵심",
+      "range_start": 22,
+      "range_end": 45
+    },
+    {
+      "stage": 4,
+      "title": "필수 단어 확장",
+      "range_start": 45,
+      "range_end": 82
+    }
+  ],
+  "patterns": [
+    {
+      "id": "L2_00",
+      "key": "啊",
+      "label": "어기조사 啊",
+      "explanation": "감탄·강조 · 친근. 동의·확인 시 끝에. 4성 뒤에선 ya/wa 변음.",
+      "kind": "particle",
+      "stage": 1,
+      "examples": [
+        {
+          "zh": "就是我说的啊",
+          "pinyin": "Jiùshì wǒ shuō de a.",
+          "ko": "내 말이 그거잖아!",
+          "tokens": [
+            {
+              "text": "就是",
+              "compound": true
+            },
+            {
+              "text": "我",
+              "compound": false
+            },
+            {
+              "text": "说",
+              "compound": false
+            },
+            {
+              "text": "的",
+              "compound": false
+            },
+            {
+              "text": "啊",
+              "compound": false
+            }
+          ]
+        },
+        {
+          "zh": "对啊不要钱",
+          "pinyin": "Duì a bù yào qián.",
+          "ko": "그래 돈 안 들어.",
+          "tokens": [
+            {
+              "text": "对",
+              "compound": false
+            },
+            {
+              "text": "啊",
+              "compound": false
+            },
+            {
+              "text": "不",
+              "compound": false
+            },
+            {
+              "text": "要",
+              "compound": false
+            },
+            {
+              "text": "钱",
+              "compound": false
+            }
+          ]
+        },
+        {
+          "zh": "好啊就这样",
+          "pinyin": "Hǎo a jiù zhèyàng.",
+          "ko": "좋아 이렇게 하자.",
+          "tokens": [
+            {
+              "text": "好啊",
+              "compound": true
+            },
+            {
+              "text": "就",
+              "compound": false
+            },
+            {
+              "text": "这样",
+              "compound": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "L2_01",
+      "key": "吗",
+      "label": "어기조사 吗",
+      "explanation": "是非 의문 — 평서문 끝에. yes/no 답 가능 시.",
+      "kind": "particle",
+      "stage": 1,
+      "examples": [
+        {
+          "zh": "你不要说话好吗",
+          "pinyin": "Nǐ bù yào shuōhuà hǎo ma?",
+          "ko": "말하지 마 알았지?",
+          "tokens": [
+            {
+              "text": "你",
+              "compound": false
+            },
+            {
+              "text": "不",
+              "compound": false
+            },
+            {
+              "text": "要说",
+              "compound": true
+            },
+            {
+              "text": "话",
+              "compound": false
+            },
+            {
+              "text": "好吗",
+              "compound": true
+            }
+          ]
+        },
+        {
+          "zh": "真的吗",
+          "pinyin": "Zhēn de ma?",
+          "ko": "진짜?",
+          "tokens": [
+            {
+              "text": "真",
+              "compound": false
+            },
+            {
+              "text": "的",
+              "compound": false
+            },
+            {
+              "text": "吗",
+              "compound": false
+            }
+          ]
+        },
+        {
+          "zh": "我们会被打吗",
+          "pinyin": "Wǒmen huì bèi dǎ ma?",
+          "ko": "우리 맞을까?",
+          "tokens": [
+            {
+              "text": "我们",
+              "compound": true
+            },
+            {
+              "text": "会",
+              "compound": false
+            },
+            {
+              "text": "被",
+              "compound": false
+            },
+            {
+              "text": "打",
+              "compound": false
+            },
+            {
+              "text": "吗",
+              "compound": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "L2_02",
+      "key": "吧",
+      "label": "어기조사 吧",
+      "explanation": "제안·추측. 의문 약화. \"그러자·그러지\" 뉘앙스.",
+      "kind": "particle",
+      "stage": 1,
+      "examples": [
+        {
+          "zh": "我没来晚吧",
+          "pinyin": "Wǒ méi lái wǎn ba.",
+          "ko": "나 안 늦었지?",
+          "tokens": [
+            {
+              "text": "我",
+              "compound": false
+            },
+            {
+              "text": "没",
+              "compound": false
+            },
+            {
+              "text": "来",
+              "compound": false
+            },
+            {
+              "text": "晚",
+              "compound": false
+            },
+            {
+              "text": "吧",
+              "compound": false
+            }
+          ]
+        },
+        {
+          "zh": "就这样吧",
+          "pinyin": "Jiù zhèyàng ba.",
+          "ko": "이렇게 하자.",
+          "tokens": [
+            {
+              "text": "就",
+              "compound": false
+            },
+            {
+              "text": "这样",
+              "compound": true
+            },
+            {
+              "text": "吧",
+              "compound": false
+            }
+          ]
+        },
+        {
+          "zh": "好吧你说",
+          "pinyin": "Hǎo ba nǐ shuō.",
+          "ko": "그래 말해봐.",
+          "tokens": [
+            {
+              "text": "好",
+              "compound": false
+            },
+            {
+              "text": "吧",
+              "compound": false
+            },
+            {
+              "text": "你",
+              "compound": false
+            },
+            {
+              "text": "说",
+              "compound": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "L2_03",
+      "key": "呀",
+      "label": "어기조사 呀",
+      "explanation": "啊 변형. 모음 뒤 부드러움. 친밀·귀여움.",
+      "kind": "particle",
+      "stage": 1,
+      "examples": [
+        {
+          "zh": "你来呀来呀",
+          "pinyin": "Nǐ lái ya lái ya.",
+          "ko": "와봐 와봐~",
+          "tokens": [
+            {
+              "text": "你",
+              "compound": false
+            },
+            {
+              "text": "来",
+              "compound": false
+            },
+            {
+              "text": "呀",
+              "compound": false
+            },
+            {
+              "text": "来",
+              "compound": false
+            },
+            {
+              "text": "呀",
+              "compound": false
+            }
+          ]
+        },
+        {
+          "zh": "在哪看到呀",
+          "pinyin": "Zài nǎ kàndào ya?",
+          "ko": "어디서 봤어?",
+          "tokens": [
+            {
+              "text": "在哪",
+              "compound": true
+            },
+            {
+              "text": "看到",
+              "compound": true
+            },
+            {
+              "text": "呀",
+              "compound": false
+            }
+          ]
+        },
+        {
+          "zh": "我会吃你呀",
+          "pinyin": "Wǒ huì chī nǐ ya.",
+          "ko": "잡아먹을 거야~",
+          "tokens": [
+            {
+              "text": "我",
+              "compound": false
+            },
+            {
+              "text": "会",
+              "compound": false
+            },
+            {
+              "text": "吃",
+              "compound": false
+            },
+            {
+              "text": "你",
+              "compound": false
+            },
+            {
+              "text": "呀",
+              "compound": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "L2_04",
+      "key": "呢",
+      "label": "어기조사 呢",
+      "explanation": "되묻기·지속·강조. \"그럼 너는?\"·\"~중이야\".",
+      "kind": "particle",
+      "stage": 1,
+      "examples": [
+        {
+          "zh": "你的最爱呢",
+          "pinyin": "Nǐ de zuì ài ne?",
+          "ko": "넌 최애가 뭐야?",
+          "tokens": [
+            {
+              "text": "你",
+              "compound": false
+            },
+            {
+              "text": "的",
+              "compound": false
+            },
+            {
+              "text": "最",
+              "compound": false
+            },
+            {
+              "text": "爱",
+              "compound": false
+            },
+            {
+              "text": "呢",
+              "compound": false
+            }
+          ]
+        },
+        {
+          "zh": "我在想你呢",
+          "pinyin": "Wǒ zài xiǎng nǐ ne.",
+          "ko": "네 생각 중이야.",
+          "tokens": [
+            {
+              "text": "我",
+              "compound": false
+            },
+            {
+              "text": "在",
+              "compound": false
+            },
+            {
+              "text": "想",
+              "compound": false
+            },
+            {
+              "text": "你",
+              "compound": false
+            },
+            {
+              "text": "呢",
+              "compound": false
+            }
+          ]
+        },
+        {
+          "zh": "你现在哪儿呢",
+          "pinyin": "Nǐ xiànzài nǎr ne?",
+          "ko": "지금 어디?",
+          "tokens": [
+            {
+              "text": "你",
+              "compound": false
+            },
+            {
+              "text": "现在",
+              "compound": true
+            },
+            {
+              "text": "哪儿",
+              "compound": true
+            },
+            {
+              "text": "呢",
+              "compound": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "L2_05",
+      "key": "啦",
+      "label": "어기조사 啦",
+      "explanation": "了 + 啊 합. 완료·강조·재촉. 톤 가벼움.",
+      "kind": "particle",
+      "stage": 1,
+      "examples": [
+        {
+          "zh": "吃好吃的啦",
+          "pinyin": "Chī hǎochī de la.",
+          "ko": "맛있는 거 먹자~",
+          "tokens": [
+            {
+              "text": "吃",
+              "compound": false
+            },
+            {
+              "text": "好",
+              "compound": false
+            },
+            {
+              "text": "吃",
+              "compound": false
+            },
+            {
+              "text": "的",
+              "compound": false
+            },
+            {
+              "text": "啦",
+              "compound": false
+            }
+          ]
+        },
+        {
+          "zh": "好啦好啦",
+          "pinyin": "Hǎo la hǎo la.",
+          "ko": "됐어 됐어.",
+          "tokens": [
+            {
+              "text": "好",
+              "compound": false
+            },
+            {
+              "text": "啦",
+              "compound": false
+            },
+            {
+              "text": "好",
+              "compound": false
+            },
+            {
+              "text": "啦",
+              "compound": false
+            }
+          ]
+        },
+        {
+          "zh": "你来啦",
+          "pinyin": "Nǐ lái la.",
+          "ko": "왔어~",
+          "tokens": [
+            {
+              "text": "你",
+              "compound": false
+            },
+            {
+              "text": "来",
+              "compound": false
+            },
+            {
+              "text": "啦",
+              "compound": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "L2_06",
+      "key": "嗯",
+      "label": "어기조사 嗯",
+      "explanation": "동의·생각·반응. \"응·음\".",
+      "kind": "particle",
+      "stage": 1,
+      "examples": [
+        {
+          "zh": "嗯嗯谢谢哦",
+          "pinyin": "Èn èn xièxie ò.",
+          "ko": "응응 고마워~",
+          "tokens": [
+            {
+              "text": "嗯",
+              "compound": false
+            },
+            {
+              "text": "嗯",
+              "compound": false
+            },
+            {
+              "text": "谢谢",
+              "compound": true
+            },
+            {
+              "text": "哦",
+              "compound": false
+            }
+          ]
+        },
+        {
+          "zh": "嗯我知道",
+          "pinyin": "Èn wǒ zhīdào.",
+          "ko": "응 알아.",
+          "tokens": [
+            {
+              "text": "嗯",
+              "compound": false
+            },
+            {
+              "text": "我",
+              "compound": false
+            },
+            {
+              "text": "知道",
+              "compound": true
+            }
+          ]
+        },
+        {
+          "zh": "嗯你说",
+          "pinyin": "Èn nǐ shuō.",
+          "ko": "응 말해.",
+          "tokens": [
+            {
+              "text": "嗯",
+              "compound": false
+            },
+            {
+              "text": "你",
+              "compound": false
+            },
+            {
+              "text": "说",
+              "compound": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "L2_07",
+      "key": "哦",
+      "label": "어기조사 哦",
+      "explanation": "깨달음·가벼운 동의. \"아~ 그렇구나\".",
+      "kind": "particle",
+      "stage": 1,
+      "examples": [
+        {
+          "zh": "我也喜欢你哦",
+          "pinyin": "Wǒ yě xǐhuan nǐ ò.",
+          "ko": "나도 너 좋아해~",
+          "tokens": [
+            {
+              "text": "我",
+              "compound": false
+            },
+            {
+              "text": "也",
+              "compound": false
+            },
+            {
+              "text": "喜欢",
+              "compound": true
+            },
+            {
+              "text": "你",
+              "compound": false
+            },
+            {
+              "text": "哦",
+              "compound": false
+            }
+          ]
+        },
+        {
+          "zh": "哦哦对对对",
+          "pinyin": "Ò ò duì duì duì.",
+          "ko": "아 맞다 맞다.",
+          "tokens": [
+            {
+              "text": "哦",
+              "compound": false
+            },
+            {
+              "text": "哦",
+              "compound": false
+            },
+            {
+              "text": "对",
+              "compound": false
+            },
+            {
+              "text": "对",
+              "compound": false
+            },
+            {
+              "text": "对",
+              "compound": false
+            }
+          ]
+        },
+        {
+          "zh": "不说这样的话哦",
+          "pinyin": "Bù shuō zhèyàng de huà ò.",
+          "ko": "그런 말 하지 마~",
+          "tokens": [
+            {
+              "text": "不",
+              "compound": false
+            },
+            {
+              "text": "说",
+              "compound": false
+            },
+            {
+              "text": "这样",
+              "compound": true
+            },
+            {
+              "text": "的话",
+              "compound": true
+            },
+            {
+              "text": "哦",
+              "compound": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "L2_08",
+      "key": "哪",
+      "label": "의문어기 哪",
+      "explanation": "의문사 — 어디·어느. 哪里·哪个 형태로.",
+      "kind": "particle",
+      "stage": 1,
+      "examples": [
+        {
+          "zh": "你今天去哪里",
+          "pinyin": "Nǐ jīntiān qù nǎli?",
+          "ko": "오늘 어디 가?",
+          "tokens": [
+            {
+              "text": "你",
+              "compound": false
+            },
+            {
+              "text": "今天",
+              "compound": true
+            },
+            {
+              "text": "去",
+              "compound": false
+            },
+            {
+              "text": "哪里",
+              "compound": true
+            }
+          ]
+        },
+        {
+          "zh": "现在住在哪儿",
+          "pinyin": "Xiànzài zhù zài nǎr?",
+          "ko": "지금 어디 살아?",
+          "tokens": [
+            {
+              "text": "现在",
+              "compound": true
+            },
+            {
+              "text": "住",
+              "compound": false
+            },
+            {
+              "text": "在哪",
+              "compound": true
+            },
+            {
+              "text": "儿",
+              "compound": false
+            }
+          ]
+        },
+        {
+          "zh": "哪有这样的",
+          "pinyin": "Nǎ yǒu zhèyàng de.",
+          "ko": "어딨어 그런 게.",
+          "tokens": [
+            {
+              "text": "哪",
+              "compound": false
+            },
+            {
+              "text": "有",
+              "compound": false
+            },
+            {
+              "text": "这样",
+              "compound": true
+            },
+            {
+              "text": "的",
+              "compound": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "L2_09",
+      "key": "嘛",
+      "label": "어기조사 嘛",
+      "explanation": "당연·납득·재촉. \"그렇잖아·~잖아\".",
+      "kind": "particle",
+      "stage": 1,
+      "examples": [
+        {
+          "zh": "好嘛我去",
+          "pinyin": "Hǎo ma wǒ qù.",
+          "ko": "알았어 갈게.",
+          "tokens": [
+            {
+              "text": "好",
+              "compound": false
+            },
+            {
+              "text": "嘛",
+              "compound": false
+            },
+            {
+              "text": "我去",
+              "compound": true
+            }
+          ]
+        },
+        {
+          "zh": "看嘛看嘛",
+          "pinyin": "Kàn ma kàn ma.",
+          "ko": "봐봐 봐봐.",
+          "tokens": [
+            {
+              "text": "看",
+              "compound": false
+            },
+            {
+              "text": "嘛",
+              "compound": false
+            },
+            {
+              "text": "看",
+              "compound": false
+            },
+            {
+              "text": "嘛",
+              "compound": false
+            }
+          ]
+        },
+        {
+          "zh": "你说嘛",
+          "pinyin": "Nǐ shuō ma.",
+          "ko": "말해 봐~",
+          "tokens": [
+            {
+              "text": "你",
+              "compound": false
+            },
+            {
+              "text": "说",
+              "compound": false
+            },
+            {
+              "text": "嘛",
+              "compound": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "L2_10",
+      "key": "很",
+      "label": "부사 很",
+      "explanation": "형용사 앞 정도 표지 — 사실상 \"많이\" 의미 약함. \"你好\" 보다 \"你很好\" 자연.",
+      "kind": "adverb",
+      "stage": 2,
+      "examples": [
+        {
+          "zh": "我会想很多",
+          "pinyin": "Wǒ huì xiǎng hěn duō.",
+          "ko": "많이 생각할게.",
+          "tokens": [
+            {
+              "text": "我",
+              "compound": false
+            },
+            {
+              "text": "会",
+              "compound": false
+            },
+            {
+              "text": "想",
+              "compound": false
+            },
+            {
+              "text": "很",
+              "compound": false
+            },
+            {
+              "text": "多",
+              "compound": false
+            }
+          ]
+        },
+        {
+          "zh": "我很好谢谢",
+          "pinyin": "Wǒ hěn hǎo xièxie.",
+          "ko": "잘 지내, 고마워.",
+          "tokens": [
+            {
+              "text": "我",
+              "compound": false
+            },
+            {
+              "text": "很",
+              "compound": false
+            },
+            {
+              "text": "好",
+              "compound": false
+            },
+            {
+              "text": "谢谢",
+              "compound": true
+            }
+          ]
+        },
+        {
+          "zh": "真的很喜欢",
+          "pinyin": "Zhēn de hěn xǐhuan.",
+          "ko": "진짜 좋아해.",
+          "tokens": [
+            {
+              "text": "真",
+              "compound": false
+            },
+            {
+              "text": "的",
+              "compound": false
+            },
+            {
+              "text": "很",
+              "compound": false
+            },
+            {
+              "text": "喜欢",
+              "compound": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "L2_11",
+      "key": "真",
+      "label": "부사 真",
+      "explanation": "진짜·정말. 很보다 감정 강함. 真的吗 = 진짜?",
+      "kind": "adverb",
+      "stage": 2,
+      "examples": [
+        {
+          "zh": "你朋友真多",
+          "pinyin": "Nǐ péngyou zhēn duō.",
+          "ko": "친구 진짜 많네.",
+          "tokens": [
+            {
+              "text": "你",
+              "compound": false
+            },
+            {
+              "text": "朋",
+              "compound": false
+            },
+            {
+              "text": "友",
+              "compound": false
+            },
+            {
+              "text": "真",
+              "compound": false
+            },
+            {
+              "text": "多",
+              "compound": false
+            }
+          ]
+        },
+        {
+          "zh": "真的吗",
+          "pinyin": "Zhēn de ma?",
+          "ko": "진짜?",
+          "tokens": [
+            {
+              "text": "真",
+              "compound": false
+            },
+            {
+              "text": "的",
+              "compound": false
+            },
+            {
+              "text": "吗",
+              "compound": false
+            }
+          ]
+        },
+        {
+          "zh": "我真不知道",
+          "pinyin": "Wǒ zhēn bù zhīdào.",
+          "ko": "진짜 모름.",
+          "tokens": [
+            {
+              "text": "我",
+              "compound": false
+            },
+            {
+              "text": "真",
+              "compound": false
+            },
+            {
+              "text": "不",
+              "compound": false
+            },
+            {
+              "text": "知道",
+              "compound": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "L2_12",
+      "key": "太",
+      "label": "부사 太",
+      "explanation": "지나친 정도. 太…了 자주. 太好了 = 완전 좋아!",
+      "kind": "adverb",
+      "stage": 2,
+      "examples": [
+        {
+          "zh": "你太能吃了",
+          "pinyin": "Nǐ tài néng chī le.",
+          "ko": "너 진짜 잘 먹는다.",
+          "tokens": [
+            {
+              "text": "你",
+              "compound": false
+            },
+            {
+              "text": "太",
+              "compound": false
+            },
+            {
+              "text": "能",
+              "compound": false
+            },
+            {
+              "text": "吃",
+              "compound": false
+            },
+            {
+              "text": "了",
+              "compound": false
+            }
+          ]
+        },
+        {
+          "zh": "太好了",
+          "pinyin": "Tài hǎo le.",
+          "ko": "완전 좋아!",
+          "tokens": [
+            {
+              "text": "太",
+              "compound": false
+            },
+            {
+              "text": "好",
+              "compound": false
+            },
+            {
+              "text": "了",
+              "compound": false
+            }
+          ]
+        },
+        {
+          "zh": "真的太快了",
+          "pinyin": "Zhēn de tài kuài le.",
+          "ko": "진짜 너무 빨라.",
+          "tokens": [
+            {
+              "text": "真",
+              "compound": false
+            },
+            {
+              "text": "的",
+              "compound": false
+            },
+            {
+              "text": "太",
+              "compound": false
+            },
+            {
+              "text": "快",
+              "compound": false
+            },
+            {
+              "text": "了",
+              "compound": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "L2_13",
+      "key": "最",
+      "label": "부사 最",
+      "explanation": "최상급. 형용사·동사 앞. 한국어 \"제일·가장\".",
+      "kind": "adverb",
+      "stage": 2,
+      "examples": [
+        {
+          "zh": "你是最好的",
+          "pinyin": "Nǐ shì zuì hǎo de.",
+          "ko": "넌 최고야.",
+          "tokens": [
+            {
+              "text": "你",
+              "compound": false
+            },
+            {
+              "text": "是",
+              "compound": false
+            },
+            {
+              "text": "最",
+              "compound": false
+            },
+            {
+              "text": "好的",
+              "compound": true
+            }
+          ]
+        },
+        {
+          "zh": "我最喜欢你",
+          "pinyin": "Wǒ zuì xǐhuan nǐ.",
+          "ko": "너를 제일 좋아해.",
+          "tokens": [
+            {
+              "text": "我",
+              "compound": false
+            },
+            {
+              "text": "最",
+              "compound": false
+            },
+            {
+              "text": "喜欢",
+              "compound": true
+            },
+            {
+              "text": "你",
+              "compound": false
+            }
+          ]
+        },
+        {
+          "zh": "最后什么都不要",
+          "pinyin": "Zuìhòu shénme dōu bù yào.",
+          "ko": "결국엔 다 필요 없어.",
+          "tokens": [
+            {
+              "text": "最",
+              "compound": false
+            },
+            {
+              "text": "后",
+              "compound": false
+            },
+            {
+              "text": "什么都",
+              "compound": true
+            },
+            {
+              "text": "不",
+              "compound": false
+            },
+            {
+              "text": "要",
+              "compound": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "L2_14",
+      "key": "都",
+      "label": "부사 都",
+      "explanation": "모두·전부. 주어 뒤 동사 앞. 谁都·什么都 형태도.",
+      "kind": "adverb",
+      "stage": 2,
+      "examples": [
+        {
+          "zh": "一切都会过去",
+          "pinyin": "Yīqiè dōu huì guòqu.",
+          "ko": "다 지나갈 거야.",
+          "tokens": [
+            {
+              "text": "一",
+              "compound": false
+            },
+            {
+              "text": "切",
+              "compound": false
+            },
+            {
+              "text": "都",
+              "compound": false
+            },
+            {
+              "text": "会",
+              "compound": false
+            },
+            {
+              "text": "过去",
+              "compound": true
+            }
+          ]
+        },
+        {
+          "zh": "我们都知道",
+          "pinyin": "Wǒmen dōu zhīdào.",
+          "ko": "우린 다 알아.",
+          "tokens": [
+            {
+              "text": "我们",
+              "compound": true
+            },
+            {
+              "text": "都",
+              "compound": false
+            },
+            {
+              "text": "知道",
+              "compound": true
+            }
+          ]
+        },
+        {
+          "zh": "这都知道",
+          "pinyin": "Zhè dōu zhīdào.",
+          "ko": "이런 것도 알다니.",
+          "tokens": [
+            {
+              "text": "这",
+              "compound": false
+            },
+            {
+              "text": "都",
+              "compound": false
+            },
+            {
+              "text": "知道",
+              "compound": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "L2_15",
+      "key": "也",
+      "label": "부사 也",
+      "explanation": "~도. 주어 뒤. 부정문에도 가능 (我也不去).",
+      "kind": "adverb",
+      "stage": 2,
+      "examples": [
+        {
+          "zh": "我也想去",
+          "pinyin": "Wǒ yě xiǎng qù.",
+          "ko": "나도 가고 싶어.",
+          "tokens": [
+            {
+              "text": "我",
+              "compound": false
+            },
+            {
+              "text": "也",
+              "compound": false
+            },
+            {
+              "text": "想",
+              "compound": false
+            },
+            {
+              "text": "去",
+              "compound": false
+            }
+          ]
+        },
+        {
+          "zh": "我也只见过一次",
+          "pinyin": "Wǒ yě zhǐ jiàn guo yī cì.",
+          "ko": "나도 한 번밖에 못 봤어.",
+          "tokens": [
+            {
+              "text": "我",
+              "compound": false
+            },
+            {
+              "text": "也",
+              "compound": false
+            },
+            {
+              "text": "只见",
+              "compound": true
+            },
+            {
+              "text": "过",
+              "compound": false
+            },
+            {
+              "text": "一次",
+              "compound": true
+            }
+          ]
+        },
+        {
+          "zh": "我也是",
+          "pinyin": "Wǒ yě shì.",
+          "ko": "나도.",
+          "tokens": [
+            {
+              "text": "我",
+              "compound": false
+            },
+            {
+              "text": "也",
+              "compound": false
+            },
+            {
+              "text": "是",
+              "compound": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "L2_16",
+      "key": "还",
+      "label": "부사 还",
+      "explanation": "아직·또한. 还在·还要·还没 자주.",
+      "kind": "adverb",
+      "stage": 2,
+      "examples": [
+        {
+          "zh": "你还在吗",
+          "pinyin": "Nǐ hái zài ma?",
+          "ko": "아직 있어?",
+          "tokens": [
+            {
+              "text": "你",
+              "compound": false
+            },
+            {
+              "text": "还",
+              "compound": false
+            },
+            {
+              "text": "在",
+              "compound": false
+            },
+            {
+              "text": "吗",
+              "compound": false
+            }
+          ]
+        },
+        {
+          "zh": "还要吗",
+          "pinyin": "Hái yào ma?",
+          "ko": "더 줄까?",
+          "tokens": [
+            {
+              "text": "还",
+              "compound": false
+            },
+            {
+              "text": "要",
+              "compound": false
+            },
+            {
+              "text": "吗",
+              "compound": false
+            }
+          ]
+        },
+        {
+          "zh": "我还没说完",
+          "pinyin": "Wǒ hái méi shuō wán.",
+          "ko": "아직 말 안 끝났어.",
+          "tokens": [
+            {
+              "text": "我",
+              "compound": false
+            },
+            {
+              "text": "还",
+              "compound": false
+            },
+            {
+              "text": "没",
+              "compound": false
+            },
+            {
+              "text": "说",
+              "compound": false
+            },
+            {
+              "text": "完",
+              "compound": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "L2_17",
+      "key": "又",
+      "label": "부사 又",
+      "explanation": "또 (과거·확실 반복). \"又来了\" = 또 시작이네.",
+      "kind": "adverb",
+      "stage": 2,
+      "examples": [
+        {
+          "zh": "你又来了",
+          "pinyin": "Nǐ yòu lái le.",
+          "ko": "또 왔네.",
+          "tokens": [
+            {
+              "text": "你",
+              "compound": false
+            },
+            {
+              "text": "又",
+              "compound": false
+            },
+            {
+              "text": "来",
+              "compound": false
+            },
+            {
+              "text": "了",
+              "compound": false
+            }
+          ]
+        },
+        {
+          "zh": "又不关你事",
+          "pinyin": "Yòu bù guān nǐ shì.",
+          "ko": "오 너랑 상관없잖아.",
+          "tokens": [
+            {
+              "text": "又",
+              "compound": false
+            },
+            {
+              "text": "不",
+              "compound": false
+            },
+            {
+              "text": "关",
+              "compound": false
+            },
+            {
+              "text": "你",
+              "compound": false
+            },
+            {
+              "text": "事",
+              "compound": false
+            }
+          ]
+        },
+        {
+          "zh": "明晚又有",
+          "pinyin": "Míng wǎn yòu yǒu.",
+          "ko": "내일 밤 또 있어.",
+          "tokens": [
+            {
+              "text": "明",
+              "compound": false
+            },
+            {
+              "text": "晚",
+              "compound": false
+            },
+            {
+              "text": "又",
+              "compound": false
+            },
+            {
+              "text": "有",
+              "compound": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "L2_18",
+      "key": "再",
+      "label": "부사 再",
+      "explanation": "또 (미래·계획). 又과 구별: 又=이미, 再=앞으로.",
+      "kind": "adverb",
+      "stage": 2,
+      "examples": [
+        {
+          "zh": "再等两天吧",
+          "pinyin": "Zài děng liǎng tiān ba.",
+          "ko": "이틀만 더 기다리자.",
+          "tokens": [
+            {
+              "text": "再",
+              "compound": false
+            },
+            {
+              "text": "等",
+              "compound": false
+            },
+            {
+              "text": "两",
+              "compound": false
+            },
+            {
+              "text": "天",
+              "compound": false
+            },
+            {
+              "text": "吧",
+              "compound": false
+            }
+          ]
+        },
+        {
+          "zh": "再说一次",
+          "pinyin": "Zài shuō yī cì.",
+          "ko": "다시 한 번.",
+          "tokens": [
+            {
+              "text": "再",
+              "compound": false
+            },
+            {
+              "text": "说",
+              "compound": false
+            },
+            {
+              "text": "一次",
+              "compound": true
+            }
+          ]
+        },
+        {
+          "zh": "明天再说",
+          "pinyin": "Míngtiān zài shuō.",
+          "ko": "내일 다시 얘기.",
+          "tokens": [
+            {
+              "text": "明天",
+              "compound": true
+            },
+            {
+              "text": "再",
+              "compound": false
+            },
+            {
+              "text": "说",
+              "compound": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "L2_19",
+      "key": "已",
+      "label": "부사 已 (已经)",
+      "explanation": "이미·벌써. 보통 已经 형태. 没·不 와 안 씀.",
+      "kind": "adverb",
+      "stage": 2,
+      "examples": [
+        {
+          "zh": "我已经看了",
+          "pinyin": "Wǒ yǐjīng kàn le.",
+          "ko": "이미 봤어.",
+          "tokens": [
+            {
+              "text": "我",
+              "compound": false
+            },
+            {
+              "text": "已经",
+              "compound": true
+            },
+            {
+              "text": "看",
+              "compound": false
+            },
+            {
+              "text": "了",
+              "compound": false
+            }
+          ]
+        },
+        {
+          "zh": "你已经走啦",
+          "pinyin": "Nǐ yǐjīng zǒu la.",
+          "ko": "벌써 갔구나.",
+          "tokens": [
+            {
+              "text": "你",
+              "compound": false
+            },
+            {
+              "text": "已经",
+              "compound": true
+            },
+            {
+              "text": "走",
+              "compound": false
+            },
+            {
+              "text": "啦",
+              "compound": false
+            }
+          ]
+        },
+        {
+          "zh": "已经太多了",
+          "pinyin": "Yǐjīng tài duō le.",
+          "ko": "벌써 너무 많아.",
+          "tokens": [
+            {
+              "text": "已经",
+              "compound": true
+            },
+            {
+              "text": "太",
+              "compound": false
+            },
+            {
+              "text": "多",
+              "compound": false
+            },
+            {
+              "text": "了",
+              "compound": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "L2_20",
+      "key": "先",
+      "label": "부사 先",
+      "explanation": "먼저. 동사 앞. 先…再… 짝.",
+      "kind": "adverb",
+      "stage": 2,
+      "examples": [
+        {
+          "zh": "我先走了",
+          "pinyin": "Wǒ xiān zǒu le.",
+          "ko": "나 먼저 갈게.",
+          "tokens": [
+            {
+              "text": "我",
+              "compound": false
+            },
+            {
+              "text": "先",
+              "compound": false
+            },
+            {
+              "text": "走",
+              "compound": false
+            },
+            {
+              "text": "了",
+              "compound": false
+            }
+          ]
+        },
+        {
+          "zh": "先别说",
+          "pinyin": "Xiān bié shuō.",
+          "ko": "잠깐 말하지 마.",
+          "tokens": [
+            {
+              "text": "先",
+              "compound": false
+            },
+            {
+              "text": "别",
+              "compound": false
+            },
+            {
+              "text": "说",
+              "compound": false
+            }
+          ]
+        },
+        {
+          "zh": "你先来",
+          "pinyin": "Nǐ xiān lái.",
+          "ko": "너 먼저 와.",
+          "tokens": [
+            {
+              "text": "你",
+              "compound": false
+            },
+            {
+              "text": "先",
+              "compound": false
+            },
+            {
+              "text": "来",
+              "compound": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "L2_21",
+      "key": "常",
+      "label": "부사 常 (经常)",
+      "explanation": "자주·평소. 经常·常常 형태.",
+      "kind": "adverb",
+      "stage": 2,
+      "examples": [
+        {
+          "zh": "小时候经常吃",
+          "pinyin": "Xiǎoshíhou jīngcháng chī.",
+          "ko": "어릴 때 자주 먹었어.",
+          "tokens": [
+            {
+              "text": "小时候",
+              "compound": true
+            },
+            {
+              "text": "经常",
+              "compound": true
+            },
+            {
+              "text": "吃",
+              "compound": false
+            }
+          ]
+        },
+        {
+          "zh": "你没常来呀",
+          "pinyin": "Nǐ méi cháng lái ya.",
+          "ko": "자주 안 오네.",
+          "tokens": [
+            {
+              "text": "你",
+              "compound": false
+            },
+            {
+              "text": "没",
+              "compound": false
+            },
+            {
+              "text": "常",
+              "compound": false
+            },
+            {
+              "text": "来",
+              "compound": false
+            },
+            {
+              "text": "呀",
+              "compound": false
+            }
+          ]
+        },
+        {
+          "zh": "我常常想你",
+          "pinyin": "Wǒ chángcháng xiǎng nǐ.",
+          "ko": "자주 네 생각 해.",
+          "tokens": [
+            {
+              "text": "我",
+              "compound": false
+            },
+            {
+              "text": "常常",
+              "compound": true
+            },
+            {
+              "text": "想",
+              "compound": false
+            },
+            {
+              "text": "你",
+              "compound": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "L2_22",
+      "key": "更",
+      "label": "부사 更",
+      "explanation": "더욱·더. 비교급 강화. \"더 빨리·더 좋아\".",
+      "kind": "adverb",
+      "stage": 3,
+      "examples": [
+        {
+          "zh": "你不是更好",
+          "pinyin": "Nǐ bù shì gèng hǎo.",
+          "ko": "너 더 좋잖아?",
+          "tokens": [
+            {
+              "text": "你",
+              "compound": false
+            },
+            {
+              "text": "不",
+              "compound": false
+            },
+            {
+              "text": "是",
+              "compound": false
+            },
+            {
+              "text": "更",
+              "compound": false
+            },
+            {
+              "text": "好",
+              "compound": false
+            }
+          ]
+        },
+        {
+          "zh": "想更好的工作",
+          "pinyin": "Xiǎng gèng hǎo de gōngzuò.",
+          "ko": "더 좋은 일 원해.",
+          "tokens": [
+            {
+              "text": "想",
+              "compound": false
+            },
+            {
+              "text": "更",
+              "compound": false
+            },
+            {
+              "text": "好的",
+              "compound": true
+            },
+            {
+              "text": "工",
+              "compound": false
+            },
+            {
+              "text": "作",
+              "compound": false
+            }
+          ]
+        },
+        {
+          "zh": "当然会更好",
+          "pinyin": "Dāngrán huì gèng hǎo.",
+          "ko": "당연히 더 좋아질 거야.",
+          "tokens": [
+            {
+              "text": "当然",
+              "compound": true
+            },
+            {
+              "text": "会",
+              "compound": false
+            },
+            {
+              "text": "更",
+              "compound": false
+            },
+            {
+              "text": "好",
+              "compound": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "L2_23",
+      "key": "只",
+      "label": "부사 只",
+      "explanation": "단지·~만. 동사 앞 또는 양사. \"한·하나만\".",
+      "kind": "adverb",
+      "stage": 3,
+      "examples": [
+        {
+          "zh": "只能想想了",
+          "pinyin": "Zhǐ néng xiǎngxiang le.",
+          "ko": "생각만 할 수밖에.",
+          "tokens": [
+            {
+              "text": "只能",
+              "compound": true
+            },
+            {
+              "text": "想想",
+              "compound": true
+            },
+            {
+              "text": "了",
+              "compound": false
+            }
+          ]
+        },
+        {
+          "zh": "你只是来了",
+          "pinyin": "Nǐ zhǐ shì lái le.",
+          "ko": "너 그냥 온 거잖아.",
+          "tokens": [
+            {
+              "text": "你",
+              "compound": false
+            },
+            {
+              "text": "只是",
+              "compound": true
+            },
+            {
+              "text": "来",
+              "compound": false
+            },
+            {
+              "text": "了",
+              "compound": false
+            }
+          ]
+        },
+        {
+          "zh": "我只爱你",
+          "pinyin": "Wǒ zhǐ ài nǐ.",
+          "ko": "너만 사랑해.",
+          "tokens": [
+            {
+              "text": "我",
+              "compound": false
+            },
+            {
+              "text": "只",
+              "compound": false
+            },
+            {
+              "text": "爱",
+              "compound": false
+            },
+            {
+              "text": "你",
+              "compound": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "L2_24",
+      "key": "别",
+      "label": "부사 别",
+      "explanation": "~하지 마. 금지·완곡. 不要 보다 친근.",
+      "kind": "adverb",
+      "stage": 3,
+      "examples": [
+        {
+          "zh": "别说了",
+          "pinyin": "Bié shuō le.",
+          "ko": "그만 말해.",
+          "tokens": [
+            {
+              "text": "别",
+              "compound": false
+            },
+            {
+              "text": "说",
+              "compound": false
+            },
+            {
+              "text": "了",
+              "compound": false
+            }
+          ]
+        },
+        {
+          "zh": "别走",
+          "pinyin": "Bié zǒu.",
+          "ko": "가지 마.",
+          "tokens": [
+            {
+              "text": "别",
+              "compound": false
+            },
+            {
+              "text": "走",
+              "compound": false
+            }
+          ]
+        },
+        {
+          "zh": "别想了",
+          "pinyin": "Bié xiǎng le.",
+          "ko": "생각하지 마.",
+          "tokens": [
+            {
+              "text": "别",
+              "compound": false
+            },
+            {
+              "text": "想",
+              "compound": false
+            },
+            {
+              "text": "了",
+              "compound": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "L2_25",
+      "key": "快",
+      "label": "부사 快",
+      "explanation": "빠르다·곧. 快点·快来 자주.",
+      "kind": "adverb",
+      "stage": 3,
+      "examples": [
+        {
+          "zh": "快点跟我回家",
+          "pinyin": "Kuài diǎn gēn wǒ huí jiā.",
+          "ko": "빨리 같이 집 가자.",
+          "tokens": [
+            {
+              "text": "快点",
+              "compound": true
+            },
+            {
+              "text": "跟",
+              "compound": false
+            },
+            {
+              "text": "我",
+              "compound": false
+            },
+            {
+              "text": "回家",
+              "compound": true
+            }
+          ]
+        },
+        {
+          "zh": "快来",
+          "pinyin": "Kuài lái.",
+          "ko": "얼른 와.",
+          "tokens": [
+            {
+              "text": "快来",
+              "compound": true
+            }
+          ]
+        },
+        {
+          "zh": "我快到了",
+          "pinyin": "Wǒ kuài dào le.",
+          "ko": "거의 다 왔어.",
+          "tokens": [
+            {
+              "text": "我",
+              "compound": false
+            },
+            {
+              "text": "快",
+              "compound": false
+            },
+            {
+              "text": "到了",
+              "compound": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "L2_26",
+      "key": "多",
+      "label": "부사 多",
+      "explanation": "많다·얼마나. 정도 의문 (多大·多少).",
+      "kind": "adverb",
+      "stage": 3,
+      "examples": [
+        {
+          "zh": "很多事情要干",
+          "pinyin": "Hěn duō shìqing yào gàn.",
+          "ko": "할 일 진짜 많아.",
+          "tokens": [
+            {
+              "text": "很",
+              "compound": false
+            },
+            {
+              "text": "多事",
+              "compound": true
+            },
+            {
+              "text": "情",
+              "compound": false
+            },
+            {
+              "text": "要",
+              "compound": false
+            },
+            {
+              "text": "干",
+              "compound": false
+            }
+          ]
+        },
+        {
+          "zh": "多大了",
+          "pinyin": "Duō dà le?",
+          "ko": "몇 살이야?",
+          "tokens": [
+            {
+              "text": "多大",
+              "compound": true
+            },
+            {
+              "text": "了",
+              "compound": false
+            }
+          ]
+        },
+        {
+          "zh": "你想多了",
+          "pinyin": "Nǐ xiǎng duō le.",
+          "ko": "네가 오버야.",
+          "tokens": [
+            {
+              "text": "你",
+              "compound": false
+            },
+            {
+              "text": "想",
+              "compound": false
+            },
+            {
+              "text": "多",
+              "compound": false
+            },
+            {
+              "text": "了",
+              "compound": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "L2_27",
+      "key": "当然",
+      "label": "부사 当然",
+      "explanation": "당연히. 단독 답변·문두 가능.",
+      "kind": "adverb",
+      "stage": 3,
+      "examples": [
+        {
+          "zh": "当然是吃了",
+          "pinyin": "Dāngrán shì chī le.",
+          "ko": "당연히 먹었지.",
+          "tokens": [
+            {
+              "text": "当然",
+              "compound": true
+            },
+            {
+              "text": "是",
+              "compound": false
+            },
+            {
+              "text": "吃",
+              "compound": false
+            },
+            {
+              "text": "了",
+              "compound": false
+            }
+          ]
+        },
+        {
+          "zh": "当然可以",
+          "pinyin": "Dāngrán kěyǐ.",
+          "ko": "당연히 OK.",
+          "tokens": [
+            {
+              "text": "当然",
+              "compound": true
+            },
+            {
+              "text": "可以",
+              "compound": true
+            }
+          ]
+        },
+        {
+          "zh": "当然要",
+          "pinyin": "Dāngrán yào.",
+          "ko": "당연히 필요해.",
+          "tokens": [
+            {
+              "text": "当然",
+              "compound": true
+            },
+            {
+              "text": "要",
+              "compound": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "L2_28",
+      "key": "一直",
+      "label": "부사 一直",
+      "explanation": "계속·줄곧. 지속 강조.",
+      "kind": "adverb",
+      "stage": 3,
+      "examples": [
+        {
+          "zh": "我一直在等你",
+          "pinyin": "Wǒ yīzhí zài děng nǐ.",
+          "ko": "계속 너 기다리고 있어.",
+          "tokens": [
+            {
+              "text": "我",
+              "compound": false
+            },
+            {
+              "text": "一",
+              "compound": false
+            },
+            {
+              "text": "直",
+              "compound": false
+            },
+            {
+              "text": "在",
+              "compound": false
+            },
+            {
+              "text": "等",
+              "compound": false
+            },
+            {
+              "text": "你",
+              "compound": false
+            }
+          ]
+        },
+        {
+          "zh": "我们一直在",
+          "pinyin": "Wǒmen yīzhí zài.",
+          "ko": "우린 계속 있어.",
+          "tokens": [
+            {
+              "text": "我们",
+              "compound": true
+            },
+            {
+              "text": "一",
+              "compound": false
+            },
+            {
+              "text": "直",
+              "compound": false
+            },
+            {
+              "text": "在",
+              "compound": false
+            }
+          ]
+        },
+        {
+          "zh": "一直想你",
+          "pinyin": "Yīzhí xiǎng nǐ.",
+          "ko": "계속 네 생각 해.",
+          "tokens": [
+            {
+              "text": "一",
+              "compound": false
+            },
+            {
+              "text": "直",
+              "compound": false
+            },
+            {
+              "text": "想",
+              "compound": false
+            },
+            {
+              "text": "你",
+              "compound": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "L2_29",
+      "key": "从来",
+      "label": "부사 从来 (从不)",
+      "explanation": "여태껏. 보통 부정 (从来不/从来没) 함께.",
+      "kind": "adverb",
+      "stage": 3,
+      "examples": [
+        {
+          "zh": "从来没有过",
+          "pinyin": "Cónglái méi yǒu guo.",
+          "ko": "한 번도 없었어.",
+          "tokens": [
+            {
+              "text": "从来没有",
+              "compound": true
+            },
+            {
+              "text": "过",
+              "compound": false
+            }
+          ]
+        },
+        {
+          "zh": "从来不知道",
+          "pinyin": "Cónglái bù zhīdào.",
+          "ko": "여태 몰랐어.",
+          "tokens": [
+            {
+              "text": "从来不",
+              "compound": true
+            },
+            {
+              "text": "知道",
+              "compound": true
+            }
+          ]
+        },
+        {
+          "zh": "从来不去",
+          "pinyin": "Cónglái bù qù.",
+          "ko": "안 가본 적 없어.",
+          "tokens": [
+            {
+              "text": "从来不",
+              "compound": true
+            },
+            {
+              "text": "去",
+              "compound": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "L2_30",
+      "key": "什么",
+      "label": "필수 단어 什么",
+      "explanation": "의문사 — 무엇·뭐. 什么的 = 등등 (열거 끝).",
+      "kind": "word",
+      "stage": 3,
+      "examples": [
+        {
+          "zh": "什么意思",
+          "pinyin": "Shénme yìsi?",
+          "ko": "무슨 뜻?",
+          "tokens": [
+            {
+              "text": "什么",
+              "compound": true
+            },
+            {
+              "text": "意",
+              "compound": false
+            },
+            {
+              "text": "思",
+              "compound": false
+            }
+          ]
+        },
+        {
+          "zh": "你说什么",
+          "pinyin": "Nǐ shuō shénme?",
+          "ko": "뭐라고?",
+          "tokens": [
+            {
+              "text": "你",
+              "compound": false
+            },
+            {
+              "text": "说",
+              "compound": false
+            },
+            {
+              "text": "什么",
+              "compound": true
+            }
+          ]
+        },
+        {
+          "zh": "什么都不要",
+          "pinyin": "Shénme dōu bù yào.",
+          "ko": "아무것도 필요 없어.",
+          "tokens": [
+            {
+              "text": "什么都",
+              "compound": true
+            },
+            {
+              "text": "不",
+              "compound": false
+            },
+            {
+              "text": "要",
+              "compound": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "L2_31",
+      "key": "知道",
+      "label": "필수 단어 知道",
+      "explanation": "알다 (현재 인지). 不知道 = 모름. 친한 사이 \"知道吗\" = \"알지?\".",
+      "kind": "word",
+      "stage": 3,
+      "examples": [
+        {
+          "zh": "我不知道",
+          "pinyin": "Wǒ bù zhīdào.",
+          "ko": "몰라.",
+          "tokens": [
+            {
+              "text": "我",
+              "compound": false
+            },
+            {
+              "text": "不",
+              "compound": false
+            },
+            {
+              "text": "知道",
+              "compound": true
+            }
+          ]
+        },
+        {
+          "zh": "你知道吗",
+          "pinyin": "Nǐ zhīdào ma?",
+          "ko": "알지?",
+          "tokens": [
+            {
+              "text": "你",
+              "compound": false
+            },
+            {
+              "text": "知道",
+              "compound": true
+            },
+            {
+              "text": "吗",
+              "compound": false
+            }
+          ]
+        },
+        {
+          "zh": "谁知道",
+          "pinyin": "Shéi zhīdào.",
+          "ko": "누가 알아.",
+          "tokens": [
+            {
+              "text": "谁知道",
+              "compound": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "L2_32",
+      "key": "怎么",
+      "label": "필수 단어 怎么",
+      "explanation": "어떻게·왜. 怎么了 = 왜 그래?, 怎么样 = 어때.",
+      "kind": "word",
+      "stage": 3,
+      "examples": [
+        {
+          "zh": "怎么了",
+          "pinyin": "Zěnme le?",
+          "ko": "왜 그래?",
+          "tokens": [
+            {
+              "text": "怎么了",
+              "compound": true
+            }
+          ]
+        },
+        {
+          "zh": "怎么样",
+          "pinyin": "Zěnme yàng?",
+          "ko": "어때?",
+          "tokens": [
+            {
+              "text": "怎么样",
+              "compound": true
+            }
+          ]
+        },
+        {
+          "zh": "这怎么吃",
+          "pinyin": "Zhè zěnme chī?",
+          "ko": "이거 어떻게 먹어?",
+          "tokens": [
+            {
+              "text": "这",
+              "compound": false
+            },
+            {
+              "text": "怎么",
+              "compound": true
+            },
+            {
+              "text": "吃",
+              "compound": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "L2_33",
+      "key": "喜欢",
+      "label": "필수 단어 喜欢",
+      "explanation": "좋아하다. 사물·사람 모두 가능. 爱보다 부담 적음.",
+      "kind": "word",
+      "stage": 3,
+      "examples": [
+        {
+          "zh": "我喜欢你",
+          "pinyin": "Wǒ xǐhuan nǐ.",
+          "ko": "너 좋아해.",
+          "tokens": [
+            {
+              "text": "我",
+              "compound": false
+            },
+            {
+              "text": "喜欢",
+              "compound": true
+            },
+            {
+              "text": "你",
+              "compound": false
+            }
+          ]
+        },
+        {
+          "zh": "我也喜欢",
+          "pinyin": "Wǒ yě xǐhuan.",
+          "ko": "나도 좋아해.",
+          "tokens": [
+            {
+              "text": "我",
+              "compound": false
+            },
+            {
+              "text": "也",
+              "compound": false
+            },
+            {
+              "text": "喜欢",
+              "compound": true
+            }
+          ]
+        },
+        {
+          "zh": "不喜欢这个",
+          "pinyin": "Bù xǐhuan zhège.",
+          "ko": "이거 별로.",
+          "tokens": [
+            {
+              "text": "不",
+              "compound": false
+            },
+            {
+              "text": "喜欢",
+              "compound": true
+            },
+            {
+              "text": "这个",
+              "compound": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "L2_34",
+      "key": "可以",
+      "label": "필수 단어 可以",
+      "explanation": "허가·가능. \"괜찮아? OK?\". 不可以 = 안 됨.",
+      "kind": "word",
+      "stage": 3,
+      "examples": [
+        {
+          "zh": "可以吗",
+          "pinyin": "Kěyǐ ma?",
+          "ko": "괜찮을까?",
+          "tokens": [
+            {
+              "text": "可以",
+              "compound": true
+            },
+            {
+              "text": "吗",
+              "compound": false
+            }
+          ]
+        },
+        {
+          "zh": "当然可以",
+          "pinyin": "Dāngrán kěyǐ.",
+          "ko": "당연하지.",
+          "tokens": [
+            {
+              "text": "当然",
+              "compound": true
+            },
+            {
+              "text": "可以",
+              "compound": true
+            }
+          ]
+        },
+        {
+          "zh": "我可以来",
+          "pinyin": "Wǒ kěyǐ lái.",
+          "ko": "나 갈 수 있어.",
+          "tokens": [
+            {
+              "text": "我",
+              "compound": false
+            },
+            {
+              "text": "可以",
+              "compound": true
+            },
+            {
+              "text": "来",
+              "compound": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "L2_35",
+      "key": "真的",
+      "label": "필수 단어 真的",
+      "explanation": "진짜·정말. 부사·부사구. 真的吗 = 진짜야?.",
+      "kind": "word",
+      "stage": 3,
+      "examples": [
+        {
+          "zh": "真的吗",
+          "pinyin": "Zhēn de ma?",
+          "ko": "진짜?",
+          "tokens": [
+            {
+              "text": "真",
+              "compound": false
+            },
+            {
+              "text": "的",
+              "compound": false
+            },
+            {
+              "text": "吗",
+              "compound": false
+            }
+          ]
+        },
+        {
+          "zh": "真的不要",
+          "pinyin": "Zhēn de bù yào.",
+          "ko": "진짜 안 받을래.",
+          "tokens": [
+            {
+              "text": "真",
+              "compound": false
+            },
+            {
+              "text": "的",
+              "compound": false
+            },
+            {
+              "text": "不",
+              "compound": false
+            },
+            {
+              "text": "要",
+              "compound": false
+            }
+          ]
+        },
+        {
+          "zh": "我真的爱你",
+          "pinyin": "Wǒ zhēn de ài nǐ.",
+          "ko": "진짜 사랑해.",
+          "tokens": [
+            {
+              "text": "我",
+              "compound": false
+            },
+            {
+              "text": "真",
+              "compound": false
+            },
+            {
+              "text": "的",
+              "compound": false
+            },
+            {
+              "text": "爱",
+              "compound": false
+            },
+            {
+              "text": "你",
+              "compound": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "L2_36",
+      "key": "不是",
+      "label": "필수 단어 不是",
+      "explanation": "아니다. 부정 + 是. 不是吗 = ~잖아? (확인).",
+      "kind": "word",
+      "stage": 3,
+      "examples": [
+        {
+          "zh": "不是我",
+          "pinyin": "Bù shì wǒ.",
+          "ko": "나 아냐.",
+          "tokens": [
+            {
+              "text": "不",
+              "compound": false
+            },
+            {
+              "text": "是",
+              "compound": false
+            },
+            {
+              "text": "我",
+              "compound": false
+            }
+          ]
+        },
+        {
+          "zh": "不是吗",
+          "pinyin": "Bù shì ma?",
+          "ko": "그렇잖아?",
+          "tokens": [
+            {
+              "text": "不",
+              "compound": false
+            },
+            {
+              "text": "是吗",
+              "compound": true
+            }
+          ]
+        },
+        {
+          "zh": "不是的",
+          "pinyin": "Bù shì de.",
+          "ko": "아니야.",
+          "tokens": [
+            {
+              "text": "不",
+              "compound": false
+            },
+            {
+              "text": "是的",
+              "compound": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "L2_37",
+      "key": "没有",
+      "label": "필수 단어 没有",
+      "explanation": "없다·~하지 않았다 (과거 부정). 没 단독도 가능.",
+      "kind": "word",
+      "stage": 3,
+      "examples": [
+        {
+          "zh": "我没有",
+          "pinyin": "Wǒ méi yǒu.",
+          "ko": "없어.",
+          "tokens": [
+            {
+              "text": "我",
+              "compound": false
+            },
+            {
+              "text": "没有",
+              "compound": true
+            }
+          ]
+        },
+        {
+          "zh": "没有时间",
+          "pinyin": "Méi yǒu shíjiān.",
+          "ko": "시간 없어.",
+          "tokens": [
+            {
+              "text": "没有",
+              "compound": true
+            },
+            {
+              "text": "时间",
+              "compound": true
+            }
+          ]
+        },
+        {
+          "zh": "没有意思",
+          "pinyin": "Méi yǒu yìsi.",
+          "ko": "재미없어.",
+          "tokens": [
+            {
+              "text": "没有",
+              "compound": true
+            },
+            {
+              "text": "意",
+              "compound": false
+            },
+            {
+              "text": "思",
+              "compound": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "L2_38",
+      "key": "这样",
+      "label": "필수 단어 这样",
+      "explanation": "이렇게·이런. 这样吗 = 그래?, 就这样 = 이렇게 하자.",
+      "kind": "word",
+      "stage": 3,
+      "examples": [
+        {
+          "zh": "就这样",
+          "pinyin": "Jiù zhèyàng.",
+          "ko": "이렇게 하자.",
+          "tokens": [
+            {
+              "text": "就",
+              "compound": false
+            },
+            {
+              "text": "这样",
+              "compound": true
+            }
+          ]
+        },
+        {
+          "zh": "这样啊",
+          "pinyin": "Zhèyàng a.",
+          "ko": "그렇구나.",
+          "tokens": [
+            {
+              "text": "这样",
+              "compound": true
+            },
+            {
+              "text": "啊",
+              "compound": false
+            }
+          ]
+        },
+        {
+          "zh": "不要这样",
+          "pinyin": "Bù yào zhèyàng.",
+          "ko": "이러지 마.",
+          "tokens": [
+            {
+              "text": "不",
+              "compound": false
+            },
+            {
+              "text": "要",
+              "compound": false
+            },
+            {
+              "text": "这样",
+              "compound": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "L2_39",
+      "key": "现在",
+      "label": "필수 단어 现在",
+      "explanation": "지금. 시점 표지. 现在就 = 지금 당장.",
+      "kind": "word",
+      "stage": 3,
+      "examples": [
+        {
+          "zh": "现在不行",
+          "pinyin": "Xiànzài bùxíng.",
+          "ko": "지금 안 돼.",
+          "tokens": [
+            {
+              "text": "现在",
+              "compound": true
+            },
+            {
+              "text": "不",
+              "compound": false
+            },
+            {
+              "text": "行",
+              "compound": false
+            }
+          ]
+        },
+        {
+          "zh": "我现在来",
+          "pinyin": "Wǒ xiànzài lái.",
+          "ko": "지금 갈게.",
+          "tokens": [
+            {
+              "text": "我",
+              "compound": false
+            },
+            {
+              "text": "现在",
+              "compound": true
+            },
+            {
+              "text": "来",
+              "compound": false
+            }
+          ]
+        },
+        {
+          "zh": "现在就去",
+          "pinyin": "Xiànzài jiù qù.",
+          "ko": "지금 당장 가.",
+          "tokens": [
+            {
+              "text": "现在",
+              "compound": true
+            },
+            {
+              "text": "就",
+              "compound": false
+            },
+            {
+              "text": "去",
+              "compound": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "L2_40",
+      "key": "一起",
+      "label": "필수 단어 一起",
+      "explanation": "함께·같이. 一起去·一起来 자주.",
+      "kind": "word",
+      "stage": 3,
+      "examples": [
+        {
+          "zh": "一起去吧",
+          "pinyin": "Yīqǐ qù ba.",
+          "ko": "같이 가자.",
+          "tokens": [
+            {
+              "text": "一起",
+              "compound": true
+            },
+            {
+              "text": "去",
+              "compound": false
+            },
+            {
+              "text": "吧",
+              "compound": false
+            }
+          ]
+        },
+        {
+          "zh": "我们一起",
+          "pinyin": "Wǒmen yīqǐ.",
+          "ko": "우리 같이.",
+          "tokens": [
+            {
+              "text": "我们",
+              "compound": true
+            },
+            {
+              "text": "一起",
+              "compound": true
+            }
+          ]
+        },
+        {
+          "zh": "一起来",
+          "pinyin": "Yīqǐ lái.",
+          "ko": "같이 와.",
+          "tokens": [
+            {
+              "text": "一起",
+              "compound": true
+            },
+            {
+              "text": "来",
+              "compound": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "L2_41",
+      "key": "不要",
+      "label": "필수 단어 不要",
+      "explanation": "~하지 마·필요 없어. 别 보다 직설.",
+      "kind": "word",
+      "stage": 3,
+      "examples": [
+        {
+          "zh": "不要这样",
+          "pinyin": "Bù yào zhèyàng.",
+          "ko": "이러지 마.",
+          "tokens": [
+            {
+              "text": "不",
+              "compound": false
+            },
+            {
+              "text": "要",
+              "compound": false
+            },
+            {
+              "text": "这样",
+              "compound": true
+            }
+          ]
+        },
+        {
+          "zh": "我不要",
+          "pinyin": "Wǒ bù yào.",
+          "ko": "안 받을래.",
+          "tokens": [
+            {
+              "text": "我",
+              "compound": false
+            },
+            {
+              "text": "不",
+              "compound": false
+            },
+            {
+              "text": "要",
+              "compound": false
+            }
+          ]
+        },
+        {
+          "zh": "不要走",
+          "pinyin": "Bù yào zǒu.",
+          "ko": "가지 마.",
+          "tokens": [
+            {
+              "text": "不",
+              "compound": false
+            },
+            {
+              "text": "要",
+              "compound": false
+            },
+            {
+              "text": "走",
+              "compound": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "L2_42",
+      "key": "回来",
+      "label": "필수 단어 回来",
+      "explanation": "돌아오다. 回去 = 돌아가다.",
+      "kind": "word",
+      "stage": 3,
+      "examples": [
+        {
+          "zh": "快回来",
+          "pinyin": "Kuài huílai.",
+          "ko": "빨리 돌아와.",
+          "tokens": [
+            {
+              "text": "快",
+              "compound": false
+            },
+            {
+              "text": "回来",
+              "compound": true
+            }
+          ]
+        },
+        {
+          "zh": "回来了吗",
+          "pinyin": "Huílai le ma?",
+          "ko": "돌아왔어?",
+          "tokens": [
+            {
+              "text": "回来",
+              "compound": true
+            },
+            {
+              "text": "了",
+              "compound": false
+            },
+            {
+              "text": "吗",
+              "compound": false
+            }
+          ]
+        },
+        {
+          "zh": "我回来了",
+          "pinyin": "Wǒ huílai le.",
+          "ko": "나 왔어.",
+          "tokens": [
+            {
+              "text": "我",
+              "compound": false
+            },
+            {
+              "text": "回来",
+              "compound": true
+            },
+            {
+              "text": "了",
+              "compound": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "L2_43",
+      "key": "觉得",
+      "label": "필수 단어 觉得",
+      "explanation": "~인 것 같다·느끼다. 想 보다 약한 의견.",
+      "kind": "word",
+      "stage": 3,
+      "examples": [
+        {
+          "zh": "我觉得好",
+          "pinyin": "Wǒ juéde hǎo.",
+          "ko": "난 좋다고 생각해.",
+          "tokens": [
+            {
+              "text": "我",
+              "compound": false
+            },
+            {
+              "text": "觉得",
+              "compound": true
+            },
+            {
+              "text": "好",
+              "compound": false
+            }
+          ]
+        },
+        {
+          "zh": "你觉得呢",
+          "pinyin": "Nǐ juéde ne?",
+          "ko": "넌 어때?",
+          "tokens": [
+            {
+              "text": "你",
+              "compound": false
+            },
+            {
+              "text": "觉得",
+              "compound": true
+            },
+            {
+              "text": "呢",
+              "compound": false
+            }
+          ]
+        },
+        {
+          "zh": "觉得很对",
+          "pinyin": "Juéde hěn duì.",
+          "ko": "맞다고 봐.",
+          "tokens": [
+            {
+              "text": "觉得",
+              "compound": true
+            },
+            {
+              "text": "很",
+              "compound": false
+            },
+            {
+              "text": "对",
+              "compound": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "L2_44",
+      "key": "哪里",
+      "label": "필수 단어 哪里",
+      "explanation": "어디. 哪里哪里 = 겸손 답변 (\"뭘요\").",
+      "kind": "word",
+      "stage": 3,
+      "examples": [
+        {
+          "zh": "在哪里",
+          "pinyin": "Zài nǎli?",
+          "ko": "어디?",
+          "tokens": [
+            {
+              "text": "在哪里",
+              "compound": true
+            }
+          ]
+        },
+        {
+          "zh": "哪里都行",
+          "pinyin": "Nǎli dōu xíng.",
+          "ko": "어디든 OK.",
+          "tokens": [
+            {
+              "text": "哪里都",
+              "compound": true
+            },
+            {
+              "text": "行",
+              "compound": false
+            }
+          ]
+        },
+        {
+          "zh": "你在哪里",
+          "pinyin": "Nǐ zài nǎli?",
+          "ko": "너 어디야?",
+          "tokens": [
+            {
+              "text": "你",
+              "compound": false
+            },
+            {
+              "text": "在哪里",
+              "compound": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "L2_45",
+      "key": "就是",
+      "label": "필수 단어 就是",
+      "explanation": "바로 ~이다·맞아 강조. 这就是 = 이게 바로.",
+      "kind": "word",
+      "stage": 4,
+      "examples": [
+        {
+          "zh": "就是我",
+          "pinyin": "Jiùshì wǒ.",
+          "ko": "바로 나야.",
+          "tokens": [
+            {
+              "text": "就是",
+              "compound": true
+            },
+            {
+              "text": "我",
+              "compound": false
+            }
+          ]
+        },
+        {
+          "zh": "就是这样",
+          "pinyin": "Jiùshì zhèyàng.",
+          "ko": "바로 그렇지.",
+          "tokens": [
+            {
+              "text": "就是",
+              "compound": true
+            },
+            {
+              "text": "这样",
+              "compound": true
+            }
+          ]
+        },
+        {
+          "zh": "就是不喜欢",
+          "pinyin": "Jiùshì bù xǐhuan.",
+          "ko": "그냥 싫어.",
+          "tokens": [
+            {
+              "text": "就是",
+              "compound": true
+            },
+            {
+              "text": "不",
+              "compound": false
+            },
+            {
+              "text": "喜欢",
+              "compound": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "L2_46",
+      "key": "时候",
+      "label": "필수 단어 时候",
+      "explanation": "때·시점. 什么时候 = 언제, 那时候 = 그때.",
+      "kind": "word",
+      "stage": 4,
+      "examples": [
+        {
+          "zh": "什么时候",
+          "pinyin": "Shénme shíhou?",
+          "ko": "언제?",
+          "tokens": [
+            {
+              "text": "什么时候",
+              "compound": true
+            }
+          ]
+        },
+        {
+          "zh": "小时候",
+          "pinyin": "Xiǎoshíhou.",
+          "ko": "어릴 때.",
+          "tokens": [
+            {
+              "text": "小时候",
+              "compound": true
+            }
+          ]
+        },
+        {
+          "zh": "那时候",
+          "pinyin": "Nà shíhou.",
+          "ko": "그때.",
+          "tokens": [
+            {
+              "text": "那时候",
+              "compound": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "L2_47",
+      "key": "不会",
+      "label": "필수 단어 不会",
+      "explanation": "못 한다·~할 줄 모른다. 不会吧 = 설마.",
+      "kind": "word",
+      "stage": 4,
+      "examples": [
+        {
+          "zh": "不会吧",
+          "pinyin": "Bù huì ba.",
+          "ko": "설마.",
+          "tokens": [
+            {
+              "text": "不",
+              "compound": false
+            },
+            {
+              "text": "会",
+              "compound": false
+            },
+            {
+              "text": "吧",
+              "compound": false
+            }
+          ]
+        },
+        {
+          "zh": "我不会",
+          "pinyin": "Wǒ bù huì.",
+          "ko": "난 못 해.",
+          "tokens": [
+            {
+              "text": "我",
+              "compound": false
+            },
+            {
+              "text": "不",
+              "compound": false
+            },
+            {
+              "text": "会",
+              "compound": false
+            }
+          ]
+        },
+        {
+          "zh": "不会的",
+          "pinyin": "Bù huì de.",
+          "ko": "안 그럴 거야.",
+          "tokens": [
+            {
+              "text": "不",
+              "compound": false
+            },
+            {
+              "text": "会",
+              "compound": false
+            },
+            {
+              "text": "的",
+              "compound": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "L2_48",
+      "key": "谢谢",
+      "label": "필수 단어 谢谢",
+      "explanation": "감사. 단독 또는 谢谢你 형태.",
+      "kind": "word",
+      "stage": 4,
+      "examples": [
+        {
+          "zh": "谢谢你",
+          "pinyin": "Xièxie nǐ.",
+          "ko": "고마워.",
+          "tokens": [
+            {
+              "text": "谢谢",
+              "compound": true
+            },
+            {
+              "text": "你",
+              "compound": false
+            }
+          ]
+        },
+        {
+          "zh": "真的谢谢",
+          "pinyin": "Zhēn de xièxie.",
+          "ko": "진짜 고마워.",
+          "tokens": [
+            {
+              "text": "真",
+              "compound": false
+            },
+            {
+              "text": "的",
+              "compound": false
+            },
+            {
+              "text": "谢谢",
+              "compound": true
+            }
+          ]
+        },
+        {
+          "zh": "谢谢哦",
+          "pinyin": "Xièxie ò.",
+          "ko": "고마워~",
+          "tokens": [
+            {
+              "text": "谢谢",
+              "compound": true
+            },
+            {
+              "text": "哦",
+              "compound": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "L2_49",
+      "key": "自己",
+      "label": "필수 단어 自己",
+      "explanation": "자기·스스로. 我自己 = 내가 직접.",
+      "kind": "word",
+      "stage": 4,
+      "examples": [
+        {
+          "zh": "我自己来",
+          "pinyin": "Wǒ zìjǐ lái.",
+          "ko": "내가 직접 할게.",
+          "tokens": [
+            {
+              "text": "我",
+              "compound": false
+            },
+            {
+              "text": "自己",
+              "compound": true
+            },
+            {
+              "text": "来",
+              "compound": false
+            }
+          ]
+        },
+        {
+          "zh": "你自己看",
+          "pinyin": "Nǐ zìjǐ kàn.",
+          "ko": "네가 봐.",
+          "tokens": [
+            {
+              "text": "你",
+              "compound": false
+            },
+            {
+              "text": "自己",
+              "compound": true
+            },
+            {
+              "text": "看",
+              "compound": false
+            }
+          ]
+        },
+        {
+          "zh": "自己的事",
+          "pinyin": "Zìjǐ de shì.",
+          "ko": "자기 일.",
+          "tokens": [
+            {
+              "text": "自己",
+              "compound": true
+            },
+            {
+              "text": "的",
+              "compound": false
+            },
+            {
+              "text": "事",
+              "compound": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "L2_50",
+      "key": "应该",
+      "label": "필수 단어 应该",
+      "explanation": "~해야 한다. 추측 (~인 것 같다) 도 가능.",
+      "kind": "word",
+      "stage": 4,
+      "examples": [
+        {
+          "zh": "应该可以",
+          "pinyin": "Yīnggāi kěyǐ.",
+          "ko": "될 거야.",
+          "tokens": [
+            {
+              "text": "应该",
+              "compound": true
+            },
+            {
+              "text": "可以",
+              "compound": true
+            }
+          ]
+        },
+        {
+          "zh": "应该走了",
+          "pinyin": "Yīnggāi zǒu le.",
+          "ko": "가야 해.",
+          "tokens": [
+            {
+              "text": "应该",
+              "compound": true
+            },
+            {
+              "text": "走",
+              "compound": false
+            },
+            {
+              "text": "了",
+              "compound": false
+            }
+          ]
+        },
+        {
+          "zh": "我应该去",
+          "pinyin": "Wǒ yīnggāi qù.",
+          "ko": "나 가야 해.",
+          "tokens": [
+            {
+              "text": "我",
+              "compound": false
+            },
+            {
+              "text": "应该",
+              "compound": true
+            },
+            {
+              "text": "去",
+              "compound": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "L2_51",
+      "key": "这么",
+      "label": "필수 단어 这么",
+      "explanation": "이렇게·이렇게나. 정도 강조. 这么多 = 이렇게 많이.",
+      "kind": "word",
+      "stage": 4,
+      "examples": [
+        {
+          "zh": "这么多",
+          "pinyin": "Zhème duō.",
+          "ko": "이렇게 많이.",
+          "tokens": [
+            {
+              "text": "这么",
+              "compound": true
+            },
+            {
+              "text": "多",
+              "compound": false
+            }
+          ]
+        },
+        {
+          "zh": "这么快",
+          "pinyin": "Zhème kuài.",
+          "ko": "이렇게 빨리.",
+          "tokens": [
+            {
+              "text": "这么",
+              "compound": true
+            },
+            {
+              "text": "快",
+              "compound": false
+            }
+          ]
+        },
+        {
+          "zh": "为什么这么",
+          "pinyin": "Wèi shénme zhème?",
+          "ko": "왜 이렇게?",
+          "tokens": [
+            {
+              "text": "为什么",
+              "compound": true
+            },
+            {
+              "text": "这么",
+              "compound": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "L2_52",
+      "key": "不知道",
+      "label": "필수 단어 不知道",
+      "explanation": "모르겠다. 我不知道·谁不知道 자주.",
+      "kind": "word",
+      "stage": 4,
+      "examples": [
+        {
+          "zh": "我不知道",
+          "pinyin": "Wǒ bù zhīdào.",
+          "ko": "몰라.",
+          "tokens": [
+            {
+              "text": "我",
+              "compound": false
+            },
+            {
+              "text": "不",
+              "compound": false
+            },
+            {
+              "text": "知道",
+              "compound": true
+            }
+          ]
+        },
+        {
+          "zh": "谁不知道",
+          "pinyin": "Shéi bù zhīdào.",
+          "ko": "누가 모르니.",
+          "tokens": [
+            {
+              "text": "谁",
+              "compound": false
+            },
+            {
+              "text": "不",
+              "compound": false
+            },
+            {
+              "text": "知道",
+              "compound": true
+            }
+          ]
+        },
+        {
+          "zh": "真的不知道",
+          "pinyin": "Zhēn de bù zhīdào.",
+          "ko": "진짜 모름.",
+          "tokens": [
+            {
+              "text": "真",
+              "compound": false
+            },
+            {
+              "text": "的",
+              "compound": false
+            },
+            {
+              "text": "不",
+              "compound": false
+            },
+            {
+              "text": "知道",
+              "compound": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "L2_53",
+      "key": "这个",
+      "label": "필수 단어 这个",
+      "explanation": "이것·이거. 这个那个 자주.",
+      "kind": "word",
+      "stage": 4,
+      "examples": [
+        {
+          "zh": "这个好",
+          "pinyin": "Zhège hǎo.",
+          "ko": "이거 좋아.",
+          "tokens": [
+            {
+              "text": "这个",
+              "compound": true
+            },
+            {
+              "text": "好",
+              "compound": false
+            }
+          ]
+        },
+        {
+          "zh": "要这个",
+          "pinyin": "Yào zhège.",
+          "ko": "이거 줘.",
+          "tokens": [
+            {
+              "text": "要",
+              "compound": false
+            },
+            {
+              "text": "这个",
+              "compound": true
+            }
+          ]
+        },
+        {
+          "zh": "这个怎么样",
+          "pinyin": "Zhège zěnmeyàng?",
+          "ko": "이거 어때?",
+          "tokens": [
+            {
+              "text": "这个",
+              "compound": true
+            },
+            {
+              "text": "怎么样",
+              "compound": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "L2_54",
+      "key": "没事",
+      "label": "필수 단어 没事",
+      "explanation": "괜찮아·별일 없어. 위로 응답·간단 답.",
+      "kind": "word",
+      "stage": 4,
+      "examples": [
+        {
+          "zh": "没事",
+          "pinyin": "Méi shì.",
+          "ko": "괜찮아.",
+          "tokens": [
+            {
+              "text": "没事",
+              "compound": true
+            }
+          ]
+        },
+        {
+          "zh": "没事的",
+          "pinyin": "Méi shì de.",
+          "ko": "괜찮아.",
+          "tokens": [
+            {
+              "text": "没事",
+              "compound": true
+            },
+            {
+              "text": "的",
+              "compound": false
+            }
+          ]
+        },
+        {
+          "zh": "我没事",
+          "pinyin": "Wǒ méi shì.",
+          "ko": "나 괜찮아.",
+          "tokens": [
+            {
+              "text": "我",
+              "compound": false
+            },
+            {
+              "text": "没事",
+              "compound": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "L2_55",
+      "key": "一个",
+      "label": "필수 단어 一个",
+      "explanation": "한 개·한 명. 个 = 일반 양사.",
+      "kind": "word",
+      "stage": 4,
+      "examples": [
+        {
+          "zh": "一个人",
+          "pinyin": "Yīgè rén.",
+          "ko": "한 명.",
+          "tokens": [
+            {
+              "text": "一个人",
+              "compound": true
+            }
+          ]
+        },
+        {
+          "zh": "给我一个",
+          "pinyin": "Gěi wǒ yīgè.",
+          "ko": "하나 줘.",
+          "tokens": [
+            {
+              "text": "给",
+              "compound": false
+            },
+            {
+              "text": "我",
+              "compound": false
+            },
+            {
+              "text": "一个",
+              "compound": true
+            }
+          ]
+        },
+        {
+          "zh": "一个朋友",
+          "pinyin": "Yīgè péngyou.",
+          "ko": "친구 한 명.",
+          "tokens": [
+            {
+              "text": "一个",
+              "compound": true
+            },
+            {
+              "text": "朋",
+              "compound": false
+            },
+            {
+              "text": "友",
+              "compound": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "L2_56",
+      "key": "你们",
+      "label": "필수 단어 你们",
+      "explanation": "너희·여러분 (복수).",
+      "kind": "word",
+      "stage": 4,
+      "examples": [
+        {
+          "zh": "你们好",
+          "pinyin": "Nǐmen hǎo.",
+          "ko": "안녕하세요들.",
+          "tokens": [
+            {
+              "text": "你们",
+              "compound": true
+            },
+            {
+              "text": "好",
+              "compound": false
+            }
+          ]
+        },
+        {
+          "zh": "你们走吧",
+          "pinyin": "Nǐmen zǒu ba.",
+          "ko": "너희 가.",
+          "tokens": [
+            {
+              "text": "你们",
+              "compound": true
+            },
+            {
+              "text": "走",
+              "compound": false
+            },
+            {
+              "text": "吧",
+              "compound": false
+            }
+          ]
+        },
+        {
+          "zh": "你们去哪",
+          "pinyin": "Nǐmen qù nǎ?",
+          "ko": "어디 가?",
+          "tokens": [
+            {
+              "text": "你们",
+              "compound": true
+            },
+            {
+              "text": "去",
+              "compound": false
+            },
+            {
+              "text": "哪",
+              "compound": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "L2_57",
+      "key": "我们",
+      "label": "필수 단어 我们",
+      "explanation": "우리. 咱们과 비슷하지만 我们 = 보편.",
+      "kind": "word",
+      "stage": 4,
+      "examples": [
+        {
+          "zh": "我们一起",
+          "pinyin": "Wǒmen yīqǐ.",
+          "ko": "우리 같이.",
+          "tokens": [
+            {
+              "text": "我们",
+              "compound": true
+            },
+            {
+              "text": "一起",
+              "compound": true
+            }
+          ]
+        },
+        {
+          "zh": "我们走吧",
+          "pinyin": "Wǒmen zǒu ba.",
+          "ko": "우리 가자.",
+          "tokens": [
+            {
+              "text": "我们",
+              "compound": true
+            },
+            {
+              "text": "走",
+              "compound": false
+            },
+            {
+              "text": "吧",
+              "compound": false
+            }
+          ]
+        },
+        {
+          "zh": "我们是朋友",
+          "pinyin": "Wǒmen shì péngyou.",
+          "ko": "우린 친구야.",
+          "tokens": [
+            {
+              "text": "我们",
+              "compound": true
+            },
+            {
+              "text": "是",
+              "compound": false
+            },
+            {
+              "text": "朋",
+              "compound": false
+            },
+            {
+              "text": "友",
+              "compound": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "L2_58",
+      "key": "一定",
+      "label": "필수 단어 一定",
+      "explanation": "반드시·꼭. 一定要 = 꼭 해야.",
+      "kind": "word",
+      "stage": 4,
+      "examples": [
+        {
+          "zh": "一定要来",
+          "pinyin": "Yīdìng yào lái.",
+          "ko": "꼭 와야 해.",
+          "tokens": [
+            {
+              "text": "一定要",
+              "compound": true
+            },
+            {
+              "text": "来",
+              "compound": false
+            }
+          ]
+        },
+        {
+          "zh": "一定可以",
+          "pinyin": "Yīdìng kěyǐ.",
+          "ko": "반드시 돼.",
+          "tokens": [
+            {
+              "text": "一定",
+              "compound": true
+            },
+            {
+              "text": "可以",
+              "compound": true
+            }
+          ]
+        },
+        {
+          "zh": "我一定去",
+          "pinyin": "Wǒ yīdìng qù.",
+          "ko": "꼭 갈게.",
+          "tokens": [
+            {
+              "text": "我",
+              "compound": false
+            },
+            {
+              "text": "一定",
+              "compound": true
+            },
+            {
+              "text": "去",
+              "compound": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "L2_59",
+      "key": "是的",
+      "label": "필수 단어 是的",
+      "explanation": "맞아·응 (단답 긍정).",
+      "kind": "word",
+      "stage": 4,
+      "examples": [
+        {
+          "zh": "是的",
+          "pinyin": "Shì de.",
+          "ko": "맞아.",
+          "tokens": [
+            {
+              "text": "是的",
+              "compound": true
+            }
+          ]
+        },
+        {
+          "zh": "是的没错",
+          "pinyin": "Shì de méi cuò.",
+          "ko": "맞아 그래.",
+          "tokens": [
+            {
+              "text": "是的",
+              "compound": true
+            },
+            {
+              "text": "没",
+              "compound": false
+            },
+            {
+              "text": "错",
+              "compound": false
+            }
+          ]
+        },
+        {
+          "zh": "我是的",
+          "pinyin": "Wǒ shì de.",
+          "ko": "나 맞아.",
+          "tokens": [
+            {
+              "text": "我",
+              "compound": false
+            },
+            {
+              "text": "是的",
+              "compound": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "L2_60",
+      "key": "不行",
+      "label": "필수 단어 不行",
+      "explanation": "안 돼·불가. 직설 거절.",
+      "kind": "word",
+      "stage": 4,
+      "examples": [
+        {
+          "zh": "真的不行",
+          "pinyin": "Zhēn de bùxíng.",
+          "ko": "진짜 안 돼.",
+          "tokens": [
+            {
+              "text": "真",
+              "compound": false
+            },
+            {
+              "text": "的",
+              "compound": false
+            },
+            {
+              "text": "不",
+              "compound": false
+            },
+            {
+              "text": "行",
+              "compound": false
+            }
+          ]
+        },
+        {
+          "zh": "不行不行",
+          "pinyin": "Bùxíng bùxíng.",
+          "ko": "안 돼 안 돼.",
+          "tokens": [
+            {
+              "text": "不",
+              "compound": false
+            },
+            {
+              "text": "行不行",
+              "compound": true
+            }
+          ]
+        },
+        {
+          "zh": "这样不行",
+          "pinyin": "Zhèyàng bùxíng.",
+          "ko": "이러면 안 돼.",
+          "tokens": [
+            {
+              "text": "这样",
+              "compound": true
+            },
+            {
+              "text": "不",
+              "compound": false
+            },
+            {
+              "text": "行",
+              "compound": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "L2_61",
+      "key": "想想",
+      "label": "필수 단어 想想",
+      "explanation": "잠깐 생각해보다 (동사 reduplication).",
+      "kind": "word",
+      "stage": 4,
+      "examples": [
+        {
+          "zh": "我想想",
+          "pinyin": "Wǒ xiǎngxiang.",
+          "ko": "잠깐 생각.",
+          "tokens": [
+            {
+              "text": "我",
+              "compound": false
+            },
+            {
+              "text": "想想",
+              "compound": true
+            }
+          ]
+        },
+        {
+          "zh": "让我想想",
+          "pinyin": "Ràng wǒ xiǎngxiang.",
+          "ko": "생각 좀.",
+          "tokens": [
+            {
+              "text": "让",
+              "compound": false
+            },
+            {
+              "text": "我",
+              "compound": false
+            },
+            {
+              "text": "想想",
+              "compound": true
+            }
+          ]
+        },
+        {
+          "zh": "想想看",
+          "pinyin": "Xiǎngxiang kàn.",
+          "ko": "생각해 봐.",
+          "tokens": [
+            {
+              "text": "想想看",
+              "compound": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "L2_62",
+      "key": "看看",
+      "label": "필수 단어 看看",
+      "explanation": "잠깐 보다·구경. 看과 구별: 가볍게.",
+      "kind": "word",
+      "stage": 4,
+      "examples": [
+        {
+          "zh": "看看吧",
+          "pinyin": "Kànkan ba.",
+          "ko": "한번 봐봐.",
+          "tokens": [
+            {
+              "text": "看看",
+              "compound": true
+            },
+            {
+              "text": "吧",
+              "compound": false
+            }
+          ]
+        },
+        {
+          "zh": "给我看看",
+          "pinyin": "Gěi wǒ kànkan.",
+          "ko": "나 한번 봐줘.",
+          "tokens": [
+            {
+              "text": "给",
+              "compound": false
+            },
+            {
+              "text": "我",
+              "compound": false
+            },
+            {
+              "text": "看看",
+              "compound": true
+            }
+          ]
+        },
+        {
+          "zh": "让我看看",
+          "pinyin": "Ràng wǒ kànkan.",
+          "ko": "어디 보자.",
+          "tokens": [
+            {
+              "text": "让",
+              "compound": false
+            },
+            {
+              "text": "我",
+              "compound": false
+            },
+            {
+              "text": "看看",
+              "compound": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "L2_63",
+      "key": "说说",
+      "label": "필수 단어 说说",
+      "explanation": "말해 봐 (동사 reduplication·완곡).",
+      "kind": "word",
+      "stage": 4,
+      "examples": [
+        {
+          "zh": "你说说",
+          "pinyin": "Nǐ shuōshuo.",
+          "ko": "말해 봐.",
+          "tokens": [
+            {
+              "text": "你",
+              "compound": false
+            },
+            {
+              "text": "说说",
+              "compound": true
+            }
+          ]
+        },
+        {
+          "zh": "我说说",
+          "pinyin": "Wǒ shuōshuo.",
+          "ko": "내가 말할게.",
+          "tokens": [
+            {
+              "text": "我",
+              "compound": false
+            },
+            {
+              "text": "说说",
+              "compound": true
+            }
+          ]
+        },
+        {
+          "zh": "再说说",
+          "pinyin": "Zài shuōshuo.",
+          "ko": "더 말해 봐.",
+          "tokens": [
+            {
+              "text": "再",
+              "compound": false
+            },
+            {
+              "text": "说说",
+              "compound": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "L2_64",
+      "key": "听说",
+      "label": "필수 단어 听说",
+      "explanation": "듣자 하니·소식. 가십·간접 정보.",
+      "kind": "word",
+      "stage": 4,
+      "examples": [
+        {
+          "zh": "听说你来了",
+          "pinyin": "Tīngshuō nǐ lái le.",
+          "ko": "왔다고 들었어.",
+          "tokens": [
+            {
+              "text": "听说",
+              "compound": true
+            },
+            {
+              "text": "你",
+              "compound": false
+            },
+            {
+              "text": "来",
+              "compound": false
+            },
+            {
+              "text": "了",
+              "compound": false
+            }
+          ]
+        },
+        {
+          "zh": "听说很好",
+          "pinyin": "Tīngshuō hěn hǎo.",
+          "ko": "좋다고 들었어.",
+          "tokens": [
+            {
+              "text": "听说",
+              "compound": true
+            },
+            {
+              "text": "很",
+              "compound": false
+            },
+            {
+              "text": "好",
+              "compound": false
+            }
+          ]
+        },
+        {
+          "zh": "我听说了",
+          "pinyin": "Wǒ tīngshuō le.",
+          "ko": "나도 들었어.",
+          "tokens": [
+            {
+              "text": "我",
+              "compound": false
+            },
+            {
+              "text": "听说",
+              "compound": true
+            },
+            {
+              "text": "了",
+              "compound": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "L2_65",
+      "key": "回去",
+      "label": "필수 단어 回去",
+      "explanation": "돌아가다. 回来 (오다) 와 반대.",
+      "kind": "word",
+      "stage": 4,
+      "examples": [
+        {
+          "zh": "我要回去",
+          "pinyin": "Wǒ yào huíqu.",
+          "ko": "나 갈래.",
+          "tokens": [
+            {
+              "text": "我",
+              "compound": false
+            },
+            {
+              "text": "要",
+              "compound": false
+            },
+            {
+              "text": "回去",
+              "compound": true
+            }
+          ]
+        },
+        {
+          "zh": "回去吧",
+          "pinyin": "Huíqu ba.",
+          "ko": "돌아가자.",
+          "tokens": [
+            {
+              "text": "回去",
+              "compound": true
+            },
+            {
+              "text": "吧",
+              "compound": false
+            }
+          ]
+        },
+        {
+          "zh": "回去了",
+          "pinyin": "Huíqu le.",
+          "ko": "갔어.",
+          "tokens": [
+            {
+              "text": "回去",
+              "compound": true
+            },
+            {
+              "text": "了",
+              "compound": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "L2_66",
+      "key": "过来",
+      "label": "필수 단어 过来",
+      "explanation": "이리 와·다가오다.",
+      "kind": "word",
+      "stage": 4,
+      "examples": [
+        {
+          "zh": "过来",
+          "pinyin": "Guòlai.",
+          "ko": "이리 와.",
+          "tokens": [
+            {
+              "text": "过来",
+              "compound": true
+            }
+          ]
+        },
+        {
+          "zh": "快过来",
+          "pinyin": "Kuài guòlai.",
+          "ko": "빨리 와.",
+          "tokens": [
+            {
+              "text": "快",
+              "compound": false
+            },
+            {
+              "text": "过来",
+              "compound": true
+            }
+          ]
+        },
+        {
+          "zh": "过来看看",
+          "pinyin": "Guòlai kànkan.",
+          "ko": "와서 봐.",
+          "tokens": [
+            {
+              "text": "过来",
+              "compound": true
+            },
+            {
+              "text": "看看",
+              "compound": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "L2_67",
+      "key": "起来",
+      "label": "필수 단어 起来",
+      "explanation": "일어나다·시작. 보어로 동작 시작 의미.",
+      "kind": "word",
+      "stage": 4,
+      "examples": [
+        {
+          "zh": "快起来",
+          "pinyin": "Kuài qǐlai.",
+          "ko": "얼른 일어나.",
+          "tokens": [
+            {
+              "text": "快",
+              "compound": false
+            },
+            {
+              "text": "起来",
+              "compound": true
+            }
+          ]
+        },
+        {
+          "zh": "想起来了",
+          "pinyin": "Xiǎng qǐlai le.",
+          "ko": "생각났어.",
+          "tokens": [
+            {
+              "text": "想起来",
+              "compound": true
+            },
+            {
+              "text": "了",
+              "compound": false
+            }
+          ]
+        },
+        {
+          "zh": "听起来不错",
+          "pinyin": "Tīng qǐlai bùcuò.",
+          "ko": "듣기엔 괜찮은데.",
+          "tokens": [
+            {
+              "text": "听起来",
+              "compound": true
+            },
+            {
+              "text": "不",
+              "compound": false
+            },
+            {
+              "text": "错",
+              "compound": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "L2_68",
+      "key": "出来",
+      "label": "필수 단어 出来",
+      "explanation": "나오다. 보어로 \"(드러)나다\".",
+      "kind": "word",
+      "stage": 4,
+      "examples": [
+        {
+          "zh": "出来吧",
+          "pinyin": "Chūlai ba.",
+          "ko": "나와.",
+          "tokens": [
+            {
+              "text": "出来",
+              "compound": true
+            },
+            {
+              "text": "吧",
+              "compound": false
+            }
+          ]
+        },
+        {
+          "zh": "看出来了",
+          "pinyin": "Kàn chūlai le.",
+          "ko": "눈치챘어.",
+          "tokens": [
+            {
+              "text": "看出",
+              "compound": true
+            },
+            {
+              "text": "来",
+              "compound": false
+            },
+            {
+              "text": "了",
+              "compound": false
+            }
+          ]
+        },
+        {
+          "zh": "我出来了",
+          "pinyin": "Wǒ chūlai le.",
+          "ko": "나 나왔어.",
+          "tokens": [
+            {
+              "text": "我",
+              "compound": false
+            },
+            {
+              "text": "出来",
+              "compound": true
+            },
+            {
+              "text": "了",
+              "compound": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "L2_69",
+      "key": "一下",
+      "label": "필수 단어 一下",
+      "explanation": "잠깐·한 번. 동작 완곡 표지.",
+      "kind": "word",
+      "stage": 4,
+      "examples": [
+        {
+          "zh": "等一下",
+          "pinyin": "Děng yīxià.",
+          "ko": "잠깐만.",
+          "tokens": [
+            {
+              "text": "等一下",
+              "compound": true
+            }
+          ]
+        },
+        {
+          "zh": "看一下",
+          "pinyin": "Kàn yīxià.",
+          "ko": "한 번 봐.",
+          "tokens": [
+            {
+              "text": "看",
+              "compound": false
+            },
+            {
+              "text": "一下",
+              "compound": true
+            }
+          ]
+        },
+        {
+          "zh": "帮我一下",
+          "pinyin": "Bāng wǒ yīxià.",
+          "ko": "좀 도와줘.",
+          "tokens": [
+            {
+              "text": "帮",
+              "compound": false
+            },
+            {
+              "text": "我",
+              "compound": false
+            },
+            {
+              "text": "一下",
+              "compound": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "L2_70",
+      "key": "一点",
+      "label": "필수 단어 一点",
+      "explanation": "조금·약간. 一点点 = 아주 조금.",
+      "kind": "word",
+      "stage": 4,
+      "examples": [
+        {
+          "zh": "一点点",
+          "pinyin": "Yīdiǎndiǎn.",
+          "ko": "아주 조금.",
+          "tokens": [
+            {
+              "text": "一点点",
+              "compound": true
+            }
+          ]
+        },
+        {
+          "zh": "有一点",
+          "pinyin": "Yǒu yīdiǎn.",
+          "ko": "조금 있어.",
+          "tokens": [
+            {
+              "text": "有一点",
+              "compound": true
+            }
+          ]
+        },
+        {
+          "zh": "快一点",
+          "pinyin": "Kuài yīdiǎn.",
+          "ko": "좀 빨리.",
+          "tokens": [
+            {
+              "text": "快",
+              "compound": false
+            },
+            {
+              "text": "一点",
+              "compound": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "L2_71",
+      "key": "一样",
+      "label": "필수 단어 一样",
+      "explanation": "같다·동일. 不一样 = 다르다.",
+      "kind": "word",
+      "stage": 4,
+      "examples": [
+        {
+          "zh": "我们一样",
+          "pinyin": "Wǒmen yīyàng.",
+          "ko": "우린 같아.",
+          "tokens": [
+            {
+              "text": "我们",
+              "compound": true
+            },
+            {
+              "text": "一样",
+              "compound": true
+            }
+          ]
+        },
+        {
+          "zh": "不一样",
+          "pinyin": "Bù yīyàng.",
+          "ko": "달라.",
+          "tokens": [
+            {
+              "text": "不",
+              "compound": false
+            },
+            {
+              "text": "一样",
+              "compound": true
+            }
+          ]
+        },
+        {
+          "zh": "一样的",
+          "pinyin": "Yīyàng de.",
+          "ko": "똑같아.",
+          "tokens": [
+            {
+              "text": "一样",
+              "compound": true
+            },
+            {
+              "text": "的",
+              "compound": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "L2_72",
+      "key": "帮",
+      "label": "필수 단어 帮",
+      "explanation": "돕다. 帮我·帮你 자주.",
+      "kind": "word",
+      "stage": 4,
+      "examples": [
+        {
+          "zh": "帮我一下",
+          "pinyin": "Bāng wǒ yīxià.",
+          "ko": "좀 도와줘.",
+          "tokens": [
+            {
+              "text": "帮",
+              "compound": false
+            },
+            {
+              "text": "我",
+              "compound": false
+            },
+            {
+              "text": "一下",
+              "compound": true
+            }
+          ]
+        },
+        {
+          "zh": "我帮你",
+          "pinyin": "Wǒ bāng nǐ.",
+          "ko": "내가 도와줄게.",
+          "tokens": [
+            {
+              "text": "我",
+              "compound": false
+            },
+            {
+              "text": "帮",
+              "compound": false
+            },
+            {
+              "text": "你",
+              "compound": false
+            }
+          ]
+        },
+        {
+          "zh": "谢谢你帮我",
+          "pinyin": "Xièxie nǐ bāng wǒ.",
+          "ko": "도와줘서 고마워.",
+          "tokens": [
+            {
+              "text": "谢谢",
+              "compound": true
+            },
+            {
+              "text": "你",
+              "compound": false
+            },
+            {
+              "text": "帮",
+              "compound": false
+            },
+            {
+              "text": "我",
+              "compound": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "L2_73",
+      "key": "爱",
+      "label": "필수 단어 爱",
+      "explanation": "사랑하다·좋아하다 (강). 喜欢 보다 강함.",
+      "kind": "word",
+      "stage": 4,
+      "examples": [
+        {
+          "zh": "我爱你",
+          "pinyin": "Wǒ ài nǐ.",
+          "ko": "사랑해.",
+          "tokens": [
+            {
+              "text": "我",
+              "compound": false
+            },
+            {
+              "text": "爱",
+              "compound": false
+            },
+            {
+              "text": "你",
+              "compound": false
+            }
+          ]
+        },
+        {
+          "zh": "我也爱",
+          "pinyin": "Wǒ yě ài.",
+          "ko": "나도 사랑해.",
+          "tokens": [
+            {
+              "text": "我",
+              "compound": false
+            },
+            {
+              "text": "也",
+              "compound": false
+            },
+            {
+              "text": "爱",
+              "compound": false
+            }
+          ]
+        },
+        {
+          "zh": "不爱了",
+          "pinyin": "Bù ài le.",
+          "ko": "이제 안 사랑해.",
+          "tokens": [
+            {
+              "text": "不",
+              "compound": false
+            },
+            {
+              "text": "爱",
+              "compound": false
+            },
+            {
+              "text": "了",
+              "compound": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "L2_74",
+      "key": "想",
+      "label": "필수 단어 想",
+      "explanation": "~하고 싶다·생각하다·그리워하다.",
+      "kind": "word",
+      "stage": 4,
+      "examples": [
+        {
+          "zh": "我想你",
+          "pinyin": "Wǒ xiǎng nǐ.",
+          "ko": "보고 싶어.",
+          "tokens": [
+            {
+              "text": "我",
+              "compound": false
+            },
+            {
+              "text": "想",
+              "compound": false
+            },
+            {
+              "text": "你",
+              "compound": false
+            }
+          ]
+        },
+        {
+          "zh": "想去吗",
+          "pinyin": "Xiǎng qù ma?",
+          "ko": "가고 싶어?",
+          "tokens": [
+            {
+              "text": "想",
+              "compound": false
+            },
+            {
+              "text": "去",
+              "compound": false
+            },
+            {
+              "text": "吗",
+              "compound": false
+            }
+          ]
+        },
+        {
+          "zh": "不想说",
+          "pinyin": "Bù xiǎng shuō.",
+          "ko": "말하기 싫어.",
+          "tokens": [
+            {
+              "text": "不",
+              "compound": false
+            },
+            {
+              "text": "想",
+              "compound": false
+            },
+            {
+              "text": "说",
+              "compound": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "L2_75",
+      "key": "走",
+      "label": "필수 단어 走",
+      "explanation": "걷다·가다. 一起走 = 같이 가자.",
+      "kind": "word",
+      "stage": 4,
+      "examples": [
+        {
+          "zh": "我们走吧",
+          "pinyin": "Wǒmen zǒu ba.",
+          "ko": "가자.",
+          "tokens": [
+            {
+              "text": "我们",
+              "compound": true
+            },
+            {
+              "text": "走",
+              "compound": false
+            },
+            {
+              "text": "吧",
+              "compound": false
+            }
+          ]
+        },
+        {
+          "zh": "快走",
+          "pinyin": "Kuài zǒu.",
+          "ko": "빨리 가.",
+          "tokens": [
+            {
+              "text": "快",
+              "compound": false
+            },
+            {
+              "text": "走",
+              "compound": false
+            }
+          ]
+        },
+        {
+          "zh": "别走",
+          "pinyin": "Bié zǒu.",
+          "ko": "가지 마.",
+          "tokens": [
+            {
+              "text": "别",
+              "compound": false
+            },
+            {
+              "text": "走",
+              "compound": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "L2_76",
+      "key": "来",
+      "label": "필수 단어 来",
+      "explanation": "오다. 来吧·快来 자주.",
+      "kind": "word",
+      "stage": 4,
+      "examples": [
+        {
+          "zh": "快来",
+          "pinyin": "Kuài lái.",
+          "ko": "얼른 와.",
+          "tokens": [
+            {
+              "text": "快来",
+              "compound": true
+            }
+          ]
+        },
+        {
+          "zh": "我来了",
+          "pinyin": "Wǒ lái le.",
+          "ko": "나 왔어.",
+          "tokens": [
+            {
+              "text": "我",
+              "compound": false
+            },
+            {
+              "text": "来",
+              "compound": false
+            },
+            {
+              "text": "了",
+              "compound": false
+            }
+          ]
+        },
+        {
+          "zh": "再来一个",
+          "pinyin": "Zài lái yīgè.",
+          "ko": "하나 더.",
+          "tokens": [
+            {
+              "text": "再",
+              "compound": false
+            },
+            {
+              "text": "来",
+              "compound": false
+            },
+            {
+              "text": "一个",
+              "compound": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "L2_77",
+      "key": "去",
+      "label": "필수 단어 去",
+      "explanation": "가다. 来 (오다) 의 반대.",
+      "kind": "word",
+      "stage": 4,
+      "examples": [
+        {
+          "zh": "我去",
+          "pinyin": "Wǒ qù.",
+          "ko": "나 갈게.",
+          "tokens": [
+            {
+              "text": "我去",
+              "compound": true
+            }
+          ]
+        },
+        {
+          "zh": "一起去",
+          "pinyin": "Yīqǐ qù.",
+          "ko": "같이 가.",
+          "tokens": [
+            {
+              "text": "一起",
+              "compound": true
+            },
+            {
+              "text": "去",
+              "compound": false
+            }
+          ]
+        },
+        {
+          "zh": "去哪儿",
+          "pinyin": "Qù nǎr?",
+          "ko": "어디 가?",
+          "tokens": [
+            {
+              "text": "去",
+              "compound": false
+            },
+            {
+              "text": "哪儿",
+              "compound": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "L2_78",
+      "key": "吃",
+      "label": "필수 단어 吃",
+      "explanation": "먹다. 吃了吗·一起吃 자주.",
+      "kind": "word",
+      "stage": 4,
+      "examples": [
+        {
+          "zh": "你吃了吗",
+          "pinyin": "Nǐ chī le ma?",
+          "ko": "밥 먹었어?",
+          "tokens": [
+            {
+              "text": "你",
+              "compound": false
+            },
+            {
+              "text": "吃",
+              "compound": false
+            },
+            {
+              "text": "了",
+              "compound": false
+            },
+            {
+              "text": "吗",
+              "compound": false
+            }
+          ]
+        },
+        {
+          "zh": "我吃了",
+          "pinyin": "Wǒ chī le.",
+          "ko": "먹었어.",
+          "tokens": [
+            {
+              "text": "我",
+              "compound": false
+            },
+            {
+              "text": "吃",
+              "compound": false
+            },
+            {
+              "text": "了",
+              "compound": false
+            }
+          ]
+        },
+        {
+          "zh": "一起吃",
+          "pinyin": "Yīqǐ chī.",
+          "ko": "같이 먹자.",
+          "tokens": [
+            {
+              "text": "一起",
+              "compound": true
+            },
+            {
+              "text": "吃",
+              "compound": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "L2_79",
+      "key": "说",
+      "label": "필수 단어 说",
+      "explanation": "말하다. 说话·别说 자주.",
+      "kind": "word",
+      "stage": 4,
+      "examples": [
+        {
+          "zh": "你说",
+          "pinyin": "Nǐ shuō.",
+          "ko": "말해.",
+          "tokens": [
+            {
+              "text": "你",
+              "compound": false
+            },
+            {
+              "text": "说",
+              "compound": false
+            }
+          ]
+        },
+        {
+          "zh": "别说了",
+          "pinyin": "Bié shuō le.",
+          "ko": "그만 말해.",
+          "tokens": [
+            {
+              "text": "别",
+              "compound": false
+            },
+            {
+              "text": "说",
+              "compound": false
+            },
+            {
+              "text": "了",
+              "compound": false
+            }
+          ]
+        },
+        {
+          "zh": "我说啊",
+          "pinyin": "Wǒ shuō a.",
+          "ko": "내가 말해.",
+          "tokens": [
+            {
+              "text": "我说啊",
+              "compound": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "L2_80",
+      "key": "看",
+      "label": "필수 단어 看",
+      "explanation": "보다. 看一下·看看 자주.",
+      "kind": "word",
+      "stage": 4,
+      "examples": [
+        {
+          "zh": "你看",
+          "pinyin": "Nǐ kàn.",
+          "ko": "봐.",
+          "tokens": [
+            {
+              "text": "你",
+              "compound": false
+            },
+            {
+              "text": "看",
+              "compound": false
+            }
+          ]
+        },
+        {
+          "zh": "看一下",
+          "pinyin": "Kàn yīxià.",
+          "ko": "한 번 봐.",
+          "tokens": [
+            {
+              "text": "看",
+              "compound": false
+            },
+            {
+              "text": "一下",
+              "compound": true
+            }
+          ]
+        },
+        {
+          "zh": "看到了",
+          "pinyin": "Kàn dào le.",
+          "ko": "봤어.",
+          "tokens": [
+            {
+              "text": "看到",
+              "compound": true
+            },
+            {
+              "text": "了",
+              "compound": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "L2_81",
+      "key": "听",
+      "label": "필수 단어 听",
+      "explanation": "듣다. 听说·听一下 자주.",
+      "kind": "word",
+      "stage": 4,
+      "examples": [
+        {
+          "zh": "你听",
+          "pinyin": "Nǐ tīng.",
+          "ko": "들어 봐.",
+          "tokens": [
+            {
+              "text": "你",
+              "compound": false
+            },
+            {
+              "text": "听",
+              "compound": false
+            }
+          ]
+        },
+        {
+          "zh": "听一下",
+          "pinyin": "Tīng yīxià.",
+          "ko": "잠깐 들어 봐.",
+          "tokens": [
+            {
+              "text": "听",
+              "compound": false
+            },
+            {
+              "text": "一下",
+              "compound": true
+            }
+          ]
+        },
+        {
+          "zh": "听好了",
+          "pinyin": "Tīng hǎo le.",
+          "ko": "잘 들어.",
+          "tokens": [
+            {
+              "text": "听",
+              "compound": false
+            },
+            {
+              "text": "好",
+              "compound": false
+            },
+            {
+              "text": "了",
+              "compound": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "chunks": {
+    "一下": {
+      "pinyin": "yi1 xia4",
+      "meanings": [
+        "(after a verb) a bit; a little (indicating brief duration, or softening the tone, or suggesting giving sth a try)",
+        "all at once; suddenly"
+      ],
+      "ko": "잠깐·~좀"
+    },
+    "一个": {
+      "pinyin": "yi1 ge5",
+      "meanings": [
+        "a; an; one",
+        "the whole (afternoon, summer vacation etc)"
+      ],
+      "ko": "하나"
+    },
+    "一个人": {
+      "pinyin": "yi1 ge4 ren2",
+      "meanings": [
+        "by oneself (without assistance)",
+        "alone (without company)"
+      ],
+      "ko": null
+    },
+    "一定": {
+      "pinyin": "yi1 ding4",
+      "meanings": [
+        "surely; certainly; definitely",
+        "fixed; settled",
+        "a certain ...; a given ..."
+      ],
+      "ko": "반드시"
+    },
+    "一定要": {
+      "pinyin": "yi1 ding4 yao4",
+      "meanings": [
+        "must"
+      ],
+      "ko": null
+    },
+    "一样": {
+      "pinyin": "yi1 yang4",
+      "meanings": [
+        "same",
+        "like",
+        "equal to",
+        "the same as",
+        "just like"
+      ],
+      "ko": "같다"
+    },
+    "一次": {
+      "pinyin": "yi1 ci4",
+      "meanings": [
+        "first",
+        "first time",
+        "once",
+        "(math.) linear (of degree one)"
+      ],
+      "ko": "한 번"
+    },
+    "一点": {
+      "pinyin": "yi1 dian3",
+      "meanings": [
+        "a bit; a little bit",
+        "(used in negative expressions) (not) the least bit",
+        "(after an adjective, used to form the comparative) a bit more, -er",
+        "a point (in a discussion etc)",
+        "(calligraphy) dot stroke (、)",
+        "one o'clock (abbr. for 一點鍾|一点钟[yi1 dian3 zhong1])"
+      ],
+      "ko": "조금"
+    },
+    "一点点": {
+      "pinyin": "yi1 dian3 dian3",
+      "meanings": [
+        "a little bit"
+      ],
+      "ko": "아주 조금"
+    },
+    "一起": {
+      "pinyin": "yi1 qi3",
+      "meanings": [
+        "(in) the same place",
+        "together; in company (with)",
+        "altogether; in total",
+        "an instance of; a case of (murder, accident, dispute etc)"
+      ],
+      "ko": "함께"
+    },
+    "为什么": {
+      "pinyin": "wei4 shen2 me5",
+      "meanings": [
+        "why?",
+        "for what reason?"
+      ],
+      "ko": "왜"
+    },
+    "什么": {
+      "pinyin": "shen2 me5",
+      "meanings": [
+        "what?",
+        "something; anything"
+      ],
+      "ko": "무엇"
+    },
+    "什么时候": {
+      "pinyin": "shen2 me5 shi2 hou5",
+      "meanings": [
+        "when?; at what time?"
+      ],
+      "ko": "언제"
+    },
+    "什么都": {
+      "pinyin": "",
+      "meanings": [
+        "뭐든"
+      ],
+      "ko": "뭐든"
+    },
+    "今天": {
+      "pinyin": "jin1 tian1",
+      "meanings": [
+        "today",
+        "the present time; now"
+      ],
+      "ko": "오늘"
+    },
+    "从来不": {
+      "pinyin": "cong2 lai2 bu4",
+      "meanings": [
+        "never"
+      ],
+      "ko": null
+    },
+    "从来没有": {
+      "pinyin": "cong2 lai2 mei2 you3",
+      "meanings": [
+        "there has never been; has never had",
+        "(before a verb) has never"
+      ],
+      "ko": null
+    },
+    "你们": {
+      "pinyin": "ni3 men5",
+      "meanings": [
+        "you (plural)"
+      ],
+      "ko": "너희"
+    },
+    "出来": {
+      "pinyin": "chu1 lai2",
+      "meanings": [
+        "to come out",
+        "to appear",
+        "to arise"
+      ],
+      "ko": "나오다"
+    },
+    "到了": {
+      "pinyin": "dao4 liao3",
+      "meanings": [
+        "at last",
+        "finally",
+        "in the end"
+      ],
+      "ko": null
+    },
+    "只是": {
+      "pinyin": "zhi3 shi4",
+      "meanings": [
+        "merely; only; just; nothing but",
+        "simply",
+        "but; however"
+      ],
+      "ko": null
+    },
+    "只能": {
+      "pinyin": "zhi3 neng2",
+      "meanings": [
+        "can only",
+        "obliged to do sth",
+        "to have no other choice"
+      ],
+      "ko": null
+    },
+    "只见": {
+      "pinyin": "zhi3 jian4",
+      "meanings": [
+        "to see (the same thing) over and over again",
+        "to see, to one's surprise, (sth happen suddenly)"
+      ],
+      "ko": null
+    },
+    "可以": {
+      "pinyin": "ke3 yi3",
+      "meanings": [
+        "can",
+        "may",
+        "possible",
+        "able to",
+        "not bad",
+        "pretty good"
+      ],
+      "ko": "가능·OK"
+    },
+    "听说": {
+      "pinyin": "ting1 shuo1",
+      "meanings": [
+        "to hear (sth said)",
+        "one hears (that)",
+        "hearsay",
+        "listening and speaking"
+      ],
+      "ko": "듣자 하니"
+    },
+    "听起来": {
+      "pinyin": "ting1 qi5 lai5",
+      "meanings": [
+        "to sound like"
+      ],
+      "ko": null
+    },
+    "哪儿": {
+      "pinyin": "na3 r5",
+      "meanings": [
+        "where?",
+        "wherever; anywhere; somewhere",
+        "(used in rhetorical questions) how can ...?; how could ...?"
+      ],
+      "ko": null
+    },
+    "哪里": {
+      "pinyin": "na3 li3",
+      "meanings": [
+        "where?",
+        "somewhere",
+        "anywhere",
+        "wherever",
+        "nowhere (negative answer to question)",
+        "humble expression denying compliment",
+        "also written 哪裡|哪里"
+      ],
+      "ko": "어디"
+    },
+    "哪里都": {
+      "pinyin": "",
+      "meanings": [
+        "어디든"
+      ],
+      "ko": "어디든"
+    },
+    "喜欢": {
+      "pinyin": "xi3 huan5",
+      "meanings": [
+        "to like; to be fond of"
+      ],
+      "ko": "좋아하다"
+    },
+    "回去": {
+      "pinyin": "hui2 qu5",
+      "meanings": [
+        "to return",
+        "to go back"
+      ],
+      "ko": "돌아가다"
+    },
+    "回家": {
+      "pinyin": "hui2 jia1",
+      "meanings": [
+        "to return home"
+      ],
+      "ko": null
+    },
+    "回来": {
+      "pinyin": "hui2 lai5",
+      "meanings": [
+        "to return; to come back"
+      ],
+      "ko": "돌아오다"
+    },
+    "在哪": {
+      "pinyin": "",
+      "meanings": [
+        "어디"
+      ],
+      "ko": "어디"
+    },
+    "在哪里": {
+      "pinyin": "",
+      "meanings": [
+        "어디에"
+      ],
+      "ko": "어디에"
+    },
+    "多事": {
+      "pinyin": "duo1 shi4",
+      "meanings": [
+        "meddlesome",
+        "eventful"
+      ],
+      "ko": null
+    },
+    "多大": {
+      "pinyin": "duo1 da4",
+      "meanings": [
+        "how old?",
+        "how big?",
+        "how much?",
+        "so big",
+        "that much"
+      ],
+      "ko": null
+    },
+    "好吗": {
+      "pinyin": "",
+      "meanings": [
+        "좋아?"
+      ],
+      "ko": "좋아?"
+    },
+    "好啊": {
+      "pinyin": "",
+      "meanings": [
+        "오케이"
+      ],
+      "ko": "오케이"
+    },
+    "好的": {
+      "pinyin": "",
+      "meanings": [
+        "좋아"
+      ],
+      "ko": "좋아"
+    },
+    "小时候": {
+      "pinyin": "xiao3 shi2 hou5",
+      "meanings": [
+        "in one's childhood"
+      ],
+      "ko": null
+    },
+    "就是": {
+      "pinyin": "jiu4 shi4",
+      "meanings": [
+        "exactly; precisely",
+        "only; simply; just",
+        "(used correlatively with 也[ye3]) even; even if"
+      ],
+      "ko": "바로 ~이다"
+    },
+    "已经": {
+      "pinyin": "yi3 jing1",
+      "meanings": [
+        "already"
+      ],
+      "ko": "이미"
+    },
+    "常常": {
+      "pinyin": "chang2 chang2",
+      "meanings": [
+        "frequently; often"
+      ],
+      "ko": null
+    },
+    "应该": {
+      "pinyin": "ying1 gai1",
+      "meanings": [
+        "ought to; should; must"
+      ],
+      "ko": "~해야 한다"
+    },
+    "当然": {
+      "pinyin": "dang1 ran2",
+      "meanings": [
+        "only natural",
+        "as it should be",
+        "certainly",
+        "of course",
+        "without doubt"
+      ],
+      "ko": "당연"
+    },
+    "快来": {
+      "pinyin": "",
+      "meanings": [
+        "얼른 와"
+      ],
+      "ko": "얼른 와"
+    },
+    "快点": {
+      "pinyin": "kuai4 dian3",
+      "meanings": [
+        "to do sth more quickly",
+        "Hurry up!",
+        "Get a move on!"
+      ],
+      "ko": "빨리"
+    },
+    "怎么": {
+      "pinyin": "zen3 me5",
+      "meanings": [
+        "how?",
+        "what?",
+        "why?"
+      ],
+      "ko": "어떻게"
+    },
+    "怎么了": {
+      "pinyin": "zen3 me5 le5",
+      "meanings": [
+        "What's up?",
+        "What's going on?",
+        "What happened?"
+      ],
+      "ko": "왜 그래"
+    },
+    "怎么样": {
+      "pinyin": "zen3 me5 yang4",
+      "meanings": [
+        "how?",
+        "how about?",
+        "how was it?",
+        "how are things?"
+      ],
+      "ko": "어때"
+    },
+    "想想": {
+      "pinyin": "",
+      "meanings": [
+        "생각해봐"
+      ],
+      "ko": "생각해봐"
+    },
+    "想想看": {
+      "pinyin": "xiang3 xiang3 kan4",
+      "meanings": [
+        "to think about it"
+      ],
+      "ko": null
+    },
+    "想起来": {
+      "pinyin": "xiang3 qi5 lai5",
+      "meanings": [
+        "to remember",
+        "to recall"
+      ],
+      "ko": null
+    },
+    "我们": {
+      "pinyin": "wo3 men5",
+      "meanings": [
+        "we; us; ourselves; our"
+      ],
+      "ko": "우리"
+    },
+    "我去": {
+      "pinyin": "wo3 qu4",
+      "meanings": [
+        "(slang) what the ...!; oh my god!; that's insane!"
+      ],
+      "ko": null
+    },
+    "我说啊": {
+      "pinyin": "",
+      "meanings": [
+        "내가 그러잖아"
+      ],
+      "ko": "내가 그러잖아"
+    },
+    "时间": {
+      "pinyin": "shi2 jian1",
+      "meanings": [
+        "(concept of) time",
+        "(duration of) time",
+        "(point in) time"
+      ],
+      "ko": "시간"
+    },
+    "明天": {
+      "pinyin": "ming2 tian1",
+      "meanings": [
+        "tomorrow"
+      ],
+      "ko": "내일"
+    },
+    "是吗": {
+      "pinyin": "",
+      "meanings": [
+        "그래?"
+      ],
+      "ko": "그래?"
+    },
+    "是的": {
+      "pinyin": "shi4 de5",
+      "meanings": [
+        "yes, that's right",
+        "variant of 似的[shi4 de5]"
+      ],
+      "ko": "맞아"
+    },
+    "有一点": {
+      "pinyin": "you3 yi1 dian3",
+      "meanings": [
+        "a little; somewhat"
+      ],
+      "ko": null
+    },
+    "没事": {
+      "pinyin": "mei2 shi4",
+      "meanings": [
+        "it's not important",
+        "it's nothing",
+        "never mind",
+        "to have nothing to do",
+        "to be free",
+        "to be all right (out of danger or trouble)"
+      ],
+      "ko": "괜찮아"
+    },
+    "没有": {
+      "pinyin": "mei2 you3",
+      "meanings": [
+        "haven't",
+        "hasn't",
+        "doesn't exist",
+        "to not have",
+        "to not be"
+      ],
+      "ko": "없다"
+    },
+    "现在": {
+      "pinyin": "xian4 zai4",
+      "meanings": [
+        "now; at present; currently"
+      ],
+      "ko": "지금"
+    },
+    "的话": {
+      "pinyin": "de5 hua4",
+      "meanings": [
+        "if (coming after a conditional clause)"
+      ],
+      "ko": null
+    },
+    "看出": {
+      "pinyin": "kan4 chu1",
+      "meanings": [
+        "to make out",
+        "to see"
+      ],
+      "ko": null
+    },
+    "看到": {
+      "pinyin": "kan4 dao4",
+      "meanings": [
+        "to see"
+      ],
+      "ko": "보다"
+    },
+    "看看": {
+      "pinyin": "kan4 kan5",
+      "meanings": [
+        "to take a look at",
+        "to examine",
+        "to survey",
+        "(coll.) pretty soon"
+      ],
+      "ko": "봐봐"
+    },
+    "知道": {
+      "pinyin": "zhi1 dao4",
+      "meanings": [
+        "to know; to become aware of",
+        "also pr. [zhi1dao5]"
+      ],
+      "ko": "알다"
+    },
+    "等一下": {
+      "pinyin": "deng3 yi1 xia4",
+      "meanings": [
+        "to wait a moment",
+        "later",
+        "in awhile"
+      ],
+      "ko": null
+    },
+    "经常": {
+      "pinyin": "jing1 chang2",
+      "meanings": [
+        "frequently; constantly; regularly; often",
+        "day-to-day; everyday; daily"
+      ],
+      "ko": null
+    },
+    "自己": {
+      "pinyin": "zi4 ji3",
+      "meanings": [
+        "oneself; (attributive) one's own"
+      ],
+      "ko": "자기"
+    },
+    "行不行": {
+      "pinyin": "",
+      "meanings": [
+        "되니 안 되니"
+      ],
+      "ko": "되니 안 되니"
+    },
+    "要说": {
+      "pinyin": "yao4 shuo1",
+      "meanings": [
+        "as for",
+        "when it comes to"
+      ],
+      "ko": null
+    },
+    "觉得": {
+      "pinyin": "jue2 de5",
+      "meanings": [
+        "to think that ...; to feel that ...",
+        "to feel (uncomfortable etc)"
+      ],
+      "ko": "~인 것 같다"
+    },
+    "说说": {
+      "pinyin": "shuo1 shuo5",
+      "meanings": [
+        "to say sth"
+      ],
+      "ko": "말해봐"
+    },
+    "谁知道": {
+      "pinyin": "shei2 zhi1 dao4",
+      "meanings": [
+        "God knows...",
+        "Who would have imagined...?"
+      ],
+      "ko": null
+    },
+    "谢谢": {
+      "pinyin": "xie4 xie5",
+      "meanings": [
+        "to thank",
+        "thanks",
+        "thank you"
+      ],
+      "ko": null
+    },
+    "起来": {
+      "pinyin": "qi3 lai5",
+      "meanings": [
+        "to stand up; to get up",
+        "also pr. [qi3lai2]"
+      ],
+      "ko": "일어나다"
+    },
+    "过去": {
+      "pinyin": "guo4 qu4",
+      "meanings": [
+        "(in the) past; former; previous",
+        "to go over; to pass by"
+      ],
+      "ko": "지나가다"
+    },
+    "过来": {
+      "pinyin": "guo4 lai2",
+      "meanings": [
+        "to come over",
+        "to manage",
+        "to handle",
+        "to be able to take care of"
+      ],
+      "ko": "오다"
+    },
+    "这个": {
+      "pinyin": "zhe4 ge5",
+      "meanings": [
+        "(pronoun) this",
+        "(adjective) this"
+      ],
+      "ko": "이거"
+    },
+    "这么": {
+      "pinyin": "zhe4 me5",
+      "meanings": [
+        "so much",
+        "this much",
+        "how much?",
+        "this way",
+        "like this"
+      ],
+      "ko": null
+    },
+    "这样": {
+      "pinyin": "zhe4 yang4",
+      "meanings": [
+        "this way; like this; so",
+        "(before a noun) this kind of; such"
+      ],
+      "ko": "이렇게·이런"
+    },
+    "那时候": {
+      "pinyin": "na4 shi2 hou5",
+      "meanings": [
+        "at that time"
+      ],
+      "ko": null
+    }
+  }
+}

@@ -65,7 +65,6 @@ class ProfileScreen extends StatelessWidget {
               )),
           const SizedBox(height: 8),
           _SettingsGroup(items: [
-            _SettingItem(icon: Icons.translate, title: '방언', subtitle: '北 · 간체자 (대륙 보통화)'),
             _SettingItem(icon: Icons.volume_up, title: 'TTS 음성', subtitle: 'zh-CN-XiaoxiaoNeural'),
             _SettingItem(icon: Icons.palette, title: '테마', subtitle: '낮 · 중국풍 #DE2910'),
           ]),

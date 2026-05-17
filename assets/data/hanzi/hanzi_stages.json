@@ -1,0 +1,1102 @@
+{
+  "title": "Phase 2 한자 209 — 10단계 분할",
+  "subtitle": "20자씩 10단계 + 4지선다형 (누적)",
+  "total": 209,
+  "stages": [
+    {
+      "stage": 1,
+      "chars": [
+        {
+          "char": "我",
+          "meaning": "나·저",
+          "pinyin_raw": "wo3"
+        },
+        {
+          "char": "的",
+          "meaning": "~의·~한 (관형격 조사)",
+          "pinyin_raw": "de5"
+        },
+        {
+          "char": "你",
+          "meaning": "너·당신",
+          "pinyin_raw": "ni3"
+        },
+        {
+          "char": "是",
+          "meaning": "~이다·옳다",
+          "pinyin_raw": "shi4"
+        },
+        {
+          "char": "了",
+          "meaning": "완료·변화 표시",
+          "pinyin_raw": "le5"
+        },
+        {
+          "char": "不",
+          "meaning": "아니다·안",
+          "pinyin_raw": "bu4"
+        },
+        {
+          "char": "们",
+          "meaning": "~들 (복수 표시)",
+          "pinyin_raw": "men5"
+        },
+        {
+          "char": "这",
+          "meaning": "이·이것",
+          "pinyin_raw": "zhe4"
+        },
+        {
+          "char": "他",
+          "meaning": "그·그 남자",
+          "pinyin_raw": "ta1"
+        },
+        {
+          "char": "在",
+          "meaning": "~에 있다·~에서",
+          "pinyin_raw": "zai4"
+        },
+        {
+          "char": "么",
+          "meaning": "(什么의 일부) 의문 표지",
+          "pinyin_raw": "ma2"
+        },
+        {
+          "char": "有",
+          "meaning": "있다·소유하다",
+          "pinyin_raw": "you3"
+        },
+        {
+          "char": "一",
+          "meaning": "하나·일",
+          "pinyin_raw": "yi1"
+        },
+        {
+          "char": "个",
+          "meaning": "개 (일반 양사)",
+          "pinyin_raw": "ge3"
+        },
+        {
+          "char": "要",
+          "meaning": "원하다·~할 것이다",
+          "pinyin_raw": "yao1"
+        },
+        {
+          "char": "好",
+          "meaning": "좋다·잘",
+          "pinyin_raw": "hao3"
+        },
+        {
+          "char": "什",
+          "meaning": "(什么의 일부) 무엇",
+          "pinyin_raw": "shen2"
+        },
+        {
+          "char": "吗",
+          "meaning": "의문 어기조사",
+          "pinyin_raw": "ma2"
+        },
+        {
+          "char": "就",
+          "meaning": "곧·바로·다름 아닌",
+          "pinyin_raw": "jiu4"
+        },
+        {
+          "char": "来",
+          "meaning": "오다",
+          "pinyin_raw": "lai2"
+        }
+      ]
+    },
+    {
+      "stage": 2,
+      "chars": [
+        {
+          "char": "那",
+          "meaning": "저·저것·그러면",
+          "pinyin_raw": "Na1"
+        },
+        {
+          "char": "会",
+          "meaning": "할 줄 알다·~할 것이다·모임",
+          "pinyin_raw": "hui4"
+        },
+        {
+          "char": "没",
+          "meaning": "없다·~지 않았다 (과거 부정)",
+          "pinyin_raw": "mei2"
+        },
+        {
+          "char": "说",
+          "meaning": "말하다",
+          "pinyin_raw": "shui4"
+        },
+        {
+          "char": "人",
+          "meaning": "사람",
+          "pinyin_raw": "ren2"
+        },
+        {
+          "char": "到",
+          "meaning": "도착하다·이르다",
+          "pinyin_raw": "dao4"
+        },
+        {
+          "char": "吧",
+          "meaning": "제안·추측 어기조사",
+          "pinyin_raw": "ba1"
+        },
+        {
+          "char": "去",
+          "meaning": "가다",
+          "pinyin_raw": "qu4"
+        },
+        {
+          "char": "为",
+          "meaning": "~을 위하여·~이 되다",
+          "pinyin_raw": "wei2"
+        },
+        {
+          "char": "她",
+          "meaning": "그녀",
+          "pinyin_raw": "ta1"
+        },
+        {
+          "char": "想",
+          "meaning": "생각하다·바라다",
+          "pinyin_raw": "xiang3"
+        },
+        {
+          "char": "道",
+          "meaning": "길·방법·말하다",
+          "pinyin_raw": "dao4"
+        },
+        {
+          "char": "知",
+          "meaning": "알다 (知道의 일부)",
+          "pinyin_raw": "zhi1"
+        },
+        {
+          "char": "能",
+          "meaning": "할 수 있다·능력",
+          "pinyin_raw": "Neng2"
+        },
+        {
+          "char": "很",
+          "meaning": "매우·아주",
+          "pinyin_raw": "hen3"
+        },
+        {
+          "char": "都",
+          "meaning": "모두·이미·도시",
+          "pinyin_raw": "Du1"
+        },
+        {
+          "char": "看",
+          "meaning": "보다",
+          "pinyin_raw": "kan1"
+        },
+        {
+          "char": "还",
+          "meaning": "아직·또한·돌려주다",
+          "pinyin_raw": "Huan2"
+        },
+        {
+          "char": "可",
+          "meaning": "가능·~할 만하다",
+          "pinyin_raw": "ke3"
+        },
+        {
+          "char": "以",
+          "meaning": "~로써·~에 따라",
+          "pinyin_raw": "yi3"
+        }
+      ]
+    },
+    {
+      "stage": 3,
+      "chars": [
+        {
+          "char": "里",
+          "meaning": "안·속·리 (단위)",
+          "pinyin_raw": "li3"
+        },
+        {
+          "char": "也",
+          "meaning": "~도·또한",
+          "pinyin_raw": "Ye3"
+        },
+        {
+          "char": "对",
+          "meaning": "맞다·~에 대해·짝",
+          "pinyin_raw": "dui4"
+        },
+        {
+          "char": "样",
+          "meaning": "모양·종류",
+          "pinyin_raw": "yang4"
+        },
+        {
+          "char": "啊",
+          "meaning": "감탄·확인 어기조사",
+          "pinyin_raw": "a1"
+        },
+        {
+          "char": "得",
+          "meaning": "얻다·~할 수 있다 (조사)",
+          "pinyin_raw": "de2"
+        },
+        {
+          "char": "怎",
+          "meaning": "어찌·어떻게",
+          "pinyin_raw": "zen3"
+        },
+        {
+          "char": "过",
+          "meaning": "지나다·경험 표지",
+          "pinyin_raw": "Guo1"
+        },
+        {
+          "char": "事",
+          "meaning": "일·사건",
+          "pinyin_raw": "shi4"
+        },
+        {
+          "char": "和",
+          "meaning": "~과·~와·화목하다",
+          "pinyin_raw": "he2"
+        },
+        {
+          "char": "上",
+          "meaning": "위·올라가다",
+          "pinyin_raw": "shang3"
+        },
+        {
+          "char": "把",
+          "meaning": "~을 (대상 표지)·잡다",
+          "pinyin_raw": "ba3"
+        },
+        {
+          "char": "给",
+          "meaning": "~에게·주다",
+          "pinyin_raw": "gei3"
+        },
+        {
+          "char": "做",
+          "meaning": "하다·만들다",
+          "pinyin_raw": "zuo4"
+        },
+        {
+          "char": "让",
+          "meaning": "~하게 하다·양보하다",
+          "pinyin_raw": "rang4"
+        },
+        {
+          "char": "现",
+          "meaning": "지금·나타나다 (现在)",
+          "pinyin_raw": "xian4"
+        },
+        {
+          "char": "真",
+          "meaning": "진짜·정말",
+          "pinyin_raw": "zhen1"
+        },
+        {
+          "char": "但",
+          "meaning": "그러나",
+          "pinyin_raw": "dan4"
+        },
+        {
+          "char": "谢",
+          "meaning": "감사하다",
+          "pinyin_raw": "Xie4"
+        },
+        {
+          "char": "只",
+          "meaning": "단지·~만 (양사)",
+          "pinyin_raw": "zhi1"
+        }
+      ]
+    },
+    {
+      "stage": 4,
+      "chars": [
+        {
+          "char": "时",
+          "meaning": "때·시간",
+          "pinyin_raw": "shi2"
+        },
+        {
+          "char": "生",
+          "meaning": "태어나다·생명",
+          "pinyin_raw": "sheng1"
+        },
+        {
+          "char": "起",
+          "meaning": "일어나다·시작",
+          "pinyin_raw": "qi3"
+        },
+        {
+          "char": "走",
+          "meaning": "걷다·가다",
+          "pinyin_raw": "zou3"
+        },
+        {
+          "char": "下",
+          "meaning": "아래·내려가다·번 (양사)",
+          "pinyin_raw": "xia4"
+        },
+        {
+          "char": "如",
+          "meaning": "만약·같다",
+          "pinyin_raw": "ru2"
+        },
+        {
+          "char": "呢",
+          "meaning": "지속·되묻기 어기조사",
+          "pinyin_raw": "ne5"
+        },
+        {
+          "char": "些",
+          "meaning": "약간·일부 (양사)",
+          "pinyin_raw": "xie1"
+        },
+        {
+          "char": "点",
+          "meaning": "점·시 (1点)·약간",
+          "pinyin_raw": "dian3"
+        },
+        {
+          "char": "开",
+          "meaning": "열다·시작하다",
+          "pinyin_raw": "kai1"
+        },
+        {
+          "char": "跟",
+          "meaning": "~와 함께·따르다",
+          "pinyin_raw": "gen1"
+        },
+        {
+          "char": "天",
+          "meaning": "하늘·날",
+          "pinyin_raw": "tian1"
+        },
+        {
+          "char": "后",
+          "meaning": "뒤·후",
+          "pinyin_raw": "Hou4"
+        },
+        {
+          "char": "快",
+          "meaning": "빠르다·곧",
+          "pinyin_raw": "kuai4"
+        },
+        {
+          "char": "别",
+          "meaning": "~하지 마라·다른",
+          "pinyin_raw": "Bie2"
+        },
+        {
+          "char": "它",
+          "meaning": "그것 (사물·동물)",
+          "pinyin_raw": "ta1"
+        },
+        {
+          "char": "着",
+          "meaning": "~하고 있다 (지속·진행)",
+          "pinyin_raw": "zhao1"
+        },
+        {
+          "char": "再",
+          "meaning": "다시·또 (미래)",
+          "pinyin_raw": "zai4"
+        },
+        {
+          "char": "多",
+          "meaning": "많다·얼마나",
+          "pinyin_raw": "duo1"
+        },
+        {
+          "char": "果",
+          "meaning": "결과·과일",
+          "pinyin_raw": "guo3"
+        }
+      ]
+    },
+    {
+      "stage": 5,
+      "chars": [
+        {
+          "char": "回",
+          "meaning": "돌아가다·번 (양사)",
+          "pinyin_raw": "Hui2"
+        },
+        {
+          "char": "该",
+          "meaning": "마땅하다·해당·그",
+          "pinyin_raw": "gai1"
+        },
+        {
+          "char": "所",
+          "meaning": "장소·~한 바",
+          "pinyin_raw": "suo3"
+        },
+        {
+          "char": "然",
+          "meaning": "그러하다·그러나",
+          "pinyin_raw": "ran2"
+        },
+        {
+          "char": "被",
+          "meaning": "~당하다 (피동 표지)",
+          "pinyin_raw": "bei4"
+        },
+        {
+          "char": "自",
+          "meaning": "스스로·~부터",
+          "pinyin_raw": "zi4"
+        },
+        {
+          "char": "找",
+          "meaning": "찾다",
+          "pinyin_raw": "zhao3"
+        },
+        {
+          "char": "听",
+          "meaning": "듣다",
+          "pinyin_raw": "yin3"
+        },
+        {
+          "char": "子",
+          "meaning": "아들·접미사",
+          "pinyin_raw": "zi3"
+        },
+        {
+          "char": "等",
+          "meaning": "기다리다·등급",
+          "pinyin_raw": "deng3"
+        },
+        {
+          "char": "谁",
+          "meaning": "누구",
+          "pinyin_raw": "shei2"
+        },
+        {
+          "char": "家",
+          "meaning": "집·가정",
+          "pinyin_raw": "jia1"
+        },
+        {
+          "char": "先",
+          "meaning": "먼저·앞",
+          "pinyin_raw": "xian1"
+        },
+        {
+          "char": "已",
+          "meaning": "이미",
+          "pinyin_raw": "yi3"
+        },
+        {
+          "char": "当",
+          "meaning": "당연·~할 때·맞다",
+          "pinyin_raw": "dang1"
+        },
+        {
+          "char": "告",
+          "meaning": "알리다",
+          "pinyin_raw": "gao4"
+        },
+        {
+          "char": "经",
+          "meaning": "지나다·경험",
+          "pinyin_raw": "Jing1"
+        },
+        {
+          "char": "话",
+          "meaning": "말·이야기",
+          "pinyin_raw": "hua4"
+        },
+        {
+          "char": "妈",
+          "meaning": "엄마",
+          "pinyin_raw": "ma1"
+        },
+        {
+          "char": "大",
+          "meaning": "크다",
+          "pinyin_raw": "da4"
+        }
+      ]
+    },
+    {
+      "stage": 6,
+      "chars": [
+        {
+          "char": "像",
+          "meaning": "닮다·~같다",
+          "pinyin_raw": "xiang4"
+        },
+        {
+          "char": "诉",
+          "meaning": "알리다",
+          "pinyin_raw": "su4"
+        },
+        {
+          "char": "己",
+          "meaning": "자기",
+          "pinyin_raw": "ji3"
+        },
+        {
+          "char": "出",
+          "meaning": "나가다·내다",
+          "pinyin_raw": "chu1"
+        },
+        {
+          "char": "因",
+          "meaning": "원인",
+          "pinyin_raw": "yin1"
+        },
+        {
+          "char": "见",
+          "meaning": "보다·만나다",
+          "pinyin_raw": "jian4"
+        },
+        {
+          "char": "定",
+          "meaning": "정하다·반드시",
+          "pinyin_raw": "ding4"
+        },
+        {
+          "char": "觉",
+          "meaning": "느끼다·깨닫다",
+          "pinyin_raw": "jiao4"
+        },
+        {
+          "char": "哪",
+          "meaning": "어느·어디",
+          "pinyin_raw": "na3"
+        },
+        {
+          "char": "最",
+          "meaning": "가장·제일",
+          "pinyin_raw": "zui4"
+        },
+        {
+          "char": "用",
+          "meaning": "쓰다·사용하다",
+          "pinyin_raw": "yong4"
+        },
+        {
+          "char": "死",
+          "meaning": "죽다·~죽겠다",
+          "pinyin_raw": "si3"
+        },
+        {
+          "char": "问",
+          "meaning": "묻다",
+          "pinyin_raw": "wen4"
+        },
+        {
+          "char": "欢",
+          "meaning": "기쁘다",
+          "pinyin_raw": "huan1"
+        },
+        {
+          "char": "从",
+          "meaning": "~부터·따르다",
+          "pinyin_raw": "cong2"
+        },
+        {
+          "char": "小",
+          "meaning": "작다",
+          "pinyin_raw": "xiao3"
+        },
+        {
+          "char": "意",
+          "meaning": "뜻·생각",
+          "pinyin_raw": "yi4"
+        },
+        {
+          "char": "叫",
+          "meaning": "부르다·~라고 하다",
+          "pinyin_raw": "jiao4"
+        },
+        {
+          "char": "喜",
+          "meaning": "기쁘다",
+          "pinyin_raw": "xi3"
+        },
+        {
+          "char": "儿",
+          "meaning": "아들·접미사",
+          "pinyin_raw": "er2"
+        }
+      ]
+    },
+    {
+      "stage": 7,
+      "chars": [
+        {
+          "char": "而",
+          "meaning": "그러나·그리고",
+          "pinyin_raw": "er2"
+        },
+        {
+          "char": "请",
+          "meaning": "청하다·부탁하다",
+          "pinyin_raw": "qing3"
+        },
+        {
+          "char": "西",
+          "meaning": "서쪽",
+          "pinyin_raw": "Xi1"
+        },
+        {
+          "char": "地",
+          "meaning": "땅·~게 (부사 표지)",
+          "pinyin_raw": "de5"
+        },
+        {
+          "char": "才",
+          "meaning": "비로소·재능",
+          "pinyin_raw": "cai2"
+        },
+        {
+          "char": "东",
+          "meaning": "동쪽",
+          "pinyin_raw": "Dong1"
+        },
+        {
+          "char": "孩",
+          "meaning": "아이",
+          "pinyin_raw": "hai2"
+        },
+        {
+          "char": "又",
+          "meaning": "또·다시",
+          "pinyin_raw": "you4"
+        },
+        {
+          "char": "打",
+          "meaning": "때리다·치다·전화하다",
+          "pinyin_raw": "da2"
+        },
+        {
+          "char": "应",
+          "meaning": "응당·대답하다",
+          "pinyin_raw": "Ying1"
+        },
+        {
+          "char": "候",
+          "meaning": "기다리다·때",
+          "pinyin_raw": "hou4"
+        },
+        {
+          "char": "发",
+          "meaning": "보내다·시작",
+          "pinyin_raw": "fa1"
+        },
+        {
+          "char": "需",
+          "meaning": "필요하다",
+          "pinyin_raw": "xu1"
+        },
+        {
+          "char": "前",
+          "meaning": "앞·전",
+          "pinyin_raw": "qian2"
+        },
+        {
+          "char": "明",
+          "meaning": "밝다·내일",
+          "pinyin_raw": "Ming2"
+        },
+        {
+          "char": "爱",
+          "meaning": "사랑하다",
+          "pinyin_raw": "ai4"
+        },
+        {
+          "char": "帮",
+          "meaning": "돕다",
+          "pinyin_raw": "bang1"
+        },
+        {
+          "char": "爸",
+          "meaning": "아빠",
+          "pinyin_raw": "ba4"
+        },
+        {
+          "char": "心",
+          "meaning": "마음·심장",
+          "pinyin_raw": "xin1"
+        },
+        {
+          "char": "太",
+          "meaning": "너무·매우",
+          "pinyin_raw": "tai4"
+        }
+      ]
+    },
+    {
+      "stage": 8,
+      "chars": [
+        {
+          "char": "干",
+          "meaning": "마르다·하다·줄기",
+          "pinyin_raw": "gan1"
+        },
+        {
+          "char": "错",
+          "meaning": "틀리다·잘못",
+          "pinyin_raw": "Cuo4"
+        },
+        {
+          "char": "今",
+          "meaning": "오늘·이제",
+          "pinyin_raw": "jin1"
+        },
+        {
+          "char": "间",
+          "meaning": "사이·방",
+          "pinyin_raw": "jian1"
+        },
+        {
+          "char": "认",
+          "meaning": "알다·인정",
+          "pinyin_raw": "ren4"
+        },
+        {
+          "char": "女",
+          "meaning": "여자",
+          "pinyin_raw": "nu:3"
+        },
+        {
+          "char": "方",
+          "meaning": "방향·방법",
+          "pinyin_raw": "Fang1"
+        },
+        {
+          "char": "次",
+          "meaning": "번·차례 (양사)",
+          "pinyin_raw": "ci4"
+        },
+        {
+          "char": "行",
+          "meaning": "가다·되다·줄",
+          "pinyin_raw": "hang2"
+        },
+        {
+          "char": "题",
+          "meaning": "주제·문제",
+          "pinyin_raw": "Ti2"
+        },
+        {
+          "char": "情",
+          "meaning": "감정",
+          "pinyin_raw": "qing2"
+        },
+        {
+          "char": "拿",
+          "meaning": "old variant o…",
+          "pinyin_raw": "na2"
+        },
+        {
+          "char": "吃",
+          "meaning": "to eat; to co…",
+          "pinyin_raw": "chi1"
+        },
+        {
+          "char": "作",
+          "meaning": "(bound form) …",
+          "pinyin_raw": "zuo1"
+        },
+        {
+          "char": "中",
+          "meaning": "(bound form) …",
+          "pinyin_raw": "Zhong1"
+        },
+        {
+          "char": "直",
+          "meaning": "surname Zhi",
+          "pinyin_raw": "Zhi2"
+        },
+        {
+          "char": "哦",
+          "meaning": "아하 (이해) 어기조사",
+          "pinyin_raw": "e2"
+        },
+        {
+          "char": "始",
+          "meaning": "to begin",
+          "pinyin_raw": "shi3"
+        },
+        {
+          "char": "面",
+          "meaning": "face",
+          "pinyin_raw": "mian4"
+        },
+        {
+          "char": "之",
+          "meaning": "~의·그것 (문어)",
+          "pinyin_raw": "zhi1"
+        }
+      ]
+    },
+    {
+      "stage": 9,
+      "chars": [
+        {
+          "char": "信",
+          "meaning": "letter",
+          "pinyin_raw": "xin4"
+        },
+        {
+          "char": "何",
+          "meaning": "surname He",
+          "pinyin_raw": "He2"
+        },
+        {
+          "char": "友",
+          "meaning": "friend",
+          "pinyin_raw": "you3"
+        },
+        {
+          "char": "种",
+          "meaning": "seed",
+          "pinyin_raw": "zhong3"
+        },
+        {
+          "char": "离",
+          "meaning": "mythical beas…",
+          "pinyin_raw": "chi1"
+        },
+        {
+          "char": "正",
+          "meaning": "first month o…",
+          "pinyin_raw": "zheng1"
+        },
+        {
+          "char": "带",
+          "meaning": "band",
+          "pinyin_raw": "dai4"
+        },
+        {
+          "char": "朋",
+          "meaning": "friend",
+          "pinyin_raw": "peng2"
+        },
+        {
+          "char": "望",
+          "meaning": "full moon",
+          "pinyin_raw": "wang4"
+        },
+        {
+          "char": "相",
+          "meaning": "surname Xiang",
+          "pinyin_raw": "Xiang1"
+        },
+        {
+          "char": "工",
+          "meaning": "work",
+          "pinyin_raw": "gong1"
+        },
+        {
+          "char": "将",
+          "meaning": "will",
+          "pinyin_raw": "jiang1"
+        },
+        {
+          "char": "进",
+          "meaning": "to go forward",
+          "pinyin_raw": "jin4"
+        },
+        {
+          "char": "成",
+          "meaning": "이루다·~이 되다",
+          "pinyin_raw": "Cheng2"
+        },
+        {
+          "char": "白",
+          "meaning": "희다·빈",
+          "pinyin_raw": "Bai2"
+        },
+        {
+          "char": "更",
+          "meaning": "더욱·다시",
+          "pinyin_raw": "geng1"
+        },
+        {
+          "char": "希",
+          "meaning": "to hope",
+          "pinyin_raw": "xi1"
+        },
+        {
+          "char": "感",
+          "meaning": "to feel",
+          "pinyin_raw": "gan3"
+        },
+        {
+          "char": "晚",
+          "meaning": "evening",
+          "pinyin_raw": "wan3"
+        },
+        {
+          "char": "钱",
+          "meaning": "surname Qian",
+          "pinyin_raw": "Qian2"
+        }
+      ]
+    },
+    {
+      "stage": 10,
+      "chars": [
+        {
+          "char": "亲",
+          "meaning": "parent",
+          "pinyin_raw": "qin1"
+        },
+        {
+          "char": "许",
+          "meaning": "surname Xu",
+          "pinyin_raw": "Xu3"
+        },
+        {
+          "char": "法",
+          "meaning": "variant of 法[…",
+          "pinyin_raw": "fa3"
+        },
+        {
+          "char": "杀",
+          "meaning": "to kill; to s…",
+          "pinyin_raw": "sha1"
+        },
+        {
+          "char": "准",
+          "meaning": "to allow",
+          "pinyin_raw": "zhun3"
+        },
+        {
+          "char": "常",
+          "meaning": "자주·평소",
+          "pinyin_raw": "Chang2"
+        },
+        {
+          "char": "思",
+          "meaning": "to think",
+          "pinyin_raw": "si1"
+        },
+        {
+          "char": "放",
+          "meaning": "to put",
+          "pinyin_raw": "fang4"
+        },
+        {
+          "char": "必",
+          "meaning": "certainly",
+          "pinyin_raw": "bi4"
+        },
+        {
+          "char": "比",
+          "meaning": "Belgium",
+          "pinyin_raw": "Bi3"
+        },
+        {
+          "char": "备",
+          "meaning": "variant of 備|…",
+          "pinyin_raw": "bei4"
+        },
+        {
+          "char": "年",
+          "meaning": "년·해",
+          "pinyin_raw": "Nian2"
+        },
+        {
+          "char": "记",
+          "meaning": "to record",
+          "pinyin_raw": "ji4"
+        },
+        {
+          "char": "关",
+          "meaning": "surname Guan",
+          "pinyin_raw": "Guan1"
+        },
+        {
+          "char": "全",
+          "meaning": "surname Quan",
+          "pinyin_raw": "Quan2"
+        },
+        {
+          "char": "电",
+          "meaning": "lightning",
+          "pinyin_raw": "dian4"
+        },
+        {
+          "char": "住",
+          "meaning": "to live; to r…",
+          "pinyin_raw": "zhu4"
+        },
+        {
+          "char": "切",
+          "meaning": "to cut; to sl…",
+          "pinyin_raw": "qie1"
+        },
+        {
+          "char": "呀",
+          "meaning": "감탄·강조 어기조사",
+          "pinyin_raw": "ya1"
+        },
+        {
+          "char": "两",
+          "meaning": "둘·두 개",
+          "pinyin_raw": "liang3"
+        },
+        {
+          "char": "其",
+          "meaning": "his",
+          "pinyin_raw": "qi2"
+        },
+        {
+          "char": "非",
+          "meaning": "abbr. for 非洲[…",
+          "pinyin_raw": "Fei1"
+        },
+        {
+          "char": "或",
+          "meaning": "maybe",
+          "pinyin_raw": "huo4"
+        },
+        {
+          "char": "任",
+          "meaning": "surname Ren",
+          "pinyin_raw": "Ren2"
+        },
+        {
+          "char": "完",
+          "meaning": "to finish",
+          "pinyin_raw": "wan2"
+        },
+        {
+          "char": "须",
+          "meaning": "must",
+          "pinyin_raw": "xu1"
+        },
+        {
+          "char": "啦",
+          "meaning": "어기조사 (완료·강조)",
+          "pinyin_raw": "la1"
+        },
+        {
+          "char": "嘛",
+          "meaning": "used in 唵嘛呢叭咪…",
+          "pinyin_raw": "ma2"
+        },
+        {
+          "char": "嗯",
+          "meaning": "(a groaning s…",
+          "pinyin_raw": "en1"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,409 @@
+{
+  "title": "진짜 회화 — LCCC 친구톡",
+  "subtitle": "실제 중국인 SNS 챗에서 채굴 · 209자 안",
+  "data_source": "LCCC silver test+valid (Weibo 친구 대화)",
+  "categories": [
+    "chat",
+    "compliment",
+    "daily",
+    "food",
+    "joke",
+    "love",
+    "miss",
+    "phone",
+    "reunion"
+  ],
+  "category_labels": {
+    "love": "💕 사랑",
+    "daily": "🏠 일상",
+    "joke": "😏 농담·티키타카",
+    "food": "🍱 음식",
+    "compliment": "✨ 칭찬",
+    "reunion": "👋 재회",
+    "chat": "💬 친구톡",
+    "miss": "🥺 그리움",
+    "phone": "📞 연락"
+  },
+  "dialogues": [
+    {
+      "id": "lccc_001",
+      "category": "love",
+      "category_label": "💕 사랑",
+      "turns": [
+        {
+          "speaker": "A",
+          "zh": "我知道你又在想我了",
+          "pinyin": "wǒ zhī dào nǐ yòu zài xiǎng wǒ le",
+          "ko": "또 내 생각하지?"
+        },
+        {
+          "speaker": "B",
+          "zh": "被你发现了",
+          "pinyin": "bèi nǐ fā xiàn le",
+          "ko": "들켰네."
+        }
+      ]
+    },
+    {
+      "id": "lccc_002",
+      "category": "love",
+      "category_label": "💕 사랑",
+      "turns": [
+        {
+          "speaker": "A",
+          "zh": "我爱你啊可爱可爱可爱",
+          "pinyin": "wǒ ài nǐ ā kě ài kě ài kě ài",
+          "ko": "사랑해 귀여워 귀여워 귀여워."
+        },
+        {
+          "speaker": "B",
+          "zh": "我也喜欢你哦",
+          "pinyin": "wǒ Yě xǐ huan nǐ é",
+          "ko": "나도 너 좋아해~"
+        }
+      ]
+    },
+    {
+      "id": "lccc_003",
+      "category": "love",
+      "category_label": "💕 사랑",
+      "turns": [
+        {
+          "speaker": "A",
+          "zh": "我想你了",
+          "pinyin": "wǒ xiǎng nǐ le",
+          "ko": "너 보고 싶어."
+        },
+        {
+          "speaker": "B",
+          "zh": "我想他了很想很想",
+          "pinyin": "wǒ xiǎng tā le hěn xiǎng hěn xiǎng",
+          "ko": "나는 걔가 너무너무 보고 싶어."
+        }
+      ]
+    },
+    {
+      "id": "lccc_004",
+      "category": "daily",
+      "category_label": "🏠 일상",
+      "turns": [
+        {
+          "speaker": "A",
+          "zh": "你怎么还没回家",
+          "pinyin": "nǐ zěn me Huán méi huí jiā",
+          "ko": "왜 아직 집 안 갔어?"
+        },
+        {
+          "speaker": "B",
+          "zh": "快了快了",
+          "pinyin": "kuài le kuài le",
+          "ko": "곧 가 곧 가."
+        }
+      ]
+    },
+    {
+      "id": "lccc_005",
+      "category": "daily",
+      "category_label": "🏠 일상",
+      "turns": [
+        {
+          "speaker": "A",
+          "zh": "我一直在这里等你",
+          "pinyin": "wǒ yī zhí zài zhè lǐ děng nǐ",
+          "ko": "계속 여기서 기다리고 있어."
+        },
+        {
+          "speaker": "B",
+          "zh": "你在哪里",
+          "pinyin": "nǐ zài nǎ lǐ",
+          "ko": "너 어디야?"
+        }
+      ]
+    },
+    {
+      "id": "lccc_006",
+      "category": "daily",
+      "category_label": "🏠 일상",
+      "turns": [
+        {
+          "speaker": "A",
+          "zh": "回家了啊你家",
+          "pinyin": "huí jiā le ā nǐ jiā",
+          "ko": "집 갔어? 너네 집?"
+        },
+        {
+          "speaker": "B",
+          "zh": "嗯啊回来了",
+          "pinyin": "ēn ā huí lai le",
+          "ko": "응 왔어."
+        }
+      ]
+    },
+    {
+      "id": "lccc_007",
+      "category": "joke",
+      "category_label": "😏 농담·티키타카",
+      "turns": [
+        {
+          "speaker": "A",
+          "zh": "你想干嘛",
+          "pinyin": "nǐ xiǎng gàn má",
+          "ko": "뭐 하려고?"
+        },
+        {
+          "speaker": "B",
+          "zh": "你说我想干嘛",
+          "pinyin": "nǐ shuì wǒ xiǎng gàn má",
+          "ko": "내가 뭘 하고 싶을까~?"
+        }
+      ]
+    },
+    {
+      "id": "lccc_008",
+      "category": "joke",
+      "category_label": "😏 농담·티키타카",
+      "turns": [
+        {
+          "speaker": "A",
+          "zh": "带我一个",
+          "pinyin": "dài wǒ yī ge",
+          "ko": "나도 데려가~"
+        },
+        {
+          "speaker": "B",
+          "zh": "带你上天",
+          "pinyin": "dài nǐ shàng tiān",
+          "ko": "하늘로 데려가줄게."
+        }
+      ]
+    },
+    {
+      "id": "lccc_009",
+      "category": "joke",
+      "category_label": "😏 농담·티키타카",
+      "turns": [
+        {
+          "speaker": "A",
+          "zh": "我不说话",
+          "pinyin": "wǒ bù shuō huà",
+          "ko": "나 말 안 해."
+        },
+        {
+          "speaker": "B",
+          "zh": "你已经说话了",
+          "pinyin": "nǐ yǐ jīng shuō huà le",
+          "ko": "이미 말했잖아."
+        }
+      ]
+    },
+    {
+      "id": "lccc_010",
+      "category": "joke",
+      "category_label": "😏 농담·티키타카",
+      "turns": [
+        {
+          "speaker": "A",
+          "zh": "生一个生一个",
+          "pinyin": "shēng yī ge shēng yī ge",
+          "ko": "하나 낳자 하나 낳자."
+        },
+        {
+          "speaker": "B",
+          "zh": "你想说什么",
+          "pinyin": "nǐ xiǎng shuì shén me",
+          "ko": "뭔 소리야."
+        }
+      ]
+    },
+    {
+      "id": "lccc_011",
+      "category": "food",
+      "category_label": "🍱 음식",
+      "turns": [
+        {
+          "speaker": "A",
+          "zh": "上次带我吃的怎么不是这种",
+          "pinyin": "shàng cì dài wǒ chī de zěn me bù shì zhè zhǒng",
+          "ko": "지난번 데려간 데는 이런 거 아니었잖아."
+        },
+        {
+          "speaker": "B",
+          "zh": "好好好下次带你来吃这种",
+          "pinyin": "hǎo hǎo hǎo xià cì dài nǐ lái chī zhè zhǒng",
+          "ko": "알았어 다음에 이런 데 데려갈게."
+        }
+      ]
+    },
+    {
+      "id": "lccc_012",
+      "category": "compliment",
+      "category_label": "✨ 칭찬",
+      "turns": [
+        {
+          "speaker": "A",
+          "zh": "可爱了你",
+          "pinyin": "kě ài le nǐ",
+          "ko": "너 귀엽잖아."
+        },
+        {
+          "speaker": "B",
+          "zh": "所以不是我的错",
+          "pinyin": "suǒ yǐ bù shì wǒ de Cuò",
+          "ko": "그러니까 내 잘못 아니야."
+        }
+      ]
+    },
+    {
+      "id": "lccc_013",
+      "category": "compliment",
+      "category_label": "✨ 칭찬",
+      "turns": [
+        {
+          "speaker": "A",
+          "zh": "你是最好的",
+          "pinyin": "nǐ shì zuì hǎo de",
+          "ko": "넌 최고야."
+        },
+        {
+          "speaker": "B",
+          "zh": "今天干嘛去了",
+          "pinyin": "jīn tiān gàn má qù le",
+          "ko": "오늘 뭐 했어?"
+        }
+      ]
+    },
+    {
+      "id": "lccc_014",
+      "category": "reunion",
+      "category_label": "👋 재회",
+      "turns": [
+        {
+          "speaker": "A",
+          "zh": "啊两年不见",
+          "pinyin": "ā liǎng Nián bù jiàn",
+          "ko": "아 2년만이네."
+        },
+        {
+          "speaker": "B",
+          "zh": "是不是感觉很快",
+          "pinyin": "shì bu shì gǎn jué hěn kuài",
+          "ko": "엄청 빠르지?"
+        }
+      ]
+    },
+    {
+      "id": "lccc_015",
+      "category": "chat",
+      "category_label": "💬 친구톡",
+      "turns": [
+        {
+          "speaker": "A",
+          "zh": "又一个有生之年",
+          "pinyin": "yòu yī ge yǒu shēng zhī Nián",
+          "ko": "평생만에 또 만나는 친구네."
+        },
+        {
+          "speaker": "B",
+          "zh": "还有哪个吗",
+          "pinyin": "hái yǒu nǎ ge má",
+          "ko": "또 누구 있어?"
+        }
+      ]
+    },
+    {
+      "id": "lccc_016",
+      "category": "chat",
+      "category_label": "💬 친구톡",
+      "turns": [
+        {
+          "speaker": "A",
+          "zh": "我来了我来了",
+          "pinyin": "wǒ lái le wǒ lái le",
+          "ko": "왔어 왔어~"
+        },
+        {
+          "speaker": "B",
+          "zh": "好啊跟我走",
+          "pinyin": "hǎo ā gēn wǒ zǒu",
+          "ko": "오케이 따라와."
+        }
+      ]
+    },
+    {
+      "id": "lccc_017",
+      "category": "chat",
+      "category_label": "💬 친구톡",
+      "turns": [
+        {
+          "speaker": "A",
+          "zh": "有没有我",
+          "pinyin": "yǒu méi yǒu wǒ",
+          "ko": "내 자리 있어?"
+        },
+        {
+          "speaker": "B",
+          "zh": "都有都有",
+          "pinyin": "Dū yǒu Dū yǒu",
+          "ko": "있어 있어."
+        }
+      ]
+    },
+    {
+      "id": "lccc_018",
+      "category": "chat",
+      "category_label": "💬 친구톡",
+      "turns": [
+        {
+          "speaker": "A",
+          "zh": "要记住你",
+          "pinyin": "yāo jì zhu nǐ",
+          "ko": "기억해 둘게."
+        },
+        {
+          "speaker": "B",
+          "zh": "我已经记住你啦",
+          "pinyin": "wǒ yǐ jīng jì zhu nǐ lā",
+          "ko": "나는 이미 기억했어~"
+        }
+      ]
+    },
+    {
+      "id": "lccc_019",
+      "category": "miss",
+      "category_label": "🥺 그리움",
+      "turns": [
+        {
+          "speaker": "A",
+          "zh": "我该说点什么呢",
+          "pinyin": "wǒ gāi shuì diǎn shén me ne",
+          "ko": "뭐라고 말해야 할까?"
+        },
+        {
+          "speaker": "B",
+          "zh": "你说什么都爱你",
+          "pinyin": "nǐ shuì shén me Dū ài nǐ",
+          "ko": "뭘 말하든 사랑해."
+        }
+      ]
+    },
+    {
+      "id": "lccc_020",
+      "category": "phone",
+      "category_label": "📞 연락",
+      "turns": [
+        {
+          "speaker": "A",
+          "zh": "给个电话",
+          "pinyin": "gěi gě diàn huà",
+          "ko": "전화 줘."
+        },
+        {
+          "speaker": "B",
+          "zh": "我也还没有",
+          "pinyin": "wǒ Yě Huán méi yǒu",
+          "ko": "나도 아직."
+        }
+      ]
+    }
+  ]
+}

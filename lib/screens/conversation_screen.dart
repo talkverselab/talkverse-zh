@@ -3,7 +3,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show rootBundle;
 
 import '../core/theme.dart';
+import '../services/tts_service.dart';
 import '../widgets/chinese_decor.dart';
+import '../widgets/selectable_hanzi.dart';
+import 'grammar_lesson_screen.dart';
 
 class ConversationScreen extends StatefulWidget {
   const ConversationScreen({super.key});
@@ -15,6 +18,7 @@ class ConversationScreen extends StatefulWidget {
 class _ConversationScreenState extends State<ConversationScreen> {
   Map<String, dynamic>? _data;
   bool _loading = true;
+  String _category = 'ALL';
 
   @override
   void initState() {
@@ -23,7 +27,7 @@ class _ConversationScreenState extends State<ConversationScreen> {
   }
 
   Future<void> _load() async {
-    final raw = await rootBundle.loadString('assets/data/dialogues/north/L1.json');
+    final raw = await rootBundle.loadString('assets/data/dialogues/conv_lccc.json');
     setState(() {
       _data = json.decode(raw) as Map<String, dynamic>;
       _loading = false;
@@ -35,7 +39,18 @@ class _ConversationScreenState extends State<ConversationScreen> {
     return Scaffold(
       backgroundColor: AppColors.xuanZhi,
       appBar: AppBar(
-        title: const Text('회화 L1'),
+        title: const Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Text('회화', style: TextStyle(color: AppColors.mo, fontSize: 16, fontWeight: FontWeight.w800)),
+            SizedBox(height: 2),
+            Text('Conversation', style: TextStyle(color: AppColors.moLight, fontSize: 10, letterSpacing: 2)),
+          ],
+        ),
+        backgroundColor: AppColors.xuanZhi,
+        foregroundColor: AppColors.mo,
+        elevation: 0,
+        centerTitle: true,
       ),
       body: _loading
           ? const Center(child: CircularProgressIndicator(color: AppColors.zhuHong))
@@ -44,205 +59,385 @@ class _ConversationScreenState extends State<ConversationScreen> {
   }
 
   Widget _buildBody() {
-    if (_data == null) return const Center(child: Text('데이터 없음'));
+    final dialogues = (_data?['dialogues'] as List?) ?? [];
+    final categories = (_data?['categories'] as List?)?.cast<String>() ?? [];
+    final categoryLabels =
+        (_data?['category_labels'] as Map?)?.cast<String, dynamic>() ?? {};
 
-    final episodes = (_data!['episodes'] as List?) ?? [];
-    final kpi = (_data!['kpi'] as Map?) ?? {};
-    final progress = (kpi['turns_total_current'] as int?) ?? 0;
-    final target = (kpi['turns_total_target'] as int?) ?? 200;
+    final filtered = _category == 'ALL'
+        ? dialogues
+        : dialogues.where((d) => (d as Map)['category'] == _category).toList();
 
-    return ListView(
-      padding: const EdgeInsets.all(16),
-      children: [
-        ChineseCard(
-          title: 'L1 · 매칭 narrative 200턴',
-          sealText: 'L1',
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
+    return CustomScrollView(
+      slivers: [
+        SliverToBoxAdapter(child: _grammarHub()),
+        SliverToBoxAdapter(child: _lcccHeader(dialogues.length)),
+        SliverToBoxAdapter(child: _categoryChips(categories, categoryLabels)),
+        SliverPadding(
+          padding: const EdgeInsets.symmetric(horizontal: 16),
+          sliver: SliverList(
+            delegate: SliverChildBuilderDelegate(
+              (context, i) {
+                final d = filtered[i] as Map<String, dynamic>;
+                return _DialogueCard(dialogue: d, index: i + 1);
+              },
+              childCount: filtered.length,
+            ),
+          ),
+        ),
+        const SliverToBoxAdapter(child: SizedBox(height: 80)),
+      ],
+    );
+  }
+
+  Widget _grammarHub() {
+    return Padding(
+      padding: const EdgeInsets.fromLTRB(16, 12, 16, 8),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          Row(
             children: [
+              const SealStamp(text: '学', size: 22),
+              const SizedBox(width: 8),
               Text(
-                _data!['description'] as String? ?? '',
-                style: const TextStyle(color: AppColors.mo, fontSize: 13, height: 1.5),
-              ),
-              const SizedBox(height: 12),
-              Stack(
-                children: [
-                  Container(
-                    height: 8,
-                    decoration: BoxDecoration(
-                      color: AppColors.xuanZhiDeep,
-                      border: Border.all(color: AppColors.jin.withValues(alpha: 0.5)),
-                    ),
-                  ),
-                  FractionallySizedBox(
-                    widthFactor: progress / target,
-                    child: Container(
-                      height: 8,
-                      color: AppColors.zhuHong,
-                    ),
-                  ),
-                ],
-              ),
-              const SizedBox(height: 6),
-              Text(
-                '진도 $progress / $target',
-                style: const TextStyle(fontSize: 11, color: AppColors.moLight),
+                '우리 콘텐츠 (자체 제작)',
+                style: TextStyle(
+                  fontSize: 13,
+                  fontWeight: FontWeight.w800,
+                  color: AppColors.mo,
+                  letterSpacing: 2,
+                ),
               ),
             ],
           ),
-        ),
-        const SizedBox(height: 16),
-        ...episodes.map((ep) => _EpisodeCard(episode: ep as Map<String, dynamic>)),
-        const SizedBox(height: 12),
-        const BrushDivider(),
-      ],
+          const SizedBox(height: 8),
+          Row(
+            children: [
+              Expanded(
+                child: _HubCard(
+                  title: '문법 L1',
+                  sub: '기능어 40 × 3',
+                  seal: 'L1',
+                  color: const Color(0xFF8B0000),
+                  builder: (_) => const GrammarLessonScreen(lessonNum: 1),
+                ),
+              ),
+              const SizedBox(width: 8),
+              Expanded(
+                child: _HubCard(
+                  title: '문법 L2',
+                  sub: '어기조사·부사·단어',
+                  seal: 'L2',
+                  color: const Color(0xFFAD1457),
+                  builder: (_) => const GrammarLessonScreen(lessonNum: 2),
+                ),
+              ),
+            ],
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _lcccHeader(int total) {
+    return Padding(
+      padding: const EdgeInsets.fromLTRB(16, 16, 16, 6),
+      child: Row(
+        children: [
+          const SealStamp(text: '聊', size: 22),
+          const SizedBox(width: 8),
+          Text(
+            '실제 챗 다이얼로그',
+            style: TextStyle(
+              fontSize: 13,
+              fontWeight: FontWeight.w800,
+              color: AppColors.mo,
+              letterSpacing: 2,
+            ),
+          ),
+          const SizedBox(width: 8),
+          Container(
+            padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
+            color: AppColors.feiCui.withValues(alpha: 0.2),
+            child: Text(
+              'LCCC · $total',
+              style: const TextStyle(
+                fontSize: 10,
+                fontWeight: FontWeight.w800,
+                color: AppColors.feiCui,
+              ),
+            ),
+          ),
+          const Spacer(),
+          Text(
+            '실측 Weibo 친구톡',
+            style: TextStyle(fontSize: 10, color: AppColors.moLight),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _categoryChips(List<String> categories, Map<String, dynamic> labels) {
+    final all = ['ALL', ...categories];
+    return SizedBox(
+      height: 40,
+      child: ListView.separated(
+        scrollDirection: Axis.horizontal,
+        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+        itemCount: all.length,
+        separatorBuilder: (_, __) => const SizedBox(width: 6),
+        itemBuilder: (context, i) {
+          final c = all[i];
+          final lbl = c == 'ALL' ? '전체' : (labels[c] as String? ?? c);
+          final selected = c == _category;
+          return GestureDetector(
+            onTap: () => setState(() => _category = c),
+            child: Container(
+              padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+              decoration: BoxDecoration(
+                color: selected ? AppColors.zhuHong : AppColors.xuanZhi,
+                border: Border.all(
+                  color: selected ? AppColors.zhuHongDeep : AppColors.jin.withValues(alpha: 0.5),
+                ),
+              ),
+              child: Text(
+                lbl,
+                style: TextStyle(
+                  fontSize: 12,
+                  fontWeight: FontWeight.w700,
+                  color: selected ? AppColors.xuanZhi : AppColors.mo,
+                ),
+              ),
+            ),
+          );
+        },
+      ),
     );
   }
 }
 
-class _EpisodeCard extends StatelessWidget {
-  final Map<String, dynamic> episode;
-  const _EpisodeCard({required this.episode});
+class _HubCard extends StatelessWidget {
+  final String title;
+  final String sub;
+  final String seal;
+  final Color color;
+  final WidgetBuilder builder;
+
+  const _HubCard({
+    required this.title,
+    required this.sub,
+    required this.seal,
+    required this.color,
+    required this.builder,
+  });
 
   @override
   Widget build(BuildContext context) {
-    final turns = (episode['turns'] as List?) ?? [];
-    final epId = episode['id'] as String? ?? '';
-    return Padding(
-      padding: const EdgeInsets.only(bottom: 14),
+    return InkWell(
+      onTap: () => Navigator.push(context, MaterialPageRoute(builder: builder)),
       child: Container(
+        padding: const EdgeInsets.all(12),
         decoration: BoxDecoration(
           color: AppColors.xuanZhi,
-          border: Border.all(color: AppColors.jin.withValues(alpha: 0.6)),
+          border: Border.all(color: color, width: 1.2),
         ),
-        child: ExpansionTile(
-          tilePadding: const EdgeInsets.symmetric(horizontal: 14),
-          collapsedBackgroundColor: AppColors.xuanZhi,
-          backgroundColor: AppColors.xuanZhi,
-          leading: SealStamp(text: epId.replaceAll('ep', ''), size: 36),
-          title: Text(
-            '${episode['title']} ${episode['emoji'] ?? ''}',
-            style: const TextStyle(
-              fontWeight: FontWeight.w800,
-              color: AppColors.mo,
-              fontSize: 15,
-            ),
-          ),
-          subtitle: Text(
-            '${turns.length} / 40턴',
-            style: const TextStyle(color: AppColors.moLight, fontSize: 11),
-          ),
-          initiallyExpanded: turns.isNotEmpty,
-          children: turns.isEmpty
-              ? [
-                  Padding(
-                    padding: const EdgeInsets.fromLTRB(16, 4, 16, 16),
-                    child: Text(
-                      episode['todo'] as String? ?? '미작성',
-                      style: const TextStyle(color: AppColors.moLight, fontSize: 12),
+        child: Row(
+          children: [
+            SealStamp(text: seal, size: 40, color: color),
+            const SizedBox(width: 10),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    title,
+                    style: const TextStyle(
+                      fontSize: 14,
+                      fontWeight: FontWeight.w900,
+                      color: AppColors.mo,
                     ),
                   ),
-                ]
-              : turns.map((t) => _TurnTile(turn: t as Map<String, dynamic>)).toList(),
+                  const SizedBox(height: 2),
+                  Text(
+                    sub,
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
+                    style: const TextStyle(
+                      fontSize: 10,
+                      color: AppColors.moLight,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ],
         ),
       ),
     );
   }
 }
 
-class _TurnTile extends StatelessWidget {
-  final Map<String, dynamic> turn;
-  const _TurnTile({required this.turn});
+class _DialogueCard extends StatelessWidget {
+  final Map<String, dynamic> dialogue;
+  final int index;
+  const _DialogueCard({required this.dialogue, required this.index});
 
   @override
   Widget build(BuildContext context) {
-    final speaker = turn['speaker'] as String? ?? '?';
-    final isA = speaker == 'A';
+    final turns = (dialogue['turns'] as List?) ?? [];
+    final catLabel = dialogue['category_label'] as String? ?? '';
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 12),
+      child: Container(
+        decoration: BoxDecoration(
+          color: AppColors.xuanZhi,
+          border: Border.all(color: AppColors.jin.withValues(alpha: 0.5)),
+        ),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            Container(
+              padding: const EdgeInsets.fromLTRB(12, 6, 8, 6),
+              color: AppColors.xuanZhiDeep,
+              child: Row(
+                children: [
+                  Text(
+                    '#$index',
+                    style: const TextStyle(
+                      fontSize: 11,
+                      fontWeight: FontWeight.w800,
+                      color: AppColors.zhuHong,
+                    ),
+                  ),
+                  const SizedBox(width: 8),
+                  Text(
+                    catLabel,
+                    style: const TextStyle(
+                      fontSize: 11,
+                      color: AppColors.mo,
+                      fontWeight: FontWeight.w700,
+                    ),
+                  ),
+                  const Spacer(),
+                  Text(
+                    '${turns.length}턴',
+                    style: const TextStyle(fontSize: 10, color: AppColors.moLight),
+                  ),
+                ],
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.fromLTRB(8, 8, 8, 8),
+              child: Column(
+                children: turns.map((t) {
+                  final tm = t as Map<String, dynamic>;
+                  final isA = (tm['speaker'] as String?) == 'A';
+                  return _ChatBubble(turn: tm, isA: isA);
+                }).toList(),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class _ChatBubble extends StatelessWidget {
+  final Map<String, dynamic> turn;
+  final bool isA;
+  const _ChatBubble({required this.turn, required this.isA});
+
+  @override
+  Widget build(BuildContext context) {
     final bubbleColor = isA ? AppColors.zhuHong : AppColors.jin;
     final bubbleText = isA ? AppColors.xuanZhi : AppColors.mo;
-    final align = isA ? CrossAxisAlignment.start : CrossAxisAlignment.end;
+    final zh = turn['zh'] as String? ?? '';
 
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+    final bubble = Container(
+      constraints: BoxConstraints(maxWidth: MediaQuery.of(context).size.width * 0.7),
+      padding: const EdgeInsets.all(10),
+      decoration: BoxDecoration(
+        color: bubbleColor,
+        border: Border.all(color: AppColors.jinDeep, width: 0.5),
+      ),
       child: Column(
-        crossAxisAlignment: align,
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Row(
-            mainAxisSize: MainAxisSize.min,
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              if (isA) SealStamp(text: isA ? '马' : '丽', size: 18, color: bubbleColor),
-              if (!isA) Container(),
-              const SizedBox(width: 6),
-              Text(
-                '${turn['num']} · ${isA ? 'Mark 马克' : 'Lily 小丽'}',
-                style: const TextStyle(fontSize: 10, color: AppColors.moLight, letterSpacing: 1),
+              Expanded(
+                child: SelectableHanziText(
+                  text: zh,
+                  tokens: turn['tokens'] as List?,
+                  style: TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.w800,
+                    color: bubbleText,
+                    height: 1.3,
+                  ),
+                ),
               ),
               const SizedBox(width: 6),
-              if (!isA) SealStamp(text: '丽', size: 18, color: bubbleColor),
+              InkWell(
+                onTap: () => TtsService.instance.speak(zh),
+                child: Icon(Icons.volume_up, size: 16, color: bubbleText.withValues(alpha: 0.85)),
+              ),
             ],
           ),
-          const SizedBox(height: 4),
-          Container(
-            constraints: const BoxConstraints(maxWidth: 320),
-            padding: const EdgeInsets.all(12),
-            decoration: BoxDecoration(
-              color: bubbleColor,
-              border: Border.all(color: AppColors.jinDeep, width: 0.5),
-              boxShadow: [
-                BoxShadow(
-                  color: bubbleColor.withValues(alpha: 0.2),
-                  blurRadius: 4,
-                  offset: const Offset(1, 1),
-                ),
-              ],
+          if (turn['pinyin'] != null) ...[
+            const SizedBox(height: 3),
+            Text(
+              turn['pinyin'] as String,
+              style: TextStyle(
+                fontSize: 11,
+                color: bubbleText.withValues(alpha: 0.85),
+                fontStyle: FontStyle.italic,
+              ),
             ),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  turn['zh'] as String? ?? '',
-                  style: TextStyle(
-                    fontSize: 20,
-                    fontWeight: FontWeight.w700,
-                    color: bubbleText,
-                    height: 1.4,
-                  ),
-                ),
-                if (turn['pinyin'] != null) ...[
-                  const SizedBox(height: 4),
-                  Text(
-                    turn['pinyin'] as String,
-                    style: TextStyle(
-                      fontSize: 12,
-                      color: bubbleText.withValues(alpha: 0.85),
-                      fontStyle: FontStyle.italic,
-                    ),
-                  ),
-                ],
-                const SizedBox(height: 6),
-                Container(
-                  height: 0.5,
-                  color: bubbleText.withValues(alpha: 0.3),
-                ),
-                const SizedBox(height: 6),
-                Text(
-                  turn['ko'] as String? ?? '',
-                  style: TextStyle(fontSize: 13, color: bubbleText.withValues(alpha: 0.95)),
-                ),
-                if (turn['note'] != null) ...[
-                  const SizedBox(height: 6),
-                  Text(
-                    '💡 ${turn['note']}',
-                    style: TextStyle(
-                      fontSize: 10,
-                      color: bubbleText.withValues(alpha: 0.75),
-                    ),
-                  ),
-                ],
-              ],
+          ],
+          if (turn['ko'] != null) ...[
+            const SizedBox(height: 4),
+            Container(height: 0.5, color: bubbleText.withValues(alpha: 0.3)),
+            const SizedBox(height: 4),
+            Text(
+              turn['ko'] as String,
+              style: TextStyle(fontSize: 12, color: bubbleText.withValues(alpha: 0.95)),
             ),
-          ),
+          ],
         ],
+      ),
+    );
+
+    final avatar = Container(
+      width: 30,
+      height: 30,
+      decoration: BoxDecoration(
+        color: bubbleColor,
+        shape: BoxShape.circle,
+      ),
+      alignment: Alignment.center,
+      child: Text(
+        isA ? 'A' : 'B',
+        style: const TextStyle(
+          color: AppColors.xuanZhi,
+          fontWeight: FontWeight.w900,
+          fontSize: 12,
+        ),
+      ),
+    );
+
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: 3),
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        mainAxisAlignment: isA ? MainAxisAlignment.start : MainAxisAlignment.end,
+        children: isA
+            ? [avatar, const SizedBox(width: 6), Flexible(child: bubble)]
+            : [Flexible(child: bubble), const SizedBox(width: 6), avatar],
       ),
     );
   }

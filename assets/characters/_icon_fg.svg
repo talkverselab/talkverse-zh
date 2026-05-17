@@ -1,0 +1,30 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .line{stroke:#FFFFFF;stroke-width:18;stroke-linecap:round;stroke-linejoin:round;fill:none}
+    .thin{stroke:#FFFFFF;stroke-width:12;stroke-linecap:round;stroke-linejoin:round;fill:none}
+    .face{fill:#FFFFFF}
+    .accent{stroke:#FFE89B;stroke-width:18;stroke-linecap:round;fill:none}
+  </style>
+  <!-- 글로브 중앙 정렬 (안드로이드 safe zone) -->
+  <g transform="translate(252 252) scale(1.4)">
+    <!-- 둘레 -->
+    <circle class="line" cx="150" cy="150" r="135"/>
+    <!-- 대륙 -->
+    <path class="thin" d="M72 62c28-14 61-16 88-4 17 8 35 9 53 5 20-5 39 1 52 13"/>
+    <path class="thin" d="M73 91c22-8 32 3 43 14 14 14 29 9 43 1 13-8 24-5 34 6"/>
+    <path class="thin" d="M47 130c19 8 29 25 38 43 7 15 21 21 38 16"/>
+    <path class="thin" d="M122 178c20-7 37-2 51 15 11 14 29 18 48 12"/>
+    <path class="thin" d="M222 82c-12 18-7 36 15 47 18 9 17 29 5 43"/>
+    <path class="thin" d="M194 225c22 3 42 10 59 23"/>
+    <!-- 눈 -->
+    <ellipse class="face" cx="120" cy="155" rx="12" ry="20"/>
+    <ellipse class="face" cx="200" cy="155" rx="12" ry="20"/>
+    <!-- 입 (미소) -->
+    <path class="line" d="M138 210c22 22 56 22 78 0"/>
+    <!-- 손짓 (오른쪽 wave) -->
+    <path class="line" d="M310 130c30-12 45-30 50-58"/>
+    <path class="line" d="M345 88c18-3 32 15 22 32"/>
+    <path class="line" d="M345 142c20-2 30 12 23 27"/>
+    <path class="accent" d="M390 60l22-32M425 92l34-12M398 138l36 8"/>
+  </g>
+</svg>

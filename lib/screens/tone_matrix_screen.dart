@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../core/theme.dart';
+import '../services/tts_service.dart';
 import '../widgets/chinese_decor.dart';
 
 class ToneMatrixScreen extends StatelessWidget {
@@ -158,7 +159,11 @@ class _ToneCell extends StatelessWidget {
         border: Border.all(color: AppColors.jin.withValues(alpha: 0.5)),
       ),
       child: InkWell(
-        onTap: () {},
+        onTap: () {
+          if (sample != null) {
+            TtsService.instance.speak(sample[0]);
+          }
+        },
         child: Padding(
           padding: const EdgeInsets.all(4),
           child: Column(
@@ -175,13 +180,26 @@ class _ToneCell extends StatelessWidget {
               ),
               const SizedBox(height: 3),
               if (sample != null) ...[
-                Text(
-                  sample[0],
-                  style: const TextStyle(
-                    fontSize: 18,
-                    fontWeight: FontWeight.w800,
-                    color: AppColors.mo,
-                  ),
+                Stack(
+                  alignment: Alignment.topRight,
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.only(right: 10),
+                      child: Text(
+                        sample[0],
+                        style: const TextStyle(
+                          fontSize: 18,
+                          fontWeight: FontWeight.w800,
+                          color: AppColors.mo,
+                        ),
+                      ),
+                    ),
+                    const Positioned(
+                      right: 0,
+                      top: 0,
+                      child: Icon(Icons.volume_up, size: 9, color: AppColors.moLight),
+                    ),
+                  ],
                 ),
                 Text(
                   sample[1],

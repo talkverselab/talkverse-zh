@@ -21,6 +21,8 @@ dependencies:
 
   # Util
   csv: ^6.0.0
+  flutter_svg: ^2.0.10+1
+  flutter_tts: ^4.2.0
 
   # Drift (SQLite ORM)
   drift: ^2.20.3
@@ -36,6 +38,18 @@ dev_dependencies:
   drift_dev: ^2.20.3
   build_runner: ^2.4.13
 
+  # Launcher icons
+  flutter_launcher_icons: ^0.14.1
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  remove_alpha_ios: true
+  image_path: "assets/characters/icon_full.png"
+  adaptive_icon_background: "#DE2910"
+  adaptive_icon_foreground: "assets/characters/icon_foreground.png"
+  min_sdk_android: 21
+
 flutter:
   uses-material-design: true
 
@@ -45,6 +59,7 @@ flutter:
     - assets/data/dialogues/north/L2.json
     - assets/data/dialogues/north/L3.json
     - assets/data/dialogues/north/_meta.json
+    - assets/data/dialogues/conv_lccc.json
     - assets/data/hanzi/cliff/hanzi_top500_final.txt
     - assets/data/hanzi/cliff/hanzi_top107.txt
     - assets/data/hanzi/hskk_209hanzi_distribution.tsv
@@ -60,4 +75,20 @@ flutter:
     - assets/data/hsk/HSK_1.txt
     - assets/data/hsk/HSK_2.txt
     - assets/data/hsk/HSK_3.txt
+    - assets/data/hsk/HSK_4.txt
+    - assets/data/hsk/HSK_5.txt
+    - assets/data/hsk/HSK_6.txt
+    - assets/data/hsk/HSK_7-9.txt
+    - assets/data/hsk/HSK_hanzi_4.txt
+    - assets/data/hsk/HSK_hanzi_5.txt
+    - assets/data/hsk/HSK_hanzi_6.txt
+    - assets/data/hsk/HSK_hanzi_7-9.txt
+    - assets/data/hsk/cedict.txt
     - assets/audio/hanzi/
+    - assets/data/grammar/lesson1.json
+    - assets/data/grammar/lesson2.json
+    - assets/data/grammar/hanzi_info.json
+    - assets/data/hanzi/hanzi_stages.json
+    - assets/characters/zh_mascot.png
+    - assets/characters/zh_mascot_simple.svg
+    - assets/characters/emotions/
