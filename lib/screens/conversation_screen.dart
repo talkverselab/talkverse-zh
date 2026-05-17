@@ -2,6 +2,9 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show rootBundle;
 
+import '../core/theme.dart';
+import '../widgets/chinese_decor.dart';
+
 class ConversationScreen extends StatefulWidget {
   const ConversationScreen({super.key});
 
@@ -29,15 +32,13 @@ class _ConversationScreenState extends State<ConversationScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final cs = Theme.of(context).colorScheme;
     return Scaffold(
+      backgroundColor: AppColors.xuanZhi,
       appBar: AppBar(
-        title: const Text('회화 200 — L1'),
-        backgroundColor: cs.primary,
-        foregroundColor: cs.onPrimary,
+        title: const Text('核心会话 · L1'),
       ),
       body: _loading
-          ? const Center(child: CircularProgressIndicator())
+          ? const Center(child: CircularProgressIndicator(color: AppColors.zhuHong))
           : _buildBody(),
     );
   }
@@ -53,37 +54,47 @@ class _ConversationScreenState extends State<ConversationScreen> {
     return ListView(
       padding: const EdgeInsets.all(16),
       children: [
-        Card(
-          child: Padding(
-            padding: const EdgeInsets.all(16),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  _data!['title'] as String? ?? '',
-                  style: Theme.of(context).textTheme.titleLarge,
-                ),
-                const SizedBox(height: 4),
-                Text(
-                  _data!['description'] as String? ?? '',
-                  style: Theme.of(context).textTheme.bodyMedium,
-                ),
-                const SizedBox(height: 12),
-                LinearProgressIndicator(
-                  value: progress / target,
-                  minHeight: 8,
-                ),
-                const SizedBox(height: 4),
-                Text(
-                  '$progress / $target turn',
-                  style: Theme.of(context).textTheme.bodySmall,
-                ),
-              ],
-            ),
+        ChineseCard(
+          title: 'L1 · 매칭 narrative 200 turn',
+          sealText: 'L1',
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                _data!['description'] as String? ?? '',
+                style: const TextStyle(color: AppColors.mo, fontSize: 13, height: 1.5),
+              ),
+              const SizedBox(height: 12),
+              Stack(
+                children: [
+                  Container(
+                    height: 8,
+                    decoration: BoxDecoration(
+                      color: AppColors.xuanZhiDeep,
+                      border: Border.all(color: AppColors.jin.withValues(alpha: 0.5)),
+                    ),
+                  ),
+                  FractionallySizedBox(
+                    widthFactor: progress / target,
+                    child: Container(
+                      height: 8,
+                      color: AppColors.zhuHong,
+                    ),
+                  ),
+                ],
+              ),
+              const SizedBox(height: 6),
+              Text(
+                '进度 $progress / $target',
+                style: const TextStyle(fontSize: 11, color: AppColors.moLight),
+              ),
+            ],
           ),
         ),
         const SizedBox(height: 16),
         ...episodes.map((ep) => _EpisodeCard(episode: ep as Map<String, dynamic>)),
+        const SizedBox(height: 12),
+        const BrushDivider(),
       ],
     );
   }
@@ -96,33 +107,44 @@ class _EpisodeCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final turns = (episode['turns'] as List?) ?? [];
-    return Card(
-      margin: const EdgeInsets.only(bottom: 16),
-      child: ExpansionTile(
-        leading: Text(
-          episode['emoji'] as String? ?? '📖',
-          style: const TextStyle(fontSize: 28),
+    final epId = episode['id'] as String? ?? '';
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 14),
+      child: Container(
+        decoration: BoxDecoration(
+          color: AppColors.xuanZhi,
+          border: Border.all(color: AppColors.jin.withValues(alpha: 0.6)),
         ),
-        title: Text(
-          'Ep ${episode['id']} — ${episode['title']}',
-          style: const TextStyle(fontWeight: FontWeight.w600),
-        ),
-        subtitle: Text(
-          '${turns.length} / 40 turn',
-          style: Theme.of(context).textTheme.bodySmall,
-        ),
-        initiallyExpanded: turns.isNotEmpty,
-        children: turns.isEmpty
-            ? [
-                Padding(
-                  padding: const EdgeInsets.all(16),
-                  child: Text(
-                    episode['todo'] as String? ?? '미작성',
-                    style: Theme.of(context).textTheme.bodySmall,
+        child: ExpansionTile(
+          tilePadding: const EdgeInsets.symmetric(horizontal: 14),
+          collapsedBackgroundColor: AppColors.xuanZhi,
+          backgroundColor: AppColors.xuanZhi,
+          leading: SealStamp(text: epId.replaceAll('ep', ''), size: 36),
+          title: Text(
+            '${episode['title']} ${episode['emoji'] ?? ''}',
+            style: const TextStyle(
+              fontWeight: FontWeight.w800,
+              color: AppColors.mo,
+              fontSize: 15,
+            ),
+          ),
+          subtitle: Text(
+            '${turns.length} / 40 turn',
+            style: const TextStyle(color: AppColors.moLight, fontSize: 11),
+          ),
+          initiallyExpanded: turns.isNotEmpty,
+          children: turns.isEmpty
+              ? [
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(16, 4, 16, 16),
+                    child: Text(
+                      episode['todo'] as String? ?? '미작성',
+                      style: const TextStyle(color: AppColors.moLight, fontSize: 12),
+                    ),
                   ),
-                ),
-              ]
-            : turns.map((t) => _TurnTile(turn: t as Map<String, dynamic>)).toList(),
+                ]
+              : turns.map((t) => _TurnTile(turn: t as Map<String, dynamic>)).toList(),
+        ),
       ),
     );
   }
@@ -136,18 +158,28 @@ class _TurnTile extends StatelessWidget {
   Widget build(BuildContext context) {
     final speaker = turn['speaker'] as String? ?? '?';
     final isA = speaker == 'A';
-    final cs = Theme.of(context).colorScheme;
-    final bubbleColor = isA ? cs.primaryContainer : cs.surfaceContainerHighest;
+    final bubbleColor = isA ? AppColors.zhuHong : AppColors.jin;
+    final bubbleText = isA ? AppColors.xuanZhi : AppColors.mo;
     final align = isA ? CrossAxisAlignment.start : CrossAxisAlignment.end;
 
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
       child: Column(
         crossAxisAlignment: align,
         children: [
-          Text(
-            '${turn['num']}  ·  ${isA ? 'Mark' : '小丽'}',
-            style: Theme.of(context).textTheme.bodySmall,
+          Row(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              if (isA) SealStamp(text: isA ? '马' : '丽', size: 18, color: bubbleColor),
+              if (!isA) Container(),
+              const SizedBox(width: 6),
+              Text(
+                '${turn['num']} · ${isA ? 'Mark 马克' : 'Lily 小丽'}',
+                style: const TextStyle(fontSize: 10, color: AppColors.moLight, letterSpacing: 1),
+              ),
+              const SizedBox(width: 6),
+              if (!isA) SealStamp(text: '丽', size: 18, color: bubbleColor),
+            ],
           ),
           const SizedBox(height: 4),
           Container(
@@ -155,32 +187,56 @@ class _TurnTile extends StatelessWidget {
             padding: const EdgeInsets.all(12),
             decoration: BoxDecoration(
               color: bubbleColor,
-              borderRadius: BorderRadius.circular(14),
+              border: Border.all(color: AppColors.jinDeep, width: 0.5),
+              boxShadow: [
+                BoxShadow(
+                  color: bubbleColor.withValues(alpha: 0.2),
+                  blurRadius: 4,
+                  offset: const Offset(1, 1),
+                ),
+              ],
             ),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
                   turn['zh'] as String? ?? '',
-                  style: const TextStyle(fontSize: 20, fontWeight: FontWeight.w600),
+                  style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.w700,
+                    color: bubbleText,
+                    height: 1.4,
+                  ),
                 ),
                 if (turn['pinyin'] != null) ...[
                   const SizedBox(height: 4),
                   Text(
                     turn['pinyin'] as String,
-                    style: TextStyle(fontSize: 13, color: cs.onSurfaceVariant, fontStyle: FontStyle.italic),
+                    style: TextStyle(
+                      fontSize: 12,
+                      color: bubbleText.withValues(alpha: 0.85),
+                      fontStyle: FontStyle.italic,
+                    ),
                   ),
                 ],
                 const SizedBox(height: 6),
+                Container(
+                  height: 0.5,
+                  color: bubbleText.withValues(alpha: 0.3),
+                ),
+                const SizedBox(height: 6),
                 Text(
                   turn['ko'] as String? ?? '',
-                  style: const TextStyle(fontSize: 14),
+                  style: TextStyle(fontSize: 13, color: bubbleText.withValues(alpha: 0.95)),
                 ),
                 if (turn['note'] != null) ...[
                   const SizedBox(height: 6),
                   Text(
                     '💡 ${turn['note']}',
-                    style: TextStyle(fontSize: 11, color: cs.primary),
+                    style: TextStyle(
+                      fontSize: 10,
+                      color: bubbleText.withValues(alpha: 0.75),
+                    ),
                   ),
                 ],
               ],

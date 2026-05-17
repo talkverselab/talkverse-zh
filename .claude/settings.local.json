@@ -25,7 +25,8 @@
       "Bash(git add *)",
       "Bash(git rm *)",
       "Bash(git commit -m 'Initial commit: 중국어유니버스 Flutter 앱 scaffold *)",
-      "Bash(git commit -m 'Add: 발음부 화면 + Hanzi Top500 음원 연결 + git config *)"
+      "Bash(git commit -m 'Add: 발음부 화면 + Hanzi Top500 음원 연결 + git config *)",
+      "Bash(git commit -m 'Style: 完全中国风 — 朱红+金+墨+宣纸 팔레트, 印章/卷轴/雲紋/灯笼 데코 *)"
     ]
   }
 }

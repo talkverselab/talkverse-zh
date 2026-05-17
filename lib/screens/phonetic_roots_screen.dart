@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 
+import '../core/theme.dart';
+import '../widgets/chinese_decor.dart';
+
 class PhoneticRootsScreen extends StatelessWidget {
   const PhoneticRootsScreen({super.key});
 
@@ -24,67 +27,60 @@ class PhoneticRootsScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final cs = Theme.of(context).colorScheme;
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('발음부 (성부)'),
-        backgroundColor: cs.primary,
-        foregroundColor: cs.onPrimary,
-      ),
-      body: ListView(
-        padding: const EdgeInsets.all(16),
+      backgroundColor: AppColors.xuanZhi,
+      appBar: AppBar(title: const Text('声旁部首')),
+      body: Stack(
         children: [
-          Card(
-            color: cs.tertiaryContainer,
-            child: Padding(
-              padding: const EdgeInsets.all(16),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text('한자 발음부 + 한국 한자음 매핑',
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        color: cs.onTertiaryContainer,
-                      )),
-                  const SizedBox(height: 8),
-                  Text(
-                    '현대 상용 한자 90%가 형성자.\n'
-                    'L1 80자 실측 한국 한자음 ↔ 중국 발음 초성 정합 87.5%.\n'
-                    '발음부 200개 → HSK1-5 1500자 풀이 (압축률 7.5× vs Heisig).',
-                    style: TextStyle(fontSize: 12, color: cs.onTertiaryContainer, height: 1.5),
-                  ),
-                ],
+          const Positioned.fill(child: CloudPattern(opacity: 0.05)),
+          ListView(
+            padding: const EdgeInsets.all(16),
+            children: [
+              ChineseCard(
+                title: '声旁 + 韓國 漢字音 매핑',
+                sealText: '声旁',
+                accent: const Color(0xFF6A1B9A),
+                child: Text(
+                  '현대 상용 한자 90% 형성자.\n'
+                  'L1 80자 실측 한국 한자음 ↔ 중국 발음 초성 정합 87.5%.\n'
+                  '발음부 200 → HSK1-5 1500자 풀이 (압축 7.5× vs Heisig).',
+                  style: TextStyle(color: AppColors.moLight, fontSize: 12, height: 1.5),
+                ),
               ),
-            ),
-          ),
-          const SizedBox(height: 16),
-          Text(
-            '샘플 발음부 (총 200 — placeholder)',
-            style: Theme.of(context).textTheme.titleMedium,
-          ),
-          const SizedBox(height: 8),
-          GridView.builder(
-            shrinkWrap: true,
-            physics: const NeverScrollableScrollPhysics(),
-            gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-              crossAxisCount: 2,
-              mainAxisSpacing: 8,
-              crossAxisSpacing: 8,
-              childAspectRatio: 1.8,
-            ),
-            itemCount: _sample.length,
-            itemBuilder: (context, i) => _RootCard(root: _sample[i]),
-          ),
-          const SizedBox(height: 16),
-          Card(
-            child: Padding(
-              padding: const EdgeInsets.all(16),
-              child: Text(
-                '🔧 200개 전체 발음부 데이터셋 작업 중 (옛 phonetic_roots_200.json 필요).\n'
-                '각 발음부 cluster (예: 木 계열 25자, 心 계열 26자, 口 계열 34자) 의 한자 풀이 + mnemonic 25주 작업 예정.',
-                style: Theme.of(context).textTheme.bodySmall,
+              const SizedBox(height: 16),
+              const BrushDivider(),
+              const SizedBox(height: 14),
+              Text(
+                '样本声旁 · 16 (총 200 placeholder)',
+                style: TextStyle(fontWeight: FontWeight.w800, color: AppColors.mo, letterSpacing: 2),
               ),
-            ),
+              const SizedBox(height: 10),
+              GridView.builder(
+                shrinkWrap: true,
+                physics: const NeverScrollableScrollPhysics(),
+                gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                  crossAxisCount: 2,
+                  mainAxisSpacing: 8,
+                  crossAxisSpacing: 8,
+                  childAspectRatio: 1.6,
+                ),
+                itemCount: _sample.length,
+                itemBuilder: (context, i) => _RootCard(root: _sample[i]),
+              ),
+              const SizedBox(height: 16),
+              Container(
+                padding: const EdgeInsets.all(14),
+                decoration: BoxDecoration(
+                  color: AppColors.xuanZhiDeep,
+                  border: Border.all(color: AppColors.jin.withValues(alpha: 0.5)),
+                ),
+                child: Text(
+                  '🔧 200 개 전체 声旁 데이터셋 작업 중.\n발음부 cluster (木 25자 · 心 26자 · 口 34자 …) + mnemonic 25주 손작성 예정.',
+                  style: const TextStyle(color: AppColors.moLight, fontSize: 11, height: 1.5),
+                ),
+              ),
+              const SizedBox(height: 24),
+            ],
           ),
         ],
       ),
@@ -106,28 +102,18 @@ class _RootCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final cs = Theme.of(context).colorScheme;
-    return Card(
+    return Container(
+      decoration: BoxDecoration(
+        color: AppColors.xuanZhi,
+        border: Border.all(color: AppColors.jin.withValues(alpha: 0.5)),
+      ),
       child: InkWell(
         onTap: () {},
-        borderRadius: BorderRadius.circular(12),
         child: Padding(
-          padding: const EdgeInsets.all(12),
+          padding: const EdgeInsets.all(10),
           child: Row(
             children: [
-              Container(
-                width: 48,
-                height: 48,
-                alignment: Alignment.center,
-                decoration: BoxDecoration(
-                  color: cs.primaryContainer,
-                  borderRadius: BorderRadius.circular(10),
-                ),
-                child: Text(
-                  root.root,
-                  style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
-                ),
-              ),
+              SealStamp(text: root.root, size: 52, color: AppColors.zhuHong),
               const SizedBox(width: 10),
               Expanded(
                 child: Column(
@@ -135,13 +121,31 @@ class _RootCard extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
-                      '${root.pinyin} · ${root.koHanja}',
-                      style: const TextStyle(fontWeight: FontWeight.w600, fontSize: 13),
+                      root.pinyin,
+                      style: const TextStyle(
+                        fontWeight: FontWeight.w700,
+                        fontSize: 14,
+                        color: AppColors.mo,
+                      ),
                     ),
-                    const SizedBox(height: 2),
                     Text(
-                      'cluster ${root.clusterCount}자',
-                      style: Theme.of(context).textTheme.bodySmall,
+                      root.koHanja,
+                      style: const TextStyle(
+                        fontSize: 11,
+                        color: AppColors.moLight,
+                      ),
+                    ),
+                    const SizedBox(height: 4),
+                    Container(
+                      padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
+                      decoration: BoxDecoration(
+                        color: AppColors.jin.withValues(alpha: 0.2),
+                        border: Border.all(color: AppColors.jin),
+                      ),
+                      child: Text(
+                        'cluster ${root.clusterCount}',
+                        style: const TextStyle(fontSize: 9, color: AppColors.mo, fontWeight: FontWeight.w700),
+                      ),
                     ),
                   ],
                 ),

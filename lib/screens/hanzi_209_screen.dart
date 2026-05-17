@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show rootBundle;
 
+import '../core/theme.dart';
 import '../services/audio_service.dart';
+import '../widgets/chinese_decor.dart';
 
 class Hanzi209Screen extends StatefulWidget {
   const Hanzi209Screen({super.key});
@@ -11,7 +13,7 @@ class Hanzi209Screen extends StatefulWidget {
 }
 
 class _Hanzi209ScreenState extends State<Hanzi209Screen> {
-  List<_Hanzi209Entry> _items = [];
+  List<String> _chars = [];
   bool _loading = true;
   String? _playing;
 
@@ -23,22 +25,18 @@ class _Hanzi209ScreenState extends State<Hanzi209Screen> {
 
   Future<void> _load() async {
     final raw = await rootBundle.loadString('assets/data/hanzi/hskk_209hanzi_distribution.tsv');
-    final entries = <_Hanzi209Entry>[];
+    final chars = <String>[];
     final lines = raw.split('\n');
     for (var i = 0; i < lines.length; i++) {
       final line = lines[i].trim();
       if (line.isEmpty || i == 0) continue;
       final cols = line.split('\t');
-      if (cols.isEmpty) continue;
-      entries.add(_Hanzi209Entry(
-        rank: i,
-        char: cols[0],
-        info: cols.length > 1 ? cols.sublist(1).join(' · ') : '',
-      ));
+      if (cols.isEmpty || cols[0].isEmpty) continue;
+      chars.add(cols[0]);
     }
     await AudioService.instance.ensureLoaded();
     setState(() {
-      _items = entries;
+      _chars = chars;
       _loading = false;
     });
   }
@@ -50,76 +48,83 @@ class _Hanzi209ScreenState extends State<Hanzi209Screen> {
   }
 
   @override
+  void dispose() {
+    AudioService.instance.stop();
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
-    final cs = Theme.of(context).colorScheme;
     return Scaffold(
+      backgroundColor: AppColors.xuanZhi,
       appBar: AppBar(
-        title: Text('Phase 2 한자 ${_items.length}자'),
-        backgroundColor: cs.primary,
-        foregroundColor: cs.onPrimary,
+        title: Text('二阶汉字 ${_chars.length} 字'),
       ),
       body: _loading
-          ? const Center(child: CircularProgressIndicator())
+          ? const Center(child: CircularProgressIndicator(color: AppColors.zhuHong))
           : Column(
               children: [
                 Container(
                   width: double.infinity,
-                  padding: const EdgeInsets.all(16),
-                  color: cs.primaryContainer,
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
+                  decoration: const BoxDecoration(
+                    gradient: LinearGradient(
+                      colors: [AppColors.zhuHongDeep, AppColors.zhuHong],
+                    ),
+                  ),
+                  padding: const EdgeInsets.fromLTRB(20, 16, 20, 16),
+                  child: Row(
+                    crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
-                      Text('회화 토큰 89% 청취 커버',
-                          style: TextStyle(
-                            fontSize: 18,
-                            fontWeight: FontWeight.bold,
-                            color: cs.onPrimaryContainer,
-                          )),
-                      const SizedBox(height: 4),
-                      Text(
-                        'opus zh_cn 88M tokens CD-weighted. Phase 2 sweet spot — "들리고 표현 시작".\n탭하면 발음 재생.',
-                        style: TextStyle(fontSize: 12, color: cs.onPrimaryContainer),
+                      const SealStamp(text: '⭐', size: 50, color: AppColors.jin),
+                      const SizedBox(width: 14),
+                      Expanded(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              '会话覆盖 89%',
+                              style: TextStyle(
+                                fontSize: 18,
+                                fontWeight: FontWeight.w900,
+                                color: AppColors.jinBright,
+                                letterSpacing: 2,
+                              ),
+                            ),
+                            const SizedBox(height: 4),
+                            Text(
+                              'opus zh_cn 88M tokens · CD-weighted\nPhase 2 sweet spot · 탭 → 발음',
+                              style: TextStyle(
+                                fontSize: 11,
+                                color: AppColors.xuanZhi.withValues(alpha: 0.9),
+                                height: 1.5,
+                              ),
+                            ),
+                          ],
+                        ),
                       ),
                     ],
                   ),
                 ),
+                const GreekKeyDivider(),
                 Expanded(
                   child: GridView.builder(
                     padding: const EdgeInsets.all(12),
                     gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                       crossAxisCount: 5,
-                      mainAxisSpacing: 8,
-                      crossAxisSpacing: 8,
+                      mainAxisSpacing: 6,
+                      crossAxisSpacing: 6,
                       childAspectRatio: 1,
                     ),
-                    itemCount: _items.length,
+                    itemCount: _chars.length,
                     itemBuilder: (context, i) {
-                      final item = _items[i];
-                      final has = AudioService.instance.hasHanzi(item.char);
-                      final isPlaying = _playing == item.char;
-                      return Card(
-                        elevation: isPlaying ? 6 : 1,
-                        color: isPlaying ? cs.primaryContainer : null,
-                        child: InkWell(
-                          onTap: has ? () => _play(item.char) : null,
-                          borderRadius: BorderRadius.circular(8),
-                          child: Stack(
-                            children: [
-                              Center(
-                                child: Text(
-                                  item.char,
-                                  style: const TextStyle(fontSize: 32, fontWeight: FontWeight.bold),
-                                ),
-                              ),
-                              if (has)
-                                const Positioned(
-                                  top: 4,
-                                  right: 4,
-                                  child: Icon(Icons.volume_up, size: 12, color: Colors.grey),
-                                ),
-                            ],
-                          ),
-                        ),
+                      final char = _chars[i];
+                      final has = AudioService.instance.hasHanzi(char);
+                      final isPlaying = _playing == char;
+                      return _CharTile(
+                        char: char,
+                        hasAudio: has,
+                        isPlaying: isPlaying,
+                        onTap: has ? () => _play(char) : null,
                       );
                     },
                   ),
@@ -128,17 +133,68 @@ class _Hanzi209ScreenState extends State<Hanzi209Screen> {
             ),
     );
   }
-
-  @override
-  void dispose() {
-    AudioService.instance.stop();
-    super.dispose();
-  }
 }
 
-class _Hanzi209Entry {
-  final int rank;
+class _CharTile extends StatelessWidget {
   final String char;
-  final String info;
-  _Hanzi209Entry({required this.rank, required this.char, required this.info});
+  final bool hasAudio;
+  final bool isPlaying;
+  final VoidCallback? onTap;
+
+  const _CharTile({
+    required this.char,
+    required this.hasAudio,
+    required this.isPlaying,
+    this.onTap,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      onTap: onTap,
+      child: AnimatedContainer(
+        duration: const Duration(milliseconds: 200),
+        decoration: BoxDecoration(
+          color: isPlaying ? AppColors.zhuHong : AppColors.xuanZhi,
+          border: Border.all(
+            color: isPlaying ? AppColors.jin : AppColors.jin.withValues(alpha: 0.4),
+            width: isPlaying ? 1.5 : 0.8,
+          ),
+          boxShadow: isPlaying
+              ? [
+                  BoxShadow(
+                    color: AppColors.zhuHong.withValues(alpha: 0.4),
+                    blurRadius: 8,
+                  ),
+                ]
+              : null,
+        ),
+        child: Stack(
+          children: [
+            Center(
+              child: Text(
+                char,
+                style: TextStyle(
+                  fontSize: 30,
+                  fontWeight: FontWeight.w800,
+                  color: isPlaying ? AppColors.xuanZhi : AppColors.mo,
+                  height: 1,
+                ),
+              ),
+            ),
+            if (hasAudio)
+              Positioned(
+                top: 3,
+                right: 3,
+                child: Icon(
+                  Icons.volume_up,
+                  size: 10,
+                  color: isPlaying ? AppColors.jinBright : AppColors.moLight,
+                ),
+              ),
+          ],
+        ),
+      ),
+    );
+  }
 }

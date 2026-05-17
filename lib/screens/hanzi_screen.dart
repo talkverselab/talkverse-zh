@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show rootBundle;
 
+import '../core/theme.dart';
 import '../services/audio_service.dart';
 
 class HanziScreen extends StatefulWidget {
@@ -50,21 +51,19 @@ class _HanziScreenState extends State<HanziScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final cs = Theme.of(context).colorScheme;
     return Scaffold(
+      backgroundColor: AppColors.xuanZhi,
       appBar: AppBar(
-        title: const Text('한자 Top 500'),
-        backgroundColor: cs.primary,
-        foregroundColor: cs.onPrimary,
+        title: const Text('常用汉字 Top 500'),
       ),
       body: _loading
-          ? const Center(child: CircularProgressIndicator())
+          ? const Center(child: CircularProgressIndicator(color: AppColors.zhuHong))
           : GridView.builder(
               padding: const EdgeInsets.all(12),
               gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount: 4,
-                mainAxisSpacing: 8,
-                crossAxisSpacing: 8,
+                mainAxisSpacing: 6,
+                crossAxisSpacing: 6,
                 childAspectRatio: 0.85,
               ),
               itemCount: _hanzi.length,
@@ -88,62 +87,76 @@ class _HanziCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final cs = Theme.of(context).colorScheme;
-    Color hskColor(String h) {
+    Color hskBg(String h) {
       switch (h) {
         case 'HSK1':
-          return Colors.green.shade100;
+          return AppColors.zhuHong.withValues(alpha: 0.92);
         case 'HSK2':
-          return Colors.lightGreen.shade100;
+          return AppColors.zhuHongLight.withValues(alpha: 0.85);
         case 'HSK3':
-          return Colors.lime.shade100;
+          return AppColors.jin.withValues(alpha: 0.85);
         case 'HSK4':
-          return Colors.amber.shade100;
+          return AppColors.jinBright.withValues(alpha: 0.75);
         case 'HSK5':
-          return Colors.orange.shade100;
+          return AppColors.feiCui.withValues(alpha: 0.7);
         case 'HSK6':
-          return Colors.deepOrange.shade100;
+          return AppColors.moLight.withValues(alpha: 0.5);
         default:
-          return cs.surfaceContainerHighest;
+          return AppColors.xuanZhiDeep;
+      }
+    }
+
+    Color hskFg(String h) {
+      switch (h) {
+        case 'HSK1':
+        case 'HSK2':
+        case 'HSK6':
+          return AppColors.xuanZhi;
+        default:
+          return AppColors.mo;
       }
     }
 
     final has = AudioService.instance.hasHanzi(entry.char);
-    return Card(
-      color: hskColor(entry.hsk),
-      child: InkWell(
-        onTap: has ? () => AudioService.instance.playHanzi(entry.char) : null,
-        child: Padding(
-          padding: const EdgeInsets.all(6),
-          child: Stack(
-            children: [
-              Center(
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Text(
-                      entry.char,
-                      style: const TextStyle(
-                        fontSize: 32,
-                        fontWeight: FontWeight.bold,
-                      ),
+    final bg = hskBg(entry.hsk);
+    final fg = hskFg(entry.hsk);
+
+    return GestureDetector(
+      onTap: has ? () => AudioService.instance.playHanzi(entry.char) : null,
+      child: Container(
+        decoration: BoxDecoration(
+          color: bg,
+          border: Border.all(color: AppColors.jinDeep.withValues(alpha: 0.4), width: 0.8),
+        ),
+        child: Stack(
+          children: [
+            Center(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text(
+                    entry.char,
+                    style: TextStyle(
+                      fontSize: 30,
+                      fontWeight: FontWeight.w800,
+                      color: fg,
                     ),
-                    const SizedBox(height: 4),
-                    Text(
-                      '#${entry.rank} · ${entry.hsk}',
-                      style: const TextStyle(fontSize: 10),
-                    ),
-                  ],
-                ),
+                  ),
+                  const SizedBox(height: 4),
+                  Text(
+                    '#${entry.rank} · ${entry.hsk}',
+                    style: TextStyle(fontSize: 9, color: fg.withValues(alpha: 0.85)),
+                  ),
+                ],
               ),
-              if (has)
-                const Positioned(
-                  top: 2,
-                  right: 2,
-                  child: Icon(Icons.volume_up, size: 11, color: Colors.black54),
-                ),
-            ],
-          ),
+            ),
+            if (has)
+              Positioned(
+                top: 3,
+                right: 3,
+                child: Icon(Icons.volume_up, size: 10, color: fg.withValues(alpha: 0.6)),
+              ),
+          ],
         ),
       ),
     );

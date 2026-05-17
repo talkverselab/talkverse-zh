@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show rootBundle;
 
+import '../core/theme.dart';
+import '../widgets/chinese_decor.dart';
+
 class HskScreen extends StatefulWidget {
   const HskScreen({super.key});
 
@@ -10,12 +13,12 @@ class HskScreen extends StatefulWidget {
 
 class _HskScreenState extends State<HskScreen> {
   final List<_Level> _levels = const [
-    _Level('HSK 한자 1급', 'assets/data/hsk/HSK_hanzi_1.txt', Color(0xFF4CAF50)),
-    _Level('HSK 한자 2급', 'assets/data/hsk/HSK_hanzi_2.txt', Color(0xFF8BC34A)),
-    _Level('HSK 한자 3급', 'assets/data/hsk/HSK_hanzi_3.txt', Color(0xFFCDDC39)),
-    _Level('HSK 1급 단어', 'assets/data/hsk/HSK_1.txt', Color(0xFF66BB6A)),
-    _Level('HSK 2급 단어', 'assets/data/hsk/HSK_2.txt', Color(0xFFAED581)),
-    _Level('HSK 3급 단어', 'assets/data/hsk/HSK_3.txt', Color(0xFFDCE775)),
+    _Level('HSK 汉字 一级', 'assets/data/hsk/HSK_hanzi_1.txt', '一', AppColors.zhuHong),
+    _Level('HSK 汉字 二级', 'assets/data/hsk/HSK_hanzi_2.txt', '二', AppColors.zhuHongLight),
+    _Level('HSK 汉字 三级', 'assets/data/hsk/HSK_hanzi_3.txt', '三', AppColors.jin),
+    _Level('HSK 词汇 一级', 'assets/data/hsk/HSK_1.txt', 'A', AppColors.feiCui),
+    _Level('HSK 词汇 二级', 'assets/data/hsk/HSK_2.txt', 'B', AppColors.jinDeep),
+    _Level('HSK 词汇 三级', 'assets/data/hsk/HSK_3.txt', 'C', AppColors.moLight),
   ];
 
   String? _selectedAsset;
@@ -42,14 +45,12 @@ class _HskScreenState extends State<HskScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final cs = Theme.of(context).colorScheme;
     return Scaffold(
+      backgroundColor: AppColors.xuanZhi,
       appBar: AppBar(
         title: Text(_selectedAsset == null
-            ? 'HSK'
+            ? 'HSK 等级'
             : _levels.firstWhere((l) => l.asset == _selectedAsset).title),
-        backgroundColor: cs.primary,
-        foregroundColor: cs.onPrimary,
         leading: _selectedAsset != null
             ? IconButton(
                 icon: const Icon(Icons.arrow_back),
@@ -65,44 +66,96 @@ class _HskScreenState extends State<HskScreen> {
   }
 
   Widget _buildList() {
-    return ListView.builder(
+    return ListView(
       padding: const EdgeInsets.all(16),
-      itemCount: _levels.length,
-      itemBuilder: (context, i) {
-        final level = _levels[i];
-        return Card(
-          margin: const EdgeInsets.only(bottom: 12),
-          child: ListTile(
-            leading: CircleAvatar(
-              backgroundColor: level.color.withValues(alpha: 0.2),
-              child: Icon(Icons.school, color: level.color),
-            ),
-            title: Text(level.title, style: const TextStyle(fontWeight: FontWeight.w600)),
-            trailing: const Icon(Icons.chevron_right),
-            onTap: () => _open(level.asset),
+      children: [
+        ChineseCard(
+          title: 'HSK · 新汉语水平考试',
+          sealText: 'HSK',
+          child: Text(
+            '中华人民共和国 国家汉办 시험 분급.\n신HSK 2021 — 一级 ~ 七至九级.',
+            style: TextStyle(color: AppColors.moLight, fontSize: 12, height: 1.5),
           ),
-        );
-      },
+        ),
+        const SizedBox(height: 16),
+        ..._levels.map((level) => Padding(
+              padding: const EdgeInsets.only(bottom: 10),
+              child: InkWell(
+                onTap: () => _open(level.asset),
+                child: Container(
+                  decoration: BoxDecoration(
+                    color: AppColors.xuanZhi,
+                    border: Border.all(color: AppColors.jin.withValues(alpha: 0.5)),
+                  ),
+                  child: Row(
+                    children: [
+                      Container(
+                        width: 56,
+                        height: 56,
+                        color: level.color,
+                        alignment: Alignment.center,
+                        child: SealStamp(text: level.seal, size: 40, color: level.color),
+                      ),
+                      const SizedBox(width: 14),
+                      Expanded(
+                        child: Text(
+                          level.title,
+                          style: const TextStyle(
+                            fontSize: 15,
+                            fontWeight: FontWeight.w700,
+                            color: AppColors.mo,
+                          ),
+                        ),
+                      ),
+                      const Padding(
+                        padding: EdgeInsets.only(right: 14),
+                        child: Icon(Icons.chevron_right, color: AppColors.zhuHong, size: 20),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            )),
+      ],
     );
   }
 
   Widget _buildDetail() {
-    if (_loading) return const Center(child: CircularProgressIndicator());
+    if (_loading) {
+      return const Center(child: CircularProgressIndicator(color: AppColors.zhuHong));
+    }
     return ListView.separated(
-      padding: const EdgeInsets.all(16),
+      padding: const EdgeInsets.symmetric(vertical: 8),
       itemCount: _items.length,
-      separatorBuilder: (_, __) => const Divider(height: 1),
+      separatorBuilder: (_, __) =>
+          Container(height: 0.5, color: AppColors.jin.withValues(alpha: 0.3)),
       itemBuilder: (context, i) {
-        return ListTile(
-          dense: true,
-          leading: SizedBox(
-            width: 40,
-            child: Text(
-              '${i + 1}',
-              style: Theme.of(context).textTheme.bodySmall,
-            ),
+        return Container(
+          color: AppColors.xuanZhi,
+          padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
+          child: Row(
+            children: [
+              SizedBox(
+                width: 44,
+                child: Text(
+                  '${i + 1}',
+                  style: const TextStyle(
+                    fontSize: 11,
+                    color: AppColors.moLight,
+                    fontWeight: FontWeight.w700,
+                  ),
+                ),
+              ),
+              Text(
+                _items[i],
+                style: const TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.w700,
+                  color: AppColors.mo,
+                ),
+              ),
+            ],
           ),
-          title: Text(_items[i], style: const TextStyle(fontSize: 18)),
         );
       },
     );
@@ -112,6 +165,7 @@ class _HskScreenState extends State<HskScreen> {
 class _Level {
   final String title;
   final String asset;
+  final String seal;
   final Color color;
-  const _Level(this.title, this.asset, this.color);
+  const _Level(this.title, this.asset, this.seal, this.color);
 }
