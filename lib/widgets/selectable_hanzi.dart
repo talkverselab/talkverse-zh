@@ -12,6 +12,7 @@ class SelectableHanziText extends StatefulWidget {
   final List<dynamic>? tokens; // [{text, compound}]
   final Map<String, dynamic>? chunks; // chunk dict
   final TextStyle? style;
+  final String? highlightText; // 이 텍스트와 같은 토큰을 강조 (검색 결과용)
 
   const SelectableHanziText({
     super.key,
@@ -19,6 +20,7 @@ class SelectableHanziText extends StatefulWidget {
     this.tokens,
     this.chunks,
     this.style,
+    this.highlightText,
   });
 
   @override
@@ -97,10 +99,11 @@ class _SelectableHanziTextState extends State<SelectableHanziText> {
           return Text(txt, style: style);
         }
         final focused = _focused == i;
+        final highlighted = widget.highlightText != null && txt == widget.highlightText;
         return Material(
           color: focused
               ? (compound ? AppColors.jin.withValues(alpha: 0.25) : AppColors.zhuHong.withValues(alpha: 0.18))
-              : Colors.transparent,
+              : (highlighted ? AppColors.jin.withValues(alpha: 0.3) : Colors.transparent),
           child: InkWell(
             onTap: () {
               setState(() => _focused = i);

@@ -187,7 +187,7 @@ class _ConversationScreenState extends State<ConversationScreen> {
         scrollDirection: Axis.horizontal,
         padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
         itemCount: all.length,
-        separatorBuilder: (_, __) => const SizedBox(width: 6),
+        separatorBuilder: (_, _) => const SizedBox(width: 6),
         itemBuilder: (context, i) {
           final c = all[i];
           final lbl = c == 'ALL' ? '전체' : (labels[c] as String? ?? c);

@@ -4,11 +4,11 @@ import '../core/theme.dart';
 import '../widgets/chinese_decor.dart';
 import '../widgets/mascot.dart';
 import '../widgets/today_mission.dart';
+import 'chunk_search_screen.dart';
 import 'conversation_screen.dart';
 import 'conversation_wordset_screen.dart';
 import 'flashcard_screen.dart';
 import 'grammar_lesson_screen.dart';
-import 'hanzi_209_screen.dart';
 import 'hanzi_stages_screen.dart';
 import 'phonetic_roots_screen.dart';
 import 'profile_screen.dart';
@@ -326,7 +326,13 @@ class _LearnScreenState extends State<LearnScreen> {
         title: const Text('학습', style: TextStyle(color: AppColors.mo)),
         centerTitle: true,
         actions: [
-          IconButton(icon: const Icon(Icons.search, color: AppColors.mo), onPressed: () {}),
+          IconButton(
+            icon: const Icon(Icons.search, color: AppColors.mo),
+            onPressed: () => Navigator.push(
+              context,
+              MaterialPageRoute(builder: (_) => const ChunkSearchScreen()),
+            ),
+          ),
         ],
       ),
       body: Column(
@@ -337,7 +343,7 @@ class _LearnScreenState extends State<LearnScreen> {
               scrollDirection: Axis.horizontal,
               padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 6),
               itemCount: _filters.length,
-              separatorBuilder: (_, __) => const SizedBox(width: 8),
+              separatorBuilder: (_, _) => const SizedBox(width: 8),
               itemBuilder: (context, i) {
                 final f = _filters[i];
                 final selected = f == _filter;
@@ -388,7 +394,7 @@ class _LearnScreenState extends State<LearnScreen> {
             child: ListView.separated(
               padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
               itemCount: lessons.length,
-              separatorBuilder: (_, __) => const SizedBox(height: 8),
+              separatorBuilder: (_, _) => const SizedBox(height: 8),
               itemBuilder: (context, i) => _LessonRow(lesson: lessons[i]),
             ),
           ),

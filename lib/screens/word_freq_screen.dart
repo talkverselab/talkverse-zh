@@ -106,7 +106,7 @@ class _WordFreqScreenState extends State<WordFreqScreen> {
                 Expanded(
                   child: ListView.separated(
                     itemCount: filtered.length,
-                    separatorBuilder: (_, __) =>
+                    separatorBuilder: (_, _) =>
                         Container(height: 0.5, color: AppColors.jin.withValues(alpha: 0.3)),
                     itemBuilder: (context, i) {
                       final w = filtered[i];

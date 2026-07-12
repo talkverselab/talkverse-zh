@@ -1,7 +1,7 @@
 import 'package:shared_preferences/shared_preferences.dart';
 
 /// 문장별 사용자 메모. SharedPreferences 에 저장.
-/// key = "memo:<patternId>:<idx>"
+/// key = "memo:`patternId`:`idx`"
 class MemoService {
   MemoService._();
   static final MemoService instance = MemoService._();

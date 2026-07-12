@@ -314,7 +314,7 @@ class _HanziQuizScreenState extends State<HanziQuizScreen> {
                 Expanded(
                   child: ListView.separated(
                     itemCount: q.options.length,
-                    separatorBuilder: (_, __) => const SizedBox(height: 8),
+                    separatorBuilder: (_, _) => const SizedBox(height: 8),
                     itemBuilder: (context, i) => _OptionTile(
                       index: i,
                       text: q.options[i],

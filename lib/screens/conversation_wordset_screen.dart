@@ -72,7 +72,7 @@ class _ConversationWordsetScreenState extends State<ConversationWordsetScreen> {
                     child: ListView.separated(
                       scrollDirection: Axis.horizontal,
                       itemCount: _tiers.length,
-                      separatorBuilder: (_, __) => const SizedBox(width: 8),
+                      separatorBuilder: (_, _) => const SizedBox(width: 8),
                       itemBuilder: (context, i) {
                         final entry = _tiers.entries.elementAt(i);
                         final selected = _tier == entry.key;
@@ -119,7 +119,7 @@ class _ConversationWordsetScreenState extends State<ConversationWordsetScreen> {
                 Expanded(
                   child: ListView.separated(
                     itemCount: filtered.length,
-                    separatorBuilder: (_, __) =>
+                    separatorBuilder: (_, _) =>
                         Container(height: 0.5, color: AppColors.jin.withValues(alpha: 0.3)),
                     itemBuilder: (context, i) => _WordRow(entry: filtered[i]),
                   ),
