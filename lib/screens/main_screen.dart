@@ -196,7 +196,7 @@ class _TodayMission extends StatefulWidget {
 }
 
 class _TodayMissionState extends State<_TodayMission> {
-  EpisodeMeta _meta = EpisodeMeta.l1.first;
+  EpisodeMeta? _meta;
   int _learned = 0;
   int _total = 40;
 
@@ -207,18 +207,23 @@ class _TodayMissionState extends State<_TodayMission> {
   }
 
   Future<void> _load() async {
+    await EpisodeCatalog.instance.ensureLoaded();
+    final all = EpisodeCatalog.instance.all;
+    if (all.isEmpty) return;
     final turns = await appDb.select(appDb.turns).get();
     final progress = await appDb.select(appDb.userProgress).get();
     final learnedIds =
         progress.where((p) => p.learned).map((p) => p.turnId).toSet();
-    for (final meta in EpisodeMeta.l1) {
+    for (final meta in all) {
       final epTurns = turns
           .where((t) =>
-              t.level == 'L1' && t.dialect == 'north' && t.episodeId == meta.id)
+              t.level == meta.level &&
+              t.dialect == 'north' &&
+              t.episodeId == meta.id)
           .toList();
       final total = epTurns.length;
       final learned = epTurns.where((t) => learnedIds.contains(t.id)).length;
-      if (total == 0 || learned < total || meta == EpisodeMeta.l1.last) {
+      if (total == 0 || learned < total || meta == all.last) {
         if (mounted) {
           setState(() {
             _meta = meta;
@@ -233,16 +238,18 @@ class _TodayMissionState extends State<_TodayMission> {
 
   @override
   Widget build(BuildContext context) {
+    final meta = _meta;
+    if (meta == null) return const SizedBox(height: 120);
     return TodayMissionCard(
-      level: 'BEGINNER 1',
-      lessonTitle: 'L1 · ${_meta.title}',
-      lessonSubtitle: 'Mark & 小丽 스토리 ${_meta.emoji}',
+      level: meta.level == 'L1' ? 'BEGINNER 1' : meta.level,
+      lessonTitle: '${meta.level} · ${meta.title}',
+      lessonSubtitle: 'Mark & 小丽 스토리 ${meta.emoji}',
       progress: _learned,
       total: _total,
       onTap: () async {
         await Navigator.push(
           context,
-          MaterialPageRoute(builder: (_) => EpisodeScreen(meta: _meta)),
+          MaterialPageRoute(builder: (_) => EpisodeScreen(meta: meta)),
         );
         _load();
       },
@@ -377,39 +384,48 @@ class _LearnScreenState extends State<LearnScreen> {
   }
 
   Future<void> _loadLessons() async {
+    await EpisodeCatalog.instance.ensureLoaded();
     final turns = await appDb.select(appDb.turns).get();
     final progress = await appDb.select(appDb.userProgress).get();
     final learnedIds =
         progress.where((p) => p.learned).map((p) => p.turnId).toSet();
 
     final items = <_LessonItem>[];
-    var currentAssigned = false;
-    for (var i = 0; i < EpisodeMeta.l1.length; i++) {
-      final meta = EpisodeMeta.l1[i];
-      final epTurns = turns
-          .where((t) =>
-              t.level == 'L1' && t.dialect == 'north' && t.episodeId == meta.id)
-          .toList();
-      final total = epTurns.length;
-      final learned = epTurns.where((t) => learnedIds.contains(t.id)).length;
-      final done = total > 0 && learned >= total;
-      _LessonState state;
-      if (done) {
-        state = _LessonState.done;
-      } else if (!currentAssigned) {
-        state = _LessonState.current;
-        currentAssigned = true;
-      } else {
-        state = _LessonState.locked;
+    for (final level in ['L1', 'L2', 'L3']) {
+      final metas = EpisodeCatalog.instance.forLevel(level);
+      if (metas.isEmpty) continue;
+      items.add(_LessonItem.header(
+          EpisodeCatalog.levelLabels[level] ?? level, metas.length));
+      var currentAssigned = false;
+      for (var i = 0; i < metas.length; i++) {
+        final meta = metas[i];
+        final epTurns = turns
+            .where((t) =>
+                t.level == level &&
+                t.dialect == 'north' &&
+                t.episodeId == meta.id)
+            .toList();
+        final total = epTurns.length;
+        final learned = epTurns.where((t) => learnedIds.contains(t.id)).length;
+        final done = total > 0 && learned >= total;
+        _LessonState state;
+        if (done) {
+          state = _LessonState.done;
+        } else if (!currentAssigned) {
+          state = _LessonState.current;
+          currentAssigned = true;
+        } else {
+          state = _LessonState.locked;
+        }
+        items.add(_LessonItem(
+          '${level == 'L1' ? 'EP' : 'D'}${i + 1}',
+          '${meta.emoji} ${meta.title}',
+          state,
+          meta: meta,
+          learned: learned,
+          total: total,
+        ));
       }
-      items.add(_LessonItem(
-        'Lesson ${i + 1}',
-        '${meta.emoji} ${meta.title}',
-        state,
-        meta: meta,
-        learned: learned,
-        total: total,
-      ));
     }
     if (mounted) setState(() => _lessons = items);
   }
@@ -472,24 +488,6 @@ class _LearnScreenState extends State<LearnScreen> {
             ),
           ),
           const GreekKeyDivider(height: 10),
-          const SizedBox(height: 6),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 16),
-            child: Row(
-              children: [
-                const SealStamp(text: 'BEG', size: 24),
-                const SizedBox(width: 8),
-                Text(
-                  'Beginner 1',
-                  style: TextStyle(
-                    fontSize: 16,
-                    fontWeight: FontWeight.w800,
-                    color: AppColors.mo,
-                  ),
-                ),
-              ],
-            ),
-          ),
           Expanded(
             child: ListView.separated(
               padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
@@ -513,9 +511,10 @@ class _LessonItem {
   final String id;
   final String title;
   final _LessonState state;
-  final EpisodeMeta meta;
+  final EpisodeMeta? meta;
   final int learned;
   final int total;
+  final bool isHeader;
   _LessonItem(
     this.id,
     this.title,
@@ -523,7 +522,15 @@ class _LessonItem {
     required this.meta,
     required this.learned,
     required this.total,
-  });
+  }) : isHeader = false;
+
+  _LessonItem.header(this.title, int count)
+      : id = '',
+        state = _LessonState.locked,
+        meta = null,
+        learned = 0,
+        total = count,
+        isHeader = true;
 }
 
 class _LessonRow extends StatelessWidget {
@@ -533,6 +540,36 @@ class _LessonRow extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    if (lesson.isHeader) {
+      return Padding(
+        padding: const EdgeInsets.fromLTRB(2, 14, 2, 2),
+        child: Row(
+          children: [
+            const SealStamp(text: '册', size: 20),
+            const SizedBox(width: 8),
+            Expanded(
+              child: Text(
+                lesson.title,
+                style: const TextStyle(
+                  fontSize: 14,
+                  fontWeight: FontWeight.w800,
+                  color: AppColors.mo,
+                  letterSpacing: 1.2,
+                ),
+              ),
+            ),
+            Text(
+              '${lesson.total}편',
+              style: const TextStyle(
+                fontSize: 11,
+                fontWeight: FontWeight.w800,
+                color: AppColors.zhuHong,
+              ),
+            ),
+          ],
+        ),
+      );
+    }
     Color bg;
     Color border;
     Color textColor;
@@ -558,13 +595,13 @@ class _LessonRow extends StatelessWidget {
         break;
     }
     return InkWell(
-      onTap: lesson.state == _LessonState.locked
+      onTap: lesson.state == _LessonState.locked || lesson.meta == null
           ? null
           : () async {
               await Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (_) => EpisodeScreen(meta: lesson.meta)),
+                    builder: (_) => EpisodeScreen(meta: lesson.meta!)),
               );
               onReturn();
             },

@@ -1,5 +1,8 @@
+import 'dart:convert';
+
 import 'package:drift/drift.dart' hide Column;
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart' show rootBundle;
 
 import '../core/theme.dart';
 import '../data/db/app_database.dart';
@@ -9,20 +12,58 @@ import '../services/tts_service.dart';
 import '../widgets/chinese_decor.dart';
 import '../widgets/selectable_hanzi.dart';
 
-/// L1 스토리 에피소드 메타 (Learn 탭·회화 허브 공용).
+/// 에피소드/다이얼로그 메타 (Learn 탭·회화 허브·홈 공용).
 class EpisodeMeta {
+  final String level; // 'L1' | 'L2' | 'L3'
   final String id;
   final String title;
   final String emoji;
-  const EpisodeMeta(this.id, this.title, this.emoji);
+  const EpisodeMeta(this.level, this.id, this.title, this.emoji);
+}
 
-  static const List<EpisodeMeta> l1 = [
-    EpisodeMeta('ep1', '매칭', '💕'),
-    EpisodeMeta('ep2', '식사', '🍽️'),
-    EpisodeMeta('ep3', '가족', '👨‍👩‍👧'),
-    EpisodeMeta('ep4', '갈등', '⚡'),
-    EpisodeMeta('ep5', '미래', '🌅'),
-  ];
+/// L1~L3 JSON에서 에피소드 목록을 1회 로드해 공유.
+class EpisodeCatalog {
+  EpisodeCatalog._();
+  static final EpisodeCatalog instance = EpisodeCatalog._();
+
+  final Map<String, List<EpisodeMeta>> _byLevel = {};
+  bool _loaded = false;
+
+  static const Map<String, String> levelLabels = {
+    'L1': 'L1 스토리 — 첫 만남',
+    'L2': 'L2 카오스 챗 — 일상',
+    'L3': 'L3 내러티브 — 사랑',
+  };
+
+  List<EpisodeMeta> forLevel(String level) => _byLevel[level] ?? const [];
+  List<EpisodeMeta> get all =>
+      ['L1', 'L2', 'L3'].expand(forLevel).toList(growable: false);
+
+  Future<void> ensureLoaded() async {
+    if (_loaded) return;
+    for (final level in ['L1', 'L2', 'L3']) {
+      try {
+        final raw = await rootBundle
+            .loadString('assets/data/dialogues/north/$level.json');
+        final data = json.decode(raw) as Map<String, dynamic>;
+        final units =
+            (data['episodes'] as List?) ?? (data['dialogues'] as List?) ?? [];
+        _byLevel[level] = [
+          for (final e in units.whereType<Map>())
+            if ((e['turns'] as List?)?.isNotEmpty ?? false)
+              EpisodeMeta(
+                level,
+                e['id'] as String,
+                e['title'] as String? ?? e['id'] as String,
+                e['emoji'] as String? ?? '💬',
+              ),
+        ];
+      } catch (_) {
+        _byLevel[level] = const [];
+      }
+    }
+    _loaded = true;
+  }
 }
 
 /// 에피소드 학습 화면 — 채팅 버블 + 청크 탭 + 턴별 학습 체크.
@@ -49,7 +90,7 @@ class _EpisodeScreenState extends State<EpisodeScreen> {
     await ChunkIndexService.instance.ensureLoaded();
     final turns = await (appDb.select(appDb.turns)
           ..where((t) =>
-              t.level.equals('L1') &
+              t.level.equals(widget.meta.level) &
               t.dialect.equals('north') &
               t.episodeId.equals(widget.meta.id))
           ..orderBy([(t) => OrderingTerm.asc(t.num)]))
@@ -95,7 +136,7 @@ class _EpisodeScreenState extends State<EpisodeScreen> {
                 style: const TextStyle(
                     color: AppColors.mo, fontSize: 16, fontWeight: FontWeight.w800)),
             const SizedBox(height: 2),
-            Text('L1 · Mark & 小丽',
+            Text('${meta.level} · Mark & 小丽',
                 style: TextStyle(
                     color: AppColors.moLight, fontSize: 10, letterSpacing: 2)),
           ],

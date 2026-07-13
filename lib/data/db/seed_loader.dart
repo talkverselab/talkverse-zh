@@ -8,8 +8,8 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'app_database.dart';
 
 class SeedLoader {
-  // v2: L1 스토리 200턴 완성판 재시딩
-  static const _kSeededKey = 'db_seeded_v2';
+  // v3: L2 카오스 챗 + L3 사랑 내러티브 추가 재시딩
+  static const _kSeededKey = 'db_seeded_v3';
 
   final AppDatabase db;
   SeedLoader(this.db);
@@ -20,7 +20,7 @@ class SeedLoader {
 
     await _seedHanzi();
     await _seedWords();
-    await _seedTurnsFromL1();
+    await _seedTurns();
 
     await prefs.setBool(_kSeededKey, true);
   }
@@ -66,30 +66,40 @@ class SeedLoader {
     await db.batch((b) => b.insertAllOnConflictUpdate(db.words, batch));
   }
 
-  Future<void> _seedTurnsFromL1() async {
-    final raw = await rootBundle.loadString('assets/data/dialogues/north/L1.json');
-    final data = json.decode(raw) as Map<String, dynamic>;
-    final episodes = (data['episodes'] as List?) ?? [];
+  /// L1~L3 전체 턴 시딩. L1은 'episodes', L2/L3은 'dialogues' 키 사용.
+  Future<void> _seedTurns() async {
     final batch = <Insertable<TurnRow>>[];
-    for (final ep in episodes) {
-      final epMap = ep as Map<String, dynamic>;
-      final epId = epMap['id'] as String?;
-      final turns = (epMap['turns'] as List?) ?? [];
-      for (final t in turns) {
-        final m = t as Map<String, dynamic>;
-        batch.add(TurnsCompanion.insert(
-          level: 'L1',
-          dialect: const Value('north'),
-          episodeId: Value(epId),
-          num: m['num'] as int,
-          speaker: m['speaker'] as String,
-          zh: m['zh'] as String,
-          pinyin: Value(m['pinyin'] as String?),
-          ko: Value(m['ko'] as String?),
-          tones: Value(m['tones'] as String?),
-          note: Value(m['note'] as String?),
-          tagsJson: Value(m['tags'] != null ? json.encode(m['tags']) : null),
-        ));
+    for (final level in ['L1', 'L2', 'L3']) {
+      final Map<String, dynamic> data;
+      try {
+        final raw = await rootBundle
+            .loadString('assets/data/dialogues/north/$level.json');
+        data = json.decode(raw) as Map<String, dynamic>;
+      } catch (_) {
+        continue;
+      }
+      final units =
+          (data['episodes'] as List?) ?? (data['dialogues'] as List?) ?? [];
+      for (final ep in units) {
+        final epMap = ep as Map<String, dynamic>;
+        final epId = epMap['id'] as String?;
+        final turns = (epMap['turns'] as List?) ?? [];
+        for (final t in turns) {
+          final m = t as Map<String, dynamic>;
+          batch.add(TurnsCompanion.insert(
+            level: level,
+            dialect: const Value('north'),
+            episodeId: Value(epId),
+            num: m['num'] as int,
+            speaker: m['speaker'] as String,
+            zh: m['zh'] as String,
+            pinyin: Value(m['pinyin'] as String?),
+            ko: Value(m['ko'] as String?),
+            tones: Value(m['tones'] as String?),
+            note: Value(m['note'] as String?),
+            tagsJson: Value(m['tags'] != null ? json.encode(m['tags']) : null),
+          ));
+        }
       }
     }
     if (batch.isNotEmpty) {

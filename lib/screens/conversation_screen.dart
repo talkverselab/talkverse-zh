@@ -29,6 +29,7 @@ class _ConversationScreenState extends State<ConversationScreen> {
 
   Future<void> _load() async {
     final raw = await rootBundle.loadString('assets/data/dialogues/conv_lccc.json');
+    await EpisodeCatalog.instance.ensureLoaded();
     setState(() {
       _data = json.decode(raw) as Map<String, dynamic>;
       _loading = false;
@@ -93,67 +94,77 @@ class _ConversationScreenState extends State<ConversationScreen> {
   }
 
   Widget _storyHub() {
+    final catalog = EpisodeCatalog.instance;
     return Padding(
       padding: const EdgeInsets.fromLTRB(16, 12, 16, 0),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          Row(
-            children: [
-              const SealStamp(text: '剧', size: 22),
-              const SizedBox(width: 8),
-              Text(
-                'L1 스토리 — Mark & 小丽 (200턴)',
-                style: TextStyle(
-                  fontSize: 13,
-                  fontWeight: FontWeight.w800,
-                  color: AppColors.mo,
-                  letterSpacing: 2,
+          for (final level in ['L1', 'L2', 'L3'])
+            if (catalog.forLevel(level).isNotEmpty) ...[
+              Row(
+                children: [
+                  SealStamp(text: level, size: 22),
+                  const SizedBox(width: 8),
+                  Expanded(
+                    child: Text(
+                      '${EpisodeCatalog.levelLabels[level]} · ${catalog.forLevel(level).length}편',
+                      style: TextStyle(
+                        fontSize: 13,
+                        fontWeight: FontWeight.w800,
+                        color: AppColors.mo,
+                        letterSpacing: 1.5,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+              const SizedBox(height: 8),
+              SizedBox(
+                height: 76,
+                child: ListView.separated(
+                  scrollDirection: Axis.horizontal,
+                  itemCount: catalog.forLevel(level).length,
+                  separatorBuilder: (_, _) => const SizedBox(width: 8),
+                  itemBuilder: (context, i) {
+                    final meta = catalog.forLevel(level)[i];
+                    return InkWell(
+                      onTap: () => Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (_) => EpisodeScreen(meta: meta)),
+                      ),
+                      child: Container(
+                        width: 96,
+                        padding: const EdgeInsets.all(8),
+                        decoration: BoxDecoration(
+                          color: AppColors.xuanZhi,
+                          border: Border.all(color: AppColors.zhuHong, width: 1),
+                        ),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Text(meta.emoji, style: const TextStyle(fontSize: 22)),
+                            const SizedBox(height: 4),
+                            Text(
+                              '${i + 1}. ${meta.title}',
+                              maxLines: 1,
+                              overflow: TextOverflow.ellipsis,
+                              style: const TextStyle(
+                                fontSize: 12,
+                                fontWeight: FontWeight.w800,
+                                color: AppColors.mo,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    );
+                  },
                 ),
               ),
+              const SizedBox(height: 10),
             ],
-          ),
-          const SizedBox(height: 8),
-          SizedBox(
-            height: 76,
-            child: ListView.separated(
-              scrollDirection: Axis.horizontal,
-              itemCount: EpisodeMeta.l1.length,
-              separatorBuilder: (_, _) => const SizedBox(width: 8),
-              itemBuilder: (context, i) {
-                final meta = EpisodeMeta.l1[i];
-                return InkWell(
-                  onTap: () => Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (_) => EpisodeScreen(meta: meta)),
-                  ),
-                  child: Container(
-                    width: 96,
-                    padding: const EdgeInsets.all(8),
-                    decoration: BoxDecoration(
-                      color: AppColors.xuanZhi,
-                      border: Border.all(color: AppColors.zhuHong, width: 1),
-                    ),
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Text(meta.emoji, style: const TextStyle(fontSize: 22)),
-                        const SizedBox(height: 4),
-                        Text(
-                          'EP${i + 1} ${meta.title}',
-                          style: const TextStyle(
-                            fontSize: 12,
-                            fontWeight: FontWeight.w800,
-                            color: AppColors.mo,
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                );
-              },
-            ),
-          ),
         ],
       ),
     );

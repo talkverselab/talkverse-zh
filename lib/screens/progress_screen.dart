@@ -1,10 +1,98 @@
 import 'package:flutter/material.dart';
 
 import '../core/theme.dart';
+import '../main.dart';
 import '../widgets/chinese_decor.dart';
 
-class ProgressScreen extends StatelessWidget {
+/// 학습 진행 — Turns/UserProgress 실데이터 기반.
+class ProgressScreen extends StatefulWidget {
   const ProgressScreen({super.key});
+
+  @override
+  State<ProgressScreen> createState() => _ProgressScreenState();
+}
+
+class _LevelStat {
+  final String level;
+  final int learned;
+  final int total;
+  _LevelStat(this.level, this.learned, this.total);
+  double get pct => total == 0 ? 0 : learned / total;
+}
+
+class _ProgressScreenState extends State<ProgressScreen> {
+  bool _loading = true;
+  int _learnedTotal = 0;
+  int _turnsTotal = 0;
+  int _doneEpisodes = 0;
+  int _streakDays = 0;
+  List<bool> _weekActive = List.filled(7, false);
+  List<_LevelStat> _levels = [];
+
+  @override
+  void initState() {
+    super.initState();
+    _load();
+  }
+
+  Future<void> _load() async {
+    final turns = await appDb.select(appDb.turns).get();
+    final progress = await appDb.select(appDb.userProgress).get();
+    final learnedIds =
+        progress.where((p) => p.learned).map((p) => p.turnId).toSet();
+
+    // 레벨별 통계
+    final levels = <_LevelStat>[];
+    for (final lv in ['L1', 'L2', 'L3']) {
+      final lvTurns = turns.where((t) => t.level == lv).toList();
+      final learned =
+          lvTurns.where((t) => learnedIds.contains(t.id)).length;
+      levels.add(_LevelStat(lv, learned, lvTurns.length));
+    }
+
+    // 완료 에피소드 수 (레벨 무관, episodeId 기준 전부 학습되면 완료)
+    final byEp = <String, List<int>>{};
+    for (final t in turns) {
+      byEp.putIfAbsent('${t.level}/${t.episodeId}', () => []).add(t.id);
+    }
+    final doneEps = byEp.values
+        .where((ids) => ids.isNotEmpty && ids.every(learnedIds.contains))
+        .length;
+
+    // 활동 날짜 (lastReviewed 기준) → 연속 학습·주간
+    final activeDates = progress
+        .where((p) => p.lastReviewed != null)
+        .map((p) {
+          final d = p.lastReviewed!;
+          return DateTime(d.year, d.month, d.day);
+        })
+        .toSet();
+    final today = DateTime.now();
+    final todayDate = DateTime(today.year, today.month, today.day);
+    var streak = 0;
+    var cursor = todayDate;
+    while (activeDates.contains(cursor)) {
+      streak++;
+      cursor = cursor.subtract(const Duration(days: 1));
+    }
+    // 이번 주 (월요일 시작)
+    final monday = todayDate.subtract(Duration(days: todayDate.weekday - 1));
+    final week = List.generate(7, (i) {
+      final d = monday.add(Duration(days: i));
+      return activeDates.contains(d);
+    });
+
+    if (!mounted) return;
+    setState(() {
+      _turnsTotal = turns.length;
+      _learnedTotal = turns.where((t) => learnedIds.contains(t.id)).length;
+      _doneEpisodes = doneEps;
+      _streakDays = streak;
+      _weekActive = week;
+      _levels = levels;
+      _loading = false;
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -24,75 +112,114 @@ class ProgressScreen extends StatelessWidget {
         ),
         centerTitle: true,
         actions: [
-          IconButton(icon: const Icon(Icons.calendar_month, color: AppColors.mo), onPressed: () {}),
+          IconButton(
+            icon: const Icon(Icons.refresh, color: AppColors.mo),
+            onPressed: () {
+              setState(() => _loading = true);
+              _load();
+            },
+          ),
         ],
       ),
-      body: ListView(
-        padding: const EdgeInsets.all(16),
-        children: [
-          _OverallCard(),
-          const SizedBox(height: 16),
-          Row(
-            children: const [
-              Expanded(child: _StatBox(label: '완료한 수업', value: '14', seal: '完')),
-              SizedBox(width: 8),
-              Expanded(child: _StatBox(label: '학습 시간', value: '8h 30m', seal: '时')),
-              SizedBox(width: 8),
-              Expanded(child: _StatBox(label: '연속 학습', value: '7일', seal: '日')),
-            ],
-          ),
-          const SizedBox(height: 18),
-          Row(
-            children: [
-              const SealStamp(text: '周', size: 22),
-              const SizedBox(width: 8),
-              Text(
-                '이번 주 학습',
-                style: TextStyle(
-                  fontSize: 14,
-                  fontWeight: FontWeight.w800,
-                  color: AppColors.mo,
-                  letterSpacing: 1.5,
+      body: _loading
+          ? const Center(child: CircularProgressIndicator(color: AppColors.zhuHong))
+          : ListView(
+              padding: const EdgeInsets.all(16),
+              children: [
+                _OverallCard(
+                  percent: _turnsTotal == 0 ? 0 : _learnedTotal / _turnsTotal,
+                  learned: _learnedTotal,
+                  total: _turnsTotal,
                 ),
-              ),
-            ],
-          ),
-          const SizedBox(height: 10),
-          _WeeklyRow(),
-          const SizedBox(height: 18),
-          const BrushDivider(),
-          const SizedBox(height: 14),
-          Row(
-            children: [
-              const SealStamp(text: '册', size: 22),
-              const SizedBox(width: 8),
-              Text(
-                '학습 영역별',
-                style: TextStyle(
-                  fontSize: 14,
-                  fontWeight: FontWeight.w800,
-                  color: AppColors.mo,
-                  letterSpacing: 1.5,
+                const SizedBox(height: 16),
+                Row(
+                  children: [
+                    Expanded(
+                        child: _StatBox(
+                            label: '완료 에피소드',
+                            value: '$_doneEpisodes',
+                            seal: '完')),
+                    const SizedBox(width: 8),
+                    Expanded(
+                        child: _StatBox(
+                            label: '학습한 문장',
+                            value: '$_learnedTotal',
+                            seal: '句')),
+                    const SizedBox(width: 8),
+                    Expanded(
+                        child: _StatBox(
+                            label: '연속 학습',
+                            value: '$_streakDays일',
+                            seal: '日')),
+                  ],
                 ),
-              ),
-            ],
-          ),
-          const SizedBox(height: 10),
-          const _CategoryBar(label: '회화', percent: 0.45, color: AppColors.zhuHong),
-          const _CategoryBar(label: '한자 209', percent: 0.18, color: Color(0xFFC62828)),
-          const _CategoryBar(label: '단어', percent: 0.06, color: AppColors.feiCui),
-          const _CategoryBar(label: '발음', percent: 0.30, color: Color(0xFF1565C0)),
-          const _CategoryBar(label: 'HSK', percent: 0.12, color: AppColors.jinDeep),
-        ],
-      ),
+                const SizedBox(height: 18),
+                Row(
+                  children: [
+                    const SealStamp(text: '周', size: 22),
+                    const SizedBox(width: 8),
+                    Text(
+                      '이번 주 학습',
+                      style: TextStyle(
+                        fontSize: 14,
+                        fontWeight: FontWeight.w800,
+                        color: AppColors.mo,
+                        letterSpacing: 1.5,
+                      ),
+                    ),
+                  ],
+                ),
+                const SizedBox(height: 10),
+                _WeeklyRow(active: _weekActive),
+                const SizedBox(height: 18),
+                const BrushDivider(),
+                const SizedBox(height: 14),
+                Row(
+                  children: [
+                    const SealStamp(text: '册', size: 22),
+                    const SizedBox(width: 8),
+                    Text(
+                      '레벨별 회화 진행',
+                      style: TextStyle(
+                        fontSize: 14,
+                        fontWeight: FontWeight.w800,
+                        color: AppColors.mo,
+                        letterSpacing: 1.5,
+                      ),
+                    ),
+                  ],
+                ),
+                const SizedBox(height: 10),
+                ..._levels.map((s) => _CategoryBar(
+                      label:
+                          '${s.level} 스토리 (${s.learned}/${s.total})',
+                      percent: s.pct,
+                      color: switch (s.level) {
+                        'L1' => AppColors.zhuHong,
+                        'L2' => const Color(0xFFAD1457),
+                        _ => AppColors.jinDeep,
+                      },
+                    )),
+                const SizedBox(height: 8),
+                Text(
+                  '문법·한자·발음 진행 기록은 준비 중이에요.',
+                  style: TextStyle(fontSize: 11, color: AppColors.moLight),
+                ),
+              ],
+            ),
     );
   }
 }
 
 class _OverallCard extends StatelessWidget {
+  final double percent;
+  final int learned;
+  final int total;
+  const _OverallCard(
+      {required this.percent, required this.learned, required this.total});
+
   @override
   Widget build(BuildContext context) {
-    const percent = 0.35;
     return Container(
       padding: const EdgeInsets.all(18),
       decoration: BoxDecoration(
@@ -110,12 +237,12 @@ class _OverallCard extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  '전체 진행률',
+                  '회화 전체 진행률 · $learned/$total문장',
                   style: TextStyle(
                     color: AppColors.jinBright,
                     fontWeight: FontWeight.w700,
                     fontSize: 13,
-                    letterSpacing: 2,
+                    letterSpacing: 1.5,
                   ),
                 ),
                 const SizedBox(height: 4),
@@ -156,7 +283,7 @@ class _OverallCard extends StatelessWidget {
                       ),
                     ),
                     FractionallySizedBox(
-                      widthFactor: percent,
+                      widthFactor: percent.clamp(0.0, 1.0),
                       child: Container(height: 8, color: AppColors.jinBright),
                     ),
                   ],
@@ -213,8 +340,10 @@ class _StatBox extends StatelessWidget {
 }
 
 class _WeeklyRow extends StatelessWidget {
+  final List<bool> active;
+  const _WeeklyRow({required this.active});
+
   static const _days = ['월', '화', '수', '목', '금', '토', '일'];
-  static const _done = [true, true, true, true, true, false, false];
 
   @override
   Widget build(BuildContext context) {
@@ -226,7 +355,7 @@ class _WeeklyRow extends StatelessWidget {
       ),
       child: Row(
         children: List.generate(7, (i) {
-          final done = _done[i];
+          final done = active[i];
           return Expanded(
             child: Column(
               children: [
@@ -310,7 +439,7 @@ class _CategoryBar extends StatelessWidget {
                 ),
               ),
               FractionallySizedBox(
-                widthFactor: percent,
+                widthFactor: percent.clamp(0.0, 1.0),
                 child: Container(height: 7, color: color),
               ),
             ],

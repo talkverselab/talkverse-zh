@@ -1,26 +1,3798 @@
 {
-  "level": "L2",
-  "dialect": "north",
-  "version": "v4-2026-05-17",
-  "schema": "v4-L2-23dial5block",
-  "title": "L2 — 카오스 chat (300 turn)",
-  "description": "메신저·일상 카오스. 23 dialogue × 5 block ≈ 300 turn. 톤: 캐주얼·약어·짧은 응답.",
-  "kpi": {
-    "dialogues_target": 23,
-    "blocks_per_dialogue": 5,
-    "turns_total_target": 300,
-    "turns_total_current": 0,
-    "progress_pct": 0
+ "level": "L2",
+ "dialect": "north",
+ "version": "v5-2026-07-07",
+ "schema": "v5-L2-23dial-complete",
+ "title": "L2 — 카오스 chat (300 turn)",
+ "description": "메신저·일상 카오스. 23 dialogue × 5 block ≈ 300 turn. 톤: 캐주얼·약어·짧은 응답.",
+ "kpi": {
+  "dialogues_target": 23,
+  "blocks_per_dialogue": 5,
+  "turns_total_target": 300,
+  "turns_total_current": 299,
+  "progress_pct": 99.7
+ },
+ "characters": {
+  "_NOTE": "L2 카스트 = L1 + 친구·동료 확장 (small group chat 가능)"
+ },
+ "tone_distribution": {
+  "긍정": 0.4,
+  "카오스": 0.4,
+  "부정": 0.2,
+  "_source": "_shared/dialogue_principles.md §4"
+ },
+ "dialogues": [
+  {
+   "id": "d01",
+   "title": "지각",
+   "emoji": "⏰",
+   "scenario": "늦잠 잔 Mark, 출근 시간에 전화로 재촉하는 小丽",
+   "turns": [
+    {
+     "num": 1,
+     "speaker": "B",
+     "zh": "你起床了没？",
+     "pinyin": "Nǐ qǐchuáng le méi?",
+     "ko": "일어났어 안 일어났어?",
+     "note": "문말 没 의문문 (~했어 안 했어?)",
+     "tags": [
+      "daily",
+      "question:没"
+     ]
+    },
+    {
+     "num": 2,
+     "speaker": "A",
+     "zh": "起了起了。",
+     "pinyin": "Qǐ le qǐ le.",
+     "ko": "일어났어 일어났어.",
+     "note": "동사 중복으로 다급함·건성 대답 표현",
+     "tags": [
+      "daily",
+      "repetition"
+     ]
+    },
+    {
+     "num": 3,
+     "speaker": "B",
+     "zh": "骗人！你声音还没醒呢。",
+     "pinyin": "Piàn rén! Nǐ shēngyīn hái méi xǐng ne.",
+     "ko": "거짓말! 목소리가 아직 안 깼는데.",
+     "note": "还没…呢 (아직 ~안 했다, 상태 지속)",
+     "tags": [
+      "particle:呢",
+      "banter"
+     ]
+    },
+    {
+     "num": 4,
+     "speaker": "A",
+     "zh": "好吧，刚睁眼。",
+     "pinyin": "Hǎo ba, gāng zhēng yǎn.",
+     "ko": "알았어, 방금 눈 떴어.",
+     "note": "부사 刚 (방금 막 ~했다)",
+     "tags": [
+      "adverb:刚",
+      "daily"
+     ]
+    },
+    {
+     "num": 5,
+     "speaker": "B",
+     "zh": "都八点半啦！",
+     "pinyin": "Dōu bā diǎn bàn la!",
+     "ko": "벌써 8시 반이야!",
+     "note": "都…啦 (벌써 ~라고! 놀람 강조)",
+     "tags": [
+      "particle:啦",
+      "time"
+     ]
+    },
+    {
+     "num": 6,
+     "speaker": "A",
+     "zh": "啊？完了完了！",
+     "pinyin": "Á? Wán le wán le!",
+     "ko": "어? 망했다 망했어!",
+     "note": "完了 (망했다, 구어 관용 표현)",
+     "tags": [
+      "exclamation",
+      "chaos"
+     ]
+    },
+    {
+     "num": 7,
+     "speaker": "B",
+     "zh": "别刷牙了，快跑吧。",
+     "pinyin": "Bié shuāyá le, kuài pǎo ba.",
+     "ko": "양치 하지 말고 빨리 뛰어.",
+     "note": "别…了 (하던 것도 하지 마) + 명령 吧",
+     "tags": [
+      "negation:别",
+      "particle:吧"
+     ]
+    },
+    {
+     "num": 8,
+     "speaker": "A",
+     "zh": "不刷牙怎么见人啊！",
+     "pinyin": "Bù shuāyá zěnme jiàn rén a!",
+     "ko": "양치 안 하고 어떻게 사람을 만나!",
+     "note": "怎么 반문 용법 (어떻게 ~하냐)",
+     "tags": [
+      "rhetorical",
+      "particle:啊"
+     ]
+    },
+    {
+     "num": 9,
+     "speaker": "B",
+     "zh": "那你就迟到吧。",
+     "pinyin": "Nà nǐ jiù chídào ba.",
+     "ko": "그럼 그냥 지각하든가.",
+     "note": "那…就…吧 (그럼 그냥 ~해)",
+     "tags": [
+      "adverb:就",
+      "banter"
+     ]
+    },
+    {
+     "num": 10,
+     "speaker": "A",
+     "zh": "我打车，还来得及。",
+     "pinyin": "Wǒ dǎchē, hái láidejí.",
+     "ko": "택시 탈게, 아직 안 늦었어.",
+     "note": "가능보어 来得及 (시간에 댈 수 있다)",
+     "tags": [
+      "complement:来得及",
+      "daily"
+     ]
+    },
+    {
+     "num": 11,
+     "speaker": "B",
+     "zh": "上周你也这么说的。",
+     "pinyin": "Shàng zhōu nǐ yě zhème shuō de.",
+     "ko": "지난주에도 그렇게 말했거든.",
+     "note": "문말 的 (과거 사실 강조, 是…的 생략형)",
+     "tags": [
+      "structure:是的",
+      "banter"
+     ]
+    },
+    {
+     "num": 12,
+     "speaker": "A",
+     "zh": "这次真的不一样嘛。",
+     "pinyin": "Zhè cì zhēn de bù yīyàng ma.",
+     "ko": "이번엔 진짜 다르다니까.",
+     "note": "어기조사 嘛 (당연하다는 어감·응석)",
+     "tags": [
+      "particle:嘛",
+      "banter"
+     ]
+    },
+    {
+     "num": 13,
+     "speaker": "B",
+     "zh": "快去吧，晚上请我吃饭。",
+     "pinyin": "Kuài qù ba, wǎnshang qǐng wǒ chīfàn.",
+     "ko": "빨리 가, 저녁에 밥 사.",
+     "note": "请+사람+동사 (한턱내다 구문)",
+     "tags": [
+      "structure:请",
+      "positive"
+     ]
+    }
+   ]
   },
-  "characters": {
-    "_NOTE": "L2 카스트 = L1 + 친구·동료 확장 (small group chat 가능)"
+  {
+   "id": "d02",
+   "title": "야근",
+   "emoji": "💻",
+   "scenario": "야근 중인 Mark의 투정과 밀크티로 위로하는 小丽",
+   "turns": [
+    {
+     "num": 1,
+     "speaker": "A",
+     "zh": "我还在公司呢。",
+     "pinyin": "Wǒ hái zài gōngsī ne.",
+     "ko": "나 아직 회사야.",
+     "note": "在…呢 (아직 ~에 있다, 상태 지속)",
+     "tags": [
+      "particle:呢",
+      "work"
+     ]
+    },
+    {
+     "num": 2,
+     "speaker": "B",
+     "zh": "又加班？",
+     "pinyin": "Yòu jiābān?",
+     "ko": "또 야근이야?",
+     "note": "부사 又 (또, 이미 반복된 일)",
+     "tags": [
+      "adverb:又",
+      "work"
+     ]
+    },
+    {
+     "num": 3,
+     "speaker": "A",
+     "zh": "王哥给我一堆活儿。",
+     "pinyin": "Wáng gē gěi wǒ yī duī huór.",
+     "ko": "왕 형이 일을 한 무더기 줬어.",
+     "note": "양사 堆 (무더기) + 儿화 活儿(일)",
+     "tags": [
+      "measure:堆",
+      "negative"
+     ]
+    },
+    {
+     "num": 4,
+     "speaker": "B",
+     "zh": "可怜的宝宝。",
+     "pinyin": "Kělián de bǎobao.",
+     "ko": "불쌍한 우리 아기.",
+     "note": "的 관형어 수식 (형용사+的+명사)",
+     "tags": [
+      "structure:的",
+      "affection"
+     ]
+    },
+    {
+     "num": 5,
+     "speaker": "A",
+     "zh": "我快饿死了。",
+     "pinyin": "Wǒ kuài è sǐ le.",
+     "ko": "배고파 죽기 직전이야.",
+     "note": "快…了 (곧 ~한다) + 死了 과장 표현",
+     "tags": [
+      "structure:快了",
+      "exaggeration"
+     ]
+    },
+    {
+     "num": 6,
+     "speaker": "B",
+     "zh": "给你点了奶茶，看门口。",
+     "pinyin": "Gěi nǐ diǎn le nǎichá, kàn ménkǒu.",
+     "ko": "밀크티 시켜놨어, 입구 봐봐.",
+     "note": "개사 给 (~에게 ~해 주다)",
+     "tags": [
+      "preposition:给",
+      "positive"
+     ]
+    },
+    {
+     "num": 7,
+     "speaker": "A",
+     "zh": "真的假的？",
+     "pinyin": "Zhēn de jiǎ de?",
+     "ko": "진짜야 가짜야?",
+     "note": "真的假的 (진짜? 구어 감탄 의문)",
+     "tags": [
+      "colloquial",
+      "surprise"
+     ]
+    },
+    {
+     "num": 8,
+     "speaker": "A",
+     "zh": "到了！你太好了吧！",
+     "pinyin": "Dào le! Nǐ tài hǎo le ba!",
+     "ko": "왔다! 너 진짜 최고다!",
+     "note": "太…了 감탄 구문 + 吧 (감탄 강조)",
+     "tags": [
+      "structure:太了",
+      "positive"
+     ]
+    },
+    {
+     "num": 9,
+     "speaker": "B",
+     "zh": "那今晚谁洗碗呢？",
+     "pinyin": "Nà jīnwǎn shéi xǐwǎn ne?",
+     "ko": "그럼 오늘 밤 설거지는 누가 하지?",
+     "note": "의문사 谁 + 呢 (그럼 ~는?)",
+     "tags": [
+      "question:谁",
+      "banter"
+     ]
+    },
+    {
+     "num": 10,
+     "speaker": "A",
+     "zh": "啊？原来有条件啊。",
+     "pinyin": "Á? Yuánlái yǒu tiáojiàn a.",
+     "ko": "어? 알고 보니 조건이 있었네.",
+     "note": "原来 (알고 보니 ~였다)",
+     "tags": [
+      "adverb:原来",
+      "chaos"
+     ]
+    },
+    {
+     "num": 11,
+     "speaker": "B",
+     "zh": "世界上没有免费的奶茶。",
+     "pinyin": "Shìjiè shang méiyǒu miǎnfèi de nǎichá.",
+     "ko": "세상에 공짜 밀크티는 없어.",
+     "note": "장소+没有 존재문 (~에 ~이 없다)",
+     "tags": [
+      "structure:没有",
+      "humor"
+     ]
+    },
+    {
+     "num": 12,
+     "speaker": "A",
+     "zh": "行行行，我洗。",
+     "pinyin": "Xíng xíng xíng, wǒ xǐ.",
+     "ko": "알았어 알았어, 내가 할게.",
+     "note": "行 (좋아/알았어, 승낙) 반복으로 체념 어감",
+     "tags": [
+      "colloquial:行",
+      "banter"
+     ]
+    },
+    {
+     "num": 13,
+     "speaker": "B",
+     "zh": "加油，早点回来呀。",
+     "pinyin": "Jiāyóu, zǎo diǎn huílái ya.",
+     "ko": "힘내, 일찍 들어와.",
+     "note": "형용사+点 (좀 ~하게) + 어기조사 呀",
+     "tags": [
+      "particle:呀",
+      "positive"
+     ]
+    }
+   ]
   },
-  "tone_distribution": {
-    "긍정": 0.4,
-    "카오스": 0.4,
-    "부정": 0.2,
-    "_source": "_shared/dialogue_principles.md §4"
+  {
+   "id": "d03",
+   "title": "배달음식",
+   "emoji": "🍜",
+   "scenario": "저녁 배달 메뉴를 한 시간째 못 정하는 두 사람의 카오스",
+   "turns": [
+    {
+     "num": 1,
+     "speaker": "B",
+     "zh": "晚饭吃什么？",
+     "pinyin": "Wǎnfàn chī shénme?",
+     "ko": "저녁 뭐 먹을래?",
+     "note": "의문사 什么 기본 의문문",
+     "tags": [
+      "question:什么",
+      "food"
+     ]
+    },
+    {
+     "num": 2,
+     "speaker": "A",
+     "zh": "随便。",
+     "pinyin": "Suíbiàn.",
+     "ko": "아무거나.",
+     "note": "随便 (아무거나) — 커플 싸움 유발 단어",
+     "tags": [
+      "colloquial:随便",
+      "food"
+     ]
+    },
+    {
+     "num": 3,
+     "speaker": "B",
+     "zh": "又来！随便最难点。",
+     "pinyin": "Yòu lái! Suíbiàn zuì nán diǎn.",
+     "ko": "또 시작이네! 아무거나가 제일 시키기 어렵거든.",
+     "note": "最+형용사 (최상급 표현)",
+     "tags": [
+      "adverb:最",
+      "banter"
+     ]
+    },
+    {
+     "num": 4,
+     "speaker": "A",
+     "zh": "那火锅怎么样？",
+     "pinyin": "Nà huǒguō zěnmeyàng?",
+     "ko": "그럼 훠궈 어때?",
+     "note": "怎么样 (~어때? 제안 의문문)",
+     "tags": [
+      "question:怎么样",
+      "food"
+     ]
+    },
+    {
+     "num": 5,
+     "speaker": "B",
+     "zh": "太贵了，不行。",
+     "pinyin": "Tài guì le, bùxíng.",
+     "ko": "너무 비싸, 안 돼.",
+     "note": "太…了 (너무 ~하다) + 不行 (안 된다)",
+     "tags": [
+      "structure:太了",
+      "negative"
+     ]
+    },
+    {
+     "num": 6,
+     "speaker": "A",
+     "zh": "麻辣烫呢？",
+     "pinyin": "Málàtàng ne?",
+     "ko": "마라탕은?",
+     "note": "명사+呢 (~는 어때? 생략 의문)",
+     "tags": [
+      "particle:呢",
+      "food"
+     ]
+    },
+    {
+     "num": 7,
+     "speaker": "B",
+     "zh": "昨天刚吃过。",
+     "pinyin": "Zuótiān gāng chī guo.",
+     "ko": "어제 막 먹었잖아.",
+     "note": "동태조사 过 (~한 적 있다/이미 했다)",
+     "tags": [
+      "aspect:过",
+      "food"
+     ]
+    },
+    {
+     "num": 8,
+     "speaker": "A",
+     "zh": "那你到底想吃什么呀！",
+     "pinyin": "Nà nǐ dàodǐ xiǎng chī shénme ya!",
+     "ko": "그럼 도대체 뭘 먹고 싶은 건데!",
+     "note": "到底 (도대체, 추궁 어감)",
+     "tags": [
+      "adverb:到底",
+      "chaos"
+     ]
+    },
+    {
+     "num": 9,
+     "speaker": "B",
+     "zh": "我也不知道嘛。",
+     "pinyin": "Wǒ yě bù zhīdào ma.",
+     "ko": "나도 모른단 말이야.",
+     "note": "어기조사 嘛 (응석·투정 어감)",
+     "tags": [
+      "particle:嘛",
+      "banter"
+     ]
+    },
+    {
+     "num": 10,
+     "speaker": "A",
+     "zh": "我们点了一个小时了。",
+     "pinyin": "Wǒmen diǎn le yī ge xiǎoshí le.",
+     "ko": "우리 한 시간째 고르고 있어.",
+     "note": "了…了 구문 (지금까지 ~한 지 얼마 됐다)",
+     "tags": [
+      "structure:了了",
+      "chaos"
+     ]
+    },
+    {
+     "num": 11,
+     "speaker": "B",
+     "zh": "那石头剪刀布决定吧。",
+     "pinyin": "Nà shítou jiǎndāo bù juédìng ba.",
+     "ko": "그럼 가위바위보로 정하자.",
+     "note": "청유 吧 (~하자)",
+     "tags": [
+      "particle:吧",
+      "game"
+     ]
+    },
+    {
+     "num": 12,
+     "speaker": "A",
+     "zh": "你赢了……那吃什么？",
+     "pinyin": "Nǐ yíng le…… nà chī shénme?",
+     "ko": "네가 이겼네… 그래서 뭐 먹어?",
+     "note": "了 완료 + 那 (화제 전환 접속)",
+     "tags": [
+      "aspect:了",
+      "chaos"
+     ]
+    },
+    {
+     "num": 13,
+     "speaker": "B",
+     "zh": "嗯……随便。",
+     "pinyin": "Èn…… suíbiàn.",
+     "ko": "음… 아무거나.",
+     "note": "随便 재등장 — 수미상관 반전 유머",
+     "tags": [
+      "colloquial:随便",
+      "humor"
+     ]
+    }
+   ]
   },
-  "dialogues": [],
-  "todo": "23 dial × 5 block 시나리오 outline 작성 + 각 dial 14 turn 평균"
+  {
+   "id": "d04",
+   "title": "날씨",
+   "emoji": "🌧️",
+   "scenario": "공원 데이트 날 갑자기 닥친 황사와 비, 집콕으로 계획 변경",
+   "turns": [
+    {
+     "num": 1,
+     "speaker": "A",
+     "zh": "今天去公园吧？",
+     "pinyin": "Jīntiān qù gōngyuán ba?",
+     "ko": "오늘 공원 갈까?",
+     "note": "청유 吧 (~하자/할까?)",
+     "tags": [
+      "particle:吧",
+      "date"
+     ]
+    },
+    {
+     "num": 2,
+     "speaker": "B",
+     "zh": "你看窗外了吗？",
+     "pinyin": "Nǐ kàn chuāngwài le ma?",
+     "ko": "창밖 봤어?",
+     "note": "了吗 의문문 (~했어?)",
+     "tags": [
+      "question:了吗",
+      "weather"
+     ]
+    },
+    {
+     "num": 3,
+     "speaker": "A",
+     "zh": "哇，天怎么黄了？",
+     "pinyin": "Wā, tiān zěnme huáng le?",
+     "ko": "와, 하늘이 왜 노래졌어?",
+     "note": "형용사+了 (상태 변화의 了)",
+     "tags": [
+      "aspect:了",
+      "weather"
+     ]
+    },
+    {
+     "num": 4,
+     "speaker": "B",
+     "zh": "沙尘暴来啦。",
+     "pinyin": "Shāchénbào lái la.",
+     "ko": "황사 왔잖아.",
+     "note": "어기조사 啦 (=了+啊, 알림+감탄)",
+     "tags": [
+      "particle:啦",
+      "weather"
+     ]
+    },
+    {
+     "num": 5,
+     "speaker": "A",
+     "zh": "北京的天气太可怕了。",
+     "pinyin": "Běijīng de tiānqì tài kěpà le.",
+     "ko": "베이징 날씨 진짜 무섭다.",
+     "note": "太…了 감탄 (너무 ~하다)",
+     "tags": [
+      "structure:太了",
+      "negative"
+     ]
+    },
+    {
+     "num": 6,
+     "speaker": "B",
+     "zh": "一会儿可能还下雨呢。",
+     "pinyin": "Yīhuìr kěnéng hái xià yǔ ne.",
+     "ko": "이따가 비까지 올지도 몰라.",
+     "note": "可能 (아마도, 추측 표현)",
+     "tags": [
+      "adverb:可能",
+      "weather"
+     ]
+    },
+    {
+     "num": 7,
+     "speaker": "A",
+     "zh": "那计划全完了。",
+     "pinyin": "Nà jìhuà quán wán le.",
+     "ko": "그럼 계획 다 끝났네.",
+     "note": "부사 全 (전부) + 完了 (끝장이다)",
+     "tags": [
+      "adverb:全",
+      "negative"
+     ]
+    },
+    {
+     "num": 8,
+     "speaker": "B",
+     "zh": "在家看电影不好吗？",
+     "pinyin": "Zài jiā kàn diànyǐng bù hǎo ma?",
+     "ko": "집에서 영화 보면 좋잖아?",
+     "note": "不…吗 반문 (~하지 않아?)",
+     "tags": [
+      "rhetorical",
+      "positive"
+     ]
+    },
+    {
+     "num": 9,
+     "speaker": "A",
+     "zh": "好是好，可是没爆米花。",
+     "pinyin": "Hǎo shì hǎo, kěshì méi bàomǐhuā.",
+     "ko": "좋긴 좋은데, 팝콘이 없어.",
+     "note": "A是A，可是… (~하긴 한데 그러나)",
+     "tags": [
+      "structure:A是A",
+      "banter"
+     ]
+    },
+    {
+     "num": 10,
+     "speaker": "B",
+     "zh": "冰箱里有薯片啊。",
+     "pinyin": "Bīngxiāng li yǒu shǔpiàn a.",
+     "ko": "냉장고에 감자칩 있잖아.",
+     "note": "방위사 里 + 有 존재문",
+     "tags": [
+      "structure:有",
+      "food"
+     ]
+    },
+    {
+     "num": 11,
+     "speaker": "A",
+     "zh": "那是我的！你什么时候发现的？",
+     "pinyin": "Nà shì wǒ de! Nǐ shénme shíhou fāxiàn de?",
+     "ko": "그거 내 건데! 언제 찾아낸 거야?",
+     "note": "是…的 구문 (과거 발생 시점 강조)",
+     "tags": [
+      "structure:是的",
+      "chaos"
+     ]
+    },
+    {
+     "num": 12,
+     "speaker": "B",
+     "zh": "上周就吃了一半啦。",
+     "pinyin": "Shàng zhōu jiù chī le yībàn la.",
+     "ko": "지난주에 벌써 반 먹었지롱.",
+     "note": "부사 就 (이미/벌써) + 啦",
+     "tags": [
+      "adverb:就",
+      "humor"
+     ]
+    },
+    {
+     "num": 13,
+     "speaker": "A",
+     "zh": "小丽！你这个薯片小偷！",
+     "pinyin": "Xiǎolì! Nǐ zhège shǔpiàn xiǎotōu!",
+     "ko": "샤오리! 이 감자칩 도둑아!",
+     "note": "你这个+명사 (친근한 타박 호칭)",
+     "tags": [
+      "structure:你这个",
+      "chaos"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d05",
+   "title": "드라마",
+   "emoji": "📺",
+   "scenario": "먼저 결말을 본 小丽의 스포일러에 발끈하는 Mark",
+   "turns": [
+    {
+     "num": 1,
+     "speaker": "B",
+     "zh": "我看完最后一集了！",
+     "pinyin": "Wǒ kàn wán zuìhòu yī jí le!",
+     "ko": "나 마지막 화 다 봤어!",
+     "note": "결과보어 完 (다 ~하다)",
+     "tags": [
+      "complement:完",
+      "drama"
+     ]
+    },
+    {
+     "num": 2,
+     "speaker": "A",
+     "zh": "停！别说！我还没看！",
+     "pinyin": "Tíng! Bié shuō! Wǒ hái méi kàn!",
+     "ko": "멈춰! 말하지 마! 나 아직 안 봤어!",
+     "note": "别+동사 (금지 명령)",
+     "tags": [
+      "negation:别",
+      "chaos"
+     ]
+    },
+    {
+     "num": 3,
+     "speaker": "B",
+     "zh": "男主角最后……",
+     "pinyin": "Nán zhǔjué zuìhòu……",
+     "ko": "남주가 마지막에…",
+     "note": "最后 (마지막에, 시간 부사어)",
+     "tags": [
+      "adverb:最后",
+      "banter"
+     ]
+    },
+    {
+     "num": 4,
+     "speaker": "A",
+     "zh": "闭嘴闭嘴闭嘴！",
+     "pinyin": "Bìzuǐ bìzuǐ bìzuǐ!",
+     "ko": "입 다물어 다물어 다물라고!",
+     "note": "동사 반복 (강한 어감의 구어체)",
+     "tags": [
+      "repetition",
+      "chaos"
+     ]
+    },
+    {
+     "num": 5,
+     "speaker": "B",
+     "zh": "哈哈，他结婚了哦。",
+     "pinyin": "Hāhā, tā jiéhūn le o.",
+     "ko": "하하, 걔 결혼했다?",
+     "note": "어기조사 哦 (슬쩍 알려주는 어감)",
+     "tags": [
+      "particle:哦",
+      "humor"
+     ]
+    },
+    {
+     "num": 6,
+     "speaker": "A",
+     "zh": "你说了！你真的说了！",
+     "pinyin": "Nǐ shuō le! Nǐ zhēn de shuō le!",
+     "ko": "말했어! 진짜 말해버렸어!",
+     "note": "了 (동작 완료) + 真的 강조",
+     "tags": [
+      "aspect:了",
+      "chaos"
+     ]
+    },
+    {
+     "num": 7,
+     "speaker": "B",
+     "zh": "跟谁结的我没说呀。",
+     "pinyin": "Gēn shéi jié de wǒ méi shuō ya.",
+     "ko": "누구랑 했는지는 말 안 했잖아.",
+     "note": "개사 跟 (~와) + 是…的 생략형",
+     "tags": [
+      "preposition:跟",
+      "humor"
+     ]
+    },
+    {
+     "num": 8,
+     "speaker": "A",
+     "zh": "我不听我不听。",
+     "pinyin": "Wǒ bù tīng wǒ bù tīng.",
+     "ko": "안 들어 안 들을 거야.",
+     "note": "문장 반복 (떼쓰기 구어 표현)",
+     "tags": [
+      "repetition",
+      "banter"
+     ]
+    },
+    {
+     "num": 9,
+     "speaker": "B",
+     "zh": "好啦好啦，对不起嘛。",
+     "pinyin": "Hǎo la hǎo la, duìbuqǐ ma.",
+     "ko": "알았어 알았어, 미안하다니까.",
+     "note": "好啦 (달래기) + 嘛 (애교 사과)",
+     "tags": [
+      "particle:嘛",
+      "positive"
+     ]
+    },
+    {
+     "num": 10,
+     "speaker": "A",
+     "zh": "今晚你别碰遥控器。",
+     "pinyin": "Jīnwǎn nǐ bié pèng yáokòngqì.",
+     "ko": "오늘 밤 리모컨 만지지 마.",
+     "note": "别 금지문 (~하지 마)",
+     "tags": [
+      "negation:别",
+      "banter"
+     ]
+    },
+    {
+     "num": 11,
+     "speaker": "B",
+     "zh": "那我们一起再看一遍？",
+     "pinyin": "Nà wǒmen yīqǐ zài kàn yī biàn?",
+     "ko": "그럼 우리 같이 처음부터 다시 볼까?",
+     "note": "동량사 遍 (처음부터 끝까지 한 번)",
+     "tags": [
+      "measure:遍",
+      "positive"
+     ]
+    },
+    {
+     "num": 12,
+     "speaker": "A",
+     "zh": "你都看过了还看？",
+     "pinyin": "Nǐ dōu kàn guo le hái kàn?",
+     "ko": "이미 다 봤으면서 또 본다고?",
+     "note": "都…过了 (이미 ~했다) + 还 반문",
+     "tags": [
+      "aspect:过",
+      "banter"
+     ]
+    },
+    {
+     "num": 13,
+     "speaker": "B",
+     "zh": "陪你看结局才有意思嘛。",
+     "pinyin": "Péi nǐ kàn jiéjú cái yǒu yìsi ma.",
+     "ko": "너랑 같이 결말 봐야 재밌지.",
+     "note": "부사 才 (~해야 비로소) + 陪 (함께해 주다)",
+     "tags": [
+      "adverb:才",
+      "positive"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d06",
+   "title": "운동",
+   "emoji": "💪",
+   "scenario": "또 헬스장 등록한 Mark, 작심삼일 전과를 놀리는 小丽",
+   "turns": [
+    {
+     "num": 1,
+     "speaker": "A",
+     "zh": "我办了健身卡！",
+     "pinyin": "Wǒ bàn le jiànshēn kǎ!",
+     "ko": "나 헬스장 등록했어!",
+     "note": "동사 办 (카드·수속을 만들다) + 了",
+     "tags": [
+      "verb:办",
+      "positive"
+     ]
+    },
+    {
+     "num": 2,
+     "speaker": "B",
+     "zh": "哦？这是第几次了？",
+     "pinyin": "Ó? Zhè shì dì jǐ cì le?",
+     "ko": "오? 이번이 몇 번째더라?",
+     "note": "서수 第 + 동량사 次 (몇 번째)",
+     "tags": [
+      "measure:次",
+      "banter"
+     ]
+    },
+    {
+     "num": 3,
+     "speaker": "A",
+     "zh": "这次不一样！",
+     "pinyin": "Zhè cì bù yīyàng!",
+     "ko": "이번엔 달라!",
+     "note": "不一样 (다르다) 강조 표현",
+     "tags": [
+      "adjective:一样",
+      "banter"
+     ]
+    },
+    {
+     "num": 4,
+     "speaker": "B",
+     "zh": "上次你去了三天。",
+     "pinyin": "Shàng cì nǐ qù le sān tiān.",
+     "ko": "지난번엔 3일 가고 끝났잖아.",
+     "note": "시량보어 三天 (~한 기간 표현)",
+     "tags": [
+      "complement:时量",
+      "banter"
+     ]
+    },
+    {
+     "num": 5,
+     "speaker": "A",
+     "zh": "那是因为下雨嘛。",
+     "pinyin": "Nà shì yīnwèi xià yǔ ma.",
+     "ko": "그건 비가 와서 그랬던 거잖아.",
+     "note": "因为 (~때문에, 원인 표현)",
+     "tags": [
+      "conjunction:因为",
+      "excuse"
+     ]
+    },
+    {
+     "num": 6,
+     "speaker": "B",
+     "zh": "健身房在室内呀。",
+     "pinyin": "Jiànshēnfáng zài shìnèi ya.",
+     "ko": "헬스장은 실내거든.",
+     "note": "在+장소 (위치 표현) + 呀",
+     "tags": [
+      "preposition:在",
+      "humor"
+     ]
+    },
+    {
+     "num": 7,
+     "speaker": "A",
+     "zh": "……路上会淋湿的。",
+     "pinyin": "…… Lùshang huì lín shī de.",
+     "ko": "…가는 길에 젖는단 말이야.",
+     "note": "会…的 (~할 거야, 확신) + 결과보어 湿",
+     "tags": [
+      "structure:会的",
+      "excuse"
+     ]
+    },
+    {
+     "num": 8,
+     "speaker": "B",
+     "zh": "借口真多哈。",
+     "pinyin": "Jièkǒu zhēn duō ha.",
+     "ko": "핑계 참 많다?",
+     "note": "어기조사 哈 (가벼운 놀림·확인)",
+     "tags": [
+      "particle:哈",
+      "banter"
+     ]
+    },
+    {
+     "num": 9,
+     "speaker": "A",
+     "zh": "明天你跟我一起去吧。",
+     "pinyin": "Míngtiān nǐ gēn wǒ yīqǐ qù ba.",
+     "ko": "내일 너도 나랑 같이 가자.",
+     "note": "跟…一起 (~와 함께)",
+     "tags": [
+      "preposition:跟",
+      "invite"
+     ]
+    },
+    {
+     "num": 10,
+     "speaker": "B",
+     "zh": "我？我要工作呢。",
+     "pinyin": "Wǒ? Wǒ yào gōngzuò ne.",
+     "ko": "나? 나 일해야 하는데.",
+     "note": "조동사 要 (~해야 한다) + 呢",
+     "tags": [
+      "modal:要",
+      "excuse"
+     ]
+    },
+    {
+     "num": 11,
+     "speaker": "A",
+     "zh": "现在谁找借口啊？",
+     "pinyin": "Xiànzài shéi zhǎo jièkǒu a?",
+     "ko": "지금 누가 핑계 대는 거야?",
+     "note": "의문사 谁 반문 (되받아치기)",
+     "tags": [
+      "rhetorical",
+      "humor"
+     ]
+    },
+    {
+     "num": 12,
+     "speaker": "B",
+     "zh": "好吧好吧，去就去。",
+     "pinyin": "Hǎo ba hǎo ba, qù jiù qù.",
+     "ko": "알았어 알았어, 가면 가지 뭐.",
+     "note": "A就A (그래 ~하면 되잖아, 마지못한 승낙)",
+     "tags": [
+      "structure:A就A",
+      "positive"
+     ]
+    },
+    {
+     "num": 13,
+     "speaker": "A",
+     "zh": "一言为定，跑三公里哦。",
+     "pinyin": "Yīyán wéidìng, pǎo sān gōnglǐ o.",
+     "ko": "약속한 거다, 3킬로 뛰는 거야.",
+     "note": "성어 一言为定 (한번 말했으면 끝, 약속 확정)",
+     "tags": [
+      "idiom:一言为定",
+      "positive"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d07",
+   "title": "쇼핑",
+   "emoji": "🛍️",
+   "scenario": "매장에서 옷을 고르다 가격에 놀라 온라인 최저가를 찾는 두 사람",
+   "turns": [
+    {
+     "num": 1,
+     "speaker": "B",
+     "zh": "你看这件外套怎么样？",
+     "pinyin": "Nǐ kàn zhè jiàn wàitào zěnmeyàng?",
+     "ko": "이 코트 어때 보여?",
+     "note": "의류 양사 件 + 怎么样",
+     "tags": [
+      "measure:件",
+      "shopping"
+     ]
+    },
+    {
+     "num": 2,
+     "speaker": "A",
+     "zh": "好看！多少钱？",
+     "pinyin": "Hǎokàn! Duōshao qián?",
+     "ko": "예쁘다! 얼마야?",
+     "note": "多少钱 (가격 묻기 기본 표현)",
+     "tags": [
+      "question:多少",
+      "positive"
+     ]
+    },
+    {
+     "num": 3,
+     "speaker": "B",
+     "zh": "八百。",
+     "pinyin": "Bābǎi.",
+     "ko": "800위안.",
+     "note": "숫자 읽기 (백 단위 百)",
+     "tags": [
+      "number",
+      "shopping"
+     ]
+    },
+    {
+     "num": 4,
+     "speaker": "A",
+     "zh": "八百？抢钱啊！",
+     "pinyin": "Bābǎi? Qiǎng qián a!",
+     "ko": "800? 이건 강도지!",
+     "note": "抢钱 (돈을 뺏다, 비싸다는 과장 표현)",
+     "tags": [
+      "colloquial",
+      "chaos"
+     ]
+    },
+    {
+     "num": 5,
+     "speaker": "B",
+     "zh": "这是名牌嘛。",
+     "pinyin": "Zhè shì míngpái ma.",
+     "ko": "이거 브랜드 거란 말이야.",
+     "note": "嘛 (당연함 어필)",
+     "tags": [
+      "particle:嘛",
+      "shopping"
+     ]
+    },
+    {
+     "num": 6,
+     "speaker": "A",
+     "zh": "网上肯定更便宜。",
+     "pinyin": "Wǎngshàng kěndìng gèng piányi.",
+     "ko": "인터넷이 분명 더 쌀걸.",
+     "note": "비교 부사 更 (더욱) + 肯定 (분명히)",
+     "tags": [
+      "adverb:更",
+      "shopping"
+     ]
+    },
+    {
+     "num": 7,
+     "speaker": "B",
+     "zh": "你查一下呗。",
+     "pinyin": "Nǐ chá yīxià bei.",
+     "ko": "그럼 검색해 보든가.",
+     "note": "동사+一下 (좀 ~해보다) + 어기조사 呗",
+     "tags": [
+      "structure:一下",
+      "particle:呗"
+     ]
+    },
+    {
+     "num": 8,
+     "speaker": "A",
+     "zh": "哇，网上只要三百五。",
+     "pinyin": "Wā, wǎngshàng zhǐ yào sānbǎi wǔ.",
+     "ko": "와, 인터넷은 350밖에 안 해.",
+     "note": "只要 (겨우 ~밖에 안 든다)",
+     "tags": [
+      "adverb:只",
+      "chaos"
+     ]
+    },
+    {
+     "num": 9,
+     "speaker": "B",
+     "zh": "那我在店里试，回家网上买。",
+     "pinyin": "Nà wǒ zài diànli shì, huíjiā wǎngshàng mǎi.",
+     "ko": "그럼 매장에서 입어보고 집 가서 인터넷으로 사야지.",
+     "note": "연동문 (동작의 순차 연결)",
+     "tags": [
+      "structure:连动",
+      "humor"
+     ]
+    },
+    {
+     "num": 10,
+     "speaker": "A",
+     "zh": "你可真是购物天才。",
+     "pinyin": "Nǐ kě zhēnshi gòuwù tiāncái.",
+     "ko": "너 진짜 쇼핑 천재다.",
+     "note": "부사 可 (구어체 강조)",
+     "tags": [
+      "adverb:可",
+      "positive"
+     ]
+    },
+    {
+     "num": 11,
+     "speaker": "B",
+     "zh": "那你的呢？也买一件？",
+     "pinyin": "Nà nǐ de ne? Yě mǎi yī jiàn?",
+     "ko": "그럼 네 건? 너도 한 벌 살래?",
+     "note": "的 명사화 (你的 = 네 것) + 呢",
+     "tags": [
+      "structure:的",
+      "shopping"
+     ]
+    },
+    {
+     "num": 12,
+     "speaker": "A",
+     "zh": "我上个月的还没穿过呢。",
+     "pinyin": "Wǒ shàng ge yuè de hái méi chuān guo ne.",
+     "ko": "지난달에 산 것도 아직 안 입어봤어.",
+     "note": "还没…过 (아직 ~해본 적 없다)",
+     "tags": [
+      "aspect:过",
+      "negative"
+     ]
+    },
+    {
+     "num": 13,
+     "speaker": "B",
+     "zh": "那这件就当你送我的啦。",
+     "pinyin": "Nà zhè jiàn jiù dāng nǐ sòng wǒ de la.",
+     "ko": "그럼 이건 네가 나한테 선물한 걸로 치자.",
+     "note": "동사 当 (~로 치다/간주하다)",
+     "tags": [
+      "verb:当",
+      "humor"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d08",
+   "title": "감기",
+   "emoji": "🤒",
+   "scenario": "감기에 걸린 小丽를 약과 죽으로 챙기는 Mark",
+   "turns": [
+    {
+     "num": 1,
+     "speaker": "B",
+     "zh": "我好像感冒了。",
+     "pinyin": "Wǒ hǎoxiàng gǎnmào le.",
+     "ko": "나 감기 걸린 것 같아.",
+     "note": "好像 (~인 것 같다, 추측)",
+     "tags": [
+      "adverb:好像",
+      "health"
+     ]
+    },
+    {
+     "num": 2,
+     "speaker": "A",
+     "zh": "严重吗？发烧了没？",
+     "pinyin": "Yánzhòng ma? Fāshāo le méi?",
+     "ko": "심해? 열은 나 안 나?",
+     "note": "문말 没 의문문 (~했어 안 했어?)",
+     "tags": [
+      "question:没",
+      "health"
+     ]
+    },
+    {
+     "num": 3,
+     "speaker": "B",
+     "zh": "有点儿，头也疼。",
+     "pinyin": "Yǒudiǎnr, tóu yě téng.",
+     "ko": "조금, 머리도 아파.",
+     "note": "有点儿 (좀 ~하다, 부정적 뉘앙스)",
+     "tags": [
+      "adverb:有点儿",
+      "negative"
+     ]
+    },
+    {
+     "num": 4,
+     "speaker": "A",
+     "zh": "药吃了吗？",
+     "pinyin": "Yào chī le ma?",
+     "ko": "약은 먹었어?",
+     "note": "목적어 전치 (주제화: 약은 먹었어?)",
+     "tags": [
+      "structure:主题化",
+      "health"
+     ]
+    },
+    {
+     "num": 5,
+     "speaker": "B",
+     "zh": "家里没药了。",
+     "pinyin": "Jiā li méi yào le.",
+     "ko": "집에 약이 다 떨어졌어.",
+     "note": "没…了 (다 떨어졌다, 상태 변화)",
+     "tags": [
+      "structure:没了",
+      "negative"
+     ]
+    },
+    {
+     "num": 6,
+     "speaker": "A",
+     "zh": "等着，我马上买过去。",
+     "pinyin": "Děng zhe, wǒ mǎshàng mǎi guòqù.",
+     "ko": "기다려, 바로 사서 갈게.",
+     "note": "지속 조사 着 + 방향보어 过去",
+     "tags": [
+      "aspect:着",
+      "complement:方向"
+     ]
+    },
+    {
+     "num": 7,
+     "speaker": "B",
+     "zh": "不用啦，你在上班呢。",
+     "pinyin": "Bùyòng la, nǐ zài shàngbān ne.",
+     "ko": "괜찮아, 너 지금 일하는 중이잖아.",
+     "note": "在…呢 (지금 ~하는 중)",
+     "tags": [
+      "structure:在呢",
+      "positive"
+     ]
+    },
+    {
+     "num": 8,
+     "speaker": "A",
+     "zh": "女朋友比上班重要。",
+     "pinyin": "Nǚpéngyou bǐ shàngbān zhòngyào.",
+     "ko": "여자친구가 일보다 중요하지.",
+     "note": "比 비교문 (A가 B보다 ~하다)",
+     "tags": [
+      "structure:比",
+      "positive"
+     ]
+    },
+    {
+     "num": 9,
+     "speaker": "B",
+     "zh": "哇，今天嘴这么甜？",
+     "pinyin": "Wā, jīntiān zuǐ zhème tián?",
+     "ko": "와, 오늘따라 왜 이렇게 스윗해?",
+     "note": "这么+형용사 (이렇게 ~해?) / 嘴甜 (말이 달다)",
+     "tags": [
+      "structure:这么",
+      "humor"
+     ]
+    },
+    {
+     "num": 10,
+     "speaker": "A",
+     "zh": "想喝粥还是喝汤？",
+     "pinyin": "Xiǎng hē zhōu háishi hē tāng?",
+     "ko": "죽 먹을래 아니면 국 먹을래?",
+     "note": "还是 선택의문문 (A 아니면 B?)",
+     "tags": [
+      "conjunction:还是",
+      "food"
+     ]
+    },
+    {
+     "num": 11,
+     "speaker": "B",
+     "zh": "都要，可以吗？",
+     "pinyin": "Dōu yào, kěyǐ ma?",
+     "ko": "둘 다, 돼?",
+     "note": "부사 都 (모두 다)",
+     "tags": [
+      "adverb:都",
+      "banter"
+     ]
+    },
+    {
+     "num": 12,
+     "speaker": "A",
+     "zh": "病人最大，都给你买。",
+     "pinyin": "Bìngrén zuì dà, dōu gěi nǐ mǎi.",
+     "ko": "환자가 제일 높지, 다 사줄게.",
+     "note": "给+사람+동사 (~에게 ~해주다)",
+     "tags": [
+      "preposition:给",
+      "positive"
+     ]
+    },
+    {
+     "num": 13,
+     "speaker": "B",
+     "zh": "快点来，我想你了嘛。",
+     "pinyin": "Kuài diǎn lái, wǒ xiǎng nǐ le ma.",
+     "ko": "빨리 와, 보고 싶단 말이야.",
+     "note": "想+사람 (보고 싶다) + 嘛 (응석)",
+     "tags": [
+      "verb:想",
+      "positive"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d09",
+   "title": "월급날",
+   "emoji": "💰",
+   "scenario": "월급이 들어온 날, 한턱 쏘려는 분위기와 절약 결심 사이에서 벌어지는 실랑이",
+   "turns": [
+    {
+     "num": 1,
+     "speaker": "A",
+     "zh": "发工资啦!",
+     "pinyin": "Fā gōngzī la!",
+     "ko": "월급 들어왔어!",
+     "note": "어기조사 啦 (완료+신남 강조)",
+     "tags": [
+      "money",
+      "particle:啦"
+     ]
+    },
+    {
+     "num": 2,
+     "speaker": "B",
+     "zh": "哇, 请客请客!",
+     "pinyin": "Wā, qǐngkè qǐngkè!",
+     "ko": "우와, 한턱 쏴 쏴!",
+     "note": "동사 중첩으로 재촉하는 구어 표현",
+     "tags": [
+      "money",
+      "reduplication"
+     ]
+    },
+    {
+     "num": 3,
+     "speaker": "A",
+     "zh": "今晚吃火锅怎么样?",
+     "pinyin": "Jīn wǎn chī huǒguō zěnmeyàng?",
+     "ko": "오늘 밤 훠궈 어때?",
+     "note": "제안 표현 怎么样 (~어때?)",
+     "tags": [
+      "food",
+      "suggestion"
+     ]
+    },
+    {
+     "num": 4,
+     "speaker": "B",
+     "zh": "你不是说要省钱吗?",
+     "pinyin": "Nǐ bú shì shuō yào shěngqián ma?",
+     "ko": "너 돈 아낀다고 하지 않았어?",
+     "note": "반문 구문 不是……吗",
+     "tags": [
+      "money",
+      "rhetorical"
+     ]
+    },
+    {
+     "num": 5,
+     "speaker": "A",
+     "zh": "明天开始省。",
+     "pinyin": "Míngtiān kāishǐ shěng.",
+     "ko": "내일부터 아낄 거야.",
+     "note": "시간사+开始 (내일부터 시작)",
+     "tags": [
+      "money",
+      "time"
+     ]
+    },
+    {
+     "num": 6,
+     "speaker": "B",
+     "zh": "你每个月都这么说。",
+     "pinyin": "Nǐ měi gè yuè dōu zhème shuō.",
+     "ko": "너 매달 그렇게 말하잖아.",
+     "note": "每……都 (매번 다 ~하다)",
+     "tags": [
+      "banter",
+      "grammar:每都"
+     ]
+    },
+    {
+     "num": 7,
+     "speaker": "A",
+     "zh": "这次是真的嘛!",
+     "pinyin": "Zhè cì shì zhēn de ma!",
+     "ko": "이번엔 진짜라니까!",
+     "note": "어기조사 嘛 (당연함·항변)",
+     "tags": [
+      "banter",
+      "particle:嘛"
+     ]
+    },
+    {
+     "num": 8,
+     "speaker": "B",
+     "zh": "好吧, 那我要吃最贵的。",
+     "pinyin": "Hǎo ba, nà wǒ yào chī zuì guì de.",
+     "ko": "좋아, 그럼 난 제일 비싼 거 먹을래.",
+     "note": "最+형용사+的 (최상급 명사화)",
+     "tags": [
+      "food",
+      "grammar:最的"
+     ]
+    },
+    {
+     "num": 9,
+     "speaker": "A",
+     "zh": "别啊, 工资会哭的。",
+     "pinyin": "Bié a, gōngzī huì kū de.",
+     "ko": "안 돼, 월급이 울 거야.",
+     "note": "别 금지 + 会……的 (확신 어투)",
+     "tags": [
+      "humor",
+      "grammar:会的"
+     ]
+    },
+    {
+     "num": 10,
+     "speaker": "B",
+     "zh": "刚才谁说要请客的?",
+     "pinyin": "Gāngcái shéi shuō yào qǐngkè de?",
+     "ko": "방금 누가 쏜다고 했더라?",
+     "note": "刚才 (방금) + 의문사 谁로 추궁",
+     "tags": [
+      "banter",
+      "question"
+     ]
+    },
+    {
+     "num": 11,
+     "speaker": "A",
+     "zh": "好好好, 你赢了。",
+     "pinyin": "Hǎo hǎo hǎo, nǐ yíng le.",
+     "ko": "알았어 알았어, 네가 이겼어.",
+     "note": "好 반복으로 체념, 어기조사 了",
+     "tags": [
+      "banter",
+      "particle:了"
+     ]
+    },
+    {
+     "num": 12,
+     "speaker": "B",
+     "zh": "那再加一杯奶茶哦。",
+     "pinyin": "Nà zài jiā yì bēi nǎichá o.",
+     "ko": "그럼 밀크티 한 잔 추가야.",
+     "note": "再 (추가로 더) + 어기조사 哦",
+     "tags": [
+      "food",
+      "particle:哦"
+     ]
+    },
+    {
+     "num": 13,
+     "speaker": "A",
+     "zh": "我的钱包已经空了……",
+     "pinyin": "Wǒ de qiánbāo yǐjīng kōng le……",
+     "ko": "내 지갑 벌써 텅 비었어……",
+     "note": "已经……了 (이미 ~해 버림)",
+     "tags": [
+      "money",
+      "grammar:已经了"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d10",
+   "title": "단톡방",
+   "emoji": "💬",
+   "scenario": "친구 大伟까지 낀 단톡방에서 약속 날짜 잡다가 다들 일정이 꼬이는 혼돈",
+   "turns": [
+    {
+     "num": 1,
+     "speaker": "B",
+     "zh": "大伟又在群里发消息了。",
+     "pinyin": "Dàwěi yòu zài qún lǐ fā xiāoxi le.",
+     "ko": "다웨이가 또 단톡방에 메시지 보냈어.",
+     "note": "又……了 (또 반복됨)",
+     "tags": [
+      "chat",
+      "grammar:又了"
+     ]
+    },
+    {
+     "num": 2,
+     "speaker": "A",
+     "zh": "他说什么?",
+     "pinyin": "Tā shuō shénme?",
+     "ko": "걔가 뭐래?",
+     "note": "의문사 什么 의문문",
+     "tags": [
+      "chat",
+      "question"
+     ]
+    },
+    {
+     "num": 3,
+     "speaker": "B",
+     "zh": "他说周六一起吃饭。",
+     "pinyin": "Tā shuō zhōuliù yìqǐ chīfàn.",
+     "ko": "토요일에 같이 밥 먹재.",
+     "note": "说로 간접 인용 (전달 화법)",
+     "tags": [
+      "plan",
+      "reported-speech"
+     ]
+    },
+    {
+     "num": 4,
+     "speaker": "A",
+     "zh": "周六我要加班啊。",
+     "pinyin": "Zhōuliù wǒ yào jiābān a.",
+     "ko": "토요일에 나 야근해야 돼.",
+     "note": "要 (해야 함) + 어기조사 啊",
+     "tags": [
+      "work",
+      "particle:啊"
+     ]
+    },
+    {
+     "num": 5,
+     "speaker": "B",
+     "zh": "那我说周日?",
+     "pinyin": "Nà wǒ shuō zhōurì?",
+     "ko": "그럼 일요일이라고 할까?",
+     "note": "那 (그럼) 화제 이어받기",
+     "tags": [
+      "plan",
+      "connector:那"
+     ]
+    },
+    {
+     "num": 6,
+     "speaker": "A",
+     "zh": "行, 周日可以。",
+     "pinyin": "Xíng, zhōurì kěyǐ.",
+     "ko": "좋아, 일요일 괜찮아.",
+     "note": "구어체 승낙 行 (오케이)",
+     "tags": [
+      "plan",
+      "colloquial"
+     ]
+    },
+    {
+     "num": 7,
+     "speaker": "B",
+     "zh": "他又说周日他有事。",
+     "pinyin": "Tā yòu shuō zhōurì tā yǒu shì.",
+     "ko": "걔가 또 일요일엔 일이 있대.",
+     "note": "有事 (볼일이 있다)",
+     "tags": [
+      "chaos",
+      "expression:有事"
+     ]
+    },
+    {
+     "num": 8,
+     "speaker": "A",
+     "zh": "那他到底哪天有空?",
+     "pinyin": "Nà tā dàodǐ nǎ tiān yǒu kòng?",
+     "ko": "그럼 걔 대체 언제 시간 되는데?",
+     "note": "到底 (도대체) 추궁 부사",
+     "tags": [
+      "chaos",
+      "adverb:到底"
+     ]
+    },
+    {
+     "num": 9,
+     "speaker": "B",
+     "zh": "他说下周六吧。",
+     "pinyin": "Tā shuō xià zhōuliù ba.",
+     "ko": "다음 주 토요일이래.",
+     "note": "下+시간 (다음 ~), 吧 추측",
+     "tags": [
+      "plan",
+      "particle:吧"
+     ]
+    },
+    {
+     "num": 10,
+     "speaker": "A",
+     "zh": "等等, 下周六我们要去旅行呢!",
+     "pinyin": "Děng děng, xià zhōuliù wǒmen yào qù lǚxíng ne!",
+     "ko": "잠깐, 다음 주 토요일에 우리 여행 가잖아!",
+     "note": "어기조사 呢 (사실 상기시키기)",
+     "tags": [
+      "travel",
+      "particle:呢"
+     ]
+    },
+    {
+     "num": 11,
+     "speaker": "B",
+     "zh": "对哦, 我都忘了。",
+     "pinyin": "Duì o, wǒ dōu wàng le.",
+     "ko": "맞다, 나 완전 잊고 있었어.",
+     "note": "都……了 (강조, 완전 ~해버림)",
+     "tags": [
+      "chaos",
+      "grammar:都了"
+     ]
+    },
+    {
+     "num": 12,
+     "speaker": "A",
+     "zh": "你直接说下下周吧。",
+     "pinyin": "Nǐ zhíjiē shuō xià xià zhōu ba.",
+     "ko": "그냥 다다음 주라고 해.",
+     "note": "直接 (그냥 바로) + 吧 제안",
+     "tags": [
+      "plan",
+      "adverb:直接"
+     ]
+    },
+    {
+     "num": 13,
+     "speaker": "B",
+     "zh": "好, 约个饭真难啊。",
+     "pinyin": "Hǎo, yuē gè fàn zhēn nán a.",
+     "ko": "알았어, 밥 약속 잡기 진짜 어렵다.",
+     "note": "真+형용사 감탄 (진짜 ~하다)",
+     "tags": [
+      "chaos",
+      "exclamation"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d11",
+   "title": "여행준비",
+   "emoji": "🧳",
+   "scenario": "주말 여행 전날 짐 싸기, 필수품은 다 빼먹고 간식만 챙긴 Mark에게 쏟아지는 잔소리",
+   "turns": [
+    {
+     "num": 1,
+     "speaker": "B",
+     "zh": "行李都收拾好了吗?",
+     "pinyin": "Xíngli dōu shōushi hǎo le ma?",
+     "ko": "짐 다 쌌어?",
+     "note": "결과보어 好 (제대로 완료됨)",
+     "tags": [
+      "travel",
+      "complement:好"
+     ]
+    },
+    {
+     "num": 2,
+     "speaker": "A",
+     "zh": "差不多了吧。",
+     "pinyin": "Chàbuduō le ba.",
+     "ko": "거의 다 됐지 뭐.",
+     "note": "差不多 (얼추, 거의) + 吧 얼버무림",
+     "tags": [
+      "travel",
+      "expression:差不多"
+     ]
+    },
+    {
+     "num": 3,
+     "speaker": "B",
+     "zh": "牙刷带了没有?",
+     "pinyin": "Yáshuā dài le méiyǒu?",
+     "ko": "칫솔 챙겼어 안 챙겼어?",
+     "note": "了没有 정반의문문",
+     "tags": [
+      "travel",
+      "question:了没有"
+     ]
+    },
+    {
+     "num": 4,
+     "speaker": "A",
+     "zh": "啊, 忘了。",
+     "pinyin": "À, wàng le.",
+     "ko": "아, 깜빡했다.",
+     "note": "동사+了 완료 (잊어버림)",
+     "tags": [
+      "chaos",
+      "particle:了"
+     ]
+    },
+    {
+     "num": 5,
+     "speaker": "B",
+     "zh": "充电器呢?",
+     "pinyin": "Chōngdiànqì ne?",
+     "ko": "충전기는?",
+     "note": "명사+呢 생략형 의문문",
+     "tags": [
+      "travel",
+      "particle:呢"
+     ]
+    },
+    {
+     "num": 6,
+     "speaker": "A",
+     "zh": "……也忘了。",
+     "pinyin": "……Yě wàng le.",
+     "ko": "……그것도 깜빡했어.",
+     "note": "也 (역시, ~도)",
+     "tags": [
+      "chaos",
+      "adverb:也"
+     ]
+    },
+    {
+     "num": 7,
+     "speaker": "B",
+     "zh": "你到底收拾了什么呀?",
+     "pinyin": "Nǐ dàodǐ shōushi le shénme ya?",
+     "ko": "너 대체 뭘 싼 거야?",
+     "note": "到底 추궁 + 어기조사 呀",
+     "tags": [
+      "banter",
+      "particle:呀"
+     ]
+    },
+    {
+     "num": 8,
+     "speaker": "A",
+     "zh": "零食! 装了满满一包。",
+     "pinyin": "Língshí! Zhuāng le mǎnmǎn yì bāo.",
+     "ko": "간식! 한 가방 가득 담았지.",
+     "note": "형용사 중첩 满满 (가득가득)",
+     "tags": [
+      "humor",
+      "reduplication"
+     ]
+    },
+    {
+     "num": 9,
+     "speaker": "B",
+     "zh": "我真是服了你了。",
+     "pinyin": "Wǒ zhēnshi fú le nǐ le.",
+     "ko": "너한테 진짜 두 손 들었다.",
+     "note": "구어 표현 服了 (졌다, 못 말린다)",
+     "tags": [
+      "banter",
+      "expression:服了"
+     ]
+    },
+    {
+     "num": 10,
+     "speaker": "A",
+     "zh": "吃的最重要嘛。",
+     "pinyin": "Chī de zuì zhòngyào ma.",
+     "ko": "먹는 게 제일 중요하잖아.",
+     "note": "동사+的 명사화 (먹을 것) + 嘛",
+     "tags": [
+      "food",
+      "grammar:的명사화"
+     ]
+    },
+    {
+     "num": 11,
+     "speaker": "B",
+     "zh": "衣服我来收拾, 你别动了。",
+     "pinyin": "Yīfu wǒ lái shōushi, nǐ bié dòng le.",
+     "ko": "옷은 내가 쌀게, 넌 손대지 마.",
+     "note": "我来+동사 (내가 할게) + 别……了",
+     "tags": [
+      "daily",
+      "pattern:我来"
+     ]
+    },
+    {
+     "num": 12,
+     "speaker": "A",
+     "zh": "那我负责吃零食。",
+     "pinyin": "Nà wǒ fùzé chī língshí.",
+     "ko": "그럼 난 간식 먹는 거 담당할게.",
+     "note": "负责+동사구 (~을 담당하다)",
+     "tags": [
+      "humor",
+      "verb:负责"
+     ]
+    },
+    {
+     "num": 13,
+     "speaker": "B",
+     "zh": "你负责搬行李!",
+     "pinyin": "Nǐ fùzé bān xíngli!",
+     "ko": "너는 짐 나르기 담당이야!",
+     "note": "같은 구문 되받아치기 (负责 반복)",
+     "tags": [
+      "banter",
+      "verb:负责"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d12",
+   "title": "사진",
+   "emoji": "📷",
+   "scenario": "Mark가 찍어준 사진이 마음에 안 드는 小丽, 다리 길게 나올 때까지 재촬영 요구",
+   "turns": [
+    {
+     "num": 1,
+     "speaker": "B",
+     "zh": "你给我拍的照片呢? 发我。",
+     "pinyin": "Nǐ gěi wǒ pāi de zhàopiàn ne? Fā wǒ.",
+     "ko": "네가 찍어준 사진은? 보내줘.",
+     "note": "给+대상+동사 (~에게 해주다)",
+     "tags": [
+      "photo",
+      "preposition:给"
+     ]
+    },
+    {
+     "num": 2,
+     "speaker": "A",
+     "zh": "发了, 快看!",
+     "pinyin": "Fā le, kuài kàn!",
+     "ko": "보냈어, 빨리 봐!",
+     "note": "快+동사 재촉 명령",
+     "tags": [
+      "photo",
+      "imperative"
+     ]
+    },
+    {
+     "num": 3,
+     "speaker": "B",
+     "zh": "这是什么啊! 腿这么短!",
+     "pinyin": "Zhè shì shénme a! Tuǐ zhème duǎn!",
+     "ko": "이게 뭐야! 다리가 왜 이렇게 짧아!",
+     "note": "这么+형용사 (이렇게나 ~하다)",
+     "tags": [
+      "chaos",
+      "degree:这么"
+     ]
+    },
+    {
+     "num": 4,
+     "speaker": "A",
+     "zh": "我觉得挺好看的啊。",
+     "pinyin": "Wǒ juéde tǐng hǎokàn de a.",
+     "ko": "난 꽤 예쁘게 나온 것 같은데.",
+     "note": "挺……的 (꽤 ~하다)",
+     "tags": [
+      "opinion",
+      "pattern:挺的"
+     ]
+    },
+    {
+     "num": 5,
+     "speaker": "B",
+     "zh": "重拍! 马上!",
+     "pinyin": "Chóng pāi! Mǎshàng!",
+     "ko": "다시 찍어! 당장!",
+     "note": "重+동사 (처음부터 다시 하다)",
+     "tags": [
+      "chaos",
+      "prefix:重"
+     ]
+    },
+    {
+     "num": 6,
+     "speaker": "A",
+     "zh": "都拍了五十张了……",
+     "pinyin": "Dōu pāi le wǔshí zhāng le……",
+     "ko": "벌써 50장이나 찍었는데……",
+     "note": "都……了 (벌써 ~나 했다)",
+     "tags": [
+      "complaint",
+      "grammar:都了"
+     ]
+    },
+    {
+     "num": 7,
+     "speaker": "B",
+     "zh": "五十张里没有一张能看的。",
+     "pinyin": "Wǔshí zhāng lǐ méiyǒu yì zhāng néng kàn de.",
+     "ko": "50장 중에 봐줄 만한 게 한 장도 없어.",
+     "note": "没有一+양사 (하나도 없다) 전체 부정",
+     "tags": [
+      "banter",
+      "negation"
+     ]
+    },
+    {
+     "num": 8,
+     "speaker": "A",
+     "zh": "那你教教我怎么拍嘛。",
+     "pinyin": "Nà nǐ jiāojiao wǒ zěnme pāi ma.",
+     "ko": "그럼 어떻게 찍는지 좀 가르쳐 줘.",
+     "note": "동사 중첩 教教 (가볍게 좀 ~하다)",
+     "tags": [
+      "photo",
+      "reduplication"
+     ]
+    },
+    {
+     "num": 9,
+     "speaker": "B",
+     "zh": "蹲下来拍, 腿会长。",
+     "pinyin": "Dūn xiàlai pāi, tuǐ huì cháng.",
+     "ko": "쪼그려 앉아서 찍어, 다리가 길어 보여.",
+     "note": "방향보어 下来 (아래로 내려옴)",
+     "tags": [
+      "photo",
+      "complement:下来"
+     ]
+    },
+    {
+     "num": 10,
+     "speaker": "A",
+     "zh": "好好好, 再来一次。",
+     "pinyin": "Hǎo hǎo hǎo, zài lái yí cì.",
+     "ko": "알았어 알았어, 한 번 더 가자.",
+     "note": "再……一次 (다시 한 번)",
+     "tags": [
+      "photo",
+      "adverb:再"
+     ]
+    },
+    {
+     "num": 11,
+     "speaker": "B",
+     "zh": "这张不错嘛! 有进步。",
+     "pinyin": "Zhè zhāng búcuò ma! Yǒu jìnbù.",
+     "ko": "이 장은 괜찮네! 발전했어.",
+     "note": "不错 (괜찮다) + 嘛 (의외의 만족)",
+     "tags": [
+      "praise",
+      "particle:嘛"
+     ]
+    },
+    {
+     "num": 12,
+     "speaker": "A",
+     "zh": "我可是拍了一百张。",
+     "pinyin": "Wǒ kěshì pāi le yìbǎi zhāng.",
+     "ko": "나 무려 100장 찍었거든.",
+     "note": "可是 (무려 ~거든, 강조 부사)",
+     "tags": [
+      "humor",
+      "emphasis:可是"
+     ]
+    },
+    {
+     "num": 13,
+     "speaker": "B",
+     "zh": "辛苦啦, 晚上请你吃好吃的。",
+     "pinyin": "Xīnkǔ la, wǎnshang qǐng nǐ chī hǎochī de.",
+     "ko": "수고했어, 저녁에 맛있는 거 사줄게.",
+     "note": "请+사람+동사 (~에게 사주다)",
+     "tags": [
+      "sweet",
+      "verb:请"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d13",
+   "title": "핸드폰",
+   "emoji": "📱",
+   "scenario": "폰을 떨어뜨려 액정이 또 깨진 Mark, 수리비 800위안에 충격받고 버티기로 결정",
+   "turns": [
+    {
+     "num": 1,
+     "speaker": "A",
+     "zh": "完了完了。",
+     "pinyin": "Wán le wán le.",
+     "ko": "망했다 망했어.",
+     "note": "完了 (끝장이다) 중첩으로 절망 강조",
+     "tags": [
+      "chaos",
+      "expression:完了"
+     ]
+    },
+    {
+     "num": 2,
+     "speaker": "B",
+     "zh": "怎么啦?",
+     "pinyin": "Zěnme la?",
+     "ko": "왜 그래?",
+     "note": "怎么+啦 (무슨 일이야?)",
+     "tags": [
+      "daily",
+      "particle:啦"
+     ]
+    },
+    {
+     "num": 3,
+     "speaker": "A",
+     "zh": "手机掉地上了, 屏幕碎了。",
+     "pinyin": "Shǒujī diào dìshang le, píngmù suì le.",
+     "ko": "폰 바닥에 떨어뜨렸는데 액정 깨졌어.",
+     "note": "동사+了 연속으로 사건 결과 서술",
+     "tags": [
+      "phone",
+      "particle:了"
+     ]
+    },
+    {
+     "num": 4,
+     "speaker": "B",
+     "zh": "又碎了? 上个月刚修过吧?",
+     "pinyin": "Yòu suì le? Shàng gè yuè gāng xiū guo ba?",
+     "ko": "또 깨졌어? 지난달에 막 고쳤잖아?",
+     "note": "刚……过 (막 ~한 적 있다)",
+     "tags": [
+      "banter",
+      "aspect:过"
+     ]
+    },
+    {
+     "num": 5,
+     "speaker": "A",
+     "zh": "这次碎得更厉害。",
+     "pinyin": "Zhè cì suì de gèng lìhai.",
+     "ko": "이번엔 더 심하게 깨졌어.",
+     "note": "정도보어 得 + 更 (더욱)",
+     "tags": [
+      "phone",
+      "complement:得"
+     ]
+    },
+    {
+     "num": 6,
+     "speaker": "B",
+     "zh": "去问问修理店多少钱。",
+     "pinyin": "Qù wènwen xiūlǐdiàn duōshao qián.",
+     "ko": "수리점에 얼마인지 물어봐.",
+     "note": "동사 중첩 问问 (한번 물어보다)",
+     "tags": [
+      "phone",
+      "reduplication"
+     ]
+    },
+    {
+     "num": 7,
+     "speaker": "A",
+     "zh": "问了, 八百块!",
+     "pinyin": "Wèn le, bābǎi kuài!",
+     "ko": "물어봤어, 800위안이래!",
+     "note": "금액 단위 块 (콰이, 구어)",
+     "tags": [
+      "money",
+      "measure:块"
+     ]
+    },
+    {
+     "num": 8,
+     "speaker": "B",
+     "zh": "八百? 都能买个新的了吧!",
+     "pinyin": "Bābǎi? Dōu néng mǎi gè xīn de le ba!",
+     "ko": "800? 그 돈이면 새 거 사겠다!",
+     "note": "都能……了 (~할 정도다) 과장",
+     "tags": [
+      "money",
+      "exaggeration"
+     ]
+    },
+    {
+     "num": 9,
+     "speaker": "A",
+     "zh": "所以我在想要不要换手机。",
+     "pinyin": "Suǒyǐ wǒ zài xiǎng yào bu yào huàn shǒujī.",
+     "ko": "그래서 폰 바꿀까 고민 중이야.",
+     "note": "在+동사 진행 + 要不要 정반의문",
+     "tags": [
+      "phone",
+      "question:要不要"
+     ]
+    },
+    {
+     "num": 10,
+     "speaker": "B",
+     "zh": "你上周不是刚发工资就花完了吗?",
+     "pinyin": "Nǐ shàng zhōu bú shì gāng fā gōngzī jiù huā wán le ma?",
+     "ko": "너 지난주에 월급 받자마자 다 쓰지 않았어?",
+     "note": "刚……就 (하자마자) + 결과보어 完",
+     "tags": [
+      "money",
+      "complement:完"
+     ]
+    },
+    {
+     "num": 11,
+     "speaker": "A",
+     "zh": "别提了, 心疼。",
+     "pinyin": "Bié tí le, xīnténg.",
+     "ko": "말도 마, 속 쓰려.",
+     "note": "别提了 (말도 꺼내지 마) 관용구",
+     "tags": [
+      "complaint",
+      "idiom:别提了"
+     ]
+    },
+    {
+     "num": 12,
+     "speaker": "B",
+     "zh": "先贴个膜, 忍到下个月吧。",
+     "pinyin": "Xiān tiē gè mó, rěn dào xià gè yuè ba.",
+     "ko": "일단 필름 붙이고 다음 달까지 버텨.",
+     "note": "先 (우선) + 동사+到 (~까지 ~하다)",
+     "tags": [
+      "advice",
+      "complement:到"
+     ]
+    },
+    {
+     "num": 13,
+     "speaker": "A",
+     "zh": "好吧, 手机你要坚持住啊。",
+     "pinyin": "Hǎo ba, shǒujī nǐ yào jiānchí zhù a.",
+     "ko": "알았어, 폰아 버텨줘야 한다.",
+     "note": "결과보어 住 (단단히 유지함)",
+     "tags": [
+      "humor",
+      "complement:住"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d14",
+   "title": "지하철",
+   "emoji": "🚇",
+   "scenario": "출근길 만원 지하철에 시달린 Mark의 하소연과 재택근무 小丽의 얄미운 위로",
+   "turns": [
+    {
+     "num": 1,
+     "speaker": "A",
+     "zh": "我快被挤死了。",
+     "pinyin": "Wǒ kuài bèi jǐ sǐ le.",
+     "ko": "나 압사당할 뻔했어.",
+     "note": "被 피동문 + 快……了 (곧 ~할 지경)",
+     "tags": [
+      "commute",
+      "passive:被"
+     ]
+    },
+    {
+     "num": 2,
+     "speaker": "B",
+     "zh": "又坐早高峰地铁啦?",
+     "pinyin": "Yòu zuò zǎogāofēng dìtiě la?",
+     "ko": "또 출근 러시아워 지하철 탔어?",
+     "note": "又 (또) + 어기조사 啦",
+     "tags": [
+      "commute",
+      "particle:啦"
+     ]
+    },
+    {
+     "num": 3,
+     "speaker": "A",
+     "zh": "人多得上不去车。",
+     "pinyin": "Rén duō de shàng bu qù chē.",
+     "ko": "사람이 많아서 못 탈 정도야.",
+     "note": "가능보어 부정형 上不去 (올라탈 수 없다)",
+     "tags": [
+      "commute",
+      "complement:上不去"
+     ]
+    },
+    {
+     "num": 4,
+     "speaker": "A",
+     "zh": "等了三趟才上来。",
+     "pinyin": "Děng le sān tàng cái shànglai.",
+     "ko": "세 대나 보내고 겨우 탔어.",
+     "note": "才 (겨우, 그제서야) + 양사 趟",
+     "tags": [
+      "commute",
+      "adverb:才"
+     ]
+    },
+    {
+     "num": 5,
+     "speaker": "B",
+     "zh": "辛苦啦, 我在家上班真幸福。",
+     "pinyin": "Xīnkǔ la, wǒ zài jiā shàngbān zhēn xìngfú.",
+     "ko": "고생이네, 난 집에서 일해서 진짜 행복해.",
+     "note": "在+장소+동사 어순",
+     "tags": [
+      "work",
+      "preposition:在"
+     ]
+    },
+    {
+     "num": 6,
+     "speaker": "A",
+     "zh": "你别气我啊。",
+     "pinyin": "Nǐ bié qì wǒ a.",
+     "ko": "너 나 약 올리지 마.",
+     "note": "别+동사 금지 + 气 (약 올리다)",
+     "tags": [
+      "banter",
+      "prohibition:别"
+     ]
+    },
+    {
+     "num": 7,
+     "speaker": "B",
+     "zh": "哈哈, 早点出门不就行了嘛。",
+     "pinyin": "Hāhā, zǎo diǎn chūmén bú jiù xíng le ma.",
+     "ko": "하하, 일찍 나가면 되잖아.",
+     "note": "不就……了嘛 (~하면 되잖아) 반문",
+     "tags": [
+      "banter",
+      "pattern:不就了嘛"
+     ]
+    },
+    {
+     "num": 8,
+     "speaker": "A",
+     "zh": "早出门也一样挤。",
+     "pinyin": "Zǎo chūmén yě yíyàng jǐ.",
+     "ko": "일찍 나가도 똑같이 붐벼.",
+     "note": "也一样 (역시 마찬가지로)",
+     "tags": [
+      "complaint",
+      "adverb:一样"
+     ]
+    },
+    {
+     "num": 9,
+     "speaker": "A",
+     "zh": "而且今天鞋还被踩了。",
+     "pinyin": "Érqiě jīntiān xié hái bèi cǎi le.",
+     "ko": "게다가 오늘 신발도 밟혔어.",
+     "note": "而且 (게다가) + 被 피동",
+     "tags": [
+      "complaint",
+      "passive:被"
+     ]
+    },
+    {
+     "num": 10,
+     "speaker": "B",
+     "zh": "可怜的宝宝。",
+     "pinyin": "Kělián de bǎobao.",
+     "ko": "불쌍한 우리 애기.",
+     "note": "형용사+的+명사 수식, 애칭 宝宝",
+     "tags": [
+      "sweet",
+      "modifier:的"
+     ]
+    },
+    {
+     "num": 11,
+     "speaker": "A",
+     "zh": "别笑! 明天你替我上班。",
+     "pinyin": "Bié xiào! Míngtiān nǐ tì wǒ shàngbān.",
+     "ko": "웃지 마! 내일 네가 대신 출근해.",
+     "note": "替 (대신하다) 개사",
+     "tags": [
+      "banter",
+      "preposition:替"
+     ]
+    },
+    {
+     "num": 12,
+     "speaker": "B",
+     "zh": "那工资也给我吧。",
+     "pinyin": "Nà gōngzī yě gěi wǒ ba.",
+     "ko": "그럼 월급도 나 줘.",
+     "note": "也 (~도) + 吧 제안",
+     "tags": [
+      "humor",
+      "particle:吧"
+     ]
+    },
+    {
+     "num": 13,
+     "speaker": "A",
+     "zh": "算了, 我还是自己挤吧。",
+     "pinyin": "Suàn le, wǒ háishi zìjǐ jǐ ba.",
+     "ko": "됐다, 그냥 내가 끼어 타고 말지.",
+     "note": "算了 (관두자) + 还是……吧 (역시 ~하는 게 낫다)",
+     "tags": [
+      "humor",
+      "pattern:还是吧"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d15",
+   "title": "커피",
+   "emoji": "☕",
+   "scenario": "한여름 카페에서 아이스 아메리카노파 Mark와 핫 라떼파 小丽의 커피 취향 논쟁",
+   "turns": [
+    {
+     "num": 1,
+     "speaker": "A",
+     "zh": "出来喝咖啡吧, 我请。",
+     "pinyin": "Chūlai hē kāfēi ba, wǒ qǐng.",
+     "ko": "나와서 커피 마시자, 내가 살게.",
+     "note": "방향보어 出来 + 我请 (내가 쏜다)",
+     "tags": [
+      "coffee",
+      "complement:出来"
+     ]
+    },
+    {
+     "num": 2,
+     "speaker": "B",
+     "zh": "好呀, 给我点热拿铁。",
+     "pinyin": "Hǎo ya, gěi wǒ diǎn rè nátiě.",
+     "ko": "좋아, 나 핫 라떼 시켜줘.",
+     "note": "给+대상+동사 (~에게 시켜주다)",
+     "tags": [
+      "coffee",
+      "preposition:给"
+     ]
+    },
+    {
+     "num": 3,
+     "speaker": "A",
+     "zh": "这么热的天喝热的?",
+     "pinyin": "Zhème rè de tiān hē rè de?",
+     "ko": "이렇게 더운 날에 뜨거운 걸 마신다고?",
+     "note": "这么+형용사 + 형용사+的 명사화",
+     "tags": [
+      "banter",
+      "degree:这么"
+     ]
+    },
+    {
+     "num": 4,
+     "speaker": "B",
+     "zh": "冰的对身体不好。",
+     "pinyin": "Bīng de duì shēntǐ bù hǎo.",
+     "ko": "차가운 건 몸에 안 좋아.",
+     "note": "对……不好 (~에 안 좋다)",
+     "tags": [
+      "health",
+      "preposition:对"
+     ]
+    },
+    {
+     "num": 5,
+     "speaker": "A",
+     "zh": "夏天就要喝冰美式啊!",
+     "pinyin": "Xiàtiān jiù yào hē bīng měishì a!",
+     "ko": "여름엔 아이스 아메리카노지!",
+     "note": "就 (바로 그거다, 당연 강조)",
+     "tags": [
+      "coffee",
+      "adverb:就"
+     ]
+    },
+    {
+     "num": 6,
+     "speaker": "B",
+     "zh": "你们韩国人一年四季都喝冰的。",
+     "pinyin": "Nǐmen Hánguó rén yì nián sìjì dōu hē bīng de.",
+     "ko": "너네 한국 사람들은 사계절 내내 아이스 마시더라.",
+     "note": "一年四季+都 (일 년 내내 다)",
+     "tags": [
+      "culture",
+      "adverb:都"
+     ]
+    },
+    {
+     "num": 7,
+     "speaker": "A",
+     "zh": "冬天也得是冰美式。",
+     "pinyin": "Dōngtiān yě děi shì bīng měishì.",
+     "ko": "겨울에도 아아여야지.",
+     "note": "得 děi (반드시 ~해야 한다)",
+     "tags": [
+      "humor",
+      "modal:得"
+     ]
+    },
+    {
+     "num": 8,
+     "speaker": "B",
+     "zh": "冬天喝冰的? 我不懂你们。",
+     "pinyin": "Dōngtiān hē bīng de? Wǒ bù dǒng nǐmen.",
+     "ko": "겨울에 아이스를? 너희 이해 안 돼.",
+     "note": "懂 (이해하다) 부정형",
+     "tags": [
+      "banter",
+      "verb:懂"
+     ]
+    },
+    {
+     "num": 9,
+     "speaker": "A",
+     "zh": "你喝一口试试嘛。",
+     "pinyin": "Nǐ hē yì kǒu shìshi ma.",
+     "ko": "한 모금만 마셔 봐 봐.",
+     "note": "동사구+试试 (한번 해보다) + 嘛",
+     "tags": [
+      "coffee",
+      "pattern:试试"
+     ]
+    },
+    {
+     "num": 10,
+     "speaker": "B",
+     "zh": "好吧……哇, 好凉快!",
+     "pinyin": "Hǎo ba……wā, hǎo liángkuai!",
+     "ko": "알았어……우와, 완전 시원해!",
+     "note": "好+형용사 감탄 (엄청 ~하다)",
+     "tags": [
+      "reaction",
+      "exclamation:好"
+     ]
+    },
+    {
+     "num": 11,
+     "speaker": "A",
+     "zh": "怎么样? 我说得对吧?",
+     "pinyin": "Zěnmeyàng? Wǒ shuō de duì ba?",
+     "ko": "어때? 내 말 맞지?",
+     "note": "정도보어 得 (说得对: 맞게 말하다)",
+     "tags": [
+      "banter",
+      "complement:得"
+     ]
+    },
+    {
+     "num": 12,
+     "speaker": "B",
+     "zh": "但是我还是爱热拿铁。",
+     "pinyin": "Dànshì wǒ háishi ài rè nátiě.",
+     "ko": "그래도 난 역시 핫 라떼가 좋아.",
+     "note": "还是 (그래도 역시, 변함없이)",
+     "tags": [
+      "coffee",
+      "adverb:还是"
+     ]
+    },
+    {
+     "num": 13,
+     "speaker": "A",
+     "zh": "行行行, 各喝各的。",
+     "pinyin": "Xíng xíng xíng, gè hē gè de.",
+     "ko": "그래 그래, 각자 마시자.",
+     "note": "各V各的 (각자 알아서 ~하다)",
+     "tags": [
+      "humor",
+      "pattern:各各的"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d16",
+   "title": "회식",
+   "emoji": "🍻",
+   "scenario": "회사 회식이 늦게 끝나 약속을 어긴 Mark, 서운해하는 小丽와 케이크로 화해",
+   "turns": [
+    {
+     "num": 1,
+     "speaker": "B",
+     "zh": "都十一点了, 你在哪儿呢?",
+     "pinyin": "Dōu shíyī diǎn le, nǐ zài nǎr ne?",
+     "ko": "벌써 11시야, 너 어디야?",
+     "note": "都……了 (벌써 ~다) + 呢 의문",
+     "tags": [
+      "upset",
+      "grammar:都了"
+     ]
+    },
+    {
+     "num": 2,
+     "speaker": "A",
+     "zh": "聚餐还没结束……",
+     "pinyin": "Jùcān hái méi jiéshù……",
+     "ko": "회식이 아직 안 끝났어……",
+     "note": "还没 (아직 ~하지 않았다)",
+     "tags": [
+      "work",
+      "negation:还没"
+     ]
+    },
+    {
+     "num": 3,
+     "speaker": "B",
+     "zh": "你不是说十点回来吗?",
+     "pinyin": "Nǐ bú shì shuō shí diǎn huílai ma?",
+     "ko": "너 10시에 온다고 하지 않았어?",
+     "note": "不是……吗 반문 (약속 추궁)",
+     "tags": [
+      "upset",
+      "rhetorical"
+     ]
+    },
+    {
+     "num": 4,
+     "speaker": "A",
+     "zh": "王哥一直不让我走啊。",
+     "pinyin": "Wáng gē yìzhí bú ràng wǒ zǒu a.",
+     "ko": "왕 형이 계속 못 가게 해.",
+     "note": "让 사역문 (不让: 못 하게 하다)",
+     "tags": [
+      "work",
+      "causative:让"
+     ]
+    },
+    {
+     "num": 5,
+     "speaker": "B",
+     "zh": "哼, 我一个人吃的晚饭。",
+     "pinyin": "Hēng, wǒ yí gè rén chī de wǎnfàn.",
+     "ko": "흥, 나 혼자 저녁 먹었거든.",
+     "note": "是……的 구문 (是 생략, 상황 강조)",
+     "tags": [
+      "upset",
+      "pattern:是的"
+     ]
+    },
+    {
+     "num": 6,
+     "speaker": "A",
+     "zh": "对不起嘛, 别生气。",
+     "pinyin": "Duìbuqǐ ma, bié shēngqì.",
+     "ko": "미안해, 화내지 마.",
+     "note": "嘛 (애교 섞인 어투) + 别 금지",
+     "tags": [
+      "apology",
+      "particle:嘛"
+     ]
+    },
+    {
+     "num": 7,
+     "speaker": "B",
+     "zh": "我等你等了两个小时。",
+     "pinyin": "Wǒ děng nǐ děng le liǎng gè xiǎoshí.",
+     "ko": "너 두 시간이나 기다렸어.",
+     "note": "동사 반복+시간보어 (等你等了~)",
+     "tags": [
+      "upset",
+      "duration"
+     ]
+    },
+    {
+     "num": 8,
+     "speaker": "A",
+     "zh": "我现在马上跑回去!",
+     "pinyin": "Wǒ xiànzài mǎshàng pǎo huíqu!",
+     "ko": "지금 당장 뛰어갈게!",
+     "note": "방향보어 回去 (되돌아가다)",
+     "tags": [
+      "apology",
+      "complement:回去"
+     ]
+    },
+    {
+     "num": 9,
+     "speaker": "B",
+     "zh": "路上小心, 别跑。",
+     "pinyin": "Lùshang xiǎoxīn, bié pǎo.",
+     "ko": "길 조심하고, 뛰지는 마.",
+     "note": "别 금지 (걱정에서 나온 만류)",
+     "tags": [
+      "care",
+      "prohibition:别"
+     ]
+    },
+    {
+     "num": 10,
+     "speaker": "A",
+     "zh": "你还是关心我的嘛。",
+     "pinyin": "Nǐ háishi guānxīn wǒ de ma.",
+     "ko": "그래도 날 걱정해 주네.",
+     "note": "还是……的 (역시 ~하긴 하다)",
+     "tags": [
+      "sweet",
+      "particle:嘛"
+     ]
+    },
+    {
+     "num": 11,
+     "speaker": "B",
+     "zh": "谁关心你了, 快点回来。",
+     "pinyin": "Shéi guānxīn nǐ le, kuài diǎn huílai.",
+     "ko": "누가 널 걱정한대, 빨리 와.",
+     "note": "谁……了 반어 (츤데레 부정)",
+     "tags": [
+      "banter",
+      "rhetorical:谁"
+     ]
+    },
+    {
+     "num": 12,
+     "speaker": "A",
+     "zh": "我带了你爱吃的蛋糕哦。",
+     "pinyin": "Wǒ dài le nǐ ài chī de dàngāo o.",
+     "ko": "네가 좋아하는 케이크 사 왔어.",
+     "note": "관형절 你爱吃的+명사 + 哦",
+     "tags": [
+      "sweet",
+      "particle:哦"
+     ]
+    },
+    {
+     "num": 13,
+     "speaker": "B",
+     "zh": "……原谅你啦。",
+     "pinyin": "……Yuánliàng nǐ la.",
+     "ko": "……용서해 준다.",
+     "note": "어기조사 啦 (못 이기는 척 마무리)",
+     "tags": [
+      "reconcile",
+      "particle:啦"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d17",
+   "title": "게임",
+   "emoji": "🎮",
+   "scenario": "밤새 게임하느라 연락이 끊긴 Mark, 小丽의 추궁에 어설픈 변명을 시작한다.",
+   "turns": [
+    {
+     "num": 1,
+     "speaker": "B",
+     "zh": "你昨晚去哪儿了？",
+     "pinyin": "Nǐ zuówǎn qù nǎr le?",
+     "ko": "너 어젯밤에 어디 갔었어?",
+     "note": "去哪儿+了: 과거 행선지 묻기. 문미 了로 이미 일어난 일 표현.",
+     "tags": [
+      "의문문",
+      "了"
+     ]
+    },
+    {
+     "num": 2,
+     "speaker": "B",
+     "zh": "我给你发了十条消息！",
+     "pinyin": "Wǒ gěi nǐ fā le shí tiáo xiāoxi!",
+     "ko": "내가 메시지 열 개나 보냈잖아!",
+     "note": "给+사람+동사: '~에게 ~해주다'. 메시지 양사는 条.",
+     "tags": [
+      "给",
+      "양사"
+     ]
+    },
+    {
+     "num": 3,
+     "speaker": "A",
+     "zh": "对不起对不起！",
+     "pinyin": "Duìbuqǐ duìbuqǐ!",
+     "ko": "미안미안!",
+     "note": "사과 표현 중첩으로 다급함 강조. 채팅체에서 흔한 반복.",
+     "tags": [
+      "사과",
+      "중첩"
+     ]
+    },
+    {
+     "num": 4,
+     "speaker": "A",
+     "zh": "我手机没电了。",
+     "pinyin": "Wǒ shǒujī méi diàn le.",
+     "ko": "나 폰 배터리 나갔었어.",
+     "note": "没电了: '배터리가 없다'. 变化의 了로 상태 변화 표현.",
+     "tags": [
+      "没…了",
+      "변명"
+     ]
+    },
+    {
+     "num": 5,
+     "speaker": "B",
+     "zh": "真的吗？大伟说你在打游戏。",
+     "pinyin": "Zhēn de ma? Dàwěi shuō nǐ zài dǎ yóuxì.",
+     "ko": "진짜? 다웨이가 너 게임하고 있다던데.",
+     "note": "在+동사: 진행형. 打游戏 '게임을 하다'는 打를 씀.",
+     "tags": [
+      "진행형",
+      "打游戏"
+     ]
+    },
+    {
+     "num": 6,
+     "speaker": "A",
+     "zh": "啊……那个……",
+     "pinyin": "À……nàge……",
+     "ko": "아… 그게…",
+     "note": "那个: 말문이 막힐 때 쓰는 필러(음… 그게…).",
+     "tags": [
+      "필러",
+      "회화체"
+     ]
+    },
+    {
+     "num": 7,
+     "speaker": "B",
+     "zh": "你还想骗我？",
+     "pinyin": "Nǐ hái xiǎng piàn wǒ?",
+     "ko": "아직도 날 속이려고?",
+     "note": "还+동사: '여전히/그래도 또'. 骗 '속이다'.",
+     "tags": [
+      "还",
+      "骗"
+     ]
+    },
+    {
+     "num": 8,
+     "speaker": "A",
+     "zh": "就玩了一会儿嘛！",
+     "pinyin": "Jiù wán le yíhuìr ma!",
+     "ko": "그냥 잠깐만 했다니까!",
+     "note": "就…嘛: '겨우 ~일 뿐이잖아' 억울함 어투. 一会儿 '잠깐'.",
+     "tags": [
+      "嘛",
+      "一会儿"
+     ]
+    },
+    {
+     "num": 9,
+     "speaker": "B",
+     "zh": "一会儿？五个小时呢！",
+     "pinyin": "Yíhuìr? Wǔ ge xiǎoshí ne!",
+     "ko": "잠깐? 다섯 시간이거든!",
+     "note": "상대 말 되받아치기 + 呢로 사실 강조.",
+     "tags": [
+      "呢",
+      "반박"
+     ]
+    },
+    {
+     "num": 10,
+     "speaker": "A",
+     "zh": "因为我们队一直输啊。",
+     "pinyin": "Yīnwèi wǒmen duì yìzhí shū a.",
+     "ko": "우리 팀이 계속 져서 그랬단 말야.",
+     "note": "一直: '계속'. 输 '지다' (반대말 赢).",
+     "tags": [
+      "一直",
+      "输"
+     ]
+    },
+    {
+     "num": 11,
+     "speaker": "B",
+     "zh": "那你赢了吗？",
+     "pinyin": "Nà nǐ yíng le ma?",
+     "ko": "그래서 이겼어?",
+     "note": "那: '그럼/그래서' 화제 이어받기. 赢 '이기다'.",
+     "tags": [
+      "那",
+      "赢"
+     ]
+    },
+    {
+     "num": 12,
+     "speaker": "A",
+     "zh": "……也输了。",
+     "pinyin": "……Yě shū le.",
+     "ko": "…그것도 졌어.",
+     "note": "也: '역시/그것도'. 짧은 대답으로 머쓱함 표현.",
+     "tags": [
+      "也",
+      "유머"
+     ]
+    },
+    {
+     "num": 13,
+     "speaker": "B",
+     "zh": "哈哈，活该！",
+     "pinyin": "Hāhā, huógāi!",
+     "ko": "하하, 쌤통이다!",
+     "note": "活该: '쌤통이다, 자업자득'. 친한 사이 놀림 표현.",
+     "tags": [
+      "活该",
+      "회화체"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d18",
+   "title": "생일",
+   "emoji": "🎂",
+   "scenario": "小丽의 생일 서프라이즈를 몰래 준비하던 Mark, 폰 메시지를 들켜버린다.",
+   "turns": [
+    {
+     "num": 1,
+     "speaker": "B",
+     "zh": "你最近怎么怪怪的？",
+     "pinyin": "Nǐ zuìjìn zěnme guàiguài de?",
+     "ko": "너 요즘 왜 이렇게 수상해?",
+     "note": "형용사 중첩 怪怪的: '좀 이상한' 뉘앙스 완화+생동감.",
+     "tags": [
+      "중첩",
+      "怎么"
+     ]
+    },
+    {
+     "num": 2,
+     "speaker": "A",
+     "zh": "我？没有啊。",
+     "pinyin": "Wǒ? Méiyǒu a.",
+     "ko": "나? 아닌데.",
+     "note": "没有啊: 부인할 때 상투 표현. 啊로 어색하게 태연한 척.",
+     "tags": [
+      "부정",
+      "啊"
+     ]
+    },
+    {
+     "num": 3,
+     "speaker": "B",
+     "zh": "你偷偷跟大伟发消息。",
+     "pinyin": "Nǐ tōutōu gēn Dàwěi fā xiāoxi.",
+     "ko": "너 몰래 다웨이랑 메시지 주고받았잖아.",
+     "note": "偷偷: '몰래'. 跟+사람: '~와 함께/에게'.",
+     "tags": [
+      "偷偷",
+      "跟"
+     ]
+    },
+    {
+     "num": 4,
+     "speaker": "A",
+     "zh": "那是……工作的事！",
+     "pinyin": "Nà shì……gōngzuò de shì!",
+     "ko": "그건… 일 얘기야!",
+     "note": "…的事: '~에 관한 일'. 말 더듬기로 거짓말 티내기.",
+     "tags": [
+      "的",
+      "변명"
+     ]
+    },
+    {
+     "num": 5,
+     "speaker": "B",
+     "zh": "我都看见了，\"蛋糕\"两个字。",
+     "pinyin": "Wǒ dōu kànjiàn le, \"dàngāo\" liǎng ge zì.",
+     "ko": "나 다 봤어, '케이크' 두 글자.",
+     "note": "看见: 결과보어 见 '보였다/봤다'. 都로 '전부 다' 강조.",
+     "tags": [
+      "결과보어",
+      "都"
+     ]
+    },
+    {
+     "num": 6,
+     "speaker": "A",
+     "zh": "啊！你看我手机了？",
+     "pinyin": "À! Nǐ kàn wǒ shǒujī le?",
+     "ko": "앗! 내 폰 봤어?",
+     "note": "평서문+了를 올려 읽어 놀란 의문 표현.",
+     "tags": [
+      "了",
+      "놀람"
+     ]
+    },
+    {
+     "num": 7,
+     "speaker": "B",
+     "zh": "是你自己放在桌子上的呀。",
+     "pinyin": "Shì nǐ zìjǐ fàng zài zhuōzi shang de ya.",
+     "ko": "네가 직접 책상 위에 올려놨거든.",
+     "note": "是…的 강조구문 + 放在: '~에 놓다' 결과 표현.",
+     "tags": [
+      "是…的",
+      "放在"
+     ]
+    },
+    {
+     "num": 8,
+     "speaker": "A",
+     "zh": "好吧，是给你准备的生日蛋糕。",
+     "pinyin": "Hǎo ba, shì gěi nǐ zhǔnbèi de shēngrì dàngāo.",
+     "ko": "알았어, 너 주려고 준비한 생일 케이크야.",
+     "note": "给你准备的: 给+대상+동사+的 수식 구조.",
+     "tags": [
+      "给",
+      "관형어"
+     ]
+    },
+    {
+     "num": 9,
+     "speaker": "A",
+     "zh": "惊喜没有了，都怪你。",
+     "pinyin": "Jīngxǐ méiyǒu le, dōu guài nǐ.",
+     "ko": "서프라이즈 다 망했어, 전부 네 탓이야.",
+     "note": "怪你: '네 탓이다'. 都怪+사람 애교 섞인 원망.",
+     "tags": [
+      "怪",
+      "투닥"
+     ]
+    },
+    {
+     "num": 10,
+     "speaker": "B",
+     "zh": "哈哈，可是我好开心！",
+     "pinyin": "Hāhā, kěshì wǒ hǎo kāixīn!",
+     "ko": "하하, 근데 나 완전 행복해!",
+     "note": "好+형용사: '엄청 ~하다' 구어 강조(=很보다 감정적).",
+     "tags": [
+      "好+형용사",
+      "감정"
+     ]
+    },
+    {
+     "num": 11,
+     "speaker": "B",
+     "zh": "什么蛋糕？巧克力的吗？",
+     "pinyin": "Shénme dàngāo? Qiǎokèlì de ma?",
+     "ko": "무슨 케이크야? 초콜릿 맛?",
+     "note": "巧克力的: 명사+的로 '~한 것' 생략 표현.",
+     "tags": [
+      "的",
+      "질문"
+     ]
+    },
+    {
+     "num": 12,
+     "speaker": "A",
+     "zh": "不告诉你，这个是秘密。",
+     "pinyin": "Bú gàosu nǐ, zhège shì mìmì.",
+     "ko": "안 알려줘, 이건 비밀이야.",
+     "note": "告诉+사람: 이중목적어 동사. 不의 성조변화(bú).",
+     "tags": [
+      "告诉",
+      "성조변화"
+     ]
+    },
+    {
+     "num": 13,
+     "speaker": "B",
+     "zh": "小气鬼！",
+     "pinyin": "Xiǎoqìguǐ!",
+     "ko": "쪼잔이!",
+     "note": "小气鬼: '구두쇠/쪼잔한 사람'. 연인 간 애교 놀림.",
+     "tags": [
+      "小气鬼",
+      "회화체"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d19",
+   "title": "시험",
+   "emoji": "📝",
+   "scenario": "HSK 시험 공부에 지친 Mark를 小丽가 훠궈로 달랜다.",
+   "turns": [
+    {
+     "num": 1,
+     "speaker": "A",
+     "zh": "我不想学了……",
+     "pinyin": "Wǒ bù xiǎng xué le……",
+     "ko": "나 공부 그만하고 싶어…",
+     "note": "不想+동사+了: '더는 ~하고 싶지 않다' 상태 변화.",
+     "tags": [
+      "不想…了",
+      "불평"
+     ]
+    },
+    {
+     "num": 2,
+     "speaker": "B",
+     "zh": "怎么啦？",
+     "pinyin": "Zěnme la?",
+     "ko": "왜 그래?",
+     "note": "怎么啦(=怎么了): 걱정하며 이유 묻기. 啦는 부드러운 어기.",
+     "tags": [
+      "怎么啦",
+      "어기조사"
+     ]
+    },
+    {
+     "num": 3,
+     "speaker": "A",
+     "zh": "HSK的语法太难了。",
+     "pinyin": "HSK de yǔfǎ tài nán le.",
+     "ko": "HSK 문법 너무 어려워.",
+     "note": "太…了: '너무 ~하다' 감탄·불평 필수 패턴.",
+     "tags": [
+      "太…了",
+      "语法"
+     ]
+    },
+    {
+     "num": 4,
+     "speaker": "A",
+     "zh": "汉字也太多了！",
+     "pinyin": "Hànzì yě tài duō le!",
+     "ko": "한자도 너무 많아!",
+     "note": "也: 앞 불평에 하나 더 얹기. 병렬 불만 표현.",
+     "tags": [
+      "也",
+      "불평"
+     ]
+    },
+    {
+     "num": 5,
+     "speaker": "B",
+     "zh": "你已经很棒了嘛。",
+     "pinyin": "Nǐ yǐjīng hěn bàng le ma.",
+     "ko": "너 이미 충분히 잘하잖아.",
+     "note": "已经…了: '이미 ~하다'. 嘛로 '당연하잖아' 위로 어투.",
+     "tags": [
+      "已经",
+      "嘛"
+     ]
+    },
+    {
+     "num": 6,
+     "speaker": "A",
+     "zh": "昨天我写错了五十个词。",
+     "pinyin": "Zuótiān wǒ xiě cuò le wǔshí ge cí.",
+     "ko": "어제 단어 50개 틀리게 썼어.",
+     "note": "写错: 동사+결과보어 错 '잘못 쓰다'.",
+     "tags": [
+      "결과보어",
+      "错"
+     ]
+    },
+    {
+     "num": 7,
+     "speaker": "B",
+     "zh": "五十个？哈哈哈。",
+     "pinyin": "Wǔshí ge? Hāhāhā.",
+     "ko": "50개? 하하하.",
+     "note": "수사 반복으로 되묻기. 웃음으로 분위기 전환.",
+     "tags": [
+      "되묻기",
+      "유머"
+     ]
+    },
+    {
+     "num": 8,
+     "speaker": "A",
+     "zh": "你别笑啊！",
+     "pinyin": "Nǐ bié xiào a!",
+     "ko": "웃지 마!",
+     "note": "别+동사: 금지 명령 '~하지 마'. 啊로 어리광 어투.",
+     "tags": [
+      "别",
+      "명령문"
+     ]
+    },
+    {
+     "num": 9,
+     "speaker": "B",
+     "zh": "好好好，不笑了。",
+     "pinyin": "Hǎo hǎo hǎo, bú xiào le.",
+     "ko": "알았어 알았어, 안 웃을게.",
+     "note": "好 삼연발: 달래는 구어체. 不…了 '이제 안 ~할게'.",
+     "tags": [
+      "不…了",
+      "회화체"
+     ]
+    },
+    {
+     "num": 10,
+     "speaker": "B",
+     "zh": "考完我带你去吃火锅。",
+     "pinyin": "Kǎo wán wǒ dài nǐ qù chī huǒguō.",
+     "ko": "시험 끝나면 훠궈 먹으러 데려갈게.",
+     "note": "考完: 동사+完 '다 끝내다'. 带你去: '데리고 가다' 연동문.",
+     "tags": [
+      "完",
+      "带…去"
+     ]
+    },
+    {
+     "num": 11,
+     "speaker": "A",
+     "zh": "真的？那我现在就去学习！",
+     "pinyin": "Zhēn de? Nà wǒ xiànzài jiù qù xuéxí!",
+     "ko": "진짜? 그럼 지금 당장 공부하러 간다!",
+     "note": "就: '바로, 당장' 즉시성 강조.",
+     "tags": [
+      "就",
+      "반전"
+     ]
+    },
+    {
+     "num": 12,
+     "speaker": "B",
+     "zh": "你为了火锅才学习吗？",
+     "pinyin": "Nǐ wèile huǒguō cái xuéxí ma?",
+     "ko": "너 훠궈 때문에 공부하는 거야?",
+     "note": "为了+명사: '~을 위해서'. 才로 '그제서야/겨우' 뉘앙스.",
+     "tags": [
+      "为了",
+      "才"
+     ]
+    },
+    {
+     "num": 13,
+     "speaker": "A",
+     "zh": "火锅就是我的老师。",
+     "pinyin": "Huǒguō jiù shì wǒ de lǎoshī.",
+     "ko": "훠궈가 곧 내 스승이지.",
+     "note": "就是: '바로 ~이다' 단언 강조. 너스레 마무리.",
+     "tags": [
+      "就是",
+      "유머"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d20",
+   "title": "이사",
+   "emoji": "🏠",
+   "scenario": "이사 갈 집을 고르며 역세권파 Mark와 조용한 동네파 小丽가 맞붙는다.",
+   "turns": [
+    {
+     "num": 1,
+     "speaker": "A",
+     "zh": "我们看看新房子吧。",
+     "pinyin": "Wǒmen kànkan xīn fángzi ba.",
+     "ko": "우리 새집 좀 보자.",
+     "note": "동사 중첩 看看: '좀 ~해보다' 가볍게 제안. 吧로 권유.",
+     "tags": [
+      "동사중첩",
+      "吧"
+     ]
+    },
+    {
+     "num": 2,
+     "speaker": "B",
+     "zh": "好啊，你想住哪儿？",
+     "pinyin": "Hǎo a, nǐ xiǎng zhù nǎr?",
+     "ko": "좋아, 넌 어디 살고 싶은데?",
+     "note": "想+동사: 희망 표현. 住哪儿 '어디에 살다'.",
+     "tags": [
+      "想",
+      "의문사"
+     ]
+    },
+    {
+     "num": 3,
+     "speaker": "A",
+     "zh": "一定要离地铁站近！",
+     "pinyin": "Yídìng yào lí dìtiězhàn jìn!",
+     "ko": "무조건 지하철역이랑 가까워야 해!",
+     "note": "离+장소+近/远: 거리 표현 핵심 패턴. 一定要 '반드시'.",
+     "tags": [
+      "离",
+      "一定要"
+     ]
+    },
+    {
+     "num": 4,
+     "speaker": "B",
+     "zh": "不行，地铁站旁边太吵了。",
+     "pinyin": "Bù xíng, dìtiězhàn pángbiān tài chǎo le.",
+     "ko": "안 돼, 역 옆은 너무 시끄러워.",
+     "note": "不行: 단호한 거절. 吵 '시끄럽다'.",
+     "tags": [
+      "不行",
+      "太…了"
+     ]
+    },
+    {
+     "num": 5,
+     "speaker": "A",
+     "zh": "可是我每天要上班啊。",
+     "pinyin": "Kěshì wǒ měitiān yào shàngbān a.",
+     "ko": "근데 나 매일 출근해야 하잖아.",
+     "note": "要+동사: 의무 '~해야 한다'. 可是로 반박 연결.",
+     "tags": [
+      "要",
+      "可是"
+     ]
+    },
+    {
+     "num": 6,
+     "speaker": "B",
+     "zh": "我在家工作，需要安静。",
+     "pinyin": "Wǒ zài jiā gōngzuò, xūyào ānjìng.",
+     "ko": "난 재택근무라 조용한 게 필요해.",
+     "note": "在+장소+동사: 동작 장소. 需要 '필요하다'.",
+     "tags": [
+      "在",
+      "需要"
+     ]
+    },
+    {
+     "num": 7,
+     "speaker": "A",
+     "zh": "那我每天走一个小时？",
+     "pinyin": "Nà wǒ měitiān zǒu yí ge xiǎoshí?",
+     "ko": "그럼 난 매일 한 시간을 걸으라고?",
+     "note": "시량보어: 동사 뒤 시간(走一个小时)으로 지속 시간 표현.",
+     "tags": [
+      "시량보어",
+      "반문"
+     ]
+    },
+    {
+     "num": 8,
+     "speaker": "B",
+     "zh": "运动对身体好嘛。",
+     "pinyin": "Yùndòng duì shēntǐ hǎo ma.",
+     "ko": "운동이 몸에 좋잖아.",
+     "note": "对…好: '~에 좋다'. 嘛로 뻔뻔한 정당화 어투.",
+     "tags": [
+      "对…好",
+      "嘛"
+     ]
+    },
+    {
+     "num": 9,
+     "speaker": "A",
+     "zh": "你怎么不去走呢？",
+     "pinyin": "Nǐ zěnme bú qù zǒu ne?",
+     "ko": "그럼 넌 왜 안 걷는데?",
+     "note": "怎么不…呢: '왜 ~하지 않느냐' 반문 패턴.",
+     "tags": [
+      "怎么不",
+      "呢"
+     ]
+    },
+    {
+     "num": 10,
+     "speaker": "B",
+     "zh": "我又不用上班，哈哈。",
+     "pinyin": "Wǒ yòu bú yòng shàngbān, hāhā.",
+     "ko": "난 출근 안 해도 되거든, 하하.",
+     "note": "又不: '~한 것도 아닌데' 뻔뻔 반박 어투. 不用 '~할 필요 없다'.",
+     "tags": [
+      "又不",
+      "不用"
+     ]
+    },
+    {
+     "num": 11,
+     "speaker": "A",
+     "zh": "太不公平了吧！",
+     "pinyin": "Tài bù gōngpíng le ba!",
+     "ko": "너무 불공평한 거 아냐!",
+     "note": "太不…了: 부정형 강조. 吧로 항의성 감탄.",
+     "tags": [
+      "太…了",
+      "항의"
+     ]
+    },
+    {
+     "num": 12,
+     "speaker": "B",
+     "zh": "那找一个中间的，好不好？",
+     "pinyin": "Nà zhǎo yí ge zhōngjiān de, hǎo bu hǎo?",
+     "ko": "그럼 중간쯤인 데 찾자, 어때?",
+     "note": "好不好: 정반의문으로 부드러운 타협 제안.",
+     "tags": [
+      "好不好",
+      "타협"
+     ]
+    },
+    {
+     "num": 13,
+     "speaker": "A",
+     "zh": "行吧，听你的。",
+     "pinyin": "Xíng ba, tīng nǐ de.",
+     "ko": "그래 알았어, 네 말 들을게.",
+     "note": "听你的: '네 말대로 할게' 양보 표현. 行吧 '그러자 뭐'.",
+     "tags": [
+      "听你的",
+      "양보"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d21",
+   "title": "반려동물",
+   "emoji": "🐱",
+   "scenario": "고양이를 입양하고 싶은 小丽가 Mark를 끈질기게 조른다.",
+   "turns": [
+    {
+     "num": 1,
+     "speaker": "B",
+     "zh": "我们养一只猫吧！",
+     "pinyin": "Wǒmen yǎng yì zhī māo ba!",
+     "ko": "우리 고양이 한 마리 키우자!",
+     "note": "养 '기르다'. 동물 양사 只. 吧로 조르기 시작.",
+     "tags": [
+      "养",
+      "양사"
+     ]
+    },
+    {
+     "num": 2,
+     "speaker": "A",
+     "zh": "又来了……",
+     "pinyin": "Yòu lái le……",
+     "ko": "또 시작이네…",
+     "note": "又…了: '또 ~한다' 반복에 대한 체념 어투.",
+     "tags": [
+      "又…了",
+      "회화체"
+     ]
+    },
+    {
+     "num": 3,
+     "speaker": "B",
+     "zh": "你看这张照片，多可爱！",
+     "pinyin": "Nǐ kàn zhè zhāng zhàopiàn, duō kě'ài!",
+     "ko": "이 사진 봐봐, 완전 귀엽지!",
+     "note": "多+형용사: '얼마나 ~한가' 감탄. 사진 양사 张.",
+     "tags": [
+      "多+형용사",
+      "감탄"
+     ]
+    },
+    {
+     "num": 4,
+     "speaker": "A",
+     "zh": "可爱是可爱……",
+     "pinyin": "Kě'ài shì kě'ài……",
+     "ko": "귀엽긴 귀여운데…",
+     "note": "A是A: '~하긴 한데' 양보 후 반전 예고 패턴.",
+     "tags": [
+      "A是A",
+      "양보"
+     ]
+    },
+    {
+     "num": 5,
+     "speaker": "B",
+     "zh": "我朋友家的猫生了小猫。",
+     "pinyin": "Wǒ péngyou jiā de māo shēng le xiǎo māo.",
+     "ko": "내 친구네 고양이가 새끼를 낳았어.",
+     "note": "生了: 生+了 '낳았다'. 朋友家 '친구네 집'.",
+     "tags": [
+      "了",
+      "가족·소유"
+     ]
+    },
+    {
+     "num": 6,
+     "speaker": "A",
+     "zh": "可是谁来打扫呢？",
+     "pinyin": "Kěshì shéi lái dǎsǎo ne?",
+     "ko": "근데 청소는 누가 하는데?",
+     "note": "谁来+동사: '누가 ~할 건데'. 打扫 '청소하다'.",
+     "tags": [
+      "谁来",
+      "呢"
+     ]
+    },
+    {
+     "num": 7,
+     "speaker": "B",
+     "zh": "我！我什么都做！",
+     "pinyin": "Wǒ! Wǒ shénme dōu zuò!",
+     "ko": "나! 내가 뭐든 다 할게!",
+     "note": "什么都+동사: '무엇이든 다' 전체 긍정 패턴.",
+     "tags": [
+      "什么都",
+      "다짐"
+     ]
+    },
+    {
+     "num": 8,
+     "speaker": "A",
+     "zh": "你上次也是这么说的。",
+     "pinyin": "Nǐ shàng cì yě shì zhème shuō de.",
+     "ko": "너 지난번에도 그렇게 말했거든.",
+     "note": "是…的: 과거 상황 강조. 这么说 '이렇게 말하다'.",
+     "tags": [
+      "是…的",
+      "반박"
+     ]
+    },
+    {
+     "num": 9,
+     "speaker": "B",
+     "zh": "这次不一样嘛！",
+     "pinyin": "Zhè cì bù yíyàng ma!",
+     "ko": "이번엔 다르다니까!",
+     "note": "不一样: '다르다'. 嘛로 떼쓰는 어투.",
+     "tags": [
+      "不一样",
+      "嘛"
+     ]
+    },
+    {
+     "num": 10,
+     "speaker": "A",
+     "zh": "好吧好吧，就一只哦。",
+     "pinyin": "Hǎo ba hǎo ba, jiù yì zhī o.",
+     "ko": "알았어 알았어, 딱 한 마리만이야.",
+     "note": "就: '딱 ~만' 한정. 哦로 다짐 받는 어투.",
+     "tags": [
+      "就",
+      "哦"
+     ]
+    },
+    {
+     "num": 11,
+     "speaker": "B",
+     "zh": "太好了！那两只呢？",
+     "pinyin": "Tài hǎo le! Nà liǎng zhī ne?",
+     "ko": "앗싸! 그럼 두 마리는?",
+     "note": "…呢?: 명사구+呢로 '~는 어때?' 슬쩍 흥정.",
+     "tags": [
+      "呢",
+      "반전"
+     ]
+    },
+    {
+     "num": 12,
+     "speaker": "A",
+     "zh": "小丽！",
+     "pinyin": "Xiǎolì!",
+     "ko": "샤오리!",
+     "note": "이름만 외쳐 경고·어이없음 표현. 억양이 곧 의미.",
+     "tags": [
+      "호칭",
+      "유머"
+     ]
+    },
+    {
+     "num": 13,
+     "speaker": "B",
+     "zh": "开玩笑的啦，哈哈。",
+     "pinyin": "Kāi wánxiào de la, hāhā.",
+     "ko": "농담이야, 하하.",
+     "note": "开玩笑的: '농담이야'. 啦로 장난스럽게 수습.",
+     "tags": [
+      "开玩笑",
+      "啦"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d22",
+   "title": "요리",
+   "emoji": "🍳",
+   "scenario": "영상 보고 요리에 도전한 Mark, 생선을 숯으로 만들고 만다.",
+   "turns": [
+    {
+     "num": 1,
+     "speaker": "A",
+     "zh": "今晚我做饭！",
+     "pinyin": "Jīnwǎn wǒ zuòfàn!",
+     "ko": "오늘 저녁은 내가 요리한다!",
+     "note": "做饭: '밥을 하다, 요리하다' 이합사.",
+     "tags": [
+      "做饭",
+      "선언"
+     ]
+    },
+    {
+     "num": 2,
+     "speaker": "B",
+     "zh": "真的假的？你会做吗？",
+     "pinyin": "Zhēn de jiǎ de? Nǐ huì zuò ma?",
+     "ko": "실화야? 너 할 줄 알아?",
+     "note": "真的假的: '진짜야 가짜야' 구어 리액션. 会: 배워서 할 줄 앎.",
+     "tags": [
+      "真的假的",
+      "会"
+     ]
+    },
+    {
+     "num": 3,
+     "speaker": "A",
+     "zh": "我看了视频，很简单。",
+     "pinyin": "Wǒ kàn le shìpín, hěn jiǎndān.",
+     "ko": "영상 봤는데 완전 쉬워.",
+     "note": "동사+了+목적어: 완료. 플래그 세우는 자신감.",
+     "tags": [
+      "了",
+      "视频"
+     ]
+    },
+    {
+     "num": 4,
+     "speaker": "B",
+     "zh": "好吧，我等着。",
+     "pinyin": "Hǎo ba, wǒ děng zhe.",
+     "ko": "그래, 기다려 볼게.",
+     "note": "동사+着: 지속 상태 '기다리고 있을게'.",
+     "tags": [
+      "着",
+      "지속"
+     ]
+    },
+    {
+     "num": 5,
+     "speaker": "A",
+     "zh": "呃……小丽，快来一下！",
+     "pinyin": "È……Xiǎolì, kuài lái yíxià!",
+     "ko": "어… 샤오리, 빨리 좀 와봐!",
+     "note": "快+동사: 재촉. 一下로 부탁 완화 '좀 ~해봐'.",
+     "tags": [
+      "快",
+      "一下"
+     ]
+    },
+    {
+     "num": 6,
+     "speaker": "B",
+     "zh": "怎么了？什么味道？！",
+     "pinyin": "Zěnme le? Shénme wèidào?!",
+     "ko": "왜 그래? 이게 무슨 냄새야?!",
+     "note": "味道: '냄새/맛'. 什么+명사로 놀란 반문.",
+     "tags": [
+      "味道",
+      "놀람"
+     ]
+    },
+    {
+     "num": 7,
+     "speaker": "A",
+     "zh": "鱼有点儿黑了……",
+     "pinyin": "Yú yǒudiǎnr hēi le……",
+     "ko": "생선이 좀 까매졌어…",
+     "note": "有点儿+형용사: 부정적 '좀 ~하다'. 了로 변화.",
+     "tags": [
+      "有点儿",
+      "변화의 了"
+     ]
+    },
+    {
+     "num": 8,
+     "speaker": "B",
+     "zh": "这不是有点儿，是全黑了！",
+     "pinyin": "Zhè bú shì yǒudiǎnr, shì quán hēi le!",
+     "ko": "좀이 아니라 완전 새까맣거든!",
+     "note": "不是A，是B: 'A가 아니라 B다' 정정 패턴. 全 '완전히'.",
+     "tags": [
+      "不是…是…",
+      "全"
+     ]
+    },
+    {
+     "num": 9,
+     "speaker": "A",
+     "zh": "视频里没说火这么大……",
+     "pinyin": "Shìpín li méi shuō huǒ zhème dà……",
+     "ko": "영상에선 불이 이렇게 센 줄 몰랐단 말야…",
+     "note": "没说: '말해주지 않았다' 남 탓 변명. 这么+형용사 '이렇게 ~하다'.",
+     "tags": [
+      "没",
+      "这么"
+     ]
+    },
+    {
+     "num": 10,
+     "speaker": "B",
+     "zh": "锅也坏了吧？",
+     "pinyin": "Guō yě huài le ba?",
+     "ko": "냄비도 망가졌지?",
+     "note": "吧?: 추측 확인 '~지?'. 坏了 '망가졌다'.",
+     "tags": [
+      "吧",
+      "坏了"
+     ]
+    },
+    {
+     "num": 11,
+     "speaker": "A",
+     "zh": "那个……我们点外卖吧。",
+     "pinyin": "Nàge……wǒmen diǎn wàimài ba.",
+     "ko": "저기… 우리 배달 시키자.",
+     "note": "点外卖: '배달을 주문하다' 필수 생활 표현.",
+     "tags": [
+      "点外卖",
+      "제안"
+     ]
+    },
+    {
+     "num": 12,
+     "speaker": "B",
+     "zh": "早就该点了！",
+     "pinyin": "Zǎo jiù gāi diǎn le!",
+     "ko": "진작에 시켰어야지!",
+     "note": "早就该…了: '진작 ~했어야 했다' 뒤늦은 후회·타박.",
+     "tags": [
+      "早就",
+      "该…了"
+     ]
+    },
+    {
+     "num": 13,
+     "speaker": "A",
+     "zh": "下次我做汤，汤不会黑。",
+     "pinyin": "Xià cì wǒ zuò tāng, tāng bú huì hēi.",
+     "ko": "다음엔 국 끓일게, 국은 안 까매지니까.",
+     "note": "不会: '~할 리 없다' 가능성 부정. 굴하지 않는 유머.",
+     "tags": [
+      "不会",
+      "유머"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d23",
+   "title": "말버릇",
+   "emoji": "💬",
+   "scenario": "서로의 말버릇을 지적하다가 둘 다 부메랑을 맞는다.",
+   "turns": [
+    {
+     "num": 1,
+     "speaker": "B",
+     "zh": "你说汉语的时候有个习惯。",
+     "pinyin": "Nǐ shuō Hànyǔ de shíhou yǒu ge xíguàn.",
+     "ko": "너 중국어 할 때 버릇이 하나 있어.",
+     "note": "…的时候: '~할 때' 시간 구문. 习惯 '습관, 버릇'.",
+     "tags": [
+      "的时候",
+      "习惯"
+     ]
+    },
+    {
+     "num": 2,
+     "speaker": "A",
+     "zh": "什么习惯？",
+     "pinyin": "Shénme xíguàn?",
+     "ko": "무슨 버릇?",
+     "note": "什么+명사: 구체 내용 되묻기.",
+     "tags": [
+      "什么",
+      "질문"
+     ]
+    },
+    {
+     "num": 3,
+     "speaker": "B",
+     "zh": "你每句话都说\"那个那个\"。",
+     "pinyin": "Nǐ měi jù huà dōu shuō \"nàge nàge\".",
+     "ko": "너 말끝마다 '那个那个' 하잖아.",
+     "note": "每…都: '~마다 전부' 필수 호응 구문. 말 양사 句.",
+     "tags": [
+      "每…都",
+      "양사"
+     ]
+    },
+    {
+     "num": 4,
+     "speaker": "A",
+     "zh": "我？我没有啊……那个……",
+     "pinyin": "Wǒ? Wǒ méiyǒu a……nàge……",
+     "ko": "내가? 아닌데… 그게…",
+     "note": "부인하자마자 그 말버릇이 튀어나오는 자폭 유머.",
+     "tags": [
+      "那个",
+      "유머"
+     ]
+    },
+    {
+     "num": 5,
+     "speaker": "B",
+     "zh": "哈哈哈！你看你看！",
+     "pinyin": "Hāhāhā! Nǐ kàn nǐ kàn!",
+     "ko": "하하하! 봐봐, 방금 했잖아!",
+     "note": "你看你看: '거봐 거봐' 현장 적발 구어 표현.",
+     "tags": [
+      "你看",
+      "회화체"
+     ]
+    },
+    {
+     "num": 6,
+     "speaker": "A",
+     "zh": "那你呢！你总说\"哎呀\"。",
+     "pinyin": "Nà nǐ ne! Nǐ zǒng shuō \"āiyā\".",
+     "ko": "그러는 너는! 맨날 '아이야' 하잖아.",
+     "note": "那你呢: '그럼 너는?' 반격 패턴. 总 '늘, 항상'.",
+     "tags": [
+      "那…呢",
+      "总"
+     ]
+    },
+    {
+     "num": 7,
+     "speaker": "B",
+     "zh": "哎呀，我哪有！",
+     "pinyin": "Āiyā, wǒ nǎ yǒu!",
+     "ko": "아이야, 내가 언제!",
+     "note": "哪有: '어디 그런 게 있어' 반어 부정. 첫마디부터 자폭.",
+     "tags": [
+      "哪有",
+      "반어"
+     ]
+    },
+    {
+     "num": 8,
+     "speaker": "A",
+     "zh": "你自己听到了吗？",
+     "pinyin": "Nǐ zìjǐ tīngdào le ma?",
+     "ko": "방금 네 귀로 들었지?",
+     "note": "听到: 결과보어 到 '들리다, 듣게 되다'.",
+     "tags": [
+      "결과보어",
+      "自己"
+     ]
+    },
+    {
+     "num": 9,
+     "speaker": "B",
+     "zh": "……当我没说。",
+     "pinyin": "……Dāng wǒ méi shuō.",
+     "ko": "…방금 말 못 들은 걸로 해.",
+     "note": "当我没说: '내가 말 안 한 셈 쳐' 철회 관용 표현.",
+     "tags": [
+      "当",
+      "관용표현"
+     ]
+    },
+    {
+     "num": 10,
+     "speaker": "A",
+     "zh": "王哥也说你有这个习惯。",
+     "pinyin": "Wáng gē yě shuō nǐ yǒu zhège xíguàn.",
+     "ko": "왕 형도 너 그 버릇 있다던데.",
+     "note": "간접 인용: 사람+说+문장 '~가 ~라고 말하다'.",
+     "tags": [
+      "说",
+      "간접인용"
+     ]
+    },
+    {
+     "num": 11,
+     "speaker": "B",
+     "zh": "好啊，你们说我坏话！",
+     "pinyin": "Hǎo a, nǐmen shuō wǒ huàihuà!",
+     "ko": "잘들 논다, 내 뒷담화를 해?",
+     "note": "说坏话: '험담하다'. 好啊는 여기서 반어적 발끈.",
+     "tags": [
+      "说坏话",
+      "반어"
+     ]
+    },
+    {
+     "num": 12,
+     "speaker": "A",
+     "zh": "不是坏话，是可爱的话。",
+     "pinyin": "Bú shì huàihuà, shì kě'ài de huà.",
+     "ko": "뒷담화 아니고 귀엽다는 얘기였어.",
+     "note": "不是A，是B로 재치있게 수습. 형용사+的+명사 수식.",
+     "tags": [
+      "不是…是…",
+      "수습"
+     ]
+    },
+    {
+     "num": 13,
+     "speaker": "B",
+     "zh": "哎呀……又被你骗了。",
+     "pinyin": "Āiyā……yòu bèi nǐ piàn le.",
+     "ko": "아이야… 또 너한테 넘어갔네.",
+     "note": "被자문: 被+행위자+동사 '~에게 당하다'. 又…了 '또'.",
+     "tags": [
+      "被",
+      "又…了"
+     ]
+    }
+   ]
+  }
+ ]
 }
