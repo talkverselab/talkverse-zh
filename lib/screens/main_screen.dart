@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 
 import '../core/theme.dart';
+import '../main.dart';
 import '../widgets/chinese_decor.dart';
 import '../widgets/mascot.dart';
 import '../widgets/today_mission.dart';
 import 'chunk_search_screen.dart';
 import 'conversation_screen.dart';
+import 'episode_screen.dart';
 import 'conversation_wordset_screen.dart';
 import 'flashcard_screen.dart';
 import 'grammar_lesson_screen.dart';
@@ -125,17 +127,7 @@ class HomeScreen extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(height: 8),
-                TodayMissionCard(
-                  level: 'BEGINNER 1',
-                  lessonTitle: 'L1 · 매칭',
-                  lessonSubtitle: 'Mark · 小丽 첫 인사',
-                  progress: 4,
-                  total: 40,
-                  onTap: () => Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (_) => const ConversationScreen()),
-                  ),
-                ),
+                const _TodayMission(),
                 const SizedBox(height: 22),
                 Row(
                   children: [
@@ -191,6 +183,69 @@ class HomeScreen extends StatelessWidget {
           }),
         ],
       ),
+    );
+  }
+}
+
+/// 홈 '오늘의 학습' — 첫 미완료 에피소드와 실제 진행도 연결.
+class _TodayMission extends StatefulWidget {
+  const _TodayMission();
+
+  @override
+  State<_TodayMission> createState() => _TodayMissionState();
+}
+
+class _TodayMissionState extends State<_TodayMission> {
+  EpisodeMeta _meta = EpisodeMeta.l1.first;
+  int _learned = 0;
+  int _total = 40;
+
+  @override
+  void initState() {
+    super.initState();
+    _load();
+  }
+
+  Future<void> _load() async {
+    final turns = await appDb.select(appDb.turns).get();
+    final progress = await appDb.select(appDb.userProgress).get();
+    final learnedIds =
+        progress.where((p) => p.learned).map((p) => p.turnId).toSet();
+    for (final meta in EpisodeMeta.l1) {
+      final epTurns = turns
+          .where((t) =>
+              t.level == 'L1' && t.dialect == 'north' && t.episodeId == meta.id)
+          .toList();
+      final total = epTurns.length;
+      final learned = epTurns.where((t) => learnedIds.contains(t.id)).length;
+      if (total == 0 || learned < total || meta == EpisodeMeta.l1.last) {
+        if (mounted) {
+          setState(() {
+            _meta = meta;
+            _learned = learned;
+            _total = total == 0 ? 40 : total;
+          });
+        }
+        return;
+      }
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return TodayMissionCard(
+      level: 'BEGINNER 1',
+      lessonTitle: 'L1 · ${_meta.title}',
+      lessonSubtitle: 'Mark & 小丽 스토리 ${_meta.emoji}',
+      progress: _learned,
+      total: _total,
+      onTap: () async {
+        await Navigator.push(
+          context,
+          MaterialPageRoute(builder: (_) => EpisodeScreen(meta: _meta)),
+        );
+        _load();
+      },
     );
   }
 }
@@ -313,10 +368,55 @@ class LearnScreen extends StatefulWidget {
 class _LearnScreenState extends State<LearnScreen> {
   String _filter = '전체';
   final List<String> _filters = const ['전체', '회화', '한자', '발음', '단어', 'HSK'];
+  List<_LessonItem> _lessons = [];
+
+  @override
+  void initState() {
+    super.initState();
+    _loadLessons();
+  }
+
+  Future<void> _loadLessons() async {
+    final turns = await appDb.select(appDb.turns).get();
+    final progress = await appDb.select(appDb.userProgress).get();
+    final learnedIds =
+        progress.where((p) => p.learned).map((p) => p.turnId).toSet();
+
+    final items = <_LessonItem>[];
+    var currentAssigned = false;
+    for (var i = 0; i < EpisodeMeta.l1.length; i++) {
+      final meta = EpisodeMeta.l1[i];
+      final epTurns = turns
+          .where((t) =>
+              t.level == 'L1' && t.dialect == 'north' && t.episodeId == meta.id)
+          .toList();
+      final total = epTurns.length;
+      final learned = epTurns.where((t) => learnedIds.contains(t.id)).length;
+      final done = total > 0 && learned >= total;
+      _LessonState state;
+      if (done) {
+        state = _LessonState.done;
+      } else if (!currentAssigned) {
+        state = _LessonState.current;
+        currentAssigned = true;
+      } else {
+        state = _LessonState.locked;
+      }
+      items.add(_LessonItem(
+        'Lesson ${i + 1}',
+        '${meta.emoji} ${meta.title}',
+        state,
+        meta: meta,
+        learned: learned,
+        total: total,
+      ));
+    }
+    if (mounted) setState(() => _lessons = items);
+  }
 
   @override
   Widget build(BuildContext context) {
-    final lessons = _LessonItem.sample;
+    final lessons = _lessons;
     return Scaffold(
       backgroundColor: AppColors.xuanZhi,
       appBar: AppBar(
@@ -395,7 +495,10 @@ class _LearnScreenState extends State<LearnScreen> {
               padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
               itemCount: lessons.length,
               separatorBuilder: (_, _) => const SizedBox(height: 8),
-              itemBuilder: (context, i) => _LessonRow(lesson: lessons[i]),
+              itemBuilder: (context, i) => _LessonRow(
+                lesson: lessons[i],
+                onReturn: _loadLessons,
+              ),
             ),
           ),
         ],
@@ -410,22 +513,23 @@ class _LessonItem {
   final String id;
   final String title;
   final _LessonState state;
-  _LessonItem(this.id, this.title, this.state);
-
-  static List<_LessonItem> get sample => [
-        _LessonItem('Lesson 1', '인사', _LessonState.done),
-        _LessonItem('Lesson 2', '자기소개', _LessonState.done),
-        _LessonItem('Lesson 3', '매칭', _LessonState.current),
-        _LessonItem('Lesson 4', '식사', _LessonState.locked),
-        _LessonItem('Lesson 5', '가족', _LessonState.locked),
-        _LessonItem('Lesson 6', '갈등', _LessonState.locked),
-        _LessonItem('Lesson 7', '미래', _LessonState.locked),
-      ];
+  final EpisodeMeta meta;
+  final int learned;
+  final int total;
+  _LessonItem(
+    this.id,
+    this.title,
+    this.state, {
+    required this.meta,
+    required this.learned,
+    required this.total,
+  });
 }
 
 class _LessonRow extends StatelessWidget {
   final _LessonItem lesson;
-  const _LessonRow({required this.lesson});
+  final VoidCallback onReturn;
+  const _LessonRow({required this.lesson, required this.onReturn});
 
   @override
   Widget build(BuildContext context) {
@@ -456,10 +560,14 @@ class _LessonRow extends StatelessWidget {
     return InkWell(
       onTap: lesson.state == _LessonState.locked
           ? null
-          : () => Navigator.push(
+          : () async {
+              await Navigator.push(
                 context,
-                MaterialPageRoute(builder: (_) => const ConversationScreen()),
-              ),
+                MaterialPageRoute(
+                    builder: (_) => EpisodeScreen(meta: lesson.meta)),
+              );
+              onReturn();
+            },
       child: Container(
         padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 14),
         decoration: BoxDecoration(
@@ -485,6 +593,18 @@ class _LessonRow extends StatelessWidget {
                 ),
               ),
             ),
+            if (lesson.total > 0)
+              Padding(
+                padding: const EdgeInsets.only(right: 8),
+                child: Text(
+                  '${lesson.learned}/${lesson.total}',
+                  style: TextStyle(
+                    fontSize: 12,
+                    fontWeight: FontWeight.w800,
+                    color: textColor.withValues(alpha: 0.8),
+                  ),
+                ),
+              ),
             trailing,
           ],
         ),

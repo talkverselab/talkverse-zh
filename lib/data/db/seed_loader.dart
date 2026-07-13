@@ -8,7 +8,8 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'app_database.dart';
 
 class SeedLoader {
-  static const _kSeededKey = 'db_seeded_v1';
+  // v2: L1 스토리 200턴 완성판 재시딩
+  static const _kSeededKey = 'db_seeded_v2';
 
   final AppDatabase db;
   SeedLoader(this.db);
@@ -92,6 +93,9 @@ class SeedLoader {
       }
     }
     if (batch.isNotEmpty) {
+      // 재시딩: 이전 버전 턴·진행 기록 제거 후 삽입 (turnId 재발급)
+      await db.delete(db.userProgress).go();
+      await db.delete(db.turns).go();
       await db.batch((b) => b.insertAll(db.turns, batch));
     }
   }

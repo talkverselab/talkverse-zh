@@ -6,6 +6,7 @@ import '../core/theme.dart';
 import '../services/tts_service.dart';
 import '../widgets/chinese_decor.dart';
 import '../widgets/selectable_hanzi.dart';
+import 'episode_screen.dart';
 import 'grammar_lesson_screen.dart';
 
 class ConversationScreen extends StatefulWidget {
@@ -70,6 +71,7 @@ class _ConversationScreenState extends State<ConversationScreen> {
 
     return CustomScrollView(
       slivers: [
+        SliverToBoxAdapter(child: _storyHub()),
         SliverToBoxAdapter(child: _grammarHub()),
         SliverToBoxAdapter(child: _lcccHeader(dialogues.length)),
         SliverToBoxAdapter(child: _categoryChips(categories, categoryLabels)),
@@ -87,6 +89,73 @@ class _ConversationScreenState extends State<ConversationScreen> {
         ),
         const SliverToBoxAdapter(child: SizedBox(height: 80)),
       ],
+    );
+  }
+
+  Widget _storyHub() {
+    return Padding(
+      padding: const EdgeInsets.fromLTRB(16, 12, 16, 0),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          Row(
+            children: [
+              const SealStamp(text: '剧', size: 22),
+              const SizedBox(width: 8),
+              Text(
+                'L1 스토리 — Mark & 小丽 (200턴)',
+                style: TextStyle(
+                  fontSize: 13,
+                  fontWeight: FontWeight.w800,
+                  color: AppColors.mo,
+                  letterSpacing: 2,
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(height: 8),
+          SizedBox(
+            height: 76,
+            child: ListView.separated(
+              scrollDirection: Axis.horizontal,
+              itemCount: EpisodeMeta.l1.length,
+              separatorBuilder: (_, _) => const SizedBox(width: 8),
+              itemBuilder: (context, i) {
+                final meta = EpisodeMeta.l1[i];
+                return InkWell(
+                  onTap: () => Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (_) => EpisodeScreen(meta: meta)),
+                  ),
+                  child: Container(
+                    width: 96,
+                    padding: const EdgeInsets.all(8),
+                    decoration: BoxDecoration(
+                      color: AppColors.xuanZhi,
+                      border: Border.all(color: AppColors.zhuHong, width: 1),
+                    ),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text(meta.emoji, style: const TextStyle(fontSize: 22)),
+                        const SizedBox(height: 4),
+                        Text(
+                          'EP${i + 1} ${meta.title}',
+                          style: const TextStyle(
+                            fontSize: 12,
+                            fontWeight: FontWeight.w800,
+                            color: AppColors.mo,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                );
+              },
+            ),
+          ),
+        ],
+      ),
     );
   }
 

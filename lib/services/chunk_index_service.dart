@@ -173,6 +173,9 @@ class ChunkIndexService {
 
   bool _isCjk(int code) => code >= 0x4E00 && code <= 0x9FFF;
 
+  /// 외부용: 문장을 청크 토큰으로 분절. ensureLoaded 이후 사용.
+  List<Map<String, dynamic>> tokensFor(String zh) => _segment(zh);
+
   /// CC-CEDICT + 문법 청크 사전 기준 최장일치 분절 (4→2자, 없으면 1자).
   List<Map<String, dynamic>> _segment(String zh) {
     final chars = zh.runes.map(String.fromCharCode).toList();
