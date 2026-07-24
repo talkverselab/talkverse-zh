@@ -11,6 +11,7 @@ import '../services/chunk_index_service.dart';
 import '../services/tts_service.dart';
 import '../widgets/chinese_decor.dart';
 import '../widgets/selectable_hanzi.dart';
+import 'sentence_flashcard_screen.dart';
 
 /// 에피소드/다이얼로그 메타 (Learn 탭·회화 허브·홈 공용).
 class EpisodeMeta {
@@ -142,6 +143,19 @@ class _EpisodeScreenState extends State<EpisodeScreen> {
           ],
         ),
         actions: [
+          IconButton(
+            tooltip: '이 에피소드 플래시카드',
+            icon: const Icon(Icons.style, color: AppColors.zhuHong),
+            onPressed: () async {
+              await Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (_) => SentenceFlashcardScreen(meta: widget.meta),
+                ),
+              );
+              _load();
+            },
+          ),
           Center(
             child: Padding(
               padding: const EdgeInsets.only(right: 14),
@@ -232,7 +246,8 @@ class _EpisodeBubble extends StatelessWidget {
               ),
               const SizedBox(width: 6),
               InkWell(
-                onTap: () => TtsService.instance.speak(zh),
+                onTap: () => TtsService.instance
+                    .speakAs(zh, gender: isA ? 'male' : 'female'),
                 child: Icon(Icons.volume_up,
                     size: 16, color: bubbleText.withValues(alpha: 0.85)),
               ),

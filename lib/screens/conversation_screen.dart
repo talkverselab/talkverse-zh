@@ -8,6 +8,7 @@ import '../widgets/chinese_decor.dart';
 import '../widgets/selectable_hanzi.dart';
 import 'episode_screen.dart';
 import 'grammar_lesson_screen.dart';
+import 'sentence_flashcard_screen.dart';
 
 class ConversationScreen extends StatefulWidget {
   const ConversationScreen({super.key});
@@ -214,6 +215,14 @@ class _ConversationScreenState extends State<ConversationScreen> {
                 ),
               ),
             ],
+          ),
+          const SizedBox(height: 8),
+          _HubCard(
+            title: '문장 플래시카드',
+            sub: '전 레벨 랜덤 20문장 · 뜻 뒤집기 · 남/녀 음성',
+            seal: '复习',
+            color: AppColors.feiCui,
+            builder: (_) => const SentenceFlashcardScreen(),
           ),
         ],
       ),
@@ -463,7 +472,8 @@ class _ChatBubble extends StatelessWidget {
               ),
               const SizedBox(width: 6),
               InkWell(
-                onTap: () => TtsService.instance.speak(zh),
+                onTap: () => TtsService.instance
+                    .speakAs(zh, gender: isA ? 'male' : 'female'),
                 child: Icon(Icons.volume_up, size: 16, color: bubbleText.withValues(alpha: 0.85)),
               ),
             ],
