@@ -70,7 +70,7 @@ class _SelectableHanziTextState extends State<SelectableHanziText> {
       shape: const RoundedRectangleBorder(
         borderRadius: BorderRadius.vertical(top: Radius.circular(2)),
       ),
-      builder: (_) => _HanziInfoSheet(char: char, info: info, cedict: cedict),
+      builder: (_) => HanziInfoSheet(char: char, info: info, cedict: cedict),
     );
     if (mounted) setState(() => _focused = null);
   }
@@ -164,7 +164,7 @@ class _ChunkInfoSheetState extends State<_ChunkInfoSheet> {
       shape: const RoundedRectangleBorder(
         borderRadius: BorderRadius.vertical(top: Radius.circular(2)),
       ),
-      builder: (_) => _HanziInfoSheet(char: char, info: info, cedict: cedict),
+      builder: (_) => HanziInfoSheet(char: char, info: info, cedict: cedict),
     );
   }
 
@@ -367,12 +367,12 @@ class _ChunkInfoSheetState extends State<_ChunkInfoSheet> {
   }
 }
 
-class _HanziInfoSheet extends StatelessWidget {
+class HanziInfoSheet extends StatelessWidget {
   final String char;
   final HanziInfo? info;
   final CedictEntry? cedict;
 
-  const _HanziInfoSheet({required this.char, this.info, this.cedict});
+  const HanziInfoSheet({super.key, required this.char, this.info, this.cedict});
 
   Future<void> _openFamily(BuildContext ctx, String phon, String phonPy, String exclude) async {
     final all = HanziInfoService.instance.charsSharing(phon);
@@ -384,7 +384,7 @@ class _HanziInfoSheet extends StatelessWidget {
       shape: const RoundedRectangleBorder(
         borderRadius: BorderRadius.vertical(top: Radius.circular(2)),
       ),
-      builder: (_) => _PhoneticFamilySheet(
+      builder: (_) => PhoneticFamilySheet(
         phonetic: phon,
         phoneticPinyin: phonPy,
         members: members,
@@ -682,13 +682,14 @@ class _HanziInfoSheet extends StatelessWidget {
   }
 }
 
-class _PhoneticFamilySheet extends StatelessWidget {
+class PhoneticFamilySheet extends StatelessWidget {
   final String phonetic;
   final String phoneticPinyin;
   final List<String> members;
   final String highlight;
 
-  const _PhoneticFamilySheet({
+  const PhoneticFamilySheet({
+    super.key,
     required this.phonetic,
     required this.phoneticPinyin,
     required this.members,
@@ -709,7 +710,7 @@ class _PhoneticFamilySheet extends StatelessWidget {
       shape: const RoundedRectangleBorder(
         borderRadius: BorderRadius.vertical(top: Radius.circular(2)),
       ),
-      builder: (_) => _HanziInfoSheet(char: char, info: info, cedict: cedict),
+      builder: (_) => HanziInfoSheet(char: char, info: info, cedict: cedict),
     );
   }
 

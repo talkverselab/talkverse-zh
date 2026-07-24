@@ -1,0 +1,3432 @@
+{
+ "_meta": "HSK1-5 1499자 발음부(声旁) 자동판정+큐레이션. cedict 발음 관련성 검증 통과분. 클러스터 2자 이상.",
+ "roots": {
+  "十": {
+   "pinyin": "shi2",
+   "ko": "십",
+   "count": 2
+  },
+  "门": {
+   "pinyin": "men2",
+   "ko": "문",
+   "count": 4
+  },
+  "主": {
+   "pinyin": "zhu3",
+   "ko": "주",
+   "count": 2
+  },
+  "乍": {
+   "pinyin": "zha4",
+   "ko": null,
+   "count": 3
+  },
+  "侯": {
+   "pinyin": "hou2",
+   "ko": "후",
+   "count": 2
+  },
+  "令": {
+   "pinyin": "ling2",
+   "ko": "령",
+   "count": 7
+  },
+  "争": {
+   "pinyin": "zheng1",
+   "ko": "쟁",
+   "count": 2
+  },
+  "刀": {
+   "pinyin": "dao1",
+   "ko": "도",
+   "count": 2
+  },
+  "马": {
+   "pinyin": "ma3",
+   "ko": "마",
+   "count": 6
+  },
+  "巴": {
+   "pinyin": "ba1",
+   "ko": "파",
+   "count": 5
+  },
+  "尼": {
+   "pinyin": "ni2",
+   "ko": null,
+   "count": 2
+  },
+  "昌": {
+   "pinyin": "chang1",
+   "ko": null,
+   "count": 2
+  },
+  "才": {
+   "pinyin": "cai2",
+   "ko": null,
+   "count": 5
+  },
+  "未": {
+   "pinyin": "wei4",
+   "ko": "미",
+   "count": 2
+  },
+  "且": {
+   "pinyin": "qie3",
+   "ko": "차",
+   "count": 3
+  },
+  "子": {
+   "pinyin": "zi3",
+   "ko": "자",
+   "count": 2
+  },
+  "亥": {
+   "pinyin": "hai4",
+   "ko": "해",
+   "count": 6
+  },
+  "各": {
+   "pinyin": "ge4",
+   "ko": null,
+   "count": 3
+  },
+  "尚": {
+   "pinyin": "shang4",
+   "ko": null,
+   "count": 5
+  },
+  "占": {
+   "pinyin": "zhan4",
+   "ko": "점",
+   "count": 4
+  },
+  "艮": {
+   "pinyin": "gen3",
+   "ko": null,
+   "count": 9
+  },
+  "亡": {
+   "pinyin": "wang2",
+   "ko": null,
+   "count": 3
+  },
+  "相": {
+   "pinyin": "xiang1",
+   "ko": "상",
+   "count": 2
+  },
+  "曼": {
+   "pinyin": "man4",
+   "ko": null,
+   "count": 2
+  },
+  "方": {
+   "pinyin": "fang1",
+   "ko": "방",
+   "count": 6
+  },
+  "丁": {
+   "pinyin": "ding1",
+   "ko": "정",
+   "count": 8
+  },
+  "生": {
+   "pinyin": "sheng1",
+   "ko": "생",
+   "count": 4
+  },
+  "其": {
+   "pinyin": "qi2",
+   "ko": "기",
+   "count": 2
+  },
+  "几": {
+   "pinyin": "ji1",
+   "ko": null,
+   "count": 2
+  },
+  "不": {
+   "pinyin": "bu4",
+   "ko": "불",
+   "count": 3
+  },
+  "交": {
+   "pinyin": "jiao1",
+   "ko": "교",
+   "count": 7
+  },
+  "羊": {
+   "pinyin": "yang2",
+   "ko": "양",
+   "count": 3
+  },
+  "先": {
+   "pinyin": "xian1",
+   "ko": "선",
+   "count": 2
+  },
+  "元": {
+   "pinyin": "yuan2",
+   "ko": "원",
+   "count": 5
+  },
+  "求": {
+   "pinyin": "qiu2",
+   "ko": "구",
+   "count": 2
+  },
+  "白": {
+   "pinyin": "bai2",
+   "ko": "백",
+   "count": 4
+  },
+  "弟": {
+   "pinyin": "di4",
+   "ko": "제",
+   "count": 3
+  },
+  "召": {
+   "pinyin": "shao4",
+   "ko": null,
+   "count": 3
+  },
+  "化": {
+   "pinyin": "hua1",
+   "ko": "화",
+   "count": 3
+  },
+  "采": {
+   "pinyin": "cai3",
+   "ko": "채",
+   "count": 2
+  },
+  "示": {
+   "pinyin": "shi4",
+   "ko": null,
+   "count": 2
+  },
+  "己": {
+   "pinyin": "ji3",
+   "ko": "기",
+   "count": 4
+  },
+  "只": {
+   "pinyin": "zhi1",
+   "ko": null,
+   "count": 4
+  },
+  "兑": {
+   "pinyin": "dui4",
+   "ko": null,
+   "count": 3
+  },
+  "青": {
+   "pinyin": "qing1",
+   "ko": "청",
+   "count": 8
+  },
+  "果": {
+   "pinyin": "guo3",
+   "ko": "과",
+   "count": 4
+  },
+  "隹": {
+   "pinyin": "zhui1",
+   "ko": "추",
+   "count": 3
+  },
+  "包": {
+   "pinyin": "bao1",
+   "ko": "포",
+   "count": 3
+  },
+  "井": {
+   "pinyin": "jing3",
+   "ko": "정",
+   "count": 2
+  },
+  "戋": {
+   "pinyin": "jian1",
+   "ko": null,
+   "count": 3
+  },
+  "反": {
+   "pinyin": "fan3",
+   "ko": "반",
+   "count": 4
+  },
+  "我": {
+   "pinyin": "wo3",
+   "ko": null,
+   "count": 3
+  },
+  "官": {
+   "pinyin": "guan1",
+   "ko": null,
+   "count": 2
+  },
+  "乙": {
+   "pinyin": "yi3",
+   "ko": null,
+   "count": 3
+  },
+  "分": {
+   "pinyin": "fen1",
+   "ko": "분",
+   "count": 4
+  },
+  "旦": {
+   "pinyin": "dan4",
+   "ko": null,
+   "count": 4
+  },
+  "氐": {
+   "pinyin": "di1",
+   "ko": null,
+   "count": 2
+  },
+  "列": {
+   "pinyin": "lie4",
+   "ko": null,
+   "count": 2
+  },
+  "昔": {
+   "pinyin": "xi1",
+   "ko": "석",
+   "count": 6
+  },
+  "建": {
+   "pinyin": "jian4",
+   "ko": null,
+   "count": 2
+  },
+  "京": {
+   "pinyin": "jing1",
+   "ko": "경",
+   "count": 3
+  },
+  "冈": {
+   "pinyin": "gang1",
+   "ko": null,
+   "count": 3
+  },
+  "向": {
+   "pinyin": "xiang4",
+   "ko": "향",
+   "count": 2
+  },
+  "咸": {
+   "pinyin": "xian2",
+   "ko": null,
+   "count": 3
+  },
+  "句": {
+   "pinyin": "gou1",
+   "ko": null,
+   "count": 2
+  },
+  "正": {
+   "pinyin": "zheng1",
+   "ko": "정",
+   "count": 5
+  },
+  "至": {
+   "pinyin": "zhi4",
+   "ko": null,
+   "count": 2
+  },
+  "廷": {
+   "pinyin": "ting2",
+   "ko": null,
+   "count": 2
+  },
+  "王": {
+   "pinyin": "wang2",
+   "ko": "왕",
+   "count": 2
+  },
+  "勿": {
+   "pinyin": "wu4",
+   "ko": null,
+   "count": 2
+  },
+  "及": {
+   "pinyin": "ji2",
+   "ko": "급",
+   "count": 5
+  },
+  "原": {
+   "pinyin": "yuan2",
+   "ko": "원",
+   "count": 2
+  },
+  "户": {
+   "pinyin": "hu4",
+   "ko": null,
+   "count": 2
+  },
+  "立": {
+   "pinyin": "li4",
+   "ko": "립",
+   "count": 2
+  },
+  "非": {
+   "pinyin": "fei1",
+   "ko": "비",
+   "count": 4
+  },
+  "是": {
+   "pinyin": "shi4",
+   "ko": "시",
+   "count": 2
+  },
+  "古": {
+   "pinyin": "gu3",
+   "ko": "고",
+   "count": 7
+  },
+  "辰": {
+   "pinyin": "chen2",
+   "ko": null,
+   "count": 3
+  },
+  "佥": {
+   "pinyin": "qian1",
+   "ko": null,
+   "count": 5
+  },
+  "奇": {
+   "pinyin": "ji1",
+   "ko": "기",
+   "count": 3
+  },
+  "可": {
+   "pinyin": "ke3",
+   "ko": "가",
+   "count": 3
+  },
+  "由": {
+   "pinyin": "you2",
+   "ko": "유",
+   "count": 3
+  },
+  "每": {
+   "pinyin": "mei3",
+   "ko": "매",
+   "count": 3
+  },
+  "胡": {
+   "pinyin": "hu2",
+   "ko": "호",
+   "count": 2
+  },
+  "苗": {
+   "pinyin": "miao2",
+   "ko": null,
+   "count": 2
+  },
+  "里": {
+   "pinyin": "li3",
+   "ko": "리",
+   "count": 2
+  },
+  "并": {
+   "pinyin": "bing4",
+   "ko": "병",
+   "count": 4
+  },
+  "冬": {
+   "pinyin": "dong1",
+   "ko": null,
+   "count": 2
+  },
+  "工": {
+   "pinyin": "gong1",
+   "ko": "공",
+   "count": 5
+  },
+  "扁": {
+   "pinyin": "pian1",
+   "ko": "편",
+   "count": 4
+  },
+  "监": {
+   "pinyin": "jian1",
+   "ko": null,
+   "count": 3
+  },
+  "予": {
+   "pinyin": "yu2",
+   "ko": null,
+   "count": 4
+  },
+  "央": {
+   "pinyin": "yang1",
+   "ko": "앙",
+   "count": 2
+  },
+  "圭": {
+   "pinyin": "gui1",
+   "ko": null,
+   "count": 3
+  },
+  "仑": {
+   "pinyin": "lun2",
+   "ko": null,
+   "count": 2
+  },
+  "两": {
+   "pinyin": "liang3",
+   "ko": null,
+   "count": 2
+  },
+  "斤": {
+   "pinyin": "jin1",
+   "ko": null,
+   "count": 3
+  },
+  "舌": {
+   "pinyin": "ji1",
+   "ko": null,
+   "count": 3
+  },
+  "甬": {
+   "pinyin": "yong3",
+   "ko": null,
+   "count": 3
+  },
+  "中": {
+   "pinyin": "zhong1",
+   "ko": "중",
+   "count": 3
+  },
+  "告": {
+   "pinyin": "gao4",
+   "ko": null,
+   "count": 2
+  },
+  "川": {
+   "pinyin": "chuan1",
+   "ko": null,
+   "count": 2
+  },
+  "弋": {
+   "pinyin": "yi4",
+   "ko": null,
+   "count": 2
+  },
+  "介": {
+   "pinyin": "jie4",
+   "ko": "개",
+   "count": 3
+  },
+  "尤": {
+   "pinyin": "you2",
+   "ko": null,
+   "count": 2
+  },
+  "韦": {
+   "pinyin": "wei2",
+   "ko": "위",
+   "count": 3
+  },
+  "专": {
+   "pinyin": "zhuan1",
+   "ko": "전",
+   "count": 2
+  },
+  "直": {
+   "pinyin": "zhi2",
+   "ko": "직",
+   "count": 3
+  },
+  "仓": {
+   "pinyin": "cang1",
+   "ko": "창",
+   "count": 3
+  },
+  "半": {
+   "pinyin": "ban4",
+   "ko": "반",
+   "count": 3
+  },
+  "居": {
+   "pinyin": "ju1",
+   "ko": null,
+   "count": 2
+  },
+  "少": {
+   "pinyin": "shao3",
+   "ko": "소",
+   "count": 4
+  },
+  "加": {
+   "pinyin": "jia1",
+   "ko": "가",
+   "count": 3
+  },
+  "合": {
+   "pinyin": "ge3",
+   "ko": "합",
+   "count": 5
+  },
+  "卑": {
+   "pinyin": "bei1",
+   "ko": null,
+   "count": 3
+  },
+  "成": {
+   "pinyin": "cheng2",
+   "ko": "성",
+   "count": 2
+  },
+  "竟": {
+   "pinyin": "jing4",
+   "ko": null,
+   "count": 2
+  },
+  "曾": {
+   "pinyin": "zeng1",
+   "ko": "증",
+   "count": 2
+  },
+  "良": {
+   "pinyin": "liang2",
+   "ko": "량",
+   "count": 5
+  },
+  "某": {
+   "pinyin": "mou3",
+   "ko": null,
+   "count": 2
+  },
+  "寺": {
+   "pinyin": "si4",
+   "ko": null,
+   "count": 6
+  },
+  "今": {
+   "pinyin": "jin1",
+   "ko": "금",
+   "count": 3
+  },
+  "比": {
+   "pinyin": "bi3",
+   "ko": "비",
+   "count": 2
+  },
+  "安": {
+   "pinyin": "an1",
+   "ko": "안",
+   "count": 2
+  },
+  "番": {
+   "pinyin": "pan1",
+   "ko": null,
+   "count": 2
+  },
+  "寸": {
+   "pinyin": "cun4",
+   "ko": "촌",
+   "count": 3
+  },
+  "齐": {
+   "pinyin": "qi2",
+   "ko": "제",
+   "count": 2
+  },
+  "肖": {
+   "pinyin": "xiao1",
+   "ko": "소",
+   "count": 4
+  },
+  "者": {
+   "pinyin": "zhe3",
+   "ko": "자",
+   "count": 4
+  },
+  "皮": {
+   "pinyin": "pi2",
+   "ko": "피",
+   "count": 6
+  },
+  "申": {
+   "pinyin": "shen1",
+   "ko": "신",
+   "count": 2
+  },
+  "夬": {
+   "pinyin": "guai4",
+   "ko": null,
+   "count": 2
+  },
+  "君": {
+   "pinyin": "jun1",
+   "ko": "군",
+   "count": 2
+  },
+  "平": {
+   "pinyin": "ping2",
+   "ko": null,
+   "count": 2
+  },
+  "焦": {
+   "pinyin": "jiao1",
+   "ko": null,
+   "count": 2
+  },
+  "炎": {
+   "pinyin": "yan2",
+   "ko": null,
+   "count": 2
+  },
+  "干": {
+   "pinyin": "gan1",
+   "ko": "간",
+   "count": 3
+  },
+  "兆": {
+   "pinyin": "zhao4",
+   "ko": "조",
+   "count": 4
+  },
+  "俞": {
+   "pinyin": "yu2",
+   "ko": null,
+   "count": 2
+  },
+  "余": {
+   "pinyin": "yu2",
+   "ko": null,
+   "count": 2
+  },
+  "屯": {
+   "pinyin": "tun2",
+   "ko": null,
+   "count": 3
+  },
+  "牙": {
+   "pinyin": "ya2",
+   "ko": "아",
+   "count": 2
+  },
+  "员": {
+   "pinyin": "yuan2",
+   "ko": null,
+   "count": 2
+  },
+  "止": {
+   "pinyin": "zhi3",
+   "ko": null,
+   "count": 2
+  },
+  "付": {
+   "pinyin": "fu4",
+   "ko": null,
+   "count": 3
+  },
+  "广": {
+   "pinyin": "yan3",
+   "ko": null,
+   "count": 2
+  },
+  "莫": {
+   "pinyin": "mo4",
+   "ko": "막",
+   "count": 4
+  },
+  "西": {
+   "pinyin": "xi1",
+   "ko": "서",
+   "count": 2
+  },
+  "勾": {
+   "pinyin": "gou1",
+   "ko": null,
+   "count": 3
+  },
+  "朱": {
+   "pinyin": "zhu1",
+   "ko": "주",
+   "count": 2
+  },
+  "高": {
+   "pinyin": "gao1",
+   "ko": null,
+   "count": 4
+  },
+  "斩": {
+   "pinyin": "zhan3",
+   "ko": null,
+   "count": 2
+  },
+  "尧": {
+   "pinyin": "yao2",
+   "ko": "요",
+   "count": 2
+  },
+  "卯": {
+   "pinyin": "mao3",
+   "ko": null,
+   "count": 2
+  },
+  "取": {
+   "pinyin": "qu3",
+   "ko": null,
+   "count": 2
+  },
+  "土": {
+   "pinyin": "tu3",
+   "ko": "토",
+   "count": 2
+  },
+  "代": {
+   "pinyin": "dai4",
+   "ko": null,
+   "count": 2
+  },
+  "巨": {
+   "pinyin": "ju4",
+   "ko": null,
+   "count": 3
+  },
+  "禺": {
+   "pinyin": "ou3",
+   "ko": null,
+   "count": 2
+  },
+  "辟": {
+   "pinyin": "bi4",
+   "ko": null,
+   "count": 2
+  },
+  "甫": {
+   "pinyin": "fu3",
+   "ko": "보",
+   "count": 4
+  },
+  "夫": {
+   "pinyin": "fu1",
+   "ko": "부",
+   "count": 2
+  },
+  "甲": {
+   "pinyin": "jia3",
+   "ko": null,
+   "count": 2
+  },
+  "斥": {
+   "pinyin": "chi4",
+   "ko": null,
+   "count": 2
+  },
+  "叟": {
+   "pinyin": "sou3",
+   "ko": null,
+   "count": 2
+  },
+  "此": {
+   "pinyin": "ci3",
+   "ko": null,
+   "count": 2
+  },
+  "更": {
+   "pinyin": "geng1",
+   "ko": null,
+   "count": 2
+  },
+  "卒": {
+   "pinyin": "zu2",
+   "ko": null,
+   "count": 2
+  },
+  "也": {
+   "pinyin": "ye3",
+   "ko": null,
+   "count": 7
+  }
+ },
+ "chars": {
+  "什": {
+   "phonetic": "十",
+   "phonetic_pinyin": "shi2",
+   "hsk": 1
+  },
+  "汁": {
+   "phonetic": "十",
+   "phonetic_pinyin": "shi2",
+   "hsk": 3
+  },
+  "们": {
+   "phonetic": "门",
+   "phonetic_pinyin": "men2",
+   "hsk": 1
+  },
+  "问": {
+   "phonetic": "门",
+   "phonetic_pinyin": "men2",
+   "hsk": 1
+  },
+  "间": {
+   "phonetic": "门",
+   "phonetic_pinyin": "men2",
+   "hsk": 1
+  },
+  "闻": {
+   "phonetic": "门",
+   "phonetic_pinyin": "men2",
+   "hsk": 2
+  },
+  "住": {
+   "phonetic": "主",
+   "phonetic_pinyin": "zhu3",
+   "hsk": 1
+  },
+  "注": {
+   "phonetic": "主",
+   "phonetic_pinyin": "zhu3",
+   "hsk": 3
+  },
+  "作": {
+   "phonetic": "乍",
+   "phonetic_pinyin": "zha4",
+   "hsk": 1
+  },
+  "怎": {
+   "phonetic": "乍",
+   "phonetic_pinyin": "zha4",
+   "hsk": 1
+  },
+  "昨": {
+   "phonetic": "乍",
+   "phonetic_pinyin": "zha4",
+   "hsk": 1
+  },
+  "候": {
+   "phonetic": "侯",
+   "phonetic_pinyin": "hou2",
+   "hsk": 1
+  },
+  "猴": {
+   "phonetic": "侯",
+   "phonetic_pinyin": "hou2",
+   "hsk": 5
+  },
+  "冷": {
+   "phonetic": "令",
+   "phonetic_pinyin": "ling2",
+   "hsk": 1
+  },
+  "零": {
+   "phonetic": "令",
+   "phonetic_pinyin": "ling2",
+   "hsk": 1
+  },
+  "领": {
+   "phonetic": "令",
+   "phonetic_pinyin": "ling2",
+   "hsk": 3
+  },
+  "怜": {
+   "phonetic": "令",
+   "phonetic_pinyin": "ling2",
+   "hsk": 5
+  },
+  "邻": {
+   "phonetic": "令",
+   "phonetic_pinyin": "ling2",
+   "hsk": 5
+  },
+  "铃": {
+   "phonetic": "令",
+   "phonetic_pinyin": "ling2",
+   "hsk": 5
+  },
+  "龄": {
+   "phonetic": "令",
+   "phonetic_pinyin": "ling2",
+   "hsk": 5
+  },
+  "净": {
+   "phonetic": "争",
+   "phonetic_pinyin": "zheng1",
+   "hsk": 1
+  },
+  "挣": {
+   "phonetic": "争",
+   "phonetic_pinyin": "zheng1",
+   "hsk": 5
+  },
+  "到": {
+   "phonetic": "刀",
+   "phonetic_pinyin": "dao1",
+   "hsk": 1
+  },
+  "召": {
+   "phonetic": "刀",
+   "phonetic_pinyin": "dao1",
+   "hsk": 4
+  },
+  "吗": {
+   "phonetic": "马",
+   "phonetic_pinyin": "ma3",
+   "hsk": 1
+  },
+  "妈": {
+   "phonetic": "马",
+   "phonetic_pinyin": "ma3",
+   "hsk": 1
+  },
+  "码": {
+   "phonetic": "马",
+   "phonetic_pinyin": "ma3",
+   "hsk": 4
+  },
+  "骂": {
+   "phonetic": "马",
+   "phonetic_pinyin": "ma3",
+   "hsk": 5
+  },
+  "玛": {
+   "phonetic": "马",
+   "phonetic_pinyin": "ma3",
+   "hsk": null
+  },
+  "蚂": {
+   "phonetic": "马",
+   "phonetic_pinyin": "ma3",
+   "hsk": null
+  },
+  "吧": {
+   "phonetic": "巴",
+   "phonetic_pinyin": "ba1",
+   "hsk": 1
+  },
+  "爸": {
+   "phonetic": "巴",
+   "phonetic_pinyin": "ba1",
+   "hsk": 1
+  },
+  "爬": {
+   "phonetic": "巴",
+   "phonetic_pinyin": "ba1",
+   "hsk": 2
+  },
+  "把": {
+   "phonetic": "巴",
+   "phonetic_pinyin": "ba1",
+   "hsk": 3
+  },
+  "笆": {
+   "phonetic": "巴",
+   "phonetic_pinyin": "ba1",
+   "hsk": null
+  },
+  "呢": {
+   "phonetic": "尼",
+   "phonetic_pinyin": "ni2",
+   "hsk": 1
+  },
+  "泥": {
+   "phonetic": "尼",
+   "phonetic_pinyin": "ni2",
+   "hsk": null
+  },
+  "唱": {
+   "phonetic": "昌",
+   "phonetic_pinyin": "chang1",
+   "hsk": 1
+  },
+  "倡": {
+   "phonetic": "昌",
+   "phonetic_pinyin": "chang1",
+   "hsk": 5
+  },
+  "在": {
+   "phonetic": "才",
+   "phonetic_pinyin": "cai2",
+   "hsk": 1
+  },
+  "存": {
+   "phonetic": "才",
+   "phonetic_pinyin": "cai2",
+   "hsk": 3
+  },
+  "材": {
+   "phonetic": "才",
+   "phonetic_pinyin": "cai2",
+   "hsk": 3
+  },
+  "财": {
+   "phonetic": "才",
+   "phonetic_pinyin": "cai2",
+   "hsk": 4
+  },
+  "裁": {
+   "phonetic": "才",
+   "phonetic_pinyin": "cai2",
+   "hsk": 5
+  },
+  "妹": {
+   "phonetic": "未",
+   "phonetic_pinyin": "wei4",
+   "hsk": 1
+  },
+  "味": {
+   "phonetic": "未",
+   "phonetic_pinyin": "wei4",
+   "hsk": 2
+  },
+  "姐": {
+   "phonetic": "且",
+   "phonetic_pinyin": "qie3",
+   "hsk": 1
+  },
+  "租": {
+   "phonetic": "且",
+   "phonetic_pinyin": "qie3",
+   "hsk": 2
+  },
+  "组": {
+   "phonetic": "且",
+   "phonetic_pinyin": "qie3",
+   "hsk": 2
+  },
+  "字": {
+   "phonetic": "子",
+   "phonetic_pinyin": "zi3",
+   "hsk": 1
+  },
+  "仔": {
+   "phonetic": "子",
+   "phonetic_pinyin": "zi3",
+   "hsk": 5
+  },
+  "孩": {
+   "phonetic": "亥",
+   "phonetic_pinyin": "hai4",
+   "hsk": 1
+  },
+  "刻": {
+   "phonetic": "亥",
+   "phonetic_pinyin": "hai4",
+   "hsk": 2
+  },
+  "该": {
+   "phonetic": "亥",
+   "phonetic_pinyin": "hai4",
+   "hsk": 2
+  },
+  "咳": {
+   "phonetic": "亥",
+   "phonetic_pinyin": "hai4",
+   "hsk": 5
+  },
+  "核": {
+   "phonetic": "亥",
+   "phonetic_pinyin": "hai4",
+   "hsk": 5
+  },
+  "骇": {
+   "phonetic": "亥",
+   "phonetic_pinyin": "hai4",
+   "hsk": null
+  },
+  "客": {
+   "phonetic": "各",
+   "phonetic_pinyin": "ge4",
+   "hsk": 1
+  },
+  "格": {
+   "phonetic": "各",
+   "phonetic_pinyin": "ge4",
+   "hsk": 3
+  },
+  "络": {
+   "phonetic": "各",
+   "phonetic_pinyin": "ge4",
+   "hsk": 4
+  },
+  "常": {
+   "phonetic": "尚",
+   "phonetic_pinyin": "shang4",
+   "hsk": 1
+  },
+  "堂": {
+   "phonetic": "尚",
+   "phonetic_pinyin": "shang4",
+   "hsk": 2
+  },
+  "赏": {
+   "phonetic": "尚",
+   "phonetic_pinyin": "shang4",
+   "hsk": 4
+  },
+  "躺": {
+   "phonetic": "尚",
+   "phonetic_pinyin": "shang4",
+   "hsk": 4
+  },
+  "掌": {
+   "phonetic": "尚",
+   "phonetic_pinyin": "shang4",
+   "hsk": 5
+  },
+  "店": {
+   "phonetic": "占",
+   "phonetic_pinyin": "zhan4",
+   "hsk": 1
+  },
+  "点": {
+   "phonetic": "占",
+   "phonetic_pinyin": "zhan4",
+   "hsk": 1
+  },
+  "站": {
+   "phonetic": "占",
+   "phonetic_pinyin": "zhan4",
+   "hsk": 1
+  },
+  "战": {
+   "phonetic": "占",
+   "phonetic_pinyin": "zhan4",
+   "hsk": 4
+  },
+  "很": {
+   "phonetic": "艮",
+   "phonetic_pinyin": "gen3",
+   "hsk": 1
+  },
+  "跟": {
+   "phonetic": "艮",
+   "phonetic_pinyin": "gen3",
+   "hsk": 1
+  },
+  "眼": {
+   "phonetic": "艮",
+   "phonetic_pinyin": "gen3",
+   "hsk": 2
+  },
+  "银": {
+   "phonetic": "艮",
+   "phonetic_pinyin": "gen3",
+   "hsk": 2
+  },
+  "根": {
+   "phonetic": "艮",
+   "phonetic_pinyin": "gen3",
+   "hsk": 3
+  },
+  "退": {
+   "phonetic": "艮",
+   "phonetic_pinyin": "gen3",
+   "hsk": 3
+  },
+  "限": {
+   "phonetic": "艮",
+   "phonetic_pinyin": "gen3",
+   "hsk": 4
+  },
+  "恨": {
+   "phonetic": "艮",
+   "phonetic_pinyin": "gen3",
+   "hsk": 5
+  },
+  "艰": {
+   "phonetic": "艮",
+   "phonetic_pinyin": "gen3",
+   "hsk": 5
+  },
+  "忘": {
+   "phonetic": "亡",
+   "phonetic_pinyin": "wang2",
+   "hsk": 1
+  },
+  "忙": {
+   "phonetic": "亡",
+   "phonetic_pinyin": "wang2",
+   "hsk": 1
+  },
+  "望": {
+   "phonetic": "亡",
+   "phonetic_pinyin": "wang2",
+   "hsk": 3
+  },
+  "想": {
+   "phonetic": "相",
+   "phonetic_pinyin": "xiang1",
+   "hsk": 1
+  },
+  "箱": {
+   "phonetic": "相",
+   "phonetic_pinyin": "xiang1",
+   "hsk": 3
+  },
+  "慢": {
+   "phonetic": "曼",
+   "phonetic_pinyin": "man4",
+   "hsk": 1
+  },
+  "漫": {
+   "phonetic": "曼",
+   "phonetic_pinyin": "man4",
+   "hsk": 5
+  },
+  "房": {
+   "phonetic": "方",
+   "phonetic_pinyin": "fang1",
+   "hsk": 1
+  },
+  "放": {
+   "phonetic": "方",
+   "phonetic_pinyin": "fang1",
+   "hsk": 1
+  },
+  "旁": {
+   "phonetic": "方",
+   "phonetic_pinyin": "fang1",
+   "hsk": 1
+  },
+  "访": {
+   "phonetic": "方",
+   "phonetic_pinyin": "fang1",
+   "hsk": 3
+  },
+  "防": {
+   "phonetic": "方",
+   "phonetic_pinyin": "fang1",
+   "hsk": 3
+  },
+  "仿": {
+   "phonetic": "方",
+   "phonetic_pinyin": "fang1",
+   "hsk": 5
+  },
+  "打": {
+   "phonetic": "丁",
+   "phonetic_pinyin": "ding1",
+   "hsk": 1
+  },
+  "灯": {
+   "phonetic": "丁",
+   "phonetic_pinyin": "ding1",
+   "hsk": 2
+  },
+  "订": {
+   "phonetic": "丁",
+   "phonetic_pinyin": "ding1",
+   "hsk": 3
+  },
+  "宁": {
+   "phonetic": "丁",
+   "phonetic_pinyin": "ding1",
+   "hsk": 4
+  },
+  "顶": {
+   "phonetic": "丁",
+   "phonetic_pinyin": "ding1",
+   "hsk": 4
+  },
+  "厅": {
+   "phonetic": "丁",
+   "phonetic_pinyin": "ding1",
+   "hsk": 5
+  },
+  "盯": {
+   "phonetic": "丁",
+   "phonetic_pinyin": "ding1",
+   "hsk": null
+  },
+  "钉": {
+   "phonetic": "丁",
+   "phonetic_pinyin": "ding1",
+   "hsk": null
+  },
+  "星": {
+   "phonetic": "生",
+   "phonetic_pinyin": "sheng1",
+   "hsk": 1
+  },
+  "姓": {
+   "phonetic": "生",
+   "phonetic_pinyin": "sheng1",
+   "hsk": 2
+  },
+  "性": {
+   "phonetic": "生",
+   "phonetic_pinyin": "sheng1",
+   "hsk": 3
+  },
+  "胜": {
+   "phonetic": "生",
+   "phonetic_pinyin": "sheng1",
+   "hsk": 3
+  },
+  "期": {
+   "phonetic": "其",
+   "phonetic_pinyin": "qi2",
+   "hsk": 1
+  },
+  "基": {
+   "phonetic": "其",
+   "phonetic_pinyin": "qi2",
+   "hsk": 3
+  },
+  "机": {
+   "phonetic": "几",
+   "phonetic_pinyin": "ji1",
+   "hsk": 1
+  },
+  "肌": {
+   "phonetic": "几",
+   "phonetic_pinyin": "ji1",
+   "hsk": 5
+  },
+  "杯": {
+   "phonetic": "不",
+   "phonetic_pinyin": "bu4",
+   "hsk": 1
+  },
+  "还": {
+   "phonetic": "不",
+   "phonetic_pinyin": "bu4",
+   "hsk": 1
+  },
+  "否": {
+   "phonetic": "不",
+   "phonetic_pinyin": "bu4",
+   "hsk": 3
+  },
+  "校": {
+   "phonetic": "交",
+   "phonetic_pinyin": "jiao1",
+   "hsk": 1
+  },
+  "饺": {
+   "phonetic": "交",
+   "phonetic_pinyin": "jiao1",
+   "hsk": 2
+  },
+  "效": {
+   "phonetic": "交",
+   "phonetic_pinyin": "jiao1",
+   "hsk": 3
+  },
+  "较": {
+   "phonetic": "交",
+   "phonetic_pinyin": "jiao1",
+   "hsk": 3
+  },
+  "咬": {
+   "phonetic": "交",
+   "phonetic_pinyin": "jiao1",
+   "hsk": 5
+  },
+  "胶": {
+   "phonetic": "交",
+   "phonetic_pinyin": "jiao1",
+   "hsk": 5
+  },
+  "郊": {
+   "phonetic": "交",
+   "phonetic_pinyin": "jiao1",
+   "hsk": 5
+  },
+  "样": {
+   "phonetic": "羊",
+   "phonetic_pinyin": "yang2",
+   "hsk": 1
+  },
+  "养": {
+   "phonetic": "羊",
+   "phonetic_pinyin": "yang2",
+   "hsk": 2
+  },
+  "详": {
+   "phonetic": "羊",
+   "phonetic_pinyin": "yang2",
+   "hsk": 5
+  },
+  "洗": {
+   "phonetic": "先",
+   "phonetic_pinyin": "xian1",
+   "hsk": 1
+  },
+  "选": {
+   "phonetic": "先",
+   "phonetic_pinyin": "xian1",
+   "hsk": 2
+  },
+  "玩": {
+   "phonetic": "元",
+   "phonetic_pinyin": "yuan2",
+   "hsk": 1
+  },
+  "远": {
+   "phonetic": "元",
+   "phonetic_pinyin": "yuan2",
+   "hsk": 1
+  },
+  "园": {
+   "phonetic": "元",
+   "phonetic_pinyin": "yuan2",
+   "hsk": 2
+  },
+  "完": {
+   "phonetic": "元",
+   "phonetic_pinyin": "yuan2",
+   "hsk": 2
+  },
+  "冠": {
+   "phonetic": "元",
+   "phonetic_pinyin": "yuan2",
+   "hsk": 5
+  },
+  "球": {
+   "phonetic": "求",
+   "phonetic_pinyin": "qiu2",
+   "hsk": 1
+  },
+  "救": {
+   "phonetic": "求",
+   "phonetic_pinyin": "qiu2",
+   "hsk": 3
+  },
+  "百": {
+   "phonetic": "白",
+   "phonetic_pinyin": "bai2",
+   "hsk": 1
+  },
+  "怕": {
+   "phonetic": "白",
+   "phonetic_pinyin": "bai2",
+   "hsk": 2
+  },
+  "拍": {
+   "phonetic": "白",
+   "phonetic_pinyin": "bai2",
+   "hsk": 3
+  },
+  "迫": {
+   "phonetic": "白",
+   "phonetic_pinyin": "bai2",
+   "hsk": 4
+  },
+  "第": {
+   "phonetic": "弟",
+   "phonetic_pinyin": "di4",
+   "hsk": 1
+  },
+  "梯": {
+   "phonetic": "弟",
+   "phonetic_pinyin": "di4",
+   "hsk": 4
+  },
+  "递": {
+   "phonetic": "弟",
+   "phonetic_pinyin": "di4",
+   "hsk": 4
+  },
+  "绍": {
+   "phonetic": "召",
+   "phonetic_pinyin": "shao4",
+   "hsk": 1
+  },
+  "超": {
+   "phonetic": "召",
+   "phonetic_pinyin": "shao4",
+   "hsk": 2
+  },
+  "招": {
+   "phonetic": "召",
+   "phonetic_pinyin": "shao4",
+   "hsk": 4
+  },
+  "花": {
+   "phonetic": "化",
+   "phonetic_pinyin": "hua1",
+   "hsk": 1
+  },
+  "华": {
+   "phonetic": "化",
+   "phonetic_pinyin": "hua1",
+   "hsk": 3
+  },
+  "货": {
+   "phonetic": "化",
+   "phonetic_pinyin": "hua1",
+   "hsk": 4
+  },
+  "菜": {
+   "phonetic": "采",
+   "phonetic_pinyin": "cai3",
+   "hsk": 1
+  },
+  "彩": {
+   "phonetic": "采",
+   "phonetic_pinyin": "cai3",
+   "hsk": 3
+  },
+  "视": {
+   "phonetic": "示",
+   "phonetic_pinyin": "shi4",
+   "hsk": 1
+  },
+  "际": {
+   "phonetic": "示",
+   "phonetic_pinyin": "shi4",
+   "hsk": 2
+  },
+  "记": {
+   "phonetic": "己",
+   "phonetic_pinyin": "ji3",
+   "hsk": 1
+  },
+  "起": {
+   "phonetic": "己",
+   "phonetic_pinyin": "ji3",
+   "hsk": 1
+  },
+  "改": {
+   "phonetic": "己",
+   "phonetic_pinyin": "ji3",
+   "hsk": 2
+  },
+  "纪": {
+   "phonetic": "己",
+   "phonetic_pinyin": "ji3",
+   "hsk": 3
+  },
+  "识": {
+   "phonetic": "只",
+   "phonetic_pinyin": "zhi1",
+   "hsk": 1
+  },
+  "积": {
+   "phonetic": "只",
+   "phonetic_pinyin": "zhi1",
+   "hsk": 3
+  },
+  "职": {
+   "phonetic": "只",
+   "phonetic_pinyin": "zhi1",
+   "hsk": 3
+  },
+  "织": {
+   "phonetic": "只",
+   "phonetic_pinyin": "zhi1",
+   "hsk": 5
+  },
+  "说": {
+   "phonetic": "兑",
+   "phonetic_pinyin": "dui4",
+   "hsk": 1
+  },
+  "脱": {
+   "phonetic": "兑",
+   "phonetic_pinyin": "dui4",
+   "hsk": 4
+  },
+  "阅": {
+   "phonetic": "兑",
+   "phonetic_pinyin": "dui4",
+   "hsk": 4
+  },
+  "请": {
+   "phonetic": "青",
+   "phonetic_pinyin": "qing1",
+   "hsk": 1
+  },
+  "情": {
+   "phonetic": "青",
+   "phonetic_pinyin": "qing1",
+   "hsk": 2
+  },
+  "晴": {
+   "phonetic": "青",
+   "phonetic_pinyin": "qing1",
+   "hsk": 2
+  },
+  "清": {
+   "phonetic": "青",
+   "phonetic_pinyin": "qing1",
+   "hsk": 2
+  },
+  "睛": {
+   "phonetic": "青",
+   "phonetic_pinyin": "qing1",
+   "hsk": 2
+  },
+  "静": {
+   "phonetic": "青",
+   "phonetic_pinyin": "qing1",
+   "hsk": 2
+  },
+  "精": {
+   "phonetic": "青",
+   "phonetic_pinyin": "qing1",
+   "hsk": 3
+  },
+  "猜": {
+   "phonetic": "青",
+   "phonetic_pinyin": "qing1",
+   "hsk": 5
+  },
+  "课": {
+   "phonetic": "果",
+   "phonetic_pinyin": "guo3",
+   "hsk": 1
+  },
+  "棵": {
+   "phonetic": "果",
+   "phonetic_pinyin": "guo3",
+   "hsk": 4
+  },
+  "裹": {
+   "phonetic": "果",
+   "phonetic_pinyin": "guo3",
+   "hsk": 4
+  },
+  "颗": {
+   "phonetic": "果",
+   "phonetic_pinyin": "guo3",
+   "hsk": 5
+  },
+  "谁": {
+   "phonetic": "隹",
+   "phonetic_pinyin": "zhui1",
+   "hsk": 1
+  },
+  "推": {
+   "phonetic": "隹",
+   "phonetic_pinyin": "zhui1",
+   "hsk": 2
+  },
+  "堆": {
+   "phonetic": "隹",
+   "phonetic_pinyin": "zhui1",
+   "hsk": 5
+  },
+  "跑": {
+   "phonetic": "包",
+   "phonetic_pinyin": "bao1",
+   "hsk": 1
+  },
+  "饱": {
+   "phonetic": "包",
+   "phonetic_pinyin": "bao1",
+   "hsk": 2
+  },
+  "抱": {
+   "phonetic": "包",
+   "phonetic_pinyin": "bao1",
+   "hsk": 4
+  },
+  "进": {
+   "phonetic": "井",
+   "phonetic_pinyin": "jing3",
+   "hsk": 1
+  },
+  "讲": {
+   "phonetic": "井",
+   "phonetic_pinyin": "jing3",
+   "hsk": 2
+  },
+  "钱": {
+   "phonetic": "戋",
+   "phonetic_pinyin": "jian1",
+   "hsk": 1
+  },
+  "线": {
+   "phonetic": "戋",
+   "phonetic_pinyin": "jian1",
+   "hsk": 3
+  },
+  "浅": {
+   "phonetic": "戋",
+   "phonetic_pinyin": "jian1",
+   "hsk": 4
+  },
+  "饭": {
+   "phonetic": "反",
+   "phonetic_pinyin": "fan3",
+   "hsk": 1
+  },
+  "板": {
+   "phonetic": "反",
+   "phonetic_pinyin": "fan3",
+   "hsk": 2
+  },
+  "版": {
+   "phonetic": "反",
+   "phonetic_pinyin": "fan3",
+   "hsk": 5
+  },
+  "返": {
+   "phonetic": "反",
+   "phonetic_pinyin": "fan3",
+   "hsk": 5
+  },
+  "饿": {
+   "phonetic": "我",
+   "phonetic_pinyin": "wo3",
+   "hsk": 1
+  },
+  "哦": {
+   "phonetic": "我",
+   "phonetic_pinyin": "wo3",
+   "hsk": null
+  },
+  "鹅": {
+   "phonetic": "我",
+   "phonetic_pinyin": "wo3",
+   "hsk": null
+  },
+  "馆": {
+   "phonetic": "官",
+   "phonetic_pinyin": "guan1",
+   "hsk": 1
+  },
+  "管": {
+   "phonetic": "官",
+   "phonetic_pinyin": "guan1",
+   "hsk": 3
+  },
+  "亿": {
+   "phonetic": "乙",
+   "phonetic_pinyin": "yi3",
+   "hsk": 2
+  },
+  "艺": {
+   "phonetic": "乙",
+   "phonetic_pinyin": "yi3",
+   "hsk": 3
+  },
+  "忆": {
+   "phonetic": "乙",
+   "phonetic_pinyin": "yi3",
+   "hsk": 5
+  },
+  "份": {
+   "phonetic": "分",
+   "phonetic_pinyin": "fen1",
+   "hsk": 2
+  },
+  "纷": {
+   "phonetic": "分",
+   "phonetic_pinyin": "fen1",
+   "hsk": 4
+  },
+  "扮": {
+   "phonetic": "分",
+   "phonetic_pinyin": "fen1",
+   "hsk": 5
+  },
+  "盆": {
+   "phonetic": "分",
+   "phonetic_pinyin": "fen1",
+   "hsk": 5
+  },
+  "但": {
+   "phonetic": "旦",
+   "phonetic_pinyin": "dan4",
+   "hsk": 2
+  },
+  "担": {
+   "phonetic": "旦",
+   "phonetic_pinyin": "dan4",
+   "hsk": 4
+  },
+  "坦": {
+   "phonetic": "旦",
+   "phonetic_pinyin": "dan4",
+   "hsk": 5
+  },
+  "胆": {
+   "phonetic": "旦",
+   "phonetic_pinyin": "dan4",
+   "hsk": 5
+  },
+  "低": {
+   "phonetic": "氐",
+   "phonetic_pinyin": "di1",
+   "hsk": 2
+  },
+  "底": {
+   "phonetic": "氐",
+   "phonetic_pinyin": "di1",
+   "hsk": 3
+  },
+  "例": {
+   "phonetic": "列",
+   "phonetic_pinyin": "lie4",
+   "hsk": 2
+  },
+  "烈": {
+   "phonetic": "列",
+   "phonetic_pinyin": "lie4",
+   "hsk": 3
+  },
+  "错": {
+   "phonetic": "昔",
+   "phonetic_pinyin": "xi1",
+   "hsk": 1
+  },
+  "借": {
+   "phonetic": "昔",
+   "phonetic_pinyin": "xi1",
+   "hsk": 2
+  },
+  "措": {
+   "phonetic": "昔",
+   "phonetic_pinyin": "xi1",
+   "hsk": 4
+  },
+  "惜": {
+   "phonetic": "昔",
+   "phonetic_pinyin": "xi1",
+   "hsk": 5
+  },
+  "籍": {
+   "phonetic": "昔",
+   "phonetic_pinyin": "xi1",
+   "hsk": 5
+  },
+  "醋": {
+   "phonetic": "昔",
+   "phonetic_pinyin": "xi1",
+   "hsk": null
+  },
+  "健": {
+   "phonetic": "建",
+   "phonetic_pinyin": "jian4",
+   "hsk": 2
+  },
+  "键": {
+   "phonetic": "建",
+   "phonetic_pinyin": "jian4",
+   "hsk": 5
+  },
+  "凉": {
+   "phonetic": "京",
+   "phonetic_pinyin": "jing1",
+   "hsk": 2
+  },
+  "景": {
+   "phonetic": "京",
+   "phonetic_pinyin": "jing1",
+   "hsk": 3
+  },
+  "惊": {
+   "phonetic": "京",
+   "phonetic_pinyin": "jing1",
+   "hsk": 4
+  },
+  "刚": {
+   "phonetic": "冈",
+   "phonetic_pinyin": "gang1",
+   "hsk": 2
+  },
+  "纲": {
+   "phonetic": "冈",
+   "phonetic_pinyin": "gang1",
+   "hsk": 5
+  },
+  "钢": {
+   "phonetic": "冈",
+   "phonetic_pinyin": "gang1",
+   "hsk": 5
+  },
+  "响": {
+   "phonetic": "向",
+   "phonetic_pinyin": "xiang4",
+   "hsk": 2
+  },
+  "尚": {
+   "phonetic": "向",
+   "phonetic_pinyin": "xiang4",
+   "hsk": 4
+  },
+  "喊": {
+   "phonetic": "咸",
+   "phonetic_pinyin": "xian2",
+   "hsk": 2
+  },
+  "感": {
+   "phonetic": "咸",
+   "phonetic_pinyin": "xian2",
+   "hsk": 2
+  },
+  "减": {
+   "phonetic": "咸",
+   "phonetic_pinyin": "xian2",
+   "hsk": 4
+  },
+  "够": {
+   "phonetic": "句",
+   "phonetic_pinyin": "gou1",
+   "hsk": 2
+  },
+  "狗": {
+   "phonetic": "句",
+   "phonetic_pinyin": "gou1",
+   "hsk": 2
+  },
+  "定": {
+   "phonetic": "正",
+   "phonetic_pinyin": "zheng1",
+   "hsk": 2
+  },
+  "整": {
+   "phonetic": "正",
+   "phonetic_pinyin": "zheng1",
+   "hsk": 3
+  },
+  "证": {
+   "phonetic": "正",
+   "phonetic_pinyin": "zheng1",
+   "hsk": 3
+  },
+  "征": {
+   "phonetic": "正",
+   "phonetic_pinyin": "zheng1",
+   "hsk": 4
+  },
+  "政": {
+   "phonetic": "正",
+   "phonetic_pinyin": "zheng1",
+   "hsk": 4
+  },
+  "室": {
+   "phonetic": "至",
+   "phonetic_pinyin": "zhi4",
+   "hsk": 2
+  },
+  "致": {
+   "phonetic": "至",
+   "phonetic_pinyin": "zhi4",
+   "hsk": 4
+  },
+  "庭": {
+   "phonetic": "廷",
+   "phonetic_pinyin": "ting2",
+   "hsk": 2
+  },
+  "挺": {
+   "phonetic": "廷",
+   "phonetic_pinyin": "ting2",
+   "hsk": 2
+  },
+  "往": {
+   "phonetic": "王",
+   "phonetic_pinyin": "wang2",
+   "hsk": 2
+  },
+  "狂": {
+   "phonetic": "王",
+   "phonetic_pinyin": "wang2",
+   "hsk": 5
+  },
+  "忽": {
+   "phonetic": "勿",
+   "phonetic_pinyin": "wu4",
+   "hsk": 2
+  },
+  "物": {
+   "phonetic": "勿",
+   "phonetic_pinyin": "wu4",
+   "hsk": 2
+  },
+  "急": {
+   "phonetic": "及",
+   "phonetic_pinyin": "ji2",
+   "hsk": 2
+  },
+  "级": {
+   "phonetic": "及",
+   "phonetic_pinyin": "ji2",
+   "hsk": 2
+  },
+  "极": {
+   "phonetic": "及",
+   "phonetic_pinyin": "ji2",
+   "hsk": 3
+  },
+  "吸": {
+   "phonetic": "及",
+   "phonetic_pinyin": "ji2",
+   "hsk": 4
+  },
+  "圾": {
+   "phonetic": "及",
+   "phonetic_pinyin": "ji2",
+   "hsk": 4
+  },
+  "愿": {
+   "phonetic": "原",
+   "phonetic_pinyin": "yuan2",
+   "hsk": 2
+  },
+  "源": {
+   "phonetic": "原",
+   "phonetic_pinyin": "yuan2",
+   "hsk": 4
+  },
+  "所": {
+   "phonetic": "户",
+   "phonetic_pinyin": "hu4",
+   "hsk": 2
+  },
+  "护": {
+   "phonetic": "户",
+   "phonetic_pinyin": "hu4",
+   "hsk": 2
+  },
+  "拉": {
+   "phonetic": "立",
+   "phonetic_pinyin": "li4",
+   "hsk": 2
+  },
+  "垃": {
+   "phonetic": "立",
+   "phonetic_pinyin": "li4",
+   "hsk": 4
+  },
+  "排": {
+   "phonetic": "非",
+   "phonetic_pinyin": "fei1",
+   "hsk": 2
+  },
+  "啡": {
+   "phonetic": "非",
+   "phonetic_pinyin": "fei1",
+   "hsk": 3
+  },
+  "悲": {
+   "phonetic": "非",
+   "phonetic_pinyin": "fei1",
+   "hsk": 5
+  },
+  "辈": {
+   "phonetic": "非",
+   "phonetic_pinyin": "fei1",
+   "hsk": 5
+  },
+  "提": {
+   "phonetic": "是",
+   "phonetic_pinyin": "shi4",
+   "hsk": 2
+  },
+  "题": {
+   "phonetic": "是",
+   "phonetic_pinyin": "shi4",
+   "hsk": 2
+  },
+  "故": {
+   "phonetic": "古",
+   "phonetic_pinyin": "gu3",
+   "hsk": 2
+  },
+  "姑": {
+   "phonetic": "古",
+   "phonetic_pinyin": "gu3",
+   "hsk": 3
+  },
+  "苦": {
+   "phonetic": "古",
+   "phonetic_pinyin": "gu3",
+   "hsk": 3
+  },
+  "固": {
+   "phonetic": "古",
+   "phonetic_pinyin": "gu3",
+   "hsk": 4
+  },
+  "居": {
+   "phonetic": "古",
+   "phonetic_pinyin": "gu3",
+   "hsk": 4
+  },
+  "估": {
+   "phonetic": "古",
+   "phonetic_pinyin": "gu3",
+   "hsk": 5
+  },
+  "胡": {
+   "phonetic": "古",
+   "phonetic_pinyin": "gu3",
+   "hsk": 5
+  },
+  "晨": {
+   "phonetic": "辰",
+   "phonetic_pinyin": "chen2",
+   "hsk": 2
+  },
+  "振": {
+   "phonetic": "辰",
+   "phonetic_pinyin": "chen2",
+   "hsk": 5
+  },
+  "震": {
+   "phonetic": "辰",
+   "phonetic_pinyin": "chen2",
+   "hsk": 5
+  },
+  "检": {
+   "phonetic": "佥",
+   "phonetic_pinyin": "qian1",
+   "hsk": 2
+  },
+  "脸": {
+   "phonetic": "佥",
+   "phonetic_pinyin": "qian1",
+   "hsk": 2
+  },
+  "险": {
+   "phonetic": "佥",
+   "phonetic_pinyin": "qian1",
+   "hsk": 3
+  },
+  "验": {
+   "phonetic": "佥",
+   "phonetic_pinyin": "qian1",
+   "hsk": 3
+  },
+  "签": {
+   "phonetic": "佥",
+   "phonetic_pinyin": "qian1",
+   "hsk": 5
+  },
+  "椅": {
+   "phonetic": "奇",
+   "phonetic_pinyin": "ji1",
+   "hsk": 2
+  },
+  "骑": {
+   "phonetic": "奇",
+   "phonetic_pinyin": "ji1",
+   "hsk": 2
+  },
+  "寄": {
+   "phonetic": "奇",
+   "phonetic_pinyin": "ji1",
+   "hsk": 4
+  },
+  "河": {
+   "phonetic": "可",
+   "phonetic_pinyin": "ke3",
+   "hsk": 2
+  },
+  "何": {
+   "phonetic": "可",
+   "phonetic_pinyin": "ke3",
+   "hsk": 3
+  },
+  "阿": {
+   "phonetic": "可",
+   "phonetic_pinyin": "ke3",
+   "hsk": 4
+  },
+  "油": {
+   "phonetic": "由",
+   "phonetic_pinyin": "you2",
+   "hsk": 2
+  },
+  "邮": {
+   "phonetic": "由",
+   "phonetic_pinyin": "you2",
+   "hsk": 3
+  },
+  "抽": {
+   "phonetic": "由",
+   "phonetic_pinyin": "you2",
+   "hsk": 4
+  },
+  "海": {
+   "phonetic": "每",
+   "phonetic_pinyin": "mei3",
+   "hsk": 2
+  },
+  "悔": {
+   "phonetic": "每",
+   "phonetic_pinyin": "mei3",
+   "hsk": 5
+  },
+  "敏": {
+   "phonetic": "每",
+   "phonetic_pinyin": "mei3",
+   "hsk": 5
+  },
+  "湖": {
+   "phonetic": "胡",
+   "phonetic_pinyin": "hu2",
+   "hsk": 2
+  },
+  "糊": {
+   "phonetic": "胡",
+   "phonetic_pinyin": "hu2",
+   "hsk": 5
+  },
+  "猫": {
+   "phonetic": "苗",
+   "phonetic_pinyin": "miao2",
+   "hsk": 2
+  },
+  "描": {
+   "phonetic": "苗",
+   "phonetic_pinyin": "miao2",
+   "hsk": 4
+  },
+  "理": {
+   "phonetic": "里",
+   "phonetic_pinyin": "li3",
+   "hsk": 2
+  },
+  "厘": {
+   "phonetic": "里",
+   "phonetic_pinyin": "li3",
+   "hsk": 4
+  },
+  "瓶": {
+   "phonetic": "并",
+   "phonetic_pinyin": "bing4",
+   "hsk": 2
+  },
+  "碰": {
+   "phonetic": "并",
+   "phonetic_pinyin": "bing4",
+   "hsk": 2
+  },
+  "拼": {
+   "phonetic": "并",
+   "phonetic_pinyin": "bing4",
+   "hsk": 5
+  },
+  "饼": {
+   "phonetic": "并",
+   "phonetic_pinyin": "bing4",
+   "hsk": 5
+  },
+  "疼": {
+   "phonetic": "冬",
+   "phonetic_pinyin": "dong1",
+   "hsk": 2
+  },
+  "终": {
+   "phonetic": "冬",
+   "phonetic_pinyin": "dong1",
+   "hsk": 3
+  },
+  "空": {
+   "phonetic": "工",
+   "phonetic_pinyin": "gong1",
+   "hsk": 2
+  },
+  "红": {
+   "phonetic": "工",
+   "phonetic_pinyin": "gong1",
+   "hsk": 2
+  },
+  "功": {
+   "phonetic": "工",
+   "phonetic_pinyin": "gong1",
+   "hsk": 3
+  },
+  "江": {
+   "phonetic": "工",
+   "phonetic_pinyin": "gong1",
+   "hsk": 4
+  },
+  "项": {
+   "phonetic": "工",
+   "phonetic_pinyin": "gong1",
+   "hsk": 4
+  },
+  "篇": {
+   "phonetic": "扁",
+   "phonetic_pinyin": "pian1",
+   "hsk": 2
+  },
+  "遍": {
+   "phonetic": "扁",
+   "phonetic_pinyin": "pian1",
+   "hsk": 2
+  },
+  "编": {
+   "phonetic": "扁",
+   "phonetic_pinyin": "pian1",
+   "hsk": 4
+  },
+  "骗": {
+   "phonetic": "扁",
+   "phonetic_pinyin": "pian1",
+   "hsk": 5
+  },
+  "篮": {
+   "phonetic": "监",
+   "phonetic_pinyin": "jian1",
+   "hsk": 2
+  },
+  "蓝": {
+   "phonetic": "监",
+   "phonetic_pinyin": "jian1",
+   "hsk": 2
+  },
+  "览": {
+   "phonetic": "监",
+   "phonetic_pinyin": "jian1",
+   "hsk": 5
+  },
+  "舒": {
+   "phonetic": "予",
+   "phonetic_pinyin": "yu2",
+   "hsk": 2
+  },
+  "预": {
+   "phonetic": "予",
+   "phonetic_pinyin": "yu2",
+   "hsk": 3
+  },
+  "序": {
+   "phonetic": "予",
+   "phonetic_pinyin": "yu2",
+   "hsk": 4
+  },
+  "豫": {
+   "phonetic": "予",
+   "phonetic_pinyin": "yu2",
+   "hsk": 5
+  },
+  "英": {
+   "phonetic": "央",
+   "phonetic_pinyin": "yang1",
+   "hsk": 2
+  },
+  "映": {
+   "phonetic": "央",
+   "phonetic_pinyin": "yang1",
+   "hsk": 4
+  },
+  "街": {
+   "phonetic": "圭",
+   "phonetic_pinyin": "gui1",
+   "hsk": 2
+  },
+  "鞋": {
+   "phonetic": "圭",
+   "phonetic_pinyin": "gui1",
+   "hsk": 2
+  },
+  "挂": {
+   "phonetic": "圭",
+   "phonetic_pinyin": "gui1",
+   "hsk": 3
+  },
+  "论": {
+   "phonetic": "仑",
+   "phonetic_pinyin": "lun2",
+   "hsk": 2
+  },
+  "轮": {
+   "phonetic": "仑",
+   "phonetic_pinyin": "lun2",
+   "hsk": 4
+  },
+  "辆": {
+   "phonetic": "两",
+   "phonetic_pinyin": "liang3",
+   "hsk": 2
+  },
+  "俩": {
+   "phonetic": "两",
+   "phonetic_pinyin": "liang3",
+   "hsk": 4
+  },
+  "听": {
+   "phonetic": "斤",
+   "phonetic_pinyin": "jin1",
+   "hsk": 1
+  },
+  "近": {
+   "phonetic": "斤",
+   "phonetic_pinyin": "jin1",
+   "hsk": 2
+  },
+  "欣": {
+   "phonetic": "斤",
+   "phonetic_pinyin": "jin1",
+   "hsk": 5
+  },
+  "话": {
+   "phonetic": "舌",
+   "phonetic_pinyin": "ji1",
+   "hsk": 1
+  },
+  "活": {
+   "phonetic": "舌",
+   "phonetic_pinyin": "ji1",
+   "hsk": 2
+  },
+  "适": {
+   "phonetic": "舌",
+   "phonetic_pinyin": "ji1",
+   "hsk": 2
+  },
+  "通": {
+   "phonetic": "甬",
+   "phonetic_pinyin": "yong3",
+   "hsk": 2
+  },
+  "痛": {
+   "phonetic": "甬",
+   "phonetic_pinyin": "yong3",
+   "hsk": 3
+  },
+  "勇": {
+   "phonetic": "甬",
+   "phonetic_pinyin": "yong3",
+   "hsk": 4
+  },
+  "钟": {
+   "phonetic": "中",
+   "phonetic_pinyin": "zhong1",
+   "hsk": 2
+  },
+  "种": {
+   "phonetic": "中",
+   "phonetic_pinyin": "zhong1",
+   "hsk": 3
+  },
+  "冲": {
+   "phonetic": "中",
+   "phonetic_pinyin": "zhong1",
+   "hsk": 4
+  },
+  "靠": {
+   "phonetic": "告",
+   "phonetic_pinyin": "gao4",
+   "hsk": 2
+  },
+  "造": {
+   "phonetic": "告",
+   "phonetic_pinyin": "gao4",
+   "hsk": 3
+  },
+  "顺": {
+   "phonetic": "川",
+   "phonetic_pinyin": "chuan1",
+   "hsk": 2
+  },
+  "训": {
+   "phonetic": "川",
+   "phonetic_pinyin": "chuan1",
+   "hsk": 3
+  },
+  "代": {
+   "phonetic": "弋",
+   "phonetic_pinyin": "yi4",
+   "hsk": 3
+  },
+  "式": {
+   "phonetic": "弋",
+   "phonetic_pinyin": "yi4",
+   "hsk": 3
+  },
+  "价": {
+   "phonetic": "介",
+   "phonetic_pinyin": "jie4",
+   "hsk": 3
+  },
+  "界": {
+   "phonetic": "介",
+   "phonetic_pinyin": "jie4",
+   "hsk": 3
+  },
+  "阶": {
+   "phonetic": "介",
+   "phonetic_pinyin": "jie4",
+   "hsk": 4
+  },
+  "优": {
+   "phonetic": "尤",
+   "phonetic_pinyin": "you2",
+   "hsk": 3
+  },
+  "犹": {
+   "phonetic": "尤",
+   "phonetic_pinyin": "you2",
+   "hsk": 5
+  },
+  "伟": {
+   "phonetic": "韦",
+   "phonetic_pinyin": "wei2",
+   "hsk": 3
+  },
+  "围": {
+   "phonetic": "韦",
+   "phonetic_pinyin": "wei2",
+   "hsk": 3
+  },
+  "违": {
+   "phonetic": "韦",
+   "phonetic_pinyin": "wei2",
+   "hsk": 5
+  },
+  "传": {
+   "phonetic": "专",
+   "phonetic_pinyin": "zhuan1",
+   "hsk": 3
+  },
+  "转": {
+   "phonetic": "专",
+   "phonetic_pinyin": "zhuan1",
+   "hsk": 3
+  },
+  "值": {
+   "phonetic": "直",
+   "phonetic_pinyin": "zhi2",
+   "hsk": 3
+  },
+  "植": {
+   "phonetic": "直",
+   "phonetic_pinyin": "zhi2",
+   "hsk": 4
+  },
+  "置": {
+   "phonetic": "直",
+   "phonetic_pinyin": "zhi2",
+   "hsk": 4
+  },
+  "创": {
+   "phonetic": "仓",
+   "phonetic_pinyin": "cang1",
+   "hsk": 3
+  },
+  "抢": {
+   "phonetic": "仓",
+   "phonetic_pinyin": "cang1",
+   "hsk": 5
+  },
+  "枪": {
+   "phonetic": "仓",
+   "phonetic_pinyin": "cang1",
+   "hsk": 5
+  },
+  "判": {
+   "phonetic": "半",
+   "phonetic_pinyin": "ban4",
+   "hsk": 3
+  },
+  "胖": {
+   "phonetic": "半",
+   "phonetic_pinyin": "ban4",
+   "hsk": 3
+  },
+  "伴": {
+   "phonetic": "半",
+   "phonetic_pinyin": "ban4",
+   "hsk": 4
+  },
+  "剧": {
+   "phonetic": "居",
+   "phonetic_pinyin": "ju1",
+   "hsk": 3
+  },
+  "据": {
+   "phonetic": "居",
+   "phonetic_pinyin": "ju1",
+   "hsk": 3
+  },
+  "吵": {
+   "phonetic": "少",
+   "phonetic_pinyin": "shao3",
+   "hsk": 3
+  },
+  "沙": {
+   "phonetic": "少",
+   "phonetic_pinyin": "shao3",
+   "hsk": 3
+  },
+  "抄": {
+   "phonetic": "少",
+   "phonetic_pinyin": "shao3",
+   "hsk": 4
+  },
+  "秒": {
+   "phonetic": "少",
+   "phonetic_pinyin": "shao3",
+   "hsk": 5
+  },
+  "咖": {
+   "phonetic": "加",
+   "phonetic_pinyin": "jia1",
+   "hsk": 3
+  },
+  "架": {
+   "phonetic": "加",
+   "phonetic_pinyin": "jia1",
+   "hsk": 3
+  },
+  "驾": {
+   "phonetic": "加",
+   "phonetic_pinyin": "jia1",
+   "hsk": 5
+  },
+  "答": {
+   "phonetic": "合",
+   "phonetic_pinyin": "ge3",
+   "hsk": 1
+  },
+  "给": {
+   "phonetic": "合",
+   "phonetic_pinyin": "ge3",
+   "hsk": 1
+  },
+  "哈": {
+   "phonetic": "合",
+   "phonetic_pinyin": "ge3",
+   "hsk": 3
+  },
+  "拾": {
+   "phonetic": "合",
+   "phonetic_pinyin": "ge3",
+   "hsk": 5
+  },
+  "盒": {
+   "phonetic": "合",
+   "phonetic_pinyin": "ge3",
+   "hsk": 5
+  },
+  "啤": {
+   "phonetic": "卑",
+   "phonetic_pinyin": "bei1",
+   "hsk": 3
+  },
+  "牌": {
+   "phonetic": "卑",
+   "phonetic_pinyin": "bei1",
+   "hsk": 3
+  },
+  "脾": {
+   "phonetic": "卑",
+   "phonetic_pinyin": "bei1",
+   "hsk": 5
+  },
+  "城": {
+   "phonetic": "成",
+   "phonetic_pinyin": "cheng2",
+   "hsk": 3
+  },
+  "诚": {
+   "phonetic": "成",
+   "phonetic_pinyin": "cheng2",
+   "hsk": 4
+  },
+  "境": {
+   "phonetic": "竟",
+   "phonetic_pinyin": "jing4",
+   "hsk": 3
+  },
+  "镜": {
+   "phonetic": "竟",
+   "phonetic_pinyin": "jing4",
+   "hsk": 4
+  },
+  "增": {
+   "phonetic": "曾",
+   "phonetic_pinyin": "zeng1",
+   "hsk": 3
+  },
+  "赠": {
+   "phonetic": "曾",
+   "phonetic_pinyin": "zeng1",
+   "hsk": 5
+  },
+  "娘": {
+   "phonetic": "良",
+   "phonetic_pinyin": "liang2",
+   "hsk": 3
+  },
+  "浪": {
+   "phonetic": "良",
+   "phonetic_pinyin": "liang2",
+   "hsk": 3
+  },
+  "粮": {
+   "phonetic": "良",
+   "phonetic_pinyin": "liang2",
+   "hsk": 4
+  },
+  "郎": {
+   "phonetic": "良",
+   "phonetic_pinyin": "liang2",
+   "hsk": 4
+  },
+  "朗": {
+   "phonetic": "良",
+   "phonetic_pinyin": "liang2",
+   "hsk": 5
+  },
+  "媒": {
+   "phonetic": "某",
+   "phonetic_pinyin": "mou3",
+   "hsk": 3
+  },
+  "煤": {
+   "phonetic": "某",
+   "phonetic_pinyin": "mou3",
+   "hsk": 5
+  },
+  "时": {
+   "phonetic": "寺",
+   "phonetic_pinyin": "si4",
+   "hsk": 1
+  },
+  "等": {
+   "phonetic": "寺",
+   "phonetic_pinyin": "si4",
+   "hsk": 1
+  },
+  "待": {
+   "phonetic": "寺",
+   "phonetic_pinyin": "si4",
+   "hsk": 3
+  },
+  "持": {
+   "phonetic": "寺",
+   "phonetic_pinyin": "si4",
+   "hsk": 3
+  },
+  "诗": {
+   "phonetic": "寺",
+   "phonetic_pinyin": "si4",
+   "hsk": 4
+  },
+  "侍": {
+   "phonetic": "寺",
+   "phonetic_pinyin": "si4",
+   "hsk": null
+  },
+  "念": {
+   "phonetic": "今",
+   "phonetic_pinyin": "jin1",
+   "hsk": 3
+  },
+  "含": {
+   "phonetic": "今",
+   "phonetic_pinyin": "jin1",
+   "hsk": 4
+  },
+  "琴": {
+   "phonetic": "今",
+   "phonetic_pinyin": "jin1",
+   "hsk": 5
+  },
+  "批": {
+   "phonetic": "比",
+   "phonetic_pinyin": "bi3",
+   "hsk": 3
+  },
+  "毕": {
+   "phonetic": "比",
+   "phonetic_pinyin": "bi3",
+   "hsk": 4
+  },
+  "按": {
+   "phonetic": "安",
+   "phonetic_pinyin": "an1",
+   "hsk": 3
+  },
+  "案": {
+   "phonetic": "安",
+   "phonetic_pinyin": "an1",
+   "hsk": 4
+  },
+  "播": {
+   "phonetic": "番",
+   "phonetic_pinyin": "pan1",
+   "hsk": 3
+  },
+  "翻": {
+   "phonetic": "番",
+   "phonetic_pinyin": "pan1",
+   "hsk": 4
+  },
+  "过": {
+   "phonetic": "寸",
+   "phonetic_pinyin": "cun4",
+   "hsk": 1
+  },
+  "村": {
+   "phonetic": "寸",
+   "phonetic_pinyin": "cun4",
+   "hsk": 3
+  },
+  "衬": {
+   "phonetic": "寸",
+   "phonetic_pinyin": "cun4",
+   "hsk": 3
+  },
+  "济": {
+   "phonetic": "齐",
+   "phonetic_pinyin": "qi2",
+   "hsk": 3
+  },
+  "挤": {
+   "phonetic": "齐",
+   "phonetic_pinyin": "qi2",
+   "hsk": 5
+  },
+  "消": {
+   "phonetic": "肖",
+   "phonetic_pinyin": "xiao1",
+   "hsk": 3
+  },
+  "销": {
+   "phonetic": "肖",
+   "phonetic_pinyin": "xiao1",
+   "hsk": 4
+  },
+  "悄": {
+   "phonetic": "肖",
+   "phonetic_pinyin": "xiao1",
+   "hsk": 5
+  },
+  "稍": {
+   "phonetic": "肖",
+   "phonetic_pinyin": "xiao1",
+   "hsk": 5
+  },
+  "猪": {
+   "phonetic": "者",
+   "phonetic_pinyin": "zhe3",
+   "hsk": 3
+  },
+  "堵": {
+   "phonetic": "者",
+   "phonetic_pinyin": "zhe3",
+   "hsk": 4
+  },
+  "暑": {
+   "phonetic": "者",
+   "phonetic_pinyin": "zhe3",
+   "hsk": 4
+  },
+  "著": {
+   "phonetic": "者",
+   "phonetic_pinyin": "zhe3",
+   "hsk": 4
+  },
+  "破": {
+   "phonetic": "皮",
+   "phonetic_pinyin": "pi2",
+   "hsk": 3
+  },
+  "被": {
+   "phonetic": "皮",
+   "phonetic_pinyin": "pi2",
+   "hsk": 3
+  },
+  "彼": {
+   "phonetic": "皮",
+   "phonetic_pinyin": "pi2",
+   "hsk": 5
+  },
+  "披": {
+   "phonetic": "皮",
+   "phonetic_pinyin": "pi2",
+   "hsk": 5
+  },
+  "玻": {
+   "phonetic": "皮",
+   "phonetic_pinyin": "pi2",
+   "hsk": 5
+  },
+  "波": {
+   "phonetic": "皮",
+   "phonetic_pinyin": "pi2",
+   "hsk": null
+  },
+  "神": {
+   "phonetic": "申",
+   "phonetic_pinyin": "shen1",
+   "hsk": 3
+  },
+  "伸": {
+   "phonetic": "申",
+   "phonetic_pinyin": "shen1",
+   "hsk": 5
+  },
+  "快": {
+   "phonetic": "夬",
+   "phonetic_pinyin": "guai4",
+   "hsk": 1
+  },
+  "缺": {
+   "phonetic": "夬",
+   "phonetic_pinyin": "guai4",
+   "hsk": 3
+  },
+  "群": {
+   "phonetic": "君",
+   "phonetic_pinyin": "jun1",
+   "hsk": 3
+  },
+  "裙": {
+   "phonetic": "君",
+   "phonetic_pinyin": "jun1",
+   "hsk": 3
+  },
+  "苹": {
+   "phonetic": "平",
+   "phonetic_pinyin": "ping2",
+   "hsk": 3
+  },
+  "评": {
+   "phonetic": "平",
+   "phonetic_pinyin": "ping2",
+   "hsk": 3
+  },
+  "蕉": {
+   "phonetic": "焦",
+   "phonetic_pinyin": "jiao1",
+   "hsk": 3
+  },
+  "瞧": {
+   "phonetic": "焦",
+   "phonetic_pinyin": "jiao1",
+   "hsk": 5
+  },
+  "谈": {
+   "phonetic": "炎",
+   "phonetic_pinyin": "yan2",
+   "hsk": 3
+  },
+  "淡": {
+   "phonetic": "炎",
+   "phonetic_pinyin": "yan2",
+   "hsk": 4
+  },
+  "赶": {
+   "phonetic": "干",
+   "phonetic_pinyin": "gan1",
+   "hsk": 3
+  },
+  "岸": {
+   "phonetic": "干",
+   "phonetic_pinyin": "gan1",
+   "hsk": 5
+  },
+  "汗": {
+   "phonetic": "干",
+   "phonetic_pinyin": "gan1",
+   "hsk": 5
+  },
+  "跳": {
+   "phonetic": "兆",
+   "phonetic_pinyin": "zhao4",
+   "hsk": 3
+  },
+  "挑": {
+   "phonetic": "兆",
+   "phonetic_pinyin": "zhao4",
+   "hsk": 4
+  },
+  "桃": {
+   "phonetic": "兆",
+   "phonetic_pinyin": "zhao4",
+   "hsk": 5
+  },
+  "逃": {
+   "phonetic": "兆",
+   "phonetic_pinyin": "zhao4",
+   "hsk": 5
+  },
+  "输": {
+   "phonetic": "俞",
+   "phonetic_pinyin": "yu2",
+   "hsk": 3
+  },
+  "偷": {
+   "phonetic": "俞",
+   "phonetic_pinyin": "yu2",
+   "hsk": 5
+  },
+  "除": {
+   "phonetic": "余",
+   "phonetic_pinyin": "yu2",
+   "hsk": 3
+  },
+  "途": {
+   "phonetic": "余",
+   "phonetic_pinyin": "yu2",
+   "hsk": 4
+  },
+  "顿": {
+   "phonetic": "屯",
+   "phonetic_pinyin": "tun2",
+   "hsk": 3
+  },
+  "纯": {
+   "phonetic": "屯",
+   "phonetic_pinyin": "tun2",
+   "hsk": 4
+  },
+  "吨": {
+   "phonetic": "屯",
+   "phonetic_pinyin": "tun2",
+   "hsk": 5
+  },
+  "呀": {
+   "phonetic": "牙",
+   "phonetic_pinyin": "ya2",
+   "hsk": 4
+  },
+  "雅": {
+   "phonetic": "牙",
+   "phonetic_pinyin": "ya2",
+   "hsk": null
+  },
+  "圆": {
+   "phonetic": "员",
+   "phonetic_pinyin": "yuan2",
+   "hsk": 4
+  },
+  "损": {
+   "phonetic": "员",
+   "phonetic_pinyin": "yuan2",
+   "hsk": 5
+  },
+  "址": {
+   "phonetic": "止",
+   "phonetic_pinyin": "zhi3",
+   "hsk": 4
+  },
+  "扯": {
+   "phonetic": "止",
+   "phonetic_pinyin": "zhi3",
+   "hsk": null
+  },
+  "府": {
+   "phonetic": "付",
+   "phonetic_pinyin": "fu4",
+   "hsk": 4
+  },
+  "符": {
+   "phonetic": "付",
+   "phonetic_pinyin": "fu4",
+   "hsk": 4
+  },
+  "附": {
+   "phonetic": "付",
+   "phonetic_pinyin": "fu4",
+   "hsk": 4
+  },
+  "扩": {
+   "phonetic": "广",
+   "phonetic_pinyin": "yan3",
+   "hsk": 4
+  },
+  "矿": {
+   "phonetic": "广",
+   "phonetic_pinyin": "yan3",
+   "hsk": 4
+  },
+  "摸": {
+   "phonetic": "莫",
+   "phonetic_pinyin": "mo4",
+   "hsk": 4
+  },
+  "模": {
+   "phonetic": "莫",
+   "phonetic_pinyin": "mo4",
+   "hsk": 4
+  },
+  "幕": {
+   "phonetic": "莫",
+   "phonetic_pinyin": "mo4",
+   "hsk": 5
+  },
+  "漠": {
+   "phonetic": "莫",
+   "phonetic_pinyin": "mo4",
+   "hsk": 5
+  },
+  "晒": {
+   "phonetic": "西",
+   "phonetic_pinyin": "xi1",
+   "hsk": 4
+  },
+  "洒": {
+   "phonetic": "西",
+   "phonetic_pinyin": "xi1",
+   "hsk": 5
+  },
+  "构": {
+   "phonetic": "勾",
+   "phonetic_pinyin": "gou1",
+   "hsk": 4
+  },
+  "购": {
+   "phonetic": "勾",
+   "phonetic_pinyin": "gou1",
+   "hsk": 4
+  },
+  "沟": {
+   "phonetic": "勾",
+   "phonetic_pinyin": "gou1",
+   "hsk": 5
+  },
+  "殊": {
+   "phonetic": "朱",
+   "phonetic_pinyin": "zhu1",
+   "hsk": 4
+  },
+  "珠": {
+   "phonetic": "朱",
+   "phonetic_pinyin": "zhu1",
+   "hsk": 5
+  },
+  "毫": {
+   "phonetic": "高",
+   "phonetic_pinyin": "gao1",
+   "hsk": 4
+  },
+  "搞": {
+   "phonetic": "高",
+   "phonetic_pinyin": "gao1",
+   "hsk": 5
+  },
+  "敲": {
+   "phonetic": "高",
+   "phonetic_pinyin": "gao1",
+   "hsk": 5
+  },
+  "豪": {
+   "phonetic": "高",
+   "phonetic_pinyin": "gao1",
+   "hsk": 5
+  },
+  "渐": {
+   "phonetic": "斩",
+   "phonetic_pinyin": "zhan3",
+   "hsk": 4
+  },
+  "暂": {
+   "phonetic": "斩",
+   "phonetic_pinyin": "zhan3",
+   "hsk": 5
+  },
+  "烧": {
+   "phonetic": "尧",
+   "phonetic_pinyin": "yao2",
+   "hsk": 4
+  },
+  "绕": {
+   "phonetic": "尧",
+   "phonetic_pinyin": "yao2",
+   "hsk": 5
+  },
+  "聊": {
+   "phonetic": "卯",
+   "phonetic_pinyin": "mao3",
+   "hsk": 4
+  },
+  "贸": {
+   "phonetic": "卯",
+   "phonetic_pinyin": "mao3",
+   "hsk": 5
+  },
+  "聚": {
+   "phonetic": "取",
+   "phonetic_pinyin": "qu3",
+   "hsk": 4
+  },
+  "趣": {
+   "phonetic": "取",
+   "phonetic_pinyin": "qu3",
+   "hsk": 4
+  },
+  "肚": {
+   "phonetic": "土",
+   "phonetic_pinyin": "tu3",
+   "hsk": 4
+  },
+  "吐": {
+   "phonetic": "土",
+   "phonetic_pinyin": "tu3",
+   "hsk": 5
+  },
+  "袋": {
+   "phonetic": "代",
+   "phonetic_pinyin": "dai4",
+   "hsk": 4
+  },
+  "贷": {
+   "phonetic": "代",
+   "phonetic_pinyin": "dai4",
+   "hsk": 5
+  },
+  "距": {
+   "phonetic": "巨",
+   "phonetic_pinyin": "ju4",
+   "hsk": 4
+  },
+  "拒": {
+   "phonetic": "巨",
+   "phonetic_pinyin": "ju4",
+   "hsk": 5
+  },
+  "柜": {
+   "phonetic": "巨",
+   "phonetic_pinyin": "ju4",
+   "hsk": 5
+  },
+  "遇": {
+   "phonetic": "禺",
+   "phonetic_pinyin": "ou3",
+   "hsk": 4
+  },
+  "偶": {
+   "phonetic": "禺",
+   "phonetic_pinyin": "ou3",
+   "hsk": 5
+  },
+  "避": {
+   "phonetic": "辟",
+   "phonetic_pinyin": "bi4",
+   "hsk": 4
+  },
+  "壁": {
+   "phonetic": "辟",
+   "phonetic_pinyin": "bi4",
+   "hsk": 5
+  },
+  "傅": {
+   "phonetic": "甫",
+   "phonetic_pinyin": "fu3",
+   "hsk": 5
+  },
+  "博": {
+   "phonetic": "甫",
+   "phonetic_pinyin": "fu3",
+   "hsk": 5
+  },
+  "葡": {
+   "phonetic": "甫",
+   "phonetic_pinyin": "fu3",
+   "hsk": 5
+  },
+  "辅": {
+   "phonetic": "甫",
+   "phonetic_pinyin": "fu3",
+   "hsk": 5
+  },
+  "扶": {
+   "phonetic": "夫",
+   "phonetic_pinyin": "fu1",
+   "hsk": 5
+  },
+  "肤": {
+   "phonetic": "夫",
+   "phonetic_pinyin": "fu1",
+   "hsk": 5
+  },
+  "押": {
+   "phonetic": "甲",
+   "phonetic_pinyin": "jia3",
+   "hsk": 5
+  },
+  "鸭": {
+   "phonetic": "甲",
+   "phonetic_pinyin": "jia3",
+   "hsk": 5
+  },
+  "诉": {
+   "phonetic": "斥",
+   "phonetic_pinyin": "chi4",
+   "hsk": 1
+  },
+  "拆": {
+   "phonetic": "斥",
+   "phonetic_pinyin": "chi4",
+   "hsk": 5
+  },
+  "搜": {
+   "phonetic": "叟",
+   "phonetic_pinyin": "sou3",
+   "hsk": 5
+  },
+  "瘦": {
+   "phonetic": "叟",
+   "phonetic_pinyin": "sou3",
+   "hsk": 5
+  },
+  "柴": {
+   "phonetic": "此",
+   "phonetic_pinyin": "ci3",
+   "hsk": 5
+  },
+  "紫": {
+   "phonetic": "此",
+   "phonetic_pinyin": "ci3",
+   "hsk": 5
+  },
+  "硬": {
+   "phonetic": "更",
+   "phonetic_pinyin": "geng1",
+   "hsk": 5
+  },
+  "梗": {
+   "phonetic": "更",
+   "phonetic_pinyin": "geng1",
+   "hsk": null
+  },
+  "碎": {
+   "phonetic": "卒",
+   "phonetic_pinyin": "zu2",
+   "hsk": 5
+  },
+  "醉": {
+   "phonetic": "卒",
+   "phonetic_pinyin": "zu2",
+   "hsk": 5
+  },
+  "他": {
+   "phonetic": "也",
+   "phonetic_pinyin": "ye3",
+   "hsk": 1
+  },
+  "地": {
+   "phonetic": "也",
+   "phonetic_pinyin": "ye3",
+   "hsk": 1
+  },
+  "她": {
+   "phonetic": "也",
+   "phonetic_pinyin": "ye3",
+   "hsk": 1
+  },
+  "它": {
+   "phonetic": "也",
+   "phonetic_pinyin": "ye3",
+   "hsk": 2
+  },
+  "池": {
+   "phonetic": "也",
+   "phonetic_pinyin": "ye3",
+   "hsk": 5
+  },
+  "弛": {
+   "phonetic": "也",
+   "phonetic_pinyin": "ye3",
+   "hsk": null
+  },
+  "驰": {
+   "phonetic": "也",
+   "phonetic_pinyin": "ye3",
+   "hsk": null
+  }
+ }
+}

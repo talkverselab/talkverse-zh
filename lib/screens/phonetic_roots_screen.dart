@@ -1,119 +1,209 @@
 import 'package:flutter/material.dart';
 
 import '../core/theme.dart';
+import '../services/cedict_service.dart';
+import '../services/hanzi_info_service.dart';
+import '../services/pinyin_util.dart';
 import '../widgets/chinese_decor.dart';
+import '../widgets/selectable_hanzi.dart';
 
-class PhoneticRootsScreen extends StatelessWidget {
+/// 발음부(声旁) 탐색 — HSK1-5 실데이터.
+/// 카드를 탭하면 그 발음부를 공유하는 한자 가족 시트가 열린다.
+class PhoneticRootsScreen extends StatefulWidget {
   const PhoneticRootsScreen({super.key});
 
-  static const List<_Root> _sample = [
-    _Root('巴', 'bā', '파(巴)', 13),
-    _Root('青', 'qīng', '청(青)', 11),
-    _Root('马', 'mǎ', '마(馬)', 9),
-    _Root('生', 'shēng', '생(生)', 14),
-    _Root('白', 'bái', '백(白)', 12),
-    _Root('王', 'wáng', '왕(王)', 16),
-    _Root('木', 'mù', '목(木)', 25),
-    _Root('心', 'xīn', '심(心)', 26),
-    _Root('口', 'kǒu', '구(口)', 34),
-    _Root('土', 'tǔ', '토(土)', 18),
-    _Root('日', 'rì', '일(日)', 15),
-    _Root('月', 'yuè', '월(月)', 10),
-    _Root('又', 'yòu', '우(又)', 9),
-    _Root('力', 'lì', '력(力)', 7),
-    _Root('刀', 'dāo', '도(刀)', 6),
-    _Root('火', 'huǒ', '화(火)', 11),
-  ];
+  @override
+  State<PhoneticRootsScreen> createState() => _PhoneticRootsScreenState();
+}
+
+class _PhoneticRootsScreenState extends State<PhoneticRootsScreen> {
+  bool _loading = true;
+  List<PhoneticRootInfo> _roots = [];
+  String _query = '';
+
+  @override
+  void initState() {
+    super.initState();
+    _load();
+  }
+
+  Future<void> _load() async {
+    await HanziInfoService.instance.ensureLoaded();
+    await CedictService.instance.ensureLoaded();
+    if (!mounted) return;
+    setState(() {
+      _roots = HanziInfoService.instance.allRoots;
+      _loading = false;
+    });
+  }
+
+  List<PhoneticRootInfo> get _filtered {
+    if (_query.isEmpty) return _roots;
+    final q = _query.trim().toLowerCase();
+    return _roots.where((r) {
+      if (r.root.contains(q)) return true;
+      if (r.ko != null && r.ko!.contains(q)) return true;
+      final basePy = PinyinUtil.stripTones(
+          PinyinUtil.toTonedPinyin(r.pinyin));
+      return basePy.contains(q);
+    }).toList();
+  }
+
+  Future<void> _openFamily(PhoneticRootInfo root) async {
+    final members = <String>[
+      root.root,
+      ...HanziInfoService.instance.charsSharing(root.root)
+        ..sort(),
+    ];
+    final toned = PinyinUtil.toTonedPinyin(root.pinyin);
+    await showModalBottomSheet(
+      context: context,
+      backgroundColor: AppColors.xuanZhi,
+      isScrollControlled: true,
+      shape: const RoundedRectangleBorder(
+        borderRadius: BorderRadius.vertical(top: Radius.circular(2)),
+      ),
+      builder: (_) => DraggableScrollableSheet(
+        expand: false,
+        initialChildSize: 0.75,
+        maxChildSize: 0.95,
+        builder: (context, controller) => SingleChildScrollView(
+          controller: controller,
+          child: PhoneticFamilySheet(
+            phonetic: root.root,
+            phoneticPinyin: toned,
+            members: members,
+            highlight: '',
+          ),
+        ),
+      ),
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
+    final total = _roots.fold(0, (s, r) => s + r.count);
     return Scaffold(
       backgroundColor: AppColors.xuanZhi,
-      appBar: AppBar(title: const Text('발음부 + 한국 한자음')),
-      body: Stack(
-        children: [
-          const Positioned.fill(child: CloudPattern(opacity: 0.05)),
-          ListView(
-            padding: const EdgeInsets.all(16),
-            children: [
-              ChineseCard(
-                title: '발음부 + 한국 한자음 매핑',
-                sealText: '声旁',
-                accent: const Color(0xFF6A1B9A),
-                child: Text(
-                  '현대 상용 한자 90% 형성자.\n'
-                  'L1 80자 실측 한국 한자음 ↔ 중국 발음 초성 정합 87.5%.\n'
-                  '발음부 200 → HSK1-5 1500자 풀이 (압축 7.5× vs Heisig).',
-                  style: TextStyle(color: AppColors.moLight, fontSize: 12, height: 1.5),
-                ),
-              ),
-              const SizedBox(height: 16),
-              const BrushDivider(),
-              const SizedBox(height: 14),
-              Text(
-                '발음부 샘플 16 (총 200 placeholder)',
-                style: TextStyle(fontWeight: FontWeight.w800, color: AppColors.mo, letterSpacing: 2),
-              ),
-              const SizedBox(height: 10),
-              GridView.builder(
-                shrinkWrap: true,
-                physics: const NeverScrollableScrollPhysics(),
-                gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                  crossAxisCount: 2,
-                  mainAxisSpacing: 8,
-                  crossAxisSpacing: 8,
-                  childAspectRatio: 1.6,
-                ),
-                itemCount: _sample.length,
-                itemBuilder: (context, i) => _RootCard(root: _sample[i]),
-              ),
-              const SizedBox(height: 16),
-              Container(
-                padding: const EdgeInsets.all(14),
-                decoration: BoxDecoration(
-                  color: AppColors.xuanZhiDeep,
-                  border: Border.all(color: AppColors.jin.withValues(alpha: 0.5)),
-                ),
-                child: Text(
-                  '🔧 200개 전체 발음부 데이터셋 작업 중.\ncluster (木 25자 · 心 26자 · 口 34자 …) + 발음부별 mnemonic 25주 손작성 예정.',
-                  style: const TextStyle(color: AppColors.moLight, fontSize: 11, height: 1.5),
-                ),
-              ),
-              const SizedBox(height: 24),
-            ],
-          ),
-        ],
+      appBar: AppBar(
+        backgroundColor: AppColors.xuanZhi,
+        foregroundColor: AppColors.mo,
+        elevation: 0,
+        centerTitle: true,
+        title: const Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Text('발음부 + 한국 한자음',
+                style: TextStyle(
+                    color: AppColors.mo, fontSize: 16, fontWeight: FontWeight.w800)),
+            SizedBox(height: 2),
+            Text('声旁 · HSK 1-5',
+                style: TextStyle(
+                    color: AppColors.moLight, fontSize: 10, letterSpacing: 2)),
+          ],
+        ),
       ),
+      body: _loading
+          ? const Center(child: CircularProgressIndicator(color: AppColors.zhuHong))
+          : Column(
+              children: [
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(16, 8, 16, 4),
+                  child: TextField(
+                    onChanged: (v) => setState(() => _query = v),
+                    style: const TextStyle(
+                        fontSize: 16, fontWeight: FontWeight.w700, color: AppColors.mo),
+                    decoration: InputDecoration(
+                      hintText: '马 · ma · 마',
+                      hintStyle:
+                          const TextStyle(color: AppColors.moLight, fontSize: 14),
+                      prefixIcon:
+                          const Icon(Icons.search, color: AppColors.zhuHong),
+                      isDense: true,
+                      filled: true,
+                      fillColor: AppColors.xuanZhiDeep,
+                      enabledBorder: const OutlineInputBorder(
+                        borderRadius: BorderRadius.zero,
+                        borderSide: BorderSide(color: AppColors.jin),
+                      ),
+                      focusedBorder: const OutlineInputBorder(
+                        borderRadius: BorderRadius.zero,
+                        borderSide:
+                            BorderSide(color: AppColors.zhuHong, width: 1.5),
+                      ),
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 6),
+                  child: Row(
+                    children: [
+                      const SealStamp(text: '声旁', size: 22),
+                      const SizedBox(width: 8),
+                      Text(
+                        '발음부 ${_roots.length}개 · 한자 $total자 커버',
+                        style: TextStyle(
+                          fontSize: 12,
+                          fontWeight: FontWeight.w800,
+                          color: AppColors.mo,
+                          letterSpacing: 1,
+                        ),
+                      ),
+                      const Spacer(),
+                      Text(
+                        '탭 → 한자 가족',
+                        style: TextStyle(fontSize: 10, color: AppColors.moLight),
+                      ),
+                    ],
+                  ),
+                ),
+                const GreekKeyDivider(height: 8),
+                Expanded(
+                  child: GridView.builder(
+                    padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
+                    gridDelegate:
+                        const SliverGridDelegateWithFixedCrossAxisCount(
+                      crossAxisCount: 2,
+                      mainAxisSpacing: 8,
+                      crossAxisSpacing: 8,
+                      childAspectRatio: 1.9,
+                    ),
+                    itemCount: _filtered.length,
+                    itemBuilder: (context, i) {
+                      final r = _filtered[i];
+                      return _RootCard(
+                        root: r,
+                        onTap: () => _openFamily(r),
+                      );
+                    },
+                  ),
+                ),
+              ],
+            ),
     );
   }
 }
 
-class _Root {
-  final String root;
-  final String pinyin;
-  final String koHanja;
-  final int clusterCount;
-  const _Root(this.root, this.pinyin, this.koHanja, this.clusterCount);
-}
-
 class _RootCard extends StatelessWidget {
-  final _Root root;
-  const _RootCard({required this.root});
+  final PhoneticRootInfo root;
+  final VoidCallback onTap;
+  const _RootCard({required this.root, required this.onTap});
 
   @override
   Widget build(BuildContext context) {
+    final toned = PinyinUtil.toTonedPinyin(root.pinyin);
     return Container(
       decoration: BoxDecoration(
         color: AppColors.xuanZhi,
         border: Border.all(color: AppColors.jin.withValues(alpha: 0.5)),
       ),
       child: InkWell(
-        onTap: () {},
+        onTap: onTap,
         child: Padding(
           padding: const EdgeInsets.all(10),
           child: Row(
             children: [
-              SealStamp(text: root.root, size: 52, color: AppColors.zhuHong),
+              SealStamp(text: root.root, size: 48, color: AppColors.zhuHong),
               const SizedBox(width: 10),
               Expanded(
                 child: Column(
@@ -121,35 +211,44 @@ class _RootCard extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
-                      root.pinyin,
+                      toned,
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
                       style: const TextStyle(
-                        fontWeight: FontWeight.w700,
+                        fontWeight: FontWeight.w800,
                         fontSize: 14,
                         color: AppColors.mo,
+                        fontStyle: FontStyle.italic,
                       ),
                     ),
-                    Text(
-                      root.koHanja,
-                      style: const TextStyle(
-                        fontSize: 11,
-                        color: AppColors.moLight,
+                    if (root.ko != null)
+                      Text(
+                        '${root.ko}(${root.root})',
+                        style: const TextStyle(
+                          fontSize: 11,
+                          color: AppColors.moLight,
+                        ),
                       ),
-                    ),
                     const SizedBox(height: 4),
                     Container(
-                      padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
+                      padding:
+                          const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
                       decoration: BoxDecoration(
                         color: AppColors.jin.withValues(alpha: 0.2),
                         border: Border.all(color: AppColors.jin),
                       ),
                       child: Text(
-                        'cluster ${root.clusterCount}',
-                        style: const TextStyle(fontSize: 9, color: AppColors.mo, fontWeight: FontWeight.w700),
+                        '가족 ${root.count}자',
+                        style: const TextStyle(
+                            fontSize: 9,
+                            color: AppColors.mo,
+                            fontWeight: FontWeight.w700),
                       ),
                     ),
                   ],
                 ),
               ),
+              const Icon(Icons.chevron_right, color: AppColors.moLight, size: 18),
             ],
           ),
         ),
