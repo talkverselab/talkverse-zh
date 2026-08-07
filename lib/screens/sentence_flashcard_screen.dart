@@ -10,10 +10,12 @@ import 'episode_screen.dart';
 
 /// 회화 문장 플래시카드.
 /// [meta]가 있으면 해당 에피소드 전체 턴, 없으면 전 레벨 랜덤 20문장.
+/// [initialIndex]로 특정 턴부터 시작할 수 있다 (에피소드 버블 탭 진입).
 /// '알아요'는 UserProgress.learned 에 반영된다.
 class SentenceFlashcardScreen extends StatefulWidget {
   final EpisodeMeta? meta;
-  const SentenceFlashcardScreen({super.key, this.meta});
+  final int initialIndex;
+  const SentenceFlashcardScreen({super.key, this.meta, this.initialIndex = 0});
 
   @override
   State<SentenceFlashcardScreen> createState() =>
@@ -52,6 +54,9 @@ class _SentenceFlashcardScreenState extends State<SentenceFlashcardScreen> {
     if (!mounted) return;
     setState(() {
       _cards = turns;
+      _index = turns.isEmpty
+          ? 0
+          : widget.initialIndex.clamp(0, turns.length - 1);
       _loading = false;
     });
   }

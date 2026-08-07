@@ -44,8 +44,9 @@ class EpisodeCatalog {
     if (_loaded) return;
     for (final level in ['L1', 'L2', 'L3']) {
       try {
-        final raw = await rootBundle
-            .loadString('assets/data/dialogues/north/$level.json');
+        final raw = await rootBundle.loadString(
+          'assets/data/dialogues/north/$level.json',
+        );
         final data = json.decode(raw) as Map<String, dynamic>;
         final units =
             (data['episodes'] as List?) ?? (data['dialogues'] as List?) ?? [];
@@ -89,19 +90,24 @@ class _EpisodeScreenState extends State<EpisodeScreen> {
 
   Future<void> _load() async {
     await ChunkIndexService.instance.ensureLoaded();
-    final turns = await (appDb.select(appDb.turns)
-          ..where((t) =>
-              t.level.equals(widget.meta.level) &
-              t.dialect.equals('north') &
-              t.episodeId.equals(widget.meta.id))
-          ..orderBy([(t) => OrderingTerm.asc(t.num)]))
-        .get();
+    final turns =
+        await (appDb.select(appDb.turns)
+              ..where(
+                (t) =>
+                    t.level.equals(widget.meta.level) &
+                    t.dialect.equals('north') &
+                    t.episodeId.equals(widget.meta.id),
+              )
+              ..orderBy([(t) => OrderingTerm.asc(t.num)]))
+            .get();
     final progress = await appDb.select(appDb.userProgress).get();
     final progressMap = {for (final p in progress) p.turnId: p.learned};
     if (!mounted) return;
     setState(() {
       _turns = turns;
-      _learned.addAll({for (final t in turns) t.id: progressMap[t.id] ?? false});
+      _learned.addAll({
+        for (final t in turns) t.id: progressMap[t.id] ?? false,
+      });
       _loading = false;
     });
   }
@@ -109,7 +115,9 @@ class _EpisodeScreenState extends State<EpisodeScreen> {
   Future<void> _toggleLearned(TurnRow turn) async {
     final now = !(_learned[turn.id] ?? false);
     setState(() => _learned[turn.id] = now);
-    await appDb.into(appDb.userProgress).insertOnConflictUpdate(
+    await appDb
+        .into(appDb.userProgress)
+        .insertOnConflictUpdate(
           UserProgressCompanion(
             turnId: Value(turn.id),
             learned: Value(now),
@@ -133,13 +141,23 @@ class _EpisodeScreenState extends State<EpisodeScreen> {
         title: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            Text('${meta.emoji} ${meta.title}',
-                style: const TextStyle(
-                    color: AppColors.mo, fontSize: 16, fontWeight: FontWeight.w800)),
+            Text(
+              '${meta.emoji} ${meta.title}',
+              style: const TextStyle(
+                color: AppColors.mo,
+                fontSize: 16,
+                fontWeight: FontWeight.w800,
+              ),
+            ),
             const SizedBox(height: 2),
-            Text('${meta.level} · Mark & 小丽',
-                style: TextStyle(
-                    color: AppColors.moLight, fontSize: 10, letterSpacing: 2)),
+            Text(
+              '${meta.level} · Mark & 小丽',
+              style: TextStyle(
+                color: AppColors.moLight,
+                fontSize: 10,
+                letterSpacing: 2,
+              ),
+            ),
           ],
         ),
         actions: [
@@ -172,7 +190,9 @@ class _EpisodeScreenState extends State<EpisodeScreen> {
         ],
       ),
       body: _loading
-          ? const Center(child: CircularProgressIndicator(color: AppColors.zhuHong))
+          ? const Center(
+              child: CircularProgressIndicator(color: AppColors.zhuHong),
+            )
           : Column(
               children: [
                 const GreekKeyDivider(height: 8),
@@ -186,6 +206,18 @@ class _EpisodeScreenState extends State<EpisodeScreen> {
                         turn: t,
                         learned: _learned[t.id] ?? false,
                         onLearnedTap: () => _toggleLearned(t),
+                        onCardTap: () async {
+                          await Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (_) => SentenceFlashcardScreen(
+                                meta: widget.meta,
+                                initialIndex: i,
+                              ),
+                            ),
+                          );
+                          _load();
+                        },
                       );
                     },
                   ),
@@ -200,11 +232,13 @@ class _EpisodeBubble extends StatelessWidget {
   final TurnRow turn;
   final bool learned;
   final VoidCallback onLearnedTap;
+  final VoidCallback? onCardTap;
 
   const _EpisodeBubble({
     required this.turn,
     required this.learned,
     required this.onLearnedTap,
+    this.onCardTap,
   });
 
   @override
@@ -214,88 +248,99 @@ class _EpisodeBubble extends StatelessWidget {
     final bubbleText = isA ? AppColors.xuanZhi : AppColors.mo;
     final zh = turn.zh;
 
-    final bubble = Container(
-      constraints:
-          BoxConstraints(maxWidth: MediaQuery.of(context).size.width * 0.72),
-      padding: const EdgeInsets.all(10),
-      decoration: BoxDecoration(
-        color: bubbleColor,
-        border: Border.all(
-          color: learned ? AppColors.feiCui : AppColors.jinDeep,
-          width: learned ? 1.6 : 0.5,
+    final bubble = GestureDetector(
+      onTap: onCardTap,
+      child: Container(
+        constraints: BoxConstraints(
+          maxWidth: MediaQuery.of(context).size.width * 0.72,
         ),
-      ),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Row(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Expanded(
-                child: SelectableHanziText(
-                  text: zh,
-                  tokens: ChunkIndexService.instance.tokensFor(zh),
-                  chunks: ChunkIndexService.instance.chunkDict,
+        padding: const EdgeInsets.all(10),
+        decoration: BoxDecoration(
+          color: bubbleColor,
+          border: Border.all(
+            color: learned ? AppColors.feiCui : AppColors.jinDeep,
+            width: learned ? 1.6 : 0.5,
+          ),
+        ),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Expanded(
+                  child: SelectableHanziText(
+                    text: zh,
+                    tokens: ChunkIndexService.instance.tokensFor(zh),
+                    chunks: ChunkIndexService.instance.chunkDict,
+                    style: TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.w800,
+                      color: bubbleText,
+                      height: 1.3,
+                    ),
+                  ),
+                ),
+                const SizedBox(width: 6),
+                InkWell(
+                  onTap: () => TtsService.instance.speakAs(
+                    zh,
+                    gender: isA ? 'male' : 'female',
+                  ),
+                  child: Icon(
+                    Icons.volume_up,
+                    size: 16,
+                    color: bubbleText.withValues(alpha: 0.85),
+                  ),
+                ),
+              ],
+            ),
+            if (turn.pinyin != null) ...[
+              const SizedBox(height: 3),
+              Text(
+                turn.pinyin!,
+                style: TextStyle(
+                  fontSize: 11,
+                  color: bubbleText.withValues(alpha: 0.85),
+                  fontStyle: FontStyle.italic,
+                ),
+              ),
+            ],
+            if (turn.ko != null) ...[
+              const SizedBox(height: 4),
+              Container(height: 0.5, color: bubbleText.withValues(alpha: 0.3)),
+              const SizedBox(height: 4),
+              Text(
+                turn.ko!,
+                style: TextStyle(
+                  fontSize: 12,
+                  color: bubbleText.withValues(alpha: 0.95),
+                ),
+              ),
+            ],
+            if (turn.note != null && turn.note!.isNotEmpty) ...[
+              const SizedBox(height: 5),
+              Container(
+                padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 3),
+                decoration: BoxDecoration(
+                  color: AppColors.xuanZhi.withValues(alpha: isA ? 0.18 : 0.55),
+                  border: Border.all(
+                    color: bubbleText.withValues(alpha: 0.35),
+                    width: 0.5,
+                  ),
+                ),
+                child: Text(
+                  '💡 ${turn.note}',
                   style: TextStyle(
-                    fontSize: 18,
-                    fontWeight: FontWeight.w800,
-                    color: bubbleText,
+                    fontSize: 10,
+                    color: bubbleText.withValues(alpha: 0.9),
                     height: 1.3,
                   ),
                 ),
               ),
-              const SizedBox(width: 6),
-              InkWell(
-                onTap: () => TtsService.instance
-                    .speakAs(zh, gender: isA ? 'male' : 'female'),
-                child: Icon(Icons.volume_up,
-                    size: 16, color: bubbleText.withValues(alpha: 0.85)),
-              ),
             ],
-          ),
-          if (turn.pinyin != null) ...[
-            const SizedBox(height: 3),
-            Text(
-              turn.pinyin!,
-              style: TextStyle(
-                fontSize: 11,
-                color: bubbleText.withValues(alpha: 0.85),
-                fontStyle: FontStyle.italic,
-              ),
-            ),
           ],
-          if (turn.ko != null) ...[
-            const SizedBox(height: 4),
-            Container(height: 0.5, color: bubbleText.withValues(alpha: 0.3)),
-            const SizedBox(height: 4),
-            Text(
-              turn.ko!,
-              style:
-                  TextStyle(fontSize: 12, color: bubbleText.withValues(alpha: 0.95)),
-            ),
-          ],
-          if (turn.note != null && turn.note!.isNotEmpty) ...[
-            const SizedBox(height: 5),
-            Container(
-              padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 3),
-              decoration: BoxDecoration(
-                color: AppColors.xuanZhi.withValues(alpha: isA ? 0.18 : 0.55),
-                border: Border.all(
-                  color: bubbleText.withValues(alpha: 0.35),
-                  width: 0.5,
-                ),
-              ),
-              child: Text(
-                '💡 ${turn.note}',
-                style: TextStyle(
-                  fontSize: 10,
-                  color: bubbleText.withValues(alpha: 0.9),
-                  height: 1.3,
-                ),
-              ),
-            ),
-          ],
-        ],
+        ),
       ),
     );
 
@@ -331,7 +376,9 @@ class _EpisodeBubble extends StatelessWidget {
       padding: const EdgeInsets.symmetric(vertical: 4),
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
-        mainAxisAlignment: isA ? MainAxisAlignment.start : MainAxisAlignment.end,
+        mainAxisAlignment: isA
+            ? MainAxisAlignment.start
+            : MainAxisAlignment.end,
         children: isA
             ? [avatar, const SizedBox(width: 6), Flexible(child: bubble)]
             : [Flexible(child: bubble), const SizedBox(width: 6), avatar],
