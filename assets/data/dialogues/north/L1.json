@@ -135,13 +135,13 @@
     {
      "num": 7,
      "speaker": "B",
-     "zh": "真的吗? 你的中文很好!",
-     "pinyin": "Zhēn de ma? Nǐ de zhōngwén hěn hǎo!",
-     "ko": "정말요? 중국어 잘하시네요!",
-     "note": "真的吗 리액션 + 的 소유",
+     "zh": "怪不得! 你的中文很好!",
+     "pinyin": "Guàibude! Nǐ de zhōngwén hěn hǎo!",
+     "ko": "어쩐지! 중국어 잘하시네요!",
+     "note": "怪不得 (어쩐지) + 的 소유",
      "tags": [
       "praise",
-      "particle:吗"
+      "expression:怪不得"
      ]
     },
     {

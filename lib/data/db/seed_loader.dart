@@ -8,8 +8,8 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'app_database.dart';
 
 class SeedLoader {
-  // v3: L2 카오스 챗 + L3 사랑 내러티브 추가 재시딩
-  static const _kSeededKey = 'db_seeded_v3';
+  // v4: L1 ep1#7 대사 수정 (真的吗 → 怪不得)
+  static const _kSeededKey = 'db_seeded_v4';
 
   final AppDatabase db;
   SeedLoader(this.db);
