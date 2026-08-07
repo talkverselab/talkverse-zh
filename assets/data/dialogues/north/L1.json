@@ -123,9 +123,9 @@
     {
      "num": 6,
      "speaker": "A",
-     "zh": "我是韩国人, 在北京工作。",
-     "pinyin": "Wǒ shì Hánguó rén, zài Běijīng gōngzuò.",
-     "ko": "저는 한국 사람이고, 베이징에서 일해요.",
+     "zh": "我是韩国人, 在首尔工作。",
+     "pinyin": "Wǒ shì Hánguó rén, zài Shǒu'ěr gōngzuò.",
+     "ko": "저는 한국 사람이고, 서울에서 일해요.",
      "note": "是 + 在…工作",
      "tags": [
       "self-intro",
@@ -135,13 +135,13 @@
     {
      "num": 7,
      "speaker": "B",
-     "zh": "怪不得! 你的中文很好!",
-     "pinyin": "Guàibude! Nǐ de zhōngwén hěn hǎo!",
-     "ko": "어쩐지! 중국어 잘하시네요!",
-     "note": "怪不得 (어쩐지) + 的 소유",
+     "zh": "不过…… 你的中文很好!",
+     "pinyin": "Búguò…… nǐ de zhōngwén hěn hǎo!",
+     "ko": "근데... 중국어 잘하시네요!",
+     "note": "不过 (그런데, 화제 전환) + 的 소유",
      "tags": [
       "praise",
-      "expression:怪不得"
+      "expression:不过"
      ]
     },
     {
