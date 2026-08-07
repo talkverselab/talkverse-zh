@@ -492,6 +492,19 @@ class HanziInfoSheet extends StatelessWidget {
                             ),
                           ),
                           const SizedBox(height: 6),
+                          if (info?.koHun != null)
+                            Padding(
+                              padding: const EdgeInsets.only(bottom: 4),
+                              child: Text(
+                                info!.koHun!,
+                                style: const TextStyle(
+                                  fontSize: 17,
+                                  fontWeight: FontWeight.w800,
+                                  color: AppColors.zhuHong,
+                                  height: 1.4,
+                                ),
+                              ),
+                            ),
                           if (meaning != null)
                             Text(
                               meaning,
@@ -502,7 +515,7 @@ class HanziInfoSheet extends StatelessWidget {
                                 height: 1.5,
                               ),
                             )
-                          else
+                          else if (info?.koHun == null)
                             const Text('—',
                                 style: TextStyle(fontSize: 14, color: AppColors.moLight)),
                           if (meanings.isNotEmpty) ...[
@@ -965,7 +978,7 @@ class _FamilyTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final meaning = member.info?.meaning;
+    final meaning = member.info?.meaning ?? member.info?.koHun;
     final shortMeaning = (meaning ?? '').split(RegExp(r'[·,()(]')).first.trim();
     return InkWell(
       onTap: onTap,

@@ -71,6 +71,7 @@ flutter:
     - assets/data/grammar/hanzi_info.json
     - assets/data/hanzi/hanzi_stages.json
     - assets/data/hanzi/phonetic_ext.json
+    - assets/data/hanzi/hanzi_ko.json
     - assets/characters/zh_mascot.png
     - assets/characters/zh_mascot_simple.svg
     - assets/characters/emotions/

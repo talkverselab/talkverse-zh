@@ -4,6 +4,7 @@ import 'package:flutter/services.dart' show rootBundle;
 class HanziInfo {
   final String char;
   final String? meaning;
+  final String? koHun; // 한국 훈음 (예: '셀 계')
   final String? phonetic;
   final String? phoneticPinyin;
   final String? semantic;
@@ -11,12 +12,22 @@ class HanziInfo {
   HanziInfo({
     required this.char,
     this.meaning,
+    this.koHun,
     this.phonetic,
     this.phoneticPinyin,
     this.semantic,
   });
 
   bool get isPhonosemantic => phonetic != null && phoneticPinyin != null;
+
+  HanziInfo copyWith({String? koHun}) => HanziInfo(
+        char: char,
+        meaning: meaning,
+        koHun: koHun ?? this.koHun,
+        phonetic: phonetic,
+        phoneticPinyin: phoneticPinyin,
+        semantic: semantic,
+      );
 }
 
 /// 발음부(声旁) 하나의 요약 정보.
@@ -115,6 +126,24 @@ class HanziInfoService {
       _byPhonetic.forEach((p, l) {
         _roots[p] = PhoneticRootInfo(root: p, pinyin: '', count: l.length);
       });
+    }
+
+    // 한국 훈음 (HSK1-5 전수)
+    try {
+      final koRaw =
+          await rootBundle.loadString('assets/data/hanzi/hanzi_ko.json');
+      final ko = json.decode(koRaw) as Map<String, dynamic>;
+      ko.forEach((ch, v) {
+        if (ch.startsWith('_') || v is! String || v.isEmpty) return;
+        final existing = _map[ch];
+        if (existing != null) {
+          _map[ch] = existing.copyWith(koHun: v);
+        } else {
+          _map[ch] = HanziInfo(char: ch, koHun: v);
+        }
+      });
+    } catch (_) {
+      // 훈음 데이터 없으면 생략
     }
     _loaded = true;
   }
