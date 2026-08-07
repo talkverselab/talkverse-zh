@@ -56,6 +56,14 @@ class _SentenceFlashcardScreenState extends State<SentenceFlashcardScreen> {
     });
   }
 
+  void _prev() {
+    if (_index == 0) return;
+    setState(() {
+      _index--;
+      _flipped = false;
+    });
+  }
+
   Future<void> _answer({required bool known}) async {
     final turn = _cards[_index];
     if (known) {
@@ -270,6 +278,23 @@ class _SentenceFlashcardScreenState extends State<SentenceFlashcardScreen> {
           padding: const EdgeInsets.fromLTRB(20, 0, 20, 28),
           child: Row(
             children: [
+              OutlinedButton(
+                style: OutlinedButton.styleFrom(
+                  foregroundColor:
+                      _index == 0 ? AppColors.moLight : AppColors.zhuHong,
+                  side: BorderSide(
+                      color: _index == 0
+                          ? AppColors.moLight.withValues(alpha: 0.4)
+                          : AppColors.zhuHong),
+                  padding: const EdgeInsets.symmetric(
+                      horizontal: 12, vertical: 14),
+                  minimumSize: const Size(0, 0),
+                  shape: const RoundedRectangleBorder(),
+                ),
+                onPressed: _index == 0 ? null : _prev,
+                child: const Icon(Icons.arrow_back, size: 20),
+              ),
+              const SizedBox(width: 10),
               Expanded(
                 child: OutlinedButton(
                   style: OutlinedButton.styleFrom(
