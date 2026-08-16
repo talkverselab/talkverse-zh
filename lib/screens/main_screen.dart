@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import '../core/theme.dart';
 import '../main.dart';
 import '../widgets/chinese_decor.dart';
-import '../widgets/mascot.dart';
 import '../widgets/today_mission.dart';
 import 'chunk_search_screen.dart';
 import 'conversation_screen.dart';
@@ -163,24 +162,6 @@ class HomeScreen extends StatelessWidget {
               ],
             ),
           ),
-          Builder(builder: (ctx) {
-            return ChineseMascot(
-              size: 110,
-              initialPosition: const Offset(250, 540),
-              emotion: MascotEmotion.excited,
-              cycleOnTap: true,
-              onTap: () {
-                ScaffoldMessenger.of(ctx).clearSnackBars();
-                ScaffoldMessenger.of(ctx).showSnackBar(
-                  const SnackBar(
-                    content: Text('🎭 다음 감정으로 — 탭 계속! 끌어서 이동도 가능'),
-                    duration: Duration(milliseconds: 900),
-                    backgroundColor: AppColors.zhuHongDeep,
-                  ),
-                );
-              },
-            );
-          }),
         ],
       ),
     );
