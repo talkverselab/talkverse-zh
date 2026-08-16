@@ -8,8 +8,8 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'app_database.dart';
 
 class SeedLoader {
-  // v4: L1 ep1#7 대사 수정 (真的吗 → 怪不得)
-  static const _kSeededKey = 'db_seeded_v4';
+  // v5: 대화문 전수 검수 반영 (논리·난이도·자연스러움 34건 + 문장부호 통일)
+  static const _kSeededKey = 'db_seeded_v5';
 
   final AppDatabase db;
   SeedLoader(this.db);
