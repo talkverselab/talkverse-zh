@@ -15,7 +15,7 @@ import 'phonetic_roots_screen.dart';
 import 'profile_screen.dart';
 import 'progress_screen.dart';
 import 'tone_matrix_screen.dart';
-import 'word_freq_screen.dart';
+import 'topic_vocab_screen.dart';
 
 class MainScreen extends StatefulWidget {
   const MainScreen({super.key});
@@ -250,8 +250,8 @@ class _MenuGrid extends StatelessWidget {
         builder: (_) => const GrammarLessonScreen(lessonNum: 2)),
       _MenuItem(label: '한자 209', sub: '20×10 + 4지선다', seal: '209', color: const Color(0xFFC62828),
         builder: (_) => const HanziStagesScreen()),
-      _MenuItem(label: '단어', sub: 'Vocabulary', seal: '词频', color: AppColors.feiCui,
-        builder: (_) => const WordFreqScreen()),
+      _MenuItem(label: '단어', sub: '주제별 여행 단어', seal: '词汇', color: AppColors.feiCui,
+        builder: (_) => const TopicVocabScreen()),
       _MenuItem(label: '회화 어휘', sub: 'Conversation', seal: '会话', color: AppColors.jinDeep,
         builder: (_) => const ConversationWordsetScreen()),
       _MenuItem(label: '발음', sub: 'Pronunciation', seal: '声调', color: const Color(0xFF1565C0),

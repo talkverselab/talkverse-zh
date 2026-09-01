@@ -72,3 +72,4 @@ flutter:
     - assets/data/hanzi/hanzi_stages.json
     - assets/data/hanzi/phonetic_ext.json
     - assets/data/hanzi/hanzi_ko.json
+    - assets/data/vocab/travel_topics.json
