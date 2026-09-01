@@ -49,7 +49,8 @@
       "Bash(PYTHONIOENCODING=utf-8 python data/scripts/gen_grammar_l2.py)",
       "Bash(PYTHONIOENCODING=utf-8 python data/scripts/mine_lccc_dialogues.py)",
       "Bash(PYTHONIOENCODING=utf-8 python data/scripts/gen_conv_lccc.py)",
-      "Bash(git commit -m 'feat: 문법 L1+L2 · 한자 209 10단계 · LCCC 실측 회화 · 마스코트 12감정·아이콘 *)"
+      "Bash(git commit -m 'feat: 문법 L1+L2 · 한자 209 10단계 · LCCC 실측 회화 · 마스코트 12감정·아이콘 *)",
+      "Bash(cd *)"
     ]
   }
 }
