@@ -15,7 +15,8 @@ class VocabWord {
   final String ko;
   final String zh;
   final String rd; // 한국 독음
-  VocabWord(this.ko, this.zh, this.rd);
+  final String? ic; // 아이콘 이모지
+  VocabWord(this.ko, this.zh, this.rd, {this.ic});
 }
 
 class VocabSection {
@@ -62,6 +63,7 @@ class VocabCatalog {
                       w['ko'] as String? ?? '',
                       w['zh'] as String? ?? '',
                       w['rd'] as String? ?? '',
+                      ic: w['ic'] as String?,
                     ),
                 ],
               ),
@@ -201,7 +203,10 @@ class _TopicVocabScreenState extends State<TopicVocabScreen> {
                         onTap: () => Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (_) => _ThemeDetailScreen(theme: t)),
+                              builder: (_) => _ThemeDetailScreen(
+                                  theme: t,
+                                  gridMode: widget.asset
+                                      .contains('travel_words'))),
                         ),
                         child: Container(
                           padding: const EdgeInsets.all(12),
@@ -246,10 +251,11 @@ class _TopicVocabScreenState extends State<TopicVocabScreen> {
   }
 }
 
-/// 주제 상세 — 섹션 펼침 목록.
+/// 주제 상세 — 단어는 1×1 그리드(아이콘), 표현은 목록.
 class _ThemeDetailScreen extends StatefulWidget {
   final VocabTheme theme;
-  const _ThemeDetailScreen({required this.theme});
+  final bool gridMode;
+  const _ThemeDetailScreen({required this.theme, this.gridMode = false});
 
   @override
   State<_ThemeDetailScreen> createState() => _ThemeDetailScreenState();
@@ -291,15 +297,219 @@ class _ThemeDetailScreenState extends State<_ThemeDetailScreen> {
         ),
       ),
       body: Builder(builder: (context) {
-        // 세부분류 없이 주제의 전체 단어를 한 목록으로
+        // 세부분류 없이 주제의 전체 단어를 한 화면으로
         final words = [for (final s in t.sections) ...s.words];
-        return ListView.builder(
-          padding: const EdgeInsets.fromLTRB(12, 8, 12, 24),
+        if (!widget.gridMode) {
+          return ListView.builder(
+            padding: const EdgeInsets.fromLTRB(12, 8, 12, 24),
+            itemCount: words.length,
+            itemBuilder: (context, i) =>
+                _WordRow(word: words[i], chunkReady: _chunkReady),
+          );
+        }
+        // 1×1 그리드 (메인 메뉴 스타일) — 단어별 아이콘
+        return GridView.builder(
+          padding: const EdgeInsets.fromLTRB(14, 10, 14, 24),
+          gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+            crossAxisCount: 3,
+            mainAxisSpacing: 9,
+            crossAxisSpacing: 9,
+            childAspectRatio: 0.82,
+          ),
           itemCount: words.length,
-          itemBuilder: (context, i) =>
-              _WordRow(word: words[i], chunkReady: _chunkReady),
+          itemBuilder: (context, i) => _WordTile(
+            word: words[i],
+            fallbackEmoji: t.emoji,
+            chunkReady: _chunkReady,
+          ),
         );
       }),
+    );
+  }
+}
+
+/// 1×1 단어 타일 — 아이콘 + 한자 + 독음 + 뜻. 탭 → 상세 시트(+TTS).
+class _WordTile extends StatelessWidget {
+  final VocabWord word;
+  final String fallbackEmoji;
+  final bool chunkReady;
+  const _WordTile({
+    required this.word,
+    required this.fallbackEmoji,
+    required this.chunkReady,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    var rd = word.rd;
+    var ko = word.ko;
+    if ((rd.isEmpty || ko.isEmpty) && chunkReady) {
+      final ce = CedictService.instance.lookup(word.zh);
+      if (rd.isEmpty) rd = ce?.pinyin ?? '';
+      if (ko.isEmpty) {
+        ko = VocabCatalog.instance.koFor(word.zh) ??
+            (ce != null && ce.meanings.isNotEmpty ? ce.meanings.first : '');
+      }
+    }
+    return InkWell(
+      onTap: () {
+        TtsService.instance.speak(word.zh);
+        showModalBottomSheet(
+          context: context,
+          backgroundColor: AppColors.xuanZhi,
+          isScrollControlled: true,
+          shape: const RoundedRectangleBorder(
+            borderRadius: BorderRadius.vertical(top: Radius.circular(2)),
+          ),
+          builder: (_) => _WordDetailSheet(
+            word: word,
+            rd: rd,
+            ko: ko,
+            emoji: word.ic ?? fallbackEmoji,
+            chunkReady: chunkReady,
+          ),
+        );
+      },
+      child: Container(
+        padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 8),
+        decoration: BoxDecoration(
+          color: AppColors.xuanZhi,
+          border: Border.all(color: AppColors.jin.withValues(alpha: 0.7)),
+        ),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text(word.ic ?? fallbackEmoji,
+                style: const TextStyle(fontSize: 26)),
+            const SizedBox(height: 5),
+            FittedBox(
+              fit: BoxFit.scaleDown,
+              child: Text(
+                word.zh,
+                maxLines: 1,
+                style: const TextStyle(
+                  fontSize: 17,
+                  fontWeight: FontWeight.w900,
+                  color: AppColors.mo,
+                ),
+              ),
+            ),
+            if (rd.isNotEmpty)
+              Text(
+                rd,
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
+                style: const TextStyle(
+                  fontSize: 10,
+                  fontStyle: FontStyle.italic,
+                  color: AppColors.jinDeep,
+                  fontWeight: FontWeight.w700,
+                ),
+              ),
+            if (ko.isNotEmpty)
+              Text(
+                ko,
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
+                style: const TextStyle(
+                  fontSize: 11,
+                  fontWeight: FontWeight.w600,
+                  color: AppColors.mo,
+                ),
+              ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+/// 단어 상세 시트 — 큰 한자(청크·한자 탐색 가능) + TTS.
+class _WordDetailSheet extends StatelessWidget {
+  final VocabWord word;
+  final String rd;
+  final String ko;
+  final String emoji;
+  final bool chunkReady;
+  const _WordDetailSheet({
+    required this.word,
+    required this.rd,
+    required this.ko,
+    required this.emoji,
+    required this.chunkReady,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return SafeArea(
+      child: Padding(
+        padding: const EdgeInsets.fromLTRB(20, 20, 20, 26),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Text(emoji, style: const TextStyle(fontSize: 44)),
+            const SizedBox(height: 10),
+            chunkReady
+                ? SelectableHanziText(
+                    text: word.zh,
+                    tokens: ChunkIndexService.instance.tokensFor(word.zh),
+                    chunks: ChunkIndexService.instance.chunkDict,
+                    style: const TextStyle(
+                      fontSize: 34,
+                      fontWeight: FontWeight.w900,
+                      color: AppColors.mo,
+                      height: 1.3,
+                    ),
+                  )
+                : Text(
+                    word.zh,
+                    style: const TextStyle(
+                      fontSize: 34,
+                      fontWeight: FontWeight.w900,
+                      color: AppColors.mo,
+                    ),
+                  ),
+            if (rd.isNotEmpty) ...[
+              const SizedBox(height: 6),
+              Text(
+                rd,
+                style: const TextStyle(
+                  fontSize: 16,
+                  fontStyle: FontStyle.italic,
+                  fontWeight: FontWeight.w700,
+                  color: AppColors.jinDeep,
+                ),
+              ),
+            ],
+            if (ko.isNotEmpty) ...[
+              const SizedBox(height: 4),
+              Text(
+                ko,
+                textAlign: TextAlign.center,
+                style: const TextStyle(
+                  fontSize: 17,
+                  fontWeight: FontWeight.w700,
+                  color: AppColors.mo,
+                ),
+              ),
+            ],
+            const SizedBox(height: 14),
+            FilledButton.icon(
+              style: FilledButton.styleFrom(
+                backgroundColor: AppColors.zhuHong,
+                foregroundColor: AppColors.xuanZhi,
+                shape: const RoundedRectangleBorder(),
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 26, vertical: 12),
+              ),
+              onPressed: () => TtsService.instance.speak(word.zh),
+              icon: const Icon(Icons.volume_up),
+              label: const Text('다시 듣기',
+                  style: TextStyle(fontWeight: FontWeight.w800)),
+            ),
+          ],
+        ),
+      ),
     );
   }
 }

@@ -1,4 +1,18 @@
 {
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "cd \"C:/Users/Johnjeon/talkverse/zh\" && git add -A && (git diff --cached --quiet || git commit -q -m \"wip: 자동 저장 (Stop hook)\") 2>/dev/null || true",
+            "timeout": 30,
+            "statusMessage": "작업 자동 저장 중..."
+          }
+        ]
+      }
+    ]
+  },
   "permissions": {
     "allow": [
       "Bash(xargs ls -lh)",
