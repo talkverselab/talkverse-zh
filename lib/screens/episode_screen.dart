@@ -30,19 +30,21 @@ class EpisodeCatalog {
   final Map<String, List<EpisodeMeta>> _byLevel = {};
   bool _loaded = false;
 
+  static const List<String> levels = ['L1', 'L2', 'L3', 'L4'];
+
   static const Map<String, String> levelLabels = {
     'L1': 'L1 스토리 — 첫 만남',
     'L2': 'L2 카오스 챗 — 일상',
     'L3': 'L3 내러티브 — 사랑',
+    'L4': 'L4 플러팅 — 먼저 다가가기',
   };
 
   List<EpisodeMeta> forLevel(String level) => _byLevel[level] ?? const [];
-  List<EpisodeMeta> get all =>
-      ['L1', 'L2', 'L3'].expand(forLevel).toList(growable: false);
+  List<EpisodeMeta> get all => levels.expand(forLevel).toList(growable: false);
 
   Future<void> ensureLoaded() async {
     if (_loaded) return;
-    for (final level in ['L1', 'L2', 'L3']) {
+    for (final level in levels) {
       try {
         final raw = await rootBundle.loadString(
           'assets/data/dialogues/north/$level.json',

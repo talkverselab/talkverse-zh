@@ -8,8 +8,8 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'app_database.dart';
 
 class SeedLoader {
-  // v5: 대화문 전수 검수 반영 (논리·난이도·자연스러움 34건 + 문장부호 통일)
-  static const _kSeededKey = 'db_seeded_v5';
+  // v6: L4 플러팅 12편 추가
+  static const _kSeededKey = 'db_seeded_v6';
 
   final AppDatabase db;
   SeedLoader(this.db);
@@ -69,7 +69,7 @@ class SeedLoader {
   /// L1~L3 전체 턴 시딩. L1은 'episodes', L2/L3은 'dialogues' 키 사용.
   Future<void> _seedTurns() async {
     final batch = <Insertable<TurnRow>>[];
-    for (final level in ['L1', 'L2', 'L3']) {
+    for (final level in ['L1', 'L2', 'L3', 'L4']) {
       final Map<String, dynamic> data;
       try {
         final raw = await rootBundle

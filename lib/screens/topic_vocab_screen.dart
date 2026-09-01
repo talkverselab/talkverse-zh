@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show rootBundle;
 
 import '../core/theme.dart';
+import '../services/cedict_service.dart';
 import '../services/chunk_index_service.dart';
 import '../services/tts_service.dart';
 import '../widgets/chinese_decor.dart';
@@ -37,17 +38,15 @@ class VocabCatalog {
   VocabCatalog._();
   static final VocabCatalog instance = VocabCatalog._();
 
-  List<VocabTheme> _themes = [];
-  bool _loaded = false;
+  final Map<String, List<VocabTheme>> _byAsset = {};
 
-  List<VocabTheme> get themes => _themes;
+  List<VocabTheme> themesFor(String asset) => _byAsset[asset] ?? const [];
 
-  Future<void> ensureLoaded() async {
-    if (_loaded) return;
-    final raw =
-        await rootBundle.loadString('assets/data/vocab/travel_topics.json');
+  Future<void> ensureLoaded(String asset) async {
+    if (_byAsset.containsKey(asset)) return;
+    final raw = await rootBundle.loadString(asset);
     final data = json.decode(raw) as Map<String, dynamic>;
-    _themes = [
+    _byAsset[asset] = [
       for (final t in (data['themes'] as List).whereType<Map>())
         VocabTheme(
           t['id'] as String,
@@ -69,13 +68,64 @@ class VocabCatalog {
           ],
         ),
     ];
-    _loaded = true;
+  }
+
+  final Map<String, String> _gloss = {};
+  bool _glossLoaded = false;
+
+  /// zh → 한국어 뜻 (여행 단어·표현에서 수집).
+  String? koFor(String zh) => _gloss[zh];
+
+  Future<void> ensureGloss() async {
+    if (_glossLoaded) return;
+    for (final asset in [
+      'assets/data/vocab/travel_words.json',
+      'assets/data/vocab/travel_expressions.json',
+    ]) {
+      await ensureLoaded(asset);
+      for (final t in themesFor(asset)) {
+        for (final s in t.sections) {
+          for (final w in s.words) {
+            if (w.ko.isNotEmpty) _gloss.putIfAbsent(w.zh, () => w.ko);
+          }
+        }
+      }
+    }
+    _glossLoaded = true;
+  }
+
+  /// 회화 핵심어휘 (FINAL wordset TSV) → 동적 테마.
+  Future<VocabTheme> loadCoreWordset() async {
+    const key = '_core_wordset';
+    if (_byAsset.containsKey(key)) return _byAsset[key]!.first;
+    final raw = await rootBundle
+        .loadString('assets/data/freq/FINAL_wordset_for_conversation_app.tsv');
+    final words = <VocabWord>[];
+    final lines = raw.split('\n');
+    for (var i = 1; i < lines.length; i++) {
+      final c = lines[i].split('\t');
+      if (c.length < 3 || c[0].trim().isEmpty) continue;
+      words.add(VocabWord('', c[0].trim(), ''));
+    }
+    final theme = VocabTheme('core', '회화 핵심어휘', '💬',
+        [VocabSection('회화 핵심어휘', words)]);
+    _byAsset[key] = [theme];
+    return theme;
   }
 }
 
-/// 주제 목록 화면.
+/// 주제 목록 화면 — 단어(words)·표현(expressions) 겸용.
 class TopicVocabScreen extends StatefulWidget {
-  const TopicVocabScreen({super.key});
+  final String title;
+  final String asset;
+  final bool includeCoreWordset; // 회화 핵심어휘 테마 추가 여부
+
+  const TopicVocabScreen({
+    super.key,
+    this.title = '주제별 단어',
+    this.asset = 'assets/data/vocab/travel_words.json',
+    this.includeCoreWordset = false,
+  });
 
   @override
   State<TopicVocabScreen> createState() => _TopicVocabScreenState();
@@ -83,18 +133,31 @@ class TopicVocabScreen extends StatefulWidget {
 
 class _TopicVocabScreenState extends State<TopicVocabScreen> {
   bool _loading = true;
+  List<VocabTheme> _themes = [];
 
   @override
   void initState() {
     super.initState();
-    VocabCatalog.instance.ensureLoaded().then((_) {
-      if (mounted) setState(() => _loading = false);
+    _load();
+  }
+
+  Future<void> _load() async {
+    await VocabCatalog.instance.ensureLoaded(widget.asset);
+    final list =
+        List<VocabTheme>.from(VocabCatalog.instance.themesFor(widget.asset));
+    if (widget.includeCoreWordset) {
+      list.add(await VocabCatalog.instance.loadCoreWordset());
+    }
+    if (!mounted) return;
+    setState(() {
+      _themes = list;
+      _loading = false;
     });
   }
 
   @override
   Widget build(BuildContext context) {
-    final themes = VocabCatalog.instance.themes;
+    final themes = _themes;
     final total = themes.fold(0, (s, t) => s + t.wordCount);
     return Scaffold(
       backgroundColor: AppColors.xuanZhi,
@@ -106,11 +169,11 @@ class _TopicVocabScreenState extends State<TopicVocabScreen> {
         title: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            const Text('주제별 단어',
-                style: TextStyle(
+            Text(widget.title,
+                style: const TextStyle(
                     color: AppColors.mo, fontSize: 16, fontWeight: FontWeight.w800)),
             const SizedBox(height: 2),
-            Text('여행 중국어 · $total단어',
+            Text('여행 중국어 · $total항목',
                 style: TextStyle(
                     color: AppColors.moLight, fontSize: 10, letterSpacing: 2)),
           ],
@@ -227,47 +290,16 @@ class _ThemeDetailScreenState extends State<_ThemeDetailScreen> {
           ],
         ),
       ),
-      body: ListView.builder(
-        padding: const EdgeInsets.fromLTRB(12, 8, 12, 24),
-        itemCount: t.sections.length,
-        itemBuilder: (context, i) {
-          final s = t.sections[i];
-          return Container(
-            margin: const EdgeInsets.only(bottom: 8),
-            decoration: BoxDecoration(
-              color: AppColors.xuanZhi,
-              border: Border.all(color: AppColors.jin.withValues(alpha: 0.6)),
-            ),
-            child: Theme(
-              data: Theme.of(context)
-                  .copyWith(dividerColor: Colors.transparent),
-              child: ExpansionTile(
-                initiallyExpanded: t.sections.length == 1,
-                tilePadding:
-                    const EdgeInsets.symmetric(horizontal: 12, vertical: 2),
-                iconColor: AppColors.zhuHong,
-                collapsedIconColor: AppColors.moLight,
-                title: Text(
-                  s.title,
-                  style: const TextStyle(
-                    fontSize: 14,
-                    fontWeight: FontWeight.w800,
-                    color: AppColors.mo,
-                  ),
-                ),
-                subtitle: Text(
-                  '${s.words.length}단어',
-                  style: const TextStyle(fontSize: 11, color: AppColors.moLight),
-                ),
-                children: [
-                  for (final w in s.words)
-                    _WordRow(word: w, chunkReady: _chunkReady),
-                ],
-              ),
-            ),
-          );
-        },
-      ),
+      body: Builder(builder: (context) {
+        // 세부분류 없이 주제의 전체 단어를 한 목록으로
+        final words = [for (final s in t.sections) ...s.words];
+        return ListView.builder(
+          padding: const EdgeInsets.fromLTRB(12, 8, 12, 24),
+          itemCount: words.length,
+          itemBuilder: (context, i) =>
+              _WordRow(word: words[i], chunkReady: _chunkReady),
+        );
+      }),
     );
   }
 }
@@ -315,23 +347,44 @@ class _WordRow extends StatelessWidget {
                         ),
                       ),
                 const SizedBox(height: 2),
-                Text(
-                  word.rd,
-                  style: const TextStyle(
-                    fontSize: 12,
-                    fontStyle: FontStyle.italic,
-                    color: AppColors.jinDeep,
-                    fontWeight: FontWeight.w700,
-                  ),
-                ),
-                Text(
-                  word.ko,
-                  style: const TextStyle(
-                    fontSize: 13,
-                    fontWeight: FontWeight.w600,
-                    color: AppColors.mo,
-                  ),
-                ),
+                Builder(builder: (context) {
+                  var rd = word.rd;
+                  var ko = word.ko;
+                  if ((rd.isEmpty || ko.isEmpty) && chunkReady) {
+                    final ce = CedictService.instance.lookup(word.zh);
+                    if (rd.isEmpty) rd = ce?.pinyin ?? '';
+                    if (ko.isEmpty) {
+                      ko = VocabCatalog.instance.koFor(word.zh) ??
+                          (ce != null && ce.meanings.isNotEmpty
+                              ? ce.meanings.first
+                              : '');
+                    }
+                  }
+                  return Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      if (rd.isNotEmpty)
+                        Text(
+                          rd,
+                          style: const TextStyle(
+                            fontSize: 12,
+                            fontStyle: FontStyle.italic,
+                            color: AppColors.jinDeep,
+                            fontWeight: FontWeight.w700,
+                          ),
+                        ),
+                      if (ko.isNotEmpty)
+                        Text(
+                          ko,
+                          style: const TextStyle(
+                            fontSize: 13,
+                            fontWeight: FontWeight.w600,
+                            color: AppColors.mo,
+                          ),
+                        ),
+                    ],
+                  );
+                }),
               ],
             ),
           ),

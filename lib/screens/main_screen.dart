@@ -7,7 +7,6 @@ import '../widgets/today_mission.dart';
 import 'chunk_search_screen.dart';
 import 'conversation_screen.dart';
 import 'episode_screen.dart';
-import 'conversation_wordset_screen.dart';
 import 'flashcard_screen.dart';
 import 'grammar_lesson_screen.dart';
 import 'hanzi_stages_screen.dart';
@@ -244,16 +243,16 @@ class _MenuGrid extends StatelessWidget {
     final items = <_MenuItem>[
       _MenuItem(label: '회화', sub: 'Conversation', seal: '会话', color: AppColors.zhuHong,
         builder: (_) => const ConversationScreen()),
-      _MenuItem(label: '문법 L1', sub: '기능어 40×3', seal: '文法', color: const Color(0xFF8B0000),
-        builder: (_) => const GrammarLessonScreen(lessonNum: 1)),
-      _MenuItem(label: '문법 L2', sub: '어기조사·부사·단어', seal: 'L2', color: const Color(0xFFAD1457),
-        builder: (_) => const GrammarLessonScreen(lessonNum: 2)),
-      _MenuItem(label: '한자 209', sub: '20×10 + 4지선다', seal: '209', color: const Color(0xFFC62828),
+      _MenuItem(label: '문법', sub: 'L1 기능어 · L2 어기조사', seal: '文法', color: const Color(0xFF8B0000),
+        builder: (_) => const GrammarMenuScreen()),
+      _MenuItem(label: '한자', sub: '209자 20×10 + 4지선다', seal: '汉字', color: const Color(0xFFC62828),
         builder: (_) => const HanziStagesScreen()),
-      _MenuItem(label: '단어', sub: '주제별 여행 단어', seal: '词汇', color: AppColors.feiCui,
-        builder: (_) => const TopicVocabScreen()),
-      _MenuItem(label: '회화 어휘', sub: 'Conversation', seal: '会话', color: AppColors.jinDeep,
-        builder: (_) => const ConversationWordsetScreen()),
+      _MenuItem(label: '단어', sub: '주제별 + 회화 핵심어휘', seal: '词汇', color: AppColors.feiCui,
+        builder: (_) => const TopicVocabScreen(includeCoreWordset: true)),
+      _MenuItem(label: '표현', sub: 'Expression · 필수표현', seal: '表达', color: AppColors.jinDeep,
+        builder: (_) => const TopicVocabScreen(
+            title: '주제별 표현',
+            asset: 'assets/data/vocab/travel_expressions.json')),
       _MenuItem(label: '발음', sub: 'Pronunciation', seal: '声调', color: const Color(0xFF1565C0),
         builder: (_) => const ToneMatrixScreen()),
       _MenuItem(label: '발음부', sub: 'Phonetic', seal: '声旁', color: const Color(0xFF6A1B9A),
@@ -372,7 +371,7 @@ class _LearnScreenState extends State<LearnScreen> {
         progress.where((p) => p.learned).map((p) => p.turnId).toSet();
 
     final items = <_LessonItem>[];
-    for (final level in ['L1', 'L2', 'L3']) {
+    for (final level in EpisodeCatalog.levels) {
       final metas = EpisodeCatalog.instance.forLevel(level);
       if (metas.isEmpty) continue;
       items.add(_LessonItem.header(

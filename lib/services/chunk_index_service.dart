@@ -11,6 +11,7 @@ class IndexedSentence {
   final String? pinyin;
   final String? ko;
   final String source; // 예: '문법 L1', '회화 (LCCC)', '대화 L1'
+  final String? speaker; // 'A'(남) | 'B'(여) | null
   final List<Map<String, dynamic>> tokens; // [{text, compound}]
 
   IndexedSentence({
@@ -18,6 +19,7 @@ class IndexedSentence {
     this.pinyin,
     this.ko,
     required this.source,
+    this.speaker,
     required this.tokens,
   });
 }
@@ -114,7 +116,7 @@ class ChunkIndexService {
 
   Future<void> _loadDialogues() async {
     for (final dialect in ['north', 'south']) {
-      for (final level in ['L1', 'L2', 'L3']) {
+      for (final level in ['L1', 'L2', 'L3', 'L4']) {
         final Map<String, dynamic> data;
         try {
           final raw =
@@ -135,6 +137,7 @@ class ChunkIndexService {
               pinyin: m['pinyin'] as String?,
               ko: m['ko'] as String?,
               source: '대화 $level${dialect == 'south' ? ' (남방)' : ''}',
+              speaker: m['speaker'] as String?,
               tokens: _segment(zh),
             ));
           }
@@ -165,6 +168,7 @@ class ChunkIndexService {
           pinyin: tm['pinyin'] as String?,
           ko: tm['ko'] as String?,
           source: label == null ? '회화 (LCCC)' : '회화 · $label',
+          speaker: tm['speaker'] as String?,
           tokens: _segment(zh),
         ));
       }

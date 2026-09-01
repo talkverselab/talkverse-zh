@@ -604,3 +604,82 @@ class _ExampleRow extends StatelessWidget {
     );
   }
 }
+
+
+/// 문법 통합 메뉴 — L1/L2 선택.
+class GrammarMenuScreen extends StatelessWidget {
+  const GrammarMenuScreen({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    Widget card(String title, String sub, int lesson, Color color) {
+      return InkWell(
+        onTap: () => Navigator.push(
+          context,
+          MaterialPageRoute(
+              builder: (_) => GrammarLessonScreen(lessonNum: lesson)),
+        ),
+        child: Container(
+          padding: const EdgeInsets.all(18),
+          decoration: BoxDecoration(
+            color: AppColors.xuanZhi,
+            border: Border.all(color: color, width: 1.4),
+          ),
+          child: Row(
+            children: [
+              Container(
+                width: 52,
+                height: 52,
+                alignment: Alignment.center,
+                color: color,
+                child: Text('L$lesson',
+                    style: const TextStyle(
+                        color: AppColors.xuanZhi,
+                        fontSize: 20,
+                        fontWeight: FontWeight.w900)),
+              ),
+              const SizedBox(width: 14),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(title,
+                        style: const TextStyle(
+                            fontSize: 17,
+                            fontWeight: FontWeight.w900,
+                            color: AppColors.mo)),
+                    const SizedBox(height: 3),
+                    Text(sub,
+                        style: const TextStyle(
+                            fontSize: 12, color: AppColors.moLight)),
+                  ],
+                ),
+              ),
+              const Icon(Icons.chevron_right, color: AppColors.moLight),
+            ],
+          ),
+        ),
+      );
+    }
+
+    return Scaffold(
+      backgroundColor: AppColors.xuanZhi,
+      appBar: AppBar(
+        backgroundColor: AppColors.xuanZhi,
+        foregroundColor: AppColors.mo,
+        elevation: 0,
+        centerTitle: true,
+        title: const Text('문법',
+            style: TextStyle(color: AppColors.mo, fontWeight: FontWeight.w800)),
+      ),
+      body: ListView(
+        padding: const EdgeInsets.all(16),
+        children: [
+          card('문법 L1', '기능어 40개 × 3문장 드릴', 1, const Color(0xFF8B0000)),
+          const SizedBox(height: 10),
+          card('문법 L2', '어기조사·부사·단어 확장', 2, const Color(0xFFAD1457)),
+        ],
+      ),
+    );
+  }
+}

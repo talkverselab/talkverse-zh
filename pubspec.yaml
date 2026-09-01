@@ -59,6 +59,7 @@ flutter:
     - assets/data/dialogues/north/L2.json
     - assets/data/dialogues/north/L3.json
     - assets/data/dialogues/north/_meta.json
+    - assets/data/dialogues/north/L4.json
     - assets/data/dialogues/south/L1.json
     - assets/data/dialogues/conv_lccc.json
     - assets/data/hanzi/cliff/hanzi_top500_final.txt
@@ -72,4 +73,5 @@ flutter:
     - assets/data/hanzi/hanzi_stages.json
     - assets/data/hanzi/phonetic_ext.json
     - assets/data/hanzi/hanzi_ko.json
-    - assets/data/vocab/travel_topics.json
+    - assets/data/vocab/travel_words.json
+    - assets/data/vocab/travel_expressions.json

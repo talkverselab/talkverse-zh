@@ -5,6 +5,8 @@ import '../services/cedict_service.dart';
 import '../services/hanzi_info_service.dart';
 import '../services/pinyin_util.dart';
 import '../services/tts_service.dart';
+import '../screens/phonetic_roots_screen.dart';
+import '../screens/topic_vocab_screen.dart';
 
 /// 문장 내 청크·한자를 탭하면 정보 모달 띄움. tokens 기반 (서버 토크나이즈).
 class SelectableHanziText extends StatefulWidget {
@@ -38,6 +40,8 @@ class _SelectableHanziTextState extends State<SelectableHanziText> {
 
   Future<void> _openChunk(String text) async {
     await CedictService.instance.ensureLoaded();
+    await HanziInfoService.instance.ensureLoaded();
+    await VocabCatalog.instance.ensureGloss();
     if (!mounted) return;
     final cedict = CedictService.instance.lookup(text);
     Map<String, dynamic>? chunkData;
@@ -177,7 +181,8 @@ class _ChunkInfoSheetState extends State<_ChunkInfoSheet> {
     final meanings = cedict?.meanings ??
         (chunkData?['meanings'] as List?)?.map((e) => e.toString()).toList() ??
         const [];
-    final ko = chunkData?['ko'] as String?;
+    final ko = (chunkData?['ko'] as String?) ??
+        VocabCatalog.instance.koFor(chunk);
 
     return SafeArea(
       child: Padding(
@@ -335,25 +340,76 @@ class _ChunkInfoSheetState extends State<_ChunkInfoSheet> {
                     spacing: 8,
                     runSpacing: 8,
                     children: chunk.characters.map((c) {
-                      return InkWell(
-                        onTap: () => _openChar(c),
-                        child: Container(
-                          width: 50,
-                          height: 50,
-                          alignment: Alignment.center,
-                          decoration: BoxDecoration(
-                            color: AppColors.zhuHong.withValues(alpha: 0.1),
-                            border: Border.all(color: AppColors.zhuHong, width: 1),
-                          ),
-                          child: Text(
-                            c,
-                            style: const TextStyle(
-                              fontSize: 28,
-                              fontWeight: FontWeight.w900,
-                              color: AppColors.zhuHong,
+                      final info = HanziInfoService.instance.lookup(c);
+                      final hun = info?.koHun;
+                      final phon = info?.phonetic;
+                      return Column(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          InkWell(
+                            onTap: () => _openChar(c),
+                            child: Container(
+                              width: 56,
+                              height: 50,
+                              alignment: Alignment.center,
+                              decoration: BoxDecoration(
+                                color: AppColors.zhuHong.withValues(alpha: 0.1),
+                                border:
+                                    Border.all(color: AppColors.zhuHong, width: 1),
+                              ),
+                              child: Text(
+                                c,
+                                style: const TextStyle(
+                                  fontSize: 28,
+                                  fontWeight: FontWeight.w900,
+                                  color: AppColors.zhuHong,
+                                ),
+                              ),
                             ),
                           ),
-                        ),
+                          if (hun != null)
+                            SizedBox(
+                              width: 62,
+                              child: Padding(
+                                padding: const EdgeInsets.only(top: 2),
+                                child: Text(
+                                  hun,
+                                  maxLines: 1,
+                                  overflow: TextOverflow.ellipsis,
+                                  textAlign: TextAlign.center,
+                                  style: const TextStyle(
+                                      fontSize: 9, color: AppColors.mo),
+                                ),
+                              ),
+                            ),
+                          if (phon != null)
+                            InkWell(
+                              onTap: () => Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (_) => PhoneticRootsScreen(
+                                      focusRoot: phon, fromChar: c),
+                                ),
+                              ),
+                              child: Container(
+                                margin: const EdgeInsets.only(top: 2),
+                                padding: const EdgeInsets.symmetric(
+                                    horizontal: 5, vertical: 1),
+                                decoration: BoxDecoration(
+                                  color: AppColors.jin.withValues(alpha: 0.2),
+                                  border: Border.all(color: AppColors.jin),
+                                ),
+                                child: Text(
+                                  '声旁 $phon →',
+                                  style: const TextStyle(
+                                    fontSize: 9,
+                                    fontWeight: FontWeight.w800,
+                                    color: AppColors.jinDeep,
+                                  ),
+                                ),
+                              ),
+                            ),
+                        ],
                       );
                     }).toList(),
                   ),
@@ -375,20 +431,12 @@ class HanziInfoSheet extends StatelessWidget {
   const HanziInfoSheet({super.key, required this.char, this.info, this.cedict});
 
   Future<void> _openFamily(BuildContext ctx, String phon, String phonPy, String exclude) async {
-    final all = HanziInfoService.instance.charsSharing(phon);
-    final members = <String>[phon, ...all.where((c) => c != phon)];
-    await showModalBottomSheet(
-      context: ctx,
-      backgroundColor: AppColors.xuanZhi,
-      isScrollControlled: true,
-      shape: const RoundedRectangleBorder(
-        borderRadius: BorderRadius.vertical(top: Radius.circular(2)),
-      ),
-      builder: (_) => PhoneticFamilySheet(
-        phonetic: phon,
-        phoneticPinyin: phonPy,
-        members: members,
-        highlight: exclude,
+    // 발음부 메뉴로 이동 — 해당 발음부 가족 자동 오픈, from 한자 하이라이트.
+    // 뒤로가기로 원래 화면 복귀.
+    await Navigator.push(
+      ctx,
+      MaterialPageRoute(
+        builder: (_) => PhoneticRootsScreen(focusRoot: phon, fromChar: exclude),
       ),
     );
   }
@@ -997,14 +1045,30 @@ class _FamilyTile extends StatelessWidget {
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            Text(
-              member.char,
-              style: TextStyle(
-                fontSize: 28,
-                fontWeight: FontWeight.w900,
-                color: member.isCurrent ? AppColors.xuanZhi : AppColors.mo,
-                height: 1,
-              ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(
+                  member.char,
+                  style: TextStyle(
+                    fontSize: 28,
+                    fontWeight: FontWeight.w900,
+                    color: member.isCurrent ? AppColors.xuanZhi : AppColors.mo,
+                    height: 1,
+                  ),
+                ),
+                const SizedBox(width: 3),
+                InkWell(
+                  onTap: () => TtsService.instance.speak(member.char),
+                  child: Icon(
+                    Icons.volume_up,
+                    size: 15,
+                    color: member.isCurrent
+                        ? AppColors.jinBright
+                        : AppColors.zhuHong.withValues(alpha: 0.8),
+                  ),
+                ),
+              ],
             ),
             const SizedBox(height: 2),
             Text(

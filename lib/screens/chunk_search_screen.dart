@@ -326,7 +326,10 @@ class _SentenceTile extends StatelessWidget {
                 icon: const Icon(Icons.volume_up, size: 18, color: AppColors.zhuHong),
                 padding: EdgeInsets.zero,
                 constraints: const BoxConstraints(minWidth: 32, minHeight: 32),
-                onPressed: () => TtsService.instance.speak(s.zh),
+                onPressed: () => s.speaker == null
+                    ? TtsService.instance.speak(s.zh)
+                    : TtsService.instance.speakAs(s.zh,
+                        gender: s.speaker == 'A' ? 'male' : 'female'),
               ),
             ],
           ),

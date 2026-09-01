@@ -65,7 +65,7 @@ class TtsService {
     final male = gender == 'male';
     final voice = male ? _maleVoice : _femaleVoice;
     // 전용 보이스가 있으면 피치는 1.0, 없으면 피치로 성별 구분
-    final pitch = voice != null ? 1.0 : (male ? 0.72 : 1.12);
+    final pitch = voice != null ? 1.0 : (male ? 0.6 : 1.15);
     await _speakWith(text, voice, pitch);
   }
 

@@ -10,7 +10,11 @@ import '../widgets/selectable_hanzi.dart';
 /// 발음부(声旁) 탐색 — HSK1-5 실데이터.
 /// 카드를 탭하면 그 발음부를 공유하는 한자 가족 시트가 열린다.
 class PhoneticRootsScreen extends StatefulWidget {
-  const PhoneticRootsScreen({super.key});
+  /// [focusRoot]가 있으면 진입 시 해당 발음부 가족 시트를 자동으로 연다.
+  /// [fromChar]는 어떤 한자에서 이동해 왔는지 표시(가족에서 하이라이트).
+  final String? focusRoot;
+  final String? fromChar;
+  const PhoneticRootsScreen({super.key, this.focusRoot, this.fromChar});
 
   @override
   State<PhoneticRootsScreen> createState() => _PhoneticRootsScreenState();
@@ -35,6 +39,17 @@ class _PhoneticRootsScreenState extends State<PhoneticRootsScreen> {
       _roots = HanziInfoService.instance.allRoots;
       _loading = false;
     });
+    // focusRoot 자동 오픈 (from 한자 하이라이트)
+    final focus = widget.focusRoot;
+    if (focus != null) {
+      final root = _roots.where((r) => r.root == focus).firstOrNull ??
+          PhoneticRootInfo(
+              root: focus,
+              pinyin: CedictService.instance.lookup(focus)?.pinyin ?? '',
+              count: HanziInfoService.instance.charsSharing(focus).length);
+      WidgetsBinding.instance.addPostFrameCallback(
+          (_) => _openFamily(root, highlight: widget.fromChar ?? ''));
+    }
   }
 
   List<PhoneticRootInfo> get _filtered {
@@ -49,7 +64,7 @@ class _PhoneticRootsScreenState extends State<PhoneticRootsScreen> {
     }).toList();
   }
 
-  Future<void> _openFamily(PhoneticRootInfo root) async {
+  Future<void> _openFamily(PhoneticRootInfo root, {String highlight = ''}) async {
     final members = <String>[
       root.root,
       ...HanziInfoService.instance.charsSharing(root.root)
@@ -73,7 +88,7 @@ class _PhoneticRootsScreenState extends State<PhoneticRootsScreen> {
             phonetic: root.root,
             phoneticPinyin: toned,
             members: members,
-            highlight: '',
+            highlight: highlight,
           ),
         ),
       ),

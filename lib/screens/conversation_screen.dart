@@ -101,7 +101,7 @@ class _ConversationScreenState extends State<ConversationScreen> {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          for (final level in ['L1', 'L2', 'L3'])
+          for (final level in EpisodeCatalog.levels)
             if (catalog.forLevel(level).isNotEmpty) ...[
               Row(
                 children: [
