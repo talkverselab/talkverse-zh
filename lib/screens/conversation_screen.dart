@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show rootBundle;
 
 import '../core/theme.dart';
+import '../services/ko_reading.dart';
 import '../services/tts_service.dart';
 import '../widgets/chinese_decor.dart';
 import '../widgets/selectable_hanzi.dart';
@@ -54,6 +55,7 @@ class _ConversationScreenState extends State<ConversationScreen> {
         foregroundColor: AppColors.mo,
         elevation: 0,
         centerTitle: true,
+        actions: const [KoReadingToggleAction()],
       ),
       body: _loading
           ? const Center(child: CircularProgressIndicator(color: AppColors.zhuHong))
@@ -486,6 +488,13 @@ class _ChatBubble extends StatelessWidget {
                 fontSize: 11,
                 color: bubbleText.withValues(alpha: 0.85),
                 fontStyle: FontStyle.italic,
+              ),
+            ),
+            KoReadingText(
+              turn['pinyin'] as String,
+              style: TextStyle(
+                fontSize: 11,
+                color: bubbleText.withValues(alpha: 0.7),
               ),
             ),
           ],

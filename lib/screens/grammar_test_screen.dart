@@ -5,6 +5,7 @@ import 'package:flutter/services.dart' show rootBundle;
 
 import '../core/theme.dart';
 import '../services/cedict_service.dart';
+import '../services/ko_reading.dart';
 import '../services/tts_service.dart';
 import '../widgets/chinese_decor.dart';
 import '../widgets/selectable_hanzi.dart';
@@ -258,6 +259,7 @@ class _GrammarTestScreenState extends State<GrammarTestScreen> {
         foregroundColor: AppColors.mo,
         elevation: 0,
         actions: [
+          const KoReadingToggleAction(),
           if (_dismissed.isNotEmpty)
             IconButton(
               tooltip: '힌트 되돌리기 (${_dismissed.length})',
@@ -479,6 +481,13 @@ class _GrammarTestScreenState extends State<GrammarTestScreen> {
                               fontSize: 14,
                               color: AppColors.moLight,
                               fontStyle: FontStyle.italic,
+                            ),
+                          ),
+                          KoReadingText(
+                            card.pinyin,
+                            style: const TextStyle(
+                              fontSize: 12,
+                              color: AppColors.moLight,
                             ),
                           ),
                           const SizedBox(height: 10),

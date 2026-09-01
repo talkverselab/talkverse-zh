@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../core/theme.dart';
 import '../services/chunk_index_service.dart';
+import '../services/ko_reading.dart';
 import '../services/tts_service.dart';
 import '../widgets/chinese_decor.dart';
 import '../widgets/selectable_hanzi.dart';
@@ -57,6 +58,7 @@ class _ChunkSearchScreenState extends State<ChunkSearchScreen> {
         elevation: 0,
         title: const Text('청크 검색', style: TextStyle(color: AppColors.mo)),
         centerTitle: true,
+        actions: const [KoReadingToggleAction()],
       ),
       body: Column(
         children: [
@@ -333,7 +335,7 @@ class _SentenceTile extends StatelessWidget {
               ),
             ],
           ),
-          if (s.pinyin != null)
+          if (s.pinyin != null) ...[
             Text(
               s.pinyin!,
               style: const TextStyle(
@@ -342,6 +344,11 @@ class _SentenceTile extends StatelessWidget {
                 color: AppColors.moLight,
               ),
             ),
+            KoReadingText(
+              s.pinyin!,
+              style: const TextStyle(fontSize: 11, color: AppColors.moLight),
+            ),
+          ],
           if (s.ko != null)
             Padding(
               padding: const EdgeInsets.only(top: 2),

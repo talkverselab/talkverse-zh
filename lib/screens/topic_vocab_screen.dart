@@ -2,13 +2,46 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show rootBundle;
+import 'package:shared_preferences/shared_preferences.dart';
 
 import '../core/theme.dart';
 import '../services/cedict_service.dart';
 import '../services/chunk_index_service.dart';
+import '../services/ko_reading.dart';
 import '../services/tts_service.dart';
 import '../widgets/chinese_decor.dart';
 import '../widgets/selectable_hanzi.dart';
+
+/// 외우기 모드: 전체 보기 / 한자·독음 가림 / 뜻 가림.
+enum StudyMode { all, hideZh, hideKo }
+
+/// 외운 단어 저장소 (zh 기준, SharedPreferences 영구 저장).
+class MemorizedStore {
+  MemorizedStore._();
+  static const _key = 'memorized_words';
+  static final Set<String> _set = {};
+  static final ValueNotifier<int> version = ValueNotifier(0);
+  static bool _loaded = false;
+
+  static Future<void> load() async {
+    if (_loaded) return;
+    final p = await SharedPreferences.getInstance();
+    _set.addAll(p.getStringList(_key) ?? const []);
+    _loaded = true;
+    version.value++;
+  }
+
+  static bool contains(String zh) => _set.contains(zh);
+
+  static Future<void> toggle(String zh) async {
+    if (!_set.remove(zh)) _set.add(zh);
+    version.value++;
+    final p = await SharedPreferences.getInstance();
+    await p.setStringList(_key, _set.toList());
+  }
+}
+
+bool _hasLatin(String s) => RegExp(r'[A-Za-z]').hasMatch(s);
 
 /// co-Trip 여행 중국어 — 주제별 단어장.
 class VocabWord {
@@ -263,19 +296,37 @@ class _ThemeDetailScreen extends StatefulWidget {
 
 class _ThemeDetailScreenState extends State<_ThemeDetailScreen> {
   bool _chunkReady = false;
+  StudyMode _mode = StudyMode.all;
 
   @override
   void initState() {
     super.initState();
+    MemorizedStore.load().then((_) {
+      if (mounted) setState(() {});
+    });
     // 한자 탭 탐색용 (백그라운드 로드, 없어도 표시는 됨)
     ChunkIndexService.instance.ensureLoaded().then((_) {
       if (mounted) setState(() => _chunkReady = true);
     });
   }
 
+  void _cycleMode() {
+    setState(() {
+      _mode = StudyMode
+          .values[(_mode.index + 1) % StudyMode.values.length];
+    });
+  }
+
+  String get _modeLabel => switch (_mode) {
+        StudyMode.all => '전체',
+        StudyMode.hideZh => '한자가림',
+        StudyMode.hideKo => '뜻가림',
+      };
+
   @override
   Widget build(BuildContext context) {
     final t = widget.theme;
+    final words = [for (final s in t.sections) ...s.words];
     return Scaffold(
       backgroundColor: AppColors.xuanZhi,
       appBar: AppBar(
@@ -290,21 +341,62 @@ class _ThemeDetailScreenState extends State<_ThemeDetailScreen> {
                 style: const TextStyle(
                     color: AppColors.mo, fontSize: 16, fontWeight: FontWeight.w800)),
             const SizedBox(height: 2),
-            Text('${t.sections.length}편 · ${t.wordCount}단어',
-                style: TextStyle(
-                    color: AppColors.moLight, fontSize: 10, letterSpacing: 2)),
+            ValueListenableBuilder<int>(
+              valueListenable: MemorizedStore.version,
+              builder: (context, _, _) {
+                final done =
+                    words.where((w) => MemorizedStore.contains(w.zh)).length;
+                return Text(
+                  '${t.wordCount}단어 · 외움 $done',
+                  style: TextStyle(
+                      color: AppColors.moLight, fontSize: 10, letterSpacing: 2),
+                );
+              },
+            ),
           ],
         ),
+        actions: [
+          const KoReadingToggleAction(),
+          IconButton(
+            tooltip: '외우기 모드: $_modeLabel (탭하여 전환)',
+            onPressed: _cycleMode,
+            icon: Container(
+              padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 3),
+              decoration: BoxDecoration(
+                border: Border.all(
+                  color: _mode == StudyMode.all
+                      ? AppColors.moLight
+                      : AppColors.zhuHong,
+                ),
+                color: _mode == StudyMode.all
+                    ? null
+                    : AppColors.zhuHong.withValues(alpha: 0.08),
+              ),
+              child: Text(
+                _modeLabel,
+                style: TextStyle(
+                  fontSize: 11,
+                  fontWeight: FontWeight.w900,
+                  color: _mode == StudyMode.all
+                      ? AppColors.moLight
+                      : AppColors.zhuHong,
+                ),
+              ),
+            ),
+          ),
+        ],
       ),
       body: Builder(builder: (context) {
-        // 세부분류 없이 주제의 전체 단어를 한 화면으로
-        final words = [for (final s in t.sections) ...s.words];
         if (!widget.gridMode) {
           return ListView.builder(
             padding: const EdgeInsets.fromLTRB(12, 8, 12, 24),
             itemCount: words.length,
-            itemBuilder: (context, i) =>
-                _WordRow(word: words[i], chunkReady: _chunkReady),
+            itemBuilder: (context, i) => _WordRow(
+              key: ValueKey('${_mode.name}_${words[i].zh}_$i'),
+              word: words[i],
+              chunkReady: _chunkReady,
+              mode: _mode,
+            ),
           );
         }
         // 1×1 그리드 (메인 메뉴 스타일) — 단어별 아이콘
@@ -318,9 +410,11 @@ class _ThemeDetailScreenState extends State<_ThemeDetailScreen> {
           ),
           itemCount: words.length,
           itemBuilder: (context, i) => _WordTile(
+            key: ValueKey('${_mode.name}_${words[i].zh}_$i'),
             word: words[i],
             fallbackEmoji: t.emoji,
             chunkReady: _chunkReady,
+            mode: _mode,
           ),
         );
       }),
@@ -329,21 +423,52 @@ class _ThemeDetailScreenState extends State<_ThemeDetailScreen> {
 }
 
 /// 1×1 단어 타일 — 아이콘 + 한자 + 독음 + 뜻. 탭 → 상세 시트(+TTS).
-class _WordTile extends StatelessWidget {
+/// 외우기 모드에서는 가려진 부분을 탭으로 공개하고, 체크로 외움 표시.
+class _WordTile extends StatefulWidget {
   final VocabWord word;
   final String fallbackEmoji;
   final bool chunkReady;
+  final StudyMode mode;
   const _WordTile({
+    super.key,
     required this.word,
     required this.fallbackEmoji,
     required this.chunkReady,
+    this.mode = StudyMode.all,
   });
 
   @override
+  State<_WordTile> createState() => _WordTileState();
+}
+
+class _WordTileState extends State<_WordTile> {
+  bool _revealed = false;
+
+  void _openSheet(BuildContext context, String rd, String ko) {
+    TtsService.instance.speak(widget.word.zh);
+    showModalBottomSheet(
+      context: context,
+      backgroundColor: AppColors.xuanZhi,
+      isScrollControlled: true,
+      shape: const RoundedRectangleBorder(
+        borderRadius: BorderRadius.vertical(top: Radius.circular(2)),
+      ),
+      builder: (_) => _WordDetailSheet(
+        word: widget.word,
+        rd: rd,
+        ko: ko,
+        emoji: widget.word.ic ?? widget.fallbackEmoji,
+        chunkReady: widget.chunkReady,
+      ),
+    );
+  }
+
+  @override
   Widget build(BuildContext context) {
+    final word = widget.word;
     var rd = word.rd;
     var ko = word.ko;
-    if ((rd.isEmpty || ko.isEmpty) && chunkReady) {
+    if ((rd.isEmpty || ko.isEmpty) && widget.chunkReady) {
       final ce = CedictService.instance.lookup(word.zh);
       if (rd.isEmpty) rd = ce?.pinyin ?? '';
       if (ko.isEmpty) {
@@ -351,75 +476,123 @@ class _WordTile extends StatelessWidget {
             (ce != null && ce.meanings.isNotEmpty ? ce.meanings.first : '');
       }
     }
-    return InkWell(
-      onTap: () {
-        TtsService.instance.speak(word.zh);
-        showModalBottomSheet(
-          context: context,
-          backgroundColor: AppColors.xuanZhi,
-          isScrollControlled: true,
-          shape: const RoundedRectangleBorder(
-            borderRadius: BorderRadius.vertical(top: Radius.circular(2)),
-          ),
-          builder: (_) => _WordDetailSheet(
-            word: word,
-            rd: rd,
-            ko: ko,
-            emoji: word.ic ?? fallbackEmoji,
-            chunkReady: chunkReady,
+    final study = widget.mode != StudyMode.all;
+    final hideZh = widget.mode == StudyMode.hideZh && !_revealed;
+    final hideKo = widget.mode == StudyMode.hideKo && !_revealed;
+
+    return ValueListenableBuilder<int>(
+      valueListenable: MemorizedStore.version,
+      builder: (context, _, _) {
+        final memorized = MemorizedStore.contains(word.zh);
+        return InkWell(
+          onTap: () {
+            if (study && !_revealed) {
+              setState(() => _revealed = true);
+              TtsService.instance.speak(word.zh);
+            } else {
+              _openSheet(context, rd, ko);
+            }
+          },
+          child: Container(
+            padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 8),
+            decoration: BoxDecoration(
+              color: memorized && study
+                  ? AppColors.jin.withValues(alpha: 0.10)
+                  : AppColors.xuanZhi,
+              border: Border.all(
+                color: memorized && study
+                    ? AppColors.zhuHong.withValues(alpha: 0.7)
+                    : AppColors.jin.withValues(alpha: 0.7),
+              ),
+            ),
+            child: Stack(
+              children: [
+                Center(
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      Text(word.ic ?? widget.fallbackEmoji,
+                          style: const TextStyle(fontSize: 26)),
+                      const SizedBox(height: 5),
+                      FittedBox(
+                        fit: BoxFit.scaleDown,
+                        child: Text(
+                          hideZh ? '???' : word.zh,
+                          maxLines: 1,
+                          style: TextStyle(
+                            fontSize: 17,
+                            fontWeight: FontWeight.w900,
+                            color: hideZh ? AppColors.moLight : AppColors.mo,
+                          ),
+                        ),
+                      ),
+                      if (rd.isNotEmpty && !hideZh)
+                        ValueListenableBuilder<bool>(
+                          valueListenable: KoReadingPrefs.show,
+                          builder: (context, koOn, _) {
+                            // rd가 한글독음이면 토글에 따라 숨김,
+                            // 병음이면 항상 표시 + 토글 시 독음 병기
+                            final isPinyin = _hasLatin(rd);
+                            final text = isPinyin
+                                ? (koOn
+                                    ? '$rd ${KoReading.convert(rd)}'
+                                    : rd)
+                                : (koOn ? rd : '');
+                            if (text.isEmpty) return const SizedBox.shrink();
+                            return Text(
+                              text,
+                              maxLines: 1,
+                              overflow: TextOverflow.ellipsis,
+                              style: const TextStyle(
+                                fontSize: 10,
+                                fontStyle: FontStyle.italic,
+                                color: AppColors.jinDeep,
+                                fontWeight: FontWeight.w700,
+                              ),
+                            );
+                          },
+                        ),
+                      if (ko.isNotEmpty)
+                        Text(
+                          hideKo ? '???' : ko,
+                          maxLines: 1,
+                          overflow: TextOverflow.ellipsis,
+                          style: TextStyle(
+                            fontSize: 11,
+                            fontWeight: FontWeight.w600,
+                            color: hideKo ? AppColors.moLight : AppColors.mo,
+                          ),
+                        ),
+                    ],
+                  ),
+                ),
+                if (study || memorized)
+                  Positioned(
+                    top: -6,
+                    right: -6,
+                    child: IconButton(
+                      padding: EdgeInsets.zero,
+                      constraints: const BoxConstraints(
+                          minWidth: 30, minHeight: 30),
+                      tooltip: memorized ? '외움 해제' : '외웠어요',
+                      onPressed: () => MemorizedStore.toggle(word.zh),
+                      icon: Icon(
+                        memorized
+                            ? Icons.check_circle
+                            : Icons.radio_button_unchecked,
+                        size: 18,
+                        color: memorized
+                            ? AppColors.zhuHong
+                            : AppColors.moLight.withValues(alpha: 0.6),
+                      ),
+                    ),
+                  ),
+              ],
+            ),
           ),
         );
       },
-      child: Container(
-        padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 8),
-        decoration: BoxDecoration(
-          color: AppColors.xuanZhi,
-          border: Border.all(color: AppColors.jin.withValues(alpha: 0.7)),
-        ),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Text(word.ic ?? fallbackEmoji,
-                style: const TextStyle(fontSize: 26)),
-            const SizedBox(height: 5),
-            FittedBox(
-              fit: BoxFit.scaleDown,
-              child: Text(
-                word.zh,
-                maxLines: 1,
-                style: const TextStyle(
-                  fontSize: 17,
-                  fontWeight: FontWeight.w900,
-                  color: AppColors.mo,
-                ),
-              ),
-            ),
-            if (rd.isNotEmpty)
-              Text(
-                rd,
-                maxLines: 1,
-                overflow: TextOverflow.ellipsis,
-                style: const TextStyle(
-                  fontSize: 10,
-                  fontStyle: FontStyle.italic,
-                  color: AppColors.jinDeep,
-                  fontWeight: FontWeight.w700,
-                ),
-              ),
-            if (ko.isNotEmpty)
-              Text(
-                ko,
-                maxLines: 1,
-                overflow: TextOverflow.ellipsis,
-                style: const TextStyle(
-                  fontSize: 11,
-                  fontWeight: FontWeight.w600,
-                  color: AppColors.mo,
-                ),
-              ),
-          ],
-        ),
-      ),
     );
   }
 }
@@ -471,14 +644,24 @@ class _WordDetailSheet extends StatelessWidget {
                   ),
             if (rd.isNotEmpty) ...[
               const SizedBox(height: 6),
-              Text(
-                rd,
-                style: const TextStyle(
-                  fontSize: 16,
-                  fontStyle: FontStyle.italic,
-                  fontWeight: FontWeight.w700,
-                  color: AppColors.jinDeep,
-                ),
+              ValueListenableBuilder<bool>(
+                valueListenable: KoReadingPrefs.show,
+                builder: (context, koOn, _) {
+                  final isPinyin = _hasLatin(rd);
+                  final text = isPinyin
+                      ? (koOn ? '$rd ${KoReading.convert(rd)}' : rd)
+                      : (koOn ? rd : '');
+                  if (text.isEmpty) return const SizedBox.shrink();
+                  return Text(
+                    text,
+                    style: const TextStyle(
+                      fontSize: 16,
+                      fontStyle: FontStyle.italic,
+                      fontWeight: FontWeight.w700,
+                      color: AppColors.jinDeep,
+                    ),
+                  );
+                },
               ),
             ],
             if (ko.isNotEmpty) ...[
@@ -514,96 +697,175 @@ class _WordDetailSheet extends StatelessWidget {
   }
 }
 
-class _WordRow extends StatelessWidget {
+class _WordRow extends StatefulWidget {
   final VocabWord word;
   final bool chunkReady;
-  const _WordRow({required this.word, required this.chunkReady});
+  final StudyMode mode;
+  const _WordRow({
+    super.key,
+    required this.word,
+    required this.chunkReady,
+    this.mode = StudyMode.all,
+  });
+
+  @override
+  State<_WordRow> createState() => _WordRowState();
+}
+
+class _WordRowState extends State<_WordRow> {
+  bool _revealed = false;
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.fromLTRB(14, 8, 8, 8),
-      decoration: BoxDecoration(
-        border: Border(
-          top: BorderSide(color: AppColors.jin.withValues(alpha: 0.25)),
-        ),
-      ),
-      child: Row(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Expanded(
-            child: Column(
+    final word = widget.word;
+    final chunkReady = widget.chunkReady;
+    final study = widget.mode != StudyMode.all;
+    final hideZh = widget.mode == StudyMode.hideZh && !_revealed;
+    final hideKo = widget.mode == StudyMode.hideKo && !_revealed;
+
+    return ValueListenableBuilder<int>(
+      valueListenable: MemorizedStore.version,
+      builder: (context, _, _) {
+        final memorized = MemorizedStore.contains(word.zh);
+        return InkWell(
+          onTap: study && !_revealed
+              ? () {
+                  setState(() => _revealed = true);
+                  TtsService.instance.speak(word.zh);
+                }
+              : null,
+          child: Container(
+            padding: const EdgeInsets.fromLTRB(14, 8, 8, 8),
+            decoration: BoxDecoration(
+              color: memorized && study
+                  ? AppColors.jin.withValues(alpha: 0.08)
+                  : null,
+              border: Border(
+                top: BorderSide(color: AppColors.jin.withValues(alpha: 0.25)),
+              ),
+            ),
+            child: Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                chunkReady
-                    ? SelectableHanziText(
-                        text: word.zh,
-                        tokens: ChunkIndexService.instance.tokensFor(word.zh),
-                        chunks: ChunkIndexService.instance.chunkDict,
-                        style: const TextStyle(
-                          fontSize: 19,
-                          fontWeight: FontWeight.w800,
-                          color: AppColors.mo,
-                          height: 1.3,
-                        ),
-                      )
-                    : Text(
-                        word.zh,
-                        style: const TextStyle(
-                          fontSize: 19,
-                          fontWeight: FontWeight.w800,
-                          color: AppColors.mo,
-                          height: 1.3,
-                        ),
-                      ),
-                const SizedBox(height: 2),
-                Builder(builder: (context) {
-                  var rd = word.rd;
-                  var ko = word.ko;
-                  if ((rd.isEmpty || ko.isEmpty) && chunkReady) {
-                    final ce = CedictService.instance.lookup(word.zh);
-                    if (rd.isEmpty) rd = ce?.pinyin ?? '';
-                    if (ko.isEmpty) {
-                      ko = VocabCatalog.instance.koFor(word.zh) ??
-                          (ce != null && ce.meanings.isNotEmpty
-                              ? ce.meanings.first
-                              : '');
-                    }
-                  }
-                  return Column(
+                Expanded(
+                  child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      if (rd.isNotEmpty)
-                        Text(
-                          rd,
-                          style: const TextStyle(
-                            fontSize: 12,
-                            fontStyle: FontStyle.italic,
-                            color: AppColors.jinDeep,
-                            fontWeight: FontWeight.w700,
-                          ),
-                        ),
-                      if (ko.isNotEmpty)
-                        Text(
-                          ko,
-                          style: const TextStyle(
-                            fontSize: 13,
-                            fontWeight: FontWeight.w600,
-                            color: AppColors.mo,
-                          ),
-                        ),
+                      hideZh
+                          ? const Text(
+                              '???',
+                              style: TextStyle(
+                                fontSize: 19,
+                                fontWeight: FontWeight.w800,
+                                color: AppColors.moLight,
+                                height: 1.3,
+                              ),
+                            )
+                          : chunkReady
+                              ? SelectableHanziText(
+                                  text: word.zh,
+                                  tokens: ChunkIndexService.instance
+                                      .tokensFor(word.zh),
+                                  chunks:
+                                      ChunkIndexService.instance.chunkDict,
+                                  style: const TextStyle(
+                                    fontSize: 19,
+                                    fontWeight: FontWeight.w800,
+                                    color: AppColors.mo,
+                                    height: 1.3,
+                                  ),
+                                )
+                              : Text(
+                                  word.zh,
+                                  style: const TextStyle(
+                                    fontSize: 19,
+                                    fontWeight: FontWeight.w800,
+                                    color: AppColors.mo,
+                                    height: 1.3,
+                                  ),
+                                ),
+                      const SizedBox(height: 2),
+                      Builder(builder: (context) {
+                        var rd = word.rd;
+                        var ko = word.ko;
+                        if ((rd.isEmpty || ko.isEmpty) && chunkReady) {
+                          final ce = CedictService.instance.lookup(word.zh);
+                          if (rd.isEmpty) rd = ce?.pinyin ?? '';
+                          if (ko.isEmpty) {
+                            ko = VocabCatalog.instance.koFor(word.zh) ??
+                                (ce != null && ce.meanings.isNotEmpty
+                                    ? ce.meanings.first
+                                    : '');
+                          }
+                        }
+                        return Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            if (rd.isNotEmpty && !hideZh)
+                              ValueListenableBuilder<bool>(
+                                valueListenable: KoReadingPrefs.show,
+                                builder: (context, koOn, _) {
+                                  final isPinyin = _hasLatin(rd);
+                                  final text = isPinyin
+                                      ? (koOn
+                                          ? '$rd ${KoReading.convert(rd)}'
+                                          : rd)
+                                      : (koOn ? rd : '');
+                                  if (text.isEmpty) {
+                                    return const SizedBox.shrink();
+                                  }
+                                  return Text(
+                                    text,
+                                    style: const TextStyle(
+                                      fontSize: 12,
+                                      fontStyle: FontStyle.italic,
+                                      color: AppColors.jinDeep,
+                                      fontWeight: FontWeight.w700,
+                                    ),
+                                  );
+                                },
+                              ),
+                            if (ko.isNotEmpty)
+                              Text(
+                                hideKo ? '???' : ko,
+                                style: TextStyle(
+                                  fontSize: 13,
+                                  fontWeight: FontWeight.w600,
+                                  color: hideKo
+                                      ? AppColors.moLight
+                                      : AppColors.mo,
+                                ),
+                              ),
+                          ],
+                        );
+                      }),
                     ],
-                  );
-                }),
+                  ),
+                ),
+                if (study || memorized)
+                  IconButton(
+                    tooltip: memorized ? '외움 해제' : '외웠어요',
+                    icon: Icon(
+                      memorized
+                          ? Icons.check_circle
+                          : Icons.radio_button_unchecked,
+                      size: 20,
+                      color: memorized
+                          ? AppColors.zhuHong
+                          : AppColors.moLight.withValues(alpha: 0.6),
+                    ),
+                    onPressed: () => MemorizedStore.toggle(word.zh),
+                  ),
+                IconButton(
+                  icon: const Icon(Icons.volume_up,
+                      size: 20, color: AppColors.zhuHong),
+                  onPressed: () => TtsService.instance.speak(word.zh),
+                ),
               ],
             ),
           ),
-          IconButton(
-            icon: const Icon(Icons.volume_up, size: 20, color: AppColors.zhuHong),
-            onPressed: () => TtsService.instance.speak(word.zh),
-          ),
-        ],
-      ),
+        );
+      },
     );
   }
 }

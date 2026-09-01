@@ -8,6 +8,7 @@ import '../core/theme.dart';
 import '../data/db/app_database.dart';
 import '../main.dart';
 import '../services/chunk_index_service.dart';
+import '../services/ko_reading.dart';
 import '../services/tts_service.dart';
 import '../widgets/chinese_decor.dart';
 import '../widgets/selectable_hanzi.dart';
@@ -163,6 +164,7 @@ class _EpisodeScreenState extends State<EpisodeScreen> {
           ],
         ),
         actions: [
+          const KoReadingToggleAction(),
           IconButton(
             tooltip: '이 에피소드 플래시카드',
             icon: const Icon(Icons.style, color: AppColors.zhuHong),
@@ -305,6 +307,13 @@ class _EpisodeBubble extends StatelessWidget {
                   fontSize: 11,
                   color: bubbleText.withValues(alpha: 0.85),
                   fontStyle: FontStyle.italic,
+                ),
+              ),
+              KoReadingText(
+                turn.pinyin!,
+                style: TextStyle(
+                  fontSize: 11,
+                  color: bubbleText.withValues(alpha: 0.7),
                 ),
               ),
             ],

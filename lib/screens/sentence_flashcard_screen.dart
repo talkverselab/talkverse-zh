@@ -5,6 +5,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import '../core/theme.dart';
 import '../data/db/app_database.dart';
 import '../main.dart';
+import '../services/ko_reading.dart';
 import '../services/tts_service.dart';
 import '../widgets/chinese_decor.dart';
 import 'episode_screen.dart';
@@ -162,6 +163,7 @@ class _SentenceFlashcardScreenState extends State<SentenceFlashcardScreen> {
           ],
         ),
         actions: [
+          const KoReadingToggleAction(),
           IconButton(
             tooltip: _koFirst ? '한국어 먼저 (탭: 중국어 먼저)' : '중국어 먼저 (탭: 한국어 먼저)',
             onPressed: _toggleDirection,
@@ -295,7 +297,7 @@ class _SentenceFlashcardScreenState extends State<SentenceFlashcardScreen> {
                           ),
                         ),
                         const SizedBox(height: 12),
-                        if (turn.pinyin != null)
+                        if (turn.pinyin != null) ...[
                           Text(
                             turn.pinyin!,
                             textAlign: TextAlign.center,
@@ -306,6 +308,14 @@ class _SentenceFlashcardScreenState extends State<SentenceFlashcardScreen> {
                               color: AppColors.zhuHong,
                             ),
                           ),
+                          KoReadingText(
+                            turn.pinyin!,
+                            style: TextStyle(
+                              fontSize: 13,
+                              color: AppColors.moLight,
+                            ),
+                          ),
+                        ],
                         if (_flipped && turn.ko != null) ...[
                           const SizedBox(height: 8),
                           Text(
@@ -339,14 +349,19 @@ class _SentenceFlashcardScreenState extends State<SentenceFlashcardScreen> {
                               border: Border.all(
                                   color: AppColors.jin.withValues(alpha: 0.7)),
                             ),
-                            child: Text(
-                              '💡 ${turn.pinyin}',
-                              textAlign: TextAlign.center,
-                              style: const TextStyle(
-                                fontSize: 14,
-                                fontStyle: FontStyle.italic,
-                                fontWeight: FontWeight.w700,
-                                color: AppColors.jinDeep,
+                            child: ValueListenableBuilder<bool>(
+                              valueListenable: KoReadingPrefs.show,
+                              builder: (context, koOn, _) => Text(
+                                koOn
+                                    ? '💡 ${turn.pinyin}\n${KoReading.convert(turn.pinyin!)}'
+                                    : '💡 ${turn.pinyin}',
+                                textAlign: TextAlign.center,
+                                style: const TextStyle(
+                                  fontSize: 14,
+                                  fontStyle: FontStyle.italic,
+                                  fontWeight: FontWeight.w700,
+                                  color: AppColors.jinDeep,
+                                ),
                               ),
                             ),
                           ),

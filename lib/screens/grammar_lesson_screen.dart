@@ -5,6 +5,7 @@ import 'package:flutter/services.dart' show rootBundle;
 import 'package:flutter/services.dart' show Clipboard, ClipboardData;
 
 import '../core/theme.dart';
+import '../services/ko_reading.dart';
 import '../services/memo_service.dart';
 import '../services/tts_service.dart';
 import '../widgets/chinese_decor.dart';
@@ -136,6 +137,7 @@ class _GrammarLessonScreenState extends State<GrammarLessonScreen> {
         elevation: 0,
         centerTitle: true,
         actions: [
+          const KoReadingToggleAction(),
           IconButton(
             tooltip: '플래시카드 테스트',
             icon: const Icon(Icons.quiz_outlined),
@@ -566,6 +568,10 @@ class _ExampleRow extends StatelessWidget {
                     color: AppColors.moLight,
                     fontStyle: FontStyle.italic,
                   ),
+                ),
+                KoReadingText(
+                  pinyin,
+                  style: const TextStyle(fontSize: 11, color: AppColors.moLight),
                 ),
                 const SizedBox(height: 3),
                 Text(
