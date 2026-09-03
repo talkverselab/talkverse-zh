@@ -475,19 +475,12 @@ class _GrammarTestScreenState extends State<GrammarTestScreen> {
                             ),
                           ),
                           const SizedBox(height: 6),
-                          Text(
+                          KoReadingText(
                             card.pinyin,
                             style: const TextStyle(
                               fontSize: 14,
                               color: AppColors.moLight,
                               fontStyle: FontStyle.italic,
-                            ),
-                          ),
-                          KoReadingText(
-                            card.pinyin,
-                            style: const TextStyle(
-                              fontSize: 12,
-                              color: AppColors.moLight,
                             ),
                           ),
                           const SizedBox(height: 10),

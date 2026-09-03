@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import '../core/theme.dart';
 import '../services/cedict_service.dart';
 import '../services/hanzi_info_service.dart';
-import '../services/ko_reading.dart';
 import '../services/pinyin_util.dart';
 import '../services/tts_service.dart';
 import '../screens/phonetic_roots_screen.dart';
@@ -242,11 +241,6 @@ class _ChunkInfoSheetState extends State<_ChunkInfoSheet> {
                             color: AppColors.mo,
                             fontStyle: FontStyle.italic,
                           ),
-                        ),
-                        KoReadingText(
-                          pinyin,
-                          style: const TextStyle(
-                              fontSize: 13, color: AppColors.moLight),
                         ),
                       ],
                     ],
@@ -498,11 +492,6 @@ class HanziInfoSheet extends StatelessWidget {
                             color: AppColors.mo,
                             fontStyle: FontStyle.italic,
                           ),
-                        ),
-                        KoReadingText(
-                          pinyin,
-                          style: const TextStyle(
-                              fontSize: 14, color: AppColors.moLight),
                         ),
                       ],
                       const SizedBox(height: 6),

@@ -482,19 +482,12 @@ class _ChatBubble extends StatelessWidget {
           ),
           if (turn['pinyin'] != null) ...[
             const SizedBox(height: 3),
-            Text(
+            KoReadingText(
               turn['pinyin'] as String,
               style: TextStyle(
                 fontSize: 11,
                 color: bubbleText.withValues(alpha: 0.85),
                 fontStyle: FontStyle.italic,
-              ),
-            ),
-            KoReadingText(
-              turn['pinyin'] as String,
-              style: TextStyle(
-                fontSize: 11,
-                color: bubbleText.withValues(alpha: 0.7),
               ),
             ),
           ],

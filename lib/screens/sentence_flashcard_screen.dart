@@ -297,8 +297,8 @@ class _SentenceFlashcardScreenState extends State<SentenceFlashcardScreen> {
                           ),
                         ),
                         const SizedBox(height: 12),
-                        if (turn.pinyin != null) ...[
-                          Text(
+                        if (turn.pinyin != null)
+                          KoReadingText(
                             turn.pinyin!,
                             textAlign: TextAlign.center,
                             style: const TextStyle(
@@ -308,14 +308,6 @@ class _SentenceFlashcardScreenState extends State<SentenceFlashcardScreen> {
                               color: AppColors.zhuHong,
                             ),
                           ),
-                          KoReadingText(
-                            turn.pinyin!,
-                            style: TextStyle(
-                              fontSize: 13,
-                              color: AppColors.moLight,
-                            ),
-                          ),
-                        ],
                         if (_flipped && turn.ko != null) ...[
                           const SizedBox(height: 8),
                           Text(
@@ -349,19 +341,14 @@ class _SentenceFlashcardScreenState extends State<SentenceFlashcardScreen> {
                               border: Border.all(
                                   color: AppColors.jin.withValues(alpha: 0.7)),
                             ),
-                            child: ValueListenableBuilder<bool>(
-                              valueListenable: KoReadingPrefs.show,
-                              builder: (context, koOn, _) => Text(
-                                koOn
-                                    ? '💡 ${turn.pinyin}\n${KoReading.convert(turn.pinyin!)}'
-                                    : '💡 ${turn.pinyin}',
-                                textAlign: TextAlign.center,
-                                style: const TextStyle(
-                                  fontSize: 14,
-                                  fontStyle: FontStyle.italic,
-                                  fontWeight: FontWeight.w700,
-                                  color: AppColors.jinDeep,
-                                ),
+                            child: Text(
+                              '💡 ${turn.pinyin}',
+                              textAlign: TextAlign.center,
+                              style: const TextStyle(
+                                fontSize: 14,
+                                fontStyle: FontStyle.italic,
+                                fontWeight: FontWeight.w700,
+                                color: AppColors.jinDeep,
                               ),
                             ),
                           ),

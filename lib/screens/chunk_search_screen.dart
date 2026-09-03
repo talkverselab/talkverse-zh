@@ -335,8 +335,8 @@ class _SentenceTile extends StatelessWidget {
               ),
             ],
           ),
-          if (s.pinyin != null) ...[
-            Text(
+          if (s.pinyin != null)
+            KoReadingText(
               s.pinyin!,
               style: const TextStyle(
                 fontSize: 12,
@@ -344,11 +344,6 @@ class _SentenceTile extends StatelessWidget {
                 color: AppColors.moLight,
               ),
             ),
-            KoReadingText(
-              s.pinyin!,
-              style: const TextStyle(fontSize: 11, color: AppColors.moLight),
-            ),
-          ],
           if (s.ko != null)
             Padding(
               padding: const EdgeInsets.only(top: 2),

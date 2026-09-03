@@ -561,17 +561,13 @@ class _ExampleRow extends StatelessWidget {
               children: [
                 SelectableHanziText(text: zh, tokens: tokens, chunks: chunks),
                 const SizedBox(height: 3),
-                Text(
+                KoReadingText(
                   pinyin,
                   style: const TextStyle(
                     fontSize: 12,
                     color: AppColors.moLight,
                     fontStyle: FontStyle.italic,
                   ),
-                ),
-                KoReadingText(
-                  pinyin,
-                  style: const TextStyle(fontSize: 11, color: AppColors.moLight),
                 ),
                 const SizedBox(height: 3),
                 Text(

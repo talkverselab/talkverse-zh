@@ -41,7 +41,6 @@ class MemorizedStore {
   }
 }
 
-bool _hasLatin(String s) => RegExp(r'[A-Za-z]').hasMatch(s);
 
 /// co-Trip 여행 중국어 — 주제별 단어장.
 class VocabWord {
@@ -528,30 +527,16 @@ class _WordTileState extends State<_WordTile> {
                         ),
                       ),
                       if (rd.isNotEmpty && !hideZh)
-                        ValueListenableBuilder<bool>(
-                          valueListenable: KoReadingPrefs.show,
-                          builder: (context, koOn, _) {
-                            // rd가 한글독음이면 토글에 따라 숨김,
-                            // 병음이면 항상 표시 + 토글 시 독음 병기
-                            final isPinyin = _hasLatin(rd);
-                            final text = isPinyin
-                                ? (koOn
-                                    ? '$rd ${KoReading.convert(rd)}'
-                                    : rd)
-                                : (koOn ? rd : '');
-                            if (text.isEmpty) return const SizedBox.shrink();
-                            return Text(
-                              text,
-                              maxLines: 1,
-                              overflow: TextOverflow.ellipsis,
-                              style: const TextStyle(
-                                fontSize: 10,
-                                fontStyle: FontStyle.italic,
-                                color: AppColors.jinDeep,
-                                fontWeight: FontWeight.w700,
-                              ),
-                            );
-                          },
+                        KoReadingText(
+                          rd,
+                          maxLines: 1,
+                          overflow: TextOverflow.ellipsis,
+                          style: const TextStyle(
+                            fontSize: 10,
+                            fontStyle: FontStyle.italic,
+                            color: AppColors.jinDeep,
+                            fontWeight: FontWeight.w700,
+                          ),
                         ),
                       if (ko.isNotEmpty)
                         Text(
@@ -644,24 +629,14 @@ class _WordDetailSheet extends StatelessWidget {
                   ),
             if (rd.isNotEmpty) ...[
               const SizedBox(height: 6),
-              ValueListenableBuilder<bool>(
-                valueListenable: KoReadingPrefs.show,
-                builder: (context, koOn, _) {
-                  final isPinyin = _hasLatin(rd);
-                  final text = isPinyin
-                      ? (koOn ? '$rd ${KoReading.convert(rd)}' : rd)
-                      : (koOn ? rd : '');
-                  if (text.isEmpty) return const SizedBox.shrink();
-                  return Text(
-                    text,
-                    style: const TextStyle(
-                      fontSize: 16,
-                      fontStyle: FontStyle.italic,
-                      fontWeight: FontWeight.w700,
-                      color: AppColors.jinDeep,
-                    ),
-                  );
-                },
+              KoReadingText(
+                rd,
+                style: const TextStyle(
+                  fontSize: 16,
+                  fontStyle: FontStyle.italic,
+                  fontWeight: FontWeight.w700,
+                  color: AppColors.jinDeep,
+                ),
               ),
             ],
             if (ko.isNotEmpty) ...[
@@ -802,28 +777,14 @@ class _WordRowState extends State<_WordRow> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             if (rd.isNotEmpty && !hideZh)
-                              ValueListenableBuilder<bool>(
-                                valueListenable: KoReadingPrefs.show,
-                                builder: (context, koOn, _) {
-                                  final isPinyin = _hasLatin(rd);
-                                  final text = isPinyin
-                                      ? (koOn
-                                          ? '$rd ${KoReading.convert(rd)}'
-                                          : rd)
-                                      : (koOn ? rd : '');
-                                  if (text.isEmpty) {
-                                    return const SizedBox.shrink();
-                                  }
-                                  return Text(
-                                    text,
-                                    style: const TextStyle(
-                                      fontSize: 12,
-                                      fontStyle: FontStyle.italic,
-                                      color: AppColors.jinDeep,
-                                      fontWeight: FontWeight.w700,
-                                    ),
-                                  );
-                                },
+                              KoReadingText(
+                                rd,
+                                style: const TextStyle(
+                                  fontSize: 12,
+                                  fontStyle: FontStyle.italic,
+                                  color: AppColors.jinDeep,
+                                  fontWeight: FontWeight.w700,
+                                ),
                               ),
                             if (ko.isNotEmpty)
                               Text(

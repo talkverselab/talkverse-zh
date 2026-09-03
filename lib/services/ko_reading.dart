@@ -1,73 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-import 'pinyin_hangul_map.dart';
-import 'pinyin_util.dart';
-
-/// 병음 → 한글독음 변환 + 전역 표시 설정.
-class KoReading {
-  KoReading._();
-
-  static int? _maxKeyLen;
-
-  /// 성조 병음 문자열을 한글독음으로 변환.
-  /// 'Nǐ hǎo ma？' → '니 하오 마？'
-  static String convert(String pinyin) {
-    _maxKeyLen ??= pinyinHangulMap.keys
-        .fold<int>(0, (m, k) => k.length > m ? k.length : m);
-    final buf = StringBuffer();
-    // 단어 단위(공백/어포스트로피 구분) 처리, 나머지 문자는 그대로 통과
-    final tokens = pinyin.split(RegExp(r"[\s'’]+"));
-    var first = true;
-    for (final token in tokens) {
-      if (token.isEmpty) continue;
-      if (!first) buf.write(' ');
-      first = false;
-      buf.write(_convertWord(token));
-    }
-    return buf.toString();
-  }
-
-  static String _convertWord(String word) {
-    // 성조 제거 + ü→v 정규화 + 숫자 성조(ni3) 제거.
-    // 라틴 이외 문자(문장부호 등)는 그대로 통과
-    final base = PinyinUtil.stripTones(word)
-        .replaceAll('u:', 'v')
-        .replaceAll('ü', 'v')
-        .replaceAll(RegExp(r'[1-5]'), '');
-    final buf = StringBuffer();
-    var i = 0;
-    while (i < base.length) {
-      final c = base[i];
-      if (!RegExp(r'[a-z]').hasMatch(c)) {
-        buf.write(c);
-        i++;
-        continue;
-      }
-      // 최장 일치 음절 탐색
-      var matched = false;
-      final maxLen = _maxKeyLen!;
-      for (var len = maxLen; len >= 1; len--) {
-        if (i + len > base.length) continue;
-        final seg = base.substring(i, i + len);
-        final ko = pinyinHangulMap[seg];
-        if (ko != null) {
-          buf.write(ko);
-          i += len;
-          matched = true;
-          break;
-        }
-      }
-      if (!matched) {
-        buf.write(c);
-        i++;
-      }
-    }
-    return buf.toString();
-  }
-}
-
-/// 한글독음 표시/숨김 전역 설정 (모든 메뉴 공용).
+/// 발음 표기(성조 병음) 표시/숨김 전역 설정 — 모든 메뉴 공용.
+/// (구 한글독음 토글: 2026-09-03 사용자 요청으로 표기를 성조 병음으로 전환)
 class KoReadingPrefs {
   KoReadingPrefs._();
 
@@ -86,7 +21,7 @@ class KoReadingPrefs {
   }
 }
 
-/// 앱바용 한글독음 토글 버튼 — 모든 메뉴 공통.
+/// 앱바용 병음 토글 버튼 — 모든 메뉴 공통.
 class KoReadingToggleAction extends StatelessWidget {
   const KoReadingToggleAction({super.key});
 
@@ -95,7 +30,7 @@ class KoReadingToggleAction extends StatelessWidget {
     return ValueListenableBuilder<bool>(
       valueListenable: KoReadingPrefs.show,
       builder: (context, on, _) => IconButton(
-        tooltip: on ? '한글독음 숨기기' : '한글독음 표시',
+        tooltip: on ? '병음 숨기기' : '병음 표시',
         onPressed: KoReadingPrefs.toggle,
         icon: Container(
           padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
@@ -107,7 +42,7 @@ class KoReadingToggleAction extends StatelessWidget {
             borderRadius: BorderRadius.circular(6),
           ),
           child: Text(
-            '한',
+            '拼',
             style: TextStyle(
               fontSize: 14,
               fontWeight: FontWeight.w700,
@@ -121,12 +56,22 @@ class KoReadingToggleAction extends StatelessWidget {
   }
 }
 
-/// 병음 아래 붙는 독음 텍스트 — show가 꺼져 있으면 빈 위젯.
+/// 발음 표기(병음) 텍스트 — 전역 설정이 꺼져 있으면 빈 위젯.
 class KoReadingText extends StatelessWidget {
-  const KoReadingText(this.pinyin, {super.key, this.style});
+  const KoReadingText(
+    this.reading, {
+    super.key,
+    this.style,
+    this.textAlign,
+    this.maxLines,
+    this.overflow,
+  });
 
-  final String pinyin;
+  final String reading;
   final TextStyle? style;
+  final TextAlign? textAlign;
+  final int? maxLines;
+  final TextOverflow? overflow;
 
   @override
   Widget build(BuildContext context) {
@@ -134,11 +79,11 @@ class KoReadingText extends StatelessWidget {
       valueListenable: KoReadingPrefs.show,
       builder: (context, on, _) {
         if (!on) return const SizedBox.shrink();
-        return Text(
-          KoReading.convert(pinyin),
-          style: style ??
-              TextStyle(fontSize: 11, color: Colors.brown.shade400),
-        );
+        return Text(reading,
+            textAlign: textAlign,
+            maxLines: maxLines,
+            overflow: overflow,
+            style: style);
       },
     );
   }
