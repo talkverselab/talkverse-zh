@@ -8,6 +8,7 @@ import 'chunk_search_screen.dart';
 import 'conversation_screen.dart';
 import 'episode_screen.dart';
 import 'flashcard_screen.dart';
+import 'speaking_practice_screen.dart';
 import 'grammar_lesson_screen.dart';
 import 'hanzi_stages_screen.dart';
 import 'phonetic_roots_screen.dart';
@@ -243,6 +244,8 @@ class _MenuGrid extends StatelessWidget {
     final items = <_MenuItem>[
       _MenuItem(label: '회화', sub: 'Conversation', seal: '会话', color: AppColors.zhuHong,
         builder: (_) => const ConversationScreen()),
+      _MenuItem(label: '말하기', sub: 'Speaking 10s·5s·2s', seal: '口语', color: AppColors.zhuHongDeep,
+        builder: (_) => const SpeakingPracticeScreen()),
       _MenuItem(label: '문법', sub: 'L1 기능어 · L2 어기조사', seal: '文法', color: const Color(0xFF8B0000),
         builder: (_) => const GrammarMenuScreen()),
       _MenuItem(label: '한자', sub: '209자 20×10 + 4지선다', seal: '汉字', color: const Color(0xFFC62828),

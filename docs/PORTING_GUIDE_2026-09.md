@@ -66,6 +66,17 @@
 - 적용 위치(전 메뉴): 에피소드 버블, LCCC 회화 버블, 문장 플래시카드(앞면 힌트 포함), 청크 검색 문장, 문법 예문·문법 테스트 카드, 단어·표현 타일/행/상세 시트(책 독음 `rd`는 토글로 숨김, 병음 폴백이면 병음+독음 병기), 한자 시트·청크 시트
 - 이식 순서: 음절표 생성 → ko_reading.dart 복사 → 각 화면 발음표기 Text 아래 `KoReadingText` 1줄 + 앱바 actions에 `KoReadingToggleAction()` 추가
 
+### 2-1d. 말하기 연습 (Speaking) — 한국어 보고 목표어 말하기
+- 메뉴: 홈 `말하기` 타일 → `speaking_practice_screen.dart`. DB `turns`에서 2~N음절 문장 10개 랜덤 세션.
+- 규칙: 한국어 문장 표시 → TEST 즉시 녹음 → 1단계 10초 / 2단계 5초 / 3단계 2초 안에 문장 전체를 말하면 PASS. 3단계 통과 시 다음 문장.
+- 힌트(목표어 문장 + 발음) 토글 — `speak_show_hint` 저장. 발음 표기는 `KoReadingText`로 전역 독음 토글과 연동.
+- 오픈소스: `speech_to_text` ^7.4 (BSD-3, Android SpeechRecognizer 스트리밍 partial) + `lpinyin` ^2.0 (MIT, 한자→무성조 병음). 오프라인 대안은 sherpa-onnx (Apache-2.0).
+- 판정 `speak_match.dart`: 인식 한자→무성조 병음 음절 → 퍼지(zh/ch/sh→z/c/s, n·r→l, ing/eng→in/en) → 목표 대비 LCS ≥ 0.7 PASS(≤3음절은 전부). 성조·권설 무시 = "문장 전체" 기준.
+- 속도: 부분 결과마다 즉시 판정해 맞으면 타이머 중 PASS. 시간 종료 시 `stop()` 후 최종 결과 최대 1.2초만 대기 → 인식 지연은 학습자 불이익 없음.
+- 저장: `speak_best_<turnId>` = 통과 단계(1~3). 세션 끝에 ★ 요약.
+- Android: `RECORD_AUDIO`·`INTERNET`·`BLUETOOTH_CONNECT` 권한 + `<queries>`에 `android.speech.RecognitionService`.
+- 이식 시: 병음 변환부만 언어별 교체 (알파벳 언어는 소문자화+발음 퍼지, ja는 가나 정규화). 로케일 `_pickLocale` 선호 목록 수정.
+
 ### 2-2. 에피소드 학습 화면 (ab01e5a, 6f3214a)
 - 채팅 버블(화자별 색·아바타) + 병음 + 번역 + 💡문법노트 + 턴별 학습 체크(`user_progress`)
 - **버블 탭 → 그 문장부터 플래시카드 진입** (`SentenceFlashcardScreen(initialIndex)`)
@@ -120,3 +131,4 @@
 8. [ ] CI 릴리스 파이프라인 복사 + 앱별 서명 키 Secrets
 9. [ ] 발음 한글표기 전역 토글 — 해당 언어 음절표 생성 + `ko_reading.dart` 복사, 전 화면 `KoReadingText`/`KoReadingToggleAction` (2-1c)
 10. [ ] 단어 외우기 모드 + `MemorizedStore` (2-1b) — 언어 중립, 그대로 복사
+11. [ ] 말하기 연습 (2-1d) — `speech_service.dart`·`speak_match.dart`·`speaking_practice_screen.dart` 복사, 로케일·발음 정규화 교체, 매니페스트 권한
