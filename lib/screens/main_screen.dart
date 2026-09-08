@@ -14,7 +14,7 @@ import 'hanzi_stages_screen.dart';
 import 'phonetic_roots_screen.dart';
 import 'profile_screen.dart';
 import 'progress_screen.dart';
-import 'tone_matrix_screen.dart';
+import 'tone_practice_screen.dart';
 import 'topic_vocab_screen.dart';
 
 class MainScreen extends StatefulWidget {
@@ -258,8 +258,8 @@ class _MenuGrid extends StatelessWidget {
         builder: (_) => const TopicVocabScreen(
             title: '주제별 표현',
             asset: 'assets/data/vocab/travel_expressions.json')),
-      _MenuItem(label: '발음', sub: 'Pronunciation', seal: '声调', color: const Color(0xFF1565C0),
-        builder: (_) => const ToneMatrixScreen()),
+      _MenuItem(label: '성조연습', sub: 'Tone practice', seal: '声调', color: const Color(0xFF1565C0),
+        builder: (_) => const TonePracticeScreen()),
       _MenuItem(label: '발음부', sub: 'Phonetic', seal: '声旁', color: const Color(0xFF6A1B9A),
         builder: (_) => const PhoneticRootsScreen()),
       _MenuItem(label: '복습', sub: 'Flashcard', seal: '复习', color: AppColors.jin,
