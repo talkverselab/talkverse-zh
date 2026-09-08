@@ -11,13 +11,16 @@ import '../services/speak_match.dart';
 import '../services/speech_service.dart';
 import '../services/tts_service.dart';
 import '../widgets/chinese_decor.dart';
+import 'episode_screen.dart';
 
-/// 말하기 연습 — 한국어 문장을 보고 중국어로 말한다.
-///
-/// 1단계 10초 · 2단계 5초 · 3단계 2초 안에 문장 전체를 말하면 PASS.
-/// - TEST 를 누르는 즉시 녹음, 부분 인식 결과마다 바로 판정 (성조·병음 무시).
-/// - 제한 시간이 끝나면 녹음을 닫고 마지막 인식 결과로 판정.
-/// - 힌트(한자+병음)는 토글로 켜고 끌 수 있으며 설정이 저장된다.
+const _kLimits = [10, 5, 2]; // 단계별 제한 초
+const _kBatch = 4; // 한 번에 테스트하는 문장 수
+const _kStagePref = 'speak_stage';
+const _kShowHint = 'speak_show_hint';
+const _kBestPrefix = 'speak_best_';
+
+/// 말하기 연습 목록 — 학습한 회화(에피소드 화면에서 체크한 턴이 있는 회화)를 보여주고,
+/// 탭하면 바로 테스트가 시작된다.
 class SpeakingPracticeScreen extends StatefulWidget {
   const SpeakingPracticeScreen({super.key});
 
@@ -25,33 +28,268 @@ class SpeakingPracticeScreen extends StatefulWidget {
   State<SpeakingPracticeScreen> createState() => _SpeakingPracticeScreenState();
 }
 
-enum _Phase { idle, starting, listening, judging, pass, fail }
+class _EpisodeEntry {
+  final EpisodeMeta meta;
+  final List<TurnRow> turns; // 학습한 턴만 (없으면 전체)
+  final int total;
+  final int passed3; // 3단계 통과 문장 수
+  _EpisodeEntry(this.meta, this.turns, this.total, this.passed3);
+}
 
-class _SpeakingPracticeScreenState extends State<SpeakingPracticeScreen>
-    with SingleTickerProviderStateMixin {
-  static const _kShowHint = 'speak_show_hint';
-  static const _kMaxLen = 'speak_max_len';
-  static const _kBestPrefix = 'speak_best_';
-  static const _sessionSize = 10;
-  static const _limits = [10, 5, 2]; // 초, 단계별
-
-  SharedPreferences? _prefs;
-  List<TurnRow> _items = [];
+class _SpeakingPracticeScreenState extends State<SpeakingPracticeScreen> {
   bool _loading = true;
-  bool _sttReady = true;
+  bool _anyLearned = false;
+  int _stage = 0;
+  List<_EpisodeEntry> _entries = [];
+  SharedPreferences? _prefs;
+
+  @override
+  void initState() {
+    super.initState();
+    _load();
+  }
+
+  Future<void> _load() async {
+    _prefs = await SharedPreferences.getInstance();
+    _stage = (_prefs!.getInt(_kStagePref) ?? 0).clamp(0, _kLimits.length - 1);
+    await EpisodeCatalog.instance.ensureLoaded();
+    final turns = await appDb.select(appDb.turns).get();
+    final progress = await appDb.select(appDb.userProgress).get();
+    final learnedIds = {
+      for (final p in progress)
+        if (p.learned || p.reviewCount > 0) p.turnId
+    };
+    _anyLearned = learnedIds.isNotEmpty;
+    final entries = <_EpisodeEntry>[];
+    for (final meta in EpisodeCatalog.instance.all) {
+      final ep = turns
+          .where((t) =>
+              t.level == meta.level &&
+              t.dialect == 'north' &&
+              t.episodeId == meta.id)
+          .toList()
+        ..sort((a, b) => a.num.compareTo(b.num));
+      if (ep.isEmpty) continue;
+      final learned = ep.where((t) => learnedIds.contains(t.id)).toList();
+      if (_anyLearned && learned.isEmpty) continue;
+      final use = _anyLearned ? learned : ep;
+      final p3 = use
+          .where((t) => (_prefs!.getInt('$_kBestPrefix${t.id}') ?? 0) >= 3)
+          .length;
+      entries.add(_EpisodeEntry(meta, use, ep.length, p3));
+    }
+    if (!mounted) return;
+    setState(() {
+      _entries = entries;
+      _loading = false;
+    });
+  }
+
+  Future<void> _open(_EpisodeEntry e) async {
+    await Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (_) => SpeakingTestScreen(
+          title: '${e.meta.level} · ${e.meta.title}',
+          turns: e.turns,
+          stage: _stage,
+        ),
+      ),
+    );
+    _load();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: AppColors.xuanZhi,
+      appBar: AppBar(title: const Text('말하기 연습')),
+      body: _loading
+          ? const Center(
+              child: CircularProgressIndicator(color: AppColors.zhuHong))
+          : Column(
+              children: [
+                _stagePicker(),
+                const GreekKeyDivider(),
+                Expanded(
+                  child: _entries.isEmpty
+                      ? const Padding(
+                          padding: EdgeInsets.all(24),
+                          child: Text('회화 데이터가 없어요.',
+                              textAlign: TextAlign.center),
+                        )
+                      : ListView.builder(
+                          padding: const EdgeInsets.all(16),
+                          itemCount: _entries.length + 1,
+                          itemBuilder: (context, i) {
+                            if (i == 0) return _headerNote();
+                            final e = _entries[i - 1];
+                            return _EpisodeTile(
+                              entry: e,
+                              onTap: () => _open(e),
+                            );
+                          },
+                        ),
+                ),
+              ],
+            ),
+    );
+  }
+
+  Widget _headerNote() {
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 12),
+      child: Text(
+        _anyLearned
+            ? '회화 화면에서 학습 체크한 문장을 4개씩 테스트해요. 탭하면 바로 시작됩니다.'
+            : '아직 학습 체크한 문장이 없어 전체 회화를 보여줘요. 회화 화면에서 문장을 체크하면 그 문장만 나옵니다.',
+        style: const TextStyle(
+            fontSize: 12, color: AppColors.moLight, height: 1.5),
+      ),
+    );
+  }
+
+  Widget _stagePicker() {
+    return Container(
+      color: AppColors.xuanZhiDeep,
+      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
+      child: Row(
+        children: [
+          for (var i = 0; i < _kLimits.length; i++) ...[
+            Expanded(
+              child: InkWell(
+                onTap: () {
+                  setState(() => _stage = i);
+                  _prefs?.setInt(_kStagePref, i);
+                },
+                child: Container(
+                  padding: const EdgeInsets.symmetric(vertical: 7),
+                  decoration: BoxDecoration(
+                    color: i == _stage ? AppColors.zhuHong : AppColors.xuanZhi,
+                    borderRadius: BorderRadius.circular(6),
+                    border: Border.all(
+                        color:
+                            i == _stage ? Colors.transparent : AppColors.jin),
+                  ),
+                  child: Text(
+                    '${i + 1}단계 · ${_kLimits[i]}초',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      fontSize: 12,
+                      fontWeight: FontWeight.w800,
+                      color:
+                          i == _stage ? AppColors.xuanZhi : AppColors.moLight,
+                    ),
+                  ),
+                ),
+              ),
+            ),
+            if (i < _kLimits.length - 1) const SizedBox(width: 6),
+          ],
+        ],
+      ),
+    );
+  }
+}
+
+class _EpisodeTile extends StatelessWidget {
+  final _EpisodeEntry entry;
+  final VoidCallback onTap;
+  const _EpisodeTile({required this.entry, required this.onTap});
+
+  @override
+  Widget build(BuildContext context) {
+    final e = entry;
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 10),
+      child: InkWell(
+        onTap: onTap,
+        child: Container(
+          padding: const EdgeInsets.all(12),
+          decoration: BoxDecoration(
+            color: AppColors.xuanZhi,
+            border: Border.all(color: AppColors.jin.withValues(alpha: 0.5)),
+            boxShadow: [
+              BoxShadow(
+                color: AppColors.mo.withValues(alpha: 0.06),
+                blurRadius: 6,
+                offset: const Offset(1, 2),
+              ),
+            ],
+          ),
+          child: Row(
+            children: [
+              Text(e.meta.emoji, style: const TextStyle(fontSize: 26)),
+              const SizedBox(width: 12),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      '${e.meta.level} · ${e.meta.title}',
+                      style: const TextStyle(
+                          fontSize: 14,
+                          fontWeight: FontWeight.w800,
+                          color: AppColors.mo),
+                    ),
+                    const SizedBox(height: 3),
+                    Text(
+                      '학습 ${e.turns.length}/${e.total}문장 · 3단계 통과 ${e.passed3}',
+                      style: const TextStyle(
+                          fontSize: 11, color: AppColors.moLight),
+                    ),
+                  ],
+                ),
+              ),
+              const Icon(Icons.mic, color: AppColors.zhuHong),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+// ─────────────────────────────────────────────────────────────────
+
+enum _Phase { preview, starting, listening, judging, shown, batchDone, allDone }
+
+/// 테스트 화면 — 들어오자마자 시작. 문장마다 자동 녹음·판정, 4문장 뒤 '계속'.
+class SpeakingTestScreen extends StatefulWidget {
+  final String title;
+  final List<TurnRow> turns;
+  final int stage; // 0..2
+  const SpeakingTestScreen({
+    super.key,
+    required this.title,
+    required this.turns,
+    required this.stage,
+  });
+
+  @override
+  State<SpeakingTestScreen> createState() => _SpeakingTestScreenState();
+}
+
+class _SpeakingTestScreenState extends State<SpeakingTestScreen>
+    with SingleTickerProviderStateMixin {
+  SharedPreferences? _prefs;
   bool _showHint = true;
-  int _maxLen = 12;
+  bool _sttReady = true;
 
   int _index = 0;
-  int _stage = 0; // 0..2
-  _Phase _phase = _Phase.idle;
+  _Phase _phase = _Phase.preview;
   String _heard = '';
-  double _lastScore = 0;
-  final Map<int, int> _sessionBest = {}; // turnId → 통과 단계 수 (0..3)
+  final Map<int, bool> _results = {}; // index → pass
+  final Map<int, String> _heardBy = {};
 
   late final AnimationController _timer;
   Completer<void>? _finalDone;
-  int _attemptSeq = 0;
+  int _seq = 0;
+  Timer? _delay;
+
+  int get _limit => _kLimits[widget.stage];
+  TurnRow get _cur => widget.turns[_index];
+  int get _batchStart => (_index ~/ _kBatch) * _kBatch;
 
   @override
   void initState() {
@@ -60,67 +298,56 @@ class _SpeakingPracticeScreenState extends State<SpeakingPracticeScreen>
       ..addStatusListener((s) {
         if (s == AnimationStatus.completed) _onTimeUp();
       });
-    _load();
+    _init();
+  }
+
+  Future<void> _init() async {
+    _prefs = await SharedPreferences.getInstance();
+    _showHint = _prefs!.getBool(_kShowHint) ?? true;
+    _sttReady = await SpeechService.instance.init();
+    if (!mounted) return;
+    setState(() {});
+    if (!_sttReady) {
+      _snack('음성 인식을 사용할 수 없어요. 마이크 권한과 Google 음성 서비스를 확인하세요.');
+      return;
+    }
+    _startSentence();
   }
 
   @override
   void dispose() {
+    _seq++;
+    _delay?.cancel();
     _timer.dispose();
     SpeechService.instance.cancel();
-    SpeechService.instance.onStatus = null;
     super.dispose();
   }
 
-  Future<void> _load() async {
-    _prefs = await SharedPreferences.getInstance();
-    _showHint = _prefs!.getBool(_kShowHint) ?? true;
-    _maxLen = _prefs!.getInt(_kMaxLen) ?? 12;
-    _sttReady = await SpeechService.instance.init();
-    await _buildSession();
+  // ── 흐름 ──────────────────────────────────────────────────────
+
+  void _startSentence() {
+    _delay?.cancel();
+    setState(() {
+      _phase = _Phase.preview;
+      _heard = '';
+    });
+    // 문장을 읽을 잠깐의 여유 뒤 자동 녹음
+    _delay = Timer(const Duration(milliseconds: 1200), _record);
   }
 
-  Future<void> _buildSession() async {
-    final all = await appDb.select(appDb.turns).get();
-    final pool = all.where((t) {
-      final n = SpeakMatch.syllables(t.zh).length;
-      return n >= 2 && n <= _maxLen && (t.ko ?? '').trim().isNotEmpty;
-    }).toList()
-      ..shuffle();
+  Future<void> _record() async {
     if (!mounted) return;
-    setState(() {
-      _items = pool.take(_sessionSize).toList();
-      _index = 0;
-      _stage = 0;
-      _phase = _Phase.idle;
-      _heard = '';
-      _sessionBest.clear();
-      _loading = false;
-    });
-  }
-
-  TurnRow get _cur => _items[_index];
-  int get _limit => _limits[_stage];
-
-  // ── 테스트 흐름 ──────────────────────────────────────────────
-
-  Future<void> _startTest() async {
-    if (_phase == _Phase.listening || _phase == _Phase.starting) return;
-    final seq = ++_attemptSeq;
-    setState(() {
-      _phase = _Phase.starting;
-      _heard = '';
-      _lastScore = 0;
-    });
+    final seq = ++_seq;
+    setState(() => _phase = _Phase.starting);
     _finalDone = Completer<void>();
     final target = _cur.zh;
     final ok = await SpeechService.instance.listen(
       maxFor: Duration(seconds: _limit + 3),
       onResult: (words, isFinal) {
-        if (seq != _attemptSeq) return;
+        if (seq != _seq) return;
         _heard = words;
-        _lastScore = SpeakMatch.score(target, words);
         if (_phase == _Phase.listening && SpeakMatch.pass(target, words)) {
-          _finish(true); // 부분 결과에서 바로 PASS
+          _finish(true);
           return;
         }
         if (isFinal && !(_finalDone?.isCompleted ?? true)) {
@@ -129,13 +356,9 @@ class _SpeakingPracticeScreenState extends State<SpeakingPracticeScreen>
         if (mounted) setState(() {});
       },
     );
-    if (!mounted || seq != _attemptSeq) return;
+    if (!mounted || seq != _seq) return;
     if (!ok) {
-      setState(() {
-        _phase = _Phase.fail;
-        _heard = '';
-      });
-      _snack('마이크/음성 인식을 시작할 수 없어요. 권한과 Google 음성 서비스를 확인하세요.');
+      _finish(false);
       return;
     }
     setState(() => _phase = _Phase.listening);
@@ -146,123 +369,53 @@ class _SpeakingPracticeScreenState extends State<SpeakingPracticeScreen>
 
   Future<void> _onTimeUp() async {
     if (_phase != _Phase.listening) return;
-    final seq = _attemptSeq;
+    final seq = _seq;
     setState(() => _phase = _Phase.judging);
     await SpeechService.instance.stop();
-    // 최종 결과가 도착할 시간을 잠깐만 준다 (인식 지연은 학습자 책임이 아님)
     final done = _finalDone;
     if (done != null && !done.isCompleted) {
-      await done.future.timeout(const Duration(milliseconds: 1200),
-          onTimeout: () {});
+      await done.future
+          .timeout(const Duration(milliseconds: 1200), onTimeout: () {});
     }
-    if (!mounted || seq != _attemptSeq || _phase != _Phase.judging) return;
+    if (!mounted || seq != _seq || _phase != _Phase.judging) return;
     _finish(SpeakMatch.pass(_cur.zh, _heard));
   }
 
   void _finish(bool passed) {
-    _attemptSeq++; // 이후 도착하는 결과 무시
+    _seq++;
     _timer.stop();
     SpeechService.instance.cancel();
     if (!mounted) return;
+    _results[_index] = passed;
+    _heardBy[_index] = _heard;
     if (passed) {
-      final stageDone = _stage + 1;
       final id = _cur.id;
-      if ((_sessionBest[id] ?? 0) < stageDone) _sessionBest[id] = stageDone;
-      final prevBest = _prefs?.getInt('$_kBestPrefix$id') ?? 0;
-      if (stageDone > prevBest) _prefs?.setInt('$_kBestPrefix$id', stageDone);
+      final stageDone = widget.stage + 1;
+      if ((_prefs?.getInt('$_kBestPrefix$id') ?? 0) < stageDone) {
+        _prefs?.setInt('$_kBestPrefix$id', stageDone);
+      }
     }
-    setState(() => _phase = passed ? _Phase.pass : _Phase.fail);
-    if (passed) {
-      Future.delayed(const Duration(milliseconds: 700), () {
-        if (!mounted || _phase != _Phase.pass) return;
-        if (_stage < _limits.length - 1) {
-          setState(() {
-            _stage++;
-            _phase = _Phase.idle;
-            _heard = '';
-          });
-        } else {
-          _next();
-        }
-      });
-    }
+    setState(() => _phase = _Phase.shown);
+    _delay = Timer(const Duration(milliseconds: 900), _advance);
   }
 
-  void _next() {
-    if (_index >= _items.length - 1) {
-      _showSummary();
-      return;
-    }
-    setState(() {
-      _index++;
-      _stage = 0;
-      _phase = _Phase.idle;
-      _heard = '';
-    });
-  }
-
-  void _skip() {
-    _attemptSeq++;
-    _timer.stop();
-    SpeechService.instance.cancel();
-    _next();
-  }
-
-  Future<void> _cancelTest() async {
-    _attemptSeq++;
-    _timer.stop();
-    await SpeechService.instance.cancel();
-    if (mounted) setState(() => _phase = _Phase.idle);
-  }
-
-  void _showSummary() {
-    final cleared = _sessionBest.values.where((v) => v >= 3).length;
-    showDialog<void>(
-      context: context,
-      builder: (ctx) => AlertDialog(
-        backgroundColor: AppColors.xuanZhi,
-        title: const Text('🎉 세션 완료'),
-        content: Text(
-          '${_items.length}문장 중 3단계 통과 $cleared문장\n'
-          '${_items.map((t) => '${'★' * (_sessionBest[t.id] ?? 0)}${'☆' * (3 - (_sessionBest[t.id] ?? 0))}  ${t.zh}').join('\n')}',
-          style: const TextStyle(fontSize: 12, height: 1.6),
-        ),
-        actions: [
-          TextButton(
-            onPressed: () {
-              Navigator.pop(ctx);
-              Navigator.pop(context);
-            },
-            child: const Text('닫기'),
-          ),
-          FilledButton(
-            style: FilledButton.styleFrom(backgroundColor: AppColors.zhuHong),
-            onPressed: () {
-              Navigator.pop(ctx);
-              setState(() => _loading = true);
-              _buildSession();
-            },
-            child: const Text('새 세션'),
-          ),
-        ],
-      ),
-    );
-  }
-
-  Future<void> _toggleHint() async {
-    setState(() => _showHint = !_showHint);
-    await _prefs?.setBool(_kShowHint, _showHint);
-  }
-
-  Future<void> _setMaxLen(int n) async {
-    _maxLen = n;
-    await _prefs?.setInt(_kMaxLen, n);
-    _attemptSeq++;
-    _timer.stop();
-    await SpeechService.instance.cancel();
+  void _advance() {
     if (!mounted) return;
-    setState(() => _loading = true);
-    await _buildSession();
+    final last = _index == widget.turns.length - 1;
+    final batchEnd = (_index + 1) % _kBatch == 0;
+    if (last) {
+      setState(() => _phase = _Phase.allDone);
+    } else if (batchEnd) {
+      setState(() => _phase = _Phase.batchDone);
+    } else {
+      _index++;
+      _startSentence();
+    }
+  }
+
+  void _continue() {
+    _index++;
+    _startSentence();
   }
 
   void _snack(String msg) {
@@ -271,14 +424,19 @@ class _SpeakingPracticeScreenState extends State<SpeakingPracticeScreen>
     );
   }
 
-  // ── UI ───────────────────────────────────────────────────────
+  Future<void> _toggleHint() async {
+    setState(() => _showHint = !_showHint);
+    await _prefs?.setBool(_kShowHint, _showHint);
+  }
+
+  // ── UI ────────────────────────────────────────────────────────
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: AppColors.xuanZhi,
       appBar: AppBar(
-        title: const Text('말하기 연습'),
+        title: Text(widget.title, style: const TextStyle(fontSize: 15)),
         actions: [
           IconButton(
             tooltip: _showHint ? '힌트 숨기기' : '힌트 보기',
@@ -286,53 +444,80 @@ class _SpeakingPracticeScreenState extends State<SpeakingPracticeScreen>
             icon: Icon(_showHint ? Icons.lightbulb : Icons.lightbulb_outline),
           ),
           const KoReadingToggleAction(),
-          PopupMenuButton<int>(
-            tooltip: '문장 길이',
-            onSelected: _setMaxLen,
-            itemBuilder: (_) => [
-              for (final n in const [8, 12, 20])
-                CheckedPopupMenuItem(
-                  value: n,
-                  checked: _maxLen == n,
-                  child: Text(n == 20 ? '긴 문장까지' : '$n음절 이하'),
-                ),
-            ],
-          ),
         ],
       ),
-      body: _loading
-          ? const Center(
-              child: CircularProgressIndicator(color: AppColors.zhuHong))
-          : _items.isEmpty
-              ? const Center(child: Text('연습할 문장이 없어요.'))
-              : _body(),
+      body: switch (_phase) {
+        _Phase.batchDone => _batchSummary(final_: false),
+        _Phase.allDone => _batchSummary(final_: true),
+        _ => _testBody(),
+      },
     );
   }
 
-  Widget _body() {
+  Widget _progressBar() {
+    final total = widget.turns.length;
+    return Container(
+      color: AppColors.xuanZhiDeep,
+      padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 8),
+      child: Row(
+        children: [
+          Text(
+            '${widget.stage + 1}단계 · $_limit초',
+            style: const TextStyle(
+                fontSize: 12,
+                fontWeight: FontWeight.w800,
+                color: AppColors.zhuHong),
+          ),
+          const Spacer(),
+          for (var i = _batchStart;
+              i < _batchStart + _kBatch && i < total;
+              i++) ...[
+            Container(
+              width: 22,
+              height: 22,
+              margin: const EdgeInsets.only(left: 4),
+              alignment: Alignment.center,
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                color: _results[i] == null
+                    ? (i == _index ? AppColors.jin : AppColors.xuanZhi)
+                    : _results[i]!
+                        ? AppColors.feiCui
+                        : AppColors.zhuHong,
+                border: Border.all(color: AppColors.jin),
+              ),
+              child: Text(
+                '${i + 1}',
+                style: TextStyle(
+                  fontSize: 10,
+                  fontWeight: FontWeight.w800,
+                  color: _results[i] == null && i != _index
+                      ? AppColors.moLight
+                      : AppColors.xuanZhi,
+                ),
+              ),
+            ),
+          ],
+          const SizedBox(width: 8),
+          Text('${_index + 1}/$total',
+              style: const TextStyle(fontSize: 11, color: AppColors.moLight)),
+        ],
+      ),
+    );
+  }
+
+  Widget _testBody() {
     final t = _cur;
-    final listening =
-        _phase == _Phase.listening || _phase == _Phase.starting;
     return Column(
       children: [
-        _stageBar(),
+        _progressBar(),
         const GreekKeyDivider(),
         Expanded(
           child: SingleChildScrollView(
-            padding: const EdgeInsets.fromLTRB(20, 18, 20, 12),
+            padding: const EdgeInsets.fromLTRB(20, 24, 20, 20),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
-                Text(
-                  '${_index + 1} / ${_items.length}',
-                  textAlign: TextAlign.center,
-                  style: const TextStyle(
-                      fontSize: 12,
-                      color: AppColors.moLight,
-                      fontWeight: FontWeight.w700),
-                ),
-                const SizedBox(height: 14),
-                // 한국어 문장 (문제)
                 Text(
                   t.ko ?? '',
                   textAlign: TextAlign.center,
@@ -344,124 +529,55 @@ class _SpeakingPracticeScreenState extends State<SpeakingPracticeScreen>
                   ),
                 ),
                 const SizedBox(height: 18),
-                // 힌트: 한자 + 병음
-                AnimatedSwitcher(
-                  duration: const Duration(milliseconds: 200),
-                  child: _showHint
-                      ? Container(
-                          key: const ValueKey('hint'),
-                          padding: const EdgeInsets.symmetric(
-                              horizontal: 14, vertical: 12),
-                          decoration: BoxDecoration(
-                            color: AppColors.xuanZhiDeep,
-                            border: Border.all(
-                                color: AppColors.jin.withValues(alpha: 0.5)),
-                            borderRadius: BorderRadius.circular(8),
-                          ),
-                          child: Column(
-                            children: [
-                              Text(
-                                t.zh,
-                                textAlign: TextAlign.center,
-                                style: const TextStyle(
-                                    fontSize: 22,
-                                    fontWeight: FontWeight.w700,
-                                    color: AppColors.zhuHongDeep),
-                              ),
-                              if (t.pinyin != null && t.pinyin!.isNotEmpty)
-                                Padding(
-                                  padding: const EdgeInsets.only(top: 4),
-                                  child: KoReadingText(
-                                    t.pinyin!,
-                                    textAlign: TextAlign.center,
-                                    style: const TextStyle(
-                                        fontSize: 13,
-                                        color: AppColors.moLight),
-                                  ),
-                                ),
-                            ],
-                          ),
-                        )
-                      : TextButton.icon(
-                          key: const ValueKey('nohint'),
-                          onPressed: _toggleHint,
-                          icon: const Icon(Icons.lightbulb_outline, size: 16),
-                          label: const Text('힌트 보기'),
-                          style: TextButton.styleFrom(
-                              foregroundColor: AppColors.moLight),
+                if (_showHint)
+                  Container(
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 14, vertical: 12),
+                    decoration: BoxDecoration(
+                      color: AppColors.xuanZhiDeep,
+                      border: Border.all(
+                          color: AppColors.jin.withValues(alpha: 0.5)),
+                      borderRadius: BorderRadius.circular(8),
+                    ),
+                    child: Column(
+                      children: [
+                        Text(
+                          t.zh,
+                          textAlign: TextAlign.center,
+                          style: const TextStyle(
+                              fontSize: 22,
+                              fontWeight: FontWeight.w700,
+                              color: AppColors.zhuHongDeep),
                         ),
-                ),
-                const SizedBox(height: 10),
-                Center(
-                  child: TextButton.icon(
-                    onPressed: listening
-                        ? null
-                        : () => TtsService.instance.speak(t.zh),
-                    icon: const Icon(Icons.volume_up, size: 18),
-                    label: const Text('원어민 발음 듣기'),
-                    style: TextButton.styleFrom(
-                        foregroundColor: AppColors.zhuHong),
+                        if (t.pinyin != null && t.pinyin!.isNotEmpty)
+                          Padding(
+                            padding: const EdgeInsets.only(top: 4),
+                            child: KoReadingText(
+                              t.pinyin!,
+                              textAlign: TextAlign.center,
+                              style: const TextStyle(
+                                  fontSize: 13, color: AppColors.moLight),
+                            ),
+                          ),
+                      ],
+                    ),
                   ),
-                ),
-                const SizedBox(height: 14),
-                _resultPanel(),
+                const SizedBox(height: 28),
+                _statusPanel(),
               ],
             ),
           ),
         ),
-        _bottomBar(listening),
       ],
     );
   }
 
-  Widget _stageBar() {
-    return Container(
-      color: AppColors.xuanZhiDeep,
-      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
-      child: Row(
-        children: [
-          for (var i = 0; i < _limits.length; i++) ...[
-            Expanded(
-              child: Container(
-                padding: const EdgeInsets.symmetric(vertical: 6),
-                decoration: BoxDecoration(
-                  color: i == _stage
-                      ? AppColors.zhuHong
-                      : i < _stage
-                          ? AppColors.feiCui
-                          : AppColors.xuanZhi,
-                  borderRadius: BorderRadius.circular(6),
-                  border: Border.all(
-                      color: i <= _stage ? Colors.transparent : AppColors.jin),
-                ),
-                child: Text(
-                  i < _stage ? '✓ ${i + 1}단계' : '${i + 1}단계 · ${_limits[i]}초',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    fontSize: 12,
-                    fontWeight: FontWeight.w800,
-                    color: i <= _stage ? AppColors.xuanZhi : AppColors.moLight,
-                  ),
-                ),
-              ),
-            ),
-            if (i < _limits.length - 1) const SizedBox(width: 6),
-          ],
-        ],
-      ),
-    );
-  }
-
-  Widget _resultPanel() {
+  Widget _statusPanel() {
     switch (_phase) {
-      case _Phase.idle:
-        return Text(
-          _stage == 0
-              ? 'TEST 를 누르면 바로 녹음이 시작돼요.\n$_limit초 안에 문장 전체를 중국어로 말하세요.'
-              : '${_stage + 1}단계 — 이번엔 $_limit초!',
-          textAlign: TextAlign.center,
-          style: const TextStyle(color: AppColors.moLight, height: 1.5),
-        );
+      case _Phase.preview:
+        return const Text('곧 녹음이 시작돼요…',
+            textAlign: TextAlign.center,
+            style: TextStyle(color: AppColors.moLight));
       case _Phase.starting:
         return const Text('🎙 마이크 여는 중…',
             textAlign: TextAlign.center,
@@ -492,9 +608,8 @@ class _SpeakingPracticeScreenState extends State<SpeakingPracticeScreen>
                         value: 1 - _timer.value,
                         minHeight: 8,
                         backgroundColor: AppColors.xuanZhiDeep,
-                        color: remain < 1.5
-                            ? AppColors.zhuHong
-                            : AppColors.jin,
+                        color:
+                            remain < 1.5 ? AppColors.zhuHong : AppColors.jin,
                       ),
                     ),
                   ],
@@ -503,7 +618,7 @@ class _SpeakingPracticeScreenState extends State<SpeakingPracticeScreen>
             ),
             const SizedBox(height: 12),
             Text(
-              _heard.isEmpty ? '🎙 듣고 있어요…' : _heard,
+              _heard.isEmpty ? '🎙 중국어로 말하세요' : _heard,
               textAlign: TextAlign.center,
               style: const TextStyle(
                   fontSize: 18,
@@ -512,94 +627,177 @@ class _SpeakingPracticeScreenState extends State<SpeakingPracticeScreen>
             ),
           ],
         );
-      case _Phase.pass:
+      case _Phase.shown:
+        final pass = _results[_index] ?? false;
         return Column(
           children: [
-            const Text('PASS',
+            Text(pass ? 'PASS' : 'FAIL',
                 style: TextStyle(
                     fontSize: 40,
                     fontWeight: FontWeight.w900,
-                    color: AppColors.feiCui,
-                    letterSpacing: 4)),
+                    letterSpacing: 4,
+                    color: pass ? AppColors.feiCui : AppColors.zhuHong)),
             if (_heard.isNotEmpty)
               Text(_heard,
                   textAlign: TextAlign.center,
                   style: const TextStyle(color: AppColors.moLight)),
           ],
         );
-      case _Phase.fail:
-        return Column(
-          children: [
-            const Text('FAIL',
-                style: TextStyle(
-                    fontSize: 40,
-                    fontWeight: FontWeight.w900,
-                    color: AppColors.zhuHong,
-                    letterSpacing: 4)),
-            const SizedBox(height: 4),
-            Text(
-              _heard.isEmpty
-                  ? (SpeechService.instance.lastError == null
-                      ? '아무 말도 인식되지 않았어요.'
-                      : '인식 실패: ${SpeechService.instance.lastError}')
-                  : '인식: $_heard  (${(_lastScore * 100).round()}%)',
-              textAlign: TextAlign.center,
-              style: const TextStyle(color: AppColors.moLight),
-            ),
-            const SizedBox(height: 4),
-            Text(
-              '정답: ${_cur.zh}',
-              textAlign: TextAlign.center,
-              style: const TextStyle(
-                  color: AppColors.zhuHongDeep, fontWeight: FontWeight.w700),
-            ),
-          ],
-        );
+      case _Phase.batchDone:
+      case _Phase.allDone:
+        return const SizedBox.shrink();
     }
   }
 
-  Widget _bottomBar(bool listening) {
+  Widget _batchSummary({required bool final_}) {
+    final start = _batchStart;
+    final end = (_index + 1).clamp(0, widget.turns.length);
+    final passedAll = _results.values.where((v) => v).length;
+    final total = widget.turns.length;
+    return Column(
+      children: [
+        _progressBar(),
+        const GreekKeyDivider(),
+        Expanded(
+          child: ListView(
+            padding: const EdgeInsets.all(20),
+            children: [
+              Text(
+                final_
+                    ? '🎉 모든 문장 완료 — $total문장 중 PASS $passedAll'
+                    : '${start + 1}~$end번 문장 결과',
+                textAlign: TextAlign.center,
+                style: const TextStyle(
+                    fontSize: 16,
+                    fontWeight: FontWeight.w900,
+                    color: AppColors.mo),
+              ),
+              const SizedBox(height: 16),
+              for (var i = final_ ? 0 : start; i < end; i++)
+                _ResultRow(
+                  index: i,
+                  turn: widget.turns[i],
+                  pass: _results[i] ?? false,
+                  heard: _heardBy[i] ?? '',
+                  showHint: _showHint,
+                ),
+            ],
+          ),
+        ),
+        Container(
+          padding: const EdgeInsets.fromLTRB(20, 10, 20, 24),
+          decoration: BoxDecoration(
+            border: Border(
+                top: BorderSide(color: AppColors.jin.withValues(alpha: 0.4))),
+          ),
+          child: Row(
+            children: [
+              Expanded(
+                child: OutlinedButton(
+                  onPressed: () => Navigator.pop(context),
+                  style: OutlinedButton.styleFrom(
+                    foregroundColor: AppColors.moLight,
+                    side: const BorderSide(color: AppColors.jin),
+                    padding: const EdgeInsets.symmetric(vertical: 16),
+                  ),
+                  child: const Text('목록으로'),
+                ),
+              ),
+              const SizedBox(width: 12),
+              Expanded(
+                flex: 2,
+                child: FilledButton.icon(
+                  onPressed: final_
+                      ? () {
+                          setState(() {
+                            _index = 0;
+                            _results.clear();
+                            _heardBy.clear();
+                          });
+                          _startSentence();
+                        }
+                      : _continue,
+                  style: FilledButton.styleFrom(
+                    backgroundColor: AppColors.zhuHong,
+                    foregroundColor: AppColors.xuanZhi,
+                    padding: const EdgeInsets.symmetric(vertical: 16),
+                    textStyle: const TextStyle(
+                        fontSize: 18,
+                        fontWeight: FontWeight.w900,
+                        letterSpacing: 2),
+                  ),
+                  icon: Icon(final_ ? Icons.replay : Icons.play_arrow),
+                  label: Text(final_ ? '처음부터 다시' : '계속'),
+                ),
+              ),
+            ],
+          ),
+        ),
+      ],
+    );
+  }
+}
+
+class _ResultRow extends StatelessWidget {
+  final int index;
+  final TurnRow turn;
+  final bool pass;
+  final String heard;
+  final bool showHint;
+  const _ResultRow({
+    required this.index,
+    required this.turn,
+    required this.pass,
+    required this.heard,
+    required this.showHint,
+  });
+
+  @override
+  Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.fromLTRB(20, 10, 20, 24),
+      margin: const EdgeInsets.only(bottom: 10),
+      padding: const EdgeInsets.all(12),
       decoration: BoxDecoration(
         color: AppColors.xuanZhi,
-        border: Border(top: BorderSide(color: AppColors.jin.withValues(alpha: 0.4))),
+        border: Border.all(
+            color: (pass ? AppColors.feiCui : AppColors.zhuHong)
+                .withValues(alpha: 0.6)),
+        borderRadius: BorderRadius.circular(8),
       ),
       child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
+          Icon(pass ? Icons.check_circle : Icons.cancel,
+              color: pass ? AppColors.feiCui : AppColors.zhuHong, size: 22),
+          const SizedBox(width: 10),
           Expanded(
-            child: OutlinedButton(
-              onPressed: listening ? _cancelTest : _skip,
-              style: OutlinedButton.styleFrom(
-                foregroundColor: AppColors.moLight,
-                side: const BorderSide(color: AppColors.jin),
-                padding: const EdgeInsets.symmetric(vertical: 16),
-              ),
-              child: Text(listening ? '취소' : '건너뛰기'),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text('${index + 1}. ${turn.ko ?? ''}',
+                    style: const TextStyle(
+                        fontSize: 14,
+                        fontWeight: FontWeight.w700,
+                        color: AppColors.mo)),
+                const SizedBox(height: 2),
+                Text(turn.zh,
+                    style: const TextStyle(
+                        fontSize: 15, color: AppColors.zhuHongDeep)),
+                if (turn.pinyin != null)
+                  KoReadingText(turn.pinyin!,
+                      style: const TextStyle(
+                          fontSize: 11, color: AppColors.moLight)),
+                if (!pass && heard.isNotEmpty)
+                  Text('인식: $heard',
+                      style: const TextStyle(
+                          fontSize: 11, color: AppColors.moLight)),
+              ],
             ),
           ),
-          const SizedBox(width: 12),
-          Expanded(
-            flex: 2,
-            child: FilledButton.icon(
-              onPressed:
-                  (!_sttReady || listening || _phase == _Phase.judging || _phase == _Phase.pass)
-                      ? null
-                      : _startTest,
-              style: FilledButton.styleFrom(
-                backgroundColor: AppColors.zhuHong,
-                foregroundColor: AppColors.xuanZhi,
-                padding: const EdgeInsets.symmetric(vertical: 16),
-                textStyle: const TextStyle(
-                    fontSize: 18, fontWeight: FontWeight.w900, letterSpacing: 2),
-              ),
-              icon: const Icon(Icons.mic),
-              label: Text(!_sttReady
-                  ? '음성 인식 불가'
-                  : _phase == _Phase.fail
-                      ? '다시 TEST'
-                      : 'TEST'),
-            ),
+          IconButton(
+            icon: const Icon(Icons.volume_up,
+                size: 18, color: AppColors.zhuHong),
+            onPressed: () => TtsService.instance.speak(turn.zh),
           ),
         ],
       ),
