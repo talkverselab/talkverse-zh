@@ -2856,7 +2856,7 @@
   ],
   "chunks": {
     "一个": {
-      "pinyin": "yi1 ge5",
+      "pinyin": "yī ge",
       "meanings": [
         "a; an; one",
         "the whole (afternoon, summer vacation etc)"
@@ -2864,7 +2864,7 @@
       "ko": "하나"
     },
     "一次": {
-      "pinyin": "yi1 ci4",
+      "pinyin": "yī cì",
       "meanings": [
         "first",
         "first time",
@@ -2874,7 +2874,7 @@
       "ko": "한 번"
     },
     "什么": {
-      "pinyin": "shen2 me5",
+      "pinyin": "shén me",
       "meanings": [
         "what?",
         "something; anything"
@@ -2882,21 +2882,21 @@
       "ko": "무엇"
     },
     "他们": {
-      "pinyin": "ta1 men5",
+      "pinyin": "tā men",
       "meanings": [
         "they; them"
       ],
       "ko": "그들"
     },
     "你好": {
-      "pinyin": "ni3 hao3",
+      "pinyin": "nǐ hǎo",
       "meanings": [
         "hello; hi"
       ],
       "ko": null
     },
     "可以": {
-      "pinyin": "ke3 yi3",
+      "pinyin": "kě yǐ",
       "meanings": [
         "can",
         "may",
@@ -2908,7 +2908,7 @@
       "ko": "가능·OK"
     },
     "可爱": {
-      "pinyin": "ke3 ai4",
+      "pinyin": "kě ài",
       "meanings": [
         "adorable",
         "cute",
@@ -2917,7 +2917,7 @@
       "ko": "귀엽다"
     },
     "哪个": {
-      "pinyin": "na3 ge5",
+      "pinyin": "nǎ ge",
       "meanings": [
         "which",
         "who"
@@ -2925,14 +2925,14 @@
       "ko": "어느 거"
     },
     "喜欢": {
-      "pinyin": "xi3 huan5",
+      "pinyin": "xǐ huan",
       "meanings": [
         "to like; to be fond of"
       ],
       "ko": "좋아하다"
     },
     "因为": {
-      "pinyin": "yin1 wei4",
+      "pinyin": "yīn wèi",
       "meanings": [
         "because; owing to; on account of"
       ],
@@ -2953,7 +2953,7 @@
       "ko": "어디에"
     },
     "在家": {
-      "pinyin": "zai4 jia1",
+      "pinyin": "zài jiā",
       "meanings": [
         "to be at home",
         "(at a workplace) to be in (as opposed to being away on official business 出差[chu1 chai1])",
@@ -2969,14 +2969,14 @@
       "ko": "거기"
     },
     "如果": {
-      "pinyin": "ru2 guo3",
+      "pinyin": "rú guǒ",
       "meanings": [
         "if; in case; in the event that"
       ],
       "ko": "만약"
     },
     "妈妈": {
-      "pinyin": "ma1 ma5",
+      "pinyin": "mā ma",
       "meanings": [
         "mama",
         "mommy",
@@ -2986,7 +2986,7 @@
       "ko": "엄마"
     },
     "小孩": {
-      "pinyin": "xiao3 hai2",
+      "pinyin": "xiǎo hái",
       "meanings": [
         "child",
         "CL:個|个[ge4]"
@@ -2994,7 +2994,7 @@
       "ko": null
     },
     "就是": {
-      "pinyin": "jiu4 shi4",
+      "pinyin": "jiù shì",
       "meanings": [
         "exactly; precisely",
         "only; simply; just",
@@ -3003,14 +3003,14 @@
       "ko": "바로 ~이다"
     },
     "已经": {
-      "pinyin": "yi3 jing1",
+      "pinyin": "yǐ jīng",
       "meanings": [
         "already"
       ],
       "ko": "이미"
     },
     "当然": {
-      "pinyin": "dang1 ran2",
+      "pinyin": "dāng rán",
       "meanings": [
         "only natural",
         "as it should be",
@@ -3028,7 +3028,7 @@
       "ko": "생각해봐"
     },
     "我们": {
-      "pinyin": "wo3 men5",
+      "pinyin": "wǒ men",
       "meanings": [
         "we; us; ourselves; our"
       ],
@@ -3042,7 +3042,7 @@
       "ko": "내가 그러잖아"
     },
     "所以": {
-      "pinyin": "suo3 yi3",
+      "pinyin": "suǒ yǐ",
       "meanings": [
         "therefore",
         "as a result",
@@ -3052,14 +3052,14 @@
       "ko": "그래서"
     },
     "明天": {
-      "pinyin": "ming2 tian1",
+      "pinyin": "míng tiān",
       "meanings": [
         "tomorrow"
       ],
       "ko": "내일"
     },
     "没事": {
-      "pinyin": "mei2 shi4",
+      "pinyin": "méi shì",
       "meanings": [
         "it's not important",
         "it's nothing",
@@ -3071,21 +3071,21 @@
       "ko": "괜찮아"
     },
     "没想到": {
-      "pinyin": "mei2 xiang3 dao4",
+      "pinyin": "méi xiǎng dào",
       "meanings": [
         "didn't expect"
       ],
       "ko": "생각도 못 했어"
     },
     "没问题": {
-      "pinyin": "mei2 wen4 ti2",
+      "pinyin": "méi wèn tí",
       "meanings": [
         "no problem"
       ],
       "ko": "문제없어"
     },
     "爸爸": {
-      "pinyin": "ba4 ba5",
+      "pinyin": "bà ba",
       "meanings": [
         "(coll.) father; dad",
         "CL:位[wei4]"
@@ -3093,14 +3093,14 @@
       "ko": "아빠"
     },
     "现在": {
-      "pinyin": "xian4 zai4",
+      "pinyin": "xiàn zài",
       "meanings": [
         "now; at present; currently"
       ],
       "ko": "지금"
     },
     "看看": {
-      "pinyin": "kan4 kan5",
+      "pinyin": "kàn kan",
       "meanings": [
         "to take a look at",
         "to examine",
@@ -3110,14 +3110,14 @@
       "ko": "봐봐"
     },
     "看见": {
-      "pinyin": "kan4 jian4",
+      "pinyin": "kàn jiàn",
       "meanings": [
         "to see; to catch sight of"
       ],
       "ko": "보다·만나다"
     },
     "知道": {
-      "pinyin": "zhi1 dao4",
+      "pinyin": "zhī dào",
       "meanings": [
         "to know; to become aware of",
         "also pr. [zhi1dao5]"
@@ -3125,7 +3125,7 @@
       "ko": "알다"
     },
     "知道了": {
-      "pinyin": "zhi1 dao4 le5",
+      "pinyin": "zhī dào le",
       "meanings": [
         "OK!",
         "Got it!"
@@ -3133,7 +3133,7 @@
       "ko": null
     },
     "自己": {
-      "pinyin": "zi4 ji3",
+      "pinyin": "zì jǐ",
       "meanings": [
         "oneself; (attributive) one's own"
       ],
@@ -3154,7 +3154,7 @@
       "ko": "할래?"
     },
     "谁知道": {
-      "pinyin": "shei2 zhi1 dao4",
+      "pinyin": "shéi zhī dào",
       "meanings": [
         "God knows...",
         "Who would have imagined...?"
@@ -3169,7 +3169,7 @@
       "ko": "누구나"
     },
     "这个": {
-      "pinyin": "zhe4 ge5",
+      "pinyin": "zhè ge",
       "meanings": [
         "(pronoun) this",
         "(adjective) this"
@@ -3184,7 +3184,7 @@
       "ko": "이게 바로"
     },
     "这样": {
-      "pinyin": "zhe4 yang4",
+      "pinyin": "zhè yàng",
       "meanings": [
         "this way; like this; so",
         "(before a noun) this kind of; such"
@@ -3192,7 +3192,7 @@
       "ko": "이렇게·이런"
     },
     "那个": {
-      "pinyin": "na4 ge5",
+      "pinyin": "nà ge",
       "meanings": [
         "that one",
         "that thing",
@@ -3207,7 +3207,7 @@
       "ko": "저거"
     },
     "那天": {
-      "pinyin": "na4 tian1",
+      "pinyin": "nà tiān",
       "meanings": [
         "that day",
         "the other day"

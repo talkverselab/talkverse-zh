@@ -40,6 +40,12 @@
 
 ---
 
+### 1-5. HSK 1~5급 단어 4,240 + 한자 1,500 (09-08)
+- 단어: `complete-hsk-vocabulary`(MIT, HSK 3.0 `new-1..5`) → `tool/build_hsk_words.py` → `assets/data/vocab/hsk_words.json`. 테마=급수, 섹션=빈도순 50개. 한국어 뜻·아이콘은 에이전트 생성(배치 300개, `ko`·`ic`), 앱 기존 여행 어휘 ko 우선.
+- 한자: HSK 3.0 급별 300자 × 5 = 1,500 (`hanzi_score_final.tsv` hsk_char_level + `hanzi_ko.json` 훈음). `tool/build_hsk1500.py` → `hanzi_hsk1500.json`: 회화 빈도순 5단계(300자) × 20자 소단계 75개, `phases[]`에 누적 커버율.
+- 빈도 절벽: 회화 코퍼스 커버율은 107자 80% · 206자 90% · 359자 95% · 517자 97% · 682자 98% 이후 1,500자까지 완만한 꼬리(급격한 절벽 없음). 그래서 5단계는 등분(300자)으로 두고 커버율만 표기.
+- 화면: `HanziHubScreen`(209 / 1500 선택) → `HanziStagesScreen(asset, seal, kicker)`; `phases` 있으면 큰 단계 접기/펼치기. 단어는 `TopicVocabScreen(extraAssets: [...])`.
+
 ## 2. 화면·기능
 
 ### 2-1. 홈 메뉴 구조 (b6a33f1, f3f7bf5)

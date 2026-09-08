@@ -153,12 +153,14 @@ class TopicVocabScreen extends StatefulWidget {
   final String title;
   final String asset;
   final bool includeCoreWordset; // 회화 핵심어휘 테마 추가 여부
+  final List<String> extraAssets; // 뒤에 이어 붙일 추가 자산 (HSK 등)
 
   const TopicVocabScreen({
     super.key,
     this.title = '주제별 단어',
     this.asset = 'assets/data/vocab/travel_words.json',
     this.includeCoreWordset = false,
+    this.extraAssets = const [],
   });
 
   @override
@@ -181,6 +183,10 @@ class _TopicVocabScreenState extends State<TopicVocabScreen> {
         List<VocabTheme>.from(VocabCatalog.instance.themesFor(widget.asset));
     if (widget.includeCoreWordset) {
       list.add(await VocabCatalog.instance.loadCoreWordset());
+    }
+    for (final a in widget.extraAssets) {
+      await VocabCatalog.instance.ensureLoaded(a);
+      list.addAll(VocabCatalog.instance.themesFor(a));
     }
     if (!mounted) return;
     setState(() {

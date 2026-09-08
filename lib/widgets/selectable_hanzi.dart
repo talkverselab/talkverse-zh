@@ -177,7 +177,8 @@ class _ChunkInfoSheetState extends State<_ChunkInfoSheet> {
     final chunk = widget.chunk;
     final cedict = widget.cedict;
     final chunkData = widget.chunkData;
-    final pinyin = cedict?.pinyin ?? (chunkData?['pinyin'] as String?);
+    final rawPy = cedict?.pinyin ?? (chunkData?['pinyin'] as String?);
+    final pinyin = rawPy == null ? null : PinyinUtil.toTonedPinyin(rawPy);
     final meanings = cedict?.meanings ??
         (chunkData?['meanings'] as List?)?.map((e) => e.toString()).toList() ??
         const [];

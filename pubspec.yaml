@@ -73,7 +73,9 @@ flutter:
     - assets/data/grammar/lesson2.json
     - assets/data/grammar/hanzi_info.json
     - assets/data/hanzi/hanzi_stages.json
+    - assets/data/hanzi/hanzi_hsk1500.json
     - assets/data/hanzi/phonetic_ext.json
     - assets/data/hanzi/hanzi_ko.json
     - assets/data/vocab/travel_words.json
     - assets/data/vocab/travel_expressions.json
+    - assets/data/vocab/hsk_words.json

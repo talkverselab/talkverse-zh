@@ -1,0 +1,11064 @@
+{
+ "title": "HSK 1~5급 한자 1500",
+ "subtitle": "회화 빈도순 5단계 × 300자 · 20자 소단계 · 4지선다 (누적)",
+ "total": 1500,
+ "phases": [
+  {
+   "phase": 1,
+   "from": 1,
+   "to": 300,
+   "coverage_pct": 93.67
+  },
+  {
+   "phase": 2,
+   "from": 301,
+   "to": 600,
+   "coverage_pct": 97.58
+  },
+  {
+   "phase": 3,
+   "from": 601,
+   "to": 900,
+   "coverage_pct": 98.62
+  },
+  {
+   "phase": 4,
+   "from": 901,
+   "to": 1200,
+   "coverage_pct": 98.93
+  },
+  {
+   "phase": 5,
+   "from": 1201,
+   "to": 1500,
+   "coverage_pct": 98.99
+  }
+ ],
+ "stages": [
+  {
+   "stage": 1,
+   "phase": 1,
+   "coverage_pct": 47.69,
+   "chars": [
+    {
+     "char": "我",
+     "meaning": "나·저",
+     "pinyin_raw": "wo3",
+     "hsk": "HSK1",
+     "rank": 1
+    },
+    {
+     "char": "的",
+     "meaning": "~의·~한 (관형격 조사)",
+     "pinyin_raw": "de5",
+     "hsk": "HSK1",
+     "rank": 2
+    },
+    {
+     "char": "你",
+     "meaning": "너·당신",
+     "pinyin_raw": "ni3",
+     "hsk": "HSK1",
+     "rank": 3
+    },
+    {
+     "char": "是",
+     "meaning": "~이다·옳다",
+     "pinyin_raw": "shi4",
+     "hsk": "HSK1",
+     "rank": 4
+    },
+    {
+     "char": "了",
+     "meaning": "완료·변화 표시",
+     "pinyin_raw": "le5",
+     "hsk": "HSK1",
+     "rank": 5
+    },
+    {
+     "char": "不",
+     "meaning": "아니다·안",
+     "pinyin_raw": "bu4",
+     "hsk": "HSK1",
+     "rank": 6
+    },
+    {
+     "char": "们",
+     "meaning": "~들 (복수 표시)",
+     "pinyin_raw": "men5",
+     "hsk": "HSK1",
+     "rank": 7
+    },
+    {
+     "char": "这",
+     "meaning": "이·이것",
+     "pinyin_raw": "zhe4",
+     "hsk": "HSK1",
+     "rank": 8
+    },
+    {
+     "char": "他",
+     "meaning": "그·그 남자",
+     "pinyin_raw": "ta1",
+     "hsk": "HSK1",
+     "rank": 9
+    },
+    {
+     "char": "在",
+     "meaning": "~에 있다·~에서",
+     "pinyin_raw": "zai4",
+     "hsk": "HSK1",
+     "rank": 10
+    },
+    {
+     "char": "么",
+     "meaning": "(什么의 일부) 의문 표지",
+     "pinyin_raw": "ma2",
+     "hsk": "HSK1",
+     "rank": 11
+    },
+    {
+     "char": "有",
+     "meaning": "있다·소유하다",
+     "pinyin_raw": "you3",
+     "hsk": "HSK1",
+     "rank": 12
+    },
+    {
+     "char": "一",
+     "meaning": "하나·일",
+     "pinyin_raw": "yi1",
+     "hsk": "HSK1",
+     "rank": 13
+    },
+    {
+     "char": "个",
+     "meaning": "개 (일반 양사)",
+     "pinyin_raw": "ge3",
+     "hsk": "HSK1",
+     "rank": 14
+    },
+    {
+     "char": "要",
+     "meaning": "원하다·~할 것이다",
+     "pinyin_raw": "yao1",
+     "hsk": "HSK1",
+     "rank": 15
+    },
+    {
+     "char": "好",
+     "meaning": "좋다·잘",
+     "pinyin_raw": "hao3",
+     "hsk": "HSK1",
+     "rank": 16
+    },
+    {
+     "char": "什",
+     "meaning": "(什么의 일부) 무엇",
+     "pinyin_raw": "shen2",
+     "hsk": "HSK1",
+     "rank": 17
+    },
+    {
+     "char": "吗",
+     "meaning": "의문 어기조사",
+     "pinyin_raw": "ma2",
+     "hsk": "HSK1",
+     "rank": 18
+    },
+    {
+     "char": "就",
+     "meaning": "곧·바로·다름 아닌",
+     "pinyin_raw": "jiu4",
+     "hsk": "HSK1",
+     "rank": 19
+    },
+    {
+     "char": "来",
+     "meaning": "오다",
+     "pinyin_raw": "lai2",
+     "hsk": "HSK1",
+     "rank": 20
+    }
+   ]
+  },
+  {
+   "stage": 2,
+   "phase": 1,
+   "coverage_pct": 61.39,
+   "chars": [
+    {
+     "char": "那",
+     "meaning": "저·저것·그러면",
+     "pinyin_raw": "na3",
+     "hsk": "HSK1",
+     "rank": 21
+    },
+    {
+     "char": "会",
+     "meaning": "할 줄 알다·~할 것이다·모임",
+     "pinyin_raw": "hui4",
+     "hsk": "HSK1",
+     "rank": 22
+    },
+    {
+     "char": "没",
+     "meaning": "없다·~지 않았다 (과거 부정)",
+     "pinyin_raw": "mei2",
+     "hsk": "HSK1",
+     "rank": 23
+    },
+    {
+     "char": "说",
+     "meaning": "말하다",
+     "pinyin_raw": "shui4",
+     "hsk": "HSK1",
+     "rank": 24
+    },
+    {
+     "char": "人",
+     "meaning": "사람",
+     "pinyin_raw": "ren2",
+     "hsk": "HSK1",
+     "rank": 25
+    },
+    {
+     "char": "到",
+     "meaning": "도착하다·이르다",
+     "pinyin_raw": "dao4",
+     "hsk": "HSK1",
+     "rank": 26
+    },
+    {
+     "char": "吧",
+     "meaning": "제안·추측 어기조사",
+     "pinyin_raw": "ba1",
+     "hsk": "HSK1",
+     "rank": 27
+    },
+    {
+     "char": "去",
+     "meaning": "가다",
+     "pinyin_raw": "qu4",
+     "hsk": "HSK1",
+     "rank": 28
+    },
+    {
+     "char": "为",
+     "meaning": "~을 위하여·~이 되다",
+     "pinyin_raw": "wei2",
+     "hsk": "HSK2",
+     "rank": 29
+    },
+    {
+     "char": "她",
+     "meaning": "그녀",
+     "pinyin_raw": "ta1",
+     "hsk": "HSK1",
+     "rank": 30
+    },
+    {
+     "char": "想",
+     "meaning": "생각하다·바라다",
+     "pinyin_raw": "xiang3",
+     "hsk": "HSK1",
+     "rank": 31
+    },
+    {
+     "char": "道",
+     "meaning": "길·방법·말하다",
+     "pinyin_raw": "dao4",
+     "hsk": "HSK1",
+     "rank": 32
+    },
+    {
+     "char": "知",
+     "meaning": "알다 (知道의 일부)",
+     "pinyin_raw": "zhi1",
+     "hsk": "HSK1",
+     "rank": 33
+    },
+    {
+     "char": "能",
+     "meaning": "할 수 있다·능력",
+     "pinyin_raw": "neng2",
+     "hsk": "HSK1",
+     "rank": 34
+    },
+    {
+     "char": "很",
+     "meaning": "매우·아주",
+     "pinyin_raw": "hen3",
+     "hsk": "HSK1",
+     "rank": 35
+    },
+    {
+     "char": "都",
+     "meaning": "모두·이미·도시",
+     "pinyin_raw": "dou1",
+     "hsk": "HSK1",
+     "rank": 36
+    },
+    {
+     "char": "看",
+     "meaning": "보다",
+     "pinyin_raw": "kan1",
+     "hsk": "HSK1",
+     "rank": 37
+    },
+    {
+     "char": "还",
+     "meaning": "아직·또한·돌려주다",
+     "pinyin_raw": "hai2",
+     "hsk": "HSK1",
+     "rank": 38
+    },
+    {
+     "char": "可",
+     "meaning": "가능·~할 만하다",
+     "pinyin_raw": "ke3",
+     "hsk": "HSK2",
+     "rank": 39
+    },
+    {
+     "char": "以",
+     "meaning": "~로써·~에 따라",
+     "pinyin_raw": "yi3",
+     "hsk": "HSK2",
+     "rank": 40
+    }
+   ]
+  },
+  {
+   "stage": 3,
+   "phase": 1,
+   "coverage_pct": 69.61,
+   "chars": [
+    {
+     "char": "里",
+     "meaning": "안·속·리 (단위)",
+     "pinyin_raw": "li3",
+     "hsk": "HSK1",
+     "rank": 41
+    },
+    {
+     "char": "也",
+     "meaning": "~도·또한",
+     "pinyin_raw": "ye3",
+     "hsk": "HSK1",
+     "rank": 42
+    },
+    {
+     "char": "对",
+     "meaning": "맞다·~에 대해·짝",
+     "pinyin_raw": "dui4",
+     "hsk": "HSK1",
+     "rank": 43
+    },
+    {
+     "char": "样",
+     "meaning": "모양·종류",
+     "pinyin_raw": "yang4",
+     "hsk": "HSK1",
+     "rank": 44
+    },
+    {
+     "char": "啊",
+     "meaning": "감탄·확인 어기조사",
+     "pinyin_raw": "a1",
+     "hsk": "HSK2",
+     "rank": 45
+    },
+    {
+     "char": "得",
+     "meaning": "얻다·~할 수 있다 (조사)",
+     "pinyin_raw": "de2",
+     "hsk": "HSK1",
+     "rank": 46
+    },
+    {
+     "char": "怎",
+     "meaning": "어찌·어떻게",
+     "pinyin_raw": "zen3",
+     "hsk": "HSK1",
+     "rank": 47
+    },
+    {
+     "char": "过",
+     "meaning": "지나다·경험 표지",
+     "pinyin_raw": "guo4",
+     "hsk": "HSK1",
+     "rank": 48
+    },
+    {
+     "char": "事",
+     "meaning": "일·사건",
+     "pinyin_raw": "shi4",
+     "hsk": "HSK1",
+     "rank": 49
+    },
+    {
+     "char": "和",
+     "meaning": "~과·~와·화목하다",
+     "pinyin_raw": "he2",
+     "hsk": "HSK1",
+     "rank": 50
+    },
+    {
+     "char": "上",
+     "meaning": "위·올라가다",
+     "pinyin_raw": "shang3",
+     "hsk": "HSK1",
+     "rank": 51
+    },
+    {
+     "char": "把",
+     "meaning": "~을 (대상 표지)·잡다",
+     "pinyin_raw": "ba3",
+     "hsk": "HSK3",
+     "rank": 52
+    },
+    {
+     "char": "给",
+     "meaning": "~에게·주다",
+     "pinyin_raw": "gei3",
+     "hsk": "HSK1",
+     "rank": 53
+    },
+    {
+     "char": "做",
+     "meaning": "하다·만들다",
+     "pinyin_raw": "zuo4",
+     "hsk": "HSK1",
+     "rank": 54
+    },
+    {
+     "char": "让",
+     "meaning": "~하게 하다·양보하다",
+     "pinyin_raw": "rang4",
+     "hsk": "HSK2",
+     "rank": 55
+    },
+    {
+     "char": "现",
+     "meaning": "지금·나타나다 (现在)",
+     "pinyin_raw": "xian4",
+     "hsk": "HSK1",
+     "rank": 56
+    },
+    {
+     "char": "真",
+     "meaning": "진짜·정말",
+     "pinyin_raw": "zhen1",
+     "hsk": "HSK1",
+     "rank": 57
+    },
+    {
+     "char": "但",
+     "meaning": "그러나",
+     "pinyin_raw": "dan4",
+     "hsk": "HSK2",
+     "rank": 58
+    },
+    {
+     "char": "谢",
+     "meaning": "감사하다",
+     "pinyin_raw": "xie4",
+     "hsk": "HSK1",
+     "rank": 59
+    },
+    {
+     "char": "只",
+     "meaning": "단지·~만 (양사)",
+     "pinyin_raw": "zhi1",
+     "hsk": "HSK2",
+     "rank": 60
+    }
+   ]
+  },
+  {
+   "stage": 4,
+   "phase": 1,
+   "coverage_pct": 74.83,
+   "chars": [
+    {
+     "char": "时",
+     "meaning": "때·시간",
+     "pinyin_raw": "shi2",
+     "hsk": "HSK1",
+     "rank": 61
+    },
+    {
+     "char": "生",
+     "meaning": "태어나다·생명",
+     "pinyin_raw": "sheng1",
+     "hsk": "HSK1",
+     "rank": 62
+    },
+    {
+     "char": "起",
+     "meaning": "일어나다·시작",
+     "pinyin_raw": "qi3",
+     "hsk": "HSK1",
+     "rank": 63
+    },
+    {
+     "char": "走",
+     "meaning": "걷다·가다",
+     "pinyin_raw": "zou3",
+     "hsk": "HSK1",
+     "rank": 64
+    },
+    {
+     "char": "下",
+     "meaning": "아래·내려가다·번 (양사)",
+     "pinyin_raw": "xia4",
+     "hsk": "HSK1",
+     "rank": 65
+    },
+    {
+     "char": "如",
+     "meaning": "만약·같다",
+     "pinyin_raw": "ru2",
+     "hsk": "HSK2",
+     "rank": 66
+    },
+    {
+     "char": "呢",
+     "meaning": "지속·되묻기 어기조사",
+     "pinyin_raw": "ne5",
+     "hsk": "HSK1",
+     "rank": 67
+    },
+    {
+     "char": "些",
+     "meaning": "약간·일부 (양사)",
+     "pinyin_raw": "xie1",
+     "hsk": "HSK1",
+     "rank": 68
+    },
+    {
+     "char": "点",
+     "meaning": "점·시 (1点)·약간",
+     "pinyin_raw": "dian3",
+     "hsk": "HSK1",
+     "rank": 69
+    },
+    {
+     "char": "开",
+     "meaning": "열다·시작하다",
+     "pinyin_raw": "kai1",
+     "hsk": "HSK1",
+     "rank": 70
+    },
+    {
+     "char": "跟",
+     "meaning": "~와 함께·따르다",
+     "pinyin_raw": "gen1",
+     "hsk": "HSK1",
+     "rank": 71
+    },
+    {
+     "char": "天",
+     "meaning": "하늘·날",
+     "pinyin_raw": "tian1",
+     "hsk": "HSK1",
+     "rank": 72
+    },
+    {
+     "char": "后",
+     "meaning": "뒤·후",
+     "pinyin_raw": "hou4",
+     "hsk": "HSK1",
+     "rank": 73
+    },
+    {
+     "char": "快",
+     "meaning": "빠르다·곧",
+     "pinyin_raw": "kuai4",
+     "hsk": "HSK1",
+     "rank": 74
+    },
+    {
+     "char": "别",
+     "meaning": "~하지 마라·다른",
+     "pinyin_raw": "bie2",
+     "hsk": "HSK1",
+     "rank": 75
+    },
+    {
+     "char": "它",
+     "meaning": "그것 (사물·동물)",
+     "pinyin_raw": "ta1",
+     "hsk": "HSK2",
+     "rank": 76
+    },
+    {
+     "char": "着",
+     "meaning": "~하고 있다 (지속·진행)",
+     "pinyin_raw": "zhao1",
+     "hsk": "HSK1",
+     "rank": 77
+    },
+    {
+     "char": "再",
+     "meaning": "다시·또 (미래)",
+     "pinyin_raw": "zai4",
+     "hsk": "HSK1",
+     "rank": 78
+    },
+    {
+     "char": "多",
+     "meaning": "많다·얼마나",
+     "pinyin_raw": "duo1",
+     "hsk": "HSK1",
+     "rank": 79
+    },
+    {
+     "char": "果",
+     "meaning": "결과·과일",
+     "pinyin_raw": "guo3",
+     "hsk": "HSK1",
+     "rank": 80
+    }
+   ]
+  },
+  {
+   "stage": 5,
+   "phase": 1,
+   "coverage_pct": 78.87,
+   "chars": [
+    {
+     "char": "回",
+     "meaning": "돌아가다·번 (양사)",
+     "pinyin_raw": "hui2",
+     "hsk": "HSK1",
+     "rank": 81
+    },
+    {
+     "char": "该",
+     "meaning": "마땅하다·해당·그",
+     "pinyin_raw": "gai1",
+     "hsk": "HSK2",
+     "rank": 82
+    },
+    {
+     "char": "所",
+     "meaning": "장소·~한 바",
+     "pinyin_raw": "suo3",
+     "hsk": "HSK2",
+     "rank": 83
+    },
+    {
+     "char": "然",
+     "meaning": "그러하다·그러나",
+     "pinyin_raw": "ran2",
+     "hsk": "HSK2",
+     "rank": 84
+    },
+    {
+     "char": "被",
+     "meaning": "~당하다 (피동 표지)",
+     "pinyin_raw": "bei4",
+     "hsk": "HSK3",
+     "rank": 85
+    },
+    {
+     "char": "自",
+     "meaning": "스스로·~부터",
+     "pinyin_raw": "zi4",
+     "hsk": "HSK2",
+     "rank": 86
+    },
+    {
+     "char": "找",
+     "meaning": "찾다",
+     "pinyin_raw": "zhao3",
+     "hsk": "HSK1",
+     "rank": 87
+    },
+    {
+     "char": "听",
+     "meaning": "듣다",
+     "pinyin_raw": "yin3",
+     "hsk": "HSK1",
+     "rank": 88
+    },
+    {
+     "char": "子",
+     "meaning": "아들·접미사",
+     "pinyin_raw": "zi3",
+     "hsk": "HSK1",
+     "rank": 89
+    },
+    {
+     "char": "等",
+     "meaning": "기다리다·등급",
+     "pinyin_raw": "deng3",
+     "hsk": "HSK1",
+     "rank": 90
+    },
+    {
+     "char": "谁",
+     "meaning": "누구",
+     "pinyin_raw": "shei2",
+     "hsk": "HSK1",
+     "rank": 91
+    },
+    {
+     "char": "家",
+     "meaning": "집·가정",
+     "pinyin_raw": "jia1",
+     "hsk": "HSK1",
+     "rank": 92
+    },
+    {
+     "char": "先",
+     "meaning": "먼저·앞",
+     "pinyin_raw": "xian1",
+     "hsk": "HSK1",
+     "rank": 93
+    },
+    {
+     "char": "已",
+     "meaning": "이미",
+     "pinyin_raw": "yi3",
+     "hsk": "HSK2",
+     "rank": 94
+    },
+    {
+     "char": "当",
+     "meaning": "당연·~할 때·맞다",
+     "pinyin_raw": "dang1",
+     "hsk": "HSK2",
+     "rank": 95
+    },
+    {
+     "char": "告",
+     "meaning": "알리다",
+     "pinyin_raw": "gao4",
+     "hsk": "HSK1",
+     "rank": 96
+    },
+    {
+     "char": "经",
+     "meaning": "지나다·경험",
+     "pinyin_raw": "jing1",
+     "hsk": "HSK2",
+     "rank": 97
+    },
+    {
+     "char": "话",
+     "meaning": "말·이야기",
+     "pinyin_raw": "hua4",
+     "hsk": "HSK1",
+     "rank": 98
+    },
+    {
+     "char": "妈",
+     "meaning": "엄마",
+     "pinyin_raw": "ma1",
+     "hsk": "HSK1",
+     "rank": 99
+    },
+    {
+     "char": "大",
+     "meaning": "크다",
+     "pinyin_raw": "da4",
+     "hsk": "HSK1",
+     "rank": 100
+    }
+   ]
+  },
+  {
+   "stage": 6,
+   "phase": 1,
+   "coverage_pct": 82.15,
+   "chars": [
+    {
+     "char": "像",
+     "meaning": "닮다·~같다",
+     "pinyin_raw": "xiang4",
+     "hsk": "HSK2",
+     "rank": 101
+    },
+    {
+     "char": "诉",
+     "meaning": "알리다",
+     "pinyin_raw": "su4",
+     "hsk": "HSK1",
+     "rank": 102
+    },
+    {
+     "char": "己",
+     "meaning": "자기",
+     "pinyin_raw": "ji3",
+     "hsk": "HSK2",
+     "rank": 103
+    },
+    {
+     "char": "出",
+     "meaning": "나가다·내다",
+     "pinyin_raw": "chu1",
+     "hsk": "HSK1",
+     "rank": 104
+    },
+    {
+     "char": "因",
+     "meaning": "원인",
+     "pinyin_raw": "yin1",
+     "hsk": "HSK2",
+     "rank": 105
+    },
+    {
+     "char": "见",
+     "meaning": "보다·만나다",
+     "pinyin_raw": "jian4",
+     "hsk": "HSK1",
+     "rank": 106
+    },
+    {
+     "char": "定",
+     "meaning": "정하다·반드시",
+     "pinyin_raw": "ding4",
+     "hsk": "HSK2",
+     "rank": 107
+    },
+    {
+     "char": "觉",
+     "meaning": "느끼다·깨닫다",
+     "pinyin_raw": "jiao4",
+     "hsk": "HSK1",
+     "rank": 108
+    },
+    {
+     "char": "哪",
+     "meaning": "어느·어디",
+     "pinyin_raw": "na3",
+     "hsk": "HSK1",
+     "rank": 109
+    },
+    {
+     "char": "最",
+     "meaning": "가장·제일",
+     "pinyin_raw": "zui4",
+     "hsk": "HSK1",
+     "rank": 110
+    },
+    {
+     "char": "用",
+     "meaning": "쓰다·사용하다",
+     "pinyin_raw": "yong4",
+     "hsk": "HSK1",
+     "rank": 111
+    },
+    {
+     "char": "死",
+     "meaning": "죽다·~죽겠다",
+     "pinyin_raw": "si3",
+     "hsk": "HSK3",
+     "rank": 112
+    },
+    {
+     "char": "问",
+     "meaning": "묻다",
+     "pinyin_raw": "wen4",
+     "hsk": "HSK1",
+     "rank": 113
+    },
+    {
+     "char": "欢",
+     "meaning": "기쁘다",
+     "pinyin_raw": "huan1",
+     "hsk": "HSK1",
+     "rank": 114
+    },
+    {
+     "char": "从",
+     "meaning": "~부터·따르다",
+     "pinyin_raw": "cong2",
+     "hsk": "HSK1",
+     "rank": 115
+    },
+    {
+     "char": "小",
+     "meaning": "작다",
+     "pinyin_raw": "xiao3",
+     "hsk": "HSK1",
+     "rank": 116
+    },
+    {
+     "char": "意",
+     "meaning": "뜻·생각",
+     "pinyin_raw": "yi4",
+     "hsk": "HSK2",
+     "rank": 117
+    },
+    {
+     "char": "叫",
+     "meaning": "부르다·~라고 하다",
+     "pinyin_raw": "jiao4",
+     "hsk": "HSK1",
+     "rank": 118
+    },
+    {
+     "char": "喜",
+     "meaning": "기쁘다",
+     "pinyin_raw": "xi3",
+     "hsk": "HSK1",
+     "rank": 119
+    },
+    {
+     "char": "儿",
+     "meaning": "아들·접미사",
+     "pinyin_raw": "er2",
+     "hsk": "HSK1",
+     "rank": 120
+    }
+   ]
+  },
+  {
+   "stage": 7,
+   "phase": 1,
+   "coverage_pct": 84.72,
+   "chars": [
+    {
+     "char": "而",
+     "meaning": "그러나·그리고",
+     "pinyin_raw": "er2",
+     "hsk": "HSK2",
+     "rank": 121
+    },
+    {
+     "char": "请",
+     "meaning": "청하다·부탁하다",
+     "pinyin_raw": "qing3",
+     "hsk": "HSK1",
+     "rank": 122
+    },
+    {
+     "char": "西",
+     "meaning": "서쪽",
+     "pinyin_raw": "xi1",
+     "hsk": "HSK1",
+     "rank": 123
+    },
+    {
+     "char": "地",
+     "meaning": "땅·~게 (부사 표지)",
+     "pinyin_raw": "de5",
+     "hsk": "HSK1",
+     "rank": 124
+    },
+    {
+     "char": "才",
+     "meaning": "비로소·재능",
+     "pinyin_raw": "cai2",
+     "hsk": "HSK2",
+     "rank": 125
+    },
+    {
+     "char": "东",
+     "meaning": "동쪽",
+     "pinyin_raw": "dong1",
+     "hsk": "HSK1",
+     "rank": 126
+    },
+    {
+     "char": "孩",
+     "meaning": "아이",
+     "pinyin_raw": "hai2",
+     "hsk": "HSK1",
+     "rank": 127
+    },
+    {
+     "char": "又",
+     "meaning": "또·다시",
+     "pinyin_raw": "you4",
+     "hsk": "HSK2",
+     "rank": 128
+    },
+    {
+     "char": "打",
+     "meaning": "때리다·치다·전화하다",
+     "pinyin_raw": "da2",
+     "hsk": "HSK1",
+     "rank": 129
+    },
+    {
+     "char": "应",
+     "meaning": "응당·대답하다",
+     "pinyin_raw": "ying1",
+     "hsk": "HSK2",
+     "rank": 130
+    },
+    {
+     "char": "候",
+     "meaning": "기다리다·때",
+     "pinyin_raw": "hou4",
+     "hsk": "HSK1",
+     "rank": 131
+    },
+    {
+     "char": "发",
+     "meaning": "보내다·시작",
+     "pinyin_raw": "fa1",
+     "hsk": "HSK2",
+     "rank": 132
+    },
+    {
+     "char": "需",
+     "meaning": "필요하다",
+     "pinyin_raw": "xu1",
+     "hsk": "HSK3",
+     "rank": 133
+    },
+    {
+     "char": "前",
+     "meaning": "앞·전",
+     "pinyin_raw": "qian2",
+     "hsk": "HSK1",
+     "rank": 134
+    },
+    {
+     "char": "明",
+     "meaning": "밝다·내일",
+     "pinyin_raw": "ming2",
+     "hsk": "HSK1",
+     "rank": 135
+    },
+    {
+     "char": "爱",
+     "meaning": "사랑하다",
+     "pinyin_raw": "ai4",
+     "hsk": "HSK1",
+     "rank": 136
+    },
+    {
+     "char": "帮",
+     "meaning": "돕다",
+     "pinyin_raw": "bang1",
+     "hsk": "HSK1",
+     "rank": 137
+    },
+    {
+     "char": "爸",
+     "meaning": "아빠",
+     "pinyin_raw": "ba4",
+     "hsk": "HSK1",
+     "rank": 138
+    },
+    {
+     "char": "心",
+     "meaning": "마음·심장",
+     "pinyin_raw": "xin1",
+     "hsk": "HSK2",
+     "rank": 139
+    },
+    {
+     "char": "太",
+     "meaning": "너무·매우",
+     "pinyin_raw": "tai4",
+     "hsk": "HSK1",
+     "rank": 140
+    }
+   ]
+  },
+  {
+   "stage": 8,
+   "phase": 1,
+   "coverage_pct": 86.75,
+   "chars": [
+    {
+     "char": "干",
+     "meaning": "마르다·하다·줄기",
+     "pinyin_raw": "gan1",
+     "hsk": "HSK1",
+     "rank": 141
+    },
+    {
+     "char": "错",
+     "meaning": "틀리다·잘못",
+     "pinyin_raw": "cuo4",
+     "hsk": "HSK1",
+     "rank": 142
+    },
+    {
+     "char": "今",
+     "meaning": "오늘·이제",
+     "pinyin_raw": "jin1",
+     "hsk": "HSK1",
+     "rank": 143
+    },
+    {
+     "char": "间",
+     "meaning": "사이·방",
+     "pinyin_raw": "jian1",
+     "hsk": "HSK1",
+     "rank": 144
+    },
+    {
+     "char": "认",
+     "meaning": "알다·인정",
+     "pinyin_raw": "ren4",
+     "hsk": "HSK1",
+     "rank": 145
+    },
+    {
+     "char": "女",
+     "meaning": "여자",
+     "pinyin_raw": "nu:3",
+     "hsk": "HSK1",
+     "rank": 146
+    },
+    {
+     "char": "方",
+     "meaning": "방향·방법",
+     "pinyin_raw": "fang1",
+     "hsk": "HSK1",
+     "rank": 147
+    },
+    {
+     "char": "次",
+     "meaning": "번·차례 (양사)",
+     "pinyin_raw": "ci4",
+     "hsk": "HSK1",
+     "rank": 148
+    },
+    {
+     "char": "行",
+     "meaning": "가다·되다·줄",
+     "pinyin_raw": "hang2",
+     "hsk": "HSK1",
+     "rank": 149
+    },
+    {
+     "char": "题",
+     "meaning": "주제·문제",
+     "pinyin_raw": "ti2",
+     "hsk": "HSK2",
+     "rank": 150
+    },
+    {
+     "char": "情",
+     "meaning": "감정",
+     "pinyin_raw": "qing2",
+     "hsk": "HSK2",
+     "rank": 151
+    },
+    {
+     "char": "拿",
+     "meaning": "old variant o…",
+     "pinyin_raw": "na2",
+     "hsk": "HSK1",
+     "rank": 152
+    },
+    {
+     "char": "吃",
+     "meaning": "to eat; to co…",
+     "pinyin_raw": "chi1",
+     "hsk": "HSK1",
+     "rank": 153
+    },
+    {
+     "char": "作",
+     "meaning": "(bound form) …",
+     "pinyin_raw": "zuo1",
+     "hsk": "HSK1",
+     "rank": 154
+    },
+    {
+     "char": "中",
+     "meaning": "(bound form) …",
+     "pinyin_raw": "zhong1",
+     "hsk": "HSK1",
+     "rank": 155
+    },
+    {
+     "char": "直",
+     "meaning": "surname Zhi",
+     "pinyin_raw": "zhi2",
+     "hsk": "HSK2",
+     "rank": 156
+    },
+    {
+     "char": "始",
+     "meaning": "to begin",
+     "pinyin_raw": "shi3",
+     "hsk": "HSK3",
+     "rank": 158
+    },
+    {
+     "char": "面",
+     "meaning": "face",
+     "pinyin_raw": "mian4",
+     "hsk": "HSK1",
+     "rank": 159
+    },
+    {
+     "char": "之",
+     "meaning": "~의·그것 (문어)",
+     "pinyin_raw": "zhi1",
+     "hsk": "HSK4",
+     "rank": 160
+    },
+    {
+     "char": "信",
+     "meaning": "letter",
+     "pinyin_raw": "xin4",
+     "hsk": "HSK2",
+     "rank": 161
+    }
+   ]
+  },
+  {
+   "stage": 9,
+   "phase": 1,
+   "coverage_pct": 88.34,
+   "chars": [
+    {
+     "char": "何",
+     "meaning": "surname He",
+     "pinyin_raw": "he2",
+     "hsk": "HSK3",
+     "rank": 162
+    },
+    {
+     "char": "友",
+     "meaning": "friend",
+     "pinyin_raw": "you3",
+     "hsk": "HSK1",
+     "rank": 163
+    },
+    {
+     "char": "种",
+     "meaning": "seed",
+     "pinyin_raw": "zhong3",
+     "hsk": "HSK3",
+     "rank": 164
+    },
+    {
+     "char": "离",
+     "meaning": "mythical beas…",
+     "pinyin_raw": "chi1",
+     "hsk": "HSK2",
+     "rank": 165
+    },
+    {
+     "char": "正",
+     "meaning": "first month o…",
+     "pinyin_raw": "zheng1",
+     "hsk": "HSK1",
+     "rank": 166
+    },
+    {
+     "char": "带",
+     "meaning": "band",
+     "pinyin_raw": "dai4",
+     "hsk": "HSK2",
+     "rank": 167
+    },
+    {
+     "char": "朋",
+     "meaning": "friend",
+     "pinyin_raw": "peng2",
+     "hsk": "HSK1",
+     "rank": 168
+    },
+    {
+     "char": "望",
+     "meaning": "full moon",
+     "pinyin_raw": "wang4",
+     "hsk": "HSK3",
+     "rank": 169
+    },
+    {
+     "char": "相",
+     "meaning": "surname Xiang",
+     "pinyin_raw": "xiang1",
+     "hsk": "HSK2",
+     "rank": 170
+    },
+    {
+     "char": "工",
+     "meaning": "work",
+     "pinyin_raw": "gong1",
+     "hsk": "HSK1",
+     "rank": 171
+    },
+    {
+     "char": "将",
+     "meaning": "will",
+     "pinyin_raw": "jiang1",
+     "hsk": "HSK3",
+     "rank": 172
+    },
+    {
+     "char": "进",
+     "meaning": "to go forward",
+     "pinyin_raw": "jin4",
+     "hsk": "HSK1",
+     "rank": 173
+    },
+    {
+     "char": "成",
+     "meaning": "이루다·~이 되다",
+     "pinyin_raw": "cheng2",
+     "hsk": "HSK2",
+     "rank": 174
+    },
+    {
+     "char": "白",
+     "meaning": "희다·빈",
+     "pinyin_raw": "bai2",
+     "hsk": "HSK1",
+     "rank": 175
+    },
+    {
+     "char": "更",
+     "meaning": "더욱·다시",
+     "pinyin_raw": "geng1",
+     "hsk": "HSK2",
+     "rank": 176
+    },
+    {
+     "char": "希",
+     "meaning": "to hope",
+     "pinyin_raw": "xi1",
+     "hsk": "HSK3",
+     "rank": 177
+    },
+    {
+     "char": "感",
+     "meaning": "to feel",
+     "pinyin_raw": "gan3",
+     "hsk": "HSK2",
+     "rank": 178
+    },
+    {
+     "char": "晚",
+     "meaning": "evening",
+     "pinyin_raw": "wan3",
+     "hsk": "HSK1",
+     "rank": 179
+    },
+    {
+     "char": "钱",
+     "meaning": "surname Qian",
+     "pinyin_raw": "qian2",
+     "hsk": "HSK1",
+     "rank": 180
+    },
+    {
+     "char": "亲",
+     "meaning": "parent",
+     "pinyin_raw": "qin1",
+     "hsk": "HSK3",
+     "rank": 181
+    }
+   ]
+  },
+  {
+   "stage": 10,
+   "phase": 1,
+   "coverage_pct": 89.68,
+   "chars": [
+    {
+     "char": "许",
+     "meaning": "surname Xu",
+     "pinyin_raw": "xu3",
+     "hsk": "HSK2",
+     "rank": 182
+    },
+    {
+     "char": "法",
+     "meaning": "variant of 法[…",
+     "pinyin_raw": "fa3",
+     "hsk": "HSK2",
+     "rank": 183
+    },
+    {
+     "char": "杀",
+     "meaning": "to kill; to s…",
+     "pinyin_raw": "sha1",
+     "hsk": "HSK5",
+     "rank": 184
+    },
+    {
+     "char": "准",
+     "meaning": "to allow",
+     "pinyin_raw": "zhun3",
+     "hsk": "HSK1",
+     "rank": 185
+    },
+    {
+     "char": "常",
+     "meaning": "자주·평소",
+     "pinyin_raw": "chang2",
+     "hsk": "HSK1",
+     "rank": 186
+    },
+    {
+     "char": "思",
+     "meaning": "to think",
+     "pinyin_raw": "si1",
+     "hsk": "HSK2",
+     "rank": 187
+    },
+    {
+     "char": "放",
+     "meaning": "to put",
+     "pinyin_raw": "fang4",
+     "hsk": "HSK1",
+     "rank": 188
+    },
+    {
+     "char": "必",
+     "meaning": "certainly",
+     "pinyin_raw": "bi4",
+     "hsk": "HSK2",
+     "rank": 189
+    },
+    {
+     "char": "比",
+     "meaning": "Belgium",
+     "pinyin_raw": "bi1",
+     "hsk": "HSK1",
+     "rank": 190
+    },
+    {
+     "char": "备",
+     "meaning": "variant of 備|…",
+     "pinyin_raw": "bei4",
+     "hsk": "HSK1",
+     "rank": 191
+    },
+    {
+     "char": "年",
+     "meaning": "년·해",
+     "pinyin_raw": "nian2",
+     "hsk": "HSK1",
+     "rank": 192
+    },
+    {
+     "char": "记",
+     "meaning": "to record",
+     "pinyin_raw": "ji4",
+     "hsk": "HSK1",
+     "rank": 193
+    },
+    {
+     "char": "关",
+     "meaning": "surname Guan",
+     "pinyin_raw": "guan1",
+     "hsk": "HSK1",
+     "rank": 194
+    },
+    {
+     "char": "全",
+     "meaning": "surname Quan",
+     "pinyin_raw": "quan2",
+     "hsk": "HSK2",
+     "rank": 195
+    },
+    {
+     "char": "电",
+     "meaning": "lightning",
+     "pinyin_raw": "dian4",
+     "hsk": "HSK1",
+     "rank": 196
+    },
+    {
+     "char": "住",
+     "meaning": "to live; to r…",
+     "pinyin_raw": "zhu4",
+     "hsk": "HSK1",
+     "rank": 197
+    },
+    {
+     "char": "切",
+     "meaning": "to cut; to sl…",
+     "pinyin_raw": "qie1",
+     "hsk": "HSK3",
+     "rank": 198
+    },
+    {
+     "char": "呀",
+     "meaning": "감탄·강조 어기조사",
+     "pinyin_raw": "ya1",
+     "hsk": "HSK4",
+     "rank": 199
+    },
+    {
+     "char": "两",
+     "meaning": "둘·두 개",
+     "pinyin_raw": "liang3",
+     "hsk": "HSK1",
+     "rank": 200
+    },
+    {
+     "char": "其",
+     "meaning": "his",
+     "pinyin_raw": "qi2",
+     "hsk": "HSK2",
+     "rank": 201
+    }
+   ]
+  },
+  {
+   "stage": 11,
+   "phase": 1,
+   "coverage_pct": 90.78,
+   "chars": [
+    {
+     "char": "非",
+     "meaning": "abbr. for 非洲[…",
+     "pinyin_raw": "fei1",
+     "hsk": "HSK1",
+     "rank": 202
+    },
+    {
+     "char": "或",
+     "meaning": "maybe",
+     "pinyin_raw": "huo4",
+     "hsk": "HSK2",
+     "rank": 203
+    },
+    {
+     "char": "任",
+     "meaning": "surname Ren",
+     "pinyin_raw": "ren4",
+     "hsk": "HSK3",
+     "rank": 204
+    },
+    {
+     "char": "完",
+     "meaning": "to finish",
+     "pinyin_raw": "wan2",
+     "hsk": "HSK2",
+     "rank": 205
+    },
+    {
+     "char": "须",
+     "meaning": "must",
+     "pinyin_raw": "xu1",
+     "hsk": "HSK2",
+     "rank": 206
+    },
+    {
+     "char": "办",
+     "meaning": "힘쓸 판",
+     "pinyin_raw": "ban4",
+     "hsk": "HSK2",
+     "rank": 209
+    },
+    {
+     "char": "抱",
+     "meaning": "안을 포",
+     "pinyin_raw": "bao4",
+     "hsk": "HSK4",
+     "rank": 210
+    },
+    {
+     "char": "您",
+     "meaning": "당신 니",
+     "pinyin_raw": "nin2",
+     "hsk": "HSK1",
+     "rank": 212
+    },
+    {
+     "char": "实",
+     "meaning": "열매 실",
+     "pinyin_raw": "shi2",
+     "hsk": "HSK2",
+     "rank": 213
+    },
+    {
+     "char": "老",
+     "meaning": "늙을 로",
+     "pinyin_raw": "lao3",
+     "hsk": "HSK1",
+     "rank": 214
+    },
+    {
+     "char": "刚",
+     "meaning": "굳셀 강",
+     "pinyin_raw": "gang1",
+     "hsk": "HSK2",
+     "rank": 217
+    },
+    {
+     "char": "活",
+     "meaning": "살 활",
+     "pinyin_raw": "huo2",
+     "hsk": "HSK2",
+     "rank": 218
+    },
+    {
+     "char": "少",
+     "meaning": "적을 소",
+     "pinyin_raw": "shao3",
+     "hsk": "HSK1",
+     "rank": 219
+    },
+    {
+     "char": "并",
+     "meaning": "나란히 병/아우를 병",
+     "pinyin_raw": "bing4",
+     "hsk": "HSK3",
+     "rank": 220
+    },
+    {
+     "char": "名",
+     "meaning": "이름 명",
+     "pinyin_raw": "ming2",
+     "hsk": "HSK1",
+     "rank": 221
+    },
+    {
+     "char": "于",
+     "meaning": "어조사 우",
+     "pinyin_raw": "yu2",
+     "hsk": "HSK2",
+     "rank": 222
+    },
+    {
+     "char": "边",
+     "meaning": "가 변",
+     "pinyin_raw": "bian1",
+     "hsk": "HSK1",
+     "rank": 223
+    },
+    {
+     "char": "字",
+     "meaning": "글자 자",
+     "pinyin_raw": "zi4",
+     "hsk": "HSK1",
+     "rank": 224
+    },
+    {
+     "char": "高",
+     "meaning": "높을 고",
+     "pinyin_raw": "gao1",
+     "hsk": "HSK1",
+     "rank": 225
+    },
+    {
+     "char": "重",
+     "meaning": "무거울 중/거듭 중",
+     "pinyin_raw": "chong2",
+     "hsk": "HSK1",
+     "rank": 226
+    }
+   ]
+  },
+  {
+   "stage": 12,
+   "phase": 1,
+   "coverage_pct": 91.66,
+   "chars": [
+    {
+     "char": "解",
+     "meaning": "풀 해",
+     "pinyin_raw": "jie3",
+     "hsk": "HSK3",
+     "rank": 227
+    },
+    {
+     "char": "结",
+     "meaning": "맺을 결",
+     "pinyin_raw": "jie1",
+     "hsk": "HSK2",
+     "rank": 228
+    },
+    {
+     "char": "男",
+     "meaning": "사내 남",
+     "pinyin_raw": "nan2",
+     "hsk": "HSK1",
+     "rank": 229
+    },
+    {
+     "char": "新",
+     "meaning": "새 신",
+     "pinyin_raw": "xin1",
+     "hsk": "HSK1",
+     "rank": 230
+    },
+    {
+     "char": "伙",
+     "meaning": "동료 화",
+     "pinyin_raw": "huo3",
+     "hsk": "HSK4",
+     "rank": 231
+    },
+    {
+     "char": "与",
+     "meaning": "더불 여/줄 여",
+     "pinyin_raw": "yu2",
+     "hsk": "HSK4",
+     "rank": 232
+    },
+    {
+     "char": "向",
+     "meaning": "향할 향",
+     "pinyin_raw": "xiang4",
+     "hsk": "HSK2",
+     "rank": 233
+    },
+    {
+     "char": "变",
+     "meaning": "변할 변",
+     "pinyin_raw": "bian4",
+     "hsk": "HSK2",
+     "rank": 234
+    },
+    {
+     "char": "手",
+     "meaning": "손 수",
+     "pinyin_raw": "shou3",
+     "hsk": "HSK1",
+     "rank": 235
+    },
+    {
+     "char": "每",
+     "meaning": "매양 매",
+     "pinyin_raw": "mei3",
+     "hsk": "HSK3",
+     "rank": 236
+    },
+    {
+     "char": "识",
+     "meaning": "알 식",
+     "pinyin_raw": "shi2",
+     "hsk": "HSK1",
+     "rank": 237
+    },
+    {
+     "char": "安",
+     "meaning": "편안 안",
+     "pinyin_raw": "an1",
+     "hsk": "HSK2",
+     "rank": 238
+    },
+    {
+     "char": "马",
+     "meaning": "말 마",
+     "pinyin_raw": "ma3",
+     "hsk": "HSK1",
+     "rank": 239
+    },
+    {
+     "char": "本",
+     "meaning": "근본 본",
+     "pinyin_raw": "ben3",
+     "hsk": "HSK1",
+     "rank": 240
+    },
+    {
+     "char": "世",
+     "meaning": "인간 세",
+     "pinyin_raw": "shi4",
+     "hsk": "HSK3",
+     "rank": 241
+    },
+    {
+     "char": "兴",
+     "meaning": "일 흥/흥할 흥",
+     "pinyin_raw": "xing1",
+     "hsk": "HSK1",
+     "rank": 242
+    },
+    {
+     "char": "玩",
+     "meaning": "희롱할 완/놀 완",
+     "pinyin_raw": "wan2",
+     "hsk": "HSK1",
+     "rank": 243
+    },
+    {
+     "char": "且",
+     "meaning": "또 차",
+     "pinyin_raw": "qie3",
+     "hsk": "HSK2",
+     "rank": 244
+    },
+    {
+     "char": "坐",
+     "meaning": "앉을 좌",
+     "pinyin_raw": "zuo4",
+     "hsk": "HSK1",
+     "rank": 245
+    },
+    {
+     "char": "国",
+     "meaning": "나라 국",
+     "pinyin_raw": "guo2",
+     "hsk": "HSK1",
+     "rank": 246
+    }
+   ]
+  },
+  {
+   "stage": 13,
+   "phase": 1,
+   "coverage_pct": 92.43,
+   "chars": [
+    {
+     "char": "保",
+     "meaning": "지킬 보",
+     "pinyin_raw": "bao3",
+     "hsk": "HSK3",
+     "rank": 247
+    },
+    {
+     "char": "车",
+     "meaning": "수레 차/수레 거",
+     "pinyin_raw": "che1",
+     "hsk": "HSK1",
+     "rank": 248
+    },
+    {
+     "char": "担",
+     "meaning": "멜 담",
+     "pinyin_raw": "dan1",
+     "hsk": "HSK4",
+     "rank": 249
+    },
+    {
+     "char": "确",
+     "meaning": "굳을 확",
+     "pinyin_raw": "que4",
+     "hsk": "HSK2",
+     "rank": 250
+    },
+    {
+     "char": "机",
+     "meaning": "틀 기/기계 기",
+     "pinyin_raw": "ji1",
+     "hsk": "HSK1",
+     "rank": 251
+    },
+    {
+     "char": "无",
+     "meaning": "없을 무",
+     "pinyin_raw": "mo2",
+     "hsk": "HSK4",
+     "rank": 252
+    },
+    {
+     "char": "接",
+     "meaning": "이을 접",
+     "pinyin_raw": "jie1",
+     "hsk": "HSK2",
+     "rank": 253
+    },
+    {
+     "char": "美",
+     "meaning": "아름다울 미",
+     "pinyin_raw": "mei3",
+     "hsk": "HSK3",
+     "rank": 254
+    },
+    {
+     "char": "跑",
+     "meaning": "달릴 포",
+     "pinyin_raw": "pao2",
+     "hsk": "HSK1",
+     "rank": 255
+    },
+    {
+     "char": "界",
+     "meaning": "지경 계",
+     "pinyin_raw": "jie4",
+     "hsk": "HSK3",
+     "rank": 256
+    },
+    {
+     "char": "算",
+     "meaning": "셈 산",
+     "pinyin_raw": "suan4",
+     "hsk": "HSK2",
+     "rank": 257
+    },
+    {
+     "char": "续",
+     "meaning": "이을 속",
+     "pinyin_raw": "xu4",
+     "hsk": "HSK3",
+     "rank": 258
+    },
+    {
+     "char": "受",
+     "meaning": "받을 수",
+     "pinyin_raw": "shou4",
+     "hsk": "HSK2",
+     "rank": 259
+    },
+    {
+     "char": "系",
+     "meaning": "맬 계",
+     "pinyin_raw": "xi4",
+     "hsk": "HSK1",
+     "rank": 260
+    },
+    {
+     "char": "够",
+     "meaning": "넉넉할 구",
+     "pinyin_raw": "gou4",
+     "hsk": "HSK2",
+     "rank": 261
+    },
+    {
+     "char": "继",
+     "meaning": "이을 계",
+     "pinyin_raw": "ji4",
+     "hsk": "HSK3",
+     "rank": 262
+    },
+    {
+     "char": "底",
+     "meaning": "밑 저",
+     "pinyin_raw": "de5",
+     "hsk": "HSK3",
+     "rank": 263
+    },
+    {
+     "char": "动",
+     "meaning": "움직일 동",
+     "pinyin_raw": "dong4",
+     "hsk": "HSK1",
+     "rank": 264
+    },
+    {
+     "char": "谈",
+     "meaning": "말씀 담",
+     "pinyin_raw": "tan2",
+     "hsk": "HSK3",
+     "rank": 265
+    },
+    {
+     "char": "远",
+     "meaning": "멀 원",
+     "pinyin_raw": "yuan3",
+     "hsk": "HSK1",
+     "rank": 266
+    }
+   ]
+  },
+  {
+   "stage": 14,
+   "phase": 1,
+   "coverage_pct": 93.1,
+   "chars": [
+    {
+     "char": "同",
+     "meaning": "한가지 동",
+     "pinyin_raw": "tong2",
+     "hsk": "HSK1",
+     "rank": 267
+    },
+    {
+     "char": "身",
+     "meaning": "몸 신",
+     "pinyin_raw": "shen1",
+     "hsk": "HSK1",
+     "rank": 268
+    },
+    {
+     "char": "位",
+     "meaning": "자리 위",
+     "pinyin_raw": "wei4",
+     "hsk": "HSK2",
+     "rank": 269
+    },
+    {
+     "char": "怕",
+     "meaning": "두려워할 파",
+     "pinyin_raw": "pa4",
+     "hsk": "HSK2",
+     "rank": 270
+    },
+    {
+     "char": "喂",
+     "meaning": "먹일 위",
+     "pinyin_raw": "wei2",
+     "hsk": "HSK2",
+     "rank": 271
+    },
+    {
+     "char": "件",
+     "meaning": "물건 건",
+     "pinyin_raw": "jian4",
+     "hsk": "HSK2",
+     "rank": 272
+    },
+    {
+     "char": "害",
+     "meaning": "해할 해",
+     "pinyin_raw": "hai4",
+     "hsk": "HSK3",
+     "rank": 273
+    },
+    {
+     "char": "计",
+     "meaning": "셀 계",
+     "pinyin_raw": "ji4",
+     "hsk": "HSK2",
+     "rank": 274
+    },
+    {
+     "char": "父",
+     "meaning": "아버지 부",
+     "pinyin_raw": "fu4",
+     "hsk": "HSK3",
+     "rank": 275
+    },
+    {
+     "char": "总",
+     "meaning": "다 총/거느릴 총",
+     "pinyin_raw": "zong3",
+     "hsk": "HSK3",
+     "rank": 276
+    },
+    {
+     "char": "房",
+     "meaning": "방 방",
+     "pinyin_raw": "fang2",
+     "hsk": "HSK1",
+     "rank": 277
+    },
+    {
+     "char": "早",
+     "meaning": "이를 조",
+     "pinyin_raw": "zao3",
+     "hsk": "HSK1",
+     "rank": 278
+    },
+    {
+     "char": "管",
+     "meaning": "대롱 관/주관할 관",
+     "pinyin_raw": "guan3",
+     "hsk": "HSK3",
+     "rank": 279
+    },
+    {
+     "char": "姐",
+     "meaning": "누이 저",
+     "pinyin_raw": "jie3",
+     "hsk": "HSK1",
+     "rank": 280
+    },
+    {
+     "char": "决",
+     "meaning": "결단할 결",
+     "pinyin_raw": "jue2",
+     "hsk": "HSK3",
+     "rank": 281
+    },
+    {
+     "char": "肯",
+     "meaning": "즐길 긍",
+     "pinyin_raw": "ken3",
+     "hsk": "HSK5",
+     "rank": 282
+    },
+    {
+     "char": "警",
+     "meaning": "깨우칠 경",
+     "pinyin_raw": "jing3",
+     "hsk": "HSK3",
+     "rank": 284
+    },
+    {
+     "char": "却",
+     "meaning": "물리칠 각",
+     "pinyin_raw": "que4",
+     "hsk": "HSK4",
+     "rank": 285
+    },
+    {
+     "char": "买",
+     "meaning": "살 매",
+     "pinyin_raw": "mai3",
+     "hsk": "HSK1",
+     "rank": 286
+    },
+    {
+     "char": "送",
+     "meaning": "보낼 송",
+     "pinyin_raw": "song4",
+     "hsk": "HSK1",
+     "rank": 287
+    }
+   ]
+  },
+  {
+   "stage": 15,
+   "phase": 1,
+   "coverage_pct": 93.67,
+   "chars": [
+    {
+     "char": "此",
+     "meaning": "이 차",
+     "pinyin_raw": "ci3",
+     "hsk": "HSK3",
+     "rank": 288
+    },
+    {
+     "char": "医",
+     "meaning": "의원 의",
+     "pinyin_raw": "yi1",
+     "hsk": "HSK1",
+     "rank": 289
+    },
+    {
+     "char": "几",
+     "meaning": "몇 기",
+     "pinyin_raw": "ji1",
+     "hsk": "HSK1",
+     "rank": 290
+    },
+    {
+     "char": "理",
+     "meaning": "다스릴 리",
+     "pinyin_raw": "li3",
+     "hsk": "HSK2",
+     "rank": 291
+    },
+    {
+     "char": "永",
+     "meaning": "길 영",
+     "pinyin_raw": "yong3",
+     "hsk": "HSK2",
+     "rank": 292
+    },
+    {
+     "char": "喝",
+     "meaning": "꾸짖을 갈/마실 갈",
+     "pinyin_raw": "he1",
+     "hsk": "HSK1",
+     "rank": 293
+    },
+    {
+     "char": "至",
+     "meaning": "이를 지",
+     "pinyin_raw": "zhi4",
+     "hsk": "HSK3",
+     "rank": 294
+    },
+    {
+     "char": "失",
+     "meaning": "잃을 실",
+     "pinyin_raw": "shi1",
+     "hsk": "HSK3",
+     "rank": 295
+    },
+    {
+     "char": "笑",
+     "meaning": "웃음 소",
+     "pinyin_raw": "xiao4",
+     "hsk": "HSK1",
+     "rank": 296
+    },
+    {
+     "char": "月",
+     "meaning": "달 월",
+     "pinyin_raw": "yue4",
+     "hsk": "HSK1",
+     "rank": 297
+    },
+    {
+     "char": "外",
+     "meaning": "바깥 외",
+     "pinyin_raw": "wai4",
+     "hsk": "HSK1",
+     "rank": 298
+    },
+    {
+     "char": "长",
+     "meaning": "길 장/어른 장",
+     "pinyin_raw": "chang2",
+     "hsk": "HSK2",
+     "rank": 299
+    },
+    {
+     "char": "忙",
+     "meaning": "바쁠 망",
+     "pinyin_raw": "mang2",
+     "hsk": "HSK1",
+     "rank": 300
+    },
+    {
+     "char": "命",
+     "meaning": "목숨 명",
+     "pinyin_raw": "ming4",
+     "hsk": "HSK3",
+     "rank": 301
+    },
+    {
+     "char": "学",
+     "meaning": "배울 학",
+     "pinyin_raw": "xue2",
+     "hsk": "HSK1",
+     "rank": 302
+    },
+    {
+     "char": "加",
+     "meaning": "더할 가",
+     "pinyin_raw": "jia1",
+     "hsk": "HSK2",
+     "rank": 303
+    },
+    {
+     "char": "者",
+     "meaning": "놈 자",
+     "pinyin_raw": "zhe3",
+     "hsk": "HSK2",
+     "rank": 304
+    },
+    {
+     "char": "留",
+     "meaning": "머무를 류",
+     "pinyin_raw": "liu2",
+     "hsk": "HSK2",
+     "rank": 305
+    },
+    {
+     "char": "睡",
+     "meaning": "졸음 수/잘 수",
+     "pinyin_raw": "shui4",
+     "hsk": "HSK1",
+     "rank": 306
+    },
+    {
+     "char": "难",
+     "meaning": "어려울 난",
+     "pinyin_raw": "nan2",
+     "hsk": "HSK1",
+     "rank": 307
+    }
+   ]
+  },
+  {
+   "stage": 16,
+   "phase": 2,
+   "coverage_pct": 94.18,
+   "chars": [
+    {
+     "char": "由",
+     "meaning": "말미암을 유",
+     "pinyin_raw": "you2",
+     "hsk": "HSK2",
+     "rank": 308
+    },
+    {
+     "char": "求",
+     "meaning": "구할 구",
+     "pinyin_raw": "qiu2",
+     "hsk": "HSK2",
+     "rank": 309
+    },
+    {
+     "char": "分",
+     "meaning": "나눌 분",
+     "pinyin_raw": "fen1",
+     "hsk": "HSK1",
+     "rank": 310
+    },
+    {
+     "char": "蛋",
+     "meaning": "새알 단",
+     "pinyin_raw": "dan4",
+     "hsk": "HSK1",
+     "rank": 311
+    },
+    {
+     "char": "公",
+     "meaning": "공평할 공",
+     "pinyin_raw": "gong1",
+     "hsk": "HSK2",
+     "rank": 312
+    },
+    {
+     "char": "第",
+     "meaning": "차례 제",
+     "pinyin_raw": "di4",
+     "hsk": "HSK1",
+     "rank": 313
+    },
+    {
+     "char": "证",
+     "meaning": "증거 증",
+     "pinyin_raw": "zheng4",
+     "hsk": "HSK3",
+     "rank": 314
+    },
+    {
+     "char": "疯",
+     "meaning": "미칠 풍",
+     "pinyin_raw": "feng1",
+     "hsk": "HSK5",
+     "rank": 315
+    },
+    {
+     "char": "穿",
+     "meaning": "뚫을 천",
+     "pinyin_raw": "chuan1",
+     "hsk": "HSK1",
+     "rank": 316
+    },
+    {
+     "char": "写",
+     "meaning": "베낄 사",
+     "pinyin_raw": "xie3",
+     "hsk": "HSK1",
+     "rank": 317
+    },
+    {
+     "char": "原",
+     "meaning": "언덕 원/근원 원",
+     "pinyin_raw": "yuan2",
+     "hsk": "HSK2",
+     "rank": 318
+    },
+    {
+     "char": "力",
+     "meaning": "힘 력",
+     "pinyin_raw": "li4",
+     "hsk": "HSK2",
+     "rank": 319
+    },
+    {
+     "char": "清",
+     "meaning": "맑을 청",
+     "pinyin_raw": "qing1",
+     "hsk": "HSK2",
+     "rank": 321
+    },
+    {
+     "char": "搞",
+     "meaning": "두드릴 고",
+     "pinyin_raw": "gao3",
+     "hsk": "HSK5",
+     "rank": 322
+    },
+    {
+     "char": "根",
+     "meaning": "뿌리 근",
+     "pinyin_raw": "gen1",
+     "hsk": "HSK3",
+     "rank": 323
+    },
+    {
+     "char": "处",
+     "meaning": "곳 처",
+     "pinyin_raw": "chu3",
+     "hsk": "HSK2",
+     "rank": 324
+    },
+    {
+     "char": "拜",
+     "meaning": "절 배",
+     "pinyin_raw": "bai4",
+     "hsk": "HSK5",
+     "rank": 325
+    },
+    {
+     "char": "照",
+     "meaning": "비칠 조",
+     "pinyin_raw": "zhao4",
+     "hsk": "HSK2",
+     "rank": 326
+    },
+    {
+     "char": "服",
+     "meaning": "옷 복",
+     "pinyin_raw": "fu2",
+     "hsk": "HSK1",
+     "rank": 327
+    },
+    {
+     "char": "况",
+     "meaning": "상황 황",
+     "pinyin_raw": "kuang4",
+     "hsk": "HSK3",
+     "rank": 329
+    }
+   ]
+  },
+  {
+   "stage": 17,
+   "phase": 2,
+   "coverage_pct": 94.63,
+   "chars": [
+    {
+     "char": "束",
+     "meaning": "묶을 속",
+     "pinyin_raw": "shu4",
+     "hsk": "HSK3",
+     "rank": 330
+    },
+    {
+     "char": "号",
+     "meaning": "이름 호",
+     "pinyin_raw": "hao2",
+     "hsk": "HSK1",
+     "rank": 331
+    },
+    {
+     "char": "忘",
+     "meaning": "잊을 망",
+     "pinyin_raw": "wang4",
+     "hsk": "HSK1",
+     "rank": 332
+    },
+    {
+     "char": "停",
+     "meaning": "머무를 정",
+     "pinyin_raw": "ting2",
+     "hsk": "HSK2",
+     "rank": 333
+    },
+    {
+     "char": "站",
+     "meaning": "우두커니 설 참/역 참",
+     "pinyin_raw": "zhan4",
+     "hsk": "HSK1",
+     "rank": 334
+    },
+    {
+     "char": "抓",
+     "meaning": "긁을 조/잡을 조",
+     "pinyin_raw": "zhua1",
+     "hsk": "HSK3",
+     "rank": 335
+    },
+    {
+     "char": "近",
+     "meaning": "가까울 근",
+     "pinyin_raw": "jin4",
+     "hsk": "HSK2",
+     "rank": 336
+    },
+    {
+     "char": "弟",
+     "meaning": "아우 제",
+     "pinyin_raw": "di4",
+     "hsk": "HSK1",
+     "rank": 337
+    },
+    {
+     "char": "头",
+     "meaning": "머리 두",
+     "pinyin_raw": "tou2",
+     "hsk": "HSK2",
+     "rank": 338
+    },
+    {
+     "char": "亮",
+     "meaning": "밝을 량",
+     "pinyin_raw": "liang4",
+     "hsk": "HSK2",
+     "rank": 339
+    },
+    {
+     "char": "救",
+     "meaning": "구원할 구",
+     "pinyin_raw": "jiu4",
+     "hsk": "HSK3",
+     "rank": 340
+    },
+    {
+     "char": "楚",
+     "meaning": "초나라 초",
+     "pinyin_raw": "chu3",
+     "hsk": "HSK2",
+     "rank": 341
+    },
+    {
+     "char": "察",
+     "meaning": "살필 찰",
+     "pinyin_raw": "cha2",
+     "hsk": "HSK3",
+     "rank": 342
+    },
+    {
+     "char": "愿",
+     "meaning": "원할 원",
+     "pinyin_raw": "yuan4",
+     "hsk": "HSK2",
+     "rank": 343
+    },
+    {
+     "char": "烦",
+     "meaning": "번거로울 번",
+     "pinyin_raw": "fan2",
+     "hsk": "HSK3",
+     "rank": 344
+    },
+    {
+     "char": "懂",
+     "meaning": "알 동",
+     "pinyin_raw": "dong3",
+     "hsk": "HSK2",
+     "rank": 345
+    },
+    {
+     "char": "漂",
+     "meaning": "떠다닐 표",
+     "pinyin_raw": "piao1",
+     "hsk": "HSK2",
+     "rank": 346
+    },
+    {
+     "char": "托",
+     "meaning": "맡길 탁",
+     "pinyin_raw": "tuo1",
+     "hsk": "HSK5",
+     "rank": 347
+    },
+    {
+     "char": "三",
+     "meaning": "석 삼",
+     "pinyin_raw": "san1",
+     "hsk": "HSK1",
+     "rank": 348
+    },
+    {
+     "char": "试",
+     "meaning": "시험 시",
+     "pinyin_raw": "shi4",
+     "hsk": "HSK1",
+     "rank": 349
+    }
+   ]
+  },
+  {
+   "stage": 18,
+   "phase": 2,
+   "coverage_pct": 95.03,
+   "chars": [
+    {
+     "char": "特",
+     "meaning": "특별할 특",
+     "pinyin_raw": "te4",
+     "hsk": "HSK2",
+     "rank": 350
+    },
+    {
+     "char": "麻",
+     "meaning": "삼 마",
+     "pinyin_raw": "ma2",
+     "hsk": "HSK3",
+     "rank": 351
+    },
+    {
+     "char": "兄",
+     "meaning": "맏 형",
+     "pinyin_raw": "xiong1",
+     "hsk": "HSK4",
+     "rank": 352
+    },
+    {
+     "char": "部",
+     "meaning": "떼 부",
+     "pinyin_raw": "bu4",
+     "hsk": "HSK2",
+     "rank": 353
+    },
+    {
+     "char": "否",
+     "meaning": "아닐 부",
+     "pinyin_raw": "fou3",
+     "hsk": "HSK3",
+     "rank": 355
+    },
+    {
+     "char": "使",
+     "meaning": "하여금 사/부릴 사",
+     "pinyin_raw": "shi3",
+     "hsk": "HSK2",
+     "rank": 356
+    },
+    {
+     "char": "息",
+     "meaning": "쉴 식",
+     "pinyin_raw": "xi1",
+     "hsk": "HSK1",
+     "rank": 357
+    },
+    {
+     "char": "枪",
+     "meaning": "창 창",
+     "pinyin_raw": "qiang1",
+     "hsk": "HSK5",
+     "rank": 358
+    },
+    {
+     "char": "怪",
+     "meaning": "괴이할 괴",
+     "pinyin_raw": "guai4",
+     "hsk": "HSK3",
+     "rank": 359
+    },
+    {
+     "char": "弄",
+     "meaning": "희롱할 롱",
+     "pinyin_raw": "long4",
+     "hsk": "HSK2",
+     "rank": 360
+    },
+    {
+     "char": "久",
+     "meaning": "오랠 구",
+     "pinyin_raw": "jiu3",
+     "hsk": "HSK2",
+     "rank": 361
+    },
+    {
+     "char": "答",
+     "meaning": "대답 답",
+     "pinyin_raw": "da1",
+     "hsk": "HSK1",
+     "rank": 362
+    },
+    {
+     "char": "曾",
+     "meaning": "일찍 증",
+     "pinyin_raw": "ceng2",
+     "hsk": "HSK3",
+     "rank": 363
+    },
+    {
+     "char": "另",
+     "meaning": "헤어질 령",
+     "pinyin_raw": "ling4",
+     "hsk": "HSK3",
+     "rank": 364
+    },
+    {
+     "char": "音",
+     "meaning": "소리 음",
+     "pinyin_raw": "yin1",
+     "hsk": "HSK2",
+     "rank": 365
+    },
+    {
+     "char": "母",
+     "meaning": "어머니 모",
+     "pinyin_raw": "mu3",
+     "hsk": "HSK3",
+     "rank": 366
+    },
+    {
+     "char": "连",
+     "meaning": "잇닿을 련",
+     "pinyin_raw": "lian2",
+     "hsk": "HSK3",
+     "rank": 367
+    },
+    {
+     "char": "注",
+     "meaning": "부을 주",
+     "pinyin_raw": "zhu4",
+     "hsk": "HSK3",
+     "rank": 368
+    },
+    {
+     "char": "待",
+     "meaning": "기다릴 대",
+     "pinyin_raw": "dai1",
+     "hsk": "HSK3",
+     "rank": 369
+    },
+    {
+     "char": "宝",
+     "meaning": "보배 보",
+     "pinyin_raw": "bao3",
+     "hsk": "HSK4",
+     "rank": 370
+    }
+   ]
+  },
+  {
+   "stage": 19,
+   "phase": 2,
+   "coverage_pct": 95.38,
+   "chars": [
+    {
+     "char": "助",
+     "meaning": "도울 조",
+     "pinyin_raw": "zhu4",
+     "hsk": "HSK2",
+     "rank": 371
+    },
+    {
+     "char": "通",
+     "meaning": "통할 통",
+     "pinyin_raw": "tong1",
+     "hsk": "HSK2",
+     "rank": 372
+    },
+    {
+     "char": "伤",
+     "meaning": "다칠 상",
+     "pinyin_raw": "shang1",
+     "hsk": "HSK3",
+     "rank": 373
+    },
+    {
+     "char": "持",
+     "meaning": "가질 지",
+     "pinyin_raw": "chi2",
+     "hsk": "HSK3",
+     "rank": 374
+    },
+    {
+     "char": "简",
+     "meaning": "대쪽 간/간략할 간",
+     "pinyin_raw": "jian3",
+     "hsk": "HSK3",
+     "rank": 375
+    },
+    {
+     "char": "掉",
+     "meaning": "흔들 도",
+     "pinyin_raw": "diao4",
+     "hsk": "HSK2",
+     "rank": 376
+    },
+    {
+     "char": "整",
+     "meaning": "가지런할 정",
+     "pinyin_raw": "zheng3",
+     "hsk": "HSK3",
+     "rank": 377
+    },
+    {
+     "char": "绝",
+     "meaning": "끊을 절",
+     "pinyin_raw": "jue2",
+     "hsk": "HSK3",
+     "rank": 378
+    },
+    {
+     "char": "表",
+     "meaning": "겉 표",
+     "pinyin_raw": "biao3",
+     "hsk": "HSK2",
+     "rank": 379
+    },
+    {
+     "char": "划",
+     "meaning": "그을 획",
+     "pinyin_raw": "hua2",
+     "hsk": "HSK2",
+     "rank": 380
+    },
+    {
+     "char": "声",
+     "meaning": "소리 성",
+     "pinyin_raw": "sheng1",
+     "hsk": "HSK2",
+     "rank": 381
+    },
+    {
+     "char": "唯",
+     "meaning": "오직 유",
+     "pinyin_raw": "wei2",
+     "hsk": "HSK5",
+     "rank": 382
+    },
+    {
+     "char": "日",
+     "meaning": "날 일",
+     "pinyin_raw": "ri4",
+     "hsk": "HSK1",
+     "rank": 383
+    },
+    {
+     "char": "体",
+     "meaning": "몸 체",
+     "pinyin_raw": "ti1",
+     "hsk": "HSK1",
+     "rank": 384
+    },
+    {
+     "char": "贝",
+     "meaning": "조개 패",
+     "pinyin_raw": "bei4",
+     "hsk": "HSK4",
+     "rank": 385
+    },
+    {
+     "char": "士",
+     "meaning": "선비 사",
+     "pinyin_raw": "shi4",
+     "hsk": "HSK4",
+     "rank": 386
+    },
+    {
+     "char": "气",
+     "meaning": "기운 기",
+     "pinyin_raw": "qi4",
+     "hsk": "HSK1",
+     "rank": 387
+    },
+    {
+     "char": "物",
+     "meaning": "물건 물",
+     "pinyin_raw": "wu4",
+     "hsk": "HSK2",
+     "rank": 388
+    },
+    {
+     "char": "改",
+     "meaning": "고칠 개",
+     "pinyin_raw": "gai3",
+     "hsk": "HSK2",
+     "rank": 389
+    },
+    {
+     "char": "选",
+     "meaning": "가릴 선",
+     "pinyin_raw": "xuan3",
+     "hsk": "HSK2",
+     "rank": 390
+    }
+   ]
+  },
+  {
+   "stage": 20,
+   "phase": 2,
+   "coverage_pct": 95.7,
+   "chars": [
+    {
+     "char": "消",
+     "meaning": "사라질 소",
+     "pinyin_raw": "xiao1",
+     "hsk": "HSK3",
+     "rank": 391
+    },
+    {
+     "char": "主",
+     "meaning": "주인 주",
+     "pinyin_raw": "zhu3",
+     "hsk": "HSK2",
+     "rank": 392
+    },
+    {
+     "char": "入",
+     "meaning": "들 입",
+     "pinyin_raw": "ru4",
+     "hsk": "HSK2",
+     "rank": 393
+    },
+    {
+     "char": "乐",
+     "meaning": "즐길 락/노래 악",
+     "pinyin_raw": "lao4",
+     "hsk": "HSK2",
+     "rank": 394
+    },
+    {
+     "char": "讲",
+     "meaning": "외울 강",
+     "pinyin_raw": "jiang3",
+     "hsk": "HSK2",
+     "rank": 395
+    },
+    {
+     "char": "夫",
+     "meaning": "지아비 부",
+     "pinyin_raw": "fu1",
+     "hsk": "HSK3",
+     "rank": 396
+    },
+    {
+     "char": "场",
+     "meaning": "마당 장",
+     "pinyin_raw": "chang2",
+     "hsk": "HSK1",
+     "rank": 397
+    },
+    {
+     "char": "约",
+     "meaning": "맺을 약",
+     "pinyin_raw": "yao1",
+     "hsk": "HSK3",
+     "rank": 398
+    },
+    {
+     "char": "门",
+     "meaning": "문 문",
+     "pinyin_raw": "men2",
+     "hsk": "HSK1",
+     "rank": 399
+    },
+    {
+     "char": "路",
+     "meaning": "길 로",
+     "pinyin_raw": "lu4",
+     "hsk": "HSK1",
+     "rank": 400
+    },
+    {
+     "char": "静",
+     "meaning": "고요할 정",
+     "pinyin_raw": "jing4",
+     "hsk": "HSK2",
+     "rank": 401
+    },
+    {
+     "char": "嘴",
+     "meaning": "부리 취",
+     "pinyin_raw": "zui3",
+     "hsk": "HSK2",
+     "rank": 402
+    },
+    {
+     "char": "婚",
+     "meaning": "혼인할 혼",
+     "pinyin_raw": "hun1",
+     "hsk": "HSK3",
+     "rank": 403
+    },
+    {
+     "char": "除",
+     "meaning": "덜 제",
+     "pinyin_raw": "chu2",
+     "hsk": "HSK3",
+     "rank": 404
+    },
+    {
+     "char": "衣",
+     "meaning": "옷 의",
+     "pinyin_raw": "yi1",
+     "hsk": "HSK1",
+     "rank": 405
+    },
+    {
+     "char": "收",
+     "meaning": "거둘 수",
+     "pinyin_raw": "shou1",
+     "hsk": "HSK2",
+     "rank": 406
+    },
+    {
+     "char": "奇",
+     "meaning": "기특할 기",
+     "pinyin_raw": "ji1",
+     "hsk": "HSK3",
+     "rank": 407
+    },
+    {
+     "char": "闭",
+     "meaning": "닫을 폐",
+     "pinyin_raw": "bi4",
+     "hsk": "HSK4",
+     "rank": 408
+    },
+    {
+     "char": "险",
+     "meaning": "험할 험",
+     "pinyin_raw": "xian3",
+     "hsk": "HSK3",
+     "rank": 409
+    },
+    {
+     "char": "眼",
+     "meaning": "눈 안",
+     "pinyin_raw": "yan3",
+     "hsk": "HSK2",
+     "rank": 410
+    }
+   ]
+  },
+  {
+   "stage": 21,
+   "phase": 2,
+   "coverage_pct": 95.99,
+   "chars": [
+    {
+     "char": "官",
+     "meaning": "벼슬 관",
+     "pinyin_raw": "guan1",
+     "hsk": "HSK4",
+     "rank": 411
+    },
+    {
+     "char": "故",
+     "meaning": "연고 고",
+     "pinyin_raw": "gu4",
+     "hsk": "HSK2",
+     "rank": 412
+    },
+    {
+     "char": "甚",
+     "meaning": "심할 심",
+     "pinyin_raw": "shen2",
+     "hsk": "HSK4",
+     "rank": 413
+    },
+    {
+     "char": "查",
+     "meaning": "조사할 사",
+     "pinyin_raw": "cha2",
+     "hsk": "HSK2",
+     "rank": 414
+    },
+    {
+     "char": "护",
+     "meaning": "도울 호",
+     "pinyin_raw": "hu4",
+     "hsk": "HSK2",
+     "rank": 415
+    },
+    {
+     "char": "单",
+     "meaning": "홑 단",
+     "pinyin_raw": "chan2",
+     "hsk": "HSK2",
+     "rank": 416
+    },
+    {
+     "char": "张",
+     "meaning": "베풀 장",
+     "pinyin_raw": "zhang1",
+     "hsk": "HSK3",
+     "rank": 417
+    },
+    {
+     "char": "棒",
+     "meaning": "몽둥이 봉",
+     "pinyin_raw": "bang4",
+     "hsk": "HSK5",
+     "rank": 418
+    },
+    {
+     "char": "迎",
+     "meaning": "맞을 영",
+     "pinyin_raw": "ying2",
+     "hsk": "HSK2",
+     "rank": 419
+    },
+    {
+     "char": "便",
+     "meaning": "편할 편/똥오줌 변",
+     "pinyin_raw": "bian4",
+     "hsk": "HSK2",
+     "rank": 420
+    },
+    {
+     "char": "目",
+     "meaning": "눈 목",
+     "pinyin_raw": "mu4",
+     "hsk": "HSK2",
+     "rank": 421
+    },
+    {
+     "char": "止",
+     "meaning": "그칠 지",
+     "pinyin_raw": "zhi3",
+     "hsk": "HSK3",
+     "rank": 422
+    },
+    {
+     "char": "酒",
+     "meaning": "술 주",
+     "pinyin_raw": "jiu3",
+     "hsk": "HSK2",
+     "rank": 423
+    },
+    {
+     "char": "乎",
+     "meaning": "어조사 호",
+     "pinyin_raw": "hu1",
+     "hsk": "HSK4",
+     "rank": 424
+    },
+    {
+     "char": "择",
+     "meaning": "가릴 택",
+     "pinyin_raw": "ze2",
+     "hsk": "HSK4",
+     "rank": 425
+    },
+    {
+     "char": "倒",
+     "meaning": "넘어질 도",
+     "pinyin_raw": "dao3",
+     "hsk": "HSK2",
+     "rank": 426
+    },
+    {
+     "char": "讨",
+     "meaning": "칠 토",
+     "pinyin_raw": "tao3",
+     "hsk": "HSK2",
+     "rank": 427
+    },
+    {
+     "char": "哥",
+     "meaning": "형 가",
+     "pinyin_raw": "ge1",
+     "hsk": "HSK1",
+     "rank": 428
+    },
+    {
+     "char": "危",
+     "meaning": "위태할 위",
+     "pinyin_raw": "wei1",
+     "hsk": "HSK3",
+     "rank": 429
+    },
+    {
+     "char": "虽",
+     "meaning": "비록 수",
+     "pinyin_raw": "sui1",
+     "hsk": "HSK2",
+     "rank": 430
+    }
+   ]
+  },
+  {
+   "stage": 22,
+   "phase": 2,
+   "coverage_pct": 96.24,
+   "chars": [
+    {
+     "char": "司",
+     "meaning": "맡을 사",
+     "pinyin_raw": "si1",
+     "hsk": "HSK2",
+     "rank": 431
+    },
+    {
+     "char": "易",
+     "meaning": "바꿀 역/쉬울 이",
+     "pinyin_raw": "yi4",
+     "hsk": "HSK3",
+     "rank": 432
+    },
+    {
+     "char": "报",
+     "meaning": "갚을 보/알릴 보",
+     "pinyin_raw": "bao4",
+     "hsk": "HSK2",
+     "rank": 433
+    },
+    {
+     "char": "内",
+     "meaning": "안 내",
+     "pinyin_raw": "nei4",
+     "hsk": "HSK3",
+     "rank": 434
+    },
+    {
+     "char": "趣",
+     "meaning": "뜻 취",
+     "pinyin_raw": "qu4",
+     "hsk": "HSK4",
+     "rank": 435
+    },
+    {
+     "char": "终",
+     "meaning": "마칠 종",
+     "pinyin_raw": "zhong1",
+     "hsk": "HSK3",
+     "rank": 436
+    },
+    {
+     "char": "功",
+     "meaning": "공 공",
+     "pinyin_raw": "gong1",
+     "hsk": "HSK3",
+     "rank": 437
+    },
+    {
+     "char": "跳",
+     "meaning": "뛸 도",
+     "pinyin_raw": "tiao4",
+     "hsk": "HSK3",
+     "rank": 438
+    },
+    {
+     "char": "昨",
+     "meaning": "어제 작",
+     "pinyin_raw": "zuo2",
+     "hsk": "HSK1",
+     "rank": 439
+    },
+    {
+     "char": "克",
+     "meaning": "이길 극",
+     "pinyin_raw": "ke4",
+     "hsk": "HSK2",
+     "rank": 440
+    },
+    {
+     "char": "随",
+     "meaning": "따를 수",
+     "pinyin_raw": "sui2",
+     "hsk": "HSK2",
+     "rank": 441
+    },
+    {
+     "char": "靠",
+     "meaning": "기댈 고",
+     "pinyin_raw": "kao4",
+     "hsk": "HSK2",
+     "rank": 442
+    },
+    {
+     "char": "幸",
+     "meaning": "다행 행",
+     "pinyin_raw": "xing4",
+     "hsk": "HSK3",
+     "rank": 443
+    },
+    {
+     "char": "各",
+     "meaning": "각각 각",
+     "pinyin_raw": "ge4",
+     "hsk": "HSK3",
+     "rank": 444
+    },
+    {
+     "char": "轻",
+     "meaning": "가벼울 경",
+     "pinyin_raw": "qing1",
+     "hsk": "HSK2",
+     "rank": 445
+    },
+    {
+     "char": "片",
+     "meaning": "조각 편",
+     "pinyin_raw": "pian1",
+     "hsk": "HSK2",
+     "rank": 446
+    },
+    {
+     "char": "影",
+     "meaning": "그림자 영",
+     "pinyin_raw": "ying3",
+     "hsk": "HSK1",
+     "rank": 447
+    },
+    {
+     "char": "运",
+     "meaning": "옮길 운",
+     "pinyin_raw": "yun4",
+     "hsk": "HSK2",
+     "rank": 448
+    },
+    {
+     "char": "提",
+     "meaning": "끌 제",
+     "pinyin_raw": "di1",
+     "hsk": "HSK2",
+     "rank": 449
+    },
+    {
+     "char": "参",
+     "meaning": "참여할 참/석 삼",
+     "pinyin_raw": "can1",
+     "hsk": "HSK2",
+     "rank": 450
+    }
+   ]
+  },
+  {
+   "stage": 23,
+   "phase": 2,
+   "coverage_pct": 96.48,
+   "chars": [
+    {
+     "char": "反",
+     "meaning": "돌이킬 반",
+     "pinyin_raw": "fan3",
+     "hsk": "HSK3",
+     "rank": 451
+    },
+    {
+     "char": "教",
+     "meaning": "가르칠 교",
+     "pinyin_raw": "jiao1",
+     "hsk": "HSK1",
+     "rank": 452
+    },
+    {
+     "char": "合",
+     "meaning": "합할 합",
+     "pinyin_raw": "ge3",
+     "hsk": "HSK2",
+     "rank": 453
+    },
+    {
+     "char": "岁",
+     "meaning": "해 세",
+     "pinyin_raw": "sui4",
+     "hsk": "HSK1",
+     "rank": 454
+    },
+    {
+     "char": "顾",
+     "meaning": "돌아볼 고",
+     "pinyin_raw": "gu4",
+     "hsk": "HSK2",
+     "rank": 455
+    },
+    {
+     "char": "条",
+     "meaning": "가지 조",
+     "pinyin_raw": "tiao2",
+     "hsk": "HSK1",
+     "rank": 456
+    },
+    {
+     "char": "交",
+     "meaning": "사귈 교",
+     "pinyin_raw": "jiao1",
+     "hsk": "HSK2",
+     "rank": 457
+    },
+    {
+     "char": "利",
+     "meaning": "이로울 리",
+     "pinyin_raw": "li4",
+     "hsk": "HSK2",
+     "rank": 458
+    },
+    {
+     "char": "紧",
+     "meaning": "긴할 긴",
+     "pinyin_raw": "jin3",
+     "hsk": "HSK3",
+     "rank": 459
+    },
+    {
+     "char": "容",
+     "meaning": "얼굴 용",
+     "pinyin_raw": "rong2",
+     "hsk": "HSK3",
+     "rank": 460
+    },
+    {
+     "char": "制",
+     "meaning": "절제할 제/지을 제",
+     "pinyin_raw": "zhi4",
+     "hsk": "HSK3",
+     "rank": 461
+    },
+    {
+     "char": "校",
+     "meaning": "학교 교",
+     "pinyin_raw": "jiao4",
+     "hsk": "HSK1",
+     "rank": 462
+    },
+    {
+     "char": "冷",
+     "meaning": "찰 랭",
+     "pinyin_raw": "leng3",
+     "hsk": "HSK1",
+     "rank": 463
+    },
+    {
+     "char": "睛",
+     "meaning": "눈동자 정",
+     "pinyin_raw": "jing1",
+     "hsk": "HSK2",
+     "rank": 464
+    },
+    {
+     "char": "神",
+     "meaning": "귀신 신",
+     "pinyin_raw": "shen2",
+     "hsk": "HSK3",
+     "rank": 465
+    },
+    {
+     "char": "师",
+     "meaning": "스승 사",
+     "pinyin_raw": "shi1",
+     "hsk": "HSK1",
+     "rank": 466
+    },
+    {
+     "char": "战",
+     "meaning": "싸움 전",
+     "pinyin_raw": "zhan4",
+     "hsk": "HSK4",
+     "rank": 467
+    },
+    {
+     "char": "敢",
+     "meaning": "감히 감",
+     "pinyin_raw": "gan3",
+     "hsk": "HSK3",
+     "rank": 468
+    },
+    {
+     "char": "钟",
+     "meaning": "쇠북 종",
+     "pinyin_raw": "zhong1",
+     "hsk": "HSK2",
+     "rank": 469
+    },
+    {
+     "char": "厌",
+     "meaning": "싫어할 염",
+     "pinyin_raw": "yan4",
+     "hsk": "HSK5",
+     "rank": 470
+    }
+   ]
+  },
+  {
+   "stage": 24,
+   "phase": 2,
+   "coverage_pct": 96.68,
+   "chars": [
+    {
+     "char": "令",
+     "meaning": "하여금 령",
+     "pinyin_raw": "ling2",
+     "hsk": "HSK5",
+     "rank": 471
+    },
+    {
+     "char": "份",
+     "meaning": "나눌 분",
+     "pinyin_raw": "fen4",
+     "hsk": "HSK2",
+     "rank": 472
+    },
+    {
+     "char": "坏",
+     "meaning": "무너질 괴",
+     "pinyin_raw": "huai4",
+     "hsk": "HSK1",
+     "rank": 473
+    },
+    {
+     "char": "拉",
+     "meaning": "끌 랍",
+     "pinyin_raw": "la1",
+     "hsk": "HSK2",
+     "rank": 474
+    },
+    {
+     "char": "猜",
+     "meaning": "시기할 시",
+     "pinyin_raw": "cai1",
+     "hsk": "HSK5",
+     "rank": 475
+    },
+    {
+     "char": "狗",
+     "meaning": "개 구",
+     "pinyin_raw": "gou3",
+     "hsk": "HSK2",
+     "rank": 476
+    },
+    {
+     "char": "赢",
+     "meaning": "남을 영/이길 영",
+     "pinyin_raw": "ying2",
+     "hsk": "HSK3",
+     "rank": 477
+    },
+    {
+     "char": "派",
+     "meaning": "갈래 파",
+     "pinyin_raw": "pa1",
+     "hsk": "HSK3",
+     "rank": 478
+    },
+    {
+     "char": "未",
+     "meaning": "아닐 미",
+     "pinyin_raw": "wei4",
+     "hsk": "HSK4",
+     "rank": 479
+    },
+    {
+     "char": "飞",
+     "meaning": "날 비",
+     "pinyin_raw": "fei1",
+     "hsk": "HSK1",
+     "rank": 480
+    },
+    {
+     "char": "挺",
+     "meaning": "빼어날 정",
+     "pinyin_raw": "ting3",
+     "hsk": "HSK2",
+     "rank": 481
+    },
+    {
+     "char": "论",
+     "meaning": "논할 론",
+     "pinyin_raw": "lun4",
+     "hsk": "HSK2",
+     "rank": 482
+    },
+    {
+     "char": "责",
+     "meaning": "꾸짖을 책",
+     "pinyin_raw": "ze2",
+     "hsk": "HSK3",
+     "rank": 483
+    },
+    {
+     "char": "式",
+     "meaning": "법 식",
+     "pinyin_raw": "shi4",
+     "hsk": "HSK3",
+     "rank": 484
+    },
+    {
+     "char": "糟",
+     "meaning": "지게미 조",
+     "pinyin_raw": "zao1",
+     "hsk": "HSK5",
+     "rank": 485
+    },
+    {
+     "char": "替",
+     "meaning": "바꿀 체",
+     "pinyin_raw": "ti4",
+     "hsk": "HSK4",
+     "rank": 487
+    },
+    {
+     "char": "鬼",
+     "meaning": "귀신 귀",
+     "pinyin_raw": "gui3",
+     "hsk": "HSK5",
+     "rank": 488
+    },
+    {
+     "char": "期",
+     "meaning": "기약할 기",
+     "pinyin_raw": "qi1",
+     "hsk": "HSK1",
+     "rank": 490
+    },
+    {
+     "char": "差",
+     "meaning": "다를 차/어긋날 차",
+     "pinyin_raw": "cha1",
+     "hsk": "HSK1",
+     "rank": 491
+    },
+    {
+     "char": "类",
+     "meaning": "무리 류",
+     "pinyin_raw": "lei4",
+     "hsk": "HSK3",
+     "rank": 492
+    }
+   ]
+  },
+  {
+   "stage": 25,
+   "phase": 2,
+   "coverage_pct": 96.86,
+   "chars": [
+    {
+     "char": "花",
+     "meaning": "꽃 화",
+     "pinyin_raw": "hua1",
+     "hsk": "HSK1",
+     "rank": 493
+    },
+    {
+     "char": "则",
+     "meaning": "법칙 칙/곧 즉",
+     "pinyin_raw": "ze2",
+     "hsk": "HSK4",
+     "rank": 494
+    },
+    {
+     "char": "释",
+     "meaning": "풀 석",
+     "pinyin_raw": "shi4",
+     "hsk": "HSK4",
+     "rank": 495
+    },
+    {
+     "char": "尽",
+     "meaning": "다할 진",
+     "pinyin_raw": "jin3",
+     "hsk": "HSK3",
+     "rank": 496
+    },
+    {
+     "char": "休",
+     "meaning": "쉴 휴",
+     "pinyin_raw": "xiu1",
+     "hsk": "HSK1",
+     "rank": 497
+    },
+    {
+     "char": "代",
+     "meaning": "대신할 대",
+     "pinyin_raw": "dai4",
+     "hsk": "HSK3",
+     "rank": 498
+    },
+    {
+     "char": "脸",
+     "meaning": "뺨 검",
+     "pinyin_raw": "lian3",
+     "hsk": "HSK2",
+     "rank": 499
+    },
+    {
+     "char": "指",
+     "meaning": "가리킬 지/손가락 지",
+     "pinyin_raw": "zhi3",
+     "hsk": "HSK3",
+     "rank": 500
+    },
+    {
+     "char": "妻",
+     "meaning": "아내 처",
+     "pinyin_raw": "qi1",
+     "hsk": "HSK4",
+     "rank": 501
+    },
+    {
+     "char": "慢",
+     "meaning": "거만할 만/느릴 만",
+     "pinyin_raw": "man4",
+     "hsk": "HSK1",
+     "rank": 502
+    },
+    {
+     "char": "存",
+     "meaning": "있을 존",
+     "pinyin_raw": "cun2",
+     "hsk": "HSK3",
+     "rank": 503
+    },
+    {
+     "char": "务",
+     "meaning": "힘쓸 무",
+     "pinyin_raw": "wu4",
+     "hsk": "HSK2",
+     "rank": 504
+    },
+    {
+     "char": "二",
+     "meaning": "두 이",
+     "pinyin_raw": "er4",
+     "hsk": "HSK1",
+     "rank": 505
+    },
+    {
+     "char": "客",
+     "meaning": "손 객",
+     "pinyin_raw": "ke4",
+     "hsk": "HSK1",
+     "rank": 506
+    },
+    {
+     "char": "突",
+     "meaning": "갑자기 돌",
+     "pinyin_raw": "tu1",
+     "hsk": "HSK3",
+     "rank": 507
+    },
+    {
+     "char": "卖",
+     "meaning": "팔 매",
+     "pinyin_raw": "mai4",
+     "hsk": "HSK2",
+     "rank": 508
+    },
+    {
+     "char": "礼",
+     "meaning": "예도 례",
+     "pinyin_raw": "li3",
+     "hsk": "HSK2",
+     "rank": 509
+    },
+    {
+     "char": "弃",
+     "meaning": "버릴 기",
+     "pinyin_raw": "qi4",
+     "hsk": "HSK5",
+     "rank": 510
+    },
+    {
+     "char": "考",
+     "meaning": "상고할 고",
+     "pinyin_raw": "kao3",
+     "hsk": "HSK1",
+     "rank": 511
+    },
+    {
+     "char": "星",
+     "meaning": "별 성",
+     "pinyin_raw": "xing1",
+     "hsk": "HSK1",
+     "rank": 512
+    }
+   ]
+  },
+  {
+   "stage": 26,
+   "phase": 2,
+   "coverage_pct": 97.03,
+   "chars": [
+    {
+     "char": "密",
+     "meaning": "빽빽할 밀",
+     "pinyin_raw": "mi4",
+     "hsk": "HSK4",
+     "rank": 513
+    },
+    {
+     "char": "即",
+     "meaning": "곧 즉",
+     "pinyin_raw": "ji2",
+     "hsk": "HSK4",
+     "rank": 515
+    },
+    {
+     "char": "越",
+     "meaning": "넘을 월",
+     "pinyin_raw": "yue4",
+     "hsk": "HSK2",
+     "rank": 516
+    },
+    {
+     "char": "议",
+     "meaning": "의논할 의",
+     "pinyin_raw": "yi4",
+     "hsk": "HSK3",
+     "rank": 517
+    },
+    {
+     "char": "演",
+     "meaning": "펼 연",
+     "pinyin_raw": "yan3",
+     "hsk": "HSK3",
+     "rank": 518
+    },
+    {
+     "char": "队",
+     "meaning": "무리 대",
+     "pinyin_raw": "dui4",
+     "hsk": "HSK2",
+     "rank": 519
+    },
+    {
+     "char": "水",
+     "meaning": "물 수",
+     "pinyin_raw": "shui3",
+     "hsk": "HSK1",
+     "rank": 520
+    },
+    {
+     "char": "梦",
+     "meaning": "꿈 몽",
+     "pinyin_raw": "meng4",
+     "hsk": "HSK4",
+     "rank": 521
+    },
+    {
+     "char": "控",
+     "meaning": "당길 공",
+     "pinyin_raw": "kong4",
+     "hsk": "HSK5",
+     "rank": 522
+    },
+    {
+     "char": "拍",
+     "meaning": "칠 박",
+     "pinyin_raw": "pai1",
+     "hsk": "HSK3",
+     "rank": 523
+    },
+    {
+     "char": "努",
+     "meaning": "힘쓸 노",
+     "pinyin_raw": "nu3",
+     "hsk": "HSK2",
+     "rank": 524
+    },
+    {
+     "char": "介",
+     "meaning": "낄 개",
+     "pinyin_raw": "jie4",
+     "hsk": "HSK1",
+     "rank": 525
+    },
+    {
+     "char": "院",
+     "meaning": "집 원",
+     "pinyin_raw": "yuan4",
+     "hsk": "HSK1",
+     "rank": 526
+    },
+    {
+     "char": "赶",
+     "meaning": "쫓을 간",
+     "pinyin_raw": "gan3",
+     "hsk": "HSK3",
+     "rank": 527
+    },
+    {
+     "char": "醒",
+     "meaning": "깰 성",
+     "pinyin_raw": "xing3",
+     "hsk": "HSK4",
+     "rank": 528
+    },
+    {
+     "char": "苦",
+     "meaning": "쓸 고",
+     "pinyin_raw": "ku3",
+     "hsk": "HSK3",
+     "rank": 529
+    },
+    {
+     "char": "俩",
+     "meaning": "재주 량/두 사람 량",
+     "pinyin_raw": "lia3",
+     "hsk": "HSK4",
+     "rank": 530
+    },
+    {
+     "char": "色",
+     "meaning": "빛 색",
+     "pinyin_raw": "se4",
+     "hsk": "HSK2",
+     "rank": 531
+    },
+    {
+     "char": "负",
+     "meaning": "질 부",
+     "pinyin_raw": "fu4",
+     "hsk": "HSK3",
+     "rank": 532
+    },
+    {
+     "char": "量",
+     "meaning": "헤아릴 량",
+     "pinyin_raw": "liang2",
+     "hsk": "HSK2",
+     "rank": 533
+    }
+   ]
+  },
+  {
+   "stage": 27,
+   "phase": 2,
+   "coverage_pct": 97.18,
+   "chars": [
+    {
+     "char": "室",
+     "meaning": "집 실",
+     "pinyin_raw": "shi4",
+     "hsk": "HSK2",
+     "rank": 534
+    },
+    {
+     "char": "饭",
+     "meaning": "밥 반",
+     "pinyin_raw": "fan4",
+     "hsk": "HSK1",
+     "rank": 535
+    },
+    {
+     "char": "痛",
+     "meaning": "아플 통",
+     "pinyin_raw": "tong4",
+     "hsk": "HSK3",
+     "rank": 536
+    },
+    {
+     "char": "器",
+     "meaning": "그릇 기",
+     "pinyin_raw": "qi4",
+     "hsk": "HSK3",
+     "rank": 537
+    },
+    {
+     "char": "秘",
+     "meaning": "숨길 비",
+     "pinyin_raw": "mi4",
+     "hsk": "HSK4",
+     "rank": 538
+    },
+    {
+     "char": "婆",
+     "meaning": "할미 파",
+     "pinyin_raw": "po2",
+     "hsk": "HSK4",
+     "rank": 539
+    },
+    {
+     "char": "杯",
+     "meaning": "잔 배",
+     "pinyin_raw": "bei1",
+     "hsk": "HSK1",
+     "rank": 540
+    },
+    {
+     "char": "概",
+     "meaning": "대개 개",
+     "pinyin_raw": "gai4",
+     "hsk": "HSK3",
+     "rank": 541
+    },
+    {
+     "char": "聪",
+     "meaning": "귀밝을 총",
+     "pinyin_raw": "cong1",
+     "hsk": "HSK5",
+     "rank": 542
+    },
+    {
+     "char": "较",
+     "meaning": "견줄 교",
+     "pinyin_raw": "jiao4",
+     "hsk": "HSK3",
+     "rank": 543
+    },
+    {
+     "char": "黑",
+     "meaning": "검을 흑",
+     "pinyin_raw": "hei1",
+     "hsk": "HSK2",
+     "rank": 544
+    },
+    {
+     "char": "据",
+     "meaning": "근거 거",
+     "pinyin_raw": "ju4",
+     "hsk": "HSK3",
+     "rank": 545
+    },
+    {
+     "char": "英",
+     "meaning": "꽃부리 영",
+     "pinyin_raw": "ying1",
+     "hsk": "HSK2",
+     "rank": 547
+    },
+    {
+     "char": "糕",
+     "meaning": "떡 고",
+     "pinyin_raw": "gao1",
+     "hsk": "HSK5",
+     "rank": 548
+    },
+    {
+     "char": "呆",
+     "meaning": "어리석을 태",
+     "pinyin_raw": "dai1",
+     "hsk": "HSK5",
+     "rank": 549
+    },
+    {
+     "char": "骗",
+     "meaning": "속일 편",
+     "pinyin_raw": "pian4",
+     "hsk": "HSK5",
+     "rank": 550
+    },
+    {
+     "char": "松",
+     "meaning": "소나무 송",
+     "pinyin_raw": "song1",
+     "hsk": "HSK4",
+     "rank": 551
+    },
+    {
+     "char": "联",
+     "meaning": "연이을 련",
+     "pinyin_raw": "lian2",
+     "hsk": "HSK3",
+     "rank": 552
+    },
+    {
+     "char": "遇",
+     "meaning": "만날 우",
+     "pinyin_raw": "yu4",
+     "hsk": "HSK4",
+     "rank": 553
+    },
+    {
+     "char": "击",
+     "meaning": "칠 격",
+     "pinyin_raw": "ji1",
+     "hsk": "HSK5",
+     "rank": 554
+    }
+   ]
+  },
+  {
+   "stage": 28,
+   "phase": 2,
+   "coverage_pct": 97.32,
+   "chars": [
+    {
+     "char": "妹",
+     "meaning": "누이 매",
+     "pinyin_raw": "mei4",
+     "hsk": "HSK1",
+     "rank": 555
+    },
+    {
+     "char": "丢",
+     "meaning": "잃을 주",
+     "pinyin_raw": "diu1",
+     "hsk": "HSK5",
+     "rank": 556
+    },
+    {
+     "char": "习",
+     "meaning": "익힐 습",
+     "pinyin_raw": "xi2",
+     "hsk": "HSK1",
+     "rank": 557
+    },
+    {
+     "char": "恶",
+     "meaning": "악할 악/미워할 오",
+     "pinyin_raw": "e3",
+     "hsk": "HSK4",
+     "rank": 558
+    },
+    {
+     "char": "似",
+     "meaning": "닮을 사",
+     "pinyin_raw": "shi4",
+     "hsk": "HSK3",
+     "rank": 559
+    },
+    {
+     "char": "往",
+     "meaning": "갈 왕",
+     "pinyin_raw": "wang3",
+     "hsk": "HSK2",
+     "rank": 560
+    },
+    {
+     "char": "碰",
+     "meaning": "부딪칠 팽",
+     "pinyin_raw": "peng4",
+     "hsk": "HSK2",
+     "rank": 561
+    },
+    {
+     "char": "厉",
+     "meaning": "갈 려",
+     "pinyin_raw": "li4",
+     "hsk": "HSK5",
+     "rank": 562
+    },
+    {
+     "char": "及",
+     "meaning": "미칠 급",
+     "pinyin_raw": "ji2",
+     "hsk": "HSK3",
+     "rank": 563
+    },
+    {
+     "char": "虑",
+     "meaning": "생각할 려",
+     "pinyin_raw": "lu:4",
+     "hsk": "HSK4",
+     "rank": 564
+    },
+    {
+     "char": "置",
+     "meaning": "둘 치",
+     "pinyin_raw": "zhi4",
+     "hsk": "HSK4",
+     "rank": 565
+    },
+    {
+     "char": "游",
+     "meaning": "놀 유/헤엄칠 유",
+     "pinyin_raw": "you2",
+     "hsk": "HSK2",
+     "rank": 566
+    },
+    {
+     "char": "板",
+     "meaning": "널빤지 판",
+     "pinyin_raw": "ban3",
+     "hsk": "HSK2",
+     "rank": 567
+    },
+    {
+     "char": "陪",
+     "meaning": "모실 배",
+     "pinyin_raw": "pei2",
+     "hsk": "HSK5",
+     "rank": 568
+    },
+    {
+     "char": "丈",
+     "meaning": "어른 장",
+     "pinyin_raw": "zhang4",
+     "hsk": "HSK4",
+     "rank": 569
+    },
+    {
+     "char": "叔",
+     "meaning": "아저씨 숙",
+     "pinyin_raw": "shu1",
+     "hsk": "HSK4",
+     "rank": 570
+    },
+    {
+     "char": "竟",
+     "meaning": "마침내 경",
+     "pinyin_raw": "jing4",
+     "hsk": "HSK4",
+     "rank": 571
+    },
+    {
+     "char": "标",
+     "meaning": "표할 표",
+     "pinyin_raw": "biao1",
+     "hsk": "HSK3",
+     "rank": 572
+    },
+    {
+     "char": "仍",
+     "meaning": "인할 잉",
+     "pinyin_raw": "reng2",
+     "hsk": "HSK3",
+     "rank": 573
+    },
+    {
+     "char": "员",
+     "meaning": "인원 원",
+     "pinyin_raw": "yuan2",
+     "hsk": "HSK3",
+     "rank": 574
+    }
+   ]
+  },
+  {
+   "stage": 29,
+   "phase": 2,
+   "coverage_pct": 97.45,
+   "chars": [
+    {
+     "char": "病",
+     "meaning": "병 병",
+     "pinyin_raw": "bing4",
+     "hsk": "HSK1",
+     "rank": 575
+    },
+    {
+     "char": "付",
+     "meaning": "줄 부",
+     "pinyin_raw": "fu4",
+     "hsk": "HSK3",
+     "rank": 576
+    },
+    {
+     "char": "戏",
+     "meaning": "놀이 희/희롱할 희",
+     "pinyin_raw": "xi4",
+     "hsk": "HSK3",
+     "rank": 577
+    },
+    {
+     "char": "建",
+     "meaning": "세울 건",
+     "pinyin_raw": "jian4",
+     "hsk": "HSK3",
+     "rank": 578
+    },
+    {
+     "char": "周",
+     "meaning": "두루 주",
+     "pinyin_raw": "zhou1",
+     "hsk": "HSK2",
+     "rank": 579
+    },
+    {
+     "char": "适",
+     "meaning": "맞을 적",
+     "pinyin_raw": "kuo4",
+     "hsk": "HSK2",
+     "rank": 580
+    },
+    {
+     "char": "拥",
+     "meaning": "낄 옹/안을 옹",
+     "pinyin_raw": "yong1",
+     "hsk": "HSK5",
+     "rank": 581
+    },
+    {
+     "char": "刻",
+     "meaning": "새길 각",
+     "pinyin_raw": "ke4",
+     "hsk": "HSK2",
+     "rank": 582
+    },
+    {
+     "char": "究",
+     "meaning": "연구할 구",
+     "pinyin_raw": "jiu1",
+     "hsk": "HSK4",
+     "rank": 583
+    },
+    {
+     "char": "狂",
+     "meaning": "미칠 광",
+     "pinyin_raw": "kuang2",
+     "hsk": "HSK5",
+     "rank": 584
+    },
+    {
+     "char": "赛",
+     "meaning": "굿할 새/겨룰 새",
+     "pinyin_raw": "sai4",
+     "hsk": "HSK3",
+     "rank": 585
+    },
+    {
+     "char": "球",
+     "meaning": "공 구",
+     "pinyin_raw": "qiu2",
+     "hsk": "HSK1",
+     "rank": 586
+    },
+    {
+     "char": "争",
+     "meaning": "다툴 쟁",
+     "pinyin_raw": "zheng1",
+     "hsk": "HSK3",
+     "rank": 587
+    },
+    {
+     "char": "口",
+     "meaning": "입 구",
+     "pinyin_raw": "kou3",
+     "hsk": "HSK1",
+     "rank": 588
+    },
+    {
+     "char": "哭",
+     "meaning": "울 곡",
+     "pinyin_raw": "ku1",
+     "hsk": "HSK2",
+     "rank": 589
+    },
+    {
+     "char": "味",
+     "meaning": "맛 미",
+     "pinyin_raw": "wei4",
+     "hsk": "HSK2",
+     "rank": 590
+    },
+    {
+     "char": "象",
+     "meaning": "코끼리 상",
+     "pinyin_raw": "xiang4",
+     "hsk": "HSK3",
+     "rank": 591
+    },
+    {
+     "char": "万",
+     "meaning": "일만 만",
+     "pinyin_raw": "mo4",
+     "hsk": "HSK2",
+     "rank": 592
+    },
+    {
+     "char": "立",
+     "meaning": "설 립",
+     "pinyin_raw": "li4",
+     "hsk": "HSK3",
+     "rank": 593
+    },
+    {
+     "char": "达",
+     "meaning": "통달할 달",
+     "pinyin_raw": "da2",
+     "hsk": "HSK3",
+     "rank": 594
+    }
+   ]
+  },
+  {
+   "stage": 30,
+   "phase": 2,
+   "coverage_pct": 97.58,
+   "chars": [
+    {
+     "char": "书",
+     "meaning": "글 서",
+     "pinyin_raw": "shu1",
+     "hsk": "HSK1",
+     "rank": 596
+    },
+    {
+     "char": "剩",
+     "meaning": "남을 잉",
+     "pinyin_raw": "sheng4",
+     "hsk": "HSK5",
+     "rank": 597
+    },
+    {
+     "char": "律",
+     "meaning": "법칙 률",
+     "pinyin_raw": "lu:4",
+     "hsk": "HSK4",
+     "rank": 598
+    },
+    {
+     "char": "丽",
+     "meaning": "고울 려",
+     "pinyin_raw": "li4",
+     "hsk": "HSK3",
+     "rank": 599
+    },
+    {
+     "char": "祝",
+     "meaning": "빌 축",
+     "pinyin_raw": "zhu4",
+     "hsk": "HSK3",
+     "rank": 600
+    },
+    {
+     "char": "军",
+     "meaning": "군사 군",
+     "pinyin_raw": "jun1",
+     "hsk": "HSK5",
+     "rank": 602
+    },
+    {
+     "char": "检",
+     "meaning": "검사할 검",
+     "pinyin_raw": "jian3",
+     "hsk": "HSK2",
+     "rank": 603
+    },
+    {
+     "char": "换",
+     "meaning": "바꿀 환",
+     "pinyin_raw": "huan4",
+     "hsk": "HSK2",
+     "rank": 604
+    },
+    {
+     "char": "脑",
+     "meaning": "골 뇌",
+     "pinyin_raw": "nao3",
+     "hsk": "HSK1",
+     "rank": 605
+    },
+    {
+     "char": "傻",
+     "meaning": "어리석을 사",
+     "pinyin_raw": "sha3",
+     "hsk": "HSK5",
+     "rank": 606
+    },
+    {
+     "char": "假",
+     "meaning": "거짓 가",
+     "pinyin_raw": "gei1",
+     "hsk": "HSK1",
+     "rank": 607
+    },
+    {
+     "char": "附",
+     "meaning": "붙을 부",
+     "pinyin_raw": "fu4",
+     "hsk": "HSK4",
+     "rank": 608
+    },
+    {
+     "char": "案",
+     "meaning": "책상 안",
+     "pinyin_raw": "an4",
+     "hsk": "HSK4",
+     "rank": 609
+    },
+    {
+     "char": "包",
+     "meaning": "쌀 포",
+     "pinyin_raw": "bao1",
+     "hsk": "HSK1",
+     "rank": 610
+    },
+    {
+     "char": "装",
+     "meaning": "꾸밀 장",
+     "pinyin_raw": "zhuang1",
+     "hsk": "HSK2",
+     "rank": 612
+    },
+    {
+     "char": "统",
+     "meaning": "거느릴 통",
+     "pinyin_raw": "tong3",
+     "hsk": "HSK4",
+     "rank": 613
+    },
+    {
+     "char": "平",
+     "meaning": "평평할 평",
+     "pinyin_raw": "ping2",
+     "hsk": "HSK2",
+     "rank": 614
+    },
+    {
+     "char": "偷",
+     "meaning": "훔칠 투",
+     "pinyin_raw": "tou1",
+     "hsk": "HSK5",
+     "rank": 615
+    },
+    {
+     "char": "满",
+     "meaning": "찰 만",
+     "pinyin_raw": "man3",
+     "hsk": "HSK2",
+     "rank": 616
+    },
+    {
+     "char": "块",
+     "meaning": "덩어리 괴",
+     "pinyin_raw": "kuai4",
+     "hsk": "HSK1",
+     "rank": 617
+    }
+   ]
+  },
+  {
+   "stage": 31,
+   "phase": 3,
+   "coverage_pct": 97.69,
+   "chars": [
+    {
+     "char": "城",
+     "meaning": "재 성",
+     "pinyin_raw": "cheng2",
+     "hsk": "HSK3",
+     "rank": 618
+    },
+    {
+     "char": "精",
+     "meaning": "정할 정",
+     "pinyin_raw": "jing1",
+     "hsk": "HSK3",
+     "rank": 619
+    },
+    {
+     "char": "度",
+     "meaning": "법도 도/헤아릴 탁",
+     "pinyin_raw": "du4",
+     "hsk": "HSK2",
+     "rank": 620
+    },
+    {
+     "char": "空",
+     "meaning": "빌 공",
+     "pinyin_raw": "kong1",
+     "hsk": "HSK2",
+     "rank": 621
+    },
+    {
+     "char": "怀",
+     "meaning": "품을 회",
+     "pinyin_raw": "huai2",
+     "hsk": "HSK4",
+     "rank": 622
+    },
+    {
+     "char": "造",
+     "meaning": "지을 조",
+     "pinyin_raw": "zao4",
+     "hsk": "HSK3",
+     "rank": 623
+    },
+    {
+     "char": "支",
+     "meaning": "지탱할 지",
+     "pinyin_raw": "zhi1",
+     "hsk": "HSK3",
+     "rank": 624
+    },
+    {
+     "char": "滚",
+     "meaning": "흐를 곤/구를 곤",
+     "pinyin_raw": "gun3",
+     "hsk": "HSK5",
+     "rank": 625
+    },
+    {
+     "char": "怜",
+     "meaning": "불쌍히 여길 련",
+     "pinyin_raw": "lian2",
+     "hsk": "HSK5",
+     "rank": 626
+    },
+    {
+     "char": "恐",
+     "meaning": "두려울 공",
+     "pinyin_raw": "kong3",
+     "hsk": "HSK3",
+     "rank": 627
+    },
+    {
+     "char": "排",
+     "meaning": "밀칠 배",
+     "pinyin_raw": "pai2",
+     "hsk": "HSK2",
+     "rank": 628
+    },
+    {
+     "char": "市",
+     "meaning": "저자 시",
+     "pinyin_raw": "shi4",
+     "hsk": "HSK2",
+     "rank": 629
+    },
+    {
+     "char": "值",
+     "meaning": "값 치",
+     "pinyin_raw": "zhi2",
+     "hsk": "HSK3",
+     "rank": 631
+    },
+    {
+     "char": "扰",
+     "meaning": "시끄러울 요",
+     "pinyin_raw": "rao3",
+     "hsk": "HSK5",
+     "rank": 632
+    },
+    {
+     "char": "调",
+     "meaning": "고를 조",
+     "pinyin_raw": "diao4",
+     "hsk": "HSK3",
+     "rank": 633
+    },
+    {
+     "char": "复",
+     "meaning": "회복할 복/다시 부",
+     "pinyin_raw": "fu4",
+     "hsk": "HSK2",
+     "rank": 634
+    },
+    {
+     "char": "油",
+     "meaning": "기름 유",
+     "pinyin_raw": "you2",
+     "hsk": "HSK2",
+     "rank": 635
+    },
+    {
+     "char": "足",
+     "meaning": "발 족",
+     "pinyin_raw": "ju4",
+     "hsk": "HSK3",
+     "rank": 636
+    },
+    {
+     "char": "首",
+     "meaning": "머리 수",
+     "pinyin_raw": "shou3",
+     "hsk": "HSK3",
+     "rank": 637
+    },
+    {
+     "char": "武",
+     "meaning": "호반 무",
+     "pinyin_raw": "wu3",
+     "hsk": "HSK3",
+     "rank": 638
+    }
+   ]
+  },
+  {
+   "stage": 32,
+   "phase": 3,
+   "coverage_pct": 97.8,
+   "chars": [
+    {
+     "char": "严",
+     "meaning": "엄할 엄",
+     "pinyin_raw": "yan2",
+     "hsk": "HSK4",
+     "rank": 639
+    },
+    {
+     "char": "吓",
+     "meaning": "성낼 혁/놀랄 하",
+     "pinyin_raw": "he4",
+     "hsk": "HSK5",
+     "rank": 640
+    },
+    {
+     "char": "视",
+     "meaning": "볼 시",
+     "pinyin_raw": "shi4",
+     "hsk": "HSK1",
+     "rank": 641
+    },
+    {
+     "char": "历",
+     "meaning": "지날 력",
+     "pinyin_raw": "li4",
+     "hsk": "HSK3",
+     "rank": 642
+    },
+    {
+     "char": "承",
+     "meaning": "이을 승",
+     "pinyin_raw": "cheng2",
+     "hsk": "HSK4",
+     "rank": 643
+    },
+    {
+     "char": "坚",
+     "meaning": "굳을 견",
+     "pinyin_raw": "jian1",
+     "hsk": "HSK3",
+     "rank": 644
+    },
+    {
+     "char": "显",
+     "meaning": "나타날 현",
+     "pinyin_raw": "xian3",
+     "hsk": "HSK3",
+     "rank": 645
+    },
+    {
+     "char": "咱",
+     "meaning": "우리 자",
+     "pinyin_raw": "zan2",
+     "hsk": "HSK2",
+     "rank": 646
+    },
+    {
+     "char": "餐",
+     "meaning": "밥 찬",
+     "pinyin_raw": "can1",
+     "hsk": "HSK2",
+     "rank": 647
+    },
+    {
+     "char": "庭",
+     "meaning": "뜰 정",
+     "pinyin_raw": "ting2",
+     "hsk": "HSK2",
+     "rank": 648
+    },
+    {
+     "char": "哈",
+     "meaning": "웃음소리 합",
+     "pinyin_raw": "ha1",
+     "hsk": "HSK3",
+     "rank": 649
+    },
+    {
+     "char": "性",
+     "meaning": "성품 성",
+     "pinyin_raw": "xing4",
+     "hsk": "HSK3",
+     "rank": 650
+    },
+    {
+     "char": "四",
+     "meaning": "넉 사",
+     "pinyin_raw": "si4",
+     "hsk": "HSK1",
+     "rank": 651
+    },
+    {
+     "char": "按",
+     "meaning": "누를 안",
+     "pinyin_raw": "an4",
+     "hsk": "HSK3",
+     "rank": 652
+    },
+    {
+     "char": "呼",
+     "meaning": "부를 호",
+     "pinyin_raw": "hu1",
+     "hsk": "HSK4",
+     "rank": 655
+    },
+    {
+     "char": "尔",
+     "meaning": "너 이",
+     "pinyin_raw": "er3",
+     "hsk": "HSK5",
+     "rank": 656
+    },
+    {
+     "char": "舞",
+     "meaning": "춤출 무",
+     "pinyin_raw": "wu3",
+     "hsk": "HSK3",
+     "rank": 657
+    },
+    {
+     "char": "吸",
+     "meaning": "마실 흡",
+     "pinyin_raw": "xi1",
+     "hsk": "HSK4",
+     "rank": 658
+    },
+    {
+     "char": "瞧",
+     "meaning": "볼 초",
+     "pinyin_raw": "qiao2",
+     "hsk": "HSK5",
+     "rank": 659
+    },
+    {
+     "char": "属",
+     "meaning": "무리 속",
+     "pinyin_raw": "shu3",
+     "hsk": "HSK3",
+     "rank": 660
+    }
+   ]
+  },
+  {
+   "stage": 33,
+   "phase": 3,
+   "coverage_pct": 97.9,
+   "chars": [
+    {
+     "char": "阻",
+     "meaning": "막힐 조",
+     "pinyin_raw": "zu3",
+     "hsk": "HSK4",
+     "rank": 661
+    },
+    {
+     "char": "床",
+     "meaning": "평상 상",
+     "pinyin_raw": "chuang2",
+     "hsk": "HSK1",
+     "rank": 663
+    },
+    {
+     "char": "疑",
+     "meaning": "의심할 의",
+     "pinyin_raw": "yi2",
+     "hsk": "HSK4",
+     "rank": 664
+    },
+    {
+     "char": "著",
+     "meaning": "나타날 저",
+     "pinyin_raw": "zhu4",
+     "hsk": "HSK4",
+     "rank": 665
+    },
+    {
+     "char": "误",
+     "meaning": "그르칠 오",
+     "pinyin_raw": "wu4",
+     "hsk": "HSK3",
+     "rank": 666
+    },
+    {
+     "char": "破",
+     "meaning": "깨뜨릴 파",
+     "pinyin_raw": "po4",
+     "hsk": "HSK3",
+     "rank": 667
+    },
+    {
+     "char": "十",
+     "meaning": "열 십",
+     "pinyin_raw": "shi2",
+     "hsk": "HSK1",
+     "rank": 668
+    },
+    {
+     "char": "某",
+     "meaning": "아무 모",
+     "pinyin_raw": "mou3",
+     "hsk": "HSK3",
+     "rank": 669
+    },
+    {
+     "char": "唱",
+     "meaning": "부를 창",
+     "pinyin_raw": "chang4",
+     "hsk": "HSK1",
+     "rank": 670
+    },
+    {
+     "char": "午",
+     "meaning": "낮 오",
+     "pinyin_raw": "wu3",
+     "hsk": "HSK1",
+     "rank": 671
+    },
+    {
+     "char": "舒",
+     "meaning": "펼 서",
+     "pinyin_raw": "shu1",
+     "hsk": "HSK2",
+     "rank": 672
+    },
+    {
+     "char": "超",
+     "meaning": "뛰어넘을 초",
+     "pinyin_raw": "chao1",
+     "hsk": "HSK2",
+     "rank": 673
+    },
+    {
+     "char": "义",
+     "meaning": "옳을 의",
+     "pinyin_raw": "yi4",
+     "hsk": "HSK3",
+     "rank": 675
+    },
+    {
+     "char": "示",
+     "meaning": "보일 시",
+     "pinyin_raw": "shi4",
+     "hsk": "HSK2",
+     "rank": 676
+    },
+    {
+     "char": "光",
+     "meaning": "빛 광",
+     "pinyin_raw": "guang1",
+     "hsk": "HSK3",
+     "rank": 678
+    },
+    {
+     "char": "笨",
+     "meaning": "거칠 분",
+     "pinyin_raw": "ben4",
+     "hsk": "HSK4",
+     "rank": 679
+    },
+    {
+     "char": "半",
+     "meaning": "반 반",
+     "pinyin_raw": "ban4",
+     "hsk": "HSK1",
+     "rank": 680
+    },
+    {
+     "char": "五",
+     "meaning": "다섯 오",
+     "pinyin_raw": "wu3",
+     "hsk": "HSK1",
+     "rank": 681
+    },
+    {
+     "char": "强",
+     "meaning": "강할 강",
+     "pinyin_raw": "jiang4",
+     "hsk": "HSK3",
+     "rank": 682
+    },
+    {
+     "char": "王",
+     "meaning": "임금 왕",
+     "pinyin_raw": "wang2",
+     "hsk": "HSK2",
+     "rank": 684
+    }
+   ]
+  },
+  {
+   "stage": 34,
+   "phase": 3,
+   "coverage_pct": 97.99,
+   "chars": [
+    {
+     "char": "伟",
+     "meaning": "클 위",
+     "pinyin_raw": "wei3",
+     "hsk": "HSK3",
+     "rank": 685
+    },
+    {
+     "char": "德",
+     "meaning": "큰 덕",
+     "pinyin_raw": "de2",
+     "hsk": "HSK5",
+     "rank": 686
+    },
+    {
+     "char": "费",
+     "meaning": "쓸 비",
+     "pinyin_raw": "fei4",
+     "hsk": "HSK3",
+     "rank": 687
+    },
+    {
+     "char": "卡",
+     "meaning": "카드 카",
+     "pinyin_raw": "ka3",
+     "hsk": "HSK2",
+     "rank": 688
+    },
+    {
+     "char": "聊",
+     "meaning": "애오라지 료",
+     "pinyin_raw": "liao2",
+     "hsk": "HSK4",
+     "rank": 690
+    },
+    {
+     "char": "组",
+     "meaning": "짤 조",
+     "pinyin_raw": "zu3",
+     "hsk": "HSK2",
+     "rank": 692
+    },
+    {
+     "char": "火",
+     "meaning": "불 화",
+     "pinyin_raw": "huo3",
+     "hsk": "HSK1",
+     "rank": 694
+    },
+    {
+     "char": "船",
+     "meaning": "배 선",
+     "pinyin_raw": "chuan2",
+     "hsk": "HSK2",
+     "rank": 695
+    },
+    {
+     "char": "追",
+     "meaning": "쫓을 추",
+     "pinyin_raw": "dui1",
+     "hsk": "HSK3",
+     "rank": 696
+    },
+    {
+     "char": "败",
+     "meaning": "패할 패",
+     "pinyin_raw": "bai4",
+     "hsk": "HSK4",
+     "rank": 698
+    },
+    {
+     "char": "区",
+     "meaning": "구분할 구/지경 구",
+     "pinyin_raw": "qu1",
+     "hsk": "HSK3",
+     "rank": 699
+    },
+    {
+     "char": "街",
+     "meaning": "거리 가",
+     "pinyin_raw": "jie1",
+     "hsk": "HSK2",
+     "rank": 700
+    },
+    {
+     "char": "逃",
+     "meaning": "도망할 도",
+     "pinyin_raw": "tao2",
+     "hsk": "HSK5",
+     "rank": 701
+    },
+    {
+     "char": "既",
+     "meaning": "이미 기",
+     "pinyin_raw": "ji4",
+     "hsk": "HSK4",
+     "rank": 702
+    },
+    {
+     "char": "业",
+     "meaning": "업 업",
+     "pinyin_raw": "ye4",
+     "hsk": "HSK2",
+     "rank": 703
+    },
+    {
+     "char": "弹",
+     "meaning": "탄알 탄/튕길 탄",
+     "pinyin_raw": "dan4",
+     "hsk": "HSK5",
+     "rank": 704
+    },
+    {
+     "char": "居",
+     "meaning": "살 거",
+     "pinyin_raw": "ji1",
+     "hsk": "HSK4",
+     "rank": 705
+    },
+    {
+     "char": "享",
+     "meaning": "누릴 향",
+     "pinyin_raw": "xiang3",
+     "hsk": "HSK5",
+     "rank": 706
+    },
+    {
+     "char": "绍",
+     "meaning": "이을 소",
+     "pinyin_raw": "shao4",
+     "hsk": "HSK1",
+     "rank": 707
+    },
+    {
+     "char": "班",
+     "meaning": "나눌 반",
+     "pinyin_raw": "ban1",
+     "hsk": "HSK1",
+     "rank": 708
+    }
+   ]
+  },
+  {
+   "stage": 35,
+   "phase": 3,
+   "coverage_pct": 98.07,
+   "chars": [
+    {
+     "char": "咖",
+     "meaning": "커피 가",
+     "pinyin_raw": "ga1",
+     "hsk": "HSK3",
+     "rank": 709
+    },
+    {
+     "char": "啡",
+     "meaning": "커피 비",
+     "pinyin_raw": "fei1",
+     "hsk": "HSK3",
+     "rank": 710
+    },
+    {
+     "char": "治",
+     "meaning": "다스릴 치",
+     "pinyin_raw": "zhi4",
+     "hsk": "HSK4",
+     "rank": 712
+    },
+    {
+     "char": "练",
+     "meaning": "익힐 련",
+     "pinyin_raw": "lian4",
+     "hsk": "HSK2",
+     "rank": 713
+    },
+    {
+     "char": "迟",
+     "meaning": "더딜 지/늦을 지",
+     "pinyin_raw": "chi2",
+     "hsk": "HSK4",
+     "rank": 715
+    },
+    {
+     "char": "血",
+     "meaning": "피 혈",
+     "pinyin_raw": "xie3",
+     "hsk": "HSK3",
+     "rank": 718
+    },
+    {
+     "char": "转",
+     "meaning": "구를 전",
+     "pinyin_raw": "zhuai3",
+     "hsk": "HSK3",
+     "rank": 721
+    },
+    {
+     "char": "娘",
+     "meaning": "각시 낭",
+     "pinyin_raw": "niang2",
+     "hsk": "HSK3",
+     "rank": 722
+    },
+    {
+     "char": "激",
+     "meaning": "격할 격",
+     "pinyin_raw": "ji1",
+     "hsk": "HSK4",
+     "rank": 723
+    },
+    {
+     "char": "戴",
+     "meaning": "일 대",
+     "pinyin_raw": "dai4",
+     "hsk": "HSK4",
+     "rank": 724
+    },
+    {
+     "char": "取",
+     "meaning": "가질 취",
+     "pinyin_raw": "qu3",
+     "hsk": "HSK2",
+     "rank": 725
+    },
+    {
+     "char": "阿",
+     "meaning": "언덕 아",
+     "pinyin_raw": "a1",
+     "hsk": "HSK4",
+     "rank": 726
+    },
+    {
+     "char": "寻",
+     "meaning": "찾을 심",
+     "pinyin_raw": "xun2",
+     "hsk": "HSK4",
+     "rank": 727
+    },
+    {
+     "char": "借",
+     "meaning": "빌릴 차",
+     "pinyin_raw": "jie4",
+     "hsk": "HSK2",
+     "rank": 728
+    },
+    {
+     "char": "独",
+     "meaning": "홀로 독",
+     "pinyin_raw": "du2",
+     "hsk": "HSK4",
+     "rank": 730
+    },
+    {
+     "char": "幕",
+     "meaning": "장막 막",
+     "pinyin_raw": "mu4",
+     "hsk": "HSK5",
+     "rank": 731
+    },
+    {
+     "char": "饿",
+     "meaning": "주릴 아",
+     "pinyin_raw": "e4",
+     "hsk": "HSK1",
+     "rank": 733
+    },
+    {
+     "char": "史",
+     "meaning": "사기 사",
+     "pinyin_raw": "shi3",
+     "hsk": "HSK4",
+     "rank": 734
+    },
+    {
+     "char": "断",
+     "meaning": "끊을 단",
+     "pinyin_raw": "duan4",
+     "hsk": "HSK3",
+     "rank": 735
+    },
+    {
+     "char": "食",
+     "meaning": "밥 식/먹을 식",
+     "pinyin_raw": "shi2",
+     "hsk": "HSK2",
+     "rank": 737
+    }
+   ]
+  },
+  {
+   "stage": 36,
+   "phase": 3,
+   "coverage_pct": 98.15,
+   "chars": [
+    {
+     "char": "金",
+     "meaning": "쇠 금/성씨 김",
+     "pinyin_raw": "jin1",
+     "hsk": "HSK3",
+     "rank": 738
+    },
+    {
+     "char": "挂",
+     "meaning": "걸 괘",
+     "pinyin_raw": "gua4",
+     "hsk": "HSK3",
+     "rank": 739
+    },
+    {
+     "char": "福",
+     "meaning": "복 복",
+     "pinyin_raw": "fu2",
+     "hsk": "HSK3",
+     "rank": 742
+    },
+    {
+     "char": "极",
+     "meaning": "극진할 극/다할 극",
+     "pinyin_raw": "ji2",
+     "hsk": "HSK3",
+     "rank": 743
+    },
+    {
+     "char": "政",
+     "meaning": "정사 정",
+     "pinyin_raw": "zheng4",
+     "hsk": "HSK4",
+     "rank": 744
+    },
+    {
+     "char": "资",
+     "meaning": "재물 자",
+     "pinyin_raw": "zi1",
+     "hsk": "HSK3",
+     "rank": 745
+    },
+    {
+     "char": "楼",
+     "meaning": "다락 루",
+     "pinyin_raw": "lou2",
+     "hsk": "HSK1",
+     "rank": 746
+    },
+    {
+     "char": "画",
+     "meaning": "그림 화",
+     "pinyin_raw": "hua4",
+     "hsk": "HSK2",
+     "rank": 747
+    },
+    {
+     "char": "段",
+     "meaning": "층계 단",
+     "pinyin_raw": "duan4",
+     "hsk": "HSK2",
+     "rank": 749
+    },
+    {
+     "char": "拒",
+     "meaning": "막을 거",
+     "pinyin_raw": "ju4",
+     "hsk": "HSK5",
+     "rank": 751
+    },
+    {
+     "char": "响",
+     "meaning": "울릴 향",
+     "pinyin_raw": "xiang3",
+     "hsk": "HSK2",
+     "rank": 752
+    },
+    {
+     "char": "句",
+     "meaning": "글귀 구",
+     "pinyin_raw": "gou1",
+     "hsk": "HSK2",
+     "rank": 753
+    },
+    {
+     "char": "言",
+     "meaning": "말씀 언",
+     "pinyin_raw": "yan2",
+     "hsk": "HSK2",
+     "rank": 755
+    },
+    {
+     "char": "惊",
+     "meaning": "놀랄 경",
+     "pinyin_raw": "jing1",
+     "hsk": "HSK4",
+     "rank": 756
+    },
+    {
+     "char": "研",
+     "meaning": "갈 연",
+     "pinyin_raw": "yan2",
+     "hsk": "HSK4",
+     "rank": 757
+    },
+    {
+     "char": "般",
+     "meaning": "가지 반",
+     "pinyin_raw": "ban1",
+     "hsk": "HSK2",
+     "rank": 758
+    },
+    {
+     "char": "退",
+     "meaning": "물러날 퇴",
+     "pinyin_raw": "tui4",
+     "hsk": "HSK3",
+     "rank": 759
+    },
+    {
+     "char": "恨",
+     "meaning": "한할 한",
+     "pinyin_raw": "hen4",
+     "hsk": "HSK5",
+     "rank": 761
+    },
+    {
+     "char": "奶",
+     "meaning": "젖 내",
+     "pinyin_raw": "nai3",
+     "hsk": "HSK1",
+     "rank": 762
+    },
+    {
+     "char": "供",
+     "meaning": "이바지할 공",
+     "pinyin_raw": "gong1",
+     "hsk": "HSK4",
+     "rank": 763
+    }
+   ]
+  },
+  {
+   "stage": 37,
+   "phase": 3,
+   "coverage_pct": 98.22,
+   "chars": [
+    {
+     "char": "浪",
+     "meaning": "물결 랑",
+     "pinyin_raw": "lang4",
+     "hsk": "HSK3",
+     "rank": 764
+    },
+    {
+     "char": "操",
+     "meaning": "잡을 조",
+     "pinyin_raw": "cao1",
+     "hsk": "HSK4",
+     "rank": 765
+    },
+    {
+     "char": "袋",
+     "meaning": "자루 대",
+     "pinyin_raw": "dai4",
+     "hsk": "HSK4",
+     "rank": 766
+    },
+    {
+     "char": "脚",
+     "meaning": "다리 각",
+     "pinyin_raw": "jiao3",
+     "hsk": "HSK2",
+     "rank": 767
+    },
+    {
+     "char": "际",
+     "meaning": "즈음 제/가 제",
+     "pinyin_raw": "ji4",
+     "hsk": "HSK2",
+     "rank": 768
+    },
+    {
+     "char": "权",
+     "meaning": "권세 권",
+     "pinyin_raw": "quan2",
+     "hsk": "HSK4",
+     "rank": 769
+    },
+    {
+     "char": "闻",
+     "meaning": "들을 문",
+     "pinyin_raw": "wen2",
+     "hsk": "HSK2",
+     "rank": 770
+    },
+    {
+     "char": "录",
+     "meaning": "기록할 록",
+     "pinyin_raw": "lu4",
+     "hsk": "HSK3",
+     "rank": 771
+    },
+    {
+     "char": "引",
+     "meaning": "끌 인",
+     "pinyin_raw": "yin3",
+     "hsk": "HSK4",
+     "rank": 772
+    },
+    {
+     "char": "扔",
+     "meaning": "당길 잉",
+     "pinyin_raw": "reng1",
+     "hsk": "HSK5",
+     "rank": 773
+    },
+    {
+     "char": "店",
+     "meaning": "가게 점",
+     "pinyin_raw": "dian4",
+     "hsk": "HSK1",
+     "rank": 774
+    },
+    {
+     "char": "图",
+     "meaning": "그림 도",
+     "pinyin_raw": "tu2",
+     "hsk": "HSK1",
+     "rank": 775
+    },
+    {
+     "char": "腿",
+     "meaning": "넓적다리 퇴",
+     "pinyin_raw": "tui3",
+     "hsk": "HSK2",
+     "rank": 776
+    },
+    {
+     "char": "敌",
+     "meaning": "대적할 적",
+     "pinyin_raw": "di2",
+     "hsk": "HSK4",
+     "rank": 777
+    },
+    {
+     "char": "状",
+     "meaning": "형상 상/문서 장",
+     "pinyin_raw": "zhuang4",
+     "hsk": "HSK3",
+     "rank": 778
+    },
+    {
+     "char": "码",
+     "meaning": "마노 마",
+     "pinyin_raw": "ma3",
+     "hsk": "HSK4",
+     "rank": 779
+    },
+    {
+     "char": "数",
+     "meaning": "셈 수",
+     "pinyin_raw": "shu3",
+     "hsk": "HSK2",
+     "rank": 780
+    },
+    {
+     "char": "仅",
+     "meaning": "겨우 근",
+     "pinyin_raw": "jin3",
+     "hsk": "HSK3",
+     "rank": 781
+    },
+    {
+     "char": "称",
+     "meaning": "일컬을 칭",
+     "pinyin_raw": "chen4",
+     "hsk": "HSK2",
+     "rank": 783
+    },
+    {
+     "char": "步",
+     "meaning": "걸음 보",
+     "pinyin_raw": "bu4",
+     "hsk": "HSK3",
+     "rank": 784
+    }
+   ]
+  },
+  {
+   "stage": 38,
+   "phase": 3,
+   "coverage_pct": 98.29,
+   "chars": [
+    {
+     "char": "躲",
+     "meaning": "피할 타",
+     "pinyin_raw": "duo3",
+     "hsk": "HSK5",
+     "rank": 785
+    },
+    {
+     "char": "歌",
+     "meaning": "노래 가",
+     "pinyin_raw": "ge1",
+     "hsk": "HSK1",
+     "rank": 786
+    },
+    {
+     "char": "料",
+     "meaning": "헤아릴 료",
+     "pinyin_raw": "liao4",
+     "hsk": "HSK4",
+     "rank": 787
+    },
+    {
+     "char": "节",
+     "meaning": "마디 절",
+     "pinyin_raw": "jie1",
+     "hsk": "HSK2",
+     "rank": 788
+    },
+    {
+     "char": "米",
+     "meaning": "쌀 미",
+     "pinyin_raw": "mi3",
+     "hsk": "HSK1",
+     "rank": 789
+    },
+    {
+     "char": "旅",
+     "meaning": "나그네 려",
+     "pinyin_raw": "lu:3",
+     "hsk": "HSK2",
+     "rank": 790
+    },
+    {
+     "char": "翻",
+     "meaning": "뒤집을 번",
+     "pinyin_raw": "fan1",
+     "hsk": "HSK4",
+     "rank": 791
+    },
+    {
+     "char": "文",
+     "meaning": "글월 문",
+     "pinyin_raw": "wen2",
+     "hsk": "HSK1",
+     "rank": 792
+    },
+    {
+     "char": "念",
+     "meaning": "생각 념",
+     "pinyin_raw": "nian4",
+     "hsk": "HSK3",
+     "rank": 793
+    },
+    {
+     "char": "程",
+     "meaning": "한도 정/길 정",
+     "pinyin_raw": "cheng2",
+     "hsk": "HSK3",
+     "rank": 794
+    },
+    {
+     "char": "热",
+     "meaning": "더울 열",
+     "pinyin_raw": "re4",
+     "hsk": "HSK1",
+     "rank": 795
+    },
+    {
+     "char": "躺",
+     "meaning": "누울 당",
+     "pinyin_raw": "tang3",
+     "hsk": "HSK4",
+     "rank": 796
+    },
+    {
+     "char": "导",
+     "meaning": "인도할 도",
+     "pinyin_raw": "dao3",
+     "hsk": "HSK3",
+     "rank": 797
+    },
+    {
+     "char": "姑",
+     "meaning": "시어머니 고",
+     "pinyin_raw": "gu1",
+     "hsk": "HSK3",
+     "rank": 798
+    },
+    {
+     "char": "尝",
+     "meaning": "맛볼 상",
+     "pinyin_raw": "chang2",
+     "hsk": "HSK5",
+     "rank": 799
+    },
+    {
+     "char": "术",
+     "meaning": "재주 술",
+     "pinyin_raw": "shu4",
+     "hsk": "HSK3",
+     "rank": 800
+    },
+    {
+     "char": "药",
+     "meaning": "약 약",
+     "pinyin_raw": "yao4",
+     "hsk": "HSK2",
+     "rank": 801
+    },
+    {
+     "char": "背",
+     "meaning": "등 배",
+     "pinyin_raw": "bei1",
+     "hsk": "HSK2",
+     "rank": 802
+    },
+    {
+     "char": "布",
+     "meaning": "베 포",
+     "pinyin_raw": "bu4",
+     "hsk": "HSK3",
+     "rank": 803
+    },
+    {
+     "char": "乱",
+     "meaning": "어지러울 란",
+     "pinyin_raw": "luan4",
+     "hsk": "HSK3",
+     "rank": 804
+    }
+   ]
+  },
+  {
+   "stage": 39,
+   "phase": 3,
+   "coverage_pct": 98.35,
+   "chars": [
+    {
+     "char": "训",
+     "meaning": "가르칠 훈",
+     "pinyin_raw": "xun4",
+     "hsk": "HSK3",
+     "rank": 805
+    },
+    {
+     "char": "品",
+     "meaning": "물건 품",
+     "pinyin_raw": "pin3",
+     "hsk": "HSK3",
+     "rank": 807
+    },
+    {
+     "char": "设",
+     "meaning": "베풀 설",
+     "pinyin_raw": "she4",
+     "hsk": "HSK3",
+     "rank": 808
+    },
+    {
+     "char": "规",
+     "meaning": "법 규",
+     "pinyin_raw": "gui1",
+     "hsk": "HSK3",
+     "rank": 809
+    },
+    {
+     "char": "搬",
+     "meaning": "옮길 반",
+     "pinyin_raw": "ban1",
+     "hsk": "HSK3",
+     "rank": 810
+    },
+    {
+     "char": "净",
+     "meaning": "깨끗할 정",
+     "pinyin_raw": "jing4",
+     "hsk": "HSK1",
+     "rank": 811
+    },
+    {
+     "char": "读",
+     "meaning": "읽을 독",
+     "pinyin_raw": "dou4",
+     "hsk": "HSK1",
+     "rank": 812
+    },
+    {
+     "char": "线",
+     "meaning": "줄 선",
+     "pinyin_raw": "xian4",
+     "hsk": "HSK3",
+     "rank": 813
+    },
+    {
+     "char": "顺",
+     "meaning": "순할 순",
+     "pinyin_raw": "shun4",
+     "hsk": "HSK2",
+     "rank": 814
+    },
+    {
+     "char": "专",
+     "meaning": "오로지 전",
+     "pinyin_raw": "zhuan1",
+     "hsk": "HSK3",
+     "rank": 815
+    },
+    {
+     "char": "价",
+     "meaning": "값 가",
+     "pinyin_raw": "jie4",
+     "hsk": "HSK3",
+     "rank": 816
+    },
+    {
+     "char": "海",
+     "meaning": "바다 해",
+     "pinyin_raw": "hai3",
+     "hsk": "HSK2",
+     "rank": 817
+    },
+    {
+     "char": "急",
+     "meaning": "급할 급",
+     "pinyin_raw": "ji2",
+     "hsk": "HSK2",
+     "rank": 818
+    },
+    {
+     "char": "辈",
+     "meaning": "무리 배",
+     "pinyin_raw": "bei4",
+     "hsk": "HSK5",
+     "rank": 819
+    },
+    {
+     "char": "洗",
+     "meaning": "씻을 세",
+     "pinyin_raw": "xi3",
+     "hsk": "HSK1",
+     "rank": 820
+    },
+    {
+     "char": "旁",
+     "meaning": "곁 방",
+     "pinyin_raw": "pang2",
+     "hsk": "HSK1",
+     "rank": 821
+    },
+    {
+     "char": "巴",
+     "meaning": "꼬리 파",
+     "pinyin_raw": "ba1",
+     "hsk": "HSK4",
+     "rank": 822
+    },
+    {
+     "char": "遍",
+     "meaning": "두루 편",
+     "pinyin_raw": "bian4",
+     "hsk": "HSK2",
+     "rank": 823
+    },
+    {
+     "char": "惜",
+     "meaning": "아낄 석",
+     "pinyin_raw": "xi1",
+     "hsk": "HSK5",
+     "rank": 824
+    },
+    {
+     "char": "遗",
+     "meaning": "남길 유",
+     "pinyin_raw": "yi2",
+     "hsk": "HSK4",
+     "rank": 825
+    }
+   ]
+  },
+  {
+   "stage": 40,
+   "phase": 3,
+   "coverage_pct": 98.41,
+   "chars": [
+    {
+     "char": "府",
+     "meaning": "마을 부/관청 부",
+     "pinyin_raw": "fu3",
+     "hsk": "HSK4",
+     "rank": 826
+    },
+    {
+     "char": "斗",
+     "meaning": "말 두/싸울 투",
+     "pinyin_raw": "dou3",
+     "hsk": "HSK4",
+     "rank": 827
+    },
+    {
+     "char": "译",
+     "meaning": "번역할 역",
+     "pinyin_raw": "yi4",
+     "hsk": "HSK4",
+     "rank": 829
+    },
+    {
+     "char": "荣",
+     "meaning": "영화 영",
+     "pinyin_raw": "rong2",
+     "hsk": "HSK5",
+     "rank": 830
+    },
+    {
+     "char": "格",
+     "meaning": "격식 격",
+     "pinyin_raw": "ge1",
+     "hsk": "HSK3",
+     "rank": 832
+    },
+    {
+     "char": "夜",
+     "meaning": "밤 야",
+     "pinyin_raw": "ye4",
+     "hsk": "HSK2",
+     "rank": 833
+    },
+    {
+     "char": "堂",
+     "meaning": "집 당",
+     "pinyin_raw": "tang2",
+     "hsk": "HSK2",
+     "rank": 834
+    },
+    {
+     "char": "博",
+     "meaning": "넓을 박",
+     "pinyin_raw": "bo2",
+     "hsk": "HSK5",
+     "rank": 835
+    },
+    {
+     "char": "态",
+     "meaning": "모습 태",
+     "pinyin_raw": "tai4",
+     "hsk": "HSK2",
+     "rank": 836
+    },
+    {
+     "char": "传",
+     "meaning": "전할 전",
+     "pinyin_raw": "chuan2",
+     "hsk": "HSK3",
+     "rank": 837
+    },
+    {
+     "char": "展",
+     "meaning": "펼 전",
+     "pinyin_raw": "zhan3",
+     "hsk": "HSK3",
+     "rank": 839
+    },
+    {
+     "char": "民",
+     "meaning": "백성 민",
+     "pinyin_raw": "min2",
+     "hsk": "HSK3",
+     "rank": 840
+    },
+    {
+     "char": "暗",
+     "meaning": "어두울 암",
+     "pinyin_raw": "an4",
+     "hsk": "HSK4",
+     "rank": 841
+    },
+    {
+     "char": "围",
+     "meaning": "에워쌀 위",
+     "pinyin_raw": "wei2",
+     "hsk": "HSK3",
+     "rank": 842
+    },
+    {
+     "char": "获",
+     "meaning": "얻을 획",
+     "pinyin_raw": "huo4",
+     "hsk": "HSK4",
+     "rank": 843
+    },
+    {
+     "char": "抢",
+     "meaning": "빼앗을 창",
+     "pinyin_raw": "qiang1",
+     "hsk": "HSK5",
+     "rank": 845
+    },
+    {
+     "char": "观",
+     "meaning": "볼 관",
+     "pinyin_raw": "guan1",
+     "hsk": "HSK2",
+     "rank": 846
+    },
+    {
+     "char": "脱",
+     "meaning": "벗을 탈",
+     "pinyin_raw": "tuo1",
+     "hsk": "HSK4",
+     "rank": 847
+    },
+    {
+     "char": "爷",
+     "meaning": "아비 야/할아버지 야",
+     "pinyin_raw": "ye2",
+     "hsk": "HSK1",
+     "rank": 850
+    },
+    {
+     "char": "惯",
+     "meaning": "익숙할 관",
+     "pinyin_raw": "guan4",
+     "hsk": "HSK2",
+     "rank": 851
+    }
+   ]
+  },
+  {
+   "stage": 41,
+   "phase": 3,
+   "coverage_pct": 98.46,
+   "chars": [
+    {
+     "char": "充",
+     "meaning": "채울 충",
+     "pinyin_raw": "chong1",
+     "hsk": "HSK3",
+     "rank": 852
+    },
+    {
+     "char": "左",
+     "meaning": "왼 좌",
+     "pinyin_raw": "zuo3",
+     "hsk": "HSK1",
+     "rank": 853
+    },
+    {
+     "char": "雄",
+     "meaning": "수컷 웅",
+     "pinyin_raw": "xiong2",
+     "hsk": "HSK5",
+     "rank": 854
+    },
+    {
+     "char": "流",
+     "meaning": "흐를 류",
+     "pinyin_raw": "liu2",
+     "hsk": "HSK2",
+     "rank": 855
+    },
+    {
+     "char": "臭",
+     "meaning": "냄새 취",
+     "pinyin_raw": "chou4",
+     "hsk": "HSK5",
+     "rank": 856
+    },
+    {
+     "char": "拾",
+     "meaning": "주울 습/열 십",
+     "pinyin_raw": "she4",
+     "hsk": "HSK5",
+     "rank": 858
+    },
+    {
+     "char": "风",
+     "meaning": "바람 풍",
+     "pinyin_raw": "feng1",
+     "hsk": "HSK1",
+     "rank": 859
+    },
+    {
+     "char": "纪",
+     "meaning": "벼리 기",
+     "pinyin_raw": "ji4",
+     "hsk": "HSK3",
+     "rank": 860
+    },
+    {
+     "char": "产",
+     "meaning": "낳을 산",
+     "pinyin_raw": "chan3",
+     "hsk": "HSK3",
+     "rank": 861
+    },
+    {
+     "char": "勇",
+     "meaning": "날랠 용",
+     "pinyin_raw": "yong3",
+     "hsk": "HSK4",
+     "rank": 862
+    },
+    {
+     "char": "欠",
+     "meaning": "하품 흠",
+     "pinyin_raw": "qian4",
+     "hsk": "HSK5",
+     "rank": 863
+    },
+    {
+     "char": "元",
+     "meaning": "으뜸 원",
+     "pinyin_raw": "yuan2",
+     "hsk": "HSK1",
+     "rank": 864
+    },
+    {
+     "char": "邀",
+     "meaning": "맞을 요/부를 요",
+     "pinyin_raw": "yao1",
+     "hsk": "HSK5",
+     "rank": 865
+    },
+    {
+     "char": "杂",
+     "meaning": "섞일 잡",
+     "pinyin_raw": "za2",
+     "hsk": "HSK3",
+     "rank": 866
+    },
+    {
+     "char": "谓",
+     "meaning": "이를 위",
+     "pinyin_raw": "wei4",
+     "hsk": "HSK4",
+     "rank": 867
+    },
+    {
+     "char": "困",
+     "meaning": "곤할 곤",
+     "pinyin_raw": "kun4",
+     "hsk": "HSK3",
+     "rank": 868
+    },
+    {
+     "char": "架",
+     "meaning": "시렁 가",
+     "pinyin_raw": "jia4",
+     "hsk": "HSK3",
+     "rank": 870
+    },
+    {
+     "char": "验",
+     "meaning": "시험 험",
+     "pinyin_raw": "yan4",
+     "hsk": "HSK3",
+     "rank": 871
+    },
+    {
+     "char": "旦",
+     "meaning": "아침 단",
+     "pinyin_raw": "dan4",
+     "hsk": "HSK5",
+     "rank": 872
+    },
+    {
+     "char": "瓜",
+     "meaning": "오이 과",
+     "pinyin_raw": "gua1",
+     "hsk": "HSK4",
+     "rank": 873
+    }
+   ]
+  },
+  {
+   "stage": 42,
+   "phase": 3,
+   "coverage_pct": 98.51,
+   "chars": [
+    {
+     "char": "阳",
+     "meaning": "볕 양",
+     "pinyin_raw": "yang2",
+     "hsk": "HSK2",
+     "rank": 875
+    },
+    {
+     "char": "尊",
+     "meaning": "높을 존",
+     "pinyin_raw": "zun1",
+     "hsk": "HSK5",
+     "rank": 877
+    },
+    {
+     "char": "毕",
+     "meaning": "마칠 필",
+     "pinyin_raw": "bi4",
+     "hsk": "HSK4",
+     "rank": 878
+    },
+    {
+     "char": "右",
+     "meaning": "오른쪽 우",
+     "pinyin_raw": "you4",
+     "hsk": "HSK1",
+     "rank": 879
+    },
+    {
+     "char": "射",
+     "meaning": "쏠 사",
+     "pinyin_raw": "she4",
+     "hsk": "HSK5",
+     "rank": 880
+    },
+    {
+     "char": "辆",
+     "meaning": "수레 량",
+     "pinyin_raw": "liang4",
+     "hsk": "HSK2",
+     "rank": 882
+    },
+    {
+     "char": "局",
+     "meaning": "판 국",
+     "pinyin_raw": "ju2",
+     "hsk": "HSK4",
+     "rank": 883
+    },
+    {
+     "char": "忆",
+     "meaning": "생각할 억",
+     "pinyin_raw": "yi4",
+     "hsk": "HSK5",
+     "rank": 887
+    },
+    {
+     "char": "基",
+     "meaning": "터 기",
+     "pinyin_raw": "ji1",
+     "hsk": "HSK3",
+     "rank": 888
+    },
+    {
+     "char": "括",
+     "meaning": "묶을 괄",
+     "pinyin_raw": "kuo4",
+     "hsk": "HSK4",
+     "rank": 890
+    },
+    {
+     "char": "冒",
+     "meaning": "무릅쓸 모",
+     "pinyin_raw": "mao4",
+     "hsk": "HSK3",
+     "rank": 891
+    },
+    {
+     "char": "织",
+     "meaning": "짤 직",
+     "pinyin_raw": "zhi1",
+     "hsk": "HSK5",
+     "rank": 892
+    },
+    {
+     "char": "抽",
+     "meaning": "뽑을 추",
+     "pinyin_raw": "chou1",
+     "hsk": "HSK4",
+     "rank": 894
+    },
+    {
+     "char": "级",
+     "meaning": "등급 급",
+     "pinyin_raw": "ji2",
+     "hsk": "HSK2",
+     "rank": 895
+    },
+    {
+     "char": "细",
+     "meaning": "가늘 세",
+     "pinyin_raw": "xi4",
+     "hsk": "HSK4",
+     "rank": 899
+    },
+    {
+     "char": "红",
+     "meaning": "붉을 홍",
+     "pinyin_raw": "gong1",
+     "hsk": "HSK2",
+     "rank": 900
+    },
+    {
+     "char": "彼",
+     "meaning": "저 피",
+     "pinyin_raw": "bi3",
+     "hsk": "HSK5",
+     "rank": 901
+    },
+    {
+     "char": "千",
+     "meaning": "일천 천",
+     "pinyin_raw": "qian1",
+     "hsk": "HSK2",
+     "rank": 902
+    },
+    {
+     "char": "胡",
+     "meaning": "오랑캐 호",
+     "pinyin_raw": "hu2",
+     "hsk": "HSK5",
+     "rank": 904
+    },
+    {
+     "char": "银",
+     "meaning": "은 은",
+     "pinyin_raw": "yin2",
+     "hsk": "HSK2",
+     "rank": 905
+    }
+   ]
+  },
+  {
+   "stage": 43,
+   "phase": 3,
+   "coverage_pct": 98.55,
+   "chars": [
+    {
+     "char": "速",
+     "meaning": "빠를 속",
+     "pinyin_raw": "su4",
+     "hsk": "HSK3",
+     "rank": 906
+    },
+    {
+     "char": "私",
+     "meaning": "사사 사",
+     "pinyin_raw": "si1",
+     "hsk": "HSK5",
+     "rank": 907
+    },
+    {
+     "char": "群",
+     "meaning": "무리 군",
+     "pinyin_raw": "qun2",
+     "hsk": "HSK3",
+     "rank": 908
+    },
+    {
+     "char": "八",
+     "meaning": "여덟 팔",
+     "pinyin_raw": "ba1",
+     "hsk": "HSK1",
+     "rank": 909
+    },
+    {
+     "char": "语",
+     "meaning": "말씀 어",
+     "pinyin_raw": "yu3",
+     "hsk": "HSK1",
+     "rank": 911
+    },
+    {
+     "char": "吵",
+     "meaning": "지저귈 초",
+     "pinyin_raw": "chao3",
+     "hsk": "HSK3",
+     "rank": 912
+    },
+    {
+     "char": "吹",
+     "meaning": "불 취",
+     "pinyin_raw": "chui1",
+     "hsk": "HSK2",
+     "rank": 913
+    },
+    {
+     "char": "撞",
+     "meaning": "칠 당",
+     "pinyin_raw": "zhuang4",
+     "hsk": "HSK5",
+     "rank": 914
+    },
+    {
+     "char": "脏",
+     "meaning": "오장 장",
+     "pinyin_raw": "zang4",
+     "hsk": "HSK2",
+     "rank": 915
+    },
+    {
+     "char": "集",
+     "meaning": "모을 집",
+     "pinyin_raw": "ji2",
+     "hsk": "HSK3",
+     "rank": 917
+    },
+    {
+     "char": "套",
+     "meaning": "씌울 투",
+     "pinyin_raw": "tao4",
+     "hsk": "HSK2",
+     "rank": 918
+    },
+    {
+     "char": "烟",
+     "meaning": "연기 연",
+     "pinyin_raw": "yan1",
+     "hsk": "HSK3",
+     "rank": 919
+    },
+    {
+     "char": "屋",
+     "meaning": "집 옥",
+     "pinyin_raw": "wu1",
+     "hsk": "HSK3",
+     "rank": 920
+    },
+    {
+     "char": "移",
+     "meaning": "옮길 이",
+     "pinyin_raw": "yi2",
+     "hsk": "HSK4",
+     "rank": 921
+    },
+    {
+     "char": "卫",
+     "meaning": "지킬 위",
+     "pinyin_raw": "wei4",
+     "hsk": "HSK3",
+     "rank": 922
+    },
+    {
+     "char": "志",
+     "meaning": "뜻 지",
+     "pinyin_raw": "zhi4",
+     "hsk": "HSK3",
+     "rank": 923
+    },
+    {
+     "char": "户",
+     "meaning": "지게 호",
+     "pinyin_raw": "hu4",
+     "hsk": "HSK4",
+     "rank": 924
+    },
+    {
+     "char": "山",
+     "meaning": "메 산",
+     "pinyin_raw": "shan1",
+     "hsk": "HSK1",
+     "rank": 926
+    },
+    {
+     "char": "创",
+     "meaning": "비롯할 창",
+     "pinyin_raw": "chuang4",
+     "hsk": "HSK3",
+     "rank": 927
+    },
+    {
+     "char": "具",
+     "meaning": "갖출 구",
+     "pinyin_raw": "ju4",
+     "hsk": "HSK3",
+     "rank": 928
+    }
+   ]
+  },
+  {
+   "stage": 44,
+   "phase": 3,
+   "coverage_pct": 98.59,
+   "chars": [
+    {
+     "char": "辛",
+     "meaning": "매울 신",
+     "pinyin_raw": "xin1",
+     "hsk": "HSK5",
+     "rank": 929
+    },
+    {
+     "char": "垃",
+     "meaning": "쓰레기 랍",
+     "pinyin_raw": "la1",
+     "hsk": "HSK4",
+     "rank": 930
+    },
+    {
+     "char": "圾",
+     "meaning": "쓰레기 급",
+     "pinyin_raw": "ji1",
+     "hsk": "HSK4",
+     "rank": 931
+    },
+    {
+     "char": "角",
+     "meaning": "뿔 각",
+     "pinyin_raw": "jiao3",
+     "hsk": "HSK2",
+     "rank": 933
+    },
+    {
+     "char": "六",
+     "meaning": "여섯 륙",
+     "pinyin_raw": "liu4",
+     "hsk": "HSK1",
+     "rank": 935
+    },
+    {
+     "char": "职",
+     "meaning": "직분 직",
+     "pinyin_raw": "zhi2",
+     "hsk": "HSK3",
+     "rank": 936
+    },
+    {
+     "char": "压",
+     "meaning": "누를 압",
+     "pinyin_raw": "ya1",
+     "hsk": "HSK3",
+     "rank": 937
+    },
+    {
+     "char": "普",
+     "meaning": "넓을 보",
+     "pinyin_raw": "pu3",
+     "hsk": "HSK2",
+     "rank": 938
+    },
+    {
+     "char": "烧",
+     "meaning": "불사를 소",
+     "pinyin_raw": "shao1",
+     "hsk": "HSK4",
+     "rank": 940
+    },
+    {
+     "char": "冲",
+     "meaning": "찌를 충/화할 충",
+     "pinyin_raw": "chong1",
+     "hsk": "HSK4",
+     "rank": 941
+    },
+    {
+     "char": "奋",
+     "meaning": "떨칠 분",
+     "pinyin_raw": "fen4",
+     "hsk": "HSK4",
+     "rank": 942
+    },
+    {
+     "char": "测",
+     "meaning": "헤아릴 측",
+     "pinyin_raw": "ce4",
+     "hsk": "HSK4",
+     "rank": 944
+    },
+    {
+     "char": "甜",
+     "meaning": "달 첨",
+     "pinyin_raw": "tian2",
+     "hsk": "HSK3",
+     "rank": 945
+    },
+    {
+     "char": "林",
+     "meaning": "수풀 림",
+     "pinyin_raw": "lin2",
+     "hsk": "HSK4",
+     "rank": 946
+    },
+    {
+     "char": "络",
+     "meaning": "이을 락",
+     "pinyin_raw": "lao4",
+     "hsk": "HSK4",
+     "rank": 947
+    },
+    {
+     "char": "社",
+     "meaning": "모일 사",
+     "pinyin_raw": "she4",
+     "hsk": "HSK3",
+     "rank": 948
+    },
+    {
+     "char": "投",
+     "meaning": "던질 투",
+     "pinyin_raw": "tou2",
+     "hsk": "HSK4",
+     "rank": 949
+    },
+    {
+     "char": "鱼",
+     "meaning": "물고기 어",
+     "pinyin_raw": "yu2",
+     "hsk": "HSK2",
+     "rank": 950
+    },
+    {
+     "char": "迷",
+     "meaning": "미혹할 미",
+     "pinyin_raw": "mi2",
+     "hsk": "HSK3",
+     "rank": 951
+    },
+    {
+     "char": "暂",
+     "meaning": "잠깐 잠",
+     "pinyin_raw": "zan4",
+     "hsk": "HSK5",
+     "rank": 954
+    }
+   ]
+  },
+  {
+   "stage": 45,
+   "phase": 3,
+   "coverage_pct": 98.62,
+   "chars": [
+    {
+     "char": "输",
+     "meaning": "보낼 수",
+     "pinyin_raw": "shu1",
+     "hsk": "HSK3",
+     "rank": 956
+    },
+    {
+     "char": "落",
+     "meaning": "떨어질 락",
+     "pinyin_raw": "la4",
+     "hsk": "HSK3",
+     "rank": 957
+    },
+    {
+     "char": "庆",
+     "meaning": "경사 경",
+     "pinyin_raw": "qing4",
+     "hsk": "HSK3",
+     "rank": 958
+    },
+    {
+     "char": "团",
+     "meaning": "둥글 단",
+     "pinyin_raw": "tuan2",
+     "hsk": "HSK3",
+     "rank": 959
+    },
+    {
+     "char": "化",
+     "meaning": "될 화",
+     "pinyin_raw": "hua1",
+     "hsk": "HSK3",
+     "rank": 960
+    },
+    {
+     "char": "石",
+     "meaning": "돌 석",
+     "pinyin_raw": "dan4",
+     "hsk": "HSK3",
+     "rank": 961
+    },
+    {
+     "char": "修",
+     "meaning": "닦을 수",
+     "pinyin_raw": "xiu1",
+     "hsk": "HSK3",
+     "rank": 962
+    },
+    {
+     "char": "疗",
+     "meaning": "병 고칠 료",
+     "pinyin_raw": "liao2",
+     "hsk": "HSK4",
+     "rank": 964
+    },
+    {
+     "char": "领",
+     "meaning": "거느릴 령",
+     "pinyin_raw": "ling3",
+     "hsk": "HSK3",
+     "rank": 965
+    },
+    {
+     "char": "座",
+     "meaning": "자리 좌",
+     "pinyin_raw": "zuo4",
+     "hsk": "HSK2",
+     "rank": 966
+    },
+    {
+     "char": "累",
+     "meaning": "여러 루/지칠 루",
+     "pinyin_raw": "lei3",
+     "hsk": "HSK1",
+     "rank": 967
+    },
+    {
+     "char": "台",
+     "meaning": "대 대",
+     "pinyin_raw": "tai1",
+     "hsk": "HSK3",
+     "rank": 968
+    },
+    {
+     "char": "免",
+     "meaning": "면할 면",
+     "pinyin_raw": "mian3",
+     "hsk": "HSK4",
+     "rank": 969
+    },
+    {
+     "char": "举",
+     "meaning": "들 거",
+     "pinyin_raw": "ju3",
+     "hsk": "HSK2",
+     "rank": 970
+    },
+    {
+     "char": "香",
+     "meaning": "향기 향",
+     "pinyin_raw": "xiang1",
+     "hsk": "HSK3",
+     "rank": 971
+    },
+    {
+     "char": "深",
+     "meaning": "깊을 심",
+     "pinyin_raw": "shen1",
+     "hsk": "HSK3",
+     "rank": 972
+    },
+    {
+     "char": "馆",
+     "meaning": "집 관",
+     "pinyin_raw": "guan3",
+     "hsk": "HSK1",
+     "rank": 975
+    },
+    {
+     "char": "索",
+     "meaning": "찾을 색/노끈 삭",
+     "pinyin_raw": "suo3",
+     "hsk": "HSK5",
+     "rank": 976
+    },
+    {
+     "char": "兵",
+     "meaning": "병사 병",
+     "pinyin_raw": "bing1",
+     "hsk": "HSK4",
+     "rank": 978
+    },
+    {
+     "char": "猫",
+     "meaning": "고양이 묘",
+     "pinyin_raw": "mao1",
+     "hsk": "HSK2",
+     "rank": 979
+    }
+   ]
+  },
+  {
+   "stage": 46,
+   "phase": 4,
+   "coverage_pct": 98.66,
+   "chars": [
+    {
+     "char": "疼",
+     "meaning": "아플 동",
+     "pinyin_raw": "teng2",
+     "hsk": "HSK2",
+     "rank": 980
+    },
+    {
+     "char": "摆",
+     "meaning": "벌일 파",
+     "pinyin_raw": "bai3",
+     "hsk": "HSK4",
+     "rank": 981
+    },
+    {
+     "char": "纸",
+     "meaning": "종이 지",
+     "pinyin_raw": "zhi3",
+     "hsk": "HSK2",
+     "rank": 982
+    },
+    {
+     "char": "毒",
+     "meaning": "독 독",
+     "pinyin_raw": "du2",
+     "hsk": "HSK5",
+     "rank": 983
+    },
+    {
+     "char": "科",
+     "meaning": "과목 과",
+     "pinyin_raw": "ke1",
+     "hsk": "HSK2",
+     "rank": 985
+    },
+    {
+     "char": "众",
+     "meaning": "무리 중",
+     "pinyin_raw": "zhong4",
+     "hsk": "HSK3",
+     "rank": 986
+    },
+    {
+     "char": "秒",
+     "meaning": "분초 초",
+     "pinyin_raw": "miao3",
+     "hsk": "HSK5",
+     "rank": 987
+    },
+    {
+     "char": "双",
+     "meaning": "두 쌍",
+     "pinyin_raw": "shuang1",
+     "hsk": "HSK3",
+     "rank": 988
+    },
+    {
+     "char": "末",
+     "meaning": "끝 말",
+     "pinyin_raw": "me5",
+     "hsk": "HSK2",
+     "rank": 989
+    },
+    {
+     "char": "授",
+     "meaning": "줄 수",
+     "pinyin_raw": "shou4",
+     "hsk": "HSK4",
+     "rank": 990
+    },
+    {
+     "char": "刺",
+     "meaning": "찌를 자",
+     "pinyin_raw": "ci1",
+     "hsk": "HSK4",
+     "rank": 991
+    },
+    {
+     "char": "熟",
+     "meaning": "익을 숙",
+     "pinyin_raw": "shu2",
+     "hsk": "HSK2",
+     "rank": 992
+    },
+    {
+     "char": "印",
+     "meaning": "도장 인",
+     "pinyin_raw": "yin4",
+     "hsk": "HSK2",
+     "rank": 993
+    },
+    {
+     "char": "康",
+     "meaning": "편안 강",
+     "pinyin_raw": "kang1",
+     "hsk": "HSK2",
+     "rank": 994
+    },
+    {
+     "char": "推",
+     "meaning": "밀 추",
+     "pinyin_raw": "tui1",
+     "hsk": "HSK2",
+     "rank": 996
+    },
+    {
+     "char": "啤",
+     "meaning": "맥주 비",
+     "pinyin_raw": "pi2",
+     "hsk": "HSK3",
+     "rank": 997
+    },
+    {
+     "char": "汽",
+     "meaning": "김 기",
+     "pinyin_raw": "qi4",
+     "hsk": "HSK1",
+     "rank": 998
+    },
+    {
+     "char": "维",
+     "meaning": "벼리 유",
+     "pinyin_raw": "wei2",
+     "hsk": "HSK4",
+     "rank": 999
+    },
+    {
+     "char": "票",
+     "meaning": "표 표",
+     "pinyin_raw": "piao4",
+     "hsk": "HSK1",
+     "rank": 1000
+    },
+    {
+     "char": "肉",
+     "meaning": "고기 육",
+     "pinyin_raw": "rou4",
+     "hsk": "HSK1",
+     "rank": 1001
+    }
+   ]
+  },
+  {
+   "stage": 47,
+   "phase": 4,
+   "coverage_pct": 98.69,
+   "chars": [
+    {
+     "char": "胜",
+     "meaning": "이길 승",
+     "pinyin_raw": "sheng4",
+     "hsk": "HSK3",
+     "rank": 1002
+    },
+    {
+     "char": "降",
+     "meaning": "내릴 강/항복할 항",
+     "pinyin_raw": "jiang4",
+     "hsk": "HSK4",
+     "rank": 1004
+    },
+    {
+     "char": "顿",
+     "meaning": "조아릴 돈",
+     "pinyin_raw": "dun4",
+     "hsk": "HSK3",
+     "rank": 1005
+    },
+    {
+     "char": "锁",
+     "meaning": "쇠사슬 쇄/자물쇠 쇄",
+     "pinyin_raw": "suo3",
+     "hsk": "HSK5",
+     "rank": 1006
+    },
+    {
+     "char": "技",
+     "meaning": "재주 기",
+     "pinyin_raw": "ji4",
+     "hsk": "HSK3",
+     "rank": 1008
+    },
+    {
+     "char": "厨",
+     "meaning": "부엌 주",
+     "pinyin_raw": "chu2",
+     "hsk": "HSK5",
+     "rank": 1009
+    },
+    {
+     "char": "签",
+     "meaning": "제비 첨",
+     "pinyin_raw": "qian1",
+     "hsk": "HSK5",
+     "rank": 1010
+    },
+    {
+     "char": "仔",
+     "meaning": "자세할 자",
+     "pinyin_raw": "zai3",
+     "hsk": "HSK5",
+     "rank": 1011
+    },
+    {
+     "char": "颜",
+     "meaning": "낯 안",
+     "pinyin_raw": "yan2",
+     "hsk": "HSK2",
+     "rank": 1012
+    },
+    {
+     "char": "毛",
+     "meaning": "터럭 모",
+     "pinyin_raw": "mao2",
+     "hsk": "HSK1",
+     "rank": 1015
+    },
+    {
+     "char": "牛",
+     "meaning": "소 우",
+     "pinyin_raw": "niu2",
+     "hsk": "HSK1",
+     "rank": 1016
+    },
+    {
+     "char": "悲",
+     "meaning": "슬플 비",
+     "pinyin_raw": "bei1",
+     "hsk": "HSK5",
+     "rank": 1017
+    },
+    {
+     "char": "商",
+     "meaning": "장사 상",
+     "pinyin_raw": "shang1",
+     "hsk": "HSK1",
+     "rank": 1018
+    },
+    {
+     "char": "园",
+     "meaning": "동산 원",
+     "pinyin_raw": "yuan2",
+     "hsk": "HSK2",
+     "rank": 1019
+    },
+    {
+     "char": "健",
+     "meaning": "굳셀 건",
+     "pinyin_raw": "jian4",
+     "hsk": "HSK2",
+     "rank": 1020
+    },
+    {
+     "char": "执",
+     "meaning": "잡을 집",
+     "pinyin_raw": "zhi2",
+     "hsk": "HSK5",
+     "rank": 1021
+    },
+    {
+     "char": "效",
+     "meaning": "본받을 효",
+     "pinyin_raw": "xiao4",
+     "hsk": "HSK3",
+     "rank": 1022
+    },
+    {
+     "char": "尤",
+     "meaning": "더욱 우",
+     "pinyin_raw": "you2",
+     "hsk": "HSK5",
+     "rank": 1024
+    },
+    {
+     "char": "厅",
+     "meaning": "관청 청",
+     "pinyin_raw": "ting1",
+     "hsk": "HSK5",
+     "rank": 1025
+    },
+    {
+     "char": "忍",
+     "meaning": "참을 인",
+     "pinyin_raw": "ren3",
+     "hsk": "HSK5",
+     "rank": 1026
+    }
+   ]
+  },
+  {
+   "stage": 48,
+   "phase": 4,
+   "coverage_pct": 98.72,
+   "chars": [
+    {
+     "char": "毫",
+     "meaning": "터럭 호",
+     "pinyin_raw": "hao2",
+     "hsk": "HSK4",
+     "rank": 1029
+    },
+    {
+     "char": "挑",
+     "meaning": "돋울 도",
+     "pinyin_raw": "tiao1",
+     "hsk": "HSK4",
+     "rank": 1030
+    },
+    {
+     "char": "汤",
+     "meaning": "끓일 탕",
+     "pinyin_raw": "shang1",
+     "hsk": "HSK3",
+     "rank": 1031
+    },
+    {
+     "char": "判",
+     "meaning": "판단할 판",
+     "pinyin_raw": "pan4",
+     "hsk": "HSK3",
+     "rank": 1032
+    },
+    {
+     "char": "致",
+     "meaning": "이를 치",
+     "pinyin_raw": "zhi4",
+     "hsk": "HSK4",
+     "rank": 1033
+    },
+    {
+     "char": "巨",
+     "meaning": "클 거",
+     "pinyin_raw": "ju4",
+     "hsk": "HSK4",
+     "rank": 1034
+    },
+    {
+     "char": "恋",
+     "meaning": "그리워할 련",
+     "pinyin_raw": "lian4",
+     "hsk": "HSK5",
+     "rank": 1035
+    },
+    {
+     "char": "鸟",
+     "meaning": "새 조",
+     "pinyin_raw": "diao3",
+     "hsk": "HSK2",
+     "rank": 1037
+    },
+    {
+     "char": "窗",
+     "meaning": "창 창",
+     "pinyin_raw": "chuang1",
+     "hsk": "HSK4",
+     "rank": 1038
+    },
+    {
+     "char": "稍",
+     "meaning": "점점 초",
+     "pinyin_raw": "shao1",
+     "hsk": "HSK5",
+     "rank": 1039
+    },
+    {
+     "char": "悔",
+     "meaning": "뉘우칠 회",
+     "pinyin_raw": "hui3",
+     "hsk": "HSK5",
+     "rank": 1040
+    },
+    {
+     "char": "微",
+     "meaning": "작을 미",
+     "pinyin_raw": "wei1",
+     "hsk": "HSK4",
+     "rank": 1041
+    },
+    {
+     "char": "烂",
+     "meaning": "빛날 란/문드러질 란",
+     "pinyin_raw": "lan4",
+     "hsk": "HSK5",
+     "rank": 1042
+    },
+    {
+     "char": "宣",
+     "meaning": "베풀 선",
+     "pinyin_raw": "xuan1",
+     "hsk": "HSK3",
+     "rank": 1043
+    },
+    {
+     "char": "咬",
+     "meaning": "물 교",
+     "pinyin_raw": "yao3",
+     "hsk": "HSK5",
+     "rank": 1046
+    },
+    {
+     "char": "守",
+     "meaning": "지킬 수",
+     "pinyin_raw": "shou3",
+     "hsk": "HSK4",
+     "rank": 1047
+    },
+    {
+     "char": "李",
+     "meaning": "오얏 리",
+     "pinyin_raw": "li3",
+     "hsk": "HSK3",
+     "rank": 1049
+    },
+    {
+     "char": "伴",
+     "meaning": "짝 반",
+     "pinyin_raw": "ban4",
+     "hsk": "HSK4",
+     "rank": 1050
+    },
+    {
+     "char": "临",
+     "meaning": "임할 림",
+     "pinyin_raw": "lin2",
+     "hsk": "HSK4",
+     "rank": 1052
+    },
+    {
+     "char": "爬",
+     "meaning": "긁을 파",
+     "pinyin_raw": "pa2",
+     "hsk": "HSK2",
+     "rank": 1055
+    }
+   ]
+  },
+  {
+   "stage": 49,
+   "phase": 4,
+   "coverage_pct": 98.75,
+   "chars": [
+    {
+     "char": "共",
+     "meaning": "한가지 공",
+     "pinyin_raw": "gong4",
+     "hsk": "HSK2",
+     "rank": 1056
+    },
+    {
+     "char": "恢",
+     "meaning": "넓을 회",
+     "pinyin_raw": "hui1",
+     "hsk": "HSK5",
+     "rank": 1057
+    },
+    {
+     "char": "刀",
+     "meaning": "칼 도",
+     "pinyin_raw": "dao1",
+     "hsk": "HSK3",
+     "rank": 1059
+    },
+    {
+     "char": "族",
+     "meaning": "겨레 족",
+     "pinyin_raw": "zu2",
+     "hsk": "HSK3",
+     "rank": 1061
+    },
+    {
+     "char": "养",
+     "meaning": "기를 양",
+     "pinyin_raw": "yang3",
+     "hsk": "HSK2",
+     "rank": 1062
+    },
+    {
+     "char": "亚",
+     "meaning": "버금 아",
+     "pinyin_raw": "ya4",
+     "hsk": "HSK4",
+     "rank": 1063
+    },
+    {
+     "char": "鞋",
+     "meaning": "신 혜",
+     "pinyin_raw": "xie2",
+     "hsk": "HSK2",
+     "rank": 1068
+    },
+    {
+     "char": "赏",
+     "meaning": "상줄 상",
+     "pinyin_raw": "shang3",
+     "hsk": "HSK4",
+     "rank": 1070
+    },
+    {
+     "char": "裤",
+     "meaning": "바지 고",
+     "pinyin_raw": "ku4",
+     "hsk": "HSK3",
+     "rank": 1071
+    },
+    {
+     "char": "课",
+     "meaning": "공부할 과",
+     "pinyin_raw": "ke4",
+     "hsk": "HSK1",
+     "rank": 1072
+    },
+    {
+     "char": "森",
+     "meaning": "수풀 삼",
+     "pinyin_raw": "sen1",
+     "hsk": "HSK4",
+     "rank": 1074
+    },
+    {
+     "char": "挥",
+     "meaning": "휘두를 휘",
+     "pinyin_raw": "hui1",
+     "hsk": "HSK4",
+     "rank": 1076
+    },
+    {
+     "char": "形",
+     "meaning": "모양 형",
+     "pinyin_raw": "xing2",
+     "hsk": "HSK3",
+     "rank": 1077
+    },
+    {
+     "char": "桌",
+     "meaning": "탁자 탁",
+     "pinyin_raw": "zhuo1",
+     "hsk": "HSK1",
+     "rank": 1078
+    },
+    {
+     "char": "巧",
+     "meaning": "공교할 교",
+     "pinyin_raw": "qiao3",
+     "hsk": "HSK3",
+     "rank": 1079
+    },
+    {
+     "char": "旧",
+     "meaning": "예 구",
+     "pinyin_raw": "jiu4",
+     "hsk": "HSK3",
+     "rank": 1080
+    },
+    {
+     "char": "土",
+     "meaning": "흙 토",
+     "pinyin_raw": "tu3",
+     "hsk": "HSK3",
+     "rank": 1081
+    },
+    {
+     "char": "艺",
+     "meaning": "재주 예",
+     "pinyin_raw": "yi4",
+     "hsk": "HSK3",
+     "rank": 1082
+    },
+    {
+     "char": "货",
+     "meaning": "재물 화",
+     "pinyin_raw": "huo4",
+     "hsk": "HSK4",
+     "rank": 1083
+    },
+    {
+     "char": "境",
+     "meaning": "지경 경",
+     "pinyin_raw": "jing4",
+     "hsk": "HSK3",
+     "rank": 1084
+    }
+   ]
+  },
+  {
+   "stage": 50,
+   "phase": 4,
+   "coverage_pct": 98.77,
+   "chars": [
+    {
+     "char": "型",
+     "meaning": "모형 형",
+     "pinyin_raw": "xing2",
+     "hsk": "HSK4",
+     "rank": 1085
+    },
+    {
+     "char": "启",
+     "meaning": "열 계",
+     "pinyin_raw": "qi3",
+     "hsk": "HSK5",
+     "rank": 1088
+    },
+    {
+     "char": "敬",
+     "meaning": "공경할 경",
+     "pinyin_raw": "jing4",
+     "hsk": "HSK5",
+     "rank": 1089
+    },
+    {
+     "char": "预",
+     "meaning": "미리 예",
+     "pinyin_raw": "yu4",
+     "hsk": "HSK3",
+     "rank": 1091
+    },
+    {
+     "char": "距",
+     "meaning": "떨어질 거",
+     "pinyin_raw": "ju4",
+     "hsk": "HSK4",
+     "rank": 1094
+    },
+    {
+     "char": "摄",
+     "meaning": "다스릴 섭/잡을 섭",
+     "pinyin_raw": "she4",
+     "hsk": "HSK5",
+     "rank": 1095
+    },
+    {
+     "char": "封",
+     "meaning": "봉할 봉",
+     "pinyin_raw": "feng1",
+     "hsk": "HSK2",
+     "rank": 1098
+    },
+    {
+     "char": "址",
+     "meaning": "터 지",
+     "pinyin_raw": "zhi3",
+     "hsk": "HSK4",
+     "rank": 1100
+    },
+    {
+     "char": "帽",
+     "meaning": "모자 모",
+     "pinyin_raw": "mao4",
+     "hsk": "HSK4",
+     "rank": 1101
+    },
+    {
+     "char": "鸡",
+     "meaning": "닭 계",
+     "pinyin_raw": "ji1",
+     "hsk": "HSK1",
+     "rank": 1102
+    },
+    {
+     "char": "殊",
+     "meaning": "다를 수",
+     "pinyin_raw": "shu1",
+     "hsk": "HSK4",
+     "rank": 1103
+    },
+    {
+     "char": "依",
+     "meaning": "의지할 의",
+     "pinyin_raw": "yi1",
+     "hsk": "HSK4",
+     "rank": 1104
+    },
+    {
+     "char": "七",
+     "meaning": "일곱 칠",
+     "pinyin_raw": "qi1",
+     "hsk": "HSK1",
+     "rank": 1105
+    },
+    {
+     "char": "协",
+     "meaning": "화합할 협",
+     "pinyin_raw": "xie2",
+     "hsk": "HSK5",
+     "rank": 1106
+    },
+    {
+     "char": "颗",
+     "meaning": "낟알 과",
+     "pinyin_raw": "ke1",
+     "hsk": "HSK5",
+     "rank": 1108
+    },
+    {
+     "char": "剧",
+     "meaning": "심할 극",
+     "pinyin_raw": "ju4",
+     "hsk": "HSK3",
+     "rank": 1110
+    },
+    {
+     "char": "闹",
+     "meaning": "시끄러울 뇨",
+     "pinyin_raw": "nao4",
+     "hsk": "HSK4",
+     "rank": 1112
+    },
+    {
+     "char": "优",
+     "meaning": "넉넉할 우",
+     "pinyin_raw": "you1",
+     "hsk": "HSK3",
+     "rank": 1113
+    },
+    {
+     "char": "箱",
+     "meaning": "상자 상",
+     "pinyin_raw": "xiang1",
+     "hsk": "HSK3",
+     "rank": 1114
+    },
+    {
+     "char": "温",
+     "meaning": "따뜻할 온",
+     "pinyin_raw": "wen1",
+     "hsk": "HSK2",
+     "rank": 1115
+    }
+   ]
+  },
+  {
+   "stage": 51,
+   "phase": 4,
+   "coverage_pct": 98.79,
+   "chars": [
+    {
+     "char": "皮",
+     "meaning": "가죽 피",
+     "pinyin_raw": "pi2",
+     "hsk": "HSK3",
+     "rank": 1116
+    },
+    {
+     "char": "镜",
+     "meaning": "거울 경",
+     "pinyin_raw": "jing4",
+     "hsk": "HSK4",
+     "rank": 1117
+    },
+    {
+     "char": "掌",
+     "meaning": "손바닥 장",
+     "pinyin_raw": "zhang3",
+     "hsk": "HSK5",
+     "rank": 1119
+    },
+    {
+     "char": "堆",
+     "meaning": "쌓을 퇴",
+     "pinyin_raw": "dui1",
+     "hsk": "HSK5",
+     "rank": 1120
+    },
+    {
+     "char": "互",
+     "meaning": "서로 호",
+     "pinyin_raw": "hu4",
+     "hsk": "HSK3",
+     "rank": 1124
+    },
+    {
+     "char": "茶",
+     "meaning": "차 다/차 차",
+     "pinyin_raw": "cha2",
+     "hsk": "HSK1",
+     "rank": 1125
+    },
+    {
+     "char": "升",
+     "meaning": "되 승/오를 승",
+     "pinyin_raw": "sheng1",
+     "hsk": "HSK3",
+     "rank": 1126
+    },
+    {
+     "char": "摸",
+     "meaning": "만질 모",
+     "pinyin_raw": "mo1",
+     "hsk": "HSK4",
+     "rank": 1127
+    },
+    {
+     "char": "词",
+     "meaning": "말 사",
+     "pinyin_raw": "ci2",
+     "hsk": "HSK2",
+     "rank": 1128
+    },
+    {
+     "char": "模",
+     "meaning": "본뜰 모",
+     "pinyin_raw": "mo2",
+     "hsk": "HSK4",
+     "rank": 1130
+    },
+    {
+     "char": "笔",
+     "meaning": "붓 필",
+     "pinyin_raw": "bi3",
+     "hsk": "HSK2",
+     "rank": 1131
+    },
+    {
+     "char": "醉",
+     "meaning": "취할 취",
+     "pinyin_raw": "zui4",
+     "hsk": "HSK5",
+     "rank": 1132
+    },
+    {
+     "char": "罚",
+     "meaning": "벌할 벌",
+     "pinyin_raw": "fa2",
+     "hsk": "HSK5",
+     "rank": 1134
+    },
+    {
+     "char": "彩",
+     "meaning": "채색 채",
+     "pinyin_raw": "cai3",
+     "hsk": "HSK3",
+     "rank": 1135
+    },
+    {
+     "char": "搜",
+     "meaning": "찾을 수",
+     "pinyin_raw": "sou1",
+     "hsk": "HSK5",
+     "rank": 1136
+    },
+    {
+     "char": "盖",
+     "meaning": "덮을 개",
+     "pinyin_raw": "gai4",
+     "hsk": "HSK4",
+     "rank": 1137
+    },
+    {
+     "char": "树",
+     "meaning": "나무 수",
+     "pinyin_raw": "shu4",
+     "hsk": "HSK1",
+     "rank": 1138
+    },
+    {
+     "char": "聚",
+     "meaning": "모을 취",
+     "pinyin_raw": "ju4",
+     "hsk": "HSK4",
+     "rank": 1139
+    },
+    {
+     "char": "项",
+     "meaning": "항목 항/목 항",
+     "pinyin_raw": "xiang4",
+     "hsk": "HSK4",
+     "rank": 1140
+    },
+    {
+     "char": "猪",
+     "meaning": "돼지 저",
+     "pinyin_raw": "zhu1",
+     "hsk": "HSK3",
+     "rank": 1141
+    }
+   ]
+  },
+  {
+   "stage": 52,
+   "phase": 4,
+   "coverage_pct": 98.82,
+   "chars": [
+    {
+     "char": "俱",
+     "meaning": "함께 구",
+     "pinyin_raw": "ju4",
+     "hsk": "HSK5",
+     "rank": 1143
+    },
+    {
+     "char": "避",
+     "meaning": "피할 피",
+     "pinyin_raw": "bi4",
+     "hsk": "HSK4",
+     "rank": 1144
+    },
+    {
+     "char": "凭",
+     "meaning": "기댈 빙",
+     "pinyin_raw": "ping2",
+     "hsk": "HSK5",
+     "rank": 1145
+    },
+    {
+     "char": "握",
+     "meaning": "쥘 악",
+     "pinyin_raw": "wo4",
+     "hsk": "HSK3",
+     "rank": 1146
+    },
+    {
+     "char": "百",
+     "meaning": "일백 백",
+     "pinyin_raw": "bai3",
+     "hsk": "HSK1",
+     "rank": 1147
+    },
+    {
+     "char": "宁",
+     "meaning": "편안할 녕",
+     "pinyin_raw": "ning4",
+     "hsk": "HSK4",
+     "rank": 1148
+    },
+    {
+     "char": "耳",
+     "meaning": "귀 이",
+     "pinyin_raw": "er3",
+     "hsk": "HSK4",
+     "rank": 1149
+    },
+    {
+     "char": "低",
+     "meaning": "낮을 저",
+     "pinyin_raw": "di1",
+     "hsk": "HSK2",
+     "rank": 1150
+    },
+    {
+     "char": "顶",
+     "meaning": "정수리 정",
+     "pinyin_raw": "ding3",
+     "hsk": "HSK4",
+     "rank": 1151
+    },
+    {
+     "char": "招",
+     "meaning": "부를 초",
+     "pinyin_raw": "zhao1",
+     "hsk": "HSK4",
+     "rank": 1152
+    },
+    {
+     "char": "彻",
+     "meaning": "통할 철",
+     "pinyin_raw": "che4",
+     "hsk": "HSK4",
+     "rank": 1153
+    },
+    {
+     "char": "牙",
+     "meaning": "어금니 아",
+     "pinyin_raw": "ya2",
+     "hsk": "HSK4",
+     "rank": 1154
+    },
+    {
+     "char": "访",
+     "meaning": "찾을 방",
+     "pinyin_raw": "fang3",
+     "hsk": "HSK3",
+     "rank": 1155
+    },
+    {
+     "char": "禁",
+     "meaning": "금할 금",
+     "pinyin_raw": "jin1",
+     "hsk": "HSK4",
+     "rank": 1156
+    },
+    {
+     "char": "骑",
+     "meaning": "말 탈 기",
+     "pinyin_raw": "ji4",
+     "hsk": "HSK2",
+     "rank": 1157
+    },
+    {
+     "char": "触",
+     "meaning": "닿을 촉",
+     "pinyin_raw": "chu4",
+     "hsk": "HSK5",
+     "rank": 1158
+    },
+    {
+     "char": "蓝",
+     "meaning": "쪽 람",
+     "pinyin_raw": "lan2",
+     "hsk": "HSK2",
+     "rank": 1159
+    },
+    {
+     "char": "华",
+     "meaning": "빛날 화",
+     "pinyin_raw": "hua1",
+     "hsk": "HSK3",
+     "rank": 1160
+    },
+    {
+     "char": "晨",
+     "meaning": "새벽 신",
+     "pinyin_raw": "chen2",
+     "hsk": "HSK2",
+     "rank": 1161
+    },
+    {
+     "char": "欣",
+     "meaning": "기쁠 흔",
+     "pinyin_raw": "xin1",
+     "hsk": "HSK5",
+     "rank": 1162
+    }
+   ]
+  },
+  {
+   "stage": 53,
+   "phase": 4,
+   "coverage_pct": 98.84,
+   "chars": [
+    {
+     "char": "贵",
+     "meaning": "귀할 귀",
+     "pinyin_raw": "gui4",
+     "hsk": "HSK1",
+     "rank": 1164
+    },
+    {
+     "char": "秀",
+     "meaning": "빼어날 수",
+     "pinyin_raw": "xiu4",
+     "hsk": "HSK4",
+     "rank": 1166
+    },
+    {
+     "char": "澡",
+     "meaning": "씻을 조",
+     "pinyin_raw": "zao3",
+     "hsk": "HSK2",
+     "rank": 1167
+    },
+    {
+     "char": "沙",
+     "meaning": "모래 사",
+     "pinyin_raw": "sha1",
+     "hsk": "HSK3",
+     "rank": 1169
+    },
+    {
+     "char": "朝",
+     "meaning": "아침 조/조정 조",
+     "pinyin_raw": "chao2",
+     "hsk": "HSK3",
+     "rank": 1170
+    },
+    {
+     "char": "环",
+     "meaning": "고리 환",
+     "pinyin_raw": "huan2",
+     "hsk": "HSK3",
+     "rank": 1172
+    },
+    {
+     "char": "采",
+     "meaning": "캘 채",
+     "pinyin_raw": "cai3",
+     "hsk": "HSK3",
+     "rank": 1173
+    },
+    {
+     "char": "朵",
+     "meaning": "꽃송이 타",
+     "pinyin_raw": "duo3",
+     "hsk": "HSK5",
+     "rank": 1174
+    },
+    {
+     "char": "广",
+     "meaning": "넓을 광",
+     "pinyin_raw": "yan3",
+     "hsk": "HSK2",
+     "rank": 1175
+    },
+    {
+     "char": "估",
+     "meaning": "값 고",
+     "pinyin_raw": "gu1",
+     "hsk": "HSK5",
+     "rank": 1178
+    },
+    {
+     "char": "雷",
+     "meaning": "우레 뢰",
+     "pinyin_raw": "lei2",
+     "hsk": "HSK4",
+     "rank": 1179
+    },
+    {
+     "char": "折",
+     "meaning": "꺾을 절",
+     "pinyin_raw": "she2",
+     "hsk": "HSK4",
+     "rank": 1180
+    },
+    {
+     "char": "键",
+     "meaning": "열쇠 건",
+     "pinyin_raw": "jian4",
+     "hsk": "HSK5",
+     "rank": 1182
+    },
+    {
+     "char": "邻",
+     "meaning": "이웃 린",
+     "pinyin_raw": "lin2",
+     "hsk": "HSK5",
+     "rank": 1185
+    },
+    {
+     "char": "肚",
+     "meaning": "배 두",
+     "pinyin_raw": "du3",
+     "hsk": "HSK4",
+     "rank": 1187
+    },
+    {
+     "char": "灯",
+     "meaning": "등불 등",
+     "pinyin_raw": "deng1",
+     "hsk": "HSK2",
+     "rank": 1188
+    },
+    {
+     "char": "梯",
+     "meaning": "사다리 제",
+     "pinyin_raw": "ti1",
+     "hsk": "HSK4",
+     "rank": 1191
+    },
+    {
+     "char": "鼻",
+     "meaning": "코 비",
+     "pinyin_raw": "bi2",
+     "hsk": "HSK5",
+     "rank": 1192
+    },
+    {
+     "char": "擦",
+     "meaning": "문지를 찰",
+     "pinyin_raw": "ca1",
+     "hsk": "HSK4",
+     "rank": 1193
+    },
+    {
+     "char": "初",
+     "meaning": "처음 초",
+     "pinyin_raw": "chu1",
+     "hsk": "HSK3",
+     "rank": 1194
+    }
+   ]
+  },
+  {
+   "stage": 54,
+   "phase": 4,
+   "coverage_pct": 98.85,
+   "chars": [
+    {
+     "char": "洞",
+     "meaning": "골 동",
+     "pinyin_raw": "dong4",
+     "hsk": "HSK5",
+     "rank": 1195
+    },
+    {
+     "char": "诚",
+     "meaning": "정성 성",
+     "pinyin_raw": "cheng2",
+     "hsk": "HSK4",
+     "rank": 1196
+    },
+    {
+     "char": "透",
+     "meaning": "사무칠 투",
+     "pinyin_raw": "tou4",
+     "hsk": "HSK4",
+     "rank": 1199
+    },
+    {
+     "char": "损",
+     "meaning": "덜 손",
+     "pinyin_raw": "sun3",
+     "hsk": "HSK5",
+     "rank": 1202
+    },
+    {
+     "char": "劲",
+     "meaning": "굳셀 경",
+     "pinyin_raw": "jin4",
+     "hsk": "HSK4",
+     "rank": 1203
+    },
+    {
+     "char": "挡",
+     "meaning": "막을 당",
+     "pinyin_raw": "dang3",
+     "hsk": "HSK5",
+     "rank": 1205
+    },
+    {
+     "char": "雨",
+     "meaning": "비 우",
+     "pinyin_raw": "yu3",
+     "hsk": "HSK1",
+     "rank": 1208
+    },
+    {
+     "char": "墙",
+     "meaning": "담 장",
+     "pinyin_raw": "qiang2",
+     "hsk": "HSK2",
+     "rank": 1209
+    },
+    {
+     "char": "黄",
+     "meaning": "누를 황",
+     "pinyin_raw": "huang2",
+     "hsk": "HSK2",
+     "rank": 1210
+    },
+    {
+     "char": "漫",
+     "meaning": "흩어질 만",
+     "pinyin_raw": "man4",
+     "hsk": "HSK5",
+     "rank": 1211
+    },
+    {
+     "char": "散",
+     "meaning": "흩을 산",
+     "pinyin_raw": "san4",
+     "hsk": "HSK3",
+     "rank": 1212
+    },
+    {
+     "char": "轮",
+     "meaning": "바퀴 륜",
+     "pinyin_raw": "lun2",
+     "hsk": "HSK4",
+     "rank": 1215
+    },
+    {
+     "char": "序",
+     "meaning": "차례 서",
+     "pinyin_raw": "xu4",
+     "hsk": "HSK4",
+     "rank": 1216
+    },
+    {
+     "char": "智",
+     "meaning": "지혜 지",
+     "pinyin_raw": "zhi4",
+     "hsk": "HSK4",
+     "rank": 1217
+    },
+    {
+     "char": "泳",
+     "meaning": "헤엄칠 영",
+     "pinyin_raw": "yong3",
+     "hsk": "HSK3",
+     "rank": 1218
+    },
+    {
+     "char": "夏",
+     "meaning": "여름 하",
+     "pinyin_raw": "xia4",
+     "hsk": "HSK2",
+     "rank": 1222
+    },
+    {
+     "char": "鼠",
+     "meaning": "쥐 서",
+     "pinyin_raw": "shu3",
+     "hsk": "HSK5",
+     "rank": 1223
+    },
+    {
+     "char": "古",
+     "meaning": "예 고",
+     "pinyin_raw": "gu3",
+     "hsk": "HSK3",
+     "rank": 1225
+    },
+    {
+     "char": "菜",
+     "meaning": "나물 채",
+     "pinyin_raw": "cai4",
+     "hsk": "HSK1",
+     "rank": 1227
+    },
+    {
+     "char": "良",
+     "meaning": "어질 량",
+     "pinyin_raw": "liang2",
+     "hsk": "HSK4",
+     "rank": 1228
+    }
+   ]
+  },
+  {
+   "stage": 55,
+   "phase": 4,
+   "coverage_pct": 98.87,
+   "chars": [
+    {
+     "char": "网",
+     "meaning": "그물 망",
+     "pinyin_raw": "wang3",
+     "hsk": "HSK1",
+     "rank": 1231
+    },
+    {
+     "char": "宜",
+     "meaning": "마땅 의",
+     "pinyin_raw": "yi2",
+     "hsk": "HSK2",
+     "rank": 1232
+    },
+    {
+     "char": "扮",
+     "meaning": "꾸밀 분",
+     "pinyin_raw": "ban4",
+     "hsk": "HSK5",
+     "rank": 1236
+    },
+    {
+     "char": "悉",
+     "meaning": "다 실",
+     "pinyin_raw": "xi1",
+     "hsk": "HSK5",
+     "rank": 1237
+    },
+    {
+     "char": "貌",
+     "meaning": "모양 모",
+     "pinyin_raw": "mao4",
+     "hsk": "HSK5",
+     "rank": 1239
+    },
+    {
+     "char": "配",
+     "meaning": "나눌 배/짝 배",
+     "pinyin_raw": "pei4",
+     "hsk": "HSK3",
+     "rank": 1244
+    },
+    {
+     "char": "冰",
+     "meaning": "얼음 빙",
+     "pinyin_raw": "bing1",
+     "hsk": "HSK4",
+     "rank": 1245
+    },
+    {
+     "char": "犹",
+     "meaning": "오히려 유",
+     "pinyin_raw": "you2",
+     "hsk": "HSK5",
+     "rank": 1246
+    },
+    {
+     "char": "吐",
+     "meaning": "토할 토",
+     "pinyin_raw": "tu3",
+     "hsk": "HSK5",
+     "rank": 1247
+    },
+    {
+     "char": "姓",
+     "meaning": "성씨 성",
+     "pinyin_raw": "xing4",
+     "hsk": "HSK2",
+     "rank": 1249
+    },
+    {
+     "char": "归",
+     "meaning": "돌아갈 귀",
+     "pinyin_raw": "gui1",
+     "hsk": "HSK4",
+     "rank": 1251
+    },
+    {
+     "char": "财",
+     "meaning": "재물 재",
+     "pinyin_raw": "cai2",
+     "hsk": "HSK4",
+     "rank": 1252
+    },
+    {
+     "char": "牌",
+     "meaning": "패 패",
+     "pinyin_raw": "pai2",
+     "hsk": "HSK3",
+     "rank": 1254
+    },
+    {
+     "char": "育",
+     "meaning": "기를 육",
+     "pinyin_raw": "yu4",
+     "hsk": "HSK2",
+     "rank": 1256
+    },
+    {
+     "char": "喊",
+     "meaning": "소리칠 함",
+     "pinyin_raw": "han3",
+     "hsk": "HSK2",
+     "rank": 1257
+    },
+    {
+     "char": "尺",
+     "meaning": "자 척",
+     "pinyin_raw": "che3",
+     "hsk": "HSK4",
+     "rank": 1258
+    },
+    {
+     "char": "范",
+     "meaning": "법 범",
+     "pinyin_raw": "fan4",
+     "hsk": "HSK3",
+     "rank": 1260
+    },
+    {
+     "char": "鲜",
+     "meaning": "고울 선",
+     "pinyin_raw": "xian3",
+     "hsk": "HSK4",
+     "rank": 1262
+    },
+    {
+     "char": "申",
+     "meaning": "납 신",
+     "pinyin_raw": "shen1",
+     "hsk": "HSK4",
+     "rank": 1263
+    },
+    {
+     "char": "偶",
+     "meaning": "짝 우",
+     "pinyin_raw": "ou3",
+     "hsk": "HSK5",
+     "rank": 1266
+    }
+   ]
+  },
+  {
+   "stage": 56,
+   "phase": 4,
+   "coverage_pct": 98.88,
+   "chars": [
+    {
+     "char": "源",
+     "meaning": "근원 원",
+     "pinyin_raw": "yuan2",
+     "hsk": "HSK4",
+     "rank": 1267
+    },
+    {
+     "char": "驾",
+     "meaning": "멍에 가",
+     "pinyin_raw": "jia4",
+     "hsk": "HSK5",
+     "rank": 1269
+    },
+    {
+     "char": "防",
+     "meaning": "막을 방",
+     "pinyin_raw": "fang2",
+     "hsk": "HSK3",
+     "rank": 1272
+    },
+    {
+     "char": "寄",
+     "meaning": "부칠 기",
+     "pinyin_raw": "ji4",
+     "hsk": "HSK4",
+     "rank": 1273
+    },
+    {
+     "char": "妇",
+     "meaning": "며느리 부/지어미 부",
+     "pinyin_raw": "fu4",
+     "hsk": "HSK4",
+     "rank": 1274
+    },
+    {
+     "char": "善",
+     "meaning": "착할 선",
+     "pinyin_raw": "shan4",
+     "hsk": "HSK3",
+     "rank": 1278
+    },
+    {
+     "char": "途",
+     "meaning": "길 도",
+     "pinyin_raw": "tu2",
+     "hsk": "HSK4",
+     "rank": 1279
+    },
+    {
+     "char": "怨",
+     "meaning": "원망할 원",
+     "pinyin_raw": "yuan4",
+     "hsk": "HSK5",
+     "rank": 1280
+    },
+    {
+     "char": "质",
+     "meaning": "바탕 질",
+     "pinyin_raw": "zhi4",
+     "hsk": "HSK4",
+     "rank": 1281
+    },
+    {
+     "char": "骂",
+     "meaning": "꾸짖을 매",
+     "pinyin_raw": "ma4",
+     "hsk": "HSK5",
+     "rank": 1283
+    },
+    {
+     "char": "渴",
+     "meaning": "목마를 갈",
+     "pinyin_raw": "ke3",
+     "hsk": "HSK1",
+     "rank": 1284
+    },
+    {
+     "char": "增",
+     "meaning": "더할 증",
+     "pinyin_raw": "zeng1",
+     "hsk": "HSK3",
+     "rank": 1286
+    },
+    {
+     "char": "富",
+     "meaning": "부유할 부",
+     "pinyin_raw": "fu4",
+     "hsk": "HSK3",
+     "rank": 1287
+    },
+    {
+     "char": "南",
+     "meaning": "남녘 남",
+     "pinyin_raw": "na1",
+     "hsk": "HSK1",
+     "rank": 1288
+    },
+    {
+     "char": "域",
+     "meaning": "지경 역",
+     "pinyin_raw": "yu4",
+     "hsk": "HSK5",
+     "rank": 1291
+    },
+    {
+     "char": "戒",
+     "meaning": "경계할 계",
+     "pinyin_raw": "jie4",
+     "hsk": "HSK5",
+     "rank": 1292
+    },
+    {
+     "char": "珍",
+     "meaning": "보배 진",
+     "pinyin_raw": "zhen1",
+     "hsk": "HSK5",
+     "rank": 1294
+    },
+    {
+     "char": "耐",
+     "meaning": "견딜 내",
+     "pinyin_raw": "nai4",
+     "hsk": "HSK5",
+     "rank": 1295
+    },
+    {
+     "char": "冠",
+     "meaning": "갓 관",
+     "pinyin_raw": "guan1",
+     "hsk": "HSK5",
+     "rank": 1296
+    },
+    {
+     "char": "景",
+     "meaning": "볕 경",
+     "pinyin_raw": "jing3",
+     "hsk": "HSK3",
+     "rank": 1297
+    }
+   ]
+  },
+  {
+   "stage": 57,
+   "phase": 4,
+   "coverage_pct": 98.9,
+   "chars": [
+    {
+     "char": "遵",
+     "meaning": "좇을 준",
+     "pinyin_raw": "zun1",
+     "hsk": "HSK5",
+     "rank": 1299
+    },
+    {
+     "char": "帅",
+     "meaning": "장수 수",
+     "pinyin_raw": "shuai4",
+     "hsk": "HSK4",
+     "rank": 1300
+    },
+    {
+     "char": "椅",
+     "meaning": "의자 의",
+     "pinyin_raw": "yi3",
+     "hsk": "HSK2",
+     "rank": 1302
+    },
+    {
+     "char": "硬",
+     "meaning": "굳을 경",
+     "pinyin_raw": "ying4",
+     "hsk": "HSK5",
+     "rank": 1305
+    },
+    {
+     "char": "糖",
+     "meaning": "엿 당",
+     "pinyin_raw": "tang2",
+     "hsk": "HSK3",
+     "rank": 1313
+    },
+    {
+     "char": "烈",
+     "meaning": "매울 렬",
+     "pinyin_raw": "lie4",
+     "hsk": "HSK3",
+     "rank": 1314
+    },
+    {
+     "char": "瓶",
+     "meaning": "병 병",
+     "pinyin_raw": "ping2",
+     "hsk": "HSK2",
+     "rank": 1317
+    },
+    {
+     "char": "稳",
+     "meaning": "평온할 온",
+     "pinyin_raw": "wen3",
+     "hsk": "HSK4",
+     "rank": 1318
+    },
+    {
+     "char": "胆",
+     "meaning": "쓸개 담",
+     "pinyin_raw": "dan3",
+     "hsk": "HSK5",
+     "rank": 1320
+    },
+    {
+     "char": "隔",
+     "meaning": "사이 뜰 격",
+     "pinyin_raw": "ge2",
+     "hsk": "HSK4",
+     "rank": 1321
+    },
+    {
+     "char": "弱",
+     "meaning": "약할 약",
+     "pinyin_raw": "ruo4",
+     "hsk": "HSK4",
+     "rank": 1322
+    },
+    {
+     "char": "短",
+     "meaning": "짧을 단",
+     "pinyin_raw": "duan3",
+     "hsk": "HSK2",
+     "rank": 1323
+    },
+    {
+     "char": "播",
+     "meaning": "뿌릴 파",
+     "pinyin_raw": "bo1",
+     "hsk": "HSK3",
+     "rank": 1325
+    },
+    {
+     "char": "登",
+     "meaning": "오를 등",
+     "pinyin_raw": "deng1",
+     "hsk": "HSK4",
+     "rank": 1329
+    },
+    {
+     "char": "租",
+     "meaning": "조세 조",
+     "pinyin_raw": "zu1",
+     "hsk": "HSK2",
+     "rank": 1331
+    },
+    {
+     "char": "例",
+     "meaning": "법식 례",
+     "pinyin_raw": "li4",
+     "hsk": "HSK2",
+     "rank": 1334
+    },
+    {
+     "char": "坦",
+     "meaning": "평탄할 탄",
+     "pinyin_raw": "tan3",
+     "hsk": "HSK5",
+     "rank": 1336
+    },
+    {
+     "char": "材",
+     "meaning": "재목 재",
+     "pinyin_raw": "cai2",
+     "hsk": "HSK3",
+     "rank": 1339
+    },
+    {
+     "char": "阵",
+     "meaning": "진 칠 진",
+     "pinyin_raw": "zhen4",
+     "hsk": "HSK4",
+     "rank": 1340
+    },
+    {
+     "char": "违",
+     "meaning": "어긋날 위",
+     "pinyin_raw": "wei2",
+     "hsk": "HSK5",
+     "rank": 1341
+    }
+   ]
+  },
+  {
+   "stage": 58,
+   "phase": 4,
+   "coverage_pct": 98.91,
+   "chars": [
+    {
+     "char": "饼",
+     "meaning": "떡 병",
+     "pinyin_raw": "bing3",
+     "hsk": "HSK5",
+     "rank": 1343
+    },
+    {
+     "char": "农",
+     "meaning": "농사 농",
+     "pinyin_raw": "nong2",
+     "hsk": "HSK3",
+     "rank": 1344
+    },
+    {
+     "char": "九",
+     "meaning": "아홉 구",
+     "pinyin_raw": "jiu3",
+     "hsk": "HSK1",
+     "rank": 1346
+    },
+    {
+     "char": "迫",
+     "meaning": "핍박할 박",
+     "pinyin_raw": "po4",
+     "hsk": "HSK4",
+     "rank": 1348
+    },
+    {
+     "char": "占",
+     "meaning": "점칠 점/차지할 점",
+     "pinyin_raw": "zhan4",
+     "hsk": "HSK2",
+     "rank": 1349
+    },
+    {
+     "char": "驶",
+     "meaning": "달릴 사",
+     "pinyin_raw": "shi3",
+     "hsk": "HSK5",
+     "rank": 1351
+    },
+    {
+     "char": "盘",
+     "meaning": "소반 반",
+     "pinyin_raw": "pan2",
+     "hsk": "HSK4",
+     "rank": 1352
+    },
+    {
+     "char": "奖",
+     "meaning": "장려할 장",
+     "pinyin_raw": "jiang3",
+     "hsk": "HSK4",
+     "rank": 1353
+    },
+    {
+     "char": "席",
+     "meaning": "자리 석",
+     "pinyin_raw": "xi2",
+     "hsk": "HSK4",
+     "rank": 1354
+    },
+    {
+     "char": "乡",
+     "meaning": "시골 향",
+     "pinyin_raw": "xiang1",
+     "hsk": "HSK3",
+     "rank": 1355
+    },
+    {
+     "char": "童",
+     "meaning": "아이 동",
+     "pinyin_raw": "tong2",
+     "hsk": "HSK4",
+     "rank": 1356
+    },
+    {
+     "char": "暖",
+     "meaning": "따뜻할 난",
+     "pinyin_raw": "nuan3",
+     "hsk": "HSK3",
+     "rank": 1358
+    },
+    {
+     "char": "限",
+     "meaning": "한할 한",
+     "pinyin_raw": "xian4",
+     "hsk": "HSK4",
+     "rank": 1359
+    },
+    {
+     "char": "脆",
+     "meaning": "연할 취",
+     "pinyin_raw": "cui4",
+     "hsk": "HSK5",
+     "rank": 1362
+    },
+    {
+     "char": "丑",
+     "meaning": "소 축/추할 추",
+     "pinyin_raw": "chou3",
+     "hsk": "HSK5",
+     "rank": 1363
+    },
+    {
+     "char": "闪",
+     "meaning": "번쩍일 섬",
+     "pinyin_raw": "shan3",
+     "hsk": "HSK4",
+     "rank": 1364
+    },
+    {
+     "char": "典",
+     "meaning": "법 전",
+     "pinyin_raw": "dian3",
+     "hsk": "HSK2",
+     "rank": 1368
+    },
+    {
+     "char": "龄",
+     "meaning": "나이 령",
+     "pinyin_raw": "ling2",
+     "hsk": "HSK5",
+     "rank": 1369
+    },
+    {
+     "char": "姨",
+     "meaning": "이모 이",
+     "pinyin_raw": "yi2",
+     "hsk": "HSK4",
+     "rank": 1370
+    },
+    {
+     "char": "营",
+     "meaning": "경영할 영",
+     "pinyin_raw": "ying2",
+     "hsk": "HSK3",
+     "rank": 1371
+    }
+   ]
+  },
+  {
+   "stage": 59,
+   "phase": 4,
+   "coverage_pct": 98.92,
+   "chars": [
+    {
+     "char": "赞",
+     "meaning": "도울 찬/기릴 찬",
+     "pinyin_raw": "zan4",
+     "hsk": "HSK4",
+     "rank": 1377
+    },
+    {
+     "char": "绿",
+     "meaning": "푸를 록",
+     "pinyin_raw": "lu4",
+     "hsk": "HSK2",
+     "rank": 1382
+    },
+    {
+     "char": "胖",
+     "meaning": "클 반/살찔 반",
+     "pinyin_raw": "pan2",
+     "hsk": "HSK3",
+     "rank": 1384
+    },
+    {
+     "char": "碎",
+     "meaning": "부술 쇄",
+     "pinyin_raw": "sui4",
+     "hsk": "HSK5",
+     "rank": 1386
+    },
+    {
+     "char": "肤",
+     "meaning": "살갗 부",
+     "pinyin_raw": "fu1",
+     "hsk": "HSK5",
+     "rank": 1387
+    },
+    {
+     "char": "劳",
+     "meaning": "일할 로",
+     "pinyin_raw": "lao2",
+     "hsk": "HSK5",
+     "rank": 1388
+    },
+    {
+     "char": "补",
+     "meaning": "기울 보",
+     "pinyin_raw": "bu3",
+     "hsk": "HSK3",
+     "rank": 1390
+    },
+    {
+     "char": "汉",
+     "meaning": "한나라 한",
+     "pinyin_raw": "han4",
+     "hsk": "HSK1",
+     "rank": 1391
+    },
+    {
+     "char": "扫",
+     "meaning": "쓸 소",
+     "pinyin_raw": "sao3",
+     "hsk": "HSK4",
+     "rank": 1395
+    },
+    {
+     "char": "批",
+     "meaning": "비평할 비",
+     "pinyin_raw": "pi1",
+     "hsk": "HSK3",
+     "rank": 1400
+    },
+    {
+     "char": "饮",
+     "meaning": "마실 음",
+     "pinyin_raw": "yin3",
+     "hsk": "HSK5",
+     "rank": 1404
+    },
+    {
+     "char": "厂",
+     "meaning": "공장 창",
+     "pinyin_raw": "han3",
+     "hsk": "HSK3",
+     "rank": 1407
+    },
+    {
+     "char": "势",
+     "meaning": "형세 세",
+     "pinyin_raw": "shi4",
+     "hsk": "HSK3",
+     "rank": 1412
+    },
+    {
+     "char": "北",
+     "meaning": "북녘 북",
+     "pinyin_raw": "bei3",
+     "hsk": "HSK1",
+     "rank": 1413
+    },
+    {
+     "char": "缺",
+     "meaning": "이지러질 결",
+     "pinyin_raw": "que1",
+     "hsk": "HSK3",
+     "rank": 1417
+    },
+    {
+     "char": "纯",
+     "meaning": "순수할 순",
+     "pinyin_raw": "chun2",
+     "hsk": "HSK4",
+     "rank": 1419
+    },
+    {
+     "char": "村",
+     "meaning": "마을 촌",
+     "pinyin_raw": "cun1",
+     "hsk": "HSK3",
+     "rank": 1421
+    },
+    {
+     "char": "染",
+     "meaning": "물들일 염",
+     "pinyin_raw": "ran3",
+     "hsk": "HSK5",
+     "rank": 1422
+    },
+    {
+     "char": "委",
+     "meaning": "맡길 위",
+     "pinyin_raw": "wei1",
+     "hsk": "HSK5",
+     "rank": 1426
+    },
+    {
+     "char": "沉",
+     "meaning": "잠길 침",
+     "pinyin_raw": "chen2",
+     "hsk": "HSK4",
+     "rank": 1428
+    }
+   ]
+  },
+  {
+   "stage": 60,
+   "phase": 4,
+   "coverage_pct": 98.93,
+   "chars": [
+    {
+     "char": "述",
+     "meaning": "펼 술",
+     "pinyin_raw": "shu4",
+     "hsk": "HSK4",
+     "rank": 1429
+    },
+    {
+     "char": "敲",
+     "meaning": "두드릴 고",
+     "pinyin_raw": "qiao1",
+     "hsk": "HSK5",
+     "rank": 1430
+    },
+    {
+     "char": "返",
+     "meaning": "돌이킬 반",
+     "pinyin_raw": "fan3",
+     "hsk": "HSK5",
+     "rank": 1432
+    },
+    {
+     "char": "贺",
+     "meaning": "하례할 하",
+     "pinyin_raw": "he4",
+     "hsk": "HSK5",
+     "rank": 1433
+    },
+    {
+     "char": "河",
+     "meaning": "물 하",
+     "pinyin_raw": "he2",
+     "hsk": "HSK2",
+     "rank": 1434
+    },
+    {
+     "char": "描",
+     "meaning": "그릴 묘",
+     "pinyin_raw": "miao2",
+     "hsk": "HSK4",
+     "rank": 1436
+    },
+    {
+     "char": "余",
+     "meaning": "남을 여",
+     "pinyin_raw": "yu2",
+     "hsk": "HSK4",
+     "rank": 1440
+    },
+    {
+     "char": "圈",
+     "meaning": "우리 권",
+     "pinyin_raw": "juan1",
+     "hsk": "HSK4",
+     "rank": 1442
+    },
+    {
+     "char": "盒",
+     "meaning": "합 합",
+     "pinyin_raw": "he2",
+     "hsk": "HSK5",
+     "rank": 1444
+    },
+    {
+     "char": "乘",
+     "meaning": "탈 승",
+     "pinyin_raw": "cheng2",
+     "hsk": "HSK5",
+     "rank": 1447
+    },
+    {
+     "char": "摩",
+     "meaning": "문지를 마",
+     "pinyin_raw": "ma1",
+     "hsk": "HSK5",
+     "rank": 1448
+    },
+    {
+     "char": "章",
+     "meaning": "글 장",
+     "pinyin_raw": "zhang1",
+     "hsk": "HSK3",
+     "rank": 1449
+    },
+    {
+     "char": "卧",
+     "meaning": "누울 와",
+     "pinyin_raw": "wo4",
+     "hsk": "HSK5",
+     "rank": 1450
+    },
+    {
+     "char": "壁",
+     "meaning": "벽 벽",
+     "pinyin_raw": "bi4",
+     "hsk": "HSK5",
+     "rank": 1451
+    },
+    {
+     "char": "燃",
+     "meaning": "탈 연",
+     "pinyin_raw": "ran2",
+     "hsk": "HSK4",
+     "rank": 1454
+    },
+    {
+     "char": "默",
+     "meaning": "잠잠할 묵",
+     "pinyin_raw": "mo4",
+     "hsk": "HSK4",
+     "rank": 1455
+    },
+    {
+     "char": "评",
+     "meaning": "평할 평",
+     "pinyin_raw": "ping2",
+     "hsk": "HSK3",
+     "rank": 1458
+    },
+    {
+     "char": "豪",
+     "meaning": "호걸 호",
+     "pinyin_raw": "hao2",
+     "hsk": "HSK5",
+     "rank": 1459
+    },
+    {
+     "char": "阴",
+     "meaning": "그늘 음",
+     "pinyin_raw": "yin1",
+     "hsk": "HSK2",
+     "rank": 1462
+    },
+    {
+     "char": "曲",
+     "meaning": "굽을 곡/가락 곡",
+     "pinyin_raw": "qu1",
+     "hsk": "HSK5",
+     "rank": 1464
+    }
+   ]
+  },
+  {
+   "stage": 61,
+   "phase": 5,
+   "coverage_pct": 98.94,
+   "chars": [
+    {
+     "char": "玻",
+     "meaning": "유리 파",
+     "pinyin_raw": "bo1",
+     "hsk": "HSK5",
+     "rank": 1465
+    },
+    {
+     "char": "骨",
+     "meaning": "뼈 골",
+     "pinyin_raw": "gu1",
+     "hsk": "HSK4",
+     "rank": 1466
+    },
+    {
+     "char": "插",
+     "meaning": "꽂을 삽",
+     "pinyin_raw": "cha1",
+     "hsk": "HSK5",
+     "rank": 1467
+    },
+    {
+     "char": "献",
+     "meaning": "드릴 헌",
+     "pinyin_raw": "xian4",
+     "hsk": "HSK5",
+     "rank": 1468
+    },
+    {
+     "char": "抬",
+     "meaning": "들 대",
+     "pinyin_raw": "tai2",
+     "hsk": "HSK5",
+     "rank": 1469
+    },
+    {
+     "char": "析",
+     "meaning": "쪼갤 석",
+     "pinyin_raw": "xi1",
+     "hsk": "HSK5",
+     "rank": 1470
+    },
+    {
+     "char": "璃",
+     "meaning": "유리 리",
+     "pinyin_raw": "li2",
+     "hsk": "HSK5",
+     "rank": 1472
+    },
+    {
+     "char": "盾",
+     "meaning": "방패 순",
+     "pinyin_raw": "dun4",
+     "hsk": "HSK5",
+     "rank": 1474
+    },
+    {
+     "char": "敏",
+     "meaning": "민첩할 민",
+     "pinyin_raw": "min3",
+     "hsk": "HSK5",
+     "rank": 1477
+    },
+    {
+     "char": "诗",
+     "meaning": "시 시",
+     "pinyin_raw": "shi1",
+     "hsk": "HSK4",
+     "rank": 1478
+    },
+    {
+     "char": "碍",
+     "meaning": "거리낄 애",
+     "pinyin_raw": "ai4",
+     "hsk": "HSK5",
+     "rank": 1481
+    },
+    {
+     "char": "征",
+     "meaning": "칠 정",
+     "pinyin_raw": "zheng1",
+     "hsk": "HSK4",
+     "rank": 1483
+    },
+    {
+     "char": "渐",
+     "meaning": "점점 점",
+     "pinyin_raw": "jian1",
+     "hsk": "HSK4",
+     "rank": 1487
+    },
+    {
+     "char": "航",
+     "meaning": "배 항",
+     "pinyin_raw": "hang2",
+     "hsk": "HSK4",
+     "rank": 1488
+    },
+    {
+     "char": "载",
+     "meaning": "실을 재",
+     "pinyin_raw": "zai3",
+     "hsk": "HSK4",
+     "rank": 1490
+    },
+    {
+     "char": "编",
+     "meaning": "엮을 편",
+     "pinyin_raw": "bian1",
+     "hsk": "HSK4",
+     "rank": 1491
+    },
+    {
+     "char": "雪",
+     "meaning": "눈 설",
+     "pinyin_raw": "xue3",
+     "hsk": "HSK2",
+     "rank": 1493
+    },
+    {
+     "char": "针",
+     "meaning": "바늘 침",
+     "pinyin_raw": "zhen1",
+     "hsk": "HSK4",
+     "rank": 1494
+    },
+    {
+     "char": "企",
+     "meaning": "꾀할 기",
+     "pinyin_raw": "qi3",
+     "hsk": "HSK4",
+     "rank": 1505
+    },
+    {
+     "char": "筑",
+     "meaning": "쌓을 축",
+     "pinyin_raw": "zhu4",
+     "hsk": "HSK5",
+     "rank": 1507
+    }
+   ]
+  },
+  {
+   "stage": 62,
+   "phase": 5,
+   "coverage_pct": 98.95,
+   "chars": [
+    {
+     "char": "卷",
+     "meaning": "책 권/말 권",
+     "pinyin_raw": "juan3",
+     "hsk": "HSK4",
+     "rank": 1508
+    },
+    {
+     "char": "频",
+     "meaning": "자주 빈",
+     "pinyin_raw": "pin2",
+     "hsk": "HSK5",
+     "rank": 1509
+    },
+    {
+     "char": "拼",
+     "meaning": "아우를 병",
+     "pinyin_raw": "pin1",
+     "hsk": "HSK5",
+     "rank": 1511
+    },
+    {
+     "char": "裙",
+     "meaning": "치마 군",
+     "pinyin_raw": "qun2",
+     "hsk": "HSK3",
+     "rank": 1514
+    },
+    {
+     "char": "胸",
+     "meaning": "가슴 흉",
+     "pinyin_raw": "xiong1",
+     "hsk": "HSK4",
+     "rank": 1516
+    },
+    {
+     "char": "构",
+     "meaning": "얽을 구",
+     "pinyin_raw": "gou4",
+     "hsk": "HSK4",
+     "rank": 1518
+    },
+    {
+     "char": "央",
+     "meaning": "가운데 앙",
+     "pinyin_raw": "yang1",
+     "hsk": "HSK5",
+     "rank": 1520
+    },
+    {
+     "char": "艰",
+     "meaning": "어려울 간",
+     "pinyin_raw": "jian1",
+     "hsk": "HSK5",
+     "rank": 1521
+    },
+    {
+     "char": "陆",
+     "meaning": "뭍 륙",
+     "pinyin_raw": "liu4",
+     "hsk": "HSK4",
+     "rank": 1525
+    },
+    {
+     "char": "辞",
+     "meaning": "말씀 사",
+     "pinyin_raw": "ci2",
+     "hsk": "HSK5",
+     "rank": 1527
+    },
+    {
+     "char": "零",
+     "meaning": "떨어질 령",
+     "pinyin_raw": "ling2",
+     "hsk": "HSK1",
+     "rank": 1531
+    },
+    {
+     "char": "青",
+     "meaning": "푸를 청",
+     "pinyin_raw": "qing1",
+     "hsk": "HSK2",
+     "rank": 1535
+    },
+    {
+     "char": "春",
+     "meaning": "봄 춘",
+     "pinyin_raw": "chun1",
+     "hsk": "HSK2",
+     "rank": 1537
+    },
+    {
+     "char": "媒",
+     "meaning": "중매 매",
+     "pinyin_raw": "mei2",
+     "hsk": "HSK3",
+     "rank": 1538
+    },
+    {
+     "char": "列",
+     "meaning": "벌일 렬",
+     "pinyin_raw": "lie4",
+     "hsk": "HSK4",
+     "rank": 1543
+    },
+    {
+     "char": "铁",
+     "meaning": "쇠 철",
+     "pinyin_raw": "tie3",
+     "hsk": "HSK2",
+     "rank": 1546
+    },
+    {
+     "char": "猴",
+     "meaning": "원숭이 후",
+     "pinyin_raw": "hou2",
+     "hsk": "HSK5",
+     "rank": 1547
+    },
+    {
+     "char": "济",
+     "meaning": "건널 제",
+     "pinyin_raw": "ji3",
+     "hsk": "HSK3",
+     "rank": 1548
+    },
+    {
+     "char": "草",
+     "meaning": "풀 초",
+     "pinyin_raw": "cao3",
+     "hsk": "HSK2",
+     "rank": 1550
+    },
+    {
+     "char": "款",
+     "meaning": "항목 관",
+     "pinyin_raw": "kuan3",
+     "hsk": "HSK5",
+     "rank": 1553
+    }
+   ]
+  },
+  {
+   "stage": 63,
+   "phase": 5,
+   "coverage_pct": 98.95,
+   "chars": [
+    {
+     "char": "震",
+     "meaning": "우레 진",
+     "pinyin_raw": "zhen4",
+     "hsk": "HSK5",
+     "rank": 1555
+    },
+    {
+     "char": "幽",
+     "meaning": "그윽할 유",
+     "pinyin_raw": "you1",
+     "hsk": "HSK5",
+     "rank": 1556
+    },
+    {
+     "char": "慰",
+     "meaning": "위로할 위",
+     "pinyin_raw": "wei4",
+     "hsk": "HSK5",
+     "rank": 1557
+    },
+    {
+     "char": "烤",
+     "meaning": "구울 고",
+     "pinyin_raw": "kao3",
+     "hsk": "HSK5",
+     "rank": 1559
+    },
+    {
+     "char": "摇",
+     "meaning": "흔들 요",
+     "pinyin_raw": "yao2",
+     "hsk": "HSK4",
+     "rank": 1560
+    },
+    {
+     "char": "贴",
+     "meaning": "붙일 첩",
+     "pinyin_raw": "tie1",
+     "hsk": "HSK4",
+     "rank": 1561
+    },
+    {
+     "char": "虫",
+     "meaning": "벌레 충",
+     "pinyin_raw": "chong2",
+     "hsk": "HSK4",
+     "rank": 1562
+    },
+    {
+     "char": "订",
+     "meaning": "바로잡을 정",
+     "pinyin_raw": "ding4",
+     "hsk": "HSK3",
+     "rank": 1566
+    },
+    {
+     "char": "灾",
+     "meaning": "재앙 재",
+     "pinyin_raw": "zai1",
+     "hsk": "HSK5",
+     "rank": 1567
+    },
+    {
+     "char": "库",
+     "meaning": "곳집 고",
+     "pinyin_raw": "ku4",
+     "hsk": "HSK5",
+     "rank": 1568
+    },
+    {
+     "char": "软",
+     "meaning": "연할 연",
+     "pinyin_raw": "ruan3",
+     "hsk": "HSK5",
+     "rank": 1569
+    },
+    {
+     "char": "池",
+     "meaning": "못 지",
+     "pinyin_raw": "chi2",
+     "hsk": "HSK5",
+     "rank": 1575
+    },
+    {
+     "char": "漠",
+     "meaning": "넓을 막/사막 막",
+     "pinyin_raw": "mo4",
+     "hsk": "HSK5",
+     "rank": 1578
+    },
+    {
+     "char": "桥",
+     "meaning": "다리 교",
+     "pinyin_raw": "qiao2",
+     "hsk": "HSK3",
+     "rank": 1579
+    },
+    {
+     "char": "龙",
+     "meaning": "용 룡",
+     "pinyin_raw": "long2",
+     "hsk": "HSK3",
+     "rank": 1580
+    },
+    {
+     "char": "摔",
+     "meaning": "내던질 솔",
+     "pinyin_raw": "shuai1",
+     "hsk": "HSK5",
+     "rank": 1581
+    },
+    {
+     "char": "逐",
+     "meaning": "쫓을 축",
+     "pinyin_raw": "zhu2",
+     "hsk": "HSK4",
+     "rank": 1582
+    },
+    {
+     "char": "闯",
+     "meaning": "엿볼 틈",
+     "pinyin_raw": "chuang3",
+     "hsk": "HSK5",
+     "rank": 1587
+    },
+    {
+     "char": "朗",
+     "meaning": "밝을 랑",
+     "pinyin_raw": "lang3",
+     "hsk": "HSK5",
+     "rank": 1588
+    },
+    {
+     "char": "固",
+     "meaning": "굳을 고",
+     "pinyin_raw": "gu4",
+     "hsk": "HSK4",
+     "rank": 1590
+    }
+   ]
+  },
+  {
+   "stage": 64,
+   "phase": 5,
+   "coverage_pct": 98.96,
+   "chars": [
+    {
+     "char": "仿",
+     "meaning": "본뜰 방",
+     "pinyin_raw": "fang3",
+     "hsk": "HSK5",
+     "rank": 1591
+    },
+    {
+     "char": "减",
+     "meaning": "덜 감",
+     "pinyin_raw": "jian3",
+     "hsk": "HSK4",
+     "rank": 1596
+    },
+    {
+     "char": "挣",
+     "meaning": "다툴 쟁",
+     "pinyin_raw": "zheng1",
+     "hsk": "HSK5",
+     "rank": 1598
+    },
+    {
+     "char": "熊",
+     "meaning": "곰 웅",
+     "pinyin_raw": "xiong2",
+     "hsk": "HSK5",
+     "rank": 1601
+    },
+    {
+     "char": "衬",
+     "meaning": "속옷 친",
+     "pinyin_raw": "chen4",
+     "hsk": "HSK3",
+     "rank": 1602
+    },
+    {
+     "char": "鼓",
+     "meaning": "북 고",
+     "pinyin_raw": "gu3",
+     "hsk": "HSK5",
+     "rank": 1604
+    },
+    {
+     "char": "扶",
+     "meaning": "도울 부",
+     "pinyin_raw": "fu2",
+     "hsk": "HSK5",
+     "rank": 1605
+    },
+    {
+     "char": "蛇",
+     "meaning": "뱀 사",
+     "pinyin_raw": "she2",
+     "hsk": "HSK5",
+     "rank": 1606
+    },
+    {
+     "char": "施",
+     "meaning": "베풀 시",
+     "pinyin_raw": "shi1",
+     "hsk": "HSK4",
+     "rank": 1607
+    },
+    {
+     "char": "虚",
+     "meaning": "빌 허",
+     "pinyin_raw": "xu1",
+     "hsk": "HSK5",
+     "rank": 1608
+    },
+    {
+     "char": "宽",
+     "meaning": "너그러울 관",
+     "pinyin_raw": "kuan1",
+     "hsk": "HSK4",
+     "rank": 1610
+    },
+    {
+     "char": "滑",
+     "meaning": "미끄러울 활",
+     "pinyin_raw": "hua2",
+     "hsk": "HSK5",
+     "rank": 1611
+    },
+    {
+     "char": "衫",
+     "meaning": "적삼 삼",
+     "pinyin_raw": "shan1",
+     "hsk": "HSK3",
+     "rank": 1617
+    },
+    {
+     "char": "脾",
+     "meaning": "지라 비",
+     "pinyin_raw": "pi2",
+     "hsk": "HSK5",
+     "rank": 1618
+    },
+    {
+     "char": "尾",
+     "meaning": "꼬리 미",
+     "pinyin_raw": "wei3",
+     "hsk": "HSK4",
+     "rank": 1620
+    },
+    {
+     "char": "偿",
+     "meaning": "갚을 상",
+     "pinyin_raw": "chang2",
+     "hsk": "HSK5",
+     "rank": 1622
+    },
+    {
+     "char": "召",
+     "meaning": "부를 소",
+     "pinyin_raw": "zhao4",
+     "hsk": "HSK4",
+     "rank": 1623
+    },
+    {
+     "char": "阶",
+     "meaning": "섬돌 계",
+     "pinyin_raw": "jie1",
+     "hsk": "HSK4",
+     "rank": 1624
+    },
+    {
+     "char": "励",
+     "meaning": "힘쓸 려",
+     "pinyin_raw": "li4",
+     "hsk": "HSK5",
+     "rank": 1626
+    },
+    {
+     "char": "剪",
+     "meaning": "가위 전",
+     "pinyin_raw": "jian3",
+     "hsk": "HSK5",
+     "rank": 1629
+    }
+   ]
+  },
+  {
+   "stage": 65,
+   "phase": 5,
+   "coverage_pct": 98.97,
+   "chars": [
+    {
+     "char": "木",
+     "meaning": "나무 목",
+     "pinyin_raw": "mu4",
+     "hsk": "HSK3",
+     "rank": 1634
+    },
+    {
+     "char": "尚",
+     "meaning": "오히려 상/숭상할 상",
+     "pinyin_raw": "shang4",
+     "hsk": "HSK4",
+     "rank": 1639
+    },
+    {
+     "char": "劝",
+     "meaning": "권할 권",
+     "pinyin_raw": "quan4",
+     "hsk": "HSK5",
+     "rank": 1640
+    },
+    {
+     "char": "符",
+     "meaning": "부호 부",
+     "pinyin_raw": "fu2",
+     "hsk": "HSK4",
+     "rank": 1642
+    },
+    {
+     "char": "购",
+     "meaning": "살 구",
+     "pinyin_raw": "gou4",
+     "hsk": "HSK4",
+     "rank": 1645
+    },
+    {
+     "char": "肩",
+     "meaning": "어깨 견",
+     "pinyin_raw": "jian1",
+     "hsk": "HSK5",
+     "rank": 1647
+    },
+    {
+     "char": "邮",
+     "meaning": "우편 우",
+     "pinyin_raw": "you2",
+     "hsk": "HSK3",
+     "rank": 1648
+    },
+    {
+     "char": "伸",
+     "meaning": "펼 신",
+     "pinyin_raw": "shen1",
+     "hsk": "HSK5",
+     "rank": 1649
+    },
+    {
+     "char": "层",
+     "meaning": "층 층",
+     "pinyin_raw": "ceng2",
+     "hsk": "HSK2",
+     "rank": 1651
+    },
+    {
+     "char": "绩",
+     "meaning": "길쌈할 적",
+     "pinyin_raw": "ji4",
+     "hsk": "HSK2",
+     "rank": 1652
+    },
+    {
+     "char": "绕",
+     "meaning": "두를 요",
+     "pinyin_raw": "rao4",
+     "hsk": "HSK5",
+     "rank": 1654
+    },
+    {
+     "char": "孙",
+     "meaning": "손자 손",
+     "pinyin_raw": "sun1",
+     "hsk": "HSK4",
+     "rank": 1656
+    },
+    {
+     "char": "省",
+     "meaning": "살필 성/덜 생",
+     "pinyin_raw": "sheng3",
+     "hsk": "HSK2",
+     "rank": 1657
+    },
+    {
+     "char": "详",
+     "meaning": "자세할 상",
+     "pinyin_raw": "xiang2",
+     "hsk": "HSK5",
+     "rank": 1660
+    },
+    {
+     "char": "兔",
+     "meaning": "토끼 토",
+     "pinyin_raw": "tu4",
+     "hsk": "HSK5",
+     "rank": 1661
+    },
+    {
+     "char": "苹",
+     "meaning": "맑은대쑥 평",
+     "pinyin_raw": "ping2",
+     "hsk": "HSK3",
+     "rank": 1663
+    },
+    {
+     "char": "冬",
+     "meaning": "겨울 동",
+     "pinyin_raw": "dong1",
+     "hsk": "HSK2",
+     "rank": 1667
+    },
+    {
+     "char": "泪",
+     "meaning": "눈물 루",
+     "pinyin_raw": "lei4",
+     "hsk": "HSK4",
+     "rank": 1670
+    },
+    {
+     "char": "版",
+     "meaning": "판목 판",
+     "pinyin_raw": "ban3",
+     "hsk": "HSK5",
+     "rank": 1671
+    },
+    {
+     "char": "拆",
+     "meaning": "쪼갤 탁",
+     "pinyin_raw": "chai1",
+     "hsk": "HSK5",
+     "rank": 1675
+    }
+   ]
+  },
+  {
+   "stage": 66,
+   "phase": 5,
+   "coverage_pct": 98.97,
+   "chars": [
+    {
+     "char": "销",
+     "meaning": "녹일 소",
+     "pinyin_raw": "xiao1",
+     "hsk": "HSK4",
+     "rank": 1682
+    },
+    {
+     "char": "肃",
+     "meaning": "엄숙할 숙",
+     "pinyin_raw": "su4",
+     "hsk": "HSK5",
+     "rank": 1683
+    },
+    {
+     "char": "亏",
+     "meaning": "이지러질 휴",
+     "pinyin_raw": "kui1",
+     "hsk": "HSK5",
+     "rank": 1684
+    },
+    {
+     "char": "京",
+     "meaning": "서울 경",
+     "pinyin_raw": "jing1",
+     "hsk": "HSK1",
+     "rank": 1686
+    },
+    {
+     "char": "糊",
+     "meaning": "풀칠할 호",
+     "pinyin_raw": "hu2",
+     "hsk": "HSK5",
+     "rank": 1690
+    },
+    {
+     "char": "倍",
+     "meaning": "곱 배",
+     "pinyin_raw": "bei4",
+     "hsk": "HSK4",
+     "rank": 1692
+    },
+    {
+     "char": "夹",
+     "meaning": "낄 협",
+     "pinyin_raw": "ga1",
+     "hsk": "HSK5",
+     "rank": 1694
+    },
+    {
+     "char": "慌",
+     "meaning": "어리둥절할 황",
+     "pinyin_raw": "huang1",
+     "hsk": "HSK5",
+     "rank": 1697
+    },
+    {
+     "char": "忽",
+     "meaning": "갑자기 홀",
+     "pinyin_raw": "hu1",
+     "hsk": "HSK2",
+     "rank": 1698
+    },
+    {
+     "char": "革",
+     "meaning": "가죽 혁",
+     "pinyin_raw": "ge2",
+     "hsk": "HSK5",
+     "rank": 1699
+    },
+    {
+     "char": "竞",
+     "meaning": "다툴 경",
+     "pinyin_raw": "jing4",
+     "hsk": "HSK5",
+     "rank": 1705
+    },
+    {
+     "char": "琴",
+     "meaning": "거문고 금",
+     "pinyin_raw": "qin2",
+     "hsk": "HSK5",
+     "rank": 1706
+    },
+    {
+     "char": "湿",
+     "meaning": "젖을 습",
+     "pinyin_raw": "shi1",
+     "hsk": "HSK4",
+     "rank": 1708
+    },
+    {
+     "char": "巾",
+     "meaning": "수건 건",
+     "pinyin_raw": "jin1",
+     "hsk": "HSK4",
+     "rank": 1712
+    },
+    {
+     "char": "益",
+     "meaning": "더할 익",
+     "pinyin_raw": "yi4",
+     "hsk": "HSK4",
+     "rank": 1718
+    },
+    {
+     "char": "迅",
+     "meaning": "빠를 신",
+     "pinyin_raw": "xun4",
+     "hsk": "HSK4",
+     "rank": 1723
+    },
+    {
+     "char": "珠",
+     "meaning": "구슬 주",
+     "pinyin_raw": "zhu1",
+     "hsk": "HSK5",
+     "rank": 1728
+    },
+    {
+     "char": "售",
+     "meaning": "팔 수",
+     "pinyin_raw": "shou4",
+     "hsk": "HSK4",
+     "rank": 1729
+    },
+    {
+     "char": "岸",
+     "meaning": "언덕 안",
+     "pinyin_raw": "an4",
+     "hsk": "HSK5",
+     "rank": 1735
+    },
+    {
+     "char": "宾",
+     "meaning": "손 빈",
+     "pinyin_raw": "bin1",
+     "hsk": "HSK5",
+     "rank": 1740
+    }
+   ]
+  },
+  {
+   "stage": 67,
+   "phase": 5,
+   "coverage_pct": 98.98,
+   "chars": [
+    {
+     "char": "钢",
+     "meaning": "강철 강",
+     "pinyin_raw": "gang1",
+     "hsk": "HSK5",
+     "rank": 1742
+    },
+    {
+     "char": "齐",
+     "meaning": "가지런할 제",
+     "pinyin_raw": "qi2",
+     "hsk": "HSK3",
+     "rank": 1745
+    },
+    {
+     "char": "饰",
+     "meaning": "꾸밀 식",
+     "pinyin_raw": "shi4",
+     "hsk": "HSK5",
+     "rank": 1746
+    },
+    {
+     "char": "辑",
+     "meaning": "모을 집",
+     "pinyin_raw": "ji2",
+     "hsk": "HSK5",
+     "rank": 1747
+    },
+    {
+     "char": "灰",
+     "meaning": "재 회",
+     "pinyin_raw": "hui1",
+     "hsk": "HSK5",
+     "rank": 1748
+    },
+    {
+     "char": "傅",
+     "meaning": "스승 부",
+     "pinyin_raw": "fu4",
+     "hsk": "HSK5",
+     "rank": 1749
+    },
+    {
+     "char": "粗",
+     "meaning": "거칠 조",
+     "pinyin_raw": "cu1",
+     "hsk": "HSK4",
+     "rank": 1750
+    },
+    {
+     "char": "穷",
+     "meaning": "다할 궁",
+     "pinyin_raw": "qiong2",
+     "hsk": "HSK4",
+     "rank": 1753
+    },
+    {
+     "char": "沟",
+     "meaning": "도랑 구",
+     "pinyin_raw": "gou1",
+     "hsk": "HSK5",
+     "rank": 1754
+    },
+    {
+     "char": "辩",
+     "meaning": "말씀 변",
+     "pinyin_raw": "bian4",
+     "hsk": "HSK4",
+     "rank": 1757
+    },
+    {
+     "char": "延",
+     "meaning": "늘일 연",
+     "pinyin_raw": "yan2",
+     "hsk": "HSK4",
+     "rank": 1758
+    },
+    {
+     "char": "薄",
+     "meaning": "엷을 박",
+     "pinyin_raw": "bao2",
+     "hsk": "HSK4",
+     "rank": 1759
+    },
+    {
+     "char": "赔",
+     "meaning": "물어줄 배",
+     "pinyin_raw": "pei2",
+     "hsk": "HSK5",
+     "rank": 1760
+    },
+    {
+     "char": "肥",
+     "meaning": "살찔 비",
+     "pinyin_raw": "fei2",
+     "hsk": "HSK4",
+     "rank": 1761
+    },
+    {
+     "char": "柜",
+     "meaning": "궤짝 궤",
+     "pinyin_raw": "gui4",
+     "hsk": "HSK5",
+     "rank": 1766
+    },
+    {
+     "char": "丰",
+     "meaning": "풍년 풍",
+     "pinyin_raw": "feng1",
+     "hsk": "HSK3",
+     "rank": 1767
+    },
+    {
+     "char": "幅",
+     "meaning": "폭 폭",
+     "pinyin_raw": "fu2",
+     "hsk": "HSK5",
+     "rank": 1768
+    },
+    {
+     "char": "乏",
+     "meaning": "모자랄 핍",
+     "pinyin_raw": "fa2",
+     "hsk": "HSK5",
+     "rank": 1770
+    },
+    {
+     "char": "瘦",
+     "meaning": "여윌 수",
+     "pinyin_raw": "shou4",
+     "hsk": "HSK5",
+     "rank": 1773
+    },
+    {
+     "char": "肌",
+     "meaning": "살가죽 기",
+     "pinyin_raw": "ji1",
+     "hsk": "HSK5",
+     "rank": 1774
+    }
+   ]
+  },
+  {
+   "stage": 68,
+   "phase": 5,
+   "coverage_pct": 98.98,
+   "chars": [
+    {
+     "char": "振",
+     "meaning": "떨칠 진",
+     "pinyin_raw": "zhen4",
+     "hsk": "HSK5",
+     "rank": 1775
+    },
+    {
+     "char": "亿",
+     "meaning": "억 억",
+     "pinyin_raw": "yi4",
+     "hsk": "HSK2",
+     "rank": 1776
+    },
+    {
+     "char": "胃",
+     "meaning": "밥통 위",
+     "pinyin_raw": "wei4",
+     "hsk": "HSK5",
+     "rank": 1784
+    },
+    {
+     "char": "羊",
+     "meaning": "양 양",
+     "pinyin_raw": "yang2",
+     "hsk": "HSK3",
+     "rank": 1785
+    },
+    {
+     "char": "扇",
+     "meaning": "부채 선",
+     "pinyin_raw": "shan1",
+     "hsk": "HSK5",
+     "rank": 1787
+    },
+    {
+     "char": "甲",
+     "meaning": "갑옷 갑",
+     "pinyin_raw": "jia3",
+     "hsk": "HSK5",
+     "rank": 1789
+    },
+    {
+     "char": "谊",
+     "meaning": "옳을 의/정 의",
+     "pinyin_raw": "yi4",
+     "hsk": "HSK5",
+     "rank": 1792
+    },
+    {
+     "char": "眠",
+     "meaning": "잘 면",
+     "pinyin_raw": "mian2",
+     "hsk": "HSK5",
+     "rank": 1798
+    },
+    {
+     "char": "寸",
+     "meaning": "마디 촌",
+     "pinyin_raw": "cun4",
+     "hsk": "HSK4",
+     "rank": 1812
+    },
+    {
+     "char": "裁",
+     "meaning": "마를 재",
+     "pinyin_raw": "cai2",
+     "hsk": "HSK5",
+     "rank": 1814
+    },
+    {
+     "char": "率",
+     "meaning": "비율 률/거느릴 솔",
+     "pinyin_raw": "lu:4",
+     "hsk": "HSK4",
+     "rank": 1818
+    },
+    {
+     "char": "挤",
+     "meaning": "밀칠 제",
+     "pinyin_raw": "ji3",
+     "hsk": "HSK5",
+     "rank": 1822
+    },
+    {
+     "char": "逻",
+     "meaning": "순라 라",
+     "pinyin_raw": "luo2",
+     "hsk": "HSK5",
+     "rank": 1825
+    },
+    {
+     "char": "植",
+     "meaning": "심을 식",
+     "pinyin_raw": "zhi2",
+     "hsk": "HSK4",
+     "rank": 1827
+    },
+    {
+     "char": "潮",
+     "meaning": "밀물 조",
+     "pinyin_raw": "chao2",
+     "hsk": "HSK4",
+     "rank": 1839
+    },
+    {
+     "char": "郎",
+     "meaning": "사내 랑",
+     "pinyin_raw": "lang2",
+     "hsk": "HSK4",
+     "rank": 1841
+    },
+    {
+     "char": "裹",
+     "meaning": "쌀 과",
+     "pinyin_raw": "guo3",
+     "hsk": "HSK4",
+     "rank": 1842
+    },
+    {
+     "char": "虎",
+     "meaning": "범 호",
+     "pinyin_raw": "hu3",
+     "hsk": "HSK5",
+     "rank": 1843
+    },
+    {
+     "char": "舍",
+     "meaning": "집 사/버릴 사",
+     "pinyin_raw": "she3",
+     "hsk": "HSK5",
+     "rank": 1851
+    },
+    {
+     "char": "匹",
+     "meaning": "짝 필",
+     "pinyin_raw": "pi3",
+     "hsk": "HSK5",
+     "rank": 1854
+    }
+   ]
+  },
+  {
+   "stage": 69,
+   "phase": 5,
+   "coverage_pct": 98.98,
+   "chars": [
+    {
+     "char": "核",
+     "meaning": "씨 핵",
+     "pinyin_raw": "he2",
+     "hsk": "HSK5",
+     "rank": 1856
+    },
+    {
+     "char": "堵",
+     "meaning": "담 도/막을 도",
+     "pinyin_raw": "du3",
+     "hsk": "HSK4",
+     "rank": 1867
+    },
+    {
+     "char": "递",
+     "meaning": "갈릴 체/전할 체",
+     "pinyin_raw": "di4",
+     "hsk": "HSK4",
+     "rank": 1869
+    },
+    {
+     "char": "污",
+     "meaning": "더러울 오",
+     "pinyin_raw": "wu1",
+     "hsk": "HSK5",
+     "rank": 1873
+    },
+    {
+     "char": "湖",
+     "meaning": "호수 호",
+     "pinyin_raw": "hu2",
+     "hsk": "HSK2",
+     "rank": 1877
+    },
+    {
+     "char": "闲",
+     "meaning": "한가할 한",
+     "pinyin_raw": "xian2",
+     "hsk": "HSK5",
+     "rank": 1884
+    },
+    {
+     "char": "贷",
+     "meaning": "빌릴 대",
+     "pinyin_raw": "dai4",
+     "hsk": "HSK5",
+     "rank": 1885
+    },
+    {
+     "char": "豆",
+     "meaning": "콩 두",
+     "pinyin_raw": "dou4",
+     "hsk": "HSK4",
+     "rank": 1887
+    },
+    {
+     "char": "押",
+     "meaning": "누를 압",
+     "pinyin_raw": "ya1",
+     "hsk": "HSK5",
+     "rank": 1891
+    },
+    {
+     "char": "辣",
+     "meaning": "매울 랄",
+     "pinyin_raw": "la4",
+     "hsk": "HSK4",
+     "rank": 1893
+    },
+    {
+     "char": "逛",
+     "meaning": "거닐 광",
+     "pinyin_raw": "guang4",
+     "hsk": "HSK4",
+     "rank": 1894
+    },
+    {
+     "char": "季",
+     "meaning": "계절 계",
+     "pinyin_raw": "ji4",
+     "hsk": "HSK4",
+     "rank": 1897
+    },
+    {
+     "char": "页",
+     "meaning": "머리 혈",
+     "pinyin_raw": "xie2",
+     "hsk": "HSK1",
+     "rank": 1898
+    },
+    {
+     "char": "积",
+     "meaning": "쌓을 적",
+     "pinyin_raw": "ji1",
+     "hsk": "HSK3",
+     "rank": 1899
+    },
+    {
+     "char": "宿",
+     "meaning": "잘 숙/별자리 수",
+     "pinyin_raw": "su4",
+     "hsk": "HSK5",
+     "rank": 1903
+    },
+    {
+     "char": "篇",
+     "meaning": "책 편",
+     "pinyin_raw": "pian1",
+     "hsk": "HSK2",
+     "rank": 1908
+    },
+    {
+     "char": "腐",
+     "meaning": "썩을 부",
+     "pinyin_raw": "fu3",
+     "hsk": "HSK4",
+     "rank": 1909
+    },
+    {
+     "char": "豫",
+     "meaning": "미리 예",
+     "pinyin_raw": "yu4",
+     "hsk": "HSK5",
+     "rank": 1912
+    },
+    {
+     "char": "肠",
+     "meaning": "창자 장",
+     "pinyin_raw": "chang2",
+     "hsk": "HSK5",
+     "rank": 1913
+    },
+    {
+     "char": "弯",
+     "meaning": "굽을 만",
+     "pinyin_raw": "wan1",
+     "hsk": "HSK4",
+     "rank": 1916
+    }
+   ]
+  },
+  {
+   "stage": 70,
+   "phase": 5,
+   "coverage_pct": 98.98,
+   "chars": [
+    {
+     "char": "含",
+     "meaning": "머금을 함",
+     "pinyin_raw": "han2",
+     "hsk": "HSK4",
+     "rank": 1919
+    },
+    {
+     "char": "漏",
+     "meaning": "샐 루",
+     "pinyin_raw": "lou4",
+     "hsk": "HSK5",
+     "rank": 1927
+    },
+    {
+     "char": "幼",
+     "meaning": "어릴 유",
+     "pinyin_raw": "you4",
+     "hsk": "HSK4",
+     "rank": 1929
+    },
+    {
+     "char": "铃",
+     "meaning": "방울 령",
+     "pinyin_raw": "ling2",
+     "hsk": "HSK5",
+     "rank": 1935
+    },
+    {
+     "char": "碗",
+     "meaning": "사발 완",
+     "pinyin_raw": "wan3",
+     "hsk": "HSK2",
+     "rank": 1943
+    },
+    {
+     "char": "础",
+     "meaning": "주춧돌 초",
+     "pinyin_raw": "chu3",
+     "hsk": "HSK3",
+     "rank": 1946
+    },
+    {
+     "char": "喷",
+     "meaning": "뿜을 분",
+     "pinyin_raw": "pen1",
+     "hsk": "HSK5",
+     "rank": 1949
+    },
+    {
+     "char": "诊",
+     "meaning": "진찰할 진",
+     "pinyin_raw": "zhen3",
+     "hsk": "HSK5",
+     "rank": 1950
+    },
+    {
+     "char": "询",
+     "meaning": "물을 순",
+     "pinyin_raw": "xun2",
+     "hsk": "HSK5",
+     "rank": 1953
+    },
+    {
+     "char": "培",
+     "meaning": "북돋울 배",
+     "pinyin_raw": "pei2",
+     "hsk": "HSK4",
+     "rank": 1954
+    },
+    {
+     "char": "冻",
+     "meaning": "얼 동",
+     "pinyin_raw": "dong4",
+     "hsk": "HSK5",
+     "rank": 1959
+    },
+    {
+     "char": "汇",
+     "meaning": "모일 회",
+     "pinyin_raw": "hui4",
+     "hsk": "HSK4",
+     "rank": 1969
+    },
+    {
+     "char": "饱",
+     "meaning": "배부를 포",
+     "pinyin_raw": "bao3",
+     "hsk": "HSK2",
+     "rank": 1976
+    },
+    {
+     "char": "葡",
+     "meaning": "포도 포",
+     "pinyin_raw": "pu2",
+     "hsk": "HSK5",
+     "rank": 1985
+    },
+    {
+     "char": "萄",
+     "meaning": "포도 도",
+     "pinyin_raw": "tao2",
+     "hsk": "HSK5",
+     "rank": 1986
+    },
+    {
+     "char": "矮",
+     "meaning": "난쟁이 왜",
+     "pinyin_raw": "ai3",
+     "hsk": "HSK4",
+     "rank": 1991
+    },
+    {
+     "char": "凉",
+     "meaning": "서늘할 량",
+     "pinyin_raw": "liang2",
+     "hsk": "HSK2",
+     "rank": 1995
+    },
+    {
+     "char": "币",
+     "meaning": "화폐 폐",
+     "pinyin_raw": "bi4",
+     "hsk": "HSK3",
+     "rank": 2000
+    },
+    {
+     "char": "圆",
+     "meaning": "둥글 원",
+     "pinyin_raw": "yuan2",
+     "hsk": "HSK4",
+     "rank": 2001
+    },
+    {
+     "char": "歇",
+     "meaning": "쉴 헐",
+     "pinyin_raw": "xie1",
+     "hsk": "HSK5",
+     "rank": 2004
+    }
+   ]
+  },
+  {
+   "stage": 71,
+   "phase": 5,
+   "coverage_pct": 98.99,
+   "chars": [
+    {
+     "char": "阅",
+     "meaning": "볼 열",
+     "pinyin_raw": "yue4",
+     "hsk": "HSK4",
+     "rank": 2006
+    },
+    {
+     "char": "填",
+     "meaning": "메울 전",
+     "pinyin_raw": "tian2",
+     "hsk": "HSK4",
+     "rank": 2008
+    },
+    {
+     "char": "袜",
+     "meaning": "버선 말",
+     "pinyin_raw": "wa4",
+     "hsk": "HSK4",
+     "rank": 2017
+    },
+    {
+     "char": "缩",
+     "meaning": "줄일 축",
+     "pinyin_raw": "suo1",
+     "hsk": "HSK4",
+     "rank": 2020
+    },
+    {
+     "char": "汗",
+     "meaning": "땀 한",
+     "pinyin_raw": "han2",
+     "hsk": "HSK5",
+     "rank": 2030
+    },
+    {
+     "char": "扩",
+     "meaning": "넓힐 확",
+     "pinyin_raw": "kuo4",
+     "hsk": "HSK4",
+     "rank": 2034
+    },
+    {
+     "char": "拔",
+     "meaning": "뽑을 발",
+     "pinyin_raw": "ba2",
+     "hsk": "HSK5",
+     "rank": 2039
+    },
+    {
+     "char": "册",
+     "meaning": "책 책",
+     "pinyin_raw": "ce4",
+     "hsk": "HSK5",
+     "rank": 2045
+    },
+    {
+     "char": "叶",
+     "meaning": "잎 엽",
+     "pinyin_raw": "xie2",
+     "hsk": "HSK4",
+     "rank": 2046
+    },
+    {
+     "char": "措",
+     "meaning": "둘 조",
+     "pinyin_raw": "cuo4",
+     "hsk": "HSK4",
+     "rank": 2060
+    },
+    {
+     "char": "汁",
+     "meaning": "즙 즙",
+     "pinyin_raw": "zhi1",
+     "hsk": "HSK3",
+     "rank": 2067
+    },
+    {
+     "char": "淡",
+     "meaning": "맑을 담",
+     "pinyin_raw": "dan4",
+     "hsk": "HSK4",
+     "rank": 2068
+    },
+    {
+     "char": "刷",
+     "meaning": "인쇄할 쇄",
+     "pinyin_raw": "shua1",
+     "hsk": "HSK4",
+     "rank": 2069
+    },
+    {
+     "char": "悄",
+     "meaning": "근심할 초",
+     "pinyin_raw": "qiao1",
+     "hsk": "HSK5",
+     "rank": 2070
+    },
+    {
+     "char": "披",
+     "meaning": "헤칠 피",
+     "pinyin_raw": "pi1",
+     "hsk": "HSK5",
+     "rank": 2081
+    },
+    {
+     "char": "腰",
+     "meaning": "허리 요",
+     "pinyin_raw": "yao1",
+     "hsk": "HSK4",
+     "rank": 2084
+    },
+    {
+     "char": "秋",
+     "meaning": "가을 추",
+     "pinyin_raw": "qiu1",
+     "hsk": "HSK2",
+     "rank": 2085
+    },
+    {
+     "char": "玉",
+     "meaning": "구슬 옥",
+     "pinyin_raw": "yu4",
+     "hsk": "HSK4",
+     "rank": 2087
+    },
+    {
+     "char": "云",
+     "meaning": "구름 운",
+     "pinyin_raw": "yun2",
+     "hsk": "HSK2",
+     "rank": 2100
+    },
+    {
+     "char": "均",
+     "meaning": "고를 균",
+     "pinyin_raw": "jun1",
+     "hsk": "HSK4",
+     "rank": 2102
+    }
+   ]
+  },
+  {
+   "stage": 72,
+   "phase": 5,
+   "coverage_pct": 98.99,
+   "chars": [
+    {
+     "char": "摘",
+     "meaning": "딸 적",
+     "pinyin_raw": "zhai1",
+     "hsk": "HSK5",
+     "rank": 2110
+    },
+    {
+     "char": "惠",
+     "meaning": "은혜 혜",
+     "pinyin_raw": "hui4",
+     "hsk": "HSK5",
+     "rank": 2123
+    },
+    {
+     "char": "蕉",
+     "meaning": "파초 초",
+     "pinyin_raw": "jiao1",
+     "hsk": "HSK3",
+     "rank": 2126
+    },
+    {
+     "char": "寒",
+     "meaning": "찰 한",
+     "pinyin_raw": "han2",
+     "hsk": "HSK4",
+     "rank": 2137
+    },
+    {
+     "char": "繁",
+     "meaning": "번성할 번",
+     "pinyin_raw": "fan2",
+     "hsk": "HSK5",
+     "rank": 2140
+    },
+    {
+     "char": "矛",
+     "meaning": "창 모",
+     "pinyin_raw": "mao2",
+     "hsk": "HSK5",
+     "rank": 2144
+    },
+    {
+     "char": "鸭",
+     "meaning": "오리 압",
+     "pinyin_raw": "ya1",
+     "hsk": "HSK5",
+     "rank": 2165
+    },
+    {
+     "char": "厚",
+     "meaning": "두터울 후",
+     "pinyin_raw": "hou4",
+     "hsk": "HSK4",
+     "rank": 2166
+    },
+    {
+     "char": "缓",
+     "meaning": "느릴 완",
+     "pinyin_raw": "huan3",
+     "hsk": "HSK4",
+     "rank": 2178
+    },
+    {
+     "char": "塑",
+     "meaning": "흙 빚을 소",
+     "pinyin_raw": "su4",
+     "hsk": "HSK4",
+     "rank": 2185
+    },
+    {
+     "char": "盐",
+     "meaning": "소금 염",
+     "pinyin_raw": "yan2",
+     "hsk": "HSK4",
+     "rank": 2188
+    },
+    {
+     "char": "棵",
+     "meaning": "그루 과",
+     "pinyin_raw": "ke1",
+     "hsk": "HSK4",
+     "rank": 2192
+    },
+    {
+     "char": "暑",
+     "meaning": "더울 서",
+     "pinyin_raw": "shu3",
+     "hsk": "HSK4",
+     "rank": 2194
+    },
+    {
+     "char": "炼",
+     "meaning": "불릴 련",
+     "pinyin_raw": "lian4",
+     "hsk": "HSK4",
+     "rank": 2195
+    },
+    {
+     "char": "叉",
+     "meaning": "갈래 차",
+     "pinyin_raw": "cha1",
+     "hsk": "HSK5",
+     "rank": 2198
+    },
+    {
+     "char": "斤",
+     "meaning": "근 근/도끼 근",
+     "pinyin_raw": "jin1",
+     "hsk": "HSK2",
+     "rank": 2202
+    },
+    {
+     "char": "晒",
+     "meaning": "쬘 쇄",
+     "pinyin_raw": "shai4",
+     "hsk": "HSK4",
+     "rank": 2204
+    },
+    {
+     "char": "伞",
+     "meaning": "우산 산",
+     "pinyin_raw": "san3",
+     "hsk": "HSK4",
+     "rank": 2208
+    },
+    {
+     "char": "咳",
+     "meaning": "기침 해",
+     "pinyin_raw": "hai1",
+     "hsk": "HSK5",
+     "rank": 2212
+    },
+    {
+     "char": "抄",
+     "meaning": "베낄 초",
+     "pinyin_raw": "chao1",
+     "hsk": "HSK4",
+     "rank": 2221
+    }
+   ]
+  },
+  {
+   "stage": 73,
+   "phase": 5,
+   "coverage_pct": 98.99,
+   "chars": [
+    {
+     "char": "俗",
+     "meaning": "풍속 속",
+     "pinyin_raw": "su2",
+     "hsk": "HSK4",
+     "rank": 2225
+    },
+    {
+     "char": "洒",
+     "meaning": "뿌릴 쇄",
+     "pinyin_raw": "sa3",
+     "hsk": "HSK5",
+     "rank": 2228
+    },
+    {
+     "char": "胶",
+     "meaning": "아교 교",
+     "pinyin_raw": "jiao1",
+     "hsk": "HSK5",
+     "rank": 2231
+    },
+    {
+     "char": "帘",
+     "meaning": "발 렴",
+     "pinyin_raw": "lian2",
+     "hsk": "HSK5",
+     "rank": 2243
+    },
+    {
+     "char": "映",
+     "meaning": "비칠 영",
+     "pinyin_raw": "ying4",
+     "hsk": "HSK4",
+     "rank": 2249
+    },
+    {
+     "char": "锻",
+     "meaning": "쇠 불릴 단",
+     "pinyin_raw": "duan4",
+     "hsk": "HSK4",
+     "rank": 2253
+    },
+    {
+     "char": "润",
+     "meaning": "윤택할 윤/불을 윤",
+     "pinyin_raw": "run4",
+     "hsk": "HSK5",
+     "rank": 2256
+    },
+    {
+     "char": "柴",
+     "meaning": "섶 시",
+     "pinyin_raw": "chai2",
+     "hsk": "HSK5",
+     "rank": 2264
+    },
+    {
+     "char": "篮",
+     "meaning": "대바구니 람",
+     "pinyin_raw": "lan2",
+     "hsk": "HSK2",
+     "rank": 2285
+    },
+    {
+     "char": "奈",
+     "meaning": "어찌 내",
+     "pinyin_raw": "nai4",
+     "hsk": "HSK5",
+     "rank": 2286
+    },
+    {
+     "char": "蔬",
+     "meaning": "나물 소",
+     "pinyin_raw": "shu1",
+     "hsk": "HSK5",
+     "rank": 2299
+    },
+    {
+     "char": "粮",
+     "meaning": "양식 량",
+     "pinyin_raw": "liang2",
+     "hsk": "HSK4",
+     "rank": 2313
+    },
+    {
+     "char": "矿",
+     "meaning": "쇳돌 광",
+     "pinyin_raw": "kuang4",
+     "hsk": "HSK4",
+     "rank": 2330
+    },
+    {
+     "char": "郊",
+     "meaning": "들 교",
+     "pinyin_raw": "jiao1",
+     "hsk": "HSK5",
+     "rank": 2349
+    },
+    {
+     "char": "览",
+     "meaning": "볼 람",
+     "pinyin_raw": "lan3",
+     "hsk": "HSK5",
+     "rank": 2359
+    },
+    {
+     "char": "扬",
+     "meaning": "날릴 양",
+     "pinyin_raw": "yang2",
+     "hsk": "HSK4",
+     "rank": 2376
+    },
+    {
+     "char": "紫",
+     "meaning": "자줏빛 자",
+     "pinyin_raw": "zi3",
+     "hsk": "HSK5",
+     "rank": 2380
+    },
+    {
+     "char": "江",
+     "meaning": "강 강",
+     "pinyin_raw": "jiang1",
+     "hsk": "HSK4",
+     "rank": 2381
+    },
+    {
+     "char": "桃",
+     "meaning": "복숭아 도",
+     "pinyin_raw": "tao2",
+     "hsk": "HSK5",
+     "rank": 2384
+    },
+    {
+     "char": "泉",
+     "meaning": "샘 천",
+     "pinyin_raw": "quan2",
+     "hsk": "HSK4",
+     "rank": 2386
+    }
+   ]
+  },
+  {
+   "stage": 74,
+   "phase": 5,
+   "coverage_pct": 98.99,
+   "chars": [
+    {
+     "char": "羽",
+     "meaning": "깃 우",
+     "pinyin_raw": "yu3",
+     "hsk": "HSK5",
+     "rank": 2391
+    },
+    {
+     "char": "辅",
+     "meaning": "도울 보",
+     "pinyin_raw": "fu3",
+     "hsk": "HSK5",
+     "rank": 2398
+    },
+    {
+     "char": "寿",
+     "meaning": "목숨 수",
+     "pinyin_raw": "shou4",
+     "hsk": "HSK5",
+     "rank": 2415
+    },
+    {
+     "char": "届",
+     "meaning": "이를 계",
+     "pinyin_raw": "jie4",
+     "hsk": "HSK5",
+     "rank": 2423
+    },
+    {
+     "char": "勤",
+     "meaning": "부지런할 근",
+     "pinyin_raw": "qin2",
+     "hsk": "HSK5",
+     "rank": 2438
+    },
+    {
+     "char": "酸",
+     "meaning": "실 산",
+     "pinyin_raw": "suan1",
+     "hsk": "HSK4",
+     "rank": 2467
+    },
+    {
+     "char": "籍",
+     "meaning": "문서 적/호적 적",
+     "pinyin_raw": "ji2",
+     "hsk": "HSK5",
+     "rank": 2493
+    },
+    {
+     "char": "赠",
+     "meaning": "줄 증",
+     "pinyin_raw": "zeng4",
+     "hsk": "HSK5",
+     "rank": 2530
+    },
+    {
+     "char": "浓",
+     "meaning": "짙을 농",
+     "pinyin_raw": "nong2",
+     "hsk": "HSK4",
+     "rank": 2548
+    },
+    {
+     "char": "促",
+     "meaning": "재촉할 촉",
+     "pinyin_raw": "cu4",
+     "hsk": "HSK4",
+     "rank": 2568
+    },
+    {
+     "char": "贸",
+     "meaning": "무역할 무",
+     "pinyin_raw": "mao4",
+     "hsk": "HSK5",
+     "rank": 2577
+    },
+    {
+     "char": "涨",
+     "meaning": "넘칠 창",
+     "pinyin_raw": "zhang3",
+     "hsk": "HSK5",
+     "rank": 2584
+    },
+    {
+     "char": "纷",
+     "meaning": "어지러울 분",
+     "pinyin_raw": "fen1",
+     "hsk": "HSK4",
+     "rank": 2595
+    },
+    {
+     "char": "综",
+     "meaning": "모을 종",
+     "pinyin_raw": "zeng4",
+     "hsk": "HSK4",
+     "rank": 2604
+    },
+    {
+     "char": "夕",
+     "meaning": "저녁 석",
+     "pinyin_raw": "xi1",
+     "hsk": "HSK5",
+     "rank": 2615
+    },
+    {
+     "char": "浅",
+     "meaning": "얕을 천",
+     "pinyin_raw": "jian1",
+     "hsk": "HSK4",
+     "rank": 2628
+    },
+    {
+     "char": "泼",
+     "meaning": "물뿌릴 발",
+     "pinyin_raw": "po1",
+     "hsk": "HSK5",
+     "rank": 2630
+    },
+    {
+     "char": "县",
+     "meaning": "고을 현",
+     "pinyin_raw": "xian4",
+     "hsk": "HSK4",
+     "rank": 2665
+    },
+    {
+     "char": "锅",
+     "meaning": "솥 과",
+     "pinyin_raw": "guo1",
+     "hsk": "HSK5",
+     "rank": 2675
+    },
+    {
+     "char": "煤",
+     "meaning": "그을음 매",
+     "pinyin_raw": "mei2",
+     "hsk": "HSK5",
+     "rank": 2728
+    }
+   ]
+  },
+  {
+   "stage": 75,
+   "phase": 5,
+   "coverage_pct": 98.99,
+   "chars": [
+    {
+     "char": "愁",
+     "meaning": "근심 수",
+     "pinyin_raw": "chou2",
+     "hsk": "HSK5",
+     "rank": 2731
+    },
+    {
+     "char": "厘",
+     "meaning": "다스릴 리",
+     "pinyin_raw": "li2",
+     "hsk": "HSK4",
+     "rank": 2781
+    },
+    {
+     "char": "斜",
+     "meaning": "비낄 사",
+     "pinyin_raw": "xie2",
+     "hsk": "HSK5",
+     "rank": 2793
+    },
+    {
+     "char": "咸",
+     "meaning": "다 함/짤 함",
+     "pinyin_raw": "xian2",
+     "hsk": "HSK4",
+     "rank": 2818
+    },
+    {
+     "char": "吨",
+     "meaning": "톤 톤",
+     "pinyin_raw": "dun1",
+     "hsk": "HSK5",
+     "rank": 2821
+    },
+    {
+     "char": "泛",
+     "meaning": "뜰 범",
+     "pinyin_raw": "fan4",
+     "hsk": "HSK5",
+     "rank": 2918
+    },
+    {
+     "char": "晴",
+     "meaning": "갤 청",
+     "pinyin_raw": "qing2",
+     "hsk": "HSK2",
+     "rank": 2931
+    },
+    {
+     "char": "筷",
+     "meaning": "젓가락 쾌",
+     "pinyin_raw": "kuai4",
+     "hsk": "HSK2",
+     "rank": 2940
+    },
+    {
+     "char": "艳",
+     "meaning": "고울 염",
+     "pinyin_raw": "yan4",
+     "hsk": "HSK5",
+     "rank": 2973
+    },
+    {
+     "char": "盆",
+     "meaning": "동이 분",
+     "pinyin_raw": "pen2",
+     "hsk": "HSK5",
+     "rank": 3032
+    },
+    {
+     "char": "竹",
+     "meaning": "대 죽",
+     "pinyin_raw": "zhu2",
+     "hsk": "HSK5",
+     "rank": 3158
+    },
+    {
+     "char": "梨",
+     "meaning": "배 리",
+     "pinyin_raw": "li2",
+     "hsk": "HSK5",
+     "rank": 3166
+    },
+    {
+     "char": "柿",
+     "meaning": "감 시",
+     "pinyin_raw": "shi4",
+     "hsk": "HSK5",
+     "rank": 3194
+    },
+    {
+     "char": "趋",
+     "meaning": "달아날 추",
+     "pinyin_raw": "qu1",
+     "hsk": "HSK4",
+     "rank": 3207
+    },
+    {
+     "char": "乙",
+     "meaning": "새 을",
+     "pinyin_raw": "yi3",
+     "hsk": "HSK5",
+     "rank": 3269
+    },
+    {
+     "char": "硕",
+     "meaning": "클 석",
+     "pinyin_raw": "shuo4",
+     "hsk": "HSK5",
+     "rank": 3346
+    },
+    {
+     "char": "饺",
+     "meaning": "만두 교",
+     "pinyin_raw": "jiao3",
+     "hsk": "HSK2",
+     "rank": 3453
+    },
+    {
+     "char": "绒",
+     "meaning": "융 융",
+     "pinyin_raw": "rong2",
+     "hsk": "HSK5",
+     "rank": 3533
+    },
+    {
+     "char": "倡",
+     "meaning": "부를 창",
+     "pinyin_raw": "chang4",
+     "hsk": "HSK5",
+     "rank": 3666
+    },
+    {
+     "char": "纲",
+     "meaning": "벼리 강",
+     "pinyin_raw": "gang1",
+     "hsk": "HSK5",
+     "rank": 4476
+    }
+   ]
+  }
+ ]
+}

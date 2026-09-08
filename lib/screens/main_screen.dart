@@ -248,10 +248,12 @@ class _MenuGrid extends StatelessWidget {
         builder: (_) => const SpeakingPracticeScreen()),
       _MenuItem(label: '문법', sub: 'L1 기능어 · L2 어기조사', seal: '文法', color: const Color(0xFF8B0000),
         builder: (_) => const GrammarMenuScreen()),
-      _MenuItem(label: '한자', sub: '209자 20×10 + 4지선다', seal: '汉字', color: const Color(0xFFC62828),
-        builder: (_) => const HanziStagesScreen()),
-      _MenuItem(label: '단어', sub: '주제별 + 회화 핵심어휘', seal: '词汇', color: AppColors.feiCui,
-        builder: (_) => const TopicVocabScreen(includeCoreWordset: true)),
+      _MenuItem(label: '한자', sub: '회화 209 · HSK 1500', seal: '汉字', color: const Color(0xFFC62828),
+        builder: (_) => const HanziHubScreen()),
+      _MenuItem(label: '단어', sub: '주제별 · 핵심어휘 · HSK 1~5급', seal: '词汇', color: AppColors.feiCui,
+        builder: (_) => const TopicVocabScreen(
+            includeCoreWordset: true,
+            extraAssets: ['assets/data/vocab/hsk_words.json'])),
       _MenuItem(label: '표현', sub: 'Expression · 필수표현', seal: '表达', color: AppColors.jinDeep,
         builder: (_) => const TopicVocabScreen(
             title: '주제별 표현',

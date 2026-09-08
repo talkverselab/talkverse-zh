@@ -5493,7 +5493,7 @@
   ],
   "chunks": {
     "一下": {
-      "pinyin": "yi1 xia4",
+      "pinyin": "yī xià",
       "meanings": [
         "(after a verb) a bit; a little (indicating brief duration, or softening the tone, or suggesting giving sth a try)",
         "all at once; suddenly"
@@ -5501,7 +5501,7 @@
       "ko": "잠깐·~좀"
     },
     "一个": {
-      "pinyin": "yi1 ge5",
+      "pinyin": "yī ge",
       "meanings": [
         "a; an; one",
         "the whole (afternoon, summer vacation etc)"
@@ -5509,7 +5509,7 @@
       "ko": "하나"
     },
     "一个人": {
-      "pinyin": "yi1 ge4 ren2",
+      "pinyin": "yī gè rén",
       "meanings": [
         "by oneself (without assistance)",
         "alone (without company)"
@@ -5517,7 +5517,7 @@
       "ko": null
     },
     "一定": {
-      "pinyin": "yi1 ding4",
+      "pinyin": "yī dìng",
       "meanings": [
         "surely; certainly; definitely",
         "fixed; settled",
@@ -5526,14 +5526,14 @@
       "ko": "반드시"
     },
     "一定要": {
-      "pinyin": "yi1 ding4 yao4",
+      "pinyin": "yī dìng yào",
       "meanings": [
         "must"
       ],
       "ko": null
     },
     "一样": {
-      "pinyin": "yi1 yang4",
+      "pinyin": "yī yàng",
       "meanings": [
         "same",
         "like",
@@ -5544,7 +5544,7 @@
       "ko": "같다"
     },
     "一次": {
-      "pinyin": "yi1 ci4",
+      "pinyin": "yī cì",
       "meanings": [
         "first",
         "first time",
@@ -5554,7 +5554,7 @@
       "ko": "한 번"
     },
     "一点": {
-      "pinyin": "yi1 dian3",
+      "pinyin": "yī diǎn",
       "meanings": [
         "a bit; a little bit",
         "(used in negative expressions) (not) the least bit",
@@ -5566,14 +5566,14 @@
       "ko": "조금"
     },
     "一点点": {
-      "pinyin": "yi1 dian3 dian3",
+      "pinyin": "yī diǎn diǎn",
       "meanings": [
         "a little bit"
       ],
       "ko": "아주 조금"
     },
     "一起": {
-      "pinyin": "yi1 qi3",
+      "pinyin": "yī qǐ",
       "meanings": [
         "(in) the same place",
         "together; in company (with)",
@@ -5583,7 +5583,7 @@
       "ko": "함께"
     },
     "为什么": {
-      "pinyin": "wei4 shen2 me5",
+      "pinyin": "wèi shén me",
       "meanings": [
         "why?",
         "for what reason?"
@@ -5591,7 +5591,7 @@
       "ko": "왜"
     },
     "什么": {
-      "pinyin": "shen2 me5",
+      "pinyin": "shén me",
       "meanings": [
         "what?",
         "something; anything"
@@ -5599,7 +5599,7 @@
       "ko": "무엇"
     },
     "什么时候": {
-      "pinyin": "shen2 me5 shi2 hou5",
+      "pinyin": "shén me shí hou",
       "meanings": [
         "when?; at what time?"
       ],
@@ -5613,7 +5613,7 @@
       "ko": "뭐든"
     },
     "今天": {
-      "pinyin": "jin1 tian1",
+      "pinyin": "jīn tiān",
       "meanings": [
         "today",
         "the present time; now"
@@ -5621,14 +5621,14 @@
       "ko": "오늘"
     },
     "从来不": {
-      "pinyin": "cong2 lai2 bu4",
+      "pinyin": "cóng lái bù",
       "meanings": [
         "never"
       ],
       "ko": null
     },
     "从来没有": {
-      "pinyin": "cong2 lai2 mei2 you3",
+      "pinyin": "cóng lái méi yǒu",
       "meanings": [
         "there has never been; has never had",
         "(before a verb) has never"
@@ -5636,14 +5636,14 @@
       "ko": null
     },
     "你们": {
-      "pinyin": "ni3 men5",
+      "pinyin": "nǐ men",
       "meanings": [
         "you (plural)"
       ],
       "ko": "너희"
     },
     "出来": {
-      "pinyin": "chu1 lai2",
+      "pinyin": "chū lái",
       "meanings": [
         "to come out",
         "to appear",
@@ -5652,7 +5652,7 @@
       "ko": "나오다"
     },
     "到了": {
-      "pinyin": "dao4 liao3",
+      "pinyin": "dào liǎo",
       "meanings": [
         "at last",
         "finally",
@@ -5661,7 +5661,7 @@
       "ko": null
     },
     "只是": {
-      "pinyin": "zhi3 shi4",
+      "pinyin": "zhǐ shì",
       "meanings": [
         "merely; only; just; nothing but",
         "simply",
@@ -5670,7 +5670,7 @@
       "ko": null
     },
     "只能": {
-      "pinyin": "zhi3 neng2",
+      "pinyin": "zhǐ néng",
       "meanings": [
         "can only",
         "obliged to do sth",
@@ -5679,7 +5679,7 @@
       "ko": null
     },
     "只见": {
-      "pinyin": "zhi3 jian4",
+      "pinyin": "zhǐ jiàn",
       "meanings": [
         "to see (the same thing) over and over again",
         "to see, to one's surprise, (sth happen suddenly)"
@@ -5687,7 +5687,7 @@
       "ko": null
     },
     "可以": {
-      "pinyin": "ke3 yi3",
+      "pinyin": "kě yǐ",
       "meanings": [
         "can",
         "may",
@@ -5699,7 +5699,7 @@
       "ko": "가능·OK"
     },
     "听说": {
-      "pinyin": "ting1 shuo1",
+      "pinyin": "tīng shuō",
       "meanings": [
         "to hear (sth said)",
         "one hears (that)",
@@ -5709,14 +5709,14 @@
       "ko": "듣자 하니"
     },
     "听起来": {
-      "pinyin": "ting1 qi5 lai5",
+      "pinyin": "tīng qi lai",
       "meanings": [
         "to sound like"
       ],
       "ko": null
     },
     "哪儿": {
-      "pinyin": "na3 r5",
+      "pinyin": "nǎ r",
       "meanings": [
         "where?",
         "wherever; anywhere; somewhere",
@@ -5725,7 +5725,7 @@
       "ko": null
     },
     "哪里": {
-      "pinyin": "na3 li3",
+      "pinyin": "nǎ lǐ",
       "meanings": [
         "where?",
         "somewhere",
@@ -5745,14 +5745,14 @@
       "ko": "어디든"
     },
     "喜欢": {
-      "pinyin": "xi3 huan5",
+      "pinyin": "xǐ huan",
       "meanings": [
         "to like; to be fond of"
       ],
       "ko": "좋아하다"
     },
     "回去": {
-      "pinyin": "hui2 qu5",
+      "pinyin": "huí qu",
       "meanings": [
         "to return",
         "to go back"
@@ -5760,14 +5760,14 @@
       "ko": "돌아가다"
     },
     "回家": {
-      "pinyin": "hui2 jia1",
+      "pinyin": "huí jiā",
       "meanings": [
         "to return home"
       ],
       "ko": null
     },
     "回来": {
-      "pinyin": "hui2 lai5",
+      "pinyin": "huí lai",
       "meanings": [
         "to return; to come back"
       ],
@@ -5788,7 +5788,7 @@
       "ko": "어디에"
     },
     "多事": {
-      "pinyin": "duo1 shi4",
+      "pinyin": "duō shì",
       "meanings": [
         "meddlesome",
         "eventful"
@@ -5796,7 +5796,7 @@
       "ko": null
     },
     "多大": {
-      "pinyin": "duo1 da4",
+      "pinyin": "duō dà",
       "meanings": [
         "how old?",
         "how big?",
@@ -5828,14 +5828,14 @@
       "ko": "좋아"
     },
     "小时候": {
-      "pinyin": "xiao3 shi2 hou5",
+      "pinyin": "xiǎo shí hou",
       "meanings": [
         "in one's childhood"
       ],
       "ko": null
     },
     "就是": {
-      "pinyin": "jiu4 shi4",
+      "pinyin": "jiù shì",
       "meanings": [
         "exactly; precisely",
         "only; simply; just",
@@ -5844,28 +5844,28 @@
       "ko": "바로 ~이다"
     },
     "已经": {
-      "pinyin": "yi3 jing1",
+      "pinyin": "yǐ jīng",
       "meanings": [
         "already"
       ],
       "ko": "이미"
     },
     "常常": {
-      "pinyin": "chang2 chang2",
+      "pinyin": "cháng cháng",
       "meanings": [
         "frequently; often"
       ],
       "ko": null
     },
     "应该": {
-      "pinyin": "ying1 gai1",
+      "pinyin": "yīng gāi",
       "meanings": [
         "ought to; should; must"
       ],
       "ko": "~해야 한다"
     },
     "当然": {
-      "pinyin": "dang1 ran2",
+      "pinyin": "dāng rán",
       "meanings": [
         "only natural",
         "as it should be",
@@ -5883,7 +5883,7 @@
       "ko": "얼른 와"
     },
     "快点": {
-      "pinyin": "kuai4 dian3",
+      "pinyin": "kuài diǎn",
       "meanings": [
         "to do sth more quickly",
         "Hurry up!",
@@ -5892,7 +5892,7 @@
       "ko": "빨리"
     },
     "怎么": {
-      "pinyin": "zen3 me5",
+      "pinyin": "zěn me",
       "meanings": [
         "how?",
         "what?",
@@ -5901,7 +5901,7 @@
       "ko": "어떻게"
     },
     "怎么了": {
-      "pinyin": "zen3 me5 le5",
+      "pinyin": "zěn me le",
       "meanings": [
         "What's up?",
         "What's going on?",
@@ -5910,7 +5910,7 @@
       "ko": "왜 그래"
     },
     "怎么样": {
-      "pinyin": "zen3 me5 yang4",
+      "pinyin": "zěn me yàng",
       "meanings": [
         "how?",
         "how about?",
@@ -5927,14 +5927,14 @@
       "ko": "생각해봐"
     },
     "想想看": {
-      "pinyin": "xiang3 xiang3 kan4",
+      "pinyin": "xiǎng xiǎng kàn",
       "meanings": [
         "to think about it"
       ],
       "ko": null
     },
     "想起来": {
-      "pinyin": "xiang3 qi5 lai5",
+      "pinyin": "xiǎng qi lai",
       "meanings": [
         "to remember",
         "to recall"
@@ -5942,14 +5942,14 @@
       "ko": null
     },
     "我们": {
-      "pinyin": "wo3 men5",
+      "pinyin": "wǒ men",
       "meanings": [
         "we; us; ourselves; our"
       ],
       "ko": "우리"
     },
     "我去": {
-      "pinyin": "wo3 qu4",
+      "pinyin": "wǒ qù",
       "meanings": [
         "(slang) what the ...!; oh my god!; that's insane!"
       ],
@@ -5963,7 +5963,7 @@
       "ko": "내가 그러잖아"
     },
     "时间": {
-      "pinyin": "shi2 jian1",
+      "pinyin": "shí jiān",
       "meanings": [
         "(concept of) time",
         "(duration of) time",
@@ -5972,7 +5972,7 @@
       "ko": "시간"
     },
     "明天": {
-      "pinyin": "ming2 tian1",
+      "pinyin": "míng tiān",
       "meanings": [
         "tomorrow"
       ],
@@ -5986,7 +5986,7 @@
       "ko": "그래?"
     },
     "是的": {
-      "pinyin": "shi4 de5",
+      "pinyin": "shì de",
       "meanings": [
         "yes, that's right",
         "variant of 似的[shi4 de5]"
@@ -5994,14 +5994,14 @@
       "ko": "맞아"
     },
     "有一点": {
-      "pinyin": "you3 yi1 dian3",
+      "pinyin": "yǒu yī diǎn",
       "meanings": [
         "a little; somewhat"
       ],
       "ko": null
     },
     "没事": {
-      "pinyin": "mei2 shi4",
+      "pinyin": "méi shì",
       "meanings": [
         "it's not important",
         "it's nothing",
@@ -6013,7 +6013,7 @@
       "ko": "괜찮아"
     },
     "没有": {
-      "pinyin": "mei2 you3",
+      "pinyin": "méi yǒu",
       "meanings": [
         "haven't",
         "hasn't",
@@ -6024,21 +6024,21 @@
       "ko": "없다"
     },
     "现在": {
-      "pinyin": "xian4 zai4",
+      "pinyin": "xiàn zài",
       "meanings": [
         "now; at present; currently"
       ],
       "ko": "지금"
     },
     "的话": {
-      "pinyin": "de5 hua4",
+      "pinyin": "de huà",
       "meanings": [
         "if (coming after a conditional clause)"
       ],
       "ko": null
     },
     "看出": {
-      "pinyin": "kan4 chu1",
+      "pinyin": "kàn chū",
       "meanings": [
         "to make out",
         "to see"
@@ -6046,14 +6046,14 @@
       "ko": null
     },
     "看到": {
-      "pinyin": "kan4 dao4",
+      "pinyin": "kàn dào",
       "meanings": [
         "to see"
       ],
       "ko": "보다"
     },
     "看看": {
-      "pinyin": "kan4 kan5",
+      "pinyin": "kàn kan",
       "meanings": [
         "to take a look at",
         "to examine",
@@ -6063,7 +6063,7 @@
       "ko": "봐봐"
     },
     "知道": {
-      "pinyin": "zhi1 dao4",
+      "pinyin": "zhī dào",
       "meanings": [
         "to know; to become aware of",
         "also pr. [zhi1dao5]"
@@ -6071,7 +6071,7 @@
       "ko": "알다"
     },
     "等一下": {
-      "pinyin": "deng3 yi1 xia4",
+      "pinyin": "děng yī xià",
       "meanings": [
         "to wait a moment",
         "later",
@@ -6080,7 +6080,7 @@
       "ko": null
     },
     "经常": {
-      "pinyin": "jing1 chang2",
+      "pinyin": "jīng cháng",
       "meanings": [
         "frequently; constantly; regularly; often",
         "day-to-day; everyday; daily"
@@ -6088,7 +6088,7 @@
       "ko": null
     },
     "自己": {
-      "pinyin": "zi4 ji3",
+      "pinyin": "zì jǐ",
       "meanings": [
         "oneself; (attributive) one's own"
       ],
@@ -6102,7 +6102,7 @@
       "ko": "되니 안 되니"
     },
     "要说": {
-      "pinyin": "yao4 shuo1",
+      "pinyin": "yào shuō",
       "meanings": [
         "as for",
         "when it comes to"
@@ -6110,7 +6110,7 @@
       "ko": null
     },
     "觉得": {
-      "pinyin": "jue2 de5",
+      "pinyin": "jué de",
       "meanings": [
         "to think that ...; to feel that ...",
         "to feel (uncomfortable etc)"
@@ -6118,14 +6118,14 @@
       "ko": "~인 것 같다"
     },
     "说说": {
-      "pinyin": "shuo1 shuo5",
+      "pinyin": "shuō shuo",
       "meanings": [
         "to say sth"
       ],
       "ko": "말해봐"
     },
     "谁知道": {
-      "pinyin": "shei2 zhi1 dao4",
+      "pinyin": "shéi zhī dào",
       "meanings": [
         "God knows...",
         "Who would have imagined...?"
@@ -6133,7 +6133,7 @@
       "ko": null
     },
     "谢谢": {
-      "pinyin": "xie4 xie5",
+      "pinyin": "xiè xie",
       "meanings": [
         "to thank",
         "thanks",
@@ -6142,7 +6142,7 @@
       "ko": null
     },
     "起来": {
-      "pinyin": "qi3 lai5",
+      "pinyin": "qǐ lai",
       "meanings": [
         "to stand up; to get up",
         "also pr. [qi3lai2]"
@@ -6150,7 +6150,7 @@
       "ko": "일어나다"
     },
     "过去": {
-      "pinyin": "guo4 qu4",
+      "pinyin": "guò qù",
       "meanings": [
         "(in the) past; former; previous",
         "to go over; to pass by"
@@ -6158,7 +6158,7 @@
       "ko": "지나가다"
     },
     "过来": {
-      "pinyin": "guo4 lai2",
+      "pinyin": "guò lái",
       "meanings": [
         "to come over",
         "to manage",
@@ -6168,7 +6168,7 @@
       "ko": "오다"
     },
     "这个": {
-      "pinyin": "zhe4 ge5",
+      "pinyin": "zhè ge",
       "meanings": [
         "(pronoun) this",
         "(adjective) this"
@@ -6176,7 +6176,7 @@
       "ko": "이거"
     },
     "这么": {
-      "pinyin": "zhe4 me5",
+      "pinyin": "zhè me",
       "meanings": [
         "so much",
         "this much",
@@ -6187,7 +6187,7 @@
       "ko": null
     },
     "这样": {
-      "pinyin": "zhe4 yang4",
+      "pinyin": "zhè yàng",
       "meanings": [
         "this way; like this; so",
         "(before a noun) this kind of; such"
@@ -6195,7 +6195,7 @@
       "ko": "이렇게·이런"
     },
     "那时候": {
-      "pinyin": "na4 shi2 hou5",
+      "pinyin": "nà shí hou",
       "meanings": [
         "at that time"
       ],
