@@ -2,35 +2,36 @@
  "lang": "zh",
  "dialect": "north",
  "label": "보통화 (中国大陆 普通话) / 간체자 (简体字)",
- "version": "v5-2026-07-07",
- "schema": "v4",
+ "version": "v6-2026-09-08",
+ "schema": "v6-8turn",
  "levels": {
   "L1": {
    "file": "L1.json",
-   "schema": "5ep40turn",
+   "schema": "25ep8turn",
    "target_turns": 200,
    "current_turns": 200,
    "status": "완성"
   },
   "L2": {
    "file": "L2.json",
-   "schema": "23dial",
-   "target_turns": 300,
-   "current_turns": 299,
+   "schema": "46dial8turn",
+   "target_turns": 368,
+   "current_turns": 368,
    "status": "완성"
   },
   "L3": {
    "file": "L3.json",
-   "schema": "23dial",
-   "target_turns": 304,
-   "current_turns": 300,
+   "schema": "46dial8turn",
+   "target_turns": 368,
+   "current_turns": 368,
    "status": "완성"
   },
   "L4": {
-   "file": null,
-   "schema": "TBD",
-   "target_turns": null,
-   "status": "미결정"
+   "file": "L4.json",
+   "schema": "12dial8turn",
+   "target_turns": 96,
+   "current_turns": 96,
+   "status": "완성"
   }
  },
  "deprecated_levels": [

@@ -2,15 +2,13 @@
  "level": "L2",
  "dialect": "north",
  "version": "v5-2026-07-07",
- "schema": "v5-L2-23dial-complete",
+ "schema": "v6-8turn-split",
  "title": "L2 — 카오스 chat (300 turn)",
  "description": "메신저·일상 카오스. 23 dialogue × 5 block ≈ 300 turn. 톤: 캐주얼·약어·짧은 응답.",
  "kpi": {
-  "dialogues_target": 23,
-  "blocks_per_dialogue": 5,
-  "turns_total_target": 300,
-  "turns_total_current": 299,
-  "progress_pct": 99.7
+  "dialogues": 46,
+  "turns_per_dialogue": 8,
+  "turns_total": 368
  },
  "characters": {
   "_NOTE": "L2 카스트 = L1 + 친구·동료 확장 (small group chat 가능)"
@@ -23,8 +21,8 @@
  },
  "dialogues": [
   {
-   "id": "d01",
-   "title": "지각",
+   "id": "d01_1",
+   "title": "지각 ①",
    "emoji": "⏰",
    "scenario": "늦잠 잔 Mark, 출근 시간에 전화로 재촉하는 小丽",
    "turns": [
@@ -123,9 +121,18 @@
       "rhetorical",
       "particle:啊"
      ]
-    },
+    }
+   ],
+   "parent": "d01"
+  },
+  {
+   "id": "d01_2",
+   "title": "지각 ②",
+   "emoji": "⏰",
+   "scenario": "늦잠 잔 Mark, 출근 시간에 전화로 재촉하는 小丽",
+   "turns": [
     {
-     "num": 9,
+     "num": 1,
      "speaker": "B",
      "zh": "那你就迟到吧。",
      "pinyin": "Nà nǐ jiù chídào ba.",
@@ -137,7 +144,7 @@
      ]
     },
     {
-     "num": 10,
+     "num": 2,
      "speaker": "A",
      "zh": "我打车，还来得及。",
      "pinyin": "Wǒ dǎchē, hái láidejí.",
@@ -149,7 +156,7 @@
      ]
     },
     {
-     "num": 11,
+     "num": 3,
      "speaker": "B",
      "zh": "上周你也这么说的。",
      "pinyin": "Shàng zhōu nǐ yě zhème shuō de.",
@@ -161,7 +168,7 @@
      ]
     },
     {
-     "num": 12,
+     "num": 4,
      "speaker": "A",
      "zh": "这次真的不一样嘛。",
      "pinyin": "Zhè cì zhēn de bù yīyàng ma.",
@@ -173,7 +180,7 @@
      ]
     },
     {
-     "num": 13,
+     "num": 5,
      "speaker": "B",
      "zh": "快去吧，晚上请我吃饭。",
      "pinyin": "Kuài qù ba, wǎnshang qǐng wǒ chīfàn.",
@@ -183,12 +190,46 @@
       "structure:请",
       "positive"
      ]
+    },
+    {
+     "num": 6,
+     "speaker": "A",
+     "zh": "好，我挂了，我跑了！",
+     "pinyin": "Hǎo, wǒ guà le, wǒ pǎo le!",
+     "ko": "그래, 끊는다, 뛴다!",
+     "note": null,
+     "tags": [
+      "ext"
+     ]
+    },
+    {
+     "num": 7,
+     "speaker": "B",
+     "zh": "加油，别摔倒啊。",
+     "pinyin": "Jiāyóu, bié shuāidǎo a.",
+     "ko": "힘내, 넘어지지 말고.",
+     "note": null,
+     "tags": [
+      "ext"
+     ]
+    },
+    {
+     "num": 8,
+     "speaker": "A",
+     "zh": "到公司了，没迟到！",
+     "pinyin": "Dào gōngsī le, méi chídào!",
+     "ko": "회사 도착, 지각 안 했어!",
+     "note": null,
+     "tags": [
+      "ext"
+     ]
     }
-   ]
+   ],
+   "parent": "d01"
   },
   {
-   "id": "d02",
-   "title": "야근",
+   "id": "d02_1",
+   "title": "야근 ①",
    "emoji": "💻",
    "scenario": "야근 중인 Mark의 투정과 밀크티로 위로하는 小丽",
    "turns": [
@@ -287,9 +328,18 @@
       "structure:太了",
       "positive"
      ]
-    },
+    }
+   ],
+   "parent": "d02"
+  },
+  {
+   "id": "d02_2",
+   "title": "야근 ②",
+   "emoji": "💻",
+   "scenario": "야근 중인 Mark의 투정과 밀크티로 위로하는 小丽",
+   "turns": [
     {
-     "num": 9,
+     "num": 1,
      "speaker": "B",
      "zh": "那今晚谁洗碗呢？",
      "pinyin": "Nà jīnwǎn shéi xǐwǎn ne?",
@@ -301,7 +351,7 @@
      ]
     },
     {
-     "num": 10,
+     "num": 2,
      "speaker": "A",
      "zh": "啊？原来有条件啊。",
      "pinyin": "Á? Yuánlái yǒu tiáojiàn a.",
@@ -313,7 +363,7 @@
      ]
     },
     {
-     "num": 11,
+     "num": 3,
      "speaker": "B",
      "zh": "世界上没有免费的奶茶。",
      "pinyin": "Shìjiè shang méiyǒu miǎnfèi de nǎichá.",
@@ -325,7 +375,7 @@
      ]
     },
     {
-     "num": 12,
+     "num": 4,
      "speaker": "A",
      "zh": "行行行，我洗。",
      "pinyin": "Xíng xíng xíng, wǒ xǐ.",
@@ -337,7 +387,7 @@
      ]
     },
     {
-     "num": 13,
+     "num": 5,
      "speaker": "B",
      "zh": "加油，早点回来呀。",
      "pinyin": "Jiāyóu, zǎo diǎn huílái ya.",
@@ -347,12 +397,46 @@
       "particle:呀",
       "positive"
      ]
+    },
+    {
+     "num": 6,
+     "speaker": "A",
+     "zh": "好，我马上出发。",
+     "pinyin": "Hǎo, wǒ mǎshàng chūfā.",
+     "ko": "응, 지금 바로 출발할게.",
+     "note": null,
+     "tags": [
+      "ext"
+     ]
+    },
+    {
+     "num": 7,
+     "speaker": "B",
+     "zh": "路上小心点。",
+     "pinyin": "Lùshàng xiǎoxīn diǎn.",
+     "ko": "가는 길 조심해.",
+     "note": null,
+     "tags": [
+      "ext"
+     ]
+    },
+    {
+     "num": 8,
+     "speaker": "A",
+     "zh": "到家啦，还是你最好。",
+     "pinyin": "Dàojiā la, háishì nǐ zuìhǎo.",
+     "ko": "집 왔다, 역시 네가 최고야.",
+     "note": null,
+     "tags": [
+      "ext"
+     ]
     }
-   ]
+   ],
+   "parent": "d02"
   },
   {
-   "id": "d03",
-   "title": "배달음식",
+   "id": "d03_1",
+   "title": "배달음식 ①",
    "emoji": "🍜",
    "scenario": "저녁 배달 메뉴를 한 시간째 못 정하는 두 사람의 카오스",
    "turns": [
@@ -451,9 +535,18 @@
       "adverb:到底",
       "chaos"
      ]
-    },
+    }
+   ],
+   "parent": "d03"
+  },
+  {
+   "id": "d03_2",
+   "title": "배달음식 ②",
+   "emoji": "🍜",
+   "scenario": "저녁 배달 메뉴를 한 시간째 못 정하는 두 사람의 카오스",
+   "turns": [
     {
-     "num": 9,
+     "num": 1,
      "speaker": "B",
      "zh": "我也不知道嘛。",
      "pinyin": "Wǒ yě bù zhīdào ma.",
@@ -465,7 +558,7 @@
      ]
     },
     {
-     "num": 10,
+     "num": 2,
      "speaker": "A",
      "zh": "我们点了一个小时了。",
      "pinyin": "Wǒmen diǎn le yī ge xiǎoshí le.",
@@ -477,7 +570,7 @@
      ]
     },
     {
-     "num": 11,
+     "num": 3,
      "speaker": "B",
      "zh": "那石头剪刀布决定吧。",
      "pinyin": "Nà shítou jiǎndāo bù juédìng ba.",
@@ -489,7 +582,7 @@
      ]
     },
     {
-     "num": 12,
+     "num": 4,
      "speaker": "A",
      "zh": "你赢了……那吃什么？",
      "pinyin": "Nǐ yíng le…… nà chī shénme?",
@@ -501,7 +594,7 @@
      ]
     },
     {
-     "num": 13,
+     "num": 5,
      "speaker": "B",
      "zh": "嗯……随便。",
      "pinyin": "Èn…… suíbiàn.",
@@ -511,12 +604,46 @@
       "colloquial:随便",
       "humor"
      ]
+    },
+    {
+     "num": 6,
+     "speaker": "A",
+     "zh": "算了，我直接点外卖了。",
+     "pinyin": "Suànle, wǒ zhíjiē diǎn wàimài le.",
+     "ko": "됐다, 그냥 내가 배달 시킬게.",
+     "note": null,
+     "tags": [
+      "ext"
+     ]
+    },
+    {
+     "num": 7,
+     "speaker": "B",
+     "zh": "点什么？",
+     "pinyin": "Diǎn shénme?",
+     "ko": "뭐 시키게?",
+     "note": null,
+     "tags": [
+      "ext"
+     ]
+    },
+    {
+     "num": 8,
+     "speaker": "A",
+     "zh": "惊喜，你就等着吧。",
+     "pinyin": "Jīngxǐ, nǐ jiù děng zhe ba.",
+     "ko": "깜짝 놀랄 거니까 기다려 봐.",
+     "note": null,
+     "tags": [
+      "ext"
+     ]
     }
-   ]
+   ],
+   "parent": "d03"
   },
   {
-   "id": "d04",
-   "title": "날씨",
+   "id": "d04_1",
+   "title": "날씨 ①",
    "emoji": "🌧️",
    "scenario": "공원 데이트 날 갑자기 닥친 황사와 비, 집콕으로 계획 변경",
    "turns": [
@@ -615,9 +742,18 @@
       "rhetorical",
       "positive"
      ]
-    },
+    }
+   ],
+   "parent": "d04"
+  },
+  {
+   "id": "d04_2",
+   "title": "날씨 ②",
+   "emoji": "🌧️",
+   "scenario": "공원 데이트 날 갑자기 닥친 황사와 비, 집콕으로 계획 변경",
+   "turns": [
     {
-     "num": 9,
+     "num": 1,
      "speaker": "A",
      "zh": "好是好，可是没爆米花。",
      "pinyin": "Hǎo shì hǎo, kěshì méi bàomǐhuā.",
@@ -629,7 +765,7 @@
      ]
     },
     {
-     "num": 10,
+     "num": 2,
      "speaker": "B",
      "zh": "冰箱里有薯片啊。",
      "pinyin": "Bīngxiāng li yǒu shǔpiàn a.",
@@ -641,7 +777,7 @@
      ]
     },
     {
-     "num": 11,
+     "num": 3,
      "speaker": "A",
      "zh": "那是我的！你什么时候发现的？",
      "pinyin": "Nà shì wǒ de! Nǐ shénme shíhou fāxiàn de?",
@@ -653,7 +789,7 @@
      ]
     },
     {
-     "num": 12,
+     "num": 4,
      "speaker": "B",
      "zh": "上周就吃了一半啦。",
      "pinyin": "Shàng zhōu jiù chī le yībàn la.",
@@ -665,7 +801,7 @@
      ]
     },
     {
-     "num": 13,
+     "num": 5,
      "speaker": "A",
      "zh": "小丽！你这个薯片小偷！",
      "pinyin": "Xiǎolì! Nǐ zhège shǔpiàn xiǎotōu!",
@@ -675,12 +811,46 @@
       "structure:你这个",
       "chaos"
      ]
+    },
+    {
+     "num": 6,
+     "speaker": "B",
+     "zh": "别生气嘛，我再买一包。",
+     "pinyin": "Biéshēngqì ma, wǒ zài mǎi yībāo.",
+     "ko": "화내지 마, 내가 한 봉지 더 사줄게.",
+     "note": null,
+     "tags": [
+      "ext"
+     ]
+    },
+    {
+     "num": 7,
+     "speaker": "A",
+     "zh": "现在超市都关门了吧？",
+     "pinyin": "Xiànzài chāoshì dōu guānmén le ba?",
+     "ko": "지금 마트 다 문 닫았을걸?",
+     "note": null,
+     "tags": [
+      "ext"
+     ]
+    },
+    {
+     "num": 8,
+     "speaker": "B",
+     "zh": "那我们分着吃剩下的。",
+     "pinyin": "Nà wǒmen fēnzhe chī shèngxià de.",
+     "ko": "그럼 남은 거 나눠 먹자.",
+     "note": null,
+     "tags": [
+      "ext"
+     ]
     }
-   ]
+   ],
+   "parent": "d04"
   },
   {
-   "id": "d05",
-   "title": "드라마",
+   "id": "d05_1",
+   "title": "드라마 ①",
    "emoji": "📺",
    "scenario": "먼저 결말을 본 小丽의 스포일러에 발끈하는 Mark",
    "turns": [
@@ -779,9 +949,18 @@
       "repetition",
       "banter"
      ]
-    },
+    }
+   ],
+   "parent": "d05"
+  },
+  {
+   "id": "d05_2",
+   "title": "드라마 ②",
+   "emoji": "📺",
+   "scenario": "먼저 결말을 본 小丽의 스포일러에 발끈하는 Mark",
+   "turns": [
     {
-     "num": 9,
+     "num": 1,
      "speaker": "B",
      "zh": "好啦好啦，对不起嘛。",
      "pinyin": "Hǎo la hǎo la, duìbuqǐ ma.",
@@ -793,7 +972,7 @@
      ]
     },
     {
-     "num": 10,
+     "num": 2,
      "speaker": "A",
      "zh": "今晚你别碰遥控器。",
      "pinyin": "Jīnwǎn nǐ bié pèng yáokòngqì.",
@@ -805,7 +984,7 @@
      ]
     },
     {
-     "num": 11,
+     "num": 3,
      "speaker": "B",
      "zh": "那我们一起再看一遍？",
      "pinyin": "Nà wǒmen yīqǐ zài kàn yī biàn?",
@@ -817,7 +996,7 @@
      ]
     },
     {
-     "num": 12,
+     "num": 4,
      "speaker": "A",
      "zh": "你都看过了还看？",
      "pinyin": "Nǐ dōu kàn guo le hái kàn?",
@@ -829,7 +1008,7 @@
      ]
     },
     {
-     "num": 13,
+     "num": 5,
      "speaker": "B",
      "zh": "陪你看结局才有意思嘛。",
      "pinyin": "Péi nǐ kàn jiéjú cái yǒu yìsi ma.",
@@ -839,12 +1018,46 @@
       "adverb:才",
       "positive"
      ]
+    },
+    {
+     "num": 6,
+     "speaker": "A",
+     "zh": "好吧，那就再看一次。",
+     "pinyin": "Hǎo ba, nà jiù zài kàn yīcì.",
+     "ko": "알았어, 그럼 다시 한 번 보자.",
+     "note": null,
+     "tags": [
+      "ext"
+     ]
+    },
+    {
+     "num": 7,
+     "speaker": "B",
+     "zh": "我保证这次不剧透了。",
+     "pinyin": "Wǒ bǎozhèng zhècì bùjù tòu le.",
+     "ko": "이번엔 절대 스포 안 한다고 약속할게.",
+     "note": null,
+     "tags": [
+      "ext"
+     ]
+    },
+    {
+     "num": 8,
+     "speaker": "A",
+     "zh": "好，开始吧，别说话。",
+     "pinyin": "Hǎo, kāishǐ ba, bié shuōhuà.",
+     "ko": "좋아, 시작하자, 말하지 마.",
+     "note": null,
+     "tags": [
+      "ext"
+     ]
     }
-   ]
+   ],
+   "parent": "d05"
   },
   {
-   "id": "d06",
-   "title": "운동",
+   "id": "d06_1",
+   "title": "운동 ①",
    "emoji": "💪",
    "scenario": "또 헬스장 등록한 Mark, 작심삼일 전과를 놀리는 小丽",
    "turns": [
@@ -943,9 +1156,18 @@
       "particle:哈",
       "banter"
      ]
-    },
+    }
+   ],
+   "parent": "d06"
+  },
+  {
+   "id": "d06_2",
+   "title": "운동 ②",
+   "emoji": "💪",
+   "scenario": "또 헬스장 등록한 Mark, 작심삼일 전과를 놀리는 小丽",
+   "turns": [
     {
-     "num": 9,
+     "num": 1,
      "speaker": "A",
      "zh": "明天你跟我一起去吧。",
      "pinyin": "Míngtiān nǐ gēn wǒ yīqǐ qù ba.",
@@ -957,7 +1179,7 @@
      ]
     },
     {
-     "num": 10,
+     "num": 2,
      "speaker": "B",
      "zh": "我？我要工作呢。",
      "pinyin": "Wǒ? Wǒ yào gōngzuò ne.",
@@ -969,7 +1191,7 @@
      ]
     },
     {
-     "num": 11,
+     "num": 3,
      "speaker": "A",
      "zh": "现在谁找借口啊？",
      "pinyin": "Xiànzài shéi zhǎo jièkǒu a?",
@@ -981,7 +1203,7 @@
      ]
     },
     {
-     "num": 12,
+     "num": 4,
      "speaker": "B",
      "zh": "好吧好吧，去就去。",
      "pinyin": "Hǎo ba hǎo ba, qù jiù qù.",
@@ -993,7 +1215,7 @@
      ]
     },
     {
-     "num": 13,
+     "num": 5,
      "speaker": "A",
      "zh": "一言为定，跑三公里哦。",
      "pinyin": "Yīyán wéidìng, pǎo sān gōnglǐ o.",
@@ -1003,12 +1225,46 @@
       "idiom:一言为定",
       "positive"
      ]
+    },
+    {
+     "num": 6,
+     "speaker": "B",
+     "zh": "三公里？你不是也没跑过吗？",
+     "pinyin": "Sān gōnglǐ? nǐ búshì yě méi pǎo guò ma?",
+     "ko": "3킬로? 너도 뛰어본 적 없잖아?",
+     "note": null,
+     "tags": [
+      "ext"
+     ]
+    },
+    {
+     "num": 7,
+     "speaker": "A",
+     "zh": "明天开始，我们互相监督。",
+     "pinyin": "Míngtiān kāishǐ, wǒmen hùxiāngjiāndū.",
+     "ko": "내일부터 우리 서로 감시하자.",
+     "note": null,
+     "tags": [
+      "ext"
+     ]
+    },
+    {
+     "num": 8,
+     "speaker": "B",
+     "zh": "说好了，谁先放弃谁请客。",
+     "pinyin": "Shuōhǎo le, shuí xiān fàngqì shuí qǐngkè.",
+     "ko": "약속한 거다, 먼저 포기하는 사람이 쏘기.",
+     "note": null,
+     "tags": [
+      "ext"
+     ]
     }
-   ]
+   ],
+   "parent": "d06"
   },
   {
-   "id": "d07",
-   "title": "쇼핑",
+   "id": "d07_1",
+   "title": "쇼핑 ①",
    "emoji": "🛍️",
    "scenario": "매장에서 옷을 고르다 가격에 놀라 온라인 최저가를 찾는 두 사람",
    "turns": [
@@ -1107,9 +1363,18 @@
       "adverb:只",
       "chaos"
      ]
-    },
+    }
+   ],
+   "parent": "d07"
+  },
+  {
+   "id": "d07_2",
+   "title": "쇼핑 ②",
+   "emoji": "🛍️",
+   "scenario": "매장에서 옷을 고르다 가격에 놀라 온라인 최저가를 찾는 두 사람",
+   "turns": [
     {
-     "num": 9,
+     "num": 1,
      "speaker": "B",
      "zh": "那我在店里试，回家网上买。",
      "pinyin": "Nà wǒ zài diànli shì, huíjiā wǎngshàng mǎi.",
@@ -1121,7 +1386,7 @@
      ]
     },
     {
-     "num": 10,
+     "num": 2,
      "speaker": "A",
      "zh": "你可真是购物天才。",
      "pinyin": "Nǐ kě zhēnshi gòuwù tiāncái.",
@@ -1133,7 +1398,7 @@
      ]
     },
     {
-     "num": 11,
+     "num": 3,
      "speaker": "B",
      "zh": "那你的呢？也买一件？",
      "pinyin": "Nà nǐ de ne? Yě mǎi yī jiàn?",
@@ -1145,7 +1410,7 @@
      ]
     },
     {
-     "num": 12,
+     "num": 4,
      "speaker": "A",
      "zh": "我上个月的还没穿过呢。",
      "pinyin": "Wǒ shàng ge yuè de hái méi chuān guo ne.",
@@ -1157,7 +1422,7 @@
      ]
     },
     {
-     "num": 13,
+     "num": 5,
      "speaker": "B",
      "zh": "那这件就当你送我的啦。",
      "pinyin": "Nà zhè jiàn jiù dāng nǐ sòng wǒ de la.",
@@ -1167,12 +1432,46 @@
       "verb:当",
       "humor"
      ]
+    },
+    {
+     "num": 6,
+     "speaker": "A",
+     "zh": "好吧好吧，算我送的。",
+     "pinyin": "Hǎo ba hǎo ba, suàn wǒ sòng de.",
+     "ko": "알았어 알았어, 내가 선물한 걸로 하자.",
+     "note": null,
+     "tags": [
+      "ext"
+     ]
+    },
+    {
+     "num": 7,
+     "speaker": "B",
+     "zh": "谢谢老公，爱你哦。",
+     "pinyin": "Xièxiè lǎogōng, ài nǐ ó.",
+     "ko": "고마워 자기야, 사랑해.",
+     "note": null,
+     "tags": [
+      "ext"
+     ]
+    },
+    {
+     "num": 8,
+     "speaker": "A",
+     "zh": "下次记得先查价格啊。",
+     "pinyin": "Xiàcì jìde xiānchá jiàgé a.",
+     "ko": "다음엔 먼저 가격 검색하는 거 잊지 마.",
+     "note": null,
+     "tags": [
+      "ext"
+     ]
     }
-   ]
+   ],
+   "parent": "d07"
   },
   {
-   "id": "d08",
-   "title": "감기",
+   "id": "d08_1",
+   "title": "감기 ①",
    "emoji": "🤒",
    "scenario": "감기에 걸린 小丽를 약과 죽으로 챙기는 Mark",
    "turns": [
@@ -1271,9 +1570,18 @@
       "structure:比",
       "positive"
      ]
-    },
+    }
+   ],
+   "parent": "d08"
+  },
+  {
+   "id": "d08_2",
+   "title": "감기 ②",
+   "emoji": "🤒",
+   "scenario": "감기에 걸린 小丽를 약과 죽으로 챙기는 Mark",
+   "turns": [
     {
-     "num": 9,
+     "num": 1,
      "speaker": "B",
      "zh": "哇，今天嘴这么甜？",
      "pinyin": "Wā, jīntiān zuǐ zhème tián?",
@@ -1285,7 +1593,7 @@
      ]
     },
     {
-     "num": 10,
+     "num": 2,
      "speaker": "A",
      "zh": "想喝粥还是喝汤？",
      "pinyin": "Xiǎng hē zhōu háishi hē tāng?",
@@ -1297,7 +1605,7 @@
      ]
     },
     {
-     "num": 11,
+     "num": 3,
      "speaker": "B",
      "zh": "都要，可以吗？",
      "pinyin": "Dōu yào, kěyǐ ma?",
@@ -1309,7 +1617,7 @@
      ]
     },
     {
-     "num": 12,
+     "num": 4,
      "speaker": "A",
      "zh": "病人最大，都给你买。",
      "pinyin": "Bìngrén zuì dà, dōu gěi nǐ mǎi.",
@@ -1321,7 +1629,7 @@
      ]
     },
     {
-     "num": 13,
+     "num": 5,
      "speaker": "B",
      "zh": "快点来，我想你了嘛。",
      "pinyin": "Kuài diǎn lái, wǒ xiǎng nǐ le ma.",
@@ -1331,12 +1639,46 @@
       "verb:想",
       "positive"
      ]
+    },
+    {
+     "num": 6,
+     "speaker": "A",
+     "zh": "马上到，你多穿点衣服。",
+     "pinyin": "Mǎshàng dào, nǐ duō chuāndiǎn yīfú.",
+     "ko": "곧 도착해, 옷 좀 더 챙겨 입어.",
+     "note": null,
+     "tags": [
+      "ext"
+     ]
+    },
+    {
+     "num": 7,
+     "speaker": "B",
+     "zh": "知道啦，等你哦。",
+     "pinyin": "Zhīdào la, děng nǐ ó.",
+     "ko": "알겠어, 기다릴게.",
+     "note": null,
+     "tags": [
+      "ext"
+     ]
+    },
+    {
+     "num": 8,
+     "speaker": "A",
+     "zh": "到了，开门！",
+     "pinyin": "Dào le, kāimén!",
+     "ko": "도착했어, 문 열어!",
+     "note": null,
+     "tags": [
+      "ext"
+     ]
     }
-   ]
+   ],
+   "parent": "d08"
   },
   {
-   "id": "d09",
-   "title": "월급날",
+   "id": "d09_1",
+   "title": "월급날 ①",
    "emoji": "💰",
    "scenario": "월급이 들어온 날, 한턱 쏘려는 분위기와 절약 결심 사이에서 벌어지는 실랑이",
    "turns": [
@@ -1435,9 +1777,18 @@
       "food",
       "grammar:最的"
      ]
-    },
+    }
+   ],
+   "parent": "d09"
+  },
+  {
+   "id": "d09_2",
+   "title": "월급날 ②",
+   "emoji": "💰",
+   "scenario": "월급이 들어온 날, 한턱 쏘려는 분위기와 절약 결심 사이에서 벌어지는 실랑이",
+   "turns": [
     {
-     "num": 9,
+     "num": 1,
      "speaker": "A",
      "zh": "别啊，工资会哭的。",
      "pinyin": "Bié a, gōngzī huì kū de.",
@@ -1449,7 +1800,7 @@
      ]
     },
     {
-     "num": 10,
+     "num": 2,
      "speaker": "B",
      "zh": "刚才谁说要请客的？",
      "pinyin": "Gāngcái shéi shuō yào qǐngkè de?",
@@ -1461,7 +1812,7 @@
      ]
     },
     {
-     "num": 11,
+     "num": 3,
      "speaker": "A",
      "zh": "好好好，你赢了。",
      "pinyin": "Hǎo hǎo hǎo, nǐ yíng le.",
@@ -1473,7 +1824,7 @@
      ]
     },
     {
-     "num": 12,
+     "num": 4,
      "speaker": "B",
      "zh": "那再加一杯奶茶哦。",
      "pinyin": "Nà zài jiā yì bēi nǎichá o.",
@@ -1485,7 +1836,7 @@
      ]
     },
     {
-     "num": 13,
+     "num": 5,
      "speaker": "A",
      "zh": "我的钱包已经空了……",
      "pinyin": "Wǒ de qiánbāo yǐjīng kōng le……",
@@ -1495,12 +1846,46 @@
       "money",
       "grammar:已经了"
      ]
+    },
+    {
+     "num": 6,
+     "speaker": "B",
+     "zh": "哈哈，下个月继续加油吧。",
+     "pinyin": "Hāhā, xiàgèyuè jìxù jiāyóu ba.",
+     "ko": "하하, 다음 달에도 계속 화이팅하자.",
+     "note": null,
+     "tags": [
+      "ext"
+     ]
+    },
+    {
+     "num": 7,
+     "speaker": "A",
+     "zh": "这个月又要吃土了。",
+     "pinyin": "Zhège yuè yòu yào chī tǔ le.",
+     "ko": "이번 달도 또 궁상떨어야겠네.",
+     "note": null,
+     "tags": [
+      "ext"
+     ]
+    },
+    {
+     "num": 8,
+     "speaker": "B",
+     "zh": "至少我们吃得很开心呀。",
+     "pinyin": "Zhìshǎo wǒmen chī dé hěn kāixīn ya.",
+     "ko": "그래도 우린 맛있게 먹었잖아.",
+     "note": null,
+     "tags": [
+      "ext"
+     ]
     }
-   ]
+   ],
+   "parent": "d09"
   },
   {
-   "id": "d10",
-   "title": "단톡방",
+   "id": "d10_1",
+   "title": "단톡방 ①",
    "emoji": "💬",
    "scenario": "친구 大伟까지 낀 단톡방에서 약속 날짜 잡다가 다들 일정이 꼬이는 혼돈",
    "turns": [
@@ -1599,9 +1984,18 @@
       "chaos",
       "adverb:到底"
      ]
-    },
+    }
+   ],
+   "parent": "d10"
+  },
+  {
+   "id": "d10_2",
+   "title": "단톡방 ②",
+   "emoji": "💬",
+   "scenario": "친구 大伟까지 낀 단톡방에서 약속 날짜 잡다가 다들 일정이 꼬이는 혼돈",
+   "turns": [
     {
-     "num": 9,
+     "num": 1,
      "speaker": "B",
      "zh": "他说下周六吧。",
      "pinyin": "Tā shuō xià zhōuliù ba.",
@@ -1613,7 +2007,7 @@
      ]
     },
     {
-     "num": 10,
+     "num": 2,
      "speaker": "A",
      "zh": "等等，下周六我们要去旅行呢！",
      "pinyin": "Děng děng, xià zhōuliù wǒmen yào qù lǚxíng ne!",
@@ -1625,7 +2019,7 @@
      ]
     },
     {
-     "num": 11,
+     "num": 3,
      "speaker": "B",
      "zh": "对哦，我都忘了。",
      "pinyin": "Duì o, wǒ dōu wàng le.",
@@ -1637,7 +2031,7 @@
      ]
     },
     {
-     "num": 12,
+     "num": 4,
      "speaker": "A",
      "zh": "你直接说下下周吧。",
      "pinyin": "Nǐ zhíjiē shuō xià xià zhōu ba.",
@@ -1649,7 +2043,7 @@
      ]
     },
     {
-     "num": 13,
+     "num": 5,
      "speaker": "B",
      "zh": "好，约个饭真难啊。",
      "pinyin": "Hǎo, yuē gè fàn zhēn nán a.",
@@ -1659,12 +2053,46 @@
       "chaos",
       "exclamation"
      ]
+    },
+    {
+     "num": 6,
+     "speaker": "A",
+     "zh": "就这么定了，别再改了。",
+     "pinyin": "Jiù zhème dìng le, bié zài gǎi le.",
+     "ko": "그걸로 정하자, 더 이상 바꾸지 마.",
+     "note": null,
+     "tags": [
+      "ext"
+     ]
+    },
+    {
+     "num": 7,
+     "speaker": "B",
+     "zh": "我现在就告诉他。",
+     "pinyin": "Wǒ xiànzài jiù gàosù tā.",
+     "ko": "지금 바로 걔한테 말할게.",
+     "note": null,
+     "tags": [
+      "ext"
+     ]
+    },
+    {
+     "num": 8,
+     "speaker": "A",
+     "zh": "终于成功了，太不容易了。",
+     "pinyin": "Zhōngyú chénggōng le, tàibùróngyì le.",
+     "ko": "드디어 성공했다, 진짜 쉽지 않았어.",
+     "note": null,
+     "tags": [
+      "ext"
+     ]
     }
-   ]
+   ],
+   "parent": "d10"
   },
   {
-   "id": "d11",
-   "title": "여행준비",
+   "id": "d11_1",
+   "title": "여행준비 ①",
    "emoji": "🧳",
    "scenario": "주말 여행 전날 짐 싸기, 필수품은 다 빼먹고 간식만 챙긴 Mark에게 쏟아지는 잔소리",
    "turns": [
@@ -1763,9 +2191,18 @@
       "humor",
       "reduplication"
      ]
-    },
+    }
+   ],
+   "parent": "d11"
+  },
+  {
+   "id": "d11_2",
+   "title": "여행준비 ②",
+   "emoji": "🧳",
+   "scenario": "주말 여행 전날 짐 싸기, 필수품은 다 빼먹고 간식만 챙긴 Mark에게 쏟아지는 잔소리",
+   "turns": [
     {
-     "num": 9,
+     "num": 1,
      "speaker": "B",
      "zh": "我真是服了你了。",
      "pinyin": "Wǒ zhēnshi fú le nǐ le.",
@@ -1777,7 +2214,7 @@
      ]
     },
     {
-     "num": 10,
+     "num": 2,
      "speaker": "A",
      "zh": "吃的最重要嘛。",
      "pinyin": "Chī de zuì zhòngyào ma.",
@@ -1789,7 +2226,7 @@
      ]
     },
     {
-     "num": 11,
+     "num": 3,
      "speaker": "B",
      "zh": "衣服我来收拾，你别动了。",
      "pinyin": "Yīfu wǒ lái shōushi, nǐ bié dòng le.",
@@ -1801,7 +2238,7 @@
      ]
     },
     {
-     "num": 12,
+     "num": 4,
      "speaker": "A",
      "zh": "那我负责吃零食。",
      "pinyin": "Nà wǒ fùzé chī língshí.",
@@ -1813,7 +2250,7 @@
      ]
     },
     {
-     "num": 13,
+     "num": 5,
      "speaker": "B",
      "zh": "你负责搬行李！",
      "pinyin": "Nǐ fùzé bān xíngli!",
@@ -1823,12 +2260,46 @@
       "banter",
       "verb:负责"
      ]
+    },
+    {
+     "num": 6,
+     "speaker": "A",
+     "zh": "遵命，行李箱交给我。",
+     "pinyin": "Zūnmìng, xínglǐxiāng jiāogěi wǒ.",
+     "ko": "네네, 캐리어는 나한테 맡겨.",
+     "note": null,
+     "tags": [
+      "ext"
+     ]
+    },
+    {
+     "num": 7,
+     "speaker": "B",
+     "zh": "牙刷充电器我都带好了。",
+     "pinyin": "Yáshuā chōngdiànqì wǒ dōu dài hǎo le.",
+     "ko": "칫솔이랑 충전기는 내가 다 챙겼어.",
+     "note": null,
+     "tags": [
+      "ext"
+     ]
+    },
+    {
+     "num": 8,
+     "speaker": "A",
+     "zh": "有你在真是太好了。",
+     "pinyin": "Yǒu nǐ zài zhēnshì tàihǎole.",
+     "ko": "네가 있어서 진짜 다행이다.",
+     "note": null,
+     "tags": [
+      "ext"
+     ]
     }
-   ]
+   ],
+   "parent": "d11"
   },
   {
-   "id": "d12",
-   "title": "사진",
+   "id": "d12_1",
+   "title": "사진 ①",
    "emoji": "📷",
    "scenario": "Mark가 찍어준 사진이 마음에 안 드는 小丽, 다리 길게 나올 때까지 재촬영 요구",
    "turns": [
@@ -1927,9 +2398,18 @@
       "photo",
       "reduplication"
      ]
-    },
+    }
+   ],
+   "parent": "d12"
+  },
+  {
+   "id": "d12_2",
+   "title": "사진 ②",
+   "emoji": "📷",
+   "scenario": "Mark가 찍어준 사진이 마음에 안 드는 小丽, 다리 길게 나올 때까지 재촬영 요구",
+   "turns": [
     {
-     "num": 9,
+     "num": 1,
      "speaker": "B",
      "zh": "蹲下来拍，显腿长。",
      "pinyin": "Dūn xiàlai pāi, xiǎn tuǐ cháng.",
@@ -1941,7 +2421,7 @@
      ]
     },
     {
-     "num": 10,
+     "num": 2,
      "speaker": "A",
      "zh": "好好好，再来一次。",
      "pinyin": "Hǎo hǎo hǎo, zài lái yí cì.",
@@ -1953,7 +2433,7 @@
      ]
     },
     {
-     "num": 11,
+     "num": 3,
      "speaker": "B",
      "zh": "这张不错嘛！有进步。",
      "pinyin": "Zhè zhāng búcuò ma! Yǒu jìnbù.",
@@ -1965,7 +2445,7 @@
      ]
     },
     {
-     "num": 12,
+     "num": 4,
      "speaker": "A",
      "zh": "我可是拍了一百张。",
      "pinyin": "Wǒ kěshì pāi le yìbǎi zhāng.",
@@ -1977,7 +2457,7 @@
      ]
     },
     {
-     "num": 13,
+     "num": 5,
      "speaker": "B",
      "zh": "辛苦啦，晚上请你吃好吃的。",
      "pinyin": "Xīnkǔ la, wǎnshang qǐng nǐ chī hǎochī de.",
@@ -1987,12 +2467,46 @@
       "sweet",
       "verb:请"
      ]
+    },
+    {
+     "num": 6,
+     "speaker": "A",
+     "zh": "太好了，那我要吃烤肉！",
+     "pinyin": "Tàihǎole, nà wǒ yào chī kǎoròu!",
+     "ko": "좋았어, 그럼 나 고기 먹을래!",
+     "note": null,
+     "tags": [
+      "ext"
+     ]
+    },
+    {
+     "num": 7,
+     "speaker": "B",
+     "zh": "没问题，走吧走吧。",
+     "pinyin": "Méi wèntí, zǒu ba zǒu ba.",
+     "ko": "콜, 가자 가자.",
+     "note": null,
+     "tags": [
+      "ext"
+     ]
+    },
+    {
+     "num": 8,
+     "speaker": "A",
+     "zh": "下次拍照我肯定更厉害了。",
+     "pinyin": "Xiàcì pāizhào wǒ kěndìng gèng lìhài le.",
+     "ko": "다음엔 사진 진짜 더 잘 찍을 거야.",
+     "note": null,
+     "tags": [
+      "ext"
+     ]
     }
-   ]
+   ],
+   "parent": "d12"
   },
   {
-   "id": "d13",
-   "title": "핸드폰",
+   "id": "d13_1",
+   "title": "핸드폰 ①",
    "emoji": "📱",
    "scenario": "폰을 떨어뜨려 액정이 또 깨진 Mark, 수리비 800위안에 충격받고 버티기로 결정",
    "turns": [
@@ -2091,9 +2605,18 @@
       "money",
       "exaggeration"
      ]
-    },
+    }
+   ],
+   "parent": "d13"
+  },
+  {
+   "id": "d13_2",
+   "title": "핸드폰 ②",
+   "emoji": "📱",
+   "scenario": "폰을 떨어뜨려 액정이 또 깨진 Mark, 수리비 800위안에 충격받고 버티기로 결정",
+   "turns": [
     {
-     "num": 9,
+     "num": 1,
      "speaker": "A",
      "zh": "所以我在想要不要换手机。",
      "pinyin": "Suǒyǐ wǒ zài xiǎng yào bu yào huàn shǒujī.",
@@ -2105,7 +2628,7 @@
      ]
     },
     {
-     "num": 10,
+     "num": 2,
      "speaker": "B",
      "zh": "你上周不是刚发工资就花完了吗？",
      "pinyin": "Nǐ shàng zhōu bú shì gāng fā gōngzī jiù huā wán le ma?",
@@ -2117,7 +2640,7 @@
      ]
     },
     {
-     "num": 11,
+     "num": 3,
      "speaker": "A",
      "zh": "别提了，心疼。",
      "pinyin": "Bié tí le, xīnténg.",
@@ -2129,7 +2652,7 @@
      ]
     },
     {
-     "num": 12,
+     "num": 4,
      "speaker": "B",
      "zh": "先贴个膜，忍到下个月吧。",
      "pinyin": "Xiān tiē gè mó, rěn dào xià gè yuè ba.",
@@ -2141,7 +2664,7 @@
      ]
     },
     {
-     "num": 13,
+     "num": 5,
      "speaker": "A",
      "zh": "好吧，手机你要坚持住啊。",
      "pinyin": "Hǎo ba, shǒujī nǐ yào jiānchí zhù a.",
@@ -2151,12 +2674,46 @@
       "humor",
       "complement:住"
      ]
+    },
+    {
+     "num": 6,
+     "speaker": "B",
+     "zh": "别担心，我陪你一起省钱。",
+     "pinyin": "Bié dānxīn, wǒ péi nǐ yìqǐ shěngqián.",
+     "ko": "걱정 마, 나도 같이 아껴줄게.",
+     "note": null,
+     "tags": [
+      "ext"
+     ]
+    },
+    {
+     "num": 7,
+     "speaker": "A",
+     "zh": "真的？那太好了。",
+     "pinyin": "Zhēnde? nà tàihǎole.",
+     "ko": "진짜? 그럼 완전 좋지.",
+     "note": null,
+     "tags": [
+      "ext"
+     ]
+    },
+    {
+     "num": 8,
+     "speaker": "B",
+     "zh": "至少这个月不许乱花钱哦。",
+     "pinyin": "Zhìshǎo zhège yuè bùxǔ luànhuāqián ó.",
+     "ko": "적어도 이번 달엔 막 쓰면 안 돼.",
+     "note": null,
+     "tags": [
+      "ext"
+     ]
     }
-   ]
+   ],
+   "parent": "d13"
   },
   {
-   "id": "d14",
-   "title": "지하철",
+   "id": "d14_1",
+   "title": "지하철 ①",
    "emoji": "🚇",
    "scenario": "출근길 만원 지하철에 시달린 Mark의 하소연과 재택근무 小丽의 얄미운 위로",
    "turns": [
@@ -2255,9 +2812,18 @@
       "complaint",
       "adverb:一样"
      ]
-    },
+    }
+   ],
+   "parent": "d14"
+  },
+  {
+   "id": "d14_2",
+   "title": "지하철 ②",
+   "emoji": "🚇",
+   "scenario": "출근길 만원 지하철에 시달린 Mark의 하소연과 재택근무 小丽의 얄미운 위로",
+   "turns": [
     {
-     "num": 9,
+     "num": 1,
      "speaker": "A",
      "zh": "而且今天鞋还被踩了。",
      "pinyin": "Érqiě jīntiān xié hái bèi cǎi le.",
@@ -2269,7 +2835,7 @@
      ]
     },
     {
-     "num": 10,
+     "num": 2,
      "speaker": "B",
      "zh": "可怜的宝宝。",
      "pinyin": "Kělián de bǎobao.",
@@ -2281,7 +2847,7 @@
      ]
     },
     {
-     "num": 11,
+     "num": 3,
      "speaker": "A",
      "zh": "别笑！明天你替我上班。",
      "pinyin": "Bié xiào! Míngtiān nǐ tì wǒ shàngbān.",
@@ -2293,7 +2859,7 @@
      ]
     },
     {
-     "num": 12,
+     "num": 4,
      "speaker": "B",
      "zh": "那工资也给我吧。",
      "pinyin": "Nà gōngzī yě gěi wǒ ba.",
@@ -2305,7 +2871,7 @@
      ]
     },
     {
-     "num": 13,
+     "num": 5,
      "speaker": "A",
      "zh": "算了，我还是自己挤吧。",
      "pinyin": "Suàn le, wǒ háishi zìjǐ jǐ ba.",
@@ -2315,12 +2881,46 @@
       "humor",
       "pattern:还是吧"
      ]
+    },
+    {
+     "num": 6,
+     "speaker": "B",
+     "zh": "哈哈，辛苦了，到公司了吗？",
+     "pinyin": "Hāhā, xīnkǔ le, dào gōngsī le ma?",
+     "ko": "하하, 고생했어, 회사 도착했어?",
+     "note": null,
+     "tags": [
+      "ext"
+     ]
+    },
+    {
+     "num": 7,
+     "speaker": "A",
+     "zh": "刚到，累死我了。",
+     "pinyin": "Gāngdào, lèisǐ wǒ le.",
+     "ko": "방금 도착, 진짜 힘들어 죽겠어.",
+     "note": null,
+     "tags": [
+      "ext"
+     ]
+    },
+    {
+     "num": 8,
+     "speaker": "B",
+     "zh": "晚上早点睡，好好休息。",
+     "pinyin": "Wǎnshàng zǎodiǎn shuì, hǎohǎo xiūxī.",
+     "ko": "밤에 일찍 자고 푹 쉬어.",
+     "note": null,
+     "tags": [
+      "ext"
+     ]
     }
-   ]
+   ],
+   "parent": "d14"
   },
   {
-   "id": "d15",
-   "title": "커피",
+   "id": "d15_1",
+   "title": "커피 ①",
    "emoji": "☕",
    "scenario": "한여름 카페에서 아이스 아메리카노파 Mark와 핫 라떼파 小丽의 커피 취향 논쟁",
    "turns": [
@@ -2419,9 +3019,18 @@
       "banter",
       "verb:懂"
      ]
-    },
+    }
+   ],
+   "parent": "d15"
+  },
+  {
+   "id": "d15_2",
+   "title": "커피 ②",
+   "emoji": "☕",
+   "scenario": "한여름 카페에서 아이스 아메리카노파 Mark와 핫 라떼파 小丽의 커피 취향 논쟁",
+   "turns": [
     {
-     "num": 9,
+     "num": 1,
      "speaker": "A",
      "zh": "你喝一口试试嘛。",
      "pinyin": "Nǐ hē yì kǒu shìshi ma.",
@@ -2433,7 +3042,7 @@
      ]
     },
     {
-     "num": 10,
+     "num": 2,
      "speaker": "B",
      "zh": "好吧……哇，好凉快！",
      "pinyin": "Hǎo ba……wā, hǎo liángkuai!",
@@ -2445,7 +3054,7 @@
      ]
     },
     {
-     "num": 11,
+     "num": 3,
      "speaker": "A",
      "zh": "怎么样？我说得对吧？",
      "pinyin": "Zěnmeyàng? Wǒ shuō de duì ba?",
@@ -2457,7 +3066,7 @@
      ]
     },
     {
-     "num": 12,
+     "num": 4,
      "speaker": "B",
      "zh": "但是我还是爱热拿铁。",
      "pinyin": "Dànshì wǒ háishi ài rè nátiě.",
@@ -2469,7 +3078,7 @@
      ]
     },
     {
-     "num": 13,
+     "num": 5,
      "speaker": "A",
      "zh": "行行行，各喝各的。",
      "pinyin": "Xíng xíng xíng, gè hē gè de.",
@@ -2479,12 +3088,46 @@
       "humor",
       "pattern:各各的"
      ]
+    },
+    {
+     "num": 6,
+     "speaker": "B",
+     "zh": "不过你的冰美式确实好喝。",
+     "pinyin": "Bùguò nǐ de bīng měishì quèshí hǎohē.",
+     "ko": "근데 네 아이스 아메리카노 진짜 맛있긴 하다.",
+     "note": null,
+     "tags": [
+      "ext"
+     ]
+    },
+    {
+     "num": 7,
+     "speaker": "A",
+     "zh": "看吧，我说得没错吧？",
+     "pinyin": "Kànba, wǒ shuō dé méicuò ba?",
+     "ko": "봐봐, 내 말이 맞지?",
+     "note": null,
+     "tags": [
+      "ext"
+     ]
+    },
+    {
+     "num": 8,
+     "speaker": "B",
+     "zh": "下次也许试试更冰的。",
+     "pinyin": "Xiàcì yěxǔ shìshì gèngbīng de.",
+     "ko": "다음엔 더 시원한 것도 한번 시도해볼까.",
+     "note": null,
+     "tags": [
+      "ext"
+     ]
     }
-   ]
+   ],
+   "parent": "d15"
   },
   {
-   "id": "d16",
-   "title": "회식",
+   "id": "d16_1",
+   "title": "회식 ①",
    "emoji": "🍻",
    "scenario": "회사 회식이 늦게 끝나 약속을 어긴 Mark, 서운해하는 小丽와 케이크로 화해",
    "turns": [
@@ -2583,9 +3226,18 @@
       "apology",
       "complement:回去"
      ]
-    },
+    }
+   ],
+   "parent": "d16"
+  },
+  {
+   "id": "d16_2",
+   "title": "회식 ②",
+   "emoji": "🍻",
+   "scenario": "회사 회식이 늦게 끝나 약속을 어긴 Mark, 서운해하는 小丽와 케이크로 화해",
+   "turns": [
     {
-     "num": 9,
+     "num": 1,
      "speaker": "B",
      "zh": "路上小心，别跑。",
      "pinyin": "Lùshang xiǎoxīn, bié pǎo.",
@@ -2597,7 +3249,7 @@
      ]
     },
     {
-     "num": 10,
+     "num": 2,
      "speaker": "A",
      "zh": "你还是关心我的嘛。",
      "pinyin": "Nǐ háishi guānxīn wǒ de ma.",
@@ -2609,7 +3261,7 @@
      ]
     },
     {
-     "num": 11,
+     "num": 3,
      "speaker": "B",
      "zh": "谁关心你了，快点回来。",
      "pinyin": "Shéi guānxīn nǐ le, kuài diǎn huílai.",
@@ -2621,7 +3273,7 @@
      ]
     },
     {
-     "num": 12,
+     "num": 4,
      "speaker": "A",
      "zh": "我带了你爱吃的蛋糕哦。",
      "pinyin": "Wǒ dài le nǐ ài chī de dàngāo o.",
@@ -2633,7 +3285,7 @@
      ]
     },
     {
-     "num": 13,
+     "num": 5,
      "speaker": "B",
      "zh": "……原谅你啦。",
      "pinyin": "……Yuánliàng nǐ la.",
@@ -2643,12 +3295,46 @@
       "reconcile",
       "particle:啦"
      ]
+    },
+    {
+     "num": 6,
+     "speaker": "A",
+     "zh": "太好了，蛋糕给你留了最大块。",
+     "pinyin": "Tàihǎole, dàngāo gěi nǐ liú le zuìdà kuài.",
+     "ko": "잘됐다, 케이크 제일 큰 조각 남겨놨어.",
+     "note": null,
+     "tags": [
+      "ext"
+     ]
+    },
+    {
+     "num": 7,
+     "speaker": "B",
+     "zh": "你真的很懂我。",
+     "pinyin": "Nǐ zhēnde hěn dǒng wǒ.",
+     "ko": "너 진짜 날 잘 아네.",
+     "note": null,
+     "tags": [
+      "ext"
+     ]
+    },
+    {
+     "num": 8,
+     "speaker": "A",
+     "zh": "那当然，我先去洗澡了。",
+     "pinyin": "Nà dāngrán, wǒ xiān qù xǐzǎo le.",
+     "ko": "당연하지, 나 먼저 씻으러 갈게.",
+     "note": null,
+     "tags": [
+      "ext"
+     ]
     }
-   ]
+   ],
+   "parent": "d16"
   },
   {
-   "id": "d17",
-   "title": "게임",
+   "id": "d17_1",
+   "title": "게임 ①",
    "emoji": "🎮",
    "scenario": "밤새 게임하느라 연락이 끊긴 Mark, 小丽의 추궁에 어설픈 변명을 시작한다.",
    "turns": [
@@ -2747,9 +3433,18 @@
       "嘛",
       "一会儿"
      ]
-    },
+    }
+   ],
+   "parent": "d17"
+  },
+  {
+   "id": "d17_2",
+   "title": "게임 ②",
+   "emoji": "🎮",
+   "scenario": "밤새 게임하느라 연락이 끊긴 Mark, 小丽의 추궁에 어설픈 변명을 시작한다.",
+   "turns": [
     {
-     "num": 9,
+     "num": 1,
      "speaker": "B",
      "zh": "一会儿？五个小时呢！",
      "pinyin": "Yíhuìr? Wǔ ge xiǎoshí ne!",
@@ -2761,7 +3456,7 @@
      ]
     },
     {
-     "num": 10,
+     "num": 2,
      "speaker": "A",
      "zh": "因为我们队一直输啊。",
      "pinyin": "Yīnwèi wǒmen duì yìzhí shū a.",
@@ -2773,7 +3468,7 @@
      ]
     },
     {
-     "num": 11,
+     "num": 3,
      "speaker": "B",
      "zh": "那你赢了吗？",
      "pinyin": "Nà nǐ yíng le ma?",
@@ -2785,7 +3480,7 @@
      ]
     },
     {
-     "num": 12,
+     "num": 4,
      "speaker": "A",
      "zh": "……也输了。",
      "pinyin": "……Yě shū le.",
@@ -2797,7 +3492,7 @@
      ]
     },
     {
-     "num": 13,
+     "num": 5,
      "speaker": "B",
      "zh": "哈哈，活该！",
      "pinyin": "Hāhā, huógāi!",
@@ -2807,12 +3502,46 @@
       "活该",
       "회화체"
      ]
+    },
+    {
+     "num": 6,
+     "speaker": "A",
+     "zh": "别笑了，我心情很不好。",
+     "pinyin": "Biéxiào le, wǒ xīnqíng hěn bùhǎo.",
+     "ko": "웃지 마, 나 기분 진짜 안 좋아.",
+     "note": null,
+     "tags": [
+      "ext"
+     ]
+    },
+    {
+     "num": 7,
+     "speaker": "B",
+     "zh": "那就早点睡吧，别再打了。",
+     "pinyin": "Nà jiù zǎodiǎn shuì ba, bié zài dǎ le.",
+     "ko": "그럼 일찍 자, 더 하지 말고.",
+     "note": null,
+     "tags": [
+      "ext"
+     ]
+    },
+    {
+     "num": 8,
+     "speaker": "A",
+     "zh": "好，晚安，别生气了哈。",
+     "pinyin": "Hǎo, wǎnān, biéshēngqì le hā.",
+     "ko": "알았어, 잘 자, 화 풀어.",
+     "note": null,
+     "tags": [
+      "ext"
+     ]
     }
-   ]
+   ],
+   "parent": "d17"
   },
   {
-   "id": "d18",
-   "title": "생일",
+   "id": "d18_1",
+   "title": "생일 ①",
    "emoji": "🎂",
    "scenario": "小丽의 생일 서프라이즈를 몰래 준비하던 Mark, 폰 메시지를 들켜버린다.",
    "turns": [
@@ -2911,9 +3640,18 @@
       "给",
       "관형어"
      ]
-    },
+    }
+   ],
+   "parent": "d18"
+  },
+  {
+   "id": "d18_2",
+   "title": "생일 ②",
+   "emoji": "🎂",
+   "scenario": "小丽의 생일 서프라이즈를 몰래 준비하던 Mark, 폰 메시지를 들켜버린다.",
+   "turns": [
     {
-     "num": 9,
+     "num": 1,
      "speaker": "A",
      "zh": "惊喜没有了，都怪你。",
      "pinyin": "Jīngxǐ méiyǒu le, dōu guài nǐ.",
@@ -2925,7 +3663,7 @@
      ]
     },
     {
-     "num": 10,
+     "num": 2,
      "speaker": "B",
      "zh": "哈哈，可是我好开心！",
      "pinyin": "Hāhā, kěshì wǒ hǎo kāixīn!",
@@ -2937,7 +3675,7 @@
      ]
     },
     {
-     "num": 11,
+     "num": 3,
      "speaker": "B",
      "zh": "什么蛋糕？巧克力的吗？",
      "pinyin": "Shénme dàngāo? Qiǎokèlì de ma?",
@@ -2949,7 +3687,7 @@
      ]
     },
     {
-     "num": 12,
+     "num": 4,
      "speaker": "A",
      "zh": "不告诉你，这个是秘密。",
      "pinyin": "Bú gàosu nǐ, zhège shì mìmì.",
@@ -2961,7 +3699,7 @@
      ]
     },
     {
-     "num": 13,
+     "num": 5,
      "speaker": "B",
      "zh": "小气鬼！",
      "pinyin": "Xiǎoqìguǐ!",
@@ -2971,12 +3709,46 @@
       "小气鬼",
       "회화체"
      ]
+    },
+    {
+     "num": 6,
+     "speaker": "A",
+     "zh": "生日那天你就知道了。",
+     "pinyin": "Shēngrì nàtiān nǐ jiù zhīdào le.",
+     "ko": "생일날 되면 알게 될 거야.",
+     "note": null,
+     "tags": [
+      "ext"
+     ]
+    },
+    {
+     "num": 7,
+     "speaker": "B",
+     "zh": "那我等着，肯定很好吃。",
+     "pinyin": "Nà wǒ děng zhe, kěndìng hěn hǎochī.",
+     "ko": "그럼 기다릴게, 분명 맛있을 거야.",
+     "note": null,
+     "tags": [
+      "ext"
+     ]
+    },
+    {
+     "num": 8,
+     "speaker": "A",
+     "zh": "保证让你惊喜到尖叫。",
+     "pinyin": "Bǎozhèng ràng nǐ jīngxǐ dào jiānjiào.",
+     "ko": "놀라서 소리 지르게 해줄게, 장담해.",
+     "note": null,
+     "tags": [
+      "ext"
+     ]
     }
-   ]
+   ],
+   "parent": "d18"
   },
   {
-   "id": "d19",
-   "title": "시험",
+   "id": "d19_1",
+   "title": "시험 ①",
    "emoji": "📝",
    "scenario": "HSK 시험 공부에 지친 Mark를 小丽가 훠궈로 달랜다.",
    "turns": [
@@ -3075,9 +3847,18 @@
       "别",
       "명령문"
      ]
-    },
+    }
+   ],
+   "parent": "d19"
+  },
+  {
+   "id": "d19_2",
+   "title": "시험 ②",
+   "emoji": "📝",
+   "scenario": "HSK 시험 공부에 지친 Mark를 小丽가 훠궈로 달랜다.",
+   "turns": [
     {
-     "num": 9,
+     "num": 1,
      "speaker": "B",
      "zh": "好好好，不笑了。",
      "pinyin": "Hǎo hǎo hǎo, bú xiào le.",
@@ -3089,7 +3870,7 @@
      ]
     },
     {
-     "num": 10,
+     "num": 2,
      "speaker": "B",
      "zh": "考完我带你去吃火锅。",
      "pinyin": "Kǎo wán wǒ dài nǐ qù chī huǒguō.",
@@ -3101,7 +3882,7 @@
      ]
     },
     {
-     "num": 11,
+     "num": 3,
      "speaker": "A",
      "zh": "真的？那我现在就去学习！",
      "pinyin": "Zhēn de? Nà wǒ xiànzài jiù qù xuéxí!",
@@ -3113,7 +3894,7 @@
      ]
     },
     {
-     "num": 12,
+     "num": 4,
      "speaker": "B",
      "zh": "你为了火锅才学习吗？",
      "pinyin": "Nǐ wèile huǒguō cái xuéxí ma?",
@@ -3125,7 +3906,7 @@
      ]
     },
     {
-     "num": 13,
+     "num": 5,
      "speaker": "A",
      "zh": "火锅就是我的老师。",
      "pinyin": "Huǒguō jiù shì wǒ de lǎoshī.",
@@ -3135,12 +3916,46 @@
       "就是",
       "유머"
      ]
+    },
+    {
+     "num": 6,
+     "speaker": "B",
+     "zh": "那你今天要好好拜师啦。",
+     "pinyin": "Nà nǐ jīntiān yào hǎohǎo bàishī la.",
+     "ko": "그럼 오늘 스승님께 잘 배워야겠네.",
+     "note": null,
+     "tags": [
+      "ext"
+     ]
+    },
+    {
+     "num": 7,
+     "speaker": "A",
+     "zh": "我这就去看书了。",
+     "pinyin": "Wǒ zhè jiù qù kànshū le.",
+     "ko": "지금 바로 공부하러 갈게.",
+     "note": null,
+     "tags": [
+      "ext"
+     ]
+    },
+    {
+     "num": 8,
+     "speaker": "B",
+     "zh": "加油，考完请你吃辣的。",
+     "pinyin": "Jiāyóu, kǎowán qǐng nǐ chī là de.",
+     "ko": "화이팅, 시험 끝나면 매운 거 사줄게.",
+     "note": null,
+     "tags": [
+      "ext"
+     ]
     }
-   ]
+   ],
+   "parent": "d19"
   },
   {
-   "id": "d20",
-   "title": "이사",
+   "id": "d20_1",
+   "title": "이사 ①",
    "emoji": "🏠",
    "scenario": "이사 갈 집을 고르며 역세권파 Mark와 조용한 동네파 小丽가 맞붙는다.",
    "turns": [
@@ -3239,9 +4054,18 @@
       "对…好",
       "嘛"
      ]
-    },
+    }
+   ],
+   "parent": "d20"
+  },
+  {
+   "id": "d20_2",
+   "title": "이사 ②",
+   "emoji": "🏠",
+   "scenario": "이사 갈 집을 고르며 역세권파 Mark와 조용한 동네파 小丽가 맞붙는다.",
+   "turns": [
     {
-     "num": 9,
+     "num": 1,
      "speaker": "A",
      "zh": "那你怎么不去走路呢？",
      "pinyin": "Nà nǐ zěnme bú qù zǒulù ne?",
@@ -3253,7 +4077,7 @@
      ]
     },
     {
-     "num": 10,
+     "num": 2,
      "speaker": "B",
      "zh": "我又不用上班，哈哈。",
      "pinyin": "Wǒ yòu bú yòng shàngbān, hāhā.",
@@ -3265,7 +4089,7 @@
      ]
     },
     {
-     "num": 11,
+     "num": 3,
      "speaker": "A",
      "zh": "太不公平了吧！",
      "pinyin": "Tài bù gōngpíng le ba!",
@@ -3277,7 +4101,7 @@
      ]
     },
     {
-     "num": 12,
+     "num": 4,
      "speaker": "B",
      "zh": "那找一个中间的，好不好？",
      "pinyin": "Nà zhǎo yí ge zhōngjiān de, hǎo bu hǎo?",
@@ -3289,7 +4113,7 @@
      ]
     },
     {
-     "num": 13,
+     "num": 5,
      "speaker": "A",
      "zh": "行吧，听你的。",
      "pinyin": "Xíng ba, tīng nǐ de.",
@@ -3299,12 +4123,46 @@
       "听你的",
       "양보"
      ]
+    },
+    {
+     "num": 6,
+     "speaker": "B",
+     "zh": "太好了，那我们周末去看房。",
+     "pinyin": "Tàihǎole, nà wǒmen zhōumò qùkànfáng.",
+     "ko": "좋아, 그럼 주말에 집 보러 가자.",
+     "note": null,
+     "tags": [
+      "ext"
+     ]
+    },
+    {
+     "num": 7,
+     "speaker": "A",
+     "zh": "好，希望能找到合适的。",
+     "pinyin": "Hǎo, xīwàng néng zhǎodào héshì de.",
+     "ko": "응, 딱 맞는 데 찾았으면 좋겠다.",
+     "note": null,
+     "tags": [
+      "ext"
+     ]
+    },
+    {
+     "num": 8,
+     "speaker": "B",
+     "zh": "一定可以，我们一起加油。",
+     "pinyin": "Yídìng kěyǐ, wǒmen yìqǐ jiāyóu.",
+     "ko": "분명 될 거야, 우리 같이 힘내자.",
+     "note": null,
+     "tags": [
+      "ext"
+     ]
     }
-   ]
+   ],
+   "parent": "d20"
   },
   {
-   "id": "d21",
-   "title": "반려동물",
+   "id": "d21_1",
+   "title": "반려동물 ①",
    "emoji": "🐱",
    "scenario": "고양이를 입양하고 싶은 小丽가 Mark를 끈질기게 조른다.",
    "turns": [
@@ -3403,9 +4261,18 @@
       "是…的",
       "반박"
      ]
-    },
+    }
+   ],
+   "parent": "d21"
+  },
+  {
+   "id": "d21_2",
+   "title": "반려동물 ②",
+   "emoji": "🐱",
+   "scenario": "고양이를 입양하고 싶은 小丽가 Mark를 끈질기게 조른다.",
+   "turns": [
     {
-     "num": 9,
+     "num": 1,
      "speaker": "B",
      "zh": "这次不一样嘛！",
      "pinyin": "Zhè cì bù yíyàng ma!",
@@ -3417,7 +4284,7 @@
      ]
     },
     {
-     "num": 10,
+     "num": 2,
      "speaker": "A",
      "zh": "好吧好吧，就一只哦。",
      "pinyin": "Hǎo ba hǎo ba, jiù yì zhī o.",
@@ -3429,7 +4296,7 @@
      ]
     },
     {
-     "num": 11,
+     "num": 3,
      "speaker": "B",
      "zh": "太好了！那两只呢？",
      "pinyin": "Tài hǎo le! Nà liǎng zhī ne?",
@@ -3441,7 +4308,7 @@
      ]
     },
     {
-     "num": 12,
+     "num": 4,
      "speaker": "A",
      "zh": "小丽！",
      "pinyin": "Xiǎolì!",
@@ -3453,7 +4320,7 @@
      ]
     },
     {
-     "num": 13,
+     "num": 5,
      "speaker": "B",
      "zh": "开玩笑的啦，哈哈。",
      "pinyin": "Kāi wánxiào de la, hāhā.",
@@ -3463,12 +4330,46 @@
       "开玩笑",
       "啦"
      ]
+    },
+    {
+     "num": 6,
+     "speaker": "A",
+     "zh": "吓死我了，你可别乱来。",
+     "pinyin": "Xiàsǐ wǒ le, nǐ kěbié luànlái.",
+     "ko": "깜짝 놀랐잖아, 함부로 굴지 마.",
+     "note": null,
+     "tags": [
+      "ext"
+     ]
+    },
+    {
+     "num": 7,
+     "speaker": "B",
+     "zh": "那我们先去朋友家看看猫吧。",
+     "pinyin": "Nà wǒmen xiān qù péngyǒujiā kànkàn māo ba.",
+     "ko": "그럼 우선 친구네 가서 고양이 보자.",
+     "note": null,
+     "tags": [
+      "ext"
+     ]
+    },
+    {
+     "num": 8,
+     "speaker": "A",
+     "zh": "好，就今天下午去。",
+     "pinyin": "Hǎo, jiù jīntiānxiàwǔ qù.",
+     "ko": "좋아, 오늘 오후에 바로 가자.",
+     "note": null,
+     "tags": [
+      "ext"
+     ]
     }
-   ]
+   ],
+   "parent": "d21"
   },
   {
-   "id": "d22",
-   "title": "요리",
+   "id": "d22_1",
+   "title": "요리 ①",
    "emoji": "🍳",
    "scenario": "영상 보고 요리에 도전한 Mark, 생선을 숯으로 만들고 만다.",
    "turns": [
@@ -3567,9 +4468,18 @@
       "不是…是…",
       "全"
      ]
-    },
+    }
+   ],
+   "parent": "d22"
+  },
+  {
+   "id": "d22_2",
+   "title": "요리 ②",
+   "emoji": "🍳",
+   "scenario": "영상 보고 요리에 도전한 Mark, 생선을 숯으로 만들고 만다.",
+   "turns": [
     {
-     "num": 9,
+     "num": 1,
      "speaker": "A",
      "zh": "视频里没说火这么大……",
      "pinyin": "Shìpín li méi shuō huǒ zhème dà……",
@@ -3581,7 +4491,7 @@
      ]
     },
     {
-     "num": 10,
+     "num": 2,
      "speaker": "B",
      "zh": "锅也坏了吧？",
      "pinyin": "Guō yě huài le ba?",
@@ -3593,7 +4503,7 @@
      ]
     },
     {
-     "num": 11,
+     "num": 3,
      "speaker": "A",
      "zh": "那个……我们点外卖吧。",
      "pinyin": "Nàge……wǒmen diǎn wàimài ba.",
@@ -3605,7 +4515,7 @@
      ]
     },
     {
-     "num": 12,
+     "num": 4,
      "speaker": "B",
      "zh": "早就该点了！",
      "pinyin": "Zǎo jiù gāi diǎn le!",
@@ -3617,7 +4527,7 @@
      ]
     },
     {
-     "num": 13,
+     "num": 5,
      "speaker": "A",
      "zh": "下次我做汤，汤不会黑。",
      "pinyin": "Xià cì wǒ zuò tāng, tāng bú huì hēi.",
@@ -3627,12 +4537,46 @@
       "不会",
       "유머"
      ]
+    },
+    {
+     "num": 6,
+     "speaker": "B",
+     "zh": "我很怀疑，但还是给你机会。",
+     "pinyin": "Wǒ hěn huáiyí, dàn háishì gěi nǐ jīhuì.",
+     "ko": "많이 의심스럽지만, 그래도 기회는 줄게.",
+     "note": null,
+     "tags": [
+      "ext"
+     ]
+    },
+    {
+     "num": 7,
+     "speaker": "A",
+     "zh": "谢谢老婆，我肯定进步。",
+     "pinyin": "Xièxiè lǎopó, wǒ kěndìng jìnbù.",
+     "ko": "고마워 자기야, 분명 나아질 거야.",
+     "note": null,
+     "tags": [
+      "ext"
+     ]
+    },
+    {
+     "num": 8,
+     "speaker": "B",
+     "zh": "先把厨房打扫干净吧。",
+     "pinyin": "Xiān bǎ chúfáng dǎsǎo gānjìng ba.",
+     "ko": "일단 주방부터 깨끗이 치워.",
+     "note": null,
+     "tags": [
+      "ext"
+     ]
     }
-   ]
+   ],
+   "parent": "d22"
   },
   {
-   "id": "d23",
-   "title": "말버릇",
+   "id": "d23_1",
+   "title": "말버릇 ①",
    "emoji": "💬",
    "scenario": "서로의 말버릇을 지적하다가 둘 다 부메랑을 맞는다.",
    "turns": [
@@ -3731,9 +4675,18 @@
       "결과보어",
       "自己"
      ]
-    },
+    }
+   ],
+   "parent": "d23"
+  },
+  {
+   "id": "d23_2",
+   "title": "말버릇 ②",
+   "emoji": "💬",
+   "scenario": "서로의 말버릇을 지적하다가 둘 다 부메랑을 맞는다.",
+   "turns": [
     {
-     "num": 9,
+     "num": 1,
      "speaker": "B",
      "zh": "……当我没说。",
      "pinyin": "……Dāng wǒ méi shuō.",
@@ -3745,7 +4698,7 @@
      ]
     },
     {
-     "num": 10,
+     "num": 2,
      "speaker": "A",
      "zh": "王哥也说你有这个习惯。",
      "pinyin": "Wáng gē yě shuō nǐ yǒu zhège xíguàn.",
@@ -3757,7 +4710,7 @@
      ]
     },
     {
-     "num": 11,
+     "num": 3,
      "speaker": "B",
      "zh": "好啊，你们说我坏话！",
      "pinyin": "Hǎo a, nǐmen shuō wǒ huàihuà!",
@@ -3769,7 +4722,7 @@
      ]
     },
     {
-     "num": 12,
+     "num": 4,
      "speaker": "A",
      "zh": "不是坏话，是可爱的话。",
      "pinyin": "Bú shì huàihuà, shì kě'ài de huà.",
@@ -3781,7 +4734,7 @@
      ]
     },
     {
-     "num": 13,
+     "num": 5,
      "speaker": "B",
      "zh": "哎呀……又被你骗了。",
      "pinyin": "Āiyā……yòu bèi nǐ piàn le.",
@@ -3791,8 +4744,45 @@
       "被",
       "又…了"
      ]
+    },
+    {
+     "num": 6,
+     "speaker": "A",
+     "zh": "哈哈，这次算我赢了。",
+     "pinyin": "Hāhā, zhècì suàn wǒ yíng le.",
+     "ko": "하하, 이번엔 내가 이긴 걸로.",
+     "note": null,
+     "tags": [
+      "ext"
+     ]
+    },
+    {
+     "num": 7,
+     "speaker": "B",
+     "zh": "下次我一定会赢回来。",
+     "pinyin": "Xiàcì wǒ yídìng huì yínghuílái.",
+     "ko": "다음엔 반드시 이겨줄 거야.",
+     "note": null,
+     "tags": [
+      "ext"
+     ]
+    },
+    {
+     "num": 8,
+     "speaker": "A",
+     "zh": "好，我等着看你怎么赢。",
+     "pinyin": "Hǎo, wǒ děng zhe kàn nǐ zěnme yíng.",
+     "ko": "그래, 어떻게 이기는지 기대해볼게.",
+     "note": null,
+     "tags": [
+      "ext"
+     ]
     }
-   ]
+   ],
+   "parent": "d23"
   }
- ]
+ ],
+ "characters_note": {
+  "_NOTE": "L2 카스트 = L1 + 친구·동료 확장 (small group chat 가능)"
+ }
 }

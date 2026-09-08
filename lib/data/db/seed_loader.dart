@@ -8,8 +8,8 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'app_database.dart';
 
 class SeedLoader {
-  // v6: L4 플러팅 12편 추가
-  static const _kSeededKey = 'db_seeded_v6';
+  // v7: 모든 회화 8턴 분할 (L1 25편, L2/L3 46편)
+  static const _kSeededKey = 'db_seeded_v7';
 
   final AppDatabase db;
   SeedLoader(this.db);

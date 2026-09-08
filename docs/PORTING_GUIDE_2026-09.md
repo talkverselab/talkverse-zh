@@ -46,6 +46,11 @@
 - 빈도 절벽: 회화 코퍼스 커버율은 107자 80% · 206자 90% · 359자 95% · 517자 97% · 682자 98% 이후 1,500자까지 완만한 꼬리(급격한 절벽 없음). 그래서 5단계는 등분(300자)으로 두고 커버율만 표기.
 - 화면: `HanziHubScreen`(209 / 1500 선택) → `HanziStagesScreen(asset, seal, kicker)`; `phases` 있으면 큰 단계 접기/펼치기. 단어는 `TopicVocabScreen(extraAssets: [...])`.
 
+### 1-6. 회화 8턴 통일 (09-08, `tool/split_dialogues_8.py`)
+- 모든 회화 = 8턴. L1 40턴 에피소드 → 8턴 × 5 (`ep1_1`~, 제목 '매칭 ①'). L2/L3 13턴 → ① 1~8, ② 9~13 + 이어쓰기 3턴(에이전트, `tags:["ext"]`, 병음 pypinyin+jieba). L4는 원래 8턴.
+- 분할 단위마다 `parent` 필드로 원본 id 보존. DB 시드 키 `db_seeded_v7`로 재시딩.
+- 결과: L1 25편 · L2 46편 · L3 46편 · L4 12편 = 129편 1,032턴.
+
 ## 2. 화면·기능
 
 ### 2-1. 홈 메뉴 구조 (b6a33f1, f3f7bf5)
@@ -82,6 +87,13 @@
 - 저장: `speak_best_<turnId>` = 통과 단계(1~3). 세션 끝에 ★ 요약.
 - Android: `RECORD_AUDIO`·`INTERNET`·`BLUETOOTH_CONNECT` 권한 + `<queries>`에 `android.speech.RecognitionService`.
 - 이식 시: 병음 변환부만 언어별 교체 (알파벳 언어는 소문자화+발음 퍼지, ja는 가나 정규화). 로케일 `_pickLocale` 선호 목록 수정.
+
+### 2-1e. 성조 연습 (09-08)
+- 메뉴 `성조연습`(声调) → `tone_practice_screen.dart`. 8개 음절 세트 × 4성, 듣기(TTS) → 따라 말하기 1.6초 녹음 → 곡선 비교 → PASS/FAIL.
+- 오픈소스: `record` ^6 (BSD-3, PCM16 16kHz 스트림) + `pitch_detector_dart` ^0.0.7 (MIT, TarsosDSP YIN). 학습 모델 없음.
+- 판정 `tone_analyzer.dart`: YIN f0(1024/256) → 가장 긴 유성 구간 → 반음 변환·중앙값 필터 → 화자 정규화(중앙값 ±span → Chao 1~5도) → 20점 리샘플 → 4성 템플릿(55/35/214/51) RMS 거리 최소. 1성은 범위 벌점.
+- 합성 사인파 테스트 `test/tone_analyzer_test.dart` 4성 모두 통과. 실제 음성 임계값은 기기 검증 후 조정.
+- 이식: 성조 언어(th·vi)는 템플릿만 교체, 비성조 언어는 미이식.
 
 ### 2-2. 에피소드 학습 화면 (ab01e5a, 6f3214a)
 - 채팅 버블(화자별 색·아바타) + 병음 + 번역 + 💡문법노트 + 턴별 학습 체크(`user_progress`)

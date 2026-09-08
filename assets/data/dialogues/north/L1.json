@@ -2,15 +2,13 @@
  "level": "L1",
  "dialect": "north",
  "version": "v5-2026-07-07",
- "schema": "v5-L1-5ep40turn-complete",
+ "schema": "v6-8turn-split",
  "title": "L1 — 매칭 narrative (200 turn)",
  "description": "외국인 Mark 와 중국 여성 小丽 의 첫 만남 → 약속 → 가족 → 갈등 → 미래. 5 ep × 40 turn = 200.",
  "kpi": {
-  "episodes_target": 5,
-  "turns_per_episode": 40,
-  "turns_total_target": 200,
-  "turns_total_current": 200,
-  "progress_pct": 100.0
+  "episodes": 25,
+  "turns_per_episode": 8,
+  "turns_total": 200
  },
  "characters": {
   "A": {
@@ -55,8 +53,8 @@
  ],
  "episodes": [
   {
-   "id": "ep1",
-   "title": "매칭",
+   "id": "ep1_1",
+   "title": "매칭 ①",
    "emoji": "💕",
    "scenario": "Mark 매칭앱 첫 메시지 → 小丽 자기소개 → 약속 호출 → Lily↔小丽 hook",
    "turns": [
@@ -155,9 +153,18 @@
       "humble",
       "particle:呢"
      ]
-    },
+    }
+   ],
+   "parent": "ep1"
+  },
+  {
+   "id": "ep1_2",
+   "title": "매칭 ②",
+   "emoji": "💕",
+   "scenario": "Mark 매칭앱 첫 메시지 → 小丽 자기소개 → 약속 호출 → Lily↔小丽 hook",
+   "turns": [
     {
-     "num": 9,
+     "num": 1,
      "speaker": "B",
      "zh": "你学了多久了？",
      "pinyin": "Nǐ xué le duō jiǔ le?",
@@ -169,7 +176,7 @@
      ]
     },
     {
-     "num": 10,
+     "num": 2,
      "speaker": "A",
      "zh": "一年了，还不太会说。",
      "pinyin": "Yì nián le, hái bú tài huì shuō.",
@@ -181,7 +188,7 @@
      ]
     },
     {
-     "num": 11,
+     "num": 3,
      "speaker": "B",
      "zh": "已经很棒了！为什么学中文？",
      "pinyin": "Yǐjīng hěn bàng le! Wèishénme xué zhōngwén?",
@@ -193,7 +200,7 @@
      ]
     },
     {
-     "num": 12,
+     "num": 4,
      "speaker": "A",
      "zh": "因为我喜欢中国菜，哈哈。",
      "pinyin": "Yīnwèi wǒ xǐhuan zhōngguó cài, hāhā.",
@@ -205,7 +212,7 @@
      ]
     },
     {
-     "num": 13,
+     "num": 5,
      "speaker": "B",
      "zh": "哈哈，我也是！你会用筷子吗？",
      "pinyin": "Hāhā, wǒ yě shì! Nǐ huì yòng kuàizi ma?",
@@ -217,7 +224,7 @@
      ]
     },
     {
-     "num": 14,
+     "num": 6,
      "speaker": "A",
      "zh": "当然会，我是韩国人嘛。",
      "pinyin": "Dāngrán huì, wǒ shì Hánguó rén ma.",
@@ -229,7 +236,7 @@
      ]
     },
     {
-     "num": 15,
+     "num": 7,
      "speaker": "B",
      "zh": "对哦，我忘了，哈哈。",
      "pinyin": "Duì o, wǒ wàng le, hāhā.",
@@ -241,7 +248,7 @@
      ]
     },
     {
-     "num": 16,
+     "num": 8,
      "speaker": "A",
      "zh": "小丽，你做什么工作？",
      "pinyin": "Xiǎolì, nǐ zuò shénme gōngzuò?",
@@ -251,9 +258,18 @@
       "question",
       "topic:job"
      ]
-    },
+    }
+   ],
+   "parent": "ep1"
+  },
+  {
+   "id": "ep1_3",
+   "title": "매칭 ③",
+   "emoji": "💕",
+   "scenario": "Mark 매칭앱 첫 메시지 → 小丽 자기소개 → 약속 호출 → Lily↔小丽 hook",
+   "turns": [
     {
-     "num": 17,
+     "num": 1,
      "speaker": "B",
      "zh": "我是设计师，在家工作。",
      "pinyin": "Wǒ shì shèjìshī, zài jiā gōngzuò.",
@@ -265,7 +281,7 @@
      ]
     },
     {
-     "num": 18,
+     "num": 2,
      "speaker": "A",
      "zh": "好厉害！平时喜欢做什么？",
      "pinyin": "Hǎo lìhai! Píngshí xǐhuan zuò shénme?",
@@ -277,7 +293,7 @@
      ]
     },
     {
-     "num": 19,
+     "num": 3,
      "speaker": "B",
      "zh": "我喜欢看电影，还有画画。",
      "pinyin": "Wǒ xǐhuan kàn diànyǐng, háiyǒu huà huà.",
@@ -289,7 +305,7 @@
      ]
     },
     {
-     "num": 20,
+     "num": 4,
      "speaker": "A",
      "zh": "我也爱看电影！最近看了什么？",
      "pinyin": "Wǒ yě ài kàn diànyǐng! Zuìjìn kàn le shénme?",
@@ -301,7 +317,7 @@
      ]
     },
     {
-     "num": 21,
+     "num": 5,
      "speaker": "B",
      "zh": "看了一个爱情片，有点儿老。",
      "pinyin": "Kàn le yí ge àiqíng piàn, yǒudiǎnr lǎo.",
@@ -313,7 +329,7 @@
      ]
     },
     {
-     "num": 22,
+     "num": 6,
      "speaker": "A",
      "zh": "爱情片啊？我喜欢，嘿嘿。",
      "pinyin": "Àiqíng piàn a? Wǒ xǐhuan, hēihēi.",
@@ -325,7 +341,7 @@
      ]
     },
     {
-     "num": 23,
+     "num": 7,
      "speaker": "B",
      "zh": "你这个人有意思，嘿嘿。",
      "pinyin": "Nǐ zhège rén yǒu yìsi, hēihēi.",
@@ -337,7 +353,7 @@
      ]
     },
     {
-     "num": 24,
+     "num": 8,
      "speaker": "A",
      "zh": "对了，你家在北京哪儿？",
      "pinyin": "Duì le, nǐ jiā zài Běijīng nǎr?",
@@ -347,9 +363,18 @@
       "question",
       "topic:place"
      ]
-    },
+    }
+   ],
+   "parent": "ep1"
+  },
+  {
+   "id": "ep1_4",
+   "title": "매칭 ④",
+   "emoji": "💕",
+   "scenario": "Mark 매칭앱 첫 메시지 → 小丽 자기소개 → 약속 호출 → Lily↔小丽 hook",
+   "turns": [
     {
-     "num": 25,
+     "num": 1,
      "speaker": "B",
      "zh": "在朝阳区，你呢？",
      "pinyin": "Zài Cháoyáng qū, nǐ ne?",
@@ -361,7 +386,7 @@
      ]
     },
     {
-     "num": 26,
+     "num": 2,
      "speaker": "A",
      "zh": "其实公司让我来北京上班了，我也住朝阳！",
      "pinyin": "Qíshí gōngsī ràng wǒ lái Běijīng shàngbān le, wǒ yě zhù Cháoyáng!",
@@ -373,7 +398,7 @@
      ]
     },
     {
-     "num": 27,
+     "num": 3,
      "speaker": "B",
      "zh": "真巧啊，缘分吧？",
      "pinyin": "Zhēn qiǎo a, yuánfèn ba?",
@@ -385,7 +410,7 @@
      ]
     },
     {
-     "num": 28,
+     "num": 4,
      "speaker": "A",
      "zh": "是缘分！那我们见一面吧？",
      "pinyin": "Shì yuánfèn! Nà wǒmen jiàn yí miàn ba?",
@@ -397,7 +422,7 @@
      ]
     },
     {
-     "num": 29,
+     "num": 5,
      "speaker": "B",
      "zh": "这么快？让我想想哦。",
      "pinyin": "Zhème kuài? Ràng wǒ xiǎngxiang o.",
@@ -409,7 +434,7 @@
      ]
     },
     {
-     "num": 30,
+     "num": 6,
      "speaker": "A",
      "zh": "别想太久啊，我会难过的。",
      "pinyin": "Bié xiǎng tài jiǔ a, wǒ huì nánguò de.",
@@ -421,7 +446,7 @@
      ]
     },
     {
-     "num": 31,
+     "num": 7,
      "speaker": "B",
      "zh": "好啦好啦，见吧，哈哈。",
      "pinyin": "Hǎo la hǎo la, jiàn ba, hāhā.",
@@ -433,7 +458,7 @@
      ]
     },
     {
-     "num": 32,
+     "num": 8,
      "speaker": "A",
      "zh": "太好了！周六可以吗？",
      "pinyin": "Tài hǎo le! Zhōuliù kěyǐ ma?",
@@ -443,9 +468,18 @@
       "plan",
       "particle:吗"
      ]
-    },
+    }
+   ],
+   "parent": "ep1"
+  },
+  {
+   "id": "ep1_5",
+   "title": "매칭 ⑤",
+   "emoji": "💕",
+   "scenario": "Mark 매칭앱 첫 메시지 → 小丽 자기소개 → 약속 호출 → Lily↔小丽 hook",
+   "turns": [
     {
-     "num": 33,
+     "num": 1,
      "speaker": "B",
      "zh": "周六没问题，想去哪儿？",
      "pinyin": "Zhōuliù méi wèntí, xiǎng qù nǎr?",
@@ -457,7 +491,7 @@
      ]
     },
     {
-     "num": 34,
+     "num": 2,
      "speaker": "A",
      "zh": "我请你吃饭，怎么样？",
      "pinyin": "Wǒ qǐng nǐ chī fàn, zěnmeyàng?",
@@ -469,7 +503,7 @@
      ]
     },
     {
-     "num": 35,
+     "num": 3,
      "speaker": "B",
      "zh": "好呀，我知道一家好吃的店。",
      "pinyin": "Hǎo ya, wǒ zhīdào yì jiā hǎochī de diàn.",
@@ -481,7 +515,7 @@
      ]
     },
     {
-     "num": 36,
+     "num": 4,
      "speaker": "A",
      "zh": "那就听你的！",
      "pinyin": "Nà jiù tīng nǐ de!",
@@ -493,7 +527,7 @@
      ]
     },
     {
-     "num": 37,
+     "num": 5,
      "speaker": "B",
      "zh": "晚上六点，别迟到哦。",
      "pinyin": "Wǎnshang liù diǎn, bié chídào o.",
@@ -505,7 +539,7 @@
      ]
     },
     {
-     "num": 38,
+     "num": 6,
      "speaker": "A",
      "zh": "放心吧，我一定早到。",
      "pinyin": "Fàngxīn ba, wǒ yídìng zǎo dào.",
@@ -517,7 +551,7 @@
      ]
     },
     {
-     "num": 39,
+     "num": 7,
      "speaker": "B",
      "zh": "那周六见，Mark。",
      "pinyin": "Nà zhōuliù jiàn, Mark.",
@@ -528,7 +562,7 @@
      ]
     },
     {
-     "num": 40,
+     "num": 8,
      "speaker": "A",
      "zh": "周六见，小丽！晚安！",
      "pinyin": "Zhōuliù jiàn, Xiǎolì! Wǎn'ān!",
@@ -539,11 +573,12 @@
       "hook:goodnight"
      ]
     }
-   ]
+   ],
+   "parent": "ep1"
   },
   {
-   "id": "ep2",
-   "title": "식사",
+   "id": "ep2_1",
+   "title": "식사 ①",
    "emoji": "🍽️",
    "scenario": "첫 만남 식당 — 주문 · 매운맛 · 젓가락 · 계산 · 산책 제안",
    "turns": [
@@ -642,9 +677,18 @@
       "joke",
       "topic:korea"
      ]
-    },
+    }
+   ],
+   "parent": "ep2"
+  },
+  {
+   "id": "ep2_2",
+   "title": "식사 ②",
+   "emoji": "🍽️",
+   "scenario": "첫 만남 식당 — 주문 · 매운맛 · 젓가락 · 계산 · 산책 제안",
+   "turns": [
     {
-     "num": 9,
+     "num": 1,
      "speaker": "B",
      "zh": "那我们点最辣的吧，嘿嘿。",
      "pinyin": "Nà wǒmen diǎn zuì là de ba, hēihēi.",
@@ -656,7 +700,7 @@
      ]
     },
     {
-     "num": 10,
+     "num": 2,
      "speaker": "A",
      "zh": "等等，一半一半可以吗？",
      "pinyin": "Děngdeng, yíbàn yíbàn kěyǐ ma?",
@@ -668,7 +712,7 @@
      ]
     },
     {
-     "num": 11,
+     "num": 3,
      "speaker": "B",
      "zh": "哈哈，好，鸳鸯锅！",
      "pinyin": "Hāhā, hǎo, yuānyāng guō!",
@@ -680,7 +724,7 @@
      ]
     },
     {
-     "num": 12,
+     "num": 4,
      "speaker": "A",
      "zh": "服务员！点菜！",
      "pinyin": "Fúwùyuán! Diǎn cài!",
@@ -692,7 +736,7 @@
      ]
     },
     {
-     "num": 13,
+     "num": 5,
      "speaker": "B",
      "zh": "你的发音真不错嘛。",
      "pinyin": "Nǐ de fāyīn zhēn búcuò ma.",
@@ -704,7 +748,7 @@
      ]
     },
     {
-     "num": 14,
+     "num": 6,
      "speaker": "A",
      "zh": "我练了一个星期呢。",
      "pinyin": "Wǒ liàn le yí ge xīngqī ne.",
@@ -716,7 +760,7 @@
      ]
     },
     {
-     "num": 15,
+     "num": 7,
      "speaker": "B",
      "zh": "就为了今天？好可爱。",
      "pinyin": "Jiù wèile jīntiān? Hǎo kě'ài.",
@@ -728,7 +772,7 @@
      ]
     },
     {
-     "num": 16,
+     "num": 8,
      "speaker": "A",
      "zh": "别笑我啦，快点菜吧。",
      "pinyin": "Bié xiào wǒ la, kuài diǎn cài ba.",
@@ -738,9 +782,18 @@
       "tease",
       "particle:啦"
      ]
-    },
+    }
+   ],
+   "parent": "ep2"
+  },
+  {
+   "id": "ep2_3",
+   "title": "식사 ③",
+   "emoji": "🍽️",
+   "scenario": "첫 만남 식당 — 주문 · 매운맛 · 젓가락 · 계산 · 산책 제안",
+   "turns": [
     {
-     "num": 17,
+     "num": 1,
      "speaker": "B",
      "zh": "羊肉、牛肉、青菜，够吗？",
      "pinyin": "Yángròu, niúròu, qīngcài, gòu ma?",
@@ -752,7 +805,7 @@
      ]
     },
     {
-     "num": 18,
+     "num": 2,
      "speaker": "A",
      "zh": "再来一个土豆，我爱土豆。",
      "pinyin": "Zài lái yí ge tǔdòu, wǒ ài tǔdòu.",
@@ -764,7 +817,7 @@
      ]
     },
     {
-     "num": 19,
+     "num": 3,
      "speaker": "B",
      "zh": "好，再来两瓶可乐。",
      "pinyin": "Hǎo, zài lái liǎng píng kělè.",
@@ -776,7 +829,7 @@
      ]
     },
     {
-     "num": 20,
+     "num": 4,
      "speaker": "A",
      "zh": "哇，锅来了！好香啊！",
      "pinyin": "Wā, guō lái le! Hǎo xiāng a!",
@@ -788,7 +841,7 @@
      ]
     },
     {
-     "num": 21,
+     "num": 5,
      "speaker": "B",
      "zh": "小心，很烫！",
      "pinyin": "Xiǎoxīn, hěn tàng!",
@@ -800,7 +853,7 @@
      ]
     },
     {
-     "num": 22,
+     "num": 6,
      "speaker": "A",
      "zh": "没事，我不怕烫… 啊，烫！",
      "pinyin": "Méishì, wǒ bú pà tàng… a, tàng!",
@@ -812,7 +865,7 @@
      ]
     },
     {
-     "num": 23,
+     "num": 7,
      "speaker": "B",
      "zh": "哈哈哈，我说了吧！",
      "pinyin": "Hāhāhā, wǒ shuō le ba!",
@@ -824,7 +877,7 @@
      ]
     },
     {
-     "num": 24,
+     "num": 8,
      "speaker": "A",
      "zh": "给我一杯水，快快快！",
      "pinyin": "Gěi wǒ yì bēi shuǐ, kuài kuài kuài!",
@@ -834,9 +887,18 @@
       "joke",
       "function:给"
      ]
-    },
+    }
+   ],
+   "parent": "ep2"
+  },
+  {
+   "id": "ep2_4",
+   "title": "식사 ④",
+   "emoji": "🍽️",
+   "scenario": "첫 만남 식당 — 주문 · 매운맛 · 젓가락 · 계산 · 산책 제안",
+   "turns": [
     {
-     "num": 25,
+     "num": 1,
      "speaker": "B",
      "zh": "喝吧喝吧，慢点儿吃。",
      "pinyin": "Hē ba hē ba, màn diǎnr chī.",
@@ -848,7 +910,7 @@
      ]
     },
     {
-     "num": 26,
+     "num": 2,
      "speaker": "A",
      "zh": "这个牛肉真好吃！",
      "pinyin": "Zhège niúròu zhēn hǎochī!",
@@ -860,7 +922,7 @@
      ]
     },
     {
-     "num": 27,
+     "num": 3,
      "speaker": "B",
      "zh": "对吧？我常来这家。",
      "pinyin": "Duì ba? Wǒ cháng lái zhè jiā.",
@@ -872,7 +934,7 @@
      ]
     },
     {
-     "num": 28,
+     "num": 4,
      "speaker": "A",
      "zh": "和谁来？朋友吗？",
      "pinyin": "Hé shéi lái? Péngyou ma?",
@@ -884,7 +946,7 @@
      ]
     },
     {
-     "num": 29,
+     "num": 5,
      "speaker": "B",
      "zh": "怎么？你吃醋啦？",
      "pinyin": "Zěnme? Nǐ chīcù la?",
@@ -896,7 +958,7 @@
      ]
     },
     {
-     "num": 30,
+     "num": 6,
      "speaker": "A",
      "zh": "没有没有… 有一点。",
      "pinyin": "Méiyǒu méiyǒu… yǒu yìdiǎn.",
@@ -908,7 +970,7 @@
      ]
     },
     {
-     "num": 31,
+     "num": 7,
      "speaker": "B",
      "zh": "放心，都是女朋友，女的朋友。",
      "pinyin": "Fàngxīn, dōu shì nǚ péngyou, nǚ de péngyou.",
@@ -920,7 +982,7 @@
      ]
     },
     {
-     "num": 32,
+     "num": 8,
      "speaker": "A",
      "zh": "哈哈，中文太难了！",
      "pinyin": "Hāhā, zhōngwén tài nán le!",
@@ -930,9 +992,18 @@
       "joke",
       "topic:chinese"
      ]
-    },
+    }
+   ],
+   "parent": "ep2"
+  },
+  {
+   "id": "ep2_5",
+   "title": "식사 ⑤",
+   "emoji": "🍽️",
+   "scenario": "첫 만남 식당 — 주문 · 매운맛 · 젓가락 · 계산 · 산책 제안",
+   "turns": [
     {
-     "num": 33,
+     "num": 1,
      "speaker": "B",
      "zh": "慢慢学，我教你呀。",
      "pinyin": "Mànmàn xué, wǒ jiāo nǐ ya.",
@@ -944,7 +1015,7 @@
      ]
     },
     {
-     "num": 34,
+     "num": 2,
      "speaker": "A",
      "zh": "真的？那我天天找你。",
      "pinyin": "Zhēn de? Nà wǒ tiāntiān zhǎo nǐ.",
@@ -956,7 +1027,7 @@
      ]
     },
     {
-     "num": 35,
+     "num": 3,
      "speaker": "B",
      "zh": "看你的表现哦。",
      "pinyin": "Kàn nǐ de biǎoxiàn o.",
@@ -968,7 +1039,7 @@
      ]
     },
     {
-     "num": 36,
+     "num": 4,
      "speaker": "A",
      "zh": "服务员，买单！我请客。",
      "pinyin": "Fúwùyuán, mǎidān! Wǒ qǐngkè.",
@@ -980,7 +1051,7 @@
      ]
     },
     {
-     "num": 37,
+     "num": 5,
      "speaker": "B",
      "zh": "说好了，下次我请。",
      "pinyin": "Shuō hǎo le, xià cì wǒ qǐng.",
@@ -992,7 +1063,7 @@
      ]
     },
     {
-     "num": 38,
+     "num": 6,
      "speaker": "A",
      "zh": "下次？那就是还有下次！",
      "pinyin": "Xià cì? Nà jiùshì hái yǒu xià cì!",
@@ -1004,7 +1075,7 @@
      ]
     },
     {
-     "num": 39,
+     "num": 7,
      "speaker": "B",
      "zh": "吃饱了吗？我们去走走吧。",
      "pinyin": "Chī bǎo le ma? Wǒmen qù zǒuzou ba.",
@@ -1016,7 +1087,7 @@
      ]
     },
     {
-     "num": 40,
+     "num": 8,
      "speaker": "A",
      "zh": "好啊，今天月亮真好看。",
      "pinyin": "Hǎo a, jīntiān yuèliang zhēn hǎokàn.",
@@ -1027,11 +1098,12 @@
       "hook:moon"
      ]
     }
-   ]
+   ],
+   "parent": "ep2"
   },
   {
-   "id": "ep3",
-   "title": "가족",
+   "id": "ep3_1",
+   "title": "가족 ①",
    "emoji": "👨‍👩‍👧",
    "scenario": "공원 산책 — 가족 소개 · 고향 · 춘절 · 부모님 걱정 · 사진",
    "turns": [
@@ -1130,9 +1202,18 @@
       "hobby",
       "function:会"
      ]
-    },
+    }
+   ],
+   "parent": "ep3"
+  },
+  {
+   "id": "ep3_2",
+   "title": "가족 ②",
+   "emoji": "👨‍👩‍👧",
+   "scenario": "공원 산책 — 가족 소개 · 고향 · 춘절 · 부모님 걱정 · 사진",
+   "turns": [
     {
-     "num": 9,
+     "num": 1,
      "speaker": "B",
      "zh": "哇，会做饭的男人最帅！",
      "pinyin": "Wā, huì zuò fàn de nánrén zuì shuài!",
@@ -1144,7 +1225,7 @@
      ]
     },
     {
-     "num": 10,
+     "num": 2,
      "speaker": "A",
      "zh": "那我天天给你做，哈哈。",
      "pinyin": "Nà wǒ tiāntiān gěi nǐ zuò, hāhā.",
@@ -1156,7 +1237,7 @@
      ]
     },
     {
-     "num": 11,
+     "num": 3,
      "speaker": "A",
      "zh": "小丽，你家人都在北京吗？",
      "pinyin": "Xiǎolì, nǐ jiārén dōu zài Běijīng ma?",
@@ -1168,7 +1249,7 @@
      ]
     },
     {
-     "num": 12,
+     "num": 4,
      "speaker": "B",
      "zh": "不，我老家在四川。",
      "pinyin": "Bù, wǒ lǎojiā zài Sìchuān.",
@@ -1180,7 +1261,7 @@
      ]
     },
     {
-     "num": 13,
+     "num": 5,
      "speaker": "A",
      "zh": "四川！怪不得你能吃辣！",
      "pinyin": "Sìchuān! Guàibude nǐ néng chī là!",
@@ -1192,7 +1273,7 @@
      ]
     },
     {
-     "num": 14,
+     "num": 6,
      "speaker": "B",
      "zh": "哈哈，对，我们家无辣不欢。",
      "pinyin": "Hāhā, duì, wǒmen jiā wú là bù huān.",
@@ -1204,7 +1285,7 @@
      ]
     },
     {
-     "num": 15,
+     "num": 7,
      "speaker": "A",
      "zh": "你爸爸妈妈做什么的？",
      "pinyin": "Nǐ bàba māma zuò shénme de?",
@@ -1216,7 +1297,7 @@
      ]
     },
     {
-     "num": 16,
+     "num": 8,
      "speaker": "B",
      "zh": "开了一家小饭馆，三十年了。",
      "pinyin": "Kāi le yì jiā xiǎo fànguǎn, sānshí nián le.",
@@ -1226,9 +1307,18 @@
       "family",
       "hook:restaurant"
      ]
-    },
+    }
+   ],
+   "parent": "ep3"
+  },
+  {
+   "id": "ep3_3",
+   "title": "가족 ③",
+   "emoji": "👨‍👩‍👧",
+   "scenario": "공원 산책 — 가족 소개 · 고향 · 춘절 · 부모님 걱정 · 사진",
+   "turns": [
     {
-     "num": 17,
+     "num": 1,
      "speaker": "A",
      "zh": "难怪你这么懂吃！",
      "pinyin": "Nánguài nǐ zhème dǒng chī!",
@@ -1240,7 +1330,7 @@
      ]
     },
     {
-     "num": 18,
+     "num": 2,
      "speaker": "B",
      "zh": "小时候我天天在店里帮忙。",
      "pinyin": "Xiǎoshíhou wǒ tiāntiān zài diàn li bāngmáng.",
@@ -1252,7 +1342,7 @@
      ]
     },
     {
-     "num": 19,
+     "num": 3,
      "speaker": "A",
      "zh": "真好，我想去看看。",
      "pinyin": "Zhēn hǎo, wǒ xiǎng qù kànkan.",
@@ -1264,7 +1354,7 @@
      ]
     },
     {
-     "num": 20,
+     "num": 4,
      "speaker": "B",
      "zh": "去我老家？这么快见家长？",
      "pinyin": "Qù wǒ lǎojiā? Zhème kuài jiàn jiāzhǎng?",
@@ -1276,7 +1366,7 @@
      ]
     },
     {
-     "num": 21,
+     "num": 5,
      "speaker": "A",
      "zh": "啊，不是不是… 也是，嘿嘿。",
      "pinyin": "A, bú shì bú shì… yě shì, hēihēi.",
@@ -1288,7 +1378,7 @@
      ]
     },
     {
-     "num": 22,
+     "num": 6,
      "speaker": "B",
      "zh": "你脸红了！哈哈哈。",
      "pinyin": "Nǐ liǎn hóng le! Hāhāhā.",
@@ -1300,7 +1390,7 @@
      ]
     },
     {
-     "num": 23,
+     "num": 7,
      "speaker": "A",
      "zh": "是太阳太大了嘛！",
      "pinyin": "Shì tàiyáng tài dà le ma!",
@@ -1312,7 +1402,7 @@
      ]
     },
     {
-     "num": 24,
+     "num": 8,
      "speaker": "B",
      "zh": "现在是晚上哦，Mark。",
      "pinyin": "Xiànzài shì wǎnshang o, Mark.",
@@ -1322,9 +1412,18 @@
       "tease",
       "particle:哦"
      ]
-    },
+    }
+   ],
+   "parent": "ep3"
+  },
+  {
+   "id": "ep3_4",
+   "title": "가족 ④",
+   "emoji": "👨‍👩‍👧",
+   "scenario": "공원 산책 — 가족 소개 · 고향 · 춘절 · 부모님 걱정 · 사진",
+   "turns": [
     {
-     "num": 25,
+     "num": 1,
      "speaker": "A",
      "zh": "……月亮太大了。",
      "pinyin": "…… Yuèliang tài dà le.",
@@ -1336,7 +1435,7 @@
      ]
     },
     {
-     "num": 26,
+     "num": 2,
      "speaker": "B",
      "zh": "哈哈哈，你真的很有意思。",
      "pinyin": "Hāhāhā, nǐ zhēn de hěn yǒu yìsi.",
@@ -1348,7 +1447,7 @@
      ]
     },
     {
-     "num": 27,
+     "num": 3,
      "speaker": "A",
      "zh": "春节你回四川吗？",
      "pinyin": "Chūnjié nǐ huí Sìchuān ma?",
@@ -1360,7 +1459,7 @@
      ]
     },
     {
-     "num": 28,
+     "num": 4,
      "speaker": "B",
      "zh": "回，每年都回，吃年夜饭。",
      "pinyin": "Huí, měi nián dōu huí, chī niányèfàn.",
@@ -1372,7 +1471,7 @@
      ]
     },
     {
-     "num": 29,
+     "num": 5,
      "speaker": "A",
      "zh": "年夜饭都吃什么？",
      "pinyin": "Niányèfàn dōu chī shénme?",
@@ -1384,7 +1483,7 @@
      ]
     },
     {
-     "num": 30,
+     "num": 6,
      "speaker": "B",
      "zh": "饺子、鱼，鱼是'年年有余'。",
      "pinyin": "Jiǎozi, yú, yú shì 'nián nián yǒu yú'.",
@@ -1396,7 +1495,7 @@
      ]
     },
     {
-     "num": 31,
+     "num": 7,
      "speaker": "A",
      "zh": "哈哈，中文真有意思！",
      "pinyin": "Hāhā, zhōngwén zhēn yǒu yìsi!",
@@ -1408,7 +1507,7 @@
      ]
     },
     {
-     "num": 32,
+     "num": 8,
      "speaker": "B",
      "zh": "对了，给你看我家的照片。",
      "pinyin": "Duì le, gěi nǐ kàn wǒ jiā de zhàopiàn.",
@@ -1418,9 +1517,18 @@
       "family",
       "function:给"
      ]
-    },
+    }
+   ],
+   "parent": "ep3"
+  },
+  {
+   "id": "ep3_5",
+   "title": "가족 ⑤",
+   "emoji": "👨‍👩‍👧",
+   "scenario": "공원 산책 — 가족 소개 · 고향 · 춘절 · 부모님 걱정 · 사진",
+   "turns": [
     {
-     "num": 33,
+     "num": 1,
      "speaker": "A",
      "zh": "哇，你妈妈好年轻！",
      "pinyin": "Wā, nǐ māma hǎo niánqīng!",
@@ -1432,7 +1540,7 @@
      ]
     },
     {
-     "num": 34,
+     "num": 2,
      "speaker": "B",
      "zh": "大家都这么说，嘿嘿。",
      "pinyin": "Dàjiā dōu zhème shuō, hēihēi.",
@@ -1444,7 +1552,7 @@
      ]
     },
     {
-     "num": 35,
+     "num": 3,
      "speaker": "A",
      "zh": "你和妈妈长得很像。",
      "pinyin": "Nǐ hé māma zhǎng de hěn xiàng.",
@@ -1456,7 +1564,7 @@
      ]
     },
     {
-     "num": 36,
+     "num": 4,
      "speaker": "B",
      "zh": "其实… 我妈问过你的事。",
      "pinyin": "Qíshí… wǒ mā wèn guo nǐ de shì.",
@@ -1468,7 +1576,7 @@
      ]
     },
     {
-     "num": 37,
+     "num": 5,
      "speaker": "A",
      "zh": "真的吗？她说什么了？",
      "pinyin": "Zhēn de ma? Tā shuō shénme le?",
@@ -1480,7 +1588,7 @@
      ]
     },
     {
-     "num": 38,
+     "num": 6,
      "speaker": "B",
      "zh": "她问：外国人能相信吗？",
      "pinyin": "Tā wèn: wàiguó rén néng xiāngxìn ma?",
@@ -1492,7 +1600,7 @@
      ]
     },
     {
-     "num": 39,
+     "num": 7,
      "speaker": "A",
      "zh": "我会证明给她看的。",
      "pinyin": "Wǒ huì zhèngmíng gěi tā kàn de.",
@@ -1504,7 +1612,7 @@
      ]
     },
     {
-     "num": 40,
+     "num": 8,
      "speaker": "B",
      "zh": "嗯，我相信你。",
      "pinyin": "Ǹg, wǒ xiāngxìn nǐ.",
@@ -1515,11 +1623,12 @@
       "particle:嗯"
      ]
     }
-   ]
+   ],
+   "parent": "ep3"
   },
   {
-   "id": "ep4",
-   "title": "갈등",
+   "id": "ep4_1",
+   "title": "갈등 ①",
    "emoji": "⚡",
    "scenario": "연락 두절 오해 — 서운함 · 변명 · 질투 · 사과 · 화해 (반말 전환)",
    "turns": [
@@ -1618,9 +1727,18 @@
       "apology",
       "function:让"
      ]
-    },
+    }
+   ],
+   "parent": "ep4"
+  },
+  {
+   "id": "ep4_2",
+   "title": "갈등 ②",
+   "emoji": "⚡",
+   "scenario": "연락 두절 오해 — 서운함 · 변명 · 질투 · 사과 · 화해 (반말 전환)",
+   "turns": [
     {
-     "num": 9,
+     "num": 1,
      "speaker": "B",
      "zh": "还有一件事要问你。",
      "pinyin": "Hái yǒu yí jiàn shì yào wèn nǐ.",
@@ -1632,7 +1750,7 @@
      ]
     },
     {
-     "num": 10,
+     "num": 2,
      "speaker": "A",
      "zh": "你说，我都告诉你。",
      "pinyin": "Nǐ shuō, wǒ dōu gàosu nǐ.",
@@ -1644,7 +1762,7 @@
      ]
     },
     {
-     "num": 11,
+     "num": 3,
      "speaker": "B",
      "zh": "昨天有人看见你和一个女生。",
      "pinyin": "Zuótiān yǒu rén kànjiàn nǐ hé yí ge nǚshēng.",
@@ -1656,7 +1774,7 @@
      ]
     },
     {
-     "num": 12,
+     "num": 4,
      "speaker": "A",
      "zh": "女生？啊！那是我同事！",
      "pinyin": "Nǚshēng? A! Nà shì wǒ tóngshì!",
@@ -1668,7 +1786,7 @@
      ]
     },
     {
-     "num": 13,
+     "num": 5,
      "speaker": "B",
      "zh": "同事？这么晚一起吃饭？",
      "pinyin": "Tóngshì? Zhème wǎn yìqǐ chī fàn?",
@@ -1680,7 +1798,7 @@
      ]
     },
     {
-     "num": 14,
+     "num": 6,
      "speaker": "A",
      "zh": "是加班餐，五个人一起！",
      "pinyin": "Shì jiābān cān, wǔ ge rén yìqǐ!",
@@ -1692,7 +1810,7 @@
      ]
     },
     {
-     "num": 15,
+     "num": 7,
      "speaker": "B",
      "zh": "真的只是同事？",
      "pinyin": "Zhēn de zhǐshì tóngshì?",
@@ -1704,7 +1822,7 @@
      ]
     },
     {
-     "num": 16,
+     "num": 8,
      "speaker": "A",
      "zh": "真的！我心里只有你。",
      "pinyin": "Zhēn de! Wǒ xīnli zhǐ yǒu nǐ.",
@@ -1714,9 +1832,18 @@
       "confession",
       "function:有"
      ]
-    },
+    }
+   ],
+   "parent": "ep4"
+  },
+  {
+   "id": "ep4_3",
+   "title": "갈등 ③",
+   "emoji": "⚡",
+   "scenario": "연락 두절 오해 — 서운함 · 변명 · 질투 · 사과 · 화해 (반말 전환)",
+   "turns": [
     {
-     "num": 17,
+     "num": 1,
      "speaker": "B",
      "zh": "……你刚才说什么？",
      "pinyin": "…… Nǐ gāngcái shuō shénme?",
@@ -1728,7 +1855,7 @@
      ]
     },
     {
-     "num": 18,
+     "num": 2,
      "speaker": "A",
      "zh": "我说，我心里只有你。",
      "pinyin": "Wǒ shuō, wǒ xīnli zhǐ yǒu nǐ.",
@@ -1740,7 +1867,7 @@
      ]
     },
     {
-     "num": 19,
+     "num": 3,
      "speaker": "B",
      "zh": "哼，现在说这个没用。",
      "pinyin": "Hēng, xiànzài shuō zhège méi yòng.",
@@ -1752,7 +1879,7 @@
      ]
     },
     {
-     "num": 20,
+     "num": 4,
      "speaker": "A",
      "zh": "那我怎么做你才原谅我？",
      "pinyin": "Nà wǒ zěnme zuò nǐ cái yuánliàng wǒ?",
@@ -1764,7 +1891,7 @@
      ]
     },
     {
-     "num": 21,
+     "num": 5,
      "speaker": "B",
      "zh": "让我想想… 请我吃火锅。",
      "pinyin": "Ràng wǒ xiǎngxiang… qǐng wǒ chī huǒguō.",
@@ -1776,7 +1903,7 @@
      ]
     },
     {
-     "num": 22,
+     "num": 6,
      "speaker": "A",
      "zh": "没问题！最辣的那家！",
      "pinyin": "Méi wèntí! Zuì là de nà jiā!",
@@ -1788,7 +1915,7 @@
      ]
     },
     {
-     "num": 23,
+     "num": 7,
      "speaker": "B",
      "zh": "还有，以后每天发消息。",
      "pinyin": "Hái yǒu, yǐhòu měi tiān fā xiāoxi.",
@@ -1800,7 +1927,7 @@
      ]
     },
     {
-     "num": 24,
+     "num": 8,
      "speaker": "A",
      "zh": "一天三次，早中晚！",
      "pinyin": "Yì tiān sān cì, zǎo zhōng wǎn!",
@@ -1810,9 +1937,18 @@
       "promise",
       "joke"
      ]
-    },
+    }
+   ],
+   "parent": "ep4"
+  },
+  {
+   "id": "ep4_4",
+   "title": "갈등 ④",
+   "emoji": "⚡",
+   "scenario": "연락 두절 오해 — 서운함 · 변명 · 질투 · 사과 · 화해 (반말 전환)",
+   "turns": [
     {
-     "num": 25,
+     "num": 1,
      "speaker": "B",
      "zh": "哈哈，你像吃药一样。",
      "pinyin": "Hāhā, nǐ xiàng chī yào yíyàng.",
@@ -1824,7 +1960,7 @@
      ]
     },
     {
-     "num": 26,
+     "num": 2,
      "speaker": "A",
      "zh": "你就是我的药嘛。",
      "pinyin": "Nǐ jiùshì wǒ de yào ma.",
@@ -1836,7 +1972,7 @@
      ]
     },
     {
-     "num": 27,
+     "num": 3,
      "speaker": "B",
      "zh": "哎呀，好肉麻！",
      "pinyin": "Āiyā, hǎo ròumá!",
@@ -1848,7 +1984,7 @@
      ]
     },
     {
-     "num": 28,
+     "num": 4,
      "speaker": "A",
      "zh": "肉麻？这是什么意思？",
      "pinyin": "Ròumá? Zhè shì shénme yìsi?",
@@ -1860,7 +1996,7 @@
      ]
     },
     {
-     "num": 29,
+     "num": 5,
      "speaker": "B",
      "zh": "就是……太甜了，受不了！",
      "pinyin": "Jiùshì…… tài tián le, shòu bu liǎo!",
@@ -1872,7 +2008,7 @@
      ]
     },
     {
-     "num": 30,
+     "num": 6,
      "speaker": "A",
      "zh": "那我以后天天肉麻。",
      "pinyin": "Nà wǒ yǐhòu tiāntiān ròumá.",
@@ -1884,7 +2020,7 @@
      ]
     },
     {
-     "num": 31,
+     "num": 7,
      "speaker": "B",
      "zh": "饶了我吧！哈哈哈。",
      "pinyin": "Ráo le wǒ ba! Hāhāhā.",
@@ -1896,7 +2032,7 @@
      ]
     },
     {
-     "num": 32,
+     "num": 8,
      "speaker": "A",
      "zh": "所以… 你原谅我了？",
      "pinyin": "Suǒyǐ… nǐ yuánliàng wǒ le?",
@@ -1906,9 +2042,18 @@
       "apology",
       "function:了"
      ]
-    },
+    }
+   ],
+   "parent": "ep4"
+  },
+  {
+   "id": "ep4_5",
+   "title": "갈등 ⑤",
+   "emoji": "⚡",
+   "scenario": "연락 두절 오해 — 서운함 · 변명 · 질투 · 사과 · 화해 (반말 전환)",
+   "turns": [
     {
-     "num": 33,
+     "num": 1,
      "speaker": "B",
      "zh": "这次原谅你，没有下次哦。",
      "pinyin": "Zhè cì yuánliàng nǐ, méiyǒu xià cì o.",
@@ -1920,7 +2065,7 @@
      ]
     },
     {
-     "num": 34,
+     "num": 2,
      "speaker": "A",
      "zh": "谢谢老婆… 啊不，小丽！",
      "pinyin": "Xièxie lǎopó… a bù, Xiǎolì!",
@@ -1932,7 +2077,7 @@
      ]
     },
     {
-     "num": 35,
+     "num": 3,
      "speaker": "B",
      "zh": "你、你刚叫我什么？！",
      "pinyin": "Nǐ, nǐ gāng jiào wǒ shénme?!",
@@ -1944,7 +2089,7 @@
      ]
     },
     {
-     "num": 36,
+     "num": 4,
      "speaker": "A",
      "zh": "口误！中文太难了！",
      "pinyin": "Kǒuwù! Zhōngwén tài nán le!",
@@ -1956,7 +2101,7 @@
      ]
     },
     {
-     "num": 37,
+     "num": 5,
      "speaker": "B",
      "zh": "哼，我看你是故意的。",
      "pinyin": "Hēng, wǒ kàn nǐ shì gùyì de.",
@@ -1968,7 +2113,7 @@
      ]
     },
     {
-     "num": 38,
+     "num": 6,
      "speaker": "A",
      "zh": "被你发现了，嘿嘿。",
      "pinyin": "Bèi nǐ fāxiàn le, hēihēi.",
@@ -1980,7 +2125,7 @@
      ]
     },
     {
-     "num": 39,
+     "num": 7,
      "speaker": "B",
      "zh": "真拿你没办法。",
      "pinyin": "Zhēn ná nǐ méi bànfǎ.",
@@ -1992,7 +2137,7 @@
      ]
     },
     {
-     "num": 40,
+     "num": 8,
      "speaker": "A",
      "zh": "和好了？拉钩！",
      "pinyin": "Héhǎo le? Lāgōu!",
@@ -2003,11 +2148,12 @@
       "culture"
      ]
     }
-   ]
+   ],
+   "parent": "ep4"
   },
   {
-   "id": "ep5",
-   "title": "미래",
+   "id": "ep5_1",
+   "title": "미래 ①",
    "emoji": "🌅",
    "scenario": "관계 확정 — 장래 계획 · 언어 교환 · 부모님 인사 약속 · 고백",
    "turns": [
@@ -2106,9 +2252,18 @@
       "listen",
       "particle:呢"
      ]
-    },
+    }
+   ],
+   "parent": "ep5"
+  },
+  {
+   "id": "ep5_2",
+   "title": "미래 ②",
+   "emoji": "🌅",
+   "scenario": "관계 확정 — 장래 계획 · 언어 교환 · 부모님 인사 약속 · 고백",
+   "turns": [
     {
-     "num": 9,
+     "num": 1,
      "speaker": "A",
      "zh": "明年我可能回韩国工作。",
      "pinyin": "Míngnián wǒ kěnéng huí Hánguó gōngzuò.",
@@ -2120,7 +2275,7 @@
      ]
     },
     {
-     "num": 10,
+     "num": 2,
      "speaker": "B",
      "zh": "……什么时候决定的？",
      "pinyin": "…… Shénme shíhou juédìng de?",
@@ -2132,7 +2287,7 @@
      ]
     },
     {
-     "num": 11,
+     "num": 3,
      "speaker": "A",
      "zh": "还没决定，所以想问你。",
      "pinyin": "Hái méi juédìng, suǒyǐ xiǎng wèn nǐ.",
@@ -2144,7 +2299,7 @@
      ]
     },
     {
-     "num": 12,
+     "num": 4,
      "speaker": "B",
      "zh": "问我？这是你的工作呀。",
      "pinyin": "Wèn wǒ? Zhè shì nǐ de gōngzuò ya.",
@@ -2156,7 +2311,7 @@
      ]
     },
     {
-     "num": 13,
+     "num": 5,
      "speaker": "A",
      "zh": "因为我的未来里有你。",
      "pinyin": "Yīnwèi wǒ de wèilái li yǒu nǐ.",
@@ -2168,7 +2323,7 @@
      ]
     },
     {
-     "num": 14,
+     "num": 6,
      "speaker": "B",
      "zh": "Mark……",
      "pinyin": "Mark……",
@@ -2179,7 +2334,7 @@
      ]
     },
     {
-     "num": 15,
+     "num": 7,
      "speaker": "A",
      "zh": "如果我留在中国，你开心吗？",
      "pinyin": "Rúguǒ wǒ liú zài Zhōngguó, nǐ kāixīn ma?",
@@ -2191,7 +2346,7 @@
      ]
     },
     {
-     "num": 16,
+     "num": 8,
      "speaker": "B",
      "zh": "当然开心，可是……",
      "pinyin": "Dāngrán kāixīn, kěshì……",
@@ -2201,9 +2356,18 @@
       "feeling",
       "function:可是"
      ]
-    },
+    }
+   ],
+   "parent": "ep5"
+  },
+  {
+   "id": "ep5_3",
+   "title": "미래 ③",
+   "emoji": "🌅",
+   "scenario": "관계 확정 — 장래 계획 · 언어 교환 · 부모님 인사 약속 · 고백",
+   "turns": [
     {
-     "num": 17,
+     "num": 1,
      "speaker": "A",
      "zh": "可是什么？告诉我。",
      "pinyin": "Kěshì shénme? Gàosu wǒ.",
@@ -2215,7 +2379,7 @@
      ]
     },
     {
-     "num": 18,
+     "num": 2,
      "speaker": "B",
      "zh": "我不想你为我放弃什么。",
      "pinyin": "Wǒ bù xiǎng nǐ wèi wǒ fàngqì shénme.",
@@ -2227,7 +2391,7 @@
      ]
     },
     {
-     "num": 19,
+     "num": 3,
      "speaker": "A",
      "zh": "留在你身边不是放弃。",
      "pinyin": "Liú zài nǐ shēnbiān bú shì fàngqì.",
@@ -2239,7 +2403,7 @@
      ]
     },
     {
-     "num": 20,
+     "num": 4,
      "speaker": "A",
      "zh": "是选择。",
      "pinyin": "Shì xuǎnzé.",
@@ -2251,7 +2415,7 @@
      ]
     },
     {
-     "num": 21,
+     "num": 5,
      "speaker": "B",
      "zh": "你什么时候变得这么会说话？",
      "pinyin": "Nǐ shénme shíhou biàn de zhème huì shuōhuà?",
@@ -2263,7 +2427,7 @@
      ]
     },
     {
-     "num": 22,
+     "num": 6,
      "speaker": "A",
      "zh": "跟你学的呀。",
      "pinyin": "Gēn nǐ xué de ya.",
@@ -2275,7 +2439,7 @@
      ]
     },
     {
-     "num": 23,
+     "num": 7,
      "speaker": "B",
      "zh": "那以后我教你韩语吧… 啊不对！",
      "pinyin": "Nà yǐhòu wǒ jiāo nǐ Hányǔ ba… a bú duì!",
@@ -2287,7 +2451,7 @@
      ]
     },
     {
-     "num": 24,
+     "num": 8,
      "speaker": "A",
      "zh": "哈哈，你教我中文，我教你韩语！",
      "pinyin": "Hāhā, nǐ jiāo wǒ zhōngwén, wǒ jiāo nǐ Hányǔ!",
@@ -2297,9 +2461,18 @@
       "plan",
       "hook:exchange"
      ]
-    },
+    }
+   ],
+   "parent": "ep5"
+  },
+  {
+   "id": "ep5_4",
+   "title": "미래 ④",
+   "emoji": "🌅",
+   "scenario": "관계 확정 — 장래 계획 · 언어 교환 · 부모님 인사 약속 · 고백",
+   "turns": [
     {
-     "num": 25,
+     "num": 1,
      "speaker": "B",
      "zh": "一言为定！",
      "pinyin": "Yì yán wéi dìng!",
@@ -2311,7 +2484,7 @@
      ]
     },
     {
-     "num": 26,
+     "num": 2,
      "speaker": "A",
      "zh": "先教你一句：사랑해。",
      "pinyin": "Xiān jiāo nǐ yí jù: saranghae.",
@@ -2323,7 +2496,7 @@
      ]
     },
     {
-     "num": 27,
+     "num": 3,
      "speaker": "B",
      "zh": "什么意思？",
      "pinyin": "Shénme yìsi?",
@@ -2335,7 +2508,7 @@
      ]
     },
     {
-     "num": 28,
+     "num": 4,
      "speaker": "A",
      "zh": "就是——我爱你。",
      "pinyin": "Jiùshì —— wǒ ài nǐ.",
@@ -2347,7 +2520,7 @@
      ]
     },
     {
-     "num": 29,
+     "num": 5,
      "speaker": "B",
      "zh": "……我也是。",
      "pinyin": "…… Wǒ yě shì.",
@@ -2359,7 +2532,7 @@
      ]
     },
     {
-     "num": 30,
+     "num": 6,
      "speaker": "B",
      "zh": "사랑해，说得对吗？",
      "pinyin": "Saranghae, shuō de duì ma?",
@@ -2371,7 +2544,7 @@
      ]
     },
     {
-     "num": 31,
+     "num": 7,
      "speaker": "A",
      "zh": "完美！一百分！",
      "pinyin": "Wánměi! Yìbǎi fēn!",
@@ -2383,7 +2556,7 @@
      ]
     },
     {
-     "num": 32,
+     "num": 8,
      "speaker": "B",
      "zh": "那… 你要见我爸妈吗？",
      "pinyin": "Nà… nǐ yào jiàn wǒ bà mā ma?",
@@ -2393,9 +2566,18 @@
       "family",
       "callback:ep3"
      ]
-    },
+    }
+   ],
+   "parent": "ep5"
+  },
+  {
+   "id": "ep5_5",
+   "title": "미래 ⑤",
+   "emoji": "🌅",
+   "scenario": "관계 확정 — 장래 계획 · 언어 교환 · 부모님 인사 약속 · 고백",
+   "turns": [
     {
-     "num": 33,
+     "num": 1,
      "speaker": "A",
      "zh": "见！春节一起回四川！",
      "pinyin": "Jiàn! Chūnjié yìqǐ huí Sìchuān!",
@@ -2407,7 +2589,7 @@
      ]
     },
     {
-     "num": 34,
+     "num": 2,
      "speaker": "B",
      "zh": "我爸会考你中文的哦。",
      "pinyin": "Wǒ bà huì kǎo nǐ zhōngwén de o.",
@@ -2419,7 +2601,7 @@
      ]
     },
     {
-     "num": 35,
+     "num": 3,
      "speaker": "A",
      "zh": "没问题，我现在开始复习！",
      "pinyin": "Méi wèntí, wǒ xiànzài kāishǐ fùxí!",
@@ -2431,7 +2613,7 @@
      ]
     },
     {
-     "num": 36,
+     "num": 4,
      "speaker": "B",
      "zh": "先复习最重要的一句。",
      "pinyin": "Xiān fùxí zuì zhòngyào de yí jù.",
@@ -2443,7 +2625,7 @@
      ]
     },
     {
-     "num": 37,
+     "num": 5,
      "speaker": "A",
      "zh": "哪一句？",
      "pinyin": "Nǎ yí jù?",
@@ -2454,7 +2636,7 @@
      ]
     },
     {
-     "num": 38,
+     "num": 6,
      "speaker": "B",
      "zh": "叔叔阿姨好，我是小丽的男朋友。",
      "pinyin": "Shūshu āyí hǎo, wǒ shì Xiǎolì de nán péngyou.",
@@ -2466,7 +2648,7 @@
      ]
     },
     {
-     "num": 39,
+     "num": 7,
      "speaker": "A",
      "zh": "男朋友…！我马上背下来！",
      "pinyin": "Nán péngyou…! Wǒ mǎshàng bèi xiàlái!",
@@ -2478,7 +2660,7 @@
      ]
     },
     {
-     "num": 40,
+     "num": 8,
      "speaker": "B",
      "zh": "傻瓜，以后的路还长呢。",
      "pinyin": "Shǎguā, yǐhòu de lù hái cháng ne.",
@@ -2489,7 +2671,8 @@
       "particle:呢"
      ]
     }
-   ]
+   ],
+   "parent": "ep5"
   }
  ]
 }
