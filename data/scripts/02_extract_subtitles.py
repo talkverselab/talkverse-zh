@@ -3,7 +3,7 @@ Extract subtitle text from kept movies' XML files into a single text corpus.
 
 Input:
 - meta/movies_classified.tsv  (column 'keep' = "1" means include)
-- raw/OpenSubtitles/raw/zh_cn/{year}/{imdb_id}/*.xml
+- raw/공개 말뭉치/raw/zh_cn/{year}/{imdb_id}/*.xml
 
 Output:
 - text/corpus_kept.txt        (one subtitle line per file line, blank lines between files)
@@ -29,7 +29,7 @@ import time
 from xml.etree import ElementTree as ET
 
 ROOT = r"D:/OneDrive/DATA_Processed/zh_opus"
-RAW_DIR = os.path.join(ROOT, "raw", "OpenSubtitles", "raw", "zh_cn")
+RAW_DIR = os.path.join(ROOT, "raw", "공개 말뭉치", "raw", "zh_cn")
 META_TSV = os.path.join(ROOT, "meta", "movies_classified.tsv")
 OUT_CORPUS = os.path.join(ROOT, "text", "corpus_kept.txt")
 OUT_STATS  = os.path.join(ROOT, "text", "corpus_kept.stats.tsv")

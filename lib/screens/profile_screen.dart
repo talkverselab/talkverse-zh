@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'update_screen.dart';
+
 import '../core/theme.dart';
 import '../widgets/chinese_decor.dart';
 
@@ -14,6 +16,7 @@ class ProfileScreen extends StatelessWidget {
       body: ListView(
         padding: const EdgeInsets.all(16),
         children: [
+          const UpdateEntryTile(),
           Container(
             padding: const EdgeInsets.all(18),
             decoration: BoxDecoration(

@@ -3,7 +3,7 @@ Extract subtitle text for Phase 4 (drama / romance) analysis.
 
 Inputs:
 - meta/_drama/series_classified.tsv  (with content_type, is_modern_drama, is_romance)
-- raw/OpenSubtitles/raw/zh_cn/{year}/{folder_id}/*.xml
+- raw/공개 말뭉치/raw/zh_cn/{year}/{folder_id}/*.xml
 
 Outputs (in text/_drama/):
 - corpus_modern_drama.txt        all modern (non-costume) tv_drama folders
@@ -26,7 +26,7 @@ import time
 from xml.etree import ElementTree as ET
 
 ROOT = r"D:/OneDrive/DATA_Processed/zh_opus"
-RAW_DIR = os.path.join(ROOT, "raw", "OpenSubtitles", "raw", "zh_cn")
+RAW_DIR = os.path.join(ROOT, "raw", "공개 말뭉치", "raw", "zh_cn")
 META_TSV = os.path.join(ROOT, "meta", "_drama", "series_classified.tsv")
 OUT_DIR = os.path.join(ROOT, "text", "_drama")
 os.makedirs(OUT_DIR, exist_ok=True)

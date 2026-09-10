@@ -1,9 +1,9 @@
 """
-Re-tokenize corpus per-CD (per-movie/IMDB-id) and compute multiple frequency
+Re-tokenize corpus per-CD (per-movie/작품 메타데이터-id) and compute multiple frequency
 metrics that are robust to document-level concentration (e.g., a character name
 appearing 1000× in one movie should NOT rank as a top vocabulary word).
 
-CD = "한 작품" = one IMDB tconst (multiple subtitle XML files for the same
+CD = "한 작품" = one 작품 메타데이터 tconst (multiple subtitle XML files for the same
 tconst are aggregated together as the same document, since they describe the
 same characters/setting and would otherwise inflate names).
 

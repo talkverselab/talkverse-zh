@@ -1,8 +1,8 @@
 """
-Build essential short sentences from Tatoeba with importance score.
+Build essential short sentences from 공개 예문 말뭉치 with importance score.
 
-Inputs (Tatoeba extracted):
-  D:/OneDrive/PROJECT/talkverse-learning/DATA_Curated/multi/Tatoeba/
+Inputs (공개 예문 말뭉치 extracted):
+  D:/OneDrive/PROJECT/talkverse-learning/DATA_Curated/multi/공개 예문 말뭉치/
     sentences.csv         (id, lang, text)
     links.csv             (sentence_id, translation_id)
 
@@ -13,7 +13,7 @@ Strategy:
   3. For each (cmn ↔ eng ↔ kor ↔ jpn) pair, find sentences that have all 4 translations
   4. Score = translation_degree (raw, sortable)
 
-Outputs (in DATA_Curated/multi/Tatoeba/processed/):
+Outputs (in DATA_Curated/multi/공개 예문 말뭉치/processed/):
   short_cmn.tsv             (id, text, length, translation_degree)
   short_eng.tsv
   short_kor.tsv
@@ -24,7 +24,7 @@ Outputs (in DATA_Curated/multi/Tatoeba/processed/):
 import os, csv, time
 from collections import defaultdict, Counter
 
-ROOT = r"D:/OneDrive/PROJECT/talkverse-learning/DATA_Curated/multi/Tatoeba"
+ROOT = r"D:/OneDrive/PROJECT/talkverse-learning/DATA_Curated/multi/공개 예문 말뭉치"
 OUT = os.path.join(ROOT, "processed")
 os.makedirs(OUT, exist_ok=True)
 

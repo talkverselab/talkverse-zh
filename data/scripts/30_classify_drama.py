@@ -1,5 +1,5 @@
 """
-Re-classify the OpenSubtitles zh_cn folders for the romance/drama analysis (L4).
+Re-classify the 공개 말뭉치 zh_cn folders for the romance/drama analysis (L4).
 
 Strategy:
 - For tvEpisode rows in movies_classified.tsv, look up the parent series via

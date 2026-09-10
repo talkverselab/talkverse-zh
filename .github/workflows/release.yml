@@ -1,0 +1,74 @@
+name: Release APK
+
+on:
+  push:
+    branches: [__BRANCH__]
+    # 문서만 고친 푸시는 빌드하지 않는다 (앱에 헛된 "새 빌드" 알림 방지)
+    paths-ignore:
+      - '**.md'
+      - '.gitignore'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          cache: true
+
+      # 폰에 이미 깔린 앱과 같은 키로 서명해야 덮어쓰기 설치가 된다.
+      - name: Restore signing key
+        run: |
+          echo "${{ secrets.ANDROID_KEYSTORE_BASE64 }}" | base64 -d > android/app/upload-keystore.jks
+          cat > android/key.properties <<EOF
+          storePassword=${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
+          keyPassword=${{ secrets.ANDROID_KEY_PASSWORD }}
+          keyAlias=${{ secrets.ANDROID_KEY_ALIAS }}
+          storeFile=upload-keystore.jks
+          EOF
+
+      - run: flutter pub get
+
+      # 빌드 번호 = 워크플로 실행 번호 → 앱이 자기 빌드와 견주어 새 빌드를 판단한다
+      - name: Build APK
+        run: flutter build apk --release --build-number=${{ github.run_number }}
+
+      - name: Collect release files
+        id: meta
+        run: |
+          cp build/app/outputs/flutter-apk/app-release.apk app-latest.apk
+          VER=$(grep '^version:' pubspec.yaml | sed 's/version: *//' | cut -d+ -f1)
+          NOTES=$(git log -1 --pretty=%s)
+          SIZE=$(stat -c%s app-latest.apk)
+          DATE=$(date -u +%Y-%m-%dT%H:%M:%SZ)
+          jq -n --arg version "$VER" --argjson build ${{ github.run_number }} --arg sha "${GITHUB_SHA:0:7}" --arg date "$DATE" --arg notes "$NOTES" --argjson size "$SIZE" '{version:$version, build:$build, sha:$sha, date:$date, notes:$notes, size:$size}' > latest.json
+          cat latest.json
+          echo "ver=$VER" >> "$GITHUB_OUTPUT"
+          echo "notes=$NOTES" >> "$GITHUB_OUTPUT"
+
+      - name: Update rolling "latest" release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: latest
+          name: 최신 빌드
+          body: |
+            버전 ${{ steps.meta.outputs.ver }} · 빌드 ${{ github.run_number }}
+            ${{ steps.meta.outputs.notes }}
+
+            앱의 「프로필 · 설정 → 앱 업데이트」에서 바로 받아 설치할 수 있습니다.
+          make_latest: true
+          files: |
+            app-latest.apk
+            latest.json

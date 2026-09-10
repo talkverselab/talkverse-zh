@@ -112,7 +112,7 @@ Turn JSON:
 | B | `apps/zh-lab/assets/conv200_north.json` + `chat_dialogues_north.json` | `assets/data/dialogues/` |
 | C | github `talkverse-learning-flavors` (refactor/th-flavor-init): hsk_full_1500 / phonetic_roots_200 / core_hanzi_209 / tone_matrix_160 / hanzi_clusters / l1_10day | `assets/data/hanzi/` |
 | D | BOOKS/_assets/data/lang_zh_top2500.csv | `assets/data/wordsets/` |
-| E | DATA_Raw/languages/zh/ (LCCC, opensubtitles, kuroneko5943) | `data/corpus/` (.gitignore) |
+| E | DATA_Raw/languages/zh/ (LCCC, 공개 말뭉치, kuroneko5943) | `data/corpus/` (.gitignore) |
 | F | seed_zh.sql (옛 노트북 빌드 Drift seed) | `assets/data/db/` |
 
 ---
@@ -135,3 +135,20 @@ Turn JSON:
 - `content-plan.md` — L1·L2·L3 콘텐츠 로드맵
 - `build.md` — 빌드 가이드
 - `decisions/` — 결정 로그
+
+## 배포 · 앱 업데이트 (2026-09-10 통일)
+
+- **리포 이름**: `talkverselab/talkverse-zh` (이전 `chinese-universe` — GitHub 리다이렉트되지만 remote를 새 이름으로 바꿔 두세요)
+  ```
+  git remote set-url origin https://github.com/talkverselab/talkverse-zh.git
+  ```
+- **푸시하면 자동 배포**: master 푸시 → GitHub Actions가 서명된 APK와 `latest.json`을 `latest` 릴리스에 올립니다.
+  `**.md`만 바꾼 푸시는 빌드하지 않습니다.
+- **폰에서 업데이트**: 앱의 설정(프로필) 화면 → **「앱 업데이트」** → 최신 빌드 확인 → 내려받아 설치.
+  케이블·adb 없이 갱신됩니다. 첫 설치 때 한 번 「출처를 알 수 없는 앱 설치」 허용이 필요합니다.
+- **빌드 번호**는 CI 실행 번호(`--build-number`)입니다. 로컬 `flutter build apk`로 만든 APK는
+  pubspec의 작은 번호를 쓰므로 앱이 늘 "새 빌드 있음"으로 표시합니다 — 정상입니다.
+- 관련 파일: `lib/services/update_service.dart`, `lib/screens/update_screen.dart`,
+  `android/app/src/main/kotlin/**/MainActivity.kt`, `android/app/src/main/res/xml/file_paths.xml`,
+  `.github/workflows/release.yml`
+- 구현 안내서: https://github.com/talkverselab/talkverse-th/blob/master/docs/in-app-update-via-github.md

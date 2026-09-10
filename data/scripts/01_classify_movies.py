@@ -1,6 +1,6 @@
 """
-Classify zh_cn opensubtitles movies using IMDB metadata.
-- folder name -> IMDB tconst (zero-padded to 7 digits, prefixed with 'tt')
+Classify zh_cn 공개 말뭉치 movies using 작품 메타데이터 metadata.
+- folder name -> 작품 메타데이터 tconst (zero-padded to 7 digits, prefixed with 'tt')
 - Read title.basics.tsv.gz for genres / originalTitle / startYear
 - Read title.akas.tsv.gz for regions (CN/HK/TW/US/etc.) and language codes
 - Heuristics:
@@ -25,7 +25,7 @@ import glob
 from collections import defaultdict
 
 ROOT = r"D:/OneDrive/DATA_Processed/zh_opus"
-RAW_DIR = os.path.join(ROOT, "raw", "OpenSubtitles", "raw", "zh_cn")
+RAW_DIR = os.path.join(ROOT, "raw", "공개 말뭉치", "raw", "zh_cn")
 META_DIR = os.path.join(ROOT, "meta")
 OUT_TSV = os.path.join(META_DIR, "movies_classified.tsv")
 
@@ -157,7 +157,7 @@ with open(OUT_TSV, "w", encoding="utf-8", newline="") as out:
         langs   = sorted(akas_langs.get(tconst, set()))
         if not b:
             count_no_basics += 1
-            # If no IMDB basics, we cannot classify. Keep but flag.
+            # If no 작품 메타데이터 basics, we cannot classify. Keep but flag.
             w.writerow([year, imdb_id, tconst, "", "", "", "", "",
                         ",".join(regions), ",".join(langs),
                         "0", "0", "0", "1"])
@@ -208,7 +208,7 @@ with open(OUT_TSV, "w", encoding="utf-8", newline="") as out:
 
 print()
 print(f"[summary] total folders     : {count_total}")
-print(f"[summary] no IMDB basics    : {count_no_basics} (kept as unknown)")
+print(f"[summary] no 작품 메타데이터 basics    : {count_no_basics} (kept as unknown)")
 print(f"[summary] foreign movie     : {count_foreign}")
 print(f"[summary] hong kong movie   : {count_hk}")
 print(f"[summary] wuxia (heuristic) : {count_wuxia}")
