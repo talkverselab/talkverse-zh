@@ -85,9 +85,13 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
           IconButton(icon: const Icon(Icons.bookmark_outline, color: AppColors.mo), onPressed: () {}),
         ],
       ),
-      body: _loading || _cards.isEmpty
-          ? const Center(child: CircularProgressIndicator(color: AppColors.zhuHong))
-          : _buildBody(),
+      body: SafeArea(
+        // 아이폰 홈 표시줄·갤럭시 제스처 바 아래로 내용이 깔리지 않게
+        top: false,
+        child: _loading || _cards.isEmpty
+            ? const Center(child: CircularProgressIndicator(color: AppColors.zhuHong))
+            : _buildBody(),
+      ),
     );
   }
 

@@ -219,72 +219,76 @@ class _TopicVocabScreenState extends State<TopicVocabScreen> {
           ],
         ),
       ),
-      body: _loading
-          ? const Center(child: CircularProgressIndicator(color: AppColors.zhuHong))
-          : Column(
-              children: [
-                const GreekKeyDivider(height: 8),
-                Expanded(
-                  child: GridView.builder(
-                    padding: const EdgeInsets.fromLTRB(16, 12, 16, 24),
-                    gridDelegate:
-                        const SliverGridDelegateWithFixedCrossAxisCount(
-                      crossAxisCount: 2,
-                      mainAxisSpacing: 10,
-                      crossAxisSpacing: 10,
-                      childAspectRatio: 1.5,
+      body: SafeArea(
+        // 아이폰 홈 표시줄·갤럭시 제스처 바 아래로 내용이 깔리지 않게
+        top: false,
+        child: _loading
+            ? const Center(child: CircularProgressIndicator(color: AppColors.zhuHong))
+            : Column(
+                children: [
+                  const GreekKeyDivider(height: 8),
+                  Expanded(
+                    child: GridView.builder(
+                      padding: const EdgeInsets.fromLTRB(16, 12, 16, 24),
+                      gridDelegate:
+                          const SliverGridDelegateWithFixedCrossAxisCount(
+                        crossAxisCount: 2,
+                        mainAxisSpacing: 10,
+                        crossAxisSpacing: 10,
+                        childAspectRatio: 1.5,
+                      ),
+                      itemCount: themes.length,
+                      itemBuilder: (context, i) {
+                        final t = themes[i];
+                        return InkWell(
+                          onTap: () => Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (_) => _ThemeDetailScreen(
+                                    theme: t,
+                                    gridMode: widget.asset
+                                        .contains('travel_words'))),
+                          ),
+                          child: Container(
+                            padding: const EdgeInsets.all(12),
+                            decoration: BoxDecoration(
+                              color: AppColors.xuanZhi,
+                              border: Border.all(
+                                  color: AppColors.zhuHong.withValues(alpha: 0.7)),
+                            ),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Text(t.emoji, style: const TextStyle(fontSize: 26)),
+                                const SizedBox(height: 6),
+                                Text(
+                                  t.title,
+                                  style: const TextStyle(
+                                    fontSize: 15,
+                                    fontWeight: FontWeight.w900,
+                                    color: AppColors.mo,
+                                  ),
+                                ),
+                                const SizedBox(height: 2),
+                                Text(
+                                  '${t.sections.length}편 · ${t.wordCount}단어',
+                                  style: const TextStyle(
+                                    fontSize: 11,
+                                    color: AppColors.moLight,
+                                    fontWeight: FontWeight.w600,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        );
+                      },
                     ),
-                    itemCount: themes.length,
-                    itemBuilder: (context, i) {
-                      final t = themes[i];
-                      return InkWell(
-                        onTap: () => Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (_) => _ThemeDetailScreen(
-                                  theme: t,
-                                  gridMode: widget.asset
-                                      .contains('travel_words'))),
-                        ),
-                        child: Container(
-                          padding: const EdgeInsets.all(12),
-                          decoration: BoxDecoration(
-                            color: AppColors.xuanZhi,
-                            border: Border.all(
-                                color: AppColors.zhuHong.withValues(alpha: 0.7)),
-                          ),
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Text(t.emoji, style: const TextStyle(fontSize: 26)),
-                              const SizedBox(height: 6),
-                              Text(
-                                t.title,
-                                style: const TextStyle(
-                                  fontSize: 15,
-                                  fontWeight: FontWeight.w900,
-                                  color: AppColors.mo,
-                                ),
-                              ),
-                              const SizedBox(height: 2),
-                              Text(
-                                '${t.sections.length}편 · ${t.wordCount}단어',
-                                style: const TextStyle(
-                                  fontSize: 11,
-                                  color: AppColors.moLight,
-                                  fontWeight: FontWeight.w600,
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      );
-                    },
                   ),
-                ),
-              ],
-            ),
+                ],
+              ),
+      ),
     );
   }
 }
@@ -391,38 +395,42 @@ class _ThemeDetailScreenState extends State<_ThemeDetailScreen> {
           ),
         ],
       ),
-      body: Builder(builder: (context) {
-        if (!widget.gridMode) {
-          return ListView.builder(
-            padding: const EdgeInsets.fromLTRB(12, 8, 12, 24),
+      body: SafeArea(
+        // 아이폰 홈 표시줄·갤럭시 제스처 바 아래로 내용이 깔리지 않게
+        top: false,
+        child: Builder(builder: (context) {
+          if (!widget.gridMode) {
+            return ListView.builder(
+              padding: const EdgeInsets.fromLTRB(12, 8, 12, 24),
+              itemCount: words.length,
+              itemBuilder: (context, i) => _WordRow(
+                key: ValueKey('${_mode.name}_${words[i].zh}_$i'),
+                word: words[i],
+                chunkReady: _chunkReady,
+                mode: _mode,
+              ),
+            );
+          }
+          // 1×1 그리드 (메인 메뉴 스타일) — 단어별 아이콘
+          return GridView.builder(
+            padding: const EdgeInsets.fromLTRB(14, 10, 14, 24),
+            gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+              crossAxisCount: 3,
+              mainAxisSpacing: 9,
+              crossAxisSpacing: 9,
+              childAspectRatio: 0.82,
+            ),
             itemCount: words.length,
-            itemBuilder: (context, i) => _WordRow(
+            itemBuilder: (context, i) => _WordTile(
               key: ValueKey('${_mode.name}_${words[i].zh}_$i'),
               word: words[i],
+              fallbackEmoji: t.emoji,
               chunkReady: _chunkReady,
               mode: _mode,
             ),
           );
-        }
-        // 1×1 그리드 (메인 메뉴 스타일) — 단어별 아이콘
-        return GridView.builder(
-          padding: const EdgeInsets.fromLTRB(14, 10, 14, 24),
-          gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-            crossAxisCount: 3,
-            mainAxisSpacing: 9,
-            crossAxisSpacing: 9,
-            childAspectRatio: 0.82,
-          ),
-          itemCount: words.length,
-          itemBuilder: (context, i) => _WordTile(
-            key: ValueKey('${_mode.name}_${words[i].zh}_$i'),
-            word: words[i],
-            fallbackEmoji: t.emoji,
-            chunkReady: _chunkReady,
-            mode: _mode,
-          ),
-        );
-      }),
+        }),
+      ),
     );
   }
 }

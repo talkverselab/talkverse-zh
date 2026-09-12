@@ -32,7 +32,7 @@ INSTALL_FAILED_UPDATE_INCOMPATIBLE: signatures do not match
 → 앱을 지우지 말고 **서명부터 확인**한다:
 
 ```bash
-apksigner verify --print-certs <apk> | grep SHA-1   # 9cc4bc932638be43a3982df20b71c4750288476b 여야 한다
+apksigner verify --print-certs <apk> | grep SHA-1   # c2c37b28ce7b9e71fa75957ecaed82fdc1fa7ebd 여야 한다 (9cc4bc93… 이면 디버그 키로 잘못 서명된 것)
 ```
 
 ## 폰에 설치할 때 (PC에서 케이블로)
@@ -62,6 +62,25 @@ adb -s R3CY20HDN2K install --user 0 -r <apk>
 `android/app/src/main/res/xml/file_paths.xml`, `.github/workflows/release.yml`
 
 구현 안내서: https://github.com/talkverselab/talkverse-th/blob/master/docs/in-app-update-via-github.md
+
+## 2-1. iOS (아이폰) — TestFlight 배포
+
+안드로이드의 「푸시 → APK → 앱 내 업데이트」에 해당하는 iOS 경로. 맥 없이 GitHub macOS 러너만 쓴다.
+절차·시크릿 목록은 `docs/ios-build-and-testflight.md`.
+
+- `.github/workflows/ios-build.yml` — 무서명 빌드(계정 없이 컴파일 확인). `lib/ ios/ assets/ pubspec` 변경 푸시마다 돈다.
+- `.github/workflows/ios-testflight.yml` — 서명 + TestFlight 업로드. 리포 Variables `IOS_TESTFLIGHT_ENABLED=true` 여야 돈다.
+  시크릿 6개(`ASC_KEY_ID` `ASC_ISSUER_ID` `ASC_KEY_P8_BASE64` `IOS_DIST_P12_BASE64` `IOS_DIST_P12_PASSWORD` `APPLE_TEAM_ID`).
+- 번들 ID `com.talkverse.chineseUniverse`, 홈 화면 이름 「중국어유니버스」(`ios/Runner/Info.plist`).
+- **배포 인증서는 팀에 하나** — 다른 앱(th 등)에서 이미 만든 `dist.p12` 를 그대로 쓴다. 새로 만들면 계정 한도(2~3개)에 걸린다.
+- iOS 빌드 번호도 `github.run_number`. 아이폰의 「앱 업데이트」 타일은 안내만 하고(APK 설치 불가) TestFlight 가 업데이트를 맡는다.
+
+## 2-2. 갤럭시·아이폰 공통 화면 규칙 (`lib/core/platform_ui.dart`)
+
+- 세로 고정, 글자 배율 0.85~1.15 로 고정(두 폰의 큰 글씨 설정 차이 흡수), 밝은 배경 상태 표시줄은 어두운 아이콘.
+- 밀어서 여는 화면(pushed route)의 `Scaffold.body` 는 `SafeArea(top: false, …)` 로 감싼다 — 아이폰 홈 표시줄과
+  갤럭시 제스처 바(Android 15+ 는 강제 edge-to-edge) 아래로 버튼이 깔리지 않게. 새 화면을 만들 때도 같게.
+- 아이폰 TTS 는 `setSharedInstance` + `playback` 카테고리(`tts_service.dart`) — 무음 스위치가 켜져 있어도 들리게.
 
 ## 3. 리포
 

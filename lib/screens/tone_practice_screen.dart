@@ -106,159 +106,163 @@ class _TonePracticeScreenState extends State<TonePracticeScreen> {
           ),
         ],
       ),
-      body: Stack(
-        children: [
-          const Positioned.fill(child: CloudPattern(opacity: 0.05)),
-          ListView(
-            padding: const EdgeInsets.all(16),
-            children: [
-              // 음절 선택
-              SizedBox(
-                height: 36,
-                child: ListView.separated(
-                  scrollDirection: Axis.horizontal,
-                  itemCount: _sets.length,
-                  separatorBuilder: (_, _) => const SizedBox(width: 6),
-                  itemBuilder: (_, i) => ChoiceChip(
-                    label: Text(_sets[i].syl),
-                    selected: _set == i,
-                    selectedColor: AppColors.zhuHong,
-                    labelStyle: TextStyle(
-                        color: _set == i ? AppColors.xuanZhi : AppColors.mo,
-                        fontWeight: FontWeight.w800),
-                    onSelected: (_) => setState(() {
-                      _set = i;
-                      _result = null;
-                    }),
+      body: SafeArea(
+        // 아이폰 홈 표시줄·갤럭시 제스처 바 아래로 내용이 깔리지 않게
+        top: false,
+        child: Stack(
+          children: [
+            const Positioned.fill(child: CloudPattern(opacity: 0.05)),
+            ListView(
+              padding: const EdgeInsets.all(16),
+              children: [
+                // 음절 선택
+                SizedBox(
+                  height: 36,
+                  child: ListView.separated(
+                    scrollDirection: Axis.horizontal,
+                    itemCount: _sets.length,
+                    separatorBuilder: (_, _) => const SizedBox(width: 6),
+                    itemBuilder: (_, i) => ChoiceChip(
+                      label: Text(_sets[i].syl),
+                      selected: _set == i,
+                      selectedColor: AppColors.zhuHong,
+                      labelStyle: TextStyle(
+                          color: _set == i ? AppColors.xuanZhi : AppColors.mo,
+                          fontWeight: FontWeight.w800),
+                      onSelected: (_) => setState(() {
+                        _set = i;
+                        _result = null;
+                      }),
+                    ),
                   ),
                 ),
-              ),
-              const SizedBox(height: 12),
-              // 성조 4개 선택
-              Row(
-                children: [
-                  for (var t = 1; t <= 4; t++) ...[
-                    Expanded(
-                      child: InkWell(
-                        onTap: () => setState(() {
-                          _tone = t;
-                          _result = null;
-                        }),
-                        child: Container(
-                          padding: const EdgeInsets.symmetric(vertical: 8),
-                          decoration: BoxDecoration(
-                            color: _tone == t
-                                ? toneColor(t).withValues(alpha: 0.2)
-                                : AppColors.xuanZhi,
-                            border: Border.all(
-                                color: _tone == t ? toneColor(t) : AppColors.jin.withValues(alpha: 0.5),
-                                width: _tone == t ? 2 : 1),
-                          ),
-                          child: Column(
-                            children: [
-                              Text(s.hanzi[t - 1],
-                                  style: TextStyle(
-                                      fontSize: 24,
-                                      fontWeight: FontWeight.w800,
-                                      color: toneColor(t))),
-                              Text(s.pinyin[t - 1],
-                                  style: const TextStyle(fontSize: 12, color: AppColors.mo)),
-                              Text('$t성 · ${s.ko[t - 1]}',
-                                  style: const TextStyle(fontSize: 9, color: AppColors.moLight)),
-                            ],
-                          ),
-                        ),
-                      ),
-                    ),
-                    if (t < 4) const SizedBox(width: 6),
-                  ],
-                ],
-              ),
-              const SizedBox(height: 16),
-              // 곡선 그래프
-              ChineseCard(
-                title: '$_tone성 ${s.pinyin[_tone - 1]}  —  ${_toneName(_tone)}',
-                sealText: '调',
-                child: Column(
+                const SizedBox(height: 12),
+                // 성조 4개 선택
+                Row(
                   children: [
-                    SizedBox(
-                      height: 160,
-                      child: CustomPaint(
-                        painter: _ContourPainter(
-                          target: ToneAnalyzer.interpolate(ToneAnalyzer.templates[_tone]!, 20),
-                          targetColor: toneColor(_tone),
-                          user: r?.contour,
-                          userColor: r == null
-                              ? AppColors.mo
-                              : pass
-                                  ? AppColors.feiCui
-                                  : AppColors.zhuHong,
+                    for (var t = 1; t <= 4; t++) ...[
+                      Expanded(
+                        child: InkWell(
+                          onTap: () => setState(() {
+                            _tone = t;
+                            _result = null;
+                          }),
+                          child: Container(
+                            padding: const EdgeInsets.symmetric(vertical: 8),
+                            decoration: BoxDecoration(
+                              color: _tone == t
+                                  ? toneColor(t).withValues(alpha: 0.2)
+                                  : AppColors.xuanZhi,
+                              border: Border.all(
+                                  color: _tone == t ? toneColor(t) : AppColors.jin.withValues(alpha: 0.5),
+                                  width: _tone == t ? 2 : 1),
+                            ),
+                            child: Column(
+                              children: [
+                                Text(s.hanzi[t - 1],
+                                    style: TextStyle(
+                                        fontSize: 24,
+                                        fontWeight: FontWeight.w800,
+                                        color: toneColor(t))),
+                                Text(s.pinyin[t - 1],
+                                    style: const TextStyle(fontSize: 12, color: AppColors.mo)),
+                                Text('$t성 · ${s.ko[t - 1]}',
+                                    style: const TextStyle(fontSize: 9, color: AppColors.moLight)),
+                              ],
+                            ),
+                          ),
                         ),
-                        child: const SizedBox.expand(),
+                      ),
+                      if (t < 4) const SizedBox(width: 6),
+                    ],
+                  ],
+                ),
+                const SizedBox(height: 16),
+                // 곡선 그래프
+                ChineseCard(
+                  title: '$_tone성 ${s.pinyin[_tone - 1]}  —  ${_toneName(_tone)}',
+                  sealText: '调',
+                  child: Column(
+                    children: [
+                      SizedBox(
+                        height: 160,
+                        child: CustomPaint(
+                          painter: _ContourPainter(
+                            target: ToneAnalyzer.interpolate(ToneAnalyzer.templates[_tone]!, 20),
+                            targetColor: toneColor(_tone),
+                            user: r?.contour,
+                            userColor: r == null
+                                ? AppColors.mo
+                                : pass
+                                    ? AppColors.feiCui
+                                    : AppColors.zhuHong,
+                          ),
+                          child: const SizedBox.expand(),
+                        ),
+                      ),
+                      const SizedBox(height: 6),
+                      Row(
+                        children: [
+                          _legend(toneColor(_tone), '목표 (Chao 5도)'),
+                          const SizedBox(width: 12),
+                          _legend(pass ? AppColors.feiCui : AppColors.zhuHong, '내 발음'),
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
+                const SizedBox(height: 12),
+                _resultBox(r, pass),
+                const SizedBox(height: 16),
+                Row(
+                  children: [
+                    Expanded(
+                      child: OutlinedButton.icon(
+                        onPressed: _recording ? null : () => TtsService.instance.speak(s.hanzi[_tone - 1]),
+                        icon: const Icon(Icons.volume_up),
+                        label: const Text('듣기'),
+                        style: OutlinedButton.styleFrom(
+                            foregroundColor: AppColors.mo,
+                            side: const BorderSide(color: AppColors.jin),
+                            padding: const EdgeInsets.symmetric(vertical: 14)),
                       ),
                     ),
-                    const SizedBox(height: 6),
-                    Row(
-                      children: [
-                        _legend(toneColor(_tone), '목표 (Chao 5도)'),
-                        const SizedBox(width: 12),
-                        _legend(pass ? AppColors.feiCui : AppColors.zhuHong, '내 발음'),
-                      ],
+                    const SizedBox(width: 12),
+                    Expanded(
+                      flex: 2,
+                      child: FilledButton.icon(
+                        onPressed: _recording ? null : _record,
+                        icon: Icon(_recording ? Icons.graphic_eq : Icons.mic),
+                        label: Text(_recording ? '말하세요… (1.6초)' : '따라 말하기'),
+                        style: FilledButton.styleFrom(
+                          backgroundColor: _recording ? AppColors.jinDeep : AppColors.zhuHong,
+                          foregroundColor: AppColors.xuanZhi,
+                          padding: const EdgeInsets.symmetric(vertical: 14),
+                          textStyle: const TextStyle(fontSize: 16, fontWeight: FontWeight.w900),
+                        ),
+                      ),
                     ),
                   ],
                 ),
-              ),
-              const SizedBox(height: 12),
-              _resultBox(r, pass),
-              const SizedBox(height: 16),
-              Row(
-                children: [
-                  Expanded(
-                    child: OutlinedButton.icon(
-                      onPressed: _recording ? null : () => TtsService.instance.speak(s.hanzi[_tone - 1]),
-                      icon: const Icon(Icons.volume_up),
-                      label: const Text('듣기'),
-                      style: OutlinedButton.styleFrom(
-                          foregroundColor: AppColors.mo,
-                          side: const BorderSide(color: AppColors.jin),
-                          padding: const EdgeInsets.symmetric(vertical: 14)),
-                    ),
-                  ),
-                  const SizedBox(width: 12),
-                  Expanded(
-                    flex: 2,
-                    child: FilledButton.icon(
-                      onPressed: _recording ? null : _record,
-                      icon: Icon(_recording ? Icons.graphic_eq : Icons.mic),
-                      label: Text(_recording ? '말하세요… (1.6초)' : '따라 말하기'),
-                      style: FilledButton.styleFrom(
-                        backgroundColor: _recording ? AppColors.jinDeep : AppColors.zhuHong,
-                        foregroundColor: AppColors.xuanZhi,
-                        padding: const EdgeInsets.symmetric(vertical: 14),
-                        textStyle: const TextStyle(fontSize: 16, fontWeight: FontWeight.w900),
-                      ),
+                if (_recording) ...[
+                  const SizedBox(height: 8),
+                  ClipRRect(
+                    borderRadius: BorderRadius.circular(4),
+                    child: LinearProgressIndicator(
+                      value: (_level * 6).clamp(0.02, 1.0),
+                      minHeight: 6,
+                      backgroundColor: AppColors.xuanZhiDeep,
+                      color: AppColors.jin,
                     ),
                   ),
                 ],
-              ),
-              if (_recording) ...[
-                const SizedBox(height: 8),
-                ClipRRect(
-                  borderRadius: BorderRadius.circular(4),
-                  child: LinearProgressIndicator(
-                    value: (_level * 6).clamp(0.02, 1.0),
-                    minHeight: 6,
-                    backgroundColor: AppColors.xuanZhiDeep,
-                    color: AppColors.jin,
-                  ),
-                ),
+                const SizedBox(height: 16),
+                _scoreboard(),
+                const SizedBox(height: 24),
               ],
-              const SizedBox(height: 16),
-              _scoreboard(),
-              const SizedBox(height: 24),
-            ],
-          ),
-        ],
+            ),
+          ],
+        ),
       ),
     );
   }

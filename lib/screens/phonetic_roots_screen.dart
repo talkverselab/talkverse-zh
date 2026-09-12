@@ -118,83 +118,87 @@ class _PhoneticRootsScreenState extends State<PhoneticRootsScreen> {
           ],
         ),
       ),
-      body: _loading
-          ? const Center(child: CircularProgressIndicator(color: AppColors.zhuHong))
-          : Column(
-              children: [
-                Padding(
-                  padding: const EdgeInsets.fromLTRB(16, 8, 16, 4),
-                  child: TextField(
-                    onChanged: (v) => setState(() => _query = v),
-                    style: const TextStyle(
-                        fontSize: 16, fontWeight: FontWeight.w700, color: AppColors.mo),
-                    decoration: InputDecoration(
-                      hintText: '马 · ma · 마',
-                      hintStyle:
-                          const TextStyle(color: AppColors.moLight, fontSize: 14),
-                      prefixIcon:
-                          const Icon(Icons.search, color: AppColors.zhuHong),
-                      isDense: true,
-                      filled: true,
-                      fillColor: AppColors.xuanZhiDeep,
-                      enabledBorder: const OutlineInputBorder(
-                        borderRadius: BorderRadius.zero,
-                        borderSide: BorderSide(color: AppColors.jin),
-                      ),
-                      focusedBorder: const OutlineInputBorder(
-                        borderRadius: BorderRadius.zero,
-                        borderSide:
-                            BorderSide(color: AppColors.zhuHong, width: 1.5),
-                      ),
-                    ),
-                  ),
-                ),
-                Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 6),
-                  child: Row(
-                    children: [
-                      const SealStamp(text: '声旁', size: 22),
-                      const SizedBox(width: 8),
-                      Text(
-                        '발음부 ${_roots.length}개 · 한자 $total자 커버',
-                        style: TextStyle(
-                          fontSize: 12,
-                          fontWeight: FontWeight.w800,
-                          color: AppColors.mo,
-                          letterSpacing: 1,
+      body: SafeArea(
+        // 아이폰 홈 표시줄·갤럭시 제스처 바 아래로 내용이 깔리지 않게
+        top: false,
+        child: _loading
+            ? const Center(child: CircularProgressIndicator(color: AppColors.zhuHong))
+            : Column(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(16, 8, 16, 4),
+                    child: TextField(
+                      onChanged: (v) => setState(() => _query = v),
+                      style: const TextStyle(
+                          fontSize: 16, fontWeight: FontWeight.w700, color: AppColors.mo),
+                      decoration: InputDecoration(
+                        hintText: '马 · ma · 마',
+                        hintStyle:
+                            const TextStyle(color: AppColors.moLight, fontSize: 14),
+                        prefixIcon:
+                            const Icon(Icons.search, color: AppColors.zhuHong),
+                        isDense: true,
+                        filled: true,
+                        fillColor: AppColors.xuanZhiDeep,
+                        enabledBorder: const OutlineInputBorder(
+                          borderRadius: BorderRadius.zero,
+                          borderSide: BorderSide(color: AppColors.jin),
+                        ),
+                        focusedBorder: const OutlineInputBorder(
+                          borderRadius: BorderRadius.zero,
+                          borderSide:
+                              BorderSide(color: AppColors.zhuHong, width: 1.5),
                         ),
                       ),
-                      const Spacer(),
-                      Text(
-                        '탭 → 한자 가족',
-                        style: TextStyle(fontSize: 10, color: AppColors.moLight),
-                      ),
-                    ],
-                  ),
-                ),
-                const GreekKeyDivider(height: 8),
-                Expanded(
-                  child: GridView.builder(
-                    padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
-                    gridDelegate:
-                        const SliverGridDelegateWithFixedCrossAxisCount(
-                      crossAxisCount: 2,
-                      mainAxisSpacing: 8,
-                      crossAxisSpacing: 8,
-                      childAspectRatio: 1.9,
                     ),
-                    itemCount: _filtered.length,
-                    itemBuilder: (context, i) {
-                      final r = _filtered[i];
-                      return _RootCard(
-                        root: r,
-                        onTap: () => _openFamily(r),
-                      );
-                    },
                   ),
-                ),
-              ],
-            ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 6),
+                    child: Row(
+                      children: [
+                        const SealStamp(text: '声旁', size: 22),
+                        const SizedBox(width: 8),
+                        Text(
+                          '발음부 ${_roots.length}개 · 한자 $total자 커버',
+                          style: TextStyle(
+                            fontSize: 12,
+                            fontWeight: FontWeight.w800,
+                            color: AppColors.mo,
+                            letterSpacing: 1,
+                          ),
+                        ),
+                        const Spacer(),
+                        Text(
+                          '탭 → 한자 가족',
+                          style: TextStyle(fontSize: 10, color: AppColors.moLight),
+                        ),
+                      ],
+                    ),
+                  ),
+                  const GreekKeyDivider(height: 8),
+                  Expanded(
+                    child: GridView.builder(
+                      padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
+                      gridDelegate:
+                          const SliverGridDelegateWithFixedCrossAxisCount(
+                        crossAxisCount: 2,
+                        mainAxisSpacing: 8,
+                        crossAxisSpacing: 8,
+                        childAspectRatio: 1.9,
+                      ),
+                      itemCount: _filtered.length,
+                      itemBuilder: (context, i) {
+                        final r = _filtered[i];
+                        return _RootCard(
+                          root: r,
+                          onTap: () => _openFamily(r),
+                        );
+                      },
+                    ),
+                  ),
+                ],
+              ),
+      ),
     );
   }
 }

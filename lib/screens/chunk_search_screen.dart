@@ -60,48 +60,52 @@ class _ChunkSearchScreenState extends State<ChunkSearchScreen> {
         centerTitle: true,
         actions: const [KoReadingToggleAction()],
       ),
-      body: Column(
-        children: [
-          Padding(
-            padding: const EdgeInsets.fromLTRB(16, 8, 16, 4),
-            child: TextField(
-              controller: _controller,
-              autofocus: true,
-              onChanged: _search,
-              style: const TextStyle(
-                fontSize: 18,
-                fontWeight: FontWeight.w700,
-                color: AppColors.mo,
-              ),
-              decoration: InputDecoration(
-                hintText: '可爱 · keai · 귀엽다',
-                hintStyle: const TextStyle(color: AppColors.moLight, fontSize: 15),
-                prefixIcon: const Icon(Icons.search, color: AppColors.zhuHong),
-                suffixIcon: _controller.text.isEmpty
-                    ? null
-                    : IconButton(
-                        icon: const Icon(Icons.clear, color: AppColors.moLight),
-                        onPressed: () {
-                          _controller.clear();
-                          _search('');
-                        },
-                      ),
-                filled: true,
-                fillColor: AppColors.xuanZhiDeep,
-                enabledBorder: const OutlineInputBorder(
-                  borderRadius: BorderRadius.zero,
-                  borderSide: BorderSide(color: AppColors.jin),
+      body: SafeArea(
+        // 아이폰 홈 표시줄·갤럭시 제스처 바 아래로 내용이 깔리지 않게
+        top: false,
+        child: Column(
+          children: [
+            Padding(
+              padding: const EdgeInsets.fromLTRB(16, 8, 16, 4),
+              child: TextField(
+                controller: _controller,
+                autofocus: true,
+                onChanged: _search,
+                style: const TextStyle(
+                  fontSize: 18,
+                  fontWeight: FontWeight.w700,
+                  color: AppColors.mo,
                 ),
-                focusedBorder: const OutlineInputBorder(
-                  borderRadius: BorderRadius.zero,
-                  borderSide: BorderSide(color: AppColors.zhuHong, width: 1.5),
+                decoration: InputDecoration(
+                  hintText: '可爱 · keai · 귀엽다',
+                  hintStyle: const TextStyle(color: AppColors.moLight, fontSize: 15),
+                  prefixIcon: const Icon(Icons.search, color: AppColors.zhuHong),
+                  suffixIcon: _controller.text.isEmpty
+                      ? null
+                      : IconButton(
+                          icon: const Icon(Icons.clear, color: AppColors.moLight),
+                          onPressed: () {
+                            _controller.clear();
+                            _search('');
+                          },
+                        ),
+                  filled: true,
+                  fillColor: AppColors.xuanZhiDeep,
+                  enabledBorder: const OutlineInputBorder(
+                    borderRadius: BorderRadius.zero,
+                    borderSide: BorderSide(color: AppColors.jin),
+                  ),
+                  focusedBorder: const OutlineInputBorder(
+                    borderRadius: BorderRadius.zero,
+                    borderSide: BorderSide(color: AppColors.zhuHong, width: 1.5),
+                  ),
                 ),
               ),
             ),
-          ),
-          const GreekKeyDivider(height: 10),
-          Expanded(child: _buildBody()),
-        ],
+            const GreekKeyDivider(height: 10),
+            Expanded(child: _buildBody()),
+          ],
+        ),
       ),
     );
   }

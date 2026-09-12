@@ -57,9 +57,13 @@ class _ConversationScreenState extends State<ConversationScreen> {
         centerTitle: true,
         actions: const [KoReadingToggleAction()],
       ),
-      body: _loading
-          ? const Center(child: CircularProgressIndicator(color: AppColors.zhuHong))
-          : _buildBody(),
+      body: SafeArea(
+        // 아이폰 홈 표시줄·갤럭시 제스처 바 아래로 내용이 깔리지 않게
+        top: false,
+        child: _loading
+            ? const Center(child: CircularProgressIndicator(color: AppColors.zhuHong))
+            : _buildBody(),
+      ),
     );
   }
 

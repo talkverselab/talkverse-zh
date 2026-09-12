@@ -15,37 +15,41 @@ class HanziHubScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: AppColors.xuanZhi,
       appBar: AppBar(title: const Text('한자')),
-      body: ListView(
-        padding: const EdgeInsets.all(16),
-        children: [
-          _HubCard(
-            seal: '209',
-            title: '회화 시작점 한자 209',
-            sub: '20자 × 10단계 · 회화 토큰 89% 청취 커버',
-            color: AppColors.zhuHong,
-            onTap: () => Navigator.push(
-              context,
-              MaterialPageRoute(builder: (_) => const HanziStagesScreen()),
+      body: SafeArea(
+        // 아이폰 홈 표시줄·갤럭시 제스처 바 아래로 내용이 깔리지 않게
+        top: false,
+        child: ListView(
+          padding: const EdgeInsets.all(16),
+          children: [
+            _HubCard(
+              seal: '209',
+              title: '회화 시작점 한자 209',
+              sub: '20자 × 10단계 · 회화 토큰 89% 청취 커버',
+              color: AppColors.zhuHong,
+              onTap: () => Navigator.push(
+                context,
+                MaterialPageRoute(builder: (_) => const HanziStagesScreen()),
+              ),
             ),
-          ),
-          const SizedBox(height: 12),
-          _HubCard(
-            seal: 'HSK',
-            title: 'HSK 1~5급 한자 1500',
-            sub: '회화 빈도순 5단계 × 300자 · 20자씩 75소단계',
-            color: const Color(0xFFC62828),
-            onTap: () => Navigator.push(
-              context,
-              MaterialPageRoute(
-                builder: (_) => const HanziStagesScreen(
-                  asset: 'assets/data/hanzi/hanzi_hsk1500.json',
-                  seal: '1500',
-                  kicker: 'HSK 1-5 · 1,500 chars',
+            const SizedBox(height: 12),
+            _HubCard(
+              seal: 'HSK',
+              title: 'HSK 1~5급 한자 1500',
+              sub: '회화 빈도순 5단계 × 300자 · 20자씩 75소단계',
+              color: const Color(0xFFC62828),
+              onTap: () => Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (_) => const HanziStagesScreen(
+                    asset: 'assets/data/hanzi/hanzi_hsk1500.json',
+                    seal: '1500',
+                    kicker: 'HSK 1-5 · 1,500 chars',
+                  ),
                 ),
               ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }
@@ -171,10 +175,14 @@ class _HanziStagesScreenState extends State<HanziStagesScreen> {
         elevation: 0,
         centerTitle: true,
       ),
-      body: _loading || _data == null
-          ? const Center(
-              child: CircularProgressIndicator(color: AppColors.zhuHong))
-          : _buildBody(),
+      body: SafeArea(
+        // 아이폰 홈 표시줄·갤럭시 제스처 바 아래로 내용이 깔리지 않게
+        top: false,
+        child: _loading || _data == null
+            ? const Center(
+                child: CircularProgressIndicator(color: AppColors.zhuHong))
+            : _buildBody(),
+      ),
     );
   }
 

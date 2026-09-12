@@ -104,35 +104,39 @@ class _SpeakingPracticeScreenState extends State<SpeakingPracticeScreen> {
     return Scaffold(
       backgroundColor: AppColors.xuanZhi,
       appBar: AppBar(title: const Text('말하기 연습')),
-      body: _loading
-          ? const Center(
-              child: CircularProgressIndicator(color: AppColors.zhuHong))
-          : Column(
-              children: [
-                _stagePicker(),
-                const GreekKeyDivider(),
-                Expanded(
-                  child: _entries.isEmpty
-                      ? const Padding(
-                          padding: EdgeInsets.all(24),
-                          child: Text('회화 데이터가 없어요.',
-                              textAlign: TextAlign.center),
-                        )
-                      : ListView.builder(
-                          padding: const EdgeInsets.all(16),
-                          itemCount: _entries.length + 1,
-                          itemBuilder: (context, i) {
-                            if (i == 0) return _headerNote();
-                            final e = _entries[i - 1];
-                            return _EpisodeTile(
-                              entry: e,
-                              onTap: () => _open(e),
-                            );
-                          },
-                        ),
-                ),
-              ],
-            ),
+      body: SafeArea(
+        // 아이폰 홈 표시줄·갤럭시 제스처 바 아래로 내용이 깔리지 않게
+        top: false,
+        child: _loading
+            ? const Center(
+                child: CircularProgressIndicator(color: AppColors.zhuHong))
+            : Column(
+                children: [
+                  _stagePicker(),
+                  const GreekKeyDivider(),
+                  Expanded(
+                    child: _entries.isEmpty
+                        ? const Padding(
+                            padding: EdgeInsets.all(24),
+                            child: Text('회화 데이터가 없어요.',
+                                textAlign: TextAlign.center),
+                          )
+                        : ListView.builder(
+                            padding: const EdgeInsets.all(16),
+                            itemCount: _entries.length + 1,
+                            itemBuilder: (context, i) {
+                              if (i == 0) return _headerNote();
+                              final e = _entries[i - 1];
+                              return _EpisodeTile(
+                                entry: e,
+                                onTap: () => _open(e),
+                              );
+                            },
+                          ),
+                  ),
+                ],
+              ),
+      ),
     );
   }
 
@@ -446,11 +450,15 @@ class _SpeakingTestScreenState extends State<SpeakingTestScreen>
           const KoReadingToggleAction(),
         ],
       ),
-      body: switch (_phase) {
-        _Phase.batchDone => _batchSummary(final_: false),
-        _Phase.allDone => _batchSummary(final_: true),
-        _ => _testBody(),
-      },
+      body: SafeArea(
+        // 아이폰 홈 표시줄·갤럭시 제스처 바 아래로 내용이 깔리지 않게
+        top: false,
+        child: switch (_phase) {
+          _Phase.batchDone => _batchSummary(final_: false),
+          _Phase.allDone => _batchSummary(final_: true),
+          _ => _testBody(),
+        },
+      ),
     );
   }
 

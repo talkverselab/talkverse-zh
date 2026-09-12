@@ -12,64 +12,68 @@ class ToneMatrixScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: AppColors.xuanZhi,
       appBar: AppBar(title: const Text('4성 매트릭스')),
-      body: Stack(
-        children: [
-          const Positioned.fill(child: CloudPattern(opacity: 0.05)),
-          ListView(
-            padding: const EdgeInsets.all(16),
-            children: [
-              ChineseCard(
-                title: '성조 4×4 + 경성 4',
-                sealText: '调',
-                child: Text(
-                  '2글자 단어 성조 조합 16 칸 + 경성 4 칸 = 20 셀.\n셀 당 10 단어 예시. 총 160 단어 학습 트랙.',
-                  style: TextStyle(color: AppColors.moLight, fontSize: 12, height: 1.5),
+      body: SafeArea(
+        // 아이폰 홈 표시줄·갤럭시 제스처 바 아래로 내용이 깔리지 않게
+        top: false,
+        child: Stack(
+          children: [
+            const Positioned.fill(child: CloudPattern(opacity: 0.05)),
+            ListView(
+              padding: const EdgeInsets.all(16),
+              children: [
+                ChineseCard(
+                  title: '성조 4×4 + 경성 4',
+                  sealText: '调',
+                  child: Text(
+                    '2글자 단어 성조 조합 16 칸 + 경성 4 칸 = 20 셀.\n셀 당 10 단어 예시. 총 160 단어 학습 트랙.',
+                    style: TextStyle(color: AppColors.moLight, fontSize: 12, height: 1.5),
+                  ),
                 ),
-              ),
-              const SizedBox(height: 16),
-              _ToneLegend(),
-              const SizedBox(height: 12),
-              const BrushDivider(),
-              const SizedBox(height: 14),
-              Text('메인 매트릭스 4×4',
-                  style: TextStyle(fontWeight: FontWeight.w800, color: AppColors.mo, letterSpacing: 2)),
-              const SizedBox(height: 8),
-              GridView.builder(
-                shrinkWrap: true,
-                physics: const NeverScrollableScrollPhysics(),
-                gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                  crossAxisCount: 4,
-                  mainAxisSpacing: 6,
-                  crossAxisSpacing: 6,
-                  childAspectRatio: 1.1,
+                const SizedBox(height: 16),
+                _ToneLegend(),
+                const SizedBox(height: 12),
+                const BrushDivider(),
+                const SizedBox(height: 14),
+                Text('메인 매트릭스 4×4',
+                    style: TextStyle(fontWeight: FontWeight.w800, color: AppColors.mo, letterSpacing: 2)),
+                const SizedBox(height: 8),
+                GridView.builder(
+                  shrinkWrap: true,
+                  physics: const NeverScrollableScrollPhysics(),
+                  gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                    crossAxisCount: 4,
+                    mainAxisSpacing: 6,
+                    crossAxisSpacing: 6,
+                    childAspectRatio: 1.1,
+                  ),
+                  itemCount: 16,
+                  itemBuilder: (context, i) {
+                    final r = i ~/ 4 + 1;
+                    final c = i % 4 + 1;
+                    return _ToneCell(row: r, col: c);
+                  },
                 ),
-                itemCount: 16,
-                itemBuilder: (context, i) {
-                  final r = i ~/ 4 + 1;
-                  final c = i % 4 + 1;
-                  return _ToneCell(row: r, col: c);
-                },
-              ),
-              const SizedBox(height: 18),
-              Text('경성',
-                  style: TextStyle(fontWeight: FontWeight.w800, color: AppColors.mo, letterSpacing: 2)),
-              const SizedBox(height: 8),
-              GridView.builder(
-                shrinkWrap: true,
-                physics: const NeverScrollableScrollPhysics(),
-                gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                  crossAxisCount: 4,
-                  mainAxisSpacing: 6,
-                  crossAxisSpacing: 6,
-                  childAspectRatio: 1.1,
+                const SizedBox(height: 18),
+                Text('경성',
+                    style: TextStyle(fontWeight: FontWeight.w800, color: AppColors.mo, letterSpacing: 2)),
+                const SizedBox(height: 8),
+                GridView.builder(
+                  shrinkWrap: true,
+                  physics: const NeverScrollableScrollPhysics(),
+                  gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                    crossAxisCount: 4,
+                    mainAxisSpacing: 6,
+                    crossAxisSpacing: 6,
+                    childAspectRatio: 1.1,
+                  ),
+                  itemCount: 4,
+                  itemBuilder: (context, i) => _ToneCell(row: i + 1, col: 0),
                 ),
-                itemCount: 4,
-                itemBuilder: (context, i) => _ToneCell(row: i + 1, col: 0),
-              ),
-              const SizedBox(height: 24),
-            ],
-          ),
-        ],
+                const SizedBox(height: 24),
+              ],
+            ),
+          ],
+        ),
       ),
     );
   }

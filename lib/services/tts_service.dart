@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:flutter_tts/flutter_tts.dart';
 
 /// flutter_tts 기반 — Android 시스템 zh-CN voice 사용.
@@ -18,6 +20,19 @@ class TtsService {
 
   Future<void> _ensureInit() async {
     if (_initialized) return;
+    if (Platform.isIOS) {
+      // 아이폰: 무음 스위치가 켜져 있어도 들리게(playback), 말하기 연습의 마이크 세션과
+      // 오디오 세션을 공유해 STT 직후에도 소리가 나오게 한다.
+      await _tts.setSharedInstance(true);
+      await _tts.setIosAudioCategory(
+        IosTextToSpeechAudioCategory.playback,
+        [
+          IosTextToSpeechAudioCategoryOptions.mixWithOthers,
+          IosTextToSpeechAudioCategoryOptions.duckOthers,
+        ],
+        IosTextToSpeechAudioMode.spokenAudio,
+      );
+    }
     await _tts.setLanguage('zh-CN');
     await _tts.setSpeechRate(0.45);
     await _tts.setPitch(1.0);

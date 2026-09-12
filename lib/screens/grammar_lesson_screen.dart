@@ -153,9 +153,13 @@ class _GrammarLessonScreenState extends State<GrammarLessonScreen> {
           ),
         ],
       ),
-      body: _loading
-          ? const Center(child: CircularProgressIndicator(color: AppColors.zhuHong))
-          : _buildBody(),
+      body: SafeArea(
+        // 아이폰 홈 표시줄·갤럭시 제스처 바 아래로 내용이 깔리지 않게
+        top: false,
+        child: _loading
+            ? const Center(child: CircularProgressIndicator(color: AppColors.zhuHong))
+            : _buildBody(),
+      ),
     );
   }
 
@@ -674,13 +678,17 @@ class GrammarMenuScreen extends StatelessWidget {
         title: const Text('문법',
             style: TextStyle(color: AppColors.mo, fontWeight: FontWeight.w800)),
       ),
-      body: ListView(
-        padding: const EdgeInsets.all(16),
-        children: [
-          card('문법 L1', '기능어 40개 × 3문장 드릴', 1, const Color(0xFF8B0000)),
-          const SizedBox(height: 10),
-          card('문법 L2', '어기조사·부사·단어 확장', 2, const Color(0xFFAD1457)),
-        ],
+      body: SafeArea(
+        // 아이폰 홈 표시줄·갤럭시 제스처 바 아래로 내용이 깔리지 않게
+        top: false,
+        child: ListView(
+          padding: const EdgeInsets.all(16),
+          children: [
+            card('문법 L1', '기능어 40개 × 3문장 드릴', 1, const Color(0xFF8B0000)),
+            const SizedBox(height: 10),
+            card('문법 L2', '어기조사·부사·단어 확장', 2, const Color(0xFFAD1457)),
+          ],
+        ),
       ),
     );
   }

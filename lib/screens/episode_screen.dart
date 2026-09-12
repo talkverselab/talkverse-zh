@@ -193,41 +193,45 @@ class _EpisodeScreenState extends State<EpisodeScreen> {
           ),
         ],
       ),
-      body: _loading
-          ? const Center(
-              child: CircularProgressIndicator(color: AppColors.zhuHong),
-            )
-          : Column(
-              children: [
-                const GreekKeyDivider(height: 8),
-                Expanded(
-                  child: ListView.builder(
-                    padding: const EdgeInsets.fromLTRB(12, 10, 12, 90),
-                    itemCount: _turns.length,
-                    itemBuilder: (context, i) {
-                      final t = _turns[i];
-                      return _EpisodeBubble(
-                        turn: t,
-                        learned: _learned[t.id] ?? false,
-                        onLearnedTap: () => _toggleLearned(t),
-                        onCardTap: () async {
-                          await Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                              builder: (_) => SentenceFlashcardScreen(
-                                meta: widget.meta,
-                                initialIndex: i,
+      body: SafeArea(
+        // 아이폰 홈 표시줄·갤럭시 제스처 바 아래로 내용이 깔리지 않게
+        top: false,
+        child: _loading
+            ? const Center(
+                child: CircularProgressIndicator(color: AppColors.zhuHong),
+              )
+            : Column(
+                children: [
+                  const GreekKeyDivider(height: 8),
+                  Expanded(
+                    child: ListView.builder(
+                      padding: const EdgeInsets.fromLTRB(12, 10, 12, 90),
+                      itemCount: _turns.length,
+                      itemBuilder: (context, i) {
+                        final t = _turns[i];
+                        return _EpisodeBubble(
+                          turn: t,
+                          learned: _learned[t.id] ?? false,
+                          onLearnedTap: () => _toggleLearned(t),
+                          onCardTap: () async {
+                            await Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (_) => SentenceFlashcardScreen(
+                                  meta: widget.meta,
+                                  initialIndex: i,
+                                ),
                               ),
-                            ),
-                          );
-                          _load();
-                        },
-                      );
-                    },
+                            );
+                            _load();
+                          },
+                        );
+                      },
+                    ),
                   ),
-                ),
-              ],
-            ),
+                ],
+              ),
+      ),
     );
   }
 }
