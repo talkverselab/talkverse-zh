@@ -10,6 +10,7 @@ import '../widgets/selectable_hanzi.dart';
 import 'episode_screen.dart';
 import 'grammar_lesson_screen.dart';
 import 'sentence_flashcard_screen.dart';
+import '../core/l10n.dart';
 
 class ConversationScreen extends StatefulWidget {
   const ConversationScreen({super.key});
@@ -43,10 +44,10 @@ class _ConversationScreenState extends State<ConversationScreen> {
     return Scaffold(
       backgroundColor: AppColors.xuanZhi,
       appBar: AppBar(
-        title: const Column(
+        title: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            Text('회화', style: TextStyle(color: AppColors.mo, fontSize: 16, fontWeight: FontWeight.w800)),
+            Text(tr('회화'), style: TextStyle(color: AppColors.mo, fontSize: 16, fontWeight: FontWeight.w800)),
             SizedBox(height: 2),
             Text('Conversation', style: TextStyle(color: AppColors.moLight, fontSize: 10, letterSpacing: 2)),
           ],
@@ -115,7 +116,7 @@ class _ConversationScreenState extends State<ConversationScreen> {
                   const SizedBox(width: 8),
                   Expanded(
                     child: Text(
-                      '${EpisodeCatalog.levelLabels[level]} · ${catalog.forLevel(level).length}편',
+                      trf('{0} · {1}편', [EpisodeCatalog.levelLabels[level], catalog.forLevel(level).length]),
                       style: TextStyle(
                         fontSize: 13,
                         fontWeight: FontWeight.w800,
@@ -188,7 +189,7 @@ class _ConversationScreenState extends State<ConversationScreen> {
               const SealStamp(text: '学', size: 22),
               const SizedBox(width: 8),
               Text(
-                '우리 콘텐츠 (자체 제작)',
+                tr('우리 콘텐츠 (자체 제작)'),
                 style: TextStyle(
                   fontSize: 13,
                   fontWeight: FontWeight.w800,
@@ -203,8 +204,8 @@ class _ConversationScreenState extends State<ConversationScreen> {
             children: [
               Expanded(
                 child: _HubCard(
-                  title: '문법 L1',
-                  sub: '기능어 40 × 3',
+                  title: tr('문법 L1'),
+                  sub: tr('기능어 40 × 3'),
                   seal: 'L1',
                   color: const Color(0xFF8B0000),
                   builder: (_) => const GrammarLessonScreen(lessonNum: 1),
@@ -213,8 +214,8 @@ class _ConversationScreenState extends State<ConversationScreen> {
               const SizedBox(width: 8),
               Expanded(
                 child: _HubCard(
-                  title: '문법 L2',
-                  sub: '어기조사·부사·단어',
+                  title: tr('문법 L2'),
+                  sub: tr('어기조사·부사·단어'),
                   seal: 'L2',
                   color: const Color(0xFFAD1457),
                   builder: (_) => const GrammarLessonScreen(lessonNum: 2),
@@ -224,8 +225,8 @@ class _ConversationScreenState extends State<ConversationScreen> {
           ),
           const SizedBox(height: 8),
           _HubCard(
-            title: '문장 플래시카드',
-            sub: '전 레벨 랜덤 20문장 · 뜻 뒤집기 · 남/녀 음성',
+            title: tr('문장 플래시카드'),
+            sub: tr('전 레벨 랜덤 20문장 · 뜻 뒤집기 · 남/녀 음성'),
             seal: '复习',
             color: AppColors.feiCui,
             builder: (_) => const SentenceFlashcardScreen(),
@@ -243,7 +244,7 @@ class _ConversationScreenState extends State<ConversationScreen> {
           const SealStamp(text: '聊', size: 22),
           const SizedBox(width: 8),
           Text(
-            '실제 챗 다이얼로그',
+            tr('실제 챗 다이얼로그'),
             style: TextStyle(
               fontSize: 13,
               fontWeight: FontWeight.w800,
@@ -266,7 +267,7 @@ class _ConversationScreenState extends State<ConversationScreen> {
           ),
           const Spacer(),
           Text(
-            '실측 Weibo 친구톡',
+            tr('실측 Weibo 친구톡'),
             style: TextStyle(fontSize: 10, color: AppColors.moLight),
           ),
         ],
@@ -285,7 +286,7 @@ class _ConversationScreenState extends State<ConversationScreen> {
         separatorBuilder: (_, _) => const SizedBox(width: 6),
         itemBuilder: (context, i) {
           final c = all[i];
-          final lbl = c == 'ALL' ? '전체' : (labels[c] as String? ?? c);
+          final lbl = c == 'ALL' ? tr('전체') : (labels[c] as String? ?? c);
           final selected = c == _category;
           return GestureDetector(
             onTap: () => setState(() => _category = c),
@@ -417,7 +418,7 @@ class _DialogueCard extends StatelessWidget {
                   ),
                   const Spacer(),
                   Text(
-                    '${turns.length}턴',
+                    trf('{0}턴', [turns.length]),
                     style: const TextStyle(fontSize: 10, color: AppColors.moLight),
                   ),
                 ],

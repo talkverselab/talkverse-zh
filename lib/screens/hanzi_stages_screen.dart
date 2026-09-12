@@ -5,6 +5,7 @@ import 'package:flutter/services.dart' show rootBundle;
 import '../core/theme.dart';
 import '../widgets/chinese_decor.dart';
 import 'hanzi_quiz_screen.dart';
+import '../core/l10n.dart';
 
 /// 한자 허브 — 회화 시작점 209자 / HSK 1~5급 1,500자 선택.
 class HanziHubScreen extends StatelessWidget {
@@ -14,7 +15,7 @@ class HanziHubScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: AppColors.xuanZhi,
-      appBar: AppBar(title: const Text('한자')),
+      appBar: AppBar(title: Text(tr('한자'))),
       body: SafeArea(
         // 아이폰 홈 표시줄·갤럭시 제스처 바 아래로 내용이 깔리지 않게
         top: false,
@@ -23,8 +24,8 @@ class HanziHubScreen extends StatelessWidget {
           children: [
             _HubCard(
               seal: '209',
-              title: '회화 시작점 한자 209',
-              sub: '20자 × 10단계 · 회화 토큰 89% 청취 커버',
+              title: tr('회화 시작점 한자 209'),
+              sub: tr('20자 × 10단계 · 회화 토큰 89% 청취 커버'),
               color: AppColors.zhuHong,
               onTap: () => Navigator.push(
                 context,
@@ -34,8 +35,8 @@ class HanziHubScreen extends StatelessWidget {
             const SizedBox(height: 12),
             _HubCard(
               seal: 'HSK',
-              title: 'HSK 1~5급 한자 1500',
-              sub: '회화 빈도순 5단계 × 300자 · 20자씩 75소단계',
+              title: tr('HSK 1~5급 한자 1500'),
+              sub: tr('회화 빈도순 5단계 × 300자 · 20자씩 75소단계'),
               color: const Color(0xFFC62828),
               onTap: () => Navigator.push(
                 context,
@@ -149,7 +150,7 @@ class _HanziStagesScreenState extends State<HanziStagesScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final title = _data?['title'] as String? ?? '한자';
+    final title = _data?['title'] as String? ?? tr('한자');
     final subtitle = _data?['subtitle'] as String? ?? '';
     return Scaffold(
       backgroundColor: AppColors.xuanZhi,
@@ -191,11 +192,11 @@ class _HanziStagesScreenState extends State<HanziStagesScreen> {
         0, (s, e) => s + ((e as Map)['chars'] as List).length);
     final phases = (_data!['phases'] as List?) ?? const [];
     final headline = phases.isEmpty
-        ? '20자 × ${stages.length}단계'
-        : '${phases.length}단계 × 300자';
+        ? trf('20자 × {0}단계', [stages.length])
+        : trf('{0}단계 × 300자', [phases.length]);
     final desc = phases.isEmpty
-        ? '누적 4지선다 — 회화 토큰 89% 청취 커버'
-        : '회화 빈도순 · 1단계 300자만 익혀도 회화 한자 ${(phases.first as Map)['coverage_pct']}% 커버';
+        ? tr('누적 4지선다 — 회화 토큰 89% 청취 커버')
+        : trf('회화 빈도순 · 1단계 300자만 익혀도 회화 한자 {0}% 커버', [(phases.first as Map)['coverage_pct']]);
     return Container(
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
@@ -223,7 +224,7 @@ class _HanziStagesScreenState extends State<HanziStagesScreen> {
                 ),
                 const SizedBox(height: 4),
                 Text(
-                  '$headline · $total자',
+                  trf('{0} · {1}자', [headline, total]),
                   style: const TextStyle(
                     color: AppColors.xuanZhi,
                     fontSize: 20,
@@ -280,7 +281,7 @@ class _HanziStagesScreenState extends State<HanziStagesScreen> {
               child: Row(
                 children: [
                   Text(
-                    '$n단계',
+                    trf('{0}단계', [n]),
                     style: TextStyle(
                       fontSize: 15,
                       fontWeight: FontWeight.w900,
@@ -290,7 +291,7 @@ class _HanziStagesScreenState extends State<HanziStagesScreen> {
                   const SizedBox(width: 10),
                   Expanded(
                     child: Text(
-                      '${p['from']}~${p['to']}번째 한자 · 누적 커버 ${p['coverage_pct']}%',
+                      trf('{0}~{1}번째 한자 · 누적 커버 {2}%', [p['from'], p['to'], p['coverage_pct']]),
                       style: TextStyle(
                         fontSize: 11,
                         color: open
@@ -379,7 +380,7 @@ class _StageRow extends StatelessWidget {
                       Row(
                         children: [
                           Text(
-                            '단계 $stage',
+                            trf('단계 {0}', [stage]),
                             style: const TextStyle(
                               fontSize: 14,
                               fontWeight: FontWeight.w800,
@@ -393,7 +394,7 @@ class _StageRow extends StatelessWidget {
                                 horizontal: 6, vertical: 1),
                             color: AppColors.jin.withValues(alpha: 0.2),
                             child: Text(
-                              '${chars.length}자',
+                              trf('{0}자', [chars.length]),
                               style: const TextStyle(
                                 fontSize: 10,
                                 fontWeight: FontWeight.w800,
@@ -404,7 +405,7 @@ class _StageRow extends StatelessWidget {
                           if (cov != null) ...[
                             const SizedBox(width: 6),
                             Text(
-                              '누적 $cov%',
+                              trf('누적 {0}%', [cov]),
                               style: const TextStyle(
                                   fontSize: 10, color: AppColors.moLight),
                             ),

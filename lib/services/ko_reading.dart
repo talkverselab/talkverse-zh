@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import '../core/l10n.dart';
 
 /// 발음 표기(성조 병음) 표시/숨김 전역 설정 — 모든 메뉴 공용.
 /// (구 한글독음 토글: 2026-09-03 사용자 요청으로 표기를 성조 병음으로 전환)
@@ -30,7 +31,7 @@ class KoReadingToggleAction extends StatelessWidget {
     return ValueListenableBuilder<bool>(
       valueListenable: KoReadingPrefs.show,
       builder: (context, on, _) => IconButton(
-        tooltip: on ? '병음 숨기기' : '병음 표시',
+        tooltip: on ? tr('병음 숨기기') : tr('병음 표시'),
         onPressed: KoReadingPrefs.toggle,
         icon: Container(
           padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),

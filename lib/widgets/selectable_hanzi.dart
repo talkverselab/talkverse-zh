@@ -7,6 +7,8 @@ import '../services/pinyin_util.dart';
 import '../services/tts_service.dart';
 import '../screens/phonetic_roots_screen.dart';
 import '../screens/topic_vocab_screen.dart';
+import '../core/platform.dart';
+import '../core/l10n.dart';
 
 /// 문장 내 청크·한자를 탭하면 정보 모달 띄움. tokens 기반 (서버 토크나이즈).
 class SelectableHanziText extends StatefulWidget {
@@ -187,7 +189,7 @@ class _ChunkInfoSheetState extends State<_ChunkInfoSheet> {
 
     return SafeArea(
       child: Padding(
-        padding: const EdgeInsets.fromLTRB(20, 18, 20, 24),
+        padding: EdgeInsets.fromLTRB(20, 18, 20, 24 + bottomInset(context)),
         child: Column(
           mainAxisSize: MainAxisSize.min,
           crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -222,8 +224,8 @@ class _ChunkInfoSheetState extends State<_ChunkInfoSheet> {
                           color: AppColors.jin.withValues(alpha: 0.15),
                           border: Border.all(color: AppColors.jin),
                         ),
-                        child: const Text(
-                          '청크 (词组)',
+                        child: Text(
+                          tr('청크 (词组)'),
                           style: TextStyle(
                             fontSize: 10,
                             color: AppColors.mo,
@@ -267,8 +269,8 @@ class _ChunkInfoSheetState extends State<_ChunkInfoSheet> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const Text(
-                    '뜻',
+                  Text(
+                    tr('뜻'),
                     style: TextStyle(
                       fontSize: 11,
                       fontWeight: FontWeight.w800,
@@ -327,8 +329,8 @@ class _ChunkInfoSheetState extends State<_ChunkInfoSheet> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const Text(
-                    '구성 한자 (탭하면 개별 설명)',
+                  Text(
+                    tr('구성 한자 (탭하면 개별 설명)'),
                     style: TextStyle(
                       fontSize: 11,
                       fontWeight: FontWeight.w800,
@@ -453,7 +455,7 @@ class HanziInfoSheet extends StatelessWidget {
 
     return SafeArea(
       child: Padding(
-        padding: const EdgeInsets.fromLTRB(20, 18, 20, 24),
+        padding: EdgeInsets.fromLTRB(20, 18, 20, 24 + bottomInset(context)),
         child: Column(
           mainAxisSize: MainAxisSize.min,
           crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -498,7 +500,7 @@ class HanziInfoSheet extends StatelessWidget {
                       const SizedBox(height: 6),
                       OutlinedButton.icon(
                         icon: const Icon(Icons.volume_up, size: 16),
-                        label: const Text('읽기'),
+                        label: Text(tr('읽기')),
                         style: OutlinedButton.styleFrom(
                           foregroundColor: AppColors.zhuHong,
                           side: const BorderSide(color: AppColors.zhuHong),
@@ -532,8 +534,8 @@ class HanziInfoSheet extends StatelessWidget {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          const Text(
-                            '뜻',
+                          Text(
+                            tr('뜻'),
                             style: TextStyle(
                               fontSize: 11,
                               fontWeight: FontWeight.w800,
@@ -607,8 +609,8 @@ class HanziInfoSheet extends StatelessWidget {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          const Text(
-                            '음·한자 (형성자)',
+                          Text(
+                            tr('음·한자 (형성자)'),
                             style: TextStyle(
                               fontSize: 11,
                               fontWeight: FontWeight.w800,
@@ -668,8 +670,8 @@ class HanziInfoSheet extends StatelessWidget {
                                                 fontStyle: FontStyle.italic,
                                               ),
                                             ),
-                                            const Text(
-                                              '발음부 (聲旁)',
+                                            Text(
+                                              tr('발음부 (聲旁)'),
                                               style: TextStyle(
                                                 fontSize: 9,
                                                 color: AppColors.moLight,
@@ -680,7 +682,7 @@ class HanziInfoSheet extends StatelessWidget {
                                               Padding(
                                                 padding: const EdgeInsets.only(top: 4),
                                                 child: Text(
-                                                  '같은 음 +${family.length}자 →',
+                                                  trf('같은 음 +{0}자 →', [family.length]),
                                                   style: const TextStyle(
                                                     fontSize: 9,
                                                     color: AppColors.zhuHong,
@@ -718,8 +720,8 @@ class HanziInfoSheet extends StatelessWidget {
                                     ),
                                   ),
                                   const SizedBox(width: 8),
-                                  const Text(
-                                    '형부 (形旁)',
+                                  Text(
+                                    tr('형부 (形旁)'),
                                     style: TextStyle(
                                       fontSize: 10,
                                       color: AppColors.moLight,
@@ -781,7 +783,7 @@ class PhoneticFamilySheet extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Padding(
-        padding: const EdgeInsets.fromLTRB(20, 18, 20, 24),
+        padding: EdgeInsets.fromLTRB(20, 18, 20, 24 + bottomInset(context)),
         child: Column(
           mainAxisSize: MainAxisSize.min,
           crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -822,8 +824,8 @@ class PhoneticFamilySheet extends StatelessWidget {
                         ),
                       ),
                       const SizedBox(height: 4),
-                      const Text(
-                        '발음부 (聲旁) family',
+                      Text(
+                        tr('발음부 (聲旁) family'),
                         style: TextStyle(
                           fontSize: 11,
                           color: AppColors.moLight,
@@ -833,7 +835,7 @@ class PhoneticFamilySheet extends StatelessWidget {
                       ),
                       const SizedBox(height: 2),
                       Text(
-                        '${members.length}자',
+                        trf('{0}자', [members.length]),
                         style: const TextStyle(
                           fontSize: 11,
                           color: AppColors.zhuHong,
@@ -856,8 +858,8 @@ class PhoneticFamilySheet extends StatelessWidget {
             const SizedBox(height: 14),
             _buildGroupedFamily(context),
             const SizedBox(height: 10),
-            const Text(
-              '💡 같은 발음부 = 발음 비슷한 경향. 단 한자가 진화하며 일부 음이 변형됨.',
+            Text(
+              tr('💡 같은 발음부 = 발음 비슷한 경향. 단 한자가 진화하며 일부 음이 변형됨.'),
               style: TextStyle(fontSize: 11, color: AppColors.moLight, height: 1.5),
             ),
           ],
@@ -901,8 +903,8 @@ class PhoneticFamilySheet extends StatelessWidget {
       children: [
         if (full.isNotEmpty)
           _FamilyGroup(
-            title: '완전공유',
-            subtitle: '발음·성조 모두 같음',
+            title: tr('완전공유'),
+            subtitle: tr('발음·성조 모두 같음'),
             color: AppColors.feiCui,
             members: full,
             onTap: (c) => _openChar(context, c),
@@ -910,8 +912,8 @@ class PhoneticFamilySheet extends StatelessWidget {
         if (partial.isNotEmpty) ...[
           if (full.isNotEmpty) const SizedBox(height: 10),
           _FamilyGroup(
-            title: '부분공유',
-            subtitle: '음절 같음, 성조만 다름',
+            title: tr('부분공유'),
+            subtitle: tr('음절 같음, 성조만 다름'),
             color: AppColors.jin,
             members: partial,
             onTap: (c) => _openChar(context, c),
@@ -920,8 +922,8 @@ class PhoneticFamilySheet extends StatelessWidget {
         if (shifted.isNotEmpty) ...[
           if (full.isNotEmpty || partial.isNotEmpty) const SizedBox(height: 10),
           _FamilyGroup(
-            title: '일부음차차이',
-            subtitle: '음이 변형됨',
+            title: tr('일부음차차이'),
+            subtitle: tr('음이 변형됨'),
             color: AppColors.zhuHong,
             members: shifted,
             onTap: (c) => _openChar(context, c),
@@ -999,7 +1001,7 @@ class _FamilyGroup extends StatelessWidget {
               ),
               const Spacer(),
               Text(
-                '${members.length}자',
+                trf('{0}자', [members.length]),
                 style: TextStyle(
                   fontSize: 11,
                   fontWeight: FontWeight.w800,

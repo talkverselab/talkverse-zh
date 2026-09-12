@@ -4,6 +4,7 @@ import 'package:flutter/services.dart' show rootBundle;
 import '../core/theme.dart';
 import '../services/audio_service.dart';
 import '../widgets/chinese_decor.dart';
+import '../core/l10n.dart';
 
 class FlashcardScreen extends StatefulWidget {
   const FlashcardScreen({super.key});
@@ -49,8 +50,8 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
       setState(() => _index++);
     } else {
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text('🎉 복습 세션 완료!'),
+        SnackBar(
+          content: Text(tr('🎉 복습 세션 완료!')),
           backgroundColor: AppColors.feiCui,
         ),
       );
@@ -72,10 +73,10 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
         backgroundColor: AppColors.xuanZhi,
         foregroundColor: AppColors.mo,
         elevation: 0,
-        title: const Column(
+        title: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            Text('복습 카드', style: TextStyle(color: AppColors.mo, fontWeight: FontWeight.w800, fontSize: 16)),
+            Text(tr('복습 카드'), style: TextStyle(color: AppColors.mo, fontWeight: FontWeight.w800, fontSize: 16)),
             SizedBox(height: 2),
             Text('Flashcards', style: TextStyle(color: AppColors.moLight, fontSize: 10, letterSpacing: 2)),
           ],
@@ -215,19 +216,19 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
             children: [
               _SrsButton(
                 icon: Icons.close,
-                label: '몰라요',
+                label: tr('몰라요'),
                 color: const Color(0xFFE53935),
                 onTap: () => _answer(0),
               ),
               _SrsButton(
                 icon: Icons.refresh,
-                label: '보통이에요',
+                label: tr('보통이에요'),
                 color: AppColors.jin,
                 onTap: () => _answer(1),
               ),
               _SrsButton(
                 icon: Icons.check,
-                label: '알아요',
+                label: tr('알아요'),
                 color: AppColors.feiCui,
                 onTap: () => _answer(2),
               ),

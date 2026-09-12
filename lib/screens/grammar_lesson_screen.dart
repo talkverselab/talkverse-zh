@@ -12,6 +12,7 @@ import '../widgets/chinese_decor.dart';
 import '../widgets/memo_toggle.dart';
 import '../widgets/selectable_hanzi.dart';
 import 'grammar_test_screen.dart';
+import '../core/l10n.dart';
 
 class GrammarLessonScreen extends StatefulWidget {
   final int lessonNum;
@@ -63,7 +64,7 @@ class _GrammarLessonScreenState extends State<GrammarLessonScreen> {
     if (memos.isEmpty) {
       if (!mounted) return;
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('저장된 메모 없음')),
+        SnackBar(content: Text(tr('저장된 메모 없음'))),
       );
       return;
     }
@@ -80,7 +81,7 @@ class _GrammarLessonScreenState extends State<GrammarLessonScreen> {
     };
 
     final buf = StringBuffer();
-    buf.writeln('# 중국어유니버스 — 메모 ${memos.length}개');
+    buf.writeln(trf('# 중국어유니버스 — 메모 {0}개', [memos.length]));
     buf.writeln();
     final keys = byPattern.keys.toList()..sort();
     for (final pid in keys) {
@@ -96,7 +97,7 @@ class _GrammarLessonScreenState extends State<GrammarLessonScreen> {
         buf.writeln('### ${m.idx + 1}. ${ex['zh']}');
         buf.writeln('- pinyin: `${ex['pinyin']}`');
         buf.writeln('- ko: ${ex['ko']}');
-        buf.writeln('- **메모**: ${m.value}');
+        buf.writeln(trf('- **메모**: {0}', [m.value]));
         buf.writeln();
       }
     }
@@ -106,7 +107,7 @@ class _GrammarLessonScreenState extends State<GrammarLessonScreen> {
     if (!mounted) return;
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(
-        content: Text('📋 메모 ${memos.length}개 클립보드 복사됨 — Claude 한테 paste!'),
+        content: Text(trf('📋 메모 {0}개 클립보드 복사됨 — Claude 한테 paste!', [memos.length])),
         backgroundColor: AppColors.feiCui,
         duration: const Duration(seconds: 4),
       ),
@@ -126,8 +127,8 @@ class _GrammarLessonScreenState extends State<GrammarLessonScreen> {
             const SizedBox(height: 2),
             Text(
               widget.lessonNum == 1
-                  ? 'S1+S2 기능어 패턴 40 × 3'
-                  : '어기조사 · 부사 · 필수단어 (LCCC 실측)',
+                  ? tr('S1+S2 기능어 패턴 40 × 3')
+                  : tr('어기조사 · 부사 · 필수단어 (LCCC 실측)'),
               style: const TextStyle(color: AppColors.moLight, fontSize: 10, letterSpacing: 2),
             ),
           ],
@@ -139,7 +140,7 @@ class _GrammarLessonScreenState extends State<GrammarLessonScreen> {
         actions: [
           const KoReadingToggleAction(),
           IconButton(
-            tooltip: '플래시카드 테스트',
+            tooltip: tr('플래시카드 테스트'),
             icon: const Icon(Icons.quiz_outlined),
             onPressed: () => Navigator.push(
               context,
@@ -147,7 +148,7 @@ class _GrammarLessonScreenState extends State<GrammarLessonScreen> {
             ),
           ),
           IconButton(
-            tooltip: '메모 내보내기',
+            tooltip: tr('메모 내보내기'),
             icon: const Icon(Icons.ios_share),
             onPressed: _exportMemos,
           ),
@@ -164,7 +165,7 @@ class _GrammarLessonScreenState extends State<GrammarLessonScreen> {
   }
 
   Widget _buildBody() {
-    if (_data == null) return const Center(child: Text('데이터 없음'));
+    if (_data == null) return Center(child: Text(tr('데이터 없음')));
     final allPatterns = (_data!['patterns'] as List?) ?? [];
     final stages = (_data!['stages'] as List?) ?? [];
     final chunks = (_data!['chunks'] as Map?)?.cast<String, dynamic>();
@@ -282,7 +283,7 @@ class _GrammarLessonScreenState extends State<GrammarLessonScreen> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        widget.lessonNum == 1 ? '문법 패턴 드릴' : '어휘 + 어기조사 + 부사',
+                        widget.lessonNum == 1 ? tr('문법 패턴 드릴') : tr('어휘 + 어기조사 + 부사'),
                         style: const TextStyle(
                           color: AppColors.jinBright,
                           fontSize: 12,
@@ -299,7 +300,7 @@ class _GrammarLessonScreenState extends State<GrammarLessonScreen> {
                                 .map((p) => ((p as Map)['examples'] as List?)?.length ?? 0)
                                 .fold<int>(0, (a, b) => a + b));
                         return Text(
-                          '$pc 패턴 · $sc 문장',
+                          trf('{0} 패턴 · {1} 문장', [pc, sc]),
                           style: const TextStyle(
                             color: AppColors.xuanZhi,
                             fontSize: 22,
@@ -311,8 +312,8 @@ class _GrammarLessonScreenState extends State<GrammarLessonScreen> {
                       const SizedBox(height: 6),
                       Text(
                         widget.lessonNum == 1
-                            ? 'S1+S2 (159자) · 진짜 중국인 표현'
-                            : '209자 · LCCC 실측 챗 기반',
+                            ? tr('S1+S2 (159자) · 진짜 중국인 표현')
+                            : tr('209자 · LCCC 실측 챗 기반'),
                         style: TextStyle(
                           color: AppColors.xuanZhi.withValues(alpha: 0.9),
                           fontSize: 12,
@@ -363,8 +364,8 @@ class _GrammarLessonScreenState extends State<GrammarLessonScreen> {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        const Text(
-                          '플래시카드 테스트',
+                        Text(
+                          tr('플래시카드 테스트'),
                           style: TextStyle(
                             fontSize: 15,
                             fontWeight: FontWeight.w900,
@@ -374,7 +375,7 @@ class _GrammarLessonScreenState extends State<GrammarLessonScreen> {
                         ),
                         const SizedBox(height: 2),
                         Text(
-                          '한국어 → 중국어 회상 (120 문장)',
+                          tr('한국어 → 중국어 회상 (120 문장)'),
                           style: TextStyle(
                             fontSize: 11,
                             color: AppColors.moLight,
@@ -675,7 +676,7 @@ class GrammarMenuScreen extends StatelessWidget {
         foregroundColor: AppColors.mo,
         elevation: 0,
         centerTitle: true,
-        title: const Text('문법',
+        title: Text(tr('문법'),
             style: TextStyle(color: AppColors.mo, fontWeight: FontWeight.w800)),
       ),
       body: SafeArea(
@@ -684,9 +685,9 @@ class GrammarMenuScreen extends StatelessWidget {
         child: ListView(
           padding: const EdgeInsets.all(16),
           children: [
-            card('문법 L1', '기능어 40개 × 3문장 드릴', 1, const Color(0xFF8B0000)),
+            card(tr('문법 L1'), tr('기능어 40개 × 3문장 드릴'), 1, const Color(0xFF8B0000)),
             const SizedBox(height: 10),
-            card('문법 L2', '어기조사·부사·단어 확장', 2, const Color(0xFFAD1457)),
+            card(tr('문법 L2'), tr('어기조사·부사·단어 확장'), 2, const Color(0xFFAD1457)),
           ],
         ),
       ),

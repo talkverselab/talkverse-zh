@@ -16,6 +16,7 @@ import 'profile_screen.dart';
 import 'progress_screen.dart';
 import 'tone_practice_screen.dart';
 import 'topic_vocab_screen.dart';
+import '../core/l10n.dart';
 
 class MainScreen extends StatefulWidget {
   const MainScreen({super.key});
@@ -34,11 +35,11 @@ class _MainScreenState extends State<MainScreen> {
     ProfileScreen(),
   ];
 
-  static const List<NavigationDestination> _tabs = [
-    NavigationDestination(icon: Icon(Icons.home_outlined), selectedIcon: Icon(Icons.home), label: '홈'),
-    NavigationDestination(icon: Icon(Icons.menu_book_outlined), selectedIcon: Icon(Icons.menu_book), label: '학습'),
-    NavigationDestination(icon: Icon(Icons.bar_chart_outlined), selectedIcon: Icon(Icons.bar_chart), label: '진행'),
-    NavigationDestination(icon: Icon(Icons.person_outline), selectedIcon: Icon(Icons.person), label: '프로필'),
+  static List<NavigationDestination> get _tabs => [
+    NavigationDestination(icon: Icon(Icons.home_outlined), selectedIcon: Icon(Icons.home), label: tr('홈')),
+    NavigationDestination(icon: Icon(Icons.menu_book_outlined), selectedIcon: Icon(Icons.menu_book), label: tr('학습')),
+    NavigationDestination(icon: Icon(Icons.bar_chart_outlined), selectedIcon: Icon(Icons.bar_chart), label: tr('진행')),
+    NavigationDestination(icon: Icon(Icons.person_outline), selectedIcon: Icon(Icons.person), label: tr('프로필')),
   ];
 
   @override
@@ -91,7 +92,7 @@ class HomeScreen extends StatelessWidget {
                           ),
                           const SizedBox(height: 2),
                           Text(
-                            '한국 학습자, 오늘도 시작해요',
+                            tr('한국 학습자, 오늘도 시작해요'),
                             style: TextStyle(
                               fontSize: 13,
                               color: AppColors.moLight,
@@ -133,7 +134,7 @@ class HomeScreen extends StatelessWidget {
                     const SealStamp(text: '学', size: 22),
                     const SizedBox(width: 8),
                     Text(
-                      '메인 메뉴',
+                      tr('메인 메뉴'),
                       style: TextStyle(
                         fontSize: 14,
                         fontWeight: FontWeight.w800,
@@ -150,7 +151,7 @@ class HomeScreen extends StatelessWidget {
                 const SizedBox(height: 12),
                 Center(
                   child: Text(
-                    '중국어유니버스 · 2026',
+                    tr('중국어유니버스 · 2026'),
                     style: TextStyle(
                       color: AppColors.moLight,
                       fontSize: 11,
@@ -224,7 +225,7 @@ class _TodayMissionState extends State<_TodayMission> {
     return TodayMissionCard(
       level: meta.level == 'L1' ? 'BEGINNER 1' : meta.level,
       lessonTitle: '${meta.level} · ${meta.title}',
-      lessonSubtitle: 'Mark & 小丽 스토리 ${meta.emoji}',
+      lessonSubtitle: trf('Mark & 小丽 스토리 {0}', [meta.emoji]),
       progress: _learned,
       total: _total,
       onTap: () async {
@@ -242,27 +243,27 @@ class _MenuGrid extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final items = <_MenuItem>[
-      _MenuItem(label: '회화', sub: 'Conversation', seal: '会话', color: AppColors.zhuHong,
+      _MenuItem(label: tr('회화'), sub: 'Conversation', seal: '会话', color: AppColors.zhuHong,
         builder: (_) => const ConversationScreen()),
-      _MenuItem(label: '말하기', sub: 'Speaking 10s·5s·2s', seal: '口语', color: AppColors.zhuHongDeep,
+      _MenuItem(label: tr('말하기'), sub: 'Speaking 10s·5s·2s', seal: '口语', color: AppColors.zhuHongDeep,
         builder: (_) => const SpeakingPracticeScreen()),
-      _MenuItem(label: '문법', sub: 'L1 기능어 · L2 어기조사', seal: '文法', color: const Color(0xFF8B0000),
+      _MenuItem(label: tr('문법'), sub: tr('L1 기능어 · L2 어기조사'), seal: '文法', color: const Color(0xFF8B0000),
         builder: (_) => const GrammarMenuScreen()),
-      _MenuItem(label: '한자', sub: '회화 209 · HSK 1500', seal: '汉字', color: const Color(0xFFC62828),
+      _MenuItem(label: tr('한자'), sub: tr('회화 209 · HSK 1500'), seal: '汉字', color: const Color(0xFFC62828),
         builder: (_) => const HanziHubScreen()),
-      _MenuItem(label: '단어', sub: '주제별 · 핵심어휘 · HSK 1~5급', seal: '词汇', color: AppColors.feiCui,
+      _MenuItem(label: tr('단어'), sub: tr('주제별 · 핵심어휘 · HSK 1~5급'), seal: '词汇', color: AppColors.feiCui,
         builder: (_) => const TopicVocabScreen(
             includeCoreWordset: true,
             extraAssets: ['assets/data/vocab/hsk_words.json'])),
-      _MenuItem(label: '표현', sub: 'Expression · 필수표현', seal: '表达', color: AppColors.jinDeep,
-        builder: (_) => const TopicVocabScreen(
-            title: '주제별 표현',
+      _MenuItem(label: tr('표현'), sub: tr('Expression · 필수표현'), seal: '表达', color: AppColors.jinDeep,
+        builder: (_) => TopicVocabScreen(
+            title: tr('주제별 표현'),
             asset: 'assets/data/vocab/travel_expressions.json')),
-      _MenuItem(label: '성조연습', sub: 'Tone practice', seal: '声调', color: const Color(0xFF1565C0),
+      _MenuItem(label: tr('성조연습'), sub: 'Tone practice', seal: '声调', color: const Color(0xFF1565C0),
         builder: (_) => const TonePracticeScreen()),
-      _MenuItem(label: '발음부', sub: 'Phonetic', seal: '声旁', color: const Color(0xFF6A1B9A),
+      _MenuItem(label: tr('발음부'), sub: 'Phonetic', seal: '声旁', color: const Color(0xFF6A1B9A),
         builder: (_) => const PhoneticRootsScreen()),
-      _MenuItem(label: '복습', sub: 'Flashcard', seal: '复习', color: AppColors.jin,
+      _MenuItem(label: tr('복습'), sub: 'Flashcard', seal: '复习', color: AppColors.jin,
         builder: (_) => const FlashcardScreen()),
     ];
 
@@ -358,8 +359,8 @@ class LearnScreen extends StatefulWidget {
 }
 
 class _LearnScreenState extends State<LearnScreen> {
-  String _filter = '전체';
-  final List<String> _filters = const ['전체', '회화', '한자', '발음', '단어', 'HSK'];
+  String _filter = tr('전체');
+  final List<String> _filters = [tr('전체'), tr('회화'), tr('한자'), tr('발음'), tr('단어'), 'HSK'];
   List<_LessonItem> _lessons = [];
 
   @override
@@ -424,7 +425,7 @@ class _LearnScreenState extends State<LearnScreen> {
         backgroundColor: AppColors.xuanZhi,
         foregroundColor: AppColors.mo,
         elevation: 0,
-        title: const Text('학습', style: TextStyle(color: AppColors.mo)),
+        title: Text(tr('학습'), style: TextStyle(color: AppColors.mo)),
         centerTitle: true,
         actions: [
           IconButton(
@@ -544,7 +545,7 @@ class _LessonRow extends StatelessWidget {
               ),
             ),
             Text(
-              '${lesson.total}편',
+              trf('{0}편', [lesson.total]),
               style: const TextStyle(
                 fontSize: 11,
                 fontWeight: FontWeight.w800,

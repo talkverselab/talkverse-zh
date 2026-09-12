@@ -2,6 +2,7 @@ import 'dart:convert';
 
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/services.dart' show rootBundle;
+import '../core/platform.dart';
 
 class AudioService {
   AudioService._();
@@ -13,6 +14,16 @@ class AudioService {
 
   Future<void> ensureLoaded() async {
     if (_loaded) return;
+    if (isIOS) {
+      // 무음 스위치에서도 학습 음성이 나오게
+      await AudioPlayer.global.setAudioContext(AudioContext(
+        iOS: AudioContextIOS(
+          category: AVAudioSessionCategory.playback,
+          options: const {AVAudioSessionOptions.duckOthers},
+        ),
+        android: const AudioContextAndroid(),
+      ));
+    }
     try {
       final raw = await rootBundle.loadString('assets/data/audio_manifest.json');
       final data = json.decode(raw) as Map<String, dynamic>;

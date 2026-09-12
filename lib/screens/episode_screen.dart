@@ -13,6 +13,8 @@ import '../services/tts_service.dart';
 import '../widgets/chinese_decor.dart';
 import '../widgets/selectable_hanzi.dart';
 import 'sentence_flashcard_screen.dart';
+import '../core/platform.dart';
+import '../core/l10n.dart';
 
 /// 에피소드/다이얼로그 메타 (Learn 탭·회화 허브·홈 공용).
 class EpisodeMeta {
@@ -33,11 +35,11 @@ class EpisodeCatalog {
 
   static const List<String> levels = ['L1', 'L2', 'L3', 'L4'];
 
-  static const Map<String, String> levelLabels = {
-    'L1': 'L1 스토리 — 첫 만남',
-    'L2': 'L2 카오스 챗 — 일상',
-    'L3': 'L3 내러티브 — 사랑',
-    'L4': 'L4 플러팅 — 먼저 다가가기',
+  static Map<String, String> get levelLabels => {
+    'L1': tr('L1 스토리 — 첫 만남'),
+    'L2': tr('L2 카오스 챗 — 일상'),
+    'L3': tr('L3 내러티브 — 사랑'),
+    'L4': tr('L4 플러팅 — 먼저 다가가기'),
   };
 
   List<EpisodeMeta> forLevel(String level) => _byLevel[level] ?? const [];
@@ -166,7 +168,7 @@ class _EpisodeScreenState extends State<EpisodeScreen> {
         actions: [
           const KoReadingToggleAction(),
           IconButton(
-            tooltip: '이 에피소드 플래시카드',
+            tooltip: tr('이 에피소드 플래시카드'),
             icon: const Icon(Icons.style, color: AppColors.zhuHong),
             onPressed: () async {
               await Navigator.push(
@@ -205,7 +207,7 @@ class _EpisodeScreenState extends State<EpisodeScreen> {
                   const GreekKeyDivider(height: 8),
                   Expanded(
                     child: ListView.builder(
-                      padding: const EdgeInsets.fromLTRB(12, 10, 12, 90),
+                      padding: EdgeInsets.fromLTRB(12, 10, 12, 90 + bottomInset(context)),
                       itemCount: _turns.length,
                       itemBuilder: (context, i) {
                         final t = _turns[i];

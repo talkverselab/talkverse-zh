@@ -4,6 +4,7 @@ import 'package:flutter/services.dart' show rootBundle;
 
 import 'cedict_service.dart';
 import 'pinyin_util.dart';
+import '../core/l10n.dart';
 
 /// 인덱싱된 문장 하나. 앱의 모든 문장 소스(문법 예문·대화)를 통합한 단위.
 class IndexedSentence {
@@ -106,7 +107,7 @@ class ChunkIndexService {
             zh: zh,
             pinyin: m['pinyin'] as String?,
             ko: m['ko'] as String?,
-            source: '문법 L$n',
+            source: trf('문법 L{0}', [n]),
             tokens: rawTokens ?? _segment(zh),
           ));
         }
@@ -136,7 +137,7 @@ class ChunkIndexService {
               zh: zh,
               pinyin: m['pinyin'] as String?,
               ko: m['ko'] as String?,
-              source: '대화 $level${dialect == 'south' ? ' (남방)' : ''}',
+              source: trf('대화 {0}{1}', [level, dialect == 'south' ? ' (남방)' : '']),
               speaker: m['speaker'] as String?,
               tokens: _segment(zh),
             ));
@@ -167,7 +168,7 @@ class ChunkIndexService {
           zh: zh,
           pinyin: tm['pinyin'] as String?,
           ko: tm['ko'] as String?,
-          source: label == null ? '회화 (LCCC)' : '회화 · $label',
+          source: label == null ? tr('회화 (LCCC)') : trf('회화 · {0}', [label]),
           speaker: tm['speaker'] as String?,
           tokens: _segment(zh),
         ));

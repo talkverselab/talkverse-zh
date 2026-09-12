@@ -11,6 +11,8 @@ import '../services/ko_reading.dart';
 import '../services/tts_service.dart';
 import '../widgets/chinese_decor.dart';
 import '../widgets/selectable_hanzi.dart';
+import '../core/platform.dart';
+import '../core/l10n.dart';
 
 /// 외우기 모드: 전체 보기 / 한자·독음 가림 / 뜻 가림.
 enum StudyMode { all, hideZh, hideKo }
@@ -141,8 +143,8 @@ class VocabCatalog {
       if (c.length < 3 || c[0].trim().isEmpty) continue;
       words.add(VocabWord('', c[0].trim(), ''));
     }
-    final theme = VocabTheme('core', '회화 핵심어휘', '💬',
-        [VocabSection('회화 핵심어휘', words)]);
+    final theme = VocabTheme('core', tr('회화 핵심어휘'), '💬',
+        [VocabSection(tr('회화 핵심어휘'), words)]);
     _byAsset[key] = [theme];
     return theme;
   }
@@ -209,11 +211,11 @@ class _TopicVocabScreenState extends State<TopicVocabScreen> {
         title: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            Text(widget.title,
+            Text(tr(widget.title),
                 style: const TextStyle(
                     color: AppColors.mo, fontSize: 16, fontWeight: FontWeight.w800)),
             const SizedBox(height: 2),
-            Text('여행 중국어 · $total항목',
+            Text(trf('여행 중국어 · {0}항목', [total]),
                 style: TextStyle(
                     color: AppColors.moLight, fontSize: 10, letterSpacing: 2)),
           ],
@@ -229,7 +231,7 @@ class _TopicVocabScreenState extends State<TopicVocabScreen> {
                   const GreekKeyDivider(height: 8),
                   Expanded(
                     child: GridView.builder(
-                      padding: const EdgeInsets.fromLTRB(16, 12, 16, 24),
+                      padding: EdgeInsets.fromLTRB(16, 12, 16, 24 + bottomInset(context)),
                       gridDelegate:
                           const SliverGridDelegateWithFixedCrossAxisCount(
                         crossAxisCount: 2,
@@ -272,7 +274,7 @@ class _TopicVocabScreenState extends State<TopicVocabScreen> {
                                 ),
                                 const SizedBox(height: 2),
                                 Text(
-                                  '${t.sections.length}편 · ${t.wordCount}단어',
+                                  trf('{0}편 · {1}단어', [t.sections.length, t.wordCount]),
                                   style: const TextStyle(
                                     fontSize: 11,
                                     color: AppColors.moLight,
@@ -327,9 +329,9 @@ class _ThemeDetailScreenState extends State<_ThemeDetailScreen> {
   }
 
   String get _modeLabel => switch (_mode) {
-        StudyMode.all => '전체',
-        StudyMode.hideZh => '한자가림',
-        StudyMode.hideKo => '뜻가림',
+        StudyMode.all => tr('전체'),
+        StudyMode.hideZh => tr('한자가림'),
+        StudyMode.hideKo => tr('뜻가림'),
       };
 
   @override
@@ -356,7 +358,7 @@ class _ThemeDetailScreenState extends State<_ThemeDetailScreen> {
                 final done =
                     words.where((w) => MemorizedStore.contains(w.zh)).length;
                 return Text(
-                  '${t.wordCount}단어 · 외움 $done',
+                  trf('{0}단어 · 외움 {1}', [t.wordCount, done]),
                   style: TextStyle(
                       color: AppColors.moLight, fontSize: 10, letterSpacing: 2),
                 );
@@ -367,7 +369,7 @@ class _ThemeDetailScreenState extends State<_ThemeDetailScreen> {
         actions: [
           const KoReadingToggleAction(),
           IconButton(
-            tooltip: '외우기 모드: $_modeLabel (탭하여 전환)',
+            tooltip: trf('외우기 모드: {0} (탭하여 전환)', [_modeLabel]),
             onPressed: _cycleMode,
             icon: Container(
               padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 3),
@@ -401,7 +403,7 @@ class _ThemeDetailScreenState extends State<_ThemeDetailScreen> {
         child: Builder(builder: (context) {
           if (!widget.gridMode) {
             return ListView.builder(
-              padding: const EdgeInsets.fromLTRB(12, 8, 12, 24),
+              padding: EdgeInsets.fromLTRB(12, 8, 12, 24 + bottomInset(context)),
               itemCount: words.length,
               itemBuilder: (context, i) => _WordRow(
                 key: ValueKey('${_mode.name}_${words[i].zh}_$i'),
@@ -413,7 +415,7 @@ class _ThemeDetailScreenState extends State<_ThemeDetailScreen> {
           }
           // 1×1 그리드 (메인 메뉴 스타일) — 단어별 아이콘
           return GridView.builder(
-            padding: const EdgeInsets.fromLTRB(14, 10, 14, 24),
+            padding: EdgeInsets.fromLTRB(14, 10, 14, 24 + bottomInset(context)),
             gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
               crossAxisCount: 3,
               mainAxisSpacing: 9,
@@ -574,7 +576,7 @@ class _WordTileState extends State<_WordTile> {
                       padding: EdgeInsets.zero,
                       constraints: const BoxConstraints(
                           minWidth: 30, minHeight: 30),
-                      tooltip: memorized ? '외움 해제' : '외웠어요',
+                      tooltip: memorized ? tr('외움 해제') : tr('외웠어요'),
                       onPressed: () => MemorizedStore.toggle(word.zh),
                       icon: Icon(
                         memorized
@@ -615,7 +617,7 @@ class _WordDetailSheet extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Padding(
-        padding: const EdgeInsets.fromLTRB(20, 20, 20, 26),
+        padding: EdgeInsets.fromLTRB(20, 20, 20, 26 + bottomInset(context)),
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
@@ -676,7 +678,7 @@ class _WordDetailSheet extends StatelessWidget {
               ),
               onPressed: () => TtsService.instance.speak(word.zh),
               icon: const Icon(Icons.volume_up),
-              label: const Text('다시 듣기',
+              label: Text(tr('다시 듣기'),
                   style: TextStyle(fontWeight: FontWeight.w800)),
             ),
           ],
@@ -819,7 +821,7 @@ class _WordRowState extends State<_WordRow> {
                 ),
                 if (study || memorized)
                   IconButton(
-                    tooltip: memorized ? '외움 해제' : '외웠어요',
+                    tooltip: memorized ? tr('외움 해제') : tr('외웠어요'),
                     icon: Icon(
                       memorized
                           ? Icons.check_circle

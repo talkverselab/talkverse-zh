@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../core/theme.dart';
 import '../services/tts_service.dart';
 import '../widgets/chinese_decor.dart';
+import '../core/l10n.dart';
 
 class ToneMatrixScreen extends StatelessWidget {
   const ToneMatrixScreen({super.key});
@@ -11,7 +12,7 @@ class ToneMatrixScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: AppColors.xuanZhi,
-      appBar: AppBar(title: const Text('4성 매트릭스')),
+      appBar: AppBar(title: Text(tr('4성 매트릭스'))),
       body: SafeArea(
         // 아이폰 홈 표시줄·갤럭시 제스처 바 아래로 내용이 깔리지 않게
         top: false,
@@ -22,10 +23,10 @@ class ToneMatrixScreen extends StatelessWidget {
               padding: const EdgeInsets.all(16),
               children: [
                 ChineseCard(
-                  title: '성조 4×4 + 경성 4',
+                  title: tr('성조 4×4 + 경성 4'),
                   sealText: '调',
                   child: Text(
-                    '2글자 단어 성조 조합 16 칸 + 경성 4 칸 = 20 셀.\n셀 당 10 단어 예시. 총 160 단어 학습 트랙.',
+                    tr('2글자 단어 성조 조합 16 칸 + 경성 4 칸 = 20 셀.\n셀 당 10 단어 예시. 총 160 단어 학습 트랙.'),
                     style: TextStyle(color: AppColors.moLight, fontSize: 12, height: 1.5),
                   ),
                 ),
@@ -34,7 +35,7 @@ class ToneMatrixScreen extends StatelessWidget {
                 const SizedBox(height: 12),
                 const BrushDivider(),
                 const SizedBox(height: 14),
-                Text('메인 매트릭스 4×4',
+                Text(tr('메인 매트릭스 4×4'),
                     style: TextStyle(fontWeight: FontWeight.w800, color: AppColors.mo, letterSpacing: 2)),
                 const SizedBox(height: 8),
                 GridView.builder(
@@ -54,7 +55,7 @@ class ToneMatrixScreen extends StatelessWidget {
                   },
                 ),
                 const SizedBox(height: 18),
-                Text('경성',
+                Text(tr('경성'),
                     style: TextStyle(fontWeight: FontWeight.w800, color: AppColors.mo, letterSpacing: 2)),
                 const SizedBox(height: 8),
                 GridView.builder(
@@ -86,11 +87,11 @@ class _ToneLegend extends StatelessWidget {
       spacing: 10,
       runSpacing: 8,
       children: [
-        _legend(1, '1성 高平 mā'),
-        _legend(2, '2성 上昇 má'),
-        _legend(3, '3성 V mǎ'),
-        _legend(4, '4성 下降 mà'),
-        _legend(0, '경성 ma'),
+        _legend(1, tr('1성 高平 mā')),
+        _legend(2, tr('2성 上昇 má')),
+        _legend(3, tr('3성 V mǎ')),
+        _legend(4, tr('4성 下降 mà')),
+        _legend(0, tr('경성 ma')),
       ],
     );
   }
@@ -123,27 +124,27 @@ class _ToneCell extends StatelessWidget {
   final int col;
   const _ToneCell({required this.row, required this.col});
 
-  static const Map<String, List<String>> _samples = {
-    '1-1': ['妈妈', 'māma', '엄마'],
-    '1-2': ['今天', 'jīntiān', '오늘'],
-    '1-3': ['身体', 'shēntǐ', '몸'],
-    '1-4': ['工作', 'gōngzuò', '일'],
-    '2-1': ['昨天', 'zuótiān', '어제'],
-    '2-2': ['学习', 'xuéxí', '학습'],
-    '2-3': ['学校', 'xuéxiào', '학교'],
-    '2-4': ['国家', 'guójiā', '국가'],
-    '3-1': ['老师', 'lǎoshī', '선생'],
-    '3-2': ['你好', 'nǐ hǎo', '안녕'],
-    '3-3': ['可以', 'kěyǐ', '가능'],
-    '3-4': ['请坐', 'qǐng zuò', '앉아'],
-    '4-1': ['再见', 'zàijiàn', '안녕히'],
-    '4-2': ['现在', 'xiànzài', '지금'],
-    '4-3': ['对不', 'duìbù', '미안'],
-    '4-4': ['谢谢', 'xièxie', '감사'],
-    '1-0': ['妈', 'ma', '엄마'],
-    '2-0': ['朋友', 'péngyou', '친구'],
-    '3-0': ['好的', 'hǎode', '좋아'],
-    '4-0': ['爸爸', 'bàba', '아빠'],
+  static Map<String, List<String>> get _samples => {
+    '1-1': ['妈妈', 'māma', tr('엄마')],
+    '1-2': ['今天', 'jīntiān', tr('오늘')],
+    '1-3': ['身体', 'shēntǐ', tr('몸')],
+    '1-4': ['工作', 'gōngzuò', tr('일')],
+    '2-1': ['昨天', 'zuótiān', tr('어제')],
+    '2-2': ['学习', 'xuéxí', tr('학습')],
+    '2-3': ['学校', 'xuéxiào', tr('학교')],
+    '2-4': ['国家', 'guójiā', tr('국가')],
+    '3-1': ['老师', 'lǎoshī', tr('선생')],
+    '3-2': ['你好', 'nǐ hǎo', tr('안녕')],
+    '3-3': ['可以', 'kěyǐ', tr('가능')],
+    '3-4': ['请坐', 'qǐng zuò', tr('앉아')],
+    '4-1': ['再见', 'zàijiàn', tr('안녕히')],
+    '4-2': ['现在', 'xiànzài', tr('지금')],
+    '4-3': ['对不', 'duìbù', tr('미안')],
+    '4-4': ['谢谢', 'xièxie', tr('감사')],
+    '1-0': ['妈', 'ma', tr('엄마')],
+    '2-0': ['朋友', 'péngyou', tr('친구')],
+    '3-0': ['好的', 'hǎode', tr('좋아')],
+    '4-0': ['爸爸', 'bàba', tr('아빠')],
   };
 
   @override
@@ -174,7 +175,7 @@ class _ToneCell extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(
-                col == 0 ? '$row·경' : '$row·$col',
+                col == 0 ? trf('{0}·경', [row]) : '$row·$col',
                 style: const TextStyle(
                   fontSize: 9,
                   fontWeight: FontWeight.w800,

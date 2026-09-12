@@ -6,6 +6,8 @@ import '../services/hanzi_info_service.dart';
 import '../services/pinyin_util.dart';
 import '../widgets/chinese_decor.dart';
 import '../widgets/selectable_hanzi.dart';
+import '../core/platform.dart';
+import '../core/l10n.dart';
 
 /// 발음부(声旁) 탐색 — HSK1-5 실데이터.
 /// 카드를 탭하면 그 발음부를 공유하는 한자 가족 시트가 열린다.
@@ -105,10 +107,10 @@ class _PhoneticRootsScreenState extends State<PhoneticRootsScreen> {
         foregroundColor: AppColors.mo,
         elevation: 0,
         centerTitle: true,
-        title: const Column(
+        title: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            Text('발음부 + 한국 한자음',
+            Text(tr('발음부 + 한국 한자음'),
                 style: TextStyle(
                     color: AppColors.mo, fontSize: 16, fontWeight: FontWeight.w800)),
             SizedBox(height: 2),
@@ -132,7 +134,7 @@ class _PhoneticRootsScreenState extends State<PhoneticRootsScreen> {
                       style: const TextStyle(
                           fontSize: 16, fontWeight: FontWeight.w700, color: AppColors.mo),
                       decoration: InputDecoration(
-                        hintText: '马 · ma · 마',
+                        hintText: tr('马 · ma · 마'),
                         hintStyle:
                             const TextStyle(color: AppColors.moLight, fontSize: 14),
                         prefixIcon:
@@ -159,7 +161,7 @@ class _PhoneticRootsScreenState extends State<PhoneticRootsScreen> {
                         const SealStamp(text: '声旁', size: 22),
                         const SizedBox(width: 8),
                         Text(
-                          '발음부 ${_roots.length}개 · 한자 $total자 커버',
+                          trf('발음부 {0}개 · 한자 {1}자 커버', [_roots.length, total]),
                           style: TextStyle(
                             fontSize: 12,
                             fontWeight: FontWeight.w800,
@@ -169,7 +171,7 @@ class _PhoneticRootsScreenState extends State<PhoneticRootsScreen> {
                         ),
                         const Spacer(),
                         Text(
-                          '탭 → 한자 가족',
+                          tr('탭 → 한자 가족'),
                           style: TextStyle(fontSize: 10, color: AppColors.moLight),
                         ),
                       ],
@@ -178,7 +180,7 @@ class _PhoneticRootsScreenState extends State<PhoneticRootsScreen> {
                   const GreekKeyDivider(height: 8),
                   Expanded(
                     child: GridView.builder(
-                      padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
+                      padding: EdgeInsets.fromLTRB(16, 10, 16, 24 + bottomInset(context)),
                       gridDelegate:
                           const SliverGridDelegateWithFixedCrossAxisCount(
                         crossAxisCount: 2,
@@ -257,7 +259,7 @@ class _RootCard extends StatelessWidget {
                         border: Border.all(color: AppColors.jin),
                       ),
                       child: Text(
-                        '가족 ${root.count}자',
+                        trf('가족 {0}자', [root.count]),
                         style: const TextStyle(
                             fontSize: 9,
                             color: AppColors.mo,

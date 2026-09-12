@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 
 import '../core/theme.dart';
 import '../services/tts_service.dart';
+import '../core/l10n.dart';
 
 class HanziQuizScreen extends StatefulWidget {
   final int stage;
@@ -132,14 +133,14 @@ class _HanziQuizScreenState extends State<HanziQuizScreen> {
         backgroundColor: AppColors.xuanZhi,
         shape: const RoundedRectangleBorder(),
         title: Text(
-          '🎉  단계 ${widget.stage} 완료',
+          trf('🎉  단계 {0} 완료', [widget.stage]),
           style: const TextStyle(color: AppColors.mo, fontWeight: FontWeight.w900),
         ),
         content: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            _row('정답', _correct, AppColors.feiCui),
-            _row('오답', _wrong, const Color(0xFFE53935)),
+            _row(tr('정답'), _correct, AppColors.feiCui),
+            _row(tr('오답'), _wrong, const Color(0xFFE53935)),
             const Divider(),
             Text(
               '$pct%',
@@ -157,7 +158,7 @@ class _HanziQuizScreenState extends State<HanziQuizScreen> {
               Navigator.pop(context);
               Navigator.pop(context);
             },
-            child: const Text('나가기', style: TextStyle(color: AppColors.moLight)),
+            child: Text(tr('나가기'), style: TextStyle(color: AppColors.moLight)),
           ),
           ElevatedButton(
             onPressed: () {
@@ -176,7 +177,7 @@ class _HanziQuizScreenState extends State<HanziQuizScreen> {
               foregroundColor: AppColors.xuanZhi,
               shape: const RoundedRectangleBorder(),
             ),
-            child: const Text('다시'),
+            child: Text(tr('다시')),
           ),
         ],
       ),
@@ -206,11 +207,11 @@ class _HanziQuizScreenState extends State<HanziQuizScreen> {
         title: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            Text('한자 단계 ${widget.stage}',
+            Text(trf('한자 단계 {0}', [widget.stage]),
                 style: const TextStyle(
                     color: AppColors.mo, fontWeight: FontWeight.w800, fontSize: 15)),
             const SizedBox(height: 2),
-            const Text('4지선다 · 누적',
+            Text(tr('4지선다 · 누적'),
                 style: TextStyle(color: AppColors.moLight, fontSize: 10, letterSpacing: 2)),
           ],
         ),
@@ -303,8 +304,8 @@ class _HanziQuizScreenState extends State<HanziQuizScreen> {
                         ),
                       ),
                       const SizedBox(height: 6),
-                      const Text(
-                        '뜻은?',
+                      Text(
+                        tr('뜻은?'),
                         style: TextStyle(
                           fontSize: 11,
                           color: AppColors.moLight,
@@ -349,7 +350,7 @@ class _HanziQuizScreenState extends State<HanziQuizScreen> {
                   elevation: 0,
                 ),
                 child: Text(
-                  _idx == _questions.length - 1 ? '결과 보기' : '다음 →',
+                  _idx == _questions.length - 1 ? tr('결과 보기') : tr('다음 →'),
                   style: const TextStyle(
                       fontSize: 16, fontWeight: FontWeight.w900, letterSpacing: 3),
                 ),

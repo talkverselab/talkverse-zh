@@ -9,6 +9,7 @@ import '../services/ko_reading.dart';
 import '../services/tts_service.dart';
 import '../widgets/chinese_decor.dart';
 import '../widgets/selectable_hanzi.dart';
+import '../core/l10n.dart';
 
 class GrammarTestScreen extends StatefulWidget {
   const GrammarTestScreen({super.key});
@@ -169,19 +170,19 @@ class _GrammarTestScreenState extends State<GrammarTestScreen> {
       builder: (_) => AlertDialog(
         backgroundColor: AppColors.xuanZhi,
         shape: const RoundedRectangleBorder(),
-        title: const Text('🎉  세션 완료',
+        title: Text(tr('🎉  세션 완료'),
             style: TextStyle(color: AppColors.mo, fontWeight: FontWeight.w900)),
         content: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            _resultRow('알아요', _know, AppColors.feiCui),
-            _resultRow('보통', _soso, AppColors.jin),
-            _resultRow('몰라요', _dunno, AppColors.zhuHong),
+            _resultRow(tr('알아요'), _know, AppColors.feiCui),
+            _resultRow(tr('보통'), _soso, AppColors.jin),
+            _resultRow(tr('몰라요'), _dunno, AppColors.zhuHong),
             const SizedBox(height: 12),
             const Divider(),
             const SizedBox(height: 6),
             Text(
-              '정답률 ${(_know / _cards.length * 100).round()}%',
+              trf('정답률 {0}%', [(_know / _cards.length * 100).round()]),
               style: const TextStyle(
                 fontSize: 22,
                 fontWeight: FontWeight.w900,
@@ -196,7 +197,7 @@ class _GrammarTestScreenState extends State<GrammarTestScreen> {
               Navigator.pop(context);
               Navigator.pop(context);
             },
-            child: const Text('나가기', style: TextStyle(color: AppColors.moLight)),
+            child: Text(tr('나가기'), style: TextStyle(color: AppColors.moLight)),
           ),
           ElevatedButton(
             onPressed: () {
@@ -215,7 +216,7 @@ class _GrammarTestScreenState extends State<GrammarTestScreen> {
               foregroundColor: AppColors.xuanZhi,
               shape: const RoundedRectangleBorder(),
             ),
-            child: const Text('다시'),
+            child: Text(tr('다시')),
           ),
         ],
       ),
@@ -244,10 +245,10 @@ class _GrammarTestScreenState extends State<GrammarTestScreen> {
     return Scaffold(
       backgroundColor: AppColors.xuanZhi,
       appBar: AppBar(
-        title: const Column(
+        title: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            Text('한 → 중 회상 테스트',
+            Text(tr('한 → 중 회상 테스트'),
                 style: TextStyle(color: AppColors.mo, fontWeight: FontWeight.w800, fontSize: 15)),
             SizedBox(height: 2),
             Text('Korean → Chinese recall',
@@ -262,7 +263,7 @@ class _GrammarTestScreenState extends State<GrammarTestScreen> {
           const KoReadingToggleAction(),
           if (_dismissed.isNotEmpty)
             IconButton(
-              tooltip: '힌트 되돌리기 (${_dismissed.length})',
+              tooltip: trf('힌트 되돌리기 ({0})', [_dismissed.length]),
               icon: const Icon(Icons.replay),
               onPressed: () => setState(() => _dismissed.clear()),
             ),
@@ -385,9 +386,9 @@ class _GrammarTestScreenState extends State<GrammarTestScreen> {
             ),
             const SizedBox(height: 14),
             if (!_revealed)
-              const Center(
+              Center(
                 child: Text(
-                  '— 중국어로 말해보세요 —',
+                  tr('— 중국어로 말해보세요 —'),
                   style: TextStyle(
                     fontSize: 11,
                     color: AppColors.moLight,
@@ -413,8 +414,8 @@ class _GrammarTestScreenState extends State<GrammarTestScreen> {
                         const Icon(Icons.lightbulb_outline,
                             color: AppColors.jin, size: 14),
                         const SizedBox(width: 4),
-                        const Text(
-                          '힌트 (기능어·단어)',
+                        Text(
+                          tr('힌트 (기능어·단어)'),
                           style: TextStyle(
                             fontSize: 10,
                             color: AppColors.zhuHong,
@@ -426,13 +427,13 @@ class _GrammarTestScreenState extends State<GrammarTestScreen> {
                         if (_dismissed.isNotEmpty)
                           GestureDetector(
                             onTap: () => setState(() => _dismissed.clear()),
-                            child: const Row(
+                            child: Row(
                               mainAxisSize: MainAxisSize.min,
                               children: [
                                 Icon(Icons.replay, size: 12, color: AppColors.moLight),
                                 SizedBox(width: 3),
                                 Text(
-                                  '되돌리기',
+                                  tr('되돌리기'),
                                   style: TextStyle(
                                     fontSize: 10,
                                     color: AppColors.moLight,
@@ -491,7 +492,7 @@ class _GrammarTestScreenState extends State<GrammarTestScreen> {
                           OutlinedButton.icon(
                             onPressed: () => TtsService.instance.speak(card.zh),
                             icon: const Icon(Icons.volume_up, size: 18),
-                            label: const Text('소리 듣기'),
+                            label: Text(tr('소리 듣기')),
                             style: OutlinedButton.styleFrom(
                               foregroundColor: AppColors.zhuHong,
                               side: const BorderSide(color: AppColors.zhuHong),
@@ -528,12 +529,12 @@ class _GrammarTestScreenState extends State<GrammarTestScreen> {
                     shape: const RoundedRectangleBorder(),
                     elevation: 0,
                   ),
-                  child: const Row(
+                  child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Icon(Icons.flip),
                       SizedBox(width: 10),
-                      Text('정답 확인',
+                      Text(tr('정답 확인'),
                           style: TextStyle(
                               fontSize: 16, fontWeight: FontWeight.w900, letterSpacing: 3)),
                     ],
@@ -544,7 +545,7 @@ class _GrammarTestScreenState extends State<GrammarTestScreen> {
                 children: [
                   Expanded(
                     child: _GradeBtn(
-                      label: '몰라요',
+                      label: tr('몰라요'),
                       color: const Color(0xFFE53935),
                       icon: Icons.close,
                       onTap: () => _grade(0),
@@ -553,7 +554,7 @@ class _GrammarTestScreenState extends State<GrammarTestScreen> {
                   const SizedBox(width: 8),
                   Expanded(
                     child: _GradeBtn(
-                      label: '보통',
+                      label: tr('보통'),
                       color: AppColors.jin,
                       icon: Icons.refresh,
                       onTap: () => _grade(1),
@@ -562,7 +563,7 @@ class _GrammarTestScreenState extends State<GrammarTestScreen> {
                   const SizedBox(width: 8),
                   Expanded(
                     child: _GradeBtn(
-                      label: '알아요',
+                      label: tr('알아요'),
                       color: AppColors.feiCui,
                       icon: Icons.check,
                       onTap: () => _grade(2),

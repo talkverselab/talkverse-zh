@@ -4,6 +4,8 @@ import 'update_screen.dart';
 
 import '../core/theme.dart';
 import '../widgets/chinese_decor.dart';
+import '../core/l10n.dart';
+
 
 class ProfileScreen extends StatelessWidget {
   const ProfileScreen({super.key});
@@ -12,7 +14,7 @@ class ProfileScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: AppColors.xuanZhi,
-      appBar: AppBar(title: const Text('프로필 · 설정')),
+      appBar: AppBar(title: Text(tr('프로필 · 설정'))),
       body: ListView(
         padding: const EdgeInsets.all(16),
         children: [
@@ -34,7 +36,7 @@ class ProfileScreen extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        '학습자',
+                        tr('학습자'),
                         style: TextStyle(
                           color: AppColors.xuanZhi,
                           fontSize: 20,
@@ -44,7 +46,7 @@ class ProfileScreen extends StatelessWidget {
                       ),
                       const SizedBox(height: 4),
                       Text(
-                        'Day 1 · 입문',
+                        tr('Day 1 · 입문'),
                         style: TextStyle(
                           color: AppColors.jinBright,
                           fontSize: 13,
@@ -59,7 +61,7 @@ class ProfileScreen extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 18),
-          Text('설정',
+          Text(tr('설정'),
               style: TextStyle(
                 fontWeight: FontWeight.w800,
                 fontSize: 15,
@@ -68,11 +70,16 @@ class ProfileScreen extends StatelessWidget {
               )),
           const SizedBox(height: 8),
           _SettingsGroup(items: [
-            _SettingItem(icon: Icons.volume_up, title: 'TTS 음성', subtitle: 'zh-CN-XiaoxiaoNeural'),
-            _SettingItem(icon: Icons.palette, title: '테마', subtitle: '낮 · 중국풍 #DE2910'),
+            _SettingItem(
+                icon: Icons.language,
+                title: tr('언어 / Language'),
+                subtitle: '${AppLangPrefs.lang.value.label}  →  ${AppLangPrefs.peekNext().label}',
+                onTap: AppLangPrefs.next),
+            _SettingItem(icon: Icons.volume_up, title: tr('TTS 음성'), subtitle: 'zh-CN-XiaoxiaoNeural'),
+            _SettingItem(icon: Icons.palette, title: tr('테마'), subtitle: tr('낮 · 중국풍 #DE2910')),
           ]),
           const SizedBox(height: 16),
-          Text('정보',
+          Text(tr('정보'),
               style: TextStyle(
                 fontWeight: FontWeight.w800,
                 fontSize: 15,
@@ -81,9 +88,9 @@ class ProfileScreen extends StatelessWidget {
               )),
           const SizedBox(height: 8),
           _SettingsGroup(items: [
-            _SettingItem(icon: Icons.info_outline, title: '앱 버전', subtitle: '0.2.0 · alpha 중국풍'),
+            _SettingItem(icon: Icons.info_outline, title: tr('앱 버전'), subtitle: tr('0.2.0 · alpha 중국풍')),
             _SettingItem(icon: Icons.code, title: 'Stack', subtitle: 'Flutter 3.41 · Material 3 · SQLite'),
-            _SettingItem(icon: Icons.copyright, title: '저작권', subtitle: '중국어유니버스 · 2026'),
+            _SettingItem(icon: Icons.copyright, title: tr('저작권'), subtitle: tr('중국어유니버스 · 2026')),
           ]),
           const SizedBox(height: 20),
           const BrushDivider(),
@@ -94,7 +101,7 @@ class ProfileScreen extends StatelessWidget {
           const SizedBox(height: 4),
           Center(
             child: Text(
-              '학해무애 · 学海无涯',
+              tr('학해무애 · 学海无涯'),
               style: TextStyle(
                 color: AppColors.moLight,
                 fontSize: 11,
@@ -124,6 +131,7 @@ class _SettingsGroup extends StatelessWidget {
         children: [
           for (var i = 0; i < items.length; i++) ...[
             ListTile(
+              onTap: items[i].onTap,
               leading: Container(
                 width: 32,
                 height: 32,
@@ -152,5 +160,6 @@ class _SettingItem {
   final IconData icon;
   final String title;
   final String subtitle;
-  _SettingItem({required this.icon, required this.title, required this.subtitle});
+  final VoidCallback? onTap;
+  _SettingItem({required this.icon, required this.title, required this.subtitle, this.onTap});
 }

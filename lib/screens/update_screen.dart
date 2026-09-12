@@ -3,6 +3,8 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 
 import '../services/update_service.dart';
+import '../core/platform.dart';
+import '../core/l10n.dart';
 
 /// 앱 업데이트 — GitHub 릴리스(master 푸시마다 갱신)에서 최신 빌드를 받아 설치.
 /// 앱마다 테마가 달라 색은 Theme.of(context)에서 가져온다.
@@ -105,12 +107,12 @@ class _UpdateScreenState extends State<UpdateScreen> {
       if (r == InstallResult.needPermission) {
         setState(
           () => _error =
-              '「출처를 알 수 없는 앱 설치」를 허용해 주세요. 방금 연 설정에서 이 앱을 켠 뒤 아래 「설치」를 다시 누르면 됩니다.',
+              tr('「출처를 알 수 없는 앱 설치」를 허용해 주세요. 방금 연 설정에서 이 앱을 켠 뒤 아래 「설치」를 다시 누르면 됩니다.'),
         );
       } else if (r == InstallResult.missing) {
         setState(() {
           _stage = _Stage.available;
-          _error = '내려받은 파일을 찾지 못했습니다. 다시 받아 주세요.';
+          _error = tr('내려받은 파일을 찾지 못했습니다. 다시 받아 주세요.');
         });
       }
     } catch (e) {
@@ -121,9 +123,9 @@ class _UpdateScreenState extends State<UpdateScreen> {
 
   String _message(Object e) {
     if (e is SocketException) {
-      return '네트워크에 연결하지 못했습니다. 와이파이·데이터를 확인해 주세요.';
+      return tr('네트워크에 연결하지 못했습니다. 와이파이·데이터를 확인해 주세요.');
     }
-    if (e is HttpException) return '릴리스를 읽지 못했습니다 — ${e.message}';
+    if (e is HttpException) return trf('릴리스를 읽지 못했습니다 — {0}', [e.message]);
     return '$e';
   }
 
@@ -132,8 +134,8 @@ class _UpdateScreenState extends State<UpdateScreen> {
     final cs = Theme.of(context).colorScheme;
     return Scaffold(
       appBar: AppBar(
-        title: const Text(
-          '앱 업데이트',
+        title: Text(
+          tr('앱 업데이트'),
           style: TextStyle(fontSize: 16, fontWeight: FontWeight.w800),
         ),
       ),
@@ -141,12 +143,12 @@ class _UpdateScreenState extends State<UpdateScreen> {
         // 아이폰 홈 표시줄·갤럭시 제스처 바 아래로 내용이 깔리지 않게
         top: false,
         child: ListView(
-          padding: const EdgeInsets.fromLTRB(16, 16, 16, 28),
+          padding: EdgeInsets.fromLTRB(16, 16, 16, 28 + bottomInset(context)),
           children: [
             _Panel(
-              title: '지금 이 앱',
+              title: tr('지금 이 앱'),
               color: cs.onSurface,
-              lines: ['버전 ${_svc.currentText}'],
+              lines: [trf('버전 {0}', [_svc.currentText])],
             ),
             const SizedBox(height: 12),
             _latestPanel(cs),
@@ -173,8 +175,7 @@ class _UpdateScreenState extends State<UpdateScreen> {
             _actions(cs),
             const SizedBox(height: 20),
             Text(
-              '업데이트는 푸시할 때마다 GitHub Actions가 서명해 올린 APK입니다.\n'
-              '처음 설치할 때 한 번 「출처를 알 수 없는 앱 설치」 허용이 필요합니다.',
+              '${tr('업데이트는 푸시할 때마다 GitHub Actions가 서명해 올린 APK입니다.\n')}${tr('처음 설치할 때 한 번 「출처를 알 수 없는 앱 설치」 허용이 필요합니다.')}',
               style: TextStyle(
                 fontSize: 11.5,
                 height: 1.5,
@@ -191,25 +192,24 @@ class _UpdateScreenState extends State<UpdateScreen> {
     final l = _latest;
     if (_stage == _Stage.checking) {
       return _Panel(
-        title: '최신 빌드',
+        title: tr('최신 빌드'),
         color: cs.onSurfaceVariant,
-        lines: const ['확인하는 중…'],
+        lines: [tr('확인하는 중…')],
       );
     }
     if (l == null) {
       return _Panel(
-        title: '최신 빌드',
+        title: tr('최신 빌드'),
         color: cs.onSurfaceVariant,
-        lines: const ['아직 확인하지 않았습니다.'],
+        lines: [tr('아직 확인하지 않았습니다.')],
       );
     }
     final when = l.builtAt;
     return _Panel(
-      title: _stage == _Stage.upToDate ? '최신 상태입니다' : '새 빌드가 있습니다',
+      title: _stage == _Stage.upToDate ? tr('최신 상태입니다') : tr('새 빌드가 있습니다'),
       color: _stage == _Stage.upToDate ? cs.tertiary : cs.primary,
       lines: [
-        '버전 ${l.version} · 빌드 ${l.build}'
-            '${l.sha.isEmpty ? '' : ' · ${l.sha}'}',
+        '${trf('버전 {0} · 빌드 {1}', [l.version, l.build])}${l.sha.isEmpty ? '' : ' · ${l.sha}'}',
         if (when != null)
           '${when.year}-${_two(when.month)}-${_two(when.day)} '
               '${_two(when.hour)}:${_two(when.minute)}'
@@ -232,7 +232,7 @@ class _UpdateScreenState extends State<UpdateScreen> {
             const SizedBox(height: 8),
             Text(
               ratio == null
-                  ? '${(_received / 1024 / 1024).toStringAsFixed(1)} MB 받는 중…'
+                  ? trf('{0} MB 받는 중…', [(_received / 1024 / 1024).toStringAsFixed(1)])
                   : '${(ratio * 100).toStringAsFixed(0)}% · '
                         '${(_received / 1024 / 1024).toStringAsFixed(1)} / '
                         '${(_total / 1024 / 1024).toStringAsFixed(1)} MB',
@@ -242,9 +242,9 @@ class _UpdateScreenState extends State<UpdateScreen> {
           ],
         );
       case _Stage.ready:
-        return _Button(label: '설치', color: cs.primary, onTap: _install);
+        return _Button(label: tr('설치'), color: cs.primary, onTap: _install);
       case _Stage.available:
-        return _Button(label: '내려받아 설치', color: cs.primary, onTap: _download);
+        return _Button(label: tr('내려받아 설치'), color: cs.primary, onTap: _download);
       case _Stage.checking:
         return const SizedBox(
           height: 46,
@@ -253,7 +253,7 @@ class _UpdateScreenState extends State<UpdateScreen> {
       case _Stage.idle:
       case _Stage.upToDate:
         return _Button(
-          label: '다시 확인',
+          label: tr('다시 확인'),
           color: cs.secondary,
           onTap: _check,
         );
@@ -349,14 +349,14 @@ class UpdateEntryTile extends StatelessWidget {
       ),
       child: ListTile(
         leading: Icon(ios ? Icons.flight_takeoff : Icons.system_update, color: cs.primary),
-        title: const Text(
-          '앱 업데이트',
+        title: Text(
+          tr('앱 업데이트'),
           style: TextStyle(fontWeight: FontWeight.w800),
         ),
         subtitle: Text(
           ios
-              ? 'iPhone 은 TestFlight 앱에서 새 빌드를 받습니다'
-              : 'GitHub 최신 빌드 확인 · 내려받아 설치',
+              ? tr('iPhone 은 TestFlight 앱에서 새 빌드를 받습니다')
+              : tr('GitHub 최신 빌드 확인 · 내려받아 설치'),
           style: const TextStyle(fontSize: 11.5),
         ),
         trailing: ios ? null : Icon(Icons.chevron_right, color: cs.primary),

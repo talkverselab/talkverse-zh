@@ -12,6 +12,8 @@ import '../services/speech_service.dart';
 import '../services/tts_service.dart';
 import '../widgets/chinese_decor.dart';
 import 'episode_screen.dart';
+import '../core/platform.dart';
+import '../core/l10n.dart';
 
 const _kLimits = [10, 5, 2]; // 단계별 제한 초
 const _kBatch = 4; // 한 번에 테스트하는 문장 수
@@ -103,7 +105,7 @@ class _SpeakingPracticeScreenState extends State<SpeakingPracticeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: AppColors.xuanZhi,
-      appBar: AppBar(title: const Text('말하기 연습')),
+      appBar: AppBar(title: Text(tr('말하기 연습'))),
       body: SafeArea(
         // 아이폰 홈 표시줄·갤럭시 제스처 바 아래로 내용이 깔리지 않게
         top: false,
@@ -116,9 +118,9 @@ class _SpeakingPracticeScreenState extends State<SpeakingPracticeScreen> {
                   const GreekKeyDivider(),
                   Expanded(
                     child: _entries.isEmpty
-                        ? const Padding(
+                        ? Padding(
                             padding: EdgeInsets.all(24),
-                            child: Text('회화 데이터가 없어요.',
+                            child: Text(tr('회화 데이터가 없어요.'),
                                 textAlign: TextAlign.center),
                           )
                         : ListView.builder(
@@ -145,8 +147,8 @@ class _SpeakingPracticeScreenState extends State<SpeakingPracticeScreen> {
       padding: const EdgeInsets.only(bottom: 12),
       child: Text(
         _anyLearned
-            ? '회화 화면에서 학습 체크한 문장을 4개씩 테스트해요. 탭하면 바로 시작됩니다.'
-            : '아직 학습 체크한 문장이 없어 전체 회화를 보여줘요. 회화 화면에서 문장을 체크하면 그 문장만 나옵니다.',
+            ? tr('회화 화면에서 학습 체크한 문장을 4개씩 테스트해요. 탭하면 바로 시작됩니다.')
+            : tr('아직 학습 체크한 문장이 없어 전체 회화를 보여줘요. 회화 화면에서 문장을 체크하면 그 문장만 나옵니다.'),
         style: const TextStyle(
             fontSize: 12, color: AppColors.moLight, height: 1.5),
       ),
@@ -176,7 +178,7 @@ class _SpeakingPracticeScreenState extends State<SpeakingPracticeScreen> {
                             i == _stage ? Colors.transparent : AppColors.jin),
                   ),
                   child: Text(
-                    '${i + 1}단계 · ${_kLimits[i]}초',
+                    trf('{0}단계 · {1}초', [i + 1, _kLimits[i]]),
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       fontSize: 12,
@@ -238,7 +240,7 @@ class _EpisodeTile extends StatelessWidget {
                     ),
                     const SizedBox(height: 3),
                     Text(
-                      '학습 ${e.turns.length}/${e.total}문장 · 3단계 통과 ${e.passed3}',
+                      trf('학습 {0}/{1}문장 · 3단계 통과 {2}', [e.turns.length, e.total, e.passed3]),
                       style: const TextStyle(
                           fontSize: 11, color: AppColors.moLight),
                     ),
@@ -312,7 +314,7 @@ class _SpeakingTestScreenState extends State<SpeakingTestScreen>
     if (!mounted) return;
     setState(() {});
     if (!_sttReady) {
-      _snack('음성 인식을 사용할 수 없어요. 마이크 권한과 Google 음성 서비스를 확인하세요.');
+      _snack(tr('음성 인식을 사용할 수 없어요. 마이크 권한과 Google 음성 서비스를 확인하세요.'));
       return;
     }
     _startSentence();
@@ -443,7 +445,7 @@ class _SpeakingTestScreenState extends State<SpeakingTestScreen>
         title: Text(widget.title, style: const TextStyle(fontSize: 15)),
         actions: [
           IconButton(
-            tooltip: _showHint ? '힌트 숨기기' : '힌트 보기',
+            tooltip: _showHint ? tr('힌트 숨기기') : tr('힌트 보기'),
             onPressed: _toggleHint,
             icon: Icon(_showHint ? Icons.lightbulb : Icons.lightbulb_outline),
           ),
@@ -470,7 +472,7 @@ class _SpeakingTestScreenState extends State<SpeakingTestScreen>
       child: Row(
         children: [
           Text(
-            '${widget.stage + 1}단계 · $_limit초',
+            trf('{0}단계 · {1}초', [widget.stage + 1, _limit]),
             style: const TextStyle(
                 fontSize: 12,
                 fontWeight: FontWeight.w800,
@@ -522,7 +524,7 @@ class _SpeakingTestScreenState extends State<SpeakingTestScreen>
         const GreekKeyDivider(),
         Expanded(
           child: SingleChildScrollView(
-            padding: const EdgeInsets.fromLTRB(20, 24, 20, 20),
+            padding: EdgeInsets.fromLTRB(20, 24, 20, 20 + bottomInset(context)),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
@@ -583,11 +585,11 @@ class _SpeakingTestScreenState extends State<SpeakingTestScreen>
   Widget _statusPanel() {
     switch (_phase) {
       case _Phase.preview:
-        return const Text('곧 녹음이 시작돼요…',
+        return Text(tr('곧 녹음이 시작돼요…'),
             textAlign: TextAlign.center,
             style: TextStyle(color: AppColors.moLight));
       case _Phase.starting:
-        return const Text('🎙 마이크 여는 중…',
+        return Text(tr('🎙 마이크 여는 중…'),
             textAlign: TextAlign.center,
             style: TextStyle(color: AppColors.moLight));
       case _Phase.listening:
@@ -602,8 +604,8 @@ class _SpeakingTestScreenState extends State<SpeakingTestScreen>
                   children: [
                     Text(
                       _phase == _Phase.judging
-                          ? '판정 중…'
-                          : '${remain.toStringAsFixed(1)}초',
+                          ? tr('판정 중…')
+                          : trf('{0}초', [remain.toStringAsFixed(1)]),
                       style: const TextStyle(
                           fontSize: 34,
                           fontWeight: FontWeight.w900,
@@ -626,7 +628,7 @@ class _SpeakingTestScreenState extends State<SpeakingTestScreen>
             ),
             const SizedBox(height: 12),
             Text(
-              _heard.isEmpty ? '🎙 중국어로 말하세요' : _heard,
+              _heard.isEmpty ? tr('🎙 중국어로 말하세요') : _heard,
               textAlign: TextAlign.center,
               style: const TextStyle(
                   fontSize: 18,
@@ -672,8 +674,8 @@ class _SpeakingTestScreenState extends State<SpeakingTestScreen>
             children: [
               Text(
                 final_
-                    ? '🎉 모든 문장 완료 — $total문장 중 PASS $passedAll'
-                    : '${start + 1}~$end번 문장 결과',
+                    ? trf('🎉 모든 문장 완료 — {0}문장 중 PASS {1}', [total, passedAll])
+                    : trf('{0}~{1}번 문장 결과', [start + 1, end]),
                 textAlign: TextAlign.center,
                 style: const TextStyle(
                     fontSize: 16,
@@ -693,7 +695,7 @@ class _SpeakingTestScreenState extends State<SpeakingTestScreen>
           ),
         ),
         Container(
-          padding: const EdgeInsets.fromLTRB(20, 10, 20, 24),
+          padding: EdgeInsets.fromLTRB(20, 10, 20, 24 + bottomInset(context)),
           decoration: BoxDecoration(
             border: Border(
                 top: BorderSide(color: AppColors.jin.withValues(alpha: 0.4))),
@@ -708,7 +710,7 @@ class _SpeakingTestScreenState extends State<SpeakingTestScreen>
                     side: const BorderSide(color: AppColors.jin),
                     padding: const EdgeInsets.symmetric(vertical: 16),
                   ),
-                  child: const Text('목록으로'),
+                  child: Text(tr('목록으로')),
                 ),
               ),
               const SizedBox(width: 12),
@@ -735,7 +737,7 @@ class _SpeakingTestScreenState extends State<SpeakingTestScreen>
                         letterSpacing: 2),
                   ),
                   icon: Icon(final_ ? Icons.replay : Icons.play_arrow),
-                  label: Text(final_ ? '처음부터 다시' : '계속'),
+                  label: Text(final_ ? tr('처음부터 다시') : tr('계속')),
                 ),
               ),
             ],
@@ -796,7 +798,7 @@ class _ResultRow extends StatelessWidget {
                       style: const TextStyle(
                           fontSize: 11, color: AppColors.moLight)),
                 if (!pass && heard.isNotEmpty)
-                  Text('인식: $heard',
+                  Text(trf('인식: {0}', [heard]),
                       style: const TextStyle(
                           fontSize: 11, color: AppColors.moLight)),
               ],
