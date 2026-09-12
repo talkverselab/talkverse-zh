@@ -137,48 +137,52 @@ class _UpdateScreenState extends State<UpdateScreen> {
           style: TextStyle(fontSize: 16, fontWeight: FontWeight.w800),
         ),
       ),
-      body: ListView(
-        padding: const EdgeInsets.fromLTRB(16, 16, 16, 28),
-        children: [
-          _Panel(
-            title: '지금 이 앱',
-            color: cs.onSurface,
-            lines: ['버전 ${_svc.currentText}'],
-          ),
-          const SizedBox(height: 12),
-          _latestPanel(cs),
-          const SizedBox(height: 14),
-          if (_error != null) ...[
-            Container(
-              padding: const EdgeInsets.all(12),
-              decoration: BoxDecoration(
-                color: cs.errorContainer,
-                border: Border.all(color: cs.error, width: 1.2),
-              ),
-              child: Text(
-                _error!,
-                style: TextStyle(
-                  fontSize: 12.5,
-                  height: 1.45,
-                  color: cs.onErrorContainer,
-                  fontWeight: FontWeight.w600,
+      body: SafeArea(
+        // 아이폰 홈 표시줄·갤럭시 제스처 바 아래로 내용이 깔리지 않게
+        top: false,
+        child: ListView(
+          padding: const EdgeInsets.fromLTRB(16, 16, 16, 28),
+          children: [
+            _Panel(
+              title: '지금 이 앱',
+              color: cs.onSurface,
+              lines: ['버전 ${_svc.currentText}'],
+            ),
+            const SizedBox(height: 12),
+            _latestPanel(cs),
+            const SizedBox(height: 14),
+            if (_error != null) ...[
+              Container(
+                padding: const EdgeInsets.all(12),
+                decoration: BoxDecoration(
+                  color: cs.errorContainer,
+                  border: Border.all(color: cs.error, width: 1.2),
+                ),
+                child: Text(
+                  _error!,
+                  style: TextStyle(
+                    fontSize: 12.5,
+                    height: 1.45,
+                    color: cs.onErrorContainer,
+                    fontWeight: FontWeight.w600,
+                  ),
                 ),
               ),
+              const SizedBox(height: 14),
+            ],
+            _actions(cs),
+            const SizedBox(height: 20),
+            Text(
+              '업데이트는 푸시할 때마다 GitHub Actions가 서명해 올린 APK입니다.\n'
+              '처음 설치할 때 한 번 「출처를 알 수 없는 앱 설치」 허용이 필요합니다.',
+              style: TextStyle(
+                fontSize: 11.5,
+                height: 1.5,
+                color: cs.onSurfaceVariant,
+              ),
             ),
-            const SizedBox(height: 14),
           ],
-          _actions(cs),
-          const SizedBox(height: 20),
-          Text(
-            '업데이트는 푸시할 때마다 GitHub Actions가 서명해 올린 APK입니다.\n'
-            '처음 설치할 때 한 번 「출처를 알 수 없는 앱 설치」 허용이 필요합니다.',
-            style: TextStyle(
-              fontSize: 11.5,
-              height: 1.5,
-              color: cs.onSurfaceVariant,
-            ),
-          ),
-        ],
+        ),
       ),
     );
   }
@@ -336,26 +340,32 @@ class UpdateEntryTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final cs = Theme.of(context).colorScheme;
+    // 아이폰은 APK 를 깔 수 없다 — 푸시마다 TestFlight 로 올라가므로 안내만 한다.
+    final ios = Platform.isIOS;
     return Container(
       margin: const EdgeInsets.only(bottom: 14),
       decoration: BoxDecoration(
         border: Border.all(color: cs.primary.withValues(alpha: 0.7), width: 1.3),
       ),
       child: ListTile(
-        leading: Icon(Icons.system_update, color: cs.primary),
+        leading: Icon(ios ? Icons.flight_takeoff : Icons.system_update, color: cs.primary),
         title: const Text(
           '앱 업데이트',
           style: TextStyle(fontWeight: FontWeight.w800),
         ),
-        subtitle: const Text(
-          'GitHub 최신 빌드 확인 · 내려받아 설치',
-          style: TextStyle(fontSize: 11.5),
+        subtitle: Text(
+          ios
+              ? 'iPhone 은 TestFlight 앱에서 새 빌드를 받습니다'
+              : 'GitHub 최신 빌드 확인 · 내려받아 설치',
+          style: const TextStyle(fontSize: 11.5),
         ),
-        trailing: Icon(Icons.chevron_right, color: cs.primary),
-        onTap: () => Navigator.push(
-          context,
-          MaterialPageRoute(builder: (_) => const UpdateScreen()),
-        ),
+        trailing: ios ? null : Icon(Icons.chevron_right, color: cs.primary),
+        onTap: ios
+            ? null
+            : () => Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (_) => const UpdateScreen()),
+                ),
       ),
     );
   }

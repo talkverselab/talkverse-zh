@@ -57,6 +57,13 @@ data/reports/*.parquet
 .env
 .env.local
 .env.*.local
+# iOS 서명 (tools/ios/make_ios_cert.py 결과물 — 절대 커밋 금지)
+ios_secrets/
+*.p8
+*.p12
+*.mobileprovision
+android/key.properties
+android/app/*.jks
 
 # IDE / OS
 *.swp

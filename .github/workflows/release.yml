@@ -7,6 +7,12 @@ on:
     paths-ignore:
       - '**.md'
       - '.gitignore'
+      - 'ios/**'
+      - '.github/workflows/ios-*.yml'
+      - 'tools/**'
+      - 'tool/**'
+      - 'docs/**'
+      - 'data/**'
   workflow_dispatch:
 
 permissions:
