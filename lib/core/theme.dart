@@ -1,27 +1,34 @@
 import 'package:flutter/material.dart';
 
-/// 中国风 컬러 팔레트
+/// 컬러 팔레트 — talkverse.uk 톤(2026-10-26).
+///
+/// 흰 바탕 + 남색 글자 + 인디고 포인트 하나, 그 밖의 색은 절제한다.
+/// 이름(zhuHong·jin·mo·xuanZhi…)은 옛 中国风 팔레트에서 온 것이라 화면 코드가 그대로 쓰고,
+/// 값만 사이트 토큰(`--ink`·`--body`·`--accent`…)에 맞췄다. 4성 색은 학습용이라 그대로.
 class AppColors {
-  // 主色 — 朱红 (vermilion, 国旗·宫墙·灯笼)
-  static const Color zhuHong = Color(0xFFDE2910);
-  static const Color zhuHongDeep = Color(0xFFA8200C);
-  static const Color zhuHongLight = Color(0xFFF45D44);
+  // 주색 — 사이트 `--accent` 인디고 (옛 朱红 자리)
+  static const Color zhuHong = Color(0xFF635BFF);
+  static const Color zhuHongDeep = Color(0xFF4B44D6); // `--accent-ink`
+  static const Color zhuHongLight = Color(0xFFA9A4FF);
 
-  // 副色 — 金 (帝王金, 璧, 印章 인주)
-  static const Color jin = Color(0xFFD4A12C);
-  static const Color jinBright = Color(0xFFF5C842);
-  static const Color jinDeep = Color(0xFF8B6914);
+  // 보조 — 옛 금색 자리. 테두리는 사이트 `--line` 계열, 밝은 강조는 히어로 피치
+  static const Color jin = Color(0xFFDDE3EC);
+  static const Color jinBright = Color(0xFFFFD39B);
+  static const Color jinDeep = Color(0xFF6B7C93); // `--muted`
 
-  // 墨 (먹, 서예)
-  static const Color mo = Color(0xFF1C1A18);
-  static const Color moLight = Color(0xFF4A4540);
+  // 글자 — `--ink` / `--body` (옛 墨 자리)
+  static const Color mo = Color(0xFF0A2540);
+  static const Color moLight = Color(0xFF425466);
 
-  // 宣纸 (paper, 부드러운 미색 배경)
-  static const Color xuanZhi = Color(0xFFFAF3E0);
-  static const Color xuanZhiDeep = Color(0xFFF0E5C8);
+  // 바탕 — 흰색 / `--soft` (옛 宣纸 자리)
+  static const Color xuanZhi = Color(0xFFFFFFFF);
+  static const Color xuanZhiDeep = Color(0xFFF6F9FC);
 
-  // 翡翠 (jade, 보조 강조)
-  static const Color feiCui = Color(0xFF00A86B);
+  // 보조 강조 — 차분한 청록(완료·학습됨, 옛 翡翠 자리)
+  static const Color feiCui = Color(0xFF0E7C8C);
+
+  // 중국어 카드색 — talkverse.uk 언어 카드의 `--c`
+  static const Color hanyu = Color(0xFFE86A8C);
 
   // 4성 컬러 (시각 학습용)
   static const Color tone1 = Color(0xFFE53935); // 1성 高平 — 빨강
@@ -41,16 +48,16 @@ class AppTheme {
       colorScheme: ColorScheme(
         brightness: Brightness.light,
         primary: AppColors.zhuHong,
-        onPrimary: AppColors.xuanZhi,
+        onPrimary: Colors.white,
         primaryContainer: AppColors.zhuHongLight,
         onPrimaryContainer: AppColors.mo,
-        secondary: AppColors.jin,
-        onSecondary: AppColors.mo,
+        secondary: AppColors.mo,
+        onSecondary: Colors.white,
         secondaryContainer: AppColors.jinBright,
         onSecondaryContainer: AppColors.mo,
         tertiary: AppColors.feiCui,
         onTertiary: AppColors.xuanZhi,
-        tertiaryContainer: const Color(0xFFB7E4C7),
+        tertiaryContainer: const Color(0xFFCDEFF2),
         onTertiaryContainer: AppColors.mo,
         error: const Color(0xFFB00020),
         onError: Colors.white,
@@ -59,62 +66,87 @@ class AppTheme {
         surfaceContainerHighest: AppColors.xuanZhiDeep,
         onSurfaceVariant: AppColors.moLight,
         outline: AppColors.jinDeep,
-        outlineVariant: const Color(0xFFD8C9A8),
+        outlineVariant: AppColors.jin,
       ),
       scaffoldBackgroundColor: AppColors.xuanZhi,
       fontFamily: 'Pretendard',
     );
 
     return base.copyWith(
+      textTheme: base.textTheme.apply(
+        bodyColor: AppColors.moLight,
+        displayColor: AppColors.mo,
+      ),
       appBarTheme: const AppBarTheme(
         centerTitle: true,
         elevation: 0,
-        backgroundColor: AppColors.zhuHong,
-        foregroundColor: AppColors.xuanZhi,
+        scrolledUnderElevation: 0,
+        backgroundColor: AppColors.xuanZhi,
+        surfaceTintColor: Colors.transparent,
+        foregroundColor: AppColors.mo,
+        shape: Border(bottom: BorderSide(color: AppColors.jin, width: 1)),
         titleTextStyle: TextStyle(
-          color: AppColors.xuanZhi,
-          fontSize: 18,
-          fontWeight: FontWeight.w700,
-          letterSpacing: 1.2,
+          color: AppColors.mo,
+          fontSize: 17,
+          fontWeight: FontWeight.w600,
+          letterSpacing: -0.3,
         ),
       ),
       cardTheme: CardThemeData(
         elevation: 0,
         color: AppColors.xuanZhi,
+        shadowColor: const Color(0x1A32325D),
         shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(4),
-          side: const BorderSide(color: AppColors.jin, width: 0.8),
+          borderRadius: BorderRadius.circular(14),
+          side: const BorderSide(color: AppColors.jin, width: 1),
         ),
       ),
       navigationBarTheme: NavigationBarThemeData(
-        backgroundColor: AppColors.mo,
-        indicatorColor: AppColors.zhuHong,
+        backgroundColor: AppColors.xuanZhi,
+        surfaceTintColor: Colors.transparent,
+        indicatorColor: const Color(0xFFEFEEFE),
         labelTextStyle: WidgetStateProperty.resolveWith((states) {
           final selected = states.contains(WidgetState.selected);
           return TextStyle(
-            color: selected ? AppColors.jinBright : AppColors.xuanZhiDeep,
+            color: selected ? AppColors.zhuHong : AppColors.jinDeep,
             fontSize: 11,
-            fontWeight: FontWeight.w600,
+            fontWeight: selected ? FontWeight.w600 : FontWeight.w500,
           );
         }),
         iconTheme: WidgetStateProperty.resolveWith((states) {
           final selected = states.contains(WidgetState.selected);
           return IconThemeData(
-            color: selected ? AppColors.xuanZhi : AppColors.xuanZhiDeep,
+            color: selected ? AppColors.zhuHong : AppColors.jinDeep,
             size: 24,
           );
         }),
+      ),
+      filledButtonTheme: FilledButtonThemeData(
+        style: FilledButton.styleFrom(
+          backgroundColor: AppColors.mo,
+          foregroundColor: Colors.white,
+          shape: const StadiumBorder(),
+          textStyle: const TextStyle(fontWeight: FontWeight.w600),
+        ),
+      ),
+      outlinedButtonTheme: OutlinedButtonThemeData(
+        style: OutlinedButton.styleFrom(
+          foregroundColor: AppColors.mo,
+          side: const BorderSide(color: AppColors.jin),
+          shape: const StadiumBorder(),
+        ),
       ),
       chipTheme: ChipThemeData(
         backgroundColor: AppColors.xuanZhiDeep,
         labelStyle: const TextStyle(color: AppColors.mo, fontWeight: FontWeight.w600),
         side: const BorderSide(color: AppColors.jin),
+        shape: const StadiumBorder(),
         selectedColor: AppColors.zhuHong,
-        secondaryLabelStyle: const TextStyle(color: AppColors.xuanZhi),
+        secondaryLabelStyle: const TextStyle(color: Colors.white),
       ),
       dividerTheme: const DividerThemeData(
         color: AppColors.jin,
-        thickness: 0.5,
+        thickness: 1,
       ),
       listTileTheme: const ListTileThemeData(
         iconColor: AppColors.zhuHong,
