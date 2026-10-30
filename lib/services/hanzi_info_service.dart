@@ -1,6 +1,9 @@
 import 'dart:convert';
 import 'package:flutter/services.dart' show rootBundle;
 
+import 'pinyin_util.dart';
+import 'shared_hanja_service.dart';
+
 class HanziInfo {
   final String char;
   final String? meaning;
@@ -8,6 +11,8 @@ class HanziInfo {
   final String? phonetic;
   final String? phoneticPinyin;
   final String? semantic;
+  /// 발음부를 공용 DB 의 추정값(사람이 확인 안 한 값)에서 가져왔으면 true.
+  final bool estimated;
 
   HanziInfo({
     required this.char,
@@ -16,6 +21,7 @@ class HanziInfo {
     this.phonetic,
     this.phoneticPinyin,
     this.semantic,
+    this.estimated = false,
   });
 
   bool get isPhonosemantic => phonetic != null && phoneticPinyin != null;
@@ -27,6 +33,7 @@ class HanziInfo {
         phonetic: phonetic,
         phoneticPinyin: phoneticPinyin,
         semantic: semantic,
+        estimated: estimated,
       );
 }
 
@@ -42,6 +49,13 @@ class PhoneticRootInfo {
     this.ko,
     required this.count,
   });
+
+  PhoneticRootInfo copyWith({String? pinyin, String? ko, int? count}) => PhoneticRootInfo(
+        root: root,
+        pinyin: pinyin ?? this.pinyin,
+        ko: ko ?? this.ko,
+        count: count ?? this.count,
+      );
 }
 
 class HanziInfoService {
@@ -145,7 +159,67 @@ class HanziInfoService {
     } catch (_) {
       // 훈음 데이터 없으면 생략
     }
+
+    // 한자 공용 DB(캐시)로 빈 곳 채우기 — 번들 큐레이션이 있는 글자는 그대로 둔다.
+    await SharedHanjaService.instance.ensureLoaded();
+    _mergeShared(SharedHanjaService.instance.index);
     _loaded = true;
+  }
+
+  /// 공용 DB 동기화 뒤 새로 생긴 글자만 더한다(이미 있는 값은 다음 실행 때 새로 읽힌다).
+  void refreshShared() {
+    if (_loaded) _mergeShared(SharedHanjaService.instance.index);
+  }
+
+  /// 회화·HSK 범위 밖의 드문 글자까지 가족에 넣지 않는다 (누적 99% 안 · HSK · 손글씨 표).
+  static bool _inScope(SharedHanja h) =>
+      h.hsk != null || h.hskW != null || (h.zhCliffBand != null && h.zhCliffBand! <= 6);
+
+  void _mergeShared(SharedHanjaIndex idx) {
+    if (idx.isEmpty) return;
+    idx.families(where: _inScope).forEach((p, members) {
+      for (final ch in members) {
+        final existing = _map[ch];
+        if (existing?.phonetic != null) continue; // 큐레이션 우선
+        final h = idx.lookup(ch);
+        if (h == null) continue;
+        final py = idx.lookup(p)?.pinyin.firstOrNull;
+        String? semantic;
+        if (!h.formDiffers) {
+          for (final c in h.components) {
+            if (c['code'] != h.phonetic && c['ch'] != p) {
+              semantic = c['ch'] as String?;
+              break;
+            }
+          }
+        }
+        _map[ch] = HanziInfo(
+          char: ch,
+          meaning: existing?.meaning,
+          koHun: existing?.koHun ?? h.krHun,
+          phonetic: p,
+          phoneticPinyin: py == null ? null : PinyinUtil.toNumbered(py),
+          semantic: existing?.semantic ?? semantic,
+          estimated: !h.phoneticConfirmed,
+        );
+        final list = _byPhonetic.putIfAbsent(p, () => []);
+        if (!list.contains(ch)) list.add(ch);
+      }
+    });
+    // 발음부 목록: 새 발음부 추가 + 비어 있던 한국 한자음 채우기 + 개수 다시 세기
+    _byPhonetic.forEach((p, l) {
+      final root = idx.lookup(p);
+      final old = _roots[p];
+      final py = root?.pinyin.firstOrNull;
+      _roots[p] = (old ??
+              PhoneticRootInfo(
+                  root: p, pinyin: py == null ? '' : PinyinUtil.toNumbered(py), count: 0))
+          .copyWith(
+        pinyin: (old?.pinyin.isEmpty ?? true) && py != null ? PinyinUtil.toNumbered(py) : null,
+        ko: old?.ko ?? root?.koReading,
+        count: l.length,
+      );
+    });
   }
 
   HanziInfo? lookup(String c) => _map[c];

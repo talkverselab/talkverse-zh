@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 
 import 'core/platform_ui.dart';
@@ -5,7 +7,9 @@ import 'core/theme.dart';
 import 'data/db/app_database.dart';
 import 'data/db/seed_loader.dart';
 import 'screens/main_screen.dart';
+import 'services/hanzi_info_service.dart';
 import 'services/ko_reading.dart';
+import 'services/shared_hanja_service.dart';
 import 'core/l10n.dart';
 
 late final AppDatabase appDb;
@@ -18,6 +22,10 @@ void main() async {
   await KoReadingPrefs.load();
   await AppLangPrefs.load();
   runApp(const ChineseUniverseApp());
+  // 한자 공용 DB(발음부·외우는 방법·GIF·쓰기 범위) — 화면을 막지 않고 뒤에서 받는다.
+  unawaited(SharedHanjaService.instance.syncIfStale().then((changed) {
+    if (changed) HanziInfoService.instance.refreshShared();
+  }));
 }
 
 class ChineseUniverseApp extends StatelessWidget {

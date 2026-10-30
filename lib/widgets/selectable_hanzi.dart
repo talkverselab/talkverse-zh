@@ -4,6 +4,7 @@ import '../core/theme.dart';
 import '../services/cedict_service.dart';
 import '../services/hanzi_info_service.dart';
 import '../services/pinyin_util.dart';
+import '../services/shared_hanja_service.dart';
 import '../services/tts_service.dart';
 import '../screens/phonetic_roots_screen.dart';
 import '../screens/topic_vocab_screen.dart';
@@ -671,7 +672,9 @@ class HanziInfoSheet extends StatelessWidget {
                                               ),
                                             ),
                                             Text(
-                                              tr('발음부 (聲旁)'),
+                                              info?.estimated == true
+                                                  ? '${tr('발음부 (聲旁)')} · ${tr('추정')}'
+                                                  : tr('발음부 (聲旁)'),
                                               style: TextStyle(
                                                 fontSize: 9,
                                                 color: AppColors.moLight,
@@ -737,6 +740,122 @@ class HanziInfoSheet extends StatelessWidget {
                       ),
                     ),
                   ),
+                ],
+              ),
+            ),
+            _SharedHanjaCard(char: char),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+/// 한자 공용 DB 에서 받은 그림(모핑 GIF 또는 楷書 글자)·외우는 방법·쓰기 범위.
+/// 받은 것이 없으면 아무것도 그리지 않는다.
+class _SharedHanjaCard extends StatelessWidget {
+  final String char;
+  const _SharedHanjaCard({required this.char});
+
+  @override
+  Widget build(BuildContext context) {
+    final idx = SharedHanjaService.instance.index;
+    final h = idx.lookup(char);
+    if (h == null) return const SizedBox.shrink();
+    final image = h.gifUrl ?? h.bCutUrl;
+    final mn = idx.mnemonicFor(h, AppLangPrefs.isEn ? 'en' : 'ko');
+    final write = switch (h.hskW) {
+      1 => tr('쓰기 · HSK 초등'),
+      2 => tr('쓰기 · HSK 중등'),
+      3 => tr('쓰기 · HSK 고등'),
+      _ => null,
+    };
+    if (image == null && mn == null && write == null) return const SizedBox.shrink();
+
+    return Padding(
+      padding: const EdgeInsets.only(top: 12),
+      child: Container(
+        padding: const EdgeInsets.all(14),
+        decoration: BoxDecoration(
+          color: AppColors.xuanZhiDeep,
+          border: Border.all(color: AppColors.jin.withValues(alpha: 0.5)),
+        ),
+        child: Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            if (image != null) ...[
+              SizedBox(
+                width: 88,
+                height: 88,
+                child: Image.network(
+                  image,
+                  fit: BoxFit.contain,
+                  errorBuilder: (_, _, _) => const SizedBox.shrink(),
+                ),
+              ),
+              const SizedBox(width: 12),
+            ],
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Row(
+                    children: [
+                      Text(
+                        tr('외우는 방법'),
+                        style: TextStyle(
+                          fontSize: 11,
+                          fontWeight: FontWeight.w800,
+                          color: AppColors.zhuHong,
+                          letterSpacing: 2,
+                        ),
+                      ),
+                      const Spacer(),
+                      if (write != null)
+                        Container(
+                          padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
+                          decoration: BoxDecoration(
+                            border: Border.all(color: AppColors.feiCui),
+                          ),
+                          child: Text(
+                            write,
+                            style: const TextStyle(
+                              fontSize: 9,
+                              fontWeight: FontWeight.w800,
+                              color: AppColors.mo,
+                            ),
+                          ),
+                        ),
+                    ],
+                  ),
+                  const SizedBox(height: 6),
+                  if (mn?.tip != null && mn!.tip!.isNotEmpty)
+                    Text(
+                      mn.tip!,
+                      style: const TextStyle(
+                        fontSize: 14,
+                        fontWeight: FontWeight.w700,
+                        color: AppColors.mo,
+                        height: 1.5,
+                      ),
+                    ),
+                  if (mn?.origin != null && mn!.origin!.isNotEmpty)
+                    Padding(
+                      padding: const EdgeInsets.only(top: 4),
+                      child: Text(
+                        mn.origin!,
+                        style: const TextStyle(
+                          fontSize: 11,
+                          color: AppColors.moLight,
+                          height: 1.5,
+                        ),
+                      ),
+                    ),
+                  if (mn == null)
+                    Text(
+                      tr('준비 중'),
+                      style: const TextStyle(fontSize: 12, color: AppColors.moLight),
+                    ),
                 ],
               ),
             ),

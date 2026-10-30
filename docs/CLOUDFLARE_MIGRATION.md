@@ -40,9 +40,8 @@
 - 이 앱은 지금 로그인·서버 저장이 없다. 넣을 때 그 설계(태국어앱 문서 §2-2~2-6, 앱 코드는 §2-8 을 본뜸, client id `zh`, 딥링크 `talkverse.zh://auth`)를 따르고, 기기 안 기록(Drift)은 그대로 둔 채 동기화를 더하는 방식으로 한다.
 - 한자 데이터는 계속 `hanja-db` 에서 읽는다.
 
-## 3. 기다리는 것 — 대기: 요금제 / 제한 해제
+## 3. 결과 (2026-10-30)
 
-- **제한 해제**: Supabase 가 아직 402(2026-10-26 확인). 그 전까지 이 앱의 공용 데이터 읽기는 실패하고 번들 데이터만 쓴다(앱은 정상 동작).
-- **요금제**: Workers 요금제 결정 전 — 이 앱은 만들 D1·Worker 가 없어 직접 영향은 없다.
-- **한자 세션**: `hanja-db` 읽기 주소와 응답 형식. 오면 `SharedHanjaService` 의 주소·질의만 바꾼다(앱 코드 수정 — 그때 따로 진행).
-- 참고: 공용 한자 표 읽기 코드(`shared_hanja_service.dart` 등)는 아직 커밋·배포 전이다. 배포된 앱(빌드 3)은 Supabase 를 전혀 쓰지 않는다.
+- 공용 한자 표 읽기를 `hanja-db` 읽기 API `https://hanja-api.talkverse-lab.workers.dev/rest/v1/<표>`(PostgREST 와 같은 모양, 공개 읽기·키 없음)로 바꿨다. GIF 는 R2 `https://gif.talkverse.uk/`.
+- 확인(2026-10-26): `hanja_chars` 4,163행 · `hanja_alias` · `hanja_mnemonic`(form=kr·cn) 실제 수신, 두 번째 동기화는 바뀐 행 0. 첫 동기화 약 25초, 기기 캐시 약 3.6MB.
+- 이 앱이 Supabase 에서 읽는 것은 이제 없다. 지울 Supabase 표·파일 0개.

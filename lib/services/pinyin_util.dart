@@ -56,6 +56,19 @@ class PinyinUtil {
     return -1;
   }
 
+  /// 성조 부호 병음 → 번호 성조 (한 음절). 'qīng' → 'qing1', 'ma' → 'ma5'
+  static String toNumbered(String syl) {
+    final s = syl.trim();
+    if (s.isEmpty || RegExp(r'[1-5]$').hasMatch(s)) return s;
+    var tone = 5;
+    _marks.forEach((_, marks) {
+      for (var i = 0; i < marks.length; i++) {
+        if (s.contains(marks[i])) tone = i + 1;
+      }
+    });
+    return '${stripTones(s)}$tone';
+  }
+
   /// 성조 마크 제거 → 기본 음절.
   /// 'mǎ' → 'ma',  'xiào' → 'xiao'
   static String stripTones(String pinyin) {

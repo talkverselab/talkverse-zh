@@ -63,6 +63,17 @@ adb -s R3CY20HDN2K install --user 0 -r <apk>
 
 구현 안내서: https://github.com/talkverselab/talkverse-th/blob/master/docs/in-app-update-via-github.md
 
+## 2-0. Zealot (무선 설치, https://apps.talkverse.uk) — 2026-10-11
+
+- **Zealot 앱이름: 중국어유니버스** (고정. 2026-10-11 정함 — 그전에 올린 적 없음, 앱 표시 이름과 같음)
+- 업로드: `tools/zealot_push.sh ["변경 한 줄"]` — `android/app/build/outputs/apk/release/` 의 가장 최근 서명된 APK 를
+  `~/bin/zealot-upload` 로 올린다(변경 내용 생략 시 최근 커밋 제목). 빌드는 하지 않는다.
+  `ZEALOT_FROM_CI=1 tools/zealot_push.sh` 는 로컬 빌드 대신 GitHub `latest` 릴리스의 `app-latest.apk` 를 받아 올린다.
+- 서명·버전 코드 상태(2026-10-11 확인): 업로드 키는 CI 시크릿에만 있고 **맥미니에는 키스토어가 없다**
+  (`android/key.properties` 가 노트북 경로 `C:/Users/Johnjeon/.android-keys/…jks` 를 가리켜 맥 release 빌드는 실패) →
+  지금 덮어 설치되는 APK 는 CI 빌드뿐. `pubspec.yaml` 은 `0.1.0+1` 고정이고 실제 버전 코드는 CI 실행 번호(최신 3, `70c26eb`) —
+  맥에서 빌드하게 되면 `--build-number` 를 `latest.json` 의 `build` 와 직전 Zealot 빌드보다 크게 줄 것.
+
 ## 2-1. iOS (아이폰) — TestFlight 배포
 
 안드로이드의 「푸시 → APK → 앱 내 업데이트」에 해당하는 iOS 경로. 맥 없이 GitHub macOS 러너만 쓴다.
