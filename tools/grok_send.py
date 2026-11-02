@@ -6,7 +6,7 @@
 import re, sys, time
 import os
 sys.path.insert(0, '/Users/talkverse/Hanja/tools'); import grok_cdp as g
-g.BASE = 'http://127.0.0.1:' + os.environ.get('GROK_CDP_PORT', '9227')  # 중국어앱 전용 Chrome(프로필 ~/chrome-grok-zh, 포트 배정표 2026-11-02)
+g.BASE = 'http://127.0.0.1:' + os.environ.get('GROK_CDP_PORT', '9227')  # 중국어앱 전용 Chrome — M4 의 ~/chrome-grok-zh(9227), M6 에서는 ssh -fN -L 9227:127.0.0.1:9227 macmini4 터널로(2026-11-03)
 
 a = sys.argv[1:]
 src, dst = a[0], a[1]
@@ -31,7 +31,14 @@ if attach:
     import os as _os
     doc = c.call('DOM.getDocument', depth=1)
     q = c.call('DOM.querySelector', nodeId=doc['root']['nodeId'], selector='input[type=file]')
-    c.call('DOM.setFileInputFiles', nodeId=q['nodeId'], files=[_os.path.abspath(x) for x in attach]); time.sleep(4 + 2 * len(attach))
+    files = [_os.path.abspath(x) for x in attach]
+    remote = _os.environ.get('GROK_REMOTE', 'macmini4')  # 브라우저가 M4 에 있다(2026-11-03 사용자 지시) — 첨부는 M4 경로여야 한다
+    if remote:
+        import subprocess
+        subprocess.run(['ssh', remote, 'mkdir -p /tmp/grok_att'], check=True)
+        subprocess.run(['scp', '-q', *files, f'{remote}:/tmp/grok_att/'], check=True)
+        files = ['/tmp/grok_att/' + _os.path.basename(x) for x in files]
+    c.call('DOM.setFileInputFiles', nodeId=q['nodeId'], files=files); time.sleep(4 + 2 * len(attach))
     print('attached', len(attach))
 c.ev("document.querySelector('.ProseMirror').focus()")
 c.call('Input.insertText', text=text); time.sleep(1)

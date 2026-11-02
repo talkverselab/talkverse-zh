@@ -4,7 +4,7 @@
 import sys
 import os
 sys.path.insert(0, '/Users/talkverse/Hanja/tools'); import grok_cdp as g
-g.BASE = 'http://127.0.0.1:' + os.environ.get('GROK_CDP_PORT', '9227')  # 중국어앱 전용 Chrome(프로필 ~/chrome-grok-zh, 포트 배정표 2026-11-02)
+g.BASE = 'http://127.0.0.1:' + os.environ.get('GROK_CDP_PORT', '9227')  # 중국어앱 전용 Chrome — M4 의 ~/chrome-grok-zh(9227), M6 에서는 ssh 터널로(2026-11-03)
 frag, dst = sys.argv[1], sys.argv[2]
 n = int(sys.argv[3]) if len(sys.argv) > 3 else -1
 c = g.CDP(g.tab(frag))
