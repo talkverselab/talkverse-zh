@@ -2,7 +2,7 @@ import 'dart:convert';
 
 import 'package:flutter/services.dart' show rootBundle;
 
-import 'cedict_service.dart';
+import 'lexicon_service.dart';
 import 'pinyin_util.dart';
 import '../core/l10n.dart';
 
@@ -11,7 +11,7 @@ class IndexedSentence {
   final String zh;
   final String? pinyin;
   final String? ko;
-  final String source; // 예: '문법 L1', '회화 (LCCC)', '대화 L1'
+  final String source; // 예: '문법 L1', '대화 L1'
   final String? speaker; // 'A'(남) | 'B'(여) | null
   final List<Map<String, dynamic>> tokens; // [{text, compound}]
 
@@ -30,7 +30,7 @@ class ChunkHit {
   final String chunk;
   final String? pinyin;
   final String? ko;
-  final List<String> meanings; // CC-CEDICT
+  final List<String> meanings; // 앱 사전
   final List<IndexedSentence> sentences;
 
   ChunkHit({
@@ -45,7 +45,7 @@ class ChunkHit {
 /// 앱의 모든 문장을 청크(단어) 기준으로 역인덱싱해 검색 제공.
 ///
 /// - 토큰이 있는 문장(문법 예문)은 그대로 사용.
-/// - 없는 문장(대화)은 CC-CEDICT 최장일치(4→2자)로 분절.
+/// - 없는 문장(대화)은 앱 사전 최장일치(4→2자)로 분절.
 /// - 검색: 한자 / 병음(성조 무시: keai→可爱) / 한국어 뜻.
 class ChunkIndexService {
   ChunkIndexService._();
@@ -64,11 +64,10 @@ class ChunkIndexService {
   Future<void> ensureLoaded() async {
     if (_loaded || _loading) return;
     _loading = true;
-    await CedictService.instance.ensureLoaded();
+    await LexiconService.instance.ensureLoaded();
 
     await _loadGrammarLessons();
     await _loadDialogues();
-    await _loadConvLccc();
 
     _buildIndex();
     _loaded = true;
@@ -76,7 +75,7 @@ class ChunkIndexService {
   }
 
   Future<void> _loadGrammarLessons() async {
-    for (final n in [1, 2]) {
+    for (final n in [1]) {
       final Map<String, dynamic> data;
       try {
         final raw = await rootBundle.loadString('assets/data/grammar/lesson$n.json');
@@ -147,41 +146,12 @@ class ChunkIndexService {
     }
   }
 
-  Future<void> _loadConvLccc() async {
-    final Map<String, dynamic> data;
-    try {
-      final raw = await rootBundle.loadString('assets/data/dialogues/conv_lccc.json');
-      data = json.decode(raw) as Map<String, dynamic>;
-    } catch (_) {
-      return;
-    }
-    final dialogues = (data['dialogues'] as List?) ?? [];
-    for (final d in dialogues) {
-      final m = d as Map<String, dynamic>;
-      final label = m['category_label'] as String?;
-      final turns = (m['turns'] as List?) ?? [];
-      for (final t in turns) {
-        final tm = t as Map<String, dynamic>;
-        final zh = tm['zh'] as String?;
-        if (zh == null || zh.isEmpty) continue;
-        _sentences.add(IndexedSentence(
-          zh: zh,
-          pinyin: tm['pinyin'] as String?,
-          ko: tm['ko'] as String?,
-          source: label == null ? tr('회화 (LCCC)') : trf('회화 · {0}', [label]),
-          speaker: tm['speaker'] as String?,
-          tokens: _segment(zh),
-        ));
-      }
-    }
-  }
-
   bool _isCjk(int code) => code >= 0x4E00 && code <= 0x9FFF;
 
   /// 외부용: 문장을 청크 토큰으로 분절. ensureLoaded 이후 사용.
   List<Map<String, dynamic>> tokensFor(String zh) => _segment(zh);
 
-  /// CC-CEDICT + 문법 청크 사전 기준 최장일치 분절 (4→2자, 없으면 1자).
+  /// 앱 사전 + 문법 청크 사전 기준 최장일치 분절 (4→2자, 없으면 1자).
   List<Map<String, dynamic>> _segment(String zh) {
     final chars = zh.runes.map(String.fromCharCode).toList();
     final tokens = <Map<String, dynamic>>[];
@@ -197,7 +167,7 @@ class ChunkIndexService {
         if (i + len > chars.length) continue;
         final cand = chars.sublist(i, i + len).join();
         if (cand.runes.any((c) => !_isCjk(c))) continue;
-        if (CedictService.instance.lookup(cand) != null || _chunkDict.containsKey(cand)) {
+        if (LexiconService.instance.lookup(cand) != null || _chunkDict.containsKey(cand)) {
           tokens.add({'text': cand, 'compound': true});
           i += len;
           matched = true;
@@ -226,13 +196,13 @@ class ChunkIndexService {
   }
 
   ChunkHit _hitFor(String chunk) {
-    final cedict = CedictService.instance.lookup(chunk);
+    final lex = LexiconService.instance.lookup(chunk);
     final dictData = _chunkDict[chunk];
     return ChunkHit(
       chunk: chunk,
-      pinyin: cedict?.pinyin ?? dictData?['pinyin'] as String?,
+      pinyin: lex?.pinyin ?? dictData?['pinyin'] as String?,
       ko: dictData?['ko'] as String?,
-      meanings: cedict?.meanings ??
+      meanings: lex?.meanings ??
           (dictData?['meanings'] as List?)?.map((e) => e.toString()).toList() ??
           const [],
       sentences: (_byChunk[chunk] ?? []).map((i) => _sentences[i]).toList(),
@@ -266,7 +236,7 @@ class ChunkIndexService {
       final nq = PinyinUtil.stripTones(q).replaceAll(RegExp(r"[^a-zü]"), '');
       if (nq.isEmpty) return [];
       for (final chunk in _byChunk.keys) {
-        final py = CedictService.instance.lookup(chunk)?.pinyin ??
+        final py = LexiconService.instance.lookup(chunk)?.pinyin ??
             _chunkDict[chunk]?['pinyin'] as String?;
         if (py == null) continue;
         final np = PinyinUtil.stripTones(py).replaceAll(RegExp(r"[^a-zü]"), '');

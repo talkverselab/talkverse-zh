@@ -5,7 +5,7 @@ import 'package:flutter/services.dart' show rootBundle;
 import 'package:shared_preferences/shared_preferences.dart';
 
 import '../core/theme.dart';
-import '../services/cedict_service.dart';
+import '../services/lexicon_service.dart';
 import '../services/chunk_index_service.dart';
 import '../services/ko_reading.dart';
 import '../services/tts_service.dart';
@@ -44,7 +44,7 @@ class MemorizedStore {
 }
 
 
-/// co-Trip 여행 중국어 — 주제별 단어장.
+/// 주제별 단어장.
 class VocabWord {
   final String ko;
   final String zh;
@@ -109,7 +109,7 @@ class VocabCatalog {
   final Map<String, String> _gloss = {};
   bool _glossLoaded = false;
 
-  /// zh → 한국어 뜻 (여행 단어·표현에서 수집).
+  /// zh → 한국어 뜻 (주제별 단어·표현에서 수집).
   String? koFor(String zh) => _gloss[zh];
 
   Future<void> ensureGloss() async {
@@ -215,7 +215,7 @@ class _TopicVocabScreenState extends State<TopicVocabScreen> {
                 style: const TextStyle(
                     color: AppColors.mo, fontSize: 16, fontWeight: FontWeight.w800)),
             const SizedBox(height: 2),
-            Text(trf('여행 중국어 · {0}항목', [total]),
+            Text(trf('{0}항목', [total]),
                 style: TextStyle(
                     color: AppColors.moLight, fontSize: 10, letterSpacing: 2)),
           ],
@@ -226,6 +226,8 @@ class _TopicVocabScreenState extends State<TopicVocabScreen> {
         top: false,
         child: _loading
             ? const Center(child: CircularProgressIndicator(color: AppColors.zhuHong))
+            : themes.isEmpty
+            ? Center(child: Text(tr('준비 중'), style: const TextStyle(color: AppColors.moLight, fontSize: 15, fontWeight: FontWeight.w700)))
             : Column(
                 children: [
                   const GreekKeyDivider(height: 8),
@@ -484,7 +486,7 @@ class _WordTileState extends State<_WordTile> {
     var rd = word.rd;
     var ko = word.ko;
     if ((rd.isEmpty || ko.isEmpty) && widget.chunkReady) {
-      final ce = CedictService.instance.lookup(word.zh);
+      final ce = LexiconService.instance.lookup(word.zh);
       if (rd.isEmpty) rd = ce?.pinyin ?? '';
       if (ko.isEmpty) {
         ko = VocabCatalog.instance.koFor(word.zh) ??
@@ -780,7 +782,7 @@ class _WordRowState extends State<_WordRow> {
                         var rd = word.rd;
                         var ko = word.ko;
                         if ((rd.isEmpty || ko.isEmpty) && chunkReady) {
-                          final ce = CedictService.instance.lookup(word.zh);
+                          final ce = LexiconService.instance.lookup(word.zh);
                           if (rd.isEmpty) rd = ce?.pinyin ?? '';
                           if (ko.isEmpty) {
                             ko = VocabCatalog.instance.koFor(word.zh) ??

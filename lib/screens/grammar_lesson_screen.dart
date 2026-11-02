@@ -128,7 +128,7 @@ class _GrammarLessonScreenState extends State<GrammarLessonScreen> {
             Text(
               widget.lessonNum == 1
                   ? tr('S1+S2 기능어 패턴 40 × 3')
-                  : tr('어기조사 · 부사 · 필수단어 (LCCC 실측)'),
+                  : tr('어기조사 · 부사 · 필수단어'),
               style: const TextStyle(color: AppColors.moLight, fontSize: 10, letterSpacing: 2),
             ),
           ],
@@ -313,7 +313,7 @@ class _GrammarLessonScreenState extends State<GrammarLessonScreen> {
                       Text(
                         widget.lessonNum == 1
                             ? tr('S1+S2 (159자) · 진짜 중국인 표현')
-                            : tr('209자 · LCCC 실측 챗 기반'),
+                            : tr('209자 기반'),
                         style: TextStyle(
                           color: AppColors.xuanZhi.withValues(alpha: 0.9),
                           fontSize: 12,
@@ -687,7 +687,6 @@ class GrammarMenuScreen extends StatelessWidget {
           children: [
             card(tr('문법 L1'), tr('기능어 40개 × 3문장 드릴'), 1, const Color(0xFF8B0000)),
             const SizedBox(height: 10),
-            card(tr('문법 L2'), tr('어기조사·부사·단어 확장'), 2, const Color(0xFFAD1457)),
           ],
         ),
       ),

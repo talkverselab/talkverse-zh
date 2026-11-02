@@ -5,7 +5,10 @@ import 'package:flutter/material.dart';
 import 'core/platform_ui.dart';
 import 'core/theme.dart';
 import 'data/db/app_database.dart';
+import 'data/account.dart';
 import 'data/db/seed_loader.dart';
+import 'data/entitlement.dart';
+import 'data/purchase.dart';
 import 'screens/main_screen.dart';
 import 'services/hanzi_info_service.dart';
 import 'services/ko_reading.dart';
@@ -21,6 +24,9 @@ void main() async {
   await SeedLoader(appDb).seedIfNeeded();
   await KoReadingPrefs.load();
   await AppLangPrefs.load();
+  await Entitlement.load();
+  Account.load(); // Talkverse ID(선택) — 저장된 로그인 표시 + 뒤에서 토큰 갱신(기다리지 않음)
+  unawaited(Purchase.configure({Entitlement.lang: ('com.talkverse.chineseUniverse.lifetime', 'lang_zh')}));
   runApp(const ChineseUniverseApp());
   // 한자 공용 DB(발음부·외우는 방법·GIF·쓰기 범위) — 화면을 막지 않고 뒤에서 받는다.
   unawaited(SharedHanjaService.instance.syncIfStale().then((changed) {

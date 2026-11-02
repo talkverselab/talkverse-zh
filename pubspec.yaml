@@ -9,7 +9,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  package_info_plus: ^8.1.1
+  package_info_plus: ^10.0.0
   cupertino_icons: ^1.0.8
 
   # Audio
@@ -33,6 +33,13 @@ dependencies:
   lpinyin: ^2.0.3
   record: ^6.2.1
   pitch_detector_dart: ^0.0.7
+  http: ^1.6.0
+  flutter_web_auth_2: ^5.1.0
+  flutter_secure_storage: ^11.2.0
+  sign_in_with_apple: ^8.2.0
+  crypto: ^3.0.8
+  in_app_purchase: ^3.3.1
+  in_app_purchase_storekit: ^0.4.16
 
 dev_dependencies:
   flutter_test:
@@ -66,14 +73,11 @@ flutter:
     - assets/data/dialogues/north/_meta.json
     - assets/data/dialogues/north/L4.json
     - assets/data/dialogues/south/L1.json
-    - assets/data/dialogues/conv_lccc.json
     - assets/data/hanzi/cliff/hanzi_top500_final.txt
     - assets/data/freq/lang_zh_with_regions.csv
     - assets/data/freq/FINAL_wordset_for_conversation_app.tsv
-    - assets/data/hsk/cedict.txt
     - assets/audio/hanzi/
     - assets/data/grammar/lesson1.json
-    - assets/data/grammar/lesson2.json
     - assets/data/grammar/hanzi_info.json
     - assets/data/hanzi/hanzi_stages.json
     - assets/data/hanzi/hanzi_hsk1500.json

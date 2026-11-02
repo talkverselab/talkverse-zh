@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show rootBundle;
 
 import '../core/theme.dart';
-import '../services/cedict_service.dart';
+import '../services/lexicon_service.dart';
 import '../services/ko_reading.dart';
 import '../services/tts_service.dart';
 import '../widgets/chinese_decor.dart';
@@ -93,8 +93,8 @@ class _GrammarTestScreenState extends State<GrammarTestScreen> {
     final hRaw = await rootBundle.loadString('assets/data/grammar/hanzi_info.json');
     _hanziInfo = json.decode(hRaw) as Map<String, dynamic>;
 
-    // cedict 로드 (단일 한자 병음용)
-    await CedictService.instance.ensureLoaded();
+    // lex 로드 (단일 한자 병음용)
+    await LexiconService.instance.ensureLoaded();
 
     setState(() {
       _cards = cards;
@@ -128,14 +128,14 @@ class _GrammarTestScreenState extends State<GrammarTestScreen> {
           }
           pinyin = (c['pinyin'] as String?)?.trim();
         }
-        // fallback to cedict
+        // fallback to lex
         if (pinyin == null || pinyin.isEmpty) {
-          pinyin = CedictService.instance.lookup(txt)?.pinyin;
+          pinyin = LexiconService.instance.lookup(txt)?.pinyin;
         }
       } else {
         final h = _hanziInfo?[txt];
         if (h is Map) meaning = h['meaning'] as String?;
-        pinyin = CedictService.instance.lookup(txt)?.pinyin;
+        pinyin = LexiconService.instance.lookup(txt)?.pinyin;
       }
       if (meaning == null || meaning.isEmpty) continue;
       hints.add(_Hint(text: txt, meaning: meaning, pinyin: pinyin, compound: compound));

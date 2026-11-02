@@ -111,8 +111,6 @@ Turn JSON:
 | A | `D:/OneDrive/PROJECT/talkverse-lab/zh/north/dialogues/*.json` | `assets/data/dialogues/` |
 | B | `apps/zh-lab/assets/conv200_north.json` + `chat_dialogues_north.json` | `assets/data/dialogues/` |
 | C | github `talkverse-learning-flavors` (refactor/th-flavor-init): hsk_full_1500 / phonetic_roots_200 / core_hanzi_209 / tone_matrix_160 / hanzi_clusters / l1_10day | `assets/data/hanzi/` |
-| D | BOOKS/_assets/data/lang_zh_top2500.csv | `assets/data/wordsets/` |
-| E | DATA_Raw/languages/zh/ (LCCC, 공개 말뭉치, kuroneko5943) | `data/corpus/` (.gitignore) |
 | F | seed_zh.sql (옛 노트북 빌드 Drift seed) | `assets/data/db/` |
 
 ---

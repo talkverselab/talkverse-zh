@@ -1,4 +1,4 @@
-/// CC-CEDICT 번호 성조 → 병음 성조 변환
+/// 번호 성조 → 병음 성조 변환
 /// 'ni3 hao3' → 'nǐ hǎo'
 class PinyinUtil {
   static const Map<String, List<String>> _marks = {

@@ -22,8 +22,7 @@
 - 문장부호 전각 통일(，？！), 병음-표기 일관성(인명 붙여쓰기, 경성 표기)
 - 이식 팁: 검수 기준표 = ①레벨 목표 난이도 초과 어휘 ②번역투 ③대화 내 수치·장소 모순
 
-### 1-3. co-Trip 여행 어휘 → 주제별 단어·표현 (3551201, b6a33f1, e51d15c, 2e5c48f)
-- 원본: 여행 표현집 MD (|한국어|대상어|독음| 표) → 파서(`tool/parse_cotrip.py`)로 두 자산 생성
+### 1-3. 주제별 단어·표현 (2026-11-02 저작권 정리로 자료 비움 — 자체 제작으로 다시 채울 예정)
   - `assets/data/vocab/travel_words.json` — 11테마 1,065단어 (단어성 섹션)
   - `assets/data/vocab/travel_expressions.json` — 11테마 1,053표현 (문장성 섹션, 첫 테마 '필수 표현')
 - 분류 규칙: 섹션 제목 키워드(LOOK/단어/지명…) 우선, 아니면 문장부호 비율 <30% AND 평균 글자수 ≤4.5 = 단어; `~` 템플릿·칼럼 항목은 표현으로
@@ -41,7 +40,7 @@
 ---
 
 ### 1-5. HSK 1~5급 단어 4,240 + 한자 1,500 (09-08)
-- 단어: `complete-hsk-vocabulary`(MIT, HSK 3.0 `new-1..5`) → `tool/build_hsk_words.py` → `assets/data/vocab/hsk_words.json`. 테마=급수, 섹션=빈도순 50개. 한국어 뜻·아이콘은 에이전트 생성(배치 300개, `ko`·`ic`), 앱 기존 여행 어휘 ko 우선.
+- 단어: HSK 3.0 1~5급 단어 목록 → `assets/data/vocab/hsk_words.json`. 테마=급수, 섹션=빈도순 50개. 한국어 뜻·아이콘은 에이전트 생성(배치 300개, `ko`·`ic`), 앱 기존 여행 어휘 ko 우선.
 - 한자: HSK 3.0 급별 300자 × 5 = 1,500 (`hanzi_score_final.tsv` hsk_char_level + `hanzi_ko.json` 훈음). `tool/build_hsk1500.py` → `hanzi_hsk1500.json`: 회화 빈도순 5단계(300자) × 20자 소단계 75개, `phases[]`에 누적 커버율.
 - 빈도 절벽: 회화 코퍼스 커버율은 107자 80% · 206자 90% · 359자 95% · 517자 97% · 682자 98% 이후 1,500자까지 완만한 꼬리(급격한 절벽 없음). 그래서 5단계는 등분(300자)으로 두고 커버율만 표기.
 - 화면: `HanziHubScreen`(209 / 1500 선택) → `HanziStagesScreen(asset, seal, kicker)`; `phases` 있으면 큰 단계 접기/펼치기. 단어는 `TopicVocabScreen(extraAssets: [...])`.
@@ -74,7 +73,7 @@
   - `KoReadingPrefs` — `ValueNotifier<bool>` + SharedPreferences(`show_ko_reading`), 앱 시작 시 `load()` (main.dart)
   - `KoReadingToggleAction` — 앱바용 [한] 토글 버튼 (켜짐=테두리·흰색, 꺼짐=취소선)
   - `KoReadingText(pinyin)` — 발음표기 아래 붙이는 독음 텍스트, off면 SizedBox.shrink
-- 적용 위치(전 메뉴): 에피소드 버블, LCCC 회화 버블, 문장 플래시카드(앞면 힌트 포함), 청크 검색 문장, 문법 예문·문법 테스트 카드, 단어·표현 타일/행/상세 시트(책 독음 `rd`는 토글로 숨김, 병음 폴백이면 병음+독음 병기), 한자 시트·청크 시트
+- 적용 위치(전 메뉴): 에피소드 버블, 문장 플래시카드(앞면 힌트 포함), 청크 검색 문장, 문법 예문·문법 테스트 카드, 단어·표현 타일/행/상세 시트(독음 `rd`는 토글로 숨김, 병음 폴백이면 병음+독음 병기), 한자 시트·청크 시트
 - 이식 순서: 음절표 생성 → ko_reading.dart 복사 → 각 화면 발음표기 Text 아래 `KoReadingText` 1줄 + 앱바 actions에 `KoReadingToggleAction()` 추가
 
 ### 2-1d. 말하기 연습 (Speaking) — 학습한 회화 → 탭 즉시 테스트
@@ -115,7 +114,7 @@
 
 ### 2-6. TTS 화자별 음성 (feb0931, b6a33f1)
 - `TtsService.speakAs(text, gender)`: 기기 보이스에서 male/female 탐색, 없으면 피치(남 0.6/여 1.15)
-- 적용: 에피소드·LCCC 버블, 플래시카드, 청크 검색 문장(화자 정보 인덱스에 포함)
+- 적용: 에피소드 버블, 플래시카드, 청크 검색 문장(화자 정보 인덱스에 포함)
 
 ### 2-7. 진행 탭 실데이터 (7d1c272)
 - 전체 진행률(learned/총턴), 완료 에피소드, 연속 학습(streak), 주간 활동, 레벨별 진행 바

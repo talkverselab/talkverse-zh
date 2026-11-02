@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../core/theme.dart';
-import '../services/cedict_service.dart';
+import '../services/lexicon_service.dart';
 import '../services/hanzi_info_service.dart';
 import '../services/pinyin_util.dart';
 import '../widgets/chinese_decor.dart';
@@ -35,7 +35,7 @@ class _PhoneticRootsScreenState extends State<PhoneticRootsScreen> {
 
   Future<void> _load() async {
     await HanziInfoService.instance.ensureLoaded();
-    await CedictService.instance.ensureLoaded();
+    await LexiconService.instance.ensureLoaded();
     if (!mounted) return;
     setState(() {
       _roots = HanziInfoService.instance.allRoots;
@@ -47,7 +47,7 @@ class _PhoneticRootsScreenState extends State<PhoneticRootsScreen> {
       final root = _roots.where((r) => r.root == focus).firstOrNull ??
           PhoneticRootInfo(
               root: focus,
-              pinyin: CedictService.instance.lookup(focus)?.pinyin ?? '',
+              pinyin: LexiconService.instance.lookup(focus)?.pinyin ?? '',
               count: HanziInfoService.instance.charsSharing(focus).length);
       WidgetsBinding.instance.addPostFrameCallback(
           (_) => _openFamily(root, highlight: widget.fromChar ?? ''));

@@ -1,4 +1,4 @@
-word	opus_rank	hsk_level	pos	lccc_rank	is_foreign_name	is_foreign_score3	tier	dialog_priority
+word	corpus_rank	hsk_level	pos	chat_rank	is_foreign_name	is_foreign_score3	tier	dialog_priority
 的	1	HSK1	助	1	0	0	A_essential	1
 我	2	HSK1	代	2	0	0	A_essential	1
 你	3	HSK1	代	3	0	0	A_essential	1

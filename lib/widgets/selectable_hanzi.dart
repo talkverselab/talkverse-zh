@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../core/theme.dart';
-import '../services/cedict_service.dart';
+import '../services/lexicon_service.dart';
 import '../services/hanzi_info_service.dart';
 import '../services/pinyin_util.dart';
 import '../services/shared_hanja_service.dart';
@@ -42,11 +42,11 @@ class _SelectableHanziTextState extends State<SelectableHanziText> {
   }
 
   Future<void> _openChunk(String text) async {
-    await CedictService.instance.ensureLoaded();
+    await LexiconService.instance.ensureLoaded();
     await HanziInfoService.instance.ensureLoaded();
     await VocabCatalog.instance.ensureGloss();
     if (!mounted) return;
-    final cedict = CedictService.instance.lookup(text);
+    final lex = LexiconService.instance.lookup(text);
     Map<String, dynamic>? chunkData;
     if (widget.chunks != null) {
       final raw = widget.chunks![text];
@@ -59,17 +59,17 @@ class _SelectableHanziTextState extends State<SelectableHanziText> {
       shape: const RoundedRectangleBorder(
         borderRadius: BorderRadius.vertical(top: Radius.circular(2)),
       ),
-      builder: (_) => _ChunkInfoSheet(chunk: text, cedict: cedict, chunkData: chunkData),
+      builder: (_) => _ChunkInfoSheet(chunk: text, lex: lex, chunkData: chunkData),
     );
     if (mounted) setState(() => _focused = null);
   }
 
   Future<void> _openChar(String char) async {
     await HanziInfoService.instance.ensureLoaded();
-    await CedictService.instance.ensureLoaded();
+    await LexiconService.instance.ensureLoaded();
     if (!mounted) return;
     final info = HanziInfoService.instance.lookup(char);
-    final cedict = CedictService.instance.lookup(char);
+    final lex = LexiconService.instance.lookup(char);
     await showModalBottomSheet(
       context: context,
       backgroundColor: AppColors.xuanZhi,
@@ -77,7 +77,7 @@ class _SelectableHanziTextState extends State<SelectableHanziText> {
       shape: const RoundedRectangleBorder(
         borderRadius: BorderRadius.vertical(top: Radius.circular(2)),
       ),
-      builder: (_) => HanziInfoSheet(char: char, info: info, cedict: cedict),
+      builder: (_) => HanziInfoSheet(char: char, info: info, lex: lex),
     );
     if (mounted) setState(() => _focused = null);
   }
@@ -148,10 +148,10 @@ class _SelectableHanziTextState extends State<SelectableHanziText> {
 
 class _ChunkInfoSheet extends StatefulWidget {
   final String chunk;
-  final CedictEntry? cedict;
+  final LexEntry? lex;
   final Map<String, dynamic>? chunkData;
 
-  const _ChunkInfoSheet({required this.chunk, this.cedict, this.chunkData});
+  const _ChunkInfoSheet({required this.chunk, this.lex, this.chunkData});
 
   @override
   State<_ChunkInfoSheet> createState() => _ChunkInfoSheetState();
@@ -160,10 +160,10 @@ class _ChunkInfoSheet extends StatefulWidget {
 class _ChunkInfoSheetState extends State<_ChunkInfoSheet> {
   Future<void> _openChar(String char) async {
     await HanziInfoService.instance.ensureLoaded();
-    await CedictService.instance.ensureLoaded();
+    await LexiconService.instance.ensureLoaded();
     if (!mounted) return;
     final info = HanziInfoService.instance.lookup(char);
-    final cedict = CedictService.instance.lookup(char);
+    final lex = LexiconService.instance.lookup(char);
     await showModalBottomSheet(
       context: context,
       backgroundColor: AppColors.xuanZhi,
@@ -171,18 +171,18 @@ class _ChunkInfoSheetState extends State<_ChunkInfoSheet> {
       shape: const RoundedRectangleBorder(
         borderRadius: BorderRadius.vertical(top: Radius.circular(2)),
       ),
-      builder: (_) => HanziInfoSheet(char: char, info: info, cedict: cedict),
+      builder: (_) => HanziInfoSheet(char: char, info: info, lex: lex),
     );
   }
 
   @override
   Widget build(BuildContext context) {
     final chunk = widget.chunk;
-    final cedict = widget.cedict;
+    final lex = widget.lex;
     final chunkData = widget.chunkData;
-    final rawPy = cedict?.pinyin ?? (chunkData?['pinyin'] as String?);
+    final rawPy = lex?.pinyin ?? (chunkData?['pinyin'] as String?);
     final pinyin = rawPy == null ? null : PinyinUtil.toTonedPinyin(rawPy);
-    final meanings = cedict?.meanings ??
+    final meanings = lex?.meanings ??
         (chunkData?['meanings'] as List?)?.map((e) => e.toString()).toList() ??
         const [];
     final ko = (chunkData?['ko'] as String?) ??
@@ -293,7 +293,7 @@ class _ChunkInfoSheetState extends State<_ChunkInfoSheet> {
                   if (meanings.isNotEmpty) ...[
                     if (ko != null) const SizedBox(height: 10),
                     const Text(
-                      'CC-CEDICT',
+                      '앱 사전',
                       style: TextStyle(
                         fontSize: 9,
                         color: AppColors.moLight,
@@ -430,9 +430,9 @@ class _ChunkInfoSheetState extends State<_ChunkInfoSheet> {
 class HanziInfoSheet extends StatelessWidget {
   final String char;
   final HanziInfo? info;
-  final CedictEntry? cedict;
+  final LexEntry? lex;
 
-  const HanziInfoSheet({super.key, required this.char, this.info, this.cedict});
+  const HanziInfoSheet({super.key, required this.char, this.info, this.lex});
 
   Future<void> _openFamily(BuildContext ctx, String phon, String phonPy, String exclude) async {
     // 발음부 메뉴로 이동 — 해당 발음부 가족 자동 오픈, from 한자 하이라이트.
@@ -447,8 +447,8 @@ class HanziInfoSheet extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final pinyin = cedict?.pinyin;
-    final meanings = cedict?.meanings ?? const [];
+    final pinyin = lex?.pinyin;
+    final meanings = lex?.meanings ?? const [];
     final meaning = info?.meaning;
     final phon = info?.phonetic;
     final phonPy = info?.phoneticPinyin;
@@ -574,7 +574,7 @@ class HanziInfoSheet extends StatelessWidget {
                           if (meanings.isNotEmpty) ...[
                             const SizedBox(height: 10),
                             const Text(
-                              'CC-CEDICT',
+                              '앱 사전',
                               style: TextStyle(
                                 fontSize: 9,
                                 color: AppColors.moLight,
@@ -882,9 +882,9 @@ class PhoneticFamilySheet extends StatelessWidget {
 
   Future<void> _openChar(BuildContext ctx, String char) async {
     await HanziInfoService.instance.ensureLoaded();
-    await CedictService.instance.ensureLoaded();
+    await LexiconService.instance.ensureLoaded();
     final info = HanziInfoService.instance.lookup(char);
-    final cedict = CedictService.instance.lookup(char);
+    final lex = LexiconService.instance.lookup(char);
     if (!ctx.mounted) return;
     Navigator.pop(ctx);
     await showModalBottomSheet(
@@ -894,7 +894,7 @@ class PhoneticFamilySheet extends StatelessWidget {
       shape: const RoundedRectangleBorder(
         borderRadius: BorderRadius.vertical(top: Radius.circular(2)),
       ),
-      builder: (_) => HanziInfoSheet(char: char, info: info, cedict: cedict),
+      builder: (_) => HanziInfoSheet(char: char, info: info, lex: lex),
     );
   }
 
@@ -988,14 +988,14 @@ class PhoneticFamilySheet extends StatelessWidget {
   }
 
   Widget _buildGroupedFamily(BuildContext context) {
-    // 각 멤버 의 cedict pinyin lookup, phoneticPinyin 과 compare
+    // 각 멤버 의 lex pinyin lookup, phoneticPinyin 과 compare
     final full = <_FamilyMember>[]; // 완전공유
     final partial = <_FamilyMember>[]; // 부분공유 (성조만 다름)
     final shifted = <_FamilyMember>[]; // 일부음차차이
 
     for (final c in members) {
-      final cedict = CedictService.instance.lookup(c);
-      final memberPy = cedict?.pinyin ?? '';
+      final lex = LexiconService.instance.lookup(c);
+      final memberPy = lex?.pinyin ?? '';
       final mem = _FamilyMember(
         char: c,
         pinyin: memberPy,
