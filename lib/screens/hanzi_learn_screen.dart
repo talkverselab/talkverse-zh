@@ -13,6 +13,7 @@ import 'hanzi_quiz_screen.dart';
 /// 단계(20자)를 한 글자씩 **먼저 배우고**(병음·뜻·발음부 가족 + 한자 공용 DB: 그림·외우는 방법·쓰기 범위),
 /// 다 보면 그 단계 4지선다(`HanziQuizScreen`)로 간다. 글자 정보는 한자 팝업과 같은 [HanziInfoBody].
 /// 폰: 한 글자 한 페이지(좌우 넘김). 넓은 화면(가로 720 이상): 왼쪽 20자 격자 · 오른쪽 글자 정보.
+/// 시안 zh05(2026-11-03): 큰 자형(LXGW WenKai 60) + 가족 한 줄, 격자·하단은 상자·테두리 없이.
 class HanziLearnStageScreen extends StatefulWidget {
   final int stage;
   final List allStages; // hanzi_stages.json 의 stages[] 그대로
@@ -68,6 +69,8 @@ class _HanziLearnStageScreenState extends State<HanziLearnStageScreen> {
         char: _ch(i),
         info: HanziInfoService.instance.lookup(_ch(i)),
         lex: LexiconService.instance.lookup(_ch(i)),
+        showClose: false,
+        initiallyExpanded: true, // 배우는 화면이라 외우는 방법까지 펼쳐 둔다
       );
 
   @override
@@ -78,15 +81,15 @@ class _HanziLearnStageScreenState extends State<HanziLearnStageScreen> {
       backgroundColor: AppColors.xuanZhi,
       appBar: AppBar(
         title: Column(mainAxisSize: MainAxisSize.min, children: [
-          Text(trf('한자 배우기 · 단계 {0}', [widget.stage]), style: const TextStyle(color: AppColors.mo, fontWeight: FontWeight.w800, fontSize: 15)),
-          const SizedBox(height: 2),
-          Text('${_idx + 1} / ${_chars.length}', style: const TextStyle(color: AppColors.muted, fontSize: 10, letterSpacing: 2)),
+          Text(trf('한자 배우기 · 단계 {0}', [widget.stage]), style: AppFonts.titleText(size: 18)),
+          const SizedBox(height: 1),
+          Text('${_idx + 1} / ${_chars.length}', style: AppFonts.captionText(size: 10.5)),
         ]),
         actions: [
           TextButton.icon(
             onPressed: _quiz,
             icon: const Icon(Icons.quiz_outlined, size: 18),
-            label: Text(tr('문제 풀기'), style: const TextStyle(fontWeight: FontWeight.w800, fontSize: 12)),
+            label: Text(tr('문제 풀기'), style: AppFonts.captionText(size: 12, weight: FontWeight.w600, color: allSeen ? AppColors.copper : AppColors.muted)),
             style: TextButton.styleFrom(foregroundColor: allSeen ? AppColors.copper : AppColors.muted),
           ),
         ],
@@ -102,11 +105,10 @@ class _HanziLearnStageScreenState extends State<HanziLearnStageScreen> {
                       child: wide
                           ? Row(crossAxisAlignment: CrossAxisAlignment.start, children: [
                               SizedBox(width: 300, child: _Grid(chars: _chars, idx: _idx, seen: _seen, onTap: _go)),
-                              const VerticalDivider(width: 1, color: AppColors.line),
                               Expanded(
                                 child: SingleChildScrollView(
-                                  padding: const EdgeInsets.fromLTRB(20, 14, 20, 24),
-                                  child: _body(_idx),
+                                  padding: const EdgeInsets.fromLTRB(32, 14, 32, 24),
+                                  child: Center(child: ConstrainedBox(constraints: const BoxConstraints(maxWidth: 640), child: _body(_idx))),
                                 ),
                               ),
                             ])
@@ -118,7 +120,7 @@ class _HanziLearnStageScreenState extends State<HanziLearnStageScreen> {
                                 _seen.add(i);
                               }),
                               itemBuilder: (context, i) => SingleChildScrollView(
-                                padding: const EdgeInsets.fromLTRB(20, 14, 20, 16),
+                                padding: const EdgeInsets.fromLTRB(24, 8, 24, 16),
                                 child: _body(i),
                               ),
                             ),
@@ -158,16 +160,18 @@ class _Grid extends StatelessWidget {
           return InkWell(
             onTap: () => onTap(i),
             borderRadius: BorderRadius.circular(12),
+            // 상자 없이: 지금 글자만 연한 구리 바탕, 본 글자는 아래 점
             child: Container(
               decoration: BoxDecoration(
-                color: on ? AppColors.copper.withValues(alpha: 0.12) : AppColors.xuanZhiDeep,
-                border: Border.all(color: on ? AppColors.copper : (done ? AppColors.feiCui : AppColors.line), width: on ? 1.6 : 1),
+                color: on ? AppColors.copper.withValues(alpha: 0.10) : null,
                 borderRadius: BorderRadius.circular(12),
               ),
               child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
-                Text(c['char'] as String? ?? '', style: TextStyle(fontSize: 28, fontWeight: FontWeight.w900, color: on ? AppColors.copper : AppColors.mo, height: 1.1)),
+                Text(c['char'] as String? ?? '', style: AppFonts.glyphText(size: AppFonts.glyphTile, color: on ? AppColors.copperDeep : AppColors.mo)),
                 const SizedBox(height: 2),
-                Text(meaning, maxLines: 1, overflow: TextOverflow.ellipsis, style: const TextStyle(fontSize: 9.5, color: AppColors.muted, fontWeight: FontWeight.w700)),
+                Text(meaning, maxLines: 1, overflow: TextOverflow.ellipsis, style: AppFonts.captionText(size: 10.5)),
+                const SizedBox(height: 2),
+                Container(width: 4, height: 4, decoration: BoxDecoration(shape: BoxShape.circle, color: done ? AppColors.feiCui : Colors.transparent)),
               ]),
             ),
           );
@@ -186,14 +190,14 @@ class _Bottom extends StatelessWidget {
     final last = idx >= total - 1;
     return Container(
       padding: EdgeInsets.fromLTRB(16, 8, 16, 12 + bottomInset(context)),
-      decoration: const BoxDecoration(color: AppColors.xuanZhi, border: Border(top: BorderSide(color: AppColors.line))),
+      color: AppColors.xuanZhi,
       child: Column(mainAxisSize: MainAxisSize.min, children: [
         Row(children: [
           IconButton(onPressed: idx > 0 ? onPrev : null, icon: const Icon(Icons.chevron_left), color: AppColors.mo),
           Expanded(
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 8),
-              child: LinearProgressIndicator(value: total == 0 ? 0 : (idx + 1) / total, minHeight: 4, color: AppColors.copper, backgroundColor: AppColors.line),
+              child: LinearProgressIndicator(value: total == 0 ? 0 : (idx + 1) / total, minHeight: 2, color: AppColors.copper, backgroundColor: AppColors.line),
             ),
           ),
           IconButton(onPressed: onSpeak, icon: const Icon(Icons.volume_up), color: AppColors.copper),
@@ -206,11 +210,11 @@ class _Bottom extends StatelessWidget {
               onPressed: onQuiz,
               style: FilledButton.styleFrom(backgroundColor: AppColors.copper, foregroundColor: Colors.white, shape: const StadiumBorder()),
               icon: const Icon(Icons.quiz),
-              label: Text(allSeen ? tr('다 봤어요 — 이 단계 문제 풀기') : tr('이 단계 문제 풀기'), style: const TextStyle(fontWeight: FontWeight.w800)),
+              label: Text(allSeen ? tr('다 봤어요 — 이 단계 문제 풀기') : tr('이 단계 문제 풀기'), style: const TextStyle(fontWeight: FontWeight.w600)),
             ),
           )
         else
-          Text(trf('{0}자 더 보면 문제 풀기', [total - idx - 1]), style: const TextStyle(fontSize: 11, color: AppColors.muted)),
+          Text(trf('{0}자 더 보면 문제 풀기', [total - idx - 1]), style: AppFonts.captionText(size: 11)),
       ]),
     );
   }

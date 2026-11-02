@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../core/l10n.dart';
 import '../core/theme.dart';
+import '../services/hanzi_family.dart';
 import '../services/hanzi_info_service.dart';
 import '../services/lexicon_service.dart';
 import '../services/pinyin_util.dart';
@@ -11,8 +12,11 @@ import '../widgets/selectable_hanzi.dart';
 /// 「패밀리 한자」 — 소리 부품(声旁)이 같은 한자 가족을 병음·성조 색으로 보여 준다(읽기 전용, 2026-11-02).
 /// 데이터는 한자 공용 DB(`SharedHanjaIndex.families()`: 간체 한 글자 = 발음부 하나, 가족 안은 회화 빈도순)를 그대로 쓴다.
 /// 글자를 누르면 한자 팝업. 가족 데이터·규칙은 한자 세션 소관이라 여기서 만들거나 고치지 않는다.
+/// 시안 zh05(2026-11-03): 카드 상자 없이 여백으로 가족을 나눈다. 같은 소리 = 구리 테두리, 다른 소리 = 테두리 없음.
+/// [focus] = 한자 팝업의 가족 줄에서 들어올 때 그 발음부 — 맨 위에 두고 표시한다.
 class FamilyHanziScreen extends StatefulWidget {
-  const FamilyHanziScreen({super.key});
+  final String? focus;
+  const FamilyHanziScreen({super.key, this.focus});
 
   @override
   State<FamilyHanziScreen> createState() => _FamilyHanziScreenState();
@@ -62,7 +66,7 @@ class _FamilyHanziScreenState extends State<FamilyHanziScreen> {
 
   List<FamilyGroup> get _shown {
     final q = _query.trim();
-    if (q.isEmpty) return _all;
+    if (q.isEmpty) return focusFirst(_all, widget.focus);
     return _all.where((f) => f.phonetic.contains(q) || f.members.any(q.contains)).toList();
   }
 
@@ -81,7 +85,7 @@ class _FamilyHanziScreenState extends State<FamilyHanziScreen> {
                     child: Padding(
                       padding: const EdgeInsets.all(24),
                       child: Text(tr('준비 중 — 한자 공용 DB 를 아직 받지 못했어요. 인터넷에 연결한 뒤 다시 열어 주세요.'),
-                          textAlign: TextAlign.center, style: const TextStyle(color: AppColors.muted, height: 1.5)),
+                          textAlign: TextAlign.center, style: AppFonts.uiText(color: AppColors.muted, height: 1.5)),
                     ),
                   )
                 : LayoutBuilder(builder: (context, c) {
@@ -89,10 +93,13 @@ class _FamilyHanziScreenState extends State<FamilyHanziScreen> {
                     return CustomScrollView(slivers: [
                       SliverToBoxAdapter(child: _header()),
                       SliverPadding(
-                        padding: const EdgeInsets.fromLTRB(16, 0, 16, 24),
+                        padding: const EdgeInsets.fromLTRB(20, 4, 20, 32),
                         sliver: SliverGrid(
-                          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: cols, mainAxisSpacing: 10, crossAxisSpacing: 10, mainAxisExtent: 176),
-                          delegate: SliverChildBuilderDelegate((context, i) => _FamilyCard(group: list[i]), childCount: list.length),
+                          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: cols, mainAxisSpacing: 28, crossAxisSpacing: 28, mainAxisExtent: 168),
+                          delegate: SliverChildBuilderDelegate(
+                            (context, i) => _FamilyCard(group: list[i], focused: list[i].phonetic == widget.focus),
+                            childCount: list.length,
+                          ),
                         ),
                       ),
                     ]);
@@ -102,38 +109,41 @@ class _FamilyHanziScreenState extends State<FamilyHanziScreen> {
   }
 
   Widget _header() => Padding(
-        padding: const EdgeInsets.fromLTRB(16, 12, 16, 12),
+        padding: const EdgeInsets.fromLTRB(20, 14, 20, 16),
         child: Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
-          Text(trf('소리 부품이 같은 한자 가족 {0}개 · 글자를 누르면 한자 정보', [_all.length]),
-              style: const TextStyle(fontSize: 12.5, color: AppColors.moLight, height: 1.4)),
-          const SizedBox(height: 8),
-          Wrap(spacing: 10, runSpacing: 4, children: [
+          Text(trf('소리 부품이 같은 한자 가족 {0}개 · 글자를 누르면 한자 정보', [_all.length]), style: AppFonts.uiText(size: 13)),
+          const SizedBox(height: 6),
+          Wrap(spacing: 12, runSpacing: 4, children: [
             for (var t = 1; t <= 4; t++) _legend(trf('{0}성', [t]), toneColor(t)),
             _legend(tr('경성'), AppColors.toneNeutral),
-            _legend(tr('● 소리 같음'), AppColors.copper),
+            _legend(tr('▢ 구리 테두리 = 소리 같음'), AppColors.copper),
           ]),
-          const SizedBox(height: 10),
+          const SizedBox(height: 12),
           TextField(
             onChanged: (v) => setState(() => _query = v),
+            style: AppFonts.uiText(size: 14, color: AppColors.mo),
             decoration: InputDecoration(
               isDense: true,
-              prefixIcon: const Icon(Icons.search, size: 20),
+              filled: true,
+              fillColor: AppColors.xuanZhiDeep,
+              prefixIcon: const Icon(Icons.search, size: 20, color: AppColors.muted),
               hintText: tr('한자로 찾기 (예: 青)'),
-              border: OutlineInputBorder(borderRadius: BorderRadius.circular(12), borderSide: const BorderSide(color: AppColors.line)),
-              enabledBorder: OutlineInputBorder(borderRadius: BorderRadius.circular(12), borderSide: const BorderSide(color: AppColors.line)),
+              hintStyle: AppFonts.uiText(size: 13, color: AppColors.muted),
+              border: OutlineInputBorder(borderRadius: BorderRadius.circular(12), borderSide: BorderSide.none),
             ),
           ),
         ]),
       );
 
-  Widget _legend(String t, Color c) => Text(t, style: TextStyle(fontSize: 11, fontWeight: FontWeight.w800, color: c));
+  Widget _legend(String t, Color c) => Text(t, style: AppFonts.captionText(size: 11, weight: FontWeight.w600, color: c));
 }
 
-/// 글자 → 성조 부호 병음(첫 읽기). 공용 DB → 앱 사전 순.
-String pinyinOf(String ch) {
-  final h = SharedHanjaService.instance.index.lookup(ch);
-  if (h != null && h.pinyin.isNotEmpty) return h.pinyin.first;
-  return LexiconService.instance.lookup(ch)?.pinyin.split(RegExp(r'[\s,/]')).first ?? '';
+/// [focus] 발음부 가족을 맨 앞으로(없으면 그대로).
+List<FamilyGroup> focusFirst(List<FamilyGroup> all, String? focus) {
+  if (focus == null) return all;
+  final i = all.indexWhere((f) => f.phonetic == focus);
+  if (i <= 0) return all;
+  return [all[i], ...all.take(i), ...all.skip(i + 1)];
 }
 
 int? _toneOf(String py) {
@@ -143,75 +153,47 @@ int? _toneOf(String py) {
   return t == null || t > 4 ? 0 : t;
 }
 
+/// 가족 하나 — 상자 없이: 발음부(큰 자형·병음·글자 수) 한 줄 + 구성원 타일.
 class _FamilyCard extends StatelessWidget {
   final FamilyGroup group;
-  const _FamilyCard({required this.group});
+  final bool focused;
+  const _FamilyCard({required this.group, this.focused = false});
 
   @override
   Widget build(BuildContext context) {
     final pPy = pinyinOf(group.phonetic);
-    final pBase = PinyinUtil.stripTones(pPy);
-    return Container(
-      padding: const EdgeInsets.all(12),
-      decoration: BoxDecoration(color: AppColors.xuanZhi, border: Border.all(color: AppColors.line), borderRadius: BorderRadius.circular(14), boxShadow: kCardShadow),
-      child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-        Row(children: [
-          InkWell(
-            onTap: () => showHanziSheet(context, group.phonetic),
-            borderRadius: BorderRadius.circular(10),
-            child: Container(
-              width: 46,
-              height: 46,
-              alignment: Alignment.center,
-              decoration: BoxDecoration(gradient: AppColors.wordmark, borderRadius: BorderRadius.circular(10)),
-              child: Text(group.phonetic, style: const TextStyle(fontSize: 28, fontWeight: FontWeight.w900, color: Colors.white, height: 1)),
-            ),
-          ),
+    return Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+      InkWell(
+        onTap: () => showHanziSheet(context, group.phonetic),
+        borderRadius: BorderRadius.circular(10),
+        child: Row(crossAxisAlignment: CrossAxisAlignment.end, children: [
+          Text(group.phonetic, style: AppFonts.glyphText(size: 32, color: focused ? AppColors.copper : AppColors.copperDeep, height: 1)),
           const SizedBox(width: 10),
-          Expanded(
-            child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-              Text(pPy, style: TextStyle(fontSize: 16, fontWeight: FontWeight.w800, color: toneColor(_toneOf(pPy)))),
-              Text(trf('소리 부품 · {0}자', [group.members.length]), style: const TextStyle(fontSize: 11, color: AppColors.muted)),
-            ]),
+          Padding(
+            padding: const EdgeInsets.only(bottom: 2),
+            child: Text(pPy, style: AppFonts.pinyinText(size: 13, weight: FontWeight.w600, color: toneColor(_toneOf(pPy)))),
           ),
-        ]),
-        const SizedBox(height: 10),
-        Expanded(
-          child: SingleChildScrollView(
-            child: Wrap(spacing: 6, runSpacing: 6, children: [
-              for (final m in group.members) _MemberChip(ch: m, sameSound: pBase.isNotEmpty && PinyinUtil.stripTones(pinyinOf(m)) == pBase),
-            ]),
+          const SizedBox(width: 8),
+          Padding(
+            padding: const EdgeInsets.only(bottom: 3),
+            child: Text(trf('소리 부품 · {0}자', [group.members.length]), style: AppFonts.captionText(size: 11)),
           ),
-        ),
-      ]),
-    );
-  }
-}
-
-class _MemberChip extends StatelessWidget {
-  final String ch;
-  final bool sameSound;
-  const _MemberChip({required this.ch, required this.sameSound});
-
-  @override
-  Widget build(BuildContext context) {
-    final py = pinyinOf(ch);
-    final c = toneColor(_toneOf(py));
-    return InkWell(
-      onTap: () => showHanziSheet(context, ch),
-      borderRadius: BorderRadius.circular(10),
-      child: Container(
-        padding: const EdgeInsets.fromLTRB(8, 4, 8, 4),
-        decoration: BoxDecoration(
-          color: c.withValues(alpha: 0.06),
-          border: Border.all(color: sameSound ? AppColors.copper : c.withValues(alpha: 0.5), width: sameSound ? 1.4 : 1),
-          borderRadius: BorderRadius.circular(10),
-        ),
-        child: Column(mainAxisSize: MainAxisSize.min, children: [
-          Text(ch, style: const TextStyle(fontSize: 20, fontWeight: FontWeight.w800, color: AppColors.mo, height: 1.15)),
-          Text(py.isEmpty ? '·' : py, style: TextStyle(fontSize: 10.5, fontWeight: FontWeight.w700, color: c)),
         ]),
       ),
-    );
+      const SizedBox(height: 10),
+      Expanded(
+        child: SingleChildScrollView(
+          child: Wrap(spacing: 6, runSpacing: 6, children: [
+            for (final m in group.members)
+              FamilyGlyphTile(
+                ch: m,
+                pinyin: pinyinOf(m),
+                sameSound: sameSound(pinyinOf(m), pPy),
+                onTap: () => showHanziSheet(context, m),
+              ),
+          ]),
+        ),
+      ),
+    ]);
   }
 }

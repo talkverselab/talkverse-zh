@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 
+import 'font_licenses_screen.dart';
 import 'login_screen.dart';
 import 'paywall_screen.dart';
 import 'update_screen.dart';
 
+import '../core/pane.dart';
 import '../core/theme.dart';
 import '../widgets/chinese_decor.dart';
 import '../core/l10n.dart';
@@ -147,6 +149,12 @@ class _ProfileScreenState extends State<ProfileScreen> {
           _SettingItem(icon: Icons.info_outline, title: tr('앱 버전'), subtitle: tr('0.2.0 · alpha 중국풍')),
           _SettingItem(icon: Icons.code, title: 'Stack', subtitle: 'Flutter 3.41 · Material 3 · SQLite'),
           _SettingItem(icon: Icons.copyright, title: tr('저작권'), subtitle: tr('중국어유니버스 · 2026')),
+          _SettingItem(
+            icon: Icons.font_download_outlined,
+            title: tr('글꼴 라이선스'),
+            subtitle: 'Pretendard · Noto Sans SC · LXGW WenKai GB · Noto Sans — SIL OFL 1.1',
+            onTap: () => openPane(context, (_) => const FontLicensesScreen()),
+          ),
         ],
       ),
       const SizedBox(height: 20),

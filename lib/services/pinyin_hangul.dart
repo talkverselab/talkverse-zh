@@ -151,6 +151,47 @@ class PinyinHangul {
     return '$hangul얼';
   }
 
+  /// 붙여 쓴 병음 한 단어를 음절로 나눈다(원래 글자·성조 부호 그대로). 예) 'qǐchuáng' → ['qǐ', 'chuáng'].
+  /// 한 음절에 성조 부호는 하나까지(→ 'Xīān' 은 'Xī'+'ān'). 끝의 얼화 r 은 마지막 음절에 붙인다. 나눌 수 없으면 null.
+  static List<String>? splitSyllables(String w) {
+    if (w.isEmpty) return null;
+    final buf = StringBuffer();
+    for (final ch in w.toLowerCase().split('')) {
+      buf.write(_toneless[ch] ?? ch);
+    }
+    final plain = buf.toString().replaceAll('v', 'ü');
+    if (plain.length != w.length) return null; // 1:1 대응이 깨지면(합성 문자 등) 나누지 않는다
+    List<int>? seg(int from, int end) {
+      if (from == end) return [];
+      for (var len = (end - from).clamp(0, 6); len >= 1; len--) {
+        final cand = plain.substring(from, from + len);
+        if (!_syllables.containsKey(cand)) continue;
+        if (_marks(w.substring(from, from + len)) > 1) continue;
+        final rest = seg(from + len, end);
+        if (rest != null) return [len, ...rest];
+      }
+      return null;
+    }
+
+    var lens = seg(0, plain.length);
+    var erhua = false;
+    if (lens == null && plain.length > 2 && plain.endsWith('r')) {
+      lens = seg(0, plain.length - 1);
+      erhua = lens != null;
+    }
+    if (lens == null) return null;
+    final out = <String>[];
+    var i = 0;
+    for (final l in lens) {
+      out.add(w.substring(i, i + l));
+      i += l;
+    }
+    if (erhua) out[out.length - 1] = out.last + w.substring(i);
+    return out;
+  }
+
+  static int _marks(String s) => s.split('').where((c) => _toneless.containsKey(c) || _toneless.containsKey(c.toLowerCase())).length;
+
   /// 가장 긴 음절부터 시도하고, 나머지가 안 나뉘면 되돌아간다.
   static List<String>? _segment(String s, int from) {
     if (from == s.length) return [];

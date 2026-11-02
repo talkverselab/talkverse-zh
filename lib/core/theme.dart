@@ -57,6 +57,58 @@ const List<BoxShadow> kCardShadow = [
   BoxShadow(color: Color(0x1A000000), blurRadius: 3, offset: Offset(0, 1)),
 ];
 
+/// 글꼴 「문체」 세트(2026-11-03 확정, zh04 제안보다 작은 크기).
+///
+/// Pretendard = 한글 UI·독음·번역(앱 기본), NotoSansSC = 중국어 본문(대사·단어),
+/// LXGWWenKai = 큰 한자 자형(팝업·한자 배우기·패밀리 한자·단계 타일), NotoSans = 병음(성조 부호).
+/// NotoSansSC·NotoSans 는 가변 글꼴이라 굵기를 `fontVariations` 로도 준다(FontWeight 만으로는 wght 축이 안 움직이는 플랫폼이 있다).
+/// 테마 `fontFamilyFallback` 이 NotoSansSC 라 Pretendard 글자 속 중국어도 시스템 글꼴로 새지 않는다.
+class AppFonts {
+  AppFonts._();
+  static const ui = 'Pretendard';
+  static const zh = 'NotoSansSC';
+  static const glyph = 'LXGWWenKai';
+  static const pinyin = 'NotoSans';
+  static const List<String> fallback = [zh];
+
+  // 크기 표(논리 픽셀)
+  static const double glyphBig = 60; // 팝업·한자 배우기 큰 자형
+  static const double glyphTile = 30; // 패밀리·단계 타일 자형
+  static const double title = 19; // 화면 제목(SemiBold)
+  static const double lineNow = 23; // 지금 대사 중국어
+  static const double line = 15.5; // 나머지 중국어 줄
+  static const double py = 12.5; // 병음
+  static const double reading = 13.5; // 한글 독음·번역
+  static const double caption = 11.5; // 캡션·칩
+  static const double rail = 10.5; // 레일·탭 라벨
+
+  static List<FontVariation> _w(FontWeight w) => [FontVariation.weight(w.value.toDouble())];
+
+  /// 중국어 본문(대사·단어).
+  static TextStyle zhText({double size = line, FontWeight weight = FontWeight.w500, Color color = AppColors.mo, double height = 1.45}) =>
+      TextStyle(fontFamily: zh, fontFamilyFallback: const [ui], fontSize: size, fontWeight: weight, fontVariations: _w(weight), color: color, height: height);
+
+  /// 큰 한자 자형(Medium 한 벌).
+  static TextStyle glyphText({double size = glyphBig, Color color = AppColors.mo, double height = 1.1}) =>
+      TextStyle(fontFamily: glyph, fontFamilyFallback: fallback, fontSize: size, fontWeight: FontWeight.w500, color: color, height: height);
+
+  /// 병음(성조 부호).
+  static TextStyle pinyinText({double size = py, FontWeight weight = FontWeight.w500, Color color = AppColors.muted, double height = 1.35}) =>
+      TextStyle(fontFamily: pinyin, fontFamilyFallback: fallback, fontSize: size, fontWeight: weight, fontVariations: _w(weight), color: color, height: height);
+
+  /// 한글 UI·독음·번역.
+  static TextStyle uiText({double size = reading, FontWeight weight = FontWeight.w400, Color color = AppColors.moLight, double height = 1.4}) =>
+      TextStyle(fontFamily: ui, fontFamilyFallback: fallback, fontSize: size, fontWeight: weight, color: color, height: height);
+
+  /// 화면 제목.
+  static TextStyle titleText({double size = title, Color color = AppColors.mo}) =>
+      TextStyle(fontFamily: ui, fontFamilyFallback: fallback, fontSize: size, fontWeight: FontWeight.w600, color: color, letterSpacing: -0.3, height: 1.25);
+
+  /// 캡션·칩.
+  static TextStyle captionText({double size = caption, FontWeight weight = FontWeight.w400, Color color = AppColors.muted}) =>
+      TextStyle(fontFamily: ui, fontFamilyFallback: fallback, fontSize: size, fontWeight: weight, color: color, height: 1.3);
+}
+
 /// 두 화면(왼쪽 목록 | 오른쪽 내용) 기준 — 가로 720 논리픽셀 이상: 아이패드·안드로이드 태블릿·폴드 펼침.
 /// 접은 폴드·일반 폰은 한 화면. 일본어앱·한자유니버스와 같은 기준.
 const wideMin = 720.0;
@@ -90,7 +142,8 @@ class AppTheme {
         outlineVariant: AppColors.jin,
       ),
       scaffoldBackgroundColor: AppColors.xuanZhi,
-      fontFamily: 'Pretendard',
+      fontFamily: AppFonts.ui,
+      fontFamilyFallback: AppFonts.fallback,
     );
 
     return base.copyWith(
@@ -108,7 +161,9 @@ class AppTheme {
         shape: Border(bottom: BorderSide(color: AppColors.jin, width: 1)),
         titleTextStyle: TextStyle(
           color: AppColors.mo,
-          fontSize: 17,
+          fontFamily: AppFonts.ui,
+          fontFamilyFallback: AppFonts.fallback,
+          fontSize: 18,
           fontWeight: FontWeight.w600,
           letterSpacing: -0.3,
         ),
@@ -130,7 +185,7 @@ class AppTheme {
           final selected = states.contains(WidgetState.selected);
           return TextStyle(
             color: selected ? AppColors.zhuHong : AppColors.jinDeep,
-            fontSize: 11,
+            fontSize: AppFonts.rail,
             fontWeight: selected ? FontWeight.w600 : FontWeight.w500,
           );
         }),
@@ -183,7 +238,8 @@ class AppTheme {
         seedColor: AppColors.zhuHong,
         brightness: Brightness.dark,
       ),
-      fontFamily: 'Pretendard',
+      fontFamily: AppFonts.ui,
+      fontFamilyFallback: AppFonts.fallback,
     );
   }
 }

@@ -362,28 +362,24 @@ class _Row extends StatelessWidget {
 /// 주제별 회화 홈 상단 진입 카드.
 class CustomScriptEntryCard extends StatelessWidget {
   const CustomScriptEntryCard({super.key});
+  // 시안 zh05: 홈의 주인공은 「이어서 읽기」 하나 — 맞춤 회화는 상자 없이 조용한 한 줄로.
   @override
   Widget build(BuildContext context) => InkWell(
         onTap: () => openPane(context, (_) => const CustomScriptScreen()),
-        borderRadius: BorderRadius.circular(14),
-        child: Container(
-          padding: const EdgeInsets.fromLTRB(14, 12, 12, 12),
-          decoration: BoxDecoration(
-            gradient: const LinearGradient(colors: [AppColors.copper, AppColors.jin], begin: Alignment.centerLeft, end: Alignment.centerRight),
-            borderRadius: BorderRadius.circular(14),
-            boxShadow: kCardShadow,
-          ),
+        borderRadius: BorderRadius.circular(10),
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 9),
           child: Row(children: [
-            const Text('✨', style: TextStyle(fontSize: 22)),
-            const SizedBox(width: 10),
+            const Text('✨', style: TextStyle(fontSize: 18)),
+            const SizedBox(width: 12),
             Expanded(
               child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-                Text(tr('맞춤 회화 만들기'), style: const TextStyle(color: Colors.white, fontSize: 14, fontWeight: FontWeight.w900)),
-                const SizedBox(height: 2),
-                Text(tr('주제·상황·레벨을 고르면 나만의 1편 · 첫 편 무료'), style: TextStyle(color: Colors.white.withValues(alpha: 0.9), fontSize: 11)),
+                Text(tr('맞춤 회화 만들기'), style: AppFonts.uiText(size: 14.5, weight: FontWeight.w600, color: AppColors.mo)),
+                const SizedBox(height: 1),
+                Text(tr('주제·상황·레벨을 고르면 나만의 1편 · 첫 편 무료'), style: AppFonts.captionText(size: 11.5)),
               ]),
             ),
-            const Icon(Icons.chevron_right, color: Colors.white),
+            const Icon(Icons.chevron_right, color: AppColors.line, size: 18),
           ]),
         ),
       );

@@ -4,20 +4,16 @@ import '../core/l10n.dart';
 import '../core/platform.dart';
 import '../core/pane.dart';
 import '../core/theme.dart';
+import '../services/achievement_service.dart';
 import '../services/dialogue_service.dart';
-import '../services/ko_reading.dart';
-import '../services/learner_prefs.dart';
 import '../services/tts_service.dart';
 import '../widgets/episode_play_pane.dart';
-import '../widgets/chinese_decor.dart';
-import '../widgets/selectable_hanzi.dart';
 import 'custom_script_screen.dart';
 import 'dialogue_card_screen.dart';
 
-/// 새 회화(R0~R4) 주제 목록 → 편 목록 → 편 화면 — 일본어앱 시안 02 「만화책 읽기형」을 옮김(2026-11-02).
-/// 아이패드: 홈 맨 위 「오늘의 컷」, 편 화면 = 왼쪽 대화 스크립트 + 오른쪽 큰 장면 컷(말풍선) + 하단 재생 컨트롤.
-/// 폰: 각 단계가 push, 재생은 전체 화면(컷 위·스크립트 아래).
-/// 편이 없는 레벨(지금 R0·R1)은 빈 화면 대신 「준비 중」 카드를 보인다.
+/// 새 회화(R0~R4) 주제 목록 → 편 목록 → 편 화면 — 시안 zh05 「확 트인 배치」(2026-11-03).
+/// 홈: 「이어서 읽기」 카드 하나가 주인공, 레벨 스위치·주제는 상자 없이 조용히. 편 화면 = 회화 리더([EpisodePlayPane]) 하나(폰·아이패드 공통).
+/// 편이 없는 레벨(지금 R0·R1)은 빈 화면 대신 「준비 중」 한 줄을 보인다.
 class DialogueHomeScreen extends StatefulWidget {
   final bool embedded; // 「배우기」 탭 안(앱바 없이)
   const DialogueHomeScreen({super.key, this.embedded = false});
@@ -40,19 +36,10 @@ class _DialogueHomeScreenState extends State<DialogueHomeScreen> {
   Widget build(BuildContext context) {
     final svc = DialogueService.instance;
     final level = svc.level; // R0 왕초보 / R1 초보
-    final toggle = SegmentedButton<String>(
-      showSelectedIcon: false,
-      style: SegmentedButton.styleFrom(
-        visualDensity: VisualDensity.compact,
-        textStyle: const TextStyle(fontSize: 11, fontWeight: FontWeight.w800),
-      ),
-      segments: [
-        ButtonSegment(value: 'R0', label: Text(tr('왕초보'))),
-        ButtonSegment(value: 'R1', label: Text(tr('초보'))),
-      ],
-      selected: {level == 'R0' ? 'R0' : 'R1'},
-      onSelectionChanged: (s) async {
-        await svc.setLevel(s.first);
+    final toggle = LevelSwitch(
+      level: level == 'R0' ? 'R0' : 'R1',
+      onChanged: (lv) async {
+        await svc.setLevel(lv);
         if (mounted) setState(() {});
       },
     );
@@ -63,16 +50,13 @@ class _DialogueHomeScreenState extends State<DialogueHomeScreen> {
               child: Center(child: CircularProgressIndicator(color: AppColors.copper)),
             ),
           ]
-        : DialogueHomeList.items(context, level: level, toggle: widget.embedded ? toggle : null);
-    // 「배우기」 탭 안(앱바·스크롤 없이 바깥 ListView 에 들어감)
+        : DialogueHomeList.items(context, level: level, toggle: widget.embedded ? toggle : null, continueCard: !widget.embedded);
+    // 「배우기」 탭 안(앱바·스크롤 없이 바깥 ListView 에 들어감) — 「이어서 읽기」는 탭이 맨 위에 따로 둔다
     if (widget.embedded) return Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: items);
     return Scaffold(
       backgroundColor: AppColors.xuanZhi,
       appBar: AppBar(
-        title: Text(
-          tr('회화'),
-          style: const TextStyle(color: AppColors.mo, fontWeight: FontWeight.w800, fontSize: 16),
-        ),
+        title: Text(tr('회화')),
         actions: [Padding(padding: const EdgeInsets.only(right: 8), child: toggle)],
       ),
       body: SafeArea(
@@ -83,26 +67,60 @@ class _DialogueHomeScreenState extends State<DialogueHomeScreen> {
   }
 }
 
-/// 회화 홈 목록(오늘의 컷 → 맞춤 회화 → 안내 → 레벨별 주제). 회화 화면과 「배우기」 탭이 같이 쓴다.
+/// 왕초보 · 초보 — 상자 없는 글자 스위치(고른 쪽만 진하게).
+class LevelSwitch extends StatelessWidget {
+  final String level;
+  final ValueChanged<String> onChanged;
+  const LevelSwitch({super.key, required this.level, required this.onChanged});
+
+  @override
+  Widget build(BuildContext context) {
+    Widget opt(String lv, String label) {
+      final on = lv == level;
+      return InkWell(
+        onTap: on ? null : () => onChanged(lv),
+        borderRadius: BorderRadius.circular(8),
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 6),
+          child: Text(label, style: AppFonts.captionText(size: 12, weight: on ? FontWeight.w600 : FontWeight.w400, color: on ? AppColors.mo : AppColors.muted)),
+        ),
+      );
+    }
+
+    return Row(mainAxisSize: MainAxisSize.min, children: [
+      opt('R0', tr('왕초보')),
+      Text('·', style: AppFonts.captionText()),
+      opt('R1', tr('초보')),
+    ]);
+  }
+}
+
+/// 회화 홈 목록(이어서 읽기 → 맞춤 회화 → 레벨 스위치·안내 → 레벨별 주제). 회화 화면과 「배우기」 탭이 같이 쓴다.
 class DialogueHomeList {
   DialogueHomeList._();
 
-  static List<Widget> items(BuildContext context, {required String level, Widget? toggle}) {
+  static List<Widget> items(BuildContext context, {required String level, Widget? toggle, bool continueCard = true}) {
     final svc = DialogueService.instance;
     return [
-      _TodayCut(level: svc.startLevel),
-      const SizedBox(height: 10),
+      if (continueCard) ...[ContinueReadingCard(level: svc.startLevel), const SizedBox(height: 18)],
       const CustomScriptEntryCard(),
-      const SizedBox(height: 10),
+      const SizedBox(height: 6),
       if (toggle != null) Align(alignment: Alignment.centerLeft, child: toggle),
-      if (toggle != null) const SizedBox(height: 8),
-      _hint(level),
-      const SizedBox(height: 8),
+      Padding(
+        padding: const EdgeInsets.fromLTRB(6, 2, 6, 6),
+        child: Text(
+          level == 'R0' ? tr('왕초보: 문장이 짧은 편만 모았어요. 익숙해지면 초보로 올라오세요.') : tr('초보가 기본입니다. 너무 힘들면 「왕초보」로 바꾸세요 — 문장이 짧은 편들만 모아 보여 줍니다.'),
+          style: AppFonts.captionText(size: 11.5),
+        ),
+      ),
       for (final lv in DialogueService.levels)
         if (lv != 'R0' && lv != 'R1' || lv == level) ...[
           _LevelHeader(lv: lv, count: svc.count(lv)),
           if (svc.count(lv) == 0)
-            const _ComingSoon()
+            Padding(
+              padding: const EdgeInsets.fromLTRB(6, 0, 6, 8),
+              child: Text(tr('준비 중 — 새 회화가 곧 들어와요. 지금은 아래 레벨부터 읽어 보세요.'), style: AppFonts.captionText(size: 12)),
+            )
           else
             for (final isl in svc.islandsOf(lv))
               _IslandRow(
@@ -111,117 +129,96 @@ class DialogueHomeList {
                 count: svc.list(region: lv, island: isl).length,
                 onTap: () => openPane(context, (_) => DialogueListScreen(region: lv, island: isl)),
               ),
-          const SizedBox(height: 10),
+          const SizedBox(height: 6),
         ],
     ];
   }
-
-  static Widget _hint(String level) => Container(
-    padding: const EdgeInsets.fromLTRB(14, 10, 14, 10),
-    decoration: BoxDecoration(
-      color: AppColors.xuanZhiDeep,
-      borderRadius: BorderRadius.circular(12),
-      border: Border.all(color: AppColors.line),
-    ),
-    child: Text(
-      level == 'R0' ? tr('왕초보: 문장이 짧은 편만 모았어요. 익숙해지면 초보로 올라오세요.') : tr('초보가 기본입니다. 너무 힘들면 「왕초보」로 바꾸세요 — 문장이 짧은 편들만 모아 보여 줍니다.'),
-      style: const TextStyle(fontSize: 12, color: AppColors.moLight, height: 1.4),
-    ),
-  );
 }
 
-/// 편이 아직 없는 레벨 — 빈 화면 대신.
-class _ComingSoon extends StatelessWidget {
-  const _ComingSoon();
-  @override
-  Widget build(BuildContext context) => Container(
-    margin: const EdgeInsets.only(bottom: 8),
-    padding: const EdgeInsets.fromLTRB(14, 14, 14, 14),
-    decoration: BoxDecoration(
-      color: AppColors.xuanZhiDeep,
-      border: Border.all(color: AppColors.line),
-      borderRadius: BorderRadius.circular(14),
-    ),
-    child: Row(
-      children: [
-        const Icon(Icons.hourglass_empty_rounded, color: AppColors.muted, size: 20),
-        const SizedBox(width: 10),
-        Expanded(
-          child: Text(tr('준비 중 — 새 회화가 곧 들어와요. 지금은 아래 레벨부터 읽어 보세요.'), style: const TextStyle(fontSize: 12.5, color: AppColors.moLight, height: 1.4)),
-        ),
-      ],
-    ),
-  );
-}
-
-/// 「오늘의 컷」 — 마지막으로 열었던 편(없으면 현재 레벨 첫 편)의 장면 컷 + 읽기 시작(시안 02 홈).
-class _TodayCut extends StatelessWidget {
+/// 「이어서 읽기」 — 홈의 주인공 카드 하나(시안 zh05 ③). 마지막으로 연 편(없으면 시작 레벨 첫 편)의 장면 컷 + 제목 + 진행.
+/// 진행 = 그 주제에서 끝까지 들은 편 수(한 줄짜리 가는 선 하나).
+class ContinueReadingCard extends StatefulWidget {
   final String level;
-  const _TodayCut({required this.level});
+  const ContinueReadingCard({super.key, required this.level});
+
+  @override
+  State<ContinueReadingCard> createState() => _ContinueReadingCardState();
+}
+
+class _ContinueReadingCardState extends State<ContinueReadingCard> {
+  bool _ready = DialogueService.instance.count('R2') + DialogueService.instance.count('R3') + DialogueService.instance.count('R4') > 0;
+
+  @override
+  void initState() {
+    super.initState();
+    if (!_ready) {
+      DialogueService.instance.ensureLoaded().then((_) {
+        if (mounted) setState(() => _ready = true);
+      });
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
+    if (!_ready) return const SizedBox.shrink();
     final svc = DialogueService.instance;
     final last = svc.lastOpenedId != null ? svc.byId(svc.lastOpenedId!) : null;
+    final level = last == null ? svc.startLevel : widget.level;
     final d = last ?? (svc.list(region: level).isNotEmpty ? svc.list(region: level).first : null);
     if (d == null) return const SizedBox.shrink();
-    final wide = isWide(context);
-    final t = d.turns.first;
-    final info = Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      mainAxisSize: MainAxisSize.min,
-      children: [
-        Text(
-          tr(last == null ? '오늘의 컷' : '이어서 읽기'),
-          style: const TextStyle(fontSize: 11, fontWeight: FontWeight.w800, color: AppColors.copper, letterSpacing: 1),
-        ),
-        const SizedBox(height: 4),
-        Text(
-          '${d.emoji} ${d.title}',
-          maxLines: 1,
-          overflow: TextOverflow.ellipsis,
-          style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w900, color: AppColors.mo),
-        ),
-        const SizedBox(height: 2),
-        Text('${d.region} · ${tr(DialogueService.islandKo[d.island] ?? d.island)} · ${trf('{0}턴', [d.turns.length])}', style: const TextStyle(fontSize: 11, color: AppColors.muted)),
-        const SizedBox(height: 6),
-        Text(
-          d.scene,
-          maxLines: 2,
-          overflow: TextOverflow.ellipsis,
-          style: const TextStyle(fontSize: 12, color: AppColors.moLight, height: 1.4),
-        ),
-        const SizedBox(height: 10),
-        FilledButton.icon(
-          onPressed: () => openPane(context, (_) => DialogueScreen(dialogue: d)),
-          style: FilledButton.styleFrom(backgroundColor: AppColors.copper, foregroundColor: Colors.white, shape: const StadiumBorder(), visualDensity: VisualDensity.compact),
-          icon: const Icon(Icons.menu_book_rounded, size: 18),
-          label: Text(tr('읽기 시작'), style: const TextStyle(fontWeight: FontWeight.w800)),
-        ),
-      ],
-    );
-    final cut = SizedBox(
-      height: wide ? 180 : 150,
-      child: SceneCut(dialogue: d, turn: t, bubble: true),
-    );
+    final same = svc.list(region: d.region, island: d.island);
+    final done = same.where((e) => AchievementService.instance.isDone(e.id)).length;
+    final pos = same.indexWhere((e) => e.id == d.id);
+    void open() => openPane(context, (_) => DialogueScreen(dialogue: d));
     return Container(
-      padding: const EdgeInsets.all(12),
-      decoration: BoxDecoration(
+      decoration: BoxDecoration(borderRadius: BorderRadius.circular(20), boxShadow: kCardShadow),
+      child: Material(
         color: AppColors.xuanZhi,
-        border: Border.all(color: AppColors.line),
-        borderRadius: BorderRadius.circular(16),
-        boxShadow: kCardShadow,
+        borderRadius: BorderRadius.circular(20),
+        clipBehavior: Clip.antiAlias,
+        child: InkWell(
+          onTap: open,
+          child: Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
+            // 폭의 16:10, 넓은 칸에서도 260 까지만(홈이 그림 한 장으로 꽉 차지 않게)
+            LayoutBuilder(builder: (context, c) => SizedBox(height: (c.maxWidth / 1.6).clamp(140.0, 260.0), child: SceneCut(dialogue: d, turn: d.turns.first))),
+            Padding(
+              padding: const EdgeInsets.fromLTRB(18, 14, 12, 16),
+              child: Row(crossAxisAlignment: CrossAxisAlignment.center, children: [
+                Expanded(
+                  child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+                    Text(tr(last == null ? '오늘의 컷' : '이어서 읽기'), style: AppFonts.captionText(weight: FontWeight.w600, color: AppColors.copper)),
+                    const SizedBox(height: 4),
+                    Text(d.title, maxLines: 1, overflow: TextOverflow.ellipsis, style: AppFonts.titleText(size: 20)),
+                    const SizedBox(height: 3),
+                    Text(d.scene, maxLines: 1, overflow: TextOverflow.ellipsis, style: AppFonts.uiText(size: 13)),
+                    const SizedBox(height: 10),
+                    Row(children: [
+                      Expanded(
+                        child: ClipRRect(
+                          borderRadius: BorderRadius.circular(2),
+                          child: LinearProgressIndicator(value: same.isEmpty ? 0 : done / same.length, minHeight: 2, color: AppColors.copper, backgroundColor: AppColors.line),
+                        ),
+                      ),
+                      const SizedBox(width: 10),
+                      Text(
+                        '${tr(DialogueService.islandKo[d.island] ?? d.island)} ${pos < 0 ? '' : '${pos + 1}/${same.length}'}',
+                        style: AppFonts.captionText(size: 11),
+                      ),
+                    ]),
+                  ]),
+                ),
+                const SizedBox(width: 12),
+                Container(
+                  width: 40,
+                  height: 40,
+                  decoration: const BoxDecoration(shape: BoxShape.circle, color: AppColors.xuanZhiDeep),
+                  child: const Icon(Icons.chevron_right_rounded, color: AppColors.moLight),
+                ),
+              ]),
+            ),
+          ]),
+        ),
       ),
-      child: wide
-          ? Row(
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: [
-                Expanded(flex: 5, child: cut),
-                const SizedBox(width: 14),
-                Expanded(flex: 6, child: info),
-              ],
-            )
-          : Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [cut, const SizedBox(height: 10), info]),
     );
   }
 }
@@ -232,22 +229,22 @@ class _LevelHeader extends StatelessWidget {
   const _LevelHeader({required this.lv, required this.count});
   @override
   Widget build(BuildContext context) => Padding(
-    padding: const EdgeInsets.fromLTRB(4, 10, 4, 6),
+    padding: const EdgeInsets.fromLTRB(6, 14, 6, 4),
     child: Row(
+      crossAxisAlignment: CrossAxisAlignment.baseline,
+      textBaseline: TextBaseline.alphabetic,
       children: [
-        GradText(lv, style: const TextStyle(fontSize: 18, fontWeight: FontWeight.w900)),
+        Text(lv, style: AppFonts.captionText(size: 12, weight: FontWeight.w600, color: AppColors.copper)),
         const SizedBox(width: 8),
-        Text(
-          tr(DialogueService.levelKo[lv] ?? lv),
-          style: const TextStyle(fontSize: 13, fontWeight: FontWeight.w800, color: AppColors.mo),
-        ),
+        Text(tr(DialogueService.levelKo[lv] ?? lv), style: AppFonts.uiText(size: 14, weight: FontWeight.w600, color: AppColors.mo)),
         const SizedBox(width: 8),
-        Text(trf('{0}편', [count]), style: const TextStyle(fontSize: 11, color: AppColors.muted)),
+        Text(trf('{0}편', [count]), style: AppFonts.captionText(size: 11)),
       ],
     ),
   );
 }
 
+/// 주제 한 줄 — 상자 없이(이모지 · 이름 · 편 수).
 class _IslandRow extends StatelessWidget {
   final String lv;
   final String island;
@@ -255,31 +252,24 @@ class _IslandRow extends StatelessWidget {
   final VoidCallback onTap;
   const _IslandRow({required this.lv, required this.island, required this.count, required this.onTap});
   @override
-  Widget build(BuildContext context) => Container(
-    margin: const EdgeInsets.only(bottom: 8),
-    decoration: BoxDecoration(
-      color: AppColors.xuanZhi,
-      border: Border.all(color: AppColors.line),
-      borderRadius: BorderRadius.circular(14),
-      boxShadow: kCardShadow,
-    ),
-    child: Material(
-      color: Colors.transparent,
-      child: ListTile(
-        onTap: onTap,
-        leading: Text(DialogueService.islandEmoji[island] ?? '💬', style: const TextStyle(fontSize: 26)),
-        title: Text(
-          tr(DialogueService.islandKo[island] ?? island),
-          style: const TextStyle(fontSize: 15, fontWeight: FontWeight.w800, color: AppColors.mo),
-        ),
-        subtitle: Text(trf('{0}편', [count]), style: const TextStyle(fontSize: 11, color: AppColors.muted)),
-        trailing: const Icon(Icons.chevron_right, color: AppColors.muted),
-      ),
+  Widget build(BuildContext context) => InkWell(
+    onTap: onTap,
+    borderRadius: BorderRadius.circular(10),
+    child: Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 9),
+      child: Row(children: [
+        Text(DialogueService.islandEmoji[island] ?? '💬', style: const TextStyle(fontSize: 18)),
+        const SizedBox(width: 12),
+        Expanded(child: Text(tr(DialogueService.islandKo[island] ?? island), style: AppFonts.uiText(size: 14.5, color: AppColors.mo))),
+        Text(trf('{0}편', [count]), style: AppFonts.captionText(size: 11)),
+        const SizedBox(width: 4),
+        const Icon(Icons.chevron_right, color: AppColors.line, size: 18),
+      ]),
     ),
   );
 }
 
-/// 주제의 편 목록.
+/// 주제의 편 목록 — 상자 없이 줄과 여백으로.
 class DialogueListScreen extends StatelessWidget {
   final String region;
   final String island;
@@ -291,43 +281,36 @@ class DialogueListScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: AppColors.xuanZhi,
       appBar: AppBar(
-        title: Text(
-          '${DialogueService.islandEmoji[island] ?? ''} ${tr(DialogueService.islandKo[island] ?? island)} · $region',
-          style: const TextStyle(color: AppColors.mo, fontWeight: FontWeight.w800, fontSize: 15),
-        ),
+        title: Text('${DialogueService.islandEmoji[island] ?? ''} ${tr(DialogueService.islandKo[island] ?? island)} · $region'),
       ),
       body: SafeArea(
         top: false,
-        child: ListView.separated(
-          padding: const EdgeInsets.fromLTRB(16, 8, 16, 24),
+        child: ListView.builder(
+          padding: EdgeInsets.fromLTRB(12, 8, 12, 24 + bottomInset(context)),
           itemCount: list.length,
-          separatorBuilder: (_, _) => const SizedBox(height: 8),
           itemBuilder: (context, i) {
             final d = list[i];
-            return Container(
-              decoration: BoxDecoration(
-                color: AppColors.xuanZhi,
-                border: Border.all(color: AppColors.line),
-                borderRadius: BorderRadius.circular(14),
-                boxShadow: kCardShadow,
-              ),
-              child: Material(
-                color: Colors.transparent,
-                child: ListTile(
-                  onTap: () => openPane(context, (_) => DialogueScreen(dialogue: d)),
-                  leading: Text(d.emoji, style: const TextStyle(fontSize: 24)),
-                  title: Text(
-                    d.title,
-                    style: const TextStyle(fontSize: 15, fontWeight: FontWeight.w800, color: AppColors.mo),
+            final done = AchievementService.instance.isDone(d.id);
+            return InkWell(
+              onTap: () => openPane(context, (_) => DialogueScreen(dialogue: d)),
+              borderRadius: BorderRadius.circular(10),
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 11),
+                child: Row(crossAxisAlignment: CrossAxisAlignment.start, children: [
+                  Text(d.emoji, style: const TextStyle(fontSize: 20)),
+                  const SizedBox(width: 12),
+                  Expanded(
+                    child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+                      Text(d.title, style: AppFonts.uiText(size: 15, weight: FontWeight.w600, color: AppColors.mo)),
+                      const SizedBox(height: 2),
+                      Text('${d.isChat ? '💬 ' : ''}${d.scene}', maxLines: 1, overflow: TextOverflow.ellipsis, style: AppFonts.captionText(size: 12)),
+                    ]),
                   ),
-                  subtitle: Text(
-                    '${d.isChat ? '💬 ' : ''}${d.scene}',
-                    maxLines: 2,
-                    overflow: TextOverflow.ellipsis,
-                    style: const TextStyle(fontSize: 11, color: AppColors.muted, height: 1.3),
-                  ),
-                  trailing: Text(trf('{0}턴', [d.turns.length]), style: const TextStyle(fontSize: 11, color: AppColors.muted)),
-                ),
+                  const SizedBox(width: 8),
+                  done
+                      ? const Icon(Icons.check_rounded, size: 16, color: AppColors.copper)
+                      : Text(trf('{0}턴', [d.turns.length]), style: AppFonts.captionText(size: 11)),
+                ]),
               ),
             );
           },
@@ -337,8 +320,7 @@ class DialogueListScreen extends StatelessWidget {
   }
 }
 
-/// 편 화면 — 시안 02 만화책 읽기형. 아이패드: 왼쪽 대화 스크립트 + 오른쪽 큰 장면 컷(같은 패널, ▶ 로 순차 재생).
-/// 폰: 버블 목록 + 맨 위 「▶ 모든 문장 듣기」(전체 화면 재생).
+/// 편 화면 — 회화 리더 하나(장면 컷 크게 · 지금 대사 크게 · 나머지 접힘, ▶ 로 순차 재생).
 class DialogueScreen extends StatefulWidget {
   final Dialogue dialogue;
   const DialogueScreen({super.key, required this.dialogue});
@@ -361,187 +343,33 @@ class _DialogueScreenState extends State<DialogueScreen> {
     super.dispose();
   }
 
-  void _openPlay({int at = 0}) => openFull(context, (_) => _PlayFull(dialogue: d, at: at));
-
   @override
   Widget build(BuildContext context) {
-    final wide = isWide(context);
     return Scaffold(
       backgroundColor: AppColors.xuanZhi,
       appBar: AppBar(
         title: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            Text(
-              '${d.emoji} ${d.title}',
-              style: const TextStyle(color: AppColors.mo, fontWeight: FontWeight.w800, fontSize: 15),
-            ),
-            const SizedBox(height: 2),
-            Text('${d.region} · ${tr(DialogueService.islandKo[d.island] ?? d.island)} · ${d.turns.length}${tr('턴')}', style: const TextStyle(color: AppColors.muted, fontSize: 10, letterSpacing: 1)),
+            Text('${d.emoji} ${d.title}', style: AppFonts.titleText(size: 18)),
+            const SizedBox(height: 1),
+            Text('${d.region} · ${tr(DialogueService.islandKo[d.island] ?? d.island)} · ${d.turns.length}${tr('턴')}', style: AppFonts.captionText(size: 10.5)),
           ],
         ),
         actions: [
           IconButton(
             tooltip: tr('그림 카드(글자 없이)'),
-            icon: const Icon(Icons.style_outlined, color: AppColors.zhuHong),
+            icon: const Icon(Icons.style_outlined, color: AppColors.muted),
             onPressed: () => openFull(context, (_) => DialogueCardScreen(dialogue: d)),
           ),
         ],
       ),
+      // 폰·아이패드 모두 같은 리더(장면 컷 위 · 지금 대사 크게 · 나머지 접힘). ▶ 를 누르면 순차 재생.
       body: SafeArea(
         top: false,
-        child: wide
-            ? EpisodePlayPane(key: ValueKey(d.id), dialogue: d, autoPlay: false)
-            : Column(
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.fromLTRB(16, 10, 16, 4),
-                    child: Row(
-                      children: [
-                        Expanded(
-                          child: FilledButton.icon(
-                            onPressed: () => _openPlay(),
-                            style: FilledButton.styleFrom(
-                              backgroundColor: AppColors.copper,
-                              foregroundColor: Colors.white,
-                              padding: const EdgeInsets.symmetric(vertical: 12),
-                              shape: const StadiumBorder(),
-                            ),
-                            icon: const Icon(Icons.play_arrow_rounded),
-                            label: Text(tr('모든 문장 듣기'), style: const TextStyle(fontWeight: FontWeight.w800)),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.fromLTRB(20, 4, 20, 4),
-                    child: Text(d.scene, style: const TextStyle(fontSize: 12, color: AppColors.moLight, height: 1.4)),
-                  ),
-                  const WordmarkDivider(height: 2),
-                  Expanded(
-                    child: ListView.builder(
-                      padding: EdgeInsets.fromLTRB(16, 8, 16, 24 + bottomInset(context)),
-                      itemCount: d.turns.length,
-                      itemBuilder: (context, i) => _Bubble(
-                        d: d,
-                        t: d.turns[i],
-                        onPlayFrom: () => _openPlay(at: i),
-                      ),
-                    ),
-                  ),
-                ],
-              ),
+        child: EpisodePlayPane(key: ValueKey(d.id), dialogue: d, autoPlay: false),
       ),
     );
   }
 }
 
-class _PlayFull extends StatelessWidget {
-  final Dialogue dialogue;
-  final int at;
-  const _PlayFull({required this.dialogue, required this.at});
-  @override
-  Widget build(BuildContext context) => Scaffold(
-    backgroundColor: AppColors.xuanZhi,
-    appBar: AppBar(
-      title: Text(
-        '${dialogue.emoji} ${dialogue.title}',
-        style: const TextStyle(color: AppColors.mo, fontWeight: FontWeight.w800, fontSize: 15),
-      ),
-    ),
-    body: SafeArea(
-      top: false,
-      child: EpisodePlayPane(dialogue: dialogue, initialIndex: at),
-    ),
-  );
-}
-
-class _Bubble extends StatelessWidget {
-  final Dialogue d;
-  final DialogueTurn t;
-  final VoidCallback onPlayFrom;
-  const _Bubble({required this.d, required this.t, required this.onPlayFrom});
-
-  @override
-  Widget build(BuildContext context) {
-    final me = t.speaker == 'A';
-    final name = d.speakerName(t.speaker);
-    return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 6),
-      child: Row(
-        mainAxisAlignment: me ? MainAxisAlignment.end : MainAxisAlignment.start,
-        crossAxisAlignment: CrossAxisAlignment.end,
-        children: [
-          if (!me) _avatar(name),
-          Flexible(
-            child: Container(
-              padding: const EdgeInsets.fromLTRB(14, 10, 14, 10),
-              decoration: BoxDecoration(
-                color: me ? AppColors.copper.withValues(alpha: 0.08) : AppColors.xuanZhi,
-                border: Border.all(color: AppColors.line),
-                borderRadius: BorderRadius.only(
-                  topLeft: const Radius.circular(16),
-                  topRight: const Radius.circular(16),
-                  bottomLeft: Radius.circular(me ? 16 : 4),
-                  bottomRight: Radius.circular(me ? 4 : 16),
-                ),
-              ),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  Row(
-                    mainAxisSize: MainAxisSize.min,
-                    children: [
-                      Text('$name${t.at != null ? ' · ${t.at}' : ''}', style: const TextStyle(fontSize: 10, color: AppColors.muted)),
-                      const SizedBox(width: 6),
-                      InkWell(
-                        onTap: () => TtsService.instance.speakAs(ttsTextOf(t), gender: LearnerPrefs.voiceGender(t.speaker)),
-                        child: const Icon(Icons.volume_up, size: 16, color: AppColors.copper),
-                      ),
-                      const SizedBox(width: 4),
-                      InkWell(
-                        onTap: onPlayFrom,
-                        child: const Icon(Icons.play_circle_outline, size: 16, color: AppColors.zhuHong),
-                      ),
-                    ],
-                  ),
-                  const SizedBox(height: 4),
-                  // 한자를 누르면 한자 팝업(글자 형성·그림) — 사용자가 좋아한 그 창 그대로
-                  SelectableHanziText(
-                    text: LearnerPrefs.fill(t.zh),
-                    style: const TextStyle(fontSize: 17, fontWeight: FontWeight.w800, color: AppColors.mo, height: 1.4),
-                  ),
-                  if (t.pinyin.isNotEmpty)
-                    KoReadingText(
-                      LearnerPrefs.fill(t.pinyin),
-                      style: const TextStyle(fontSize: 12, color: AppColors.zhuHong, fontWeight: FontWeight.w700),
-                    ),
-                  if (AppLangPrefs.isKo && t.rd.isNotEmpty) Text(LearnerPrefs.fill(t.rd, ko: true), style: const TextStyle(fontSize: 12, color: AppColors.muted)),
-                  const SizedBox(height: 3),
-                  Text(LearnerPrefs.fill(t.ko, ko: true), style: const TextStyle(fontSize: 13, color: AppColors.moLight, height: 1.35)),
-                  if (t.note.isNotEmpty) ...[const SizedBox(height: 4), Text('💡 ${t.note}', style: const TextStyle(fontSize: 11, color: AppColors.copperDeep, height: 1.35))],
-                  if (t.stamp != null) Text(t.stamp!, style: const TextStyle(fontSize: 28)),
-                ],
-              ),
-            ),
-          ),
-          if (me) _avatar(name),
-        ],
-      ),
-    );
-  }
-
-  Widget _avatar(String name) => Padding(
-    padding: const EdgeInsets.symmetric(horizontal: 6),
-    child: CircleAvatar(
-      radius: 14,
-      backgroundColor: AppColors.xuanZhiDeep,
-      child: Text(
-        name.isEmpty ? '?' : name.characters.first,
-        style: const TextStyle(fontSize: 12, fontWeight: FontWeight.w800, color: AppColors.mo),
-      ),
-    ),
-  );
-}

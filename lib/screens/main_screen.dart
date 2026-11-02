@@ -6,6 +6,7 @@ import '../core/theme.dart';
 import '../main.dart';
 import '../review/review_engine.dart';
 import '../review/review_ui.dart';
+import '../services/dialogue_service.dart';
 import '../services/review_cards.dart';
 import '../services/tts_service.dart';
 import '../widgets/chinese_decor.dart';
@@ -55,7 +56,7 @@ class _MainScreenState extends State<MainScreen> {
   Widget build(BuildContext context) {
     final appBar = AppBar(
       centerTitle: false,
-      title: GradText(tr('중국어유니버스'), style: const TextStyle(fontSize: 20, fontWeight: FontWeight.w800, letterSpacing: -0.5)),
+      title: GradText(tr('중국어유니버스'), style: const TextStyle(fontSize: AppFonts.title, fontWeight: FontWeight.w600, letterSpacing: -0.5)),
       actions: [
         IconButton(
           tooltip: tr('청크 검색'),
@@ -92,15 +93,15 @@ class _MainScreenState extends State<MainScreen> {
               selectedIndex: _index,
               onDestinationSelected: (i) => setState(() => _index = i),
               labelType: w >= 900 ? NavigationRailLabelType.all : NavigationRailLabelType.selected,
-              backgroundColor: AppColors.xuanZhiDeep,
-              indicatorColor: const Color(0xFFEFEEFE),
+              backgroundColor: AppColors.xuanZhi,
+              indicatorColor: AppColors.xuanZhiDeep,
+              minWidth: 64,
               selectedIconTheme: const IconThemeData(color: AppColors.zhuHong),
               unselectedIconTheme: const IconThemeData(color: AppColors.muted),
-              selectedLabelTextStyle: const TextStyle(color: AppColors.zhuHong, fontSize: 11, fontWeight: FontWeight.w600),
-              unselectedLabelTextStyle: const TextStyle(color: AppColors.muted, fontSize: 11, fontWeight: FontWeight.w600),
+              selectedLabelTextStyle: const TextStyle(color: AppColors.zhuHong, fontSize: AppFonts.rail, fontWeight: FontWeight.w600),
+              unselectedLabelTextStyle: const TextStyle(color: AppColors.muted, fontSize: AppFonts.rail, fontWeight: FontWeight.w500),
               destinations: [for (final t in _tabs) NavigationRailDestination(icon: Icon(t.$1), selectedIcon: Icon(t.$2), label: Text(t.$3))],
             ),
-            const VerticalDivider(width: 1, thickness: 1, color: AppColors.line),
             SizedBox(width: left, child: stack),
             const VerticalDivider(width: 1, thickness: 1, color: AppColors.line),
             Expanded(
@@ -139,7 +140,7 @@ class _PanePlaceholder extends StatelessWidget {
       );
 }
 
-/// 탭 안의 한 줄(카드) — 도장 + 제목·부제 + 꺾쇠. 누르면 오른쪽 칸(넓은 화면) 또는 push.
+/// 탭 안의 한 줄 — 도장 + 제목·부제 + 꺾쇠. 시안 zh05: 카드 상자 없이 여백만. 누르면 오른쪽 칸(넓은 화면) 또는 push.
 class _NavRow extends StatelessWidget {
   final String seal;
   final Color? sealColor;
@@ -150,52 +151,67 @@ class _NavRow extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.only(bottom: 8),
-      child: Container(
-        decoration: BoxDecoration(
-          color: AppColors.xuanZhi,
-          borderRadius: BorderRadius.circular(12),
-          border: Border.all(color: AppColors.line),
-          boxShadow: kCardShadow,
-        ),
-        child: Material(
-          color: Colors.transparent,
-          child: InkWell(
-            borderRadius: BorderRadius.circular(12),
-            onTap: onTap,
-            child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
-              child: Row(children: [
-                SealStamp(text: seal, size: 40, color: sealColor ?? AppColors.zhuHong),
-                const SizedBox(width: 12),
-                Expanded(
-                  child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-                    Text(title, maxLines: 1, overflow: TextOverflow.ellipsis, style: const TextStyle(fontSize: 14.5, fontWeight: FontWeight.w700, color: AppColors.mo)),
-                    const SizedBox(height: 2),
-                    Text(subtitle, maxLines: 1, overflow: TextOverflow.ellipsis, style: const TextStyle(fontSize: 11.5, color: AppColors.muted)),
-                  ]),
-                ),
-                const Icon(Icons.chevron_right, color: AppColors.muted, size: 20),
-              ]),
-            ),
+    return InkWell(
+      borderRadius: BorderRadius.circular(10),
+      onTap: onTap,
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 8),
+        child: Row(children: [
+          SealStamp(text: seal, size: 32, color: sealColor ?? AppColors.zhuHong),
+          const SizedBox(width: 12),
+          Expanded(
+            child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+              Text(title, maxLines: 1, overflow: TextOverflow.ellipsis, style: AppFonts.uiText(size: 14.5, weight: FontWeight.w600, color: AppColors.mo)),
+              const SizedBox(height: 1),
+              Text(subtitle, maxLines: 1, overflow: TextOverflow.ellipsis, style: AppFonts.captionText(size: 11.5)),
+            ]),
           ),
-        ),
+          const Icon(Icons.chevron_right, color: AppColors.line, size: 18),
+        ]),
       ),
     );
   }
 }
 
+/// 배우기 「기초」 한 줄 — 상자 없이 큰 자형 하나 + 작은 이름. 넘치면 옆으로 민다.
+class _BasicsRow extends StatelessWidget {
+  final List<(String, Color, String, VoidCallback)> items; // 자형 · 색 · 이름 · 동작
+  const _BasicsRow({required this.items});
+
+  @override
+  Widget build(BuildContext context) => SingleChildScrollView(
+        scrollDirection: Axis.horizontal,
+        child: Row(children: [
+          for (final (g, c, label, tap) in items)
+            InkWell(
+              onTap: tap,
+              borderRadius: BorderRadius.circular(12),
+              child: SizedBox(
+                width: 76,
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 8),
+                  child: Column(mainAxisSize: MainAxisSize.min, children: [
+                    Text(g, style: AppFonts.glyphText(size: 26, color: c, height: 1.15)),
+                    const SizedBox(height: 4),
+                    Text(label, maxLines: 1, overflow: TextOverflow.ellipsis, textAlign: TextAlign.center, style: AppFonts.captionText(size: 11, color: AppColors.moLight)),
+                  ]),
+                ),
+              ),
+            ),
+        ]),
+      );
+}
+
 Widget _section(String title) => Padding(
-      padding: const EdgeInsets.fromLTRB(2, 14, 2, 8),
-      child: Text(title, style: const TextStyle(fontSize: 12.5, fontWeight: FontWeight.w700, color: AppColors.muted, letterSpacing: 0.5)),
+      padding: const EdgeInsets.fromLTRB(6, 22, 6, 4),
+      child: Text(title, style: AppFonts.captionText(size: 12, weight: FontWeight.w600, color: AppColors.muted)),
     );
 
 EdgeInsets _tabPadding(BuildContext context) => EdgeInsets.fromLTRB(16, 12, 16, 24 + MediaQuery.paddingOf(context).bottom);
 
 // ────────── 배우기 ──────────
 
-/// 배우기: 회화 홈(오늘의 컷·이어서 읽기 → 맞춤 회화 → 레벨·주제) → 기초(성조·말하기·한자·패밀리·문법) → 옛 스토리 에피소드.
+/// 배우기 — 시안 zh05 ③: 「이어서 읽기」 카드 하나가 주인공 → 기초(자형 한 줄) → 회화(맞춤 회화·레벨·주제, 상자 없이) → 옛 스토리.
 class LearnTab extends StatelessWidget {
   const LearnTab({super.key});
 
@@ -203,56 +219,28 @@ class LearnTab extends StatelessWidget {
   Widget build(BuildContext context) {
     return Stack(children: [
       // 사이트 첫 화면처럼 위쪽만 파스텔 메시, 아래는 흰 바탕
-      const Positioned(top: 0, left: 0, right: 0, height: 220, child: MeshBackdrop()),
+      const Positioned(top: 0, left: 0, right: 0, height: 160, child: MeshBackdrop()),
       ListView(padding: _tabPadding(context), children: [
-        const GradText('你好!', style: TextStyle(fontSize: 24, fontWeight: FontWeight.w800, letterSpacing: -0.5)),
-        const SizedBox(height: 2),
-        Text(tr('한국 학습자, 오늘도 시작해요'), style: const TextStyle(fontSize: 13, color: AppColors.moLight, fontWeight: FontWeight.w500)),
+        Padding(
+          padding: const EdgeInsets.fromLTRB(4, 4, 4, 14),
+          child: Row(crossAxisAlignment: CrossAxisAlignment.baseline, textBaseline: TextBaseline.alphabetic, children: [
+            Text('你好', style: AppFonts.zhText(size: AppFonts.title, weight: FontWeight.w600)),
+            const SizedBox(width: 10),
+            Expanded(child: Text(tr('한국 학습자, 오늘도 시작해요'), style: AppFonts.captionText(size: 12.5, color: AppColors.moLight))),
+          ]),
+        ),
+        ContinueReadingCard(level: DialogueService.instance.startLevel),
+        const SizedBox(height: 10),
+        _BasicsRow(items: [
+          ('声', AppColors.tone4, tr('성조연습'), () => openPane(context, (_) => const TonePracticeScreen())),
+          ('四', AppColors.tone1, tr('4성 매트릭스'), () => openPane(context, (_) => const ToneMatrixScreen())),
+          ('说', AppColors.zhuHongDeep, tr('말하기'), () => openPane(context, (_) => const SpeakingPracticeScreen())),
+          ('字', AppColors.copper, tr('한자 배우기'), () => openPane(context, (_) => const HanziHubScreen(learn: true))),
+          ('青', AppColors.tan, tr('패밀리 한자'), () => openPane(context, (_) => const FamilyHanziScreen())),
+          ('法', AppColors.moLight, tr('문법'), () => openPane(context, (_) => const GrammarMenuScreen())),
+        ]),
         _section(tr('회화')),
         const DialogueHomeScreen(embedded: true),
-        _section(tr('기초')),
-        _NavRow(
-          seal: '声调',
-          sealColor: const Color(0xFF1565C0),
-          title: tr('성조연습'),
-          subtitle: 'Tone practice',
-          onTap: () => openPane(context, (_) => const TonePracticeScreen()),
-        ),
-        _NavRow(
-          seal: '四声',
-          sealColor: AppColors.tone4,
-          title: tr('4성 매트릭스'),
-          subtitle: tr('성조 4×4 + 경성 4'),
-          onTap: () => openPane(context, (_) => const ToneMatrixScreen()),
-        ),
-        _NavRow(
-          seal: '口语',
-          sealColor: AppColors.zhuHongDeep,
-          title: tr('말하기'),
-          subtitle: 'Speaking 10s·5s·2s',
-          onTap: () => openPane(context, (_) => const SpeakingPracticeScreen()),
-        ),
-        _NavRow(
-          seal: '汉字',
-          sealColor: AppColors.copper,
-          title: tr('한자 배우기'),
-          subtitle: tr('단계별 20자 · 글자 정보 먼저 → 문제'),
-          onTap: () => openPane(context, (_) => const HanziHubScreen(learn: true)),
-        ),
-        _NavRow(
-          seal: '声旁',
-          sealColor: AppColors.tan,
-          title: tr('패밀리 한자'),
-          subtitle: tr('소리 부품이 같은 한자 가족 · 병음·성조'),
-          onTap: () => openPane(context, (_) => const FamilyHanziScreen()),
-        ),
-        _NavRow(
-          seal: '文法',
-          sealColor: const Color(0xFF8B0000),
-          title: tr('문법'),
-          subtitle: tr('L1 기능어 · L2 어기조사'),
-          onTap: () => openPane(context, (_) => const GrammarMenuScreen()),
-        ),
         _section(tr('스토리')),
         _NavRow(
           seal: '会话',

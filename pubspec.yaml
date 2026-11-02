@@ -65,7 +65,25 @@ flutter_launcher_icons:
 flutter:
   uses-material-design: true
 
+  # 글꼴(2026-11-03 사용자 확정 「문체」 조합, 모두 OFL — assets/fonts/licenses). 앱이 쓰는 글자만 남긴 부분 글꼴.
+  fonts:
+    - family: Pretendard   # 한글 UI·독음·번역
+      fonts:
+        - asset: assets/fonts/Pretendard-Regular.otf
+        - asset: assets/fonts/Pretendard-SemiBold.otf
+          weight: 600
+    - family: NotoSansSC   # 중국어 본문(대사)
+      fonts:
+        - asset: assets/fonts/NotoSansSC.ttf
+    - family: LXGWWenKai   # 큰 한자 자형(팝업·한자 배우기·패밀리 한자)
+      fonts:
+        - asset: assets/fonts/LXGWWenKaiGB-Medium.ttf
+    - family: NotoSans     # 병음(성조 부호)
+      fonts:
+        - asset: assets/fonts/NotoSans.ttf
+
   assets:
+    - assets/fonts/licenses/   # 글꼴 OFL 전문(프로필 · 정보 → 글꼴 라이선스)
     - assets/data/audio_manifest.json
     - assets/data/dialogues/north/L1.json
     - assets/data/dialogues/north/L2.json

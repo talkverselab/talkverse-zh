@@ -4,14 +4,17 @@ import '../core/theme.dart';
 import '../services/achievement_service.dart';
 import '../services/art_service.dart';
 import '../services/lexicon_service.dart';
+import '../services/hanzi_family.dart';
 import '../services/hanzi_info_service.dart';
 import '../services/pinyin_util.dart';
 import '../services/shared_hanja_service.dart';
 import '../services/tts_service.dart';
+import '../screens/family_hanzi_screen.dart';
 import '../screens/phonetic_roots_screen.dart';
 import '../screens/topic_vocab_screen.dart';
 import '../core/platform.dart';
 import '../core/l10n.dart';
+import 'tone_pinyin.dart';
 
 /// 문장 내 청크·한자를 탭하면 정보 모달 띄움. tokens 기반 (서버 토크나이즈).
 class SelectableHanziText extends StatefulWidget {
@@ -73,13 +76,15 @@ class _SelectableHanziTextState extends State<SelectableHanziText> {
 
   @override
   Widget build(BuildContext context) {
-    final style = widget.style ??
-        const TextStyle(
-          fontSize: 20,
-          fontWeight: FontWeight.w800,
-          color: AppColors.mo,
-          height: 1.3,
-        );
+    // 중국어 본문은 NotoSansSC — 글꼴을 따로 주지 않았으면 여기서 입힌다(가변 글꼴 굵기 포함).
+    final given = widget.style ?? AppFonts.zhText(size: 20, weight: FontWeight.w600, height: 1.3);
+    final style = given.fontFamily != null
+        ? given
+        : given.copyWith(
+            fontFamily: AppFonts.zh,
+            fontFamilyFallback: const [AppFonts.ui],
+            fontVariations: [FontVariation.weight((given.fontWeight ?? FontWeight.w400).value.toDouble())],
+          );
 
     // tokens 우선, 없으면 각 char 로 fallback
     final tokens = widget.tokens ??
@@ -401,327 +406,227 @@ class _ChunkInfoSheetState extends State<_ChunkInfoSheet> {
   }
 }
 
-/// 한자 한 글자 정보(병음·뜻·발음부 가족·공용 DB 그림·외우는 방법). 팝업([HanziInfoSheet])과 「한자 배우기」 화면이 같이 쓴다.
-class HanziInfoBody extends StatelessWidget {
+/// 한자 한 글자 정보 — 시안 zh05 「넓은 시트 한 장」(2026-11-03).
+/// 첫 화면 = 큰 자형 + 성조 색 병음 + 뜻 + 발음부 가족 한 줄(같은 소리 = 구리 테두리, 다른 소리 = 테두리 없음; 누르면 「패밀리 한자」).
+/// 「자세히」를 펼치면 형부·앱 사전·공용 DB 그림·외우는 방법·쓰기 범위·발음부 메뉴. 팝업([HanziInfoSheet])과 「한자 배우기」 화면이 같이 쓴다.
+class HanziInfoBody extends StatefulWidget {
   final String char;
   final HanziInfo? info;
   final LexEntry? lex;
+  final bool showClose; // 팝업이면 닫기 단추
+  final bool initiallyExpanded; // 「자세히」를 펼친 채로 시작(한자 배우기)
 
-  const HanziInfoBody({super.key, required this.char, this.info, this.lex});
+  const HanziInfoBody({super.key, required this.char, this.info, this.lex, this.showClose = true, this.initiallyExpanded = false});
 
-  Future<void> _openFamily(BuildContext ctx, String phon, String phonPy, String exclude) async {
-    // 발음부 메뉴로 이동 — 해당 발음부 가족 자동 오픈, from 한자 하이라이트.
-    // 뒤로가기로 원래 화면 복귀.
-    await Navigator.push(
-      ctx,
-      MaterialPageRoute(
-        builder: (_) => PhoneticRootsScreen(focusRoot: phon, fromChar: exclude),
-      ),
-    );
-  }
+  @override
+  State<HanziInfoBody> createState() => _HanziInfoBodyState();
+}
+
+class _HanziInfoBodyState extends State<HanziInfoBody> {
+  late bool _more = widget.initiallyExpanded;
+
+  void _openFamily(String phon) => Navigator.push(context, MaterialPageRoute(builder: (_) => FamilyHanziScreen(focus: phon)));
 
   @override
   Widget build(BuildContext context) {
-    final pinyin = lex?.pinyin;
+    final char = widget.char;
+    final info = widget.info;
+    final lex = widget.lex;
+    final pinyin = (lex?.pinyin.isNotEmpty ?? false) ? lex!.pinyin : pinyinOf(char);
     final meanings = lex?.meanings ?? const [];
+    final hun = info?.koHun;
     final meaning = info?.meaning;
-    final phon = info?.phonetic;
-    final phonPy = info?.phoneticPinyin;
-    final hasPhon = info?.isPhonosemantic ?? false;
+    final family = familyFor(char);
+    final phonPy = family == null ? '' : pinyinOf(family.phonetic);
 
     return Column(
-          mainAxisSize: MainAxisSize.min,
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: [
-            Row(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Container(
-                  width: 96,
-                  height: 96,
-                  alignment: Alignment.center,
-                  decoration: BoxDecoration(
-                    color: AppColors.zhuHong,
-                    border: Border.all(color: AppColors.jin, width: 1.5),
-                  ),
-                  child: Text(
-                    char,
-                    style: const TextStyle(
-                      fontSize: 60,
-                      fontWeight: FontWeight.w900,
-                      color: AppColors.xuanZhi,
-                      height: 1,
-                    ),
-                  ),
-                ),
-                const SizedBox(width: 14),
-                Expanded(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      if (pinyin != null) ...[
-                        Text(
-                          pinyin,
-                          style: const TextStyle(
-                            fontSize: 22,
-                            fontWeight: FontWeight.w800,
-                            color: AppColors.mo,
-                            fontStyle: FontStyle.italic,
-                          ),
-                        ),
-                      ],
-                      const SizedBox(height: 6),
-                      OutlinedButton.icon(
-                        icon: const Icon(Icons.volume_up, size: 16),
-                        label: Text(tr('읽기')),
-                        style: OutlinedButton.styleFrom(
-                          foregroundColor: AppColors.zhuHong,
-                          side: const BorderSide(color: AppColors.zhuHong),
-                          padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
-                          minimumSize: const Size(0, 32),
-                          shape: const RoundedRectangleBorder(),
-                        ),
-                        onPressed: () => TtsService.instance.speak(char),
-                      ),
-                    ],
-                  ),
-                ),
-                IconButton(
-                  icon: const Icon(Icons.close, color: AppColors.mo),
-                  onPressed: () => Navigator.pop(context),
-                ),
-              ],
+      mainAxisSize: MainAxisSize.min,
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        Row(children: [
+          const Spacer(),
+          IconButton(
+            tooltip: tr('읽기'),
+            icon: const Icon(Icons.volume_up_outlined, color: AppColors.muted, size: 22),
+            onPressed: () => TtsService.instance.speak(char),
+          ),
+          if (widget.showClose)
+            IconButton(
+              icon: const Icon(Icons.close, color: AppColors.muted, size: 22),
+              onPressed: () => Navigator.pop(context),
             ),
-            const SizedBox(height: 18),
-            IntrinsicHeight(
-              child: Row(
-                crossAxisAlignment: CrossAxisAlignment.stretch,
-                children: [
-                  Expanded(
-                    child: Container(
-                      padding: const EdgeInsets.all(14),
-                      decoration: BoxDecoration(
-                        color: AppColors.xuanZhiDeep,
-                        border: Border.all(color: AppColors.jin.withValues(alpha: 0.5)),
-                      ),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            tr('뜻'),
-                            style: TextStyle(
-                              fontSize: 11,
-                              fontWeight: FontWeight.w800,
-                              color: AppColors.zhuHong,
-                              letterSpacing: 2,
-                            ),
-                          ),
-                          const SizedBox(height: 6),
-                          if (info?.koHun != null)
-                            Padding(
-                              padding: const EdgeInsets.only(bottom: 4),
-                              child: Text(
-                                info!.koHun!,
-                                style: const TextStyle(
-                                  fontSize: 17,
-                                  fontWeight: FontWeight.w800,
-                                  color: AppColors.zhuHong,
-                                  height: 1.4,
-                                ),
-                              ),
-                            ),
-                          if (meaning != null)
-                            Text(
-                              meaning,
-                              style: const TextStyle(
-                                fontSize: 15,
-                                fontWeight: FontWeight.w600,
-                                color: AppColors.mo,
-                                height: 1.5,
-                              ),
-                            )
-                          else if (info?.koHun == null)
-                            const Text('—',
-                                style: TextStyle(fontSize: 14, color: AppColors.moLight)),
-                          if (meanings.isNotEmpty) ...[
-                            const SizedBox(height: 10),
-                            const Text(
-                              '앱 사전',
-                              style: TextStyle(
-                                fontSize: 9,
-                                color: AppColors.moLight,
-                                letterSpacing: 2,
-                                fontWeight: FontWeight.w700,
-                              ),
-                            ),
-                            const SizedBox(height: 4),
-                            ...meanings.take(3).map((m) => Padding(
-                                  padding: const EdgeInsets.only(top: 3),
-                                  child: Text(
-                                    '· ${m.trim()}',
-                                    style: const TextStyle(
-                                      fontSize: 11,
-                                      color: AppColors.moLight,
-                                      height: 1.4,
-                                    ),
-                                  ),
-                                )),
-                          ],
-                        ],
-                      ),
+        ]),
+        Center(child: Text(char, style: AppFonts.glyphText(size: AppFonts.glyphBig))),
+        if (pinyin.isNotEmpty) ...[
+          const SizedBox(height: 6),
+          Center(child: TonePinyinText(pinyin, size: 16, textAlign: TextAlign.center)),
+        ],
+        const SizedBox(height: 8),
+        if (hun != null) Center(child: Text(hun, textAlign: TextAlign.center, style: AppFonts.uiText(size: 15, weight: FontWeight.w600, color: AppColors.mo))),
+        if (meaning != null)
+          Padding(
+            padding: const EdgeInsets.only(top: 2),
+            child: Text(meaning, textAlign: TextAlign.center, style: AppFonts.uiText()),
+          )
+        else if (hun == null && meanings.isNotEmpty)
+          Text(meanings.first.trim(), textAlign: TextAlign.center, style: AppFonts.uiText()),
+        if (family != null) ...[
+          const SizedBox(height: 22),
+          HanziFamilyStrip(
+            phonetic: family.phonetic,
+            phoneticPinyin: phonPy,
+            chars: family.row(char),
+            current: char,
+            total: family.members.length + 1,
+            pinyinOf: pinyinOf,
+            onOpen: () => _openFamily(family.phonetic),
+          ),
+        ],
+        const SizedBox(height: 10),
+        Center(
+          child: TextButton.icon(
+            onPressed: () => setState(() => _more = !_more),
+            style: TextButton.styleFrom(foregroundColor: AppColors.muted, textStyle: AppFonts.captionText()),
+            icon: Icon(_more ? Icons.expand_less : Icons.expand_more, size: 18),
+            label: Text(_more ? tr('접기') : tr('자세히')),
+          ),
+        ),
+        AnimatedSize(
+          duration: const Duration(milliseconds: 200),
+          alignment: Alignment.topCenter,
+          child: !_more
+              ? const SizedBox(width: double.infinity)
+              : Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
+                  if (info?.semantic != null || info?.phonetic != null)
+                    Padding(
+                      padding: const EdgeInsets.only(bottom: 10),
+                      child: Wrap(spacing: 18, runSpacing: 6, children: [
+                        if (info?.semantic != null) _part(info!.semantic!, tr('형부 (形旁)')),
+                        if (info?.phonetic != null)
+                          _part(info!.phonetic!, info.estimated == true ? '${tr('발음부 (聲旁)')} · ${tr('추정')}' : tr('발음부 (聲旁)'),
+                              onTap: () => Navigator.push(context, MaterialPageRoute(builder: (_) => PhoneticRootsScreen(focusRoot: info.phonetic!, fromChar: char)))),
+                      ]),
                     ),
+                  if (meanings.isNotEmpty) ...[
+                    Text(tr('앱 사전'), style: AppFonts.captionText()),
+                    const SizedBox(height: 2),
+                    for (final m in meanings.take(3)) Text('· ${m.trim()}', style: AppFonts.uiText(size: 13)),
+                  ],
+                  _SharedHanjaCard(char: char),
+                ]),
+        ),
+      ],
+    );
+  }
+
+  Widget _part(String ch, String label, {VoidCallback? onTap}) => InkWell(
+        onTap: onTap,
+        borderRadius: BorderRadius.circular(8),
+        child: Padding(
+          padding: const EdgeInsets.symmetric(vertical: 2, horizontal: 2),
+          child: Row(mainAxisSize: MainAxisSize.min, children: [
+            Text(ch, style: AppFonts.glyphText(size: 22)),
+            const SizedBox(width: 6),
+            Text(label, style: AppFonts.captionText()),
+            if (onTap != null) const Icon(Icons.chevron_right, size: 14, color: AppColors.muted),
+          ]),
+        ),
+      );
+}
+
+/// 발음부 가족 한 줄 — 발음부 + 구성원. 같은 소리(음절 같음) = 구리 테두리, 다른 소리 = 테두리 없음.
+/// 줄 어디를 눌러도 [onOpen](「패밀리 한자」 그 가족).
+class HanziFamilyStrip extends StatelessWidget {
+  final String phonetic;
+  final String phoneticPinyin;
+  final List<String> chars; // 발음부 포함, 한 줄
+  final String current;
+  final int total;
+  final String Function(String) pinyinOf;
+  final VoidCallback onOpen;
+  const HanziFamilyStrip({
+    super.key,
+    required this.phonetic,
+    required this.phoneticPinyin,
+    required this.chars,
+    required this.current,
+    required this.total,
+    required this.pinyinOf,
+    required this.onOpen,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return InkWell(
+      onTap: onOpen,
+      borderRadius: BorderRadius.circular(12),
+      child: Padding(
+        padding: const EdgeInsets.symmetric(vertical: 6, horizontal: 2),
+        child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+          Row(children: [
+            Text(trf('발음부 {0} 가족', [phonetic]), style: AppFonts.captionText(weight: FontWeight.w600, color: AppColors.moLight)),
+            const SizedBox(width: 6),
+            Text(trf('{0}자', [total]), style: AppFonts.captionText()),
+            const Spacer(),
+            Text(tr('패밀리 한자'), style: AppFonts.captionText(color: AppColors.copper)),
+            const Icon(Icons.chevron_right, size: 16, color: AppColors.copper),
+          ]),
+          const SizedBox(height: 8),
+          SingleChildScrollView(
+            scrollDirection: Axis.horizontal,
+            child: Row(children: [
+              for (final c in chars)
+                Padding(
+                  padding: const EdgeInsets.only(right: 8),
+                  child: FamilyGlyphTile(
+                    key: ValueKey('fam-$c'),
+                    ch: c,
+                    pinyin: pinyinOf(c),
+                    sameSound: c != phonetic && sameSound(pinyinOf(c), phoneticPinyin),
+                    current: c == current,
+                    root: c == phonetic,
                   ),
-                  const SizedBox(width: 8),
-                  Expanded(
-                    child: Container(
-                      padding: const EdgeInsets.all(14),
-                      decoration: BoxDecoration(
-                        color: AppColors.xuanZhiDeep,
-                        border: Border.all(color: AppColors.jin.withValues(alpha: 0.5)),
-                      ),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            tr('음·한자 (형성자)'),
-                            style: TextStyle(
-                              fontSize: 11,
-                              fontWeight: FontWeight.w800,
-                              color: AppColors.zhuHong,
-                              letterSpacing: 2,
-                            ),
-                          ),
-                          const SizedBox(height: 8),
-                          if (hasPhon) ...[
-                            Builder(builder: (ctx) {
-                              final phonStr = phon!;
-                              final phonPyStr = phonPy!;
-                              final family =
-                                  HanziInfoService.instance.charsSharing(phonStr).where((c) => c != char).toList();
-                              return InkWell(
-                                onTap: () => _openFamily(ctx, phonStr, phonPyStr, char),
-                                child: Container(
-                                  padding: const EdgeInsets.all(6),
-                                  decoration: BoxDecoration(
-                                    border: Border.all(
-                                      color: AppColors.zhuHong.withValues(alpha: 0.4),
-                                      width: 0.8,
-                                      style: BorderStyle.solid,
-                                    ),
-                                  ),
-                                  child: Row(
-                                    crossAxisAlignment: CrossAxisAlignment.center,
-                                    children: [
-                                      Container(
-                                        width: 44,
-                                        height: 44,
-                                        alignment: Alignment.center,
-                                        decoration: BoxDecoration(
-                                          color: AppColors.jin.withValues(alpha: 0.25),
-                                          border: Border.all(color: AppColors.jin),
-                                        ),
-                                        child: Text(
-                                          phonStr,
-                                          style: const TextStyle(
-                                            fontSize: 24,
-                                            fontWeight: FontWeight.w900,
-                                            color: AppColors.mo,
-                                          ),
-                                        ),
-                                      ),
-                                      const SizedBox(width: 8),
-                                      Expanded(
-                                        child: Column(
-                                          crossAxisAlignment: CrossAxisAlignment.start,
-                                          children: [
-                                            Text(
-                                              phonPyStr,
-                                              style: const TextStyle(
-                                                fontSize: 16,
-                                                fontWeight: FontWeight.w800,
-                                                color: AppColors.mo,
-                                                fontStyle: FontStyle.italic,
-                                              ),
-                                            ),
-                                            Text(
-                                              info?.estimated == true
-                                                  ? '${tr('발음부 (聲旁)')} · ${tr('추정')}'
-                                                  : tr('발음부 (聲旁)'),
-                                              style: TextStyle(
-                                                fontSize: 9,
-                                                color: AppColors.moLight,
-                                                letterSpacing: 1,
-                                              ),
-                                            ),
-                                            if (family.isNotEmpty)
-                                              Padding(
-                                                padding: const EdgeInsets.only(top: 4),
-                                                child: Text(
-                                                  trf('같은 음 +{0}자 →', [family.length]),
-                                                  style: const TextStyle(
-                                                    fontSize: 9,
-                                                    color: AppColors.zhuHong,
-                                                    fontWeight: FontWeight.w800,
-                                                  ),
-                                                ),
-                                              ),
-                                          ],
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                ),
-                              );
-                            }),
-                            if (info?.semantic != null) ...[
-                              const SizedBox(height: 10),
-                              Row(
-                                children: [
-                                  Container(
-                                    width: 32,
-                                    height: 32,
-                                    alignment: Alignment.center,
-                                    decoration: BoxDecoration(
-                                      color: AppColors.feiCui.withValues(alpha: 0.2),
-                                      border: Border.all(color: AppColors.feiCui),
-                                    ),
-                                    child: Text(
-                                      info!.semantic!,
-                                      style: const TextStyle(
-                                        fontSize: 18,
-                                        fontWeight: FontWeight.w900,
-                                        color: AppColors.mo,
-                                      ),
-                                    ),
-                                  ),
-                                  const SizedBox(width: 8),
-                                  Text(
-                                    tr('형부 (形旁)'),
-                                    style: TextStyle(
-                                      fontSize: 10,
-                                      color: AppColors.moLight,
-                                      letterSpacing: 1,
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ],
-                          ] else
-                            const SizedBox(height: 8),
-                        ],
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-            ),
-            _SharedHanjaCard(char: char),
-          ],
-        );
+                ),
+            ]),
+          ),
+        ]),
+      ),
+    );
   }
 }
 
-/// 한자 팝업(바닥 시트). 내용은 [HanziInfoBody].
+/// 가족 한 글자 타일 — 큰 자형 + 성조 색 병음. 같은 소리면 구리 테두리.
+class FamilyGlyphTile extends StatelessWidget {
+  final String ch;
+  final String pinyin;
+  final bool sameSound;
+  final bool current;
+  final bool root;
+  final VoidCallback? onTap;
+  const FamilyGlyphTile({super.key, required this.ch, required this.pinyin, required this.sameSound, this.current = false, this.root = false, this.onTap});
+
+  @override
+  Widget build(BuildContext context) {
+    final tile = Container(
+      width: 54,
+      padding: const EdgeInsets.fromLTRB(2, 6, 2, 5),
+      decoration: BoxDecoration(
+        color: current ? AppColors.copper.withValues(alpha: 0.08) : null,
+        border: sameSound ? Border.all(color: AppColors.copper, width: 1.4) : null,
+        borderRadius: BorderRadius.circular(10),
+      ),
+      child: Column(mainAxisSize: MainAxisSize.min, children: [
+        Text(ch, style: AppFonts.glyphText(size: AppFonts.glyphTile, color: root ? AppColors.copperDeep : AppColors.mo)),
+        const SizedBox(height: 2),
+        TonePinyinText(pinyin.isEmpty ? '·' : pinyin, size: 10.5, maxLines: 1),
+      ]),
+    );
+    if (onTap == null) return tile;
+    return InkWell(onTap: onTap, borderRadius: BorderRadius.circular(10), child: tile);
+  }
+}
+
+/// 한자 팝업(바닥 시트). 내용은 [HanziInfoBody]. 넓은 화면에서도 가운데 한 장(최대 640).
 class HanziInfoSheet extends StatelessWidget {
   final String char;
   final HanziInfo? info;
@@ -731,11 +636,14 @@ class HanziInfoSheet extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => SafeArea(
-        child: Padding(
-          padding: EdgeInsets.fromLTRB(20, 18, 20, 24 + bottomInset(context)),
+        child: Center(
+          heightFactor: 1,
           child: ConstrainedBox(
-            constraints: BoxConstraints(maxHeight: MediaQuery.sizeOf(context).height * 0.85),
-            child: SingleChildScrollView(child: HanziInfoBody(char: char, info: info, lex: lex)),
+            constraints: BoxConstraints(maxWidth: 640, maxHeight: MediaQuery.sizeOf(context).height * 0.85),
+            child: SingleChildScrollView(
+              padding: EdgeInsets.fromLTRB(24, 8, 24, 24 + bottomInset(context)),
+              child: HanziInfoBody(char: char, info: info, lex: lex),
+            ),
           ),
         ),
       );
@@ -752,7 +660,7 @@ Future<void> showHanziSheet(BuildContext context, String char) async {
     backgroundColor: AppColors.xuanZhi,
     isScrollControlled: true,
     shape: const RoundedRectangleBorder(
-      borderRadius: BorderRadius.vertical(top: Radius.circular(2)),
+      borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
     ),
     builder: (_) => HanziInfoSheet(
       char: char,
@@ -789,7 +697,7 @@ class _SharedHanjaCard extends StatelessWidget {
         padding: const EdgeInsets.all(14),
         decoration: BoxDecoration(
           color: AppColors.xuanZhiDeep,
-          border: Border.all(color: AppColors.jin.withValues(alpha: 0.5)),
+          borderRadius: BorderRadius.circular(12),
         ),
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -812,55 +720,19 @@ class _SharedHanjaCard extends StatelessWidget {
                 children: [
                   Row(
                     children: [
-                      Text(
-                        tr('외우는 방법'),
-                        style: TextStyle(
-                          fontSize: 11,
-                          fontWeight: FontWeight.w800,
-                          color: AppColors.zhuHong,
-                          letterSpacing: 2,
-                        ),
-                      ),
+                      Text(tr('외우는 방법'), style: AppFonts.captionText(weight: FontWeight.w600, color: AppColors.copper)),
                       const Spacer(),
                       if (write != null)
-                        Container(
-                          padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
-                          decoration: BoxDecoration(
-                            border: Border.all(color: AppColors.feiCui),
-                          ),
-                          child: Text(
-                            write,
-                            style: const TextStyle(
-                              fontSize: 9,
-                              fontWeight: FontWeight.w800,
-                              color: AppColors.mo,
-                            ),
-                          ),
-                        ),
+                        Text(write, style: AppFonts.captionText(size: 11, color: AppColors.feiCui)),
                     ],
                   ),
                   const SizedBox(height: 6),
                   if (mn?.tip != null && mn!.tip!.isNotEmpty)
-                    Text(
-                      mn.tip!,
-                      style: const TextStyle(
-                        fontSize: 14,
-                        fontWeight: FontWeight.w700,
-                        color: AppColors.mo,
-                        height: 1.5,
-                      ),
-                    ),
+                    Text(mn.tip!, style: AppFonts.uiText(size: 14, weight: FontWeight.w600, color: AppColors.mo, height: 1.5)),
                   if (mn?.origin != null && mn!.origin!.isNotEmpty)
                     Padding(
                       padding: const EdgeInsets.only(top: 4),
-                      child: Text(
-                        mn.origin!,
-                        style: const TextStyle(
-                          fontSize: 11,
-                          color: AppColors.moLight,
-                          height: 1.5,
-                        ),
-                      ),
+                      child: Text(mn.origin!, style: AppFonts.uiText(size: 12.5, height: 1.5)),
                     ),
                   if (mn == null)
                     Text(
