@@ -7,11 +7,12 @@
  "emoji": "🥂",
  "scene": "친구의 하우스 파티에서 여자가 미리 알아본 남자에게 직진한다",
  "speakers": {
-  "A": "A",
-  "B": "B"
+  "A": "Mark",
+  "B": "悦"
  },
  "register": "casual",
  "twist": 0,
+ "learner_gender": "M",
  "variant": "north",
  "legacy": "L4/d10",
  "turns": [

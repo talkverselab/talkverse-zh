@@ -7,11 +7,12 @@
  "emoji": "📷",
  "scene": "샤오리 집에서 어릴 적 사진첩을 함께 넘겨 보는 저녁.",
  "speakers": {
-  "A": "A",
-  "B": "B"
+  "A": "Mark",
+  "B": "小丽"
  },
  "register": "casual",
  "twist": 0,
+ "learner_gender": "M",
  "variant": "north",
  "legacy": "L3/d10_1",
  "turns": [

@@ -7,11 +7,12 @@
  "emoji": "🎁",
  "scene": "사귄 지 100일, 서로 몰래 준비한 선물을 교환한다.",
  "speakers": {
-  "A": "A",
-  "B": "B"
+  "A": "Mark",
+  "B": "小丽"
  },
  "register": "casual",
  "twist": 0,
+ "learner_gender": "M",
  "variant": "north",
  "legacy": "L3/d02_2",
  "turns": [

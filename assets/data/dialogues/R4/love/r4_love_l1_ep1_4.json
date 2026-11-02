@@ -8,10 +8,11 @@
  "scene": "Mark 매칭앱 첫 메시지 → 小丽 자기소개 → 약속 호출 → Lily↔小丽 hook",
  "speakers": {
   "A": "Mark",
-  "B": "小丽 / Lily"
+  "B": "小丽"
  },
  "register": "casual",
  "twist": 0,
+ "learner_gender": "M",
  "variant": "north",
  "legacy": "L1/ep1_4",
  "turns": [

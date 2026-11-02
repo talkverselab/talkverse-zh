@@ -7,11 +7,12 @@
  "emoji": "💪",
  "scene": "또 헬스장 등록한 Mark, 작심삼일 전과를 놀리는 小丽",
  "speakers": {
-  "A": "A",
-  "B": "B"
+  "A": "Mark",
+  "B": "小丽"
  },
  "register": "casual",
  "twist": 0,
+ "learner_gender": "M",
  "variant": "north",
  "legacy": "L2/d06_2",
  "turns": [

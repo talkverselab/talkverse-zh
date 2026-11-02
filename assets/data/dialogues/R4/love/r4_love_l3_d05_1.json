@@ -7,11 +7,12 @@
  "emoji": "📱",
  "scene": "小丽 부모님과의 첫 영상통화를 앞두고 둘이서 리허설을 한다.",
  "speakers": {
-  "A": "A",
-  "B": "B"
+  "A": "Mark",
+  "B": "小丽"
  },
  "register": "casual",
  "twist": 0,
+ "learner_gender": "M",
  "variant": "north",
  "legacy": "L3/d05_1",
  "turns": [

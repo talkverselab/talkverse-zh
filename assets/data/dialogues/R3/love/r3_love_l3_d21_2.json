@@ -7,11 +7,12 @@
  "emoji": "🌟",
  "scene": "훠궈를 다 먹은 밤, Mark가 베이징에 남기로 한 결심을 밝힌다.",
  "speakers": {
-  "A": "A",
-  "B": "B"
+  "A": "Mark",
+  "B": "小丽"
  },
  "register": "casual",
  "twist": 0,
+ "learner_gender": "M",
  "variant": "north",
  "legacy": "L3/d21_2",
  "turns": [

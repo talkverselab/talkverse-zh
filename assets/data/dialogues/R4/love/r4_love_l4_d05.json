@@ -7,11 +7,12 @@
  "emoji": "🏋️",
  "scene": "헬스장에서 운동하는 남자에게 여자가 기구 사용법을 핑계로 접근한다",
  "speakers": {
-  "A": "A",
-  "B": "B"
+  "A": "Mark",
+  "B": "悦"
  },
  "register": "casual",
  "twist": 0,
+ "learner_gender": "M",
  "variant": "north",
  "legacy": "L4/d05",
  "turns": [

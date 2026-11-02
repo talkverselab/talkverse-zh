@@ -7,11 +7,12 @@
  "emoji": "💍",
  "scene": "노을 지는 성벽 위, 지난 약속을 되짚으며 Mark가 다음 춘절의 계획을 암시한다.",
  "speakers": {
-  "A": "A",
-  "B": "B"
+  "A": "Mark",
+  "B": "小丽"
  },
  "register": "casual",
  "twist": 0,
+ "learner_gender": "M",
  "variant": "north",
  "legacy": "L3/d23_1",
  "turns": [

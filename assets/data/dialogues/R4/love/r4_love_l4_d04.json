@@ -7,11 +7,12 @@
  "emoji": "☕",
  "scene": "카페 옆 테이블 남자의 노트북을 핑계로 여자가 말을 건다",
  "speakers": {
-  "A": "A",
-  "B": "B"
+  "A": "Mark",
+  "B": "悦"
  },
  "register": "casual",
  "twist": 0,
+ "learner_gender": "M",
  "variant": "north",
  "legacy": "L4/d04",
  "turns": [

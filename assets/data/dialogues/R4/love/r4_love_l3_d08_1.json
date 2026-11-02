@@ -7,11 +7,12 @@
  "emoji": "🤝",
  "scene": "연락·질투·솔직함에 대해 둘만의 연애 규칙을 정한다.",
  "speakers": {
-  "A": "A",
-  "B": "B"
+  "A": "Mark",
+  "B": "小丽"
  },
  "register": "casual",
  "twist": 0,
+ "learner_gender": "M",
  "variant": "north",
  "legacy": "L3/d08_1",
  "turns": [

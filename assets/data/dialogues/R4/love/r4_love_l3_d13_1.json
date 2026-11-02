@@ -7,11 +7,12 @@
  "emoji": "👵",
  "scene": "샤오리가 외할머니 이야기를 들려주며 쓰촨 사투리 한 마디를 가르쳐 준다.",
  "speakers": {
-  "A": "A",
-  "B": "B"
+  "A": "Mark",
+  "B": "小丽"
  },
  "register": "casual",
  "twist": 0,
+ "learner_gender": "M",
  "variant": "north",
  "legacy": "L3/d13_1",
  "turns": [

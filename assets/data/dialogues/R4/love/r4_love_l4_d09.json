@@ -7,11 +7,12 @@
  "emoji": "🚇",
  "scene": "지하철 같은 칸에서 남자가 읽는 책을 핑계로 여자가 말을 건다",
  "speakers": {
-  "A": "A",
-  "B": "B"
+  "A": "Mark",
+  "B": "悦"
  },
  "register": "casual",
  "twist": 0,
+ "learner_gender": "M",
  "variant": "north",
  "legacy": "L4/d09",
  "turns": [

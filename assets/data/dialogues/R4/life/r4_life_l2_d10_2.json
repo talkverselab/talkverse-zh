@@ -7,11 +7,12 @@
  "emoji": "💬",
  "scene": "친구 大伟까지 낀 단톡방에서 약속 날짜 잡다가 다들 일정이 꼬이는 혼돈",
  "speakers": {
-  "A": "A",
-  "B": "B"
+  "A": "Mark",
+  "B": "小丽"
  },
  "register": "casual",
  "twist": 0,
+ "learner_gender": "M",
  "variant": "north",
  "legacy": "L2/d10_2",
  "turns": [

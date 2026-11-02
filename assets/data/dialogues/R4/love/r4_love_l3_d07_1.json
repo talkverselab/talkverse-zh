@@ -7,11 +7,12 @@
  "emoji": "📸",
  "scene": "프로필에 올릴 커플사진을 찍으러 갈 계획을 세운다.",
  "speakers": {
-  "A": "A",
-  "B": "B"
+  "A": "Mark",
+  "B": "小丽"
  },
  "register": "casual",
  "twist": 0,
+ "learner_gender": "M",
  "variant": "north",
  "legacy": "L3/d07_1",
  "turns": [

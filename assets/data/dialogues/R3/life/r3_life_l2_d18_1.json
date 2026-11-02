@@ -7,11 +7,12 @@
  "emoji": "🎂",
  "scene": "小丽의 생일 서프라이즈를 몰래 준비하던 Mark, 폰 메시지를 들켜버린다.",
  "speakers": {
-  "A": "A",
-  "B": "B"
+  "A": "Mark",
+  "B": "小丽"
  },
  "register": "casual",
  "twist": 0,
+ "learner_gender": "M",
  "variant": "north",
  "legacy": "L2/d18_1",
  "turns": [

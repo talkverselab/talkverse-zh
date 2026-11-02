@@ -7,11 +7,12 @@
  "emoji": "💻",
  "scene": "야근 중인 Mark의 투정과 밀크티로 위로하는 小丽",
  "speakers": {
-  "A": "A",
-  "B": "B"
+  "A": "Mark",
+  "B": "小丽"
  },
  "register": "casual",
  "twist": 0,
+ "learner_gender": "M",
  "variant": "north",
  "legacy": "L2/d02_1",
  "turns": [

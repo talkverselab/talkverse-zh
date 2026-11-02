@@ -7,11 +7,12 @@
  "emoji": "🍲",
  "scene": "첫 데이트 장소였던 훠궈집 앞, 두 사람이 우연처럼 마주친다.",
  "speakers": {
-  "A": "A",
-  "B": "B"
+  "A": "Mark",
+  "B": "小丽"
  },
  "register": "casual",
  "twist": 0,
+ "learner_gender": "M",
  "variant": "north",
  "legacy": "L3/d20_2",
  "turns": [

@@ -7,11 +7,12 @@
  "emoji": "📱",
  "scene": "폰을 떨어뜨려 액정이 또 깨진 Mark, 수리비 800위안에 충격받고 버티기로 결정",
  "speakers": {
-  "A": "A",
-  "B": "B"
+  "A": "Mark",
+  "B": "小丽"
  },
  "register": "casual",
  "twist": 0,
+ "learner_gender": "M",
  "variant": "north",
  "legacy": "L2/d13_1",
  "turns": [

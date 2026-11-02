@@ -7,11 +7,12 @@
  "emoji": "🤫",
  "scene": "회사 동료 王哥가 둘 사이를 눈치채자, 소문 관리를 상의한다.",
  "speakers": {
-  "A": "A",
-  "B": "B"
+  "A": "Mark",
+  "B": "小丽"
  },
  "register": "casual",
  "twist": 0,
+ "learner_gender": "M",
  "variant": "north",
  "legacy": "L3/d04_1",
  "turns": [

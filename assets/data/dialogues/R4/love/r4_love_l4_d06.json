@@ -7,11 +7,12 @@
  "emoji": "📚",
  "scene": "서점 같은 책 코너에서 여자가 같은 책을 고른 남자에게 말을 건다",
  "speakers": {
-  "A": "A",
-  "B": "B"
+  "A": "Mark",
+  "B": "悦"
  },
  "register": "casual",
  "twist": 0,
+ "learner_gender": "M",
  "variant": "north",
  "legacy": "L4/d06",
  "turns": [

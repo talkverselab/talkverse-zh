@@ -7,11 +7,12 @@
  "emoji": "🚄",
  "scene": "쓰촨행 기차표를 끊고, 小丽 부모님께 드릴 첫인사를 연습한다.",
  "speakers": {
-  "A": "A",
-  "B": "B"
+  "A": "Mark",
+  "B": "小丽"
  },
  "register": "casual",
  "twist": 0,
+ "learner_gender": "M",
  "variant": "north",
  "legacy": "L3/d22_2",
  "turns": [

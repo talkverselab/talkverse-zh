@@ -7,11 +7,12 @@
  "emoji": "🚇",
  "scene": "출근길 만원 지하철에 시달린 Mark의 하소연과 재택근무 小丽의 얄미운 위로",
  "speakers": {
-  "A": "A",
-  "B": "B"
+  "A": "Mark",
+  "B": "小丽"
  },
  "register": "casual",
  "twist": 0,
+ "learner_gender": "M",
  "variant": "north",
  "legacy": "L2/d14_2",
  "turns": [

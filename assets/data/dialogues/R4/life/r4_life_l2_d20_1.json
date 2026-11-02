@@ -7,11 +7,12 @@
  "emoji": "🏠",
  "scene": "이사 갈 집을 고르며 역세권파 Mark와 조용한 동네파 小丽가 맞붙는다.",
  "speakers": {
-  "A": "A",
-  "B": "B"
+  "A": "Mark",
+  "B": "小丽"
  },
  "register": "casual",
  "twist": 0,
+ "learner_gender": "M",
  "variant": "north",
  "legacy": "L2/d20_1",
  "turns": [

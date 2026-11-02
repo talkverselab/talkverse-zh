@@ -7,11 +7,12 @@
  "emoji": "🧊",
  "scene": "연락이 끊긴 3일, 각자의 방에서 혼잣말과 보내지 못한 메시지가 오간다.",
  "speakers": {
-  "A": "A",
-  "B": "B"
+  "A": "Mark",
+  "B": "小丽"
  },
  "register": "casual",
  "twist": 0,
+ "learner_gender": "M",
  "variant": "north",
  "legacy": "L3/d19_2",
  "turns": [

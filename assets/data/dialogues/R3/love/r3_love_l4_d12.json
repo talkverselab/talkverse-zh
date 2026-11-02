@@ -7,11 +7,12 @@
  "emoji": "🍢",
  "scene": "야시장 노점에서 여자가 메뉴 추천을 핑계로 남자에게 합석을 제안한다",
  "speakers": {
-  "A": "A",
-  "B": "B"
+  "A": "Mark",
+  "B": "悦"
  },
  "register": "casual",
  "twist": 0,
+ "learner_gender": "M",
  "variant": "north",
  "legacy": "L4/d12",
  "turns": [

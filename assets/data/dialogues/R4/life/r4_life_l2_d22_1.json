@@ -7,11 +7,12 @@
  "emoji": "🍳",
  "scene": "영상 보고 요리에 도전한 Mark, 생선을 숯으로 만들고 만다.",
  "speakers": {
-  "A": "A",
-  "B": "B"
+  "A": "Mark",
+  "B": "小丽"
  },
  "register": "casual",
  "twist": 0,
+ "learner_gender": "M",
  "variant": "north",
  "legacy": "L2/d22_1",
  "turns": [

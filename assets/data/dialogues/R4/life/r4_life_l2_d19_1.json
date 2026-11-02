@@ -7,11 +7,12 @@
  "emoji": "📝",
  "scene": "HSK 시험 공부에 지친 Mark를 小丽가 훠궈로 달랜다.",
  "speakers": {
-  "A": "A",
-  "B": "B"
+  "A": "Mark",
+  "B": "小丽"
  },
  "register": "casual",
  "twist": 0,
+ "learner_gender": "M",
  "variant": "north",
  "legacy": "L2/d19_1",
  "turns": [

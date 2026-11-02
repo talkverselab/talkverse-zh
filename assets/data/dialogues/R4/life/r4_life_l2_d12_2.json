@@ -7,11 +7,12 @@
  "emoji": "📷",
  "scene": "Mark가 찍어준 사진이 마음에 안 드는 小丽, 다리 길게 나올 때까지 재촬영 요구",
  "speakers": {
-  "A": "A",
-  "B": "B"
+  "A": "Mark",
+  "B": "小丽"
  },
  "register": "casual",
  "twist": 0,
+ "learner_gender": "M",
  "variant": "north",
  "legacy": "L2/d12_2",
  "turns": [

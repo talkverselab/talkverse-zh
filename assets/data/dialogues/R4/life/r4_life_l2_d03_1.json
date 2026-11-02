@@ -7,11 +7,12 @@
  "emoji": "🍜",
  "scene": "저녁 배달 메뉴를 한 시간째 못 정하는 두 사람의 카오스",
  "speakers": {
-  "A": "A",
-  "B": "B"
+  "A": "Mark",
+  "B": "小丽"
  },
  "register": "casual",
  "twist": 0,
+ "learner_gender": "M",
  "variant": "north",
  "legacy": "L2/d03_1",
  "turns": [

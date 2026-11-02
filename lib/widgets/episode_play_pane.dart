@@ -444,6 +444,9 @@ class SceneCut extends StatelessWidget {
 
   Future<_ArtPick?> _pick() async {
     if (turn.art != null) return _ArtPick(turn.art!, null);
+    final i = dialogue.turns.indexOf(turn);
+    final scene = i < 0 ? null : await SceneArtService.instance.urlFor(dialogue.id, i);
+    if (scene != null) return _ArtPick(scene, null);
     for (final w in turn.pictureWords) {
       final u = await ArtService.instance.urlFor(w);
       if (u != null) return _ArtPick(u, w);

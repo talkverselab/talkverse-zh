@@ -7,11 +7,12 @@
  "emoji": "🇰🇷",
  "scene": "Mark의 한국 부모님께 어떻게 알릴지, 한국 예절은 뭐가 다른지 이야기한다.",
  "speakers": {
-  "A": "A",
-  "B": "B"
+  "A": "Mark",
+  "B": "小丽"
  },
  "register": "casual",
  "twist": 0,
+ "learner_gender": "M",
  "variant": "north",
  "legacy": "L3/d06_2",
  "turns": [

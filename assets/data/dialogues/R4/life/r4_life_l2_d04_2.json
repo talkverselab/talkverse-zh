@@ -7,11 +7,12 @@
  "emoji": "🌧️",
  "scene": "공원 데이트 날 갑자기 닥친 황사와 비, 집콕으로 계획 변경",
  "speakers": {
-  "A": "A",
-  "B": "B"
+  "A": "Mark",
+  "B": "小丽"
  },
  "register": "casual",
  "twist": 0,
+ "learner_gender": "M",
  "variant": "north",
  "legacy": "L2/d04_2",
  "turns": [

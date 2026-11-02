@@ -7,11 +7,12 @@
  "emoji": "🍲",
  "scene": "몸살이 난 마크를 위해 샤오리가 죽을 끓여 주며 돌봐 준다.",
  "speakers": {
-  "A": "A",
-  "B": "B"
+  "A": "Mark",
+  "B": "小丽"
  },
  "register": "casual",
  "twist": 0,
+ "learner_gender": "M",
  "variant": "north",
  "legacy": "L3/d14_1",
  "turns": [

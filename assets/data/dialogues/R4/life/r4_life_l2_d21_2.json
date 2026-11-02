@@ -7,11 +7,12 @@
  "emoji": "🐱",
  "scene": "고양이를 입양하고 싶은 小丽가 Mark를 끈질기게 조른다.",
  "speakers": {
-  "A": "A",
-  "B": "B"
+  "A": "Mark",
+  "B": "小丽"
  },
  "register": "casual",
  "twist": 0,
+ "learner_gender": "M",
  "variant": "north",
  "legacy": "L2/d21_2",
  "turns": [

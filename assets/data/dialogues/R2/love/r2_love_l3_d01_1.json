@@ -7,11 +7,12 @@
  "emoji": "📢",
  "scene": "정식으로 사귀기 시작한 두 사람, 주변에 알릴지 말지 상의한다.",
  "speakers": {
-  "A": "A",
-  "B": "B"
+  "A": "Mark",
+  "B": "小丽"
  },
  "register": "casual",
  "twist": 0,
+ "learner_gender": "M",
  "variant": "north",
  "legacy": "L3/d01_1",
  "turns": [

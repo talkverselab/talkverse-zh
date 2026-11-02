@@ -7,11 +7,12 @@
  "emoji": "💬",
  "scene": "서로의 말버릇을 지적하다가 둘 다 부메랑을 맞는다.",
  "speakers": {
-  "A": "A",
-  "B": "B"
+  "A": "Mark",
+  "B": "小丽"
  },
  "register": "casual",
  "twist": 0,
+ "learner_gender": "M",
  "variant": "north",
  "legacy": "L2/d23_1",
  "turns": [

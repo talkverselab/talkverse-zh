@@ -7,11 +7,12 @@
  "emoji": "🧳",
  "scene": "주말 여행 전날 짐 싸기, 필수품은 다 빼먹고 간식만 챙긴 Mark에게 쏟아지는 잔소리",
  "speakers": {
-  "A": "A",
-  "B": "B"
+  "A": "Mark",
+  "B": "小丽"
  },
  "register": "casual",
  "twist": 0,
+ "learner_gender": "M",
  "variant": "north",
  "legacy": "L2/d11_2",
  "turns": [

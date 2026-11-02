@@ -7,11 +7,12 @@
  "emoji": "🎮",
  "scene": "밤새 게임하느라 연락이 끊긴 Mark, 小丽의 추궁에 어설픈 변명을 시작한다.",
  "speakers": {
-  "A": "A",
-  "B": "B"
+  "A": "Mark",
+  "B": "小丽"
  },
  "register": "casual",
  "twist": 0,
+ "learner_gender": "M",
  "variant": "north",
  "legacy": "L2/d17_2",
  "turns": [

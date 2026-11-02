@@ -8,10 +8,11 @@
  "scene": "관계 확정 — 장래 계획 · 언어 교환 · 부모님 인사 약속 · 고백",
  "speakers": {
   "A": "Mark",
-  "B": "小丽 / Lily"
+  "B": "小丽"
  },
  "register": "casual",
  "twist": 0,
+ "learner_gender": "M",
  "variant": "north",
  "legacy": "L1/ep5_2",
  "turns": [

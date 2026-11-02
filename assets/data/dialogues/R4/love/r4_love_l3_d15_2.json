@@ -7,11 +7,12 @@
  "emoji": "🌟",
  "scene": "카페에서 서로의 꿈—창업과 개인 전시회—를 나누며 응원하는 두 사람.",
  "speakers": {
-  "A": "A",
-  "B": "B"
+  "A": "Mark",
+  "B": "小丽"
  },
  "register": "casual",
  "twist": 0,
+ "learner_gender": "M",
  "variant": "north",
  "legacy": "L3/d15_2",
  "turns": [

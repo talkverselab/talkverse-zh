@@ -7,11 +7,12 @@
  "emoji": "🍻",
  "scene": "회사 회식이 늦게 끝나 약속을 어긴 Mark, 서운해하는 小丽와 케이크로 화해",
  "speakers": {
-  "A": "A",
-  "B": "B"
+  "A": "Mark",
+  "B": "小丽"
  },
  "register": "casual",
  "twist": 0,
+ "learner_gender": "M",
  "variant": "north",
  "legacy": "L2/d16_1",
  "turns": [

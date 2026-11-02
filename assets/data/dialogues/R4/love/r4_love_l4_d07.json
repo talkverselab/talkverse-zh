@@ -7,11 +7,12 @@
  "emoji": "🎫",
  "scene": "공연장 입장 줄에서 혼자 온 남자에게 여자가 먼저 말을 건다",
  "speakers": {
-  "A": "A",
-  "B": "B"
+  "A": "Mark",
+  "B": "悦"
  },
  "register": "casual",
  "twist": 0,
+ "learner_gender": "M",
  "variant": "north",
  "legacy": "L4/d07",
  "turns": [

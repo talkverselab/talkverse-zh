@@ -7,11 +7,12 @@
  "emoji": "✈️",
  "scene": "퇴근 후 카페, Mark가 서울 발령 가능성을 小丽에게 조심스럽게 꺼낸다.",
  "speakers": {
-  "A": "A",
-  "B": "B"
+  "A": "Mark",
+  "B": "小丽"
  },
  "register": "casual",
  "twist": 0,
+ "learner_gender": "M",
  "variant": "north",
  "legacy": "L3/d17_2",
  "turns": [

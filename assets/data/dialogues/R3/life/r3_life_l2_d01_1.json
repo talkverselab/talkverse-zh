@@ -7,11 +7,12 @@
  "emoji": "⏰",
  "scene": "늦잠 잔 Mark, 출근 시간에 전화로 재촉하는 小丽",
  "speakers": {
-  "A": "A",
-  "B": "B"
+  "A": "Mark",
+  "B": "小丽"
  },
  "register": "casual",
  "twist": 0,
+ "learner_gender": "M",
  "variant": "north",
  "legacy": "L2/d01_1",
  "turns": [

@@ -7,11 +7,12 @@
  "emoji": "🧳",
  "scene": "첫 커플 여행지로 시안을 정하고 설레며 계획을 세우는 밤.",
  "speakers": {
-  "A": "A",
-  "B": "B"
+  "A": "Mark",
+  "B": "小丽"
  },
  "register": "casual",
  "twist": 0,
+ "learner_gender": "M",
  "variant": "north",
  "legacy": "L3/d11_1",
  "turns": [

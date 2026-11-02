@@ -53,7 +53,6 @@ def main():
     for lv, (island, kind) in LEVEL_MAP.items():
         j = json.load(open(SRC / f'{lv}.json', encoding='utf-8'))
         eps = j.get('episodes') or j.get('dialogues')
-        chars = j.get('characters', {})
         for e in eps:
             turns = e['turns']
             region = region_of(turns)
@@ -61,12 +60,13 @@ def main():
             if region == 'R1' and avg <= 6:
                 region = 'R0'
             eid = f"{region.lower()}_{island}_{lv.lower()}_{e['id']}"
-            speakers = {k: (v.get('name') if isinstance(v, dict) else v) for k, v in chars.items() if k in ('A', 'B') and isinstance(v, dict) and v.get('name')}
+            # 화자: A = 학습자(Mark), B = 샤오리 — L4(플러팅)의 B 는 먼저 다가가는 여성 위에(悦). 인물 기준 그림 data/review/art/chars_zh01.jpg
+            speakers = {'A': 'Mark', 'B': '悦' if lv == 'L4' else '小丽'}
             doc = {
                 'id': eid, 'region': region, 'island': island, 'kind': kind,
                 'title': e['title'], 'emoji': e.get('emoji', '💬'), 'scene': e.get('scenario', ''),
-                'speakers': speakers or {'A': 'A', 'B': 'B'}, 'register': 'casual', 'twist': 0,
-                'variant': 'north', 'legacy': f"{lv}/{e['id']}",
+                'speakers': speakers, 'register': 'casual', 'twist': 0,
+                'learner_gender': 'M', 'variant': 'north', 'legacy': f"{lv}/{e['id']}",
                 'turns': [{'num': t['num'], 'speaker': t['speaker'], 'zh': t['zh'], 'pinyin': t.get('pinyin', ''),
                            'ko': t.get('ko', ''), 'note': t.get('note', ''), 'tags': t.get('tags', [])} for t in turns],
             }

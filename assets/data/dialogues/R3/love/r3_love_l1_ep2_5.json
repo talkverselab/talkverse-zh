@@ -8,10 +8,11 @@
  "scene": "첫 만남 식당 — 주문 · 매운맛 · 젓가락 · 계산 · 산책 제안",
  "speakers": {
   "A": "Mark",
-  "B": "小丽 / Lily"
+  "B": "小丽"
  },
  "register": "casual",
  "twist": 0,
+ "learner_gender": "M",
  "variant": "north",
  "legacy": "L1/ep2_5",
  "turns": [

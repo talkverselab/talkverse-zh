@@ -7,11 +7,12 @@
  "emoji": "💔",
  "scene": "사흘 뒤 小丽의 집, 장거리 연애가 가능한지를 두고 처음으로 크게 다툰다.",
  "speakers": {
-  "A": "A",
-  "B": "B"
+  "A": "Mark",
+  "B": "小丽"
  },
  "register": "casual",
  "twist": 0,
+ "learner_gender": "M",
  "variant": "north",
  "legacy": "L3/d18_2",
  "turns": [

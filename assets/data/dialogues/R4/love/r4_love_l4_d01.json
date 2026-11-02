@@ -7,11 +7,12 @@
  "emoji": "🪩",
  "scene": "클럽 플로어에서 춤추는 남자에게 여자가 먼저 다가간다",
  "speakers": {
-  "A": "A",
-  "B": "B"
+  "A": "Mark",
+  "B": "悦"
  },
  "register": "casual",
  "twist": 0,
+ "learner_gender": "M",
  "variant": "north",
  "legacy": "L4/d01",
  "turns": [

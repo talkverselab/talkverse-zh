@@ -7,11 +7,12 @@
  "emoji": "🎨",
  "scene": "주말 오후, 서로의 취미인 그림과 등산을 가르쳐 주기로 하는 두 사람.",
  "speakers": {
-  "A": "A",
-  "B": "B"
+  "A": "Mark",
+  "B": "小丽"
  },
  "register": "casual",
  "twist": 0,
+ "learner_gender": "M",
  "variant": "north",
  "legacy": "L3/d09_1",
  "turns": [

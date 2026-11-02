@@ -7,11 +7,12 @@
  "emoji": "🍸",
  "scene": "바에서 칵테일을 든 여자가 옆자리 남자에게 말을 건다",
  "speakers": {
-  "A": "A",
-  "B": "B"
+  "A": "Mark",
+  "B": "悦"
  },
  "register": "casual",
  "twist": 0,
+ "learner_gender": "M",
  "variant": "north",
  "legacy": "L4/d02",
  "turns": [

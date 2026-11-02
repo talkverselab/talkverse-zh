@@ -7,11 +7,12 @@
  "emoji": "📺",
  "scene": "먼저 결말을 본 小丽의 스포일러에 발끈하는 Mark",
  "speakers": {
-  "A": "A",
-  "B": "B"
+  "A": "Mark",
+  "B": "小丽"
  },
  "register": "casual",
  "twist": 0,
+ "learner_gender": "M",
  "variant": "north",
  "legacy": "L2/d05_1",
  "turns": [

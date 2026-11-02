@@ -7,11 +7,12 @@
  "emoji": "🛍️",
  "scene": "매장에서 옷을 고르다 가격에 놀라 온라인 최저가를 찾는 두 사람",
  "speakers": {
-  "A": "A",
-  "B": "B"
+  "A": "Mark",
+  "B": "小丽"
  },
  "register": "casual",
  "twist": 0,
+ "learner_gender": "M",
  "variant": "north",
  "legacy": "L2/d07_1",
  "turns": [

@@ -7,11 +7,12 @@
  "emoji": "🍜",
  "scene": "Mark의 절친 大伟에게 小丽를 처음 소개하는 식사 자리를 준비한다.",
  "speakers": {
-  "A": "A",
-  "B": "B"
+  "A": "Mark",
+  "B": "小丽"
  },
  "register": "casual",
  "twist": 0,
+ "learner_gender": "M",
  "variant": "north",
  "legacy": "L3/d03_1",
  "turns": [

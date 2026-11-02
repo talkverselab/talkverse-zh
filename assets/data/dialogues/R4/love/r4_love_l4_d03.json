@@ -7,11 +7,12 @@
  "emoji": "🚶",
  "scene": "길에서 마음에 드는 남자를 발견한 여자가 길을 묻는 척 다가간다",
  "speakers": {
-  "A": "A",
-  "B": "B"
+  "A": "Mark",
+  "B": "悦"
  },
  "register": "casual",
  "twist": 0,
+ "learner_gender": "M",
  "variant": "north",
  "legacy": "L4/d03",
  "turns": [

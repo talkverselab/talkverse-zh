@@ -7,11 +7,12 @@
  "emoji": "🤒",
  "scene": "감기에 걸린 小丽를 약과 죽으로 챙기는 Mark",
  "speakers": {
-  "A": "A",
-  "B": "B"
+  "A": "Mark",
+  "B": "小丽"
  },
  "register": "casual",
  "twist": 0,
+ "learner_gender": "M",
  "variant": "north",
  "legacy": "L2/d08_2",
  "turns": [

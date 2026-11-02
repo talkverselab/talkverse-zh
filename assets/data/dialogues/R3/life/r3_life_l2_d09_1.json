@@ -7,11 +7,12 @@
  "emoji": "💰",
  "scene": "월급이 들어온 날, 한턱 쏘려는 분위기와 절약 결심 사이에서 벌어지는 실랑이",
  "speakers": {
-  "A": "A",
-  "B": "B"
+  "A": "Mark",
+  "B": "小丽"
  },
  "register": "casual",
  "twist": 0,
+ "learner_gender": "M",
  "variant": "north",
  "legacy": "L2/d09_1",
  "turns": [

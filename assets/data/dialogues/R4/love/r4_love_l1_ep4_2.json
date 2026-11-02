@@ -8,10 +8,11 @@
  "scene": "연락 두절 오해 — 서운함 · 변명 · 질투 · 사과 · 화해 (반말 전환)",
  "speakers": {
   "A": "Mark",
-  "B": "小丽 / Lily"
+  "B": "小丽"
  },
  "register": "casual",
  "twist": 0,
+ "learner_gender": "M",
  "variant": "north",
  "legacy": "L1/ep4_2",
  "turns": [

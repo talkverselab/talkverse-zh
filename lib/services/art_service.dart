@@ -134,3 +134,76 @@ class ArtService {
     }
   }
 }
+
+/// 회화 장면 컷 — A·B 대화 한 쌍 = 컷 1장(2026-11-02). talkverse.uk 가 저장소 `talkverse_art/scene/zh/<편id>/cut<N>.jpg` 를 올려
+/// `GET /art/zh/scene/manifest` → {base, items:[{episode, cut, key_1168, key_584}]} 로 준다. 없거나 실패하면 null(화면은 단어 그림·장면 카드로).
+class SceneArtService {
+  SceneArtService._();
+  static final SceneArtService instance = SceneArtService._();
+
+  static const manifestUrl = 'https://auth.talkverse.uk/art/zh/scene/manifest';
+  static const _prefKey = 'scene_manifest_zh_v1';
+  static const _prefAt = 'scene_manifest_zh_at';
+  static const _ttl = Duration(hours: 1); // 컷이 계속 늘어나므로 자주 갱신
+
+  final Map<String, String> _byCut = {}; // '<편id>#<컷>' → key
+  String _base = '';
+  Future<void>? _loading;
+
+  Future<void> ensureLoaded() => _loading ??= _load();
+
+  /// 턴 번호 순서(0부터)로 컷을 찾는다: 턴 0·1 = 컷 1, 턴 2·3 = 컷 2 …
+  Future<String?> urlFor(String episode, int turnIndex) async {
+    await ensureLoaded();
+    final key = _byCut['$episode#${turnIndex ~/ 2 + 1}'];
+    return key == null ? null : _base + key;
+  }
+
+  Future<void> _load() async {
+    final prefs = await SharedPreferences.getInstance();
+    final at = prefs.getInt(_prefAt) ?? 0;
+    final cached = prefs.getString(_prefKey);
+    final fresh = DateTime.now().millisecondsSinceEpoch - at < _ttl.inMilliseconds;
+    if (cached != null && fresh && _apply(cached)) return;
+    try {
+      final client = HttpClient()..connectionTimeout = const Duration(seconds: 8);
+      final res = await (await client.getUrl(Uri.parse(manifestUrl))).close().timeout(const Duration(seconds: 12));
+      if (res.statusCode == 200) {
+        final body = await res.transform(utf8.decoder).join();
+        if (_apply(body)) {
+          await prefs.setString(_prefKey, body);
+          await prefs.setInt(_prefAt, DateTime.now().millisecondsSinceEpoch);
+          client.close();
+          return;
+        }
+      }
+      client.close();
+    } catch (e) {
+      debugPrint('SceneArtService: manifest 실패 $e');
+    }
+    if (cached != null) _apply(cached);
+  }
+
+  bool _apply(String body) {
+    try {
+      final j = json.decode(body) as Map<String, dynamic>;
+      final base = j['base'] as String? ?? '';
+      final items = j['items'] as List<dynamic>? ?? const [];
+      if (base.isEmpty || items.isEmpty) return false;
+      _base = base;
+      _byCut.clear();
+      for (final it in items) {
+        final m = it as Map<String, dynamic>;
+        final key = m['key_1168'] as String? ?? m['key_584'] as String?;
+        final ep = m['episode'] as String?;
+        final cut = m['cut'];
+        if (key == null || ep == null || cut == null) continue;
+        _byCut['$ep#$cut'] = key;
+      }
+      return _byCut.isNotEmpty;
+    } catch (e) {
+      debugPrint('SceneArtService: manifest 파싱 실패 $e');
+      return false;
+    }
+  }
+}
