@@ -73,6 +73,12 @@ flutter:
     - assets/data/dialogues/north/_meta.json
     - assets/data/dialogues/north/L4.json
     - assets/data/dialogues/south/L1.json
+    # 새 회화 R0~R4 (레벨/주제 폴더 — 새 폴더를 만들면 여기에도 한 줄)
+    - assets/data/dialogues/R2/love/
+    - assets/data/dialogues/R3/life/
+    - assets/data/dialogues/R3/love/
+    - assets/data/dialogues/R4/life/
+    - assets/data/dialogues/R4/love/
     - assets/data/hanzi/cliff/hanzi_top500_final.txt
     - assets/data/freq/lang_zh_with_regions.csv
     - assets/data/freq/FINAL_wordset_for_conversation_app.tsv

@@ -1,0 +1,112 @@
+{
+ "id": "r3_life_l2_d19_2",
+ "region": "R3",
+ "island": "life",
+ "kind": "chat",
+ "title": "시험 ②",
+ "emoji": "📝",
+ "scene": "HSK 시험 공부에 지친 Mark를 小丽가 훠궈로 달랜다.",
+ "speakers": {
+  "A": "A",
+  "B": "B"
+ },
+ "register": "casual",
+ "twist": 0,
+ "variant": "north",
+ "legacy": "L2/d19_2",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "zh": "好好好，不笑了。",
+   "pinyin": "Hǎo hǎo hǎo, bú xiào le.",
+   "ko": "알았어 알았어, 안 웃을게.",
+   "note": "好 삼연발: 달래는 구어체. 不…了 '이제 안 ~할게'.",
+   "tags": [
+    "不…了",
+    "회화체"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "B",
+   "zh": "考完我带你去吃火锅。",
+   "pinyin": "Kǎo wán wǒ dài nǐ qù chī huǒguō.",
+   "ko": "시험 끝나면 훠궈 먹으러 데려갈게.",
+   "note": "考完: 동사+完 '다 끝내다'. 带你去: '데리고 가다' 연동문.",
+   "tags": [
+    "完",
+    "带…去"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "A",
+   "zh": "真的？那我现在就去学习！",
+   "pinyin": "Zhēn de? Nà wǒ xiànzài jiù qù xuéxí!",
+   "ko": "진짜? 그럼 지금 당장 공부하러 간다!",
+   "note": "就: '바로, 당장' 즉시성 강조.",
+   "tags": [
+    "就",
+    "반전"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "B",
+   "zh": "你为了火锅才学习吗？",
+   "pinyin": "Nǐ wèile huǒguō cái xuéxí ma?",
+   "ko": "너 훠궈 때문에 공부하는 거야?",
+   "note": "为了+명사: '~을 위해서'. 才로 '그제서야/겨우' 뉘앙스.",
+   "tags": [
+    "为了",
+    "才"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "A",
+   "zh": "火锅就是我的老师。",
+   "pinyin": "Huǒguō jiù shì wǒ de lǎoshī.",
+   "ko": "훠궈가 곧 내 스승이지.",
+   "note": "就是: '바로 ~이다' 단언 강조. 너스레 마무리.",
+   "tags": [
+    "就是",
+    "유머"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "B",
+   "zh": "那你今天要好好拜师啦。",
+   "pinyin": "Nà nǐ jīntiān yào hǎohǎo bàishī la.",
+   "ko": "그럼 오늘 스승님께 잘 배워야겠네.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "A",
+   "zh": "我这就去看书了。",
+   "pinyin": "Wǒ zhè jiù qù kànshū le.",
+   "ko": "지금 바로 공부하러 갈게.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "B",
+   "zh": "加油，考完请你吃辣的。",
+   "pinyin": "Jiāyóu, kǎowán qǐng nǐ chī là de.",
+   "ko": "화이팅, 시험 끝나면 매운 거 사줄게.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  }
+ ]
+}

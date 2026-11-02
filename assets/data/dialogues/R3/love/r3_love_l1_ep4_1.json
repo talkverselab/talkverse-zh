@@ -1,0 +1,115 @@
+{
+ "id": "r3_love_l1_ep4_1",
+ "region": "R3",
+ "island": "love",
+ "kind": "long",
+ "title": "갈등 ①",
+ "emoji": "⚡",
+ "scene": "연락 두절 오해 — 서운함 · 변명 · 질투 · 사과 · 화해 (반말 전환)",
+ "speakers": {
+  "A": "Mark",
+  "B": "小丽 / Lily"
+ },
+ "register": "casual",
+ "twist": 0,
+ "variant": "north",
+ "legacy": "L1/ep4_1",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "zh": "你昨天为什么不回我？",
+   "pinyin": "Nǐ zuótiān wèishénme bù huí wǒ?",
+   "ko": "어제 왜 답장 안 했어?",
+   "note": "回 (답장하다) — 반말 시작",
+   "tags": [
+    "conflict",
+    "question"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "zh": "对不起，手机没电了。",
+   "pinyin": "Duìbuqǐ, shǒujī méi diàn le.",
+   "ko": "미안해, 폰 배터리가 없었어.",
+   "note": "没电了 (방전) + 了 변화",
+   "tags": [
+    "apology",
+    "function:了"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "zh": "一整天都没电吗？",
+   "pinyin": "Yì zhěng tiān dōu méi diàn ma?",
+   "ko": "하루 종일 배터리가 없었다고?",
+   "note": "一整天 + 都 강조",
+   "tags": [
+    "conflict",
+    "particle:吗"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "我加班到很晚，真的。",
+   "pinyin": "Wǒ jiābān dào hěn wǎn, zhēn de.",
+   "ko": "야근을 늦게까지 했어, 진짜야.",
+   "note": "加班 (야근) + 到…晚",
+   "tags": [
+    "excuse",
+    "topic:job"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "发一条消息要几秒？",
+   "pinyin": "Fā yì tiáo xiāoxi yào jǐ miǎo?",
+   "ko": "메시지 하나 보내는 데 몇 초 걸려?",
+   "note": "一条消息 (양사 条) + 要 (걸리다)",
+   "tags": [
+    "conflict",
+    "function:要"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "zh": "你说得对，是我不好。",
+   "pinyin": "Nǐ shuō de duì, shì wǒ bù hǎo.",
+   "ko": "네 말이 맞아, 내가 잘못했어.",
+   "note": "说得对 + 是我不好 (사과 공식)",
+   "tags": [
+    "apology",
+    "function:得"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "B",
+   "zh": "我等了你一晚上呢。",
+   "pinyin": "Wǒ děng le nǐ yì wǎnshang ne.",
+   "ko": "나 밤새 기다렸단 말이야.",
+   "note": "等了…一晚上 + 呢 (서운함)",
+   "tags": [
+    "feeling",
+    "particle:呢"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "A",
+   "zh": "对不起，让你担心了。",
+   "pinyin": "Duìbuqǐ, ràng nǐ dānxīn le.",
+   "ko": "미안해, 걱정하게 했네.",
+   "note": "让 (~하게 하다) 사역",
+   "tags": [
+    "apology",
+    "function:让"
+   ]
+  }
+ ]
+}

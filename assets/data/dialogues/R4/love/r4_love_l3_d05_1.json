@@ -1,0 +1,115 @@
+{
+ "id": "r4_love_l3_d05_1",
+ "region": "R4",
+ "island": "love",
+ "kind": "long",
+ "title": "영상통화 ①",
+ "emoji": "📱",
+ "scene": "小丽 부모님과의 첫 영상통화를 앞두고 둘이서 리허설을 한다.",
+ "speakers": {
+  "A": "A",
+  "B": "B"
+ },
+ "register": "casual",
+ "twist": 0,
+ "variant": "north",
+ "legacy": "L3/d05_1",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "zh": "我妈说想跟你视频聊聊。",
+   "pinyin": "Wǒ mā shuō xiǎng gēn nǐ shìpín liáoliao.",
+   "ko": "우리 엄마가 너랑 영상통화로 얘기하고 싶대.",
+   "note": "동사 중첩 聊聊 '좀 이야기하다'",
+   "tags": [
+    "동사중첩",
+    "부모님"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "zh": "什么？跟你父母视频？",
+   "pinyin": "Shénme? Gēn nǐ fùmǔ shìpín?",
+   "ko": "뭐? 너희 부모님이랑 영상통화를?",
+   "note": "개사 跟 '~와', 视频의 동사 용법",
+   "tags": [
+    "개사 跟",
+    "놀람"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "zh": "别怕，我们先练习一下。",
+   "pinyin": "Bié pà, wǒmen xiān liànxí yíxià.",
+   "ko": "겁내지 마, 우리 먼저 연습 좀 해 보자.",
+   "note": "동사+一下 '좀 ~해 보다' (완화)",
+   "tags": [
+    "一下",
+    "리허설"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "好，我应该叫他们什么？",
+   "pinyin": "Hǎo, wǒ yīnggāi jiào tāmen shénme?",
+   "ko": "좋아, 두 분을 뭐라고 불러야 해?",
+   "note": "이중목적어 叫+사람+호칭",
+   "tags": [
+    "이중목적어",
+    "호칭"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "叫叔叔阿姨就可以了。",
+   "pinyin": "Jiào shūshu āyí jiù kěyǐ le.",
+   "ko": "아저씨 아주머니라고 부르면 돼.",
+   "note": "…就可以了 '~하면 된다'",
+   "tags": [
+    "就可以了",
+    "호칭"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "zh": "叔叔阿姨好，我叫马克。",
+   "pinyin": "Shūshu āyí hǎo, wǒ jiào Mǎkè.",
+   "ko": "아저씨 아주머니 안녕하세요, 저는 마크입니다.",
+   "note": "자기소개 공식 표현 我叫…",
+   "tags": [
+    "자기소개",
+    "인사"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "B",
+   "zh": "声音再大一点儿，别低头。",
+   "pinyin": "Shēngyīn zài dà yìdiǎnr, bié dītóu.",
+   "ko": "목소리 좀 더 크게, 고개 숙이지 말고.",
+   "note": "再+형용사+一点儿 '좀 더 ~하게'",
+   "tags": [
+    "再…一点儿",
+    "코칭"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "A",
+   "zh": "他们要是问我工资怎么办？",
+   "pinyin": "Tāmen yàoshi wèn wǒ gōngzī zěnme bàn?",
+   "ko": "두 분이 월급 물어보시면 어떡해?",
+   "note": "가정 要是…怎么办 '만약 ~하면 어쩌지'",
+   "tags": [
+    "가정 要是",
+    "怎么办"
+   ]
+  }
+ ]
+}

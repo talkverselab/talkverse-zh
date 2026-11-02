@@ -1,0 +1,115 @@
+{
+ "id": "r4_love_l1_ep1_2",
+ "region": "R4",
+ "island": "love",
+ "kind": "long",
+ "title": "매칭 ②",
+ "emoji": "💕",
+ "scene": "Mark 매칭앱 첫 메시지 → 小丽 자기소개 → 약속 호출 → Lily↔小丽 hook",
+ "speakers": {
+  "A": "Mark",
+  "B": "小丽 / Lily"
+ },
+ "register": "casual",
+ "twist": 0,
+ "variant": "north",
+ "legacy": "L1/ep1_2",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "zh": "你学了多久了？",
+   "pinyin": "Nǐ xué le duō jiǔ le?",
+   "ko": "얼마나 배웠어요?",
+   "note": "了…了 지속 기간 묻기",
+   "tags": [
+    "question",
+    "function:了"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "zh": "一年了，还不太会说。",
+   "pinyin": "Yì nián le, hái bú tài huì shuō.",
+   "ko": "1년 됐는데 아직 말은 잘 못해요.",
+   "note": "不太 + 会 (능력)",
+   "tags": [
+    "self-intro",
+    "function:会"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "zh": "已经很棒了！为什么学中文？",
+   "pinyin": "Yǐjīng hěn bàng le! Wèishénme xué zhōngwén?",
+   "ko": "벌써 대단한데요! 왜 중국어를 배워요?",
+   "note": "已经…了 + 为什么 의문",
+   "tags": [
+    "question",
+    "praise"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "因为我喜欢中国菜，哈哈。",
+   "pinyin": "Yīnwèi wǒ xǐhuan zhōngguó cài, hāhā.",
+   "ko": "중국 음식을 좋아해서요, 하하.",
+   "note": "因为 이유 + 喜欢",
+   "tags": [
+    "hobby",
+    "hook:food"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "哈哈，我也是！你会用筷子吗？",
+   "pinyin": "Hāhā, wǒ yě shì! Nǐ huì yòng kuàizi ma?",
+   "ko": "하하, 저도요! 젓가락 쓸 줄 알아요?",
+   "note": "我也是 공감 + 会 (기능)",
+   "tags": [
+    "hobby",
+    "particle:吗"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "zh": "当然会，我是韩国人嘛。",
+   "pinyin": "Dāngrán huì, wǒ shì Hánguó rén ma.",
+   "ko": "당연하죠, 한국 사람이잖아요.",
+   "note": "어기조사 嘛 (당연함)",
+   "tags": [
+    "joke",
+    "particle:嘛"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "B",
+   "zh": "对哦，我忘了，哈哈。",
+   "pinyin": "Duì o, wǒ wàng le, hāhā.",
+   "ko": "맞다, 깜빡했네요, 하하.",
+   "note": "어기조사 哦 (깨달음) + 忘了",
+   "tags": [
+    "joke",
+    "particle:哦"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "A",
+   "zh": "小丽，你做什么工作？",
+   "pinyin": "Xiǎolì, nǐ zuò shénme gōngzuò?",
+   "ko": "샤오리 씨는 무슨 일 해요?",
+   "note": "做什么工作 직업 묻기",
+   "tags": [
+    "question",
+    "topic:job"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,113 @@
+{
+ "id": "r2_love_l3_d01_1",
+ "region": "R2",
+ "island": "love",
+ "kind": "long",
+ "title": "공식화 ①",
+ "emoji": "📢",
+ "scene": "정식으로 사귀기 시작한 두 사람, 주변에 알릴지 말지 상의한다.",
+ "speakers": {
+  "A": "A",
+  "B": "B"
+ },
+ "register": "casual",
+ "twist": 0,
+ "variant": "north",
+ "legacy": "L3/d01_1",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "A",
+   "zh": "小丽，我有一件事想跟你商量。",
+   "pinyin": "Xiǎolì, wǒ yǒu yí jiàn shì xiǎng gēn nǐ shāngliang.",
+   "ko": "샤오리, 너랑 상의하고 싶은 일이 하나 있어.",
+   "note": "跟…商量 '~와 상의하다', 양사 件",
+   "tags": [
+    "상의",
+    "개사 跟"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "B",
+   "zh": "什么事？你说吧，别紧张。",
+   "pinyin": "Shénme shì? Nǐ shuō ba, bié jǐnzhāng.",
+   "ko": "무슨 일인데? 말해 봐, 긴장하지 말고.",
+   "note": "금지 표현 别+동사",
+   "tags": [
+    "금지 别",
+    "청유 吧"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "A",
+   "zh": "我们的事，要不要告诉朋友们？",
+   "pinyin": "Wǒmen de shì, yào bu yào gàosu péngyoumen?",
+   "ko": "우리 사귀는 거, 친구들한테 알릴까 말까?",
+   "note": "정반의문문 要不要",
+   "tags": [
+    "정반의문",
+    "고백 공개"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "B",
+   "zh": "我也正想问你呢！",
+   "pinyin": "Wǒ yě zhèng xiǎng wèn nǐ ne!",
+   "ko": "나도 마침 너한테 물어보려던 참이었어!",
+   "note": "正…呢 '마침 ~하던 중'",
+   "tags": [
+    "진행 正…呢"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "A",
+   "zh": "真的吗？那我们想到一起了。",
+   "pinyin": "Zhēn de ma? Nà wǒmen xiǎngdào yìqǐ le.",
+   "ko": "진짜? 우리 생각이 통했네.",
+   "note": "결과보어 到 (想到一起 '생각이 일치하다')",
+   "tags": [
+    "결과보어",
+    "관용표현"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "B",
+   "zh": "我不想再偷偷摸摸的了。",
+   "pinyin": "Wǒ bù xiǎng zài tōutōumōmō de le.",
+   "ko": "더는 몰래몰래 만나고 싶지 않아.",
+   "note": "AABB 중첩 偷偷摸摸, 不想再 '더는 ~하고 싶지 않다'",
+   "tags": [
+    "AABB 중첩",
+    "不再"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "A",
+   "zh": "对，我想让朋友们都知道。",
+   "pinyin": "Duì, wǒ xiǎng ràng péngyoumen dōu zhīdào.",
+   "ko": "맞아, 친구들이 다 알게 하고 싶어.",
+   "note": "사역동사 让 '~하게 하다'",
+   "tags": [
+    "사역 让"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "B",
+   "zh": "那你先告诉谁？大伟吗？",
+   "pinyin": "Nà nǐ xiān gàosu shéi? Dàwěi ma?",
+   "ko": "그럼 누구한테 먼저 말할 거야? 다웨이?",
+   "note": "부사 先 '먼저', 의문사 谁",
+   "tags": [
+    "부사 先",
+    "의문사"
+   ]
+  }
+ ]
+}

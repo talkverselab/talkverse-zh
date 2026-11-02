@@ -1,0 +1,115 @@
+{
+ "id": "r4_love_l1_ep1_4",
+ "region": "R4",
+ "island": "love",
+ "kind": "long",
+ "title": "매칭 ④",
+ "emoji": "💕",
+ "scene": "Mark 매칭앱 첫 메시지 → 小丽 자기소개 → 약속 호출 → Lily↔小丽 hook",
+ "speakers": {
+  "A": "Mark",
+  "B": "小丽 / Lily"
+ },
+ "register": "casual",
+ "twist": 0,
+ "variant": "north",
+ "legacy": "L1/ep1_4",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "zh": "在朝阳区，你呢？",
+   "pinyin": "Zài Cháoyáng qū, nǐ ne?",
+   "ko": "차오양구요, 당신은요?",
+   "note": "在 위치 + 呢 되묻기",
+   "tags": [
+    "question",
+    "particle:呢"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "zh": "其实公司让我来北京上班了，我也住朝阳！",
+   "pinyin": "Qíshí gōngsī ràng wǒ lái Běijīng shàngbān le, wǒ yě zhù Cháoyáng!",
+   "ko": "사실 회사에서 베이징으로 보내서 지금 여기서 일해요, 저도 차오양 살아요!",
+   "note": "其实 + 让 사역 — 서울 본사·베이징 파견 설정. ep1#7 '不过……' 복선 회수, hook:near 유지, ep5#9 '回韩国工作'와 자연 연결",
+   "tags": [
+    "hook:near",
+    "particle:呢"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "zh": "真巧啊，缘分吧？",
+   "pinyin": "Zhēn qiǎo a, yuánfèn ba?",
+   "ko": "진짜 신기하다, 인연인가 봐요?",
+   "note": "真巧 + 어기조사 吧 (추측)",
+   "tags": [
+    "flirt",
+    "particle:吧"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "是缘分！那我们见一面吧？",
+   "pinyin": "Shì yuánfèn! Nà wǒmen jiàn yí miàn ba?",
+   "ko": "인연이죠! 그럼 우리 한번 만날까요?",
+   "note": "那 (그럼) + 吧 (제안)",
+   "tags": [
+    "request",
+    "particle:吧"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "这么快？让我想想哦。",
+   "pinyin": "Zhème kuài? Ràng wǒ xiǎngxiang o.",
+   "ko": "이렇게 빨리요? 생각 좀 해볼게요.",
+   "note": "这么 + 让我想想 + 哦",
+   "tags": [
+    "tease",
+    "particle:哦"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "zh": "别想太久啊，我会难过的。",
+   "pinyin": "Bié xiǎng tài jiǔ a, wǒ huì nánguò de.",
+   "ko": "너무 오래 생각하지 마요, 저 슬퍼질 거예요.",
+   "note": "别 금지 + 会…的 (확신)",
+   "tags": [
+    "flirt",
+    "function:会"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "B",
+   "zh": "好啦好啦，见吧，哈哈。",
+   "pinyin": "Hǎo la hǎo la, jiàn ba, hāhā.",
+   "ko": "알았어요 알았어요, 만나요, 하하.",
+   "note": "어기조사 啦 (승낙 강조)",
+   "tags": [
+    "accept",
+    "particle:啦"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "A",
+   "zh": "太好了！周六可以吗？",
+   "pinyin": "Tài hǎo le! Zhōuliù kěyǐ ma?",
+   "ko": "너무 좋아요! 토요일 괜찮아요?",
+   "note": "太…了 감탄 + 可以吗",
+   "tags": [
+    "plan",
+    "particle:吗"
+   ]
+  }
+ ]
+}

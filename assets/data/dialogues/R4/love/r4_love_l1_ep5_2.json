@@ -1,0 +1,114 @@
+{
+ "id": "r4_love_l1_ep5_2",
+ "region": "R4",
+ "island": "love",
+ "kind": "long",
+ "title": "미래 ②",
+ "emoji": "🌅",
+ "scene": "관계 확정 — 장래 계획 · 언어 교환 · 부모님 인사 약속 · 고백",
+ "speakers": {
+  "A": "Mark",
+  "B": "小丽 / Lily"
+ },
+ "register": "casual",
+ "twist": 0,
+ "variant": "north",
+ "legacy": "L1/ep5_2",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "A",
+   "zh": "明年我可能回韩国工作。",
+   "pinyin": "Míngnián wǒ kěnéng huí Hánguó gōngzuò.",
+   "ko": "내년에 한국 돌아가서 일할지도 몰라.",
+   "note": "可能 (아마) + 回…工作",
+   "tags": [
+    "future",
+    "hook:choice"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "B",
+   "zh": "……什么时候决定的？",
+   "pinyin": "…… Shénme shíhou juédìng de?",
+   "ko": "……언제 결정한 거야?",
+   "note": "是…的 구문 (시점 강조)",
+   "tags": [
+    "feeling",
+    "function:的"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "A",
+   "zh": "还没决定，所以想问你。",
+   "pinyin": "Hái méi juédìng, suǒyǐ xiǎng wèn nǐ.",
+   "ko": "아직 결정 안 했어, 그래서 너한테 묻고 싶어.",
+   "note": "还没 (아직 안) + 所以",
+   "tags": [
+    "honest",
+    "function:没"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "B",
+   "zh": "问我？这是你的工作呀。",
+   "pinyin": "Wèn wǒ? Zhè shì nǐ de gōngzuò ya.",
+   "ko": "나한테 묻는다고? 네 일이잖아.",
+   "note": "呀 (반문)",
+   "tags": [
+    "question",
+    "particle:呀"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "A",
+   "zh": "因为我的未来里有你。",
+   "pinyin": "Yīnwèi wǒ de wèilái li yǒu nǐ.",
+   "ko": "내 미래 안에 네가 있으니까.",
+   "note": "未来 (미래) + 有",
+   "tags": [
+    "confession",
+    "hook:future"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "B",
+   "zh": "Mark……",
+   "pinyin": "Mark……",
+   "ko": "Mark……",
+   "note": "감정 침묵",
+   "tags": [
+    "feeling"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "A",
+   "zh": "如果我留在中国，你开心吗？",
+   "pinyin": "Rúguǒ wǒ liú zài Zhōngguó, nǐ kāixīn ma?",
+   "ko": "내가 중국에 남으면, 기뻐?",
+   "note": "如果 (만약) 가정문",
+   "tags": [
+    "question",
+    "function:如果"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "B",
+   "zh": "当然开心，可是……",
+   "pinyin": "Dāngrán kāixīn, kěshì……",
+   "ko": "당연히 기쁘지, 그런데……",
+   "note": "可是 (그러나) 전환",
+   "tags": [
+    "feeling",
+    "function:可是"
+   ]
+  }
+ ]
+}

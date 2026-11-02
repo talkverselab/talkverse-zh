@@ -1,0 +1,112 @@
+{
+ "id": "r3_love_l3_d07_2",
+ "region": "R3",
+ "island": "love",
+ "kind": "long",
+ "title": "커플사진 ②",
+ "emoji": "📸",
+ "scene": "프로필에 올릴 커플사진을 찍으러 갈 계획을 세운다.",
+ "speakers": {
+  "A": "A",
+  "B": "B"
+ },
+ "register": "casual",
+ "twist": 0,
+ "variant": "north",
+ "legacy": "L3/d07_2",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "zh": "一点儿都不夸张，多甜啊！",
+   "pinyin": "Yìdiǎnr dōu bù kuāzhāng, duō tián a!",
+   "ko": "하나도 안 오버야, 얼마나 달달한데!",
+   "note": "一点儿都不 '조금도 ~않다' 전면 부정",
+   "tags": [
+    "一点儿都不",
+    "多…啊"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "zh": "好好好，都听你的。",
+   "pinyin": "Hǎo hǎo hǎo, dōu tīng nǐ de.",
+   "ko": "알았어 알았어, 다 네 말대로 할게.",
+   "note": "관용표현 听你的 '네 말을 따르다'",
+   "tags": [
+    "听你的",
+    "관용표현"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "zh": "拍完把最好的设成头像。",
+   "pinyin": "Pāiwán bǎ zuì hǎo de shèchéng tóuxiàng.",
+   "ko": "찍고 나서 제일 잘 나온 걸 프사로 하자.",
+   "note": "결과보어 完 + 把…成 구문",
+   "tags": [
+    "把…成",
+    "결과보어 完"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "这样大家一看就知道了。",
+   "pinyin": "Zhèyàng dàjiā yí kàn jiù zhīdào le.",
+   "ko": "그러면 다들 보자마자 알겠네.",
+   "note": "一…就 '~하자마자 곧'",
+   "tags": [
+    "一…就",
+    "공개"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "嘻嘻，我已经开始期待了。",
+   "pinyin": "Xīxī, wǒ yǐjīng kāishǐ qīdài le.",
+   "ko": "히히, 나 벌써부터 기대돼.",
+   "note": "已经…了 + 동사 期待 '기대하다'",
+   "tags": [
+    "已经…了",
+    "期待"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "zh": "我也是，周末快点来吧。",
+   "pinyin": "Wǒ yě shì, zhōumò kuàidiǎn lái ba.",
+   "ko": "나도, 주말이 빨리 왔으면 좋겠다.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "B",
+   "zh": "记得带好相机和自拍杆。",
+   "pinyin": "Jìde dài hǎo xiàngjī hé zì pāigān.",
+   "ko": "카메라랑 셀카봉 잊지 말고 챙겨.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "A",
+   "zh": "放心，我都准备好了。",
+   "pinyin": "Fàngxīn, wǒ dōu zhǔnbèi hǎo le.",
+   "ko": "걱정 마, 다 준비해 놨어.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  }
+ ]
+}

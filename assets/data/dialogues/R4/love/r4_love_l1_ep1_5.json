@@ -1,0 +1,114 @@
+{
+ "id": "r4_love_l1_ep1_5",
+ "region": "R4",
+ "island": "love",
+ "kind": "long",
+ "title": "매칭 ⑤",
+ "emoji": "💕",
+ "scene": "Mark 매칭앱 첫 메시지 → 小丽 자기소개 → 약속 호출 → Lily↔小丽 hook",
+ "speakers": {
+  "A": "Mark",
+  "B": "小丽 / Lily"
+ },
+ "register": "casual",
+ "twist": 0,
+ "variant": "north",
+ "legacy": "L1/ep1_5",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "zh": "周六没问题，想去哪儿？",
+   "pinyin": "Zhōuliù méi wèntí, xiǎng qù nǎr?",
+   "ko": "토요일 문제없어요, 어디 가고 싶어요?",
+   "note": "没问题 + 想去哪儿",
+   "tags": [
+    "plan",
+    "function:想"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "zh": "我请你吃饭，怎么样？",
+   "pinyin": "Wǒ qǐng nǐ chī fàn, zěnmeyàng?",
+   "ko": "제가 밥 살게요, 어때요?",
+   "note": "请 (대접하다) + 怎么样",
+   "tags": [
+    "plan",
+    "hook:food"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "zh": "好呀，我知道一家好吃的店。",
+   "pinyin": "Hǎo ya, wǒ zhīdào yì jiā hǎochī de diàn.",
+   "ko": "좋아요, 제가 맛있는 가게 하나 알아요.",
+   "note": "一家…店 (양사 家)",
+   "tags": [
+    "plan",
+    "particle:呀"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "那就听你的！",
+   "pinyin": "Nà jiù tīng nǐ de!",
+   "ko": "그럼 당신 말 들을게요!",
+   "note": "听你的 (네 말대로 할게)",
+   "tags": [
+    "accept",
+    "function:的"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "晚上六点，别迟到哦。",
+   "pinyin": "Wǎnshang liù diǎn, bié chídào o.",
+   "ko": "저녁 6시, 늦지 마요.",
+   "note": "시간 표현 + 别 + 哦",
+   "tags": [
+    "plan",
+    "particle:哦"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "zh": "放心吧，我一定早到。",
+   "pinyin": "Fàngxīn ba, wǒ yídìng zǎo dào.",
+   "ko": "걱정 마요, 꼭 일찍 갈게요.",
+   "note": "放心吧 + 一定",
+   "tags": [
+    "promise",
+    "particle:吧"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "B",
+   "zh": "那周六见，Mark。",
+   "pinyin": "Nà zhōuliù jiàn, Mark.",
+   "ko": "그럼 토요일에 봐요, Mark.",
+   "note": "…见 (만나요) 마무리 인사",
+   "tags": [
+    "farewell"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "A",
+   "zh": "周六见，小丽！晚安！",
+   "pinyin": "Zhōuliù jiàn, Xiǎolì! Wǎn'ān!",
+   "ko": "토요일에 봐요, 샤오리! 잘 자요!",
+   "note": "晚安 마무리",
+   "tags": [
+    "farewell",
+    "hook:goodnight"
+   ]
+  }
+ ]
+}

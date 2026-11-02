@@ -1,0 +1,115 @@
+{
+ "id": "r4_love_l3_d15_1",
+ "region": "R4",
+ "island": "love",
+ "kind": "long",
+ "title": "꿈이야기 ①",
+ "emoji": "🌟",
+ "scene": "카페에서 서로의 꿈—창업과 개인 전시회—를 나누며 응원하는 두 사람.",
+ "speakers": {
+  "A": "A",
+  "B": "B"
+ },
+ "register": "casual",
+ "twist": 0,
+ "variant": "north",
+ "legacy": "L3/d15_1",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "A",
+   "zh": "小丽，你的梦想是什么？",
+   "pinyin": "Xiǎo Lì, nǐ de mèngxiǎng shì shénme?",
+   "ko": "샤오리, 네 꿈은 뭐야?",
+   "note": "명사 梦想 + 의문사 什么",
+   "tags": [
+    "꿈",
+    "질문"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "B",
+   "zh": "我想开一个自己的展览。",
+   "pinyin": "Wǒ xiǎng kāi yí gè zìjǐ de zhǎnlǎn.",
+   "ko": "나만의 전시회를 열고 싶어.",
+   "note": "재귀대명사 自己 (자신의)",
+   "tags": [
+    "전시회",
+    "꿈"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "A",
+   "zh": "画展吗？那太棒了！",
+   "pinyin": "Huàzhǎn ma? Nà tài bàng le!",
+   "ko": "그림 전시회? 그거 진짜 멋지다!",
+   "note": "太…了 (감탄)",
+   "tags": [
+    "응원",
+    "감탄"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "B",
+   "zh": "可是我觉得还差得远呢。",
+   "pinyin": "Kěshì wǒ juéde hái chà de yuǎn ne.",
+   "ko": "근데 아직 한참 멀었다고 생각해.",
+   "note": "정도보어 差得远 (한참 부족하다)",
+   "tags": [
+    "겸손",
+    "고민"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "A",
+   "zh": "别这么说，你画得那么好。",
+   "pinyin": "Bié zhème shuō, nǐ huà de nàme hǎo.",
+   "ko": "그런 말 마, 너 그림 그렇게 잘 그리면서.",
+   "note": "那么 + 형용사 (그렇게 ~한)",
+   "tags": [
+    "격려",
+    "칭찬"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "B",
+   "zh": "谢谢你。你的梦想呢？",
+   "pinyin": "Xièxie nǐ. Nǐ de mèngxiǎng ne?",
+   "ko": "고마워. 네 꿈은 뭔데?",
+   "note": "생략 의문문 呢 (~는?)",
+   "tags": [
+    "질문",
+    "呢"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "A",
+   "zh": "我想在中国开一家公司。",
+   "pinyin": "Wǒ xiǎng zài Zhōngguó kāi yì jiā gōngsī.",
+   "ko": "중국에서 회사를 하나 차리고 싶어.",
+   "note": "양사 家 (가게·회사 세는 단위)",
+   "tags": [
+    "창업",
+    "꿈"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "B",
+   "zh": "哇，什么样的公司？",
+   "pinyin": "Wā, shénme yàng de gōngsī?",
+   "ko": "와, 어떤 회사?",
+   "note": "什么样的 (어떤 종류의)",
+   "tags": [
+    "호기심",
+    "질문"
+   ]
+  }
+ ]
+}

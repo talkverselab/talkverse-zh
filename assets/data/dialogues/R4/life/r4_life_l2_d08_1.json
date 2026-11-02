@@ -1,0 +1,115 @@
+{
+ "id": "r4_life_l2_d08_1",
+ "region": "R4",
+ "island": "life",
+ "kind": "chat",
+ "title": "감기 ①",
+ "emoji": "🤒",
+ "scene": "감기에 걸린 小丽를 약과 죽으로 챙기는 Mark",
+ "speakers": {
+  "A": "A",
+  "B": "B"
+ },
+ "register": "casual",
+ "twist": 0,
+ "variant": "north",
+ "legacy": "L2/d08_1",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "zh": "我好像感冒了。",
+   "pinyin": "Wǒ hǎoxiàng gǎnmào le.",
+   "ko": "나 감기 걸린 것 같아.",
+   "note": "好像 (~인 것 같다, 추측)",
+   "tags": [
+    "adverb:好像",
+    "health"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "zh": "严重吗？发烧了没？",
+   "pinyin": "Yánzhòng ma? Fāshāo le méi?",
+   "ko": "심해? 열은 나 안 나?",
+   "note": "문말 没 의문문 (~했어 안 했어?)",
+   "tags": [
+    "question:没",
+    "health"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "zh": "有点儿，头也疼。",
+   "pinyin": "Yǒudiǎnr, tóu yě téng.",
+   "ko": "조금, 머리도 아파.",
+   "note": "有点儿 (좀 ~하다, 부정적 뉘앙스)",
+   "tags": [
+    "adverb:有点儿",
+    "negative"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "药吃了吗？",
+   "pinyin": "Yào chī le ma?",
+   "ko": "약은 먹었어?",
+   "note": "목적어 전치 (주제화: 약은 먹었어?)",
+   "tags": [
+    "structure:主题化",
+    "health"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "家里没药了。",
+   "pinyin": "Jiā li méi yào le.",
+   "ko": "집에 약이 다 떨어졌어.",
+   "note": "没…了 (다 떨어졌다, 상태 변화)",
+   "tags": [
+    "structure:没了",
+    "negative"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "zh": "等着，我马上买了给你送过去。",
+   "pinyin": "Děng zhe, wǒ mǎshàng mǎi le gěi nǐ sòng guòqù.",
+   "ko": "기다려, 바로 사서 갈게.",
+   "note": "지속 조사 着 + 연동문 买了…送过去 (사서 갖다 주다)",
+   "tags": [
+    "aspect:着",
+    "complement:方向"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "B",
+   "zh": "不用啦，你在上班呢。",
+   "pinyin": "Bùyòng la, nǐ zài shàngbān ne.",
+   "ko": "괜찮아, 너 지금 일하는 중이잖아.",
+   "note": "在…呢 (지금 ~하는 중)",
+   "tags": [
+    "structure:在呢",
+    "positive"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "A",
+   "zh": "女朋友比上班重要。",
+   "pinyin": "Nǚpéngyou bǐ shàngbān zhòngyào.",
+   "ko": "여자친구가 일보다 중요하지.",
+   "note": "比 비교문 (A가 B보다 ~하다)",
+   "tags": [
+    "structure:比",
+    "positive"
+   ]
+  }
+ ]
+}

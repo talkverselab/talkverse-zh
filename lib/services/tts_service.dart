@@ -36,6 +36,7 @@ class TtsService {
     await _tts.setLanguage('zh-CN');
     await _tts.setSpeechRate(0.45);
     await _tts.setPitch(1.0);
+    await _tts.awaitSpeakCompletion(true); // 회화 재생 패널이 턴을 순서대로 읽을 수 있게 speak 가 끝날 때까지 기다린다
     await _tts.setVolume(1.0);
     _tts.setCompletionHandler(() => _speaking = null);
     _tts.setCancelHandler(() => _speaking = null);
@@ -74,20 +75,21 @@ class TtsService {
 
   Future<void> speak(String text) => _speakWith(text, null, 1.0);
 
-  /// 화자 성별에 맞춰 읽기. gender: 'male' | 'female'
-  Future<void> speakAs(String text, {required String gender}) async {
+  /// 화자 성별에 맞춰 읽기. gender: 'male' | 'female'. rate 를 주면 그 속도(기본 0.45).
+  Future<void> speakAs(String text, {required String gender, double? rate}) async {
     await _scanVoices();
     final male = gender == 'male';
     final voice = male ? _maleVoice : _femaleVoice;
     // 전용 보이스가 있으면 피치는 1.0, 없으면 피치로 성별 구분
     final pitch = voice != null ? 1.0 : (male ? 0.6 : 1.15);
-    await _speakWith(text, voice, pitch);
+    await _speakWith(text, voice, pitch, rate: rate);
   }
 
   Future<void> _speakWith(
-      String text, Map<String, String>? voice, double pitch) async {
+      String text, Map<String, String>? voice, double pitch, {double? rate}) async {
     await _ensureInit();
     await _tts.stop();
+    await _tts.setSpeechRate(rate ?? 0.45);
     if (voice != null) {
       await _tts.setVoice(voice);
     } else {

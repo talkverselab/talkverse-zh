@@ -1,0 +1,112 @@
+{
+ "id": "r4_life_l2_d04_2",
+ "region": "R4",
+ "island": "life",
+ "kind": "chat",
+ "title": "날씨 ②",
+ "emoji": "🌧️",
+ "scene": "공원 데이트 날 갑자기 닥친 황사와 비, 집콕으로 계획 변경",
+ "speakers": {
+  "A": "A",
+  "B": "B"
+ },
+ "register": "casual",
+ "twist": 0,
+ "variant": "north",
+ "legacy": "L2/d04_2",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "A",
+   "zh": "好是好，可是没爆米花。",
+   "pinyin": "Hǎo shì hǎo, kěshì méi bàomǐhuā.",
+   "ko": "좋긴 좋은데, 팝콘이 없어.",
+   "note": "A是A，可是… (~하긴 한데 그러나)",
+   "tags": [
+    "structure:A是A",
+    "banter"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "B",
+   "zh": "冰箱里有薯片啊。",
+   "pinyin": "Bīngxiāng li yǒu shǔpiàn a.",
+   "ko": "냉장고에 감자칩 있잖아.",
+   "note": "방위사 里 + 有 존재문",
+   "tags": [
+    "structure:有",
+    "food"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "A",
+   "zh": "那是我的！你什么时候发现的？",
+   "pinyin": "Nà shì wǒ de! Nǐ shénme shíhou fāxiàn de?",
+   "ko": "그거 내 건데! 언제 찾아낸 거야?",
+   "note": "是…的 구문 (과거 발생 시점 강조)",
+   "tags": [
+    "structure:是的",
+    "chaos"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "B",
+   "zh": "上周就吃了一半啦。",
+   "pinyin": "Shàng zhōu jiù chī le yībàn la.",
+   "ko": "지난주에 벌써 반 먹었지롱.",
+   "note": "부사 就 (이미/벌써) + 啦",
+   "tags": [
+    "adverb:就",
+    "humor"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "A",
+   "zh": "小丽！你这个薯片小偷！",
+   "pinyin": "Xiǎolì! Nǐ zhège shǔpiàn xiǎotōu!",
+   "ko": "샤오리! 이 감자칩 도둑아!",
+   "note": "你这个+명사 (친근한 타박 호칭)",
+   "tags": [
+    "structure:你这个",
+    "chaos"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "B",
+   "zh": "别生气嘛，我再买一包。",
+   "pinyin": "Biéshēngqì ma, wǒ zài mǎi yībāo.",
+   "ko": "화내지 마, 내가 한 봉지 더 사줄게.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "A",
+   "zh": "现在超市都关门了吧？",
+   "pinyin": "Xiànzài chāoshì dōu guānmén le ba?",
+   "ko": "지금 마트 다 문 닫았을걸?",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "B",
+   "zh": "那我们分着吃剩下的。",
+   "pinyin": "Nà wǒmen fēnzhe chī shèngxià de.",
+   "ko": "그럼 남은 거 나눠 먹자.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  }
+ ]
+}

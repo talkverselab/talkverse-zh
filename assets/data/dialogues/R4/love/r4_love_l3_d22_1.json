@@ -1,0 +1,115 @@
+{
+ "id": "r4_love_l3_d22_1",
+ "region": "R4",
+ "island": "love",
+ "kind": "long",
+ "title": "상견례준비 ①",
+ "emoji": "🚄",
+ "scene": "쓰촨행 기차표를 끊고, 小丽 부모님께 드릴 첫인사를 연습한다.",
+ "speakers": {
+  "A": "A",
+  "B": "B"
+ },
+ "register": "casual",
+ "twist": 0,
+ "variant": "north",
+ "legacy": "L3/d22_1",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "zh": "票买好了，下周五出发！",
+   "pinyin": "Piào mǎi hǎo le, xià zhōu wǔ chūfā!",
+   "ko": "표 다 샀어, 다음 주 금요일 출발!",
+   "note": "결과보어 好 '동작의 완성'",
+   "tags": [
+    "결과보어",
+    "기차"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "zh": "去成都的高铁要几个小时？",
+   "pinyin": "Qù Chéngdū de gāotiě yào jǐ ge xiǎoshí?",
+   "ko": "청두 가는 고속철은 몇 시간 걸려?",
+   "note": "要+시간 '(시간이) 걸리다' + 의문사 几",
+   "tags": [
+    "要+시간",
+    "여행"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "zh": "八个小时，你可以背单词。",
+   "pinyin": "Bā ge xiǎoshí, nǐ kěyǐ bèi dāncí.",
+   "ko": "여덟 시간, 너 단어 외우기 딱 좋겠네.",
+   "note": "可以 제안 용법 '~하면 되겠다'",
+   "tags": [
+    "可以",
+    "유머"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "我在练习：叔叔阿姨好！",
+   "pinyin": "Wǒ zài liànxí: shūshu āyí hǎo!",
+   "ko": "나 연습 중이야. 아버님 어머님 안녕하세요!",
+   "note": "진행의 在 + 호칭 인사 표현",
+   "tags": [
+    "진행 在",
+    "인사"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "哈哈，跟第一次见我时一样。",
+   "pinyin": "Hāhā, gēn dì yī cì jiàn wǒ shí yíyàng.",
+   "ko": "하하, 나 처음 만났을 때랑 똑같네.",
+   "note": "'跟…一样' 동등 비교",
+   "tags": [
+    "跟…一样",
+    "추억"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "zh": "你爸爸最喜欢什么？",
+   "pinyin": "Nǐ bàba zuì xǐhuan shénme?",
+   "ko": "너희 아버지는 뭘 제일 좋아하셔?",
+   "note": "최상급 부사 最",
+   "tags": [
+    "最",
+    "상견례"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "B",
+   "zh": "白酒，不过你千万别多喝。",
+   "pinyin": "Báijiǔ, búguò nǐ qiānwàn bié duō hē.",
+   "ko": "백주. 근데 너 절대 많이 마시면 안 돼.",
+   "note": "'千万别' 강한 금지 표현",
+   "tags": [
+    "千万别",
+    "술"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "A",
+   "zh": "放心，我会说“我开车”。",
+   "pinyin": "Fàngxīn, wǒ huì shuō “wǒ kāichē”.",
+   "ko": "걱정 마, '저 운전해야 해서요'라고 할게.",
+   "note": "조동사 会 '~할 것이다' + 인용",
+   "tags": [
+    "会",
+    "유머"
+   ]
+  }
+ ]
+}

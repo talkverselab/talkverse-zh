@@ -1,0 +1,112 @@
+{
+ "id": "r4_life_l2_d09_2",
+ "region": "R4",
+ "island": "life",
+ "kind": "chat",
+ "title": "월급날 ②",
+ "emoji": "💰",
+ "scene": "월급이 들어온 날, 한턱 쏘려는 분위기와 절약 결심 사이에서 벌어지는 실랑이",
+ "speakers": {
+  "A": "A",
+  "B": "B"
+ },
+ "register": "casual",
+ "twist": 0,
+ "variant": "north",
+ "legacy": "L2/d09_2",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "A",
+   "zh": "别啊，工资会哭的。",
+   "pinyin": "Bié a, gōngzī huì kū de.",
+   "ko": "안 돼, 월급이 울 거야.",
+   "note": "别 금지 + 会……的 (확신 어투)",
+   "tags": [
+    "humor",
+    "grammar:会的"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "B",
+   "zh": "刚才谁说要请客的？",
+   "pinyin": "Gāngcái shéi shuō yào qǐngkè de?",
+   "ko": "방금 누가 쏜다고 했더라?",
+   "note": "刚才 (방금) + 의문사 谁로 추궁",
+   "tags": [
+    "banter",
+    "question"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "A",
+   "zh": "好好好，你赢了。",
+   "pinyin": "Hǎo hǎo hǎo, nǐ yíng le.",
+   "ko": "알았어 알았어, 네가 이겼어.",
+   "note": "好 반복으로 체념, 어기조사 了",
+   "tags": [
+    "banter",
+    "particle:了"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "B",
+   "zh": "那再加一杯奶茶哦。",
+   "pinyin": "Nà zài jiā yì bēi nǎichá o.",
+   "ko": "그럼 밀크티 한 잔 추가야.",
+   "note": "再 (추가로 더) + 어기조사 哦",
+   "tags": [
+    "food",
+    "particle:哦"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "A",
+   "zh": "我的钱包已经空了……",
+   "pinyin": "Wǒ de qiánbāo yǐjīng kōng le……",
+   "ko": "내 지갑 벌써 텅 비었어……",
+   "note": "已经……了 (이미 ~해 버림)",
+   "tags": [
+    "money",
+    "grammar:已经了"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "B",
+   "zh": "哈哈，下个月继续加油吧。",
+   "pinyin": "Hāhā, xiàgèyuè jìxù jiāyóu ba.",
+   "ko": "하하, 다음 달에도 계속 화이팅하자.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "A",
+   "zh": "这个月又要吃土了。",
+   "pinyin": "Zhège yuè yòu yào chī tǔ le.",
+   "ko": "이번 달도 또 궁상떨어야겠네.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "B",
+   "zh": "至少我们吃得很开心呀。",
+   "pinyin": "Zhìshǎo wǒmen chī dé hěn kāixīn ya.",
+   "ko": "그래도 우린 맛있게 먹었잖아.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  }
+ ]
+}

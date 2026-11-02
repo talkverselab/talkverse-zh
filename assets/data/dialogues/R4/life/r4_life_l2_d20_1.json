@@ -1,0 +1,115 @@
+{
+ "id": "r4_life_l2_d20_1",
+ "region": "R4",
+ "island": "life",
+ "kind": "chat",
+ "title": "이사 ①",
+ "emoji": "🏠",
+ "scene": "이사 갈 집을 고르며 역세권파 Mark와 조용한 동네파 小丽가 맞붙는다.",
+ "speakers": {
+  "A": "A",
+  "B": "B"
+ },
+ "register": "casual",
+ "twist": 0,
+ "variant": "north",
+ "legacy": "L2/d20_1",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "A",
+   "zh": "我们看看新房子吧。",
+   "pinyin": "Wǒmen kànkan xīn fángzi ba.",
+   "ko": "우리 새집 좀 보자.",
+   "note": "동사 중첩 看看: '좀 ~해보다' 가볍게 제안. 吧로 권유.",
+   "tags": [
+    "동사중첩",
+    "吧"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "B",
+   "zh": "好啊，你想住哪儿？",
+   "pinyin": "Hǎo a, nǐ xiǎng zhù nǎr?",
+   "ko": "좋아, 넌 어디 살고 싶은데?",
+   "note": "想+동사: 희망 표현. 住哪儿 '어디에 살다'.",
+   "tags": [
+    "想",
+    "의문사"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "A",
+   "zh": "一定要离地铁站近！",
+   "pinyin": "Yídìng yào lí dìtiězhàn jìn!",
+   "ko": "무조건 지하철역이랑 가까워야 해!",
+   "note": "离+장소+近/远: 거리 표현 핵심 패턴. 一定要 '반드시'.",
+   "tags": [
+    "离",
+    "一定要"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "B",
+   "zh": "不行，地铁站旁边太吵了。",
+   "pinyin": "Bù xíng, dìtiězhàn pángbiān tài chǎo le.",
+   "ko": "안 돼, 역 옆은 너무 시끄러워.",
+   "note": "不行: 단호한 거절. 吵 '시끄럽다'.",
+   "tags": [
+    "不行",
+    "太…了"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "A",
+   "zh": "可是我每天要上班啊。",
+   "pinyin": "Kěshì wǒ měitiān yào shàngbān a.",
+   "ko": "근데 나 매일 출근해야 하잖아.",
+   "note": "要+동사: 의무 '~해야 한다'. 可是로 반박 연결.",
+   "tags": [
+    "要",
+    "可是"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "B",
+   "zh": "我在家工作，需要安静。",
+   "pinyin": "Wǒ zài jiā gōngzuò, xūyào ānjìng.",
+   "ko": "난 재택근무라 조용한 게 필요해.",
+   "note": "在+장소+동사: 동작 장소. 需要 '필요하다'.",
+   "tags": [
+    "在",
+    "需要"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "A",
+   "zh": "那我每天走一个小时？",
+   "pinyin": "Nà wǒ měitiān zǒu yí ge xiǎoshí?",
+   "ko": "그럼 난 매일 한 시간을 걸으라고?",
+   "note": "시량보어: 동사 뒤 시간(走一个小时)으로 지속 시간 표현.",
+   "tags": [
+    "시량보어",
+    "반문"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "B",
+   "zh": "运动对身体好嘛。",
+   "pinyin": "Yùndòng duì shēntǐ hǎo ma.",
+   "ko": "운동이 몸에 좋잖아.",
+   "note": "对…好: '~에 좋다'. 嘛로 뻔뻔한 정당화 어투.",
+   "tags": [
+    "对…好",
+    "嘛"
+   ]
+  }
+ ]
+}

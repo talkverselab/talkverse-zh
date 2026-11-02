@@ -1,0 +1,115 @@
+{
+ "id": "r4_love_l1_ep4_2",
+ "region": "R4",
+ "island": "love",
+ "kind": "long",
+ "title": "갈등 ②",
+ "emoji": "⚡",
+ "scene": "연락 두절 오해 — 서운함 · 변명 · 질투 · 사과 · 화해 (반말 전환)",
+ "speakers": {
+  "A": "Mark",
+  "B": "小丽 / Lily"
+ },
+ "register": "casual",
+ "twist": 0,
+ "variant": "north",
+ "legacy": "L1/ep4_2",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "zh": "还有一件事要问你。",
+   "pinyin": "Hái yǒu yí jiàn shì yào wèn nǐ.",
+   "ko": "물어볼 게 하나 더 있어.",
+   "note": "一件事 (양사 件) + 要",
+   "tags": [
+    "conflict",
+    "function:要"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "zh": "你说，我都告诉你。",
+   "pinyin": "Nǐ shuō, wǒ dōu gàosu nǐ.",
+   "ko": "말해, 다 알려줄게.",
+   "note": "都 (전부) + 告诉",
+   "tags": [
+    "honest",
+    "function:都"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "zh": "昨天有人看见你和一个女生。",
+   "pinyin": "Zuótiān yǒu rén kànjiàn nǐ hé yí ge nǚshēng.",
+   "ko": "어제 누가 너 어떤 여자랑 있는 거 봤대.",
+   "note": "有人 (누군가) + 看见",
+   "tags": [
+    "conflict",
+    "hook:misunderstand"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "女生？啊！那是我同事！",
+   "pinyin": "Nǚshēng? A! Nà shì wǒ tóngshì!",
+   "ko": "여자? 아! 그거 내 직장 동료야!",
+   "note": "同事 (동료)",
+   "tags": [
+    "excuse",
+    "particle:啊"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "同事？这么晚一起吃饭？",
+   "pinyin": "Tóngshì? Zhème wǎn yìqǐ chī fàn?",
+   "ko": "동료? 그렇게 늦게 같이 밥을 먹어?",
+   "note": "这么晚 + 一起",
+   "tags": [
+    "conflict",
+    "hook:jealous"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "zh": "是加班餐，五个人一起！",
+   "pinyin": "Shì jiābān cān, wǔ ge rén yìqǐ!",
+   "ko": "야근 식사였어, 다섯 명이 같이!",
+   "note": "숫자+个人 + 一起",
+   "tags": [
+    "excuse",
+    "topic:job"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "B",
+   "zh": "真的只是同事？",
+   "pinyin": "Zhēn de zhǐshì tóngshì?",
+   "ko": "정말 그냥 동료야?",
+   "note": "只是 (단지)",
+   "tags": [
+    "conflict",
+    "question"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "A",
+   "zh": "真的！我心里只有你。",
+   "pinyin": "Zhēn de! Wǒ xīnli zhǐ yǒu nǐ.",
+   "ko": "정말이야! 내 마음엔 너뿐이야.",
+   "note": "心里 + 只有 (오직)",
+   "tags": [
+    "confession",
+    "function:有"
+   ]
+  }
+ ]
+}

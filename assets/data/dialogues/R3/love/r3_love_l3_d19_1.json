@@ -1,0 +1,115 @@
+{
+ "id": "r3_love_l3_d19_1",
+ "region": "R3",
+ "island": "love",
+ "kind": "long",
+ "title": "냉전 ①",
+ "emoji": "🧊",
+ "scene": "연락이 끊긴 3일, 각자의 방에서 혼잣말과 보내지 못한 메시지가 오간다.",
+ "speakers": {
+  "A": "A",
+  "B": "B"
+ },
+ "register": "casual",
+ "twist": 0,
+ "variant": "north",
+ "legacy": "L3/d19_1",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "A",
+   "zh": "已经三天没有她的消息了。",
+   "pinyin": "Yǐjīng sān tiān méiyǒu tā de xiāoxi le.",
+   "ko": "벌써 사흘째 그녀에게서 소식이 없다.",
+   "note": "시간+没+동사 '~동안 안 했다'",
+   "tags": [
+    "시량보어",
+    "독백"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "B",
+   "zh": "手机安静得让人心烦。",
+   "pinyin": "Shǒujī ānjìng de ràng rén xīnfán.",
+   "ko": "휴대폰이 조용해서 사람 속이 터진다.",
+   "note": "정도보어 得 + 사역동사 让",
+   "tags": [
+    "정도보어",
+    "让"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "A",
+   "zh": "我是不是说错话了？",
+   "pinyin": "Wǒ shì bu shì shuō cuò huà le?",
+   "ko": "내가 말을 잘못한 걸까?",
+   "note": "是不是 확인의문 + 결과보어 错",
+   "tags": [
+    "是不是",
+    "결과보어"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "B",
+   "zh": "他为什么一句话也不发？",
+   "pinyin": "Tā wèishénme yí jù huà yě bù fā?",
+   "ko": "저 사람은 왜 한마디도 안 보내는 거야?",
+   "note": "'一…也不' 전면 부정",
+   "tags": [
+    "一…也不",
+    "원망"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "A",
+   "zh": "打开聊天框，又关上了。",
+   "pinyin": "Dǎkāi liáotiān kuàng, yòu guānshàng le.",
+   "ko": "채팅창을 열었다가, 또 닫아버렸다.",
+   "note": "又 '또' (동작의 반복) + 결과보어 上",
+   "tags": [
+    "又",
+    "독백"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "B",
+   "zh": "写了又删，删了又写。",
+   "pinyin": "Xiě le yòu shān, shān le yòu xiě.",
+   "ko": "썼다가 지우고, 지웠다가 또 쓴다.",
+   "note": "'V了又V' 반복 구조",
+   "tags": [
+    "V了又V",
+    "망설임"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "A",
+   "zh": "面子有什么用呢？",
+   "pinyin": "Miànzi yǒu shénme yòng ne?",
+   "ko": "체면이 다 무슨 소용이야?",
+   "note": "'有什么用' 반어 표현 + 관용어 面子 (체면·자존심)",
+   "tags": [
+    "반어문",
+    "후회"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "B",
+   "zh": "生气是假的，想他是真的。",
+   "pinyin": "Shēngqì shì jiǎ de, xiǎng tā shì zhēn de.",
+   "ko": "화난 건 가짜고, 보고 싶은 게 진짜야.",
+   "note": "'是…的' 대비 구문 (真/假)",
+   "tags": [
+    "是…的",
+    "본심"
+   ]
+  }
+ ]
+}

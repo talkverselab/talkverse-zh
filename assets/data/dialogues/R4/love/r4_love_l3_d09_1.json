@@ -1,0 +1,115 @@
+{
+ "id": "r4_love_l3_d09_1",
+ "region": "R4",
+ "island": "love",
+ "kind": "long",
+ "title": "취미교환 ①",
+ "emoji": "🎨",
+ "scene": "주말 오후, 서로의 취미인 그림과 등산을 가르쳐 주기로 하는 두 사람.",
+ "speakers": {
+  "A": "A",
+  "B": "B"
+ },
+ "register": "casual",
+ "twist": 0,
+ "variant": "north",
+ "legacy": "L3/d09_1",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "A",
+   "zh": "小丽，你最大的爱好是什么？",
+   "pinyin": "Xiǎolì, nǐ zuì dà de àihào shì shénme?",
+   "ko": "샤오리, 네 제일 큰 취미가 뭐야?",
+   "note": "관형어 조사 的 (最大的爱好)",
+   "tags": [
+    "취미",
+    "질문"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "B",
+   "zh": "我最喜欢画画儿。",
+   "pinyin": "Wǒ zuì xǐhuan huà huàr.",
+   "ko": "나는 그림 그리는 게 제일 좋아.",
+   "note": "부사 最 (최상급 표현)",
+   "tags": [
+    "취미",
+    "그림"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "zh": "你呢？你喜欢做什么？",
+   "pinyin": "Nǐ ne? Nǐ xǐhuan zuò shénme?",
+   "ko": "너는? 너는 뭐 하는 거 좋아해?",
+   "note": "어기조사 呢 (되묻기)",
+   "tags": [
+    "질문",
+    "呢"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "我喜欢爬山，特别舒服。",
+   "pinyin": "Wǒ xǐhuan pá shān, tèbié shūfu.",
+   "ko": "나는 등산이 좋아, 진짜 상쾌하거든.",
+   "note": "부사 特别 (정도 강조)",
+   "tags": [
+    "등산",
+    "감정"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "那我们互相教吧！",
+   "pinyin": "Nà wǒmen hùxiāng jiāo ba!",
+   "ko": "그럼 우리 서로 가르쳐 주자!",
+   "note": "부사 互相 + 청유 어기조사 吧",
+   "tags": [
+    "제안",
+    "互相"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "zh": "好主意！先教我画画吧。",
+   "pinyin": "Hǎo zhǔyi! Xiān jiāo wǒ huà huà ba.",
+   "ko": "좋은 생각이야! 먼저 나한테 그림 가르쳐 줘.",
+   "note": "부사 先 + 이중목적어 동사 教",
+   "tags": [
+    "제안",
+    "그림"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "B",
+   "zh": "你先画一只小猫试试。",
+   "pinyin": "Nǐ xiān huà yì zhī xiǎo māo shìshi.",
+   "ko": "먼저 고양이 한 마리 그려 봐.",
+   "note": "양사 只 + 동사 중첩 试试 (시도)",
+   "tags": [
+    "그림",
+    "시도"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "A",
+   "zh": "哈哈，我画得太难看了！",
+   "pinyin": "Hāhā, wǒ huà de tài nánkàn le!",
+   "ko": "하하, 나 너무 못 그렸어!",
+   "note": "정도보어 得 + 太…了",
+   "tags": [
+    "유머",
+    "정도보어"
+   ]
+  }
+ ]
+}

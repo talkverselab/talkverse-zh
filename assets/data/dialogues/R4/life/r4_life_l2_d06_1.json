@@ -1,0 +1,115 @@
+{
+ "id": "r4_life_l2_d06_1",
+ "region": "R4",
+ "island": "life",
+ "kind": "chat",
+ "title": "운동 ①",
+ "emoji": "💪",
+ "scene": "또 헬스장 등록한 Mark, 작심삼일 전과를 놀리는 小丽",
+ "speakers": {
+  "A": "A",
+  "B": "B"
+ },
+ "register": "casual",
+ "twist": 0,
+ "variant": "north",
+ "legacy": "L2/d06_1",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "A",
+   "zh": "我办了健身卡！",
+   "pinyin": "Wǒ bàn le jiànshēn kǎ!",
+   "ko": "나 헬스장 등록했어!",
+   "note": "동사 办 (카드·수속을 만들다) + 了",
+   "tags": [
+    "verb:办",
+    "positive"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "B",
+   "zh": "哦？这是第几次了？",
+   "pinyin": "Ó? Zhè shì dì jǐ cì le?",
+   "ko": "오? 이번이 몇 번째더라?",
+   "note": "서수 第 + 동량사 次 (몇 번째)",
+   "tags": [
+    "measure:次",
+    "banter"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "A",
+   "zh": "这次不一样！",
+   "pinyin": "Zhè cì bù yīyàng!",
+   "ko": "이번엔 달라!",
+   "note": "不一样 (다르다) 강조 표현",
+   "tags": [
+    "adjective:一样",
+    "banter"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "B",
+   "zh": "上次你才去了三天。",
+   "pinyin": "Shàng cì nǐ cái qù le sān tiān.",
+   "ko": "지난번엔 겨우 3일 가고 끝났잖아.",
+   "note": "부사 才 (겨우 ~밖에, 기대 이하 강조)",
+   "tags": [
+    "complement:时量",
+    "banter"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "A",
+   "zh": "那是因为下雨嘛。",
+   "pinyin": "Nà shì yīnwèi xià yǔ ma.",
+   "ko": "그건 비가 와서 그랬던 거잖아.",
+   "note": "因为 (~때문에, 원인 표현)",
+   "tags": [
+    "conjunction:因为",
+    "excuse"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "B",
+   "zh": "健身房在室内呀。",
+   "pinyin": "Jiànshēnfáng zài shìnèi ya.",
+   "ko": "헬스장은 실내거든.",
+   "note": "在+장소 (위치 표현) + 呀",
+   "tags": [
+    "preposition:在",
+    "humor"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "A",
+   "zh": "……路上会淋湿的。",
+   "pinyin": "…… Lùshang huì lín shī de.",
+   "ko": "…가는 길에 젖는단 말이야.",
+   "note": "会…的 (~할 거야, 확신) + 결과보어 湿",
+   "tags": [
+    "structure:会的",
+    "excuse"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "B",
+   "zh": "借口真多哈。",
+   "pinyin": "Jièkǒu zhēn duō ha.",
+   "ko": "핑계 참 많다?",
+   "note": "어기조사 哈 (가벼운 놀림·확인)",
+   "tags": [
+    "particle:哈",
+    "banter"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,115 @@
+{
+ "id": "r4_life_l2_d05_1",
+ "region": "R4",
+ "island": "life",
+ "kind": "chat",
+ "title": "드라마 ①",
+ "emoji": "📺",
+ "scene": "먼저 결말을 본 小丽의 스포일러에 발끈하는 Mark",
+ "speakers": {
+  "A": "A",
+  "B": "B"
+ },
+ "register": "casual",
+ "twist": 0,
+ "variant": "north",
+ "legacy": "L2/d05_1",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "zh": "我看完最后一集了！",
+   "pinyin": "Wǒ kàn wán zuìhòu yī jí le!",
+   "ko": "나 마지막 화 다 봤어!",
+   "note": "결과보어 完 (다 ~하다)",
+   "tags": [
+    "complement:完",
+    "drama"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "zh": "停！别说！我还没看！",
+   "pinyin": "Tíng! Bié shuō! Wǒ hái méi kàn!",
+   "ko": "멈춰! 말하지 마! 나 아직 안 봤어!",
+   "note": "别+동사 (금지 명령)",
+   "tags": [
+    "negation:别",
+    "chaos"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "zh": "男主角最后……",
+   "pinyin": "Nán zhǔjué zuìhòu……",
+   "ko": "남주가 마지막에…",
+   "note": "最后 (마지막에, 시간 부사어)",
+   "tags": [
+    "adverb:最后",
+    "banter"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "闭嘴闭嘴闭嘴！",
+   "pinyin": "Bìzuǐ bìzuǐ bìzuǐ!",
+   "ko": "입 다물어 다물어 다물라고!",
+   "note": "동사 반복 (강한 어감의 구어체)",
+   "tags": [
+    "repetition",
+    "chaos"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "哈哈，他结婚了哦。",
+   "pinyin": "Hāhā, tā jiéhūn le o.",
+   "ko": "하하, 걔 결혼했다?",
+   "note": "어기조사 哦 (슬쩍 알려주는 어감)",
+   "tags": [
+    "particle:哦",
+    "humor"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "zh": "你说了！你真的说了！",
+   "pinyin": "Nǐ shuō le! Nǐ zhēn de shuō le!",
+   "ko": "말했어! 진짜 말해버렸어!",
+   "note": "了 (동작 완료) + 真的 강조",
+   "tags": [
+    "aspect:了",
+    "chaos"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "B",
+   "zh": "跟谁结的我没说呀。",
+   "pinyin": "Gēn shéi jié de wǒ méi shuō ya.",
+   "ko": "누구랑 했는지는 말 안 했잖아.",
+   "note": "개사 跟 (~와) + 是…的 생략형",
+   "tags": [
+    "preposition:跟",
+    "humor"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "A",
+   "zh": "我不听我不听。",
+   "pinyin": "Wǒ bù tīng wǒ bù tīng.",
+   "ko": "안 들어 안 들을 거야.",
+   "note": "문장 반복 (떼쓰기 구어 표현)",
+   "tags": [
+    "repetition",
+    "banter"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,112 @@
+{
+ "id": "r4_life_l2_d11_2",
+ "region": "R4",
+ "island": "life",
+ "kind": "chat",
+ "title": "여행준비 ②",
+ "emoji": "🧳",
+ "scene": "주말 여행 전날 짐 싸기, 필수품은 다 빼먹고 간식만 챙긴 Mark에게 쏟아지는 잔소리",
+ "speakers": {
+  "A": "A",
+  "B": "B"
+ },
+ "register": "casual",
+ "twist": 0,
+ "variant": "north",
+ "legacy": "L2/d11_2",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "zh": "我真是服了你了。",
+   "pinyin": "Wǒ zhēnshi fú le nǐ le.",
+   "ko": "너한테 진짜 두 손 들었다.",
+   "note": "구어 표현 服了 (졌다, 못 말린다)",
+   "tags": [
+    "banter",
+    "expression:服了"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "zh": "吃的最重要嘛。",
+   "pinyin": "Chī de zuì zhòngyào ma.",
+   "ko": "먹는 게 제일 중요하잖아.",
+   "note": "동사+的 명사화 (먹을 것) + 嘛",
+   "tags": [
+    "food",
+    "grammar:的명사화"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "zh": "衣服我来收拾，你别动了。",
+   "pinyin": "Yīfu wǒ lái shōushi, nǐ bié dòng le.",
+   "ko": "옷은 내가 쌀게, 넌 손대지 마.",
+   "note": "我来+동사 (내가 할게) + 别……了",
+   "tags": [
+    "daily",
+    "pattern:我来"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "那我负责吃零食。",
+   "pinyin": "Nà wǒ fùzé chī língshí.",
+   "ko": "그럼 난 간식 먹는 거 담당할게.",
+   "note": "负责+동사구 (~을 담당하다)",
+   "tags": [
+    "humor",
+    "verb:负责"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "你负责搬行李！",
+   "pinyin": "Nǐ fùzé bān xíngli!",
+   "ko": "너는 짐 나르기 담당이야!",
+   "note": "같은 구문 되받아치기 (负责 반복)",
+   "tags": [
+    "banter",
+    "verb:负责"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "zh": "遵命，行李箱交给我。",
+   "pinyin": "Zūnmìng, xínglǐxiāng jiāogěi wǒ.",
+   "ko": "네네, 캐리어는 나한테 맡겨.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "B",
+   "zh": "牙刷充电器我都带好了。",
+   "pinyin": "Yáshuā chōngdiànqì wǒ dōu dài hǎo le.",
+   "ko": "칫솔이랑 충전기는 내가 다 챙겼어.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "A",
+   "zh": "有你在真是太好了。",
+   "pinyin": "Yǒu nǐ zài zhēnshì tàihǎole.",
+   "ko": "네가 있어서 진짜 다행이다.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  }
+ ]
+}

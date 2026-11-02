@@ -1,0 +1,112 @@
+{
+ "id": "r4_life_l2_d20_2",
+ "region": "R4",
+ "island": "life",
+ "kind": "chat",
+ "title": "이사 ②",
+ "emoji": "🏠",
+ "scene": "이사 갈 집을 고르며 역세권파 Mark와 조용한 동네파 小丽가 맞붙는다.",
+ "speakers": {
+  "A": "A",
+  "B": "B"
+ },
+ "register": "casual",
+ "twist": 0,
+ "variant": "north",
+ "legacy": "L2/d20_2",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "A",
+   "zh": "那你怎么不去走路呢？",
+   "pinyin": "Nà nǐ zěnme bú qù zǒulù ne?",
+   "ko": "그럼 넌 왜 안 걷는데?",
+   "note": "怎么不…呢: '왜 ~하지 않느냐' 반문 패턴. 走路 '걷다'",
+   "tags": [
+    "怎么不",
+    "呢"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "B",
+   "zh": "我又不用上班，哈哈。",
+   "pinyin": "Wǒ yòu bú yòng shàngbān, hāhā.",
+   "ko": "난 출근 안 해도 되거든, 하하.",
+   "note": "又不: '~한 것도 아닌데' 뻔뻔 반박 어투. 不用 '~할 필요 없다'.",
+   "tags": [
+    "又不",
+    "不用"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "A",
+   "zh": "太不公平了吧！",
+   "pinyin": "Tài bù gōngpíng le ba!",
+   "ko": "너무 불공평한 거 아냐!",
+   "note": "太不…了: 부정형 강조. 吧로 항의성 감탄.",
+   "tags": [
+    "太…了",
+    "항의"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "B",
+   "zh": "那找一个中间的，好不好？",
+   "pinyin": "Nà zhǎo yí ge zhōngjiān de, hǎo bu hǎo?",
+   "ko": "그럼 중간쯤인 데 찾자, 어때?",
+   "note": "好不好: 정반의문으로 부드러운 타협 제안.",
+   "tags": [
+    "好不好",
+    "타협"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "A",
+   "zh": "行吧，听你的。",
+   "pinyin": "Xíng ba, tīng nǐ de.",
+   "ko": "그래 알았어, 네 말 들을게.",
+   "note": "听你的: '네 말대로 할게' 양보 표현. 行吧 '그러자 뭐'.",
+   "tags": [
+    "听你的",
+    "양보"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "B",
+   "zh": "太好了，那我们周末去看房。",
+   "pinyin": "Tàihǎole, nà wǒmen zhōumò qùkànfáng.",
+   "ko": "좋아, 그럼 주말에 집 보러 가자.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "A",
+   "zh": "好，希望能找到合适的。",
+   "pinyin": "Hǎo, xīwàng néng zhǎodào héshì de.",
+   "ko": "응, 딱 맞는 데 찾았으면 좋겠다.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "B",
+   "zh": "一定可以，我们一起加油。",
+   "pinyin": "Yídìng kěyǐ, wǒmen yìqǐ jiāyóu.",
+   "ko": "분명 될 거야, 우리 같이 힘내자.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,115 @@
+{
+ "id": "r4_love_l3_d10_1",
+ "region": "R4",
+ "island": "love",
+ "kind": "long",
+ "title": "어린시절 ①",
+ "emoji": "📷",
+ "scene": "샤오리 집에서 어릴 적 사진첩을 함께 넘겨 보는 저녁.",
+ "speakers": {
+  "A": "A",
+  "B": "B"
+ },
+ "register": "casual",
+ "twist": 0,
+ "variant": "north",
+ "legacy": "L3/d10_1",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "zh": "你看，这是我小时候的照片。",
+   "pinyin": "Nǐ kàn, zhè shì wǒ xiǎoshíhou de zhàopiàn.",
+   "ko": "봐 봐, 이거 내 어릴 때 사진이야.",
+   "note": "시간명사 小时候 + 的 관형어",
+   "tags": [
+    "사진",
+    "추억"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "zh": "哇，这个小女孩太可爱了！",
+   "pinyin": "Wā, zhège xiǎo nǚhái tài kě'ài le!",
+   "ko": "와, 이 꼬마 너무 귀엽다!",
+   "note": "太…了 감탄 표현",
+   "tags": [
+    "감탄",
+    "칭찬"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "zh": "那时候我才五岁。",
+   "pinyin": "Nà shíhou wǒ cái wǔ suì.",
+   "ko": "그때 나 겨우 다섯 살이었어.",
+   "note": "부사 才 (겨우, ~밖에)",
+   "tags": [
+    "나이",
+    "추억"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "你是在四川长大的吗？",
+   "pinyin": "Nǐ shì zài Sìchuān zhǎng dà de ma?",
+   "ko": "너 쓰촨에서 자란 거야?",
+   "note": "是…的 강조 구문 (장소 강조)",
+   "tags": [
+    "고향",
+    "是…的"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "对，我是在外婆家长大的。",
+   "pinyin": "Duì, wǒ shì zài wàipó jiā zhǎng dà de.",
+   "ko": "응, 나 외할머니 집에서 자랐어.",
+   "note": "是…的 구문으로 대답",
+   "tags": [
+    "할머니",
+    "가족"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "zh": "小时候你喜欢做什么？",
+   "pinyin": "Xiǎoshíhou nǐ xǐhuan zuò shénme?",
+   "ko": "어릴 때 뭐 하는 거 좋아했어?",
+   "note": "시간사가 문장 앞에 오는 어순",
+   "tags": [
+    "질문",
+    "추억"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "B",
+   "zh": "我常常在河边画画儿。",
+   "pinyin": "Wǒ chángcháng zài hébiān huà huàr.",
+   "ko": "나 자주 강가에서 그림 그렸어.",
+   "note": "빈도부사 常常",
+   "tags": [
+    "그림",
+    "추억"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "B",
+   "zh": "你小时候是什么样的？",
+   "pinyin": "Nǐ xiǎoshíhou shì shénme yàng de?",
+   "ko": "너는 어릴 때 어떤 아이였어?",
+   "note": "什么样的 (어떤 모습의)",
+   "tags": [
+    "질문",
+    "호기심"
+   ]
+  }
+ ]
+}

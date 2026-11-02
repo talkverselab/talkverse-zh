@@ -1,0 +1,112 @@
+{
+ "id": "r3_life_l2_d16_2",
+ "region": "R3",
+ "island": "life",
+ "kind": "chat",
+ "title": "회식 ②",
+ "emoji": "🍻",
+ "scene": "회사 회식이 늦게 끝나 약속을 어긴 Mark, 서운해하는 小丽와 케이크로 화해",
+ "speakers": {
+  "A": "A",
+  "B": "B"
+ },
+ "register": "casual",
+ "twist": 0,
+ "variant": "north",
+ "legacy": "L2/d16_2",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "zh": "路上小心，别跑。",
+   "pinyin": "Lùshang xiǎoxīn, bié pǎo.",
+   "ko": "길 조심하고, 뛰지는 마.",
+   "note": "别 금지 (걱정에서 나온 만류)",
+   "tags": [
+    "care",
+    "prohibition:别"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "zh": "你还是关心我的嘛。",
+   "pinyin": "Nǐ háishi guānxīn wǒ de ma.",
+   "ko": "그래도 날 걱정해 주네.",
+   "note": "还是……的 (역시 ~하긴 하다)",
+   "tags": [
+    "sweet",
+    "particle:嘛"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "zh": "谁关心你了，快点回来。",
+   "pinyin": "Shéi guānxīn nǐ le, kuài diǎn huílai.",
+   "ko": "누가 널 걱정한대, 빨리 와.",
+   "note": "谁……了 반어 (츤데레 부정)",
+   "tags": [
+    "banter",
+    "rhetorical:谁"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "我带了你爱吃的蛋糕哦。",
+   "pinyin": "Wǒ dài le nǐ ài chī de dàngāo o.",
+   "ko": "네가 좋아하는 케이크 사 왔어.",
+   "note": "관형절 你爱吃的+명사 + 哦",
+   "tags": [
+    "sweet",
+    "particle:哦"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "……原谅你啦。",
+   "pinyin": "……Yuánliàng nǐ la.",
+   "ko": "……용서해 준다.",
+   "note": "어기조사 啦 (못 이기는 척 마무리)",
+   "tags": [
+    "reconcile",
+    "particle:啦"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "zh": "太好了，蛋糕给你留了最大块。",
+   "pinyin": "Tàihǎole, dàngāo gěi nǐ liú le zuìdà kuài.",
+   "ko": "잘됐다, 케이크 제일 큰 조각 남겨놨어.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "B",
+   "zh": "你真的很懂我。",
+   "pinyin": "Nǐ zhēnde hěn dǒng wǒ.",
+   "ko": "너 진짜 날 잘 아네.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "A",
+   "zh": "那当然，我先去洗澡了。",
+   "pinyin": "Nà dāngrán, wǒ xiān qù xǐzǎo le.",
+   "ko": "당연하지, 나 먼저 씻으러 갈게.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,115 @@
+{
+ "id": "r4_love_l3_d18_1",
+ "region": "R4",
+ "island": "love",
+ "kind": "long",
+ "title": "장거리싸움 ①",
+ "emoji": "💔",
+ "scene": "사흘 뒤 小丽의 집, 장거리 연애가 가능한지를 두고 처음으로 크게 다툰다.",
+ "speakers": {
+  "A": "A",
+  "B": "B"
+ },
+ "register": "casual",
+ "twist": 0,
+ "variant": "north",
+ "legacy": "L3/d18_1",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "zh": "你已经想了三天了。",
+   "pinyin": "Nǐ yǐjīng xiǎng le sān tiān le.",
+   "ko": "너 벌써 사흘째 생각 중이잖아.",
+   "note": "'了…了' 구조 — 동작의 지속 기간 강조",
+   "tags": [
+    "시량보어",
+    "재촉"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "zh": "异地恋也不是不可能。",
+   "pinyin": "Yìdìliàn yě bú shì bù kěnéng.",
+   "ko": "장거리 연애도 불가능한 건 아니잖아.",
+   "note": "이중부정 '不是不…' (완곡한 긍정)",
+   "tags": [
+    "이중부정",
+    "연애"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "zh": "说得容易，做起来呢？",
+   "pinyin": "Shuō de róngyì, zuò qǐlai ne?",
+   "ko": "말은 쉽지, 실제로 해보면?",
+   "note": "정도보어 得 + 'V起来' (~해 보면)",
+   "tags": [
+    "정도보어",
+    "起来"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "我们可以每天视频啊。",
+   "pinyin": "Wǒmen kěyǐ měi tiān shìpín a.",
+   "ko": "우리 매일 영상통화 하면 되잖아.",
+   "note": "每+시간명사 '매일' + 제안의 啊",
+   "tags": [
+    "每",
+    "제안"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "视频能代替真的拥抱吗？",
+   "pinyin": "Shìpín néng dàitì zhēn de yōngbào ma?",
+   "ko": "영상통화가 진짜 포옹을 대신할 수 있어?",
+   "note": "능원동사 能 + 반문 용법",
+   "tags": [
+    "能",
+    "반문"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "zh": "距离不是问题，心才是。",
+   "pinyin": "Jùlí bú shì wèntí, xīn cái shì.",
+   "ko": "거리는 문제가 아니야, 마음이 문제지.",
+   "note": "才 '~야말로' 강조 용법",
+   "tags": [
+    "才",
+    "연애"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "B",
+   "zh": "你这是从哪儿学的台词？",
+   "pinyin": "Nǐ zhè shì cóng nǎr xué de táicí?",
+   "ko": "그 대사는 대체 어디서 배운 거야?",
+   "note": "'是…的' 구문 + 전치사 从 (출처). 台词 '(드라마) 대사'",
+   "tags": [
+    "是…的",
+    "유머"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "A",
+   "zh": "我是认真的，别开玩笑。",
+   "pinyin": "Wǒ shì rènzhēn de, bié kāi wánxiào.",
+   "ko": "나 진심이야, 농담하지 마.",
+   "note": "'是…的' 태도 강조 + 이합사 开玩笑",
+   "tags": [
+    "是…的",
+    "이합사"
+   ]
+  }
+ ]
+}

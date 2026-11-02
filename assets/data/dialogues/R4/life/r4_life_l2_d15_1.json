@@ -1,0 +1,115 @@
+{
+ "id": "r4_life_l2_d15_1",
+ "region": "R4",
+ "island": "life",
+ "kind": "chat",
+ "title": "커피 ①",
+ "emoji": "☕",
+ "scene": "한여름 카페에서 아이스 아메리카노파 Mark와 핫 라떼파 小丽의 커피 취향 논쟁",
+ "speakers": {
+  "A": "A",
+  "B": "B"
+ },
+ "register": "casual",
+ "twist": 0,
+ "variant": "north",
+ "legacy": "L2/d15_1",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "A",
+   "zh": "出来喝咖啡吧，我请。",
+   "pinyin": "Chūlai hē kāfēi ba, wǒ qǐng.",
+   "ko": "나와서 커피 마시자, 내가 살게.",
+   "note": "방향보어 出来 + 我请 (내가 쏜다)",
+   "tags": [
+    "coffee",
+    "complement:出来"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "B",
+   "zh": "好呀，给我点热拿铁。",
+   "pinyin": "Hǎo ya, gěi wǒ diǎn rè nátiě.",
+   "ko": "좋아, 나 핫 라떼 시켜줘.",
+   "note": "给+대상+동사 (~에게 시켜주다)",
+   "tags": [
+    "coffee",
+    "preposition:给"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "A",
+   "zh": "这么热的天喝热的？",
+   "pinyin": "Zhème rè de tiān hē rè de?",
+   "ko": "이렇게 더운 날에 뜨거운 걸 마신다고?",
+   "note": "这么+형용사 + 형용사+的 명사화",
+   "tags": [
+    "banter",
+    "degree:这么"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "B",
+   "zh": "冰的对身体不好。",
+   "pinyin": "Bīng de duì shēntǐ bù hǎo.",
+   "ko": "차가운 건 몸에 안 좋아.",
+   "note": "对……不好 (~에 안 좋다)",
+   "tags": [
+    "health",
+    "preposition:对"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "A",
+   "zh": "夏天就要喝冰美式啊！",
+   "pinyin": "Xiàtiān jiù yào hē bīng měishì a!",
+   "ko": "여름엔 아이스 아메리카노지!",
+   "note": "就 (바로 그거다, 당연 강조)",
+   "tags": [
+    "coffee",
+    "adverb:就"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "B",
+   "zh": "你们韩国人一年四季都喝冰的。",
+   "pinyin": "Nǐmen Hánguó rén yì nián sìjì dōu hē bīng de.",
+   "ko": "너네 한국 사람들은 사계절 내내 아이스 마시더라.",
+   "note": "一年四季+都 (일 년 내내 다)",
+   "tags": [
+    "culture",
+    "adverb:都"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "A",
+   "zh": "冬天也得是冰美式。",
+   "pinyin": "Dōngtiān yě děi shì bīng měishì.",
+   "ko": "겨울에도 아아여야지.",
+   "note": "得 děi (반드시 ~해야 한다)",
+   "tags": [
+    "humor",
+    "modal:得"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "B",
+   "zh": "冬天喝冰的？我不懂你们。",
+   "pinyin": "Dōngtiān hē bīng de? Wǒ bù dǒng nǐmen.",
+   "ko": "겨울에 아이스를? 너희 이해 안 돼.",
+   "note": "懂 (이해하다) 부정형",
+   "tags": [
+    "banter",
+    "verb:懂"
+   ]
+  }
+ ]
+}

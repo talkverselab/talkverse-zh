@@ -1,0 +1,112 @@
+{
+ "id": "r4_love_l3_d08_2",
+ "region": "R4",
+ "island": "love",
+ "kind": "long",
+ "title": "약속정리 ②",
+ "emoji": "🤝",
+ "scene": "연락·질투·솔직함에 대해 둘만의 연애 규칙을 정한다.",
+ "speakers": {
+  "A": "A",
+  "B": "B"
+ },
+ "register": "casual",
+ "twist": 0,
+ "variant": "north",
+ "legacy": "L3/d08_2",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "zh": "当然了！你不吃醋吗？",
+   "pinyin": "Dāngrán le! Nǐ bù chīcù ma?",
+   "ko": "당연하지! 넌 질투 안 해?",
+   "note": "当然了 '당연하다', 부정 의문",
+   "tags": [
+    "当然",
+    "반문"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "zh": "我也会，所以要互相信任。",
+   "pinyin": "Wǒ yě huì, suǒyǐ yào hùxiāng xìnrèn.",
+   "ko": "나도 해, 그러니까 서로 믿어야지.",
+   "note": "접속사 所以, 부사 互相 '서로'",
+   "tags": [
+    "所以",
+    "互相"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "zh": "最后一条，吵架了也要好好沟通。",
+   "pinyin": "Zuìhòu yì tiáo, chǎojià le yě yào hǎohāo gōutōng.",
+   "ko": "마지막 규칙, 싸워도 꼭 잘 대화하기.",
+   "note": "부사 好好(hǎohāo)+동사 '제대로 ~하다'",
+   "tags": [
+    "好好+동사",
+    "沟通"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "我们的感情会越来越好的。",
+   "pinyin": "Wǒmen de gǎnqíng huì yuèláiyuè hǎo de.",
+   "ko": "우리 사이는 점점 더 좋아질 거야.",
+   "note": "越来越 '점점 더', 확신의 会…的",
+   "tags": [
+    "越来越",
+    "会…的"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "拉钩！谁也不能变心哦！",
+   "pinyin": "Lāgōu! Shéi yě bù néng biànxīn o!",
+   "ko": "손가락 걸자! 누구도 변심하면 안 돼!",
+   "note": "의문사 谁+也+부정 '아무도 ~않다'",
+   "tags": [
+    "谁也不",
+    "拉钩"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "zh": "拉钩上吊，一百年不变。",
+   "pinyin": "Lāgōu shàngdiào, yìbǎinián bùbiàn.",
+   "ko": "손가락 걸고 도장 찍었으니, 백 년이 지나도 안 변해.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "B",
+   "zh": "哈哈，你说得跟小孩儿似的。",
+   "pinyin": "Hāhā, nǐ shuō dé gēn xiǎoháiér shìde.",
+   "ko": "하하, 완전 애처럼 말하네.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "A",
+   "zh": "认真的！我们一定要做到。",
+   "pinyin": "Rènzhēn de! wǒmen yídìng yào zuòdào.",
+   "ko": "진심이야! 우리 꼭 지키자.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  }
+ ]
+}

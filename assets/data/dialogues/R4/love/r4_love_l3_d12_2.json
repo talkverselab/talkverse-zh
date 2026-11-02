@@ -1,0 +1,112 @@
+{
+ "id": "r4_love_l3_d12_2",
+ "region": "R4",
+ "island": "love",
+ "kind": "long",
+ "title": "여행에서 ②",
+ "emoji": "🏯",
+ "scene": "시안 고성벽 위에서 자전거를 타며 노을을 함께 보는 두 사람.",
+ "speakers": {
+  "A": "A",
+  "B": "B"
+ },
+ "register": "casual",
+ "twist": 0,
+ "variant": "north",
+ "legacy": "L3/d12_2",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "zh": "讨厌，又说这种话！",
+   "pinyin": "Tǎoyàn, yòu shuō zhè zhǒng huà!",
+   "ko": "얄미워, 또 그런 말 하고!",
+   "note": "부사 又 (동작의 반복)",
+   "tags": [
+    "애교",
+    "장난"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "zh": "是真的！我给你拍张照吧。",
+   "pinyin": "Shì zhēn de! Wǒ gěi nǐ pāi zhāng zhào ba.",
+   "ko": "진짜라니까! 내가 사진 찍어 줄게.",
+   "note": "개사 给 (~에게) + 양사 张",
+   "tags": [
+    "사진",
+    "로맨스"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "zh": "我们一起拍吧，来！",
+   "pinyin": "Wǒmen yìqǐ pāi ba, lái!",
+   "ko": "같이 찍자, 어서!",
+   "note": "부사 一起 (함께)",
+   "tags": [
+    "사진",
+    "제안"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "这一刻，我想记住一辈子。",
+   "pinyin": "Zhè yí kè, wǒ xiǎng jìzhù yíbèizi.",
+   "ko": "이 순간을 평생 기억하고 싶어.",
+   "note": "결과보어 住 (기억이 고정됨)",
+   "tags": [
+    "로맨스",
+    "감정"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "我也是。以后每年都来吧。",
+   "pinyin": "Wǒ yě shì. Yǐhòu měi nián dōu lái ba.",
+   "ko": "나도. 앞으로 매년 오자.",
+   "note": "每…都 (예외 없는 전체)",
+   "tags": [
+    "약속",
+    "로맨스"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "zh": "一言为定，明年我们还来。",
+   "pinyin": "Yīyánwéidìng, míngnián wǒmen háilái.",
+   "ko": "약속이야, 내년에도 또 오자.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "B",
+   "zh": "天黑了，我们回去吃饭吧。",
+   "pinyin": "Tiānhēi le, wǒmen huíqù chīfàn ba.",
+   "ko": "날이 어두워졌어, 우리 돌아가서 밥 먹자.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "A",
+   "zh": "好，今天真是难忘的一天。",
+   "pinyin": "Hǎo, jīntiān zhēnshì nánwàng de yītiān.",
+   "ko": "좋아, 오늘 정말 잊지 못할 하루였어.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  }
+ ]
+}

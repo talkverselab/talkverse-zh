@@ -1,0 +1,112 @@
+{
+ "id": "r4_life_l2_d10_2",
+ "region": "R4",
+ "island": "life",
+ "kind": "chat",
+ "title": "단톡방 ②",
+ "emoji": "💬",
+ "scene": "친구 大伟까지 낀 단톡방에서 약속 날짜 잡다가 다들 일정이 꼬이는 혼돈",
+ "speakers": {
+  "A": "A",
+  "B": "B"
+ },
+ "register": "casual",
+ "twist": 0,
+ "variant": "north",
+ "legacy": "L2/d10_2",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "zh": "他说下周六吧。",
+   "pinyin": "Tā shuō xià zhōuliù ba.",
+   "ko": "다음 주 토요일이래.",
+   "note": "下+시간 (다음 ~), 吧 추측",
+   "tags": [
+    "plan",
+    "particle:吧"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "zh": "等等，下周六我们要去旅行呢！",
+   "pinyin": "Děng děng, xià zhōuliù wǒmen yào qù lǚxíng ne!",
+   "ko": "잠깐, 다음 주 토요일에 우리 여행 가잖아!",
+   "note": "어기조사 呢 (사실 상기시키기)",
+   "tags": [
+    "travel",
+    "particle:呢"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "zh": "对哦，我都忘了。",
+   "pinyin": "Duì o, wǒ dōu wàng le.",
+   "ko": "맞다, 나 완전 잊고 있었어.",
+   "note": "都……了 (강조, 완전 ~해버림)",
+   "tags": [
+    "chaos",
+    "grammar:都了"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "你直接说下下周吧。",
+   "pinyin": "Nǐ zhíjiē shuō xià xià zhōu ba.",
+   "ko": "그냥 다다음 주라고 해.",
+   "note": "直接 (그냥 바로) + 吧 제안",
+   "tags": [
+    "plan",
+    "adverb:直接"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "好，约个饭真难啊。",
+   "pinyin": "Hǎo, yuē gè fàn zhēn nán a.",
+   "ko": "알았어, 밥 약속 잡기 진짜 어렵다.",
+   "note": "真+형용사 감탄 (진짜 ~하다)",
+   "tags": [
+    "chaos",
+    "exclamation"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "zh": "就这么定了，别再改了。",
+   "pinyin": "Jiù zhème dìng le, bié zài gǎi le.",
+   "ko": "그걸로 정하자, 더 이상 바꾸지 마.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "B",
+   "zh": "我现在就告诉他。",
+   "pinyin": "Wǒ xiànzài jiù gàosù tā.",
+   "ko": "지금 바로 걔한테 말할게.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "A",
+   "zh": "终于成功了，太不容易了。",
+   "pinyin": "Zhōngyú chénggōng le, tàibùróngyì le.",
+   "ko": "드디어 성공했다, 진짜 쉽지 않았어.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  }
+ ]
+}

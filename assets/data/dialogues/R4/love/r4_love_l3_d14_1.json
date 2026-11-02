@@ -1,0 +1,115 @@
+{
+ "id": "r4_love_l3_d14_1",
+ "region": "R4",
+ "island": "love",
+ "kind": "long",
+ "title": "아플때 ①",
+ "emoji": "🍲",
+ "scene": "몸살이 난 마크를 위해 샤오리가 죽을 끓여 주며 돌봐 준다.",
+ "speakers": {
+  "A": "A",
+  "B": "B"
+ },
+ "register": "casual",
+ "twist": 0,
+ "variant": "north",
+ "legacy": "L3/d14_1",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "zh": "你的脸色怎么这么难看？",
+   "pinyin": "Nǐ de liǎnsè zěnme zhème nánkàn?",
+   "ko": "너 얼굴색이 왜 이렇게 안 좋아?",
+   "note": "怎么这么 (왜 이렇게)",
+   "tags": [
+    "걱정",
+    "건강"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "zh": "我好像感冒了，头疼。",
+   "pinyin": "Wǒ hǎoxiàng gǎnmào le, tóu téng.",
+   "ko": "나 감기 걸린 것 같아, 머리가 아파.",
+   "note": "부사 好像 (~인 것 같다)",
+   "tags": [
+    "감기",
+    "증상"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "zh": "发烧了吗？让我摸摸。",
+   "pinyin": "Fā shāo le ma? Ràng wǒ mōmo.",
+   "ko": "열 나? 내가 만져 볼게.",
+   "note": "사역동사 让 + 동사 중첩",
+   "tags": [
+    "걱정",
+    "사역문"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "有一点儿热，没关系。",
+   "pinyin": "Yǒu yìdiǎnr rè, méi guānxi.",
+   "ko": "조금 뜨겁긴 한데, 괜찮아.",
+   "note": "有一点儿 + 형용사 (약간 ~하다)",
+   "tags": [
+    "증상",
+    "강한척"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "什么没关系！快去躺着！",
+   "pinyin": "Shénme méi guānxi! Kuài qù tǎng zhe!",
+   "ko": "괜찮긴 뭐가 괜찮아! 빨리 가서 누워 있어!",
+   "note": "지속 조사 着 (누운 상태 유지)",
+   "tags": [
+    "걱정",
+    "명령"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "B",
+   "zh": "我给你煮一碗粥。",
+   "pinyin": "Wǒ gěi nǐ zhǔ yì wǎn zhōu.",
+   "ko": "내가 죽 한 그릇 끓여 줄게.",
+   "note": "개사 给 + 양사 碗",
+   "tags": [
+    "죽",
+    "보살핌"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "A",
+   "zh": "不用了，我吃点药就行。",
+   "pinyin": "Bú yòng le, wǒ chī diǎn yào jiù xíng.",
+   "ko": "됐어, 약만 좀 먹으면 돼.",
+   "note": "…就行 (~하면 된다)",
+   "tags": [
+    "사양",
+    "약"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "B",
+   "zh": "生病要好好吃饭才行。",
+   "pinyin": "Shēngbìng yào hǎohāo chī fàn cái xíng.",
+   "ko": "아플 땐 밥 잘 먹어야 낫는 거야.",
+   "note": "부사 才 (~해야 비로소)",
+   "tags": [
+    "보살핌",
+    "잔소리"
+   ]
+  }
+ ]
+}

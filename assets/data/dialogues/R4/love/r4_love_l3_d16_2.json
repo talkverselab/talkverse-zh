@@ -1,0 +1,112 @@
+{
+ "id": "r4_love_l3_d16_2",
+ "region": "R4",
+ "island": "love",
+ "kind": "long",
+ "title": "습관 ②",
+ "emoji": "😊",
+ "scene": "함께 지내는 시간이 길어지며 알게 된 서로의 소소한 습관을 이야기한다.",
+ "speakers": {
+  "A": "A",
+  "B": "B"
+ },
+ "register": "casual",
+ "twist": 0,
+ "variant": "north",
+ "legacy": "L3/d16_2",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "A",
+   "zh": "还有，你吃饭吃得特别快。",
+   "pinyin": "Hái yǒu, nǐ chī fàn chī de tèbié kuài.",
+   "ko": "그리고 너 밥 엄청 빨리 먹더라.",
+   "note": "동사 반복 + 정도보어 得",
+   "tags": [
+    "습관",
+    "정도보어"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "B",
+   "zh": "四川人都这样，哈哈。",
+   "pinyin": "Sìchuān rén dōu zhèyàng, hāhā.",
+   "ko": "쓰촨 사람은 다 그래, 하하.",
+   "note": "都 (전체 총괄)",
+   "tags": [
+    "유머",
+    "쓰촨"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "zh": "在一起越久，越了解对方。",
+   "pinyin": "Zài yìqǐ yuè jiǔ, yuè liǎojiě duìfāng.",
+   "ko": "같이 있는 시간이 길수록 서로를 더 알게 돼.",
+   "note": "越…越… (~할수록 ~하다)",
+   "tags": [
+    "감정",
+    "越…越"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "是啊，连习惯都知道了。",
+   "pinyin": "Shì a, lián xíguàn dōu zhīdào le.",
+   "ko": "맞아, 습관까지 다 알게 됐잖아.",
+   "note": "连…都… (~조차도)",
+   "tags": [
+    "공감",
+    "连…都"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "以后我们会更了解彼此的。",
+   "pinyin": "Yǐhòu wǒmen huì gèng liǎojiě bǐcǐ de.",
+   "ko": "앞으로 우리 서로를 더 잘 알게 될 거야.",
+   "note": "会…的 (미래에 대한 확신)",
+   "tags": [
+    "애정",
+    "미래"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "zh": "那我也要继续观察你。",
+   "pinyin": "Nà wǒ yě yào jìxù guānchá nǐ.",
+   "ko": "그럼 나도 계속 너 관찰해야겠다.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "B",
+   "zh": "别光观察，也要爱护我哦。",
+   "pinyin": "Biéguāng guānchá, yě yào àihù wǒ ó.",
+   "ko": "관찰만 하지 말고, 아껴도 줘야지.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "A",
+   "zh": "放心，我会一直宠着你。",
+   "pinyin": "Fàngxīn, wǒhuì yìzhí chǒng zhe nǐ.",
+   "ko": "걱정 마, 계속 예뻐해 줄게.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  }
+ ]
+}

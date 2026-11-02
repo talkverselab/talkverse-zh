@@ -1,0 +1,115 @@
+{
+ "id": "r4_life_l2_d04_1",
+ "region": "R4",
+ "island": "life",
+ "kind": "chat",
+ "title": "날씨 ①",
+ "emoji": "🌧️",
+ "scene": "공원 데이트 날 갑자기 닥친 황사와 비, 집콕으로 계획 변경",
+ "speakers": {
+  "A": "A",
+  "B": "B"
+ },
+ "register": "casual",
+ "twist": 0,
+ "variant": "north",
+ "legacy": "L2/d04_1",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "A",
+   "zh": "今天去公园吧？",
+   "pinyin": "Jīntiān qù gōngyuán ba?",
+   "ko": "오늘 공원 갈까?",
+   "note": "청유 吧 (~하자/할까?)",
+   "tags": [
+    "particle:吧",
+    "date"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "B",
+   "zh": "你看窗外了吗？",
+   "pinyin": "Nǐ kàn chuāngwài le ma?",
+   "ko": "창밖 봤어?",
+   "note": "了吗 의문문 (~했어?)",
+   "tags": [
+    "question:了吗",
+    "weather"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "A",
+   "zh": "哇，天怎么黄了？",
+   "pinyin": "Wā, tiān zěnme huáng le?",
+   "ko": "와, 하늘이 왜 노래졌어?",
+   "note": "형용사+了 (상태 변화의 了)",
+   "tags": [
+    "aspect:了",
+    "weather"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "B",
+   "zh": "沙尘暴来啦。",
+   "pinyin": "Shāchénbào lái la.",
+   "ko": "황사 왔잖아.",
+   "note": "어기조사 啦 (=了+啊, 알림+감탄)",
+   "tags": [
+    "particle:啦",
+    "weather"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "A",
+   "zh": "北京的天气太可怕了。",
+   "pinyin": "Běijīng de tiānqì tài kěpà le.",
+   "ko": "베이징 날씨 진짜 무섭다.",
+   "note": "太…了 감탄 (너무 ~하다)",
+   "tags": [
+    "structure:太了",
+    "negative"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "B",
+   "zh": "一会儿可能还下雨呢。",
+   "pinyin": "Yīhuìr kěnéng hái xià yǔ ne.",
+   "ko": "이따가 비까지 올지도 몰라.",
+   "note": "可能 (아마도, 추측 표현)",
+   "tags": [
+    "adverb:可能",
+    "weather"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "A",
+   "zh": "那计划全完了。",
+   "pinyin": "Nà jìhuà quán wán le.",
+   "ko": "그럼 계획 다 끝났네.",
+   "note": "부사 全 (전부) + 完了 (끝장이다)",
+   "tags": [
+    "adverb:全",
+    "negative"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "B",
+   "zh": "在家看电影不好吗？",
+   "pinyin": "Zài jiā kàn diànyǐng bù hǎo ma?",
+   "ko": "집에서 영화 보면 좋잖아?",
+   "note": "不…吗 반문 (~하지 않아?)",
+   "tags": [
+    "rhetorical",
+    "positive"
+   ]
+  }
+ ]
+}

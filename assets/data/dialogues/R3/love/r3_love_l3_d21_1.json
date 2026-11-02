@@ -1,0 +1,115 @@
+{
+ "id": "r3_love_l3_d21_1",
+ "region": "R3",
+ "island": "love",
+ "kind": "long",
+ "title": "결심 ①",
+ "emoji": "🌟",
+ "scene": "훠궈를 다 먹은 밤, Mark가 베이징에 남기로 한 결심을 밝힌다.",
+ "speakers": {
+  "A": "A",
+  "B": "B"
+ },
+ "register": "casual",
+ "twist": 0,
+ "variant": "north",
+ "legacy": "L3/d21_1",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "A",
+   "zh": "我做了一个重要的决定。",
+   "pinyin": "Wǒ zuò le yí ge zhòngyào de juédìng.",
+   "ko": "나 중요한 결정을 하나 했어.",
+   "note": "완료의 了 + 수량사+관형어 어순",
+   "tags": [
+    "완료 了",
+    "결심"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "B",
+   "zh": "你说吧，我准备好了。",
+   "pinyin": "Nǐ shuō ba, wǒ zhǔnbèi hǎo le.",
+   "ko": "말해 봐, 나 마음의 준비 됐어.",
+   "note": "결과보어 好 (완료·완비)",
+   "tags": [
+    "결과보어",
+    "긴장"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "A",
+   "zh": "我拒绝了回首尔的调动。",
+   "pinyin": "Wǒ jùjué le huí Shǒu'ěr de diàodòng.",
+   "ko": "서울 발령, 거절했어.",
+   "note": "동사+了 + 관형절(回首尔的)이 목적어 수식",
+   "tags": [
+    "관형절",
+    "직장"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "B",
+   "zh": "什么？升职的机会呢？",
+   "pinyin": "Shénme? Shēngzhí de jīhuì ne?",
+   "ko": "뭐? 승진 기회는 어쩌고?",
+   "note": "명사+呢 생략 의문문 ('~는?')",
+   "tags": [
+    "呢 의문문",
+    "놀람"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "A",
+   "zh": "机会可以再找，你只有一个。",
+   "pinyin": "Jīhuì kěyǐ zài zhǎo, nǐ zhǐ yǒu yí ge.",
+   "ko": "기회는 또 찾으면 되지만, 너는 하나뿐이야.",
+   "note": "再 '다시' (미래의 반복) — 又와 구분",
+   "tags": [
+    "再 vs 又",
+    "고백"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "B",
+   "zh": "马克，你不会后悔吗？",
+   "pinyin": "Mǎkè, nǐ bú huì hòuhuǐ ma?",
+   "ko": "마크, 너 후회 안 하겠어?",
+   "note": "会 미래 가능성 + 부정 의문",
+   "tags": [
+    "会",
+    "걱정"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "A",
+   "zh": "离开你才会让我后悔。",
+   "pinyin": "Líkāi nǐ cái huì ràng wǒ hòuhuǐ.",
+   "ko": "너를 떠나는 게 오히려 후회할 일이지.",
+   "note": "才 '~야말로' + 사역 让",
+   "tags": [
+    "才",
+    "고백"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "B",
+   "zh": "那工作怎么办？",
+   "pinyin": "Nà gōngzuò zěnme bàn?",
+   "ko": "그럼 일은 어떡해?",
+   "note": "관용표현 怎么办 '어떻게 하지'",
+   "tags": [
+    "怎么办",
+    "현실"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,115 @@
+{
+ "id": "r3_love_l1_ep5_4",
+ "region": "R3",
+ "island": "love",
+ "kind": "long",
+ "title": "미래 ④",
+ "emoji": "🌅",
+ "scene": "관계 확정 — 장래 계획 · 언어 교환 · 부모님 인사 약속 · 고백",
+ "speakers": {
+  "A": "Mark",
+  "B": "小丽 / Lily"
+ },
+ "register": "casual",
+ "twist": 0,
+ "variant": "north",
+ "legacy": "L1/ep5_4",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "zh": "一言为定！",
+   "pinyin": "Yì yán wéi dìng!",
+   "ko": "약속한 거다!",
+   "note": "一言为定 (한 마디로 정하다) 성어",
+   "tags": [
+    "promise",
+    "culture"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "zh": "先教你一句：사랑해。",
+   "pinyin": "Xiān jiāo nǐ yí jù: saranghae.",
+   "ko": "먼저 한 마디 가르쳐줄게: 사랑해.",
+   "note": "一句 (양사 句) + 한국어 고백",
+   "tags": [
+    "confession",
+    "hook:saranghae"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "zh": "什么意思？",
+   "pinyin": "Shénme yìsi?",
+   "ko": "무슨 뜻이야?",
+   "note": "什么意思 되묻기",
+   "tags": [
+    "question",
+    "topic:korean"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "就是——我爱你。",
+   "pinyin": "Jiùshì —— wǒ ài nǐ.",
+   "ko": "그러니까—— 사랑해.",
+   "note": "我爱你 정식 고백",
+   "tags": [
+    "confession",
+    "hook:iloveyou"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "……我也是。",
+   "pinyin": "…… Wǒ yě shì.",
+   "ko": "……나도.",
+   "note": "我也是 수락",
+   "tags": [
+    "confession",
+    "hook:accept"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "B",
+   "zh": "사랑해，说得对吗？",
+   "pinyin": "Saranghae, shuō de duì ma?",
+   "ko": "사랑해, 맞게 말했어?",
+   "note": "배운 말 바로 사용 + 得 보어",
+   "tags": [
+    "confession",
+    "function:得"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "A",
+   "zh": "完美！一百分！",
+   "pinyin": "Wánměi! Yìbǎi fēn!",
+   "ko": "완벽해! 100점!",
+   "note": "完美 + 分 (점수)",
+   "tags": [
+    "praise",
+    "joke"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "B",
+   "zh": "那… 你要见我爸妈吗？",
+   "pinyin": "Nà… nǐ yào jiàn wǒ bà mā ma?",
+   "ko": "그럼… 우리 부모님 만날래?",
+   "note": "要 (의향) + 见家长 callback",
+   "tags": [
+    "family",
+    "callback:ep3"
+   ]
+  }
+ ]
+}

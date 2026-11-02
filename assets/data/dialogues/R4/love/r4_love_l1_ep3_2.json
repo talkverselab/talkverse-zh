@@ -1,0 +1,115 @@
+{
+ "id": "r4_love_l1_ep3_2",
+ "region": "R4",
+ "island": "love",
+ "kind": "long",
+ "title": "가족 ②",
+ "emoji": "👨‍👩‍👧",
+ "scene": "공원 산책 — 가족 소개 · 고향 · 춘절 · 부모님 걱정 · 사진",
+ "speakers": {
+  "A": "Mark",
+  "B": "小丽 / Lily"
+ },
+ "register": "casual",
+ "twist": 0,
+ "variant": "north",
+ "legacy": "L1/ep3_2",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "zh": "哇，会做饭的男人最帅！",
+   "pinyin": "Wā, huì zuò fàn de nánrén zuì shuài!",
+   "ko": "와, 요리하는 남자가 제일 멋있어요!",
+   "note": "会…的+명사 수식 + 最帅",
+   "tags": [
+    "praise",
+    "flirt"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "zh": "那我天天给你做，哈哈。",
+   "pinyin": "Nà wǒ tiāntiān gěi nǐ zuò, hāhā.",
+   "ko": "그럼 매일 해줄게요, 하하.",
+   "note": "给你做 (~해 주다)",
+   "tags": [
+    "flirt",
+    "function:给"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "A",
+   "zh": "小丽，你家人都在北京吗？",
+   "pinyin": "Xiǎolì, nǐ jiārén dōu zài Běijīng ma?",
+   "ko": "샤오리, 가족들 다 베이징에 있어요?",
+   "note": "都 (모두) + 在",
+   "tags": [
+    "family",
+    "question"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "B",
+   "zh": "不，我老家在四川。",
+   "pinyin": "Bù, wǒ lǎojiā zài Sìchuān.",
+   "ko": "아니요, 고향은 쓰촨이에요.",
+   "note": "老家 (고향)",
+   "tags": [
+    "family",
+    "hook:sichuan"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "A",
+   "zh": "四川！怪不得你能吃辣！",
+   "pinyin": "Sìchuān! Guàibude nǐ néng chī là!",
+   "ko": "쓰촨! 어쩐지 매운 걸 잘 먹더라!",
+   "note": "怪不得 (어쩐지)",
+   "tags": [
+    "joke",
+    "callback:ep2"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "B",
+   "zh": "哈哈，对，我们家无辣不欢。",
+   "pinyin": "Hāhā, duì, wǒmen jiā wú là bù huān.",
+   "ko": "하하 맞아요, 우리 집은 매운 거 없으면 못 살아요.",
+   "note": "无辣不欢 (매운 것 없인 못 산다) 관용",
+   "tags": [
+    "family",
+    "culture"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "A",
+   "zh": "你爸爸妈妈做什么的？",
+   "pinyin": "Nǐ bàba māma zuò shénme de?",
+   "ko": "부모님은 무슨 일 하세요?",
+   "note": "做什么的 직업 묻기",
+   "tags": [
+    "family",
+    "question"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "B",
+   "zh": "开了一家小饭馆，三十年了。",
+   "pinyin": "Kāi le yì jiā xiǎo fànguǎn, sānshí nián le.",
+   "ko": "작은 식당을 하세요, 30년 됐어요.",
+   "note": "开店 + 了…了 지속",
+   "tags": [
+    "family",
+    "hook:restaurant"
+   ]
+  }
+ ]
+}

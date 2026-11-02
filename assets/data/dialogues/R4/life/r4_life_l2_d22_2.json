@@ -1,0 +1,112 @@
+{
+ "id": "r4_life_l2_d22_2",
+ "region": "R4",
+ "island": "life",
+ "kind": "chat",
+ "title": "요리 ②",
+ "emoji": "🍳",
+ "scene": "영상 보고 요리에 도전한 Mark, 생선을 숯으로 만들고 만다.",
+ "speakers": {
+  "A": "A",
+  "B": "B"
+ },
+ "register": "casual",
+ "twist": 0,
+ "variant": "north",
+ "legacy": "L2/d22_2",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "A",
+   "zh": "视频里没说火这么大……",
+   "pinyin": "Shìpín li méi shuō huǒ zhème dà……",
+   "ko": "영상에선 불이 이렇게 센 줄 몰랐단 말야…",
+   "note": "没说: '말해주지 않았다' 남 탓 변명. 这么+형용사 '이렇게 ~하다'.",
+   "tags": [
+    "没",
+    "这么"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "B",
+   "zh": "锅也坏了吧？",
+   "pinyin": "Guō yě huài le ba?",
+   "ko": "냄비도 망가졌지?",
+   "note": "吧?: 추측 확인 '~지?'. 坏了 '망가졌다'.",
+   "tags": [
+    "吧",
+    "坏了"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "A",
+   "zh": "那个……我们点外卖吧。",
+   "pinyin": "Nàge……wǒmen diǎn wàimài ba.",
+   "ko": "저기… 우리 배달 시키자.",
+   "note": "点外卖: '배달을 주문하다' 필수 생활 표현.",
+   "tags": [
+    "点外卖",
+    "제안"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "B",
+   "zh": "早就该点了！",
+   "pinyin": "Zǎo jiù gāi diǎn le!",
+   "ko": "진작에 시켰어야지!",
+   "note": "早就该…了: '진작 ~했어야 했다' 뒤늦은 후회·타박.",
+   "tags": [
+    "早就",
+    "该…了"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "A",
+   "zh": "下次我做汤，汤不会黑。",
+   "pinyin": "Xià cì wǒ zuò tāng, tāng bú huì hēi.",
+   "ko": "다음엔 국 끓일게, 국은 안 까매지니까.",
+   "note": "不会: '~할 리 없다' 가능성 부정. 굴하지 않는 유머.",
+   "tags": [
+    "不会",
+    "유머"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "B",
+   "zh": "我很怀疑，但还是给你机会。",
+   "pinyin": "Wǒ hěn huáiyí, dàn háishì gěi nǐ jīhuì.",
+   "ko": "많이 의심스럽지만, 그래도 기회는 줄게.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "A",
+   "zh": "谢谢老婆，我肯定进步。",
+   "pinyin": "Xièxiè lǎopó, wǒ kěndìng jìnbù.",
+   "ko": "고마워 자기야, 분명 나아질 거야.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "B",
+   "zh": "先把厨房打扫干净吧。",
+   "pinyin": "Xiān bǎ chúfáng dǎsǎo gānjìng ba.",
+   "ko": "일단 주방부터 깨끗이 치워.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  }
+ ]
+}

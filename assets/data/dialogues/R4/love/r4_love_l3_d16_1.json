@@ -1,0 +1,115 @@
+{
+ "id": "r4_love_l3_d16_1",
+ "region": "R4",
+ "island": "love",
+ "kind": "long",
+ "title": "습관 ①",
+ "emoji": "😊",
+ "scene": "함께 지내는 시간이 길어지며 알게 된 서로의 소소한 습관을 이야기한다.",
+ "speakers": {
+  "A": "A",
+  "B": "B"
+ },
+ "register": "casual",
+ "twist": 0,
+ "variant": "north",
+ "legacy": "L3/d16_1",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "zh": "我发现你有一个习惯。",
+   "pinyin": "Wǒ fāxiàn nǐ yǒu yí gè xíguàn.",
+   "ko": "나 너한테 습관 하나 있는 거 발견했어.",
+   "note": "동사 发现 + 목적어절",
+   "tags": [
+    "관찰",
+    "습관"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "zh": "什么习惯？快说说。",
+   "pinyin": "Shénme xíguàn? Kuài shuōshuo.",
+   "ko": "무슨 습관? 빨리 말해 봐.",
+   "note": "동사 중첩 说说 (가볍게 말해 보다)",
+   "tags": [
+    "호기심",
+    "재촉"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "zh": "你一紧张就摸头发。",
+   "pinyin": "Nǐ yì jǐnzhāng jiù mō tóufa.",
+   "ko": "너 긴장하면 바로 머리를 만지더라.",
+   "note": "一…就… (~하기만 하면 곧)",
+   "tags": [
+    "습관",
+    "一…就"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "真的吗？我自己都不知道。",
+   "pinyin": "Zhēn de ma? Wǒ zìjǐ dōu bù zhīdào.",
+   "ko": "진짜? 나 자신도 몰랐는데.",
+   "note": "都 (~조차도)",
+   "tags": [
+    "놀람",
+    "습관"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "A",
+   "zh": "其实我也发现了你的习惯。",
+   "pinyin": "Qíshí wǒ yě fāxiàn le nǐ de xíguàn.",
+   "ko": "사실 나도 네 습관 하나 발견했어.",
+   "note": "부사 其实 (사실은)",
+   "tags": [
+    "반격",
+    "유머"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "B",
+   "zh": "是吗？你说说看。",
+   "pinyin": "Shì ma? Nǐ shuōshuo kàn.",
+   "ko": "그래? 말해 봐 봐.",
+   "note": "동사 중첩 + 看 (~해 보다)",
+   "tags": [
+    "호기심",
+    "시도"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "A",
+   "zh": "你高兴的时候会哼歌。",
+   "pinyin": "Nǐ gāoxìng de shíhou huì hēng gē.",
+   "ko": "너 기분 좋을 때 콧노래 부르잖아.",
+   "note": "…的时候 '~할 때' + 哼歌 '콧노래를 부르다' (구어)",
+   "tags": [
+    "습관",
+    "귀여움"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "B",
+   "zh": "哎呀，被你发现了！",
+   "pinyin": "Āiyā, bèi nǐ fāxiàn le!",
+   "ko": "아이참, 너한테 들켜 버렸네!",
+   "note": "피동문 被 (~에게 당하다)",
+   "tags": [
+    "피동문",
+    "유머"
+   ]
+  }
+ ]
+}

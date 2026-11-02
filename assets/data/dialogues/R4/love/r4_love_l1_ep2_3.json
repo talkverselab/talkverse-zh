@@ -1,0 +1,115 @@
+{
+ "id": "r4_love_l1_ep2_3",
+ "region": "R4",
+ "island": "love",
+ "kind": "long",
+ "title": "식사 ③",
+ "emoji": "🍽️",
+ "scene": "첫 만남 식당 — 주문 · 매운맛 · 젓가락 · 계산 · 산책 제안",
+ "speakers": {
+  "A": "Mark",
+  "B": "小丽 / Lily"
+ },
+ "register": "casual",
+ "twist": 0,
+ "variant": "north",
+ "legacy": "L1/ep2_3",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "zh": "羊肉、牛肉、青菜，够吗？",
+   "pinyin": "Yángròu, niúròu, qīngcài, gòu ma?",
+   "ko": "양고기, 소고기, 야채, 충분해요?",
+   "note": "나열 + 够 (충분하다)",
+   "tags": [
+    "food",
+    "particle:吗"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "zh": "再来一个土豆，我爱土豆。",
+   "pinyin": "Zài lái yí ge tǔdòu, wǒ ài tǔdòu.",
+   "ko": "감자 하나 추가요, 저 감자 사랑해요.",
+   "note": "再来一个 (하나 더) 주문 표현",
+   "tags": [
+    "food",
+    "function:再"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "zh": "好，再来两瓶可乐。",
+   "pinyin": "Hǎo, zài lái liǎng píng kělè.",
+   "ko": "네, 콜라도 두 병 추가요.",
+   "note": "两瓶 (양사 瓶)",
+   "tags": [
+    "food",
+    "function:再"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "哇，锅来了！好香啊！",
+   "pinyin": "Wā, guō lái le! Hǎo xiāng a!",
+   "ko": "와, 냄비 나왔다! 냄새 좋다!",
+   "note": "来了 + 好香 감탄",
+   "tags": [
+    "food",
+    "particle:啊"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "小心，很烫！",
+   "pinyin": "Xiǎoxīn, hěn tàng!",
+   "ko": "조심해요, 뜨거워요!",
+   "note": "小心 (조심) + 烫",
+   "tags": [
+    "care",
+    "hook:hot"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "zh": "没事，我不怕烫… 啊，烫！",
+   "pinyin": "Méishì, wǒ bú pà tàng… a, tàng!",
+   "ko": "괜찮아요, 저 뜨거운 거 안 무서워요… 앗, 뜨거!",
+   "note": "没事 + 반전 유머",
+   "tags": [
+    "joke",
+    "particle:啊"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "B",
+   "zh": "哈哈哈，我说了吧！",
+   "pinyin": "Hāhāhā, wǒ shuō le ba!",
+   "ko": "하하하, 내가 말했잖아요!",
+   "note": "我说了吧 (거봐)",
+   "tags": [
+    "tease",
+    "particle:吧"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "A",
+   "zh": "给我一杯水，快快快！",
+   "pinyin": "Gěi wǒ yì bēi shuǐ, kuài kuài kuài!",
+   "ko": "물 한 잔 주세요, 빨리빨리!",
+   "note": "给我 + 一杯 (양사 杯)",
+   "tags": [
+    "joke",
+    "function:给"
+   ]
+  }
+ ]
+}

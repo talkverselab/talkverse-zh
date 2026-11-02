@@ -1,0 +1,112 @@
+{
+ "id": "r4_life_l2_d12_2",
+ "region": "R4",
+ "island": "life",
+ "kind": "chat",
+ "title": "사진 ②",
+ "emoji": "📷",
+ "scene": "Mark가 찍어준 사진이 마음에 안 드는 小丽, 다리 길게 나올 때까지 재촬영 요구",
+ "speakers": {
+  "A": "A",
+  "B": "B"
+ },
+ "register": "casual",
+ "twist": 0,
+ "variant": "north",
+ "legacy": "L2/d12_2",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "zh": "蹲下来拍，显腿长。",
+   "pinyin": "Dūn xiàlai pāi, xiǎn tuǐ cháng.",
+   "ko": "쪼그려 앉아서 찍어, 다리가 길어 보여.",
+   "note": "방향보어 下来 + 显… (~해 보이다, 사진 구어 显腿长)",
+   "tags": [
+    "photo",
+    "complement:下来"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "zh": "好好好，再来一次。",
+   "pinyin": "Hǎo hǎo hǎo, zài lái yí cì.",
+   "ko": "알았어 알았어, 한 번 더 가자.",
+   "note": "再……一次 (다시 한 번)",
+   "tags": [
+    "photo",
+    "adverb:再"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "zh": "这张不错嘛！有进步。",
+   "pinyin": "Zhè zhāng búcuò ma! Yǒu jìnbù.",
+   "ko": "이 장은 괜찮네! 발전했어.",
+   "note": "不错 (괜찮다) + 嘛 (의외의 만족)",
+   "tags": [
+    "praise",
+    "particle:嘛"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "我可是拍了一百张。",
+   "pinyin": "Wǒ kěshì pāi le yìbǎi zhāng.",
+   "ko": "나 무려 100장 찍었거든.",
+   "note": "可是 (무려 ~거든, 강조 부사)",
+   "tags": [
+    "humor",
+    "emphasis:可是"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "辛苦啦，晚上请你吃好吃的。",
+   "pinyin": "Xīnkǔ la, wǎnshang qǐng nǐ chī hǎochī de.",
+   "ko": "수고했어, 저녁에 맛있는 거 사줄게.",
+   "note": "请+사람+동사 (~에게 사주다)",
+   "tags": [
+    "sweet",
+    "verb:请"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "zh": "太好了，那我要吃烤肉！",
+   "pinyin": "Tàihǎole, nà wǒ yào chī kǎoròu!",
+   "ko": "좋았어, 그럼 나 고기 먹을래!",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "B",
+   "zh": "没问题，走吧走吧。",
+   "pinyin": "Méi wèntí, zǒu ba zǒu ba.",
+   "ko": "콜, 가자 가자.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "A",
+   "zh": "下次拍照我肯定更厉害了。",
+   "pinyin": "Xiàcì pāizhào wǒ kěndìng gèng lìhài le.",
+   "ko": "다음엔 사진 진짜 더 잘 찍을 거야.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  }
+ ]
+}

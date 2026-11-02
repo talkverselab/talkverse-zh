@@ -1,0 +1,112 @@
+{
+ "id": "r3_love_l3_d06_2",
+ "region": "R3",
+ "island": "love",
+ "kind": "long",
+ "title": "한국문화 ②",
+ "emoji": "🇰🇷",
+ "scene": "Mark의 한국 부모님께 어떻게 알릴지, 한국 예절은 뭐가 다른지 이야기한다.",
+ "speakers": {
+  "A": "A",
+  "B": "B"
+ },
+ "register": "casual",
+ "twist": 0,
+ "variant": "north",
+ "legacy": "L3/d06_2",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "A",
+   "zh": "我教你，先学打招呼。",
+   "pinyin": "Wǒ jiāo nǐ, xiān xué dǎ zhāohu.",
+   "ko": "내가 가르쳐 줄게, 인사부터 배우자.",
+   "note": "이합사 打招呼 '인사하다'",
+   "tags": [
+    "이합사",
+    "인사"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "B",
+   "zh": "对了，去你家要脱鞋吧？",
+   "pinyin": "Duìle, qù nǐ jiā yào tuō xié ba?",
+   "ko": "맞다, 너희 집 가면 신발 벗어야 하지?",
+   "note": "추측의 吧 '~겠지?'",
+   "tags": [
+    "추측 吧",
+    "생활 문화"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "A",
+   "zh": "对，跟中国有点儿不一样。",
+   "pinyin": "Duì, gēn Zhōngguó yǒudiǎnr bù yíyàng.",
+   "ko": "응, 중국이랑은 조금 달라.",
+   "note": "비교 표현 跟…不一样",
+   "tags": [
+    "跟…不一样",
+    "비교"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "B",
+   "zh": "没关系，我学得很快的。",
+   "pinyin": "Méi guānxi, wǒ xué de hěn kuài de.",
+   "ko": "괜찮아, 나 배우는 거 엄청 빨라.",
+   "note": "정도보어 得 (学得快)",
+   "tags": [
+    "정도보어",
+    "자신감"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "A",
+   "zh": "有你在，我什么都不怕。",
+   "pinyin": "Yǒu nǐ zài, wǒ shénme dōu bú pà.",
+   "ko": "네가 있으면 난 아무것도 안 무서워.",
+   "note": "의문사+都+부정 전면 부정 '아무것도 ~않다'",
+   "tags": [
+    "什么都不",
+    "고백"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "B",
+   "zh": "那我们什么时候去见你父母？",
+   "pinyin": "Nà wǒmen shénme shíhòu qù jiàn nǐ fùmǔ?",
+   "ko": "그럼 우리 언제 너희 부모님 뵈러 가?",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "A",
+   "zh": "下个月他们正好来北京。",
+   "pinyin": "Xiàgèyuè tāmen zhènghǎo lái běijīng.",
+   "ko": "다음 달에 마침 두 분이 베이징 오셔.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "B",
+   "zh": "太好了，我一定好好表现。",
+   "pinyin": "Tàihǎole, wǒ yídìng hǎohǎo biǎoxiàn.",
+   "ko": "잘됐다, 나 꼭 잘 보일게.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  }
+ ]
+}

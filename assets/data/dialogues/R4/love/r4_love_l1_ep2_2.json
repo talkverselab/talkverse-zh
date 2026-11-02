@@ -1,0 +1,115 @@
+{
+ "id": "r4_love_l1_ep2_2",
+ "region": "R4",
+ "island": "love",
+ "kind": "long",
+ "title": "식사 ②",
+ "emoji": "🍽️",
+ "scene": "첫 만남 식당 — 주문 · 매운맛 · 젓가락 · 계산 · 산책 제안",
+ "speakers": {
+  "A": "Mark",
+  "B": "小丽 / Lily"
+ },
+ "register": "casual",
+ "twist": 0,
+ "variant": "north",
+ "legacy": "L1/ep2_2",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "zh": "那我们点最辣的吧，嘿嘿。",
+   "pinyin": "Nà wǒmen diǎn zuì là de ba, hēihēi.",
+   "ko": "그럼 제일 매운 걸로 시켜요, 헤헤.",
+   "note": "点 (주문하다) + 最 + 吧",
+   "tags": [
+    "tease",
+    "particle:吧"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "zh": "等等，一半一半可以吗？",
+   "pinyin": "Děngdeng, yíbàn yíbàn kěyǐ ma?",
+   "ko": "잠깐만요, 반반은 안 될까요?",
+   "note": "等等 (잠깐) + 一半 (절반)",
+   "tags": [
+    "joke",
+    "particle:吗"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "zh": "哈哈，好，鸳鸯锅！",
+   "pinyin": "Hāhā, hǎo, yuānyāng guō!",
+   "ko": "하하, 좋아요, 반반 냄비(위안양궈)!",
+   "note": "鸳鸯锅 (반반 훠궈) 문화",
+   "tags": [
+    "food",
+    "culture"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "服务员！点菜！",
+   "pinyin": "Fúwùyuán! Diǎn cài!",
+   "ko": "저기요! 주문할게요!",
+   "note": "服务员 부르기 (식당 표현)",
+   "tags": [
+    "food",
+    "culture"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "你的发音真不错嘛。",
+   "pinyin": "Nǐ de fāyīn zhēn búcuò ma.",
+   "ko": "발음 꽤 좋은데요.",
+   "note": "어기조사 嘛 (인정) + 不错",
+   "tags": [
+    "praise",
+    "particle:嘛"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "zh": "我练了一个星期呢。",
+   "pinyin": "Wǒ liàn le yí ge xīngqī ne.",
+   "ko": "일주일 연습했거든요.",
+   "note": "练 + 了 + 呢 (자랑)",
+   "tags": [
+    "joke",
+    "particle:呢"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "B",
+   "zh": "就为了今天？好可爱。",
+   "pinyin": "Jiù wèile jīntiān? Hǎo kě'ài.",
+   "ko": "오늘을 위해서요? 너무 귀엽다.",
+   "note": "为了 (~을 위해) + 可爱",
+   "tags": [
+    "flirt",
+    "hook:cute"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "A",
+   "zh": "别笑我啦，快点菜吧。",
+   "pinyin": "Bié xiào wǒ la, kuài diǎn cài ba.",
+   "ko": "놀리지 마요, 빨리 주문해요.",
+   "note": "别…啦 + 快…吧",
+   "tags": [
+    "tease",
+    "particle:啦"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,115 @@
+{
+ "id": "r4_life_l2_d13_1",
+ "region": "R4",
+ "island": "life",
+ "kind": "chat",
+ "title": "핸드폰 ①",
+ "emoji": "📱",
+ "scene": "폰을 떨어뜨려 액정이 또 깨진 Mark, 수리비 800위안에 충격받고 버티기로 결정",
+ "speakers": {
+  "A": "A",
+  "B": "B"
+ },
+ "register": "casual",
+ "twist": 0,
+ "variant": "north",
+ "legacy": "L2/d13_1",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "A",
+   "zh": "完了完了。",
+   "pinyin": "Wán le wán le.",
+   "ko": "망했다 망했어.",
+   "note": "完了 (끝장이다) 중첩으로 절망 강조",
+   "tags": [
+    "chaos",
+    "expression:完了"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "B",
+   "zh": "怎么啦？",
+   "pinyin": "Zěnme la?",
+   "ko": "왜 그래?",
+   "note": "怎么+啦 (무슨 일이야?)",
+   "tags": [
+    "daily",
+    "particle:啦"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "A",
+   "zh": "手机掉地上了，屏幕碎了。",
+   "pinyin": "Shǒujī diào dìshang le, píngmù suì le.",
+   "ko": "폰 바닥에 떨어뜨렸는데 액정 깨졌어.",
+   "note": "동사+了 연속으로 사건 결과 서술",
+   "tags": [
+    "phone",
+    "particle:了"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "B",
+   "zh": "又碎了？上个月刚修过吧？",
+   "pinyin": "Yòu suì le? Shàng gè yuè gāng xiū guo ba?",
+   "ko": "또 깨졌어? 지난달에 막 고쳤잖아?",
+   "note": "刚……过 (막 ~한 적 있다)",
+   "tags": [
+    "banter",
+    "aspect:过"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "A",
+   "zh": "这次碎得更厉害。",
+   "pinyin": "Zhè cì suì de gèng lìhai.",
+   "ko": "이번엔 더 심하게 깨졌어.",
+   "note": "정도보어 得 + 更 (더욱)",
+   "tags": [
+    "phone",
+    "complement:得"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "B",
+   "zh": "去问问修理店多少钱。",
+   "pinyin": "Qù wènwen xiūlǐdiàn duōshao qián.",
+   "ko": "수리점에 얼마인지 물어봐.",
+   "note": "동사 중첩 问问 (한번 물어보다)",
+   "tags": [
+    "phone",
+    "reduplication"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "A",
+   "zh": "问了，八百块！",
+   "pinyin": "Wèn le, bābǎi kuài!",
+   "ko": "물어봤어, 800위안이래!",
+   "note": "금액 단위 块 (콰이, 구어)",
+   "tags": [
+    "money",
+    "measure:块"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "B",
+   "zh": "八百？都能买个新的了吧！",
+   "pinyin": "Bābǎi? Dōu néng mǎi gè xīn de le ba!",
+   "ko": "800? 그 돈이면 새 거 사겠다!",
+   "note": "都能……了 (~할 정도다) 과장",
+   "tags": [
+    "money",
+    "exaggeration"
+   ]
+  }
+ ]
+}

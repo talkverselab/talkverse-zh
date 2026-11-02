@@ -1,0 +1,112 @@
+{
+ "id": "r3_love_l3_d04_2",
+ "region": "R3",
+ "island": "love",
+ "kind": "long",
+ "title": "왕형 ②",
+ "emoji": "🤫",
+ "scene": "회사 동료 王哥가 둘 사이를 눈치채자, 소문 관리를 상의한다.",
+ "speakers": {
+  "A": "A",
+  "B": "B"
+ },
+ "register": "casual",
+ "twist": 0,
+ "variant": "north",
+ "legacy": "L3/d04_2",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "A",
+   "zh": "别担心，他答应帮我们保密。",
+   "pinyin": "Bié dānxīn, tā dāying bāng wǒmen bǎomì.",
+   "ko": "걱정 마, 비밀 지켜 주기로 약속했어.",
+   "note": "겸어문 帮+사람+동사, 答应 '승낙하다'",
+   "tags": [
+    "겸어문",
+    "保密"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "B",
+   "zh": "王哥人还挺靠谱的。",
+   "pinyin": "Wáng gē rén hái tǐng kàopǔ de.",
+   "ko": "왕형 사람 꽤 믿음직하네.",
+   "note": "挺…的 '꽤 ~하다', 구어 靠谱",
+   "tags": [
+    "挺…的",
+    "靠谱"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "A",
+   "zh": "不过他让我请他喝酒。",
+   "pinyin": "Búguò tā ràng wǒ qǐng tā hē jiǔ.",
+   "ko": "근데 나한테 술 한잔 사라더라.",
+   "note": "사역동사 让 + 겸어문 请",
+   "tags": [
+    "사역 让",
+    "접속사 不过"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "B",
+   "zh": "应该的！这顿我们一起请。",
+   "pinyin": "Yīnggāi de! Zhè dùn wǒmen yìqǐ qǐng.",
+   "ko": "당연히 사야지! 이번 건 우리 같이 내자.",
+   "note": "양사 顿 (식사·술자리), 应该的 '당연한 일'",
+   "tags": [
+    "양사 顿",
+    "관용표현"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "A",
+   "zh": "好，那就这么说定了。",
+   "pinyin": "Hǎo, nà jiù zhème shuōdìng le.",
+   "ko": "좋아, 그럼 그렇게 정한 거다.",
+   "note": "결과보어 定 (说定 '말로 확정하다')",
+   "tags": [
+    "결과보어",
+    "약속 확정"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "B",
+   "zh": "对了，什么时候请他吃饭？",
+   "pinyin": "Duì le, shénme shíhòu qǐng tā chīfàn?",
+   "ko": "맞다, 언제 걔한테 밥 살 거야?",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "A",
+   "zh": "就定在这个周末吧。",
+   "pinyin": "Jiùdìng zài zhège zhōumò ba.",
+   "ko": "이번 주말로 정하자.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "B",
+   "zh": "好，那我先去订个位置。",
+   "pinyin": "Hǎo, nà wǒ xiānqù dìnggè wèizhì.",
+   "ko": "좋아, 그럼 내가 먼저 자리 예약할게.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  }
+ ]
+}

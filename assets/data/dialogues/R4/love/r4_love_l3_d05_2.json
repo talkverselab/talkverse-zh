@@ -1,0 +1,112 @@
+{
+ "id": "r4_love_l3_d05_2",
+ "region": "R4",
+ "island": "love",
+ "kind": "long",
+ "title": "영상통화 ②",
+ "emoji": "📱",
+ "scene": "小丽 부모님과의 첫 영상통화를 앞두고 둘이서 리허설을 한다.",
+ "speakers": {
+  "A": "A",
+  "B": "B"
+ },
+ "register": "casual",
+ "twist": 0,
+ "variant": "north",
+ "legacy": "L3/d05_2",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "zh": "你就笑着说慢慢努力呗。",
+   "pinyin": "Nǐ jiù xiàozhe shuō mànmàn nǔlì bei.",
+   "ko": "그냥 웃으면서 차차 노력한다고 하면 되지 뭐.",
+   "note": "부대상황의 着 (笑着说), 어기조사 呗",
+   "tags": [
+    "동태조사 着",
+    "어기조사 呗"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "zh": "对了，教我一句四川话吧！",
+   "pinyin": "Duìle, jiāo wǒ yí jù Sìchuānhuà ba!",
+   "ko": "맞다, 나 쓰촨 사투리 한마디만 가르쳐 줘!",
+   "note": "이중목적어 教+사람+내용, 화제 전환 对了",
+   "tags": [
+    "이중목적어",
+    "사투리"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "zh": "我们那儿把\"什么\"说成\"啥子\"。",
+   "pinyin": "Wǒmen nàr bǎ \"shénme\" shuōchéng \"sházi\".",
+   "ko": "우리 동네에서는 '什么'를 '啥子'라고 해.",
+   "note": "把자문+成 (把A说成B 'A를 B라고 말하다')",
+   "tags": [
+    "把…成",
+    "쓰촨 사투리"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "啥子？哈哈，太有意思了！",
+   "pinyin": "Sházi? Hāhā, tài yǒuyìsi le!",
+   "ko": "샤쯔? 하하, 진짜 재밌다!",
+   "note": "감탄 표현 太…了",
+   "tags": [
+    "太…了",
+    "재미"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "你这么可爱，他们肯定喜欢你。",
+   "pinyin": "Nǐ zhème kě'ài, tāmen kěndìng xǐhuan nǐ.",
+   "ko": "네가 이렇게 귀여운데, 분명 좋아하실 거야.",
+   "note": "这么+형용사 '이렇게 ~하다', 부사 肯定",
+   "tags": [
+    "这么",
+    "肯定"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "zh": "希望明天视频能顺利。",
+   "pinyin": "Xīwàng míngtiān shìpín néng shùnlì.",
+   "ko": "내일 영상통화 잘됐으면 좋겠다.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "B",
+   "zh": "别紧张，有我陪着你呢。",
+   "pinyin": "Bié jǐnzhāng, yǒu wǒ péi zhe nǐ ne.",
+   "ko": "긴장하지 마, 내가 옆에 있잖아.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "A",
+   "zh": "好，那我们现在开始练习吧！",
+   "pinyin": "Hǎo, nà wǒmen xiànzài kāishǐ liànxí ba!",
+   "ko": "좋아, 그럼 우리 지금부터 연습하자!",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  }
+ ]
+}

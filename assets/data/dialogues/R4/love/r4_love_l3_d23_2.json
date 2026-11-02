@@ -1,0 +1,113 @@
+{
+ "id": "r4_love_l3_d23_2",
+ "region": "R4",
+ "island": "love",
+ "kind": "long",
+ "title": "청혼예고 ②",
+ "emoji": "💍",
+ "scene": "노을 지는 성벽 위, 지난 약속을 되짚으며 Mark가 다음 춘절의 계획을 암시한다.",
+ "speakers": {
+  "A": "A",
+  "B": "B"
+ },
+ "register": "casual",
+ "twist": 0,
+ "variant": "north",
+ "legacy": "L3/d23_2",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "A",
+   "zh": "到时候，我有句话想问叔叔。",
+   "pinyin": "Dào shíhou, wǒ yǒu jù huà xiǎng wèn shūshu.",
+   "ko": "그때 가서, 아버님께 여쭤볼 말이 하나 있어.",
+   "note": "到时候 '그때 가서' + 有+명사+동사구",
+   "tags": [
+    "到时候",
+    "복선"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "B",
+   "zh": "问爸爸？问什么呀？",
+   "pinyin": "Wèn bàba? Wèn shénme ya?",
+   "ko": "아빠한테? 뭘 물어보는데?",
+   "note": "어기조사 呀 (啊의 음운 변화형)",
+   "tags": [
+    "어기조사",
+    "호기심"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "A",
+   "zh": "秘密。跟你的手有关系。",
+   "pinyin": "Mìmì. Gēn nǐ de shǒu yǒu guānxi.",
+   "ko": "비밀이야. 네 손과 관계가 있지.",
+   "note": "'跟…有关系' 관련 표현",
+   "tags": [
+    "跟…有关系",
+    "암시"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "B",
+   "zh": "我的手？你要送我戒……",
+   "pinyin": "Wǒ de shǒu? Nǐ yào sòng wǒ jiè……",
+   "ko": "내 손? 너 설마 나한테 반지……",
+   "note": "要 '~하려 하다' + 이중목적어 送",
+   "tags": [
+    "이중목적어",
+    "설렘"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "A",
+   "zh": "嘘，说出来就不灵了。",
+   "pinyin": "Xū, shuō chūlái jiù bù líng le.",
+   "ko": "쉿, 말해버리면 효력이 없어진대.",
+   "note": "방향보어 파생 용법 出来 (드러남) + 就",
+   "tags": [
+    "방향보어",
+    "유머"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "B",
+   "zh": "傻瓜，那我就慢慢等着。",
+   "pinyin": "Shǎguā, nà wǒ jiù mànmàn děng zhe.",
+   "ko": "바보, 그럼 난 천천히 기다릴게.",
+   "note": "형용사 중첩 慢慢 + 지속의 着",
+   "tags": [
+    "형용사 중첩",
+    "피날레"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "A",
+   "zh": "嗯，答案很快就会揭晓。",
+   "pinyin": "Ń, dáàn hěnkuài jiù huì jiēxiǎo.",
+   "ko": "응, 답은 곧 밝혀질 거야.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "B",
+   "zh": "我等不及想看看那一天了。",
+   "pinyin": "Wǒ děngbùjí xiǎng kànkàn nà yītiān le.",
+   "ko": "그날이 너무 기다려져.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  }
+ ]
+}

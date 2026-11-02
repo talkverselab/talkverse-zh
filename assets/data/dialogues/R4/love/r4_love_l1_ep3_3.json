@@ -1,0 +1,115 @@
+{
+ "id": "r4_love_l1_ep3_3",
+ "region": "R4",
+ "island": "love",
+ "kind": "long",
+ "title": "가족 ③",
+ "emoji": "👨‍👩‍👧",
+ "scene": "공원 산책 — 가족 소개 · 고향 · 춘절 · 부모님 걱정 · 사진",
+ "speakers": {
+  "A": "Mark",
+  "B": "小丽 / Lily"
+ },
+ "register": "casual",
+ "twist": 0,
+ "variant": "north",
+ "legacy": "L1/ep3_3",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "A",
+   "zh": "难怪你这么懂吃！",
+   "pinyin": "Nánguài nǐ zhème dǒng chī!",
+   "ko": "어쩐지 이렇게 먹는 걸 잘 알더라!",
+   "note": "难怪 (어쩐지) + 懂",
+   "tags": [
+    "praise",
+    "callback:ep2"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "B",
+   "zh": "小时候我天天在店里帮忙。",
+   "pinyin": "Xiǎoshíhou wǒ tiāntiān zài diàn li bāngmáng.",
+   "ko": "어릴 때 매일 가게에서 도왔어요.",
+   "note": "小时候 + 帮忙",
+   "tags": [
+    "family",
+    "memory"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "A",
+   "zh": "真好，我想去看看。",
+   "pinyin": "Zhēn hǎo, wǒ xiǎng qù kànkan.",
+   "ko": "좋네요, 가보고 싶어요.",
+   "note": "去看看 (동사 중첩)",
+   "tags": [
+    "flirt",
+    "hook:visit"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "B",
+   "zh": "去我老家？这么快见家长？",
+   "pinyin": "Qù wǒ lǎojiā? Zhème kuài jiàn jiāzhǎng?",
+   "ko": "우리 고향에요? 벌써 부모님 뵈러 가게요?",
+   "note": "见家长 (부모님 뵙기) 문화",
+   "tags": [
+    "tease",
+    "culture"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "A",
+   "zh": "啊，不是不是… 也是，嘿嘿。",
+   "pinyin": "A, bú shì bú shì… yě shì, hēihēi.",
+   "ko": "아, 아니 아니… 맞기도 하고요, 헤헤.",
+   "note": "不是…也是 반전 유머",
+   "tags": [
+    "joke",
+    "particle:嘿"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "B",
+   "zh": "你脸红了！哈哈哈。",
+   "pinyin": "Nǐ liǎn hóng le! Hāhāhā.",
+   "ko": "얼굴 빨개졌어요! 하하하.",
+   "note": "脸红 (얼굴 붉어지다) + 了 변화",
+   "tags": [
+    "tease",
+    "function:了"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "A",
+   "zh": "是太阳太大了嘛！",
+   "pinyin": "Shì tàiyáng tài dà le ma!",
+   "ko": "해가 너무 세서 그래요!",
+   "note": "핑계 + 嘛",
+   "tags": [
+    "joke",
+    "particle:嘛"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "B",
+   "zh": "现在是晚上哦，Mark。",
+   "pinyin": "Xiànzài shì wǎnshang o, Mark.",
+   "ko": "지금 밤인데요, Mark.",
+   "note": "现在 + 哦 (지적)",
+   "tags": [
+    "tease",
+    "particle:哦"
+   ]
+  }
+ ]
+}

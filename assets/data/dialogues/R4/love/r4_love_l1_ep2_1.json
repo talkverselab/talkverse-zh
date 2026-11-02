@@ -1,0 +1,115 @@
+{
+ "id": "r4_love_l1_ep2_1",
+ "region": "R4",
+ "island": "love",
+ "kind": "long",
+ "title": "식사 ①",
+ "emoji": "🍽️",
+ "scene": "첫 만남 식당 — 주문 · 매운맛 · 젓가락 · 계산 · 산책 제안",
+ "speakers": {
+  "A": "Mark",
+  "B": "小丽 / Lily"
+ },
+ "register": "casual",
+ "twist": 0,
+ "variant": "north",
+ "legacy": "L1/ep2_1",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "zh": "Mark！这儿，这儿！",
+   "pinyin": "Mark! Zhèr, zhèr!",
+   "ko": "Mark! 여기요, 여기!",
+   "note": "这儿 (여기) 부르기",
+   "tags": [
+    "greeting",
+    "topic:place"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "zh": "小丽！你来得真早。",
+   "pinyin": "Xiǎolì! Nǐ lái de zhēn zǎo.",
+   "ko": "샤오리! 진짜 일찍 왔네요.",
+   "note": "得 정도보어 (来得早)",
+   "tags": [
+    "greeting",
+    "function:得"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "zh": "我也刚到，坐吧。",
+   "pinyin": "Wǒ yě gāng dào, zuò ba.",
+   "ko": "저도 방금 왔어요, 앉아요.",
+   "note": "刚 (방금) + 吧 권유",
+   "tags": [
+    "greeting",
+    "particle:吧"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "这家店人真多啊。",
+   "pinyin": "Zhè jiā diàn rén zhēn duō a.",
+   "ko": "이 가게 사람 진짜 많네요.",
+   "note": "这家店 + 真…啊 감탄",
+   "tags": [
+    "smalltalk",
+    "particle:啊"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "对，这儿的火锅很有名。",
+   "pinyin": "Duì, zhèr de huǒguō hěn yǒumíng.",
+   "ko": "네, 여기 훠궈가 유명해요.",
+   "note": "有名 (유명하다)",
+   "tags": [
+    "food",
+    "hook:hotpot"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "zh": "火锅！我一直想吃！",
+   "pinyin": "Huǒguō! Wǒ yìzhí xiǎng chī!",
+   "ko": "훠궈! 계속 먹고 싶었어요!",
+   "note": "一直 (줄곧) + 想",
+   "tags": [
+    "food",
+    "function:想"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "B",
+   "zh": "你能吃辣吗？",
+   "pinyin": "Nǐ néng chī là ma?",
+   "ko": "매운 거 먹을 수 있어요?",
+   "note": "能 (가능) + 吃辣",
+   "tags": [
+    "question",
+    "particle:吗"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "A",
+   "zh": "当然！韩国人不怕辣。",
+   "pinyin": "Dāngrán! Hánguó rén bú pà là.",
+   "ko": "당연하죠! 한국인은 매운 거 안 무서워해요.",
+   "note": "不怕 (두렵지 않다)",
+   "tags": [
+    "joke",
+    "topic:korea"
+   ]
+  }
+ ]
+}

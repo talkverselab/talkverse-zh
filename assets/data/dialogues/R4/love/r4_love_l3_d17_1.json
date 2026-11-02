@@ -1,0 +1,115 @@
+{
+ "id": "r4_love_l3_d17_1",
+ "region": "R4",
+ "island": "love",
+ "kind": "long",
+ "title": "발령위기 ①",
+ "emoji": "✈️",
+ "scene": "퇴근 후 카페, Mark가 서울 발령 가능성을 小丽에게 조심스럽게 꺼낸다.",
+ "speakers": {
+  "A": "A",
+  "B": "B"
+ },
+ "register": "casual",
+ "twist": 0,
+ "variant": "north",
+ "legacy": "L3/d17_1",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "A",
+   "zh": "小丽，我有件事要告诉你。",
+   "pinyin": "Xiǎolì, wǒ yǒu jiàn shì yào gàosu nǐ.",
+   "ko": "샤오리, 너한테 할 말이 있어.",
+   "note": "양사 件 + '要+동사' (해야 할 일)",
+   "tags": [
+    "양사",
+    "고백"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "B",
+   "zh": "你的表情好严肃，吓我一跳。",
+   "pinyin": "Nǐ de biǎoqíng hǎo yánsù, xià wǒ yí tiào.",
+   "ko": "표정이 왜 이렇게 심각해, 깜짝 놀랐잖아.",
+   "note": "관용표현 '吓一跳' (깜짝 놀라다)",
+   "tags": [
+    "관용어",
+    "감정"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "A",
+   "zh": "公司可能要把我调回首尔。",
+   "pinyin": "Gōngsī kěnéng yào bǎ wǒ diào huí Shǒu'ěr.",
+   "ko": "회사가 나를 서울로 다시 발령 낼지도 몰라.",
+   "note": "把자문 + 방향보어 回",
+   "tags": [
+    "把자문",
+    "직장"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "B",
+   "zh": "什么？什么时候的事？",
+   "pinyin": "Shénme? Shénme shíhou de shì?",
+   "ko": "뭐? 언제 나온 얘기야?",
+   "note": "의문사 什么 / 什么时候",
+   "tags": [
+    "의문사",
+    "충격"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "A",
+   "zh": "上午王哥突然告诉我的。",
+   "pinyin": "Shàngwǔ Wáng gē tūrán gàosu wǒ de.",
+   "ko": "오전에 왕 형이 갑자기 알려준 거야.",
+   "note": "(是)…的 구문 — 이미 일어난 일의 시점·주체 강조",
+   "tags": [
+    "是…的",
+    "직장"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "B",
+   "zh": "那你是怎么回答的？",
+   "pinyin": "Nà nǐ shì zěnme huídá de?",
+   "ko": "그래서 넌 뭐라고 대답했는데?",
+   "note": "是…的 의문형 (방식 묻기)",
+   "tags": [
+    "是…的",
+    "질문"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "A",
+   "zh": "我说我需要时间考虑。",
+   "pinyin": "Wǒ shuō wǒ xūyào shíjiān kǎolǜ.",
+   "ko": "생각할 시간이 필요하다고 했어.",
+   "note": "需要+명사+동사 구조",
+   "tags": [
+    "需要",
+    "간접화법"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "B",
+   "zh": "考虑？这还用考虑吗？",
+   "pinyin": "Kǎolǜ? Zhè hái yòng kǎolǜ ma?",
+   "ko": "생각? 이게 생각할 일이야?",
+   "note": "반어문 '还用…吗' (~할 필요도 없다)",
+   "tags": [
+    "반어문",
+    "갈등"
+   ]
+  }
+ ]
+}

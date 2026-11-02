@@ -1,0 +1,112 @@
+{
+ "id": "r3_love_l3_d10_2",
+ "region": "R3",
+ "island": "love",
+ "kind": "long",
+ "title": "어린시절 ②",
+ "emoji": "📷",
+ "scene": "샤오리 집에서 어릴 적 사진첩을 함께 넘겨 보는 저녁.",
+ "speakers": {
+  "A": "A",
+  "B": "B"
+ },
+ "register": "casual",
+ "twist": 0,
+ "variant": "north",
+ "legacy": "L3/d10_2",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "A",
+   "zh": "我特别爱踢足球，很调皮。",
+   "pinyin": "Wǒ tèbié ài tī zúqiú, hěn tiáopí.",
+   "ko": "나 축구 엄청 좋아했고, 완전 개구쟁이였어.",
+   "note": "동사 爱 + 동사구 (~하기를 즐기다)",
+   "tags": [
+    "축구",
+    "추억"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "B",
+   "zh": "真想看看你小时候的照片。",
+   "pinyin": "Zhēn xiǎng kànkan nǐ xiǎoshíhou de zhàopiàn.",
+   "ko": "네 어릴 때 사진 진짜 보고 싶다.",
+   "note": "동사 중첩 看看 (가볍게 ~해 보다)",
+   "tags": [
+    "사진",
+    "호기심"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "A",
+   "zh": "下次我给你看，别笑我啊。",
+   "pinyin": "Xià cì wǒ gěi nǐ kàn, bié xiào wǒ a.",
+   "ko": "다음에 보여 줄게, 웃으면 안 돼.",
+   "note": "금지 표현 别 + 어기조사 啊",
+   "tags": [
+    "약속",
+    "유머"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "B",
+   "zh": "我不会笑你的，放心吧。",
+   "pinyin": "Wǒ bú huì xiào nǐ de, fàngxīn ba.",
+   "ko": "안 웃을 거야, 안심해.",
+   "note": "会…的 (확신의 어기)",
+   "tags": [
+    "약속",
+    "안심"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "A",
+   "zh": "认识你以前的样子，真好。",
+   "pinyin": "Rènshi nǐ yǐqián de yàngzi, zhēn hǎo.",
+   "ko": "네 예전 모습을 알게 돼서 참 좋다.",
+   "note": "명사 + 以前 (~이전의)",
+   "tags": [
+    "애정",
+    "감정"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "B",
+   "zh": "以后我们要拍更多照片。",
+   "pinyin": "Yǐhòu wǒmen yào pāi gèng duō zhàopiān.",
+   "ko": "앞으로 우리 사진 더 많이 찍자.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "A",
+   "zh": "对，把每个瞬间都记录下来。",
+   "pinyin": "Duì, bǎ měigè shùnjiān dōu jìlùxiàlái.",
+   "ko": "맞아, 순간순간을 다 기록해 두자.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "B",
+   "zh": "这本相册我要好好收着。",
+   "pinyin": "Zhèběn xiàngcè wǒyào hǎohǎo shōuzhe.",
+   "ko": "이 앨범, 내가 소중히 간직할게.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,115 @@
+{
+ "id": "r3_love_l1_ep3_5",
+ "region": "R3",
+ "island": "love",
+ "kind": "long",
+ "title": "가족 ⑤",
+ "emoji": "👨‍👩‍👧",
+ "scene": "공원 산책 — 가족 소개 · 고향 · 춘절 · 부모님 걱정 · 사진",
+ "speakers": {
+  "A": "Mark",
+  "B": "小丽 / Lily"
+ },
+ "register": "casual",
+ "twist": 0,
+ "variant": "north",
+ "legacy": "L1/ep3_5",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "A",
+   "zh": "哇，你妈妈好年轻！",
+   "pinyin": "Wā, nǐ māma hǎo niánqīng!",
+   "ko": "와, 어머니 진짜 젊으시다!",
+   "note": "好+형용사 감탄",
+   "tags": [
+    "praise",
+    "family"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "B",
+   "zh": "大家都这么说，嘿嘿。",
+   "pinyin": "Dàjiā dōu zhème shuō, hēihēi.",
+   "ko": "다들 그렇게 말해요, 헤헤.",
+   "note": "大家都 + 这么说",
+   "tags": [
+    "family",
+    "particle:嘿"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "A",
+   "zh": "你和妈妈长得很像。",
+   "pinyin": "Nǐ hé māma zhǎng de hěn xiàng.",
+   "ko": "어머니랑 많이 닮았어요.",
+   "note": "长得像 (닮았다) 得 보어",
+   "tags": [
+    "praise",
+    "function:得"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "B",
+   "zh": "其实… 我妈问过你的事。",
+   "pinyin": "Qíshí… wǒ mā wèn guo nǐ de shì.",
+   "ko": "사실… 엄마가 당신에 대해 물어봤어요.",
+   "note": "其实 + 过 경험",
+   "tags": [
+    "family",
+    "hook:parents"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "A",
+   "zh": "真的吗？她说什么了？",
+   "pinyin": "Zhēn de ma? Tā shuō shénme le?",
+   "ko": "정말요? 뭐라고 하셨어요?",
+   "note": "说什么了 완료 의문",
+   "tags": [
+    "question",
+    "function:了"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "B",
+   "zh": "她问：外国人能相信吗？",
+   "pinyin": "Tā wèn: wàiguó rén néng xiāngxìn ma?",
+   "ko": "'외국인은 믿을 수 있니?'라고 물으셨어요.",
+   "note": "能 + 相信 — #40 '我相信你'와 호응",
+   "tags": [
+    "family",
+    "hook:worry"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "A",
+   "zh": "我会证明给她看的。",
+   "pinyin": "Wǒ huì zhèngmíng gěi tā kàn de.",
+   "ko": "제가 증명해 보일 거예요.",
+   "note": "会…的 (확신) + 证明给…看",
+   "tags": [
+    "promise",
+    "function:会"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "B",
+   "zh": "嗯，我相信你。",
+   "pinyin": "Ǹg, wǒ xiāngxìn nǐ.",
+   "ko": "응, 믿어요.",
+   "note": "어기조사 嗯 + 相信 (신뢰) — 반말 전환 시작",
+   "tags": [
+    "feeling",
+    "particle:嗯"
+   ]
+  }
+ ]
+}

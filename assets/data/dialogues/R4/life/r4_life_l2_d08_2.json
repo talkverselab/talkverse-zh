@@ -1,0 +1,112 @@
+{
+ "id": "r4_life_l2_d08_2",
+ "region": "R4",
+ "island": "life",
+ "kind": "chat",
+ "title": "감기 ②",
+ "emoji": "🤒",
+ "scene": "감기에 걸린 小丽를 약과 죽으로 챙기는 Mark",
+ "speakers": {
+  "A": "A",
+  "B": "B"
+ },
+ "register": "casual",
+ "twist": 0,
+ "variant": "north",
+ "legacy": "L2/d08_2",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "zh": "哇，今天嘴这么甜？",
+   "pinyin": "Wā, jīntiān zuǐ zhème tián?",
+   "ko": "와, 오늘따라 왜 이렇게 스윗해?",
+   "note": "这么+형용사 (이렇게 ~해?) / 嘴甜 (말이 달다)",
+   "tags": [
+    "structure:这么",
+    "humor"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "zh": "想喝粥还是喝汤？",
+   "pinyin": "Xiǎng hē zhōu háishi hē tāng?",
+   "ko": "죽 먹을래 아니면 국 먹을래?",
+   "note": "还是 선택의문문 (A 아니면 B?)",
+   "tags": [
+    "conjunction:还是",
+    "food"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "zh": "都要，可以吗？",
+   "pinyin": "Dōu yào, kěyǐ ma?",
+   "ko": "둘 다, 돼?",
+   "note": "부사 都 (모두 다)",
+   "tags": [
+    "adverb:都",
+    "banter"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "病人最大，都给你买。",
+   "pinyin": "Bìngrén zuì dà, dōu gěi nǐ mǎi.",
+   "ko": "환자가 제일 높지, 다 사줄게.",
+   "note": "给+사람+동사 (~에게 ~해주다)",
+   "tags": [
+    "preposition:给",
+    "positive"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "快点来，我想你了嘛。",
+   "pinyin": "Kuài diǎn lái, wǒ xiǎng nǐ le ma.",
+   "ko": "빨리 와, 보고 싶단 말이야.",
+   "note": "想+사람 (보고 싶다) + 嘛 (응석)",
+   "tags": [
+    "verb:想",
+    "positive"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "zh": "马上到，你多穿点衣服。",
+   "pinyin": "Mǎshàng dào, nǐ duō chuāndiǎn yīfú.",
+   "ko": "곧 도착해, 옷 좀 더 챙겨 입어.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "B",
+   "zh": "知道啦，等你哦。",
+   "pinyin": "Zhīdào la, děng nǐ ó.",
+   "ko": "알겠어, 기다릴게.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "A",
+   "zh": "到了，开门！",
+   "pinyin": "Dào le, kāimén!",
+   "ko": "도착했어, 문 열어!",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  }
+ ]
+}

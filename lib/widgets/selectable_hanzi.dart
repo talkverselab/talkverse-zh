@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 import '../core/theme.dart';
+import '../services/achievement_service.dart';
+import '../services/art_service.dart';
 import '../services/lexicon_service.dart';
 import '../services/hanzi_info_service.dart';
 import '../services/pinyin_util.dart';
@@ -65,20 +67,7 @@ class _SelectableHanziTextState extends State<SelectableHanziText> {
   }
 
   Future<void> _openChar(String char) async {
-    await HanziInfoService.instance.ensureLoaded();
-    await LexiconService.instance.ensureLoaded();
-    if (!mounted) return;
-    final info = HanziInfoService.instance.lookup(char);
-    final lex = LexiconService.instance.lookup(char);
-    await showModalBottomSheet(
-      context: context,
-      backgroundColor: AppColors.xuanZhi,
-      isScrollControlled: true,
-      shape: const RoundedRectangleBorder(
-        borderRadius: BorderRadius.vertical(top: Radius.circular(2)),
-      ),
-      builder: (_) => HanziInfoSheet(char: char, info: info, lex: lex),
-    );
+    await showHanziSheet(context, char);
     if (mounted) setState(() => _focused = null);
   }
 
@@ -158,22 +147,7 @@ class _ChunkInfoSheet extends StatefulWidget {
 }
 
 class _ChunkInfoSheetState extends State<_ChunkInfoSheet> {
-  Future<void> _openChar(String char) async {
-    await HanziInfoService.instance.ensureLoaded();
-    await LexiconService.instance.ensureLoaded();
-    if (!mounted) return;
-    final info = HanziInfoService.instance.lookup(char);
-    final lex = LexiconService.instance.lookup(char);
-    await showModalBottomSheet(
-      context: context,
-      backgroundColor: AppColors.xuanZhi,
-      isScrollControlled: true,
-      shape: const RoundedRectangleBorder(
-        borderRadius: BorderRadius.vertical(top: Radius.circular(2)),
-      ),
-      builder: (_) => HanziInfoSheet(char: char, info: info, lex: lex),
-    );
-  }
+  Future<void> _openChar(String char) => showHanziSheet(context, char);
 
   @override
   Widget build(BuildContext context) {
@@ -427,12 +401,13 @@ class _ChunkInfoSheetState extends State<_ChunkInfoSheet> {
   }
 }
 
-class HanziInfoSheet extends StatelessWidget {
+/// 한자 한 글자 정보(병음·뜻·발음부 가족·공용 DB 그림·외우는 방법). 팝업([HanziInfoSheet])과 「한자 배우기」 화면이 같이 쓴다.
+class HanziInfoBody extends StatelessWidget {
   final String char;
   final HanziInfo? info;
   final LexEntry? lex;
 
-  const HanziInfoSheet({super.key, required this.char, this.info, this.lex});
+  const HanziInfoBody({super.key, required this.char, this.info, this.lex});
 
   Future<void> _openFamily(BuildContext ctx, String phon, String phonPy, String exclude) async {
     // 발음부 메뉴로 이동 — 해당 발음부 가족 자동 오픈, from 한자 하이라이트.
@@ -454,10 +429,7 @@ class HanziInfoSheet extends StatelessWidget {
     final phonPy = info?.phoneticPinyin;
     final hasPhon = info?.isPhonosemantic ?? false;
 
-    return SafeArea(
-      child: Padding(
-        padding: EdgeInsets.fromLTRB(20, 18, 20, 24 + bottomInset(context)),
-        child: Column(
+    return Column(
           mainAxisSize: MainAxisSize.min,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
@@ -745,14 +717,53 @@ class HanziInfoSheet extends StatelessWidget {
             ),
             _SharedHanjaCard(char: char),
           ],
-        ),
-      ),
-    );
+        );
   }
 }
 
+/// 한자 팝업(바닥 시트). 내용은 [HanziInfoBody].
+class HanziInfoSheet extends StatelessWidget {
+  final String char;
+  final HanziInfo? info;
+  final LexEntry? lex;
+
+  const HanziInfoSheet({super.key, required this.char, this.info, this.lex});
+
+  @override
+  Widget build(BuildContext context) => SafeArea(
+        child: Padding(
+          padding: EdgeInsets.fromLTRB(20, 18, 20, 24 + bottomInset(context)),
+          child: ConstrainedBox(
+            constraints: BoxConstraints(maxHeight: MediaQuery.sizeOf(context).height * 0.85),
+            child: SingleChildScrollView(child: HanziInfoBody(char: char, info: info, lex: lex)),
+          ),
+        ),
+      );
+}
+
+/// 한자 팝업 열기 — 사전·글자 정보를 읽고, 성과(팝업으로 본 한자)를 남긴다. 앱의 한자 팝업은 이것 하나.
+Future<void> showHanziSheet(BuildContext context, String char) async {
+  await HanziInfoService.instance.ensureLoaded();
+  await LexiconService.instance.ensureLoaded();
+  if (!context.mounted) return;
+  AchievementService.instance.markHanziSeen(char);
+  await showModalBottomSheet(
+    context: context,
+    backgroundColor: AppColors.xuanZhi,
+    isScrollControlled: true,
+    shape: const RoundedRectangleBorder(
+      borderRadius: BorderRadius.vertical(top: Radius.circular(2)),
+    ),
+    builder: (_) => HanziInfoSheet(
+      char: char,
+      info: HanziInfoService.instance.lookup(char),
+      lex: LexiconService.instance.lookup(char),
+    ),
+  );
+}
+
 /// 한자 공용 DB 에서 받은 그림(모핑 GIF 또는 楷書 글자)·외우는 방법·쓰기 범위.
-/// 받은 것이 없으면 아무것도 그리지 않는다.
+/// 받은 것이 없으면 그 한자를 품은 단어 그림(공용 그림 DB)으로 대신하고, 그것도 없으면 아무것도 그리지 않는다.
 class _SharedHanjaCard extends StatelessWidget {
   final String char;
   const _SharedHanjaCard({required this.char});
@@ -770,7 +781,7 @@ class _SharedHanjaCard extends StatelessWidget {
       3 => tr('쓰기 · HSK 고등'),
       _ => null,
     };
-    if (image == null && mn == null && write == null) return const SizedBox.shrink();
+    if (image == null && mn == null && write == null) return _HanziWordArt(ch: char);
 
     return Padding(
       padding: const EdgeInsets.only(top: 12),
@@ -1223,6 +1234,39 @@ class _FamilyTile extends StatelessWidget {
           ],
         ),
       ),
+    );
+  }
+}
+
+/// 한자 그림이 없을 때: 그 한자를 품은 가장 흔한 단어의 그림(talkverse.uk 공용 단어 그림, 일본어앱과 같은 방식).
+class _HanziWordArt extends StatelessWidget {
+  final String ch;
+  const _HanziWordArt({required this.ch});
+
+  @override
+  Widget build(BuildContext context) {
+    return FutureBuilder<MapEntry<String, String>?>(
+      future: ArtService.instance.wordArtForHanzi(ch),
+      builder: (context, snap) {
+        final e = snap.data;
+        if (e == null) return const SizedBox.shrink();
+        return Padding(
+          padding: const EdgeInsets.only(top: 12),
+          child: Center(
+            child: Column(mainAxisSize: MainAxisSize.min, children: [
+              ClipRRect(
+                borderRadius: BorderRadius.circular(12),
+                child: ConstrainedBox(
+                  constraints: const BoxConstraints(maxWidth: 260, maxHeight: 200),
+                  child: Image.network(e.value, fit: BoxFit.contain, errorBuilder: (_, _, _) => const SizedBox.shrink()),
+                ),
+              ),
+              const SizedBox(height: 4),
+              Text(e.key, style: const TextStyle(fontSize: 13, fontWeight: FontWeight.w700, color: AppColors.mo)),
+            ]),
+          ),
+        );
+      },
     );
   }
 }

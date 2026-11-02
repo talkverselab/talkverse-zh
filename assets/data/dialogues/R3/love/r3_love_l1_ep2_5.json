@@ -1,0 +1,115 @@
+{
+ "id": "r3_love_l1_ep2_5",
+ "region": "R3",
+ "island": "love",
+ "kind": "long",
+ "title": "식사 ⑤",
+ "emoji": "🍽️",
+ "scene": "첫 만남 식당 — 주문 · 매운맛 · 젓가락 · 계산 · 산책 제안",
+ "speakers": {
+  "A": "Mark",
+  "B": "小丽 / Lily"
+ },
+ "register": "casual",
+ "twist": 0,
+ "variant": "north",
+ "legacy": "L1/ep2_5",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "zh": "慢慢学，我教你呀。",
+   "pinyin": "Mànmàn xué, wǒ jiāo nǐ ya.",
+   "ko": "천천히 배워요, 내가 가르쳐 줄게요.",
+   "note": "慢慢 + 教 (가르치다) + 呀",
+   "tags": [
+    "care",
+    "particle:呀"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "zh": "真的？那我天天找你。",
+   "pinyin": "Zhēn de? Nà wǒ tiāntiān zhǎo nǐ.",
+   "ko": "정말요? 그럼 매일 찾아갈 거예요.",
+   "note": "天天 (매일) + 找",
+   "tags": [
+    "flirt",
+    "hook:everyday"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "zh": "看你的表现哦。",
+   "pinyin": "Kàn nǐ de biǎoxiàn o.",
+   "ko": "하기 나름이에요.",
+   "note": "看你的表现 (네 하기에 달렸다) + 哦",
+   "tags": [
+    "tease",
+    "particle:哦"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "服务员，买单！我请客。",
+   "pinyin": "Fúwùyuán, mǎidān! Wǒ qǐngkè.",
+   "ko": "저기요, 계산이요! 제가 살게요.",
+   "note": "买单 (계산) + 请客 (한턱내다)",
+   "tags": [
+    "food",
+    "culture"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "说好了，下次我请。",
+   "pinyin": "Shuō hǎo le, xià cì wǒ qǐng.",
+   "ko": "약속한 거예요, 다음엔 제가 살게요.",
+   "note": "说好了 (약속했다) + 下次",
+   "tags": [
+    "promise",
+    "hook:nexttime"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "zh": "下次？那就是还有下次！",
+   "pinyin": "Xià cì? Nà jiùshì hái yǒu xià cì!",
+   "ko": "다음이요? 그럼 다음이 있다는 거네요!",
+   "note": "还有 (또 있다) 재치",
+   "tags": [
+    "flirt",
+    "function:有"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "B",
+   "zh": "吃饱了吗？我们去走走吧。",
+   "pinyin": "Chī bǎo le ma? Wǒmen qù zǒuzou ba.",
+   "ko": "배불러요? 우리 좀 걸어요.",
+   "note": "吃饱了 + 走走 (동사 중첩)",
+   "tags": [
+    "plan",
+    "particle:吧"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "A",
+   "zh": "好啊，今天月亮真好看。",
+   "pinyin": "Hǎo a, jīntiān yuèliang zhēn hǎokàn.",
+   "ko": "좋아요, 오늘 달이 진짜 예쁘네요.",
+   "note": "月亮 낭만 마무리",
+   "tags": [
+    "flirt",
+    "hook:moon"
+   ]
+  }
+ ]
+}

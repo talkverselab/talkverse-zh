@@ -1,0 +1,115 @@
+{
+ "id": "r4_love_l1_ep3_4",
+ "region": "R4",
+ "island": "love",
+ "kind": "long",
+ "title": "가족 ④",
+ "emoji": "👨‍👩‍👧",
+ "scene": "공원 산책 — 가족 소개 · 고향 · 춘절 · 부모님 걱정 · 사진",
+ "speakers": {
+  "A": "Mark",
+  "B": "小丽 / Lily"
+ },
+ "register": "casual",
+ "twist": 0,
+ "variant": "north",
+ "legacy": "L1/ep3_4",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "A",
+   "zh": "……月亮太大了。",
+   "pinyin": "…… Yuèliang tài dà le.",
+   "ko": "……달이 너무 커서요.",
+   "note": "callback: ep2 달 + 유머",
+   "tags": [
+    "joke",
+    "callback:ep2"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "B",
+   "zh": "哈哈哈，你真的很有意思。",
+   "pinyin": "Hāhāhā, nǐ zhēn de hěn yǒu yìsi.",
+   "ko": "하하하, 당신 정말 재밌어요.",
+   "note": "真的 + 有意思",
+   "tags": [
+    "praise",
+    "callback:ep1"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "A",
+   "zh": "春节你回四川吗？",
+   "pinyin": "Chūnjié nǐ huí Sìchuān ma?",
+   "ko": "춘절에 쓰촨 돌아가요?",
+   "note": "春节 (춘절) + 回",
+   "tags": [
+    "culture",
+    "question"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "B",
+   "zh": "回，每年都回，吃年夜饭。",
+   "pinyin": "Huí, měi nián dōu huí, chī niányèfàn.",
+   "ko": "가요, 매년 가서 설 저녁 먹어요.",
+   "note": "每年都 + 年夜饭 문화",
+   "tags": [
+    "culture",
+    "family"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "A",
+   "zh": "年夜饭都吃什么？",
+   "pinyin": "Niányèfàn dōu chī shénme?",
+   "ko": "설 저녁엔 뭐 먹어요?",
+   "note": "都…什么 (다 뭐)",
+   "tags": [
+    "culture",
+    "question"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "B",
+   "zh": "饺子、鱼，鱼是'年年有余'。",
+   "pinyin": "Jiǎozi, yú, yú shì 'nián nián yǒu yú'.",
+   "ko": "만두랑 생선요, 생선은 '해마다 여유롭길'이란 뜻이에요.",
+   "note": "年年有余 (余=鱼 동음) 문화",
+   "tags": [
+    "culture",
+    "hook:wordplay"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "A",
+   "zh": "哈哈，中文真有意思！",
+   "pinyin": "Hāhā, zhōngwén zhēn yǒu yìsi!",
+   "ko": "하하, 중국어 진짜 재밌네요!",
+   "note": "真 + 有意思 — 동음 말장난(年年有余) 리액션",
+   "tags": [
+    "culture",
+    "topic:chinese"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "B",
+   "zh": "对了，给你看我家的照片。",
+   "pinyin": "Duì le, gěi nǐ kàn wǒ jiā de zhàopiàn.",
+   "ko": "맞다, 우리 가족 사진 보여줄게요.",
+   "note": "给你看 (보여주다)",
+   "tags": [
+    "family",
+    "function:给"
+   ]
+  }
+ ]
+}

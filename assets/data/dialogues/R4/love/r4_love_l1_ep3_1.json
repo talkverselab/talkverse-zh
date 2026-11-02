@@ -1,0 +1,115 @@
+{
+ "id": "r4_love_l1_ep3_1",
+ "region": "R4",
+ "island": "love",
+ "kind": "long",
+ "title": "가족 ①",
+ "emoji": "👨‍👩‍👧",
+ "scene": "공원 산책 — 가족 소개 · 고향 · 춘절 · 부모님 걱정 · 사진",
+ "speakers": {
+  "A": "Mark",
+  "B": "小丽 / Lily"
+ },
+ "register": "casual",
+ "twist": 0,
+ "variant": "north",
+ "legacy": "L1/ep3_1",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "zh": "Mark，你家有几口人？",
+   "pinyin": "Mark, nǐ jiā yǒu jǐ kǒu rén?",
+   "ko": "Mark, 가족이 몇 명이에요?",
+   "note": "几口人 (양사 口) 가족 묻기",
+   "tags": [
+    "family",
+    "question"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "zh": "四口人，爸爸、妈妈、妹妹和我。",
+   "pinyin": "Sì kǒu rén, bàba, māma, mèimei hé wǒ.",
+   "ko": "네 명이요, 아빠, 엄마, 여동생 그리고 저요.",
+   "note": "가족 명칭 나열 + 和",
+   "tags": [
+    "family",
+    "self-intro"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "zh": "你有妹妹啊，她多大？",
+   "pinyin": "Nǐ yǒu mèimei a, tā duō dà?",
+   "ko": "여동생이 있구나, 몇 살이에요?",
+   "note": "多大 나이 묻기",
+   "tags": [
+    "family",
+    "particle:啊"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "她二十三岁，在首尔上大学。",
+   "pinyin": "Tā èrshísān suì, zài Shǒu'ěr shàng dàxué.",
+   "ko": "스물세 살이고 서울에서 대학 다녀요.",
+   "note": "岁 + 上大学",
+   "tags": [
+    "family",
+    "topic:korea"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "你想家吗？",
+   "pinyin": "Nǐ xiǎng jiā ma?",
+   "ko": "집 그리워요?",
+   "note": "想家 (집을 그리워하다)",
+   "tags": [
+    "question",
+    "hook:homesick"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "zh": "有时候想，特别是晚上。",
+   "pinyin": "Yǒushíhou xiǎng, tèbié shì wǎnshang.",
+   "ko": "가끔요, 특히 밤에요.",
+   "note": "有时候 + 特别是",
+   "tags": [
+    "feeling",
+    "function:想"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "B",
+   "zh": "那你想吃韩国菜的时候呢？",
+   "pinyin": "Nà nǐ xiǎng chī Hánguó cài de shíhou ne?",
+   "ko": "그럼 한국 음식 먹고 싶을 땐요?",
+   "note": "的时候 (~할 때) + 呢",
+   "tags": [
+    "question",
+    "particle:呢"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "A",
+   "zh": "自己做！我会做泡菜汤。",
+   "pinyin": "Zìjǐ zuò! Wǒ huì zuò pàocài tāng.",
+   "ko": "직접 해요! 김치찌개 할 줄 알아요.",
+   "note": "自己 + 会做",
+   "tags": [
+    "hobby",
+    "function:会"
+   ]
+  }
+ ]
+}

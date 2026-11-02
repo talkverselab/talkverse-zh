@@ -1,0 +1,115 @@
+{
+ "id": "r4_life_l2_d10_1",
+ "region": "R4",
+ "island": "life",
+ "kind": "chat",
+ "title": "단톡방 ①",
+ "emoji": "💬",
+ "scene": "친구 大伟까지 낀 단톡방에서 약속 날짜 잡다가 다들 일정이 꼬이는 혼돈",
+ "speakers": {
+  "A": "A",
+  "B": "B"
+ },
+ "register": "casual",
+ "twist": 0,
+ "variant": "north",
+ "legacy": "L2/d10_1",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "zh": "大伟又在群里发消息了。",
+   "pinyin": "Dàwěi yòu zài qún lǐ fā xiāoxi le.",
+   "ko": "다웨이가 또 단톡방에 메시지 보냈어.",
+   "note": "又……了 (또 반복됨)",
+   "tags": [
+    "chat",
+    "grammar:又了"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "zh": "他说什么？",
+   "pinyin": "Tā shuō shénme?",
+   "ko": "걔가 뭐래?",
+   "note": "의문사 什么 의문문",
+   "tags": [
+    "chat",
+    "question"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "zh": "他说周六一起吃饭。",
+   "pinyin": "Tā shuō zhōuliù yìqǐ chīfàn.",
+   "ko": "토요일에 같이 밥 먹재.",
+   "note": "说로 간접 인용 (전달 화법)",
+   "tags": [
+    "plan",
+    "reported-speech"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "周六我要加班啊。",
+   "pinyin": "Zhōuliù wǒ yào jiābān a.",
+   "ko": "토요일에 나 야근해야 돼.",
+   "note": "要 (해야 함) + 어기조사 啊",
+   "tags": [
+    "work",
+    "particle:啊"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "那我说周日？",
+   "pinyin": "Nà wǒ shuō zhōurì?",
+   "ko": "그럼 일요일이라고 할까?",
+   "note": "那 (그럼) 화제 이어받기",
+   "tags": [
+    "plan",
+    "connector:那"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "zh": "行，周日可以。",
+   "pinyin": "Xíng, zhōurì kěyǐ.",
+   "ko": "좋아, 일요일 괜찮아.",
+   "note": "구어체 승낙 行 (오케이)",
+   "tags": [
+    "plan",
+    "colloquial"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "B",
+   "zh": "他又说周日他有事。",
+   "pinyin": "Tā yòu shuō zhōurì tā yǒu shì.",
+   "ko": "걔가 또 일요일엔 일이 있대.",
+   "note": "有事 (볼일이 있다)",
+   "tags": [
+    "chaos",
+    "expression:有事"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "A",
+   "zh": "那他到底哪天有空？",
+   "pinyin": "Nà tā dàodǐ nǎ tiān yǒu kòng?",
+   "ko": "그럼 걔 대체 언제 시간 되는데?",
+   "note": "到底 (도대체) 추궁 부사",
+   "tags": [
+    "chaos",
+    "adverb:到底"
+   ]
+  }
+ ]
+}

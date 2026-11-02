@@ -1,0 +1,115 @@
+{
+ "id": "r4_life_l2_d12_1",
+ "region": "R4",
+ "island": "life",
+ "kind": "chat",
+ "title": "사진 ①",
+ "emoji": "📷",
+ "scene": "Mark가 찍어준 사진이 마음에 안 드는 小丽, 다리 길게 나올 때까지 재촬영 요구",
+ "speakers": {
+  "A": "A",
+  "B": "B"
+ },
+ "register": "casual",
+ "twist": 0,
+ "variant": "north",
+ "legacy": "L2/d12_1",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "zh": "你给我拍的照片呢？发我。",
+   "pinyin": "Nǐ gěi wǒ pāi de zhàopiàn ne? Fā wǒ.",
+   "ko": "네가 찍어준 사진은? 보내줘.",
+   "note": "给+대상+동사 (~에게 해주다)",
+   "tags": [
+    "photo",
+    "preposition:给"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "zh": "发了，快看！",
+   "pinyin": "Fā le, kuài kàn!",
+   "ko": "보냈어, 빨리 봐!",
+   "note": "快+동사 재촉 명령",
+   "tags": [
+    "photo",
+    "imperative"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "zh": "这是什么啊！腿这么短！",
+   "pinyin": "Zhè shì shénme a! Tuǐ zhème duǎn!",
+   "ko": "이게 뭐야! 다리가 왜 이렇게 짧아!",
+   "note": "这么+형용사 (이렇게나 ~하다)",
+   "tags": [
+    "chaos",
+    "degree:这么"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "我觉得挺好看的啊。",
+   "pinyin": "Wǒ juéde tǐng hǎokàn de a.",
+   "ko": "난 꽤 예쁘게 나온 것 같은데.",
+   "note": "挺……的 (꽤 ~하다)",
+   "tags": [
+    "opinion",
+    "pattern:挺的"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "重拍！马上！",
+   "pinyin": "Chóng pāi! Mǎshàng!",
+   "ko": "다시 찍어! 당장!",
+   "note": "重+동사 (처음부터 다시 하다)",
+   "tags": [
+    "chaos",
+    "prefix:重"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "zh": "都拍了五十张了……",
+   "pinyin": "Dōu pāi le wǔshí zhāng le……",
+   "ko": "벌써 50장이나 찍었는데……",
+   "note": "都……了 (벌써 ~나 했다)",
+   "tags": [
+    "complaint",
+    "grammar:都了"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "B",
+   "zh": "五十张里没有一张能看的。",
+   "pinyin": "Wǔshí zhāng lǐ méiyǒu yì zhāng néng kàn de.",
+   "ko": "50장 중에 봐줄 만한 게 한 장도 없어.",
+   "note": "没有一+양사 (하나도 없다) 전체 부정",
+   "tags": [
+    "banter",
+    "negation"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "A",
+   "zh": "那你教教我怎么拍嘛。",
+   "pinyin": "Nà nǐ jiāojiao wǒ zěnme pāi ma.",
+   "ko": "그럼 어떻게 찍는지 좀 가르쳐 줘.",
+   "note": "동사 중첩 教教 (가볍게 좀 ~하다)",
+   "tags": [
+    "photo",
+    "reduplication"
+   ]
+  }
+ ]
+}

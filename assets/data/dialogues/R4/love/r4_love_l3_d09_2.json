@@ -1,0 +1,112 @@
+{
+ "id": "r4_love_l3_d09_2",
+ "region": "R4",
+ "island": "love",
+ "kind": "long",
+ "title": "취미교환 ②",
+ "emoji": "🎨",
+ "scene": "주말 오후, 서로의 취미인 그림과 등산을 가르쳐 주기로 하는 두 사람.",
+ "speakers": {
+  "A": "A",
+  "B": "B"
+ },
+ "register": "casual",
+ "twist": 0,
+ "variant": "north",
+ "legacy": "L3/d09_2",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "zh": "没关系，慢慢练就好了。",
+   "pinyin": "Méi guānxi, mànmàn liàn jiù hǎo le.",
+   "ko": "괜찮아, 천천히 연습하면 돼.",
+   "note": "형용사 중첩 慢慢 + …就好了",
+   "tags": [
+    "위로",
+    "격려"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "zh": "下周末我带你去爬山。",
+   "pinyin": "Xià zhōumò wǒ dài nǐ qù pá shān.",
+   "ko": "다음 주말엔 내가 등산 데려갈게.",
+   "note": "연동문 带…去 (데리고 가다)",
+   "tags": [
+    "등산",
+    "약속"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "zh": "爬山会不会很累？",
+   "pinyin": "Pá shān huì bu huì hěn lèi?",
+   "ko": "등산 많이 힘들지 않을까?",
+   "note": "정반의문문 会不会",
+   "tags": [
+    "걱정",
+    "의문문"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "一边爬一边休息，不累。",
+   "pinyin": "Yìbiān pá yìbiān xiūxi, bú lèi.",
+   "ko": "오르면서 쉬엄쉬엄 가면 안 힘들어.",
+   "note": "一边…一边… (동시 동작)",
+   "tags": [
+    "등산",
+    "一边"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "好，跟你在一起就开心。",
+   "pinyin": "Hǎo, gēn nǐ zài yìqǐ jiù kāixīn.",
+   "ko": "좋아, 너랑 같이 있으면 그냥 즐거워.",
+   "note": "개사구 跟…在一起",
+   "tags": [
+    "애정",
+    "감정"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "zh": "那我们下周就开始互相教。",
+   "pinyin": "Nà wǒmen xiàzhōu jiù kāishǐ hùxiāng jiào.",
+   "ko": "그럼 우리 다음 주부터 서로 가르치자.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "B",
+   "zh": "一言为定，谁也不能偷懒。",
+   "pinyin": "Yīyánwéidìng, shuí yě bùnéng tōulǎn.",
+   "ko": "약속이야, 누구도 게으름 피우면 안 돼.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "A",
+   "zh": "好，一起加油变得更厉害！",
+   "pinyin": "Hǎo, yìqǐ jiāyóu biàndé gèng lìhài!",
+   "ko": "좋아, 같이 힘내서 더 잘하게 되자!",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  }
+ ]
+}

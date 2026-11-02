@@ -1,0 +1,115 @@
+{
+ "id": "r4_love_l1_ep4_4",
+ "region": "R4",
+ "island": "love",
+ "kind": "long",
+ "title": "갈등 ④",
+ "emoji": "⚡",
+ "scene": "연락 두절 오해 — 서운함 · 변명 · 질투 · 사과 · 화해 (반말 전환)",
+ "speakers": {
+  "A": "Mark",
+  "B": "小丽 / Lily"
+ },
+ "register": "casual",
+ "twist": 0,
+ "variant": "north",
+ "legacy": "L1/ep4_4",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "zh": "哈哈，你像吃药一样。",
+   "pinyin": "Hāhā, nǐ xiàng chī yào yíyàng.",
+   "ko": "하하, 약 먹는 것 같잖아.",
+   "note": "像…一样 (~같다) 비유",
+   "tags": [
+    "joke",
+    "function:像"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "zh": "你就是我的药嘛。",
+   "pinyin": "Nǐ jiùshì wǒ de yào ma.",
+   "ko": "네가 바로 내 약이잖아.",
+   "note": "就是 강조 + 嘛 능청",
+   "tags": [
+    "flirt",
+    "particle:嘛"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "zh": "哎呀，好肉麻！",
+   "pinyin": "Āiyā, hǎo ròumá!",
+   "ko": "아이고, 완전 느끼해!",
+   "note": "肉麻 (닭살 돋다)",
+   "tags": [
+    "tease",
+    "culture"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "肉麻？这是什么意思？",
+   "pinyin": "Ròumá? Zhè shì shénme yìsi?",
+   "ko": "러우마? 그게 무슨 뜻이야?",
+   "note": "什么意思 (뜻 묻기) 학습자 리얼리티",
+   "tags": [
+    "question",
+    "topic:chinese"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "就是……太甜了，受不了！",
+   "pinyin": "Jiùshì…… tài tián le, shòu bu liǎo!",
+   "ko": "그러니까…… 너무 달아서 못 견디겠다는 뜻!",
+   "note": "受不了 (견딜 수 없다) 가능보어",
+   "tags": [
+    "culture",
+    "topic:chinese"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "zh": "那我以后天天肉麻。",
+   "pinyin": "Nà wǒ yǐhòu tiāntiān ròumá.",
+   "ko": "그럼 앞으로 매일 느끼하게 할래.",
+   "note": "배운 단어 바로 사용 유머",
+   "tags": [
+    "joke",
+    "hook:learning"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "B",
+   "zh": "饶了我吧！哈哈哈。",
+   "pinyin": "Ráo le wǒ ba! Hāhāhā.",
+   "ko": "좀 봐줘! 하하하.",
+   "note": "饶了我吧 (살려줘/봐줘)",
+   "tags": [
+    "joke",
+    "particle:吧"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "A",
+   "zh": "所以… 你原谅我了？",
+   "pinyin": "Suǒyǐ… nǐ yuánliàng wǒ le?",
+   "ko": "그래서… 나 용서한 거야?",
+   "note": "所以 + 了 변화 확인",
+   "tags": [
+    "apology",
+    "function:了"
+   ]
+  }
+ ]
+}

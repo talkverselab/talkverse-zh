@@ -1,0 +1,115 @@
+{
+ "id": "r4_love_l3_d07_1",
+ "region": "R4",
+ "island": "love",
+ "kind": "long",
+ "title": "커플사진 ①",
+ "emoji": "📸",
+ "scene": "프로필에 올릴 커플사진을 찍으러 갈 계획을 세운다.",
+ "speakers": {
+  "A": "A",
+  "B": "B"
+ },
+ "register": "casual",
+ "twist": 0,
+ "variant": "north",
+ "legacy": "L3/d07_1",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "zh": "我们还没有好看的合影呢！",
+   "pinyin": "Wǒmen hái méiyǒu hǎokàn de héyǐng ne!",
+   "ko": "우리 아직 예쁘게 나온 커플 사진도 없잖아!",
+   "note": "还没…呢 '아직 ~하지 않았다'",
+   "tags": [
+    "还没…呢",
+    "合影"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "zh": "那周末去拍情侣照怎么样？",
+   "pinyin": "Nà zhōumò qù pāi qínglǚzhào zěnmeyàng?",
+   "ko": "그럼 주말에 커플사진 찍으러 가는 거 어때?",
+   "note": "제안 표현 …怎么样, 연동문 去+동사",
+   "tags": [
+    "怎么样",
+    "연동문"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "zh": "好啊！去哪儿拍比较好呢？",
+   "pinyin": "Hǎo a! Qù nǎr pāi bǐjiào hǎo ne?",
+   "ko": "좋아! 어디서 찍는 게 좋을까?",
+   "note": "부사 比较 '비교적', 의문 어기 呢",
+   "tags": [
+    "부사 比较",
+    "장소"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "后海怎么样？风景很美。",
+   "pinyin": "Hòuhǎi zěnmeyàng? Fēngjǐng hěn měi.",
+   "ko": "허우하이 어때? 풍경이 진짜 예뻐.",
+   "note": "형용사 술어문 (是 없이 很+형용사)",
+   "tags": [
+    "형용사 술어문",
+    "베이징"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "听说那儿人多得不得了。",
+   "pinyin": "Tīngshuō nàr rén duō de bùdéliǎo.",
+   "ko": "거기 사람 엄청 많다던데.",
+   "note": "정도보어 得不得了 '~해서 못 견딜 정도'",
+   "tags": [
+    "得不得了",
+    "听说"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "zh": "那我们早点儿出发就行了。",
+   "pinyin": "Nà wǒmen zǎodiǎnr chūfā jiù xíng le.",
+   "ko": "그럼 좀 일찍 출발하면 되지.",
+   "note": "…就行了 '~하면 된다'",
+   "tags": [
+    "就行了",
+    "早点儿"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "B",
+   "zh": "我们穿一样的衣服吧！",
+   "pinyin": "Wǒmen chuān yíyàng de yīfu ba!",
+   "ko": "우리 같은 옷 입자!",
+   "note": "一样的+명사 '같은 ~', 청유 吧",
+   "tags": [
+    "一样",
+    "커플룩"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "A",
+   "zh": "情侣装？会不会太夸张？",
+   "pinyin": "Qínglǚzhuāng? Huì bu huì tài kuāzhāng?",
+   "ko": "커플룩? 너무 오버 아니야?",
+   "note": "정반의문 会不会 (우려 표현)",
+   "tags": [
+    "会不会",
+    "夸张"
+   ]
+  }
+ ]
+}

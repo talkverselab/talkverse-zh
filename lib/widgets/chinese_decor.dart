@@ -475,3 +475,35 @@ class MeshBackdrop extends StatelessWidget {
     );
   }
 }
+
+/// 워드마크처럼 구리 → 황갈 그라데이션으로 칠한 글자(일본어앱 `GradText` 와 같은 톤).
+class GradText extends StatelessWidget {
+  final String text;
+  final TextStyle style;
+  final int? maxLines;
+  const GradText(this.text, {super.key, required this.style, this.maxLines});
+
+  @override
+  Widget build(BuildContext context) {
+    return ShaderMask(
+      blendMode: BlendMode.srcIn,
+      shaderCallback: (r) => AppColors.wordmark.createShader(Rect.fromLTWH(0, 0, r.width, r.height)),
+      child: Text(text,
+          maxLines: maxLines,
+          overflow: maxLines == null ? null : TextOverflow.ellipsis,
+          style: style.copyWith(color: Colors.white)),
+    );
+  }
+}
+
+/// 워드마크 그라데이션 가는 선(편 화면·카드 구분).
+class WordmarkDivider extends StatelessWidget {
+  final double height;
+  const WordmarkDivider({super.key, this.height = 2});
+
+  @override
+  Widget build(BuildContext context) => Container(
+        height: height,
+        decoration: BoxDecoration(gradient: AppColors.wordmark, borderRadius: BorderRadius.circular(height)),
+      );
+}

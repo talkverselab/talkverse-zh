@@ -1,0 +1,112 @@
+{
+ "id": "r3_life_l2_d13_2",
+ "region": "R3",
+ "island": "life",
+ "kind": "chat",
+ "title": "핸드폰 ②",
+ "emoji": "📱",
+ "scene": "폰을 떨어뜨려 액정이 또 깨진 Mark, 수리비 800위안에 충격받고 버티기로 결정",
+ "speakers": {
+  "A": "A",
+  "B": "B"
+ },
+ "register": "casual",
+ "twist": 0,
+ "variant": "north",
+ "legacy": "L2/d13_2",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "A",
+   "zh": "所以我在想要不要换手机。",
+   "pinyin": "Suǒyǐ wǒ zài xiǎng yào bu yào huàn shǒujī.",
+   "ko": "그래서 폰 바꿀까 고민 중이야.",
+   "note": "在+동사 진행 + 要不要 정반의문",
+   "tags": [
+    "phone",
+    "question:要不要"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "B",
+   "zh": "你上周不是刚发工资就花完了吗？",
+   "pinyin": "Nǐ shàng zhōu bú shì gāng fā gōngzī jiù huā wán le ma?",
+   "ko": "너 지난주에 월급 받자마자 다 쓰지 않았어?",
+   "note": "刚……就 (하자마자) + 결과보어 完",
+   "tags": [
+    "money",
+    "complement:完"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "A",
+   "zh": "别提了，心疼。",
+   "pinyin": "Bié tí le, xīnténg.",
+   "ko": "말도 마, 속 쓰려.",
+   "note": "别提了 (말도 꺼내지 마) 관용구",
+   "tags": [
+    "complaint",
+    "idiom:别提了"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "B",
+   "zh": "先贴个膜，忍到下个月吧。",
+   "pinyin": "Xiān tiē gè mó, rěn dào xià gè yuè ba.",
+   "ko": "일단 필름 붙이고 다음 달까지 버텨.",
+   "note": "先 (우선) + 동사+到 (~까지 ~하다)",
+   "tags": [
+    "advice",
+    "complement:到"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "A",
+   "zh": "好吧，手机你要坚持住啊。",
+   "pinyin": "Hǎo ba, shǒujī nǐ yào jiānchí zhù a.",
+   "ko": "알았어, 폰아 버텨줘야 한다.",
+   "note": "결과보어 住 (단단히 유지함)",
+   "tags": [
+    "humor",
+    "complement:住"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "B",
+   "zh": "别担心，我陪你一起省钱。",
+   "pinyin": "Bié dānxīn, wǒ péi nǐ yìqǐ shěngqián.",
+   "ko": "걱정 마, 나도 같이 아껴줄게.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "A",
+   "zh": "真的？那太好了。",
+   "pinyin": "Zhēnde? nà tàihǎole.",
+   "ko": "진짜? 그럼 완전 좋지.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "B",
+   "zh": "至少这个月不许乱花钱哦。",
+   "pinyin": "Zhìshǎo zhège yuè bùxǔ luànhuāqián ó.",
+   "ko": "적어도 이번 달엔 막 쓰면 안 돼.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,112 @@
+{
+ "id": "r3_life_l2_d06_2",
+ "region": "R3",
+ "island": "life",
+ "kind": "chat",
+ "title": "운동 ②",
+ "emoji": "💪",
+ "scene": "또 헬스장 등록한 Mark, 작심삼일 전과를 놀리는 小丽",
+ "speakers": {
+  "A": "A",
+  "B": "B"
+ },
+ "register": "casual",
+ "twist": 0,
+ "variant": "north",
+ "legacy": "L2/d06_2",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "A",
+   "zh": "明天你跟我一起去吧。",
+   "pinyin": "Míngtiān nǐ gēn wǒ yīqǐ qù ba.",
+   "ko": "내일 너도 나랑 같이 가자.",
+   "note": "跟…一起 (~와 함께)",
+   "tags": [
+    "preposition:跟",
+    "invite"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "B",
+   "zh": "我？我要工作呢。",
+   "pinyin": "Wǒ? Wǒ yào gōngzuò ne.",
+   "ko": "나? 나 일해야 하는데.",
+   "note": "조동사 要 (~해야 한다) + 呢",
+   "tags": [
+    "modal:要",
+    "excuse"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "A",
+   "zh": "现在谁找借口啊？",
+   "pinyin": "Xiànzài shéi zhǎo jièkǒu a?",
+   "ko": "지금 누가 핑계 대는 거야?",
+   "note": "의문사 谁 반문 (되받아치기)",
+   "tags": [
+    "rhetorical",
+    "humor"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "B",
+   "zh": "好吧好吧，去就去。",
+   "pinyin": "Hǎo ba hǎo ba, qù jiù qù.",
+   "ko": "알았어 알았어, 가면 가지 뭐.",
+   "note": "A就A (그래 ~하면 되잖아, 마지못한 승낙)",
+   "tags": [
+    "structure:A就A",
+    "positive"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "A",
+   "zh": "一言为定，跑三公里哦。",
+   "pinyin": "Yīyán wéidìng, pǎo sān gōnglǐ o.",
+   "ko": "약속한 거다, 3킬로 뛰는 거야.",
+   "note": "성어 一言为定 (한번 말했으면 끝, 약속 확정)",
+   "tags": [
+    "idiom:一言为定",
+    "positive"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "B",
+   "zh": "三公里？你不是也没跑过吗？",
+   "pinyin": "Sān gōnglǐ? nǐ búshì yě méi pǎo guò ma?",
+   "ko": "3킬로? 너도 뛰어본 적 없잖아?",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "A",
+   "zh": "明天开始，我们互相监督。",
+   "pinyin": "Míngtiān kāishǐ, wǒmen hùxiāngjiāndū.",
+   "ko": "내일부터 우리 서로 감시하자.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "B",
+   "zh": "说好了，谁先放弃谁请客。",
+   "pinyin": "Shuōhǎo le, shuí xiān fàngqì shuí qǐngkè.",
+   "ko": "약속한 거다, 먼저 포기하는 사람이 쏘기.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  }
+ ]
+}

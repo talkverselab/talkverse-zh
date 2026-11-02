@@ -39,7 +39,28 @@ class AppColors {
 
   // brand alias
   static const Color brand = zhuHong;
+
+  // 일본어앱 구조를 옮기며 들인 화면 톤(2026-11-02) — 구리 → 황갈 포인트(버튼·성과·강조), 선·보조 글자.
+  static const Color copper = Color(0xFFB77548);
+  static const Color copperDeep = Color(0xFF9A5F38);
+  static const Color tan = Color(0xFFC19E6D);
+  static const Color line = Color(0xFFE6EBF1);
+  static const Color muted = Color(0xFF6B7C93);
+
+  /// 워드마크 그라데이션(왼쪽 구리 → 오른쪽 황갈). 제목 글자·구분선·편 끝 연출에 쓴다.
+  static const LinearGradient wordmark = LinearGradient(colors: [copper, tan]);
 }
+
+/// 카드·타일 공통 그림자(사이트 `0 2px 5px -1px rgba(50,50,93,.1), 0 1px 3px -1px rgba(0,0,0,.1)`)
+const List<BoxShadow> kCardShadow = [
+  BoxShadow(color: Color(0x1A32325D), blurRadius: 5, offset: Offset(0, 2)),
+  BoxShadow(color: Color(0x1A000000), blurRadius: 3, offset: Offset(0, 1)),
+];
+
+/// 두 화면(왼쪽 목록 | 오른쪽 내용) 기준 — 가로 720 논리픽셀 이상: 아이패드·안드로이드 태블릿·폴드 펼침.
+/// 접은 폴드·일반 폰은 한 화면. 일본어앱·한자유니버스와 같은 기준.
+const wideMin = 720.0;
+bool isWide(BuildContext context) => MediaQuery.sizeOf(context).width >= wideMin;
 
 class AppTheme {
   static ThemeData light() {

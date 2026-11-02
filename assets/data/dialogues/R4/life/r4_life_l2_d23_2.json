@@ -1,0 +1,112 @@
+{
+ "id": "r4_life_l2_d23_2",
+ "region": "R4",
+ "island": "life",
+ "kind": "chat",
+ "title": "말버릇 ②",
+ "emoji": "💬",
+ "scene": "서로의 말버릇을 지적하다가 둘 다 부메랑을 맞는다.",
+ "speakers": {
+  "A": "A",
+  "B": "B"
+ },
+ "register": "casual",
+ "twist": 0,
+ "variant": "north",
+ "legacy": "L2/d23_2",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "zh": "……当我没说。",
+   "pinyin": "……Dāng wǒ méi shuō.",
+   "ko": "…방금 말 못 들은 걸로 해.",
+   "note": "当我没说: '내가 말 안 한 셈 쳐' 철회 관용 표현.",
+   "tags": [
+    "当",
+    "관용표현"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "zh": "王哥也说你有这个习惯。",
+   "pinyin": "Wáng gē yě shuō nǐ yǒu zhège xíguàn.",
+   "ko": "왕 형도 너 그 버릇 있다던데.",
+   "note": "간접 인용: 사람+说+문장 '~가 ~라고 말하다'.",
+   "tags": [
+    "说",
+    "간접인용"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "zh": "好啊，你们说我坏话！",
+   "pinyin": "Hǎo a, nǐmen shuō wǒ huàihuà!",
+   "ko": "잘들 논다, 내 뒷담화를 해?",
+   "note": "说坏话: '험담하다'. 好啊는 여기서 반어적 발끈.",
+   "tags": [
+    "说坏话",
+    "반어"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "不是坏话，是可爱的话。",
+   "pinyin": "Bú shì huàihuà, shì kě'ài de huà.",
+   "ko": "뒷담화 아니고 귀엽다는 얘기였어.",
+   "note": "不是A，是B로 재치있게 수습. 형용사+的+명사 수식.",
+   "tags": [
+    "不是…是…",
+    "수습"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "哎呀……又被你骗了。",
+   "pinyin": "Āiyā……yòu bèi nǐ piàn le.",
+   "ko": "아이야… 또 너한테 넘어갔네.",
+   "note": "被자문: 被+행위자+동사 '~에게 당하다'. 又…了 '또'.",
+   "tags": [
+    "被",
+    "又…了"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "zh": "哈哈，这次算我赢了。",
+   "pinyin": "Hāhā, zhècì suàn wǒ yíng le.",
+   "ko": "하하, 이번엔 내가 이긴 걸로.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "B",
+   "zh": "下次我一定会赢回来。",
+   "pinyin": "Xiàcì wǒ yídìng huì yínghuílái.",
+   "ko": "다음엔 반드시 이겨줄 거야.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "A",
+   "zh": "好，我等着看你怎么赢。",
+   "pinyin": "Hǎo, wǒ děng zhe kàn nǐ zěnme yíng.",
+   "ko": "그래, 어떻게 이기는지 기대해볼게.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,112 @@
+{
+ "id": "r3_love_l3_d21_2",
+ "region": "R3",
+ "island": "love",
+ "kind": "long",
+ "title": "결심 ②",
+ "emoji": "🌟",
+ "scene": "훠궈를 다 먹은 밤, Mark가 베이징에 남기로 한 결심을 밝힌다.",
+ "speakers": {
+  "A": "A",
+  "B": "B"
+ },
+ "register": "casual",
+ "twist": 0,
+ "variant": "north",
+ "legacy": "L3/d21_2",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "A",
+   "zh": "我在北京找了份新工作。",
+   "pinyin": "Wǒ zài Běijīng zhǎo le fèn xīn gōngzuò.",
+   "ko": "베이징에서 새 일자리 구했어.",
+   "note": "'在+장소' 전치사구 + 양사 份 (직업·일 세는 단위)",
+   "tags": [
+    "在+장소",
+    "이직"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "B",
+   "zh": "真的假的？这么快？",
+   "pinyin": "Zhēn de jiǎ de? Zhème kuài?",
+   "ko": "진짜? 벌써?",
+   "note": "구어체 真的假的 + '这么+형용사'",
+   "tags": [
+    "구어체",
+    "놀람"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "A",
+   "zh": "为了你，我比外卖还快。",
+   "pinyin": "Wèile nǐ, wǒ bǐ wàimài hái kuài.",
+   "ko": "너를 위해서라면, 나 배달보다 빨라.",
+   "note": "为了 목적 + 比 비교문(还 강조)",
+   "tags": [
+    "比 비교문",
+    "유머"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "B",
+   "zh": "傻瓜，我怎么这么爱你。",
+   "pinyin": "Shǎguā, wǒ zěnme zhème ài nǐ.",
+   "ko": "바보, 내가 널 어쩜 이렇게 사랑하니.",
+   "note": "'怎么这么' 감탄 용법",
+   "tags": [
+    "감탄문",
+    "애정"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "A",
+   "zh": "以后的每一天，我们一起过。",
+   "pinyin": "Yǐhòu de měi yì tiān, wǒmen yìqǐ guò.",
+   "ko": "앞으로의 매일을, 우리 함께 보내자.",
+   "note": "'每+수사+양사+명사' 구조",
+   "tags": [
+    "每",
+    "약속"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "B",
+   "zh": "那你要娶我，说到做到。",
+   "pinyin": "Nà nǐ yào qǔ wǒ, shuōdàozuòdào.",
+   "ko": "그럼 나랑 결혼해야 해, 말한 대로 지켜.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "A",
+   "zh": "一定，我这辈子都不会反悔。",
+   "pinyin": "Yídìng, wǒ zhèbèizi dōu búhuì fǎnhuǐ.",
+   "ko": "당연하지, 평생 후회 안 할게.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "B",
+   "zh": "拉钩，我们说好了哦。",
+   "pinyin": "Lāgōu, wǒmen shuōhǎo le ó.",
+   "ko": "손가락 걸자, 우리 약속한 거다.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  }
+ ]
+}

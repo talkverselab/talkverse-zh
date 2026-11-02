@@ -1,0 +1,112 @@
+{
+ "id": "r4_love_l3_d02_2",
+ "region": "R4",
+ "island": "love",
+ "kind": "long",
+ "title": "첫기념일 ②",
+ "emoji": "🎁",
+ "scene": "사귄 지 100일, 서로 몰래 준비한 선물을 교환한다.",
+ "speakers": {
+  "A": "A",
+  "B": "B"
+ },
+ "register": "casual",
+ "twist": 0,
+ "variant": "north",
+ "legacy": "L3/d02_2",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "zh": "织得不好，你别笑话我。",
+   "pinyin": "Zhī de bù hǎo, nǐ bié xiàohua wǒ.",
+   "ko": "잘 못 떴어, 놀리지 마.",
+   "note": "정도보어 得 (织得不好)",
+   "tags": [
+    "정도보어",
+    "겸손 표현"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "zh": "怎么会！这是最好的礼物。",
+   "pinyin": "Zěnme huì! Zhè shì zuì hǎo de lǐwù.",
+   "ko": "무슨 소리야! 이게 최고의 선물이지.",
+   "note": "반문 표현 怎么会 '그럴 리가'",
+   "tags": [
+    "반문",
+    "칭찬"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "zh": "冬天戴上就不冷了。",
+   "pinyin": "Dōngtiān dàishang jiù bù lěng le.",
+   "ko": "겨울에 이거 하면 안 추울 거야.",
+   "note": "변화의 了 (不冷了), 부사 就",
+   "tags": [
+    "변화의 了",
+    "부사 就"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "我会一直戴着的。",
+   "pinyin": "Wǒ huì yìzhí dàizhe de.",
+   "ko": "계속 하고 다닐게.",
+   "note": "지속의 着 + 확신의 会…的",
+   "tags": [
+    "지속 着",
+    "会…的"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "希望我们每天都这么幸福。",
+   "pinyin": "Xīwàng wǒmen měi tiān dōu zhème xìngfú.",
+   "ko": "우리 매일 이렇게 행복했으면 좋겠어.",
+   "note": "每…都 '매(번)마다 모두'",
+   "tags": [
+    "每…都",
+    "希望"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "zh": "我也希望，一直这样幸福。",
+   "pinyin": "Wǒ yě xīwàng, yìzhí zhèyàng xìngfú.",
+   "ko": "나도 바라, 계속 이렇게 행복했으면.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "B",
+   "zh": "那我们拍张照纪念一下吧。",
+   "pinyin": "Nà wǒmen pāi zhāngzhào jìniàn yīxià ba.",
+   "ko": "그럼 우리 사진 찍어서 기념하자.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "A",
+   "zh": "好，来，笑一个！",
+   "pinyin": "Hǎo, lái, xiào yígè!",
+   "ko": "좋아, 자 웃어 봐!",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  }
+ ]
+}

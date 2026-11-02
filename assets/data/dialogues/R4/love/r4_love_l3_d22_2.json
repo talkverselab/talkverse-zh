@@ -1,0 +1,112 @@
+{
+ "id": "r4_love_l3_d22_2",
+ "region": "R4",
+ "island": "love",
+ "kind": "long",
+ "title": "상견례준비 ②",
+ "emoji": "🚄",
+ "scene": "쓰촨행 기차표를 끊고, 小丽 부모님께 드릴 첫인사를 연습한다.",
+ "speakers": {
+  "A": "A",
+  "B": "B"
+ },
+ "register": "casual",
+ "twist": 0,
+ "variant": "north",
+ "legacy": "L3/d22_2",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "zh": "我们坐高铁去，你开什么车？",
+   "pinyin": "Wǒmen zuò gāotiě qù, nǐ kāi shénme chē?",
+   "ko": "우리 고속철 타고 가는데, 무슨 운전을 해?",
+   "note": "연동문 '坐…去' + 什么 반어 용법",
+   "tags": [
+    "연동문",
+    "유머"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "zh": "那我就说医生不让喝。",
+   "pinyin": "Nà wǒ jiù shuō yīshēng bú ràng hē.",
+   "ko": "그럼 의사가 못 마시게 한다고 하지 뭐.",
+   "note": "사역 让의 부정형 '不让' (~못 하게 하다)",
+   "tags": [
+    "不让",
+    "핑계"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "zh": "妈妈那关更难，她话很多。",
+   "pinyin": "Māma nà guān gèng nán, tā huà hěn duō.",
+   "ko": "엄마 관문이 더 어려워, 말씀이 엄청 많으시거든.",
+   "note": "비교 부사 更 '더욱'",
+   "tags": [
+    "更",
+    "상견례"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "没关系，我的耳朵很结实。",
+   "pinyin": "Méi guānxi, wǒ de ěrduo hěn jiēshi.",
+   "ko": "괜찮아, 내 귀는 아주 튼튼하니까.",
+   "note": "'주어+술어(형용사)' 묘사문 + 유머 표현",
+   "tags": [
+    "형용사술어문",
+    "유머"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "别紧张，他们一定会喜欢你。",
+   "pinyin": "Bié jǐnzhāng, tāmen yídìng huì xǐhuan nǐ.",
+   "ko": "긴장하지 마, 두 분 분명히 널 좋아하실 거야.",
+   "note": "'一定会' 확신의 미래 표현",
+   "tags": [
+    "一定会",
+    "격려"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "zh": "希望我能顺利通过考验。",
+   "pinyin": "Xīwàng wǒnéng shùnlì tōngguò kǎoyàn.",
+   "ko": "이 시험을 잘 통과할 수 있으면 좋겠다.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "B",
+   "zh": "别怕，有我在你身边呢。",
+   "pinyin": "Biépà, yǒu wǒ zài nǐ shēnbiān ne.",
+   "ko": "무서워하지 마, 내가 네 곁에 있잖아.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "A",
+   "zh": "好，那我们出发去成都吧！",
+   "pinyin": "Hǎo, nà wǒmen chūfā qù chéngdū ba!",
+   "ko": "좋아, 그럼 우리 청두로 출발하자!",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  }
+ ]
+}

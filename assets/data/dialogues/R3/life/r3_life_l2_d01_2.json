@@ -1,0 +1,112 @@
+{
+ "id": "r3_life_l2_d01_2",
+ "region": "R3",
+ "island": "life",
+ "kind": "chat",
+ "title": "지각 ②",
+ "emoji": "⏰",
+ "scene": "늦잠 잔 Mark, 출근 시간에 전화로 재촉하는 小丽",
+ "speakers": {
+  "A": "A",
+  "B": "B"
+ },
+ "register": "casual",
+ "twist": 0,
+ "variant": "north",
+ "legacy": "L2/d01_2",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "zh": "那你就迟到吧。",
+   "pinyin": "Nà nǐ jiù chídào ba.",
+   "ko": "그럼 그냥 지각하든가.",
+   "note": "那…就…吧 (그럼 그냥 ~해)",
+   "tags": [
+    "adverb:就",
+    "banter"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "zh": "我打车，还来得及。",
+   "pinyin": "Wǒ dǎchē, hái láidejí.",
+   "ko": "택시 탈게, 아직 안 늦었어.",
+   "note": "가능보어 来得及 (시간에 댈 수 있다)",
+   "tags": [
+    "complement:来得及",
+    "daily"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "zh": "上周你也这么说的。",
+   "pinyin": "Shàng zhōu nǐ yě zhème shuō de.",
+   "ko": "지난주에도 그렇게 말했거든.",
+   "note": "문말 的 (과거 사실 강조, 是…的 생략형)",
+   "tags": [
+    "structure:是的",
+    "banter"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "这次真的不一样嘛。",
+   "pinyin": "Zhè cì zhēn de bù yīyàng ma.",
+   "ko": "이번엔 진짜 다르다니까.",
+   "note": "어기조사 嘛 (당연하다는 어감·응석)",
+   "tags": [
+    "particle:嘛",
+    "banter"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "快去吧，晚上请我吃饭。",
+   "pinyin": "Kuài qù ba, wǎnshang qǐng wǒ chīfàn.",
+   "ko": "빨리 가, 저녁에 밥 사.",
+   "note": "请+사람+동사 (한턱내다 구문)",
+   "tags": [
+    "structure:请",
+    "positive"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "zh": "好，我挂了，我跑了！",
+   "pinyin": "Hǎo, wǒ guà le, wǒ pǎo le!",
+   "ko": "그래, 끊는다, 뛴다!",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "B",
+   "zh": "加油，别摔倒啊。",
+   "pinyin": "Jiāyóu, bié shuāidǎo a.",
+   "ko": "힘내, 넘어지지 말고.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "A",
+   "zh": "到公司了，没迟到！",
+   "pinyin": "Dào gōngsī le, méi chídào!",
+   "ko": "회사 도착, 지각 안 했어!",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  }
+ ]
+}

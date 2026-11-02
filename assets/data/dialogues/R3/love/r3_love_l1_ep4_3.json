@@ -1,0 +1,115 @@
+{
+ "id": "r3_love_l1_ep4_3",
+ "region": "R3",
+ "island": "love",
+ "kind": "long",
+ "title": "갈등 ③",
+ "emoji": "⚡",
+ "scene": "연락 두절 오해 — 서운함 · 변명 · 질투 · 사과 · 화해 (반말 전환)",
+ "speakers": {
+  "A": "Mark",
+  "B": "小丽 / Lily"
+ },
+ "register": "casual",
+ "twist": 0,
+ "variant": "north",
+ "legacy": "L1/ep4_3",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "zh": "……你刚才说什么？",
+   "pinyin": "…… Nǐ gāngcái shuō shénme?",
+   "ko": "……방금 뭐라고 했어?",
+   "note": "刚才 (방금)",
+   "tags": [
+    "feeling",
+    "hook:confession"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "zh": "我说，我心里只有你。",
+   "pinyin": "Wǒ shuō, wǒ xīnli zhǐ yǒu nǐ.",
+   "ko": "내 마음엔 너뿐이라고 했어.",
+   "note": "반복 고백",
+   "tags": [
+    "confession",
+    "hook:confession"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "zh": "哼，现在说这个没用。",
+   "pinyin": "Hēng, xiànzài shuō zhège méi yòng.",
+   "ko": "흥, 지금 그런 말 해도 소용없어.",
+   "note": "没用 (소용없다) + 츤데레",
+   "tags": [
+    "tease",
+    "feeling"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "那我怎么做你才原谅我？",
+   "pinyin": "Nà wǒ zěnme zuò nǐ cái yuánliàng wǒ?",
+   "ko": "그럼 어떻게 해야 용서해 줄 거야?",
+   "note": "怎么做 + 才 (그래야) + 原谅",
+   "tags": [
+    "apology",
+    "function:才"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "让我想想… 请我吃火锅。",
+   "pinyin": "Ràng wǒ xiǎngxiang… qǐng wǒ chī huǒguō.",
+   "ko": "생각 좀 해보고… 훠궈 사줘.",
+   "note": "callback: ep2 훠궈",
+   "tags": [
+    "tease",
+    "callback:ep2"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "zh": "没问题！最辣的那家！",
+   "pinyin": "Méi wèntí! Zuì là de nà jiā!",
+   "ko": "문제없어! 제일 매운 그 집!",
+   "note": "最…的那家",
+   "tags": [
+    "accept",
+    "callback:ep2"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "B",
+   "zh": "还有，以后每天发消息。",
+   "pinyin": "Hái yǒu, yǐhòu měi tiān fā xiāoxi.",
+   "ko": "그리고 앞으로 매일 메시지 보내기.",
+   "note": "以后 (앞으로) + 每天",
+   "tags": [
+    "promise",
+    "hook:everyday"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "A",
+   "zh": "一天三次，早中晚！",
+   "pinyin": "Yì tiān sān cì, zǎo zhōng wǎn!",
+   "ko": "하루 세 번, 아침 점심 저녁!",
+   "note": "次 (횟수 양사)",
+   "tags": [
+    "promise",
+    "joke"
+   ]
+  }
+ ]
+}

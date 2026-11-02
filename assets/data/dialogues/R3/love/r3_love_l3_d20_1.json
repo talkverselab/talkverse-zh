@@ -1,0 +1,115 @@
+{
+ "id": "r3_love_l3_d20_1",
+ "region": "R3",
+ "island": "love",
+ "kind": "long",
+ "title": "재회 ①",
+ "emoji": "🍲",
+ "scene": "첫 데이트 장소였던 훠궈집 앞, 두 사람이 우연처럼 마주친다.",
+ "speakers": {
+  "A": "A",
+  "B": "B"
+ },
+ "register": "casual",
+ "twist": 0,
+ "variant": "north",
+ "legacy": "L3/d20_1",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "A",
+   "zh": "小丽？你怎么也在这儿？",
+   "pinyin": "Xiǎolì? Nǐ zěnme yě zài zhèr?",
+   "ko": "샤오리? 네가 여긴 어떻게?",
+   "note": "怎么 '어떻게/왜' (놀람) + 也",
+   "tags": [
+    "怎么",
+    "재회"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "B",
+   "zh": "我……我就是路过。",
+   "pinyin": "Wǒ…… wǒ jiùshì lùguò.",
+   "ko": "나… 나는 그냥 지나가던 길이야.",
+   "note": "就是 '그냥 ~일 뿐' (얼버무림)",
+   "tags": [
+    "就是",
+    "유머"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "A",
+   "zh": "路过？手里还拿着号码牌？",
+   "pinyin": "Lùguò? Shǒu lǐ hái ná zhe hàomǎ pái?",
+   "ko": "지나가는데? 손에 대기표는 왜 들고 있어?",
+   "note": "동태조사 着 (동작의 지속 상태)",
+   "tags": [
+    "着",
+    "유머"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "B",
+   "zh": "一个人也可以吃火锅啊。",
+   "pinyin": "Yí ge rén yě kěyǐ chī huǒguō a.",
+   "ko": "혼자서도 훠궈 먹을 수 있거든.",
+   "note": "也 양보 용법 '~라도'",
+   "tags": [
+    "也",
+    "훠궈"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "A",
+   "zh": "记得吗？我们第一次约会。",
+   "pinyin": "Jìde ma? Wǒmen dì yī cì yuēhuì.",
+   "ko": "기억나? 우리 첫 데이트.",
+   "note": "서수 접두사 第 + 동량사 次",
+   "tags": [
+    "第…次",
+    "추억"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "B",
+   "zh": "你把毛肚掉进了鸳鸯锅。",
+   "pinyin": "Nǐ bǎ máodǔ diào jìn le yuānyāng guō.",
+   "ko": "너 그때 천엽을 반반 냄비에 빠뜨렸잖아.",
+   "note": "把자문 + 방향보어 进. 毛肚 '천엽'·鸳鸯锅 '반반 냄비' (훠궈 문화, ep2 콜백)",
+   "tags": [
+    "把자문",
+    "훠궈"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "A",
+   "zh": "那天你笑得眼泪都出来了。",
+   "pinyin": "Nà tiān nǐ xiào de yǎnlèi dōu chūlái le.",
+   "ko": "그날 너 눈물 나도록 웃었지.",
+   "note": "정도보어 得 + 都 강조",
+   "tags": [
+    "정도보어",
+    "추억"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "B",
+   "zh": "三天没见，你瘦了。",
+   "pinyin": "Sān tiān méi jiàn, nǐ shòu le.",
+   "ko": "사흘 못 본 사이에, 너 야위었네.",
+   "note": "변화를 나타내는 어기조사 了",
+   "tags": [
+    "변화의 了",
+    "걱정"
+   ]
+  }
+ ]
+}

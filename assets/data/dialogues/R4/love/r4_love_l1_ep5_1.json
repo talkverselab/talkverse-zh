@@ -1,0 +1,115 @@
+{
+ "id": "r4_love_l1_ep5_1",
+ "region": "R4",
+ "island": "love",
+ "kind": "long",
+ "title": "미래 ①",
+ "emoji": "🌅",
+ "scene": "관계 확정 — 장래 계획 · 언어 교환 · 부모님 인사 약속 · 고백",
+ "speakers": {
+  "A": "Mark",
+  "B": "小丽 / Lily"
+ },
+ "register": "casual",
+ "twist": 0,
+ "variant": "north",
+ "legacy": "L1/ep5_1",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "A",
+   "zh": "小丽，我们认识多久了？",
+   "pinyin": "Xiǎolì, wǒmen rènshi duō jiǔ le?",
+   "ko": "샤오리, 우리 알고 지낸 지 얼마나 됐지?",
+   "note": "认识 + 多久了",
+   "tags": [
+    "feeling",
+    "function:了"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "B",
+   "zh": "三个月了，怎么了？",
+   "pinyin": "Sān ge yuè le, zěnme le?",
+   "ko": "3개월 됐지, 왜?",
+   "note": "怎么了 (왜 그래)",
+   "tags": [
+    "question",
+    "function:了"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "A",
+   "zh": "感觉像三年一样。",
+   "pinyin": "Gǎnjué xiàng sān nián yíyàng.",
+   "ko": "3년 같은 느낌이야.",
+   "note": "感觉 + 像…一样",
+   "tags": [
+    "feeling",
+    "function:像"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "B",
+   "zh": "是嫌我烦了吗？！",
+   "pinyin": "Shì xián wǒ fán le ma?!",
+   "ko": "내가 귀찮아졌다는 거야?!",
+   "note": "嫌 (싫어하다) + 烦",
+   "tags": [
+    "tease",
+    "particle:吗"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "A",
+   "zh": "不是！是太幸福了！",
+   "pinyin": "Bú shì! Shì tài xìngfú le!",
+   "ko": "아니야! 너무 행복하다는 거야!",
+   "note": "幸福 (행복) + 太…了",
+   "tags": [
+    "feeling",
+    "hook:happy"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "B",
+   "zh": "吓我一跳，哈哈。",
+   "pinyin": "Xià wǒ yí tiào, hāhā.",
+   "ko": "깜짝 놀랐잖아, 하하.",
+   "note": "吓一跳 (깜짝 놀라다)",
+   "tags": [
+    "joke",
+    "culture"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "A",
+   "zh": "我想问你一件事。",
+   "pinyin": "Wǒ xiǎng wèn nǐ yí jiàn shì.",
+   "ko": "물어보고 싶은 게 하나 있어.",
+   "note": "一件事 (양사 件)",
+   "tags": [
+    "question",
+    "function:想"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "B",
+   "zh": "你说吧，我听着呢。",
+   "pinyin": "Nǐ shuō ba, wǒ tīng zhe ne.",
+   "ko": "말해, 듣고 있어.",
+   "note": "着 지속 + 呢",
+   "tags": [
+    "listen",
+    "particle:呢"
+   ]
+  }
+ ]
+}

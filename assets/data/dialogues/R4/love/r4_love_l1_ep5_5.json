@@ -1,0 +1,114 @@
+{
+ "id": "r4_love_l1_ep5_5",
+ "region": "R4",
+ "island": "love",
+ "kind": "long",
+ "title": "미래 ⑤",
+ "emoji": "🌅",
+ "scene": "관계 확정 — 장래 계획 · 언어 교환 · 부모님 인사 약속 · 고백",
+ "speakers": {
+  "A": "Mark",
+  "B": "小丽 / Lily"
+ },
+ "register": "casual",
+ "twist": 0,
+ "variant": "north",
+ "legacy": "L1/ep5_5",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "A",
+   "zh": "见！春节一起回四川！",
+   "pinyin": "Jiàn! Chūnjié yìqǐ huí Sìchuān!",
+   "ko": "만나! 춘절에 같이 쓰촨 가자!",
+   "note": "春节 + 回 callback",
+   "tags": [
+    "plan",
+    "callback:ep3"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "B",
+   "zh": "我爸会考你中文的哦。",
+   "pinyin": "Wǒ bà huì kǎo nǐ zhōngwén de o.",
+   "ko": "우리 아빠가 중국어 시험 볼 거야.",
+   "note": "考 (시험보다) + 会…的 + 哦",
+   "tags": [
+    "tease",
+    "particle:哦"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "A",
+   "zh": "没问题，我现在开始复习！",
+   "pinyin": "Méi wèntí, wǒ xiànzài kāishǐ fùxí!",
+   "ko": "문제없어, 지금부터 복습 시작!",
+   "note": "开始 + 复习",
+   "tags": [
+    "promise",
+    "topic:chinese"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "B",
+   "zh": "先复习最重要的一句。",
+   "pinyin": "Xiān fùxí zuì zhòngyào de yí jù.",
+   "ko": "제일 중요한 한 마디부터 복습해.",
+   "note": "最重要的 + 一句",
+   "tags": [
+    "tease",
+    "hook:test"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "A",
+   "zh": "哪一句？",
+   "pinyin": "Nǎ yí jù?",
+   "ko": "어떤 말?",
+   "note": "哪 (어느)",
+   "tags": [
+    "question"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "B",
+   "zh": "叔叔阿姨好，我是小丽的男朋友。",
+   "pinyin": "Shūshu āyí hǎo, wǒ shì Xiǎolì de nán péngyou.",
+   "ko": "'아버님 어머님 안녕하세요, 저는 샤오리의 남자친구입니다.'",
+   "note": "叔叔阿姨 호칭 문화 + 男朋友 공식화!",
+   "tags": [
+    "confession",
+    "culture"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "A",
+   "zh": "男朋友…！我马上背下来！",
+   "pinyin": "Nán péngyou…! Wǒ mǎshàng bèi xiàlái!",
+   "ko": "남자친구…! 바로 외울게!",
+   "note": "马上 (곧장) + 背下来 (외워버리다) 방향보어",
+   "tags": [
+    "joke",
+    "hook:boyfriend"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "B",
+   "zh": "傻瓜，以后的路还长呢。",
+   "pinyin": "Shǎguā, yǐhòu de lù hái cháng ne.",
+   "ko": "바보, 앞으로 갈 길이 아직 길어.",
+   "note": "傻瓜 (바보, 애칭) + 呢 여운 — 시즌 마무리",
+   "tags": [
+    "feeling",
+    "particle:呢"
+   ]
+  }
+ ]
+}

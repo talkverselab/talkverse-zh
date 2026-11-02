@@ -1,0 +1,115 @@
+{
+ "id": "r4_love_l3_d04_1",
+ "region": "R4",
+ "island": "love",
+ "kind": "long",
+ "title": "왕형 ①",
+ "emoji": "🤫",
+ "scene": "회사 동료 王哥가 둘 사이를 눈치채자, 소문 관리를 상의한다.",
+ "speakers": {
+  "A": "A",
+  "B": "B"
+ },
+ "register": "casual",
+ "twist": 0,
+ "variant": "north",
+ "legacy": "L3/d04_1",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "A",
+   "zh": "小丽，今天王哥突然问我了。",
+   "pinyin": "Xiǎolì, jīntiān Wáng gē tūrán wèn wǒ le.",
+   "ko": "샤오리, 오늘 왕형이 갑자기 물어봤어.",
+   "note": "부사 突然 '갑자기'",
+   "tags": [
+    "부사 突然",
+    "회사"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "B",
+   "zh": "问什么？他发现什么了吗？",
+   "pinyin": "Wèn shénme? Tā fāxiàn shénme le ma?",
+   "ko": "뭘 물어봤는데? 뭐 눈치챈 거야?",
+   "note": "동사 发现 '알아차리다', 어기조사 吗",
+   "tags": [
+    "发现",
+    "의문문"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "A",
+   "zh": "他问我是不是谈恋爱了。",
+   "pinyin": "Tā wèn wǒ shì bu shì tán liàn'ài le.",
+   "ko": "나한테 연애하는 거 아니냐고 물었어.",
+   "note": "확인 의문 是不是, 谈恋爱 '연애하다'",
+   "tags": [
+    "是不是",
+    "谈恋爱"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "B",
+   "zh": "天哪！那你怎么回答的？",
+   "pinyin": "Tiān na! Nà nǐ zěnme huídá de?",
+   "ko": "세상에! 그래서 뭐라고 대답했어?",
+   "note": "是…的 구문 (방식 묻기, 是 생략)",
+   "tags": [
+    "是…的",
+    "감탄사"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "A",
+   "zh": "我的脸一下子就红了。",
+   "pinyin": "Wǒ de liǎn yíxiàzi jiù hóng le.",
+   "ko": "얼굴이 순식간에 빨개져 버렸어.",
+   "note": "一下子 '순식간에' + 就",
+   "tags": [
+    "一下子",
+    "변화의 了"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "B",
+   "zh": "哈哈，那不就等于承认了吗？",
+   "pinyin": "Hāhā, nà bú jiù děngyú chéngrèn le ma?",
+   "ko": "하하, 그럼 인정한 거나 마찬가지잖아?",
+   "note": "반문 不就…吗, 等于 '~와 같다'",
+   "tags": [
+    "반문",
+    "等于"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "A",
+   "zh": "王哥说他早就看出来了。",
+   "pinyin": "Wáng gē shuō tā zǎojiù kàn chūlai le.",
+   "ko": "왕형이 진작에 알아봤대.",
+   "note": "파생 방향보어 看出来 '알아채다', 早就",
+   "tags": [
+    "방향보어 파생",
+    "早就"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "B",
+   "zh": "公司里会不会传出去啊？",
+   "pinyin": "Gōngsī li huì bu huì chuán chūqu a?",
+   "ko": "회사에 소문 퍼지는 거 아니야?",
+   "note": "방향보어 出去 (传出去 '퍼져 나가다')",
+   "tags": [
+    "방향보어",
+    "会不会"
+   ]
+  }
+ ]
+}

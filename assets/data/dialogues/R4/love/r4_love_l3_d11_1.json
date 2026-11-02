@@ -1,0 +1,115 @@
+{
+ "id": "r4_love_l3_d11_1",
+ "region": "R4",
+ "island": "love",
+ "kind": "long",
+ "title": "첫여행 ①",
+ "emoji": "🧳",
+ "scene": "첫 커플 여행지로 시안을 정하고 설레며 계획을 세우는 밤.",
+ "speakers": {
+  "A": "A",
+  "B": "B"
+ },
+ "register": "casual",
+ "twist": 0,
+ "variant": "north",
+ "legacy": "L3/d11_1",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "A",
+   "zh": "小丽，我们去旅行吧！",
+   "pinyin": "Xiǎolì, wǒmen qù lǚxíng ba!",
+   "ko": "샤오리, 우리 여행 가자!",
+   "note": "청유 어기조사 吧",
+   "tags": [
+    "여행",
+    "제안"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "B",
+   "zh": "好啊！你想去哪儿？",
+   "pinyin": "Hǎo a! Nǐ xiǎng qù nǎr?",
+   "ko": "좋아! 어디 가고 싶은데?",
+   "note": "의문대명사 哪儿",
+   "tags": [
+    "여행",
+    "질문"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "A",
+   "zh": "我一直想去西安看看。",
+   "pinyin": "Wǒ yìzhí xiǎng qù Xī'ān kànkan.",
+   "ko": "나 계속 시안에 가 보고 싶었어.",
+   "note": "부사 一直 (줄곧)",
+   "tags": [
+    "시안",
+    "소망"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "B",
+   "zh": "西安有很多好吃的！",
+   "pinyin": "Xī'ān yǒu hěn duō hǎochī de!",
+   "ko": "시안에는 맛있는 게 진짜 많아!",
+   "note": "好吃的 — 的로 명사화",
+   "tags": [
+    "음식",
+    "시안"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "A",
+   "zh": "还有兵马俑，特别有名。",
+   "pinyin": "Hái yǒu Bīngmǎyǒng, tèbié yǒumíng.",
+   "ko": "병마용도 있잖아, 엄청 유명해.",
+   "note": "还有 (추가 나열)",
+   "tags": [
+    "관광",
+    "시안"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "B",
+   "zh": "我们坐高铁去还是坐飞机去？",
+   "pinyin": "Wǒmen zuò gāotiě qù háishi zuò fēijī qù?",
+   "ko": "우리 고속철 타고 갈까, 비행기 타고 갈까?",
+   "note": "선택의문문 还是",
+   "tags": [
+    "교통",
+    "还是"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "A",
+   "zh": "坐高铁吧，路上可以聊天。",
+   "pinyin": "Zuò gāotiě ba, lùshang kěyǐ liáotiān.",
+   "ko": "고속철 타자, 가는 길에 수다 떨 수 있잖아.",
+   "note": "조동사 可以 (가능)",
+   "tags": [
+    "교통",
+    "제안"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "B",
+   "zh": "我来订票，你订酒店。",
+   "pinyin": "Wǒ lái dìng piào, nǐ dìng jiǔdiàn.",
+   "ko": "표는 내가 예매할게, 호텔은 네가 해.",
+   "note": "来 + 동사 (자청해서 ~하다)",
+   "tags": [
+    "계획",
+    "분담"
+   ]
+  }
+ ]
+}

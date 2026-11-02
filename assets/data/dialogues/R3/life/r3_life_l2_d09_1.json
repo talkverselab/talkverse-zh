@@ -1,0 +1,115 @@
+{
+ "id": "r3_life_l2_d09_1",
+ "region": "R3",
+ "island": "life",
+ "kind": "chat",
+ "title": "월급날 ①",
+ "emoji": "💰",
+ "scene": "월급이 들어온 날, 한턱 쏘려는 분위기와 절약 결심 사이에서 벌어지는 실랑이",
+ "speakers": {
+  "A": "A",
+  "B": "B"
+ },
+ "register": "casual",
+ "twist": 0,
+ "variant": "north",
+ "legacy": "L2/d09_1",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "A",
+   "zh": "发工资啦！",
+   "pinyin": "Fā gōngzī la!",
+   "ko": "월급 들어왔어!",
+   "note": "어기조사 啦 (완료+신남 강조)",
+   "tags": [
+    "money",
+    "particle:啦"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "B",
+   "zh": "哇，请客请客！",
+   "pinyin": "Wā, qǐngkè qǐngkè!",
+   "ko": "우와, 한턱 쏴 쏴!",
+   "note": "동사 중첩으로 재촉하는 구어 표현",
+   "tags": [
+    "money",
+    "reduplication"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "A",
+   "zh": "今晚吃火锅怎么样？",
+   "pinyin": "Jīn wǎn chī huǒguō zěnmeyàng?",
+   "ko": "오늘 밤 훠궈 어때?",
+   "note": "제안 표현 怎么样 (~어때?)",
+   "tags": [
+    "food",
+    "suggestion"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "B",
+   "zh": "你不是说要省钱吗？",
+   "pinyin": "Nǐ bú shì shuō yào shěngqián ma?",
+   "ko": "너 돈 아낀다고 하지 않았어?",
+   "note": "반문 구문 不是……吗",
+   "tags": [
+    "money",
+    "rhetorical"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "A",
+   "zh": "明天开始省。",
+   "pinyin": "Míngtiān kāishǐ shěng.",
+   "ko": "내일부터 아낄 거야.",
+   "note": "시간사+开始 (내일부터 시작)",
+   "tags": [
+    "money",
+    "time"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "B",
+   "zh": "你每个月都这么说。",
+   "pinyin": "Nǐ měi gè yuè dōu zhème shuō.",
+   "ko": "너 매달 그렇게 말하잖아.",
+   "note": "每……都 (매번 다 ~하다)",
+   "tags": [
+    "banter",
+    "grammar:每都"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "A",
+   "zh": "这次是真的嘛！",
+   "pinyin": "Zhè cì shì zhēn de ma!",
+   "ko": "이번엔 진짜라니까!",
+   "note": "어기조사 嘛 (당연함·항변)",
+   "tags": [
+    "banter",
+    "particle:嘛"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "B",
+   "zh": "好吧，那我要吃最贵的。",
+   "pinyin": "Hǎo ba, nà wǒ yào chī zuì guì de.",
+   "ko": "좋아, 그럼 난 제일 비싼 거 먹을래.",
+   "note": "最+형용사+的 (최상급 명사화)",
+   "tags": [
+    "food",
+    "grammar:最的"
+   ]
+  }
+ ]
+}

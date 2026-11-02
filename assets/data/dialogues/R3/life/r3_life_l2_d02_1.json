@@ -1,0 +1,115 @@
+{
+ "id": "r3_life_l2_d02_1",
+ "region": "R3",
+ "island": "life",
+ "kind": "chat",
+ "title": "야근 ①",
+ "emoji": "💻",
+ "scene": "야근 중인 Mark의 투정과 밀크티로 위로하는 小丽",
+ "speakers": {
+  "A": "A",
+  "B": "B"
+ },
+ "register": "casual",
+ "twist": 0,
+ "variant": "north",
+ "legacy": "L2/d02_1",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "A",
+   "zh": "我还在公司呢。",
+   "pinyin": "Wǒ hái zài gōngsī ne.",
+   "ko": "나 아직 회사야.",
+   "note": "在…呢 (아직 ~에 있다, 상태 지속)",
+   "tags": [
+    "particle:呢",
+    "work"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "B",
+   "zh": "又加班？",
+   "pinyin": "Yòu jiābān?",
+   "ko": "또 야근이야?",
+   "note": "부사 又 (또, 이미 반복된 일)",
+   "tags": [
+    "adverb:又",
+    "work"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "A",
+   "zh": "王哥给了我一堆活儿。",
+   "pinyin": "Wáng gē gěi le wǒ yī duī huór.",
+   "ko": "왕 형이 일을 한 무더기 줬어.",
+   "note": "양사 堆 (무더기) + 儿화 活儿(일)",
+   "tags": [
+    "measure:堆",
+    "negative"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "B",
+   "zh": "可怜的宝宝。",
+   "pinyin": "Kělián de bǎobao.",
+   "ko": "불쌍한 우리 아기.",
+   "note": "的 관형어 수식 (형용사+的+명사)",
+   "tags": [
+    "structure:的",
+    "affection"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "A",
+   "zh": "我快饿死了。",
+   "pinyin": "Wǒ kuài è sǐ le.",
+   "ko": "배고파 죽기 직전이야.",
+   "note": "快…了 (곧 ~한다) + 死了 과장 표현",
+   "tags": [
+    "structure:快了",
+    "exaggeration"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "B",
+   "zh": "给你点了奶茶，看门口。",
+   "pinyin": "Gěi nǐ diǎn le nǎichá, kàn ménkǒu.",
+   "ko": "밀크티 시켜놨어, 입구 봐봐.",
+   "note": "개사 给 (~에게 ~해 주다)",
+   "tags": [
+    "preposition:给",
+    "positive"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "A",
+   "zh": "真的假的？",
+   "pinyin": "Zhēn de jiǎ de?",
+   "ko": "진짜야 가짜야?",
+   "note": "真的假的 (진짜? 구어 감탄 의문)",
+   "tags": [
+    "colloquial",
+    "surprise"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "A",
+   "zh": "到了！你太好了吧！",
+   "pinyin": "Dào le! Nǐ tài hǎo le ba!",
+   "ko": "왔다! 너 진짜 최고다!",
+   "note": "太…了 감탄 구문 + 吧 (감탄 강조)",
+   "tags": [
+    "structure:太了",
+    "positive"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,112 @@
+{
+ "id": "r4_life_l2_d18_2",
+ "region": "R4",
+ "island": "life",
+ "kind": "chat",
+ "title": "생일 ②",
+ "emoji": "🎂",
+ "scene": "小丽의 생일 서프라이즈를 몰래 준비하던 Mark, 폰 메시지를 들켜버린다.",
+ "speakers": {
+  "A": "A",
+  "B": "B"
+ },
+ "register": "casual",
+ "twist": 0,
+ "variant": "north",
+ "legacy": "L2/d18_2",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "A",
+   "zh": "惊喜没有了，都怪你。",
+   "pinyin": "Jīngxǐ méiyǒu le, dōu guài nǐ.",
+   "ko": "서프라이즈 다 망했어, 전부 네 탓이야.",
+   "note": "怪你: '네 탓이다'. 都怪+사람 애교 섞인 원망.",
+   "tags": [
+    "怪",
+    "투닥"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "B",
+   "zh": "哈哈，可是我好开心！",
+   "pinyin": "Hāhā, kěshì wǒ hǎo kāixīn!",
+   "ko": "하하, 근데 나 완전 행복해!",
+   "note": "好+형용사: '엄청 ~하다' 구어 강조(=很보다 감정적).",
+   "tags": [
+    "好+형용사",
+    "감정"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "zh": "什么蛋糕？巧克力的吗？",
+   "pinyin": "Shénme dàngāo? Qiǎokèlì de ma?",
+   "ko": "무슨 케이크야? 초콜릿 맛?",
+   "note": "巧克力的: 명사+的로 '~한 것' 생략 표현.",
+   "tags": [
+    "的",
+    "질문"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "不告诉你，这个是秘密。",
+   "pinyin": "Bú gàosu nǐ, zhège shì mìmì.",
+   "ko": "안 알려줘, 이건 비밀이야.",
+   "note": "告诉+사람: 이중목적어 동사. 不의 성조변화(bú).",
+   "tags": [
+    "告诉",
+    "성조변화"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "小气鬼！",
+   "pinyin": "Xiǎoqìguǐ!",
+   "ko": "쪼잔이!",
+   "note": "小气鬼: '구두쇠/쪼잔한 사람'. 연인 간 애교 놀림.",
+   "tags": [
+    "小气鬼",
+    "회화체"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "zh": "生日那天你就知道了。",
+   "pinyin": "Shēngrì nàtiān nǐ jiù zhīdào le.",
+   "ko": "생일날 되면 알게 될 거야.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "B",
+   "zh": "那我等着，肯定很好吃。",
+   "pinyin": "Nà wǒ děng zhe, kěndìng hěn hǎochī.",
+   "ko": "그럼 기다릴게, 분명 맛있을 거야.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "A",
+   "zh": "保证让你惊喜到尖叫。",
+   "pinyin": "Bǎozhèng ràng nǐ jīngxǐ dào jiānjiào.",
+   "ko": "놀라서 소리 지르게 해줄게, 장담해.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  }
+ ]
+}

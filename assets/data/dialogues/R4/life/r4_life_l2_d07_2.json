@@ -1,0 +1,112 @@
+{
+ "id": "r4_life_l2_d07_2",
+ "region": "R4",
+ "island": "life",
+ "kind": "chat",
+ "title": "쇼핑 ②",
+ "emoji": "🛍️",
+ "scene": "매장에서 옷을 고르다 가격에 놀라 온라인 최저가를 찾는 두 사람",
+ "speakers": {
+  "A": "A",
+  "B": "B"
+ },
+ "register": "casual",
+ "twist": 0,
+ "variant": "north",
+ "legacy": "L2/d07_2",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "zh": "那我在店里试，回家网上买。",
+   "pinyin": "Nà wǒ zài diànli shì, huíjiā wǎngshàng mǎi.",
+   "ko": "그럼 매장에서 입어보고 집 가서 인터넷으로 사야지.",
+   "note": "연동문 (동작의 순차 연결)",
+   "tags": [
+    "structure:连动",
+    "humor"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "zh": "你可真是购物天才。",
+   "pinyin": "Nǐ kě zhēnshi gòuwù tiāncái.",
+   "ko": "너 진짜 쇼핑 천재다.",
+   "note": "부사 可 (구어체 강조)",
+   "tags": [
+    "adverb:可",
+    "positive"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "zh": "那你的呢？也买一件？",
+   "pinyin": "Nà nǐ de ne? Yě mǎi yī jiàn?",
+   "ko": "그럼 네 건? 너도 한 벌 살래?",
+   "note": "的 명사화 (你的 = 네 것) + 呢",
+   "tags": [
+    "structure:的",
+    "shopping"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "我上个月的还没穿过呢。",
+   "pinyin": "Wǒ shàng ge yuè de hái méi chuān guo ne.",
+   "ko": "지난달에 산 것도 아직 안 입어봤어.",
+   "note": "还没…过 (아직 ~해본 적 없다)",
+   "tags": [
+    "aspect:过",
+    "negative"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "那这件就当你送我的啦。",
+   "pinyin": "Nà zhè jiàn jiù dāng nǐ sòng wǒ de la.",
+   "ko": "그럼 이건 네가 나한테 선물한 걸로 치자.",
+   "note": "동사 当 (~로 치다/간주하다)",
+   "tags": [
+    "verb:当",
+    "humor"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "zh": "好吧好吧，算我送的。",
+   "pinyin": "Hǎo ba hǎo ba, suàn wǒ sòng de.",
+   "ko": "알았어 알았어, 내가 선물한 걸로 하자.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "B",
+   "zh": "谢谢老公，爱你哦。",
+   "pinyin": "Xièxiè lǎogōng, ài nǐ ó.",
+   "ko": "고마워 자기야, 사랑해.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "A",
+   "zh": "下次记得先查价格啊。",
+   "pinyin": "Xiàcì jìde xiānchá jiàgé a.",
+   "ko": "다음엔 먼저 가격 검색하는 거 잊지 마.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  }
+ ]
+}

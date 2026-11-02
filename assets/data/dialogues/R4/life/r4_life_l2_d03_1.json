@@ -1,0 +1,115 @@
+{
+ "id": "r4_life_l2_d03_1",
+ "region": "R4",
+ "island": "life",
+ "kind": "chat",
+ "title": "배달음식 ①",
+ "emoji": "🍜",
+ "scene": "저녁 배달 메뉴를 한 시간째 못 정하는 두 사람의 카오스",
+ "speakers": {
+  "A": "A",
+  "B": "B"
+ },
+ "register": "casual",
+ "twist": 0,
+ "variant": "north",
+ "legacy": "L2/d03_1",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "zh": "晚饭吃什么？",
+   "pinyin": "Wǎnfàn chī shénme?",
+   "ko": "저녁 뭐 먹을래?",
+   "note": "의문사 什么 기본 의문문",
+   "tags": [
+    "question:什么",
+    "food"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "zh": "随便。",
+   "pinyin": "Suíbiàn.",
+   "ko": "아무거나.",
+   "note": "随便 (아무거나) — 커플 싸움 유발 단어",
+   "tags": [
+    "colloquial:随便",
+    "food"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "zh": "又来！随便是最难点的。",
+   "pinyin": "Yòu lái! Suíbiàn shì zuì nán diǎn de.",
+   "ko": "또 시작이네! 아무거나가 제일 시키기 어렵거든.",
+   "note": "是…的 강조 구문 — 点(주문하다)",
+   "tags": [
+    "adverb:最",
+    "banter"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "那火锅怎么样？",
+   "pinyin": "Nà huǒguō zěnmeyàng?",
+   "ko": "그럼 훠궈 어때?",
+   "note": "怎么样 (~어때? 제안 의문문)",
+   "tags": [
+    "question:怎么样",
+    "food"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "太贵了，不行。",
+   "pinyin": "Tài guì le, bùxíng.",
+   "ko": "너무 비싸, 안 돼.",
+   "note": "太…了 (너무 ~하다) + 不行 (안 된다)",
+   "tags": [
+    "structure:太了",
+    "negative"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "zh": "麻辣烫呢？",
+   "pinyin": "Málàtàng ne?",
+   "ko": "마라탕은?",
+   "note": "명사+呢 (~는 어때? 생략 의문)",
+   "tags": [
+    "particle:呢",
+    "food"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "B",
+   "zh": "昨天刚吃过。",
+   "pinyin": "Zuótiān gāng chī guo.",
+   "ko": "어제 막 먹었잖아.",
+   "note": "동태조사 过 (~한 적 있다/이미 했다)",
+   "tags": [
+    "aspect:过",
+    "food"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "A",
+   "zh": "那你到底想吃什么呀！",
+   "pinyin": "Nà nǐ dàodǐ xiǎng chī shénme ya!",
+   "ko": "그럼 도대체 뭘 먹고 싶은 건데!",
+   "note": "到底 (도대체, 추궁 어감)",
+   "tags": [
+    "adverb:到底",
+    "chaos"
+   ]
+  }
+ ]
+}

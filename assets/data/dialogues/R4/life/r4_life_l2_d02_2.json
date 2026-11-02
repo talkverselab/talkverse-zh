@@ -1,0 +1,112 @@
+{
+ "id": "r4_life_l2_d02_2",
+ "region": "R4",
+ "island": "life",
+ "kind": "chat",
+ "title": "야근 ②",
+ "emoji": "💻",
+ "scene": "야근 중인 Mark의 투정과 밀크티로 위로하는 小丽",
+ "speakers": {
+  "A": "A",
+  "B": "B"
+ },
+ "register": "casual",
+ "twist": 0,
+ "variant": "north",
+ "legacy": "L2/d02_2",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "zh": "那今晚谁洗碗呢？",
+   "pinyin": "Nà jīnwǎn shéi xǐwǎn ne?",
+   "ko": "그럼 오늘 밤 설거지는 누가 하지?",
+   "note": "의문사 谁 + 呢 (그럼 ~는?)",
+   "tags": [
+    "question:谁",
+    "banter"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "zh": "啊？原来有条件啊。",
+   "pinyin": "Á? Yuánlái yǒu tiáojiàn a.",
+   "ko": "어? 알고 보니 조건이 있었네.",
+   "note": "原来 (알고 보니 ~였다)",
+   "tags": [
+    "adverb:原来",
+    "chaos"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "zh": "世界上没有免费的奶茶。",
+   "pinyin": "Shìjiè shang méiyǒu miǎnfèi de nǎichá.",
+   "ko": "세상에 공짜 밀크티는 없어.",
+   "note": "장소+没有 존재문 (~에 ~이 없다)",
+   "tags": [
+    "structure:没有",
+    "humor"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "行行行，我洗。",
+   "pinyin": "Xíng xíng xíng, wǒ xǐ.",
+   "ko": "알았어 알았어, 내가 할게.",
+   "note": "行 (좋아/알았어, 승낙) 반복으로 체념 어감",
+   "tags": [
+    "colloquial:行",
+    "banter"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "加油，早点回来呀。",
+   "pinyin": "Jiāyóu, zǎo diǎn huílái ya.",
+   "ko": "힘내, 일찍 들어와.",
+   "note": "형용사+点 (좀 ~하게) + 어기조사 呀",
+   "tags": [
+    "particle:呀",
+    "positive"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "zh": "好，我马上出发。",
+   "pinyin": "Hǎo, wǒ mǎshàng chūfā.",
+   "ko": "응, 지금 바로 출발할게.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "B",
+   "zh": "路上小心点。",
+   "pinyin": "Lùshàng xiǎoxīn diǎn.",
+   "ko": "가는 길 조심해.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "A",
+   "zh": "到家啦，还是你最好。",
+   "pinyin": "Dàojiā la, háishì nǐ zuìhǎo.",
+   "ko": "집 왔다, 역시 네가 최고야.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  }
+ ]
+}

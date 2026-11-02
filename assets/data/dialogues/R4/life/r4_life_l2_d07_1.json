@@ -1,0 +1,115 @@
+{
+ "id": "r4_life_l2_d07_1",
+ "region": "R4",
+ "island": "life",
+ "kind": "chat",
+ "title": "쇼핑 ①",
+ "emoji": "🛍️",
+ "scene": "매장에서 옷을 고르다 가격에 놀라 온라인 최저가를 찾는 두 사람",
+ "speakers": {
+  "A": "A",
+  "B": "B"
+ },
+ "register": "casual",
+ "twist": 0,
+ "variant": "north",
+ "legacy": "L2/d07_1",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "zh": "你看这件外套怎么样？",
+   "pinyin": "Nǐ kàn zhè jiàn wàitào zěnmeyàng?",
+   "ko": "이 코트 어때 보여?",
+   "note": "의류 양사 件 + 怎么样",
+   "tags": [
+    "measure:件",
+    "shopping"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "zh": "好看！多少钱？",
+   "pinyin": "Hǎokàn! Duōshao qián?",
+   "ko": "예쁘다! 얼마야?",
+   "note": "多少钱 (가격 묻기 기본 표현)",
+   "tags": [
+    "question:多少",
+    "positive"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "zh": "八百。",
+   "pinyin": "Bābǎi.",
+   "ko": "800위안.",
+   "note": "숫자 읽기 (백 단위 百)",
+   "tags": [
+    "number",
+    "shopping"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "八百？抢钱啊！",
+   "pinyin": "Bābǎi? Qiǎng qián a!",
+   "ko": "800? 이건 강도지!",
+   "note": "抢钱 (돈을 뺏다, 비싸다는 과장 표현)",
+   "tags": [
+    "colloquial",
+    "chaos"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "这是名牌嘛。",
+   "pinyin": "Zhè shì míngpái ma.",
+   "ko": "이거 브랜드 거란 말이야.",
+   "note": "嘛 (당연함 어필)",
+   "tags": [
+    "particle:嘛",
+    "shopping"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "zh": "网上肯定更便宜。",
+   "pinyin": "Wǎngshàng kěndìng gèng piányi.",
+   "ko": "인터넷이 분명 더 쌀걸.",
+   "note": "비교 부사 更 (더욱) + 肯定 (분명히)",
+   "tags": [
+    "adverb:更",
+    "shopping"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "B",
+   "zh": "你查一下呗。",
+   "pinyin": "Nǐ chá yīxià bei.",
+   "ko": "그럼 검색해 보든가.",
+   "note": "동사+一下 (좀 ~해보다) + 어기조사 呗",
+   "tags": [
+    "structure:一下",
+    "particle:呗"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "A",
+   "zh": "哇，网上只要三百五。",
+   "pinyin": "Wā, wǎngshàng zhǐ yào sānbǎi wǔ.",
+   "ko": "와, 인터넷은 350밖에 안 해.",
+   "note": "只要 (겨우 ~밖에 안 든다)",
+   "tags": [
+    "adverb:只",
+    "chaos"
+   ]
+  }
+ ]
+}

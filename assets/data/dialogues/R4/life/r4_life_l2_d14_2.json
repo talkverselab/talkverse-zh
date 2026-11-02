@@ -1,0 +1,112 @@
+{
+ "id": "r4_life_l2_d14_2",
+ "region": "R4",
+ "island": "life",
+ "kind": "chat",
+ "title": "지하철 ②",
+ "emoji": "🚇",
+ "scene": "출근길 만원 지하철에 시달린 Mark의 하소연과 재택근무 小丽의 얄미운 위로",
+ "speakers": {
+  "A": "A",
+  "B": "B"
+ },
+ "register": "casual",
+ "twist": 0,
+ "variant": "north",
+ "legacy": "L2/d14_2",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "A",
+   "zh": "而且今天鞋还被踩了。",
+   "pinyin": "Érqiě jīntiān xié hái bèi cǎi le.",
+   "ko": "게다가 오늘 신발도 밟혔어.",
+   "note": "而且 (게다가) + 被 피동",
+   "tags": [
+    "complaint",
+    "passive:被"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "B",
+   "zh": "可怜的宝宝。",
+   "pinyin": "Kělián de bǎobao.",
+   "ko": "불쌍한 우리 애기.",
+   "note": "형용사+的+명사 수식, 애칭 宝宝",
+   "tags": [
+    "sweet",
+    "modifier:的"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "A",
+   "zh": "别笑！明天你替我上班。",
+   "pinyin": "Bié xiào! Míngtiān nǐ tì wǒ shàngbān.",
+   "ko": "웃지 마! 내일 네가 대신 출근해.",
+   "note": "替 (대신하다) 개사",
+   "tags": [
+    "banter",
+    "preposition:替"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "B",
+   "zh": "那工资也给我吧。",
+   "pinyin": "Nà gōngzī yě gěi wǒ ba.",
+   "ko": "그럼 월급도 나 줘.",
+   "note": "也 (~도) + 吧 제안",
+   "tags": [
+    "humor",
+    "particle:吧"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "A",
+   "zh": "算了，我还是自己挤吧。",
+   "pinyin": "Suàn le, wǒ háishi zìjǐ jǐ ba.",
+   "ko": "됐다, 그냥 내가 끼어 타고 말지.",
+   "note": "算了 (관두자) + 还是……吧 (역시 ~하는 게 낫다)",
+   "tags": [
+    "humor",
+    "pattern:还是吧"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "B",
+   "zh": "哈哈，辛苦了，到公司了吗？",
+   "pinyin": "Hāhā, xīnkǔ le, dào gōngsī le ma?",
+   "ko": "하하, 고생했어, 회사 도착했어?",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "A",
+   "zh": "刚到，累死我了。",
+   "pinyin": "Gāngdào, lèisǐ wǒ le.",
+   "ko": "방금 도착, 진짜 힘들어 죽겠어.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "B",
+   "zh": "晚上早点睡，好好休息。",
+   "pinyin": "Wǎnshàng zǎodiǎn shuì, hǎohǎo xiūxī.",
+   "ko": "밤에 일찍 자고 푹 쉬어.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  }
+ ]
+}

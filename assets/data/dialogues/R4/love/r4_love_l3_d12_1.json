@@ -1,0 +1,115 @@
+{
+ "id": "r4_love_l3_d12_1",
+ "region": "R4",
+ "island": "love",
+ "kind": "long",
+ "title": "여행에서 ①",
+ "emoji": "🏯",
+ "scene": "시안 고성벽 위에서 자전거를 타며 노을을 함께 보는 두 사람.",
+ "speakers": {
+  "A": "A",
+  "B": "B"
+ },
+ "register": "casual",
+ "twist": 0,
+ "variant": "north",
+ "legacy": "L3/d12_1",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "zh": "哇，城墙上风景真美！",
+   "pinyin": "Wā, chéngqiáng shang fēngjǐng zhēn měi!",
+   "ko": "와, 성벽 위 풍경 진짜 예쁘다!",
+   "note": "방위사 上 (~위)",
+   "tags": [
+    "풍경",
+    "감탄"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "zh": "是啊，比照片漂亮多了。",
+   "pinyin": "Shì a, bǐ zhàopiàn piàoliang duō le.",
+   "ko": "그러게, 사진보다 훨씬 예뻐.",
+   "note": "比 비교문 + 多了 (훨씬)",
+   "tags": [
+    "비교문",
+    "풍경"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "zh": "我们租两辆自行车吧！",
+   "pinyin": "Wǒmen zū liǎng liàng zìxíngchē ba!",
+   "ko": "우리 자전거 두 대 빌리자!",
+   "note": "양사 辆 (차량 세는 단위)",
+   "tags": [
+    "자전거",
+    "제안"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "好！看谁骑得快！",
+   "pinyin": "Hǎo! Kàn shéi qí de kuài!",
+   "ko": "좋아! 누가 빨리 타나 보자!",
+   "note": "정도보어 得 (骑得快)",
+   "tags": [
+    "장난",
+    "정도보어"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "慢一点儿，等等我！",
+   "pinyin": "Màn yìdiǎnr, děngdeng wǒ!",
+   "ko": "좀 천천히 가, 나 기다려 줘!",
+   "note": "형용사 + 一点儿, 동사 중첩 等等",
+   "tags": [
+    "장난",
+    "요청"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "zh": "哈哈，我在这儿等你呢。",
+   "pinyin": "Hāhā, wǒ zài zhèr děng nǐ ne.",
+   "ko": "하하, 나 여기서 너 기다리고 있잖아.",
+   "note": "在 + 呢 (진행·지속)",
+   "tags": [
+    "장난",
+    "진행형"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "B",
+   "zh": "你看，太阳快下山了。",
+   "pinyin": "Nǐ kàn, tàiyáng kuài xià shān le.",
+   "ko": "봐, 해가 곧 지려고 해.",
+   "note": "快…了 (임박 표현)",
+   "tags": [
+    "노을",
+    "快…了"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "A",
+   "zh": "夕阳下的你，更好看。",
+   "pinyin": "Xīyáng xià de nǐ, gèng hǎokàn.",
+   "ko": "노을 아래 있는 네가 더 예뻐.",
+   "note": "부사 更 (더욱)",
+   "tags": [
+    "고백",
+    "로맨스"
+   ]
+  }
+ ]
+}

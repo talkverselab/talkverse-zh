@@ -1,0 +1,115 @@
+{
+ "id": "r4_love_l1_ep5_3",
+ "region": "R4",
+ "island": "love",
+ "kind": "long",
+ "title": "미래 ③",
+ "emoji": "🌅",
+ "scene": "관계 확정 — 장래 계획 · 언어 교환 · 부모님 인사 약속 · 고백",
+ "speakers": {
+  "A": "Mark",
+  "B": "小丽 / Lily"
+ },
+ "register": "casual",
+ "twist": 0,
+ "variant": "north",
+ "legacy": "L1/ep5_3",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "A",
+   "zh": "可是什么？告诉我。",
+   "pinyin": "Kěshì shénme? Gàosu wǒ.",
+   "ko": "그런데 뭐? 말해줘.",
+   "note": "재촉",
+   "tags": [
+    "question",
+    "honest"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "B",
+   "zh": "我不想你为我放弃什么。",
+   "pinyin": "Wǒ bù xiǎng nǐ wèi wǒ fàngqì shénme.",
+   "ko": "네가 나 때문에 뭔가 포기하는 건 싫어.",
+   "note": "为 (~을 위해) + 放弃 (포기)",
+   "tags": [
+    "feeling",
+    "function:为"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "A",
+   "zh": "留在你身边不是放弃。",
+   "pinyin": "Liú zài nǐ shēnbiān bú shì fàngqì.",
+   "ko": "네 곁에 남는 건 포기가 아니야.",
+   "note": "身边 (곁)",
+   "tags": [
+    "confession",
+    "hook:stay"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "是选择。",
+   "pinyin": "Shì xuǎnzé.",
+   "ko": "선택이야.",
+   "note": "选择 (선택) 짧은 강조",
+   "tags": [
+    "confession",
+    "hook:choice"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "你什么时候变得这么会说话？",
+   "pinyin": "Nǐ shénme shíhou biàn de zhème huì shuōhuà?",
+   "ko": "언제 이렇게 말을 잘하게 됐어?",
+   "note": "变得 (변하다) + 会说话 (말주변)",
+   "tags": [
+    "praise",
+    "function:得"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "zh": "跟你学的呀。",
+   "pinyin": "Gēn nǐ xué de ya.",
+   "ko": "너한테 배운 거지.",
+   "note": "跟…学 (~에게 배우다) + 呀",
+   "tags": [
+    "flirt",
+    "particle:呀"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "B",
+   "zh": "那以后我教你韩语吧… 啊不对！",
+   "pinyin": "Nà yǐhòu wǒ jiāo nǐ Hányǔ ba… a bú duì!",
+   "ko": "그럼 앞으로 내가 한국어 가르쳐줄게… 아 반대다!",
+   "note": "말 꼬임 유머 (한국어는 Mark 모어)",
+   "tags": [
+    "joke",
+    "particle:吧"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "A",
+   "zh": "哈哈，你教我中文，我教你韩语！",
+   "pinyin": "Hāhā, nǐ jiāo wǒ zhōngwén, wǒ jiāo nǐ Hányǔ!",
+   "ko": "하하, 넌 나한테 중국어, 난 너한테 한국어!",
+   "note": "언어 교환 구조",
+   "tags": [
+    "plan",
+    "hook:exchange"
+   ]
+  }
+ ]
+}

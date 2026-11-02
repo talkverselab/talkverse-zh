@@ -1,0 +1,115 @@
+{
+ "id": "r4_life_l2_d14_1",
+ "region": "R4",
+ "island": "life",
+ "kind": "chat",
+ "title": "지하철 ①",
+ "emoji": "🚇",
+ "scene": "출근길 만원 지하철에 시달린 Mark의 하소연과 재택근무 小丽의 얄미운 위로",
+ "speakers": {
+  "A": "A",
+  "B": "B"
+ },
+ "register": "casual",
+ "twist": 0,
+ "variant": "north",
+ "legacy": "L2/d14_1",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "A",
+   "zh": "我快被挤死了。",
+   "pinyin": "Wǒ kuài bèi jǐ sǐ le.",
+   "ko": "나 압사당할 뻔했어.",
+   "note": "被 피동문 + 快……了 (곧 ~할 지경)",
+   "tags": [
+    "commute",
+    "passive:被"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "B",
+   "zh": "又坐早高峰地铁啦？",
+   "pinyin": "Yòu zuò zǎogāofēng dìtiě la?",
+   "ko": "또 출근 러시아워 지하철 탔어?",
+   "note": "又 (또) + 어기조사 啦",
+   "tags": [
+    "commute",
+    "particle:啦"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "A",
+   "zh": "人多得上不去车。",
+   "pinyin": "Rén duō de shàng bu qù chē.",
+   "ko": "사람이 많아서 못 탈 정도야.",
+   "note": "가능보어 부정형 上不去 (올라탈 수 없다)",
+   "tags": [
+    "commute",
+    "complement:上不去"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "等了三趟才上来。",
+   "pinyin": "Děng le sān tàng cái shànglai.",
+   "ko": "세 대나 보내고 겨우 탔어.",
+   "note": "才 (겨우, 그제서야) + 양사 趟",
+   "tags": [
+    "commute",
+    "adverb:才"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "辛苦啦，我在家上班真幸福。",
+   "pinyin": "Xīnkǔ la, wǒ zài jiā shàngbān zhēn xìngfú.",
+   "ko": "고생이네, 난 집에서 일해서 진짜 행복해.",
+   "note": "在+장소+동사 어순",
+   "tags": [
+    "work",
+    "preposition:在"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "zh": "你别气我啊。",
+   "pinyin": "Nǐ bié qì wǒ a.",
+   "ko": "너 나 약 올리지 마.",
+   "note": "别+동사 금지 + 气 (약 올리다)",
+   "tags": [
+    "banter",
+    "prohibition:别"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "B",
+   "zh": "哈哈，早点出门不就行了嘛。",
+   "pinyin": "Hāhā, zǎo diǎn chūmén bú jiù xíng le ma.",
+   "ko": "하하, 일찍 나가면 되잖아.",
+   "note": "不就……了嘛 (~하면 되잖아) 반문",
+   "tags": [
+    "banter",
+    "pattern:不就了嘛"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "A",
+   "zh": "早出门也一样挤。",
+   "pinyin": "Zǎo chūmén yě yíyàng jǐ.",
+   "ko": "일찍 나가도 똑같이 붐벼.",
+   "note": "也一样 (역시 마찬가지로)",
+   "tags": [
+    "complaint",
+    "adverb:一样"
+   ]
+  }
+ ]
+}

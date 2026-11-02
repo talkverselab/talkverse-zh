@@ -1,0 +1,112 @@
+{
+ "id": "r4_love_l3_d11_2",
+ "region": "R4",
+ "island": "love",
+ "kind": "long",
+ "title": "첫여행 ②",
+ "emoji": "🧳",
+ "scene": "첫 커플 여행지로 시안을 정하고 설레며 계획을 세우는 밤.",
+ "speakers": {
+  "A": "A",
+  "B": "B"
+ },
+ "register": "casual",
+ "twist": 0,
+ "variant": "north",
+ "legacy": "L3/d11_2",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "A",
+   "zh": "没问题，交给我吧！",
+   "pinyin": "Méi wèntí, jiāo gěi wǒ ba!",
+   "ko": "문제없어, 나한테 맡겨!",
+   "note": "동사 + 给 (수여의 대상)",
+   "tags": [
+    "약속",
+    "자신감"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "B",
+   "zh": "这是我们第一次一起旅行。",
+   "pinyin": "Zhè shì wǒmen dì yī cì yìqǐ lǚxíng.",
+   "ko": "우리 처음으로 같이 가는 여행이네.",
+   "note": "서수 第一次 (첫 번째)",
+   "tags": [
+    "설렘",
+    "기념"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "A",
+   "zh": "所以我又开心又紧张。",
+   "pinyin": "Suǒyǐ wǒ yòu kāixīn yòu jǐnzhāng.",
+   "ko": "그래서 나 신나면서도 떨려.",
+   "note": "又…又… (두 상태 병렬)",
+   "tags": [
+    "감정",
+    "又…又"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "B",
+   "zh": "紧张什么呀？有我呢！",
+   "pinyin": "Jǐnzhāng shénme ya? Yǒu wǒ ne!",
+   "ko": "떨긴 뭘 떨어? 내가 있잖아!",
+   "note": "어기조사 呢 (사실 환기·안심)",
+   "tags": [
+    "안심",
+    "애정"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "A",
+   "zh": "好，真希望周末快点到。",
+   "pinyin": "Hǎo, zhēn xīwàng zhōumò kuài diǎn dào.",
+   "ko": "좋아, 주말이 빨리 왔으면 좋겠다.",
+   "note": "希望 + 절 (소망 표현)",
+   "tags": [
+    "설렘",
+    "소망"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "B",
+   "zh": "我也是，已经开始收拾行李了。",
+   "pinyin": "Wǒ yě shì, yǐjīng kāishǐ shōushí xínglǐ le.",
+   "ko": "나도, 벌써 짐 챙기기 시작했어.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "A",
+   "zh": "别忘了带你的相机。",
+   "pinyin": "Biéwàngle dài nǐ de xiàngjī.",
+   "ko": "카메라 챙기는 거 잊지 마.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "B",
+   "zh": "放心，我早就准备好了。",
+   "pinyin": "Fàngxīn, wǒ zǎojiù zhǔnbèi hǎo le.",
+   "ko": "걱정 마, 진작에 다 준비했어.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  }
+ ]
+}

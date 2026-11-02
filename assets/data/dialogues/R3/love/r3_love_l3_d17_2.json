@@ -1,0 +1,112 @@
+{
+ "id": "r3_love_l3_d17_2",
+ "region": "R3",
+ "island": "love",
+ "kind": "long",
+ "title": "발령위기 ②",
+ "emoji": "✈️",
+ "scene": "퇴근 후 카페, Mark가 서울 발령 가능성을 小丽에게 조심스럽게 꺼낸다.",
+ "speakers": {
+  "A": "A",
+  "B": "B"
+ },
+ "register": "casual",
+ "twist": 0,
+ "variant": "north",
+ "legacy": "L3/d17_2",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "A",
+   "zh": "这是一个很好的升职机会。",
+   "pinyin": "Zhè shì yí ge hěn hǎo de shēngzhí jīhuì.",
+   "ko": "이건 정말 좋은 승진 기회란 말이야.",
+   "note": "관형어 표지 的 (수식 구조)",
+   "tags": [
+    "관형어",
+    "직장"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "B",
+   "zh": "机会重要，还是我重要？",
+   "pinyin": "Jīhuì zhòngyào, háishi wǒ zhòngyào?",
+   "ko": "기회가 중요해, 아니면 내가 중요해?",
+   "note": "선택의문문 还是",
+   "tags": [
+    "还是",
+    "갈등"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "A",
+   "zh": "别这样，我也很难受啊。",
+   "pinyin": "Bié zhèyàng, wǒ yě hěn nánshòu a.",
+   "ko": "이러지 마, 나도 정말 괴롭단 말이야.",
+   "note": "금지 别 + 어기조사 啊 (호소)",
+   "tags": [
+    "금지문",
+    "감정"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "B",
+   "zh": "难受的人不只你一个。",
+   "pinyin": "Nánshòu de rén bù zhǐ nǐ yí ge.",
+   "ko": "괴로운 사람이 너 하나뿐인 줄 알아?",
+   "note": "不只 '~뿐만이 아니다'",
+   "tags": [
+    "不只",
+    "감정"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "A",
+   "zh": "我们冷静一下再谈，好吗？",
+   "pinyin": "Wǒmen lěngjìng yíxià zài tán, hǎo ma?",
+   "ko": "우리 좀 진정하고 다시 얘기하자, 응?",
+   "note": "동사+一下 (완화) + 再 '그 다음에'",
+   "tags": [
+    "一下",
+    "再"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "B",
+   "zh": "好，我先回家想一想。",
+   "pinyin": "Hǎo, wǒxiān huíjiā xiǎngyīxiǎng.",
+   "ko": "그래, 나 먼저 집에 가서 생각 좀 해 볼게.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "A",
+   "zh": "那我明天给你打电话。",
+   "pinyin": "Nà wǒ míngtiān gěi nǐ dǎdiànhuà.",
+   "ko": "그럼 내일 내가 전화할게.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "B",
+   "zh": "嗯，早点休息吧。",
+   "pinyin": "Ń, zǎodiǎn xiūxī ba.",
+   "ko": "응, 일찍 좀 쉬어.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  }
+ ]
+}

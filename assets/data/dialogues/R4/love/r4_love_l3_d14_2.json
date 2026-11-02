@@ -1,0 +1,112 @@
+{
+ "id": "r4_love_l3_d14_2",
+ "region": "R4",
+ "island": "love",
+ "kind": "long",
+ "title": "아플때 ②",
+ "emoji": "🍲",
+ "scene": "몸살이 난 마크를 위해 샤오리가 죽을 끓여 주며 돌봐 준다.",
+ "speakers": {
+  "A": "A",
+  "B": "B"
+ },
+ "register": "casual",
+ "twist": 0,
+ "variant": "north",
+ "legacy": "L3/d14_2",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "A",
+   "zh": "好吧，听你的。",
+   "pinyin": "Hǎo ba, tīng nǐ de.",
+   "ko": "알았어, 네 말 들을게.",
+   "note": "관용 표현 听你的 (네 말대로 할게)",
+   "tags": [
+    "순응",
+    "관용표현"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "B",
+   "zh": "粥好了，小心烫啊。",
+   "pinyin": "Zhōu hǎo le, xiǎoxīn tàng a.",
+   "ko": "죽 다 됐어, 뜨거우니까 조심해.",
+   "note": "형용사 好 + 了 (완성됨)",
+   "tags": [
+    "죽",
+    "배려"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "A",
+   "zh": "真好喝，你煮得真棒。",
+   "pinyin": "Zhēn hǎo hē, nǐ zhǔ de zhēn bàng.",
+   "ko": "진짜 맛있다, 너 진짜 잘 끓인다.",
+   "note": "정도보어 得 (煮得棒) — 手艺를 유지하고 싶으면 note에 어휘 주석 추가 권장",
+   "tags": [
+    "칭찬",
+    "감동"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "B",
+   "zh": "喝完好好睡一觉吧。",
+   "pinyin": "Hē wán hǎohāo shuì yí jiào ba.",
+   "ko": "다 먹고 푹 한숨 자.",
+   "note": "결과보어 完 (다 ~하다)",
+   "tags": [
+    "보살핌",
+    "결과보어"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "A",
+   "zh": "有你在，我马上就好了。",
+   "pinyin": "Yǒu nǐ zài, wǒ mǎshàng jiù hǎo le.",
+   "ko": "네가 곁에 있으니 금방 나을 것 같아.",
+   "note": "马上就… (곧, 금방)",
+   "tags": [
+    "애정",
+    "감동"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "B",
+   "zh": "快睡吧，我在旁边陪着你。",
+   "pinyin": "Kuàishuìba, wǒ zài pángbiān péi zhe nǐ.",
+   "ko": "빨리 자, 내가 옆에서 지켜줄게.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "A",
+   "zh": "谢谢你，小丽，辛苦你了。",
+   "pinyin": "Xièxiè nǐ, xiǎolì, xīnkǔ nǐ le.",
+   "ko": "고마워, 샤오리, 고생했어.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "B",
+   "zh": "别客气，这是应该的。",
+   "pinyin": "Bié kèqì, zhèshì yīnggāi de.",
+   "ko": "무슨 소리야, 당연히 해야 할 일인걸.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  }
+ ]
+}

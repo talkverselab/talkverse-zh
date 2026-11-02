@@ -1,0 +1,112 @@
+{
+ "id": "r4_life_l2_d21_2",
+ "region": "R4",
+ "island": "life",
+ "kind": "chat",
+ "title": "반려동물 ②",
+ "emoji": "🐱",
+ "scene": "고양이를 입양하고 싶은 小丽가 Mark를 끈질기게 조른다.",
+ "speakers": {
+  "A": "A",
+  "B": "B"
+ },
+ "register": "casual",
+ "twist": 0,
+ "variant": "north",
+ "legacy": "L2/d21_2",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "zh": "这次不一样嘛！",
+   "pinyin": "Zhè cì bù yíyàng ma!",
+   "ko": "이번엔 다르다니까!",
+   "note": "不一样: '다르다'. 嘛로 떼쓰는 어투.",
+   "tags": [
+    "不一样",
+    "嘛"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "zh": "好吧好吧，就一只哦。",
+   "pinyin": "Hǎo ba hǎo ba, jiù yì zhī o.",
+   "ko": "알았어 알았어, 딱 한 마리만이야.",
+   "note": "就: '딱 ~만' 한정. 哦로 다짐 받는 어투.",
+   "tags": [
+    "就",
+    "哦"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "zh": "太好了！那两只呢？",
+   "pinyin": "Tài hǎo le! Nà liǎng zhī ne?",
+   "ko": "앗싸! 그럼 두 마리는?",
+   "note": "…呢?: 명사구+呢로 '~는 어때?' 슬쩍 흥정.",
+   "tags": [
+    "呢",
+    "반전"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "小丽！",
+   "pinyin": "Xiǎolì!",
+   "ko": "샤오리!",
+   "note": "이름만 외쳐 경고·어이없음 표현. 억양이 곧 의미.",
+   "tags": [
+    "호칭",
+    "유머"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "开玩笑的啦，哈哈。",
+   "pinyin": "Kāi wánxiào de la, hāhā.",
+   "ko": "농담이야, 하하.",
+   "note": "开玩笑的: '농담이야'. 啦로 장난스럽게 수습.",
+   "tags": [
+    "开玩笑",
+    "啦"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "zh": "吓死我了，你可别乱来。",
+   "pinyin": "Xiàsǐ wǒ le, nǐ kěbié luànlái.",
+   "ko": "깜짝 놀랐잖아, 함부로 굴지 마.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "B",
+   "zh": "那我们先去朋友家看看猫吧。",
+   "pinyin": "Nà wǒmen xiān qù péngyǒujiā kànkàn māo ba.",
+   "ko": "그럼 우선 친구네 가서 고양이 보자.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "A",
+   "zh": "好，就今天下午去。",
+   "pinyin": "Hǎo, jiù jīntiānxiàwǔ qù.",
+   "ko": "좋아, 오늘 오후에 바로 가자.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  }
+ ]
+}

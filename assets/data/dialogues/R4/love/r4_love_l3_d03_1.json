@@ -1,0 +1,115 @@
+{
+ "id": "r4_love_l3_d03_1",
+ "region": "R4",
+ "island": "love",
+ "kind": "long",
+ "title": "친구소개 ①",
+ "emoji": "🍜",
+ "scene": "Mark의 절친 大伟에게 小丽를 처음 소개하는 식사 자리를 준비한다.",
+ "speakers": {
+  "A": "A",
+  "B": "B"
+ },
+ "register": "casual",
+ "twist": 0,
+ "variant": "north",
+ "legacy": "L3/d03_1",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "A",
+   "zh": "周六大伟想请我们吃饭。",
+   "pinyin": "Zhōuliù Dàwěi xiǎng qǐng wǒmen chīfàn.",
+   "ko": "토요일에 다웨이가 우리한테 밥 사고 싶대.",
+   "note": "겸어문 请+사람+동사 '~에게 한턱내다'",
+   "tags": [
+    "겸어문",
+    "약속"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "B",
+   "zh": "终于要见你的好朋友了！",
+   "pinyin": "Zhōngyú yào jiàn nǐ de hǎo péngyou le!",
+   "ko": "드디어 네 절친을 만나는구나!",
+   "note": "임박 표현 要…了 '곧 ~한다'",
+   "tags": [
+    "要…了",
+    "终于"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "A",
+   "zh": "你紧张吗？他人特别好。",
+   "pinyin": "Nǐ jǐnzhāng ma? Tā rén tèbié hǎo.",
+   "ko": "긴장돼? 걔 사람 진짜 좋아.",
+   "note": "人+형용사 '사람됨이 ~하다', 부사 特别",
+   "tags": [
+    "부사 特别",
+    "인물평"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "B",
+   "zh": "有一点儿，怕他不喜欢我。",
+   "pinyin": "Yǒu yìdiǎnr, pà tā bù xǐhuan wǒ.",
+   "ko": "조금. 날 안 좋아할까 봐 걱정돼.",
+   "note": "有(一)点儿 '조금 ~하다', 동사 怕",
+   "tags": [
+    "有点儿",
+    "걱정"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "A",
+   "zh": "放心吧，他一定会喜欢你的。",
+   "pinyin": "Fàngxīn ba, tā yídìng huì xǐhuan nǐ de.",
+   "ko": "안심해, 걔는 분명 널 좋아할 거야.",
+   "note": "확신의 会…的, 부사 一定",
+   "tags": [
+    "会…的",
+    "위로"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "B",
+   "zh": "我该穿什么衣服去呢？",
+   "pinyin": "Wǒ gāi chuān shénme yīfu qù ne?",
+   "ko": "무슨 옷을 입고 가야 하지?",
+   "note": "조동사 该 '마땅히 ~해야', 연동문 穿…去",
+   "tags": [
+    "조동사 该",
+    "연동문"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "A",
+   "zh": "你穿什么都好看。",
+   "pinyin": "Nǐ chuān shénme dōu hǎokàn.",
+   "ko": "넌 뭘 입어도 예뻐.",
+   "note": "의문사+都 임의 지칭 '무엇이든 다'",
+   "tags": [
+    "의문사+都",
+    "칭찬"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "B",
+   "zh": "嘴真甜！我问你，去哪儿吃？",
+   "pinyin": "Zuǐ zhēn tián! Wǒ wèn nǐ, qù nǎr chī?",
+   "ko": "말도 참 달게 하네! 근데 어디 가서 먹어?",
+   "note": "관용표현 嘴甜 '말을 달콤하게 잘하다'",
+   "tags": [
+    "관용표현",
+    "장소 묻기"
+   ]
+  }
+ ]
+}

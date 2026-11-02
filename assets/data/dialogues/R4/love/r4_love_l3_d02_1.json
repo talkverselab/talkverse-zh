@@ -1,0 +1,115 @@
+{
+ "id": "r4_love_l3_d02_1",
+ "region": "R4",
+ "island": "love",
+ "kind": "long",
+ "title": "첫기념일 ①",
+ "emoji": "🎁",
+ "scene": "사귄 지 100일, 서로 몰래 준비한 선물을 교환한다.",
+ "speakers": {
+  "A": "A",
+  "B": "B"
+ },
+ "register": "casual",
+ "twist": 0,
+ "variant": "north",
+ "legacy": "L3/d02_1",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "zh": "马克，你知道今天是什么日子吗？",
+   "pinyin": "Mǎkè, nǐ zhīdào jīntiān shì shénme rìzi ma?",
+   "ko": "마크, 오늘이 무슨 날인지 알아?",
+   "note": "의문문을 목적어로 갖는 내포문",
+   "tags": [
+    "내포문",
+    "기념일"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "zh": "当然知道，我们在一起一百天了！",
+   "pinyin": "Dāngrán zhīdào, wǒmen zài yìqǐ yìbǎi tiān le!",
+   "ko": "당연히 알지, 우리 사귄 지 100일 됐잖아!",
+   "note": "시간의 양+了 '~한 지 ~됐다'",
+   "tags": [
+    "시량보어",
+    "在一起"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "zh": "没想到你记得这么清楚。",
+   "pinyin": "Méi xiǎngdào nǐ jìde zhème qīngchu.",
+   "ko": "네가 이렇게 정확히 기억할 줄 몰랐어.",
+   "note": "没想到 '~일 줄 몰랐다'",
+   "tags": [
+    "没想到",
+    "这么"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "我给你准备了一个小礼物。",
+   "pinyin": "Wǒ gěi nǐ zhǔnbèi le yí ge xiǎo lǐwù.",
+   "ko": "너 주려고 작은 선물 준비했어.",
+   "note": "개사 给 '~에게 ~해 주다'",
+   "tags": [
+    "개사 给",
+    "선물"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "哇，是项链！也太漂亮了吧！",
+   "pinyin": "Wā, shì xiàngliàn! Yě tài piàoliang le ba!",
+   "ko": "와, 목걸이잖아! 너무 예쁘다 진짜!",
+   "note": "감탄 표현 也太…了吧",
+   "tags": [
+    "감탄",
+    "也太…了吧"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "zh": "快戴上看看，合不合适。",
+   "pinyin": "Kuài dàishang kànkan, hé bu héshì.",
+   "ko": "빨리 해 봐, 어울리는지 보게.",
+   "note": "방향보어 上 (戴上) + 동사 중첩 看看",
+   "tags": [
+    "방향보어",
+    "동사중첩"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "B",
+   "zh": "我也有礼物，你先闭上眼睛。",
+   "pinyin": "Wǒ yě yǒu lǐwù, nǐ xiān bìshang yǎnjing.",
+   "ko": "나도 선물 있어, 먼저 눈 감아 봐.",
+   "note": "결과보어 上 (闭上 '꼭 감다')",
+   "tags": [
+    "결과보어",
+    "서프라이즈"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "A",
+   "zh": "这是……你亲手织的围巾？",
+   "pinyin": "Zhè shì…… nǐ qīnshǒu zhī de wéijīn?",
+   "ko": "이거… 네가 직접 뜬 목도리야?",
+   "note": "관형어 표지 的, 亲手 '손수'",
+   "tags": [
+    "관형어 的",
+    "수공 선물"
+   ]
+  }
+ ]
+}

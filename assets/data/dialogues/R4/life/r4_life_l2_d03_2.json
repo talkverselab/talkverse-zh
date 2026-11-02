@@ -1,0 +1,112 @@
+{
+ "id": "r4_life_l2_d03_2",
+ "region": "R4",
+ "island": "life",
+ "kind": "chat",
+ "title": "배달음식 ②",
+ "emoji": "🍜",
+ "scene": "저녁 배달 메뉴를 한 시간째 못 정하는 두 사람의 카오스",
+ "speakers": {
+  "A": "A",
+  "B": "B"
+ },
+ "register": "casual",
+ "twist": 0,
+ "variant": "north",
+ "legacy": "L2/d03_2",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "zh": "我也不知道嘛。",
+   "pinyin": "Wǒ yě bù zhīdào ma.",
+   "ko": "나도 모른단 말이야.",
+   "note": "어기조사 嘛 (응석·투정 어감)",
+   "tags": [
+    "particle:嘛",
+    "banter"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "zh": "我们点了一个小时了。",
+   "pinyin": "Wǒmen diǎn le yī ge xiǎoshí le.",
+   "ko": "우리 한 시간째 고르고 있어.",
+   "note": "了…了 구문 (지금까지 ~한 지 얼마 됐다)",
+   "tags": [
+    "structure:了了",
+    "chaos"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "zh": "那石头剪刀布决定吧。",
+   "pinyin": "Nà shítou jiǎndāo bù juédìng ba.",
+   "ko": "그럼 가위바위보로 정하자.",
+   "note": "청유 吧 (~하자)",
+   "tags": [
+    "particle:吧",
+    "game"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "你赢了……那吃什么？",
+   "pinyin": "Nǐ yíng le…… nà chī shénme?",
+   "ko": "네가 이겼네… 그래서 뭐 먹어?",
+   "note": "了 완료 + 那 (화제 전환 접속)",
+   "tags": [
+    "aspect:了",
+    "chaos"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "嗯……随便。",
+   "pinyin": "Èn…… suíbiàn.",
+   "ko": "음… 아무거나.",
+   "note": "随便 재등장 — 수미상관 반전 유머",
+   "tags": [
+    "colloquial:随便",
+    "humor"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "zh": "算了，我直接点外卖了。",
+   "pinyin": "Suànle, wǒ zhíjiē diǎn wàimài le.",
+   "ko": "됐다, 그냥 내가 배달 시킬게.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "B",
+   "zh": "点什么？",
+   "pinyin": "Diǎn shénme?",
+   "ko": "뭐 시키게?",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "A",
+   "zh": "惊喜，你就等着吧。",
+   "pinyin": "Jīngxǐ, nǐ jiù děng zhe ba.",
+   "ko": "깜짝 놀랄 거니까 기다려 봐.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  }
+ ]
+}

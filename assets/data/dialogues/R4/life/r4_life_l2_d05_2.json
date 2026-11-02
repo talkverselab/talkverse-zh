@@ -1,0 +1,112 @@
+{
+ "id": "r4_life_l2_d05_2",
+ "region": "R4",
+ "island": "life",
+ "kind": "chat",
+ "title": "드라마 ②",
+ "emoji": "📺",
+ "scene": "먼저 결말을 본 小丽의 스포일러에 발끈하는 Mark",
+ "speakers": {
+  "A": "A",
+  "B": "B"
+ },
+ "register": "casual",
+ "twist": 0,
+ "variant": "north",
+ "legacy": "L2/d05_2",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "zh": "好啦好啦，对不起嘛。",
+   "pinyin": "Hǎo la hǎo la, duìbuqǐ ma.",
+   "ko": "알았어 알았어, 미안하다니까.",
+   "note": "好啦 (달래기) + 嘛 (애교 사과)",
+   "tags": [
+    "particle:嘛",
+    "positive"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "zh": "今晚你别碰遥控器。",
+   "pinyin": "Jīnwǎn nǐ bié pèng yáokòngqì.",
+   "ko": "오늘 밤 리모컨 만지지 마.",
+   "note": "别 금지문 (~하지 마)",
+   "tags": [
+    "negation:别",
+    "banter"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "zh": "那我们一起再看一遍？",
+   "pinyin": "Nà wǒmen yīqǐ zài kàn yī biàn?",
+   "ko": "그럼 우리 같이 처음부터 다시 볼까?",
+   "note": "동량사 遍 (처음부터 끝까지 한 번)",
+   "tags": [
+    "measure:遍",
+    "positive"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "你都看过了还看？",
+   "pinyin": "Nǐ dōu kàn guo le hái kàn?",
+   "ko": "이미 다 봤으면서 또 본다고?",
+   "note": "都…过了 (이미 ~했다) + 还 반문",
+   "tags": [
+    "aspect:过",
+    "banter"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "陪你看结局才有意思嘛。",
+   "pinyin": "Péi nǐ kàn jiéjú cái yǒu yìsi ma.",
+   "ko": "너랑 같이 결말 봐야 재밌지.",
+   "note": "부사 才 (~해야 비로소) + 陪 (함께해 주다)",
+   "tags": [
+    "adverb:才",
+    "positive"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "zh": "好吧，那就再看一次。",
+   "pinyin": "Hǎo ba, nà jiù zài kàn yīcì.",
+   "ko": "알았어, 그럼 다시 한 번 보자.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "B",
+   "zh": "我保证这次不剧透了。",
+   "pinyin": "Wǒ bǎozhèng zhècì bùjù tòu le.",
+   "ko": "이번엔 절대 스포 안 한다고 약속할게.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "A",
+   "zh": "好，开始吧，别说话。",
+   "pinyin": "Hǎo, kāishǐ ba, bié shuōhuà.",
+   "ko": "좋아, 시작하자, 말하지 마.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  }
+ ]
+}

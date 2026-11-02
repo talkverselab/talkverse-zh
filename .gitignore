@@ -88,3 +88,4 @@ android/.kotlin/
 # Drift generated
 **/*.g.dart
 !lib/data/db/app_database.g.dart
+tool/__pycache__/

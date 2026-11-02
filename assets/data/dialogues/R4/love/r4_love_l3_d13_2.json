@@ -1,0 +1,112 @@
+{
+ "id": "r4_love_l3_d13_2",
+ "region": "R4",
+ "island": "love",
+ "kind": "long",
+ "title": "할머니 ②",
+ "emoji": "👵",
+ "scene": "샤오리가 외할머니 이야기를 들려주며 쓰촨 사투리 한 마디를 가르쳐 준다.",
+ "speakers": {
+  "A": "A",
+  "B": "B"
+ },
+ "register": "casual",
+ "twist": 0,
+ "variant": "north",
+ "legacy": "L3/d13_2",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "A",
+   "zh": "好啊好啊，快教我！",
+   "pinyin": "Hǎo a hǎo a, kuài jiāo wǒ!",
+   "ko": "좋아 좋아, 빨리 가르쳐 줘!",
+   "note": "快 + 동사 (재촉 명령)",
+   "tags": [
+    "설렘",
+    "재촉"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "B",
+   "zh": "“巴适”就是“很舒服”的意思。",
+   "pinyin": "\"Bāshì\" jiùshì \"hěn shūfu\" de yìsi.",
+   "ko": "'바스(巴适)'는 '아주 좋다'는 뜻이야.",
+   "note": "…的意思 (뜻 설명하기)",
+   "tags": [
+    "사투리",
+    "어휘"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "A",
+   "zh": "巴适！今天真巴适！",
+   "pinyin": "Bāshì! Jīntiān zhēn bāshì!",
+   "ko": "바스! 오늘 진짜 바스하네!",
+   "note": "부사 真 (감탄 강조)",
+   "tags": [
+    "사투리",
+    "유머"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "B",
+   "zh": "哈哈，外婆听到一定高兴。",
+   "pinyin": "Hāhā, wàipó tīng dào yídìng gāoxìng.",
+   "ko": "하하, 할머니가 들으시면 분명 좋아하실 거야.",
+   "note": "결과보어 到 + 부사 一定",
+   "tags": [
+    "할머니",
+    "기쁨"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "A",
+   "zh": "下次带我去见外婆吧。",
+   "pinyin": "Xià cì dài wǒ qù jiàn wàipó ba.",
+   "ko": "다음엔 나 데리고 할머니 뵈러 가자.",
+   "note": "연동문 带…去 + 청유 吧",
+   "tags": [
+    "약속",
+    "가족"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "B",
+   "zh": "好，她一定会做好吃的给你。",
+   "pinyin": "Hǎo, tā yídìng huì zuò hǎochī de gěi nǐ.",
+   "ko": "좋아, 할머니가 분명 맛있는 거 해 주실 거야.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "A",
+   "zh": "太好了，我最喜欢吃辣的。",
+   "pinyin": "Tàihǎole, wǒ zuì xǐhuān chī là de.",
+   "ko": "너무 좋다, 나 매운 거 제일 좋아해.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "B",
+   "zh": "那你可要做好心理准备哦。",
+   "pinyin": "Nà nǐ kěyào zuòhǎo xīnlǐzhǔnbèi ó.",
+   "ko": "그럼 마음의 준비 단단히 해 둬.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,115 @@
+{
+ "id": "r4_love_l3_d13_1",
+ "region": "R4",
+ "island": "love",
+ "kind": "long",
+ "title": "할머니 ①",
+ "emoji": "👵",
+ "scene": "샤오리가 외할머니 이야기를 들려주며 쓰촨 사투리 한 마디를 가르쳐 준다.",
+ "speakers": {
+  "A": "A",
+  "B": "B"
+ },
+ "register": "casual",
+ "twist": 0,
+ "variant": "north",
+ "legacy": "L3/d13_1",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "zh": "昨天我跟外婆打电话了。",
+   "pinyin": "Zuótiān wǒ gēn wàipó dǎ diànhuà le.",
+   "ko": "어제 외할머니랑 통화했어.",
+   "note": "개사 跟 (~와) + 완료 了",
+   "tags": [
+    "할머니",
+    "가족"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "zh": "外婆身体还好吗？",
+   "pinyin": "Wàipó shēntǐ hái hǎo ma?",
+   "ko": "할머니 건강은 괜찮으셔?",
+   "note": "부사 还 (여전히)",
+   "tags": [
+    "안부",
+    "건강"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "zh": "挺好的，她还问起你了。",
+   "pinyin": "Tǐng hǎo de, tā hái wèn qǐ nǐ le.",
+   "ko": "꽤 좋으셔, 네 얘기도 물어보셨어.",
+   "note": "挺…的 (꽤 ~하다)",
+   "tags": [
+    "안부",
+    "挺…的"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "真的吗？她知道我？",
+   "pinyin": "Zhēn de ma? Tā zhīdào wǒ?",
+   "ko": "진짜? 할머니가 나를 아셔?",
+   "note": "真的吗 (놀람의 되묻기)",
+   "tags": [
+    "놀람",
+    "질문"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "我常跟她说你的事。",
+   "pinyin": "Wǒ cháng gēn tā shuō nǐ de shì.",
+   "ko": "내가 자주 네 얘기 하거든.",
+   "note": "跟…说 (~에게 말하다)",
+   "tags": [
+    "애정",
+    "가족"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "B",
+   "zh": "小时候是外婆把我带大的。",
+   "pinyin": "Xiǎoshíhou shì wàipó bǎ wǒ dài dà de.",
+   "ko": "어릴 때 외할머니가 날 키워 주셨어.",
+   "note": "把자문 + 是…的 강조",
+   "tags": [
+    "할머니",
+    "把자문"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "A",
+   "zh": "怪不得你这么想她。",
+   "pinyin": "Guàibude nǐ zhème xiǎng tā.",
+   "ko": "어쩐지 네가 그렇게 그리워하더라.",
+   "note": "怪不得 (어쩐지 ~하더라)",
+   "tags": [
+    "공감",
+    "怪不得"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "B",
+   "zh": "我教你一句四川话吧！",
+   "pinyin": "Wǒ jiāo nǐ yí jù Sìchuānhuà ba!",
+   "ko": "내가 쓰촨 사투리 한 마디 가르쳐 줄게!",
+   "note": "양사 句 (말·문장 세는 단위)",
+   "tags": [
+    "사투리",
+    "제안"
+   ]
+  }
+ ]
+}

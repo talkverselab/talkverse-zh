@@ -1,0 +1,112 @@
+{
+ "id": "r4_love_l3_d18_2",
+ "region": "R4",
+ "island": "love",
+ "kind": "long",
+ "title": "장거리싸움 ②",
+ "emoji": "💔",
+ "scene": "사흘 뒤 小丽의 집, 장거리 연애가 가능한지를 두고 처음으로 크게 다툰다.",
+ "speakers": {
+  "A": "A",
+  "B": "B"
+ },
+ "register": "casual",
+ "twist": 0,
+ "variant": "north",
+ "legacy": "L3/d18_2",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "zh": "认真的人就不会想走！",
+   "pinyin": "Rènzhēn de rén jiù bú huì xiǎng zǒu!",
+   "ko": "진심인 사람은 애초에 떠날 생각을 안 해!",
+   "note": "就 논리적 귀결 + 会 가능성 부정",
+   "tags": [
+    "就",
+    "갈등"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "zh": "我什么时候说我想走了？",
+   "pinyin": "Wǒ shénme shíhou shuō wǒ xiǎng zǒu le?",
+   "ko": "내가 언제 떠나고 싶다고 했어?",
+   "note": "의문사 什么时候의 반어 용법",
+   "tags": [
+    "반어문",
+    "항변"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "zh": "你考虑本身就是答案。",
+   "pinyin": "Nǐ kǎolǜ běnshēn jiù shì dá'àn.",
+   "ko": "네가 고민한다는 것 자체가 이미 답이야.",
+   "note": "本身 '그 자체' + 就是 단정",
+   "tags": [
+    "本身",
+    "갈등"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "小丽，你听我解释……",
+   "pinyin": "Xiǎolì, nǐ tīng wǒ jiěshì……",
+   "ko": "샤오리, 내 설명 좀 들어봐……",
+   "note": "겸어문 '听我+동사' (내가 ~하는 걸 듣다)",
+   "tags": [
+    "겸어문",
+    "호소"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "不听，我要去睡了。",
+   "pinyin": "Bù tīng, wǒ yào qù shuì le.",
+   "ko": "안 들어, 나 잘 거야.",
+   "note": "'要…了' 임박 표현 (要…了 태그 유지, 장소 모순 해소)",
+   "tags": [
+    "要…了",
+    "갈등"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "zh": "小丽，开开门，好好说话。",
+   "pinyin": "Xiǎolì, kāi kāimén, hǎohǎo shuōhuà.",
+   "ko": "샤오리, 문 좀 열어 봐, 얘기 좀 하자.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "B",
+   "zh": "没什么好说的，晚安。",
+   "pinyin": "Méishénme hǎo shuō de, wǎnān.",
+   "ko": "할 말 없어, 잘 자.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "A",
+   "zh": "好吧，那我们冷静两天再说。",
+   "pinyin": "Hǎo ba, nà wǒmen lěngjìng liǎngtiān zàishuō.",
+   "ko": "알았어, 그럼 우리 이틀만 진정하고 다시 얘기하자.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  }
+ ]
+}

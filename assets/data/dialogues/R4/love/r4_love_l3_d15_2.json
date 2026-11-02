@@ -1,0 +1,112 @@
+{
+ "id": "r4_love_l3_d15_2",
+ "region": "R4",
+ "island": "love",
+ "kind": "long",
+ "title": "꿈이야기 ②",
+ "emoji": "🌟",
+ "scene": "카페에서 서로의 꿈—창업과 개인 전시회—를 나누며 응원하는 두 사람.",
+ "speakers": {
+  "A": "A",
+  "B": "B"
+ },
+ "register": "casual",
+ "twist": 0,
+ "variant": "north",
+ "legacy": "L3/d15_2",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "A",
+   "zh": "帮外国人学汉语的公司。",
+   "pinyin": "Bāng wàiguó rén xué Hànyǔ de gōngsī.",
+   "ko": "외국인이 중국어 배우는 걸 돕는 회사.",
+   "note": "동사구 + 的 관형절",
+   "tags": [
+    "창업",
+    "중국어"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "B",
+   "zh": "这个想法真不错！",
+   "pinyin": "Zhège xiǎngfǎ zhēn búcuò!",
+   "ko": "그 아이디어 진짜 괜찮은데!",
+   "note": "형용사 不错 (괜찮다)",
+   "tags": [
+    "응원",
+    "칭찬"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "A",
+   "zh": "虽然很难，但是我想试试。",
+   "pinyin": "Suīrán hěn nán, dànshì wǒ xiǎng shìshi.",
+   "ko": "어렵겠지만 그래도 해 보고 싶어.",
+   "note": "虽然…但是… (양보 접속)",
+   "tags": [
+    "의지",
+    "접속사"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "B",
+   "zh": "我们互相加油，好不好？",
+   "pinyin": "Wǒmen hùxiāng jiāyóu, hǎo bu hǎo?",
+   "ko": "우리 서로 응원해 주자, 어때?",
+   "note": "정반의문문 好不好",
+   "tags": [
+    "응원",
+    "약속"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "A",
+   "zh": "好！为了梦想，一起努力！",
+   "pinyin": "Hǎo! Wèile mèngxiǎng, yìqǐ nǔlì!",
+   "ko": "좋아! 꿈을 위해 같이 힘내자!",
+   "note": "개사 为了 (~을 위하여)",
+   "tags": [
+    "다짐",
+    "응원"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "B",
+   "zh": "以后你的公司我要第一个报名。",
+   "pinyin": "Yǐhòu nǐ de gōngsī wǒyào dìyígè bàomíng.",
+   "ko": "나중에 네 회사 생기면 내가 제일 먼저 등록할래.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "A",
+   "zh": "那你要免费学一辈子了。",
+   "pinyin": "Nà nǐ yào miǎnfèi xué yībèizi le.",
+   "ko": "그럼 평생 무료로 배우게 해 줘야겠네.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "B",
+   "zh": "哈哈，那我可太赚了！",
+   "pinyin": "Hāhā, nà wǒ kě tài zhuàn le!",
+   "ko": "하하, 그럼 나 완전 이득이잖아!",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  }
+ ]
+}

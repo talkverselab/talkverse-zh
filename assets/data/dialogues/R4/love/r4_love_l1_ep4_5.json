@@ -1,0 +1,115 @@
+{
+ "id": "r4_love_l1_ep4_5",
+ "region": "R4",
+ "island": "love",
+ "kind": "long",
+ "title": "갈등 ⑤",
+ "emoji": "⚡",
+ "scene": "연락 두절 오해 — 서운함 · 변명 · 질투 · 사과 · 화해 (반말 전환)",
+ "speakers": {
+  "A": "Mark",
+  "B": "小丽 / Lily"
+ },
+ "register": "casual",
+ "twist": 0,
+ "variant": "north",
+ "legacy": "L1/ep4_5",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "zh": "这次原谅你，没有下次哦。",
+   "pinyin": "Zhè cì yuánliàng nǐ, méiyǒu xià cì o.",
+   "ko": "이번엔 용서해줄게, 다음은 없어.",
+   "note": "这次/下次 대비 + 哦 (경고) — ep2 下次 hook callback",
+   "tags": [
+    "accept",
+    "culture"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "zh": "谢谢老婆… 啊不，小丽！",
+   "pinyin": "Xièxie lǎopó… a bù, Xiǎolì!",
+   "ko": "고마워 여보… 아 아니, 샤오리!",
+   "note": "老婆 (아내) 말실수 유머",
+   "tags": [
+    "joke",
+    "hook:laopo"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "zh": "你、你刚叫我什么？！",
+   "pinyin": "Nǐ, nǐ gāng jiào wǒ shénme?!",
+   "ko": "너, 너 방금 나 뭐라고 불렀어?!",
+   "note": "刚 + 叫…什么",
+   "tags": [
+    "feeling",
+    "hook:laopo"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "口误！中文太难了！",
+   "pinyin": "Kǒuwù! Zhōngwén tài nán le!",
+   "ko": "말실수! 중국어 너무 어려워!",
+   "note": "口误 (말실수) + callback",
+   "tags": [
+    "joke",
+    "callback:ep2"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "哼，我看你是故意的。",
+   "pinyin": "Hēng, wǒ kàn nǐ shì gùyì de.",
+   "ko": "흥, 내가 보기엔 일부러 그런 거야.",
+   "note": "故意 (일부러) + 是…的 강조",
+   "tags": [
+    "tease",
+    "function:的"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "zh": "被你发现了，嘿嘿。",
+   "pinyin": "Bèi nǐ fāxiàn le, hēihēi.",
+   "ko": "들켰네, 헤헤.",
+   "note": "被 피동 (들키다)",
+   "tags": [
+    "joke",
+    "function:被"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "B",
+   "zh": "真拿你没办法。",
+   "pinyin": "Zhēn ná nǐ méi bànfǎ.",
+   "ko": "정말 너한텐 못 당하겠다.",
+   "note": "拿…没办法 (어쩔 수 없다) 관용",
+   "tags": [
+    "accept",
+    "culture"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "A",
+   "zh": "和好了？拉钩！",
+   "pinyin": "Héhǎo le? Lāgōu!",
+   "ko": "화해한 거지? 새끼손가락 걸자!",
+   "note": "和好 (화해) + 拉钩 (약속 걸기)",
+   "tags": [
+    "promise",
+    "culture"
+   ]
+  }
+ ]
+}

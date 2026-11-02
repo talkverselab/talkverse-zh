@@ -1,0 +1,115 @@
+{
+ "id": "r4_life_l2_d16_1",
+ "region": "R4",
+ "island": "life",
+ "kind": "chat",
+ "title": "회식 ①",
+ "emoji": "🍻",
+ "scene": "회사 회식이 늦게 끝나 약속을 어긴 Mark, 서운해하는 小丽와 케이크로 화해",
+ "speakers": {
+  "A": "A",
+  "B": "B"
+ },
+ "register": "casual",
+ "twist": 0,
+ "variant": "north",
+ "legacy": "L2/d16_1",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "zh": "都十一点了，你在哪儿呢？",
+   "pinyin": "Dōu shíyī diǎn le, nǐ zài nǎr ne?",
+   "ko": "벌써 11시야, 너 어디야?",
+   "note": "都……了 (벌써 ~다) + 呢 의문",
+   "tags": [
+    "upset",
+    "grammar:都了"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "zh": "聚餐还没结束……",
+   "pinyin": "Jùcān hái méi jiéshù……",
+   "ko": "회식이 아직 안 끝났어……",
+   "note": "还没 (아직 ~하지 않았다)",
+   "tags": [
+    "work",
+    "negation:还没"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "zh": "你不是说十点回来吗？",
+   "pinyin": "Nǐ bú shì shuō shí diǎn huílai ma?",
+   "ko": "너 10시에 온다고 하지 않았어?",
+   "note": "不是……吗 반문 (약속 추궁)",
+   "tags": [
+    "upset",
+    "rhetorical"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "王哥一直不让我走啊。",
+   "pinyin": "Wáng gē yìzhí bú ràng wǒ zǒu a.",
+   "ko": "왕 형이 계속 못 가게 해.",
+   "note": "让 사역문 (不让: 못 하게 하다)",
+   "tags": [
+    "work",
+    "causative:让"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "哼，我一个人吃的晚饭。",
+   "pinyin": "Hēng, wǒ yí gè rén chī de wǎnfàn.",
+   "ko": "흥, 나 혼자 저녁 먹었거든.",
+   "note": "是……的 구문 (是 생략, 상황 강조)",
+   "tags": [
+    "upset",
+    "pattern:是的"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "zh": "对不起嘛，别生气。",
+   "pinyin": "Duìbuqǐ ma, bié shēngqì.",
+   "ko": "미안해, 화내지 마.",
+   "note": "嘛 (애교 섞인 어투) + 别 금지",
+   "tags": [
+    "apology",
+    "particle:嘛"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "B",
+   "zh": "我等你等了一个小时。",
+   "pinyin": "Wǒ děng nǐ děng le yí ge xiǎoshí.",
+   "ko": "너 한 시간이나 기다렸어.",
+   "note": "동사 반복+시간보어 (等你等了~)",
+   "tags": [
+    "upset",
+    "duration"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "A",
+   "zh": "我现在马上跑回去！",
+   "pinyin": "Wǒ xiànzài mǎshàng pǎo huíqu!",
+   "ko": "지금 당장 뛰어갈게!",
+   "note": "방향보어 回去 (되돌아가다)",
+   "tags": [
+    "apology",
+    "complement:回去"
+   ]
+  }
+ ]
+}

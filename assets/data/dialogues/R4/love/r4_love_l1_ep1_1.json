@@ -1,0 +1,115 @@
+{
+ "id": "r4_love_l1_ep1_1",
+ "region": "R4",
+ "island": "love",
+ "kind": "long",
+ "title": "매칭 ①",
+ "emoji": "💕",
+ "scene": "Mark 매칭앱 첫 메시지 → 小丽 자기소개 → 약속 호출 → Lily↔小丽 hook",
+ "speakers": {
+  "A": "Mark",
+  "B": "小丽 / Lily"
+ },
+ "register": "casual",
+ "twist": 0,
+ "variant": "north",
+ "legacy": "L1/ep1_1",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "A",
+   "zh": "你好啊！",
+   "pinyin": "Nǐ hǎo a!",
+   "ko": "안녕하세요!",
+   "note": "어기조사 啊 (감정·친근)",
+   "tags": [
+    "greeting",
+    "particle:啊"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "zh": "我叫 Mark，你呢？",
+   "pinyin": "Wǒ jiào Mark, nǐ ne?",
+   "ko": "저는 Mark입니다, 당신은요?",
+   "note": "어기조사 呢 (되묻기)",
+   "tags": [
+    "self-intro",
+    "particle:呢"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "zh": "我叫小丽，也可以叫我 Lily。",
+   "pinyin": "Wǒ jiào Xiǎolì, yě kěyǐ jiào wǒ Lily.",
+   "ko": "저는 샤오리예요, Lily라고 불러도 돼요.",
+   "note": "자기소개 + 也…可以. Lily↔小丽 hook",
+   "tags": [
+    "self-intro",
+    "hook:naming"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "想认识你，可以吗？",
+   "pinyin": "Xiǎng rènshi nǐ, kěyǐ ma?",
+   "ko": "알고 지내고 싶어요, 괜찮을까요?",
+   "note": "想 의지 + 吗 의문",
+   "tags": [
+    "request",
+    "particle:吗"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "可以呀，你是哪国人？",
+   "pinyin": "Kěyǐ ya, nǐ shì nǎ guó rén?",
+   "ko": "좋아요, 어느 나라 사람이에요?",
+   "note": "어기조사 呀 (부드러운 승낙) + 是…人 국적 묻기",
+   "tags": [
+    "question",
+    "particle:呀"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "zh": "我是韩国人，在首尔工作。",
+   "pinyin": "Wǒ shì Hánguó rén, zài Shǒu'ěr gōngzuò.",
+   "ko": "저는 한국 사람이고, 서울에서 일해요.",
+   "note": "是 + 在…工作",
+   "tags": [
+    "self-intro",
+    "function:是"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "B",
+   "zh": "不过…… 你的中文很好！",
+   "pinyin": "Búguò…… nǐ de zhōngwén hěn hǎo!",
+   "ko": "근데... 중국어 잘하시네요!",
+   "note": "不过 (그런데, 화제 전환) + 的 소유",
+   "tags": [
+    "praise",
+    "expression:不过"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "A",
+   "zh": "哪里哪里，我还在学呢。",
+   "pinyin": "Nǎli nǎli, wǒ hái zài xué ne.",
+   "ko": "아니에요, 아직 배우는 중이에요.",
+   "note": "哪里哪里 겸손 + 在…呢 진행",
+   "tags": [
+    "humble",
+    "particle:呢"
+   ]
+  }
+ ]
+}

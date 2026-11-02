@@ -1,0 +1,115 @@
+{
+ "id": "r4_love_l1_ep2_4",
+ "region": "R4",
+ "island": "love",
+ "kind": "long",
+ "title": "식사 ④",
+ "emoji": "🍽️",
+ "scene": "첫 만남 식당 — 주문 · 매운맛 · 젓가락 · 계산 · 산책 제안",
+ "speakers": {
+  "A": "Mark",
+  "B": "小丽 / Lily"
+ },
+ "register": "casual",
+ "twist": 0,
+ "variant": "north",
+ "legacy": "L1/ep2_4",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "zh": "喝吧喝吧，慢点儿吃。",
+   "pinyin": "Hē ba hē ba, màn diǎnr chī.",
+   "ko": "마셔요 마셔, 천천히 먹어요.",
+   "note": "慢点儿 (천천히)",
+   "tags": [
+    "care",
+    "particle:吧"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "zh": "这个牛肉真好吃！",
+   "pinyin": "Zhège niúròu zhēn hǎochī!",
+   "ko": "이 소고기 진짜 맛있다!",
+   "note": "真好吃 감탄",
+   "tags": [
+    "food",
+    "praise"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "zh": "对吧？我常来这家。",
+   "pinyin": "Duì ba? Wǒ cháng lái zhè jiā.",
+   "ko": "그렇죠? 저 여기 자주 와요.",
+   "note": "对吧 + 常 (자주)",
+   "tags": [
+    "smalltalk",
+    "particle:吧"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "和谁来？朋友吗？",
+   "pinyin": "Hé shéi lái? Péngyou ma?",
+   "ko": "누구랑 와요? 친구랑?",
+   "note": "和谁 (누구와) + 吗",
+   "tags": [
+    "question",
+    "hook:jealous"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "怎么？你吃醋啦？",
+   "pinyin": "Zěnme? Nǐ chīcù la?",
+   "ko": "왜요? 질투해요?",
+   "note": "吃醋 (질투하다, 식초 먹다) 관용어",
+   "tags": [
+    "tease",
+    "particle:啦"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "zh": "没有没有… 有一点。",
+   "pinyin": "Méiyǒu méiyǒu… yǒu yìdiǎn.",
+   "ko": "아니에요 아니에요… 조금은요.",
+   "note": "有一点 (조금 있다) 솔직 유머",
+   "tags": [
+    "flirt",
+    "function:有"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "B",
+   "zh": "放心，都是女朋友，女的朋友。",
+   "pinyin": "Fàngxīn, dōu shì nǚ péngyou, nǚ de péngyou.",
+   "ko": "안심해요, 다 여자친구… 아니, '여자인 친구'예요.",
+   "note": "女朋友 vs 女的朋友 말장난",
+   "tags": [
+    "joke",
+    "hook:wordplay"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "A",
+   "zh": "哈哈，中文太难了！",
+   "pinyin": "Hāhā, zhōngwén tài nán le!",
+   "ko": "하하, 중국어 너무 어려워요!",
+   "note": "太…了",
+   "tags": [
+    "joke",
+    "topic:chinese"
+   ]
+  }
+ ]
+}

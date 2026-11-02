@@ -1,0 +1,115 @@
+{
+ "id": "r3_life_l2_d01_1",
+ "region": "R3",
+ "island": "life",
+ "kind": "chat",
+ "title": "지각 ①",
+ "emoji": "⏰",
+ "scene": "늦잠 잔 Mark, 출근 시간에 전화로 재촉하는 小丽",
+ "speakers": {
+  "A": "A",
+  "B": "B"
+ },
+ "register": "casual",
+ "twist": 0,
+ "variant": "north",
+ "legacy": "L2/d01_1",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "zh": "你起床了没？",
+   "pinyin": "Nǐ qǐchuáng le méi?",
+   "ko": "일어났어 안 일어났어?",
+   "note": "문말 没 의문문 (~했어 안 했어?)",
+   "tags": [
+    "daily",
+    "question:没"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "zh": "起了起了。",
+   "pinyin": "Qǐ le qǐ le.",
+   "ko": "일어났어 일어났어.",
+   "note": "동사 중복으로 다급함·건성 대답 표현",
+   "tags": [
+    "daily",
+    "repetition"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "zh": "骗人！你声音还没醒呢。",
+   "pinyin": "Piàn rén! Nǐ shēngyīn hái méi xǐng ne.",
+   "ko": "거짓말! 목소리가 아직 안 깼는데.",
+   "note": "还没…呢 (아직 ~안 했다, 상태 지속)",
+   "tags": [
+    "particle:呢",
+    "banter"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "好吧，刚醒。",
+   "pinyin": "Hǎo ba, gāng xǐng.",
+   "ko": "알았어, 방금 깼어.",
+   "note": "부사 刚 (방금 막 ~했다)",
+   "tags": [
+    "adverb:刚",
+    "daily"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "都八点半啦！",
+   "pinyin": "Dōu bā diǎn bàn la!",
+   "ko": "벌써 8시 반이야!",
+   "note": "都…啦 (벌써 ~라고! 놀람 강조)",
+   "tags": [
+    "particle:啦",
+    "time"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "zh": "啊？完了完了！",
+   "pinyin": "Á? Wán le wán le!",
+   "ko": "어? 망했다 망했어!",
+   "note": "完了 (망했다, 구어 관용 표현)",
+   "tags": [
+    "exclamation",
+    "chaos"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "B",
+   "zh": "别刷牙了，快跑吧。",
+   "pinyin": "Bié shuāyá le, kuài pǎo ba.",
+   "ko": "양치 하지 말고 빨리 뛰어.",
+   "note": "别…了 (하던 것도 하지 마) + 명령 吧",
+   "tags": [
+    "negation:别",
+    "particle:吧"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "A",
+   "zh": "不刷牙怎么见人啊！",
+   "pinyin": "Bù shuāyá zěnme jiàn rén a!",
+   "ko": "양치 안 하고 어떻게 사람을 만나!",
+   "note": "怎么 반문 용법 (어떻게 ~하냐)",
+   "tags": [
+    "rhetorical",
+    "particle:啊"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,112 @@
+{
+ "id": "r4_life_l2_d15_2",
+ "region": "R4",
+ "island": "life",
+ "kind": "chat",
+ "title": "커피 ②",
+ "emoji": "☕",
+ "scene": "한여름 카페에서 아이스 아메리카노파 Mark와 핫 라떼파 小丽의 커피 취향 논쟁",
+ "speakers": {
+  "A": "A",
+  "B": "B"
+ },
+ "register": "casual",
+ "twist": 0,
+ "variant": "north",
+ "legacy": "L2/d15_2",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "A",
+   "zh": "你喝一口试试嘛。",
+   "pinyin": "Nǐ hē yì kǒu shìshi ma.",
+   "ko": "한 모금만 마셔 봐 봐.",
+   "note": "동사구+试试 (한번 해보다) + 嘛",
+   "tags": [
+    "coffee",
+    "pattern:试试"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "B",
+   "zh": "好吧……哇，好凉快！",
+   "pinyin": "Hǎo ba……wā, hǎo liángkuai!",
+   "ko": "알았어……우와, 완전 시원해!",
+   "note": "好+형용사 감탄 (엄청 ~하다)",
+   "tags": [
+    "reaction",
+    "exclamation:好"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "A",
+   "zh": "怎么样？我说得对吧？",
+   "pinyin": "Zěnmeyàng? Wǒ shuō de duì ba?",
+   "ko": "어때? 내 말 맞지?",
+   "note": "정도보어 得 (说得对: 맞게 말하다)",
+   "tags": [
+    "banter",
+    "complement:得"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "B",
+   "zh": "但是我还是爱热拿铁。",
+   "pinyin": "Dànshì wǒ háishi ài rè nátiě.",
+   "ko": "그래도 난 역시 핫 라떼가 좋아.",
+   "note": "还是 (그래도 역시, 변함없이)",
+   "tags": [
+    "coffee",
+    "adverb:还是"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "A",
+   "zh": "行行行，各喝各的。",
+   "pinyin": "Xíng xíng xíng, gè hē gè de.",
+   "ko": "그래 그래, 각자 마시자.",
+   "note": "各V各的 (각자 알아서 ~하다)",
+   "tags": [
+    "humor",
+    "pattern:各各的"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "B",
+   "zh": "不过你的冰美式确实好喝。",
+   "pinyin": "Bùguò nǐ de bīng měishì quèshí hǎohē.",
+   "ko": "근데 네 아이스 아메리카노 진짜 맛있긴 하다.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "A",
+   "zh": "看吧，我说得没错吧？",
+   "pinyin": "Kànba, wǒ shuō dé méicuò ba?",
+   "ko": "봐봐, 내 말이 맞지?",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "B",
+   "zh": "下次也许试试更冰的。",
+   "pinyin": "Xiàcì yěxǔ shìshì gèngbīng de.",
+   "ko": "다음엔 더 시원한 것도 한번 시도해볼까.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  }
+ ]
+}

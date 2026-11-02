@@ -1,0 +1,112 @@
+{
+ "id": "r4_love_l3_d19_2",
+ "region": "R4",
+ "island": "love",
+ "kind": "long",
+ "title": "냉전 ②",
+ "emoji": "🧊",
+ "scene": "연락이 끊긴 3일, 각자의 방에서 혼잣말과 보내지 못한 메시지가 오간다.",
+ "speakers": {
+  "A": "A",
+  "B": "B"
+ },
+ "register": "casual",
+ "twist": 0,
+ "variant": "north",
+ "legacy": "L3/d19_2",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "A",
+   "zh": "连梦里她都在生气。",
+   "pinyin": "Lián mèng lǐ tā dōu zài shēngqì.",
+   "ko": "꿈속에서까지 그녀는 화가 나 있다.",
+   "note": "'连…都' 강조 구문 (~조차)",
+   "tags": [
+    "连…都",
+    "꿈"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "B",
+   "zh": "冰箱里还有他爱吃的饺子。",
+   "pinyin": "Bīngxiāng lǐ hái yǒu tā ài chī de jiǎozi.",
+   "ko": "냉장고엔 아직 그가 좋아하는 만두가 있는데.",
+   "note": "존재문 '장소+里+有' + 관형절",
+   "tags": [
+    "존재문",
+    "그리움"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "A",
+   "zh": "够了，再等就是傻瓜。",
+   "pinyin": "Gòu le, zài děng jiù shì shǎguā.",
+   "ko": "됐어, 더 기다리면 바보지.",
+   "note": "'再…就…' 조건 관계",
+   "tags": [
+    "再…就",
+    "결심"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "B",
+   "zh": "如果他现在打来，我就接。",
+   "pinyin": "Rúguǒ tā xiànzài dǎ lái, wǒ jiù jiē.",
+   "ko": "지금 전화 오면, 바로 받아줄 거야.",
+   "note": "'如果…就…' 가정문",
+   "tags": [
+    "如果…就",
+    "화해"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "A",
+   "zh": "走，去她最爱的火锅店！",
+   "pinyin": "Zǒu, qù tā zuì ài de huǒguō diàn!",
+   "ko": "가자, 그녀가 제일 좋아하는 훠궈집으로!",
+   "note": "청유의 走 + 최상급 最 + 관형어 的",
+   "tags": [
+    "最",
+    "결심"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "B",
+   "zh": "干脆，我也去吃火锅冷静一下。",
+   "pinyin": "Gāncuì, wǒ yě qù chīhuǒguō lěngjìng yīxià.",
+   "ko": "차라리, 나도 마음 좀 가라앉히러 훠궈나 먹으러 가야겠다.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "A",
+   "zh": "刚好，我也想去那家店。",
+   "pinyin": "Gānghǎo, wǒ yě xiǎng qù nàjiādiàn.",
+   "ko": "마침, 나도 그 가게에 가고 싶었어.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "B",
+   "zh": "取了号，坐在门口等着。",
+   "pinyin": "Qǔ le hào, zuòzài ménkǒu děng zhe.",
+   "ko": "번호표를 받고, 입구에 앉아 기다린다.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  }
+ ]
+}

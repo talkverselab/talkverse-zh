@@ -9,9 +9,13 @@ import 'data/account.dart';
 import 'data/db/seed_loader.dart';
 import 'data/entitlement.dart';
 import 'data/purchase.dart';
+import 'review/review_service.dart';
+import 'review/review_ui.dart' show ReviewText;
 import 'screens/main_screen.dart';
+import 'services/achievement_service.dart';
 import 'services/hanzi_info_service.dart';
 import 'services/ko_reading.dart';
+import 'services/learner_prefs.dart';
 import 'services/shared_hanja_service.dart';
 import 'core/l10n.dart';
 
@@ -24,14 +28,19 @@ void main() async {
   await SeedLoader(appDb).seedIfNeeded();
   await KoReadingPrefs.load();
   await AppLangPrefs.load();
+  await ReviewService.instance.load(); // 라이트너 복습 기록
+  await LearnerPrefs.load(); // 학습자 이름·성별 → 회화 「나」
+  await AchievementService.instance.load();
   await Entitlement.load();
   Account.load(); // Talkverse ID(선택) — 저장된 로그인 표시 + 뒤에서 토큰 갱신(기다리지 않음)
   unawaited(Purchase.configure({Entitlement.lang: ('com.talkverse.chineseUniverse.lifetime', 'lang_zh')}));
   runApp(const ChineseUniverseApp());
   // 한자 공용 DB(발음부·외우는 방법·GIF·쓰기 범위) — 화면을 막지 않고 뒤에서 받는다.
-  unawaited(SharedHanjaService.instance.syncIfStale().then((changed) {
-    if (changed) HanziInfoService.instance.refreshShared();
-  }));
+  unawaited(
+    SharedHanjaService.instance.syncIfStale().then((changed) {
+      if (changed) HanziInfoService.instance.refreshShared();
+    }),
+  );
 }
 
 class ChineseUniverseApp extends StatelessWidget {
@@ -42,17 +51,20 @@ class ChineseUniverseApp extends StatelessWidget {
     // 표시 언어가 바뀌면 key 가 바뀌어 앱 전체가 새로 그려진다 (홈으로 돌아감).
     return ValueListenableBuilder<AppLang>(
       valueListenable: AppLangPrefs.lang,
-      builder: (context, lang, _) => MaterialApp(
-        key: ValueKey(lang),
-        title: tr('중국어유니버스'),
-        debugShowCheckedModeBanner: false,
-        theme: AppTheme.light(),
-        darkTheme: AppTheme.dark(),
-        themeMode: ThemeMode.light,
-        // 갤럭시·아이폰 글자 배율을 같은 범위로 (PlatformUi 참고)
-        builder: PlatformUi.clampTextScale,
-        home: const MainScreen(),
-      ),
+      builder: (context, lang, _) {
+        ReviewText.en = lang != AppLang.ko; // 공용 복습 화면 문구: 한국어 외에는 영어
+        return MaterialApp(
+          key: ValueKey(lang),
+          title: tr('중국어유니버스'),
+          debugShowCheckedModeBanner: false,
+          theme: AppTheme.light(),
+          darkTheme: AppTheme.dark(),
+          themeMode: ThemeMode.light,
+          // 갤럭시·아이폰 글자 배율을 같은 범위로 (PlatformUi 참고)
+          builder: PlatformUi.clampTextScale,
+          home: const MainScreen(),
+        );
+      },
     );
   }
 }

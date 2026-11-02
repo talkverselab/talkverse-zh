@@ -4,18 +4,21 @@ import 'package:flutter/services.dart' show rootBundle;
 
 import '../core/theme.dart';
 import '../widgets/chinese_decor.dart';
+import 'hanzi_learn_screen.dart';
 import 'hanzi_quiz_screen.dart';
 import '../core/l10n.dart';
 
 /// 한자 허브 — 회화 시작점 209자 / HSK 1~5급 1,500자 선택.
+/// learn = true 면 단계를 누를 때 「한자 배우기」(글자 정보 먼저 → 문제), 아니면 바로 4지선다.
 class HanziHubScreen extends StatelessWidget {
-  const HanziHubScreen({super.key});
+  final bool learn;
+  const HanziHubScreen({super.key, this.learn = false});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: AppColors.xuanZhi,
-      appBar: AppBar(title: Text(tr('한자'))),
+      appBar: AppBar(title: Text(learn ? tr('한자 배우기') : tr('한자'))),
       body: SafeArea(
         // 아이폰 홈 표시줄·갤럭시 제스처 바 아래로 내용이 깔리지 않게
         top: false,
@@ -29,7 +32,7 @@ class HanziHubScreen extends StatelessWidget {
               color: AppColors.zhuHong,
               onTap: () => Navigator.push(
                 context,
-                MaterialPageRoute(builder: (_) => const HanziStagesScreen()),
+                MaterialPageRoute(builder: (_) => HanziStagesScreen(learn: learn)),
               ),
             ),
             const SizedBox(height: 12),
@@ -41,10 +44,11 @@ class HanziHubScreen extends StatelessWidget {
               onTap: () => Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (_) => const HanziStagesScreen(
+                  builder: (_) => HanziStagesScreen(
                     asset: 'assets/data/hanzi/hanzi_hsk1500.json',
                     seal: '1500',
                     kicker: 'HSK 1-5 · 1,500 chars',
+                    learn: learn,
                   ),
                 ),
               ),
@@ -118,11 +122,13 @@ class HanziStagesScreen extends StatefulWidget {
   final String asset;
   final String seal;
   final String kicker;
+  final bool learn; // 단계 → 「한자 배우기」(글자 정보 먼저) / false 면 바로 문제
   const HanziStagesScreen({
     super.key,
     this.asset = 'assets/data/hanzi/hanzi_stages.json',
     this.seal = '209',
     this.kicker = 'Phase 2 sweet spot',
+    this.learn = false,
   });
 
   @override
@@ -257,7 +263,7 @@ class _HanziStagesScreenState extends State<HanziStagesScreen> {
     if (phases.isEmpty) {
       children.addAll(List.generate(stages.length, (i) {
         final s = stages[i] as Map<String, dynamic>;
-        return _StageRow(stageData: s, allStages: stages);
+        return _StageRow(stageData: s, allStages: stages, learn: widget.learn);
       }));
     } else {
       for (final p in phases.cast<Map>()) {
@@ -309,7 +315,7 @@ class _HanziStagesScreenState extends State<HanziStagesScreen> {
         );
         if (open) {
           children.addAll(
-              mine.map((s) => _StageRow(stageData: s, allStages: stages)));
+              mine.map((s) => _StageRow(stageData: s, allStages: stages, learn: widget.learn)));
           children.add(const SizedBox(height: 6));
         }
       }
@@ -322,8 +328,9 @@ class _HanziStagesScreenState extends State<HanziStagesScreen> {
 class _StageRow extends StatelessWidget {
   final Map<String, dynamic> stageData;
   final List allStages;
+  final bool learn;
 
-  const _StageRow({required this.stageData, required this.allStages});
+  const _StageRow({required this.stageData, required this.allStages, this.learn = false});
 
   @override
   Widget build(BuildContext context) {
@@ -339,7 +346,9 @@ class _StageRow extends StatelessWidget {
         onTap: () => Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (_) => HanziQuizScreen(stage: stage, allStages: allStages),
+            builder: (_) => learn
+                ? HanziLearnStageScreen(stage: stage, allStages: allStages)
+                : HanziQuizScreen(stage: stage, allStages: allStages),
           ),
         ),
         child: Container(
@@ -426,7 +435,7 @@ class _StageRow extends StatelessWidget {
                     ],
                   ),
                 ),
-                const Icon(Icons.quiz, color: AppColors.zhuHong),
+                Icon(learn ? Icons.menu_book : Icons.quiz, color: AppColors.zhuHong),
               ],
             ),
           ),

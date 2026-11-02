@@ -1,0 +1,115 @@
+{
+ "id": "r4_life_l2_d11_1",
+ "region": "R4",
+ "island": "life",
+ "kind": "chat",
+ "title": "여행준비 ①",
+ "emoji": "🧳",
+ "scene": "주말 여행 전날 짐 싸기, 필수품은 다 빼먹고 간식만 챙긴 Mark에게 쏟아지는 잔소리",
+ "speakers": {
+  "A": "A",
+  "B": "B"
+ },
+ "register": "casual",
+ "twist": 0,
+ "variant": "north",
+ "legacy": "L2/d11_1",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "zh": "行李都收拾好了吗？",
+   "pinyin": "Xíngli dōu shōushi hǎo le ma?",
+   "ko": "짐 다 쌌어?",
+   "note": "결과보어 好 (제대로 완료됨)",
+   "tags": [
+    "travel",
+    "complement:好"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "zh": "差不多了吧。",
+   "pinyin": "Chàbuduō le ba.",
+   "ko": "거의 다 됐지 뭐.",
+   "note": "差不多 (얼추, 거의) + 吧 얼버무림",
+   "tags": [
+    "travel",
+    "expression:差不多"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "zh": "牙刷带了没有？",
+   "pinyin": "Yáshuā dài le méiyǒu?",
+   "ko": "칫솔 챙겼어 안 챙겼어?",
+   "note": "了没有 정반의문문",
+   "tags": [
+    "travel",
+    "question:了没有"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "啊，忘了。",
+   "pinyin": "À, wàng le.",
+   "ko": "아, 깜빡했다.",
+   "note": "동사+了 완료 (잊어버림)",
+   "tags": [
+    "chaos",
+    "particle:了"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "充电器呢？",
+   "pinyin": "Chōngdiànqì ne?",
+   "ko": "충전기는?",
+   "note": "명사+呢 생략형 의문문",
+   "tags": [
+    "travel",
+    "particle:呢"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "zh": "……也忘了。",
+   "pinyin": "……Yě wàng le.",
+   "ko": "……그것도 깜빡했어.",
+   "note": "也 (역시, ~도)",
+   "tags": [
+    "chaos",
+    "adverb:也"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "B",
+   "zh": "你到底收拾了什么呀？",
+   "pinyin": "Nǐ dàodǐ shōushi le shénme ya?",
+   "ko": "너 대체 뭘 싼 거야?",
+   "note": "到底 추궁 + 어기조사 呀",
+   "tags": [
+    "banter",
+    "particle:呀"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "A",
+   "zh": "零食！装了满满一包。",
+   "pinyin": "Língshí! Zhuāng le mǎnmǎn yì bāo.",
+   "ko": "간식! 한 가방 가득 담았지.",
+   "note": "형용사 중첩 满满 (가득가득)",
+   "tags": [
+    "humor",
+    "reduplication"
+   ]
+  }
+ ]
+}

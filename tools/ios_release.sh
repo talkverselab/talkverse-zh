@@ -22,6 +22,8 @@ if [[ " $* " != *" --no-build "* ]]; then
   flutter build ipa --release --export-method app-store --no-codesign --build-number="$BUILD"
 fi
 [ -d "$ARCHIVE" ] || { echo "아카이브 없음: $ARCHIVE" >&2; exit 1; }
+# --no-codesign 아카이브에는 entitlements 가 안 들어가 export 한 ipa 에서 Sign in with Apple 이 빠진다 → ad-hoc 서명으로 기록(APP_GUIDE §7)
+codesign --force --deep -s - --entitlements ios/Runner/Runner.entitlements "$ARCHIVE/Products/Applications/Runner.app"
 
 plist() {  # $1 = export|upload
   cat <<P

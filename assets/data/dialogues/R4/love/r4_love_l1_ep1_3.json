@@ -1,0 +1,115 @@
+{
+ "id": "r4_love_l1_ep1_3",
+ "region": "R4",
+ "island": "love",
+ "kind": "long",
+ "title": "매칭 ③",
+ "emoji": "💕",
+ "scene": "Mark 매칭앱 첫 메시지 → 小丽 자기소개 → 약속 호출 → Lily↔小丽 hook",
+ "speakers": {
+  "A": "Mark",
+  "B": "小丽 / Lily"
+ },
+ "register": "casual",
+ "twist": 0,
+ "variant": "north",
+ "legacy": "L1/ep1_3",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "zh": "我是设计师，在家工作。",
+   "pinyin": "Wǒ shì shèjìshī, zài jiā gōngzuò.",
+   "ko": "저는 디자이너예요, 집에서 일해요.",
+   "note": "是 직업 + 在家工作 (재택근무)",
+   "tags": [
+    "self-intro",
+    "topic:job"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "zh": "好厉害！平时喜欢做什么？",
+   "pinyin": "Hǎo lìhai! Píngshí xǐhuan zuò shénme?",
+   "ko": "멋지다! 평소에 뭐 하는 거 좋아해요?",
+   "note": "好+형용사 감탄 + 平时",
+   "tags": [
+    "praise",
+    "question"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "zh": "我喜欢看电影，还有画画。",
+   "pinyin": "Wǒ xǐhuan kàn diànyǐng, háiyǒu huà huà.",
+   "ko": "영화 보는 거 좋아하고, 그림도 그려요.",
+   "note": "还有 나열",
+   "tags": [
+    "hobby",
+    "hook:movie"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "我也爱看电影！最近看了什么？",
+   "pinyin": "Wǒ yě ài kàn diànyǐng! Zuìjìn kàn le shénme?",
+   "ko": "저도 영화 좋아해요! 최근에 뭐 봤어요?",
+   "note": "也 + 了 완료 의문",
+   "tags": [
+    "hobby",
+    "function:了"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "看了一个爱情片，有点儿老。",
+   "pinyin": "Kàn le yí ge àiqíng piàn, yǒudiǎnr lǎo.",
+   "ko": "로맨스 영화 하나 봤는데 좀 옛날 거예요.",
+   "note": "有点儿 (약간, 부정적 뉘앙스)",
+   "tags": [
+    "hobby",
+    "hook:romance"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "zh": "爱情片啊？我喜欢，嘿嘿。",
+   "pinyin": "Àiqíng piàn a? Wǒ xǐhuan, hēihēi.",
+   "ko": "로맨스 영화요? 저 좋아해요, 헤헤.",
+   "note": "어기조사 啊 (되물음) + 嘿嘿",
+   "tags": [
+    "joke",
+    "particle:啊"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "B",
+   "zh": "你这个人有意思，嘿嘿。",
+   "pinyin": "Nǐ zhège rén yǒu yìsi, hēihēi.",
+   "ko": "당신 재밌는 사람이네요, 헤헤.",
+   "note": "有意思 (재미있다)",
+   "tags": [
+    "flirt",
+    "particle:嘿"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "A",
+   "zh": "对了，你家在北京哪儿？",
+   "pinyin": "Duì le, nǐ jiā zài Běijīng nǎr?",
+   "ko": "맞다, 집이 베이징 어디예요?",
+   "note": "对了 화제 전환 + 在…哪儿",
+   "tags": [
+    "question",
+    "topic:place"
+   ]
+  }
+ ]
+}

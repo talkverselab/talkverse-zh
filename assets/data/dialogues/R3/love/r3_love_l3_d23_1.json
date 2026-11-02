@@ -1,0 +1,115 @@
+{
+ "id": "r3_love_l3_d23_1",
+ "region": "R3",
+ "island": "love",
+ "kind": "long",
+ "title": "청혼예고 ①",
+ "emoji": "💍",
+ "scene": "노을 지는 성벽 위, 지난 약속을 되짚으며 Mark가 다음 춘절의 계획을 암시한다.",
+ "speakers": {
+  "A": "A",
+  "B": "B"
+ },
+ "register": "casual",
+ "twist": 0,
+ "variant": "north",
+ "legacy": "L3/d23_1",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "A",
+   "zh": "还记得那次在城墙上吗？",
+   "pinyin": "Hái jìde nà cì zài chéngqiáng shàng ma?",
+   "ko": "그때 성벽 위에서 있었던 일 기억나?",
+   "note": "'还记得…吗' 회상 표현 + 방위사 上",
+   "tags": [
+    "방위사",
+    "회상"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "B",
+   "zh": "记得，风大得差点把我吹走。",
+   "pinyin": "Jìde, fēng dà de chàdiǎn bǎ wǒ chuī zǒu.",
+   "ko": "기억나지, 바람이 세서 하마터면 날아갈 뻔했잖아.",
+   "note": "差点 '하마터면' + 把자문",
+   "tags": [
+    "差点",
+    "유머"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "A",
+   "zh": "你说想看遍北京的四季。",
+   "pinyin": "Nǐ shuō xiǎng kàn biàn Běijīng de sìjì.",
+   "ko": "너는 베이징의 사계절을 다 보고 싶다고 했지.",
+   "note": "결과보어 遍 '빠짐없이 다'",
+   "tags": [
+    "결과보어 遍",
+    "약속"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "B",
+   "zh": "你说会一直陪着我看。",
+   "pinyin": "Nǐ shuō huì yìzhí péi zhe wǒ kàn.",
+   "ko": "너는 계속 곁에서 같이 봐주겠다고 했고.",
+   "note": "陪+着 지속 + 一直 '줄곧'",
+   "tags": [
+    "着",
+    "약속"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "A",
+   "zh": "现在，春夏秋冬都看过了。",
+   "pinyin": "Xiànzài, chūn xià qiū dōng dōu kàn guo le.",
+   "ko": "이제, 봄 여름 가을 겨울 다 봤네.",
+   "note": "경험의 过 + 都 총괄",
+   "tags": [
+    "경험 过",
+    "사계절"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "B",
+   "zh": "时间过得真快啊。",
+   "pinyin": "Shíjiān guò de zhēn kuài a.",
+   "ko": "시간 참 빠르다.",
+   "note": "정도보어 得 + 감탄 啊",
+   "tags": [
+    "정도보어",
+    "감탄"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "A",
+   "zh": "下个春节，我们去你家过年吧。",
+   "pinyin": "Xià ge chūnjié, wǒmen qù nǐ jiā guònián ba.",
+   "ko": "다음 춘절엔, 너희 집에 가서 설 쇠자.",
+   "note": "청유의 吧 + 이합사 过年",
+   "tags": [
+    "吧",
+    "춘절"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "B",
+   "zh": "好啊，妈妈的腊肉等着你呢。",
+   "pinyin": "Hǎo a, māma de làròu děng zhe nǐ ne.",
+   "ko": "좋아, 엄마표 라러우가 널 기다리고 있어.",
+   "note": "'着…呢' 상태 지속 강조",
+   "tags": [
+    "着…呢",
+    "쓰촨"
+   ]
+  }
+ ]
+}

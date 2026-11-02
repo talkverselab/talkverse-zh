@@ -1,0 +1,112 @@
+{
+ "id": "r4_love_l3_d03_2",
+ "region": "R4",
+ "island": "love",
+ "kind": "long",
+ "title": "친구소개 ②",
+ "emoji": "🍜",
+ "scene": "Mark의 절친 大伟에게 小丽를 처음 소개하는 식사 자리를 준비한다.",
+ "speakers": {
+  "A": "A",
+  "B": "B"
+ },
+ "register": "casual",
+ "twist": 0,
+ "variant": "north",
+ "legacy": "L3/d03_2",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "A",
+   "zh": "大伟订了一家川菜馆。",
+   "pinyin": "Dàwěi dìng le yì jiā chuāncàiguǎn.",
+   "ko": "다웨이가 쓰촨요리집을 예약했어.",
+   "note": "양사 家 (가게·식당), 동태조사 了",
+   "tags": [
+    "양사 家",
+    "예약"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "B",
+   "zh": "川菜？那我可太高兴了！",
+   "pinyin": "Chuāncài? Nà wǒ kě tài gāoxìng le!",
+   "ko": "쓰촨요리? 그럼 나야 완전 신나지!",
+   "note": "강조 부사 可 (可太…了)",
+   "tags": [
+    "부사 可",
+    "고향 음식"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "A",
+   "zh": "他知道你是四川人，特意选的。",
+   "pinyin": "Tā zhīdào nǐ shì Sìchuānrén, tèyì xuǎn de.",
+   "ko": "네가 쓰촨 사람인 거 알고 일부러 고른 거야.",
+   "note": "부사 特意 '일부러', 강조의 的",
+   "tags": [
+    "特意",
+    "강조 的"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "B",
+   "zh": "你朋友想得真周到。",
+   "pinyin": "Nǐ péngyou xiǎng de zhēn zhōudào.",
+   "ko": "네 친구 정말 세심하게 생각해 주네.",
+   "note": "정도보어 得 (想得周到)",
+   "tags": [
+    "정도보어",
+    "周到"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "A",
+   "zh": "到时候你就知道他多有意思了。",
+   "pinyin": "Dàoshíhou nǐ jiù zhīdào tā duō yǒuyìsi le.",
+   "ko": "가 보면 걔가 얼마나 재밌는지 알게 될 거야.",
+   "note": "감탄의 多+형용사, 到时候 '그때 가서'",
+   "tags": [
+    "多+형용사",
+    "到时候"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "B",
+   "zh": "我现在就有点儿期待了。",
+   "pinyin": "Wǒ xiànzài jiù yǒudiǎnér qīdài le.",
+   "ko": "나 벌써 조금 기대되기 시작했어.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "A",
+   "zh": "放心，你们俩肯定合得来。",
+   "pinyin": "Fàngxīn, nǐmen liǎ kěndìng hédelái.",
+   "ko": "안심해, 너희 둘 분명 잘 맞을 거야.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "B",
+   "zh": "那周六见，我先去准备一下。",
+   "pinyin": "Nà zhōuliù jiàn, wǒ xiān qù zhǔnbèi yīxià.",
+   "ko": "그럼 토요일에 봐, 나 먼저 준비하러 갈게.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  }
+ ]
+}

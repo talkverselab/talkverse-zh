@@ -1,0 +1,112 @@
+{
+ "id": "r4_love_l3_d20_2",
+ "region": "R4",
+ "island": "love",
+ "kind": "long",
+ "title": "재회 ②",
+ "emoji": "🍲",
+ "scene": "첫 데이트 장소였던 훠궈집 앞, 두 사람이 우연처럼 마주친다.",
+ "speakers": {
+  "A": "A",
+  "B": "B"
+ },
+ "register": "casual",
+ "twist": 0,
+ "variant": "north",
+ "legacy": "L3/d20_2",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "A",
+   "zh": "对不起，是我让你难过了。",
+   "pinyin": "Duìbuqǐ, shì wǒ ràng nǐ nánguò le.",
+   "ko": "미안해, 내가 널 힘들게 했어.",
+   "note": "사역동사 让 + 是 주어 강조",
+   "tags": [
+    "让",
+    "사과"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "B",
+   "zh": "我也有错，话说得太重了。",
+   "pinyin": "Wǒ yě yǒu cuò, huà shuō de tài zhòng le.",
+   "ko": "나도 잘못했어, 말이 너무 심했어.",
+   "note": "정도보어 得 + '太…了'",
+   "tags": [
+    "太…了",
+    "화해"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "A",
+   "zh": "别哭，辣椒还没上呢。",
+   "pinyin": "Bié kū, làjiāo hái méi shàng ne.",
+   "ko": "울지 마, 아직 고추도 안 나왔는데.",
+   "note": "'还没…呢' 미완료 표현",
+   "tags": [
+    "还没…呢",
+    "유머"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "B",
+   "zh": "讨厌，眼泪是被你气的！",
+   "pinyin": "Tǎoyàn, yǎnlèi shì bèi nǐ qì de!",
+   "ko": "미워, 이 눈물은 너 때문에 난 거야!",
+   "note": "被자문 (피동) + 是…的",
+   "tags": [
+    "被자문",
+    "애교"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "A",
+   "zh": "进去吧，微辣，像那天一样。",
+   "pinyin": "Jìnqù ba, wēi là, xiàng nà tiān yíyàng.",
+   "ko": "들어가자, 순한 맛으로, 그날처럼.",
+   "note": "'像…一样' 비유 구문",
+   "tags": [
+    "像…一样",
+    "훠궈"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "B",
+   "zh": "好，这次谁也不许再生气。",
+   "pinyin": "Hǎo, zhècì shuí yě bùxǔ zài shēngqì.",
+   "ko": "좋아, 이번엔 누구도 다시 화내기 없기야.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "A",
+   "zh": "一言为定，进去吧！",
+   "pinyin": "Yīyánwéidìng, jìnqù ba!",
+   "ko": "약속이야, 들어가자!",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "B",
+   "zh": "谢谢你，一直没有放弃我。",
+   "pinyin": "Xièxiè nǐ, yìzhí méiyǒu fàngqì wǒ.",
+   "ko": "고마워, 끝까지 날 포기하지 않아 줘서.",
+   "note": null,
+   "tags": [
+    "ext"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,115 @@
+{
+ "id": "r4_love_l3_d08_1",
+ "region": "R4",
+ "island": "love",
+ "kind": "long",
+ "title": "약속정리 ①",
+ "emoji": "🤝",
+ "scene": "연락·질투·솔직함에 대해 둘만의 연애 규칙을 정한다.",
+ "speakers": {
+  "A": "A",
+  "B": "B"
+ },
+ "register": "casual",
+ "twist": 0,
+ "variant": "north",
+ "legacy": "L3/d08_1",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "zh": "马克，我们定几条恋爱规则吧。",
+   "pinyin": "Mǎkè, wǒmen dìng jǐ tiáo liàn'ài guīzé ba.",
+   "ko": "마크, 우리 연애 규칙 몇 개 정하자.",
+   "note": "양사 条 (규칙·조항), 동사 定",
+   "tags": [
+    "양사 条",
+    "규칙"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "zh": "好主意！第一条是什么？",
+   "pinyin": "Hǎo zhǔyi! Dì yī tiáo shì shénme?",
+   "ko": "좋은 생각이야! 첫 번째 규칙은 뭐야?",
+   "note": "서수 접두사 第 (第一条)",
+   "tags": [
+    "서수 第",
+    "好主意"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "zh": "再忙也要每天联系一次。",
+   "pinyin": "Zài máng yě yào měi tiān liánxì yí cì.",
+   "ko": "아무리 바빠도 매일 한 번은 연락하기.",
+   "note": "再…也 '아무리 ~해도', 동량보어 一次",
+   "tags": [
+    "再…也",
+    "동량보어"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "没问题，我睡觉前都会想你。",
+   "pinyin": "Méi wèntí, wǒ shuìjiào qián dōu huì xiǎng nǐ.",
+   "ko": "문제없어, 난 자기 전마다 네 생각 하는걸.",
+   "note": "동사구+前 '~하기 전에'",
+   "tags": [
+    "…前",
+    "달달함"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "第二，生气的话要说出来。",
+   "pinyin": "Dì èr, shēngqì dehuà yào shuō chūlai.",
+   "ko": "둘째, 화나면 꼭 말로 표현하기.",
+   "note": "가정 …的话 '~라면', 방향보어 出来",
+   "tags": [
+    "…的话",
+    "솔직함"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "zh": "对，别把心事放在心里。",
+   "pinyin": "Duì, bié bǎ xīnshì fàng zài xīnli.",
+   "ko": "맞아, 고민을 마음속에 담아 두지 말자.",
+   "note": "把…放在… '~을 ~에 두다'",
+   "tags": [
+    "把자문",
+    "心事"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "B",
+   "zh": "还有，不许对别的女生太好。",
+   "pinyin": "Hái yǒu, bùxǔ duì bié de nǚshēng tài hǎo.",
+   "ko": "그리고, 다른 여자한테 너무 잘해 주기 금지.",
+   "note": "금지 표현 不许 '~해서는 안 된다'",
+   "tags": [
+    "不许",
+    "질투"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "A",
+   "zh": "哈哈，原来你也会吃醋啊。",
+   "pinyin": "Hāhā, yuánlái nǐ yě huì chīcù a.",
+   "ko": "하하, 너도 질투할 줄 아는구나.",
+   "note": "原来 '알고 보니', 관용어 吃醋 '질투하다'",
+   "tags": [
+    "原来",
+    "吃醋"
+   ]
+  }
+ ]
+}
