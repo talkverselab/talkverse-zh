@@ -30,9 +30,9 @@ void main() {
     await svc.ensureLoaded();
     expect(svc.all.length, greaterThan(100));
     expect(svc.count('R0'), 0);
-    expect(svc.count('R1'), 0);
-    // R0·R1 이 비어 있으면 편이 있는 가장 낮은 레벨부터
-    expect(svc.startLevel, 'R2');
+    expect(svc.count('R1'), greaterThan(0)); // 2026-11-03 R1 샘플부터 채움
+    // 편이 있는 가장 낮은 레벨부터(R0 은 아직 비어 있다)
+    expect(svc.startLevel, 'R1');
     var turns = 0, bad = <String>[];
     for (final d in svc.all) {
       for (final t in d.turns) {
