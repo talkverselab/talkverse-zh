@@ -1,0 +1,130 @@
+{
+ "id": "r1_love_a2",
+ "region": "R1",
+ "island": "love",
+ "kind": "short",
+ "draft": true,
+ "purpose": [
+  "love"
+ ],
+ "domain": [
+  "love"
+ ],
+ "title": "우산 하나",
+ "emoji": "☔",
+ "scene": "퇴근길 갑자기 비. 우산이 하나뿐인데 샤오리가 바짝 붙어 온다.",
+ "speakers": {
+  "A": "{name}",
+  "B": "小丽"
+ },
+ "learner_gender": "M",
+ "register": "casual",
+ "twist": 5,
+ "twist_type": "chaos",
+ "flags": [
+  "romance"
+ ],
+ "variant": "north",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "zh": "下雨啦！{name}有伞吗？",
+   "pinyin": "Xià yǔ la! {name} yǒu sǎn ma?",
+   "rd": "샤 위 라! {name} 유 싼 마?",
+   "ko": "비 온다! {name} 우산 있어?",
+   "note": "下雨了 = 비 온다",
+   "tags": [
+    "form:了"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "zh": "有啊，快过来一起。",
+   "pinyin": "Yǒu a, kuài guòlái yìqǐ.",
+   "rd": "유 아, 콰이 궈라이 이치.",
+   "ko": "있어, 빨리 와서 같이.",
+   "note": "一起 = 같이",
+   "tags": [
+    "expr:一起走吧"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "zh": "伞这么小……我靠紧点。",
+   "pinyin": "Sǎn zhème xiǎo…… wǒ kào jǐn diǎn.",
+   "rd": "싼 저머 샤오…… 워 카오 진 뎬.",
+   "ko": "우산 이렇게 작네…… 내가 더 붙을게.",
+   "note": "靠近 = 다가가다",
+   "tags": [
+    "form:一点"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "你别靠这么近啊！",
+   "pinyin": "Nǐ bié kào zhème jìn a!",
+   "rd": "니 볘 카오 저머 진 아!",
+   "ko": "너 이렇게 가까이 붙지 마!",
+   "note": "太……了 = 너무 ~하다",
+   "tags": [
+    "form:太了"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "不靠不行啊！伞翻了！",
+   "pinyin": "Bù kào bù xíng a! Sǎn fān le!",
+   "rd": "부 카오 부 싱 아! 싼 판 러!",
+   "ko": "안 붙으면 안 돼! 우산 뒤집혔어!",
+   "note": "湿了 = 젖었다",
+   "tags": [
+    "expr:哈哈哈"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "zh": "啊对不起！我再去买！",
+   "pinyin": "Ā duìbuqǐ! Wǒ zài qù mǎi!",
+   "rd": "아 두이부치! 워 짜이 취 마이!",
+   "ko": "아 미안! 내가 다시 살게!",
+   "note": "对不起 = 미안해",
+   "tags": [
+    "expr:对不起"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "B",
+   "zh": "不用啦，拉着你跑吧。",
+   "pinyin": "Bú yòng la, lā zhe nǐ pǎo ba.",
+   "rd": "부 융 라, 라 저 니 파오 바.",
+   "ko": "됐어, 너 잡고 뛰어.",
+   "note": "挺好的 = 꽤 좋다",
+   "tags": [
+    "expr:挺好的"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "A",
+   "zh": "你……为什么拉我？",
+   "pinyin": "Nǐ…… wèishénme lā wǒ?",
+   "rd": "니…… 웨이선머 라 워?",
+   "ko": "너…… 왜 잡아?",
+   "note": "为什么 = 왜",
+   "tags": [
+    "form:为什么"
+   ]
+  }
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r1_love_a2_grok_rewrite.md",
+  "model": "전문가"
+ }
+}

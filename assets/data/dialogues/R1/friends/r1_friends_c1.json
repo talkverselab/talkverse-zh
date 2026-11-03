@@ -1,0 +1,145 @@
+{
+ "id": "r1_friends_c1",
+ "region": "R1",
+ "island": "friends",
+ "kind": "chat",
+ "draft": true,
+ "purpose": [
+  "making_friends"
+ ],
+ "domain": [
+  "friends"
+ ],
+ "title": "단톡방에 하트 세 개",
+ "emoji": "💬",
+ "scene": "밤 11시, 학습자가 하오란에게 따로 보내려던 메시지가 반 단톡방에 올라갔다.",
+ "speakers": {
+  "A": "{name}",
+  "B": "浩然"
+ },
+ "learner_gender": "F",
+ "register": "chat",
+ "twist": 2,
+ "twist_type": "chaos",
+ "flags": [],
+ "variant": "north",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "A",
+   "zh": "想你想你❤️",
+   "pinyin": "Xiǎng nǐ xiǎng nǐ",
+   "rd": "샹 니 샹 니",
+   "ko": "보고 싶어 보고 싶어❤️",
+   "note": "想你了 = 보고 싶어",
+   "tags": [
+    "expr:想你了"
+   ],
+   "ui": "bubble",
+   "at": "23:11",
+   "stamp": "❤️"
+  },
+  {
+   "num": 2,
+   "speaker": "B",
+   "zh": "？？？发错了！群炸了！",
+   "pinyin": "??? Fā cuò le! Qún zhà le!",
+   "rd": "??? 파 춰 러! 췬 자 러!",
+   "ko": "??? 잘못 보냈어! 단톡 터졌어!",
+   "note": "发到 = ~로 보내다",
+   "tags": [
+    "form:到"
+   ],
+   "ui": "bubble",
+   "at": "23:12"
+  },
+  {
+   "num": 3,
+   "speaker": "A",
+   "zh": "啊啊啊快删啊救命！",
+   "pinyin": "Ā ā ā kuài shān a jiùmìng!",
+   "rd": "아 아 아 콰이 산 아 주밍!",
+   "ko": "아아아 빨리 지워 살려줘!",
+   "note": "帮我 = 나 좀 도와줘",
+   "tags": [
+    "form:帮"
+   ],
+   "ui": "bubble",
+   "at": "23:13"
+  },
+  {
+   "num": 4,
+   "speaker": "B",
+   "zh": "删不了，全看见了。",
+   "pinyin": "Shān bù liǎo, quán kànjiàn le.",
+   "rd": "산 부 랴오, 취안 칸젠 러.",
+   "ko": "못 지워, 다 봤어.",
+   "note": "……不了 = ~할 수 없다",
+   "tags": [
+    "form:不了"
+   ],
+   "ui": "bubble",
+   "at": "23:14"
+  },
+  {
+   "num": 5,
+   "speaker": "A",
+   "zh": "完了……老师在群里。",
+   "pinyin": "Wán le…… lǎoshī zài qún lǐ.",
+   "rd": "완 러…… 라오스 짜이 췬 리.",
+   "ko": "망했다…… 선생님 단톡에 있어.",
+   "note": "完了 = 망했다",
+   "tags": [
+    "expr:完了"
+   ],
+   "ui": "bubble",
+   "at": "23:15"
+  },
+  {
+   "num": 6,
+   "speaker": "B",
+   "zh": "老师回：“我也想你”😂",
+   "pinyin": "Lǎoshī huí: \"Wǒ yě xiǎng nǐ\"",
+   "rd": "라오스 후이: \"워 예 샹 니\"",
+   "ko": "선생님 답장: \"나도 보고 싶어\"😂",
+   "note": "回了 = 답장했다",
+   "tags": [
+    "expr:我也想你"
+   ],
+   "ui": "bubble",
+   "at": "23:16"
+  },
+  {
+   "num": 7,
+   "speaker": "A",
+   "zh": "我不活了啊啊啊",
+   "pinyin": "Wǒ bù huó le ā ā ā",
+   "rd": "워 부 훠 러 아 아 아",
+   "ko": "나 죽을래 아아아",
+   "note": "不活了 = (농담) 못 살아",
+   "tags": [
+    "expr:不活了"
+   ],
+   "ui": "bubble",
+   "at": "23:17"
+  },
+  {
+   "num": 8,
+   "speaker": "B",
+   "zh": "截图了……我也想你～",
+   "pinyin": "Jiétú le…… wǒ yě xiǎng nǐ～",
+   "rd": "제투 러…… 워 예 샹 니～",
+   "ko": "캡처했어…… 나도 보고 싶어～",
+   "note": "截图 = 캡처",
+   "tags": [
+    "form:别"
+   ],
+   "ui": "bubble",
+   "at": "23:18"
+  }
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r1_friends_c1_grok_rewrite.md",
+  "model": "전문가"
+ }
+}

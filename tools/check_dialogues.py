@@ -3,7 +3,7 @@
 
   python3 tools/check_dialogues.py [--vocab] assets/data/dialogues/R1/**/*.json
 
-검사: 턴 수(구간) · 턴 길이(한자 수) · 구간 어휘(R1 = 회화 빈도 433위 안 단어 + 앞 편에서 나온 단어, 밖은 편당 2개까지·note 에 뜻) ·
+검사: 턴 수(구간) · 턴 길이(한자 수) · 구간 어휘(참고 — 주의만)(R1 = 회화 빈도 433위 안 단어 + 앞 편에서 나온 단어, 밖은 편당 2개까지·note 에 뜻) ·
 새 단어/턴 ≤3 · 반전 twist·twist_type · 한글 독음 rd(한글만) · 병음 음절 수 = 한자 수 · 변수 · 금지어 · 묶음별 chaos 비율 ≥ 30%.
 rd 는 `dart run tool/fill_rd.dart <파일>` 로 채운다. 오류가 있으면 종료 코드 1.
 """
@@ -24,7 +24,7 @@ OUTSIDE_KIND = {'survival': 6}  # 서바이벌 편은 물건·가게 말이 필�
 TWIST_TYPES = {'chaos', 'slip', 'reveal', 'emotion', 'ignore'}
 VARS = re.compile(r'\{[a-z_]+\}')
 HAN = re.compile(r'[一-鿿]')
-RD_OK = re.compile(r'^[가-힣0-9A-Za-z ,.!?…~～·\-—{}_()"\'%]*$')
+RD_OK = re.compile(r'^[가-힣0-9A-Za-z ,.!?:;…~～·\-—{}_()"\'%]*$')
 SYL = re.compile(r"[a-zA-Zāáǎàēéěèīíǐìōóǒòūúǔùǖǘǚǜü]+")
 FORBIDDEN = ['李白', '杜甫']  # 실존 인물 예시(늘려 간다)
 NUM = set('零一二三四五六七八九十百千万两几')
@@ -121,8 +121,8 @@ def check(path, seen, errs, warns):
                 errs.append(f'{tag} #{n}: 금지어 {f}')
         seen |= set(segment(zh))
     lim = OUTSIDE_KIND.get(e.get('kind'), OUTSIDE_MAX[reg])
-    if len(outside) > lim:
-        errs.append(f'{tag}: {reg} 밖 단어 {len(outside)}개(≤{lim}) — {"·".join(sorted(outside))}')
+    if len(outside) > lim:  # 절벽구간은 참고만(사용자 2026-11-03 "신경은 쓰되 묶일 필요는 없어") — 오류가 아니라 주의
+        warns.append(f'{tag}: {reg} 밖 단어 {len(outside)}개(≤{lim}) — {"·".join(sorted(outside))}')
     elif outside:
         warns.append(f'{tag}: {reg} 밖 단어 {"·".join(sorted(outside))} — note 에 뜻')
     return e
