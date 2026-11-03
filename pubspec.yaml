@@ -117,3 +117,4 @@ flutter:
     - assets/data/vocab/travel_words.json
     - assets/data/vocab/travel_expressions.json
     - assets/data/vocab/hsk_words.json
+    - assets/data/vocab/conv_extra.json

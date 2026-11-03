@@ -50,6 +50,14 @@ class LexiconService {
         }
       }
     } catch (_) {}
+    // 회화 레마 보충 단어(단어장 미수록분, uk 세션 2026-11-04) — 레마 칩이 회색으로 남지 않게.
+    try {
+      final j = jsonDecode(await rootBundle.loadString('assets/data/vocab/conv_extra.json')) as Map<String, dynamic>;
+      for (final w in j['words'] as List) {
+        final zh = (w as Map)['zh'] as String;
+        _bySimp.putIfAbsent(zh, () => LexEntry(simp: zh, pinyin: (w['pinyin'] as String?) ?? '', meanings: [if (w['ko'] != null) w['ko'] as String]));
+      }
+    } catch (_) {}
   }
 
   LexEntry? lookup(String simp) => _bySimp[simp];

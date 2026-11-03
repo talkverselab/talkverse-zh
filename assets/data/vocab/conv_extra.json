@@ -1,0 +1,488 @@
+{
+ "_meta": "회화 레마 보충 단어(단어장 미수록분, 2026-11-04 uk 세션 작성)",
+ "words": [
+  {
+   "zh": "烫",
+   "pinyin": "tàng",
+   "ko": "뜨겁다 · 데다",
+   "en": "scalding hot",
+   "pos": "adj"
+  },
+  {
+   "zh": "吃醋",
+   "pinyin": "chī cù",
+   "ko": "질투하다",
+   "en": "be jealous",
+   "pos": "v"
+  },
+  {
+   "zh": "拉钩",
+   "pinyin": "lā gōu",
+   "ko": "새끼손가락 걸다",
+   "en": "pinky promise",
+   "pos": "v"
+  },
+  {
+   "zh": "踩",
+   "pinyin": "cǎi",
+   "ko": "밟다",
+   "en": "step on",
+   "pos": "v"
+  },
+  {
+   "zh": "删",
+   "pinyin": "shān",
+   "ko": "지우다 · 삭제하다",
+   "en": "delete",
+   "pos": "v"
+  },
+  {
+   "zh": "浇",
+   "pinyin": "jiāo",
+   "ko": "물 주다 · 붓다",
+   "en": "water; pour",
+   "pos": "v"
+  },
+  {
+   "zh": "趟",
+   "pinyin": "tàng",
+   "ko": "번 · 차례(왕복)",
+   "en": "trip (clf)",
+   "pos": "clf"
+  },
+  {
+   "zh": "番茄",
+   "pinyin": "fān qié",
+   "ko": "토마토",
+   "en": "tomato",
+   "pos": "n"
+  },
+  {
+   "zh": "粉色",
+   "pinyin": "fěn sè",
+   "ko": "분홍색",
+   "en": "pink color",
+   "pos": "n"
+  },
+  {
+   "zh": "爆米花",
+   "pinyin": "bào mǐ huā",
+   "ko": "팝콘",
+   "en": "popcorn",
+   "pos": "n"
+  },
+  {
+   "zh": "情侣装",
+   "pinyin": "qíng lǚ zhuāng",
+   "ko": "커플룩",
+   "en": "couple outfit",
+   "pos": "n"
+  },
+  {
+   "zh": "情侣",
+   "pinyin": "qíng lǚ",
+   "ko": "연인 · 커플",
+   "en": "couple",
+   "pos": "n"
+  },
+  {
+   "zh": "蜜月",
+   "pinyin": "mì yuè",
+   "ko": "신혼여행 · 허니문",
+   "en": "honeymoon",
+   "pos": "n"
+  },
+  {
+   "zh": "夸张",
+   "pinyin": "kuā zhāng",
+   "ko": "과장되다",
+   "en": "exaggerated",
+   "pos": "adj"
+  },
+  {
+   "zh": "鸳鸯锅",
+   "pinyin": "yuān yāng guō",
+   "ko": "원앙 훠궈",
+   "en": "yin-yang hotpot",
+   "pos": "n"
+  },
+  {
+   "zh": "薯片",
+   "pinyin": "shǔ piàn",
+   "ko": "감자칩",
+   "en": "potato chips",
+   "pos": "n"
+  },
+  {
+   "zh": "缘分",
+   "pinyin": "yuán fēn",
+   "ko": "인연",
+   "en": "fate; affinity",
+   "pos": "n"
+  },
+  {
+   "zh": "煮",
+   "pinyin": "zhǔ",
+   "ko": "끓이다 · 삶다",
+   "en": "boil; cook",
+   "pos": "v"
+  },
+  {
+   "zh": "粥",
+   "pinyin": "zhōu",
+   "ko": "죽",
+   "en": "congee",
+   "pos": "n"
+  },
+  {
+   "zh": "晕",
+   "pinyin": "yūn",
+   "ko": "어지럽다",
+   "en": "dizzy",
+   "pos": "adj"
+  },
+  {
+   "zh": "丧事",
+   "pinyin": "sāng shì",
+   "ko": "장례 · 상사",
+   "en": "funeral",
+   "pos": "n"
+  },
+  {
+   "zh": "抹",
+   "pinyin": "mǒ",
+   "ko": "바르다 · 닦다",
+   "en": "smear; wipe",
+   "pos": "v"
+  },
+  {
+   "zh": "搞砸",
+   "pinyin": "gǎo zá",
+   "ko": "망치다",
+   "en": "mess up",
+   "pos": "v"
+  },
+  {
+   "zh": "砸",
+   "pinyin": "zá",
+   "ko": "부수다 · 내리치다",
+   "en": "smash",
+   "pos": "v"
+  },
+  {
+   "zh": "炸",
+   "pinyin": "zhà",
+   "ko": "튀기다 · 터지다",
+   "en": "deep-fry; explode",
+   "pos": "v"
+  },
+  {
+   "zh": "截图",
+   "pinyin": "jié tú",
+   "ko": "스크린샷",
+   "en": "screenshot",
+   "pos": "v"
+  },
+  {
+   "zh": "面膜",
+   "pinyin": "miàn mó",
+   "ko": "마스크팩",
+   "en": "face mask",
+   "pos": "n"
+  },
+  {
+   "zh": "删掉",
+   "pinyin": "shān diào",
+   "ko": "지워 버리다",
+   "en": "delete it",
+   "pos": "v"
+  },
+  {
+   "zh": "灭",
+   "pinyin": "miè",
+   "ko": "꺼지다 · 끄다",
+   "en": "go out; extinguish",
+   "pos": "v"
+  },
+  {
+   "zh": "钥匙",
+   "pinyin": "yào shi",
+   "ko": "열쇠",
+   "en": "key",
+   "pos": "n"
+  },
+  {
+   "zh": "大米",
+   "pinyin": "dà mǐ",
+   "ko": "쌀",
+   "en": "rice (raw)",
+   "pos": "n"
+  },
+  {
+   "zh": "多重",
+   "pinyin": "duō zhòng",
+   "ko": "얼마나 무거운가",
+   "en": "how heavy",
+   "pos": "expr"
+  },
+  {
+   "zh": "浇花",
+   "pinyin": "jiāo huā",
+   "ko": "꽃에 물 주다",
+   "en": "water flowers",
+   "pos": "v"
+  },
+  {
+   "zh": "牵",
+   "pinyin": "qiān",
+   "ko": "(손을) 잡고 끌다",
+   "en": "lead by hand",
+   "pos": "v"
+  },
+  {
+   "zh": "痒",
+   "pinyin": "yǎng",
+   "ko": "가렵다",
+   "en": "itchy",
+   "pos": "adj"
+  },
+  {
+   "zh": "上铺",
+   "pinyin": "shàng pù",
+   "ko": "위쪽 침대",
+   "en": "upper bunk",
+   "pos": "n"
+  },
+  {
+   "zh": "铺",
+   "pinyin": "pù",
+   "ko": "깔다 · 펴다",
+   "en": "spread",
+   "pos": "v"
+  },
+  {
+   "zh": "挨着",
+   "pinyin": "āi zhe",
+   "ko": "바싹 붙어",
+   "en": "next to; close",
+   "pos": "v"
+  },
+  {
+   "zh": "自拍杆",
+   "pinyin": "zì pāi gān",
+   "ko": "셀카봉",
+   "en": "selfie stick",
+   "pos": "n"
+  },
+  {
+   "zh": "踢足球",
+   "pinyin": "tī zú qiú",
+   "ko": "축구하다",
+   "en": "play soccer",
+   "pos": "v"
+  },
+  {
+   "zh": "瞬间",
+   "pinyin": "shùn jiān",
+   "ko": "순간",
+   "en": "moment",
+   "pos": "n"
+  },
+  {
+   "zh": "框",
+   "pinyin": "kuāng",
+   "ko": "틀 · 상자",
+   "en": "frame; box",
+   "pos": "n"
+  },
+  {
+   "zh": "娶",
+   "pinyin": "qǔ",
+   "ko": "장가들다",
+   "en": "marry (a wife)",
+   "pos": "v"
+  },
+  {
+   "zh": "腊肉",
+   "pinyin": "là ròu",
+   "ko": "훈제 절임 고기",
+   "en": "cured pork",
+   "pos": "n"
+  },
+  {
+   "zh": "烤串",
+   "pinyin": "kǎo chuàn",
+   "ko": "꼬치구이",
+   "en": "grilled skewers",
+   "pos": "n"
+  },
+  {
+   "zh": "麻辣烫",
+   "pinyin": "má là tàng",
+   "ko": "마라탕",
+   "en": "malatang",
+   "pos": "n"
+  },
+  {
+   "zh": "遥控器",
+   "pinyin": "yáo kòng qì",
+   "ko": "리모컨",
+   "en": "remote control",
+   "pos": "n"
+  },
+  {
+   "zh": "淋湿",
+   "pinyin": "lín shī",
+   "ko": "흠뻑 젖다",
+   "en": "get drenched",
+   "pos": "v"
+  },
+  {
+   "zh": "喝粥",
+   "pinyin": "hē zhōu",
+   "ko": "죽을 먹다",
+   "en": "eat congee",
+   "pos": "v"
+  },
+  {
+   "zh": "蹲下来",
+   "pinyin": "dūn xià lái",
+   "ko": "쪼그려 앉다",
+   "en": "squat down",
+   "pos": "v"
+  },
+  {
+   "zh": "屏幕",
+   "pinyin": "píng mù",
+   "ko": "화면",
+   "en": "screen",
+   "pos": "n"
+  },
+  {
+   "zh": "尖叫",
+   "pinyin": "jiān jiào",
+   "ko": "비명 지르다",
+   "en": "scream",
+   "pos": "v"
+  },
+  {
+   "zh": "泡",
+   "pinyin": "pào",
+   "ko": "담그다 · 우리다",
+   "en": "soak; steep",
+   "pos": "v"
+  },
+  {
+   "zh": "饶",
+   "pinyin": "ráo",
+   "ko": "봐주다",
+   "en": "spare; forgive",
+   "pos": "v"
+  },
+  {
+   "zh": "嫌",
+   "pinyin": "xián",
+   "ko": "싫어하다 · 꺼리다",
+   "en": "dislike; mind",
+   "pos": "v"
+  },
+  {
+   "zh": "闺蜜",
+   "pinyin": "guī mì",
+   "ko": "절친(여자)",
+   "en": "girl best friend",
+   "pos": "n"
+  },
+  {
+   "zh": "项链",
+   "pinyin": "xiàng liàn",
+   "ko": "목걸이",
+   "en": "necklace",
+   "pos": "n"
+  },
+  {
+   "zh": "川菜馆",
+   "pinyin": "chuān cài guǎn",
+   "ko": "쓰촨 음식점",
+   "en": "Sichuan restaurant",
+   "pos": "n"
+  },
+  {
+   "zh": "川菜",
+   "pinyin": "chuān cài",
+   "ko": "쓰촨 요리",
+   "en": "Sichuan cuisine",
+   "pos": "n"
+  },
+  {
+   "zh": "偷懒",
+   "pinyin": "tōu lǎn",
+   "ko": "게으름 피우다",
+   "en": "slack off",
+   "pos": "v"
+  },
+  {
+   "zh": "兵马俑",
+   "pinyin": "bīng mǎ yǒng",
+   "ko": "병마용",
+   "en": "terracotta army",
+   "pos": "n"
+  },
+  {
+   "zh": "哼歌",
+   "pinyin": "hēng gē",
+   "ko": "콧노래 부르다",
+   "en": "hum a tune",
+   "pos": "v"
+  },
+  {
+   "zh": "宠",
+   "pinyin": "chǒng",
+   "ko": "예뻐하다 · 응석 받아주다",
+   "en": "dote on",
+   "pos": "v"
+  },
+  {
+   "zh": "异地",
+   "pinyin": "yì dì",
+   "ko": "타지 · 다른 지역",
+   "en": "different place",
+   "pos": "n"
+  },
+  {
+   "zh": "辣椒",
+   "pinyin": "là jiāo",
+   "ko": "고추",
+   "en": "chili pepper",
+   "pos": "n"
+  },
+  {
+   "zh": "揭晓",
+   "pinyin": "jiē xiǎo",
+   "ko": "발표하다",
+   "en": "announce",
+   "pos": "v"
+  },
+  {
+   "zh": "鸽子",
+   "pinyin": "gē zi",
+   "ko": "비둘기",
+   "en": "pigeon",
+   "pos": "n"
+  },
+  {
+   "zh": "夸",
+   "pinyin": "kuā",
+   "ko": "칭찬하다",
+   "en": "praise",
+   "pos": "v"
+  },
+  {
+   "zh": "有缘",
+   "pinyin": "yǒu yuán",
+   "ko": "인연이 있다",
+   "en": "fated",
+   "pos": "adj"
+  }
+ ]
+}
