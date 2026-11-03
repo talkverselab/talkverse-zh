@@ -1,0 +1,295 @@
+{
+ "id": "r1_life_c3",
+ "region": "R1",
+ "island": "life",
+ "kind": "chat",
+ "draft": true,
+ "purpose": [
+  "daily_life"
+ ],
+ "domain": [
+  "life"
+ ],
+ "title": "화분에 물 주기",
+ "emoji": "🪴",
+ "scene": "집주인이 여행을 가며 화분에 물을 부탁한다. 학습자는 열심히, 아주 열심히 준다.",
+ "speakers": {
+  "A": "{name}",
+  "B": "房东"
+ },
+ "learner_gender": "M",
+ "register": "chat",
+ "twist": 4,
+ "twist_type": "chaos",
+ "flags": [],
+ "variant": "north",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "zh": "小王，帮我浇浇花呗～",
+   "pinyin": "Xiǎo Wáng, bāng wǒ jiāo jiāo huā bei～",
+   "rd": "샤오 왕, 방 워 자오 자오 화 베이～",
+   "ko": "왕 군, 꽃에 물 좀 줘요～",
+   "note": "浇花 = 꽃에 물을 주다",
+   "tags": [
+    "form:帮"
+   ],
+   "lemmas": [
+    [
+     "帮",
+     "帮",
+     "bāng"
+    ],
+    [
+     "浇",
+     "浇",
+     "jiāo"
+    ],
+    [
+     "浇花",
+     "浇花",
+     "jiāo huā"
+    ]
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "zh": "好的！每天都浇吗？",
+   "pinyin": "Hǎo de! Měitiān dōu jiāo ma?",
+   "rd": "하오 더! 메이톈 더우 자오 마?",
+   "ko": "네! 매일 줄까요?",
+   "note": "每天 = 매일",
+   "tags": [
+    "form:吗"
+   ],
+   "lemmas": [
+    [
+     "好",
+     "好",
+     "hǎo"
+    ],
+    [
+     "每天",
+     "每天",
+     "měi tiān"
+    ],
+    [
+     "都",
+     "都",
+     "dōu"
+    ],
+    [
+     "浇",
+     "浇",
+     "jiāo"
+    ]
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "zh": "不用啦，三天一次就行。",
+   "pinyin": "Bú yòng la, sān tiān yí cì jiù xíng.",
+   "rd": "부 융 라, 싼 톈 이 츠 주 싱.",
+   "ko": "아니요, 사흘에 한 번이면 돼요.",
+   "note": "就行 = ~면 된다",
+   "tags": [
+    "form:次"
+   ],
+   "lemmas": [
+    [
+     "不用",
+     "不用",
+     "bù yòng"
+    ],
+    [
+     "三天",
+     "天",
+     "tiān"
+    ],
+    [
+     "一次",
+     "一次",
+     "yī cì"
+    ],
+    [
+     "就",
+     "就",
+     "jiù"
+    ],
+    [
+     "行",
+     "行",
+     "xíng"
+    ]
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "懂了！我每天浇一点。",
+   "pinyin": "Dǒng le! Wǒ měitiān jiāo yìdiǎn.",
+   "rd": "둥 러! 워 메이톈 자오 이뎬.",
+   "ko": "알겠어요! 매일 조금씩 줄게요.",
+   "note": "懂了 = 알겠다",
+   "tags": [
+    "form:一点"
+   ],
+   "lemmas": [
+    [
+     "懂",
+     "懂",
+     "dǒng"
+    ],
+    [
+     "每天",
+     "每天",
+     "měi tiān"
+    ],
+    [
+     "浇",
+     "浇",
+     "jiāo"
+    ],
+    [
+     "一点",
+     "一点",
+     "yì diǎn"
+    ]
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "……发张照片我看看呗。",
+   "pinyin": "…… Fā zhāng zhàopiàn wǒ kànkan bei.",
+   "rd": "…… 파 장 자오폔 워 칸칸 베이.",
+   "ko": "……사진 한 장 보내 봐요.",
+   "note": "照片 = 사진",
+   "tags": [
+    "form:给"
+   ],
+   "lemmas": [
+    [
+     "发",
+     "发",
+     "fā"
+    ],
+    [
+     "张",
+     "张",
+     "zhāng"
+    ],
+    [
+     "照片",
+     "照片",
+     "zhào piān"
+    ],
+    [
+     "看看",
+     "看看",
+     "kàn kàn"
+    ]
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "zh": "发了！花超开心的！",
+   "pinyin": "Fā le! Huā chāo kāixīn de!",
+   "rd": "파 러! 화 차오 카이신 더!",
+   "ko": "보냈어요! 꽃이 완전 신났어요!",
+   "note": "开心 = 기쁘다",
+   "tags": [
+    "form:了"
+   ],
+   "lemmas": [
+    [
+     "发",
+     "发",
+     "fā"
+    ],
+    [
+     "开心",
+     "开心",
+     "kāi xīn"
+    ]
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "B",
+   "zh": "地上怎么全是水啊？！",
+   "pinyin": "Dì shang zěnme quán shì shuǐ a?!",
+   "rd": "디 상 쩐머 취안 스 수이 아?!",
+   "ko": "바닥이 왜 온통 물이에요?!",
+   "note": "地上 = 바닥",
+   "tags": [
+    "form:怎么"
+   ],
+   "lemmas": [
+    [
+     "地上",
+     "地上",
+     "dì shàng"
+    ],
+    [
+     "怎么",
+     "怎么",
+     "zěn me"
+    ],
+    [
+     "全",
+     "全",
+     "quán"
+    ],
+    [
+     "是",
+     "是",
+     "shì"
+    ],
+    [
+     "水",
+     "水",
+     "shuǐ"
+    ]
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "A",
+   "zh": "花……好像在游泳。嘿嘿。",
+   "pinyin": "Huā…… hǎoxiàng zài yóuyǒng. Hēihēi.",
+   "rd": "화…… 하오샹 짜이 유융. 헤이헤이.",
+   "ko": "꽃이…… 수영하는 것 같아요. 헤헤.",
+   "note": "好像 = ~인 것 같다",
+   "tags": [
+    "form:好像"
+   ],
+   "lemmas": [
+    [
+     "花",
+     "花",
+     "huā"
+    ],
+    [
+     "好像",
+     "好像",
+     "hǎo xiàng"
+    ],
+    [
+     "游泳",
+     "游泳",
+     "yóu yǒng"
+    ]
+   ]
+  }
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r1_life_c3_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ }
+}

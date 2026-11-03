@@ -1,0 +1,295 @@
+{
+ "id": "r1_culture_a9",
+ "region": "R1",
+ "island": "culture",
+ "kind": "short",
+ "draft": true,
+ "purpose": [
+  "culture"
+ ],
+ "domain": [
+  "culture"
+ ],
+ "title": "흰 봉투",
+ "emoji": "💌",
+ "scene": "위에 친구 결혼식. 학습자가 축의금을 흰 봉투에 넣어 왔다.",
+ "speakers": {
+  "A": "{name}",
+  "B": "悦"
+ },
+ "learner_gender": "M",
+ "register": "casual",
+ "twist": 3,
+ "twist_type": "chaos",
+ "flags": [],
+ "variant": "north",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "zh": "红包呢？拿出来看看。",
+   "pinyin": "Hóngbāo ne? Ná chūlai kànkan.",
+   "rd": "훙바오 너? 나 추라이 칸칸.",
+   "ko": "축의금 봉투는? 꺼내 봐.",
+   "note": "红包 = 붉은 봉투(축의금)",
+   "tags": [
+    "form:好了吗"
+   ],
+   "lemmas": [
+    [
+     "红包",
+     "红包",
+     "hóng bāo"
+    ],
+    [
+     "拿",
+     "拿",
+     "ná"
+    ],
+    [
+     "出来",
+     "出来",
+     "chū lái"
+    ],
+    [
+     "看看",
+     "看看",
+     "kàn kàn"
+    ]
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "zh": "好了！白的，很干净。",
+   "pinyin": "Hǎo le! Bái de, hěn gānjìng.",
+   "rd": "하오 러! 바이 더, 헌 간징.",
+   "ko": "준비했지! 흰색, 아주 깔끔해.",
+   "note": "干净 = 깨끗하다",
+   "tags": [
+    "form:的"
+   ],
+   "lemmas": [
+    [
+     "好",
+     "好",
+     "hǎo"
+    ],
+    [
+     "白",
+     "白",
+     "bái"
+    ],
+    [
+     "很",
+     "很",
+     "hěn"
+    ],
+    [
+     "干净",
+     "干净",
+     "gān jìng"
+    ]
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "zh": "白的？！你疯了吧！快藏！",
+   "pinyin": "Bái de?! Nǐ fēng le ba! Kuài cáng!",
+   "rd": "바이 더?! 니 펑 러 바! 콰이 창!",
+   "ko": "흰색?! 너 미쳤어! 빨리 숨겨!",
+   "note": "藏 = 숨기다",
+   "tags": [
+    "form:起来"
+   ],
+   "lemmas": [
+    [
+     "白",
+     "白",
+     "bái"
+    ],
+    [
+     "疯",
+     "疯",
+     "fēng"
+    ],
+    [
+     "快",
+     "快",
+     "kuài"
+    ],
+    [
+     "藏",
+     "藏",
+     "cáng"
+    ]
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "为什么？钱不都一样吗？",
+   "pinyin": "Wèishénme? Qián bù dōu yíyàng ma?",
+   "rd": "웨이선머? 첸 부 더우 이양 마?",
+   "ko": "왜? 돈은 다 똑같잖아?",
+   "note": "一样 = 같다",
+   "tags": [
+    "form:一样"
+   ],
+   "lemmas": [
+    [
+     "为什么",
+     "为什么",
+     "wèi shén me"
+    ],
+    [
+     "钱",
+     "钱",
+     "qián"
+    ],
+    [
+     "不",
+     "不",
+     "bù"
+    ],
+    [
+     "都",
+     "都",
+     "dōu"
+    ],
+    [
+     "一样",
+     "一样",
+     "yī yàng"
+    ]
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "白的是丧事用的！",
+   "pinyin": "Bái de shì sāngshì yòng de!",
+   "rd": "바이 더 스 쌍스 융 더!",
+   "ko": "흰색은 장례식에 쓰는 거야!",
+   "note": "丧事 = 장례",
+   "tags": [
+    "form:是的"
+   ],
+   "lemmas": [
+    [
+     "白",
+     "白",
+     "bái"
+    ],
+    [
+     "是",
+     "是",
+     "shì"
+    ],
+    [
+     "丧事",
+     "丧事",
+     "sāng shì"
+    ]
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "zh": "新娘来了……完了，怎么办？",
+   "pinyin": "Xīnniáng lái le…… wán le, zěnme bàn?",
+   "rd": "신냥 라이 러…… 완 러, 쩐머 반?",
+   "ko": "신부가 와…… 망했다, 어떡해?",
+   "note": "完了 = 망했다",
+   "tags": [
+    "expr:怎么办"
+   ],
+   "lemmas": [
+    [
+     "新娘",
+     "新娘",
+     "xīn niáng"
+    ],
+    [
+     "来",
+     "来",
+     "lái"
+    ],
+    [
+     "完",
+     "完",
+     "wán"
+    ],
+    [
+     "怎么办",
+     "怎么办",
+     "zěn me bàn"
+    ]
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "B",
+   "zh": "快用我的！你吓死我了。",
+   "pinyin": "Kuài yòng wǒ de! Nǐ xià sǐ wǒ le.",
+   "rd": "콰이 융 워 더! 니 샤 쓰 워 러.",
+   "ko": "빨리 내 거 써! 너 때문에 놀라 죽을 뻔했어.",
+   "note": "吓死 = 놀라 죽다",
+   "tags": [
+    "form:用"
+   ],
+   "lemmas": [
+    [
+     "快",
+     "快",
+     "kuài"
+    ],
+    [
+     "吓",
+     "吓",
+     "xià"
+    ],
+    [
+     "死",
+     "死",
+     "sǐ"
+    ]
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "A",
+   "zh": "换好了……她看见了吗？",
+   "pinyin": "Huàn hǎo le…… tā kànjiàn le ma?",
+   "rd": "환 하오 러…… 타 칸젠 러 마?",
+   "ko": "바꿨어…… 봤을까?",
+   "note": "看见 = 보다",
+   "tags": [
+    "form:好了"
+   ],
+   "lemmas": [
+    [
+     "换",
+     "换",
+     "huàn"
+    ],
+    [
+     "好",
+     "好",
+     "hǎo"
+    ],
+    [
+     "看见",
+     "看见",
+     "kàn jiàn"
+    ]
+   ]
+  }
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r1_culture_a9_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ }
+}

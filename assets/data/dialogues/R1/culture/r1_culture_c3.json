@@ -1,0 +1,262 @@
+{
+ "id": "r1_culture_c3",
+ "region": "R1",
+ "island": "culture",
+ "kind": "chat",
+ "draft": true,
+ "purpose": [
+  "culture"
+ ],
+ "domain": [
+  "culture"
+ ],
+ "title": "520",
+ "emoji": "💗",
+ "scene": "샤오리가 송금 금액을 물어본다. 학습자는 아무 숫자나 보냈을 뿐인데……",
+ "speakers": {
+  "A": "{name}",
+  "B": "小丽"
+ },
+ "learner_gender": "M",
+ "register": "chat",
+ "twist": 4,
+ "twist_type": "reveal",
+ "flags": [
+  "romance"
+ ],
+ "variant": "north",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "zh": "昨天饭钱，转多少呀？",
+   "pinyin": "Zuótiān fàn qián, zhuǎn duōshao ya?",
+   "rd": "쭤톈 판 첸, 좐 둬사오 야?",
+   "ko": "어제 밥값, 얼마 보내면 돼?",
+   "note": "转 = 송금하다",
+   "tags": [
+    "form:多少"
+   ],
+   "lemmas": [
+    [
+     "昨天",
+     "昨天",
+     "zuó tiān"
+    ],
+    [
+     "饭",
+     "饭",
+     "fàn"
+    ],
+    [
+     "钱",
+     "钱",
+     "qián"
+    ],
+    [
+     "转",
+     "转",
+     "zhuǎn"
+    ],
+    [
+     "多少",
+     "多少",
+     "duō shǎo"
+    ]
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "zh": "不用转啦。",
+   "pinyin": "Bú yòng zhuǎn la.",
+   "rd": "부 융 좐 라.",
+   "ko": "안 보내도 돼.",
+   "note": "不用 = 필요 없다",
+   "tags": [
+    "expr:不用"
+   ],
+   "lemmas": [
+    [
+     "不用",
+     "不用",
+     "bù yòng"
+    ],
+    [
+     "转",
+     "转",
+     "zhuǎn"
+    ]
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "zh": "必须转！快说个数。",
+   "pinyin": "Bìxū zhuǎn! Kuài shuō ge shù.",
+   "rd": "비쉬 좐! 콰이 숴 거 수.",
+   "ko": "꼭 보낼 거야! 빨리 숫자 말해.",
+   "note": "必须 = 반드시",
+   "tags": [
+    "form:必须"
+   ],
+   "lemmas": [
+    [
+     "必须",
+     "必须",
+     "bì xū"
+    ],
+    [
+     "转",
+     "转",
+     "zhuǎn"
+    ],
+    [
+     "快",
+     "快",
+     "kuài"
+    ],
+    [
+     "说",
+     "说",
+     "shuō"
+    ],
+    [
+     "个",
+     "个",
+     "gè"
+    ],
+    [
+     "数",
+     "数",
+     "shù"
+    ]
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "那就520吧。",
+   "pinyin": "Nà jiù 520 ba.",
+   "rd": "나 주 520 바.",
+   "ko": "그럼 520으로 해.",
+   "note": "520 = 「我爱你(사랑해)」와 발음이 비슷함",
+   "tags": [
+    "form:数字"
+   ],
+   "lemmas": [
+    [
+     "那",
+     "那",
+     "nà"
+    ],
+    [
+     "就",
+     "就",
+     "jiù"
+    ]
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "520？！你认真的？",
+   "pinyin": "520?! Nǐ rènzhēn de?",
+   "rd": "520?! 니 런전 더?",
+   "ko": "520?! 너 진심이야?",
+   "note": "认真 = 진지하다",
+   "tags": [
+    "form:知道"
+   ],
+   "lemmas": [
+    [
+     "认真",
+     "认真",
+     "rèn zhēn"
+    ]
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "zh": "不知道啊……是52吧？",
+   "pinyin": "Bù zhīdào a…… shì 52 ba?",
+   "rd": "부 즈다오 아…… 스 52 바?",
+   "ko": "몰라…… 52 아니었어?",
+   "note": "不知道 = 모르다",
+   "tags": [
+    "form:不是…吗"
+   ],
+   "lemmas": [
+    [
+     "不",
+     "不",
+     "bù"
+    ],
+    [
+     "知道",
+     "知道",
+     "zhī dào"
+    ],
+    [
+     "是",
+     "是",
+     "shì"
+    ]
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "B",
+   "zh": "……我转了。你开心吗？",
+   "pinyin": "…… Wǒ zhuǎn le. Nǐ kāixīn ma?",
+   "rd": "…… 워 좐 러. 니 카이신 마?",
+   "ko": "……보냈어. 기뻐?",
+   "note": "开心 = 기쁘다",
+   "tags": [
+    "form:已经"
+   ],
+   "lemmas": [
+    [
+     "转",
+     "转",
+     "zhuǎn"
+    ],
+    [
+     "开心",
+     "开心",
+     "kāi xīn"
+    ]
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "A",
+   "zh": "转了520？！完了。",
+   "pinyin": "Zhuǎn le 520?! Wán le.",
+   "rd": "좐 러 520?! 완 러.",
+   "ko": "520 보냈다고?! 망했다.",
+   "note": "完了 = 망했다",
+   "tags": [
+    "form:了"
+   ],
+   "lemmas": [
+    [
+     "转",
+     "转",
+     "zhuǎn"
+    ],
+    [
+     "完",
+     "完",
+     "wán"
+    ]
+   ]
+  }
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r1_culture_c3_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ }
+}

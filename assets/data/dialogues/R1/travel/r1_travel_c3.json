@@ -1,0 +1,265 @@
+{
+ "id": "r1_travel_c3",
+ "region": "R1",
+ "island": "travel",
+ "kind": "chat",
+ "draft": true,
+ "purpose": [
+  "travel"
+ ],
+ "domain": [
+  "travel"
+ ],
+ "title": "기념품 스무 개",
+ "emoji": "🐼",
+ "scene": "여행 중인 학습자가 샤오리에게 기념품 뭐 살지 묻는다. 샤오리의 대답은 「아무거나」.",
+ "speakers": {
+  "A": "{name}",
+  "B": "小丽"
+ },
+ "learner_gender": "F",
+ "register": "chat",
+ "twist": 5,
+ "twist_type": "chaos",
+ "flags": [],
+ "variant": "north",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "A",
+   "zh": "给你带点什么好？",
+   "pinyin": "Gěi nǐ dài diǎn shénme hǎo?",
+   "rd": "게이 니 다이 뎬 선머 하오?",
+   "ko": "너한테 뭐 사다 줄까?",
+   "note": "带 = 가져오다",
+   "tags": [
+    "form:什么"
+   ],
+   "lemmas": [
+    [
+     "带",
+     "带",
+     "dài"
+    ],
+    [
+     "点",
+     "点",
+     "diǎn"
+    ],
+    [
+     "什么",
+     "什么",
+     "shén me"
+    ],
+    [
+     "好",
+     "好",
+     "hǎo"
+    ]
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "B",
+   "zh": "随便呀～都行。",
+   "pinyin": "Suíbiàn ya～ dōu xíng.",
+   "rd": "쑤이볜 야～ 더우 싱.",
+   "ko": "아무거나～ 다 좋아.",
+   "note": "随便 = 아무거나",
+   "tags": [
+    "expr:随便"
+   ],
+   "lemmas": [
+    [
+     "随便",
+     "随便",
+     "suí biàn"
+    ],
+    [
+     "都",
+     "都",
+     "dōu"
+    ],
+    [
+     "行",
+     "行",
+     "xíng"
+    ]
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "A",
+   "zh": "熊猫行不？",
+   "pinyin": "Xióngmāo xíng bu?",
+   "rd": "슝마오 싱 부?",
+   "ko": "판다 돼?",
+   "note": "行不 = 돼?(채팅 줄임)",
+   "tags": [
+    "form:吗"
+   ],
+   "lemmas": [
+    [
+     "行",
+     "行",
+     "xíng"
+    ],
+    [
+     "不",
+     "不",
+     "bù"
+    ]
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "B",
+   "zh": "可爱死了！买买！",
+   "pinyin": "Kěài sǐ le! Mǎi mǎi!",
+   "rd": "커아이 쓰 러! 마이 마이!",
+   "ko": "귀여워 죽겠네! 사 사!",
+   "note": "~死了 = ~해 죽겠다",
+   "tags": [
+    "form:吧"
+   ],
+   "lemmas": [
+    [
+     "可爱",
+     "可爱",
+     "kě ài"
+    ],
+    [
+     "死",
+     "死",
+     "sǐ"
+    ],
+    [
+     "买",
+     "买",
+     "mǎi"
+    ],
+    [
+     "买",
+     "买",
+     "mǎi"
+    ]
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "A",
+   "zh": "买了，二十个。",
+   "pinyin": "Mǎi le, èrshí ge.",
+   "rd": "마이 러, 얼스 거.",
+   "ko": "샀어, 스무 개.",
+   "note": "二十 = 20",
+   "tags": [
+    "form:了"
+   ],
+   "lemmas": [
+    [
+     "买",
+     "买",
+     "mǎi"
+    ],
+    [
+     "二十个",
+     "个",
+     "gè"
+    ]
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "B",
+   "zh": "二十个？！你疯了？！",
+   "pinyin": "Èrshí ge?! Nǐ fēng le?!",
+   "rd": "얼스 거?! 니 펑 러?!",
+   "ko": "스무 개?! 너 미쳤어?!",
+   "note": "疯了 = 미쳤다",
+   "tags": [
+    "form:为什么"
+   ],
+   "lemmas": [
+    [
+     "二十个",
+     "个",
+     "gè"
+    ],
+    [
+     "疯",
+     "疯",
+     "fēng"
+    ]
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "A",
+   "zh": "你说随便的啊。",
+   "pinyin": "Nǐ shuō suíbiàn de a.",
+   "rd": "니 숴 쑤이볜 더 아.",
+   "ko": "네가 아무거나라고 했잖아.",
+   "note": "说 = 말하다",
+   "tags": [
+    "form:什么都"
+   ],
+   "lemmas": [
+    [
+     "说",
+     "说",
+     "shuō"
+    ],
+    [
+     "随便",
+     "随便",
+     "suí biàn"
+    ]
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "B",
+   "zh": "家里放不下……想我了吧。",
+   "pinyin": "Jiā li fàng bu xià…… xiǎng wǒ le ba.",
+   "rd": "자 리 팡 부 샤…… 샹 워 러 바.",
+   "ko": "집에 못 둬…… 내 생각 많이 했구나.",
+   "note": "放不下 = 둘 수 없다",
+   "tags": [
+    "form:不下"
+   ],
+   "lemmas": [
+    [
+     "家里",
+     "家里",
+     "jiā lǐ"
+    ],
+    [
+     "放",
+     "放",
+     "fàng"
+    ],
+    [
+     "不",
+     "不",
+     "bù"
+    ],
+    [
+     "下",
+     "下",
+     "xià"
+    ],
+    [
+     "想",
+     "想",
+     "xiǎng"
+    ]
+   ]
+  }
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r1_travel_c3_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ }
+}
