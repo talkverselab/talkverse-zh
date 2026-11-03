@@ -1,0 +1,279 @@
+{
+ "id": "r1_friends_a11",
+ "region": "R1",
+ "island": "friends",
+ "kind": "short",
+ "draft": true,
+ "purpose": [
+  "making_friends"
+ ],
+ "domain": [
+  "friends"
+ ],
+ "title": "헬스장 첫날",
+ "emoji": "🏋️",
+ "scene": "위에가 학습자를 헬스장에 끌고 왔다. 첫 기구부터 사달이 난다.",
+ "speakers": {
+  "A": "{name}",
+  "B": "悦"
+ },
+ "learner_gender": "F",
+ "register": "casual",
+ "twist": 4,
+ "twist_type": "chaos",
+ "flags": [],
+ "variant": "north",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "zh": "来，先跑十分钟热身。",
+   "pinyin": "Lái, xiān pǎo shí fēnzhōng rèshēn.",
+   "rd": "라이, 셴 파오 스 펀중 러선.",
+   "ko": "자, 먼저 10분 뛰면서 몸 풀어.",
+   "note": "热身 = 준비운동",
+   "tags": [
+    "form:先"
+   ],
+   "lemmas": [
+    [
+     "来",
+     "来",
+     "lái"
+    ],
+    [
+     "先",
+     "先",
+     "xiān"
+    ],
+    [
+     "跑",
+     "跑",
+     "pǎo"
+    ],
+    [
+     "十分钟",
+     "分钟",
+     "fēn zhōng"
+    ],
+    [
+     "热",
+     "热",
+     "rè"
+    ],
+    [
+     "身",
+     "身",
+     "shēn"
+    ]
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "zh": "十分钟？我已经废了。",
+   "pinyin": "Shí fēnzhōng? Wǒ yǐjīng fèi le.",
+   "rd": "스 펀중? 워 이징 페이 러.",
+   "ko": "10분? 나 벌써 끝났어.",
+   "note": "废了 = 망가졌다·녹초가 됐다",
+   "tags": [
+    "form:快了"
+   ],
+   "lemmas": [
+    [
+     "十分钟",
+     "分钟",
+     "fēn zhōng"
+    ],
+    [
+     "已经",
+     "已经",
+     "yǐ jīng"
+    ],
+    [
+     "废",
+     "废",
+     "fèi"
+    ]
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "zh": "才两分钟就废了？",
+   "pinyin": "Cái liǎng fēnzhōng jiù fèi le?",
+   "rd": "차이 량 펀중 주 페이 러?",
+   "ko": "겨우 2분인데 끝났다고?",
+   "note": "才 = 겨우",
+   "tags": [
+    "form:才"
+   ],
+   "lemmas": [
+    [
+     "才",
+     "才",
+     "cái"
+    ],
+    [
+     "两分钟",
+     "分钟",
+     "fēn zhōng"
+    ],
+    [
+     "就",
+     "就",
+     "jiù"
+    ],
+    [
+     "废",
+     "废",
+     "fèi"
+    ]
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "啊，机器自己加速了！",
+   "pinyin": "À, jīqì zìjǐ jiāsù le!",
+   "rd": "아, 지치 쯔지 자쑤 러!",
+   "ko": "아, 기계가 혼자 빨라져!",
+   "note": "加速 = 가속하다",
+   "tags": [
+    "form:越来越"
+   ],
+   "lemmas": [
+    [
+     "机器",
+     "机器",
+     "jī qì"
+    ],
+    [
+     "自己",
+     "自己",
+     "zì jǐ"
+    ],
+    [
+     "加速",
+     "加速",
+     "jiā sù"
+    ]
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "你按着加速键呢！",
+   "pinyin": "Nǐ ànzhe jiāsù jiàn ne!",
+   "rd": "니 안저 자쑤 젠 너!",
+   "ko": "너 가속 버튼 누르고 있잖아!",
+   "note": "按着 = 누르고 있다",
+   "tags": [
+    "form:错"
+   ],
+   "lemmas": [
+    [
+     "加速",
+     "加速",
+     "jiā sù"
+    ],
+    [
+     "键",
+     "键",
+     "jiàn"
+    ]
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "zh": "停不下来啊！救命！",
+   "pinyin": "Tíng bu xiàlai a! Jiùmìng!",
+   "rd": "팅 부 샤라이 아! 주밍!",
+   "ko": "안 멈춰! 살려 줘!",
+   "note": "停不下来 = 멈출 수 없다",
+   "tags": [
+    "form:怎么"
+   ],
+   "lemmas": [
+    [
+     "停",
+     "停",
+     "tíng"
+    ],
+    [
+     "不",
+     "不",
+     "bù"
+    ],
+    [
+     "下来",
+     "下来",
+     "xià lái"
+    ],
+    [
+     "救",
+     "救",
+     "jiù"
+    ],
+    [
+     "命",
+     "命",
+     "mìng"
+    ]
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "B",
+   "zh": "拉红绳！……别怕，我在。",
+   "pinyin": "Lā hóng shéng! …… Bié pà, wǒ zài.",
+   "rd": "라 훙 성! …… 볘 파, 워 짜이.",
+   "ko": "빨간 줄 당겨! ……겁내지 마, 내가 있어.",
+   "note": "别怕 = 겁내지 마",
+   "tags": [
+    "form:动词重复"
+   ],
+   "lemmas": []
+  },
+  {
+   "num": 8,
+   "speaker": "A",
+   "zh": "明天我真不来了……",
+   "pinyin": "Míngtiān wǒ zhēn bù lái le……",
+   "rd": "밍톈 워 전 부 라이 러……",
+   "ko": "내일 나 진짜 안 와……",
+   "note": "不来了 = 안 오겠다",
+   "tags": [
+    "form:不了"
+   ],
+   "lemmas": [
+    [
+     "明天",
+     "明天",
+     "míng tiān"
+    ],
+    [
+     "真",
+     "真",
+     "zhēn"
+    ],
+    [
+     "不",
+     "不",
+     "bù"
+    ],
+    [
+     "来",
+     "来",
+     "lái"
+    ]
+   ]
+  }
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r1_friends_a11_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ }
+}

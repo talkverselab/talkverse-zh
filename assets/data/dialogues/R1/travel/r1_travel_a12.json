@@ -1,0 +1,252 @@
+{
+ "id": "r1_travel_a12",
+ "region": "R1",
+ "island": "travel",
+ "kind": "short",
+ "draft": true,
+ "purpose": [
+  "travel"
+ ],
+ "domain": [
+  "travel"
+ ],
+ "title": "기차표 두 장",
+ "emoji": "🎫",
+ "scene": "역 앞. 위에가 기차표 두 장을 들고 나타난다.",
+ "speakers": {
+  "A": "{name}",
+  "B": "悦"
+ },
+ "learner_gender": "M",
+ "register": "casual",
+ "twist": 3,
+ "twist_type": "reveal",
+ "flags": [
+  "romance"
+ ],
+ "variant": "north",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "zh": "喏，两张票。",
+   "pinyin": "Nuò, liǎng zhāng piào.",
+   "rd": "눠, 량 장 퍄오.",
+   "ko": "자, 표 두 장.",
+   "note": "票 = 표",
+   "tags": [
+    "form:给"
+   ],
+   "lemmas": [
+    [
+     "两张",
+     "张",
+     "zhāng"
+    ],
+    [
+     "票",
+     "票",
+     "piào"
+    ]
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "zh": "啊？我的？我没买啊。",
+   "pinyin": "À? Wǒ de? Wǒ méi mǎi a.",
+   "rd": "아? 워 더? 워 메이 마이 아.",
+   "ko": "어? 내 거? 나 안 샀는데.",
+   "note": "没买 = 사지 않았다",
+   "tags": [
+    "form:没"
+   ],
+   "lemmas": [
+    [
+     "没",
+     "没",
+     "méi"
+    ],
+    [
+     "买",
+     "买",
+     "mǎi"
+    ]
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "zh": "我买的呀。",
+   "pinyin": "Wǒ mǎi de ya.",
+   "rd": "워 마이 더 야.",
+   "ko": "내가 산 거야.",
+   "note": "是~的 = ~한 것이다",
+   "tags": [
+    "form:张"
+   ],
+   "lemmas": [
+    [
+     "买",
+     "买",
+     "mǎi"
+    ]
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "两张？跟谁去？",
+   "pinyin": "Liǎng zhāng? Gēn shéi qù?",
+   "rd": "량 장? 건 세이 취?",
+   "ko": "두 장? 누구랑 가는데?",
+   "note": "跟谁 = 누구와",
+   "tags": [
+    "form:哪儿"
+   ],
+   "lemmas": [
+    [
+     "两张",
+     "张",
+     "zhāng"
+    ],
+    [
+     "谁",
+     "谁",
+     "shuí"
+    ],
+    [
+     "去",
+     "去",
+     "qù"
+    ]
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "跟你啊！去海边。",
+   "pinyin": "Gēn nǐ a! Qù hǎibiān.",
+   "rd": "건 니 아! 취 하이볜.",
+   "ko": "너랑이지! 바다 가.",
+   "note": "海边 = 바닷가",
+   "tags": [
+    "form:名"
+   ],
+   "lemmas": [
+    [
+     "去",
+     "去",
+     "qù"
+    ],
+    [
+     "海边",
+     "海边",
+     "hǎi biān"
+    ]
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "zh": "今天？！我什么都没带！",
+   "pinyin": "Jīntiān?! Wǒ shénme dōu méi dài!",
+   "rd": "진톈?! 워 선머 더우 메이 다이!",
+   "ko": "오늘?! 나 아무것도 안 챙겼어!",
+   "note": "什么都没 = 아무것도 ~않다",
+   "tags": [
+    "form:什么都"
+   ],
+   "lemmas": [
+    [
+     "今天",
+     "今天",
+     "jīn tiān"
+    ],
+    [
+     "什么",
+     "什么",
+     "shén me"
+    ],
+    [
+     "都",
+     "都",
+     "dōu"
+    ],
+    [
+     "没",
+     "没",
+     "méi"
+    ],
+    [
+     "带",
+     "带",
+     "dài"
+    ]
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "B",
+   "zh": "你来就够啦。",
+   "pinyin": "Nǐ lái jiù gòu la.",
+   "rd": "니 라이 주 거우 라.",
+   "ko": "너만 오면 돼.",
+   "note": "够 = 충분하다",
+   "tags": [
+    "form:够"
+   ],
+   "lemmas": [
+    [
+     "来",
+     "来",
+     "lái"
+    ],
+    [
+     "就",
+     "就",
+     "jiù"
+    ],
+    [
+     "够",
+     "够",
+     "gòu"
+    ]
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "A",
+   "zh": "……几点的车？冲！",
+   "pinyin": "…… Jǐ diǎn de chē? Chōng!",
+   "rd": "…… 지 뎬 더 처? 충!",
+   "ko": "……몇 시 기차야? 가자!",
+   "note": "冲 = 돌진하다(가자!)",
+   "tags": [
+    "form:几点"
+   ],
+   "lemmas": [
+    [
+     "几点",
+     "点",
+     "diǎn"
+    ],
+    [
+     "车",
+     "车",
+     "chē"
+    ],
+    [
+     "冲",
+     "冲",
+     "chōng"
+    ]
+   ]
+  }
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r1_travel_a12_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ }
+}

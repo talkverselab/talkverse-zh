@@ -1,0 +1,260 @@
+{
+ "id": "r1_friends_c6",
+ "region": "R1",
+ "island": "friends",
+ "kind": "chat",
+ "draft": true,
+ "purpose": [
+  "making_friends"
+ ],
+ "domain": [
+  "friends"
+ ],
+ "title": "열 판 연속",
+ "emoji": "🎮",
+ "scene": "하오란과 온라인 게임. 학습자가 열 판을 내리 졌는데……",
+ "speakers": {
+  "A": "{name}",
+  "B": "浩然"
+ },
+ "learner_gender": "M",
+ "register": "chat",
+ "twist": 6,
+ "twist_type": "reveal",
+ "flags": [],
+ "variant": "north",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "zh": "再来一把？😏",
+   "pinyin": "Zài lái yì bǎ?",
+   "rd": "짜이 라이 이 바?",
+   "ko": "한 판 더?😏",
+   "note": "把 = 판(게임 양사)",
+   "tags": [
+    "form:再"
+   ],
+   "lemmas": [
+    [
+     "再",
+     "再",
+     "zài"
+    ],
+    [
+     "来",
+     "来",
+     "lái"
+    ],
+    [
+     "一把",
+     "把",
+     "bǎ"
+    ]
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "zh": "不来！十把全输！",
+   "pinyin": "Bù lái! Shí bǎ quán shū!",
+   "rd": "부 라이! 스 바 취안 수!",
+   "ko": "안 해! 열 판 다 졌어!",
+   "note": "输 = 지다",
+   "tags": [
+    "form:都了"
+   ],
+   "lemmas": [
+    [
+     "不",
+     "不",
+     "bù"
+    ],
+    [
+     "来",
+     "来",
+     "lái"
+    ],
+    [
+     "全",
+     "全",
+     "quán"
+    ],
+    [
+     "输",
+     "输",
+     "shū"
+    ]
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "zh": "最后一把，让你。",
+   "pinyin": "Zuìhòu yì bǎ, ràng nǐ.",
+   "rd": "쭈이허우 이 바, 랑 니.",
+   "ko": "마지막 한 판, 봐줄게.",
+   "note": "让 = 양보하다",
+   "tags": [
+    "form:让"
+   ],
+   "lemmas": [
+    [
+     "最后",
+     "最后",
+     "zuì hòu"
+    ],
+    [
+     "一把",
+     "把",
+     "bǎ"
+    ],
+    [
+     "让",
+     "让",
+     "ràng"
+    ]
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "好！这次必赢！",
+   "pinyin": "Hǎo! Zhè cì bì yíng!",
+   "rd": "하오! 저 츠 비 잉!",
+   "ko": "좋아! 이번엔 무조건 이겨!",
+   "note": "必 = 반드시",
+   "tags": [
+    "form:定了"
+   ],
+   "lemmas": [
+    [
+     "好",
+     "好",
+     "hǎo"
+    ],
+    [
+     "这次",
+     "这次",
+     "zhè cì"
+    ],
+    [
+     "必",
+     "必",
+     "bì"
+    ],
+    [
+     "赢",
+     "赢",
+     "yíng"
+    ]
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "……又输了啊。",
+   "pinyin": "…… Yòu shū le a.",
+   "rd": "…… 유 수 러 아.",
+   "ko": "……또 졌네.",
+   "note": "又 = 또",
+   "tags": [
+    "form:又"
+   ],
+   "lemmas": [
+    [
+     "又",
+     "又",
+     "yòu"
+    ],
+    [
+     "输",
+     "输",
+     "shū"
+    ]
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "zh": "你不是让我吗？！",
+   "pinyin": "Nǐ bú shì ràng wǒ ma?!",
+   "rd": "니 부 스 랑 워 마?!",
+   "ko": "봐준다며?!",
+   "note": "不是…吗 = ~잖아?",
+   "tags": [
+    "form:不是…吗"
+   ],
+   "lemmas": [
+    [
+     "让",
+     "让",
+     "ràng"
+    ]
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "B",
+   "zh": "让了，我闭眼玩的。",
+   "pinyin": "Ràng le, wǒ bì yǎn wán de.",
+   "rd": "랑 러, 워 비 옌 완 더.",
+   "ko": "봐줬어, 눈 감고 했는걸.",
+   "note": "闭眼 = 눈을 감다",
+   "tags": [
+    "form:着"
+   ],
+   "lemmas": [
+    [
+     "让",
+     "让",
+     "ràng"
+    ],
+    [
+     "闭",
+     "闭",
+     "bì"
+    ],
+    [
+     "眼",
+     "眼",
+     "yǎn"
+    ],
+    [
+     "玩",
+     "玩",
+     "wán"
+    ]
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "A",
+   "zh": "……删好友。",
+   "pinyin": "…… Shān hǎoyǒu.",
+   "rd": "…… 산 하오유.",
+   "ko": "……친구 삭제.",
+   "note": "删 = 지우다",
+   "tags": [
+    "form:动"
+   ],
+   "lemmas": [
+    [
+     "删",
+     "删",
+     "shān"
+    ],
+    [
+     "好友",
+     "好友",
+     "hǎo yǒu"
+    ]
+   ]
+  }
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r1_friends_c6_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ }
+}
