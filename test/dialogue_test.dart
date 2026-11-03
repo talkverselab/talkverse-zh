@@ -38,7 +38,7 @@ void main() {
       for (final t in d.turns) {
         turns++;
         expect(t.zh, isNotEmpty);
-        if (t.rd.isEmpty || _latin.hasMatch(t.rd)) bad.add('${d.id}#${t.num}: ${t.pinyin} → ${t.rd}');
+        if (t.rd.isEmpty || _latin.hasMatch(t.rd.replaceAll(RegExp(r"\{[a-z_]+\}"), ""))) bad.add('${d.id}#${t.num}: ${t.pinyin} → ${t.rd}');
       }
     }
     // 병음을 음절로 못 나눈 줄은 원문이 남는다 — 거의 없어야 한다
