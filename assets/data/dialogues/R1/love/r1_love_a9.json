@@ -1,0 +1,119 @@
+{
+ "id": "r1_love_a9",
+ "region": "R1",
+ "island": "love",
+ "kind": "short",
+ "draft": true,
+ "purpose": [
+  "love"
+ ],
+ "domain": [
+  "love"
+ ],
+ "title": "가짜 남자친구",
+ "emoji": "💑",
+ "scene": "쇼핑몰. 처음 보는 위에가 갑자기 팔짱을 끼며 말을 건다.",
+ "speakers": {
+  "A": "{name}",
+  "B": "悦"
+ },
+ "learner_gender": "M",
+ "register": "casual",
+ "twist": 3,
+ "twist_type": "reveal",
+ "flags": [
+  "romance"
+ ],
+ "variant": "north",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "zh": "救命！装一下我男友！",
+   "pinyin": "Jiùmìng! Zhuāng yíxià wǒ nányǒu!",
+   "rd": "주밍! 좡 이샤 워 난유!",
+   "ko": "살려 줘! 내 남친인 척 좀 해!",
+   "note": "装 = ~인 척하다",
+   "tags": [
+    "expr:帮个忙"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "zh": "啊？我？为什么啊？",
+   "pinyin": "À? Wǒ? Wèishénme a?",
+   "rd": "아? 워? 웨이선머 아?",
+   "ko": "어? 나? 왜?",
+   "note": "为什么 = 왜",
+   "tags": [
+    "form:为什么"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "zh": "前男友在看！抱紧点！",
+   "pinyin": "Qián nányǒu zài kàn! Bào jǐn diǎn!",
+   "rd": "첸 난유 짜이 칸! 바오 진 뎬!",
+   "ko": "전 남친이 보고 있어! 더 꽉 안아!",
+   "note": "前男友 = 전 남자친구",
+   "tags": [
+    "form:在"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "他过来了……怎么办啊！",
+   "pinyin": "Tā guòlai le…… zěnme bàn a!",
+   "rd": "타 궈라이 러…… 쩐머 반 아!",
+   "ko": "이쪽으로 와…… 어떡해!",
+   "note": "怎么办 = 어떡해",
+   "tags": [
+    "expr:怎么办"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "快叫我宝贝！",
+   "pinyin": "Kuài jiào wǒ bǎobèi!",
+   "rd": "콰이 자오 워 바오베이!",
+   "ko": "빨리 나 자기라고 불러!",
+   "note": "宝贝 = 자기야(애칭)",
+   "tags": [
+    "form:叫"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "zh": "宝……宝贝，走吧走吧！",
+   "pinyin": "Bǎo…… bǎobèi, zǒu ba zǒu ba!",
+   "rd": "바오…… 바오베이, 쩌우 바 쩌우 바!",
+   "ko": "자……자기야, 가자 가자!",
+   "note": "走吧 = 가자",
+   "tags": [
+    "form:吧"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "B",
+   "zh": "走了。……你叫得真好听。",
+   "pinyin": "Zǒu le. …… Nǐ jiào de zhēn hǎotīng.",
+   "rd": "쩌우 러. …… 니 자오 더 전 하오팅.",
+   "ko": "갔어. ……너 그렇게 부르니까 진짜 듣기 좋다.",
+   "note": "叫得好听 = 부르는 게 듣기 좋다",
+   "tags": [
+    "form:可以"
+   ]
+  }
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r1_love_a9_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ }
+}

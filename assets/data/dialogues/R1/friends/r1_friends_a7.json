@@ -1,0 +1,129 @@
+{
+ "id": "r1_friends_a7",
+ "region": "R1",
+ "island": "friends",
+ "kind": "short",
+ "draft": true,
+ "purpose": [
+  "making_friends"
+ ],
+ "domain": [
+  "friends"
+ ],
+ "title": "농구 잘한다며",
+ "emoji": "🏀",
+ "scene": "동네 농구장. 하오란이 농구를 엄청 잘한다고 큰소리친다.",
+ "speakers": {
+  "A": "{name}",
+  "B": "浩然"
+ },
+ "learner_gender": "M",
+ "register": "casual",
+ "twist": 3,
+ "twist_type": "chaos",
+ "flags": [],
+ "variant": "north",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "zh": "我打篮球超厉害！",
+   "pinyin": "Wǒ dǎ lánqiú chāo lìhai!",
+   "rd": "워 다 란추 차오 리하이!",
+   "ko": "나 농구 완전 잘해!",
+   "note": "厉害 = 대단하다",
+   "tags": [
+    "form:得"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "zh": "真的假的？给我看看！",
+   "pinyin": "Zhēn de jiǎ de? Gěi wǒ kànkan!",
+   "rd": "전 더 자 더? 게이 워 칸칸!",
+   "ko": "진짜야 가짜야? 보여 줘 봐!",
+   "note": "真的假的 = 진짜야 가짜야",
+   "tags": [
+    "form:看看"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "zh": "看好了啊——哎呦，球飞了！",
+   "pinyin": "Kàn hǎo le a—— āiyō, qiú fēi le!",
+   "rd": "칸 하오 러 아—— 아이요, 추 페이 러!",
+   "ko": "잘 봐—— 아악, 공 날아갔어!",
+   "note": "飞 = 날다",
+   "tags": [
+    "expr:看好了"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "球去哪儿了？！",
+   "pinyin": "Qiú qù nǎr le?!",
+   "rd": "추 취 날 러?!",
+   "ko": "공 어디 갔어?!",
+   "note": "去哪儿 = 어디 가다",
+   "tags": [
+    "form:呢"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "掉那辆车上了。",
+   "pinyin": "Diào nà liàng chē shang le.",
+   "rd": "댜오 나 량 처 상 러.",
+   "ko": "저 차 위에 떨어졌어.",
+   "note": "掉 = 떨어지다",
+   "tags": [
+    "form:在"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "zh": "车开走了！赶紧追！",
+   "pinyin": "Chē kāi zǒu le! Gǎnjǐn zhuī!",
+   "rd": "처 카이 쩌우 러! 간진 주이!",
+   "ko": "차 출발했어! 빨리 쫓아!",
+   "note": "赶紧 = 빨리",
+   "tags": [
+    "form:了"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "B",
+   "zh": "算了，买个新的得了。",
+   "pinyin": "Suàn le, mǎi ge xīn de dé le.",
+   "rd": "쏸 러, 마이 거 신 더 더 러.",
+   "ko": "됐어, 새 거 사면 되지.",
+   "note": "算了 = 됐어",
+   "tags": [
+    "expr:算了"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "A",
+   "zh": "你不是超厉害吗？笑死我了。",
+   "pinyin": "Nǐ bú shì chāo lìhai ma? Xiào sǐ wǒ le.",
+   "rd": "니 부 스 차오 리하이 마? 샤오 쓰 워 러.",
+   "ko": "너 완전 잘한다며? 웃겨 죽겠네.",
+   "note": "笑死 = 웃겨 죽다",
+   "tags": [
+    "form:不是…吗"
+   ]
+  }
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r1_friends_a7_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ }
+}

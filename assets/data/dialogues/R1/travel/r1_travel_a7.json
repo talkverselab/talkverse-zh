@@ -1,0 +1,129 @@
+{
+ "id": "r1_travel_a7",
+ "region": "R1",
+ "island": "travel",
+ "kind": "short",
+ "draft": true,
+ "purpose": [
+  "travel"
+ ],
+ "domain": [
+  "travel"
+ ],
+ "title": "똑같은 캐리어",
+ "emoji": "🧳",
+ "scene": "하오란과 여행. 공항 수하물 벨트에서 똑같은 캐리어 두 개가 나온다.",
+ "speakers": {
+  "A": "{name}",
+  "B": "浩然"
+ },
+ "learner_gender": "F",
+ "register": "casual",
+ "twist": 6,
+ "twist_type": "reveal",
+ "flags": [],
+ "variant": "north",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "zh": "停！这是我的箱子。",
+   "pinyin": "Tíng! Zhè shì wǒ de xiāngzi.",
+   "rd": "팅! 저 스 워 더 샹쯔.",
+   "ko": "잠깐! 그거 내 캐리어야.",
+   "note": "箱子 = 캐리어",
+   "tags": [
+    "form:的"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "zh": "才不是！我的也这样。",
+   "pinyin": "Cái bú shì! Wǒ de yě zhèyàng.",
+   "rd": "차이 부 스! 워 더 예 저양.",
+   "ko": "아니거든! 내 것도 이렇게 생겼어.",
+   "note": "才不是 = 절대 아니다",
+   "tags": [
+    "expr:不是吧"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "zh": "打开不就知道了？",
+   "pinyin": "Dǎkāi bú jiù zhīdào le?",
+   "rd": "다카이 부 주 즈다오 러?",
+   "ko": "열어 보면 알잖아?",
+   "note": "打开 = 열다",
+   "tags": [
+    "form:看看"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "好啊……啊，这是什么？",
+   "pinyin": "Hǎo a…… à, zhè shì shénme?",
+   "rd": "하오 아…… 아, 저 스 선머?",
+   "ko": "좋아…… 어, 이게 뭐야?",
+   "note": "什么 = 무엇",
+   "tags": [
+    "form:什么"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "别看了！衣服而已。",
+   "pinyin": "Bié kàn le! Yīfu éryǐ.",
+   "rd": "볘 칸 러! 이푸 얼이.",
+   "ko": "보지 마! 그냥 옷이야.",
+   "note": "而已 = ~일 뿐",
+   "tags": [
+    "form:别"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "zh": "粉色小熊……好可爱啊。",
+   "pinyin": "Fěnsè xiǎo xióng…… hǎo kě'ài a.",
+   "rd": "펀써 샤오 슝…… 하오 커'아이 아.",
+   "ko": "분홍 곰돌이…… 너무 귀엽다.",
+   "note": "可爱 = 귀엽다",
+   "tags": [
+    "form:还有"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "B",
+   "zh": "不是啊！妹妹的衣服！",
+   "pinyin": "Bú shì a! Mèimei de yīfu!",
+   "rd": "부 스 아! 메이메이 더 이푸!",
+   "ko": "아니야! 여동생 옷이야!",
+   "note": "妹妹 = 여동생",
+   "tags": [
+    "form:的"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "A",
+   "zh": "你没有妹妹啊……",
+   "pinyin": "Nǐ méiyǒu mèimei a……",
+   "rd": "니 메이유 메이메이 아……",
+   "ko": "너 여동생 없잖아……",
+   "note": "没有 = 없다",
+   "tags": [
+    "form:没有"
+   ]
+  }
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r1_travel_a7_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ }
+}

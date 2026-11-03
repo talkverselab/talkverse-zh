@@ -1,0 +1,129 @@
+{
+ "id": "r1_life_a8",
+ "region": "R1",
+ "island": "life",
+ "kind": "short",
+ "draft": true,
+ "purpose": [
+  "daily_life"
+ ],
+ "domain": [
+  "life"
+ ],
+ "title": "다이어트 첫날",
+ "emoji": "🥡",
+ "scene": "샤오리가 오늘부터 저녁을 끊겠다고 선언한 밤.",
+ "speakers": {
+  "A": "{name}",
+  "B": "小丽"
+ },
+ "learner_gender": "F",
+ "register": "casual",
+ "twist": 5,
+ "twist_type": "chaos",
+ "flags": [],
+ "variant": "north",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "zh": "从今晚起，我不吃晚饭了！",
+   "pinyin": "Cóng jīn wǎn qǐ, wǒ bù chī wǎnfàn le!",
+   "rd": "충 진 완 치, 워 부 츠 완판 러!",
+   "ko": "오늘 밤부터 저녁 끊을 거야!",
+   "note": "从~起 = ~부터",
+   "tags": [
+    "form:从"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "zh": "真的假的？加油！",
+   "pinyin": "Zhēn de jiǎ de? Jiāyóu!",
+   "rd": "전 더 자 더? 자유!",
+   "ko": "진짜야? 파이팅!",
+   "note": "加油 = 힘내",
+   "tags": [
+    "expr:加油"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "zh": "谁敲门啊？你点的？",
+   "pinyin": "Shéi qiāo mén a? Nǐ diǎn de?",
+   "rd": "세이 차오 먼 아? 니 뎬 더?",
+   "ko": "누가 두드려? 너 시켰어?",
+   "note": "点 = 주문하다",
+   "tags": [
+    "form:了"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "我没点！肯定是你！",
+   "pinyin": "Wǒ méi diǎn! Kěndìng shì nǐ!",
+   "rd": "워 메이 뎬! 컨딩 스 니!",
+   "ko": "나 안 시켰어! 분명 너야!",
+   "note": "肯定 = 분명히",
+   "tags": [
+    "form:吧"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "呃……昨天点的。",
+   "pinyin": "È…… zuótiān diǎn de.",
+   "rd": "어…… 쭤톈 뎬 더.",
+   "ko": "어…… 어제 시킨 거야.",
+   "note": "是~的 = ~한 것이다",
+   "tags": [
+    "form:是的"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "zh": "又敲门了！",
+   "pinyin": "Yòu qiāo mén le!",
+   "rd": "유 차오 먼 러!",
+   "ko": "또 두드려!",
+   "note": "又 = 또",
+   "tags": [
+    "form:又"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "B",
+   "zh": "那个……也是昨天的。",
+   "pinyin": "Nàge…… yě shì zuótiān de.",
+   "rd": "나거…… 예 스 쭤톈 더.",
+   "ko": "그것도…… 어제 거야.",
+   "note": "也 = ~도",
+   "tags": [
+    "form:也"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "A",
+   "zh": "你昨天到底点了多少？！",
+   "pinyin": "Nǐ zuótiān dàodǐ diǎn le duōshao?!",
+   "rd": "니 쭤톈 다오디 뎬 러 둬사오?!",
+   "ko": "너 어제 대체 몇 개 시킨 거야?!",
+   "note": "到底 = 도대체",
+   "tags": [
+    "form:多少"
+   ]
+  }
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r1_life_a8_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ }
+}

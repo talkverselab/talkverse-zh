@@ -1,0 +1,119 @@
+{
+ "id": "r1_love_c2",
+ "region": "R1",
+ "island": "love",
+ "kind": "chat",
+ "draft": true,
+ "purpose": [
+  "love"
+ ],
+ "domain": [
+  "love"
+ ],
+ "title": "하트 오십 개",
+ "emoji": "💕",
+ "scene": "밤, 샤오리가 오늘 입은 옷 사진을 보낸다.",
+ "speakers": {
+  "A": "{name}",
+  "B": "小丽"
+ },
+ "learner_gender": "M",
+ "register": "chat",
+ "twist": 3,
+ "twist_type": "chaos",
+ "flags": [
+  "romance"
+ ],
+ "variant": "north",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "zh": "今晚这身，好看不？",
+   "pinyin": "Jīn wǎn zhè shēn, hǎokàn bu?",
+   "rd": "진 완 저 선, 하오칸 부?",
+   "ko": "오늘 이 옷, 예뻐?",
+   "note": "这身 = 이 옷차림",
+   "tags": [
+    "form:吗"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "zh": "好看！真的好看！",
+   "pinyin": "Hǎokàn! Zhēn de hǎokàn!",
+   "rd": "하오칸! 전 더 하오칸!",
+   "ko": "예뻐! 진짜 예뻐!",
+   "note": "真的 = 진짜",
+   "tags": [
+    "form:很"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "zh": "你怎么发了五十个心？",
+   "pinyin": "Nǐ zěnme fā le wǔshí ge xīn?",
+   "rd": "니 쩐머 파 러 우스 거 신?",
+   "ko": "근데 하트는 왜 50개나 보냈어?",
+   "note": "心 = 하트",
+   "tags": [
+    "form:怎么"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "不是我！手机坏了！",
+   "pinyin": "Bú shì wǒ! Shǒujī huài le!",
+   "rd": "부 스 워! 서우지 화이 러!",
+   "ko": "내가 안 그랬어! 폰이 고장 났어!",
+   "note": "坏了 = 고장 났다",
+   "tags": [
+    "form:了"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "全是爱心……喜欢我？",
+   "pinyin": "Quán shì àixīn…… xǐhuan wǒ?",
+   "rd": "취안 스 아이신…… 시환 워?",
+   "ko": "전부 하트던데…… 나 좋아해?",
+   "note": "爱心 = 하트",
+   "tags": [
+    "form:都"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "zh": "……不是，手机发的。",
+   "pinyin": "…… Bú shì, shǒujī fā de.",
+   "rd": "…… 부 스, 서우지 파 더.",
+   "ko": "……아니야, 폰이 보낸 거야.",
+   "note": "发 = 보내다",
+   "tags": [
+    "form:自己"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "B",
+   "zh": "那明天带手机来见我。",
+   "pinyin": "Nà míngtiān dài shǒujī lái jiàn wǒ.",
+   "rd": "나 밍톈 다이 서우지 라이 젠 워.",
+   "ko": "그럼 내일 그 폰 데리고 나 보러 와.",
+   "note": "带 = 데리고 오다",
+   "tags": [
+    "form:来"
+   ]
+  }
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r1_love_c2_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ }
+}

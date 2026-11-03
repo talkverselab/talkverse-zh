@@ -1,0 +1,129 @@
+{
+ "id": "r1_life_c2",
+ "region": "R1",
+ "island": "life",
+ "kind": "chat",
+ "draft": true,
+ "purpose": [
+  "daily_life"
+ ],
+ "domain": [
+  "life"
+ ],
+ "title": "내 푸딩",
+ "emoji": "🍮",
+ "scene": "학습자와 샤오리는 룸메이트. 냉장고에 넣어 둔 푸딩이 사라졌다.",
+ "speakers": {
+  "A": "{name}",
+  "B": "小丽"
+ },
+ "learner_gender": "F",
+ "register": "chat",
+ "twist": 4,
+ "twist_type": "chaos",
+ "flags": [],
+ "variant": "north",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "A",
+   "zh": "我的布丁没了？谁吃的？",
+   "pinyin": "Wǒ de bùdīng méi le? Shéi chī de?",
+   "rd": "워 더 부딩 메이 러? 세이 츠 더?",
+   "ko": "내 푸딩 없어졌어? 누가 먹었어?",
+   "note": "谁 = 누구",
+   "tags": [
+    "form:谁"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "B",
+   "zh": "不知道啊，真不是我。",
+   "pinyin": "Bù zhīdào a, zhēn bú shì wǒ.",
+   "rd": "부 즈다오 아, 전 부 스 워.",
+   "ko": "몰라, 진짜 나 아니야.",
+   "note": "不知道 = 모르다",
+   "tags": [
+    "expr:不知道"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "A",
+   "zh": "你发的照片里有啊。",
+   "pinyin": "Nǐ fā de zhàopiàn li yǒu a.",
+   "rd": "니 파 더 자오폔 리 유 아.",
+   "ko": "네가 올린 사진에 있잖아.",
+   "note": "照片 = 사진",
+   "tags": [
+    "form:里"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "B",
+   "zh": "啊……那是我给你买的。",
+   "pinyin": "À…… nà shì wǒ gěi nǐ mǎi de.",
+   "rd": "아…… 나 스 워 게이 니 마이 더.",
+   "ko": "아…… 그건 내가 너 주려고 산 거야.",
+   "note": "给你买 = 너에게 사 주다",
+   "tags": [
+    "form:别的"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "A",
+   "zh": "给我买的？那我的呢？",
+   "pinyin": "Gěi wǒ mǎi de? Nà wǒ de ne?",
+   "rd": "게이 워 마이 더? 나 워 더 너?",
+   "ko": "나 주려고? 그럼 내 건?",
+   "note": "呢 = ~는?",
+   "tags": [
+    "form:在哪儿"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "B",
+   "zh": "你的也……在肚子里。",
+   "pinyin": "Nǐ de yě…… zài dùzi li.",
+   "rd": "니 더 예…… 짜이 두쯔 리.",
+   "ko": "네 것도…… 배 속에.",
+   "note": "肚子 = 배",
+   "tags": [
+    "form:在"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "A",
+   "zh": "一共几个？全吃了？",
+   "pinyin": "Yígòng jǐ ge? Quán chī le?",
+   "rd": "이궁 지 거? 취안 츠 러?",
+   "ko": "전부 몇 개? 다 먹었어?",
+   "note": "一共 = 모두",
+   "tags": [
+    "form:几"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "B",
+   "zh": "六个都吃了……太好吃了。",
+   "pinyin": "Liù ge dōu chī le…… tài hǎochī le.",
+   "rd": "류 거 더우 츠 러…… 타이 하오츠 러.",
+   "ko": "여섯 개 다 먹었어…… 너무 맛있어서.",
+   "note": "好吃 = 맛있다",
+   "tags": [
+    "form:都"
+   ]
+  }
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r1_life_c2_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ }
+}

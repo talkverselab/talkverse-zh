@@ -1,0 +1,129 @@
+{
+ "id": "r1_culture_a7",
+ "region": "R1",
+ "island": "culture",
+ "kind": "short",
+ "draft": true,
+ "purpose": [
+  "culture"
+ ],
+ "domain": [
+  "culture"
+ ],
+ "title": "시계 선물",
+ "emoji": "⏰",
+ "scene": "샤오리 할아버지 댁. 학습자가 준비한 선물은 예쁜 탁상시계.",
+ "speakers": {
+  "A": "{name}",
+  "B": "小丽"
+ },
+ "learner_gender": "M",
+ "register": "casual",
+ "twist": 4,
+ "twist_type": "slip",
+ "flags": [],
+ "variant": "north",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "A",
+   "zh": "爷爷，这是给您的！",
+   "pinyin": "Yéye, zhè shì gěi nín de!",
+   "rd": "예예, 저 스 게이 닌 더!",
+   "ko": "할아버지, 이거 드리는 거예요!",
+   "note": "给您的 = 당신께 드리는 것",
+   "tags": [
+    "form:是"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "B",
+   "zh": "等等，里面是什么？",
+   "pinyin": "Děngděng, lǐmiàn shì shénme?",
+   "rd": "덩덩, 리몐 스 선머?",
+   "ko": "잠깐, 안에 뭐야?",
+   "note": "里面 = 안",
+   "tags": [
+    "form:什么"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "A",
+   "zh": "一个钟，超好看的。",
+   "pinyin": "Yí ge zhōng, chāo hǎokàn de.",
+   "rd": "이 거 중, 차오 하오칸 더.",
+   "ko": "시계, 완전 예뻐.",
+   "note": "钟 = 시계",
+   "tags": [
+    "form:吧"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "B",
+   "zh": "钟？不行不行！",
+   "pinyin": "Zhōng? Bù xíng bù xíng!",
+   "rd": "중? 부 싱 부 싱!",
+   "ko": "시계? 안 돼 안 돼!",
+   "note": "不行 = 안 된다",
+   "tags": [
+    "form:不能"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "A",
+   "zh": "为什么？很贵的！",
+   "pinyin": "Wèishénme? Hěn guì de!",
+   "rd": "웨이선머? 헌 구이 더!",
+   "ko": "왜? 엄청 비싼 건데!",
+   "note": "贵 = 비싸다",
+   "tags": [
+    "form:为什么"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "B",
+   "zh": "送钟就是……说再见。",
+   "pinyin": "Sòng zhōng jiù shì…… shuō zàijiàn.",
+   "rd": "쑹 중 주 스…… 숴 짜이젠.",
+   "ko": "시계를 준다는 건…… 작별 인사야.",
+   "note": "送钟 = 시계 선물(送终 「임종」과 발음이 같음)",
+   "tags": [
+    "form:就是"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "A",
+   "zh": "那……叫手表吧？",
+   "pinyin": "Nà…… jiào shǒubiǎo ba?",
+   "rd": "나…… 자오 서우뱌오 바?",
+   "ko": "그럼…… 손목시계라고 할까?",
+   "note": "手表 = 손목시계",
+   "tags": [
+    "form:说"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "B",
+   "zh": "晚了，爷爷打开了……他在笑！",
+   "pinyin": "Wǎn le, yéye dǎkāi le…… tā zài xiào!",
+   "rd": "완 러, 예예 다카이 러…… 타 짜이 샤오!",
+   "ko": "늦었어, 할아버지가 여셨어…… 웃고 계셔!",
+   "note": "在笑 = 웃고 있다",
+   "tags": [
+    "form:已经了"
+   ]
+  }
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r1_culture_a7_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ }
+}

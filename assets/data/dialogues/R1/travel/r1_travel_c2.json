@@ -1,0 +1,117 @@
+{
+ "id": "r1_travel_c2",
+ "region": "R1",
+ "island": "travel",
+ "kind": "chat",
+ "draft": true,
+ "purpose": [
+  "travel"
+ ],
+ "domain": [
+  "travel"
+ ],
+ "title": "도착했어!",
+ "emoji": "✈️",
+ "scene": "학습자가 샤오리를 만나러 왔다. 둘 다 「입구」에 있다는데 서로가 안 보인다.",
+ "speakers": {
+  "A": "{name}",
+  "B": "小丽"
+ },
+ "learner_gender": "F",
+ "register": "chat",
+ "twist": 6,
+ "twist_type": "chaos",
+ "flags": [],
+ "variant": "north",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "A",
+   "zh": "到了到了！你在哪儿呢？",
+   "pinyin": "Dào le dào le! Nǐ zài nǎr ne?",
+   "rd": "다오 러 다오 러! 니 짜이 날 너?",
+   "ko": "도착했어 도착했어! 너 어디야?",
+   "note": "到了 = 도착했다",
+   "tags": [
+    "form:了"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "B",
+   "zh": "门口等你呀。你呢？",
+   "pinyin": "Ménkǒu děng nǐ ya. Nǐ ne?",
+   "rd": "먼커우 덩 니 야. 니 너?",
+   "ko": "입구에서 기다리고 있어. 너는?",
+   "note": "等你 = 너를 기다리다",
+   "tags": [
+    "form:呢"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "A",
+   "zh": "我也在门口啊。",
+   "pinyin": "Wǒ yě zài ménkǒu a.",
+   "rd": "워 예 짜이 먼커우 아.",
+   "ko": "나도 입구인데.",
+   "note": "也 = ~도",
+   "tags": [
+    "form:也"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "B",
+   "zh": "拍张照发我，想看你。",
+   "pinyin": "Pāi zhāng zhào fā wǒ, xiǎng kàn nǐ.",
+   "rd": "파이 장 자오 파 워, 샹 칸 니.",
+   "ko": "사진 찍어서 보내 봐, 보고 싶어.",
+   "note": "拍照 = 사진 찍다",
+   "tags": [
+    "form:给"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "A",
+   "zh": "好，发了！",
+   "pinyin": "Hǎo, fā le!",
+   "rd": "하오, 파 러!",
+   "ko": "응, 보냈어!",
+   "note": "发 = 보내다",
+   "tags": [
+    "form:了吗"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "B",
+   "zh": "这是上海？我在北京啊！",
+   "pinyin": "Zhè shì Shànghǎi? Wǒ zài Běijīng a!",
+   "rd": "저 스 상하이? 워 짜이 베이징 아!",
+   "ko": "이거 상하이야? 나 베이징인데!",
+   "note": "上海·北京 = 상하이·베이징",
+   "tags": [
+    "form:在"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "A",
+   "zh": "啊？！我坐错飞机了？",
+   "pinyin": "À?! Wǒ zuò cuò fēijī le?",
+   "rd": "아?! 워 쭤 춰 페이지 러?",
+   "ko": "뭐?! 나 비행기 잘못 탔어?",
+   "note": "坐错 = 잘못 타다",
+   "tags": [
+    "form:错"
+   ]
+  }
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r1_travel_c2_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ }
+}

@@ -1,0 +1,129 @@
+{
+ "id": "r1_friends_a8",
+ "region": "R1",
+ "island": "friends",
+ "kind": "short",
+ "draft": true,
+ "purpose": [
+  "making_friends"
+ ],
+ "domain": [
+  "friends"
+ ],
+ "title": "다 예쁘다니까",
+ "emoji": "👗",
+ "scene": "옷 가게 탈의실 앞. 위에가 옷을 갈아입고 나올 때마다 묻는다.",
+ "speakers": {
+  "A": "{name}",
+  "B": "悦"
+ },
+ "learner_gender": "F",
+ "register": "casual",
+ "twist": 6,
+ "twist_type": "chaos",
+ "flags": [],
+ "variant": "north",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "zh": "这件怎么样？",
+   "pinyin": "Zhè jiàn zěnmeyàng?",
+   "rd": "저 젠 쩐머양?",
+   "ko": "이거 어때?",
+   "note": "件 = 벌(옷 양사)",
+   "tags": [
+    "form:吗"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "zh": "太好看了吧！",
+   "pinyin": "Tài hǎokàn le ba!",
+   "rd": "타이 하오칸 러 바!",
+   "ko": "너무 예쁘잖아!",
+   "note": "太~了 = 너무 ~하다",
+   "tags": [
+    "form:很"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "zh": "那换这件呢？",
+   "pinyin": "Nà huàn zhè jiàn ne?",
+   "rd": "나 환 저 젠 너?",
+   "ko": "그럼 이걸로 바꾸면?",
+   "note": "换 = 바꾸다",
+   "tags": [
+    "form:呢"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "也超好看！",
+   "pinyin": "Yě chāo hǎokàn!",
+   "rd": "예 차오 하오칸!",
+   "ko": "이것도 엄청 예뻐!",
+   "note": "超 = 엄청",
+   "tags": [
+    "form:也"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "你想让我一直换？",
+   "pinyin": "Nǐ xiǎng ràng wǒ yìzhí huàn?",
+   "rd": "니 샹 랑 워 이즈 환?",
+   "ko": "너 나 계속 갈아입히려고?",
+   "note": "让 = ~하게 하다",
+   "tags": [
+    "form:怎么"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "zh": "想……你穿什么都好看。",
+   "pinyin": "Xiǎng…… nǐ chuān shénme dōu hǎokàn.",
+   "rd": "샹…… 니 촨 선머 더우 하오칸.",
+   "ko": "응…… 넌 뭘 입어도 예뻐.",
+   "note": "什么都 = 뭐든지",
+   "tags": [
+    "form:什么都"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "B",
+   "zh": "好啊，那全买了！",
+   "pinyin": "Hǎo a, nà quán mǎi le!",
+   "rd": "하오 아, 나 취안 마이 러!",
+   "ko": "좋아, 그럼 전부 살래!",
+   "note": "全 = 전부",
+   "tags": [
+    "form:都"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "A",
+   "zh": "全买？十件啊！",
+   "pinyin": "Quán mǎi? Shí jiàn a!",
+   "rd": "취안 마이? 스 젠 아!",
+   "ko": "전부? 열 벌이야!",
+   "note": "十件 = 열 벌",
+   "tags": [
+    "form:吗"
+   ]
+  }
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r1_friends_a8_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ }
+}

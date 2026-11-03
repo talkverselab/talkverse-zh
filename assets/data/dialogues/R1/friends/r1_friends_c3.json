@@ -1,0 +1,117 @@
+{
+ "id": "r1_friends_c3",
+ "region": "R1",
+ "island": "friends",
+ "kind": "chat",
+ "draft": true,
+ "purpose": [
+  "making_friends"
+ ],
+ "domain": [
+  "friends"
+ ],
+ "title": "새벽 영상통화",
+ "emoji": "📹",
+ "scene": "아침, 하오란에게서 메시지. 학습자가 자다가 영상통화를 세 번이나 걸었다.",
+ "speakers": {
+  "A": "{name}",
+  "B": "浩然"
+ },
+ "learner_gender": "F",
+ "register": "chat",
+ "twist": 5,
+ "twist_type": "chaos",
+ "flags": [],
+ "variant": "north",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "zh": "昨晚你连打我三次视频？😂",
+   "pinyin": "Zuó wǎn nǐ lián dǎ wǒ sān cì shìpín?",
+   "rd": "쭤 완 니 롄 다 워 싼 츠 스핀?",
+   "ko": "어젯밤에 나한테 영상통화 연달아 세 번?😂",
+   "note": "连~三次 = 연달아 세 번",
+   "tags": [
+    "form:了"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "zh": "没有！我在睡觉。",
+   "pinyin": "Méiyǒu! Wǒ zài shuìjiào.",
+   "rd": "메이유! 워 짜이 수이자오.",
+   "ko": "아니! 나 자고 있었어.",
+   "note": "在 = ~하는 중",
+   "tags": [
+    "form:在"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "zh": "视频啊，我都接了。",
+   "pinyin": "Shìpín a, wǒ dōu jiē le.",
+   "rd": "스핀 아, 워 더우 제 러.",
+   "ko": "영상통화로, 다 받았는데.",
+   "note": "接 = (전화를) 받다",
+   "tags": [
+    "form:次"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "啊？！你看到什么了？",
+   "pinyin": "À?! Nǐ kàn dào shénme le?",
+   "rd": "아?! 니 칸 다오 선머 러?",
+   "ko": "뭐?! 너 뭐 봤어?",
+   "note": "看到 = 보았다",
+   "tags": [
+    "form:到"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "你脸好白，像鬼啊！😱",
+   "pinyin": "Nǐ liǎn hǎo bái, xiàng guǐ a!",
+   "rd": "니 롄 하오 바이, 샹 구이 아!",
+   "ko": "네 얼굴 완전 하얘, 귀신 같았어!😱",
+   "note": "像 = ~같다",
+   "tags": [
+    "form:的"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "zh": "那是面膜！别告诉别人！",
+   "pinyin": "Nà shì miànmó! Bié gàosu biérén!",
+   "rd": "나 스 몐모! 볘 가오쑤 볘런!",
+   "ko": "그거 마스크팩이야! 아무한테도 말하지 마!",
+   "note": "告诉 = 알리다",
+   "tags": [
+    "form:别"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "B",
+   "zh": "晚了，群里都说好看……",
+   "pinyin": "Wǎn le, qún lǐ dōu shuō hǎokàn……",
+   "rd": "완 러, 췬 리 더우 숴 하오칸……",
+   "ko": "늦었어, 단톡방에서 다들 예쁘대……",
+   "note": "群 = 단톡방",
+   "tags": [
+    "form:都了"
+   ]
+  }
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r1_friends_c3_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ }
+}

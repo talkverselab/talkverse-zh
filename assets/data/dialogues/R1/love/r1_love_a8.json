@@ -1,0 +1,131 @@
+{
+ "id": "r1_love_a8",
+ "region": "R1",
+ "island": "love",
+ "kind": "short",
+ "draft": true,
+ "purpose": [
+  "love"
+ ],
+ "domain": [
+  "love"
+ ],
+ "title": "관람차 꼭대기",
+ "emoji": "🎡",
+ "scene": "놀이공원. 높은 걸 무서워하는 샤오리가 관람차를 타자고 한다.",
+ "speakers": {
+  "A": "{name}",
+  "B": "小丽"
+ },
+ "learner_gender": "M",
+ "register": "casual",
+ "twist": 5,
+ "twist_type": "emotion",
+ "flags": [
+  "romance"
+ ],
+ "variant": "north",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "zh": "我们去坐那个呀！",
+   "pinyin": "Wǒmen qù zuò nàge ya!",
+   "rd": "워먼 취 쭤 나거 야!",
+   "ko": "우리 저거 타러 가자!",
+   "note": "坐 = 타다",
+   "tags": [
+    "form:吧"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "zh": "你不怕高的吗？",
+   "pinyin": "Nǐ bú pà gāo de ma?",
+   "rd": "니 부 파 가오 더 마?",
+   "ko": "너 높은 데 안 무서워?",
+   "note": "怕高 = 높은 곳을 무서워하다",
+   "tags": [
+    "form:吗"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "zh": "谁怕了！……就一点。",
+   "pinyin": "Shéi pà le! …… jiù yìdiǎn.",
+   "rd": "세이 파 러! …… 주 이뎬.",
+   "ko": "누가 무섭대! ……쪼끔만.",
+   "note": "就一点 = 그냥 조금",
+   "tags": [
+    "form:一点"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "那你干嘛要坐啊？",
+   "pinyin": "Nà nǐ gànmá yào zuò a?",
+   "rd": "나 니 간마 야오 쭤 아?",
+   "ko": "그럼 왜 타자는 건데?",
+   "note": "干嘛 = 왜",
+   "tags": [
+    "form:为什么"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "想跟你一起嘛！快上！",
+   "pinyin": "Xiǎng gēn nǐ yìqǐ ma! Kuài shàng!",
+   "rd": "샹 건 니 이치 마! 콰이 상!",
+   "ko": "너랑 같이 타고 싶으니까! 빨리 타!",
+   "note": "跟~一起 = ~와 함께",
+   "tags": [
+    "form:别"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "zh": "到顶了！……因为我？",
+   "pinyin": "Dào dǐng le! …… Yīnwèi wǒ?",
+   "rd": "다오 딩 러! …… 인웨이 워?",
+   "ko": "꼭대기다! ……나 때문에?",
+   "note": "顶 = 꼭대기",
+   "tags": [
+    "form:最"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "B",
+   "zh": "别动啊！手给我……",
+   "pinyin": "Bié dòng a! Shǒu gěi wǒ……",
+   "rd": "볘 둥 아! 서우 게이 워……",
+   "ko": "움직이지 마! 손 줘……",
+   "note": "给我 = 나에게 줘",
+   "tags": [
+    "form:给"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "A",
+   "zh": "下去了，还拉着吗？",
+   "pinyin": "Xiàqu le, hái lāzhe ma?",
+   "rd": "샤취 러, 하이 라저 마?",
+   "ko": "내려가서도 계속 잡고 있을 거야?",
+   "note": "拉着 = 잡고 있다",
+   "tags": [
+    "form:以后"
+   ]
+  }
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r1_love_a8_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ }
+}
