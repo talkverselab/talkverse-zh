@@ -1,0 +1,117 @@
+{
+ "id": "r1_friends_a6",
+ "region": "R1",
+ "island": "friends",
+ "kind": "short",
+ "draft": true,
+ "purpose": [
+  "making_friends"
+ ],
+ "domain": [
+  "friends"
+ ],
+ "title": "몰래 공부",
+ "emoji": "📖",
+ "scene": "도서관. 맞은편 하오란이 책을 팔로 가리고 뭔가를 열심히 공부한다.",
+ "speakers": {
+  "A": "{name}",
+  "B": "浩然"
+ },
+ "learner_gender": "M",
+ "register": "casual",
+ "twist": 6,
+ "twist_type": "reveal",
+ "flags": [],
+ "variant": "north",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "zh": "你看我干嘛？",
+   "pinyin": "Nǐ kàn wǒ gànmá?",
+   "rd": "니 칸 워 간마?",
+   "ko": "나 왜 봐?",
+   "note": "干嘛 = 왜",
+   "tags": [
+    "form:在"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "zh": "你在看什么？给我看看。",
+   "pinyin": "Nǐ zài kàn shénme? Gěi wǒ kànkan.",
+   "rd": "니 짜이 칸 선머? 게이 워 칸칸.",
+   "ko": "뭐 보는데? 좀 보여 줘.",
+   "note": "看看 = 좀 보다",
+   "tags": [
+    "form:呢"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "zh": "秘密，不给看。",
+   "pinyin": "Mìmì, bù gěi kàn.",
+   "rd": "미미, 부 게이 칸.",
+   "ko": "비밀이야, 안 보여 줘.",
+   "note": "秘密 = 비밀",
+   "tags": [
+    "form:也"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "是情书吧？看一眼！",
+   "pinyin": "Shì qíngshū ba? Kàn yì yǎn!",
+   "rd": "스 칭수 바? 칸 이 옌!",
+   "ko": "연애편지지? 한 번만 보자!",
+   "note": "看一眼 = 한 번 보다",
+   "tags": [
+    "form:看看"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "不是！别抢！",
+   "pinyin": "Bú shì! Bié qiǎng!",
+   "rd": "부 스! 볘 창!",
+   "ko": "아니야! 뺏지 마!",
+   "note": "抢 = 뺏다",
+   "tags": [
+    "expr:不行"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "zh": "韩语？为我学的？",
+   "pinyin": "Hányǔ? Wèi wǒ xué de?",
+   "rd": "한위? 웨이 워 쉐 더?",
+   "ko": "한국어? 나 때문에 배우는 거야?",
+   "note": "为 = ~를 위해",
+   "tags": [
+    "form:是"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "B",
+   "zh": "想听懂你……别笑。",
+   "pinyin": "Xiǎng tīng dǒng nǐ…… bié xiào.",
+   "rd": "샹 팅 둥 니…… 볘 샤오.",
+   "ko": "네 말 알아듣고 싶어서…… 웃지 마.",
+   "note": "听懂 = 알아듣다",
+   "tags": [
+    "form:想"
+   ]
+  }
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r1_friends_a6_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ }
+}

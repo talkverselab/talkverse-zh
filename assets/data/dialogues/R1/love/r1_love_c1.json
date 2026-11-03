@@ -1,0 +1,119 @@
+{
+ "id": "r1_love_c1",
+ "region": "R1",
+ "island": "love",
+ "kind": "chat",
+ "draft": true,
+ "purpose": [
+  "love"
+ ],
+ "domain": [
+  "love"
+ ],
+ "title": "새벽 2시",
+ "emoji": "🌙",
+ "scene": "새벽 2시, 위에에게서 「자?」 한 줄이 온다.",
+ "speakers": {
+  "A": "{name}",
+  "B": "悦"
+ },
+ "learner_gender": "M",
+ "register": "chat",
+ "twist": 3,
+ "twist_type": "reveal",
+ "flags": [
+  "romance"
+ ],
+ "variant": "north",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "zh": "还醒着？",
+   "pinyin": "Hái xǐngzhe?",
+   "rd": "하이 싱저?",
+   "ko": "아직 깨어 있어?",
+   "note": "醒着 = 깨어 있다",
+   "tags": [
+    "form:了吗"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "zh": "嗯。找我？",
+   "pinyin": "Èn. Zhǎo wǒ?",
+   "rd": "언. 자오 워?",
+   "ko": "응. 나 찾아?",
+   "note": "找 = 찾다",
+   "tags": [
+    "expr:怎么了"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "zh": "啊啊，发错了！",
+   "pinyin": "À à, fā cuò le!",
+   "rd": "아 아, 파 춰 러!",
+   "ko": "아아, 잘못 보냈어!",
+   "note": "发错 = 잘못 보내다",
+   "tags": [
+    "form:错"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "发什么了？",
+   "pinyin": "Fā shénme le?",
+   "rd": "파 선머 러?",
+   "ko": "뭐 보냈는데?",
+   "note": "发 = 보내다",
+   "tags": [
+    "expr:晚安"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "……说想你了。",
+   "pinyin": "…… Shuō xiǎng nǐ le.",
+   "rd": "…… 숴 샹 니 러.",
+   "ko": "……보고 싶다고.",
+   "note": "想你 = 네가 보고 싶다",
+   "tags": [
+    "form:其实"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "zh": "发给谁的？",
+   "pinyin": "Fā gěi shéi de?",
+   "rd": "파 게이 세이 더?",
+   "ko": "누구한테 보낸 건데?",
+   "note": "给谁 = 누구에게",
+   "tags": [
+    "form:想"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "B",
+   "zh": "就你。别笑我。",
+   "pinyin": "Jiù nǐ. Bié xiào wǒ.",
+   "rd": "주 니. 볘 샤오 워.",
+   "ko": "너한테. 웃지 마.",
+   "note": "就 = 바로 ~만",
+   "tags": [
+    "form:就"
+   ]
+  }
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r1_love_c1_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ }
+}

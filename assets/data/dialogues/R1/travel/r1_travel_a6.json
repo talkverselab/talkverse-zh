@@ -1,0 +1,129 @@
+{
+ "id": "r1_travel_a6",
+ "region": "R1",
+ "island": "travel",
+ "kind": "short",
+ "draft": true,
+ "purpose": [
+  "travel"
+ ],
+ "domain": [
+  "travel"
+ ],
+ "title": "신혼부부 방",
+ "emoji": "🏨",
+ "scene": "호텔 프런트. 혼자 여행 온 학습자의 예약이 하루 어긋나 있다.",
+ "speakers": {
+  "A": "{name}",
+  "B": "服务员"
+ },
+ "learner_gender": "F",
+ "register": "polite",
+ "twist": 5,
+ "twist_type": "chaos",
+ "flags": [],
+ "variant": "north",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "A",
+   "zh": "你好，我订了房。",
+   "pinyin": "Nǐ hǎo, wǒ dìng le fáng.",
+   "rd": "니 하오, 워 딩 러 팡.",
+   "ko": "안녕하세요, 방 예약했는데요.",
+   "note": "订房 = 방을 예약하다",
+   "tags": [
+    "form:有"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "B",
+   "zh": "好的，请给我护照。",
+   "pinyin": "Hǎo de, qǐng gěi wǒ hùzhào.",
+   "rd": "하오 더, 칭 게이 워 후자오.",
+   "ko": "네, 여권 주시겠어요?",
+   "note": "护照 = 여권",
+   "tags": [
+    "form:请"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "A",
+   "zh": "给您。",
+   "pinyin": "Gěi nín.",
+   "rd": "게이 닌.",
+   "ko": "여기요.",
+   "note": "您 = 당신(존칭)",
+   "tags": [
+    "form:您"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "B",
+   "zh": "嗯……您是明天的。",
+   "pinyin": "Èn…… nín shì míngtiān de.",
+   "rd": "언…… 닌 스 밍톈 더.",
+   "ko": "음…… 고객님은 내일이에요.",
+   "note": "明天 = 내일",
+   "tags": [
+    "form:是的"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "A",
+   "zh": "明天？！我今天要住！",
+   "pinyin": "Míngtiān?! Wǒ jīntiān yào zhù!",
+   "rd": "밍톈?! 워 진톈 야오 주!",
+   "ko": "내일이요?! 저 오늘 묵어야 하는데요!",
+   "note": "住 = 묵다",
+   "tags": [
+    "form:没有"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "B",
+   "zh": "今天只剩一间，是蜜月房。",
+   "pinyin": "Jīntiān zhǐ shèng yì jiān, shì mìyuè fáng.",
+   "rd": "진톈 즈 성 이 젠, 스 미웨 팡.",
+   "ko": "오늘은 딱 하나, 허니문 룸만 남았어요.",
+   "note": "只剩 = ~만 남다",
+   "tags": [
+    "form:只有"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "A",
+   "zh": "蜜月房？我一个人……",
+   "pinyin": "Mìyuè fáng? Wǒ yí ge rén……",
+   "rd": "미웨 팡? 워 이 거 런……",
+   "ko": "허니문 룸이요? 저 혼자인데……",
+   "note": "一个人 = 혼자",
+   "tags": [
+    "form:也"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "B",
+   "zh": "一个人也浪漫！还送花和蛋糕！",
+   "pinyin": "Yí ge rén yě làngmàn! Hái sòng huā hé dàngāo!",
+   "rd": "이 거 런 예 랑만! 하이 쑹 화 허 당아오!",
+   "ko": "혼자도 로맨틱하죠! 꽃이랑 케이크도 드려요!",
+   "note": "浪漫 = 로맨틱하다",
+   "tags": [
+    "form:还"
+   ]
+  }
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r1_travel_a6_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ }
+}

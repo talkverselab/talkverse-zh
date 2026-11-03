@@ -1,0 +1,117 @@
+{
+ "id": "r1_friends_c2",
+ "region": "R1",
+ "island": "friends",
+ "kind": "chat",
+ "draft": true,
+ "purpose": [
+  "making_friends"
+ ],
+ "domain": [
+  "friends"
+ ],
+ "title": "아침 7시",
+ "emoji": "🌅",
+ "scene": "새벽, 하오란과 해돋이를 보기로 한 날. 학습자는 아직 침대 안이다.",
+ "speakers": {
+  "A": "{name}",
+  "B": "浩然"
+ },
+ "learner_gender": "F",
+ "register": "chat",
+ "twist": 3,
+ "twist_type": "slip",
+ "flags": [],
+ "variant": "north",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "zh": "我到了～你人呢？",
+   "pinyin": "Wǒ dào le～ nǐ rén ne?",
+   "rd": "워 다오 러～ 니 런 너?",
+   "ko": "나 도착했어～ 너 어디야?",
+   "note": "你人呢 = 너 어디야(채팅)",
+   "tags": [
+    "form:了"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "zh": "啊？不是晚上七点吗？",
+   "pinyin": "À? Bú shì wǎnshang qī diǎn ma?",
+   "rd": "아? 부 스 완상 치 뎬 마?",
+   "ko": "어? 저녁 7시 아니었어?",
+   "note": "不是…吗 = ~아니었어?",
+   "tags": [
+    "form:不是…吗"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "zh": "早上七点！日出啊！",
+   "pinyin": "Zǎoshang qī diǎn! Rìchū a!",
+   "rd": "짜오상 치 뎬! 르추 아!",
+   "ko": "아침 7시! 해돋이잖아!",
+   "note": "日出 = 해돋이",
+   "tags": [
+    "form:点"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "我还在床上💤",
+   "pinyin": "Wǒ hái zài chuáng shang",
+   "rd": "워 하이 짜이 촹 상",
+   "ko": "나 아직 침대야💤",
+   "note": "还在 = 아직 ~에 있다",
+   "tags": [
+    "form:几"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "太阳都出来了！",
+   "pinyin": "Tàiyáng dōu chūlai le!",
+   "rd": "타이양 더우 추라이 러!",
+   "ko": "해 벌써 다 떴어!",
+   "note": "都~了 = 벌써 ~했다",
+   "tags": [
+    "form:都了"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "zh": "对不起！我马上到！",
+   "pinyin": "Duìbuqǐ! Wǒ mǎshàng dào!",
+   "rd": "두이부치! 워 마상 다오!",
+   "ko": "미안! 금방 갈게!",
+   "note": "马上 = 곧",
+   "tags": [
+    "expr:马上"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "B",
+   "zh": "不急。太阳等你，我也等。",
+   "pinyin": "Bù jí. Tàiyáng děng nǐ, wǒ yě děng.",
+   "rd": "부 지. 타이양 덩 니, 워 예 덩.",
+   "ko": "안 급해. 해도 기다려, 나도 기다리고.",
+   "note": "等 = 기다리다",
+   "tags": [
+    "form:还有"
+   ]
+  }
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r1_friends_c2_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ }
+}

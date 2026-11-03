@@ -1,0 +1,131 @@
+{
+ "id": "r1_love_a7",
+ "region": "R1",
+ "island": "love",
+ "kind": "short",
+ "draft": true,
+ "purpose": [
+  "love"
+ ],
+ "domain": [
+  "love"
+ ],
+ "title": "첫 요리",
+ "emoji": "🍳",
+ "scene": "샤오리네 집. 샤오리가 처음으로 밥을 해 주겠다며 부엌으로 들어간다.",
+ "speakers": {
+  "A": "{name}",
+  "B": "小丽"
+ },
+ "learner_gender": "M",
+ "register": "casual",
+ "twist": 4,
+ "twist_type": "chaos",
+ "flags": [
+  "romance"
+ ],
+ "variant": "north",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "zh": "今天我给你做饭！",
+   "pinyin": "Jīntiān wǒ gěi nǐ zuò fàn!",
+   "rd": "진톈 워 게이 니 쭤 판!",
+   "ko": "오늘은 내가 밥 해 줄게!",
+   "note": "给你做饭 = 너에게 밥을 해 주다",
+   "tags": [
+    "form:给"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "zh": "真的？你会做饭吗？",
+   "pinyin": "Zhēn de? Nǐ huì zuò fàn ma?",
+   "rd": "전 더? 니 후이 쭤 판 마?",
+   "ko": "진짜? 너 요리할 줄 알아?",
+   "note": "会 = ~할 줄 안다",
+   "tags": [
+    "form:会"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "zh": "会啊！你坐着等。",
+   "pinyin": "Huì a! Nǐ zuòzhe děng.",
+   "rd": "후이 아! 니 쭤저 덩.",
+   "ko": "할 줄 알지! 앉아서 기다려.",
+   "note": "坐着 = 앉은 채로",
+   "tags": [
+    "form:着"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "小丽……怎么冒烟了？",
+   "pinyin": "Xiǎolì…… zěnme mào yān le?",
+   "rd": "샤오리…… 쩐머 마오 옌 러?",
+   "ko": "샤오리…… 왜 연기가 나?",
+   "note": "冒烟 = 연기가 나다",
+   "tags": [
+    "form:怎么"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "没事没事！新做法！",
+   "pinyin": "Méishì méishì! Xīn zuòfǎ!",
+   "rd": "메이스 메이스! 신 쭤파!",
+   "ko": "괜찮아 괜찮아! 새 요리법이야!",
+   "note": "做法 = 만드는 법",
+   "tags": [
+    "expr:没事"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "zh": "邻居都来敲门了！",
+   "pinyin": "Línjū dōu lái qiāo mén le!",
+   "rd": "린쥐 더우 라이 차오 먼 러!",
+   "ko": "이웃들까지 문 두드리러 왔어!",
+   "note": "敲门 = 노크하다",
+   "tags": [
+    "form:都了"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "B",
+   "zh": "出去吃吧……我只想跟你吃饭。",
+   "pinyin": "Chūqu chī ba…… wǒ zhǐ xiǎng gēn nǐ chī fàn.",
+   "rd": "추취 츠 바…… 워 즈 샹 건 니 츠 판.",
+   "ko": "나가서 먹자…… 그냥 너랑 밥 먹고 싶었어.",
+   "note": "只 = 그냥 ~만",
+   "tags": [
+    "form:跟"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "A",
+   "zh": "那以后天天出去吃！",
+   "pinyin": "Nà yǐhòu tiāntiān chūqu chī!",
+   "rd": "나 이허우 톈톈 추취 츠!",
+   "ko": "그럼 앞으로 매일 나가서 먹자!",
+   "note": "天天 = 매일",
+   "tags": [
+    "form:天天"
+   ]
+  }
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r1_love_a7_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ }
+}

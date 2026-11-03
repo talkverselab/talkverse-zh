@@ -1,0 +1,129 @@
+{
+ "id": "r1_culture_a6",
+ "region": "R1",
+ "island": "culture",
+ "kind": "short",
+ "draft": true,
+ "purpose": [
+  "culture"
+ ],
+ "domain": [
+  "culture"
+ ],
+ "title": "장수면 한 가닥",
+ "emoji": "🍜",
+ "scene": "하오란 할머니 생신. 장수면은 끊지 않고 한 번에 먹어야 한다.",
+ "speakers": {
+  "A": "{name}",
+  "B": "浩然"
+ },
+ "learner_gender": "F",
+ "register": "casual",
+ "twist": 5,
+ "twist_type": "chaos",
+ "flags": [],
+ "variant": "north",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "zh": "长寿面得一口气吃完。",
+   "pinyin": "Chángshòu miàn děi yì kǒu qì chī wán.",
+   "rd": "창서우 몐 데이 이 커우 치 츠 완.",
+   "ko": "장수면은 한 번에 다 먹어야 해.",
+   "note": "一口气 = 단숨에",
+   "tags": [
+    "form:不能"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "zh": "啊？一口气怎么吃？",
+   "pinyin": "À? Yì kǒu qì zěnme chī?",
+   "rd": "아? 이 커우 치 쩐머 츠?",
+   "ko": "어? 단숨에 어떻게 먹어?",
+   "note": "怎么 = 어떻게",
+   "tags": [
+    "form:怎么"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "zh": "不能咬断，别停啊。",
+   "pinyin": "Bù néng yǎo duàn, bié tíng a.",
+   "rd": "부 넝 야오 돤, 볘 팅 아.",
+   "ko": "끊어 먹으면 안 돼, 멈추지 말고.",
+   "note": "咬断 = 깨물어 끊다",
+   "tags": [
+    "form:不要"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "好……这面也太长了。",
+   "pinyin": "Hǎo…… zhè miàn yě tài cháng le.",
+   "rd": "하오…… 저 몐 예 타이 창 러.",
+   "ko": "알았어…… 근데 이 면 너무 길다.",
+   "note": "也太~了 = 너무 ~하다",
+   "tags": [
+    "form:多"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "一碗就一根，奶奶做的。",
+   "pinyin": "Yì wǎn jiù yì gēn, nǎinai zuò de.",
+   "rd": "이 완 주 이 건, 나이나이 쭤 더.",
+   "ko": "한 그릇에 딱 한 가닥, 할머니가 만드신 거야.",
+   "note": "根 = 가닥(양사)",
+   "tags": [
+    "form:的"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "zh": "还没完……快断了！",
+   "pinyin": "Hái méi wán…… kuài duàn le!",
+   "rd": "하이 메이 완…… 콰이 돤 러!",
+   "ko": "아직 안 끝나…… 끊어질 것 같아!",
+   "note": "快~了 = 곧 ~한다",
+   "tags": [
+    "form:还没"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "B",
+   "zh": "别咬！奶奶在看你！",
+   "pinyin": "Bié yǎo! Nǎinai zài kàn nǐ!",
+   "rd": "볘 야오! 나이나이 짜이 칸 니!",
+   "ko": "깨물지 마! 할머니가 보고 계셔!",
+   "note": "在 = ~하는 중",
+   "tags": [
+    "expr:加油"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "A",
+   "zh": "吃完了！奶奶，生日快乐！",
+   "pinyin": "Chī wán le! Nǎinai, shēngrì kuàilè!",
+   "rd": "츠 완 러! 나이나이, 성르 콰이러!",
+   "ko": "다 먹었다! 할머니, 생신 축하드려요!",
+   "note": "生日快乐 = 생일 축하해",
+   "tags": [
+    "expr:生日快乐"
+   ]
+  }
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r1_culture_a6_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ }
+}

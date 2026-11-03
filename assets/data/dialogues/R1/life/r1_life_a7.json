@@ -1,0 +1,119 @@
+{
+ "id": "r1_life_a7",
+ "region": "R1",
+ "island": "life",
+ "kind": "short",
+ "draft": true,
+ "purpose": [
+  "daily_life"
+ ],
+ "domain": [
+  "life"
+ ],
+ "title": "핑크가 된 원피스",
+ "emoji": "🧺",
+ "scene": "아파트 공용 세탁실. 세탁기에서 위에의 흰 옷이 전부 분홍색이 되어 나온다.",
+ "speakers": {
+  "A": "{name}",
+  "B": "悦"
+ },
+ "learner_gender": "M",
+ "register": "casual",
+ "twist": 4,
+ "twist_type": "chaos",
+ "flags": [
+  "romance"
+ ],
+ "variant": "north",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "zh": "这袜子谁的啊？",
+   "pinyin": "Zhè wàzi shéi de a?",
+   "rd": "저 와쯔 세이 더 아?",
+   "ko": "이 양말 누구 거야?",
+   "note": "袜子 = 양말",
+   "tags": [
+    "form:吗"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "zh": "我的啊！怎么了？",
+   "pinyin": "Wǒ de a! Zěnme le?",
+   "rd": "워 더 아! 쩐머 러?",
+   "ko": "내 거야! 왜?",
+   "note": "怎么了 = 왜 그래?",
+   "tags": [
+    "expr:怎么了"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "zh": "我白衣服全粉了！",
+   "pinyin": "Wǒ bái yīfu quán fěn le!",
+   "rd": "워 바이 이푸 취안 펀 러!",
+   "ko": "내 흰 옷 전부 분홍 됐어!",
+   "note": "全~了 = 전부 ~해 버렸다",
+   "tags": [
+    "form:的"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "啊？！全粉了？！",
+   "pinyin": "À?! Quán fěn le?!",
+   "rd": "아?! 취안 펀 러?!",
+   "ko": "어?! 전부 분홍?!",
+   "note": "粉 = 분홍",
+   "tags": [
+    "form:变成"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "一件都没了！白的一件都没了！",
+   "pinyin": "Yí jiàn dōu méi le! Bái de yí jiàn dōu méi le!",
+   "rd": "이 젠 더우 메이 러! 바이 더 이 젠 더우 메이 러!",
+   "ko": "한 벌도 없어! 흰 옷이 한 벌도 안 남았어!",
+   "note": "一件都没 = 한 벌도 없다",
+   "tags": [
+    "form:都"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "zh": "对不起！我全赔你！",
+   "pinyin": "Duìbuqǐ! Wǒ quán péi nǐ!",
+   "rd": "두이부치! 워 취안 페이 니!",
+   "ko": "미안해! 내가 다 물어줄게!",
+   "note": "赔 = 물어주다",
+   "tags": [
+    "form:给"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "B",
+   "zh": "请我吃饭。我穿粉色给你看。",
+   "pinyin": "Qǐng wǒ chī fàn. Wǒ chuān fěnsè gěi nǐ kàn.",
+   "rd": "칭 워 츠 판. 워 촨 펀써 게이 니 칸.",
+   "ko": "밥 사. 분홍색 입고 보여 줄게.",
+   "note": "请 = 한턱내다",
+   "tags": [
+    "form:请"
+   ]
+  }
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r1_life_a7_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ }
+}

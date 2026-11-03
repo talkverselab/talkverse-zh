@@ -1,0 +1,129 @@
+{
+ "id": "r1_life_a6",
+ "region": "R1",
+ "island": "life",
+ "kind": "short",
+ "draft": true,
+ "purpose": [
+  "daily_life"
+ ],
+ "domain": [
+  "life"
+ ],
+ "title": "폰 어디 갔지",
+ "emoji": "📱",
+ "scene": "외출 직전 현관. 학습자가 폰을 찾느라 난리고, 샤오리는 기가 막힌다.",
+ "speakers": {
+  "A": "{name}",
+  "B": "小丽"
+ },
+ "learner_gender": "F",
+ "register": "casual",
+ "twist": 4,
+ "twist_type": "chaos",
+ "flags": [],
+ "variant": "north",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "A",
+   "zh": "小丽，我手机丢了！",
+   "pinyin": "Xiǎolì, wǒ shǒujī diū le!",
+   "rd": "샤오리, 워 서우지 듀 러!",
+   "ko": "샤오리, 나 폰 잃어버렸어!",
+   "note": "丢了 = 잃어버렸다",
+   "tags": [
+    "expr:不见了"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "B",
+   "zh": "别急，我给你打。",
+   "pinyin": "Bié jí, wǒ gěi nǐ dǎ.",
+   "rd": "볘 지, 워 게이 니 다.",
+   "ko": "진정해, 내가 전화해 볼게.",
+   "note": "给你打 = 너에게 전화하다",
+   "tags": [
+    "form:给"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "A",
+   "zh": "没响啊！到底在哪儿？",
+   "pinyin": "Méi xiǎng a! Dàodǐ zài nǎr?",
+   "rd": "메이 샹 아! 다오디 짜이 날?",
+   "ko": "안 울려! 도대체 어디 있지?",
+   "note": "到底 = 도대체",
+   "tags": [
+    "form:在哪儿"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "B",
+   "zh": "你手里不就是吗？",
+   "pinyin": "Nǐ shǒu lǐ bú jiù shì ma?",
+   "rd": "니 서우 리 부 주 스 마?",
+   "ko": "네 손에 든 거 그거 아니야?",
+   "note": "不就是…吗 = 바로 ~잖아?",
+   "tags": [
+    "form:的"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "A",
+   "zh": "啊……那我眼镜呢？",
+   "pinyin": "À…… nà wǒ yǎnjìng ne?",
+   "rd": "아…… 나 워 옌징 너?",
+   "ko": "아…… 그럼 내 안경은?",
+   "note": "眼镜 = 안경",
+   "tags": [
+    "form:呢"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "B",
+   "zh": "在你头上！真拿你没办法。",
+   "pinyin": "Zài nǐ tóu shang! Zhēn ná nǐ méi bànfǎ.",
+   "rd": "짜이 니 터우 상! 전 나 니 메이 반파.",
+   "ko": "네 머리 위에! 진짜 너 못 말려.",
+   "note": "拿你没办法 = 너를 어쩔 수가 없다",
+   "tags": [
+    "form:在"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "A",
+   "zh": "那……钥匙呢？",
+   "pinyin": "Nà…… yàoshi ne?",
+   "rd": "나…… 야오스 너?",
+   "ko": "그럼…… 열쇠는?",
+   "note": "钥匙 = 열쇠",
+   "tags": [
+    "form:呢"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "B",
+   "zh": "在门上。门还开着呢。",
+   "pinyin": "Zài mén shang. Mén hái kāizhe ne.",
+   "rd": "짜이 먼 상. 먼 하이 카이저 너.",
+   "ko": "문에 꽂혀 있어. 문도 아직 열려 있고.",
+   "note": "开着 = 열려 있다",
+   "tags": [
+    "form:着"
+   ]
+  }
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r1_life_a6_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ }
+}

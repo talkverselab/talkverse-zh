@@ -1,0 +1,117 @@
+{
+ "id": "r1_culture_a5",
+ "region": "R1",
+ "island": "culture",
+ "kind": "short",
+ "draft": true,
+ "purpose": [
+  "culture"
+ ],
+ "domain": [
+  "culture"
+ ],
+ "title": "건배의 나라",
+ "emoji": "🥂",
+ "scene": "샤오리 집 저녁 식사. 샤오리 아빠가 학습자에게 자꾸 잔을 든다.",
+ "speakers": {
+  "A": "{name}",
+  "B": "小丽"
+ },
+ "learner_gender": "M",
+ "register": "casual",
+ "twist": 6,
+ "twist_type": "chaos",
+ "flags": [],
+ "variant": "north",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "zh": "我爸又干杯了，你得喝完啊。",
+   "pinyin": "Wǒ bà yòu gānbēi le, nǐ děi hē wán a.",
+   "rd": "워 바 유 간베이 러, 니 데이 허 완 아.",
+   "ko": "우리 아빠 또 건배했어, 다 마셔야 돼.",
+   "note": "干杯 = 잔을 비우다, 得 = ~해야 한다",
+   "tags": [
+    "expr:干杯"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "zh": "又一杯？我快不行了。",
+   "pinyin": "Yòu yì bēi? Wǒ kuài bù xíng le.",
+   "rd": "유 이 베이? 워 콰이 부 싱 러.",
+   "ko": "또 한 잔? 나 곧 쓰러져.",
+   "note": "快~了 = 곧 ~한다",
+   "tags": [
+    "form:完"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "zh": "一杯接一杯，停不住。",
+   "pinyin": "Yì bēi jiē yì bēi, tíng bú zhù.",
+   "rd": "이 베이 제 이 베이, 팅 부 주.",
+   "ko": "한 잔 또 한 잔, 멈추질 않아.",
+   "note": "接 = 잇다",
+   "tags": [
+    "form:又"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "已经五杯了，头好晕。",
+   "pinyin": "Yǐjīng wǔ bēi le, tóu hǎo yūn.",
+   "rd": "이징 우 베이 러, 터우 하오 윈.",
+   "ko": "벌써 다섯 잔, 머리 핑 돌아.",
+   "note": "晕 = 어지럽다",
+   "tags": [
+    "form:已经了"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "我爸超喜欢你，一直敬你。",
+   "pinyin": "Wǒ bà chāo xǐhuan nǐ, yìzhí jìng nǐ.",
+   "rd": "워 바 차오 시환 니, 이즈 징 니.",
+   "ko": "우리 아빠가 너 엄청 좋아해, 계속 잔 올리잖아.",
+   "note": "敬 = (술을) 권하다",
+   "tags": [
+    "form:很"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "zh": "叔叔，我也喜欢您！",
+   "pinyin": "Shūshu, wǒ yě xǐhuan nín!",
+   "rd": "수수, 워 예 시환 닌!",
+   "ko": "아버님, 저도 아버님 좋아요!",
+   "note": "叔叔 = 아저씨(친구 아버지)",
+   "tags": [
+    "form:也"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "B",
+   "zh": "你喝多了！那是我妈……我吃醋了。",
+   "pinyin": "Nǐ hē duō le! Nà shì wǒ mā…… wǒ chī cù le.",
+   "rd": "니 허 둬 러! 나 스 워 마…… 워 츠 추 러.",
+   "ko": "너 취했어! 그분은 우리 엄마야…… 나 질투 나.",
+   "note": "吃醋 = 질투하다",
+   "tags": [
+    "expr:喝多了"
+   ]
+  }
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r1_culture_a5_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ }
+}

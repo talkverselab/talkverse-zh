@@ -1,0 +1,129 @@
+{
+ "id": "r1_friends_a5",
+ "region": "R1",
+ "island": "friends",
+ "kind": "short",
+ "draft": true,
+ "purpose": [
+  "making_friends"
+ ],
+ "domain": [
+  "friends"
+ ],
+ "title": "다섯 마리",
+ "emoji": "🐕",
+ "scene": "하오란이 잠깐만 개를 봐 달라며 목줄을 건넨다. 그런데 목줄이 한 개가 아니다.",
+ "speakers": {
+  "A": "{name}",
+  "B": "浩然"
+ },
+ "learner_gender": "F",
+ "register": "casual",
+ "twist": 3,
+ "twist_type": "chaos",
+ "flags": [],
+ "variant": "north",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "zh": "帮我看会儿狗呗。",
+   "pinyin": "Bāng wǒ kàn huìr gǒu bei.",
+   "rd": "방 워 칸 후일 거우 베이.",
+   "ko": "잠깐만 개 좀 봐 줘.",
+   "note": "看会儿 = 잠깐 보다, 呗 = 가볍게 부탁",
+   "tags": [
+    "form:吗"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "zh": "好呀！一只狗，没问题。",
+   "pinyin": "Hǎo ya! Yì zhī gǒu, méi wèntí.",
+   "rd": "하오 야! 이 즈 거우, 메이 원티.",
+   "ko": "좋아! 한 마리쯤이야.",
+   "note": "没问题 = 문제없어",
+   "tags": [
+    "expr:没问题"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "zh": "不是一只，是五只！",
+   "pinyin": "Bú shì yì zhī, shì wǔ zhī!",
+   "rd": "부 스 이 즈, 스 우 즈!",
+   "ko": "한 마리가 아니라, 다섯 마리!",
+   "note": "只 = 마리(양사)",
+   "tags": [
+    "form:不是"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "五只？！你逗我呢？",
+   "pinyin": "Wǔ zhī?! Nǐ dòu wǒ ne?",
+   "rd": "우 즈?! 니 더우 워 너?",
+   "ko": "다섯?! 나 놀리는 거야?",
+   "note": "逗 = 놀리다",
+   "tags": [
+    "form:有"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "邻居的，拜托啦！",
+   "pinyin": "Línjū de, bàituō la!",
+   "rd": "린쥐 더, 바이퉈 라!",
+   "ko": "이웃집 개야, 부탁해!",
+   "note": "拜托 = 부탁해",
+   "tags": [
+    "form:的"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "zh": "你不在，我怎么办？",
+   "pinyin": "Nǐ bú zài, wǒ zěnme bàn?",
+   "rd": "니 부 짜이, 워 쩐머 반?",
+   "ko": "너 없으면 나 어떡해?",
+   "note": "怎么办 = 어떡해",
+   "tags": [
+    "form:哪儿"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "B",
+   "zh": "对了，还有三只猫！",
+   "pinyin": "Duì le, hái yǒu sān zhī māo!",
+   "rd": "두이 러, 하이 유 싼 즈 마오!",
+   "ko": "아 맞다, 고양이도 세 마리!",
+   "note": "对了 = 아 참",
+   "tags": [
+    "expr:对了"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "A",
+   "zh": "你给我回来啊！",
+   "pinyin": "Nǐ gěi wǒ huílai a!",
+   "rd": "니 게이 워 후이라이 아!",
+   "ko": "야, 당장 돌아와!",
+   "note": "给我~ = 당장 ~해(명령 강조)",
+   "tags": [
+    "expr:给我"
+   ]
+  }
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r1_friends_a5_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ }
+}

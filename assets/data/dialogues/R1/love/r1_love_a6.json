@@ -1,0 +1,119 @@
+{
+ "id": "r1_love_a6",
+ "region": "R1",
+ "island": "love",
+ "kind": "short",
+ "draft": true,
+ "purpose": [
+  "love"
+ ],
+ "domain": [
+  "love"
+ ],
+ "title": "손바닥 번호",
+ "emoji": "✍️",
+ "scene": "버스 정류장. 위에가 먼저 다가와 전화번호를 묻는데, 학습자의 폰이 꺼져 있다.",
+ "speakers": {
+  "A": "{name}",
+  "B": "悦"
+ },
+ "learner_gender": "M",
+ "register": "casual",
+ "twist": 5,
+ "twist_type": "chaos",
+ "flags": [
+  "romance"
+ ],
+ "variant": "north",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "zh": "号码给我呗？",
+   "pinyin": "Hàomǎ gěi wǒ bei?",
+   "rd": "하오마 게이 워 베이?",
+   "ko": "번호 좀 줘?",
+   "note": "呗 = 가볍게 부탁",
+   "tags": [
+    "form:可以"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "zh": "行啊！啊……手机没电了。",
+   "pinyin": "Xíng a! À…… shǒujī méi diàn le.",
+   "rd": "싱 아! 아…… 서우지 메이 뎬 러.",
+   "ko": "좋아! 아…… 폰 배터리 나갔다.",
+   "note": "没电 = 배터리가 없다",
+   "tags": [
+    "form:没"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "zh": "没事，写你手上。",
+   "pinyin": "Méishì, xiě nǐ shǒu shang.",
+   "rd": "메이스, 셰 니 서우 상.",
+   "ko": "괜찮아, 네 손에 쓸게.",
+   "note": "手上 = 손에",
+   "tags": [
+    "form:在"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "好痒……快点！",
+   "pinyin": "Hǎo yǎng…… kuài diǎn!",
+   "rd": "하오 양…… 콰이 뎬!",
+   "ko": "간지러워…… 빨리!",
+   "note": "快点 = 빨리",
+   "tags": [
+    "form:一点"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "别动！下雨了——花了！",
+   "pinyin": "Bié dòng! Xià yǔ le—— huā le!",
+   "rd": "볘 둥! 샤 위 러—— 화 러!",
+   "ko": "움직이지 마! 비 온다—— 번졌어!",
+   "note": "花了 = (글씨가) 번졌다",
+   "tags": [
+    "form:别"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "zh": "完了完了，号码没了！",
+   "pinyin": "Wán le wán le, hàomǎ méi le!",
+   "rd": "완 러 완 러, 하오마 메이 러!",
+   "ko": "망했다 망했다, 번호 없어졌어!",
+   "note": "完了 = 망했다",
+   "tags": [
+    "expr:完了"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "B",
+   "zh": "那……明天七点，这里，我等你。",
+   "pinyin": "Nà…… míngtiān qī diǎn, zhèlǐ, wǒ děng nǐ.",
+   "rd": "나…… 밍톈 치 뎬, 저리, 워 덩 니.",
+   "ko": "그럼…… 내일 7시, 여기, 내가 기다릴게.",
+   "note": "等 = 기다리다",
+   "tags": [
+    "form:等"
+   ]
+  }
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r1_love_a6_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ }
+}
