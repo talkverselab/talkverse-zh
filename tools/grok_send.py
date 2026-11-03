@@ -35,9 +35,9 @@ if attach:
     remote = _os.environ.get('GROK_REMOTE', 'macmini4')  # 브라우저가 M4 에 있다(2026-11-03 사용자 지시) — 첨부는 M4 경로여야 한다
     if remote:
         import subprocess
-        subprocess.run(['ssh', remote, 'mkdir -p /tmp/grok_att'], check=True)
-        subprocess.run(['scp', '-q', *files, f'{remote}:/tmp/grok_att/'], check=True)
-        files = ['/tmp/grok_att/' + _os.path.basename(x) for x in files]
+        subprocess.run(['ssh', remote, 'mkdir -p /tmp/grok_att/zh'], check=True)
+        subprocess.run(['scp', '-q', *files, f'{remote}:/tmp/grok_att/zh/'], check=True)
+        files = ['/tmp/grok_att/zh/' + _os.path.basename(x) for x in files]
     c.call('DOM.setFileInputFiles', nodeId=q['nodeId'], files=files); time.sleep(4 + 2 * len(attach))
     print('attached', len(attach))
 c.ev("document.querySelector('.ProseMirror').focus()")
