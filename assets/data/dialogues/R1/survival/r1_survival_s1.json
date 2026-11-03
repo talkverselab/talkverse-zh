@@ -1,0 +1,129 @@
+{
+ "id": "r1_survival_s1",
+ "region": "R1",
+ "island": "survival",
+ "kind": "survival",
+ "draft": true,
+ "purpose": [
+  "travel"
+ ],
+ "domain": [
+  "life"
+ ],
+ "title": "“好”만 했을 뿐인데",
+ "emoji": "🏪",
+ "scene": "편의점 계산대. 물 한 병만 사려던 학습자가 점원의 모든 질문에 “好”라고만 답하는데…",
+ "speakers": {
+  "A": "{name}",
+  "B": "店员"
+ },
+ "learner_gender": "F",
+ "register": "casual",
+ "twist": 6,
+ "twist_type": "chaos",
+ "flags": [],
+ "variant": "north",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "zh": "袋子要吗？",
+   "pinyin": "Dàizi yào ma?",
+   "rd": "다이쯔 야오 마?",
+   "ko": "봉투 필요하세요?",
+   "note": "要……吗？ = ~필요해요?",
+   "tags": [
+    "expr:你好",
+    "form:吗"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "zh": "好啊，谢谢。",
+   "pinyin": "Hǎo a, xièxie.",
+   "rd": "하오 아, 셰셰.",
+   "ko": "네, 고마워요.",
+   "note": "好 = 네·좋아요(대답)",
+   "tags": [
+    "expr:谢谢"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "zh": "买一送一要吗？",
+   "pinyin": "Mǎi yī sòng yī yào ma?",
+   "rd": "마이 이 쑹 이 야오 마?",
+   "ko": "하나 사면 하나 더 드리는데, 하실래요?",
+   "note": "买一送一 = 원 플러스 원 / 要不要 = ~할래요?",
+   "tags": [
+    "form:要不要",
+    "expr:买一送一"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "好……好的。",
+   "pinyin": "Hǎo…… hǎo de.",
+   "rd": "하오…… 하오 더.",
+   "ko": "네…… 네.",
+   "note": "好的 = 알겠어요",
+   "tags": [
+    "expr:好的"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "再来杯热的？",
+   "pinyin": "Zài lái bēi rè de?",
+   "rd": "짜이 라이 베이 러 더?",
+   "ko": "따뜻한 거 한 잔 더 하실래요?",
+   "note": "再来 = 하나 더",
+   "tags": [
+    "expr:再来"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "zh": "好——不是！只要水！",
+   "pinyin": "Hǎo—— bú shì! Zhǐ yào shuǐ!",
+   "rd": "하오—— 부 스! 즈 야오 수이!",
+   "ko": "네—— 아니요! 물만요!",
+   "note": "只要 = ~만 원해요",
+   "tags": [
+    "form:只"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "B",
+   "zh": "哈哈，两瓶水，再加一杯热的！",
+   "pinyin": "Hāha, liǎng píng shuǐ, zài jiā yì bēi rè de!",
+   "rd": "하하, 량 핑 수이, 짜이 자 이 베이 러 더!",
+   "ko": "하하, 물 두 병에 따뜻한 거 한 잔 추가요!",
+   "note": "瓶·杯 = 병·잔(세는 말)",
+   "tags": [
+    "form:量词"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "A",
+   "zh": "……行，都要了。",
+   "pinyin": "…… Xíng, dōu yào le.",
+   "rd": "…… 싱, 더우 야오 러.",
+   "ko": "……네, 다 주세요.",
+   "note": "好吧 = 그래(마지못해)",
+   "tags": [
+    "expr:好吧"
+   ]
+  }
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r1_survival_s1_grok_rewrite.md"
+ }
+}

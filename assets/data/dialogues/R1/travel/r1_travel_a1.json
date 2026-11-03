@@ -1,0 +1,103 @@
+{
+ "id": "r1_travel_a1",
+ "region": "R1",
+ "island": "travel",
+ "kind": "short",
+ "draft": true,
+ "purpose": [
+  "travel"
+ ],
+ "domain": [
+  "travel"
+ ],
+ "title": "여기로 가 주세요",
+ "emoji": "🚕",
+ "scene": "택시에 탄 학습자가 휴대폰 화면을 보여 주며 목적지를 말하는데, 화면에 뜬 건 지도가 아니었다.",
+ "speakers": {
+  "A": "{name}",
+  "B": "司机"
+ },
+ "learner_gender": "M",
+ "register": "casual",
+ "twist": 2,
+ "twist_type": "slip",
+ "flags": [],
+ "variant": "north",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "A",
+   "zh": "师傅，去这里。",
+   "pinyin": "Shīfu, qù zhèlǐ.",
+   "rd": "스푸, 취 저리.",
+   "ko": "기사님, 여기로 가 주세요.",
+   "note": "想去 = 가고 싶다",
+   "tags": [
+    "form:想"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "B",
+   "zh": "这？这是个女孩啊。",
+   "pinyin": "Zhè? Zhè shì ge nǚhái a.",
+   "rd": "저? 저 스 거 뉘하이 아.",
+   "ko": "이거요? 이건 여자분인데요.",
+   "note": "这是 = 이건",
+   "tags": [
+    "form:是"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "A",
+   "zh": "啊不是！是这个！",
+   "pinyin": "À bú shì! Shì zhège!",
+   "rd": "아 부 스! 스 저거!",
+   "ko": "앗 아니에요! 이거요!",
+   "note": "不是不是 = 아니에요(급히)",
+   "tags": [
+    "expr:不是不是"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "B",
+   "zh": "哈哈，她是你朋友？",
+   "pinyin": "Hāha, tā shì nǐ péngyou?",
+   "rd": "하하, 타 스 니 펑유?",
+   "ko": "하하, 친구분이에요?",
+   "note": "朋友 = 친구",
+   "tags": [
+    "form:吗"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "A",
+   "zh": "还不是……今天才见。",
+   "pinyin": "Hái bú shì…… jīntiān cái jiàn.",
+   "rd": "하이 부 스…… 진톈 차이 젠.",
+   "ko": "아직은요…… 오늘 처음 봐요.",
+   "note": "才 = 이제야·비로소",
+   "tags": [
+    "form:还不是"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "B",
+   "zh": "那开快点，别让她等～",
+   "pinyin": "Nà kāi kuài diǎn, bié ràng tā děng～",
+   "rd": "나 카이 콰이 뎬, 볘 랑 타 덩～",
+   "ko": "그럼 빨리 갈게요, 기다리게 하면 안 되죠~",
+   "note": "快一点 = 좀 빨리",
+   "tags": [
+    "form:别"
+   ]
+  }
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r1_travel_a1_grok_rewrite.md"
+ }
+}

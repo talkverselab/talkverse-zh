@@ -1,0 +1,133 @@
+{
+ "id": "r1_culture_c1",
+ "region": "R1",
+ "island": "culture",
+ "kind": "chat",
+ "draft": true,
+ "purpose": [
+  "making_friends"
+ ],
+ "domain": [
+  "culture",
+  "friends"
+ ],
+ "title": "천 위안을 눌렀다",
+ "emoji": "🧧",
+ "scene": "설날 밤, 샤오리와 친구들이 있는 단톡방. 세뱃돈(红包) 돌리기가 시작됐다.",
+ "speakers": {
+  "A": "{name}",
+  "B": "小丽"
+ },
+ "learner_gender": "M",
+ "register": "chat",
+ "twist": 4,
+ "twist_type": "chaos",
+ "flags": [
+  "romance"
+ ],
+ "variant": "north",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "zh": "新年快乐！红包来了！",
+   "pinyin": "Xīnnián kuàilè! Hóngbāo lái le!",
+   "rd": "신녠 콰이러! 훙바오 라이 러!",
+   "ko": "새해 복 많이 받아! 세뱃돈 왔다!",
+   "note": "新年快乐 = 새해 복 많이 받아",
+   "tags": [
+    "expr:新年快乐",
+    "expr:红包"
+   ],
+   "ui": "bubble",
+   "at": "00:11"
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "zh": "真的？我也发！",
+   "pinyin": "Zhēn de? Wǒ yě fā!",
+   "rd": "전 더? 워 예 파!",
+   "ko": "진짜? 나도 보낼게!",
+   "note": "也要 = 나도 ~할래",
+   "tags": [
+    "form:也"
+   ],
+   "ui": "bubble",
+   "at": "00:12"
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "zh": "发多少？",
+   "pinyin": "Fā duōshao?",
+   "rd": "파 둬사오?",
+   "ko": "얼마 보낼 건데?",
+   "note": "多少 = 얼마",
+   "tags": [
+    "form:多少"
+   ],
+   "ui": "bubble",
+   "at": "00:13"
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "一百……等等点了一千！",
+   "pinyin": "Yìbǎi…… děngděng diǎn le yìqiān!",
+   "rd": "이바이…… 덩덩 뎬 러 이첸!",
+   "ko": "백…… 잠깐 천 눌렀어!",
+   "note": "点 = 누르다(화면)",
+   "tags": [
+    "form:了"
+   ],
+   "ui": "bubble",
+   "at": "00:14"
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "哈哈哈大家都拿完了！",
+   "pinyin": "Hāhāhā dàjiā dōu ná wán le!",
+   "rd": "하하하 다자 더우 나 완 러!",
+   "ko": "하하하 다들 다 가져갔어!",
+   "note": "拿完了 = 다 가져갔다",
+   "tags": [
+    "form:完"
+   ],
+   "ui": "bubble",
+   "at": "00:15"
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "zh": "我的钱……",
+   "pinyin": "Wǒ de qián……",
+   "rd": "워 더 첸……",
+   "ko": "내 돈……",
+   "note": "的 = ~의",
+   "tags": [
+    "particle:的"
+   ],
+   "ui": "bubble",
+   "at": "00:16"
+  },
+  {
+   "num": 7,
+   "speaker": "B",
+   "zh": "没事，明天我请你，就我们两个～",
+   "pinyin": "Méishì, míngtiān wǒ qǐng nǐ, jiù wǒmen liǎng ge～",
+   "rd": "메이스, 밍톈 워 칭 니, 주 워먼 량 거～",
+   "ko": "괜찮아, 내일 내가 살게. 우리 둘만～",
+   "note": "就我们两个 = 우리 둘만",
+   "tags": [
+    "expr:没事"
+   ],
+   "ui": "bubble",
+   "at": "00:17"
+  }
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r1_culture_c1_grok_rewrite.md"
+ }
+}

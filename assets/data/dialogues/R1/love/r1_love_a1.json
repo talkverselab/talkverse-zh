@@ -1,0 +1,117 @@
+{
+ "id": "r1_love_a1",
+ "region": "R1",
+ "island": "love",
+ "kind": "short",
+ "draft": true,
+ "purpose": [
+  "love"
+ ],
+ "domain": [
+  "love"
+ ],
+ "title": "내가 먼저 왔어",
+ "emoji": "☕",
+ "scene": "아침 카페 줄. 매일 같은 시간에 보던 위에가 오늘은 먼저 말을 건다.",
+ "speakers": {
+  "A": "{name}",
+  "B": "悦"
+ },
+ "learner_gender": "M",
+ "register": "casual",
+ "twist": 5,
+ "twist_type": "reveal",
+ "flags": [
+  "romance"
+ ],
+ "variant": "north",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "zh": "你也喝这个？",
+   "pinyin": "Nǐ yě hē zhège?",
+   "rd": "니 예 허 저거?",
+   "ko": "너도 이거 마셔?",
+   "note": "也 = ~도",
+   "tags": [
+    "form:也"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "zh": "对啊，天天喝。",
+   "pinyin": "Duì a, tiāntiān hē.",
+   "rd": "두이 아, 톈톈 허.",
+   "ko": "응, 맨날 마셔.",
+   "note": "每天都 = 매일",
+   "tags": [
+    "expr:每天"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "zh": "我也是，天天看见你。",
+   "pinyin": "Wǒ yě shì, tiāntiān kànjiàn nǐ.",
+   "rd": "워 예 스, 톈톈 칸젠 니.",
+   "ko": "나도, 맨날 너 봐.",
+   "note": "我也是 = 나도",
+   "tags": [
+    "expr:我也是"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "啊？真的吗？",
+   "pinyin": "Á? Zhēn de ma?",
+   "rd": "아? 전 더 마?",
+   "ko": "어? 진짜?",
+   "note": "真的吗 = 진짜?",
+   "tags": [
+    "expr:真的吗"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "真的……所以今天先来了。",
+   "pinyin": "Zhēn de…… suǒyǐ jīntiān xiān lái le.",
+   "rd": "전 더…… 쒀이 진톈 셴 라이 러.",
+   "ko": "진짜야…… 그래서 오늘 먼저 왔어.",
+   "note": "先 = 먼저",
+   "tags": [
+    "form:先"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "zh": "那……我请你？",
+   "pinyin": "Nà…… wǒ qǐng nǐ?",
+   "rd": "나…… 워 칭 니?",
+   "ko": "그럼…… 내가 살까?",
+   "note": "请 = 사 주다·대접하다",
+   "tags": [
+    "expr:我请你"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "B",
+   "zh": "不用。请我吃饭吧，明天晚上。",
+   "pinyin": "Bú yòng. Qǐng wǒ chīfàn ba, míngtiān wǎnshang.",
+   "rd": "부 융. 칭 워 츠판 바, 밍톈 완상.",
+   "ko": "아니. 밥 사, 내일 저녁에.",
+   "note": "明天晚上 = 내일 저녁",
+   "tags": [
+    "form:吧"
+   ]
+  }
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r1_love_a1_grok_rewrite.md"
+ }
+}

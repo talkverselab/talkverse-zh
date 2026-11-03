@@ -1,0 +1,129 @@
+{
+ "id": "r1_life_a1",
+ "region": "R1",
+ "island": "life",
+ "kind": "short",
+ "draft": true,
+ "purpose": [
+  "love",
+  "travel"
+ ],
+ "domain": [
+  "life"
+ ],
+ "title": "“随便”의 대가",
+ "emoji": "🥢",
+ "scene": "샤오리와 저녁 고르기. 학습자가 “아무거나”라고 하자 샤오리가 정말로…",
+ "speakers": {
+  "A": "{name}",
+  "B": "小丽"
+ },
+ "learner_gender": "M",
+ "register": "casual",
+ "twist": 6,
+ "twist_type": "chaos",
+ "flags": [],
+ "variant": "north",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "zh": "吃什么？",
+   "pinyin": "Chī shénme?",
+   "rd": "츠 선머?",
+   "ko": "뭐 먹을래?",
+   "note": "想吃什么 = 뭐 먹고 싶어",
+   "tags": [
+    "form:想"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "zh": "随便都行。",
+   "pinyin": "Suíbiàn dōu xíng.",
+   "rd": "쑤이볜 더우 싱.",
+   "ko": "아무거나 다 좋아.",
+   "note": "随便 = 아무거나",
+   "tags": [
+    "expr:随便",
+    "expr:都可以"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "zh": "行，都点了。",
+   "pinyin": "Xíng, dōu diǎn le.",
+   "rd": "싱, 더우 뎬 러.",
+   "ko": "좋아, 다 시킨다.",
+   "note": "点 = 주문하다",
+   "tags": [
+    "form:了"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "都？什么意思？",
+   "pinyin": "Dōu? Shénme yìsi?",
+   "rd": "더우? 선머 이쓰?",
+   "ko": "다? 무슨 뜻이야?",
+   "note": "什么意思 = 무슨 뜻이야",
+   "tags": [
+    "expr:什么意思"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "你说都行啊，来了！",
+   "pinyin": "Nǐ shuō dōu xíng a, lái le!",
+   "rd": "니 숴 더우 싱 아, 라이 러!",
+   "ko": "네가 다 좋다며, 왔다!",
+   "note": "来了 = 왔다·간다",
+   "tags": [
+    "expr:来了"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "zh": "天啊十个菜？！",
+   "pinyin": "Tiān a shí ge cài?!",
+   "rd": "톈 아 스 거 차이?!",
+   "ko": "맙소사 열 개?!",
+   "note": "天啊 = 맙소사",
+   "tags": [
+    "expr:天啊"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "B",
+   "zh": "以后跟我吃就行了～",
+   "pinyin": "Yǐhòu gēn wǒ chī jiù xíng le～",
+   "rd": "이허우 건 워 츠 주 싱 러～",
+   "ko": "앞으로 나랑 먹으면 되지～",
+   "note": "以后 = 앞으로",
+   "tags": [
+    "form:还"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "A",
+   "zh": "不说了……真好吃。",
+   "pinyin": "Bù shuō le…… zhēn hǎochī.",
+   "rd": "부 숴 러…… 전 하오츠.",
+   "ko": "안 할게…… 진짜 맛있어.",
+   "note": "好吃 = 맛있다",
+   "tags": [
+    "expr:好吃"
+   ]
+  }
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r1_life_a1_grok_rewrite.md"
+ }
+}

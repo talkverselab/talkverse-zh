@@ -92,6 +92,12 @@ flutter:
     - assets/data/dialogues/north/L4.json
     - assets/data/dialogues/south/L1.json
     # 새 회화 R0~R4 (레벨/주제 폴더 — 새 폴더를 만들면 여기에도 한 줄)
+    - assets/data/dialogues/R1/survival/
+    - assets/data/dialogues/R1/friends/
+    - assets/data/dialogues/R1/love/
+    - assets/data/dialogues/R1/life/
+    - assets/data/dialogues/R1/travel/
+    - assets/data/dialogues/R1/culture/
     - assets/data/dialogues/R2/love/
     - assets/data/dialogues/R3/life/
     - assets/data/dialogues/R3/love/

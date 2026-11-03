@@ -1,0 +1,127 @@
+{
+ "id": "r1_friends_a1",
+ "region": "R1",
+ "island": "friends",
+ "kind": "short",
+ "draft": true,
+ "purpose": [
+  "making_friends"
+ ],
+ "domain": [
+  "friends"
+ ],
+ "title": "둘이 찍자고 했는데",
+ "emoji": "🤳",
+ "scene": "공원에서 하오란과 셀카 한 장. 그런데 찍을 때마다 사람이 늘어난다.",
+ "speakers": {
+  "A": "{name}",
+  "B": "浩然"
+ },
+ "learner_gender": "F",
+ "register": "casual",
+ "twist": 5,
+ "twist_type": "chaos",
+ "flags": [],
+ "variant": "north",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "A",
+   "zh": "浩然，拍一张吧！",
+   "pinyin": "Hàorán, pāi yì zhāng ba!",
+   "rd": "하오란, 파이 이 장 바!",
+   "ko": "하오란, 한 장 찍자!",
+   "note": "……吧 = ~하자",
+   "tags": [
+    "form:吧"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "B",
+   "zh": "来，一、二——",
+   "pinyin": "Lái, yī, èr——",
+   "rd": "라이, 이, 얼——",
+   "ko": "자, 하나, 둘——",
+   "note": "来 = 자(시작할 때)",
+   "tags": [
+    "expr:来"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "A",
+   "zh": "等等！后面有人！",
+   "pinyin": "Děngděng! Hòumiàn yǒu rén!",
+   "rd": "덩덩! 허우몐 유 런!",
+   "ko": "잠깐! 뒤에 사람 있어!",
+   "note": "等等 = 잠깐만",
+   "tags": [
+    "expr:等等"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "B",
+   "zh": "没事，让他一起。",
+   "pinyin": "Méishì, ràng tā yìqǐ.",
+   "rd": "메이스, 랑 타 이치.",
+   "ko": "괜찮아, 같이 찍게 해.",
+   "note": "没事 = 괜찮아",
+   "tags": [
+    "expr:没事"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "A",
+   "zh": "狗也来了？！",
+   "pinyin": "Gǒu yě lái le?!",
+   "rd": "거우 예 라이 러?!",
+   "ko": "강아지도 왔어?!",
+   "note": "还有 = ~도 있어",
+   "tags": [
+    "form:还有"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "B",
+   "zh": "还有妈妈！看这里！",
+   "pinyin": "Hái yǒu māma! Kàn zhèlǐ!",
+   "rd": "하이 유 마마! 칸 저리!",
+   "ko": "엄마도! 여기 봐!",
+   "note": "大家 = 여러분·다들",
+   "tags": [
+    "expr:哈哈"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "A",
+   "zh": "这是我们两个的……你最好看。",
+   "pinyin": "Zhè shì wǒmen liǎng ge de…… nǐ zuì hǎokàn.",
+   "rd": "저 스 워먼 량 거 더…… 니 쭈이 하오칸.",
+   "ko": "이거 우리 둘 거잖아…… 네가 제일 예뻐.",
+   "note": "啊 = 말끝 감정",
+   "tags": [
+    "particle:啊"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "B",
+   "zh": "你也是啊。",
+   "pinyin": "Nǐ yě shì a.",
+   "rd": "니 예 스 아.",
+   "ko": "너도야.",
+   "note": "笑得…… = 웃는 게 ~해",
+   "tags": [
+    "form:得"
+   ]
+  }
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r1_friends_a1_grok_rewrite.md"
+ }
+}
