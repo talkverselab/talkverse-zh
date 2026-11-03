@@ -1,0 +1,117 @@
+{
+ "id": "r1_friends_a4",
+ "region": "R1",
+ "island": "friends",
+ "kind": "short",
+ "draft": true,
+ "purpose": [
+  "making_friends"
+ ],
+ "domain": [
+  "friends"
+ ],
+ "title": "노래방",
+ "emoji": "🎤",
+ "scene": "하오란과 노래방. 학습자가 고른 노래가 이별 노래라 분위기가…",
+ "speakers": {
+  "A": "{name}",
+  "B": "浩然"
+ },
+ "learner_gender": "F",
+ "register": "casual",
+ "twist": 5,
+ "twist_type": "emotion",
+ "flags": [],
+ "variant": "north",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "zh": "你先唱啊！选好了没？",
+   "pinyin": "Nǐ xiān chàng a! Xuǎn hǎo le méi?",
+   "rd": "니 셴 창 아! 쉬안 하오 러 메이?",
+   "ko": "네가 먼저 불러! 골랐어?",
+   "note": "选好 = 다 골랐다",
+   "tags": [
+    "form:好"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "zh": "选好啦！这个超好听。",
+   "pinyin": "Xuǎn hǎo la! Zhège chāo hǎotīng.",
+   "rd": "쉬안 하오 라! 저거 차오 하오팅.",
+   "ko": "골랐어! 이거 진짜 좋아.",
+   "note": "好听 = 듣기 좋다",
+   "tags": [
+    "form:很"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "zh": "这首？分手歌啊！",
+   "pinyin": "Zhè shǒu? Fēnshǒu gē a!",
+   "rd": "저 서우? 펀서우 거 아!",
+   "ko": "이 곡? 이별 노래잖아!",
+   "note": "分手 = 헤어지다",
+   "tags": [
+    "form:的"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "啊？我就是喜欢调子……",
+   "pinyin": "Á? Wǒ jiùshì xǐhuan diàozi……",
+   "rd": "아? 워 주스 시환 댜오쯔……",
+   "ko": "어? 나 그냥 멜로디가 좋아서……",
+   "note": "音乐 = 음악",
+   "tags": [
+    "form:只是"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "你唱这个……想跟我分了？",
+   "pinyin": "Nǐ chàng zhège…… xiǎng gēn wǒ fēn le?",
+   "rd": "니 창 저거…… 샹 건 워 펀 러?",
+   "ko": "너 이거 부르는 거…… 나랑 손절하려고?",
+   "note": "都 = ~조차",
+   "tags": [
+    "form:都"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "zh": "没有！我……想唱给你听。",
+   "pinyin": "Méiyǒu! Wǒ…… xiǎng chàng gěi nǐ tīng.",
+   "rd": "메이유! 워…… 샹 창 게이 니 팅.",
+   "ko": "아니야! 나…… 너한테 불러 주고 싶었어.",
+   "note": "换 = 바꾸다",
+   "tags": [
+    "form:别"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "B",
+   "zh": "不换。再唱一次……给我听。",
+   "pinyin": "Bú huàn. Zài chàng yí cì…… gěi wǒ tīng.",
+   "rd": "부 환. 짜이 창 이 츠…… 게이 워 팅.",
+   "ko": "안 바꿔. 한 번 더…… 나한테 불러 줘.",
+   "note": "给我听 = 나한테 들려줘",
+   "tags": [
+    "form:给"
+   ]
+  }
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r1_friends_a4_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ }
+}

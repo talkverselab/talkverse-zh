@@ -1,0 +1,119 @@
+{
+ "id": "r1_life_a5",
+ "region": "R1",
+ "island": "life",
+ "kind": "short",
+ "draft": true,
+ "purpose": [
+  "love"
+ ],
+ "domain": [
+  "life"
+ ],
+ "title": "엘리베이터 정지",
+ "emoji": "🛗",
+ "scene": "엘리베이터가 멈췄다. 안에는 학습자와 위에 둘뿐.",
+ "speakers": {
+  "A": "{name}",
+  "B": "悦"
+ },
+ "learner_gender": "M",
+ "register": "casual",
+ "twist": 2,
+ "twist_type": "chaos",
+ "flags": [
+  "romance"
+ ],
+ "variant": "north",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "zh": "完了，电梯卡住了！",
+   "pinyin": "Wán le, diàntī kǎ zhù le!",
+   "rd": "완 러, 뎬티 카 주 러!",
+   "ko": "큰일, 엘리베이터 멈췄어!",
+   "note": "怎么 = 왜·어째서",
+   "tags": [
+    "form:怎么"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "zh": "灯也灭了！我怕黑啊！",
+   "pinyin": "Dēng yě miè le! Wǒ pà hēi a!",
+   "rd": "덩 예 몌 러! 워 파 헤이 아!",
+   "ko": "불도 꺼졌어! 나 어두운 거 무서워!",
+   "note": "停了 = 멈췄다",
+   "tags": [
+    "form:了"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "zh": "过来，抓着我。",
+   "pinyin": "Guòlai, zhuāzhe wǒ.",
+   "rd": "궈라이, 좌저 워.",
+   "ko": "이리 와, 나 잡아.",
+   "note": "别怕 = 무서워 마",
+   "tags": [
+    "form:别"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "我不怕……你的手好热。",
+   "pinyin": "Wǒ bú pà…… nǐ de shǒu hǎo rè.",
+   "rd": "워 부 파…… 니 더 서우 하오 러.",
+   "ko": "안 무서워…… 네 손 엄청 뜨겁다.",
+   "note": "拉 = 잡아당기다",
+   "tags": [
+    "form:别"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "是你先抓我的手。",
+   "pinyin": "Shì nǐ xiān zhuā wǒ de shǒu.",
+   "rd": "스 니 셴 좌 워 더 서우.",
+   "ko": "네가 먼저 내 손 잡은 거야.",
+   "note": "是……的 = 강조",
+   "tags": [
+    "form:是的"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "zh": "灯来了！快松开！",
+   "pinyin": "Dēng lái le! Kuài sōng kāi!",
+   "rd": "덩 라이 러! 콰이 쑹 카이!",
+   "ko": "불 들어왔다! 빨리 놔!",
+   "note": "来了 = 왔다",
+   "tags": [
+    "expr:来了"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "B",
+   "zh": "松开了……你心跳好快。",
+   "pinyin": "Sōng kāi le…… nǐ xīntiào hǎo kuài.",
+   "rd": "쑹 카이 러…… 니 신탸오 하오 콰이.",
+   "ko": "놨어…… 근데 너 심장 엄청 빨리 뛴다.",
+   "note": "还要 = 계속 ~할래",
+   "tags": [
+    "form:还"
+   ]
+  }
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r1_life_a5_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ }
+}

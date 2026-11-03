@@ -1,0 +1,119 @@
+{
+ "id": "r1_love_a5",
+ "region": "R1",
+ "island": "love",
+ "kind": "short",
+ "draft": true,
+ "purpose": [
+  "love"
+ ],
+ "domain": [
+  "love"
+ ],
+ "title": "클럽의 그녀",
+ "emoji": "🪩",
+ "scene": "클럽 플로어. 음악이 너무 커서 위에의 말이 하나도 안 들린다.",
+ "speakers": {
+  "A": "{name}",
+  "B": "悦"
+ },
+ "learner_gender": "M",
+ "register": "casual",
+ "twist": 4,
+ "twist_type": "chaos",
+ "flags": [
+  "romance"
+ ],
+ "variant": "north",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "zh": "就你一个啊？",
+   "pinyin": "Jiù nǐ yí ge a?",
+   "rd": "주 니 이 거 아?",
+   "ko": "혼자 왔어?",
+   "note": "一个人 = 혼자",
+   "tags": [
+    "form:吗"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "zh": "啥？完全听不见！",
+   "pinyin": "Shá? Wánquán tīng bú jiàn!",
+   "rd": "사? 완취안 팅 부 젠!",
+   "ko": "뭐? 하나도 안 들려!",
+   "note": "吵 = 시끄럽다",
+   "tags": [
+    "form:太了"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "zh": "我说——就你一个吗？！",
+   "pinyin": "Wǒ shuō—— jiù nǐ yí ge ma?!",
+   "rd": "워 숴—— 주 니 이 거 마?!",
+   "ko": "내 말은—— 혼자냐고?!",
+   "note": "我说 = 내 말은",
+   "tags": [
+    "expr:我说"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "喜欢我？真的假的？！",
+   "pinyin": "Xǐhuan wǒ? Zhēn de jiǎ de?!",
+   "rd": "시환 워? 전 더 자 더?!",
+   "ko": "나 좋아한다고? 진짜야?!",
+   "note": "喜欢 = 좋아하다",
+   "tags": [
+    "form:说"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "谁说了？！你听错了！",
+   "pinyin": "Shéi shuō le?! Nǐ tīng cuò le!",
+   "rd": "세이 숴 러?! 니 팅 춰 러!",
+   "ko": "누가 그랬어?! 잘못 들었거든!",
+   "note": "听错了 = 잘못 들었다",
+   "tags": [
+    "expr:听错了"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "zh": "啊……对不起。",
+   "pinyin": "À…… duìbuqǐ.",
+   "rd": "아…… 두이부치.",
+   "ko": "아…… 미안.",
+   "note": "对不起 = 미안",
+   "tags": [
+    "expr:对不起"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "B",
+   "zh": "不过……也没听错。",
+   "pinyin": "Búguò…… yě méi tīng cuò.",
+   "rd": "부궈…… 예 메이 팅 춰.",
+   "ko": "근데…… 잘못 들은 것도 아니야.",
+   "note": "不过 = 그런데",
+   "tags": [
+    "form:不过"
+   ]
+  }
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r1_love_a5_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ }
+}

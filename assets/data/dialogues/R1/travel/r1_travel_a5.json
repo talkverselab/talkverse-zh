@@ -1,0 +1,117 @@
+{
+ "id": "r1_travel_a5",
+ "region": "R1",
+ "island": "travel",
+ "kind": "short",
+ "draft": true,
+ "purpose": [
+  "travel"
+ ],
+ "domain": [
+  "travel"
+ ],
+ "title": "기차 옆자리",
+ "emoji": "🚄",
+ "scene": "고속열차. 학습자가 남의 자리에 앉아 있었는데, 자리 주인이 하오란이다.",
+ "speakers": {
+  "A": "{name}",
+  "B": "浩然"
+ },
+ "learner_gender": "F",
+ "register": "casual",
+ "twist": 3,
+ "twist_type": "slip",
+ "flags": [],
+ "variant": "north",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "zh": "不好意思，这是我的座位。",
+   "pinyin": "Bù hǎoyìsi, zhè shì wǒ de zuòwèi.",
+   "rd": "부 하오이쓰, 저 스 워 더 쭤웨이.",
+   "ko": "실례지만, 여기 제 자리예요.",
+   "note": "座位 = 자리",
+   "tags": [
+    "expr:不好意思"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "zh": "啊？我是十二号啊……",
+   "pinyin": "Á? Wǒ shì shí'èr hào a……",
+   "rd": "아? 워 스 스'얼 하오 아……",
+   "ko": "네? 저 12번인데요……",
+   "note": "号 = 번",
+   "tags": [
+    "form:号"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "zh": "你看反了，这是二十一号。",
+   "pinyin": "Nǐ kàn fǎn le, zhè shì èrshíyī hào.",
+   "rd": "니 칸 판 러, 저 스 얼스이 하오.",
+   "ko": "거꾸로 보셨네요, 여긴 21번이에요.",
+   "note": "你看 = 봐요",
+   "tags": [
+    "expr:你看"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "完了完了！我马上走！",
+   "pinyin": "Wán le wán le! Wǒ mǎshàng zǒu!",
+   "rd": "완 러 완 러! 워 마상 쩌우!",
+   "ko": "큰일이다! 바로 비킬게요!",
+   "note": "马上 = 바로",
+   "tags": [
+    "form:马上"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "别慌，十二号就在我旁边。",
+   "pinyin": "Bié huāng, shí'èr hào jiù zài wǒ pángbiān.",
+   "rd": "볘 황, 스'얼 하오 주 짜이 워 팡볜.",
+   "ko": "당황하지 마세요, 12번은 바로 제 옆이에요.",
+   "note": "旁边 = 옆",
+   "tags": [
+    "form:在"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "zh": "那……五个小时都挨着你？",
+   "pinyin": "Nà…… wǔ ge xiǎoshí dōu āizhe nǐ?",
+   "rd": "나…… 우 거 샤오스 더우 아이저 니?",
+   "ko": "그럼…… 다섯 시간 내내 옆자리네요?",
+   "note": "小时 = 시간",
+   "tags": [
+    "form:都"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "B",
+   "zh": "嗯……聊聊？",
+   "pinyin": "ǹg…… liáoliao?",
+   "rd": "응…… 랴오랴오?",
+   "ko": "네…… 얘기할래요?",
+   "note": "聊天 = 수다 떨다",
+   "tags": [
+    "expr:聊天"
+   ]
+  }
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r1_travel_a5_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ }
+}

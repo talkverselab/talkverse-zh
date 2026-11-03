@@ -1,0 +1,126 @@
+{
+ "id": "r1_travel_c1",
+ "region": "R1",
+ "island": "travel",
+ "kind": "chat",
+ "draft": true,
+ "purpose": [
+  "travel"
+ ],
+ "domain": [
+  "travel"
+ ],
+ "title": "엄마 위치 공유",
+ "emoji": "📍",
+ "scene": "혼자 여행 중인 학습자. 엄마가 위치 공유를 보고 걱정 폭탄 문자를 보낸다.",
+ "speakers": {
+  "A": "{name}",
+  "B": "妈妈"
+ },
+ "learner_gender": "M",
+ "register": "chat",
+ "twist": 4,
+ "twist_type": "chaos",
+ "flags": [],
+ "variant": "north",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "zh": "你在哪？怎么在山上？",
+   "pinyin": "Nǐ zài nǎ? Zěnme zài shān shang?",
+   "rd": "니 짜이 나? 쩐머 짜이 산 상?",
+   "ko": "너 어디야? 왜 산에 있어?",
+   "note": "在哪 = 어디야",
+   "tags": [
+    "form:在"
+   ],
+   "ui": "bubble",
+   "at": "21:11"
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "zh": "妈，我在看风景。",
+   "pinyin": "Mā, wǒ zài kàn fēngjǐng.",
+   "rd": "마, 워 짜이 칸 펑징.",
+   "ko": "엄마, 경치 보고 있어.",
+   "note": "风景 = 경치",
+   "tags": [
+    "form:在"
+   ],
+   "ui": "bubble",
+   "at": "21:12"
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "zh": "吃饭了吗？穿得够吗？",
+   "pinyin": "Chīfàn le ma? Chuān de gòu ma?",
+   "rd": "츠판 러 마? 촨 더 거우 마?",
+   "ko": "밥은? 옷은 따뜻하게 입었어?",
+   "note": "穿得够 = 충분히 입다",
+   "tags": [
+    "form:得"
+   ],
+   "ui": "bubble",
+   "at": "21:13"
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "……妈，你怎么用中文？",
+   "pinyin": "…… Mā, nǐ zěnme yòng Zhōngwén?",
+   "rd": "…… 마, 니 쩐머 융 중원?",
+   "ko": "……엄마, 왜 중국어로 써?",
+   "note": "用 = 쓰다",
+   "tags": [
+    "form:用"
+   ],
+   "ui": "bubble",
+   "at": "21:14"
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "我在学！你走了以后，我每天学。",
+   "pinyin": "Wǒ zài xué! Nǐ zǒu le yǐhòu, wǒ měitiān xué.",
+   "rd": "워 짜이 쉐! 니 쩌우 러 이허우, 워 메이톈 쉐.",
+   "ko": "배우는 중이야! 너 떠난 뒤로 매일 공부해.",
+   "note": "以后 = ~한 뒤",
+   "tags": [
+    "form:以后"
+   ],
+   "ui": "bubble",
+   "at": "21:15"
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "zh": "妈……我想你了。",
+   "pinyin": "Mā…… wǒ xiǎng nǐ le.",
+   "rd": "마…… 워 샹 니 러.",
+   "ko": "엄마…… 보고 싶어.",
+   "note": "想你了 = 보고 싶어",
+   "tags": [
+    "expr:想你了"
+   ],
+   "ui": "bubble",
+   "at": "21:16"
+  },
+  {
+   "num": 7,
+   "speaker": "B",
+   "zh": "我也想你。还有，快下山！",
+   "pinyin": "Wǒ yě xiǎng nǐ. Hái yǒu, kuài xià shān!",
+   "rd": "워 예 샹 니. 하이 유, 콰이 샤 산!",
+   "ko": "나도. 그리고, 빨리 산에서 내려와!",
+   "note": "下山 = 산에서 내려오다",
+   "tags": [
+    "form:快"
+   ],
+   "ui": "bubble",
+   "at": "21:17"
+  }
+ ]
+}

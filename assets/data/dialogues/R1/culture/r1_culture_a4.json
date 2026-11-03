@@ -1,0 +1,117 @@
+{
+ "id": "r1_culture_a4",
+ "region": "R1",
+ "island": "culture",
+ "kind": "short",
+ "draft": true,
+ "purpose": [
+  "making_friends"
+ ],
+ "domain": [
+  "culture"
+ ],
+ "title": "훠궈 첫 경험",
+ "emoji": "🍲",
+ "scene": "하오란과 훠궈. 학습자가 빨간 쪽 국물이 토마토인 줄 안다.",
+ "speakers": {
+  "A": "{name}",
+  "B": "浩然"
+ },
+ "learner_gender": "M",
+ "register": "casual",
+ "twist": 4,
+ "twist_type": "slip",
+ "flags": [],
+ "variant": "north",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "zh": "红的还是白的？选一个。",
+   "pinyin": "Hóng de háishi bái de? Xuǎn yí ge.",
+   "rd": "훙 더 하이스 바이 더? 쉬안 이 거.",
+   "ko": "빨간 거 하얀 거? 하나 골라.",
+   "note": "还是 = 아니면(선택)",
+   "tags": [
+    "form:还是"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "zh": "红的！是番茄的吧？",
+   "pinyin": "Hóng de! Shì fānqié de ba?",
+   "rd": "훙 더! 스 판체 더 바?",
+   "ko": "빨간 거! 토마토 맞지?",
+   "note": "好看 = 예쁘다",
+   "tags": [
+    "form:的"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "zh": "番茄？你在开玩笑吧。",
+   "pinyin": "Fānqié? Nǐ zài kāi wánxiào ba.",
+   "rd": "판체? 니 짜이 카이 완샤오 바.",
+   "ko": "토마토? 농담하는 거지.",
+   "note": "确定 = 확실하다",
+   "tags": [
+    "particle:哦"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "没事没事……啊！我的嘴！",
+   "pinyin": "Méishì méishì…… à! Wǒ de zuǐ!",
+   "rd": "메이스 메이스…… 아! 워 더 쭈이!",
+   "ko": "괜찮아 괜찮아…… 앗! 내 입!",
+   "note": "嘴 = 입",
+   "tags": [
+    "form:的"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "哈哈，水水水！快！",
+   "pinyin": "Hāha, shuǐ shuǐ shuǐ! Kuài!",
+   "rd": "하하, 수이 수이 수이! 콰이!",
+   "ko": "하하, 물물물! 빨리!",
+   "note": "快 = 빨리",
+   "tags": [
+    "form:快"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "zh": "水也是烫的啊！",
+   "pinyin": "Shuǐ yě shì tàng de a!",
+   "rd": "수이 예 스 탕 더 아!",
+   "ko": "물도 뜨거워!",
+   "note": "也 = ~도",
+   "tags": [
+    "form:也"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "B",
+   "zh": "来，我给你吹吹。下次吃白的。",
+   "pinyin": "Lái, wǒ gěi nǐ chuīchui. Xià cì chī bái de.",
+   "rd": "라이, 워 게이 니 추이추이. 샤 츠 츠 바이 더.",
+   "ko": "자, 내가 불어 줄게. 다음엔 하얀 거 먹자.",
+   "note": "吹吹 = 후후 불다",
+   "tags": [
+    "form:给"
+   ]
+  }
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r1_culture_a4_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ }
+}

@@ -1,0 +1,133 @@
+{
+ "id": "r1_culture_c2",
+ "region": "R1",
+ "island": "culture",
+ "kind": "chat",
+ "draft": true,
+ "purpose": [
+  "love"
+ ],
+ "domain": [
+  "culture"
+ ],
+ "title": "중추절 월병",
+ "emoji": "🥮",
+ "scene": "중추절 밤, 샤오리가 월병 사진을 보낸다. 학습자가 맛을 잘못 고른다.",
+ "speakers": {
+  "A": "{name}",
+  "B": "小丽"
+ },
+ "learner_gender": "M",
+ "register": "chat",
+ "twist": 3,
+ "twist_type": "chaos",
+ "flags": [
+  "romance"
+ ],
+ "variant": "north",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "zh": "中秋快乐～月饼到了没？",
+   "pinyin": "Zhōngqiū kuàilè～ Yuèbǐng dào le méi?",
+   "rd": "중추 콰이러～ 웨빙 다오 러 메이?",
+   "ko": "추석 잘 보내～ 월병 도착했어?",
+   "note": "中秋 = 추석(중추절)",
+   "tags": [
+    "expr:中秋快乐"
+   ],
+   "ui": "bubble",
+   "at": "21:11"
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "zh": "到了，谢谢！绿的吃了，超特别",
+   "pinyin": "Dào le, xièxie! Lǜ de chī le, chāo tèbié",
+   "rd": "다오 러, 셰셰! 뤼 더 츠 러, 차오 터볘",
+   "ko": "도착했어, 고마워! 초록색 먹었는데 완전 특이해",
+   "note": "特别 = 특별하다·특이하다",
+   "tags": [
+    "form:很"
+   ],
+   "ui": "bubble",
+   "at": "21:12"
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "zh": "绿的？？你吃绿的了？！",
+   "pinyin": "Lǜ de?? Nǐ chī lǜ de le?!",
+   "rd": "뤼 더?? 니 츠 뤼 더 러?!",
+   "ko": "초록색?? 초록색 먹었어?!",
+   "note": "哪个 = 어느 것",
+   "tags": [
+    "form:哪"
+   ],
+   "ui": "bubble",
+   "at": "21:13"
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "嗯，特别到我哭了😂",
+   "pinyin": "ǹg, tèbié dào wǒ kū le",
+   "rd": "응, 터볘 다오 워 쿠 러",
+   "ko": "응, 특이해서 울었어😂",
+   "note": "绿色 = 초록색",
+   "tags": [
+    "form:的"
+   ],
+   "ui": "bubble",
+   "at": "21:14"
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "完了完了，那是辣的！！给我妈的",
+   "pinyin": "Wán le wán le, nà shì là de!! Gěi wǒ mā de",
+   "rd": "완 러 완 러, 나 스 라 더!! 게이 워 마 더",
+   "ko": "망했다 망했다, 그거 매운 거야!! 우리 엄마 드릴 거였는데",
+   "note": "给……的 = ~에게 줄 것",
+   "tags": [
+    "form:给"
+   ],
+   "ui": "bubble",
+   "at": "21:15"
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "zh": "啊？难怪……我以为是抹茶",
+   "pinyin": "Á? Nánguài…… wǒ yǐwéi shì mǒchá",
+   "rd": "아? 난과이…… 워 이웨이 스 모차",
+   "ko": "어? 어쩐지…… 말차인 줄 알았어",
+   "note": "难怪 = 어쩐지",
+   "tags": [
+    "expr:难怪"
+   ],
+   "ui": "bubble",
+   "at": "21:16"
+  },
+  {
+   "num": 7,
+   "speaker": "B",
+   "zh": "别哭啦，我心疼了～明天去找你",
+   "pinyin": "Bié kū la, wǒ xīnténg le～ Míngtiān qù zhǎo nǐ",
+   "rd": "볘 쿠 라, 워 신텅 러～ 밍톈 취 자오 니",
+   "ko": "울지 마, 마음 아프잖아～ 내일 너 보러 갈게",
+   "note": "自己 = 직접",
+   "tags": [
+    "form:别"
+   ],
+   "ui": "bubble",
+   "at": "21:17"
+  }
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r1_culture_c2_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ }
+}

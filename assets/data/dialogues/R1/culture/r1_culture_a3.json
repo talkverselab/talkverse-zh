@@ -1,0 +1,117 @@
+{
+ "id": "r1_culture_a3",
+ "region": "R1",
+ "island": "culture",
+ "kind": "short",
+ "draft": true,
+ "purpose": [
+  "travel"
+ ],
+ "domain": [
+  "culture"
+ ],
+ "title": "광장무",
+ "emoji": "💃",
+ "scene": "저녁 공원, 아주머니들의 광장무 대열에 학습자가 끌려 들어간다.",
+ "speakers": {
+  "A": "{name}",
+  "B": "阿姨"
+ },
+ "learner_gender": "F",
+ "register": "polite",
+ "twist": 4,
+ "twist_type": "chaos",
+ "flags": [],
+ "variant": "north",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "zh": "小姑娘，过来一起跳啊！",
+   "pinyin": "Xiǎo gūniang, guòlai yìqǐ tiào a!",
+   "rd": "샤오 구냥, 궈라이 이치 탸오 아!",
+   "ko": "아가씨, 이리 와서 같이 춰요!",
+   "note": "跳舞 = 춤추다",
+   "tags": [
+    "form:吧"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "zh": "我？我真不会跳……",
+   "pinyin": "Wǒ? Wǒ zhēn bú huì tiào……",
+   "rd": "워? 워 전 부 후이 탸오……",
+   "ko": "저요? 저 진짜 못 춰요……",
+   "note": "不会 = 할 줄 모른다",
+   "tags": [
+    "form:会"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "zh": "没事！跟着我，左左右右！",
+   "pinyin": "Méishì! Gēnzhe wǒ, zuǒzuǒ yòuyòu!",
+   "rd": "메이스! 건저 워, 쭤쭤 유유!",
+   "ko": "괜찮아요! 날 따라서, 왼쪽 왼쪽 오른쪽 오른쪽!",
+   "note": "跟着 = 따라서",
+   "tags": [
+    "expr:没关系"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "啊，踩到您了！对不起对不起！",
+   "pinyin": "À, cǎi dào nín le! Duìbuqǐ duìbuqǐ!",
+   "rd": "아, 차이 다오 닌 러! 두이부치 두이부치!",
+   "ko": "앗, 발 밟았어요! 죄송해요 죄송해요!",
+   "note": "踩到 = 밟다",
+   "tags": [
+    "expr:对不起"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "没事没事！大家都在学你！",
+   "pinyin": "Méishì méishì! Dàjiā dōu zài xué nǐ!",
+   "rd": "메이스 메이스! 다자 더우 짜이 쉐 니!",
+   "ko": "괜찮아요 괜찮아요! 다들 아가씨 따라 해요!",
+   "note": "哎呀 = 어머·아이고",
+   "tags": [
+    "expr:哎呀"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "zh": "啊？为什么都在拍我……",
+   "pinyin": "Á? Wèishénme dōu zài pāi wǒ……",
+   "rd": "아? 웨이선머 더우 짜이 파이 워……",
+   "ko": "네? 왜 다들 저를 찍어요……",
+   "note": "在拍 = 찍고 있다",
+   "tags": [
+    "form:在"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "B",
+   "zh": "你跳得最可爱！明天还来啊？",
+   "pinyin": "Nǐ tiào de zuì kě'ài! Míngtiān hái lái a?",
+   "rd": "니 탸오 더 쭈이 커'아이! 밍톈 하이 라이 아?",
+   "ko": "아가씨가 제일 귀엽게 춰요! 내일도 올 거죠?",
+   "note": "跳得最好 = 제일 잘 춘다",
+   "tags": [
+    "form:得"
+   ]
+  }
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r1_culture_a3_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ }
+}

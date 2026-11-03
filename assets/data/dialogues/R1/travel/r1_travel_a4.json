@@ -1,0 +1,105 @@
+{
+ "id": "r1_travel_a4",
+ "region": "R1",
+ "island": "travel",
+ "kind": "short",
+ "draft": true,
+ "purpose": [
+  "travel"
+ ],
+ "domain": [
+  "travel"
+ ],
+ "title": "흥정",
+ "emoji": "🛍️",
+ "scene": "야시장. 흥정을 배우겠다던 학습자가 거꾸로 값을 올린다.",
+ "speakers": {
+  "A": "{name}",
+  "B": "老板"
+ },
+ "learner_gender": "F",
+ "register": "polite",
+ "twist": 4,
+ "twist_type": "chaos",
+ "flags": [],
+ "variant": "north",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "A",
+   "zh": "老板，这个多少钱？",
+   "pinyin": "Lǎobǎn, zhège duōshao qián?",
+   "rd": "라오반, 저거 둬사오 첸?",
+   "ko": "사장님, 이거 얼마예요?",
+   "note": "多少钱 = 얼마",
+   "tags": [
+    "expr:多少钱"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "B",
+   "zh": "五十块，便宜了。",
+   "pinyin": "Wǔshí kuài, piányi le.",
+   "rd": "우스 콰이, 폔이 러.",
+   "ko": "50위안, 싸게 드리는 거예요.",
+   "note": "块 = 위안(말할 때)",
+   "tags": [
+    "form:块"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "A",
+   "zh": "太贵啦！六十行吗？",
+   "pinyin": "Tài guì la! Liùshí xíng ma?",
+   "rd": "타이 구이 라! 류스 싱 마?",
+   "ko": "너무 비싸요! 60 돼요?",
+   "note": "太贵了 = 너무 비싸다",
+   "tags": [
+    "expr:太贵了"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "B",
+   "zh": "六十？行啊！拿两个！",
+   "pinyin": "Liùshí? Xíng a! Ná liǎng ge!",
+   "rd": "류스? 싱 아! 나 량 거!",
+   "ko": "60? 되죠! 두 개 가져가요!",
+   "note": "没问题 = 문제없어요",
+   "tags": [
+    "expr:没问题"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "A",
+   "zh": "啊不对不对！是四十！",
+   "pinyin": "À bú duì bú duì! Shì sìshí!",
+   "rd": "아 부 두이 부 두이! 스 쓰스!",
+   "ko": "앗 아니에요 아니에요! 40이요!",
+   "note": "说错了 = 잘못 말했다",
+   "tags": [
+    "expr:说错了"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "B",
+   "zh": "哈哈，真可爱。四十，再送一个！",
+   "pinyin": "Hāha, zhēn kě'ài. Sìshí, zài sòng yí ge!",
+   "rd": "하하, 전 커'아이. 쓰스, 짜이 쑹 이 거!",
+   "ko": "하하, 귀엽네요. 40에, 하나 더 드릴게요!",
+   "note": "送 = 덤으로 주다",
+   "tags": [
+    "form:送"
+   ]
+  }
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r1_travel_a4_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ }
+}
