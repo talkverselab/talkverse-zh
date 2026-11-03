@@ -1,0 +1,117 @@
+{
+ "id": "r1_life_a2",
+ "region": "R1",
+ "island": "life",
+ "kind": "short",
+ "draft": true,
+ "purpose": [
+  "love"
+ ],
+ "domain": [
+  "life"
+ ],
+ "title": "택배 열 상자",
+ "emoji": "📦",
+ "scene": "샤오리네 문 앞에 택배가 산더미. 학습자가 “한 번만” 누른 결과.",
+ "speakers": {
+  "A": "{name}",
+  "B": "小丽"
+ },
+ "learner_gender": "F",
+ "register": "casual",
+ "twist": 4,
+ "twist_type": "chaos",
+ "flags": [],
+ "variant": "north",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "zh": "门口堆成山了！都是你的？",
+   "pinyin": "Ménkǒu duī chéng shān le! Dōu shì nǐ de?",
+   "rd": "먼커우 두이 청 산 러! 더우 스 니 더?",
+   "ko": "문 앞에 산더미야! 다 네 거야?",
+   "note": "门口 = 문 앞",
+   "tags": [
+    "form:这么"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "zh": "不会吧……我就点了一下。",
+   "pinyin": "Bú huì ba…… wǒ jiù diǎn le yíxià.",
+   "rd": "부 후이 바…… 워 주 뎬 러 이샤.",
+   "ko": "설마…… 나 한 번만 눌렀는데.",
+   "note": "只 = ~만",
+   "tags": [
+    "form:只"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "zh": "一下？这里有十个！",
+   "pinyin": "Yíxià? Zhèlǐ yǒu shí ge!",
+   "rd": "이샤? 저리 유 스 거!",
+   "ko": "한 번? 여기 열 개야!",
+   "note": "这里 = 여기",
+   "tags": [
+    "form:有"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "完了，手滑点了十次！",
+   "pinyin": "Wán le, shǒu huá diǎn le shí cì!",
+   "rd": "완 러, 서우 화 뎬 러 스 츠!",
+   "ko": "망했다, 손 미끄러져서 열 번 눌렀어!",
+   "note": "点了十次 = 열 번 눌렀다",
+   "tags": [
+    "form:次"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "哈哈哈，买了十个什么啊？",
+   "pinyin": "Hāhāhā, mǎi le shí ge shénme a?",
+   "rd": "하하하, 마이 러 스 거 선머 아?",
+   "ko": "하하하, 뭘 열 개나 산 건데?",
+   "note": "什么 = 무엇",
+   "tags": [
+    "expr:哈哈哈"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "zh": "……都是给你的小礼物。",
+   "pinyin": "…… Dōu shì gěi nǐ de xiǎo lǐwù.",
+   "rd": "…… 더우 스 게이 니 더 샤오 리우.",
+   "ko": "……다 너 주려던 작은 선물이야.",
+   "note": "给你的 = 너에게 주는",
+   "tags": [
+    "form:给"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "B",
+   "zh": "那我全收了。一个都不还！",
+   "pinyin": "Nà wǒ quán shōu le. Yí ge dōu bù huán!",
+   "rd": "나 워 취안 서우 러. 이 거 더우 부 환!",
+   "ko": "그럼 다 받을게. 하나도 안 돌려줘!",
+   "note": "收下 = 받다",
+   "tags": [
+    "form:下"
+   ]
+  }
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r1_life_a2_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰 — Grok 표현 일부 채택, 존댓말·문장부호·논리 바로잡음"
+ }
+}

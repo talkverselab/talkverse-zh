@@ -1,0 +1,132 @@
+{
+ "id": "r1_culture_a2",
+ "region": "R1",
+ "island": "culture",
+ "kind": "short",
+ "draft": true,
+ "purpose": [
+  "love",
+  "making_friends"
+ ],
+ "domain": [
+  "culture"
+ ],
+ "title": "만두 빚기",
+ "emoji": "🥟",
+ "scene": "설날 밤, 샤오리 가족과 만두를 빚는다. 하나에만 동전이 들어 있다.",
+ "speakers": {
+  "A": "{name}",
+  "B": "小丽"
+ },
+ "learner_gender": "M",
+ "register": "casual",
+ "twist": 5,
+ "twist_type": "chaos",
+ "flags": [
+  "romance"
+ ],
+ "variant": "north",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "zh": "{name}，快来包饺子！",
+   "pinyin": "{name}, kuài lái bāo jiǎozi!",
+   "rd": "{name}, 콰이 라이 바오 자오쯔!",
+   "ko": "{name}, 빨리 와서 만두 빚어!",
+   "note": "会 = ~할 줄 알다",
+   "tags": [
+    "form:会"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "zh": "我不会……这样对吗？",
+   "pinyin": "Wǒ bú huì…… zhèyàng duì ma?",
+   "rd": "워 부 후이…… 저양 두이 마?",
+   "ko": "나 못 해…… 이렇게 하는 거 맞아?",
+   "note": "这样 = 이렇게",
+   "tags": [
+    "form:这样"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "zh": "哈哈，你包的像个球！",
+   "pinyin": "Hāha, nǐ bāo de xiàng ge qiú!",
+   "rd": "하하, 니 바오 더 샹 거 추!",
+   "ko": "하하, 네가 빚은 거 공 같아!",
+   "note": "好大 = 엄청 크다",
+   "tags": [
+    "form:好"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "里面有钱，对吧？",
+   "pinyin": "Lǐmiàn yǒu qián, duì ba?",
+   "rd": "리몐 유 첸, 두이 바?",
+   "ko": "안에 동전 들었지?",
+   "note": "对吧 = 그렇지?",
+   "tags": [
+    "expr:对吧"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "对，吃到的人明年好运！",
+   "pinyin": "Duì, chī dào de rén míngnián hǎo yùn!",
+   "rd": "두이, 츠 다오 더 런 밍녠 하오 윈!",
+   "ko": "응, 먹은 사람은 내년에 운이 좋대!",
+   "note": "明年 = 내년",
+   "tags": [
+    "form:的人"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "zh": "啊！我吃到了……三个？！",
+   "pinyin": "À! Wǒ chī dào le…… sān ge?!",
+   "rd": "아! 워 츠 다오 러…… 싼 거?!",
+   "ko": "앗! 나 먹었어…… 세 개?!",
+   "note": "吃到 = 먹게 되다",
+   "tags": [
+    "form:到"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "B",
+   "zh": "我都放在你那盘里了。",
+   "pinyin": "Wǒ dōu fàng zài nǐ nà pán lǐ le.",
+   "rd": "워 더우 팡 짜이 니 나 판 리 러.",
+   "ko": "내가 다 네 접시에 넣었어.",
+   "note": "放在 = ~에 넣다",
+   "tags": [
+    "form:在"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "A",
+   "zh": "……为什么？",
+   "pinyin": "…… Wèishénme?",
+   "rd": "…… 웨이선머?",
+   "ko": "……왜?",
+   "note": "为什么 = 왜",
+   "tags": [
+    "form:为什么"
+   ]
+  }
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r1_culture_a2_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰 — Grok 표현 일부 채택, 존댓말·문장부호·논리 바로잡음"
+ }
+}

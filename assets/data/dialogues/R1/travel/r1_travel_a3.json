@@ -1,0 +1,117 @@
+{
+ "id": "r1_travel_a3",
+ "region": "R1",
+ "island": "travel",
+ "kind": "short",
+ "draft": true,
+ "purpose": [
+  "travel"
+ ],
+ "domain": [
+  "travel"
+ ],
+ "title": "길을 잃었는데",
+ "emoji": "🗺️",
+ "scene": "밤거리에서 길을 잃은 학습자. 같은 길을 세 번 지나는 걸 하오란이 본다.",
+ "speakers": {
+  "A": "{name}",
+  "B": "浩然"
+ },
+ "learner_gender": "F",
+ "register": "casual",
+ "twist": 5,
+ "twist_type": "emotion",
+ "flags": [],
+ "variant": "north",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "zh": "你都转三圈了。",
+   "pinyin": "Nǐ dōu zhuàn sān quān le.",
+   "rd": "니 더우 좐 싼 취안 러.",
+   "ko": "너 벌써 세 바퀴째야.",
+   "note": "转 = 돌다",
+   "tags": [
+    "form:了"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "zh": "我找不到酒店啊……",
+   "pinyin": "Wǒ zhǎo bú dào jiǔdiàn a……",
+   "rd": "워 자오 부 다오 주뎬 아……",
+   "ko": "호텔을 못 찾겠어……",
+   "note": "找不到 = 못 찾다",
+   "tags": [
+    "form:不到"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "zh": "哪个？我带你去。",
+   "pinyin": "Nǎge? Wǒ dài nǐ qù.",
+   "rd": "나거? 워 다이 니 취.",
+   "ko": "어디? 내가 데려다줄게.",
+   "note": "带你去 = 데려가 주다",
+   "tags": [
+    "form:带"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "你一直在看我？",
+   "pinyin": "Nǐ yìzhí zài kàn wǒ?",
+   "rd": "니 이즈 짜이 칸 워?",
+   "ko": "너 계속 나 보고 있었어?",
+   "note": "太好了 = 정말 잘됐다",
+   "tags": [
+    "expr:太好了"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "嗯……到了，就在你后面。",
+   "pinyin": "ǹg…… dào le, jiù zài nǐ hòumiàn.",
+   "rd": "응…… 다오 러, 주 짜이 니 허우몐.",
+   "ko": "응…… 다 왔어, 바로 네 뒤야.",
+   "note": "就在 = 바로 ~에 있다",
+   "tags": [
+    "form:就"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "zh": "啊……我太笨了。谢谢你。",
+   "pinyin": "À…… wǒ tài bèn le. Xièxie nǐ.",
+   "rd": "아…… 워 타이 번 러. 셰셰 니.",
+   "ko": "아…… 나 진짜 바보다. 고마워.",
+   "note": "笨 = 어리석다",
+   "tags": [
+    "form:太"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "B",
+   "zh": "不笨。明天还迷路吗？我等你。",
+   "pinyin": "Bú bèn. Míngtiān hái mílù ma? Wǒ děng nǐ.",
+   "rd": "부 번. 밍톈 하이 미루 마? 워 덩 니.",
+   "ko": "바보 아니야. 내일도 길 잃을래? 기다릴게.",
+   "note": "迷路 = 길을 잃다",
+   "tags": [
+    "form:还"
+   ]
+  }
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r1_travel_a3_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰 — Grok 표현 일부 채택, 존댓말·문장부호·논리 바로잡음"
+ }
+}

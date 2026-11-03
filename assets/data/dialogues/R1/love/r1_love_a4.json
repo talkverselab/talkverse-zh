@@ -1,0 +1,131 @@
+{
+ "id": "r1_love_a4",
+ "region": "R1",
+ "island": "love",
+ "kind": "short",
+ "draft": true,
+ "purpose": [
+  "love"
+ ],
+ "domain": [
+  "love"
+ ],
+ "title": "엄마의 영상통화",
+ "emoji": "📱",
+ "scene": "샤오리와 데이트 중, 샤오리 엄마에게서 영상통화가 온다.",
+ "speakers": {
+  "A": "{name}",
+  "B": "小丽"
+ },
+ "learner_gender": "M",
+ "register": "casual",
+ "twist": 3,
+ "twist_type": "chaos",
+ "flags": [
+  "romance"
+ ],
+ "variant": "north",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "zh": "完了，我妈视频！",
+   "pinyin": "Wán le, wǒ mā shìpín!",
+   "rd": "완 러, 워 마 스핀!",
+   "ko": "큰일, 우리 엄마 영상통화!",
+   "note": "视频 = 영상통화",
+   "tags": [
+    "expr:视频"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "zh": "我先躲一下？",
+   "pinyin": "Wǒ xiān duǒ yíxià?",
+   "rd": "워 셴 둬 이샤?",
+   "ko": "나 잠깐 숨을까?",
+   "note": "一下 = 잠깐",
+   "tags": [
+    "form:一下"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "zh": "来不及了！她看见你了！",
+   "pinyin": "Láibují le! Tā kànjiàn nǐ le!",
+   "rd": "라이부지 러! 타 칸젠 니 러!",
+   "ko": "늦었어! 엄마가 너 봤어!",
+   "note": "来不及 = 늦다",
+   "tags": [
+    "expr:来不及了"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "阿姨好！我……我只是朋友！",
+   "pinyin": "Āyí hǎo! Wǒ…… wǒ zhǐshì péngyou!",
+   "rd": "아이 하오! 워…… 워 즈스 펑유!",
+   "ko": "어머님 안녕하세요! 저…… 저 그냥 친구예요!",
+   "note": "阿姨 = (친구) 어머님·아주머니",
+   "tags": [
+    "expr:阿姨好"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "妈，他说他只是朋友……",
+   "pinyin": "Mā, tā shuō tā zhǐshì péngyou……",
+   "rd": "마, 타 숴 타 즈스 펑유……",
+   "ko": "엄마, 얘가 그냥 친구래……",
+   "note": "只是 = 그냥",
+   "tags": [
+    "form:只是"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "zh": "你妈说什么？",
+   "pinyin": "Nǐ mā shuō shénme?",
+   "rd": "니 마 숴 선머?",
+   "ko": "어머님이 뭐라셔?",
+   "note": "说什么 = 뭐라고 해",
+   "tags": [
+    "form:什么"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "B",
+   "zh": "她说：“那就快点别当朋友了。”",
+   "pinyin": "Tā shuō: \"Nà jiù kuài diǎn bié dāng péngyou le.\"",
+   "rd": "타 숴: \"나 주 콰이 뎬 볘 당 펑유 러.\"",
+   "ko": "엄마가 \"그럼 빨리 친구 그만하래.\"",
+   "note": "快一点 = 빨리",
+   "tags": [
+    "form:快一点"
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "A",
+   "zh": "……那我们听阿姨的？",
+   "pinyin": "…… Nà wǒmen tīng āyí de?",
+   "rd": "…… 나 워먼 팅 아이 더?",
+   "ko": "……그럼 우리 어머님 말씀 들을까?",
+   "note": "听……的 = ~의 말을 듣다",
+   "tags": [
+    "form:听的"
+   ]
+  }
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r1_love_a4_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰 — Grok 표현 일부 채택, 존댓말·문장부호·논리 바로잡음"
+ }
+}

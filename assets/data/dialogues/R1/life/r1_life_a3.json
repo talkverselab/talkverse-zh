@@ -1,0 +1,119 @@
+{
+ "id": "r1_life_a3",
+ "region": "R1",
+ "island": "life",
+ "kind": "chat",
+ "draft": true,
+ "purpose": [
+  "love"
+ ],
+ "domain": [
+  "life"
+ ],
+ "title": "읽씹",
+ "emoji": "📵",
+ "scene": "학습자가 샤오리에게 긴 메시지를 보냈는데, 답이 없다.",
+ "speakers": {
+  "A": "{name}",
+  "B": "小丽"
+ },
+ "learner_gender": "M",
+ "register": "chat",
+ "twist": 3,
+ "twist_type": "ignore",
+ "flags": [
+  "romance"
+ ],
+ "variant": "north",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "A",
+   "zh": "今天怎么样？吃饭了吗？",
+   "pinyin": "Jīntiān zěnmeyàng? Chīfàn le ma?",
+   "rd": "진톈 쩐머양? 츠판 러 마?",
+   "ko": "오늘 어땠어? 밥 먹었어?",
+   "note": "怎么样 = 어때",
+   "tags": [
+    "expr:怎么样"
+   ],
+   "ui": "bubble",
+   "at": "22:11"
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "zh": "在干嘛呀？",
+   "pinyin": "Zài gàn má ya?",
+   "rd": "짜이 간 마 야?",
+   "ko": "뭐 해?",
+   "note": "在忙 = 바쁘다",
+   "tags": [
+    "form:在"
+   ],
+   "ui": "bubble",
+   "at": "22:12"
+  },
+  {
+   "num": 3,
+   "speaker": "A",
+   "zh": "已读不回？？",
+   "pinyin": "Yǐdú bù huí??",
+   "rd": "이두 부 후이??",
+   "ko": "읽씹??",
+   "note": "已读 = 읽음(표시)",
+   "tags": [
+    "expr:已读"
+   ],
+   "ui": "bubble",
+   "at": "22:13"
+  },
+  {
+   "num": 4,
+   "speaker": "B",
+   "zh": "不是不是！看你照片看呆了",
+   "pinyin": "Bú shì bú shì! Kàn nǐ zhàopiàn kàn dāi le",
+   "rd": "부 스 부 스! 칸 니 자오폔 칸 다이 러",
+   "ko": "아니야 아니야! 네 사진 보다가 넋 나갔어",
+   "note": "在看 = 보고 있다",
+   "tags": [
+    "form:在"
+   ],
+   "ui": "bubble",
+   "at": "22:14"
+  },
+  {
+   "num": 5,
+   "speaker": "A",
+   "zh": "哪张啊？？",
+   "pinyin": "Nǎ zhāng a??",
+   "rd": "나 장 아??",
+   "ko": "어떤 사진??",
+   "note": "哪张 = 어느 장",
+   "tags": [
+    "form:哪"
+   ],
+   "ui": "bubble",
+   "at": "22:15"
+  },
+  {
+   "num": 6,
+   "speaker": "B",
+   "zh": "你睡觉那张～看不够",
+   "pinyin": "Nǐ shuìjiào nà zhāng～ kàn bú gòu",
+   "rd": "니 수이자오 나 장～ 칸 부 거우",
+   "ko": "너 자는 사진～ 계속 보게 돼",
+   "note": "可爱 = 귀엽다",
+   "tags": [
+    "expr:可爱"
+   ],
+   "ui": "bubble",
+   "at": "22:16"
+  }
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r1_life_a3_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰 — Grok 표현 일부 채택, 존댓말·문장부호·논리 바로잡음"
+ }
+}

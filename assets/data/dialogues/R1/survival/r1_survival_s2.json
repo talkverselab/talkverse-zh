@@ -1,0 +1,117 @@
+{
+ "id": "r1_survival_s2",
+ "region": "R1",
+ "island": "survival",
+ "kind": "survival",
+ "draft": true,
+ "purpose": [
+  "travel"
+ ],
+ "domain": [
+  "life"
+ ],
+ "title": "“不辣” 한마디",
+ "emoji": "🌶️",
+ "scene": "식당에서 처음 주문. “안 맵게”를 말하려다 정반대가 된다.",
+ "speakers": {
+  "A": "{name}",
+  "B": "服务员"
+ },
+ "learner_gender": "M",
+ "register": "polite",
+ "twist": 4,
+ "twist_type": "chaos",
+ "flags": [],
+ "variant": "north",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "zh": "你好，吃点什么？",
+   "pinyin": "Nǐ hǎo, chī diǎn shénme?",
+   "rd": "니 하오, 츠 뎬 선머?",
+   "ko": "어서 오세요, 뭐 드릴까요?",
+   "note": "想吃什么 = 뭐 드실래요",
+   "tags": [
+    "form:想"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "zh": "这个，那个也要。",
+   "pinyin": "Zhège, nàge yě yào.",
+   "rd": "저거, 나거 예 야오.",
+   "ko": "이거랑, 저것도요.",
+   "note": "还有 = 그리고",
+   "tags": [
+    "form:还有"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "zh": "要辣的吗？",
+   "pinyin": "Yào là de ma?",
+   "rd": "야오 라 더 마?",
+   "ko": "맵게 해 드릴까요?",
+   "note": "辣 = 맵다",
+   "tags": [
+    "form:要……吗"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "要！啊不，不要辣！",
+   "pinyin": "Yào! À bù, bú yào là!",
+   "rd": "야오! 아 부, 부 야오 라!",
+   "ko": "네! 앗 아니, 안 맵게요!",
+   "note": "说错了 = 잘못 말했다",
+   "tags": [
+    "expr:说错了"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "好嘞，特辣一份！",
+   "pinyin": "Hǎo lei, tè là yí fèn!",
+   "rd": "하오 레이, 터 라 이 펀!",
+   "ko": "네~ 아주 맵게 하나요!",
+   "note": "特别 = 아주",
+   "tags": [
+    "form:特别"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "zh": "别别别！一点都不要！",
+   "pinyin": "Bié bié bié! Yìdiǎn dōu bú yào!",
+   "rd": "볘 볘 볘! 이뎬 더우 부 야오!",
+   "ko": "안 돼요 안 돼요! 하나도 넣지 마세요!",
+   "note": "一点都不 = 조금도 안",
+   "tags": [
+    "form:一点都不"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "B",
+   "zh": "哈哈，懂了，不辣。送你一杯水！",
+   "pinyin": "Hāha, dǒng le, bú là. Sòng nǐ yì bēi shuǐ!",
+   "rd": "하하, 둥 러, 부 라. 쑹 니 이 베이 수이!",
+   "ko": "하하, 알겠어요, 안 맵게. 물 한 잔 서비스예요!",
+   "note": "知道了 = 알겠어요",
+   "tags": [
+    "expr:知道了"
+   ]
+  }
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r1_survival_s2_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰 — Grok 표현 일부 채택, 존댓말·문장부호·논리 바로잡음"
+ }
+}

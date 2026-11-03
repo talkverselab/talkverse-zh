@@ -1,0 +1,119 @@
+{
+ "id": "r1_love_a3",
+ "region": "R1",
+ "island": "love",
+ "kind": "short",
+ "draft": true,
+ "purpose": [
+  "love"
+ ],
+ "domain": [
+  "love"
+ ],
+ "title": "이어폰 반쪽",
+ "emoji": "🎧",
+ "scene": "도서관. 옆자리 위에가 이어폰 한쪽을 내밀며 먼저 말을 건다.",
+ "speakers": {
+  "A": "{name}",
+  "B": "悦"
+ },
+ "learner_gender": "M",
+ "register": "casual",
+ "twist": 5,
+ "twist_type": "reveal",
+ "flags": [
+  "romance"
+ ],
+ "variant": "north",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "zh": "嘿，分你一只？",
+   "pinyin": "Hēi, fēn nǐ yì zhī?",
+   "rd": "헤이, 펀 니 이 즈?",
+   "ko": "저기, 한쪽 들을래?",
+   "note": "听 = 듣다",
+   "tags": [
+    "form:吗"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "zh": "嗯？好……什么歌啊？",
+   "pinyin": "ǹg? Hǎo…… shénme gē a?",
+   "rd": "응? 하오…… 선머 거 아?",
+   "ko": "응? 좋아…… 무슨 노래야?",
+   "note": "什么歌 = 무슨 노래",
+   "tags": [
+    "form:什么"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "zh": "你听听。好听不？",
+   "pinyin": "Nǐ tīngting. Hǎotīng bu?",
+   "rd": "니 팅팅. 하오팅 부?",
+   "ko": "들어 봐. 좋아?",
+   "note": "听听 = 좀 들어 보다",
+   "tags": [
+    "form:重叠"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "好听！叫什么名字？",
+   "pinyin": "Hǎotīng! Jiào shénme míngzi?",
+   "rd": "하오팅! 자오 선머 밍쯔?",
+   "ko": "좋다! 제목이 뭐야?",
+   "note": "叫什么 = 이름이 뭐야",
+   "tags": [
+    "form:叫"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "没名字。我写的。",
+   "pinyin": "Méi míngzi. Wǒ xiě de.",
+   "rd": "메이 밍쯔. 워 셰 더.",
+   "ko": "제목 없어. 내가 쓴 거야.",
+   "note": "我写的 = 내가 쓴 것",
+   "tags": [
+    "form:的"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "zh": "真的？那我是第一个听的！",
+   "pinyin": "Zhēn de? Nà wǒ shì dì yī ge tīng de!",
+   "rd": "전 더? 나 워 스 디 이 거 팅 더!",
+   "ko": "진짜? 그럼 내가 처음 들은 거네!",
+   "note": "真的很 = 진짜 ~하다",
+   "tags": [
+    "form:真的"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "B",
+   "zh": "小声点……只给你一个人听。",
+   "pinyin": "Xiǎo shēng diǎn…… zhǐ gěi nǐ yí ge rén tīng.",
+   "rd": "샤오 성 뎬…… 즈 게이 니 이 거 런 팅.",
+   "ko": "쉿…… 너한테만 들려주는 거야.",
+   "note": "第一个 = 첫 번째",
+   "tags": [
+    "form:第一"
+   ]
+  }
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r1_love_a3_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰 — Grok 표현 일부 채택, 존댓말·문장부호·논리 바로잡음"
+ }
+}

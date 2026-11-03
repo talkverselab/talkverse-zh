@@ -1,0 +1,117 @@
+{
+ "id": "r1_friends_a3",
+ "region": "R1",
+ "island": "friends",
+ "kind": "short",
+ "draft": true,
+ "purpose": [
+  "making_friends"
+ ],
+ "domain": [
+  "friends"
+ ],
+ "title": "가위바위보",
+ "emoji": "✊",
+ "scene": "밥값 내기 가위바위보. 하오란이 계속 진다.",
+ "speakers": {
+  "A": "{name}",
+  "B": "浩然"
+ },
+ "learner_gender": "M",
+ "register": "casual",
+ "twist": 6,
+ "twist_type": "emotion",
+ "flags": [],
+ "variant": "north",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "zh": "石头剪刀布！……又输了？",
+   "pinyin": "Shítou jiǎndāo bù! …… Yòu shū le?",
+   "rd": "스터우 젠다오 부! …… 유 수 러?",
+   "ko": "가위바위보! ……또 졌어?",
+   "note": "又 = 또",
+   "tags": [
+    "form:又"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "zh": "三次了耶！你请！",
+   "pinyin": "Sān cì le yē! Nǐ qǐng!",
+   "rd": "싼 츠 러 예! 니 칭!",
+   "ko": "세 번째야! 네가 쏴!",
+   "note": "请客 = 한턱내다",
+   "tags": [
+    "expr:请客"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "zh": "再来！最后一次！",
+   "pinyin": "Zài lái! Zuìhòu yí cì!",
+   "rd": "짜이 라이! 쭈이허우 이 츠!",
+   "ko": "한 번 더! 진짜 마지막!",
+   "note": "再来一次 = 한 번 더",
+   "tags": [
+    "expr:再来一次"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "好吧……石头剪刀布！",
+   "pinyin": "Hǎo ba…… shítou jiǎndāo bù!",
+   "rd": "하오 바…… 스터우 젠다오 부!",
+   "ko": "좋아…… 가위바위보!",
+   "note": "好吧 = 좋아(마지못해)",
+   "tags": [
+    "expr:好吧"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "又输了！哈哈，我的钱没了……",
+   "pinyin": "Yòu shū le! Hāha, wǒ de qián méi le……",
+   "rd": "유 수 러! 하하, 워 더 첸 메이 러……",
+   "ko": "또 졌다! 하하, 내 돈 다 날아갔네……",
+   "note": "我的钱 = 내 돈",
+   "tags": [
+    "expr:哈哈"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "zh": "你每次都出布，是故意的吧？",
+   "pinyin": "Nǐ měi cì dōu chū bù, shì gùyì de ba?",
+   "rd": "니 메이 츠 더우 추 부, 스 구이 더 바?",
+   "ko": "너 매번 보 냈잖아, 일부러지?",
+   "note": "其实 = 사실",
+   "tags": [
+    "form:其实"
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "B",
+   "zh": "被你发现了……我就是想请你。",
+   "pinyin": "Bèi nǐ fāxiàn le…… wǒ jiùshì xiǎng qǐng nǐ.",
+   "rd": "베이 니 파셴 러…… 워 주스 샹 칭 니.",
+   "ko": "들켰네…… 그냥 너한테 사 주고 싶었어.",
+   "note": "就是想 = 그냥 ~하고 싶었다",
+   "tags": [
+    "form:就是"
+   ]
+  }
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r1_friends_a3_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰 — Grok 표현 일부 채택, 존댓말·문장부호·논리 바로잡음"
+ }
+}

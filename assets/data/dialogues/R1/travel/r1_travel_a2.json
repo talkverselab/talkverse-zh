@@ -1,0 +1,105 @@
+{
+ "id": "r1_travel_a2",
+ "region": "R1",
+ "island": "travel",
+ "kind": "short",
+ "draft": true,
+ "purpose": [
+  "travel"
+ ],
+ "domain": [
+  "travel"
+ ],
+ "title": "셀카봉",
+ "emoji": "🤳",
+ "scene": "관광지에서 셀카를 찍어 달라고 부탁했는데, 아저씨가 너무 열정적이다.",
+ "speakers": {
+  "A": "{name}",
+  "B": "大叔"
+ },
+ "learner_gender": "F",
+ "register": "polite",
+ "twist": 5,
+ "twist_type": "chaos",
+ "flags": [],
+ "variant": "north",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "A",
+   "zh": "大叔，能帮我拍一张吗？",
+   "pinyin": "Dàshū, néng bāng wǒ pāi yì zhāng ma?",
+   "rd": "다수, 넝 방 워 파이 이 장 마?",
+   "ko": "아저씨, 사진 한 장 찍어 주실 수 있어요?",
+   "note": "帮我 = 나 대신 ~해 주다",
+   "tags": [
+    "form:帮"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "B",
+   "zh": "好嘞！站这儿，笑一个！",
+   "pinyin": "Hǎo lei! Zhàn zhèr, xiào yí ge!",
+   "rd": "하오 레이! 잔 절, 샤오 이 거!",
+   "ko": "좋지! 여기 서요, 웃어요!",
+   "note": "没问题 = 문제없어요",
+   "tags": [
+    "expr:没问题"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "A",
+   "zh": "拍好了吗？",
+   "pinyin": "Pāi hǎo le ma?",
+   "rd": "파이 하오 러 마?",
+   "ko": "다 찍으셨어요?",
+   "note": "好了吗 = 다 됐어요?",
+   "tags": [
+    "form:了"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "B",
+   "zh": "再来！往后，再往后点！",
+   "pinyin": "Zài lái! Wǎng hòu, zài wǎng hòu diǎn!",
+   "rd": "짜이 라이! 왕 허우, 짜이 왕 허우 뎬!",
+   "ko": "한 번 더! 뒤로, 더 뒤로!",
+   "note": "往后 = 뒤로",
+   "tags": [
+    "form:往"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "A",
+   "zh": "大叔，后面是水啊！",
+   "pinyin": "Dàshū, hòumiàn shì shuǐ a!",
+   "rd": "다수, 허우몐 스 수이 아!",
+   "ko": "아저씨, 뒤에 물이에요!",
+   "note": "后面 = 뒤",
+   "tags": [
+    "form:后面"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "B",
+   "zh": "这张最好！一百张，都给你！",
+   "pinyin": "Zhè zhāng zuì hǎo! Yìbǎi zhāng, dōu gěi nǐ!",
+   "rd": "저 장 쭈이 하오! 이바이 장, 더우 게이 니!",
+   "ko": "이게 최고예요! 백 장, 다 드려요!",
+   "note": "都给你 = 다 너에게",
+   "tags": [
+    "form:都"
+   ]
+  }
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r1_travel_a2_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰 — Grok 표현 일부 채택, 존댓말·문장부호·논리 바로잡음"
+ }
+}

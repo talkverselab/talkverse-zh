@@ -1,0 +1,105 @@
+{
+ "id": "r1_survival_s3",
+ "region": "R1",
+ "island": "survival",
+ "kind": "survival",
+ "draft": true,
+ "purpose": [
+  "travel"
+ ],
+ "domain": [
+  "travel"
+ ],
+ "title": "지하철 반대 방향",
+ "emoji": "🚇",
+ "scene": "처음 탄 지하철. 친절한 아저씨에게 길을 물었는데…",
+ "speakers": {
+  "A": "{name}",
+  "B": "大叔"
+ },
+ "learner_gender": "F",
+ "register": "polite",
+ "twist": 4,
+ "twist_type": "slip",
+ "flags": [],
+ "variant": "north",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "A",
+   "zh": "叔叔，这趟去机场吗？",
+   "pinyin": "Shūshu, zhè tàng qù jīchǎng ma?",
+   "rd": "수수, 저 탕 취 지창 마?",
+   "ko": "아저씨, 이거 공항 가요?",
+   "note": "请问 = 실례지만",
+   "tags": [
+    "expr:请问"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "B",
+   "zh": "机场？不去，旁边那趟。",
+   "pinyin": "Jīchǎng? Bú qù, pángbiān nà tàng.",
+   "rd": "지창? 부 취, 팡볜 나 탕.",
+   "ko": "공항? 안 가요, 옆에 거예요.",
+   "note": "那边 = 저쪽",
+   "tags": [
+    "form:那边"
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "A",
+   "zh": "谢谢！糟了，门关了！",
+   "pinyin": "Xièxie! Zāo le, mén guān le!",
+   "rd": "셰셰! 짜오 러, 먼 관 러!",
+   "ko": "감사합니다! 망했다, 문 닫혔어요!",
+   "note": "关了 = 닫혔다",
+   "tags": [
+    "form:了"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "B",
+   "zh": "别慌，下一站下车，再坐回去。",
+   "pinyin": "Bié huāng, xià yí zhàn xiàchē, zài zuò huíqu.",
+   "rd": "볘 황, 샤 이 잔 샤처, 짜이 쭤 후이취.",
+   "ko": "당황하지 마요, 다음 역에서 내려서 다시 타면 돼요.",
+   "note": "下一站 = 다음 역",
+   "tags": [
+    "expr:下一站"
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "A",
+   "zh": "您也下车吗？",
+   "pinyin": "Nín yě xiàchē ma?",
+   "rd": "닌 예 샤처 마?",
+   "ko": "아저씨도 내리세요?",
+   "note": "您 = 당신(높임)",
+   "tags": [
+    "form:您"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "B",
+   "zh": "哈哈，我也坐错了。走，一起回去！",
+   "pinyin": "Hāha, wǒ yě zuò cuò le. Zǒu, yìqǐ huíqu!",
+   "rd": "하하, 워 예 쭤 춰 러. 쩌우, 이치 후이취!",
+   "ko": "하하, 나도 잘못 탔어요. 가요, 같이 돌아가요!",
+   "note": "坐错了 = 잘못 탔다",
+   "tags": [
+    "expr:坐错了"
+   ]
+  }
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r1_survival_s3_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰 — Grok 표현 일부 채택, 존댓말·문장부호·논리 바로잡음"
+ }
+}
