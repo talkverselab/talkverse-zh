@@ -1,0 +1,262 @@
+{
+ "id": "r1_love_c3",
+ "region": "R1",
+ "island": "love",
+ "kind": "chat",
+ "draft": true,
+ "purpose": [
+  "love"
+ ],
+ "domain": [
+  "love"
+ ],
+ "title": "먼저 끊어",
+ "emoji": "🌙",
+ "scene": "밤 12시. 위에와 「잘 자」를 스무 번째 주고받는 중이다.",
+ "speakers": {
+  "A": "{name}",
+  "B": "悦"
+ },
+ "learner_gender": "M",
+ "register": "chat",
+ "twist": 5,
+ "twist_type": "emotion",
+ "flags": [
+  "romance"
+ ],
+ "variant": "north",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "zh": "又晚安了～真困。",
+   "pinyin": "Yòu wǎn'ān le～ zhēn kùn.",
+   "rd": "유 완'안 러～ 전 쿤.",
+   "ko": "또 「잘 자」네～ 진짜 졸려.",
+   "note": "困 = 졸리다",
+   "tags": [
+    "expr:晚安"
+   ],
+   "lemmas": [
+    [
+     "又",
+     "又",
+     "yòu"
+    ],
+    [
+     "晚安",
+     "晚安",
+     "wǎn ān"
+    ],
+    [
+     "真",
+     "真",
+     "zhēn"
+    ],
+    [
+     "困",
+     "困",
+     "kùn"
+    ]
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "zh": "困就睡！晚安。",
+   "pinyin": "Kùn jiù shuì! Wǎn'ān.",
+   "rd": "쿤 주 수이! 완'안.",
+   "ko": "졸리면 자! 잘 자.",
+   "note": "晚安 = 잘 자",
+   "tags": [
+    "expr:晚安"
+   ],
+   "lemmas": [
+    [
+     "困",
+     "困",
+     "kùn"
+    ],
+    [
+     "就",
+     "就",
+     "jiù"
+    ],
+    [
+     "睡",
+     "睡",
+     "shuì"
+    ],
+    [
+     "晚安",
+     "晚安",
+     "wǎn ān"
+    ]
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "zh": "你先！我看着你。",
+   "pinyin": "Nǐ xiān! Wǒ kànzhe nǐ.",
+   "rd": "니 셴! 워 칸저 니.",
+   "ko": "네가 먼저! 내가 보고 있을게.",
+   "note": "看着 = 보고 있다",
+   "tags": [
+    "form:先"
+   ],
+   "lemmas": [
+    [
+     "先",
+     "先",
+     "xiān"
+    ],
+    [
+     "看着",
+     "看着",
+     "kàn zhe"
+    ]
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "别看……你先睡。",
+   "pinyin": "Bié kàn…… nǐ xiān shuì.",
+   "rd": "볘 칸…… 니 셴 수이.",
+   "ko": "보지 마…… 네가 먼저 자.",
+   "note": "先 = 먼저",
+   "tags": [
+    "form:先"
+   ],
+   "lemmas": [
+    [
+     "别",
+     "别",
+     "bié"
+    ],
+    [
+     "看",
+     "看",
+     "kàn"
+    ],
+    [
+     "先",
+     "先",
+     "xiān"
+    ],
+    [
+     "睡",
+     "睡",
+     "shuì"
+    ]
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "二十次了，还在。",
+   "pinyin": "Èrshí cì le, hái zài.",
+   "rd": "얼스 츠 러, 하이 짜이.",
+   "ko": "스무 번째야, 아직 있네.",
+   "note": "次 = 번(횟수)",
+   "tags": [
+    "form:第"
+   ],
+   "lemmas": [
+    [
+     "二十次",
+     "次",
+     "cì"
+    ],
+    [
+     "还",
+     "还",
+     "hái"
+    ]
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "zh": "一起数？三、二、一。",
+   "pinyin": "Yìqǐ shǔ? Sān, èr, yī.",
+   "rd": "이치 수? 싼, 얼, 이.",
+   "ko": "같이 셀까? 셋, 둘, 하나.",
+   "note": "数 = 세다",
+   "tags": [
+    "form:一起"
+   ],
+   "lemmas": [
+    [
+     "一起",
+     "一起",
+     "yì qǐ"
+    ],
+    [
+     "数",
+     "数",
+     "shù"
+    ]
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "B",
+   "zh": "……还在？心跳了。",
+   "pinyin": "…… Hái zài? Xīntiào le.",
+   "rd": "…… 하이 짜이? 신탸오 러.",
+   "ko": "……아직 있어? 심장 뛴다.",
+   "note": "心跳 = 심장이 뛰다",
+   "tags": [
+    "form:还"
+   ],
+   "lemmas": [
+    [
+     "还",
+     "还",
+     "hái"
+    ],
+    [
+     "心",
+     "心",
+     "xīn"
+    ],
+    [
+     "跳",
+     "跳",
+     "tiào"
+    ]
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "A",
+   "zh": "在。不想断。",
+   "pinyin": "Zài. Bù xiǎng duàn.",
+   "rd": "짜이. 부 샹 돤.",
+   "ko": "있어. 끊기 싫어.",
+   "note": "断 = 끊다",
+   "tags": [
+    "form:不想"
+   ],
+   "lemmas": [
+    [
+     "不想",
+     "不想",
+     "bù xiǎng"
+    ],
+    [
+     "断",
+     "断",
+     "duàn"
+    ]
+   ]
+  }
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r1_love_c3_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ }
+}

@@ -1,0 +1,260 @@
+{
+ "id": "r1_travel_c4",
+ "region": "R1",
+ "island": "travel",
+ "kind": "chat",
+ "draft": true,
+ "purpose": [
+  "travel"
+ ],
+ "domain": [
+  "travel"
+ ],
+ "title": "몇 번 플랫폼?",
+ "emoji": "🚉",
+ "scene": "기차역. 샤오리가 채팅으로 길을 알려 주는데, 학습자는 자꾸 반대로 간다.",
+ "speakers": {
+  "A": "{name}",
+  "B": "小丽"
+ },
+ "learner_gender": "F",
+ "register": "chat",
+ "twist": 6,
+ "twist_type": "chaos",
+ "flags": [],
+ "variant": "north",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "A",
+   "zh": "车站到了，几号站台？",
+   "pinyin": "Chēzhàn dào le, jǐ hào zhàntái?",
+   "rd": "처잔 다오 러, 지 하오 잔타이?",
+   "ko": "역 도착했어, 몇 번 플랫폼?",
+   "note": "站台 = 플랫폼",
+   "tags": [
+    "form:几"
+   ],
+   "lemmas": [
+    [
+     "车站",
+     "车站",
+     "chē zhàn"
+    ],
+    [
+     "到",
+     "到",
+     "dào"
+    ],
+    [
+     "几号",
+     "号",
+     "hào"
+    ],
+    [
+     "站",
+     "站",
+     "zhàn"
+    ],
+    [
+     "台",
+     "台",
+     "tái"
+    ]
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "B",
+   "zh": "三号，往左走！",
+   "pinyin": "Sān hào, wǎng zuǒ zǒu!",
+   "rd": "싼 하오, 왕 쭤 쩌우!",
+   "ko": "3번, 왼쪽으로 가!",
+   "note": "往左 = 왼쪽으로",
+   "tags": [
+    "form:往"
+   ],
+   "lemmas": [
+    [
+     "三号",
+     "号",
+     "hào"
+    ],
+    [
+     "左",
+     "左",
+     "zuǒ"
+    ],
+    [
+     "走",
+     "走",
+     "zǒu"
+    ]
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "A",
+   "zh": "啊？这是七号。",
+   "pinyin": "À? Zhè shì qī hào.",
+   "rd": "아? 저 스 치 하오.",
+   "ko": "어? 여기 7번인데.",
+   "note": "这是 = 여기는",
+   "tags": [
+    "form:是"
+   ],
+   "lemmas": [
+    [
+     "这",
+     "这",
+     "zhè"
+    ],
+    [
+     "是",
+     "是",
+     "shì"
+    ],
+    [
+     "七号",
+     "号",
+     "hào"
+    ]
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "B",
+   "zh": "右了！回去啊！",
+   "pinyin": "Yòu le! Huíqu a!",
+   "rd": "유 러! 후이취 아!",
+   "ko": "오른쪽으로 갔잖아! 돌아가!",
+   "note": "回去 = 돌아가다",
+   "tags": [
+    "form:回去"
+   ],
+   "lemmas": [
+    [
+     "右",
+     "右",
+     "yòu"
+    ],
+    [
+     "回去",
+     "回去",
+     "huí qù"
+    ]
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "A",
+   "zh": "好，三号上了！",
+   "pinyin": "Hǎo, sān hào shàng le!",
+   "rd": "하오, 싼 하오 상 러!",
+   "ko": "됐어, 3번 탔어!",
+   "note": "上 = 타다",
+   "tags": [
+    "form:了"
+   ],
+   "lemmas": [
+    [
+     "好",
+     "好",
+     "hǎo"
+    ],
+    [
+     "三号",
+     "号",
+     "hào"
+    ],
+    [
+     "上",
+     "上",
+     "shàng"
+    ]
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "B",
+   "zh": "耶！几点到？想你。",
+   "pinyin": "Yē! Jǐ diǎn dào? Xiǎng nǐ.",
+   "rd": "예! 지 뎬 다오? 샹 니.",
+   "ko": "예! 몇 시 도착? 보고 싶다.",
+   "note": "几点 = 몇 시",
+   "tags": [
+    "form:几点"
+   ],
+   "lemmas": [
+    [
+     "几点",
+     "点",
+     "diǎn"
+    ],
+    [
+     "到",
+     "到",
+     "dào"
+    ],
+    [
+     "想",
+     "想",
+     "xiǎng"
+    ]
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "A",
+   "zh": "等下……去北京？",
+   "pinyin": "Děng xià…… qù Běijīng?",
+   "rd": "덩 샤…… 취 베이징?",
+   "ko": "잠깐…… 베이징행이라고?",
+   "note": "等下 = 잠깐",
+   "tags": [
+    "form:说"
+   ],
+   "lemmas": [
+    [
+     "下",
+     "下",
+     "xià"
+    ],
+    [
+     "去",
+     "去",
+     "qù"
+    ],
+    [
+     "北京",
+     "北京",
+     "běi jīng"
+    ]
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "B",
+   "zh": "我在上海啊！！",
+   "pinyin": "Wǒ zài Shànghǎi a!!",
+   "rd": "워 짜이 상하이 아!!",
+   "ko": "나 상하이인데!!",
+   "note": "在 = ~에 있다",
+   "tags": [
+    "form:在"
+   ],
+   "lemmas": [
+    [
+     "上海",
+     "上海",
+     "shàng hǎi"
+    ]
+   ]
+  }
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r1_travel_c4_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ }
+}

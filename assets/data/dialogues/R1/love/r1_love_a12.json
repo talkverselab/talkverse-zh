@@ -1,0 +1,267 @@
+{
+ "id": "r1_love_a12",
+ "region": "R1",
+ "island": "love",
+ "kind": "short",
+ "draft": true,
+ "purpose": [
+  "love"
+ ],
+ "domain": [
+  "love"
+ ],
+ "title": "저장된 이름",
+ "emoji": "📇",
+ "scene": "샤오리 폰에 전화가 왔다. 화면에 뜬 이름이 「바보」다.",
+ "speakers": {
+  "A": "{name}",
+  "B": "小丽"
+ },
+ "learner_gender": "M",
+ "register": "casual",
+ "twist": 3,
+ "twist_type": "reveal",
+ "flags": [
+  "romance"
+ ],
+ "variant": "north",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "A",
+   "zh": "你手机响了哦。",
+   "pinyin": "Nǐ shǒujī xiǎng le o.",
+   "rd": "니 서우지 샹 러 오.",
+   "ko": "너 폰 울린다.",
+   "note": "响 = 울리다",
+   "tags": [
+    "form:了"
+   ],
+   "lemmas": [
+    [
+     "手机",
+     "手机",
+     "shǒu jī"
+    ],
+    [
+     "响",
+     "响",
+     "xiǎng"
+    ]
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "B",
+   "zh": "帮我看下谁。",
+   "pinyin": "Bāng wǒ kàn xià shéi.",
+   "rd": "방 워 칸 샤 세이.",
+   "ko": "누군지 좀 봐 줘.",
+   "note": "看下 = 좀 보다",
+   "tags": [
+    "form:谁"
+   ],
+   "lemmas": [
+    [
+     "帮",
+     "帮",
+     "bāng"
+    ],
+    [
+     "看",
+     "看",
+     "kàn"
+    ],
+    [
+     "下",
+     "下",
+     "xià"
+    ],
+    [
+     "谁",
+     "谁",
+     "shuí"
+    ]
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "A",
+   "zh": "「小傻瓜」？我接！",
+   "pinyin": "Xiǎo shǎguā? Wǒ jiē!",
+   "rd": "샤오 사과? 워 제!",
+   "ko": "「바보」? 내가 받을게!",
+   "note": "傻瓜 = 바보",
+   "tags": [
+    "form:是"
+   ],
+   "lemmas": [
+    [
+     "小",
+     "小",
+     "xiǎo"
+    ],
+    [
+     "傻",
+     "傻",
+     "shǎ"
+    ],
+    [
+     "瓜",
+     "瓜",
+     "guā"
+    ],
+    [
+     "接",
+     "接",
+     "jiē"
+    ]
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "B",
+   "zh": "别！别碰！给我！",
+   "pinyin": "Bié! Bié pèng! Gěi wǒ!",
+   "rd": "볘! 볘 펑! 게이 워!",
+   "ko": "하지 마! 만지지 마! 이리 줘!",
+   "note": "碰 = 건드리다",
+   "tags": [
+    "form:别"
+   ],
+   "lemmas": [
+    [
+     "别",
+     "别",
+     "bié"
+    ],
+    [
+     "别",
+     "别",
+     "bié"
+    ],
+    [
+     "碰",
+     "碰",
+     "pèng"
+    ]
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "A",
+   "zh": "是你男朋友？",
+   "pinyin": "Shì nǐ nán péngyou?",
+   "rd": "스 니 난 펑유?",
+   "ko": "네 남자친구야?",
+   "note": "男朋友 = 남자친구",
+   "tags": [
+    "form:不对"
+   ],
+   "lemmas": [
+    [
+     "是",
+     "是",
+     "shì"
+    ],
+    [
+     "男朋友",
+     "男朋友",
+     "nán péng yǒu"
+    ]
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "B",
+   "zh": "不是啦……是你的号码。",
+   "pinyin": "Bú shì la…… shì nǐ de hàomǎ.",
+   "rd": "부 스 라…… 스 니 더 하오마.",
+   "ko": "아니야…… 네 번호야.",
+   "note": "号码 = 번호",
+   "tags": [
+    "form:的"
+   ],
+   "lemmas": [
+    [
+     "是",
+     "是",
+     "shì"
+    ],
+    [
+     "号码",
+     "号码",
+     "hào mǎ"
+    ]
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "A",
+   "zh": "我的？我是傻瓜？",
+   "pinyin": "Wǒ de? Wǒ shì shǎguā?",
+   "rd": "워 더? 워 스 사과?",
+   "ko": "내 거? 내가 바보야?",
+   "note": "我是 = 나는 ~이다",
+   "tags": [
+    "form:是"
+   ],
+   "lemmas": [
+    [
+     "是",
+     "是",
+     "shì"
+    ],
+    [
+     "傻",
+     "傻",
+     "shǎ"
+    ],
+    [
+     "瓜",
+     "瓜",
+     "guā"
+    ]
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "B",
+   "zh": "是啊，我的小傻瓜。",
+   "pinyin": "Shì a, wǒ de xiǎo shǎguā.",
+   "rd": "스 아, 워 더 샤오 사과.",
+   "ko": "응, 내 바보.",
+   "note": "我的 = 나의",
+   "tags": [
+    "form:的"
+   ],
+   "lemmas": [
+    [
+     "是",
+     "是",
+     "shì"
+    ],
+    [
+     "小",
+     "小",
+     "xiǎo"
+    ],
+    [
+     "傻",
+     "傻",
+     "shǎ"
+    ],
+    [
+     "瓜",
+     "瓜",
+     "guā"
+    ]
+   ]
+  }
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r1_love_a12_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ }
+}

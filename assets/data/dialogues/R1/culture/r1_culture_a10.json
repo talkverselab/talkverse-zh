@@ -1,0 +1,280 @@
+{
+ "id": "r1_culture_a10",
+ "region": "R1",
+ "island": "culture",
+ "kind": "short",
+ "draft": true,
+ "purpose": [
+  "culture"
+ ],
+ "domain": [
+  "culture"
+ ],
+ "title": "손가락 두 개",
+ "emoji": "🍵",
+ "scene": "찻집. 샤오리가 차를 따라 줄 때 손가락으로 톡톡 하라고 했는데……",
+ "speakers": {
+  "A": "{name}",
+  "B": "小丽"
+ },
+ "learner_gender": "M",
+ "register": "casual",
+ "twist": 4,
+ "twist_type": "slip",
+ "flags": [],
+ "variant": "north",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "zh": "我倒茶，你敲桌子。",
+   "pinyin": "Wǒ dào chá, nǐ qiāo zhuōzi.",
+   "rd": "워 다오 차, 니 차오 줘쯔.",
+   "ko": "내가 차 따를게, 너는 탁자 두드려.",
+   "note": "倒茶 = 차를 따르다",
+   "tags": [
+    "form:两下"
+   ],
+   "lemmas": [
+    [
+     "倒",
+     "倒",
+     "dào"
+    ],
+    [
+     "茶",
+     "茶",
+     "chá"
+    ],
+    [
+     "敲",
+     "敲",
+     "qiāo"
+    ],
+    [
+     "桌子",
+     "桌子",
+     "zhuō zi"
+    ]
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "zh": "敲桌子？什么意思？",
+   "pinyin": "Qiāo zhuōzi? Shénme yìsi?",
+   "rd": "차오 줘쯔? 선머 이쓰?",
+   "ko": "탁자를? 무슨 뜻이야?",
+   "note": "意思 = 뜻",
+   "tags": [
+    "form:为什么"
+   ],
+   "lemmas": [
+    [
+     "敲",
+     "敲",
+     "qiāo"
+    ],
+    [
+     "桌子",
+     "桌子",
+     "zhuō zi"
+    ],
+    [
+     "什么",
+     "什么",
+     "shén me"
+    ],
+    [
+     "意思",
+     "意思",
+     "yì si"
+    ]
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "zh": "就是谢谢的意思。",
+   "pinyin": "Jiù shì xièxie de yìsi.",
+   "rd": "주 스 셰셰 더 이쓰.",
+   "ko": "고맙다는 뜻이야.",
+   "note": "就是 = 바로 ~이다",
+   "tags": [
+    "form:的意思"
+   ],
+   "lemmas": [
+    [
+     "就是",
+     "就是",
+     "jiù shì"
+    ],
+    [
+     "意思",
+     "意思",
+     "yì si"
+    ]
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "懂了！咚！咚！",
+   "pinyin": "Dǒng le! Dōng! Dōng!",
+   "rd": "둥 러! 둥! 둥!",
+   "ko": "알겠어! 쿵! 쿵!",
+   "note": "咚 = 쿵(소리)",
+   "tags": [
+    "form:拟声"
+   ],
+   "lemmas": [
+    [
+     "懂",
+     "懂",
+     "dǒng"
+    ]
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "轻点啊！大家都看了！",
+   "pinyin": "Qīng diǎn a! Dàjiā dōu kàn le!",
+   "rd": "칭 뎬 아! 다자 더우 칸 러!",
+   "ko": "살살 좀! 다들 쳐다보잖아!",
+   "note": "轻点 = 살살",
+   "tags": [
+    "form:一点"
+   ],
+   "lemmas": [
+    [
+     "轻",
+     "轻",
+     "qīng"
+    ],
+    [
+     "点",
+     "点",
+     "diǎn"
+    ],
+    [
+     "大家",
+     "大家",
+     "dà jiā"
+    ],
+    [
+     "都",
+     "都",
+     "dōu"
+    ],
+    [
+     "看",
+     "看",
+     "kàn"
+    ]
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "zh": "手指轻轻敲？",
+   "pinyin": "Shǒuzhǐ qīngqīng qiāo?",
+   "rd": "서우즈 칭칭 차오?",
+   "ko": "손가락으로 살살 두드려?",
+   "note": "手指 = 손가락",
+   "tags": [
+    "form:这样"
+   ],
+   "lemmas": [
+    [
+     "手指",
+     "手指",
+     "shǒu zhǐ"
+    ],
+    [
+     "轻",
+     "轻",
+     "qīng"
+    ],
+    [
+     "轻",
+     "轻",
+     "qīng"
+    ],
+    [
+     "敲",
+     "敲",
+     "qiāo"
+    ]
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "B",
+   "zh": "对，两根……轻点。",
+   "pinyin": "Duì, liǎng gēn…… qīng diǎn.",
+   "rd": "두이, 량 건…… 칭 뎬.",
+   "ko": "맞아, 두 개로…… 살살.",
+   "note": "根 = 개(가늘고 긴 것의 양사)",
+   "tags": [
+    "form:AA的"
+   ],
+   "lemmas": [
+    [
+     "两根",
+     "根",
+     "gēn"
+    ],
+    [
+     "轻",
+     "轻",
+     "qīng"
+    ],
+    [
+     "点",
+     "点",
+     "diǎn"
+    ]
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "A",
+   "zh": "老板也在敲……谢我吗？",
+   "pinyin": "Lǎobǎn yě zài qiāo…… xiè wǒ ma?",
+   "rd": "라오반 예 짜이 차오…… 셰 워 마?",
+   "ko": "사장님도 두드리는데…… 나한테 고맙다는 거야?",
+   "note": "老板 = 사장",
+   "tags": [
+    "form:在"
+   ],
+   "lemmas": [
+    [
+     "老板",
+     "老板",
+     "lǎo bǎn"
+    ],
+    [
+     "也",
+     "也",
+     "yě"
+    ],
+    [
+     "敲",
+     "敲",
+     "qiāo"
+    ],
+    [
+     "谢",
+     "谢",
+     "xiè"
+    ]
+   ]
+  }
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r1_culture_a10_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ }
+}

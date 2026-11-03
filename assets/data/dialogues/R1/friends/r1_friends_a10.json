@@ -1,0 +1,260 @@
+{
+ "id": "r1_friends_a10",
+ "region": "R1",
+ "island": "friends",
+ "kind": "short",
+ "draft": true,
+ "purpose": [
+  "making_friends"
+ ],
+ "domain": [
+  "friends"
+ ],
+ "title": "밤샘 공부",
+ "emoji": "☕",
+ "scene": "시험 전날 밤. 하오란이 같이 밤새자더니 10분 만에 잠들었다.",
+ "speakers": {
+  "A": "{name}",
+  "B": "浩然"
+ },
+ "learner_gender": "F",
+ "register": "casual",
+ "twist": 4,
+ "twist_type": "emotion",
+ "flags": [],
+ "variant": "north",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "zh": "今晚不睡，一起学吧！",
+   "pinyin": "Jīn wǎn bú shuì, yìqǐ xué ba!",
+   "rd": "진 완 부 수이, 이치 쉐 바!",
+   "ko": "오늘 밤 안 자고 같이 공부하자!",
+   "note": "不睡 = 안 자다",
+   "tags": [
+    "form:不了"
+   ],
+   "lemmas": [
+    [
+     "今晚",
+     "今晚",
+     "jīn wǎn"
+    ],
+    [
+     "不",
+     "不",
+     "bù"
+    ],
+    [
+     "睡",
+     "睡",
+     "shuì"
+    ],
+    [
+     "一起",
+     "一起",
+     "yì qǐ"
+    ],
+    [
+     "学",
+     "学",
+     "xué"
+    ]
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "zh": "好啊！咖啡买了。",
+   "pinyin": "Hǎo a! Kāfēi mǎi le.",
+   "rd": "하오 아! 카페이 마이 러.",
+   "ko": "좋아! 커피 사 왔어.",
+   "note": "咖啡 = 커피",
+   "tags": [
+    "form:了"
+   ],
+   "lemmas": [
+    [
+     "好",
+     "好",
+     "hǎo"
+    ],
+    [
+     "咖啡",
+     "咖啡",
+     "kā fēi"
+    ],
+    [
+     "买",
+     "买",
+     "mǎi"
+    ]
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "zh": "第一页……嗯……",
+   "pinyin": "Dì yī yè…… èn……",
+   "rd": "디 이 예…… 언……",
+   "ko": "첫 페이지…… 음……",
+   "note": "第一 = 첫 번째",
+   "tags": [
+    "form:第"
+   ],
+   "lemmas": [
+    [
+     "第一页",
+     "第一页",
+     "dì yī yè"
+    ]
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "浩然？睡着了吗？",
+   "pinyin": "Hàorán? Shuìzháo le ma?",
+   "rd": "하오란? 수이자오 러 마?",
+   "ko": "하오란? 잠들었어?",
+   "note": "睡着 = 잠들다",
+   "tags": [
+    "form:了吗"
+   ],
+   "lemmas": [
+    [
+     "睡着",
+     "睡着",
+     "shuì zháo"
+    ]
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "没有……我在想你。",
+   "pinyin": "Méiyǒu…… wǒ zài xiǎng nǐ.",
+   "rd": "메이유…… 워 짜이 샹 니.",
+   "ko": "아니…… 너 생각하고 있었어.",
+   "note": "想 = 생각하다·그리워하다",
+   "tags": [
+    "form:在"
+   ],
+   "lemmas": [
+    [
+     "没有",
+     "没有",
+     "méi yǒu"
+    ],
+    [
+     "想",
+     "想",
+     "xiǎng"
+    ]
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "zh": "想我？眼睛闭着啊。",
+   "pinyin": "Xiǎng wǒ? Yǎnjing bìzhe a.",
+   "rd": "샹 워? 옌징 비저 아.",
+   "ko": "나를? 눈 감고 있잖아.",
+   "note": "闭着 = 감은 채",
+   "tags": [
+    "form:着"
+   ],
+   "lemmas": [
+    [
+     "想",
+     "想",
+     "xiǎng"
+    ],
+    [
+     "眼睛",
+     "眼睛",
+     "yǎn jīng"
+    ],
+    [
+     "闭",
+     "闭",
+     "bì"
+    ]
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "B",
+   "zh": "……就五分钟。再五分钟。",
+   "pinyin": "…… Jiù wǔ fēnzhōng. Zài wǔ fēnzhōng.",
+   "rd": "…… 주 우 펀중. 짜이 우 펀중.",
+   "ko": "……딱 5분. 5분만 더.",
+   "note": "再 = 더",
+   "tags": [
+    "form:就"
+   ],
+   "lemmas": [
+    [
+     "就",
+     "就",
+     "jiù"
+    ],
+    [
+     "五分钟",
+     "分钟",
+     "fēn zhōng"
+    ],
+    [
+     "再",
+     "再",
+     "zài"
+    ],
+    [
+     "五分钟",
+     "分钟",
+     "fēn zhōng"
+    ]
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "A",
+   "zh": "行，外套给你盖上。",
+   "pinyin": "Xíng, wàitào gěi nǐ gài shang.",
+   "rd": "싱, 와이타오 게이 니 가이 상.",
+   "ko": "알았어, 외투 덮어 줄게.",
+   "note": "盖 = 덮다",
+   "tags": [
+    "form:给"
+   ],
+   "lemmas": [
+    [
+     "行",
+     "行",
+     "xíng"
+    ],
+    [
+     "外套",
+     "外套",
+     "wài tào"
+    ],
+    [
+     "盖",
+     "盖",
+     "gài"
+    ],
+    [
+     "上",
+     "上",
+     "shàng"
+    ]
+   ]
+  }
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r1_friends_a10_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ }
+}
