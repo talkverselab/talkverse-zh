@@ -179,8 +179,8 @@ class _ContinueReadingCardState extends State<ContinueReadingCard> {
         child: InkWell(
           onTap: open,
           child: Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
-            // 폭의 16:10, 넓은 칸에서도 260 까지만(홈이 그림 한 장으로 꽉 차지 않게)
-            LayoutBuilder(builder: (context, c) => SizedBox(height: (c.maxWidth / 1.6).clamp(140.0, 260.0), child: SceneCut(dialogue: d, turn: d.turns.first))),
+            // 폭의 16:10 + 아래 대사 띠(화자 이름표 + 한 줄, 그림을 덮지 않음 — 2026-11-04), 넓은 칸에서도 260 까지만(홈이 그림 한 장으로 꽉 차지 않게)
+            LayoutBuilder(builder: (context, c) => SizedBox(height: (c.maxWidth / 1.6 + 44).clamp(184.0, 260.0), child: SceneCut(dialogue: d, turn: d.turns.first, bubble: true))),
             Padding(
               padding: const EdgeInsets.fromLTRB(18, 14, 12, 16),
               child: Row(crossAxisAlignment: CrossAxisAlignment.center, children: [

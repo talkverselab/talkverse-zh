@@ -51,6 +51,29 @@ void main() {
     expect(d.turns[1].rd, '셰셰.');
   });
 
+  test('턴 lemmas: [표면형, 기본형, 병음] 을 읽고, 없거나 모양이 다르면 빈 목록', () {
+    final t = DialogueTurn.fromJson({
+      'num': 1, 'speaker': 'A', 'zh': '浩然，拍一张吧！', 'pinyin': 'x', 'ko': 'y',
+      'lemmas': [['拍', '拍', 'pāi'], ['一张', '张'], ['bad'], 'x'],
+    });
+    expect(t.lemmas.length, 2);
+    expect(t.lemmas[0].surface, '拍');
+    expect(t.lemmas[0].reading, 'pāi');
+    expect(t.lemmas[1].base, '张');
+    expect(t.lemmas[1].reading, '');
+    expect(DialogueTurn.fromJson({'num': 1, 'speaker': 'A', 'zh': 'x', 'pinyin': 'x', 'ko': 'y'}).lemmas, isEmpty);
+  });
+
+  test('회화 애셋: R1 턴에 lemmas 가 들어 있다(tools/add_lemmas.py — 조사·대명사뿐인 짧은 줄만 빈다)', () async {
+    final svc = DialogueService.instance;
+    await svc.ensureLoaded();
+    final r1 = svc.list(region: 'R1');
+    expect(r1, isNotEmpty);
+    final turns = [for (final d in r1) for (final t in d.turns) if (RegExp(r'[一-鿿]{2,}').hasMatch(t.zh)) t];
+    final missing = turns.where((t) => t.lemmas.isEmpty).length;
+    expect(missing, lessThan(turns.length ~/ 50), reason: '$missing / ${turns.length} 턴에 lemmas 없음');
+  });
+
   testWidgets('빈 레벨은 「준비 중」, 오늘의 컷은 편이 있는 레벨에서', (tester) async {
     DialogueService.instance.debugSetDialogues([_ep('r3_love_t1', 'R3')]);
     await tester.pumpWidget(const MaterialApp(home: DialogueHomeScreen()));

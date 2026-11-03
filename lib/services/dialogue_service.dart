@@ -14,6 +14,12 @@ import 'pinyin_hangul.dart';
 /// 턴 필드: `zh`(목표어) · `pinyin`(성조 병음) · `ko`. 한글 독음 `rd` 는 JSON 에 없으면 병음에서 만든다([PinyinHangul]).
 /// 레벨: R0 왕초보 · R1 초보 · R2 중급 · R3 고급 · R4 최상급. 사용자 레벨 모드(`dialogue_level`): 기본 R1, "너무 힘들면" R0.
 /// 지금은 R0·R1 이 비어 있어(새 회화 작성 전) 「오늘의 컷」은 편이 있는 가장 낮은 레벨부터 보여 준다([startLevel]).
+/// 문장 내용어 한 개: 표면형(文中)·기본형(사전형, 중국어는 대개 같음)·병음 읽기. `tools/add_lemmas.py` 가 채운다(2026-11-04).
+class Lemma {
+  final String surface, base, reading;
+  const Lemma(this.surface, this.base, this.reading);
+}
+
 class DialogueTurn {
   final int num;
   final String speaker; // A(학습자)·B·C·D
@@ -28,6 +34,7 @@ class DialogueTurn {
   final String? stamp; // 채팅 스탬프 이모지
   final bool bubble; // 채팅 말풍선 표시
   final String? art; // 장면 그림 URL(나중에 채움)
+  final List<Lemma> lemmas; // 문장 내용어(표면형·기본형·병음) — 단어장 연결(2026-11-04)
   const DialogueTurn({
     required this.num,
     required this.speaker,
@@ -42,6 +49,7 @@ class DialogueTurn {
     this.stamp,
     this.bubble = false,
     this.art,
+    this.lemmas = const [],
   });
   factory DialogueTurn.fromJson(Map<String, dynamic> j) {
     final pinyin = j['pinyin'] as String? ?? '';
@@ -60,6 +68,7 @@ class DialogueTurn {
         stamp: j['stamp'] as String?,
         bubble: j['ui'] == 'bubble',
         art: j['art'] as String?,
+        lemmas: [for (final l in (j['lemmas'] as List? ?? const [])) if (l is List && l.length >= 2) Lemma('${l[0]}', '${l[1]}', l.length > 2 ? '${l[2]}' : '')],
       );
   }
 

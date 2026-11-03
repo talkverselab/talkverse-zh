@@ -5,6 +5,9 @@ import 'dart:io';
 import 'package:flutter/foundation.dart' show debugPrint;
 import 'package:shared_preferences/shared_preferences.dart';
 
+import 'content_sync.dart';
+import 'learner_prefs.dart';
+
 /// 단어 그림(talkverse.uk 공용 그림 저장소) — 일본어앱 `art_service.dart` 를 옮김(2026-11-02).
 ///
 /// talkverse.uk 세션이 Cloudflare 에 올린 공개 API(인증 없음):
@@ -153,9 +156,25 @@ class SceneArtService {
   Future<void> ensureLoaded() => _loading ??= _load();
 
   /// 턴 번호 순서(0부터)로 컷을 찾는다: 턴 0·1 = 컷 1, 턴 2·3 = 컷 2 …
+  /// 학습자가 여자로 설정돼 있으면 여자판 컷(`<편id>_f`)을 먼저 — 없으면 기본 컷(2026-11-04).
   Future<String?> urlFor(String episode, int turnIndex) async {
+    final n = turnIndex ~/ 2 + 1;
+    if (LearnerPrefs.isFemale) {
+      final f = await _cut('${episode}_f', n);
+      if (f != null) return f;
+    }
+    return _cut(episode, n);
+  }
+
+  Future<String?> _cut(String episode, int n) async {
+    // 시작 때 받아 둔 전체 장면 매니페스트(ContentSync) — 편마다 네트워크를 타지 않는다
+    final idx = ContentSync.instance.sceneIndex[episode];
+    if (idx != null && idx.isNotEmpty) {
+      final k = idx[n];
+      return k == null ? null : '${ContentSync.instance.base}/$k';
+    }
     await ensureLoaded();
-    final key = _byCut['$episode#${turnIndex ~/ 2 + 1}'];
+    final key = _byCut['$episode#$n'];
     return key == null ? null : _base + key;
   }
 

@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../core/theme.dart';
 import '../services/achievement_service.dart';
 import '../services/art_service.dart';
+import '../services/content_sync.dart';
 import '../services/lexicon_service.dart';
 import '../services/hanzi_family.dart';
 import '../services/hanzi_info_service.dart';
@@ -138,6 +139,22 @@ class _SelectableHanziTextState extends State<SelectableHanziText> {
       }),
     );
   }
+}
+
+/// 단어(청크) 정보 시트를 바깥(레마 칩 등)에서 연다 — 앱 사전에 없으면 넘겨 준 병음만 보인다(2026-11-04).
+Future<void> showChunkSheet(BuildContext context, String word, {String? pinyin}) async {
+  await LexiconService.instance.ensureLoaded();
+  await HanziInfoService.instance.ensureLoaded();
+  await VocabCatalog.instance.ensureGloss();
+  if (!context.mounted) return;
+  final lex = LexiconService.instance.lookup(word);
+  await showModalBottomSheet(
+    context: context,
+    backgroundColor: AppColors.xuanZhi,
+    isScrollControlled: true,
+    shape: const RoundedRectangleBorder(borderRadius: BorderRadius.vertical(top: Radius.circular(2))),
+    builder: (_) => _ChunkInfoSheet(chunk: word, lex: lex, chunkData: lex == null && pinyin != null && pinyin.isNotEmpty ? {'pinyin': pinyin} : null),
+  );
 }
 
 class _ChunkInfoSheet extends StatefulWidget {
@@ -706,8 +723,8 @@ class _SharedHanjaCard extends StatelessWidget {
               SizedBox(
                 width: 88,
                 height: 88,
-                child: Image.network(
-                  image,
+                child: Image(
+                  image: artProvider(image),
                   fit: BoxFit.contain,
                   errorBuilder: (_, _, _) => const SizedBox.shrink(),
                 ),
@@ -1130,7 +1147,7 @@ class _HanziWordArt extends StatelessWidget {
                 borderRadius: BorderRadius.circular(12),
                 child: ConstrainedBox(
                   constraints: const BoxConstraints(maxWidth: 260, maxHeight: 200),
-                  child: Image.network(e.value, fit: BoxFit.contain, errorBuilder: (_, _, _) => const SizedBox.shrink()),
+                  child: Image(image: artProvider(e.value), fit: BoxFit.contain, errorBuilder: (_, _, _) => const SizedBox.shrink()),
                 ),
               ),
               const SizedBox(height: 4),

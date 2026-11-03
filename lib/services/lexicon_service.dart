@@ -2,6 +2,7 @@ import 'dart:convert';
 
 import 'package:flutter/services.dart' show rootBundle;
 
+import '../main.dart' show appDb;
 import 'pinyin_util.dart';
 
 class LexEntry {
@@ -54,4 +55,36 @@ class LexiconService {
   LexEntry? lookup(String simp) => _bySimp[simp];
 
   int get size => _bySimp.length;
+
+  /// 문장 레마(기본형) → 단어장 항목 — 레마 칩용(2026-11-04). 앱 사전(뜻 있음) 또는 빈도 단어표(`words`) 에 있으면 "단어장에 있음".
+  /// 뜻은 앱 사전에 있을 때만(없으면 null — 칩은 글자만).
+  Future<Map<String, LemmaHit>> byLemmas(Iterable<String> bases) async {
+    final keys = bases.toSet().where((b) => b.isNotEmpty).toList();
+    if (keys.isEmpty) return const {};
+    await ensureLoaded();
+    final out = <String, LemmaHit>{};
+    for (final b in keys) {
+      final e = _bySimp[b];
+      if (e != null) out[b] = LemmaHit(b, e.meanings.isEmpty ? null : e.meanings.first, e.pinyin);
+    }
+    final rest = keys.where((b) => !out.containsKey(b)).toList();
+    if (rest.isNotEmpty) {
+      try {
+        final rows = await (appDb.select(appDb.words)..where((w) => w.word.isIn(rest))).get();
+        for (final r in rows) {
+          out.putIfAbsent(r.word, () => LemmaHit(r.word, null, null, rank: r.rank));
+        }
+      } catch (_) {}
+    }
+    return out;
+  }
+}
+
+/// 레마 칩이 쓰는 단어장 조회 결과 — 뜻(앱 사전에 있을 때)·병음·빈도 순위.
+class LemmaHit {
+  final String word;
+  final String? gloss;
+  final String? pinyin;
+  final int? rank;
+  const LemmaHit(this.word, this.gloss, this.pinyin, {this.rank});
 }
