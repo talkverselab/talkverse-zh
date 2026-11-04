@@ -1,0 +1,270 @@
+{
+ "id": "r1_culture_c6",
+ "region": "R1",
+ "island": "culture",
+ "kind": "chat",
+ "draft": true,
+ "purpose": [
+  "culture"
+ ],
+ "domain": [
+  "culture"
+ ],
+ "title": "중국식 칭찬",
+ "emoji": "🙇",
+ "scene": "하오란에게 칭찬을 들은 학습자가 중국식으로 「아니에요」 대신 「고마워」라고 했다가……",
+ "speakers": {
+  "A": "{name}",
+  "B": "浩然"
+ },
+ "learner_gender": "F",
+ "register": "chat",
+ "twist": 3,
+ "twist_type": "slip",
+ "flags": [],
+ "variant": "north",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "zh": "你中文好溜啊！",
+   "pinyin": "Nǐ Zhōngwén hǎo liū a!",
+   "rd": "니 중원 하오 류 아!",
+   "ko": "너 중국어 진짜 술술 나온다!",
+   "note": "溜 = (말이) 유창하다",
+   "tags": [
+    "form:越来越"
+   ],
+   "lemmas": [
+    [
+     "中文",
+     "中文",
+     "zhōng wén"
+    ],
+    [
+     "好",
+     "好",
+     "hǎo"
+    ],
+    [
+     "溜",
+     "溜",
+     "liū"
+    ]
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "zh": "哪里哪里～",
+   "pinyin": "Nǎli nǎli～",
+   "rd": "나리 나리～",
+   "ko": "뭘요 뭘요～",
+   "note": "哪里哪里 = 뭘요(겸손)",
+   "tags": [
+    "expr:哪里哪里"
+   ],
+   "lemmas": [
+    [
+     "哪里",
+     "哪里",
+     "nǎ lǐ"
+    ],
+    [
+     "哪里",
+     "哪里",
+     "nǎ lǐ"
+    ]
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "zh": "哈哈，现在谁还说这个啊。",
+   "pinyin": "Hāhā, xiànzài shéi hái shuō zhège a.",
+   "rd": "하하, 셴짜이 세이 하이 숴 저거 아.",
+   "ko": "ㅋㅋ, 요즘 누가 아직도 그렇게 말해.",
+   "note": "谁还 = 누가 아직도",
+   "tags": [
+    "form:没人"
+   ],
+   "lemmas": [
+    [
+     "现在",
+     "现在",
+     "xiàn zài"
+    ],
+    [
+     "谁",
+     "谁",
+     "shuí"
+    ],
+    [
+     "还",
+     "还",
+     "hái"
+    ],
+    [
+     "说",
+     "说",
+     "shuō"
+    ],
+    [
+     "这个",
+     "这个",
+     "zhè ge"
+    ]
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "啊？我说错了？",
+   "pinyin": "À? Wǒ shuō cuò le?",
+   "rd": "아? 워 숴 춰 러?",
+   "ko": "어? 내가 잘못 말했어?",
+   "note": "说错 = 잘못 말하다",
+   "tags": [
+    "form:的"
+   ],
+   "lemmas": [
+    [
+     "说",
+     "说",
+     "shuō"
+    ],
+    [
+     "错",
+     "错",
+     "cuò"
+    ]
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "说「谢谢」就行啦。",
+   "pinyin": "Shuō xièxie jiù xíng la.",
+   "rd": "숴 셰셰 주 싱 라.",
+   "ko": "「고마워」라고 하면 돼.",
+   "note": "就行 = ~면 된다",
+   "tags": [
+    "form:就行"
+   ],
+   "lemmas": [
+    [
+     "说",
+     "说",
+     "shuō"
+    ],
+    [
+     "就",
+     "就",
+     "jiù"
+    ],
+    [
+     "行",
+     "行",
+     "xíng"
+    ]
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "zh": "谢谢～你也很帅！",
+   "pinyin": "Xièxie～ nǐ yě hěn shuài!",
+   "rd": "셰셰～ 니 예 헌 솨이!",
+   "ko": "고마워～ 너도 멋있어!",
+   "note": "帅 = 멋있다",
+   "tags": [
+    "form:也"
+   ],
+   "lemmas": [
+    [
+     "也",
+     "也",
+     "yě"
+    ],
+    [
+     "很",
+     "很",
+     "hěn"
+    ],
+    [
+     "帅",
+     "帅",
+     "shuài"
+    ]
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "B",
+   "zh": "……哪里哪里啦。",
+   "pinyin": "…… Nǎli nǎli la.",
+   "rd": "…… 나리 나리 라.",
+   "ko": "……뭘요 뭘요.",
+   "note": "哪里哪里 = 뭘요",
+   "tags": [
+    "expr:哪里哪里"
+   ],
+   "lemmas": [
+    [
+     "哪里",
+     "哪里",
+     "nǎ lǐ"
+    ],
+    [
+     "哪里",
+     "哪里",
+     "nǎ lǐ"
+    ]
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "A",
+   "zh": "你刚才不是说没人说了吗！",
+   "pinyin": "Nǐ gāngcái bú shì shuō méi rén shuō le ma!",
+   "rd": "니 강차이 부 스 숴 메이 런 숴 러 마!",
+   "ko": "아까 아무도 안 쓴다며!",
+   "note": "不是…吗 = ~잖아?",
+   "tags": [
+    "form:不是…吗"
+   ],
+   "lemmas": [
+    [
+     "刚才",
+     "刚才",
+     "gāng cái"
+    ],
+    [
+     "说",
+     "说",
+     "shuō"
+    ],
+    [
+     "没",
+     "没",
+     "méi"
+    ],
+    [
+     "人",
+     "人",
+     "rén"
+    ],
+    [
+     "说",
+     "说",
+     "shuō"
+    ]
+   ]
+  }
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r1_culture_c6_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ }
+}

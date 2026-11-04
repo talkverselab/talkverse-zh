@@ -1,0 +1,302 @@
+{
+ "id": "r1_culture_a12",
+ "region": "R1",
+ "island": "culture",
+ "kind": "short",
+ "draft": true,
+ "purpose": [
+  "culture"
+ ],
+ "domain": [
+  "culture"
+ ],
+ "title": "빨간 속옷",
+ "emoji": "🧧",
+ "scene": "본명년(本命年). 위에가 학습자에게 빨간 양말을 선물한다.",
+ "speakers": {
+  "A": "{name}",
+  "B": "悦"
+ },
+ "learner_gender": "M",
+ "register": "casual",
+ "twist": 4,
+ "twist_type": "reveal",
+ "flags": [
+  "romance"
+ ],
+ "variant": "north",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "zh": "今年是你本命年啊。",
+   "pinyin": "Jīnnián shì nǐ běnmìngnián a.",
+   "rd": "진녠 스 니 번밍녠 아.",
+   "ko": "올해가 네 본명년이네.",
+   "note": "本命年 = 띠해(12년마다 돌아오는 자기 띠의 해)",
+   "tags": [
+    "form:吧"
+   ],
+   "lemmas": [
+    [
+     "今年",
+     "今年",
+     "jīn nián"
+    ],
+    [
+     "是",
+     "是",
+     "shì"
+    ],
+    [
+     "本",
+     "本",
+     "běn"
+    ],
+    [
+     "命",
+     "命",
+     "mìng"
+    ],
+    [
+     "年",
+     "年",
+     "nián"
+    ]
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "zh": "本命年？什么意思？",
+   "pinyin": "Běnmìngnián? Shénme yìsi?",
+   "rd": "번밍녠? 선머 이쓰?",
+   "ko": "본명년? 무슨 뜻이야?",
+   "note": "意思 = 뜻",
+   "tags": [
+    "form:什么"
+   ],
+   "lemmas": [
+    [
+     "本",
+     "本",
+     "běn"
+    ],
+    [
+     "命",
+     "命",
+     "mìng"
+    ],
+    [
+     "年",
+     "年",
+     "nián"
+    ],
+    [
+     "什么",
+     "什么",
+     "shén me"
+    ],
+    [
+     "意思",
+     "意思",
+     "yì si"
+    ]
+   ]
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "zh": "你属什么呀？",
+   "pinyin": "Nǐ shǔ shénme ya?",
+   "rd": "니 수 선머 야?",
+   "ko": "너 무슨 띠야?",
+   "note": "属 = ~띠이다",
+   "tags": [
+    "form:属"
+   ],
+   "lemmas": [
+    [
+     "属",
+     "属",
+     "shǔ"
+    ],
+    [
+     "什么",
+     "什么",
+     "shén me"
+    ]
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "属龙啊，怎么了？",
+   "pinyin": "Shǔ lóng a, zěnme le?",
+   "rd": "수 룽 아, 쩐머 러?",
+   "ko": "용띠야, 왜?",
+   "note": "龙 = 용",
+   "tags": [
+    "form:名"
+   ],
+   "lemmas": [
+    [
+     "属",
+     "属",
+     "shǔ"
+    ],
+    [
+     "龙",
+     "龙",
+     "lóng"
+    ],
+    [
+     "怎么",
+     "怎么",
+     "zěn me"
+    ]
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "龙年要穿红的哦。",
+   "pinyin": "Lóng nián yào chuān hóng de o.",
+   "rd": "룽 녠 야오 촨 훙 더 오.",
+   "ko": "용의 해엔 빨간 걸 입어야 해.",
+   "note": "红的 = 빨간 것",
+   "tags": [
+    "form:要"
+   ],
+   "lemmas": [
+    [
+     "龙",
+     "龙",
+     "lóng"
+    ],
+    [
+     "年",
+     "年",
+     "nián"
+    ],
+    [
+     "要",
+     "要",
+     "yào"
+    ],
+    [
+     "穿",
+     "穿",
+     "chuān"
+    ],
+    [
+     "红",
+     "红",
+     "hóng"
+    ]
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "zh": "红的？穿什么红的？",
+   "pinyin": "Hóng de? Chuān shénme hóng de?",
+   "rd": "훙 더? 촨 선머 훙 더?",
+   "ko": "빨간 거? 무슨 빨간 거?",
+   "note": "什么 = 무슨",
+   "tags": [
+    "form:什么"
+   ],
+   "lemmas": [
+    [
+     "红",
+     "红",
+     "hóng"
+    ],
+    [
+     "穿",
+     "穿",
+     "chuān"
+    ],
+    [
+     "什么",
+     "什么",
+     "shén me"
+    ],
+    [
+     "红",
+     "红",
+     "hóng"
+    ]
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "B",
+   "zh": "袜子，内裤……给，我买了。",
+   "pinyin": "Wàzi, nèikù…… gěi, wǒ mǎi le.",
+   "rd": "와쯔, 네이쿠…… 게이, 워 마이 러.",
+   "ko": "양말, 속옷…… 자, 내가 샀어.",
+   "note": "内裤 = 속옷(팬티)",
+   "tags": [
+    "form:给"
+   ],
+   "lemmas": [
+    [
+     "袜子",
+     "袜子",
+     "wà zi"
+    ],
+    [
+     "内",
+     "内",
+     "nèi"
+    ],
+    [
+     "裤",
+     "裤",
+     "kù"
+    ],
+    [
+     "买",
+     "买",
+     "mǎi"
+    ]
+   ]
+  },
+  {
+   "num": 8,
+   "speaker": "A",
+   "zh": "……你买了我的内裤？",
+   "pinyin": "…… Nǐ mǎi le wǒ de nèikù?",
+   "rd": "…… 니 마이 러 워 더 네이쿠?",
+   "ko": "……네가 내 속옷을 샀다고?",
+   "note": "买了 = 샀다",
+   "tags": [
+    "form:了"
+   ],
+   "lemmas": [
+    [
+     "买",
+     "买",
+     "mǎi"
+    ],
+    [
+     "内",
+     "内",
+     "nèi"
+    ],
+    [
+     "裤",
+     "裤",
+     "kù"
+    ]
+   ]
+  }
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r1_culture_a12_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ }
+}

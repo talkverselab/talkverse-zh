@@ -5,8 +5,9 @@
 """
 import json, os, re, sys
 e = json.load(open(sys.argv[1], encoding='utf-8')); pre = sys.argv[2]
-BATCH = '--batch' in sys.argv  # 컷 4개까지 한 요청(그림 4장) — 2026-11-02 일본어앱 확인
-out = f"data/review/art/{e['id']}"; os.makedirs(out, exist_ok=True)
+BATCH = '--batch' in sys.argv
+FEMALE = '--female' in sys.argv  # 여자 학습자판 컷(<편id>_f) — 프로필 성별이 여자면 앱이 이 컷을 먼저 쓴다(2026-11-04 ⑦)  # 컷 4개까지 한 요청(그림 4장) — 2026-11-02 일본어앱 확인
+out = f"data/review/art/{e['id']}{'_f' if FEMALE else ''}"; os.makedirs(out, exist_ok=True)
 # 인물 기준 그림 data/review/art/chars_zh01.jpg (2026-11-02, 중국 배경) — 이름은 편 JSON speakers 값
 CHAR = {'小丽': '샤오리(小丽, 20대 중반 중국 여성 — 어깨 길이 검은 생머리·앞머리, 베이지 니트 + 차이나 칼라 연두 카디건, 옥 귀걸이)',
         '小丽 / Lily': '샤오리(小丽, 20대 중반 중국 여성 — 어깨 길이 검은 생머리·앞머리, 베이지 니트 + 차이나 칼라 연두 카디건, 옥 귀걸이)',
@@ -32,7 +33,7 @@ if cast_sheet:
     open(f'{out}/attach.txt', 'w', encoding='utf-8').write(f'/Users/talkverse/talkverse/zh/data/review/art/cast_zh0{cast_sheet}.jpg\n')
 CAST_NOTE = f', 첨부 3번 = 조연 시트(그 조연의 얼굴·머리·옷을 그대로 — 번호는 왼쪽부터)' if cast_sheet else ''
 people = ' / '.join(who(s) for s in e['speakers'])
-GENDER = {'F': '**여성**', 'M': '**남성**'}.get(e.get('learner_gender'), '남/여 중 하나(편 안에서 통일)')
+GENDER = '**여성**' if FEMALE else {'F': '**여성**', 'M': '**남성**'}.get(e.get('learner_gender'), '남/여 중 하나(편 안에서 통일)')
 people = people.replace('성별은 첨부 기준 그림의 남/여 중 하나, 편 안에서 통일', f'학습자는 첨부 기준 그림의 {GENDER} 쪽')
 CHAT = ('\n**채팅 편**: 두 사람은 서로 다른 장소에 있다 — 각자 자기 자리에서 폰을 보는 모습으로, 화면을 세로로 반 나눠 왼쪽/오른쪽에 한 사람씩(또는 한 사람을 크게, 상대는 작은 둥근 창). 같은 소파·같은 방에 두지 말 것.'
         if e.get('kind') == 'chat' else '')
