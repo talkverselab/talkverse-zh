@@ -97,6 +97,9 @@ class TtsService {
       await _tts.setLanguage('zh-CN');
     }
     await _tts.setPitch(pitch);
+    // 어조사 이모지(😊 등)는 소리 내지 않는다(2026-11-07)
+    text = text.replaceAll(RegExp(r'[\u{1F300}-\u{1FAFF}\u{2600}-\u{27BF}\u{1F000}-\u{1F2FF}]', unicode: true), '').trim();
+    if (text.isEmpty) return;
     _speaking = text;
     await _tts.speak(text);
   }

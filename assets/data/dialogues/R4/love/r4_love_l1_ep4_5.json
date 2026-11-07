@@ -19,7 +19,7 @@
   {
    "num": 1,
    "speaker": "B",
-   "zh": "这次原谅你，没有下次哦。",
+   "zh": "这次原谅你，没有下次哦。😅",
    "pinyin": "Zhè cì yuánliàng nǐ, méiyǒu xià cì o.",
    "ko": "이번엔 용서해줄게, 다음은 없어.",
    "note": "这次/下次 대비 + 哦 (경고) — ep2 下次 hook callback",
@@ -174,7 +174,7 @@
   {
    "num": 6,
    "speaker": "A",
-   "zh": "被你发现了，嘿嘿。",
+   "zh": "被你发现了，嘿嘿。🙂",
    "pinyin": "Bèi nǐ fāxiàn le, hēihēi.",
    "ko": "들켰네, 헤헤.",
    "note": "被 피동 (들키다)",

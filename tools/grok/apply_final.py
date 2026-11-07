@@ -26,4 +26,5 @@ for id_ in sys.argv[1:]:
     subprocess.run(['dart','run','tool/fill_rd.dart',p],cwd=R,capture_output=True)
     print(id_,len(turns),'턴 반영', '감정 없는 턴', sum(1 for t in turns if not t.get('emotion')))
     if all(t.get('emotion') for t in turns):
+        subprocess.run([sys.executable,'tools/add_particle_emoji.py',p],cwd=R)  # 어조사 턴에 감정 이모지(2026-11-07)
         subprocess.run([sys.executable,'tools/tts/plan_from_episode.py','--force',id_],cwd=R)

@@ -7,6 +7,7 @@ V = json.load(open(f'{R}/data/tts/voices.json', encoding='utf-8'))
 EP = {os.path.basename(p)[:-5]: p for p in glob.glob(f'{R}/assets/data/dialogues/R*/*/*.json')}
 HAN = re.compile(r'[一-鿿]')
 SIL = re.compile(r'[\s…。、，！？!?.,~♪]|\([^)]*\)|（[^）]*）')
+EMOJI = re.compile(r'[\U0001F300-\U0001FAFF\u2600-\u27BF\U0001F000-\U0001F2FF]')  # 어조사 이모지(2026-11-07) — 음성은 읽지 않는다
 # 한국어 뜻(ko) 칸의 조사 — 이름을 넣은 뒤 받침에 맞춘다(한국어앱 ttslib 와 같음)
 JOSA = {'은': '는', '는': '은', '이': '가', '가': '이', '을': '를', '를': '을', '과': '와', '와': '과', '이라고': '라고', '라고': '이라고', '아': '야', '야': '아',
         '으로': '로', '로': '으로', '이랑': '랑', '랑': '이랑', '이야': '야', '이에요': '예요', '예요': '이에요', '이라는': '라는', '라는': '이라는', '이요': '요', '요': '이요'}
@@ -67,7 +68,7 @@ def turns(ep):
         T = P['turns'][str(t['num'])]; row = {'num': t['num'], 'speaker': t['speaker']}
         for g in 'mf':
             X = T.get(g) or {}; F = fills(P, g)
-            segs = [(s[0], fill(s[-1], F, 'text').strip()) for s in (X.get('segs') or T['segs'])]
+            segs = [(s[0], EMOJI.sub('', fill(s[-1], F, 'text')).strip()) for s in (X.get('segs') or T['segs'])]
             segs = [s for s in segs if SIL.sub('', s[1])]
             row[g] = {'voice': ('am' if g == 'm' else 'af') if t['speaker'] == 'A' else P['cast'][t['speaker']],
                       'text': fill(X.get('text') or t['zh'], F, 'text'), 'reading': fill(X.get('reading') or t.get('pinyin', ''), F, 'reading'),
