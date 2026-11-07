@@ -26,7 +26,7 @@
   {
    "num": 1,
    "speaker": "B",
-   "zh": "我到了～你人呢？🤔",
+   "zh": "我到了～你人呢？😄",
    "pinyin": "Wǒ dào le～ nǐ rén ne?",
    "rd": "워 다오 러～ 니 런 너?",
    "ko": "나 도착했어～ 너 어디야?",
@@ -45,12 +45,13 @@
      "人",
      "rén"
     ]
-   ]
+   ],
+   "emotion": "cheerful"
   },
   {
    "num": 2,
    "speaker": "A",
-   "zh": "啊？不是晚上七点吗？🤔",
+   "zh": "啊？不是晚上七点吗？😮",
    "pinyin": "À? Bú shì wǎnshang qī diǎn ma?",
    "rd": "아? 부 스 완상 치 뎬 마?",
    "ko": "어? 저녁 7시 아니었어?",
@@ -69,12 +70,13 @@
      "点",
      "diǎn"
     ]
-   ]
+   ],
+   "emotion": "surprised"
   },
   {
    "num": 3,
    "speaker": "B",
-   "zh": "早上七点！日出啊！😮",
+   "zh": "早上七点！日出啊！🙄",
    "pinyin": "Zǎoshang qī diǎn! Rìchū a!",
    "rd": "짜오상 치 뎬! 르추 아!",
    "ko": "아침 7시! 해돋이잖아!",
@@ -103,12 +105,13 @@
      "出",
      "chū"
     ]
-   ]
+   ],
+   "emotion": "tsukkomi"
   },
   {
    "num": 4,
    "speaker": "A",
-   "zh": "我还在床上💤",
+   "zh": "我还在床上",
    "pinyin": "Wǒ hái zài chuáng shang",
    "rd": "워 하이 짜이 촹 상",
    "ko": "나 아직 침대야💤",
@@ -132,7 +135,8 @@
      "上",
      "shàng"
     ]
-   ]
+   ],
+   "emotion": "flustered"
   },
   {
    "num": 5,
@@ -161,7 +165,8 @@
      "出来",
      "chū lái"
     ]
-   ]
+   ],
+   "emotion": "annoyed"
   },
   {
    "num": 6,
@@ -190,7 +195,8 @@
      "到",
      "dào"
     ]
-   ]
+   ],
+   "emotion": "flustered"
   },
   {
    "num": 7,
@@ -224,7 +230,8 @@
      "也",
      "yě"
     ]
-   ]
+   ],
+   "emotion": "gentle"
   }
  ],
  "review": {

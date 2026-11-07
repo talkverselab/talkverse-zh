@@ -67,7 +67,8 @@
      "友",
      "yǒu"
     ]
-   ]
+   ],
+   "emotion": "flustered"
   },
   {
    "num": 2,
@@ -86,7 +87,8 @@
      "为什么",
      "wèi shén me"
     ]
-   ]
+   ],
+   "emotion": "surprised"
   },
   {
    "num": 3,
@@ -135,12 +137,13 @@
      "点",
      "diǎn"
     ]
-   ]
+   ],
+   "emotion": "flustered"
   },
   {
    "num": 4,
    "speaker": "A",
-   "zh": "他过来了……怎么办啊！😮",
+   "zh": "他过来了……怎么办啊！😟",
    "pinyin": "Tā guòlai le…… zěnme bàn a!",
    "rd": "타 궈라이 러…… 쩐머 반 아!",
    "ko": "이쪽으로 와…… 어떡해!",
@@ -159,7 +162,8 @@
      "怎么办",
      "zěn me bàn"
     ]
-   ]
+   ],
+   "emotion": "worried"
   },
   {
    "num": 5,
@@ -183,12 +187,13 @@
      "叫",
      "jiào"
     ]
-   ]
+   ],
+   "emotion": "flustered"
   },
   {
    "num": 6,
    "speaker": "A",
-   "zh": "宝……宝贝，走吧走吧！😉",
+   "zh": "宝……宝贝，走吧走吧！😄",
    "pinyin": "Bǎo…… bǎobèi, zǒu ba zǒu ba!",
    "rd": "바오…… 바오베이, 쩌우 바 쩌우 바!",
    "ko": "자……자기야, 가자 가자!",
@@ -206,6 +211,17 @@
      "走",
      "走",
      "zǒu"
+    ]
+   ],
+   "emotion": "flustered",
+   "segs": [
+    [
+     "flustered",
+     "宝……宝贝，"
+    ],
+    [
+     "cheerful",
+     "走吧走吧！"
     ]
    ]
   },
@@ -240,6 +256,17 @@
      "好听",
      "好听",
      "hǎo tīng"
+    ]
+   ],
+   "emotion": "neutral",
+   "segs": [
+    [
+     "neutral",
+     "走了。"
+    ],
+    [
+     "shy",
+     "……你叫得真好听。"
     ]
    ]
   }

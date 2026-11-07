@@ -65,12 +65,13 @@
      "来",
      "lái"
     ]
-   ]
+   ],
+   "emotion": "excited"
   },
   {
    "num": 2,
    "speaker": "A",
-   "zh": "吃狗？！你疯了吧！😉",
+   "zh": "吃狗？！你疯了吧！🙄",
    "pinyin": "Chī gǒu?! Nǐ fēng le ba!",
    "rd": "츠 거우?! 니 펑 러 바!",
    "ko": "개를 먹어?! 너 미쳤어!",
@@ -94,12 +95,23 @@
      "疯",
      "fēng"
     ]
+   ],
+   "emotion": "surprised",
+   "segs": [
+    [
+     "surprised",
+     "吃狗？！"
+    ],
+    [
+     "tsukkomi",
+     "你疯了吧！"
+    ]
    ]
   },
   {
    "num": 3,
    "speaker": "B",
-   "zh": "打错字啦！吃饭啊！😮",
+   "zh": "打错字啦！吃饭啊！😳",
    "pinyin": "Dǎ cuò zì la! Chī fàn a!",
    "rd": "다 춰 쯔 라! 츠 판 아!",
    "ko": "오타야! 밥!",
@@ -128,7 +140,8 @@
      "吃饭",
      "chī fàn"
     ]
-   ]
+   ],
+   "emotion": "flustered"
   },
   {
    "num": 4,
@@ -152,7 +165,8 @@
      "死",
      "sǐ"
     ]
-   ]
+   ],
+   "emotion": "flustered"
   },
   {
    "num": 5,
@@ -186,7 +200,8 @@
      "见",
      "jiàn"
     ]
-   ]
+   ],
+   "emotion": "cheerful"
   },
   {
    "num": 6,
@@ -230,7 +245,8 @@
      "去",
      "qù"
     ]
-   ]
+   ],
+   "emotion": "teasing"
   },
   {
    "num": 7,
@@ -243,7 +259,8 @@
    "tags": [
     "form:符号"
    ],
-   "lemmas": []
+   "lemmas": [],
+   "emotion": "surprised"
   },
   {
    "num": 8,
@@ -282,7 +299,8 @@
      "行",
      "xíng"
     ]
-   ]
+   ],
+   "emotion": "amused"
   }
  ],
  "review": {

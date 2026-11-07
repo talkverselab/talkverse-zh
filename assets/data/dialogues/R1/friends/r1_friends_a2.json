@@ -50,7 +50,8 @@
      "进来",
      "jìn lái"
     ]
-   ]
+   ],
+   "emotion": "flustered"
   },
   {
    "num": 2,
@@ -84,7 +85,8 @@
      "家",
      "jiā"
     ]
-   ]
+   ],
+   "emotion": "surprised"
   },
   {
    "num": 3,
@@ -113,7 +115,8 @@
      "掉",
      "diào"
     ]
-   ]
+   ],
+   "emotion": "shout"
   },
   {
    "num": 4,
@@ -141,6 +144,17 @@
      "进来",
      "进来",
      "jìn lái"
+    ]
+   ],
+   "emotion": "surprised",
+   "segs": [
+    [
+     "surprised",
+     "什么声音？"
+    ],
+    [
+     "cheerful",
+     "我进来了！"
     ]
    ]
   },
@@ -181,6 +195,17 @@
      "乱",
      "luàn"
     ]
+   ],
+   "emotion": "cheerful",
+   "segs": [
+    [
+     "cheerful",
+     "……生日快乐！"
+    ],
+    [
+     "flustered",
+     "就是有点乱。"
+    ]
    ]
   },
   {
@@ -210,7 +235,8 @@
      "上",
      "shàng"
     ]
-   ]
+   ],
+   "emotion": "amused"
   },
   {
    "num": 7,
@@ -243,6 +269,17 @@
      "搞砸",
      "搞砸",
      "gǎo zá"
+    ]
+   ],
+   "emotion": "annoyed",
+   "segs": [
+    [
+     "annoyed",
+     "别笑……"
+    ],
+    [
+     "sad",
+     "全搞砸了。"
     ]
    ]
   },
@@ -288,7 +325,8 @@
      "生日",
      "shēng rì"
     ]
-   ]
+   ],
+   "emotion": "gentle"
   }
  ],
  "review": {

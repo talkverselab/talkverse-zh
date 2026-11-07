@@ -55,7 +55,8 @@
      "座位",
      "zuò wèi"
     ]
-   ]
+   ],
+   "emotion": "polite"
   },
   {
    "num": 2,
@@ -79,7 +80,8 @@
      "号",
      "hào"
     ]
-   ]
+   ],
+   "emotion": "surprised"
   },
   {
    "num": 3,
@@ -118,7 +120,8 @@
      "号",
      "hào"
     ]
-   ]
+   ],
+   "emotion": "polite"
   },
   {
    "num": 4,
@@ -152,7 +155,8 @@
      "走",
      "zǒu"
     ]
-   ]
+   ],
+   "emotion": "flustered"
   },
   {
    "num": 5,
@@ -191,7 +195,8 @@
      "旁边",
      "páng biān"
     ]
-   ]
+   ],
+   "emotion": "gentle"
   },
   {
    "num": 6,
@@ -230,7 +235,8 @@
      "挨着",
      "āi zhe"
     ]
-   ]
+   ],
+   "emotion": "shy"
   },
   {
    "num": 7,
@@ -254,7 +260,8 @@
      "聊",
      "liáo"
     ]
-   ]
+   ],
+   "emotion": "shy"
   }
  ],
  "review": {

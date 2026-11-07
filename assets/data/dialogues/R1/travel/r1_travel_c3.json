@@ -55,7 +55,8 @@
      "好",
      "hǎo"
     ]
-   ]
+   ],
+   "emotion": "cheerful"
   },
   {
    "num": 2,
@@ -84,7 +85,8 @@
      "行",
      "xíng"
     ]
-   ]
+   ],
+   "emotion": "cheerful"
   },
   {
    "num": 3,
@@ -108,7 +110,8 @@
      "不",
      "bù"
     ]
-   ]
+   ],
+   "emotion": "cheerful"
   },
   {
    "num": 4,
@@ -142,7 +145,8 @@
      "买",
      "mǎi"
     ]
-   ]
+   ],
+   "emotion": "excited"
   },
   {
    "num": 5,
@@ -166,7 +170,8 @@
      "个",
      "gè"
     ]
-   ]
+   ],
+   "emotion": "cheerful"
   },
   {
    "num": 6,
@@ -190,12 +195,13 @@
      "疯",
      "fēng"
     ]
-   ]
+   ],
+   "emotion": "shout"
   },
   {
    "num": 7,
    "speaker": "A",
-   "zh": "你说随便的啊。😮",
+   "zh": "你说随便的啊。🙄",
    "pinyin": "Nǐ shuō suíbiàn de a.",
    "rd": "니 숴 쑤이볜 더 아.",
    "ko": "네가 아무거나라고 했잖아.",
@@ -214,12 +220,13 @@
      "随便",
      "suí biàn"
     ]
-   ]
+   ],
+   "emotion": "tsukkomi"
   },
   {
    "num": 8,
    "speaker": "B",
-   "zh": "家里放不下……想我了吧。😉",
+   "zh": "家里放不下……想我了吧。😜",
    "pinyin": "Jiā li fàng bu xià…… xiǎng wǒ le ba.",
    "rd": "자 리 팡 부 샤…… 샹 워 러 바.",
    "ko": "집에 못 둬…… 내 생각 많이 했구나.",
@@ -252,6 +259,17 @@
      "想",
      "想",
      "xiǎng"
+    ]
+   ],
+   "emotion": "flustered",
+   "segs": [
+    [
+     "flustered",
+     "家里放不下……"
+    ],
+    [
+     "teasing",
+     "想我了吧。"
     ]
    ]
   }

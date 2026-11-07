@@ -55,7 +55,8 @@
      "桌子",
      "zhuō zi"
     ]
-   ]
+   ],
+   "emotion": "cheerful"
   },
   {
    "num": 2,
@@ -89,7 +90,8 @@
      "意思",
      "yì si"
     ]
-   ]
+   ],
+   "emotion": "surprised"
   },
   {
    "num": 3,
@@ -113,7 +115,8 @@
      "意思",
      "yì si"
     ]
-   ]
+   ],
+   "emotion": "cheerful"
   },
   {
    "num": 4,
@@ -132,7 +135,8 @@
      "懂",
      "dǒng"
     ]
-   ]
+   ],
+   "emotion": "excited"
   },
   {
    "num": 5,
@@ -171,6 +175,17 @@
      "看",
      "kàn"
     ]
+   ],
+   "emotion": "shout",
+   "segs": [
+    [
+     "shout",
+     "轻点啊！"
+    ],
+    [
+     "flustered",
+     "大家都看了！"
+    ]
    ]
   },
   {
@@ -205,7 +220,8 @@
      "敲",
      "qiāo"
     ]
-   ]
+   ],
+   "emotion": "flustered"
   },
   {
    "num": 7,
@@ -234,12 +250,13 @@
      "点",
      "diǎn"
     ]
-   ]
+   ],
+   "emotion": "amused"
   },
   {
    "num": 8,
    "speaker": "A",
-   "zh": "老板也在敲……谢我吗？🤔",
+   "zh": "老板也在敲……谢我吗？🙄",
    "pinyin": "Lǎobǎn yě zài qiāo…… xiè wǒ ma?",
    "rd": "라오반 예 짜이 차오…… 셰 워 마?",
    "ko": "사장님도 두드리는데…… 나한테 고맙다는 거야?",
@@ -267,6 +284,17 @@
      "谢",
      "谢",
      "xiè"
+    ]
+   ],
+   "emotion": "surprised",
+   "segs": [
+    [
+     "surprised",
+     "老板也在敲……"
+    ],
+    [
+     "tsukkomi",
+     "谢我吗？"
     ]
    ]
   }

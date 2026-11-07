@@ -3,7 +3,7 @@
 import json, sys, os, re
 import ttslib as L
 V, EP = L.V, L.EP
-norm = lambda s: re.sub(r'[\s…。、，！？!?.,~♪「」“”\'"]|（[^）]*）|\([^)]*\)', '', s)
+norm = lambda s: re.sub(r'[\s…。、，！？!?.,~♪「」“”\'"]|（[^）]*）|\([^)]*\)|[\U0001F300-\U0001FAFF\u2600-\u27BF\U0001F000-\U0001F2FF]', '', s)  # 어조사 이모지 무시
 ids = sys.argv[1:] or L.planned()
 bad = miss = 0
 for ep in ids:

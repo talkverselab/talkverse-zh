@@ -50,7 +50,8 @@
      "房",
      "fáng"
     ]
-   ]
+   ],
+   "emotion": "polite"
   },
   {
    "num": 2,
@@ -79,7 +80,8 @@
      "护照",
      "hù zhào"
     ]
-   ]
+   ],
+   "emotion": "polite"
   },
   {
    "num": 3,
@@ -92,7 +94,8 @@
    "tags": [
     "form:您"
    ],
-   "lemmas": []
+   "lemmas": [],
+   "emotion": "polite"
   },
   {
    "num": 4,
@@ -116,7 +119,8 @@
      "明天",
      "míng tiān"
     ]
-   ]
+   ],
+   "emotion": "stiff"
   },
   {
    "num": 5,
@@ -150,7 +154,8 @@
      "住",
      "zhù"
     ]
-   ]
+   ],
+   "emotion": "shout"
   },
   {
    "num": 6,
@@ -199,7 +204,8 @@
      "房",
      "fáng"
     ]
-   ]
+   ],
+   "emotion": "polite"
   },
   {
    "num": 7,
@@ -233,7 +239,8 @@
      "人",
      "rén"
     ]
-   ]
+   ],
+   "emotion": "flustered"
   },
   {
    "num": 8,
@@ -287,7 +294,8 @@
      "蛋糕",
      "dàn gāo"
     ]
-   ]
+   ],
+   "emotion": "cheerful"
   }
  ],
  "review": {

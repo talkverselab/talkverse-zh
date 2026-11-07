@@ -26,7 +26,7 @@
   {
    "num": 1,
    "speaker": "B",
-   "zh": "今晚不睡，一起学吧！😉",
+   "zh": "今晚不睡，一起学吧！🤩",
    "pinyin": "Jīn wǎn bú shuì, yìqǐ xué ba!",
    "rd": "진 완 부 수이, 이치 쉐 바!",
    "ko": "오늘 밤 안 자고 같이 공부하자!",
@@ -60,7 +60,8 @@
      "学",
      "xué"
     ]
-   ]
+   ],
+   "emotion": "excited"
   },
   {
    "num": 2,
@@ -89,7 +90,8 @@
      "买",
      "mǎi"
     ]
-   ]
+   ],
+   "emotion": "cheerful"
   },
   {
    "num": 3,
@@ -108,12 +110,13 @@
      "第一页",
      "dì yī yè"
     ]
-   ]
+   ],
+   "emotion": "neutral"
   },
   {
    "num": 4,
    "speaker": "A",
-   "zh": "浩然？睡着了吗？🤔",
+   "zh": "浩然？睡着了吗？😟",
    "pinyin": "Hàorán? Shuìzháo le ma?",
    "rd": "하오란? 수이자오 러 마?",
    "ko": "하오란? 잠들었어?",
@@ -127,7 +130,8 @@
      "睡着",
      "shuì zháo"
     ]
-   ]
+   ],
+   "emotion": "worried"
   },
   {
    "num": 5,
@@ -151,12 +155,13 @@
      "想",
      "xiǎng"
     ]
-   ]
+   ],
+   "emotion": "gentle"
   },
   {
    "num": 6,
    "speaker": "A",
-   "zh": "想我？眼睛闭着啊。😮",
+   "zh": "想我？眼睛闭着啊。🙄",
    "pinyin": "Xiǎng wǒ? Yǎnjing bìzhe a.",
    "rd": "샹 워? 옌징 비저 아.",
    "ko": "나를? 눈 감고 있잖아.",
@@ -180,7 +185,8 @@
      "闭",
      "bì"
     ]
-   ]
+   ],
+   "emotion": "tsukkomi"
   },
   {
    "num": 7,
@@ -214,7 +220,8 @@
      "分钟",
      "fēn zhōng"
     ]
-   ]
+   ],
+   "emotion": "gentle"
   },
   {
    "num": 8,
@@ -248,7 +255,8 @@
      "上",
      "shàng"
     ]
-   ]
+   ],
+   "emotion": "gentle"
   }
  ],
  "review": {

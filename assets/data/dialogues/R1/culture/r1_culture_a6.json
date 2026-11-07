@@ -60,7 +60,8 @@
      "完",
      "wán"
     ]
-   ]
+   ],
+   "emotion": "cheerful"
   },
   {
    "num": 2,
@@ -89,12 +90,13 @@
      "吃",
      "chī"
     ]
-   ]
+   ],
+   "emotion": "surprised"
   },
   {
    "num": 3,
    "speaker": "B",
-   "zh": "不能咬断，别停啊。😮",
+   "zh": "不能咬断，别停啊。😟",
    "pinyin": "Bù néng yǎo duàn, bié tíng a.",
    "rd": "부 넝 야오 돤, 볘 팅 아.",
    "ko": "끊어 먹으면 안 돼, 멈추지 말고.",
@@ -128,7 +130,8 @@
      "停",
      "tíng"
     ]
-   ]
+   ],
+   "emotion": "worried"
   },
   {
    "num": 4,
@@ -172,7 +175,8 @@
      "长",
      "zhǎng"
     ]
-   ]
+   ],
+   "emotion": "flustered"
   },
   {
    "num": 5,
@@ -211,7 +215,8 @@
      "做",
      "zuò"
     ]
-   ]
+   ],
+   "emotion": "gentle"
   },
   {
    "num": 6,
@@ -250,7 +255,8 @@
      "断",
      "duàn"
     ]
-   ]
+   ],
+   "emotion": "worried"
   },
   {
    "num": 7,
@@ -284,7 +290,8 @@
      "看",
      "kàn"
     ]
-   ]
+   ],
+   "emotion": "shout"
   },
   {
    "num": 8,
@@ -323,7 +330,8 @@
      "快乐",
      "kuài lè"
     ]
-   ]
+   ],
+   "emotion": "excited"
   }
  ],
  "review": {

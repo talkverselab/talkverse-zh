@@ -50,7 +50,8 @@
      "吃",
      "chī"
     ]
-   ]
+   ],
+   "emotion": "annoyed"
   },
   {
    "num": 2,
@@ -79,12 +80,13 @@
      "真",
      "zhēn"
     ]
-   ]
+   ],
+   "emotion": "flustered"
   },
   {
    "num": 3,
    "speaker": "A",
-   "zh": "你发的照片里有啊。😮",
+   "zh": "你发的照片里有啊。🙄",
    "pinyin": "Nǐ fā de zhàopiàn li yǒu a.",
    "rd": "니 파 더 자오폔 리 유 아.",
    "ko": "네가 올린 사진에 있잖아.",
@@ -113,7 +115,8 @@
      "有",
      "yǒu"
     ]
-   ]
+   ],
+   "emotion": "tsukkomi"
   },
   {
    "num": 4,
@@ -142,12 +145,13 @@
      "买",
      "mǎi"
     ]
-   ]
+   ],
+   "emotion": "flustered"
   },
   {
    "num": 5,
    "speaker": "A",
-   "zh": "给我买的？那我的呢？🤔",
+   "zh": "给我买的？那我的呢？😮",
    "pinyin": "Gěi wǒ mǎi de? Nà wǒ de ne?",
    "rd": "게이 워 마이 더? 나 워 더 너?",
    "ko": "나 주려고? 그럼 내 건?",
@@ -166,7 +170,8 @@
      "那",
      "nà"
     ]
-   ]
+   ],
+   "emotion": "surprised"
   },
   {
    "num": 6,
@@ -195,7 +200,8 @@
      "里",
      "lǐ"
     ]
-   ]
+   ],
+   "emotion": "shy"
   },
   {
    "num": 7,
@@ -229,7 +235,8 @@
      "吃",
      "chī"
     ]
-   ]
+   ],
+   "emotion": "annoyed"
   },
   {
    "num": 8,
@@ -267,6 +274,17 @@
      "好吃",
      "好吃",
      "hǎo chī"
+    ]
+   ],
+   "emotion": "flustered",
+   "segs": [
+    [
+     "flustered",
+     "六个都吃了……"
+    ],
+    [
+     "shy",
+     "太好吃了。"
     ]
    ]
   }

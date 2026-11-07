@@ -60,7 +60,8 @@
      "楼",
      "lóu"
     ]
-   ]
+   ],
+   "emotion": "polite"
   },
   {
    "num": 2,
@@ -89,7 +90,8 @@
      "楼",
      "lóu"
     ]
-   ]
+   ],
+   "emotion": "neutral"
   },
   {
    "num": 3,
@@ -123,7 +125,8 @@
      "爬",
      "pá"
     ]
-   ]
+   ],
+   "emotion": "worried"
   },
   {
    "num": 4,
@@ -157,7 +160,8 @@
      "号",
      "hào"
     ]
-   ]
+   ],
+   "emotion": "flustered"
   },
   {
    "num": 5,
@@ -201,7 +205,8 @@
      "次",
      "cì"
     ]
-   ]
+   ],
+   "emotion": "annoyed"
   },
   {
    "num": 6,
@@ -235,12 +240,13 @@
      "号",
      "hào"
     ]
-   ]
+   ],
+   "emotion": "flustered"
   },
   {
    "num": 7,
    "speaker": "B",
-   "zh": "到了。您……九号楼吧？😉",
+   "zh": "到了。您……九号楼吧？😜",
    "pinyin": "Dào le. Nín…… jiǔ hào lóu ba?",
    "rd": "다오 러. 닌…… 주 하오 러우 바?",
    "ko": "도착했어요. 고객님…… 9동이시죠?",
@@ -269,7 +275,8 @@
      "楼",
      "lóu"
     ]
-   ]
+   ],
+   "emotion": "teasing"
   },
   {
    "num": 8,
@@ -297,6 +304,17 @@
      "辛苦",
      "辛苦",
      "xīn kǔ"
+    ]
+   ],
+   "emotion": "flustered",
+   "segs": [
+    [
+     "flustered",
+     "我下去拿……"
+    ],
+    [
+     "gentle",
+     "辛苦你了。"
     ]
    ]
   }

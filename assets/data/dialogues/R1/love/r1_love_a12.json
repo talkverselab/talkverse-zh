@@ -28,7 +28,7 @@
   {
    "num": 1,
    "speaker": "A",
-   "zh": "你手机响了哦。😅",
+   "zh": "你手机响了哦。😄",
    "pinyin": "Nǐ shǒujī xiǎng le o.",
    "rd": "니 서우지 샹 러 오.",
    "ko": "너 폰 울린다.",
@@ -47,7 +47,8 @@
      "响",
      "xiǎng"
     ]
-   ]
+   ],
+   "emotion": "cheerful"
   },
   {
    "num": 2,
@@ -81,7 +82,8 @@
      "谁",
      "shuí"
     ]
-   ]
+   ],
+   "emotion": "cheerful"
   },
   {
    "num": 3,
@@ -115,6 +117,17 @@
      "接",
      "jiē"
     ]
+   ],
+   "emotion": "amused",
+   "segs": [
+    [
+     "amused",
+     "「小傻瓜」？"
+    ],
+    [
+     "teasing",
+     "我接！"
+    ]
    ]
   },
   {
@@ -144,7 +157,8 @@
      "碰",
      "pèng"
     ]
-   ]
+   ],
+   "emotion": "shout"
   },
   {
    "num": 5,
@@ -168,7 +182,8 @@
      "男朋友",
      "nán péng yǒu"
     ]
-   ]
+   ],
+   "emotion": "teasing"
   },
   {
    "num": 6,
@@ -191,6 +206,17 @@
      "号码",
      "号码",
      "hào mǎ"
+    ]
+   ],
+   "emotion": "flustered",
+   "segs": [
+    [
+     "flustered",
+     "不是啦……"
+    ],
+    [
+     "shy",
+     "是你的号码。"
     ]
    ]
   },
@@ -221,7 +247,8 @@
      "瓜",
      "guā"
     ]
-   ]
+   ],
+   "emotion": "surprised"
   },
   {
    "num": 8,
@@ -255,7 +282,8 @@
      "瓜",
      "guā"
     ]
-   ]
+   ],
+   "emotion": "gentle"
   }
  ],
  "review": {

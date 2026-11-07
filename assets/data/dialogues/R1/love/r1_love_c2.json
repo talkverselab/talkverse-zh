@@ -62,7 +62,8 @@
      "不",
      "bù"
     ]
-   ]
+   ],
+   "emotion": "cheerful"
   },
   {
    "num": 2,
@@ -91,7 +92,8 @@
      "好看",
      "hǎo kàn"
     ]
-   ]
+   ],
+   "emotion": "excited"
   },
   {
    "num": 3,
@@ -125,7 +127,8 @@
      "心",
      "xīn"
     ]
-   ]
+   ],
+   "emotion": "teasing"
   },
   {
    "num": 4,
@@ -149,7 +152,8 @@
      "坏",
      "huài"
     ]
-   ]
+   ],
+   "emotion": "flustered"
   },
   {
    "num": 5,
@@ -183,7 +187,8 @@
      "喜欢",
      "xǐ huān"
     ]
-   ]
+   ],
+   "emotion": "teasing"
   },
   {
    "num": 6,
@@ -207,7 +212,8 @@
      "发",
      "fā"
     ]
-   ]
+   ],
+   "emotion": "flustered"
   },
   {
    "num": 7,
@@ -251,7 +257,8 @@
      "见",
      "jiàn"
     ]
-   ]
+   ],
+   "emotion": "teasing"
   }
  ],
  "review": {

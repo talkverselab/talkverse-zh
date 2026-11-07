@@ -50,7 +50,8 @@
      "语音",
      "yǔ yīn"
     ]
-   ]
+   ],
+   "emotion": "surprised"
   },
   {
    "num": 2,
@@ -74,7 +75,8 @@
      "发",
      "fā"
     ]
-   ]
+   ],
+   "emotion": "surprised"
   },
   {
    "num": 3,
@@ -103,7 +105,8 @@
      "唱歌",
      "chàng gē"
     ]
-   ]
+   ],
+   "emotion": "teasing"
   },
   {
    "num": 4,
@@ -132,7 +135,8 @@
      "命",
      "mìng"
     ]
-   ]
+   ],
+   "emotion": "flustered"
   },
   {
    "num": 5,
@@ -171,7 +175,8 @@
      "一个",
      "yí gè"
     ]
-   ]
+   ],
+   "emotion": "teasing"
   },
   {
    "num": 6,
@@ -200,12 +205,13 @@
      "求",
      "qiú"
     ]
-   ]
+   ],
+   "emotion": "shout"
   },
   {
    "num": 7,
    "speaker": "B",
-   "zh": "已经发群里了，嘿嘿。🙂",
+   "zh": "已经发群里了，嘿嘿。😜",
    "pinyin": "Yǐjīng fā qún li le, hēihēi.",
    "rd": "이징 파 췬 리 러, 헤이헤이.",
    "ko": "벌써 단톡방에 올렸지, 헤헤.",
@@ -234,7 +240,8 @@
      "里",
      "lǐ"
     ]
-   ]
+   ],
+   "emotion": "teasing"
   },
   {
    "num": 8,
@@ -258,7 +265,8 @@
      "活",
      "huó"
     ]
-   ]
+   ],
+   "emotion": "shout"
   }
  ],
  "review": {

@@ -55,7 +55,8 @@
      "没",
      "méi"
     ]
-   ]
+   ],
+   "emotion": "surprised"
   },
   {
    "num": 2,
@@ -89,12 +90,13 @@
      "这个",
      "zhè ge"
     ]
-   ]
+   ],
+   "emotion": "excited"
   },
   {
    "num": 3,
    "speaker": "A",
-   "zh": "锅盖？？你开玩笑吧！😉",
+   "zh": "锅盖？？你开玩笑吧！🙄",
    "pinyin": "Guōgài?? Nǐ kāi wánxiào ba!",
    "rd": "궈가이?? 니 카이 완샤오 바!",
    "ko": "냄비 뚜껑?? 장난이지!",
@@ -118,12 +120,23 @@
      "开玩笑",
      "kāi wán xiào"
     ]
+   ],
+   "emotion": "surprised",
+   "segs": [
+    [
+     "surprised",
+     "锅盖？？"
+    ],
+    [
+     "tsukkomi",
+     "你开玩笑吧！"
+    ]
    ]
   },
   {
    "num": 4,
    "speaker": "B",
-   "zh": "真的能挡雨啊！😮",
+   "zh": "真的能挡雨啊！😄",
    "pinyin": "Zhēn de néng dǎng yǔ a!",
    "rd": "전 더 넝 당 위 아!",
    "ko": "진짜 비 막을 수 있어!",
@@ -152,7 +165,8 @@
      "雨",
      "yǔ"
     ]
-   ]
+   ],
+   "emotion": "cheerful"
   },
   {
    "num": 5,
@@ -186,7 +200,8 @@
      "挡",
      "dǎng"
     ]
-   ]
+   ],
+   "emotion": "tsukkomi"
   },
   {
    "num": 6,
@@ -220,7 +235,8 @@
      "这个",
      "zhè ge"
     ]
-   ]
+   ],
+   "emotion": "excited"
   },
   {
    "num": 7,
@@ -258,6 +274,17 @@
      "拿",
      "拿",
      "ná"
+    ]
+   ],
+   "emotion": "surprised",
+   "segs": [
+    [
+     "surprised",
+     "平底锅？！"
+    ],
+    [
+     "tsukkomi",
+     "你全拿了？"
     ]
    ]
   },
@@ -298,7 +325,8 @@
      "看",
      "kàn"
     ]
-   ]
+   ],
+   "emotion": "flustered"
   }
  ],
  "review": {

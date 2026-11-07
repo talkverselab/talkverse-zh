@@ -28,7 +28,7 @@
   {
    "num": 1,
    "speaker": "B",
-   "zh": "这袜子谁的啊？😮",
+   "zh": "这袜子谁的啊？😒",
    "pinyin": "Zhè wàzi shéi de a?",
    "rd": "저 와쯔 세이 더 아?",
    "ko": "이 양말 누구 거야?",
@@ -52,7 +52,8 @@
      "谁",
      "shuí"
     ]
-   ]
+   ],
+   "emotion": "annoyed"
   },
   {
    "num": 2,
@@ -71,7 +72,8 @@
      "怎么",
      "zěn me"
     ]
-   ]
+   ],
+   "emotion": "neutral"
   },
   {
    "num": 3,
@@ -100,7 +102,8 @@
      "全粉",
      "quán fěn"
     ]
-   ]
+   ],
+   "emotion": "shout"
   },
   {
    "num": 4,
@@ -119,7 +122,8 @@
      "全粉",
      "quán fěn"
     ]
-   ]
+   ],
+   "emotion": "surprised"
   },
   {
    "num": 5,
@@ -168,7 +172,8 @@
      "没",
      "méi"
     ]
-   ]
+   ],
+   "emotion": "shout"
   },
   {
    "num": 6,
@@ -197,7 +202,8 @@
      "赔",
      "péi"
     ]
-   ]
+   ],
+   "emotion": "flustered"
   },
   {
    "num": 7,
@@ -235,6 +241,17 @@
      "看",
      "看",
      "kàn"
+    ]
+   ],
+   "emotion": "stiff",
+   "segs": [
+    [
+     "stiff",
+     "请我吃饭。"
+    ],
+    [
+     "teasing",
+     "我穿粉色给你看。"
     ]
    ]
   }

@@ -57,7 +57,8 @@
      "门口",
      "mén kǒu"
     ]
-   ]
+   ],
+   "emotion": "polite"
   },
   {
    "num": 2,
@@ -98,12 +99,13 @@
      "行",
      "xíng"
     ]
-   ]
+   ],
+   "emotion": "polite"
   },
   {
    "num": 3,
    "speaker": "B",
-   "zh": "备注写着“唱首歌”，我唱着呢！🤔",
+   "zh": "备注写着“唱首歌”，我唱着呢！😏",
    "pinyin": "Bèizhù xiězhe \"chàng shǒu gē\", wǒ chàng zhe ne!",
    "rd": "베이주 셰저 \"창 서우 거\", 워 창 저 너!",
    "ko": "요청 사항이 \"노래 한 곡\"이라서, 지금 부르고 있어요!",
@@ -149,7 +151,8 @@
      "唱",
      "chàng"
     ]
-   ]
+   ],
+   "emotion": "amused"
   },
   {
    "num": 4,
@@ -185,12 +188,13 @@
      "错",
      "cuò"
     ]
-   ]
+   ],
+   "emotion": "flustered"
   },
   {
    "num": 5,
    "speaker": "B",
-   "zh": "没事，唱完了，邻居都鼓掌了😂",
+   "zh": "没事，唱完了，邻居都鼓掌了",
    "pinyin": "Méishì, chàng wán le, línjū dōu gǔzhǎng le",
    "rd": "메이스, 창 완 러, 린쥐 더우 구장 러",
    "ko": "괜찮아요, 다 불렀어요, 이웃분들 다 박수 쳤어요😂",
@@ -236,7 +240,8 @@
      "鼓掌",
      "gǔ zhǎng"
     ]
-   ]
+   ],
+   "emotion": "cheerful"
   },
   {
    "num": 6,
@@ -267,7 +272,8 @@
      "好听",
      "hǎo tīng"
     ]
-   ]
+   ],
+   "emotion": "shy"
   },
   {
    "num": 7,
@@ -313,7 +319,8 @@
      "起",
      "qǐ"
     ]
-   ]
+   ],
+   "emotion": "teasing"
   }
  ],
  "review": {

@@ -58,12 +58,13 @@
      "饺子",
      "jiǎo zi"
     ]
-   ]
+   ],
+   "emotion": "excited"
   },
   {
    "num": 2,
    "speaker": "A",
-   "zh": "我不会……这样对吗？🤔",
+   "zh": "我不会……这样对吗？😳",
    "pinyin": "Wǒ bú huì…… zhèyàng duì ma?",
    "rd": "워 부 후이…… 저양 두이 마?",
    "ko": "나 못 해…… 이렇게 하는 거 맞아?",
@@ -82,7 +83,8 @@
      "这样",
      "zhè yàng"
     ]
-   ]
+   ],
+   "emotion": "flustered"
   },
   {
    "num": 3,
@@ -116,12 +118,13 @@
      "球",
      "qiú"
     ]
-   ]
+   ],
+   "emotion": "amused"
   },
   {
    "num": 4,
    "speaker": "A",
-   "zh": "里面有钱，对吧？😉",
+   "zh": "里面有钱，对吧？😜",
    "pinyin": "Lǐmiàn yǒu qián, duì ba?",
    "rd": "리몐 유 첸, 두이 바?",
    "ko": "안에 동전 들었지?",
@@ -145,7 +148,8 @@
      "钱",
      "qián"
     ]
-   ]
+   ],
+   "emotion": "teasing"
   },
   {
    "num": 5,
@@ -184,7 +188,8 @@
      "好运",
      "hǎo yùn"
     ]
-   ]
+   ],
+   "emotion": "cheerful"
   },
   {
    "num": 6,
@@ -212,6 +217,17 @@
      "三个",
      "三个",
      "sān gè"
+    ]
+   ],
+   "emotion": "surprised",
+   "segs": [
+    [
+     "surprised",
+     "啊！我吃到了……"
+    ],
+    [
+     "shout",
+     "三个？！"
     ]
    ]
   },
@@ -252,7 +268,8 @@
      "里",
      "lǐ"
     ]
-   ]
+   ],
+   "emotion": "shy"
   },
   {
    "num": 8,
@@ -271,7 +288,8 @@
      "为什么",
      "wèi shén me"
     ]
-   ]
+   ],
+   "emotion": "flustered"
   }
  ],
  "review": {

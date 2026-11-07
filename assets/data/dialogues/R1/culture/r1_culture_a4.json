@@ -55,12 +55,13 @@
      "一个",
      "yí gè"
     ]
-   ]
+   ],
+   "emotion": "cheerful"
   },
   {
    "num": 2,
    "speaker": "A",
-   "zh": "红的！是番茄的吧？😉",
+   "zh": "红的！是番茄的吧？🤩",
    "pinyin": "Hóng de! Shì fānqié de ba?",
    "rd": "훙 더! 스 판체 더 바?",
    "ko": "빨간 거! 토마토 맞지?",
@@ -84,12 +85,13 @@
      "番茄",
      "fān qié"
     ]
-   ]
+   ],
+   "emotion": "excited"
   },
   {
    "num": 3,
    "speaker": "B",
-   "zh": "番茄？你在开玩笑吧。😉",
+   "zh": "番茄？你在开玩笑吧。😜",
    "pinyin": "Fānqié? Nǐ zài kāi wánxiào ba.",
    "rd": "판체? 니 짜이 카이 완샤오 바.",
    "ko": "토마토? 농담하는 거지.",
@@ -108,7 +110,8 @@
      "开玩笑",
      "kāi wán xiào"
     ]
-   ]
+   ],
+   "emotion": "teasing"
   },
   {
    "num": 4,
@@ -147,6 +150,17 @@
      "嘴",
      "zuǐ"
     ]
+   ],
+   "emotion": "cheerful",
+   "segs": [
+    [
+     "cheerful",
+     "没事没事……"
+    ],
+    [
+     "shout",
+     "啊！我的嘴！"
+    ]
    ]
   },
   {
@@ -181,12 +195,13 @@
      "快",
      "kuài"
     ]
-   ]
+   ],
+   "emotion": "amused"
   },
   {
    "num": 6,
    "speaker": "A",
-   "zh": "水也是烫的啊！😮",
+   "zh": "水也是烫的啊！😤",
    "pinyin": "Shuǐ yě shì tàng de a!",
    "rd": "수이 예 스 탕 더 아!",
    "ko": "물도 뜨거워!",
@@ -215,7 +230,8 @@
      "烫",
      "tàng"
     ]
-   ]
+   ],
+   "emotion": "shout"
   },
   {
    "num": 7,
@@ -259,7 +275,8 @@
      "白",
      "bái"
     ]
-   ]
+   ],
+   "emotion": "gentle"
   }
  ],
  "review": {

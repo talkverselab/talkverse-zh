@@ -26,7 +26,7 @@
   {
    "num": 1,
    "speaker": "B",
-   "zh": "再来一把？😏",
+   "zh": "再来一把？",
    "pinyin": "Zài lái yì bǎ?",
    "rd": "짜이 라이 이 바?",
    "ko": "한 판 더?😏",
@@ -50,7 +50,8 @@
      "把",
      "bǎ"
     ]
-   ]
+   ],
+   "emotion": "teasing"
   },
   {
    "num": 2,
@@ -84,7 +85,8 @@
      "输",
      "shū"
     ]
-   ]
+   ],
+   "emotion": "annoyed"
   },
   {
    "num": 3,
@@ -113,7 +115,8 @@
      "让",
      "ràng"
     ]
-   ]
+   ],
+   "emotion": "teasing"
   },
   {
    "num": 4,
@@ -147,12 +150,13 @@
      "赢",
      "yíng"
     ]
-   ]
+   ],
+   "emotion": "excited"
   },
   {
    "num": 5,
    "speaker": "B",
-   "zh": "……又输了啊。😮",
+   "zh": "……又输了啊。😏",
    "pinyin": "…… Yòu shū le a.",
    "rd": "…… 유 수 러 아.",
    "ko": "……또 졌네.",
@@ -171,12 +175,13 @@
      "输",
      "shū"
     ]
-   ]
+   ],
+   "emotion": "amused"
   },
   {
    "num": 6,
    "speaker": "A",
-   "zh": "你不是让我吗？！🤔",
+   "zh": "你不是让我吗？！🙄",
    "pinyin": "Nǐ bú shì ràng wǒ ma?!",
    "rd": "니 부 스 랑 워 마?!",
    "ko": "봐준다며?!",
@@ -190,7 +195,8 @@
      "让",
      "ràng"
     ]
-   ]
+   ],
+   "emotion": "tsukkomi"
   },
   {
    "num": 7,
@@ -224,7 +230,8 @@
      "玩",
      "wán"
     ]
-   ]
+   ],
+   "emotion": "teasing"
   },
   {
    "num": 8,
@@ -248,7 +255,8 @@
      "好友",
      "hǎo yǒu"
     ]
-   ]
+   ],
+   "emotion": "annoyed"
   }
  ],
  "review": {

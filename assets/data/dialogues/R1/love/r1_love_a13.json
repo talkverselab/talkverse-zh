@@ -72,12 +72,13 @@
      "头发",
      "tóu fà"
     ]
-   ]
+   ],
+   "emotion": "cheerful"
   },
   {
    "num": 2,
    "speaker": "A",
-   "zh": "我？我真不会啊。😮",
+   "zh": "我？我真不会啊。😳",
    "pinyin": "Wǒ? Wǒ zhēn bú huì a.",
    "rd": "워? 워 전 부 후이 아.",
    "ko": "내가? 나 진짜 못 해.",
@@ -96,7 +97,8 @@
      "不会",
      "bú huì"
     ]
-   ]
+   ],
+   "emotion": "flustered"
   },
   {
    "num": 3,
@@ -140,7 +142,8 @@
      "点",
      "diǎn"
     ]
-   ]
+   ],
+   "emotion": "annoyed"
   },
   {
    "num": 4,
@@ -168,6 +171,17 @@
      "歪",
      "歪",
      "wāi"
+    ]
+   ],
+   "emotion": "flustered",
+   "segs": [
+    [
+     "flustered",
+     "好了……"
+    ],
+    [
+     "worried",
+     "好像歪了。"
     ]
    ]
   },
@@ -208,6 +222,17 @@
      "歪",
      "wāi"
     ]
+   ],
+   "emotion": "surprised",
+   "segs": [
+    [
+     "surprised",
+     "歪了？"
+    ],
+    [
+     "shout",
+     "到底有多歪？！"
+    ]
    ]
   },
   {
@@ -232,7 +257,8 @@
      "棵",
      "kē"
     ]
-   ]
+   ],
+   "emotion": "amused"
   },
   {
    "num": 7,
@@ -260,6 +286,17 @@
      "好看",
      "好看",
      "hǎo kàn"
+    ]
+   ],
+   "emotion": "annoyed",
+   "segs": [
+    [
+     "annoyed",
+     "不管了，"
+    ],
+    [
+     "gentle",
+     "你扎的就好看。"
     ]
    ]
   },
@@ -290,7 +327,8 @@
      "好看",
      "hǎo kàn"
     ]
-   ]
+   ],
+   "emotion": "gentle"
   }
  ],
  "review": {

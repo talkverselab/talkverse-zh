@@ -26,7 +26,7 @@
   {
    "num": 1,
    "speaker": "B",
-   "zh": "帮我看会儿狗呗。🙂",
+   "zh": "帮我看会儿狗呗。😄",
    "pinyin": "Bāng wǒ kàn huìr gǒu bei.",
    "rd": "방 워 칸 후일 거우 베이.",
    "ko": "잠깐만 개 좀 봐 줘.",
@@ -60,7 +60,8 @@
      "狗",
      "gǒu"
     ]
-   ]
+   ],
+   "emotion": "cheerful"
   },
   {
    "num": 2,
@@ -99,7 +100,8 @@
      "问题",
      "wèn tí"
     ]
-   ]
+   ],
+   "emotion": "cheerful"
   },
   {
    "num": 3,
@@ -128,12 +130,13 @@
      "只",
      "zhǐ"
     ]
-   ]
+   ],
+   "emotion": "cheerful"
   },
   {
    "num": 4,
    "speaker": "A",
-   "zh": "五只？！你逗我呢？🤔",
+   "zh": "五只？！你逗我呢？🙄",
    "pinyin": "Wǔ zhī?! Nǐ dòu wǒ ne?",
    "rd": "우 즈?! 니 더우 워 너?",
    "ko": "다섯?! 나 놀리는 거야?",
@@ -152,12 +155,23 @@
      "逗我",
      "dòu wǒ"
     ]
+   ],
+   "emotion": "surprised",
+   "segs": [
+    [
+     "surprised",
+     "五只？！"
+    ],
+    [
+     "tsukkomi",
+     "你逗我呢？"
+    ]
    ]
   },
   {
    "num": 5,
    "speaker": "B",
-   "zh": "邻居的，拜托啦！🙂",
+   "zh": "邻居的，拜托啦！😳",
    "pinyin": "Línjū de, bàituō la!",
    "rd": "린쥐 더, 바이퉈 라!",
    "ko": "이웃집 개야, 부탁해!",
@@ -181,7 +195,8 @@
      "托",
      "tuō"
     ]
-   ]
+   ],
+   "emotion": "flustered"
   },
   {
    "num": 6,
@@ -205,7 +220,8 @@
      "怎么办",
      "zěn me bàn"
     ]
-   ]
+   ],
+   "emotion": "worried"
   },
   {
    "num": 7,
@@ -234,12 +250,13 @@
      "猫",
      "māo"
     ]
-   ]
+   ],
+   "emotion": "cheerful"
   },
   {
    "num": 8,
    "speaker": "A",
-   "zh": "你给我回来啊！😮",
+   "zh": "你给我回来啊！😤",
    "pinyin": "Nǐ gěi wǒ huílai a!",
    "rd": "니 게이 워 후이라이 아!",
    "ko": "야, 당장 돌아와!",
@@ -253,7 +270,8 @@
      "回来",
      "huí lái"
     ]
-   ]
+   ],
+   "emotion": "shout"
   }
  ],
  "review": {

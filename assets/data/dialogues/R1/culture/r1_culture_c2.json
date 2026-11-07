@@ -69,7 +69,8 @@
      "没",
      "méi"
     ]
-   ]
+   ],
+   "emotion": "cheerful"
   },
   {
    "num": 2,
@@ -110,7 +111,8 @@
      "特别",
      "tè bié"
     ]
-   ]
+   ],
+   "emotion": "cheerful"
   },
   {
    "num": 3,
@@ -141,12 +143,13 @@
      "绿",
      "lǜ"
     ]
-   ]
+   ],
+   "emotion": "surprised"
   },
   {
    "num": 4,
    "speaker": "A",
-   "zh": "嗯，特别到我哭了😂",
+   "zh": "嗯，特别到我哭了",
    "pinyin": "ǹg, tèbié dào wǒ kū le",
    "rd": "응, 터볘 다오 워 쿠 러",
    "ko": "응, 특이해서 울었어😂",
@@ -172,7 +175,8 @@
      "哭",
      "kū"
     ]
-   ]
+   ],
+   "emotion": "amused"
   },
   {
    "num": 5,
@@ -218,7 +222,8 @@
      "妈",
      "mā"
     ]
-   ]
+   ],
+   "emotion": "flustered"
   },
   {
    "num": 6,
@@ -259,7 +264,8 @@
      "茶",
      "chá"
     ]
-   ]
+   ],
+   "emotion": "surprised"
   },
   {
    "num": 7,
@@ -305,7 +311,8 @@
      "找",
      "zhǎo"
     ]
-   ]
+   ],
+   "emotion": "gentle"
   }
  ],
  "review": {

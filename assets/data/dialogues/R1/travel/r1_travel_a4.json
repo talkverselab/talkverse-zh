@@ -50,7 +50,8 @@
      "钱",
      "qián"
     ]
-   ]
+   ],
+   "emotion": "polite"
   },
   {
    "num": 2,
@@ -74,12 +75,13 @@
      "便宜",
      "pián yi"
     ]
-   ]
+   ],
+   "emotion": "polite"
   },
   {
    "num": 3,
    "speaker": "A",
-   "zh": "太贵啦！六十行吗？🤔",
+   "zh": "太贵啦！六十行吗？😳",
    "pinyin": "Tài guì la! Liùshí xíng ma?",
    "rd": "타이 구이 라! 류스 싱 마?",
    "ko": "너무 비싸요! 60 돼요?",
@@ -92,6 +94,17 @@
      "行",
      "行",
      "xíng"
+    ]
+   ],
+   "emotion": "annoyed",
+   "segs": [
+    [
+     "annoyed",
+     "太贵啦！"
+    ],
+    [
+     "flustered",
+     "六十行吗？"
     ]
    ]
   },
@@ -122,6 +135,17 @@
      "两个",
      "liǎng gè"
     ]
+   ],
+   "emotion": "surprised",
+   "segs": [
+    [
+     "surprised",
+     "六十？"
+    ],
+    [
+     "cheerful",
+     "行啊！拿两个！"
+    ]
    ]
   },
   {
@@ -151,7 +175,8 @@
      "是",
      "shì"
     ]
-   ]
+   ],
+   "emotion": "flustered"
   },
   {
    "num": 6,
@@ -189,6 +214,17 @@
      "一个",
      "一个",
      "yí gè"
+    ]
+   ],
+   "emotion": "amused",
+   "segs": [
+    [
+     "amused",
+     "哈哈，真可爱。"
+    ],
+    [
+     "cheerful",
+     "四十，再送一个！"
     ]
    ]
   }

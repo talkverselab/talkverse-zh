@@ -50,12 +50,13 @@
      "圈",
      "quān"
     ]
-   ]
+   ],
+   "emotion": "amused"
   },
   {
    "num": 2,
    "speaker": "A",
-   "zh": "我找不到酒店啊……😮",
+   "zh": "我找不到酒店啊……😟",
    "pinyin": "Wǒ zhǎo bú dào jiǔdiàn a……",
    "rd": "워 자오 부 다오 주뎬 아……",
    "ko": "호텔을 못 찾겠어……",
@@ -79,7 +80,8 @@
      "酒店",
      "jiǔ diàn"
     ]
-   ]
+   ],
+   "emotion": "worried"
   },
   {
    "num": 3,
@@ -108,7 +110,8 @@
      "去",
      "qù"
     ]
-   ]
+   ],
+   "emotion": "gentle"
   },
   {
    "num": 4,
@@ -132,7 +135,8 @@
      "看",
      "kàn"
     ]
-   ]
+   ],
+   "emotion": "surprised"
   },
   {
    "num": 5,
@@ -161,7 +165,8 @@
      "后面",
      "hòu miàn"
     ]
-   ]
+   ],
+   "emotion": "shy"
   },
   {
    "num": 6,
@@ -184,6 +189,17 @@
      "笨",
      "笨",
      "bèn"
+    ]
+   ],
+   "emotion": "flustered",
+   "segs": [
+    [
+     "flustered",
+     "啊……我太笨了。"
+    ],
+    [
+     "gentle",
+     "谢谢你。"
     ]
    ]
   },
@@ -229,7 +245,8 @@
      "路",
      "lù"
     ]
-   ]
+   ],
+   "emotion": "gentle"
   }
  ],
  "review": {

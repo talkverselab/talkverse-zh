@@ -45,7 +45,8 @@
      "这里",
      "zhè lǐ"
     ]
-   ]
+   ],
+   "emotion": "polite"
   },
   {
    "num": 2,
@@ -84,7 +85,8 @@
      "女孩",
      "nǚ hái"
     ]
-   ]
+   ],
+   "emotion": "surprised"
   },
   {
    "num": 3,
@@ -108,7 +110,8 @@
      "这个",
      "zhè ge"
     ]
-   ]
+   ],
+   "emotion": "flustered"
   },
   {
    "num": 4,
@@ -132,7 +135,8 @@
      "朋友",
      "péng yǒu"
     ]
-   ]
+   ],
+   "emotion": "amused"
   },
   {
    "num": 5,
@@ -166,7 +170,8 @@
      "见",
      "jiàn"
     ]
-   ]
+   ],
+   "emotion": "shy"
   },
   {
    "num": 6,
@@ -210,7 +215,8 @@
      "让",
      "ràng"
     ]
-   ]
+   ],
+   "emotion": "cheerful"
   }
  ],
  "review": {

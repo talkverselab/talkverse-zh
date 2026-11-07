@@ -57,7 +57,8 @@
      "困",
      "kùn"
     ]
-   ]
+   ],
+   "emotion": "gentle"
   },
   {
    "num": 2,
@@ -91,7 +92,8 @@
      "晚安",
      "wǎn ān"
     ]
-   ]
+   ],
+   "emotion": "amused"
   },
   {
    "num": 3,
@@ -115,7 +117,8 @@
      "看着",
      "kàn zhe"
     ]
-   ]
+   ],
+   "emotion": "teasing"
   },
   {
    "num": 4,
@@ -149,7 +152,8 @@
      "睡",
      "shuì"
     ]
-   ]
+   ],
+   "emotion": "shy"
   },
   {
    "num": 5,
@@ -173,7 +177,8 @@
      "还",
      "hái"
     ]
-   ]
+   ],
+   "emotion": "amused"
   },
   {
    "num": 6,
@@ -197,7 +202,8 @@
      "数",
      "shù"
     ]
-   ]
+   ],
+   "emotion": "cheerful"
   },
   {
    "num": 7,
@@ -226,6 +232,17 @@
      "跳",
      "tiào"
     ]
+   ],
+   "emotion": "surprised",
+   "segs": [
+    [
+     "surprised",
+     "……还在？"
+    ],
+    [
+     "shy",
+     "心跳了。"
+    ]
    ]
   },
   {
@@ -250,7 +267,8 @@
      "断",
      "duàn"
     ]
-   ]
+   ],
+   "emotion": "gentle"
   }
  ],
  "review": {

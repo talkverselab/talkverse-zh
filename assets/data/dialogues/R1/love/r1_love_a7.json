@@ -47,12 +47,13 @@
      "做饭",
      "zuò fàn"
     ]
-   ]
+   ],
+   "emotion": "excited"
   },
   {
    "num": 2,
    "speaker": "A",
-   "zh": "真的？你会做饭吗？🤔",
+   "zh": "真的？你会做饭吗？😜",
    "pinyin": "Zhēn de? Nǐ huì zuò fàn ma?",
    "rd": "전 더? 니 후이 쭤 판 마?",
    "ko": "진짜? 너 요리할 줄 알아?",
@@ -75,6 +76,17 @@
      "做饭",
      "做饭",
      "zuò fàn"
+    ]
+   ],
+   "emotion": "surprised",
+   "segs": [
+    [
+     "surprised",
+     "真的？"
+    ],
+    [
+     "teasing",
+     "你会做饭吗？"
     ]
    ]
   },
@@ -100,7 +112,8 @@
      "坐",
      "zuò"
     ]
-   ]
+   ],
+   "emotion": "cheerful"
   },
   {
    "num": 4,
@@ -129,7 +142,8 @@
      "烟",
      "yān"
     ]
-   ]
+   ],
+   "emotion": "worried"
   },
   {
    "num": 5,
@@ -173,7 +187,8 @@
      "做法",
      "zuò fǎ"
     ]
-   ]
+   ],
+   "emotion": "flustered"
   },
   {
    "num": 6,
@@ -207,7 +222,8 @@
      "敲门",
      "qiāo mén"
     ]
-   ]
+   ],
+   "emotion": "shout"
   },
   {
    "num": 7,
@@ -245,6 +261,17 @@
      "吃饭",
      "吃饭",
      "chī fàn"
+    ]
+   ],
+   "emotion": "flustered",
+   "segs": [
+    [
+     "flustered",
+     "出去吃吧……"
+    ],
+    [
+     "shy",
+     "我只想跟你吃饭。"
     ]
    ]
   },
@@ -285,7 +312,8 @@
      "吃",
      "chī"
     ]
-   ]
+   ],
+   "emotion": "cheerful"
   }
  ],
  "review": {

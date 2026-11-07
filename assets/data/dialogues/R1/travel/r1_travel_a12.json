@@ -47,7 +47,8 @@
      "票",
      "piào"
     ]
-   ]
+   ],
+   "emotion": "cheerful"
   },
   {
    "num": 2,
@@ -71,12 +72,13 @@
      "买",
      "mǎi"
     ]
-   ]
+   ],
+   "emotion": "surprised"
   },
   {
    "num": 3,
    "speaker": "B",
-   "zh": "我买的呀。😮",
+   "zh": "我买的呀。😄",
    "pinyin": "Wǒ mǎi de ya.",
    "rd": "워 마이 더 야.",
    "ko": "내가 산 거야.",
@@ -90,7 +92,8 @@
      "买",
      "mǎi"
     ]
-   ]
+   ],
+   "emotion": "cheerful"
   },
   {
    "num": 4,
@@ -119,7 +122,8 @@
      "去",
      "qù"
     ]
-   ]
+   ],
+   "emotion": "surprised"
   },
   {
    "num": 5,
@@ -143,7 +147,8 @@
      "海边",
      "hǎi biān"
     ]
-   ]
+   ],
+   "emotion": "excited"
   },
   {
    "num": 6,
@@ -182,12 +187,13 @@
      "带",
      "dài"
     ]
-   ]
+   ],
+   "emotion": "flustered"
   },
   {
    "num": 7,
    "speaker": "B",
-   "zh": "你来就够啦。🙂",
+   "zh": "你来就够啦。🥰",
    "pinyin": "Nǐ lái jiù gòu la.",
    "rd": "니 라이 주 거우 라.",
    "ko": "너만 오면 돼.",
@@ -211,7 +217,8 @@
      "够",
      "gòu"
     ]
-   ]
+   ],
+   "emotion": "gentle"
   },
   {
    "num": 8,
@@ -240,7 +247,8 @@
      "冲",
      "chōng"
     ]
-   ]
+   ],
+   "emotion": "excited"
   }
  ],
  "review": {

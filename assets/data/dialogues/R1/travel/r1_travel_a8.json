@@ -60,7 +60,8 @@
      "开",
      "kāi"
     ]
-   ]
+   ],
+   "emotion": "neutral"
   },
   {
    "num": 2,
@@ -89,12 +90,13 @@
      "反应",
      "fǎn yìng"
     ]
-   ]
+   ],
+   "emotion": "flustered"
   },
   {
    "num": 3,
    "speaker": "B",
-   "zh": "再扫一次呗。🙂",
+   "zh": "再扫一次呗。🥰",
    "pinyin": "Zài sǎo yí cì bei.",
    "rd": "짜이 싸오 이 츠 베이.",
    "ko": "한 번 더 찍어 봐.",
@@ -118,7 +120,8 @@
      "一次",
      "yī cì"
     ]
-   ]
+   ],
+   "emotion": "gentle"
   },
   {
    "num": 4,
@@ -147,7 +150,8 @@
      "走",
      "zǒu"
     ]
-   ]
+   ],
+   "emotion": "annoyed"
   },
   {
    "num": 5,
@@ -186,12 +190,13 @@
      "带",
      "dài"
     ]
-   ]
+   ],
+   "emotion": "teasing"
   },
   {
    "num": 6,
    "speaker": "A",
-   "zh": "两个人挤得下吗？🤔",
+   "zh": "两个人挤得下吗？😳",
    "pinyin": "Liǎng ge rén jǐ de xià ma?",
    "rd": "량 거 런 지 더 샤 마?",
    "ko": "둘이 끼어 탈 수 있어?",
@@ -220,7 +225,8 @@
      "下",
      "xià"
     ]
-   ]
+   ],
+   "emotion": "flustered"
   },
   {
    "num": 7,
@@ -254,7 +260,8 @@
      "手",
      "shǒu"
     ]
-   ]
+   ],
+   "emotion": "gentle"
   },
   {
    "num": 8,
@@ -283,7 +290,8 @@
      "圈",
      "quān"
     ]
-   ]
+   ],
+   "emotion": "shy"
   }
  ],
  "review": {

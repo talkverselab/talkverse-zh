@@ -47,7 +47,8 @@
      "醒",
      "xǐng"
     ]
-   ]
+   ],
+   "emotion": "gentle"
   },
   {
    "num": 2,
@@ -66,7 +67,8 @@
      "找",
      "zhǎo"
     ]
-   ]
+   ],
+   "emotion": "cheerful"
   },
   {
    "num": 3,
@@ -90,7 +92,8 @@
      "错",
      "cuò"
     ]
-   ]
+   ],
+   "emotion": "flustered"
   },
   {
    "num": 4,
@@ -114,7 +117,8 @@
      "什么",
      "shén me"
     ]
-   ]
+   ],
+   "emotion": "teasing"
   },
   {
    "num": 5,
@@ -138,7 +142,8 @@
      "想",
      "xiǎng"
     ]
-   ]
+   ],
+   "emotion": "shy"
   },
   {
    "num": 6,
@@ -162,7 +167,8 @@
      "谁",
      "shuí"
     ]
-   ]
+   ],
+   "emotion": "teasing"
   },
   {
    "num": 7,
@@ -190,6 +196,17 @@
      "笑",
      "笑",
      "xiào"
+    ]
+   ],
+   "emotion": "shy",
+   "segs": [
+    [
+     "shy",
+     "就你。"
+    ],
+    [
+     "flustered",
+     "别笑我。"
     ]
    ]
   }

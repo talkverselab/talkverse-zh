@@ -28,6 +28,11 @@ def build(path):
         if v is None:
             v = 'man_y' if sp == 'C' else 'woman_y'; probs.append(f'{sp}={nm} 목소리 미정 → {v}(검토)')
         cast[sp] = v
+    legacy = (d.get('speakers') or {}).get('A', '{name}') != '{name}'  # 옛 R3·R4: 학습자 이름 「马克」가 본문에 박혀 있음 → 여성판은 그 턴만 安娜
+    SW = [('马克', '安娜'), ('Mǎkè', 'Ānnà'), ('Make', 'Anna'), ('마커', '안나'), ('마크', '안나'), ('Mark', 'Anna')]
+    def fem(x):
+        for a, b in SW: x = x.replace(a, b)
+        return x
     turns = {}
     for t in d['turns']:
         T = {}
@@ -42,6 +47,9 @@ def build(path):
             if s[0] not in EMO: probs.append(f"턴 {t['num']} 감정 값 모름: {s[0]}")
         for g in 'mf':
             if isinstance(t.get(g), dict): T[g] = t[g]
+        if legacy and 'f' not in T and ('马克' in t['zh'] or 'Mark' in t['zh']):
+            T['f'] = {'text': fem(t['zh']), 'reading': fem(t.get('pinyin', '')), 'rd': fem(t.get('rd', '')), 'ko': fem(t.get('ko', '')),
+                      'segs': [[s[0], fem(s[1])] + s[2:] for s in T['segs']]}
         turns[str(t['num'])] = T
     if any('감정 없음' in p or '모름' in p for p in probs):
         return None, probs

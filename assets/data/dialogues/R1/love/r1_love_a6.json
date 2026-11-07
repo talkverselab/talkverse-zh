@@ -28,7 +28,7 @@
   {
    "num": 1,
    "speaker": "B",
-   "zh": "号码给我呗？🙂",
+   "zh": "号码给我呗？😄",
    "pinyin": "Hàomǎ gěi wǒ bei?",
    "rd": "하오마 게이 워 베이?",
    "ko": "번호 좀 줘?",
@@ -42,7 +42,8 @@
      "号码",
      "hào mǎ"
     ]
-   ]
+   ],
+   "emotion": "cheerful"
   },
   {
    "num": 2,
@@ -75,6 +76,17 @@
      "电",
      "电",
      "diàn"
+    ]
+   ],
+   "emotion": "cheerful",
+   "segs": [
+    [
+     "cheerful",
+     "行啊！"
+    ],
+    [
+     "flustered",
+     "啊……手机没电了。"
     ]
    ]
   },
@@ -115,7 +127,8 @@
      "上",
      "shàng"
     ]
-   ]
+   ],
+   "emotion": "gentle"
   },
   {
    "num": 4,
@@ -148,6 +161,17 @@
      "点",
      "点",
      "diǎn"
+    ]
+   ],
+   "emotion": "shy",
+   "segs": [
+    [
+     "shy",
+     "好痒……"
+    ],
+    [
+     "flustered",
+     "快点！"
     ]
    ]
   },
@@ -183,6 +207,17 @@
      "花",
      "huā"
     ]
+   ],
+   "emotion": "shout",
+   "segs": [
+    [
+     "shout",
+     "别动！"
+    ],
+    [
+     "flustered",
+     "下雨了——花了！"
+    ]
    ]
   },
   {
@@ -217,7 +252,8 @@
      "没",
      "méi"
     ]
-   ]
+   ],
+   "emotion": "flustered"
   },
   {
    "num": 7,
@@ -251,7 +287,8 @@
      "这里",
      "zhè lǐ"
     ]
-   ]
+   ],
+   "emotion": "gentle"
   }
  ],
  "review": {

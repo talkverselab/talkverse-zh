@@ -57,7 +57,8 @@
      "上",
      "shàng"
     ]
-   ]
+   ],
+   "emotion": "worried"
   },
   {
    "num": 2,
@@ -88,12 +89,13 @@
      "风景",
      "fēng jǐng"
     ]
-   ]
+   ],
+   "emotion": "gentle"
   },
   {
    "num": 3,
    "speaker": "B",
-   "zh": "吃饭了吗？穿得够吗？🤔",
+   "zh": "吃饭了吗？穿得够吗？😟",
    "pinyin": "Chīfàn le ma? Chuān de gòu ma?",
    "rd": "츠판 러 마? 촨 더 거우 마?",
    "ko": "밥은? 옷은 따뜻하게 입었어?",
@@ -119,7 +121,8 @@
      "够",
      "gòu"
     ]
-   ]
+   ],
+   "emotion": "worried"
   },
   {
    "num": 4,
@@ -150,7 +153,8 @@
      "中文",
      "zhōng wén"
     ]
-   ]
+   ],
+   "emotion": "surprised"
   },
   {
    "num": 5,
@@ -191,7 +195,8 @@
      "学",
      "xué"
     ]
-   ]
+   ],
+   "emotion": "excited"
   },
   {
    "num": 6,
@@ -217,7 +222,8 @@
      "想",
      "xiǎng"
     ]
-   ]
+   ],
+   "emotion": "sad"
   },
   {
    "num": 7,
@@ -262,6 +268,17 @@
      "山",
      "山",
      "shān"
+    ]
+   ],
+   "emotion": "gentle",
+   "segs": [
+    [
+     "gentle",
+     "我也想你。"
+    ],
+    [
+     "shout",
+     "还有，快下山！"
     ]
    ]
   }

@@ -55,7 +55,8 @@
      "多少",
      "duō shǎo"
     ]
-   ]
+   ],
+   "emotion": "polite"
   },
   {
    "num": 2,
@@ -79,12 +80,13 @@
      "试",
      "shì"
     ]
-   ]
+   ],
+   "emotion": "cheerful"
   },
   {
    "num": 3,
    "speaker": "A",
-   "zh": "连不上……是错了吗？🤔",
+   "zh": "连不上……是错了吗？😟",
    "pinyin": "Lián bu shàng…… shì cuò le ma?",
    "rd": "롄 부 상…… 스 춰 러 마?",
    "ko": "연결이 안 돼요…… 틀린 건가요?",
@@ -113,12 +115,13 @@
      "错",
      "cuò"
     ]
-   ]
+   ],
+   "emotion": "worried"
   },
   {
    "num": 4,
    "speaker": "B",
-   "zh": "八个8，数清楚哦。😅",
+   "zh": "八个8，数清楚哦。😜",
    "pinyin": "Bā ge bā, shǔ qīngchu o.",
    "rd": "바 거 바, 수 칭추 오.",
    "ko": "8이 여덟 개, 잘 세어 봐요.",
@@ -142,7 +145,8 @@
      "清楚",
      "qīng chǔ"
     ]
-   ]
+   ],
+   "emotion": "teasing"
   },
   {
    "num": 5,
@@ -175,6 +179,17 @@
      "谁",
      "谁",
      "shuí"
+    ]
+   ],
+   "emotion": "flustered",
+   "segs": [
+    [
+     "flustered",
+     "我输了九个……"
+    ],
+    [
+     "surprised",
+     "连上了！谁的？"
     ]
    ]
   },
@@ -210,7 +225,8 @@
      "开",
      "kāi"
     ]
-   ]
+   ],
+   "emotion": "shout"
   },
   {
    "num": 7,
@@ -239,7 +255,8 @@
      "密码",
      "mì mǎ"
     ]
-   ]
+   ],
+   "emotion": "flustered"
   },
   {
    "num": 8,
@@ -272,6 +289,17 @@
      "帮",
      "帮",
      "bāng"
+    ]
+   ],
+   "emotion": "stiff",
+   "segs": [
+    [
+     "stiff",
+     "等下发……"
+    ],
+    [
+     "gentle",
+     "我过去帮你。"
     ]
    ]
   }

@@ -60,7 +60,8 @@
      "台",
      "tái"
     ]
-   ]
+   ],
+   "emotion": "neutral"
   },
   {
    "num": 2,
@@ -89,7 +90,8 @@
      "走",
      "zǒu"
     ]
-   ]
+   ],
+   "emotion": "cheerful"
   },
   {
    "num": 3,
@@ -118,12 +120,13 @@
      "号",
      "hào"
     ]
-   ]
+   ],
+   "emotion": "surprised"
   },
   {
    "num": 4,
    "speaker": "B",
-   "zh": "右了！回去啊！😮",
+   "zh": "右了！回去啊！😤",
    "pinyin": "Yòu le! Huíqu a!",
    "rd": "유 러! 후이취 아!",
    "ko": "오른쪽으로 갔잖아! 돌아가!",
@@ -142,7 +145,8 @@
      "回去",
      "huí qù"
     ]
-   ]
+   ],
+   "emotion": "shout"
   },
   {
    "num": 5,
@@ -171,7 +175,8 @@
      "上",
      "shàng"
     ]
-   ]
+   ],
+   "emotion": "excited"
   },
   {
    "num": 6,
@@ -199,6 +204,17 @@
      "想",
      "想",
      "xiǎng"
+    ]
+   ],
+   "emotion": "excited",
+   "segs": [
+    [
+     "excited",
+     "耶！几点到？"
+    ],
+    [
+     "gentle",
+     "想你。"
     ]
    ]
   },
@@ -229,12 +245,13 @@
      "北京",
      "běi jīng"
     ]
-   ]
+   ],
+   "emotion": "worried"
   },
   {
    "num": 8,
    "speaker": "B",
-   "zh": "我在上海啊！！😮",
+   "zh": "我在上海啊！！😤",
    "pinyin": "Wǒ zài Shànghǎi a!!",
    "rd": "워 짜이 상하이 아!!",
    "ko": "나 상하이인데!!",
@@ -248,7 +265,8 @@
      "上海",
      "shàng hǎi"
     ]
-   ]
+   ],
+   "emotion": "shout"
   }
  ],
  "review": {

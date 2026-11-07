@@ -28,7 +28,7 @@
   {
    "num": 1,
    "speaker": "A",
-   "zh": "今天怎么样？吃饭了吗？🤔",
+   "zh": "今天怎么样？吃饭了吗？😄",
    "pinyin": "Jīntiān zěnmeyàng? Chīfàn le ma?",
    "rd": "진톈 쩐머양? 츠판 러 마?",
    "ko": "오늘 어땠어? 밥 먹었어?",
@@ -54,12 +54,13 @@
      "吃饭",
      "chī fàn"
     ]
-   ]
+   ],
+   "emotion": "cheerful"
   },
   {
    "num": 2,
    "speaker": "A",
-   "zh": "在干嘛呀？😮",
+   "zh": "在干嘛呀？😄",
    "pinyin": "Zài gàn má ya?",
    "rd": "짜이 간 마 야?",
    "ko": "뭐 해?",
@@ -75,7 +76,8 @@
      "干",
      "gàn"
     ]
-   ]
+   ],
+   "emotion": "cheerful"
   },
   {
    "num": 3,
@@ -111,7 +113,8 @@
      "回",
      "huí"
     ]
-   ]
+   ],
+   "emotion": "annoyed"
   },
   {
    "num": 4,
@@ -147,7 +150,8 @@
      "呆",
      "dāi"
     ]
-   ]
+   ],
+   "emotion": "flustered"
   },
   {
    "num": 5,
@@ -173,7 +177,8 @@
      "张",
      "zhāng"
     ]
-   ]
+   ],
+   "emotion": "surprised"
   },
   {
    "num": 6,
@@ -214,7 +219,8 @@
      "不够",
      "bù gòu"
     ]
-   ]
+   ],
+   "emotion": "gentle"
   }
  ],
  "review": {

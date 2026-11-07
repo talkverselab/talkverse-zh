@@ -22,19 +22,20 @@ def pick(zh, emotion):
         return BY_PART.get(m.group(0).strip()[0], BY_EMO['neutral'])
     return BY_EMO.get(emo, '🙂')
 
-def apply(path, dry=False):
+def apply(path, dry=False, redo=False):
     e = json.load(open(path, encoding='utf-8')); n = 0
     for t in e['turns']:
+        if redo: t['zh'] = EMOJI.sub('', t['zh']).rstrip()  # 감정이 새로 정해졌으면 이모지를 다시 고른다
         emo = (t.get('segs') or [[t.get('emotion')]])[-1][0]
         em = pick(t['zh'], emo)
         if not em: continue
         t['zh'] = t['zh'].rstrip() + em; n += 1
         if dry: print(f"{e['id']} #{t['num']} [{emo}] {t['zh']}")
-    if n and not dry:
+    if (n or redo) and not dry:
         with open(path, 'w', encoding='utf-8') as f: json.dump(e, f, ensure_ascii=False, indent=1); f.write('\n')
     return n
 
 if __name__ == '__main__':
-    dry = '--dry' in sys.argv
-    tot = sum(apply(p, dry) for p in sys.argv[1:] if not p.startswith('--'))
+    dry = '--dry' in sys.argv; redo = '--redo' in sys.argv
+    tot = sum(apply(p, dry, redo) for p in sys.argv[1:] if not p.startswith('--'))
     print(f'이모지 {"후보" if dry else "추가"} {tot}턴')

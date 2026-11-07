@@ -50,7 +50,8 @@
      "不要",
      "bú yào"
     ]
-   ]
+   ],
+   "emotion": "cheerful"
   },
   {
    "num": 2,
@@ -79,7 +80,8 @@
      "饱",
      "bǎo"
     ]
-   ]
+   ],
+   "emotion": "polite"
   },
   {
    "num": 3,
@@ -118,7 +120,8 @@
      "菜",
      "cài"
     ]
-   ]
+   ],
+   "emotion": "teasing"
   },
   {
    "num": 4,
@@ -151,6 +154,17 @@
      "吃",
      "吃",
      "chī"
+    ]
+   ],
+   "emotion": "flustered",
+   "segs": [
+    [
+     "flustered",
+     "被你发现了……"
+    ],
+    [
+     "shy",
+     "还想吃。"
     ]
    ]
   },
@@ -191,7 +205,8 @@
      "不要",
      "bú yào"
     ]
-   ]
+   ],
+   "emotion": "amused"
   },
   {
    "num": 6,
@@ -235,7 +250,8 @@
      "次",
      "cì"
     ]
-   ]
+   ],
+   "emotion": "flustered"
   },
   {
    "num": 7,
@@ -269,7 +285,8 @@
      "走",
      "zǒu"
     ]
-   ]
+   ],
+   "emotion": "teasing"
   },
   {
    "num": 8,
@@ -298,7 +315,8 @@
      "要",
      "yào"
     ]
-   ]
+   ],
+   "emotion": "shout"
   }
  ],
  "review": {

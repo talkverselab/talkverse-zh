@@ -26,7 +26,7 @@
   {
    "num": 1,
    "speaker": "A",
-   "zh": "浩然，拍一张吧！😉",
+   "zh": "浩然，拍一张吧！😄",
    "pinyin": "Hàorán, pāi yì zhāng ba!",
    "rd": "하오란, 파이 이 장 바!",
    "ko": "하오란, 한 장 찍자!",
@@ -45,7 +45,8 @@
      "一张",
      "yī zhāng"
     ]
-   ]
+   ],
+   "emotion": "cheerful"
   },
   {
    "num": 2,
@@ -64,7 +65,8 @@
      "来",
      "lái"
     ]
-   ]
+   ],
+   "emotion": "cheerful"
   },
   {
    "num": 3,
@@ -87,6 +89,17 @@
      "有人",
      "有人",
      "yǒu rén"
+    ]
+   ],
+   "emotion": "shout",
+   "segs": [
+    [
+     "shout",
+     "等等！"
+    ],
+    [
+     "surprised",
+     "后面有人！"
     ]
    ]
   },
@@ -122,7 +135,8 @@
      "一起",
      "yì qǐ"
     ]
-   ]
+   ],
+   "emotion": "gentle"
   },
   {
    "num": 5,
@@ -151,7 +165,8 @@
      "来",
      "lái"
     ]
-   ]
+   ],
+   "emotion": "surprised"
   },
   {
    "num": 6,
@@ -184,6 +199,17 @@
      "这里",
      "这里",
      "zhè lǐ"
+    ]
+   ],
+   "emotion": "surprised",
+   "segs": [
+    [
+     "surprised",
+     "还有妈妈！"
+    ],
+    [
+     "cheerful",
+     "看这里！"
     ]
    ]
   },
@@ -229,12 +255,23 @@
      "好看",
      "hǎo kàn"
     ]
+   ],
+   "emotion": "tsukkomi",
+   "segs": [
+    [
+     "tsukkomi",
+     "这是我们两个的……"
+    ],
+    [
+     "shy",
+     "你最好看。"
+    ]
    ]
   },
   {
    "num": 8,
    "speaker": "B",
-   "zh": "你也是啊。😮",
+   "zh": "你也是啊。😊",
    "pinyin": "Nǐ yě shì a.",
    "rd": "니 예 스 아.",
    "ko": "너도야.",
@@ -253,7 +290,8 @@
      "是",
      "shì"
     ]
-   ]
+   ],
+   "emotion": "shy"
   }
  ],
  "review": {

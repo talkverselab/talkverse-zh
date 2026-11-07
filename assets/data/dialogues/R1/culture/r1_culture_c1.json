@@ -61,7 +61,8 @@
      "来",
      "lái"
     ]
-   ]
+   ],
+   "emotion": "excited"
   },
   {
    "num": 2,
@@ -92,7 +93,8 @@
      "发",
      "fā"
     ]
-   ]
+   ],
+   "emotion": "excited"
   },
   {
    "num": 3,
@@ -118,7 +120,8 @@
      "多少",
      "duō shǎo"
     ]
-   ]
+   ],
+   "emotion": "cheerful"
   },
   {
    "num": 4,
@@ -138,6 +141,17 @@
      "点",
      "点",
      "diǎn"
+    ]
+   ],
+   "emotion": "cheerful",
+   "segs": [
+    [
+     "cheerful",
+     "一百……"
+    ],
+    [
+     "shout",
+     "等等点了一千！"
     ]
    ]
   },
@@ -175,7 +189,8 @@
      "完",
      "wán"
     ]
-   ]
+   ],
+   "emotion": "amused"
   },
   {
    "num": 6,
@@ -196,7 +211,8 @@
      "钱",
      "qián"
     ]
-   ]
+   ],
+   "emotion": "sad"
   },
   {
    "num": 7,
@@ -247,7 +263,8 @@
      "两个",
      "liǎng gè"
     ]
-   ]
+   ],
+   "emotion": "gentle"
   }
  ],
  "review": {

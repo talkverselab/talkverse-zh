@@ -50,7 +50,8 @@
      "没",
      "méi"
     ]
-   ]
+   ],
+   "emotion": "cheerful"
   },
   {
    "num": 2,
@@ -89,7 +90,8 @@
      "牛奶",
      "niú nǎi"
     ]
-   ]
+   ],
+   "emotion": "excited"
   },
   {
    "num": 3,
@@ -123,12 +125,13 @@
      "一下",
      "yī xià"
     ]
-   ]
+   ],
+   "emotion": "amused"
   },
   {
    "num": 4,
    "speaker": "A",
-   "zh": "米饭、鱼、汤，还有苹果🍎",
+   "zh": "米饭、鱼、汤，还有苹果",
    "pinyin": "Mǐfàn, yú, tāng, hái yǒu píngguǒ",
    "rd": "미판, 위, 탕, 하이 유 핑궈",
    "ko": "밥, 생선, 국, 그리고 사과🍎",
@@ -162,7 +165,8 @@
      "苹果",
      "píng guǒ"
     ]
-   ]
+   ],
+   "emotion": "cheerful"
   },
   {
    "num": 5,
@@ -206,7 +210,8 @@
      "招呼",
      "zhāo hū"
     ]
-   ]
+   ],
+   "emotion": "tsukkomi"
   },
   {
    "num": 6,
@@ -230,7 +235,8 @@
      "你好",
      "nǐ hǎo"
     ]
-   ]
+   ],
+   "emotion": "surprised"
   },
   {
    "num": 7,
@@ -269,7 +275,8 @@
      "死",
      "sǐ"
     ]
-   ]
+   ],
+   "emotion": "amused"
   },
   {
    "num": 8,
@@ -298,7 +305,8 @@
      "没",
      "méi"
     ]
-   ]
+   ],
+   "emotion": "teasing"
   }
  ],
  "review": {

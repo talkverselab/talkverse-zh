@@ -55,7 +55,8 @@
      "爱",
      "ài"
     ]
-   ]
+   ],
+   "emotion": "cheerful"
   },
   {
    "num": 2,
@@ -94,7 +95,8 @@
      "筷子",
      "kuài zi"
     ]
-   ]
+   ],
+   "emotion": "excited"
   },
   {
    "num": 3,
@@ -133,7 +135,8 @@
      "开",
      "kāi"
     ]
-   ]
+   ],
+   "emotion": "shout"
   },
   {
    "num": 4,
@@ -157,7 +160,8 @@
      "错",
      "cuò"
     ]
-   ]
+   ],
+   "emotion": "surprised"
   },
   {
    "num": 5,
@@ -191,7 +195,8 @@
      "人",
      "rén"
     ]
-   ]
+   ],
+   "emotion": "worried"
   },
   {
    "num": 6,
@@ -215,12 +220,13 @@
      "对不起",
      "duì bù qǐ"
     ]
-   ]
+   ],
+   "emotion": "flustered"
   },
   {
    "num": 7,
    "speaker": "B",
-   "zh": "没事啦，奶奶在笑呢。🤔",
+   "zh": "没事啦，奶奶在笑呢。🥰",
    "pinyin": "Méishì la, nǎinai zài xiào ne.",
    "rd": "메이스 라, 나이나이 짜이 샤오 너.",
    "ko": "괜찮아, 할머니 웃고 계셔.",
@@ -249,12 +255,13 @@
      "笑",
      "xiào"
     ]
-   ]
+   ],
+   "emotion": "gentle"
   },
   {
    "num": 8,
    "speaker": "A",
-   "zh": "放平了……以后你教我吧。😉",
+   "zh": "放平了……以后你教我吧。😊",
    "pinyin": "Fàng píng le…… yǐhòu nǐ jiāo wǒ ba.",
    "rd": "팡 핑 러…… 이허우 니 자오 워 바.",
    "ko": "눕혔어…… 앞으로 네가 가르쳐 줘.",
@@ -283,7 +290,8 @@
      "教",
      "jiào"
     ]
-   ]
+   ],
+   "emotion": "shy"
   }
  ],
  "review": {

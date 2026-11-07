@@ -52,7 +52,8 @@
      "这个",
      "zhè ge"
     ]
-   ]
+   ],
+   "emotion": "cheerful"
   },
   {
    "num": 2,
@@ -76,7 +77,8 @@
      "喝",
      "hē"
     ]
-   ]
+   ],
+   "emotion": "cheerful"
   },
   {
    "num": 3,
@@ -110,12 +112,13 @@
      "看见",
      "kàn jiàn"
     ]
-   ]
+   ],
+   "emotion": "gentle"
   },
   {
    "num": 4,
    "speaker": "A",
-   "zh": "啊？真的吗？🤔",
+   "zh": "啊？真的吗？😮",
    "pinyin": "Á? Zhēn de ma?",
    "rd": "아? 전 더 마?",
    "ko": "어? 진짜?",
@@ -129,7 +132,8 @@
      "真的",
      "zhēn de"
     ]
-   ]
+   ],
+   "emotion": "surprised"
   },
   {
    "num": 5,
@@ -163,7 +167,8 @@
      "来",
      "lái"
     ]
-   ]
+   ],
+   "emotion": "shy"
   },
   {
    "num": 6,
@@ -187,7 +192,8 @@
      "请",
      "qǐng"
     ]
-   ]
+   ],
+   "emotion": "shy"
   },
   {
    "num": 7,
@@ -225,6 +231,17 @@
      "晚上",
      "晚上",
      "wǎn shàng"
+    ]
+   ],
+   "emotion": "gentle",
+   "segs": [
+    [
+     "gentle",
+     "不用。"
+    ],
+    [
+     "teasing",
+     "请我吃饭吧，明天晚上。"
     ]
    ]
   }

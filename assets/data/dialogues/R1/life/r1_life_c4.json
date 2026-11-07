@@ -65,7 +65,8 @@
      "去",
      "qù"
     ]
-   ]
+   ],
+   "emotion": "shout"
   },
   {
    "num": 2,
@@ -89,7 +90,8 @@
      "没",
      "méi"
     ]
-   ]
+   ],
+   "emotion": "neutral"
   },
   {
    "num": 3,
@@ -113,7 +115,8 @@
      "没有",
      "méi yǒu"
     ]
-   ]
+   ],
+   "emotion": "annoyed"
   },
   {
    "num": 4,
@@ -142,7 +145,8 @@
      "看看",
      "kàn kàn"
     ]
-   ]
+   ],
+   "emotion": "neutral"
   },
   {
    "num": 5,
@@ -176,7 +180,8 @@
      "死",
      "sǐ"
     ]
-   ]
+   ],
+   "emotion": "shout"
   },
   {
    "num": 6,
@@ -210,7 +215,8 @@
      "掏",
      "tāo"
     ]
-   ]
+   ],
+   "emotion": "stiff"
   },
   {
    "num": 7,
@@ -239,7 +245,8 @@
      "知道",
      "zhī dào"
     ]
-   ]
+   ],
+   "emotion": "surprised"
   },
   {
    "num": 8,
@@ -268,7 +275,8 @@
      "这样",
      "zhè yàng"
     ]
-   ]
+   ],
+   "emotion": "teasing"
   }
  ],
  "review": {

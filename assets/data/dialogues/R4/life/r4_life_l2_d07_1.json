@@ -48,7 +48,9 @@
      "怎么样",
      "zěn me yàng"
     ]
-   ]
+   ],
+   "rd": "니 칸 저 젠 와이타오 쩐머양?",
+   "emotion": "cheerful"
   },
   {
    "num": 2,
@@ -77,7 +79,9 @@
      "钱",
      "qián"
     ]
-   ]
+   ],
+   "rd": "하오칸! 둬사오 첸?",
+   "emotion": "cheerful"
   },
   {
    "num": 3,
@@ -90,12 +94,14 @@
     "number",
     "shopping"
    ],
-   "lemmas": []
+   "lemmas": [],
+   "rd": "바바이.",
+   "emotion": "neutral"
   },
   {
    "num": 4,
    "speaker": "A",
-   "zh": "八百？抢钱啊！😮",
+   "zh": "八百？抢钱啊！😤",
    "pinyin": "Bābǎi? Qiǎng qián a!",
    "ko": "800? 이건 강도지!",
    "note": "抢钱 (돈을 뺏다, 비싸다는 과장 표현)",
@@ -114,12 +120,14 @@
      "钱",
      "qián"
     ]
-   ]
+   ],
+   "rd": "바바이? 창 첸 아!",
+   "emotion": "shout"
   },
   {
    "num": 5,
    "speaker": "B",
-   "zh": "这是名牌嘛。😅",
+   "zh": "这是名牌嘛。😳",
    "pinyin": "Zhè shì míngpái ma.",
    "ko": "이거 브랜드 거란 말이야.",
    "note": "嘛 (당연함 어필)",
@@ -148,7 +156,9 @@
      "牌",
      "pái"
     ]
-   ]
+   ],
+   "rd": "저 스 밍파이 마.",
+   "emotion": "flustered"
   },
   {
    "num": 6,
@@ -182,12 +192,14 @@
      "便宜",
      "pián yi"
     ]
-   ]
+   ],
+   "rd": "왕상 컨딩 겅 폔이.",
+   "emotion": "neutral"
   },
   {
    "num": 7,
    "speaker": "B",
-   "zh": "你查一下呗。🙂",
+   "zh": "你查一下呗。😜",
    "pinyin": "Nǐ chá yīxià bei.",
    "ko": "그럼 검색해 보든가.",
    "note": "동사+一下 (좀 ~해보다) + 어기조사 呗",
@@ -206,7 +218,9 @@
      "一下",
      "yī xià"
     ]
-   ]
+   ],
+   "rd": "니 차 이샤 베이.",
+   "emotion": "teasing"
   },
   {
    "num": 8,
@@ -225,7 +239,9 @@
      "网上",
      "wǎng shàng"
     ]
-   ]
+   ],
+   "rd": "와, 왕상 즈 야오 싼바이 우.",
+   "emotion": "surprised"
   }
  ]
 }

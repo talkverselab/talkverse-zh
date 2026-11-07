@@ -60,7 +60,8 @@
      "没",
      "méi"
     ]
-   ]
+   ],
+   "emotion": "cheerful"
   },
   {
    "num": 2,
@@ -99,7 +100,8 @@
      "好听",
      "hǎo tīng"
     ]
-   ]
+   ],
+   "emotion": "excited"
   },
   {
    "num": 3,
@@ -133,7 +135,8 @@
      "歌",
      "gē"
     ]
-   ]
+   ],
+   "emotion": "surprised"
   },
   {
    "num": 4,
@@ -167,7 +170,8 @@
      "子",
      "zi"
     ]
-   ]
+   ],
+   "emotion": "flustered"
   },
   {
    "num": 5,
@@ -201,7 +205,8 @@
      "分",
      "fēn"
     ]
-   ]
+   ],
+   "emotion": "teasing"
   },
   {
    "num": 6,
@@ -234,6 +239,17 @@
      "听",
      "听",
      "tīng"
+    ]
+   ],
+   "emotion": "shout",
+   "segs": [
+    [
+     "shout",
+     "没有！"
+    ],
+    [
+     "shy",
+     "我……想唱给你听。"
     ]
    ]
   },
@@ -279,7 +295,8 @@
      "听",
      "tīng"
     ]
-   ]
+   ],
+   "emotion": "gentle"
   }
  ],
  "review": {

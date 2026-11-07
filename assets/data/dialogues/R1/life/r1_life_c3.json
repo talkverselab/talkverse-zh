@@ -50,12 +50,13 @@
      "浇花",
      "jiāo huā"
     ]
-   ]
+   ],
+   "emotion": "polite"
   },
   {
    "num": 2,
    "speaker": "A",
-   "zh": "好的！每天都浇吗？🤔",
+   "zh": "好的！每天都浇吗？😄",
    "pinyin": "Hǎo de! Měitiān dōu jiāo ma?",
    "rd": "하오 더! 메이톈 더우 자오 마?",
    "ko": "네! 매일 줄까요?",
@@ -84,7 +85,8 @@
      "浇",
      "jiāo"
     ]
-   ]
+   ],
+   "emotion": "cheerful"
   },
   {
    "num": 3,
@@ -123,7 +125,8 @@
      "行",
      "xíng"
     ]
-   ]
+   ],
+   "emotion": "gentle"
   },
   {
    "num": 4,
@@ -157,12 +160,13 @@
      "一点",
      "yì diǎn"
     ]
-   ]
+   ],
+   "emotion": "excited"
   },
   {
    "num": 5,
    "speaker": "B",
-   "zh": "……发张照片我看看呗。🙂",
+   "zh": "……发张照片我看看呗。😟",
    "pinyin": "…… Fā zhāng zhàopiàn wǒ kànkan bei.",
    "rd": "…… 파 장 자오폔 워 칸칸 베이.",
    "ko": "……사진 한 장 보내 봐요.",
@@ -191,7 +195,8 @@
      "看看",
      "kàn kàn"
     ]
-   ]
+   ],
+   "emotion": "worried"
   },
   {
    "num": 6,
@@ -215,12 +220,13 @@
      "开心",
      "kāi xīn"
     ]
-   ]
+   ],
+   "emotion": "excited"
   },
   {
    "num": 7,
    "speaker": "B",
-   "zh": "地上怎么全是水啊？！😮",
+   "zh": "地上怎么全是水啊？！😤",
    "pinyin": "Dì shang zěnme quán shì shuǐ a?!",
    "rd": "디 상 쩐머 취안 스 수이 아?!",
    "ko": "바닥이 왜 온통 물이에요?!",
@@ -254,12 +260,13 @@
      "水",
      "shuǐ"
     ]
-   ]
+   ],
+   "emotion": "shout"
   },
   {
    "num": 8,
    "speaker": "A",
-   "zh": "花……好像在游泳。嘿嘿。🙂",
+   "zh": "花……好像在游泳。嘿嘿。😏",
    "pinyin": "Huā…… hǎoxiàng zài yóuyǒng. Hēihēi.",
    "rd": "화…… 하오샹 짜이 유융. 헤이헤이.",
    "ko": "꽃이…… 수영하는 것 같아요. 헤헤.",
@@ -282,6 +289,17 @@
      "游泳",
      "游泳",
      "yóu yǒng"
+    ]
+   ],
+   "emotion": "flustered",
+   "segs": [
+    [
+     "flustered",
+     "花……好像在游泳。"
+    ],
+    [
+     "amused",
+     "嘿嘿。"
     ]
    ]
   }

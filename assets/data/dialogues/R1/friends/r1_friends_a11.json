@@ -65,7 +65,8 @@
      "身",
      "shēn"
     ]
-   ]
+   ],
+   "emotion": "cheerful"
   },
   {
    "num": 2,
@@ -93,6 +94,17 @@
      "废",
      "废",
      "fèi"
+    ]
+   ],
+   "emotion": "surprised",
+   "segs": [
+    [
+     "surprised",
+     "十分钟？"
+    ],
+    [
+     "annoyed",
+     "我已经废了。"
     ]
    ]
   },
@@ -128,7 +140,8 @@
      "废",
      "fèi"
     ]
-   ]
+   ],
+   "emotion": "tsukkomi"
   },
   {
    "num": 4,
@@ -157,12 +170,13 @@
      "加速",
      "jiā sù"
     ]
-   ]
+   ],
+   "emotion": "flustered"
   },
   {
    "num": 5,
    "speaker": "B",
-   "zh": "你按着加速键呢！🤔",
+   "zh": "你按着加速键呢！🙄",
    "pinyin": "Nǐ ànzhe jiāsù jiàn ne!",
    "rd": "니 안저 자쑤 젠 너!",
    "ko": "너 가속 버튼 누르고 있잖아!",
@@ -181,7 +195,8 @@
      "键",
      "jiàn"
     ]
-   ]
+   ],
+   "emotion": "tsukkomi"
   },
   {
    "num": 6,
@@ -220,7 +235,8 @@
      "命",
      "mìng"
     ]
-   ]
+   ],
+   "emotion": "shout"
   },
   {
    "num": 7,
@@ -233,7 +249,18 @@
    "tags": [
     "form:动词重复"
    ],
-   "lemmas": []
+   "lemmas": [],
+   "emotion": "shout",
+   "segs": [
+    [
+     "shout",
+     "拉红绳！"
+    ],
+    [
+     "gentle",
+     "……别怕，我在。"
+    ]
+   ]
   },
   {
    "num": 8,
@@ -267,7 +294,8 @@
      "来",
      "lái"
     ]
-   ]
+   ],
+   "emotion": "sad"
   }
  ],
  "review": {

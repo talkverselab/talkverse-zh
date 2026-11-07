@@ -50,7 +50,8 @@
      "是",
      "shì"
     ]
-   ]
+   ],
+   "emotion": "cheerful"
   },
   {
    "num": 2,
@@ -79,7 +80,8 @@
      "什么",
      "shén me"
     ]
-   ]
+   ],
+   "emotion": "worried"
   },
   {
    "num": 3,
@@ -108,7 +110,8 @@
      "好看",
      "hǎo kàn"
     ]
-   ]
+   ],
+   "emotion": "excited"
   },
   {
    "num": 4,
@@ -132,7 +135,8 @@
      "不行",
      "bù xíng"
     ]
-   ]
+   ],
+   "emotion": "shout"
   },
   {
    "num": 5,
@@ -161,7 +165,8 @@
      "贵",
      "guì"
     ]
-   ]
+   ],
+   "emotion": "surprised"
   },
   {
    "num": 6,
@@ -200,12 +205,13 @@
      "再见",
      "zài jiàn"
     ]
-   ]
+   ],
+   "emotion": "worried"
   },
   {
    "num": 7,
    "speaker": "A",
-   "zh": "那……叫手表吧？😉",
+   "zh": "那……叫手表吧？😜",
    "pinyin": "Nà…… jiào shǒubiǎo ba?",
    "rd": "나…… 자오 서우뱌오 바?",
    "ko": "그럼…… 손목시계라고 할까?",
@@ -229,7 +235,8 @@
      "手表",
      "shǒu biǎo"
     ]
-   ]
+   ],
+   "emotion": "teasing"
   },
   {
    "num": 8,
@@ -262,6 +269,17 @@
      "笑",
      "笑",
      "xiào"
+    ]
+   ],
+   "emotion": "flustered",
+   "segs": [
+    [
+     "flustered",
+     "晚了，爷爷打开了……"
+    ],
+    [
+     "surprised",
+     "他在笑！"
     ]
    ]
   }

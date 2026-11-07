@@ -55,7 +55,8 @@
      "厉害",
      "lì hài"
     ]
-   ]
+   ],
+   "emotion": "excited"
   },
   {
    "num": 2,
@@ -84,7 +85,8 @@
      "看看",
      "kàn kàn"
     ]
-   ]
+   ],
+   "emotion": "teasing"
   },
   {
    "num": 3,
@@ -118,6 +120,17 @@
      "飞",
      "fēi"
     ]
+   ],
+   "emotion": "cheerful",
+   "segs": [
+    [
+     "cheerful",
+     "看好了啊——"
+    ],
+    [
+     "shout",
+     "哎呦，球飞了！"
+    ]
    ]
   },
   {
@@ -147,7 +160,8 @@
      "哪儿",
      "nǎ ér"
     ]
-   ]
+   ],
+   "emotion": "surprised"
   },
   {
    "num": 5,
@@ -186,7 +200,8 @@
      "上",
      "shàng"
     ]
-   ]
+   ],
+   "emotion": "flustered"
   },
   {
    "num": 6,
@@ -225,7 +240,8 @@
      "追",
      "zhuī"
     ]
-   ]
+   ],
+   "emotion": "shout"
   },
   {
    "num": 7,
@@ -259,7 +275,8 @@
      "新",
      "xīn"
     ]
-   ]
+   ],
+   "emotion": "annoyed"
   },
   {
    "num": 8,
@@ -293,7 +310,8 @@
      "死",
      "sǐ"
     ]
-   ]
+   ],
+   "emotion": "amused"
   }
  ],
  "review": {

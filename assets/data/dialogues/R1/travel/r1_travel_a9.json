@@ -45,7 +45,8 @@
      "酒店",
      "jiǔ diàn"
     ]
-   ]
+   ],
+   "emotion": "polite"
   },
   {
    "num": 2,
@@ -79,7 +80,8 @@
      "三个",
      "sān gè"
     ]
-   ]
+   ],
+   "emotion": "polite"
   },
   {
    "num": 3,
@@ -107,6 +109,17 @@
      "那个",
      "那个",
      "nà ge"
+    ]
+   ],
+   "emotion": "surprised",
+   "segs": [
+    [
+     "surprised",
+     "三个？！"
+    ],
+    [
+     "flustered",
+     "……大的那个！"
     ]
    ]
   },
@@ -147,7 +160,8 @@
      "一个",
      "yí gè"
     ]
-   ]
+   ],
+   "emotion": "stiff"
   },
   {
    "num": 5,
@@ -181,7 +195,8 @@
      "选",
      "xuǎn"
     ]
-   ]
+   ],
+   "emotion": "flustered"
   },
   {
    "num": 6,
@@ -210,7 +225,8 @@
      "泳",
      "yǒng"
     ]
-   ]
+   ],
+   "emotion": "stiff"
   },
   {
    "num": 7,
@@ -249,7 +265,8 @@
      "这个",
      "zhè ge"
     ]
-   ]
+   ],
+   "emotion": "excited"
   },
   {
    "num": 8,
@@ -278,7 +295,8 @@
      "城市",
      "chéng shì"
     ]
-   ]
+   ],
+   "emotion": "stiff"
   }
  ],
  "review": {

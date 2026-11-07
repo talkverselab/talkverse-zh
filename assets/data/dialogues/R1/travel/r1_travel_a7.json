@@ -55,7 +55,8 @@
      "箱子",
      "xiāng zi"
     ]
-   ]
+   ],
+   "emotion": "shout"
   },
   {
    "num": 2,
@@ -84,7 +85,8 @@
      "这样",
      "zhè yàng"
     ]
-   ]
+   ],
+   "emotion": "annoyed"
   },
   {
    "num": 3,
@@ -118,7 +120,8 @@
      "知道",
      "zhī dào"
     ]
-   ]
+   ],
+   "emotion": "teasing"
   },
   {
    "num": 4,
@@ -152,6 +155,17 @@
      "什么",
      "shén me"
     ]
+   ],
+   "emotion": "cheerful",
+   "segs": [
+    [
+     "cheerful",
+     "好啊……"
+    ],
+    [
+     "surprised",
+     "啊，这是什么？"
+    ]
    ]
   },
   {
@@ -181,12 +195,13 @@
      "衣服",
      "yī fú"
     ]
-   ]
+   ],
+   "emotion": "flustered"
   },
   {
    "num": 6,
    "speaker": "A",
-   "zh": "粉色小熊……好可爱啊。😮",
+   "zh": "粉色小熊……好可爱啊。😜",
    "pinyin": "Fěnsè xiǎo xióng…… hǎo kě'ài a.",
    "rd": "펀써 샤오 슝…… 하오 커'아이 아.",
    "ko": "분홍 곰돌이…… 너무 귀엽다.",
@@ -215,6 +230,17 @@
      "可爱",
      "kě ài"
     ]
+   ],
+   "emotion": "amused",
+   "segs": [
+    [
+     "amused",
+     "粉色小熊……"
+    ],
+    [
+     "teasing",
+     "好可爱啊。"
+    ]
    ]
   },
   {
@@ -239,12 +265,13 @@
      "衣服",
      "yī fú"
     ]
-   ]
+   ],
+   "emotion": "flustered"
   },
   {
    "num": 8,
    "speaker": "A",
-   "zh": "你没有妹妹啊……😮",
+   "zh": "你没有妹妹啊……🙄",
    "pinyin": "Nǐ méiyǒu mèimei a……",
    "rd": "니 메이유 메이메이 아……",
    "ko": "너 여동생 없잖아……",
@@ -263,7 +290,8 @@
      "妹妹",
      "mèi mèi"
     ]
-   ]
+   ],
+   "emotion": "tsukkomi"
   }
  ],
  "review": {

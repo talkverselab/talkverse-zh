@@ -46,7 +46,8 @@
      "什么",
      "shén me"
     ]
-   ]
+   ],
+   "emotion": "cheerful"
   },
   {
    "num": 2,
@@ -76,7 +77,8 @@
      "行",
      "xíng"
     ]
-   ]
+   ],
+   "emotion": "neutral"
   },
   {
    "num": 3,
@@ -105,7 +107,8 @@
      "点",
      "diǎn"
     ]
-   ]
+   ],
+   "emotion": "cheerful"
   },
   {
    "num": 4,
@@ -134,7 +137,8 @@
      "意思",
      "yì si"
     ]
-   ]
+   ],
+   "emotion": "surprised"
   },
   {
    "num": 5,
@@ -168,7 +172,8 @@
      "来",
      "lái"
     ]
-   ]
+   ],
+   "emotion": "teasing"
   },
   {
    "num": 6,
@@ -197,7 +202,8 @@
      "菜",
      "cài"
     ]
-   ]
+   ],
+   "emotion": "shout"
   },
   {
    "num": 7,
@@ -231,7 +237,8 @@
      "行",
      "xíng"
     ]
-   ]
+   ],
+   "emotion": "teasing"
   },
   {
    "num": 8,
@@ -264,6 +271,17 @@
      "好吃",
      "好吃",
      "hǎo chī"
+    ]
+   ],
+   "emotion": "annoyed",
+   "segs": [
+    [
+     "annoyed",
+     "不说了……"
+    ],
+    [
+     "cheerful",
+     "真好吃。"
     ]
    ]
   }

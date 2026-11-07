@@ -45,12 +45,13 @@
      "怎么样",
      "zěn me yàng"
     ]
-   ]
+   ],
+   "emotion": "cheerful"
   },
   {
    "num": 2,
    "speaker": "A",
-   "zh": "太好看了吧！😉",
+   "zh": "太好看了吧！🤩",
    "pinyin": "Tài hǎokàn le ba!",
    "rd": "타이 하오칸 러 바!",
    "ko": "너무 예쁘잖아!",
@@ -69,12 +70,13 @@
      "好看",
      "hǎo kàn"
     ]
-   ]
+   ],
+   "emotion": "excited"
   },
   {
    "num": 3,
    "speaker": "B",
-   "zh": "那换这件呢？🤔",
+   "zh": "那换这件呢？😄",
    "pinyin": "Nà huàn zhè jiàn ne?",
    "rd": "나 환 저 젠 너?",
    "ko": "그럼 이걸로 바꾸면?",
@@ -98,7 +100,8 @@
      "这件",
      "zhè jiàn"
     ]
-   ]
+   ],
+   "emotion": "cheerful"
   },
   {
    "num": 4,
@@ -127,7 +130,8 @@
      "好看",
      "hǎo kàn"
     ]
-   ]
+   ],
+   "emotion": "excited"
   },
   {
    "num": 5,
@@ -161,7 +165,8 @@
      "换",
      "huàn"
     ]
-   ]
+   ],
+   "emotion": "tsukkomi"
   },
   {
    "num": 6,
@@ -200,7 +205,8 @@
      "好看",
      "hǎo kàn"
     ]
-   ]
+   ],
+   "emotion": "shy"
   },
   {
    "num": 7,
@@ -234,12 +240,13 @@
      "买",
      "mǎi"
     ]
-   ]
+   ],
+   "emotion": "cheerful"
   },
   {
    "num": 8,
    "speaker": "A",
-   "zh": "全买？十件啊！😮",
+   "zh": "全买？十件啊！😤",
    "pinyin": "Quán mǎi? Shí jiàn a!",
    "rd": "취안 마이? 스 젠 아!",
    "ko": "전부? 열 벌이야!",
@@ -262,6 +269,17 @@
      "十件",
      "件",
      "jiàn"
+    ]
+   ],
+   "emotion": "surprised",
+   "segs": [
+    [
+     "surprised",
+     "全买？"
+    ],
+    [
+     "shout",
+     "十件啊！"
     ]
    ]
   }

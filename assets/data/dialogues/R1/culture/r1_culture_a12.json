@@ -28,7 +28,7 @@
   {
    "num": 1,
    "speaker": "B",
-   "zh": "今年是你本命年啊。😮",
+   "zh": "今年是你本命年啊。😄",
    "pinyin": "Jīnnián shì nǐ běnmìngnián a.",
    "rd": "진녠 스 니 번밍녠 아.",
    "ko": "올해가 네 본명년이네.",
@@ -62,7 +62,8 @@
      "年",
      "nián"
     ]
-   ]
+   ],
+   "emotion": "cheerful"
   },
   {
    "num": 2,
@@ -101,12 +102,13 @@
      "意思",
      "yì si"
     ]
-   ]
+   ],
+   "emotion": "surprised"
   },
   {
    "num": 3,
    "speaker": "B",
-   "zh": "你属什么呀？😮",
+   "zh": "你属什么呀？😄",
    "pinyin": "Nǐ shǔ shénme ya?",
    "rd": "니 수 선머 야?",
    "ko": "너 무슨 띠야?",
@@ -125,7 +127,8 @@
      "什么",
      "shén me"
     ]
-   ]
+   ],
+   "emotion": "cheerful"
   },
   {
    "num": 4,
@@ -154,12 +157,13 @@
      "怎么",
      "zěn me"
     ]
-   ]
+   ],
+   "emotion": "neutral"
   },
   {
    "num": 5,
    "speaker": "B",
-   "zh": "龙年要穿红的哦。😅",
+   "zh": "龙年要穿红的哦。😜",
    "pinyin": "Lóng nián yào chuān hóng de o.",
    "rd": "룽 녠 야오 촨 훙 더 오.",
    "ko": "용의 해엔 빨간 걸 입어야 해.",
@@ -193,7 +197,8 @@
      "红",
      "hóng"
     ]
-   ]
+   ],
+   "emotion": "teasing"
   },
   {
    "num": 6,
@@ -227,7 +232,8 @@
      "红",
      "hóng"
     ]
-   ]
+   ],
+   "emotion": "surprised"
   },
   {
    "num": 7,
@@ -261,6 +267,17 @@
      "买",
      "mǎi"
     ]
+   ],
+   "emotion": "cheerful",
+   "segs": [
+    [
+     "cheerful",
+     "袜子，内裤……"
+    ],
+    [
+     "shy",
+     "给，我买了。"
+    ]
    ]
   },
   {
@@ -290,7 +307,8 @@
      "裤",
      "kù"
     ]
-   ]
+   ],
+   "emotion": "flustered"
   }
  ],
  "review": {

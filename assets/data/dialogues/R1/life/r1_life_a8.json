@@ -60,7 +60,8 @@
      "晚饭",
      "wǎn fàn"
     ]
-   ]
+   ],
+   "emotion": "excited"
   },
   {
    "num": 2,
@@ -89,7 +90,8 @@
      "加油",
      "jiā yóu"
     ]
-   ]
+   ],
+   "emotion": "cheerful"
   },
   {
    "num": 3,
@@ -118,7 +120,8 @@
      "点",
      "diǎn"
     ]
-   ]
+   ],
+   "emotion": "surprised"
   },
   {
    "num": 4,
@@ -152,7 +155,8 @@
      "是",
      "shì"
     ]
-   ]
+   ],
+   "emotion": "annoyed"
   },
   {
    "num": 5,
@@ -176,7 +180,8 @@
      "点",
      "diǎn"
     ]
-   ]
+   ],
+   "emotion": "flustered"
   },
   {
    "num": 6,
@@ -200,7 +205,8 @@
      "敲门",
      "qiāo mén"
     ]
-   ]
+   ],
+   "emotion": "surprised"
   },
   {
    "num": 7,
@@ -234,7 +240,8 @@
      "昨天",
      "zuó tiān"
     ]
-   ]
+   ],
+   "emotion": "flustered"
   },
   {
    "num": 8,
@@ -268,7 +275,8 @@
      "多少",
      "duō shǎo"
     ]
-   ]
+   ],
+   "emotion": "shout"
   }
  ],
  "review": {

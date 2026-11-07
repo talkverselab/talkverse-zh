@@ -28,7 +28,7 @@
   {
    "num": 1,
    "speaker": "B",
-   "zh": "下雨啦！{name}有伞吗？🤔",
+   "zh": "下雨啦！{name}有伞吗？😮",
    "pinyin": "Xià yǔ la! {name} yǒu sǎn ma?",
    "rd": "샤 위 라! {name} 유 싼 마?",
    "ko": "비 온다! {name} 우산 있어?",
@@ -52,7 +52,8 @@
      "伞",
      "sǎn"
     ]
-   ]
+   ],
+   "emotion": "surprised"
   },
   {
    "num": 2,
@@ -86,7 +87,8 @@
      "一起",
      "yì qǐ"
     ]
-   ]
+   ],
+   "emotion": "cheerful"
   },
   {
    "num": 3,
@@ -130,12 +132,23 @@
      "点",
      "diǎn"
     ]
+   ],
+   "emotion": "worried",
+   "segs": [
+    [
+     "worried",
+     "伞这么小……"
+    ],
+    [
+     "shy",
+     "我靠紧点。"
+    ]
    ]
   },
   {
    "num": 4,
    "speaker": "A",
-   "zh": "你别靠这么近啊！😮",
+   "zh": "你别靠这么近啊！😳",
    "pinyin": "Nǐ bié kào zhème jìn a!",
    "rd": "니 볘 카오 저머 진 아!",
    "ko": "너 이렇게 가까이 붙지 마!",
@@ -164,7 +177,8 @@
      "近",
      "jìn"
     ]
-   ]
+   ],
+   "emotion": "flustered"
   },
   {
    "num": 5,
@@ -203,6 +217,17 @@
      "翻",
      "fān"
     ]
+   ],
+   "emotion": "flustered",
+   "segs": [
+    [
+     "flustered",
+     "不靠不行啊！"
+    ],
+    [
+     "shout",
+     "伞翻了！"
+    ]
    ]
   },
   {
@@ -237,12 +262,13 @@
      "买",
      "mǎi"
     ]
-   ]
+   ],
+   "emotion": "flustered"
   },
   {
    "num": 7,
    "speaker": "B",
-   "zh": "不用啦，拉着你跑吧。😉",
+   "zh": "不用啦，拉着你跑吧。😄",
    "pinyin": "Bú yòng la, lā zhe nǐ pǎo ba.",
    "rd": "부 융 라, 라 저 니 파오 바.",
    "ko": "됐어, 너 잡고 뛰어.",
@@ -265,6 +291,17 @@
      "跑",
      "跑",
      "pǎo"
+    ]
+   ],
+   "emotion": "gentle",
+   "segs": [
+    [
+     "gentle",
+     "不用啦，"
+    ],
+    [
+     "cheerful",
+     "拉着你跑吧。"
     ]
    ]
   },
@@ -290,7 +327,8 @@
      "拉",
      "lā"
     ]
-   ]
+   ],
+   "emotion": "shy"
   }
  ],
  "review": {

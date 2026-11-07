@@ -55,7 +55,8 @@
      "看看",
      "kàn kàn"
     ]
-   ]
+   ],
+   "emotion": "cheerful"
   },
   {
    "num": 2,
@@ -89,7 +90,8 @@
      "干净",
      "gān jìng"
     ]
-   ]
+   ],
+   "emotion": "cheerful"
   },
   {
    "num": 3,
@@ -123,12 +125,13 @@
      "藏",
      "cáng"
     ]
-   ]
+   ],
+   "emotion": "shout"
   },
   {
    "num": 4,
    "speaker": "A",
-   "zh": "为什么？钱不都一样吗？🤔",
+   "zh": "为什么？钱不都一样吗？😮",
    "pinyin": "Wèishénme? Qián bù dōu yíyàng ma?",
    "rd": "웨이선머? 첸 부 더우 이양 마?",
    "ko": "왜? 돈은 다 똑같잖아?",
@@ -162,7 +165,8 @@
      "一样",
      "yī yàng"
     ]
-   ]
+   ],
+   "emotion": "surprised"
   },
   {
    "num": 5,
@@ -191,7 +195,8 @@
      "丧事",
      "sāng shì"
     ]
-   ]
+   ],
+   "emotion": "shout"
   },
   {
    "num": 6,
@@ -225,7 +230,8 @@
      "怎么办",
      "zěn me bàn"
     ]
-   ]
+   ],
+   "emotion": "worried"
   },
   {
    "num": 7,
@@ -254,12 +260,23 @@
      "死",
      "sǐ"
     ]
+   ],
+   "emotion": "shout",
+   "segs": [
+    [
+     "shout",
+     "快用我的！"
+    ],
+    [
+     "annoyed",
+     "你吓死我了。"
+    ]
    ]
   },
   {
    "num": 8,
    "speaker": "A",
-   "zh": "换好了……她看见了吗？🤔",
+   "zh": "换好了……她看见了吗？😟",
    "pinyin": "Huàn hǎo le…… tā kànjiàn le ma?",
    "rd": "환 하오 러…… 타 칸젠 러 마?",
    "ko": "바꿨어…… 봤을까?",
@@ -283,7 +300,8 @@
      "看见",
      "kàn jiàn"
     ]
-   ]
+   ],
+   "emotion": "worried"
   }
  ],
  "review": {

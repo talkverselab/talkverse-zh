@@ -55,12 +55,13 @@
      "鸡蛋",
      "jī dàn"
     ]
-   ]
+   ],
+   "emotion": "polite"
   },
   {
    "num": 2,
    "speaker": "B",
-   "zh": "一个？不卖单个的哦。😅",
+   "zh": "一个？不卖单个的哦。🙏",
    "pinyin": "Yí ge? Bú mài dāngè de o.",
    "rd": "이 거? 부 마이 당어 더 오.",
    "ko": "하나요? 낱개는 안 팔아요.",
@@ -94,7 +95,8 @@
      "个",
      "gè"
     ]
-   ]
+   ],
+   "emotion": "polite"
   },
   {
    "num": 3,
@@ -118,7 +120,8 @@
      "盒",
      "hé"
     ]
-   ]
+   ],
+   "emotion": "flustered"
   },
   {
    "num": 4,
@@ -157,7 +160,8 @@
      "吃",
      "chī"
     ]
-   ]
+   ],
+   "emotion": "amused"
   },
   {
    "num": 5,
@@ -201,7 +205,8 @@
      "蛋",
      "dàn"
     ]
-   ]
+   ],
+   "emotion": "surprised"
   },
   {
    "num": 6,
@@ -235,7 +240,8 @@
      "装",
      "zhuāng"
     ]
-   ]
+   ],
+   "emotion": "polite"
   },
   {
    "num": 7,
@@ -264,7 +270,8 @@
      "一个",
      "yí gè"
     ]
-   ]
+   ],
+   "emotion": "flustered"
   },
   {
    "num": 8,
@@ -293,7 +300,8 @@
      "够",
      "gòu"
     ]
-   ]
+   ],
+   "emotion": "amused"
   }
  ],
  "review": {

@@ -26,7 +26,7 @@
   {
    "num": 1,
    "speaker": "B",
-   "zh": "昨晚你连打我三次视频？😂",
+   "zh": "昨晚你连打我三次视频？",
    "pinyin": "Zuó wǎn nǐ lián dǎ wǒ sān cì shìpín?",
    "rd": "쭤 완 니 롄 다 워 싼 츠 스핀?",
    "ko": "어젯밤에 나한테 영상통화 연달아 세 번?😂",
@@ -60,7 +60,8 @@
      "视频",
      "shì pín"
     ]
-   ]
+   ],
+   "emotion": "amused"
   },
   {
    "num": 2,
@@ -84,7 +85,8 @@
      "睡觉",
      "shuì jiào"
     ]
-   ]
+   ],
+   "emotion": "flustered"
   },
   {
    "num": 3,
@@ -113,7 +115,8 @@
      "接",
      "jiē"
     ]
-   ]
+   ],
+   "emotion": "teasing"
   },
   {
    "num": 4,
@@ -137,12 +140,13 @@
      "什么",
      "shén me"
     ]
-   ]
+   ],
+   "emotion": "surprised"
   },
   {
    "num": 5,
    "speaker": "B",
-   "zh": "你脸好白，像鬼啊！😱",
+   "zh": "你脸好白，像鬼啊！😏",
    "pinyin": "Nǐ liǎn hǎo bái, xiàng guǐ a!",
    "rd": "니 롄 하오 바이, 샹 구이 아!",
    "ko": "네 얼굴 완전 하얘, 귀신 같았어!😱",
@@ -176,7 +180,8 @@
      "鬼",
      "guǐ"
     ]
-   ]
+   ],
+   "emotion": "amused"
   },
   {
    "num": 6,
@@ -219,6 +224,17 @@
      "别人",
      "别人",
      "bié rén"
+    ]
+   ],
+   "emotion": "flustered",
+   "segs": [
+    [
+     "flustered",
+     "那是面膜！"
+    ],
+    [
+     "shout",
+     "别告诉别人！"
     ]
    ]
   },
@@ -264,7 +280,8 @@
      "好看",
      "hǎo kàn"
     ]
-   ]
+   ],
+   "emotion": "teasing"
   }
  ],
  "review": {
