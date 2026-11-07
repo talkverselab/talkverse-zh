@@ -1,0 +1,175 @@
+{
+ "_meta": "중국어 회화 음성 — 목소리·감정·자리 채움. 일본어앱·한국어앱 data/tts/voices.json 과 같은 짜임. 참고 음성은 VoxCPM2(설명 instruct 는 영어), 문장은 MOSS-TTS(language Chinese). PC 출력은 out/ref_zh/·out/zh/ (다른 언어와 섞이지 않게).",
+ "base_text": "今天下午有个会，我想先把资料准备好。结束以后一起去吃晚饭吗？",
+ "voices": {
+  "am": {
+   "desc": "A young man in his twenties speaking standard Mandarin, clear and gentle voice"
+  },
+  "af": {
+   "desc": "A young woman in her twenties speaking standard Mandarin, clear and soft voice"
+  },
+  "xiaoli": {
+   "desc": "A Chinese woman in her mid twenties, bright, quick and lively voice, Beijing Mandarin"
+  },
+  "haoran": {
+   "desc": "A Chinese man in his mid twenties, relaxed, warm and slightly deep voice"
+  },
+  "yue": {
+   "desc": "A Chinese woman in her late twenties, calm, confident and slightly low voice"
+  },
+  "dashu": {
+   "desc": "A Chinese man in his fifties, loud, hearty and rough-edged voice"
+  },
+  "fangdong": {
+   "desc": "A Chinese woman in her fifties, brisk, firm and businesslike voice"
+  },
+  "ayi": {
+   "desc": "A Chinese woman in her fifties, warm, chatty and motherly voice"
+  },
+  "dianyuan": {
+   "desc": "A young Chinese woman in her twenties, polite, even and professional clerk voice"
+  },
+  "fuwuyuan": {
+   "desc": "A young Chinese man in his twenties, polite, quick and friendly waiter voice"
+  },
+  "xiaoge": {
+   "desc": "A young Chinese man around twenty, energetic, hurried and cheerful voice"
+  },
+  "siji": {
+   "desc": "A Chinese man in his forties, steady, dry and talkative voice"
+  },
+  "laoban": {
+   "desc": "A Chinese man in his forties, confident, warm and a little loud voice"
+  },
+  "mom": {
+   "desc": "A Chinese woman in her early fifties, warm, brisk and motherly voice"
+  },
+  "man_y": {
+   "desc": "A Chinese man around twenty, natural and clear voice"
+  },
+  "man_m": {
+   "desc": "A Chinese man in his forties, steady and calm voice"
+  },
+  "man_o": {
+   "desc": "A Chinese man in his seventies, aged and gentle voice"
+  },
+  "woman_y": {
+   "desc": "A Chinese woman around twenty, natural and clear voice"
+  },
+  "woman_m": {
+   "desc": "A Chinese woman in her forties, composed and kind voice"
+  },
+  "woman_o": {
+   "desc": "A Chinese woman in her seventies, aged and warm voice"
+  },
+  "kid": {
+   "desc": "A Chinese child around eight years old, small and bright voice"
+  },
+  "announce": {
+   "desc": "A clear, even female announcer voice, like a subway or store announcement"
+  },
+  "robot": {
+   "desc": "A flat synthetic machine voice, like a kiosk or payment terminal"
+  }
+ },
+ "emotions": {
+  "neutral": {
+   "instruct": "calm and natural, everyday tone",
+   "ref": "今天下午有个会，我想先把资料准备好。"
+  },
+  "polite": {
+   "instruct": "polite and professional, like a clerk or station staff",
+   "ref": "您好，欢迎光临。您点的菜来了，请慢用。"
+  },
+  "stiff": {
+   "instruct": "very nervous and stiff, formal and overly polite",
+   "ref": "今天非常感谢您抽时间。我会努力的，请多多关照。"
+  },
+  "cheerful": {
+   "instruct": "cheerful, bright and friendly",
+   "ref": "哎，你来啦！今天天气真好，心情也特别好。"
+  },
+  "amused": {
+   "instruct": "amused, laughing warmly, relaxed",
+   "ref": "哈哈，太好笑了。行，就这个感觉，咱们继续。"
+  },
+  "teasing": {
+   "instruct": "teasing, playful and mischievous",
+   "ref": "哟，这是什么表情呀？来，老实说，我谁都不告诉。"
+  },
+  "excited": {
+   "instruct": "excited, bursting with energy, bright and loud",
+   "ref": "成了！我说出来了！我自己都吓了一跳，真的太谢谢你了！"
+  },
+  "surprised": {
+   "instruct": "surprised, caught off guard, voice jumps",
+   "ref": "啊？真的吗？等一下，你这是什么意思？"
+  },
+  "shout": {
+   "instruct": "surprised and loud, an exaggerated comic retort",
+   "ref": "什么？现在？你突然这么说我怎么办啊！"
+  },
+  "tsukkomi": {
+   "instruct": "a quick sharp comic retort, exasperated but fond",
+   "ref": "不是，我不是说这个！你怎么在这儿来这一套啊，真是。"
+  },
+  "annoyed": {
+   "instruct": "annoyed, irritated, sighing",
+   "ref": "哎，真是的。又说这个？别说了行不行。"
+  },
+  "sad": {
+   "instruct": "sad, quiet, voice slightly trembling",
+   "ref": "就是……有点累了。没事的，你别担心我。"
+  },
+  "worried": {
+   "instruct": "worried and anxious, hesitant",
+   "ref": "你没事吧？是不是哪儿不舒服？要不要去医院看看？"
+  },
+  "flustered": {
+   "instruct": "flustered and embarrassed, stammering, unsure",
+   "ref": "哎，那个，我，等一下……我不知道该怎么说……"
+  },
+  "shy": {
+   "instruct": "shy, soft, slightly trailing off",
+   "ref": "嗯……那个……我也喜欢。所以……我们一起去吧。"
+  },
+  "gentle": {
+   "instruct": "gentle, warm and tender, quiet",
+   "ref": "没事的，慢慢来。我就在你旁边。"
+  }
+ },
+ "fill": {
+  "{name}": {
+   "m": {
+    "text": "马克",
+    "reading": "Mǎkè",
+    "rd": "마커",
+    "ko": "마크"
+   },
+   "f": {
+    "text": "安娜",
+    "reading": "Ānnà",
+    "rd": "안나",
+    "ko": "안나"
+   }
+  },
+  "{country}": {
+   "text": "加拿大",
+   "reading": "Jiānádà",
+   "rd": "자나다",
+   "ko": "캐나다"
+  },
+  "{city}": {
+   "text": "多伦多",
+   "reading": "Duōlúnduō",
+   "rd": "둬룬둬",
+   "ko": "토론토"
+  },
+  "{lang}": {
+   "text": "英语",
+   "reading": "Yīngyǔ",
+   "rd": "잉위",
+   "ko": "영어"
+  }
+ }
+}
