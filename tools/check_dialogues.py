@@ -88,8 +88,14 @@ def check(path, seen, errs, warns):
     if not isinstance(e.get('twist'), int):
         errs.append(f'{tag}: twist 턴 번호 없음')
     outside = set()
+    EMO = set('neutral polite stiff cheerful amused teasing excited surprised shout tsukkomi annoyed sad worried flustered shy gentle'.split())
+    if turns and all(t.get('emotion') == 'neutral' for t in turns): warns.append(f'{tag}: 전부 neutral')
     for t in turns:
         n = t['num']
+        # 음성용 감정 열(2026-11-07) — 없거나 모르는 값이면 경고, 전부 neutral 이면 경고
+        if not t.get('emotion'): warns.append(f'{tag} #{n}: emotion 없음')
+        elif t['emotion'] not in EMO: warns.append(f'{tag} #{n}: emotion 값 모름 {t["emotion"]}')
+        if t.get('segs') and ''.join(s[1] for s in t['segs']).replace(' ','') != t['zh'].replace(' ',''): warns.append(f'{tag} #{n}: segs 를 이어 붙인 것이 zh 와 다름')
         zh, py, rd = t.get('zh', ''), t.get('pinyin', ''), t.get('rd', '')
         hz = len(HAN.findall(VARS.sub('', zh)))
         a, b = HAN_LEN[reg]

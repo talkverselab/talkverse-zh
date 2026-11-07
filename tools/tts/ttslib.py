@@ -48,9 +48,20 @@ def fill(s, F, key):
     return s
 
 
+def ensure_plan(ep):
+    """계획 파일이 없고 편 JSON 에 감정 열(emotion/segs)이 있으면 자동 생성(tools/tts/plan_from_episode.py). 있으면 그대로."""
+    f = f'{R}/data/tts/plan/{ep}.json'
+    if os.path.exists(f): return f
+    import plan_from_episode as PFE
+    plan, probs = PFE.build(EP[ep])
+    if plan is None: raise FileNotFoundError(f'{ep}: 감정 계획 없음 — 편 JSON 에 emotion/segs 를 쓰거나 {f} 를 만들 것 ({"; ".join(probs)})')
+    os.makedirs(os.path.dirname(f), exist_ok=True); json.dump(plan, open(f, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+    for p in probs: print(f'{ep}: {p}')
+    return f
+
 def turns(ep):
     """[{num, speaker, m:{voice,text,reading,rd,ko,segs:[(감정,읽기)]}, f:{…}, same:bool}] — 소리 없는 턴은 뺀다."""
-    P = json.load(open(f'{R}/data/tts/plan/{ep}.json', encoding='utf-8')); d = json.load(open(EP[ep], encoding='utf-8'))
+    P = json.load(open(ensure_plan(ep), encoding='utf-8')); d = json.load(open(EP[ep], encoding='utf-8'))
     out = []
     for t in d['turns']:
         T = P['turns'][str(t['num'])]; row = {'num': t['num'], 'speaker': t['speaker']}
