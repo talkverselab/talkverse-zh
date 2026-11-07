@@ -1,0 +1,294 @@
+{
+"r3_love_l3_d21_1": [
+{
+"turn": 1,
+"voice": "m",
+"speaker": "am",
+"emotion": "neutral",
+"key": "audio/zh/r3_love_l3_d21_1/01_m.mp4",
+"sha1": "177930b7fa2f406f7f757a4f048f67d01f3fddf8",
+"ms": 1652
+},
+{
+"turn": 1,
+"voice": "f",
+"speaker": "af",
+"emotion": "neutral",
+"key": "audio/zh/r3_love_l3_d21_1/01_f.mp4",
+"sha1": "64c31d910afd7b6ad2807daa8623515fd77da65e",
+"ms": 1636
+},
+{
+"turn": 2,
+"voice": "m",
+"speaker": "xiaoli",
+"emotion": "worried",
+"key": "audio/zh/r3_love_l3_d21_1/02_m.mp4",
+"sha1": "1d148b5edfe6732a40925e5d7408d87de636205f",
+"ms": 1822
+},
+{
+"turn": 2,
+"voice": "f",
+"speaker": "xiaoli",
+"emotion": "worried",
+"key": "audio/zh/r3_love_l3_d21_1/02_f.mp4",
+"sha1": "1d148b5edfe6732a40925e5d7408d87de636205f",
+"ms": 1822
+},
+{
+"turn": 3,
+"voice": "m",
+"speaker": "am",
+"emotion": "neutral",
+"key": "audio/zh/r3_love_l3_d21_1/03_m.mp4",
+"sha1": "1d75cc22aecda41862f2c773e5b90503571243f4",
+"ms": 1597
+},
+{
+"turn": 3,
+"voice": "f",
+"speaker": "af",
+"emotion": "neutral",
+"key": "audio/zh/r3_love_l3_d21_1/03_f.mp4",
+"sha1": "c5c15ef68ddc6fd6ad7e070c32fcd8da69c87d23",
+"ms": 1901
+},
+{
+"turn": 4,
+"voice": "m",
+"speaker": "xiaoli",
+"emotion": "shout+surprised",
+"key": "audio/zh/r3_love_l3_d21_1/04_m.mp4",
+"sha1": "31c0f1c203b7d1ea3aef45ef154b90687f683d0a",
+"ms": 2849
+},
+{
+"turn": 4,
+"voice": "f",
+"speaker": "xiaoli",
+"emotion": "shout+surprised",
+"key": "audio/zh/r3_love_l3_d21_1/04_f.mp4",
+"sha1": "31c0f1c203b7d1ea3aef45ef154b90687f683d0a",
+"ms": 2849
+},
+{
+"turn": 5,
+"voice": "m",
+"speaker": "am",
+"emotion": "gentle",
+"key": "audio/zh/r3_love_l3_d21_1/05_m.mp4",
+"sha1": "95f6f045989ade2a1da9888f8246d0aa2f18931d",
+"ms": 2255
+},
+{
+"turn": 5,
+"voice": "f",
+"speaker": "af",
+"emotion": "gentle",
+"key": "audio/zh/r3_love_l3_d21_1/05_f.mp4",
+"sha1": "90717b09a47137bfad9505456c1c1e26696d0e4b",
+"ms": 2298
+},
+{
+"turn": 6,
+"voice": "m",
+"speaker": "xiaoli",
+"emotion": "worried",
+"key": "audio/zh/r3_love_l3_d21_1/06_m.mp4",
+"sha1": "122c7bb9bedf2b372842026622548a72598bd7f0",
+"ms": 1906
+},
+{
+"turn": 6,
+"voice": "f",
+"speaker": "xiaoli",
+"emotion": "worried",
+"key": "audio/zh/r3_love_l3_d21_1/06_f.mp4",
+"sha1": "e790386830773a9990049be6255db0c7d0e4ee73",
+"ms": 2020
+},
+{
+"turn": 7,
+"voice": "m",
+"speaker": "am",
+"emotion": "gentle",
+"key": "audio/zh/r3_love_l3_d21_1/07_m.mp4",
+"sha1": "29a3dbd8eab93b4c846c328383215acfc1f5b09a",
+"ms": 1256
+},
+{
+"turn": 7,
+"voice": "f",
+"speaker": "af",
+"emotion": "gentle",
+"key": "audio/zh/r3_love_l3_d21_1/07_f.mp4",
+"sha1": "07d50e043064c9270b009874a6d765826a3ceed8",
+"ms": 1251
+},
+{
+"turn": 8,
+"voice": "m",
+"speaker": "xiaoli",
+"emotion": "worried",
+"key": "audio/zh/r3_love_l3_d21_1/08_m.mp4",
+"sha1": "223fd15b9b56bb68abf6f2e3714956296b02a201",
+"ms": 1007
+},
+{
+"turn": 8,
+"voice": "f",
+"speaker": "xiaoli",
+"emotion": "worried",
+"key": "audio/zh/r3_love_l3_d21_1/08_f.mp4",
+"sha1": "223fd15b9b56bb68abf6f2e3714956296b02a201",
+"ms": 1007
+}
+],
+"r3_love_l3_d21_2": [
+{
+"turn": 1,
+"voice": "m",
+"speaker": "am",
+"emotion": "cheerful",
+"key": "audio/zh/r3_love_l3_d21_2/01_m.mp4",
+"sha1": "accdf916833da043592cb7bc431b28e66d62ba53",
+"ms": 2705
+},
+{
+"turn": 1,
+"voice": "f",
+"speaker": "af",
+"emotion": "cheerful",
+"key": "audio/zh/r3_love_l3_d21_2/01_f.mp4",
+"sha1": "e19bc59dc7f393631b22122442107a3f10e8e788",
+"ms": 1861
+},
+{
+"turn": 2,
+"voice": "m",
+"speaker": "xiaoli",
+"emotion": "surprised",
+"key": "audio/zh/r3_love_l3_d21_2/02_m.mp4",
+"sha1": "be8e73c8740be03050a4944b7479033435e1913c",
+"ms": 2173
+},
+{
+"turn": 2,
+"voice": "f",
+"speaker": "xiaoli",
+"emotion": "surprised",
+"key": "audio/zh/r3_love_l3_d21_2/02_f.mp4",
+"sha1": "be8e73c8740be03050a4944b7479033435e1913c",
+"ms": 2173
+},
+{
+"turn": 3,
+"voice": "m",
+"speaker": "am",
+"emotion": "teasing",
+"key": "audio/zh/r3_love_l3_d21_2/03_m.mp4",
+"sha1": "d6360157b578eeb6540d29d900dcec1d9f802069",
+"ms": 2347
+},
+{
+"turn": 3,
+"voice": "f",
+"speaker": "af",
+"emotion": "teasing",
+"key": "audio/zh/r3_love_l3_d21_2/03_f.mp4",
+"sha1": "d6def9430ccf2fd0797bcb82504bafd0e85e4863",
+"ms": 2428
+},
+{
+"turn": 4,
+"voice": "m",
+"speaker": "xiaoli",
+"emotion": "amused+gentle",
+"key": "audio/zh/r3_love_l3_d21_2/04_m.mp4",
+"sha1": "800f542f66f6e91a0b306bef27033866477a9d02",
+"ms": 2773
+},
+{
+"turn": 4,
+"voice": "f",
+"speaker": "xiaoli",
+"emotion": "amused+gentle",
+"key": "audio/zh/r3_love_l3_d21_2/04_f.mp4",
+"sha1": "800f542f66f6e91a0b306bef27033866477a9d02",
+"ms": 2773
+},
+{
+"turn": 5,
+"voice": "m",
+"speaker": "am",
+"emotion": "gentle",
+"key": "audio/zh/r3_love_l3_d21_2/05_m.mp4",
+"sha1": "5fc1dc5eaffa1da9cf9468390da9a01c3934779e",
+"ms": 2174
+},
+{
+"turn": 5,
+"voice": "f",
+"speaker": "af",
+"emotion": "gentle",
+"key": "audio/zh/r3_love_l3_d21_2/05_f.mp4",
+"sha1": "3f5c084a1abc2ae8de106d355d08b4392570670a",
+"ms": 2012
+},
+{
+"turn": 6,
+"voice": "m",
+"speaker": "xiaoli",
+"emotion": "teasing+cheerful",
+"key": "audio/zh/r3_love_l3_d21_2/06_m.mp4",
+"sha1": "85007be279d9410e9d4c29d7c55ce86b11c8d4cd",
+"ms": 2355
+},
+{
+"turn": 6,
+"voice": "f",
+"speaker": "xiaoli",
+"emotion": "teasing+cheerful",
+"key": "audio/zh/r3_love_l3_d21_2/06_f.mp4",
+"sha1": "85007be279d9410e9d4c29d7c55ce86b11c8d4cd",
+"ms": 2355
+},
+{
+"turn": 7,
+"voice": "m",
+"speaker": "am",
+"emotion": "excited+gentle",
+"key": "audio/zh/r3_love_l3_d21_2/07_m.mp4",
+"sha1": "c3efffd5e55ec3ec73da16d346f585769127b3e2",
+"ms": 2951
+},
+{
+"turn": 7,
+"voice": "f",
+"speaker": "af",
+"emotion": "excited+gentle",
+"key": "audio/zh/r3_love_l3_d21_2/07_f.mp4",
+"sha1": "061eacc67b95c9e74f0045ba06c2ff3c7dce191c",
+"ms": 3200
+},
+{
+"turn": 8,
+"voice": "m",
+"speaker": "xiaoli",
+"emotion": "cheerful",
+"key": "audio/zh/r3_love_l3_d21_2/08_m.mp4",
+"sha1": "d49b226ab494c64fdad687c70691b0568d56d7ab",
+"ms": 1884
+},
+{
+"turn": 8,
+"voice": "f",
+"speaker": "xiaoli",
+"emotion": "cheerful",
+"key": "audio/zh/r3_love_l3_d21_2/08_f.mp4",
+"sha1": "d49b226ab494c64fdad687c70691b0568d56d7ab",
+"ms": 1884
+}
+]
+}
