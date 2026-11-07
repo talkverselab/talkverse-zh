@@ -227,7 +227,9 @@ class DialogueService {
     final paths = manifest.listAssets().where((p) => RegExp(r'^assets/data/dialogues/R[0-4]/[^/]+/[^/]+\.json$').hasMatch(p));
     for (final p in paths) {
       try {
-        final d = Dialogue.fromJson(json.decode(await rootBundle.loadString(p)) as Map<String, dynamic>);
+        final j = json.decode(await rootBundle.loadString(p)) as Map<String, dynamic>;
+        if (j['draft'] == true) continue; // 초안(Grok 재작성·검수 전)은 앱에 안 보인다 — 2026-11-07
+        final d = Dialogue.fromJson(j);
         if (d.turns.isNotEmpty) _byId[d.id] = d;
       } catch (_) {}
     }

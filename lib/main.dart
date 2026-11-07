@@ -37,7 +37,7 @@ void main() async {
   Account.load(); // Talkverse ID(선택) — 저장된 로그인 표시 + 뒤에서 토큰 갱신(기다리지 않음)
   unawaited(Purchase.configure({Entitlement.lang: ('com.talkverse.chineseUniverse.lifetime', 'lang_zh')}));
   // 그림(장면 컷·단어 그림) 기기 내려받기: 버전이 다르면 로딩 화면에서 받고 시작(사용자 지시 2026-11-04). 태블릿(짧은 변 600 이상)은 큰 컷.
-  final needSync = await ContentSync.instance.init(large: _isLargeScreen());
+  final needSync = await ContentSync.instance.init(large: _isLargeScreen(), female: LearnerPrefs.isFemale);
   runApp(ChineseUniverseApp(syncFirst: needSync));
   // 한자 공용 DB(발음부·외우는 방법·GIF·쓰기 범위) — 화면을 막지 않고 뒤에서 받는다.
   unawaited(

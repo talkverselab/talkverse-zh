@@ -1,0 +1,128 @@
+{
+ "id": "r2_travel_a1",
+ "region": "R2",
+ "island": "travel",
+ "kind": "short",
+ "draft": true,
+ "purpose": [
+  "travel"
+ ],
+ "domain": [
+  "travel"
+ ],
+ "title": "얼떨결에 가이드",
+ "emoji": "🚩",
+ "scene": "길을 알려 주려다 아저씨 동창 20명의 가이드가 된다.",
+ "speakers": {
+  "A": "{name}",
+  "B": "大叔"
+ },
+ "learner_gender": "M",
+ "register": "polite",
+ "twist": 3,
+ "twist_type": "chaos",
+ "flags": [],
+ "variant": "north",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "zh": "小伙子，这个地方怎么走？",
+   "pinyin": "xiǎo huǒ zi, zhè ge dì fāng zěn me zǒu?",
+   "rd": "샤오 훠 쯔, 저 거 디 팡 쩐 머 쩌우?",
+   "ko": "젊은이, 여기 어떻게 가?",
+   "note": "",
+   "tags": []
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "zh": "我也去那儿，跟我走吧。",
+   "pinyin": "wǒ yě qù nà ér, gēn wǒ zǒu ba.",
+   "rd": "워 예 취 나 얼, 건 워 쩌우 바.",
+   "ko": "저도 거기 가요, 따라오세요.",
+   "note": "",
+   "tags": []
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "zh": "太好了！大家都来！",
+   "pinyin": "tài hǎo le! dà jiā dōu lái!",
+   "rd": "타이 하오 러! 다 자 더우 라이!",
+   "ko": "잘됐다! 다들 와!",
+   "note": "",
+   "tags": []
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "你们一共几个人？",
+   "pinyin": "nǐ men yī gòng jǐ gè rén?",
+   "rd": "니 먼 이 궁 지 거 런?",
+   "ko": "모두 몇 분이세요?",
+   "note": "",
+   "tags": []
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "二十个，都是我同学。",
+   "pinyin": "èr shí gè, dōu shì wǒ tóng xué.",
+   "rd": "얼 스 거, 더우 스 워 퉁 쉐.",
+   "ko": "스무 명, 다 내 동창이야.",
+   "note": "",
+   "tags": []
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "zh": "等一下，我也是第一次来。",
+   "pinyin": "děng yí xià, wǒ yě shì dì yī cì lái.",
+   "rd": "덩 이 샤, 워 예 스 디 이 츠 라이.",
+   "ko": "잠깐만요, 저도 처음 왔어요.",
+   "note": "",
+   "tags": []
+  },
+  {
+   "num": 7,
+   "speaker": "B",
+   "zh": "没事，你走前面。",
+   "pinyin": "méi shì, nǐ zǒu qián miàn.",
+   "rd": "메이 스, 니 쩌우 첸 몐.",
+   "ko": "괜찮아, 앞장서.",
+   "note": "",
+   "tags": []
+  },
+  {
+   "num": 8,
+   "speaker": "A",
+   "zh": "我走错了，这里是厕所。",
+   "pinyin": "wǒ zǒu cuò le, zhè lǐ shì cè suǒ.",
+   "rd": "워 쩌우 춰 러, 저 리 스 처 쒀.",
+   "ko": "잘못 왔어요, 여기 화장실이에요.",
+   "note": "",
+   "tags": []
+  },
+  {
+   "num": 9,
+   "speaker": "B",
+   "zh": "大家跟上！拍张照！",
+   "pinyin": "dà jiā gēn shàng! pāi zhāng zhào!",
+   "rd": "다 자 건 상! 파이 장 자오!",
+   "ko": "다들 따라와! 사진 한 장!",
+   "note": "",
+   "tags": []
+  },
+  {
+   "num": 10,
+   "speaker": "A",
+   "zh": "在厕所门口拍照？",
+   "pinyin": "zài cè suǒ mén kǒu pāi zhào?",
+   "rd": "짜이 처 쒀 먼 커우 파이 자오?",
+   "ko": "화장실 앞에서 사진을요?",
+   "note": "",
+   "tags": []
+  }
+ ]
+}

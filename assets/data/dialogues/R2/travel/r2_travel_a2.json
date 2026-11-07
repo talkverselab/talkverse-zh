@@ -1,0 +1,130 @@
+{
+ "id": "r2_travel_a2",
+ "region": "R2",
+ "island": "travel",
+ "kind": "short",
+ "draft": true,
+ "purpose": [
+  "travel"
+ ],
+ "domain": [
+  "travel"
+ ],
+ "title": "자전거 한 대",
+ "emoji": "🚲",
+ "scene": "막차를 놓친 두 사람이 자전거 한 대로 호텔까지 간다.",
+ "speakers": {
+  "A": "{name}",
+  "B": "悦"
+ },
+ "learner_gender": "M",
+ "register": "casual",
+ "twist": 9,
+ "twist_type": "emotion",
+ "flags": [
+  "romance"
+ ],
+ "variant": "north",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "A",
+   "zh": "糟了，最后一班车走了。",
+   "pinyin": "zāo le, zuì hòu yī bān chē zǒu le.",
+   "rd": "짜오 러, 쭈이 허우 이 반 처 쩌우 러.",
+   "ko": "큰일 났다, 막차 갔어.",
+   "note": "",
+   "tags": []
+  },
+  {
+   "num": 2,
+   "speaker": "B",
+   "zh": "那我们走回去？",
+   "pinyin": "nà wǒ men zǒu huí qù?",
+   "rd": "나 워 먼 쩌우 후이 취?",
+   "ko": "그럼 걸어갈까?",
+   "note": "",
+   "tags": []
+  },
+  {
+   "num": 3,
+   "speaker": "A",
+   "zh": "酒店离这儿十公里。",
+   "pinyin": "jiǔ diàn lí zhè ér shí gōng lǐ.",
+   "rd": "주 뎬 리 저 얼 스 궁 리.",
+   "ko": "호텔 여기서 10킬로야.",
+   "note": "",
+   "tags": []
+  },
+  {
+   "num": 4,
+   "speaker": "B",
+   "zh": "只有一辆自行车。",
+   "pinyin": "zhǐ yǒu yī liàng zì xíng chē.",
+   "rd": "즈 유 이 량 쯔 싱 처.",
+   "ko": "자전거가 딱 한 대 있어.",
+   "note": "",
+   "tags": []
+  },
+  {
+   "num": 5,
+   "speaker": "A",
+   "zh": "一辆？我们两个人。",
+   "pinyin": "yī liàng? wǒ men liǎng gè rén.",
+   "rd": "이 량? 워 먼 량 거 런.",
+   "ko": "한 대? 우리 둘인데.",
+   "note": "",
+   "tags": []
+  },
+  {
+   "num": 6,
+   "speaker": "B",
+   "zh": "你骑，我坐后面。",
+   "pinyin": "nǐ qí, wǒ zuò hòu miàn.",
+   "rd": "니 치, 워 쭤 허우 몐.",
+   "ko": "네가 타, 내가 뒤에 앉을게.",
+   "note": "",
+   "tags": []
+  },
+  {
+   "num": 7,
+   "speaker": "A",
+   "zh": "你抱紧点，路不好走。",
+   "pinyin": "nǐ bào jǐn diǎn, lù bù hǎo zǒu.",
+   "rd": "니 바오 진 뎬, 루 부 하오 쩌우.",
+   "ko": "꽉 잡아, 길이 안 좋아.",
+   "note": "",
+   "tags": []
+  },
+  {
+   "num": 8,
+   "speaker": "B",
+   "zh": "这样？",
+   "pinyin": "zhè yàng?",
+   "rd": "저 양?",
+   "ko": "이렇게?",
+   "note": "",
+   "tags": []
+  },
+  {
+   "num": 9,
+   "speaker": "A",
+   "zh": "我心跳得有点快。",
+   "pinyin": "wǒ xīn tiào dé yǒu diǎn kuài.",
+   "rd": "워 신 탸오 더 유 뎬 콰이.",
+   "ko": "나 심장이 좀 빨리 뛰어.",
+   "note": "",
+   "tags": []
+  },
+  {
+   "num": 10,
+   "speaker": "B",
+   "zh": "我听见了，骑慢点吧。",
+   "pinyin": "wǒ tīng jiàn le, qí màn diǎn ba.",
+   "rd": "워 팅 젠 러, 치 만 뎬 바.",
+   "ko": "들려, 천천히 가자.",
+   "note": "",
+   "tags": []
+  }
+ ]
+}

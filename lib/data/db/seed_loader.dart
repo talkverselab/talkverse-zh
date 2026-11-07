@@ -5,6 +5,7 @@ import 'package:drift/drift.dart';
 import 'package:flutter/services.dart' show rootBundle;
 import 'package:shared_preferences/shared_preferences.dart';
 
+import '../../services/hanzi_cliff.dart';
 import 'app_database.dart';
 
 class SeedLoader {
@@ -37,26 +38,23 @@ class SeedLoader {
     }
   }
 
+  /// 한자 2,000자 — 절벽 재산출표(`tools/hanzi_cliff_build.py`): 순위·글자·빈도·누적%·HSK. phase = 절벽 구간(HanziCliff).
   Future<void> _seedHanzi() async {
-    final raw = await rootBundle.loadString('assets/data/hanzi/cliff/hanzi_top500_final.txt');
+    final raw = await rootBundle.loadString('assets/data/hanzi/cliff/hanzi_cliff_zh.tsv');
     final batch = <Insertable<HanziRow>>[];
-    final lines = raw.split('\n');
-    for (final line in lines) {
-      final trimmed = line.trim();
-      if (trimmed.isEmpty) continue;
-      final parts = trimmed.split(RegExp(r'\s+'));
-      if (parts.length < 4) continue;
+    for (final line in raw.split('\n')) {
+      final parts = line.trim().split('\t');
+      if (parts.length < 5) continue;
       final rank = int.tryParse(parts[0]) ?? 0;
-      final char = parts[1];
-      final freq = int.tryParse(parts[2]) ?? 0;
-      final hsk = parts[3];
       batch.add(HanziCompanion.insert(
-        char: char,
+        char: parts[1],
         rank: Value(rank),
-        freq: Value(freq),
-        hskLevel: Value(hsk),
+        freq: Value(int.tryParse(parts[2]) ?? 0),
+        hskLevel: Value(parts[4] == '-' ? null : parts[4]),
+        phase: Value(HanziCliff.phaseOf(rank)),
       ));
     }
+    await db.delete(db.hanzi).go(); // 옛 500자표의 순위가 남지 않게
     await db.batch((b) => b.insertAllOnConflictUpdate(db.hanzi, batch));
   }
 

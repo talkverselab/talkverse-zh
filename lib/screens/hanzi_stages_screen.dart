@@ -26,6 +26,24 @@ class HanziHubScreen extends StatelessWidget {
           padding: const EdgeInsets.all(16),
           children: [
             _HubCard(
+              seal: '崖',
+              title: tr('절벽 한자 R1~R5'),
+              sub: tr('영화·드라마 대사 빈도 · R1 96 · R2 129 · R3 226 · R4 411 · R5 2,000'),
+              color: AppColors.copper,
+              onTap: () => Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (_) => HanziStagesScreen(
+                    asset: 'assets/data/hanzi/hanzi_cliff.json',
+                    seal: '崖',
+                    kicker: 'Hanzi cliff · 2,000 chars',
+                    learn: learn,
+                  ),
+                ),
+              ),
+            ),
+            const SizedBox(height: 12),
+            _HubCard(
               seal: '209',
               title: tr('회화 시작점 한자 209'),
               sub: tr('20자 × 10단계 · 회화 토큰 89% 청취 커버'),
@@ -197,12 +215,17 @@ class _HanziStagesScreenState extends State<HanziStagesScreen> {
     final total = _data!['total'] ?? stages.fold<int>(
         0, (s, e) => s + ((e as Map)['chars'] as List).length);
     final phases = (_data!['phases'] as List?) ?? const [];
+    final cliff = phases.isNotEmpty && (phases.first as Map)['name'] != null; // 절벽 한자(R1~R5)
     final headline = phases.isEmpty
         ? trf('20자 × {0}단계', [stages.length])
-        : trf('{0}단계 × 300자', [phases.length]);
+        : cliff
+            ? trf('R1~R{0} · 20자 단원 {1}', [phases.length, stages.length])
+            : trf('{0}단계 × 300자', [phases.length]);
     final desc = phases.isEmpty
         ? tr('누적 4지선다 — 회화 토큰 89% 청취 커버')
-        : trf('회화 빈도순 · 1단계 300자만 익혀도 회화 한자 {0}% 커버', [(phases.first as Map)['coverage_pct']]);
+        : cliff
+            ? trf('영화·드라마 대사 한자 빈도 · R1 {0}자만 익혀도 한자 {1}% 커버', [(phases.first as Map)['to'], (phases.first as Map)['coverage_pct']])
+            : trf('회화 빈도순 · 1단계 300자만 익혀도 회화 한자 {0}% 커버', [(phases.first as Map)['coverage_pct']]);
     return Container(
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
@@ -287,7 +310,7 @@ class _HanziStagesScreenState extends State<HanziStagesScreen> {
               child: Row(
                 children: [
                   Text(
-                    trf('{0}단계', [n]),
+                    p['name'] as String? ?? trf('{0}단계', [n]),
                     style: TextStyle(
                       fontSize: 15,
                       fontWeight: FontWeight.w900,

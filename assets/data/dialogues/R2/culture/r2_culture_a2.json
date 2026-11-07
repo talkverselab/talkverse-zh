@@ -1,0 +1,128 @@
+{
+ "id": "r2_culture_a2",
+ "region": "R2",
+ "island": "culture",
+ "kind": "short",
+ "draft": true,
+ "purpose": [
+  "culture"
+ ],
+ "domain": [
+  "culture"
+ ],
+ "title": "설날 질문 공세",
+ "emoji": "🧧",
+ "scene": "설날 친척 아주머니의 질문 공세가 강아지 소개팅으로 번진다.",
+ "speakers": {
+  "A": "{name}",
+  "B": "阿姨"
+ },
+ "learner_gender": "M",
+ "register": "polite",
+ "twist": 6,
+ "twist_type": "chaos",
+ "flags": [],
+ "variant": "north",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "zh": "你今年多大？有对象吗？",
+   "pinyin": "nǐ jīn nián duō dà? yǒu duì xiàng ma?",
+   "rd": "니 진 녠 둬 다? 유 두이 샹 마?",
+   "ko": "올해 몇 살이야? 애인 있어?",
+   "note": "",
+   "tags": []
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "zh": "阿姨，我二十五，还没有。",
+   "pinyin": "ā yí, wǒ èr shí wǔ, hái méi yǒu.",
+   "rd": "아 이, 워 얼 스 우, 하이 메이 유.",
+   "ko": "스물다섯이고요, 아직 없어요.",
+   "note": "",
+   "tags": []
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "zh": "一个月赚多少钱？",
+   "pinyin": "yí gè yuè zhuàn duō shǎo qián?",
+   "rd": "이 거 웨 좐 둬 사오 첸?",
+   "ko": "한 달에 얼마 벌어?",
+   "note": "",
+   "tags": []
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "这个不太方便说。",
+   "pinyin": "zhè ge bù tài fāng biàn shuō.",
+   "rd": "저 거 부 타이 팡 볜 숴.",
+   "ko": "그건 좀 말씀드리기가.",
+   "note": "",
+   "tags": []
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "我家豆豆也没对象。",
+   "pinyin": "wǒ jiā dòu dòu yě méi duì xiàng.",
+   "rd": "워 자 더우 더우 예 메이 두이 샹.",
+   "ko": "우리 더우더우도 짝이 없어.",
+   "note": "",
+   "tags": []
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "zh": "豆豆不是您的狗吗？",
+   "pinyin": "dòu dòu bú shì nín de gǒu ma?",
+   "rd": "더우 더우 부 스 닌 더 거우 마?",
+   "ko": "더우더우는 강아지 아니에요?",
+   "note": "",
+   "tags": []
+  },
+  {
+   "num": 7,
+   "speaker": "B",
+   "zh": "对，你家不是有狗吗？",
+   "pinyin": "duì, nǐ jiā bú shì yǒu gǒu ma?",
+   "rd": "두이, 니 자 부 스 유 거우 마?",
+   "ko": "맞아, 너희 집에 개 있잖아?",
+   "note": "",
+   "tags": []
+  },
+  {
+   "num": 8,
+   "speaker": "A",
+   "zh": "您是说，让狗见面？",
+   "pinyin": "nín shì shuō, ràng gǒu jiàn miàn?",
+   "rd": "닌 스 숴, 랑 거우 젠 몐?",
+   "ko": "강아지끼리 만나게 하자고요?",
+   "note": "",
+   "tags": []
+  },
+  {
+   "num": 9,
+   "speaker": "B",
+   "zh": "明天公园，别迟到。",
+   "pinyin": "míng tiān gōng yuán, bié chí dào.",
+   "rd": "밍 톈 궁 위안, 볘 츠 다오.",
+   "ko": "내일 공원, 늦지 마.",
+   "note": "",
+   "tags": []
+  },
+  {
+   "num": 10,
+   "speaker": "A",
+   "zh": "我要带礼物吗？",
+   "pinyin": "wǒ yào dài lǐ wù ma?",
+   "rd": "워 야오 다이 리 우 마?",
+   "ko": "선물 가져가야 하나요?",
+   "note": "",
+   "tags": []
+  }
+ ]
+}

@@ -5,12 +5,13 @@ import '../core/theme.dart';
 import '../services/achievement_service.dart';
 import '../services/art_service.dart';
 import '../services/content_sync.dart';
+import '../services/dialogue_audio.dart';
 import '../services/dialogue_service.dart';
 import '../services/learner_prefs.dart';
 import '../services/tts_service.dart';
 import '../widgets/chinese_decor.dart';
-import '../widgets/episode_play_pane.dart' show ttsTextOf;
-import '../widgets/lemma_chips.dart';
+import '../widgets/lemma_text.dart';
+import '../services/ko_reading.dart';
 
 /// 편의 문장 플래시카드(일본어앱에서 옮김) — 앞면은 그림 + **한국어 뜻 크게**(무엇을 말할지 알고 중국어로, 2026-11-04), 탭하면 중국어·병음·독음·한국어·레마 칩.
 /// 그림 = 턴 장면 그림(`art`) → 핵심 단어 그림 → 장면 카드. 틀림/맞음 2단계, 틀린 카드는 끝에 다시.
@@ -75,6 +76,7 @@ class _DialogueCardScreenState extends State<DialogueCardScreen> {
           const SizedBox(height: 2),
           Text('${_pos + 1} / ${_order.length}', style: const TextStyle(color: AppColors.muted, fontSize: 10, letterSpacing: 2)),
         ]),
+        actions: const [KoReadingToggleAction(), SizedBox(width: 4)],
       ),
       body: SafeArea(
         top: false,
@@ -102,7 +104,7 @@ class _DialogueCardScreenState extends State<DialogueCardScreen> {
           padding: const EdgeInsets.fromLTRB(16, 6, 16, 20),
           child: Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
             _Btn(icon: Icons.close, label: tr('틀렸어요'), color: AppColors.copper, onTap: () => _mark(false)),
-            _Btn(icon: Icons.volume_up, label: tr('듣기'), color: AppColors.zhuHong, onTap: () => TtsService.instance.speakAs(ttsTextOf(t), gender: LearnerPrefs.voiceGender(t.speaker))),
+            _Btn(icon: Icons.volume_up, label: tr('듣기'), color: AppColors.zhuHong, onTap: () => speakTurn(d, t)),
             _Btn(icon: Icons.check, label: tr('맞았어요'), color: AppColors.feiCui, onTap: () => _mark(true)),
           ]),
         ),
@@ -159,15 +161,22 @@ class _CardText extends StatelessWidget {
               child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
                 Text('$name · ${t.num}', style: const TextStyle(fontSize: 11, color: AppColors.muted)),
                 const SizedBox(height: 8),
-                Text(LearnerPrefs.fill(t.zh), style: const TextStyle(fontSize: 24, fontWeight: FontWeight.w900, color: AppColors.copper, height: 1.3)),
-                if (t.pinyin.isNotEmpty) ...[const SizedBox(height: 6), Text(LearnerPrefs.fill(t.pinyin), style: const TextStyle(fontSize: 15, color: AppColors.zhuHong, fontWeight: FontWeight.w700))],
-                if (AppLangPrefs.isKo && t.rd.isNotEmpty) Text(LearnerPrefs.fill(t.rd, ko: true), style: const TextStyle(fontSize: 13, color: AppColors.muted)),
+                LemmaText(text: DialogueAudio.instance.textOf(d.id, t.num) ?? LearnerPrefs.fill(t.zh), lemmas: t.lemmas, style: AppFonts.zhText(size: 24, weight: FontWeight.w600, color: AppColors.copper, height: 1.3)),
+                // 읽기 보조(병음·독음) — 전역 설정, 기본 꺼짐(2026-11-07 §6)
+                ValueListenableBuilder<bool>(
+                  valueListenable: KoReadingPrefs.show,
+                  builder: (_, on, _) => !on
+                      ? const SizedBox.shrink()
+                      : Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+                          if (t.pinyin.isNotEmpty) ...[const SizedBox(height: 6), Text(LearnerPrefs.fill(t.pinyin), style: const TextStyle(fontSize: 15, color: AppColors.zhuHong, fontWeight: FontWeight.w700))],
+                          if (AppLangPrefs.isKo && t.rd.isNotEmpty) Text(LearnerPrefs.fill(t.rd, ko: true), style: const TextStyle(fontSize: 13, color: AppColors.muted)),
+                        ]),
+                ),
                 const SizedBox(height: 12),
                 const WordmarkDivider(height: 2),
                 const SizedBox(height: 10),
                 Text(LearnerPrefs.fill(t.ko, ko: true), style: const TextStyle(fontSize: 18, fontWeight: FontWeight.w800, color: AppColors.mo, height: 1.4)),
                 if (t.note.isNotEmpty) ...[const SizedBox(height: 10), Text('💡 ${t.note}', style: const TextStyle(fontSize: 12, color: AppColors.copperDeep, height: 1.4))],
-                if (t.lemmas.isNotEmpty) ...[const SizedBox(height: 12), LemmaChips(turn: t)],
               ]),
             )
           : Center(

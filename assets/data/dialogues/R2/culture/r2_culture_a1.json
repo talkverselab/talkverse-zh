@@ -1,0 +1,128 @@
+{
+ "id": "r2_culture_a1",
+ "region": "R2",
+ "island": "culture",
+ "kind": "short",
+ "draft": true,
+ "purpose": [
+  "culture"
+ ],
+ "domain": [
+  "culture"
+ ],
+ "title": "계산 전쟁",
+ "emoji": "💸",
+ "scene": "서로 내겠다고 싸우다 둘 다 결제해 버린다.",
+ "speakers": {
+  "A": "{name}",
+  "B": "小丽"
+ },
+ "learner_gender": "M",
+ "register": "casual",
+ "twist": 7,
+ "twist_type": "chaos",
+ "flags": [],
+ "variant": "north",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "A",
+   "zh": "服务员，我来买单！",
+   "pinyin": "fú wù yuán, wǒ lái mǎi dān!",
+   "rd": "푸 우 위안, 워 라이 마이 단!",
+   "ko": "여기요, 제가 계산할게요!",
+   "note": "",
+   "tags": []
+  },
+  {
+   "num": 2,
+   "speaker": "B",
+   "zh": "放下！今天我请！",
+   "pinyin": "fàng xià! jīn tiān wǒ qǐng!",
+   "rd": "팡 샤! 진 톈 워 칭!",
+   "ko": "내려놔! 오늘은 내가 살게!",
+   "note": "",
+   "tags": []
+  },
+  {
+   "num": 3,
+   "speaker": "A",
+   "zh": "上次你请了，这次我来。",
+   "pinyin": "shàng cì nǐ qǐng le, zhè cì wǒ lái.",
+   "rd": "상 츠 니 칭 러, 저 츠 워 라이.",
+   "ko": "저번에 네가 샀잖아, 이번엔 내가.",
+   "note": "",
+   "tags": []
+  },
+  {
+   "num": 4,
+   "speaker": "B",
+   "zh": "你手机给我。",
+   "pinyin": "nǐ shǒu jī gěi wǒ.",
+   "rd": "니 서우 지 게이 워.",
+   "ko": "폰 이리 줘.",
+   "note": "",
+   "tags": []
+  },
+  {
+   "num": 5,
+   "speaker": "A",
+   "zh": "你别抢，我已经扫了。",
+   "pinyin": "nǐ bié qiǎng, wǒ yǐ jīng sǎo le.",
+   "rd": "니 볘 창, 워 이 징 싸오 러.",
+   "ko": "뺏지 마, 벌써 찍었어.",
+   "note": "",
+   "tags": []
+  },
+  {
+   "num": 6,
+   "speaker": "B",
+   "zh": "我也扫了。",
+   "pinyin": "wǒ yě sǎo le.",
+   "rd": "워 예 싸오 러.",
+   "ko": "나도 찍었는데.",
+   "note": "",
+   "tags": []
+  },
+  {
+   "num": 7,
+   "speaker": "A",
+   "zh": "等等，怎么付了两次？",
+   "pinyin": "děng děng, zěn me fù le liǎng cì?",
+   "rd": "덩 덩, 쩐 머 푸 러 량 츠?",
+   "ko": "잠깐, 왜 두 번 결제됐지?",
+   "note": "",
+   "tags": []
+  },
+  {
+   "num": 8,
+   "speaker": "B",
+   "zh": "服务员说，谢谢老板！",
+   "pinyin": "fú wù yuán shuō, xiè xiè lǎo bǎn!",
+   "rd": "푸 우 위안 숴, 셰 셰 라오 반!",
+   "ko": "종업원이 사장님 감사합니다래!",
+   "note": "",
+   "tags": []
+  },
+  {
+   "num": 9,
+   "speaker": "A",
+   "zh": "那多付的钱呢？",
+   "pinyin": "nà duō fù de qián ne?",
+   "rd": "나 둬 푸 더 첸 너?",
+   "ko": "그럼 더 낸 돈은?",
+   "note": "",
+   "tags": []
+  },
+  {
+   "num": 10,
+   "speaker": "B",
+   "zh": "算了，再点一个菜吧。",
+   "pinyin": "suàn le, zài diǎn yí gè cài ba.",
+   "rd": "쏸 러, 짜이 뎬 이 거 차이 바.",
+   "ko": "됐어, 요리 하나 더 시키자.",
+   "note": "",
+   "tags": []
+  }
+ ]
+}

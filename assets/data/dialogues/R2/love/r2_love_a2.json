@@ -1,0 +1,130 @@
+{
+ "id": "r2_love_a2",
+ "region": "R2",
+ "island": "love",
+ "kind": "short",
+ "draft": true,
+ "purpose": [
+  "love"
+ ],
+ "domain": [
+  "love"
+ ],
+ "title": "고백 연습",
+ "emoji": "💘",
+ "scene": "학습자가 고백 연습을 부탁하는데 사실 상대가 그 사람이다.",
+ "speakers": {
+  "A": "{name}",
+  "B": "浩然"
+ },
+ "learner_gender": "F",
+ "register": "casual",
+ "twist": 9,
+ "twist_type": "emotion",
+ "flags": [
+  "romance"
+ ],
+ "variant": "north",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "A",
+   "zh": "我要跟一个人说喜欢。",
+   "pinyin": "wǒ yào gēn yí gè rén shuō xǐ huān.",
+   "rd": "워 야오 건 이 거 런 숴 시 환.",
+   "ko": "어떤 사람한테 좋아한다고 말하려고.",
+   "note": "",
+   "tags": []
+  },
+  {
+   "num": 2,
+   "speaker": "B",
+   "zh": "谁？我帮你练习。",
+   "pinyin": "shuí? wǒ bāng nǐ liàn xí.",
+   "rd": "수이? 워 방 니 롄 시.",
+   "ko": "누구? 내가 연습 도와줄게.",
+   "note": "",
+   "tags": []
+  },
+  {
+   "num": 3,
+   "speaker": "A",
+   "zh": "你站这儿，当他。",
+   "pinyin": "nǐ zhàn zhè ér, dāng tā.",
+   "rd": "니 잔 저 얼, 당 타.",
+   "ko": "여기 서서 그 사람 해 줘.",
+   "note": "",
+   "tags": []
+  },
+  {
+   "num": 4,
+   "speaker": "B",
+   "zh": "好，开始吧。",
+   "pinyin": "hǎo, kāi shǐ ba.",
+   "rd": "하오, 카이 스 바.",
+   "ko": "좋아, 시작해.",
+   "note": "",
+   "tags": []
+  },
+  {
+   "num": 5,
+   "speaker": "A",
+   "zh": "我喜欢你很久了。",
+   "pinyin": "wǒ xǐ huān nǐ hěn jiǔ le.",
+   "rd": "워 시 환 니 헌 주 러.",
+   "ko": "너 오래전부터 좋아했어.",
+   "note": "",
+   "tags": []
+  },
+  {
+   "num": 6,
+   "speaker": "B",
+   "zh": "说得不错，再说一遍。",
+   "pinyin": "shuō dé bù cuò, zài shuō yī biàn.",
+   "rd": "숴 더 부 춰, 짜이 숴 이 볜.",
+   "ko": "잘했어, 한 번 더.",
+   "note": "",
+   "tags": []
+  },
+  {
+   "num": 7,
+   "speaker": "A",
+   "zh": "我喜欢你，真的。",
+   "pinyin": "wǒ xǐ huān nǐ, zhēn de.",
+   "rd": "워 시 환 니, 전 더.",
+   "ko": "좋아해, 진짜로.",
+   "note": "",
+   "tags": []
+  },
+  {
+   "num": 8,
+   "speaker": "B",
+   "zh": "你为什么看着我的眼睛？",
+   "pinyin": "nǐ wèi shén me kàn zhe wǒ de yǎn jīng?",
+   "rd": "니 웨이 선 머 칸 저 워 더 옌 징?",
+   "ko": "왜 내 눈을 보고 말해?",
+   "note": "",
+   "tags": []
+  },
+  {
+   "num": 9,
+   "speaker": "A",
+   "zh": "因为……不是练习。",
+   "pinyin": "yīn wèi …… bú shì liàn xí.",
+   "rd": "인 웨이 …… 부 스 롄 시.",
+   "ko": "왜냐면… 연습이 아니니까.",
+   "note": "",
+   "tags": []
+  },
+  {
+   "num": 10,
+   "speaker": "B",
+   "zh": "那我也不用练习了。",
+   "pinyin": "nà wǒ yě bù yòng liàn xí le.",
+   "rd": "나 워 예 부 융 롄 시 러.",
+   "ko": "그럼 나도 연습 안 해도 되겠네.",
+   "note": "",
+   "tags": []
+  }
+ ]
+}

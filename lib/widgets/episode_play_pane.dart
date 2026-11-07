@@ -10,13 +10,13 @@ import '../screens/dialogue_card_screen.dart';
 import '../services/achievement_service.dart';
 import '../services/art_service.dart';
 import '../services/content_sync.dart';
+import '../services/dialogue_audio.dart';
 import '../services/dialogue_service.dart';
 import '../services/ko_reading.dart';
 import '../services/learner_prefs.dart';
-import '../services/tts_service.dart';
 import 'achievement_desk.dart';
 import 'learner_setup_dialog.dart';
-import 'lemma_chips.dart';
+import 'lemma_text.dart';
 import 'selectable_hanzi.dart';
 import 'tone_pinyin.dart';
 
@@ -41,8 +41,8 @@ class _EpisodePlayPaneState extends State<EpisodePlayPane> {
   late int _i = widget.initialIndex;
   bool _playing = false;
   double _rate = 1.0; // 0.75 / 1.0 / 1.25
-  bool _showPy = KoReadingPrefs.show.value; // 앱 전체 병음 표시 설정에서 시작
-  bool _showRd = true;
+  bool _showPy = KoReadingPrefs.show.value; // 앱 전체 읽기 보조 설정(기본 꺼짐)에서 시작 — 병음 버튼은 전역 설정을 바꾼다
+  bool _showRd = KoReadingPrefs.show.value;
   bool _showKo = true;
   int _session = 0; // 재생 루프 세대(중단 판별)
   bool _done = false; // 완주 연출 표시
@@ -60,7 +60,8 @@ class _EpisodePlayPaneState extends State<EpisodePlayPane> {
     WidgetsBinding.instance.addPostFrameCallback((_) async {
       if (!mounted) return;
       // 대사에 {name} 자리가 있는데 이름이 없으면 먼저 묻는다(앱 켠 뒤 한 번, 2026-11-04)
-      await ensureLearnerName(context, needed: widget.dialogue.turns.any((t) => t.zh.contains('{name}')));
+      // 이름 자리 턴에 음성이 있으면 이름을 묻지 않는다(음성판의 이름으로 보인다)
+      await ensureLearnerName(context, needed: !DialogueAudio.instance.covers(widget.dialogue) && widget.dialogue.turns.any((t) => t.zh.contains('{name}')));
       if (mounted) setState(() {});
       if (widget.autoPlay && mounted) _play();
     });
@@ -69,7 +70,7 @@ class _EpisodePlayPaneState extends State<EpisodePlayPane> {
   @override
   void dispose() {
     _session++;
-    TtsService.instance.stop();
+    DialogueAudio.instance.stop();
     super.dispose();
   }
 
@@ -79,7 +80,7 @@ class _EpisodePlayPaneState extends State<EpisodePlayPane> {
     while (mounted && my == _session && _i < d.turns.length) {
       final t = d.turns[_i];
       _scrollTo(_i);
-      await TtsService.instance.speakAs(_ttsText(t), gender: _gender(t.speaker), rate: _rate * 0.45);
+      await speakTurn(d, t, rate: _rate); // 생성 음성 우선, 없으면 TTS
       if (!mounted || my != _session) return;
       await Future.delayed(Duration(milliseconds: (650 / _rate).round())); // 턴 사이 숨
       if (!mounted || my != _session) return;
@@ -96,14 +97,14 @@ class _EpisodePlayPaneState extends State<EpisodePlayPane> {
 
   void _pause() {
     _session++;
-    TtsService.instance.stop();
+    DialogueAudio.instance.stop();
     setState(() => _playing = false);
   }
 
   void _goto(int n, {bool play = false}) {
     n = n.clamp(0, d.turns.length - 1);
     _session++;
-    TtsService.instance.stop();
+    DialogueAudio.instance.stop();
     setState(() {
       _i = n;
       _playing = false;
@@ -112,7 +113,7 @@ class _EpisodePlayPaneState extends State<EpisodePlayPane> {
     if (play) _play();
   }
 
-  void _speakOne(DialogueTurn t) => TtsService.instance.speakAs(_ttsText(t), gender: _gender(t.speaker), rate: _rate * 0.45);
+  void _speakOne(DialogueTurn t) => speakTurn(d, t, rate: _rate);
 
   void _scrollTo(int i) {
     if (!_side || !_scriptOpen) return;
@@ -121,9 +122,7 @@ class _EpisodePlayPaneState extends State<EpisodePlayPane> {
     Scrollable.ensureVisible(ctx, duration: const Duration(milliseconds: 300), curve: Curves.easeOut, alignment: 0.3);
   }
 
-  String _ttsText(DialogueTurn t) => ttsTextOf(t);
 
-  String _gender(String sp) => LearnerPrefs.voiceGender(sp); // A = 학습자 프로필 성별
 
   @override
   Widget build(BuildContext context) {
@@ -143,7 +142,10 @@ class _EpisodePlayPaneState extends State<EpisodePlayPane> {
         onPlay: _playing ? _pause : _play,
         onSeek: (v) => _goto(v),
         onRate: () => setState(() => _rate = _rate >= 1.25 ? 0.75 : (_rate + 0.25)),
-        onPy: () => setState(() => _showPy = !_showPy),
+        onPy: () {
+          KoReadingPrefs.toggleWithHint(context);
+          setState(() => _showPy = !_showPy);
+        },
         onRd: () => setState(() => _showRd = !_showRd),
         onKo: () => setState(() => _showKo = !_showKo),
         onScript: _toggleScript,
@@ -298,10 +300,13 @@ class NowLine extends StatelessWidget {
               icon: const Icon(Icons.volume_up_outlined, color: AppColors.muted, size: 20),
             ),
           ]),
-          SelectableHanziText(
-            text: LearnerPrefs.fill(turn.zh),
-            style: AppFonts.zhText(size: large ? 24 : 22, weight: FontWeight.w600, height: 1.4),
-          ),
+          // 레마 단위 탭 → 단어창, 길게 → 한자(2026-11-07 §6). 레마가 없는 옛 편은 글자 단위.
+          turn.lemmas.isNotEmpty
+              ? LemmaText(text: DialogueAudio.instance.textOf(d.id, turn.num) ?? LearnerPrefs.fill(turn.zh), lemmas: turn.lemmas, style: AppFonts.zhText(size: large ? 24 : 22, weight: FontWeight.w600, height: 1.4))
+              : SelectableHanziText(
+                  text: DialogueAudio.instance.textOf(d.id, turn.num) ?? LearnerPrefs.fill(turn.zh),
+                  style: AppFonts.zhText(size: large ? 24 : 22, weight: FontWeight.w600, height: 1.4),
+                ),
           if (showPy && turn.pinyin.isNotEmpty)
             Padding(padding: const EdgeInsets.only(top: 4), child: TonePinyinText(LearnerPrefs.fill(turn.pinyin), size: 13)),
           if (showRd && AppLangPrefs.isKo && turn.rd.isNotEmpty)
@@ -310,9 +315,6 @@ class NowLine extends StatelessWidget {
             Padding(padding: const EdgeInsets.only(top: 8), child: Text(LearnerPrefs.fill(turn.ko, ko: true), style: AppFonts.uiText(size: 14))),
           if (turn.note.isNotEmpty)
             Padding(padding: const EdgeInsets.only(top: 8), child: Text('💡 ${turn.note}', style: AppFonts.captionText(color: AppColors.copperDeep))),
-          // 문장 내용어 칩 — 단어장에 있으면 단어 시트, 없으면 회색(2026-11-04)
-          if (turn.lemmas.isNotEmpty)
-            Padding(padding: const EdgeInsets.only(top: 10), child: LemmaChips(turn: turn, compact: !large)),
         ],
       ),
     );

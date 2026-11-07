@@ -1,0 +1,130 @@
+{
+ "id": "r2_love_a1",
+ "region": "R2",
+ "island": "love",
+ "kind": "short",
+ "draft": true,
+ "purpose": [
+  "love"
+ ],
+ "domain": [
+  "love"
+ ],
+ "title": "잠금 화면",
+ "emoji": "📱",
+ "scene": "위에가 학습자의 폰 잠금 화면에서 자기 뒷모습 사진을 발견한다.",
+ "speakers": {
+  "A": "{name}",
+  "B": "悦"
+ },
+ "learner_gender": "M",
+ "register": "casual",
+ "twist": 4,
+ "twist_type": "reveal",
+ "flags": [
+  "romance"
+ ],
+ "variant": "north",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "zh": "你手机亮了，这是我吧？",
+   "pinyin": "nǐ shǒu jī liàng le, zhè shì wǒ ba?",
+   "rd": "니 서우 지 량 러, 저 스 워 바?",
+   "ko": "네 폰 켜졌다, 이거 나지?",
+   "note": "",
+   "tags": []
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "zh": "别看！这个不能看！",
+   "pinyin": "bié kàn! zhè ge bù néng kàn!",
+   "rd": "볘 칸! 저 거 부 넝 칸!",
+   "ko": "보지 마! 이건 안 돼!",
+   "note": "",
+   "tags": []
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "zh": "我都看见了，是我的背影。",
+   "pinyin": "wǒ dōu kàn jiàn le, shì wǒ de bèi yǐng.",
+   "rd": "워 더우 칸 젠 러, 스 워 더 베이 잉.",
+   "ko": "다 봤어, 내 뒷모습이잖아.",
+   "note": "",
+   "tags": []
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "zh": "那是……随便选的图片。",
+   "pinyin": "nà shì …… suí biàn xuǎn de tú piàn.",
+   "rd": "나 스 …… 쑤이 볜 쉬안 더 투 폔.",
+   "ko": "그건… 그냥 고른 사진이야.",
+   "note": "",
+   "tags": []
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "随便选到我？",
+   "pinyin": "suí biàn xuǎn dào wǒ?",
+   "rd": "쑤이 볜 쉬안 다오 워?",
+   "ko": "그냥 골랐는데 나야?",
+   "note": "",
+   "tags": []
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "zh": "我不知道怎么解释。",
+   "pinyin": "wǒ bù zhī dào zěn me jiě shì.",
+   "rd": "워 부 즈 다오 쩐 머 제 스.",
+   "ko": "뭐라고 설명해야 할지 모르겠어.",
+   "note": "",
+   "tags": []
+  },
+  {
+   "num": 7,
+   "speaker": "B",
+   "zh": "不用解释，换一张吧。",
+   "pinyin": "bù yòng jiě shì, huàn yī zhāng ba.",
+   "rd": "부 융 제 스, 환 이 장 바.",
+   "ko": "설명 안 해도 돼, 바꾸자.",
+   "note": "",
+   "tags": []
+  },
+  {
+   "num": 8,
+   "speaker": "A",
+   "zh": "你生气了？",
+   "pinyin": "nǐ shēng qì le?",
+   "rd": "니 성 치 러?",
+   "ko": "화났어?",
+   "note": "",
+   "tags": []
+  },
+  {
+   "num": 9,
+   "speaker": "B",
+   "zh": "这张不好看，我拍给你。",
+   "pinyin": "zhè zhāng bù hǎo kàn, wǒ pāi gěi nǐ.",
+   "rd": "저 장 부 하오 칸, 워 파이 게이 니.",
+   "ko": "이건 안 예뻐, 내가 찍어 줄게.",
+   "note": "",
+   "tags": []
+  },
+  {
+   "num": 10,
+   "speaker": "A",
+   "zh": "那……你看着我拍吗？",
+   "pinyin": "nà …… nǐ kàn zhe wǒ pāi ma?",
+   "rd": "나 …… 니 칸 저 워 파이 마?",
+   "ko": "그럼… 나 보면서 찍을 거야?",
+   "note": "",
+   "tags": []
+  }
+ ]
+}

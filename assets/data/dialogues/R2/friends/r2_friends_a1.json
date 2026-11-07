@@ -1,0 +1,128 @@
+{
+ "id": "r2_friends_a1",
+ "region": "R2",
+ "island": "friends",
+ "kind": "short",
+ "draft": true,
+ "purpose": [
+  "friends"
+ ],
+ "domain": [
+  "friends"
+ ],
+ "title": "규칙표",
+ "emoji": "🧹",
+ "scene": "룸메이트에게 설거지 규칙 한 줄을 붙였더니 문이 규칙으로 뒤덮인다.",
+ "speakers": {
+  "A": "{name}",
+  "B": "小丽"
+ },
+ "learner_gender": "M",
+ "register": "casual",
+ "twist": 9,
+ "twist_type": "chaos",
+ "flags": [],
+ "variant": "north",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "A",
+   "zh": "你怎么又不洗碗？",
+   "pinyin": "nǐ zěn me yòu bù xǐ wǎn?",
+   "rd": "니 쩐 머 유 부 시 완?",
+   "ko": "너 왜 또 설거지 안 해?",
+   "note": "",
+   "tags": []
+  },
+  {
+   "num": 2,
+   "speaker": "B",
+   "zh": "我忘了，明天一定洗。",
+   "pinyin": "wǒ wàng le, míng tiān yí dìng xǐ.",
+   "rd": "워 왕 러, 밍 톈 이 딩 시.",
+   "ko": "깜빡했어, 내일 꼭 할게.",
+   "note": "",
+   "tags": []
+  },
+  {
+   "num": 3,
+   "speaker": "A",
+   "zh": "我写个规定，贴在门上。",
+   "pinyin": "wǒ xiě gè guī dìng, tiē zài mén shàng.",
+   "rd": "워 셰 거 구이 딩, 톄 짜이 먼 상.",
+   "ko": "내가 규칙 써서 문에 붙일게.",
+   "note": "",
+   "tags": []
+  },
+  {
+   "num": 4,
+   "speaker": "B",
+   "zh": "好啊，我也写一个。",
+   "pinyin": "hǎo a, wǒ yě xiě yí gè.",
+   "rd": "하오 아, 워 예 셰 이 거.",
+   "ko": "좋아, 나도 하나 쓸게.",
+   "note": "",
+   "tags": []
+  },
+  {
+   "num": 5,
+   "speaker": "A",
+   "zh": "你写了什么？怎么这么多？",
+   "pinyin": "nǐ xiě le shén me? zěn me zhè me duō?",
+   "rd": "니 셰 러 선 머? 쩐 머 저 머 둬?",
+   "ko": "뭐 썼어? 왜 이렇게 많아?",
+   "note": "",
+   "tags": []
+  },
+  {
+   "num": 6,
+   "speaker": "B",
+   "zh": "晚上十点后不能唱歌。",
+   "pinyin": "wǎn shàng shí diǎn hòu bù néng chàng gē.",
+   "rd": "완 상 스 뎬 허우 부 넝 창 거.",
+   "ko": "밤 10시 이후 노래 금지.",
+   "note": "",
+   "tags": []
+  },
+  {
+   "num": 7,
+   "speaker": "A",
+   "zh": "那你也不能打游戏！",
+   "pinyin": "nà nǐ yě bù néng dǎ yóu xì!",
+   "rd": "나 니 예 부 넝 다 유 시!",
+   "ko": "그럼 너도 게임 금지!",
+   "note": "",
+   "tags": []
+  },
+  {
+   "num": 8,
+   "speaker": "B",
+   "zh": "行，门上已经贴满了。",
+   "pinyin": "xíng, mén shàng yǐ jīng tiē mǎn le.",
+   "rd": "싱, 먼 상 이 징 톄 만 러.",
+   "ko": "그래, 문이 벌써 꽉 찼어.",
+   "note": "",
+   "tags": []
+  },
+  {
+   "num": 9,
+   "speaker": "A",
+   "zh": "房东刚才也写了一条。",
+   "pinyin": "fáng dōng gāng cái yě xiě le yī tiáo.",
+   "rd": "팡 둥 강 차이 예 셰 러 이 탸오.",
+   "ko": "집주인도 방금 한 줄 썼어.",
+   "note": "",
+   "tags": []
+  },
+  {
+   "num": 10,
+   "speaker": "B",
+   "zh": "写什么？别贴了？",
+   "pinyin": "xiě shén me? bié tiē le?",
+   "rd": "셰 선 머? 볘 톄 러?",
+   "ko": "뭐라고? 그만 붙이래?",
+   "note": "",
+   "tags": []
+  }
+ ]
+}

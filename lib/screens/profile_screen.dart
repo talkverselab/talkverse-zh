@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:package_info_plus/package_info_plus.dart';
 
 import 'font_licenses_screen.dart';
 import 'login_screen.dart';
 import 'paywall_screen.dart';
-import 'update_screen.dart';
+import 'about_screen.dart';
 
 import '../core/pane.dart';
 import '../core/theme.dart';
@@ -11,6 +12,7 @@ import '../widgets/chinese_decor.dart';
 import '../core/l10n.dart';
 import '../data/account.dart';
 import '../data/purchase.dart';
+import '../services/ko_reading.dart';
 import '../services/learner_prefs.dart';
 import '../widgets/achievement_desk.dart';
 
@@ -25,6 +27,27 @@ class ProfileScreen extends StatefulWidget {
 }
 
 class _ProfileScreenState extends State<ProfileScreen> {
+  String _version = '…';
+
+  @override
+  void initState() {
+    super.initState();
+    KoReadingPrefs.show.addListener(_refresh);
+    PackageInfo.fromPlatform().then((i) {
+      if (mounted) setState(() => _version = '${i.version} (${i.buildNumber})');
+    }).catchError((_) {});
+  }
+
+  @override
+  void dispose() {
+    KoReadingPrefs.show.removeListener(_refresh);
+    super.dispose();
+  }
+
+  void _refresh() {
+    if (mounted) setState(() {});
+  }
+
   Future<void> _editName() async {
     final c = TextEditingController(text: LearnerPrefs.name.value);
     final v = await showDialog<String>(
@@ -51,7 +74,6 @@ class _ProfileScreenState extends State<ProfileScreen> {
   @override
   Widget build(BuildContext context) {
     final children = <Widget>[
-      const UpdateEntryTile(),
       Container(
         padding: const EdgeInsets.all(18),
         decoration: BoxDecoration(
@@ -134,8 +156,12 @@ class _ProfileScreenState extends State<ProfileScreen> {
             subtitle: '${AppLangPrefs.lang.value.label}  →  ${AppLangPrefs.peekNext().label}',
             onTap: AppLangPrefs.next,
           ),
-          _SettingItem(icon: Icons.volume_up, title: tr('TTS 음성'), subtitle: 'zh-CN-XiaoxiaoNeural'),
-          _SettingItem(icon: Icons.palette, title: tr('테마'), subtitle: tr('낮 · 중국풍 #DE2910')),
+          _SettingItem(
+            icon: Icons.translate,
+            title: tr('읽기 보조(병음·독음)'),
+            subtitle: KoReadingPrefs.show.value ? tr('표시 — 탭하면 숨김') : tr('숨김(기본) — 탭하면 표시'),
+            onTap: () => KoReadingPrefs.toggleWithHint(context),
+          ),
         ],
       ),
       const SizedBox(height: 16),
@@ -146,8 +172,8 @@ class _ProfileScreenState extends State<ProfileScreen> {
       const SizedBox(height: 8),
       _SettingsGroup(
         items: [
-          _SettingItem(icon: Icons.info_outline, title: tr('앱 버전'), subtitle: tr('0.2.0 · alpha 중국풍')),
-          _SettingItem(icon: Icons.code, title: 'Stack', subtitle: 'Flutter 3.41 · Material 3 · SQLite'),
+          _SettingItem(icon: Icons.menu_book_outlined, title: tr('앱 소개'), subtitle: tr('절벽구간 — 단어·한자 기준과 산출 방식'), onTap: () => openPane(context, (_) => const AboutScreen())),
+          _SettingItem(icon: Icons.info_outline, title: tr('앱 버전'), subtitle: _version),
           _SettingItem(icon: Icons.copyright, title: tr('저작권'), subtitle: tr('중국어유니버스 · 2026')),
           _SettingItem(
             icon: Icons.font_download_outlined,

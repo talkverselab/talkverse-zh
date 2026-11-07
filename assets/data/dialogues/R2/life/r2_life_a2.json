@@ -1,0 +1,128 @@
+{
+ "id": "r2_life_a2",
+ "region": "R2",
+ "island": "life",
+ "kind": "short",
+ "draft": true,
+ "purpose": [
+  "life"
+ ],
+ "domain": [
+  "life"
+ ],
+ "title": "옆집 노래",
+ "emoji": "🎤",
+ "scene": "밤늦게 노래하는 옆집 아저씨에게 항의하러 갔다가 듀엣이 된다.",
+ "speakers": {
+  "A": "{name}",
+  "B": "大叔"
+ },
+ "learner_gender": "M",
+ "register": "polite",
+ "twist": 6,
+ "twist_type": "chaos",
+ "flags": [],
+ "variant": "north",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "A",
+   "zh": "叔叔，您家声音有点大。",
+   "pinyin": "shū shū, nín jiā shēng yīn yǒu diǎn dà.",
+   "rd": "수 수, 닌 자 성 인 유 뎬 다.",
+   "ko": "아저씨, 댁 소리가 좀 커요.",
+   "note": "",
+   "tags": []
+  },
+  {
+   "num": 2,
+   "speaker": "B",
+   "zh": "我在练唱歌，下星期比赛。",
+   "pinyin": "wǒ zài liàn chàng gē, xià xīng qī bǐ sài.",
+   "rd": "워 짜이 롄 창 거, 샤 싱 치 비 싸이.",
+   "ko": "노래 연습 중이야, 다음 주 대회거든.",
+   "note": "",
+   "tags": []
+  },
+  {
+   "num": 3,
+   "speaker": "A",
+   "zh": "现在是晚上十一点。",
+   "pinyin": "xiàn zài shì wǎn shàng shí yì diǎn.",
+   "rd": "셴 짜이 스 완 상 스 이 뎬.",
+   "ko": "지금 밤 11시예요.",
+   "note": "",
+   "tags": []
+  },
+  {
+   "num": 4,
+   "speaker": "B",
+   "zh": "你听听，这句好不好？",
+   "pinyin": "nǐ tīng tīng, zhè jù hǎo bù hǎo?",
+   "rd": "니 팅 팅, 저 쥐 하오 부 하오?",
+   "ko": "들어 봐, 이 소절 어때?",
+   "note": "",
+   "tags": []
+  },
+  {
+   "num": 5,
+   "speaker": "A",
+   "zh": "挺好的，但是我明天上班。",
+   "pinyin": "tǐng hǎo de, dàn shì wǒ míng tiān shàng bān.",
+   "rd": "팅 하오 더, 단 스 워 밍 톈 상 반.",
+   "ko": "좋은데요, 저 내일 출근해요.",
+   "note": "",
+   "tags": []
+  },
+  {
+   "num": 6,
+   "speaker": "B",
+   "zh": "你也唱一句！",
+   "pinyin": "nǐ yě chàng yī jù!",
+   "rd": "니 예 창 이 쥐!",
+   "ko": "너도 한 소절 해 봐!",
+   "note": "",
+   "tags": []
+  },
+  {
+   "num": 7,
+   "speaker": "A",
+   "zh": "我不会……",
+   "pinyin": "wǒ bú huì ……",
+   "rd": "워 부 후이 ……",
+   "ko": "저 못 해요…",
+   "note": "",
+   "tags": []
+  },
+  {
+   "num": 8,
+   "speaker": "B",
+   "zh": "我教你，很简单。",
+   "pinyin": "wǒ jiào nǐ, hěn jiǎn dān.",
+   "rd": "워 자오 니, 헌 젠 단.",
+   "ko": "내가 가르쳐 줄게, 쉬워.",
+   "note": "",
+   "tags": []
+  },
+  {
+   "num": 9,
+   "speaker": "A",
+   "zh": "叔叔，我们几点比赛？",
+   "pinyin": "shū shū, wǒ men jǐ diǎn bǐ sài?",
+   "rd": "수 수, 워 먼 지 뎬 비 싸이?",
+   "ko": "아저씨, 우리 몇 시 대회예요?",
+   "note": "",
+   "tags": []
+  },
+  {
+   "num": 10,
+   "speaker": "B",
+   "zh": "下星期，你唱第二段。",
+   "pinyin": "xià xīng qī, nǐ chàng dì èr duàn.",
+   "rd": "샤 싱 치, 니 창 디 얼 돤.",
+   "ko": "다음 주, 넌 2절이야.",
+   "note": "",
+   "tags": []
+  }
+ ]
+}

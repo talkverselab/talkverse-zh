@@ -4,12 +4,13 @@
   python3 tools/cliff/zh_cliff.py <자막.zip> [자막2.zip …] <title.basics.tsv.gz> <title.akas.tsv.gz> <title.episode.tsv.gz> <출력폴더>
 
 - 작품 고르기: 원제(originalTitle)가 한자(가나·한글 없음)이거나, 발매 지역 표기가 중화권(CN·TW·HK·MO·SG·MY)뿐인 작품 = 중화권 원작.
-  (IMDb 원제가 병음 로마자로 적힌 중국 작품이 많아 지역으로도 판단)
+  (작품 메타데이터의 원제가 병음 로마자로 적힌 중국 작품이 많아 지역으로도 판단)
   드라마 회차는 시리즈의 원제로 판단. 작품 하나에 자막 파일이 여럿이면 하나만.
 - 문장: 자막 XML 의 <s> 텍스트 → 번체→간체(OpenCC t2s) → jieba 분절(정밀 모드).
 - 단위: 단어 = jieba 토큰 중 한자가 하나 이상 든 것(숫자·라틴·문장부호 제외). 한자 = 그 토큰들의 한자 글자.
-- 결과: 단어 R1~R4 = 누적 커버리지 55/60/70/80% 에 닿는 순위, 2,500 단어 최대 커버리지, 한자 50/80/90%.
-  출력폴더에 word_freq.tsv(순위·단어·빈도·누적%) · hanzi_freq.tsv · summary.json. 말뭉치 이름은 공개 문서에 쓰지 않는다.
+- 결과: 단어 R1~R4 = 누적 커버리지 55/60/70/80% 에 닿는 순위, 2,500 단어 최대 커버리지.
+  한자(2026-11-07 추가): ① 한자 빈도 기준 R1~R4(같은 55/60/70/80%) + 50/90/95/98/99% ② 단어 R1~R4 를 읽는 데 필요한 한자 수(그 구간 단어들의 글자 합집합, 누적).
+  출력폴더에 word_freq.tsv(순위·단어·빈도·누적%) · hanzi_freq.tsv(+ 그 글자가 처음 나오는 단어 구간) · summary.json. 말뭉치 이름은 공개 문서에 쓰지 않는다.
 """
 import collections, gzip, io, json, re, sys, zipfile
 import xml.etree.ElementTree as ET
@@ -90,16 +91,32 @@ def cliff(freq, targets):
             res[targets[ti]] = r; ti += 1
     return res, rows, tot
 
-wres, wrows, wtot = cliff(wf, [55, 60, 70, 80])
-hres, hrows, htot = cliff(hf, [50, 80, 90])
+PCT = [55, 60, 70, 80]
+wres, wrows, wtot = cliff(wf, PCT)
+hres, hrows, htot = cliff(hf, [50] + PCT + [90, 95, 98, 99])
+# ② 단어 구간을 읽는 데 필요한 한자: R_k 단어(순위 ≤ wres[p]) 의 글자 합집합(누적). 글자마다 처음 나오는 단어 구간을 적는다.
+first_region = {}
+for i, p in enumerate(PCT):
+    for r, w, _, _ in wrows[:wres[p]]:
+        for c in w: first_region.setdefault(c, f'R{i+1}')
+need_hanzi = {f'R{i+1}': sum(1 for v in first_region.values() if int(v[1]) <= i + 1) for i in range(len(PCT))}
+hz_cov_of_need = {}  # 그 글자 집합이 한자 토큰을 얼마나 덮는지
+for i in range(len(PCT)):
+    chars = {c for c, v in first_region.items() if int(v[1]) <= i + 1}
+    hz_cov_of_need[f'R{i+1}'] = round(100 * sum(hf[c] for c in chars) / htot, 2)
 import os; os.makedirs(out, exist_ok=True)
-for name, rows in (('word_freq.tsv', wrows), ('hanzi_freq.tsv', hrows)):
-    with open(f'{out}/{name}', 'w', encoding='utf-8') as f:
-        f.write('rank\tword\tfreq\tcum_pct\n')
-        for r in rows[:30000]: f.write(f'{r[0]}\t{r[1]}\t{r[2]}\t{r[3]:.4f}\n')
-summary = {'works': len(keep), 'works_by_kind': dict(kinds), 'lines': lines, 'tokens': wtot, 'vocab': len(wf), 'hanzi_tokens': htot,
-           'word_cliff': {f'R{i+1}': wres.get(p) for i, p in enumerate([55, 60, 70, 80])}, 'word_cov_2500': round(wrows[2499][3], 2) if len(wrows) >= 2500 else None,
-           'hanzi_cliff': {str(p): hres.get(p) for p in [50, 80, 90]},
-           'unit': 'jieba 정밀 모드 토큰 중 한자 포함 토큰(번체→간체 변환 뒤), 한자 = 그 토큰의 한자 글자'}
+with open(f'{out}/word_freq.tsv', 'w', encoding='utf-8') as f:
+    f.write('rank\tword\tfreq\tcum_pct\n')
+    for r in wrows[:30000]: f.write(f'{r[0]}\t{r[1]}\t{r[2]}\t{r[3]:.4f}\n')
+with open(f'{out}/hanzi_freq.tsv', 'w', encoding='utf-8') as f:
+    f.write('rank\tchar\tfreq\tcum_pct\tword_region\n')
+    for r in hrows: f.write(f'{r[0]}\t{r[1]}\t{r[2]}\t{r[3]:.4f}\t{first_region.get(r[1], "")}\n')
+summary = {'works': len(keep), 'works_by_kind': dict(kinds), 'lines': lines, 'tokens': wtot, 'vocab': len(wf), 'hanzi_tokens': htot, 'hanzi_types': len(hf),
+           'word_cliff': {f'R{i+1}': wres.get(p) for i, p in enumerate(PCT)}, 'word_cov_2500': round(wrows[2499][3], 2) if len(wrows) >= 2500 else None,
+           'hanzi_cliff_freq': {f'R{i+1}': hres.get(p) for i, p in enumerate(PCT)},
+           'hanzi_cliff_pct': {str(p): hres.get(p) for p in [50] + PCT + [90, 95, 98, 99]},
+           'hanzi_needed_for_word_region': need_hanzi, 'hanzi_needed_cov': hz_cov_of_need,
+           'hanzi_cov_at': {str(n): round(hrows[n-1][3], 2) for n in (209, 300, 500, 1000, 1500) if len(hrows) >= n},
+           'unit': 'jieba 정밀 모드 토큰 중 한자 포함 토큰(번체→간체 변환 뒤), 한자 = 그 토큰의 한자 글자(토큰 빈도만큼 셈)'}
 json.dump(summary, open(f'{out}/summary.json', 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
 print(json.dumps(summary, ensure_ascii=False, indent=1))

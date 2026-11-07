@@ -25,17 +25,17 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
   }
 
   Future<void> _load() async {
-    final raw = await rootBundle.loadString('assets/data/hanzi/cliff/hanzi_top500_final.txt');
+    final raw = await rootBundle.loadString('assets/data/hanzi/cliff/hanzi_cliff_zh.tsv');
     final cards = <_Card>[];
     for (final line in raw.split('\n').take(40)) {
       final trimmed = line.trim();
       if (trimmed.isEmpty) continue;
-      final parts = trimmed.split(RegExp(r'\s+'));
-      if (parts.length < 4) continue;
+      final parts = trimmed.split('\t');
+      if (parts.length < 5) continue;
       cards.add(_Card(
         rank: int.tryParse(parts[0]) ?? 0,
         char: parts[1],
-        hsk: parts[3],
+        hsk: parts[4],
       ));
     }
     await AudioService.instance.ensureLoaded();

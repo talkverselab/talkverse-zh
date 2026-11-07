@@ -10,8 +10,8 @@ import '../services/dialogue_service.dart';
 import '../services/review_cards.dart';
 import '../services/tts_service.dart';
 import '../widgets/chinese_decor.dart';
+import 'about_screen.dart';
 import 'chunk_search_screen.dart';
-import 'conversation_screen.dart';
 import 'custom_script_screen.dart';
 import 'dialogue_screen.dart';
 import 'episode_screen.dart';
@@ -28,7 +28,7 @@ import 'speaking_practice_screen.dart';
 import 'tone_matrix_screen.dart';
 import 'tone_practice_screen.dart';
 import 'topic_vocab_screen.dart';
-import 'update_screen.dart';
+import 'word_freq_screen.dart';
 
 /// 메인 — 일본어앱 구조(2026-11-02): 탭 4개 배우기 · 복습 · 탐색 · 나.
 /// 넓은 화면(isWide, 가로 720 이상): 앱바 아래 레일 + 왼쪽 칸(탭 목록) | 오른쪽 칸(연 화면, 자기 Navigator). 폰: 하단 탭.
@@ -49,7 +49,7 @@ class _MainScreenState extends State<MainScreen> {
         (Icons.menu_book_outlined, Icons.menu_book, tr('배우기')),
         (Icons.style_outlined, Icons.style, tr('복습')),
         (Icons.explore_outlined, Icons.explore, tr('탐색')),
-        (Icons.person_outline, Icons.person, tr('나')),
+        (Icons.person_outline, Icons.person, tr('프로필')),
       ];
 
   @override
@@ -101,6 +101,20 @@ class _MainScreenState extends State<MainScreen> {
               selectedLabelTextStyle: const TextStyle(color: AppColors.zhuHong, fontSize: AppFonts.rail, fontWeight: FontWeight.w600),
               unselectedLabelTextStyle: const TextStyle(color: AppColors.muted, fontSize: AppFonts.rail, fontWeight: FontWeight.w500),
               destinations: [for (final t in _tabs) NavigationRailDestination(icon: Icon(t.$1), selectedIcon: Icon(t.$2), label: Text(t.$3))],
+              // 레일 맨 아래 ⓘ 「앱 소개」(절벽구간 설명) — 2026-11-07
+              trailing: Expanded(
+                child: Align(
+                  alignment: Alignment.bottomCenter,
+                  child: Padding(
+                    padding: const EdgeInsets.only(bottom: 12),
+                    child: IconButton(
+                      tooltip: tr('앱 소개'),
+                      icon: const Icon(Icons.info_outline, color: AppColors.muted),
+                      onPressed: () => openPane(context, (_) => const AboutScreen()),
+                    ),
+                  ),
+                ),
+              ),
             ),
             SizedBox(width: left, child: stack),
             const VerticalDivider(width: 1, thickness: 1, color: AppColors.line),
@@ -231,29 +245,52 @@ class LearnTab extends StatelessWidget {
         ),
         ContinueReadingCard(level: DialogueService.instance.startLevel),
         const SizedBox(height: 10),
+        _section(tr('기초')),
         _BasicsRow(items: [
           ('声', AppColors.tone4, tr('성조연습'), () => openPane(context, (_) => const TonePracticeScreen())),
           ('四', AppColors.tone1, tr('4성 매트릭스'), () => openPane(context, (_) => const ToneMatrixScreen())),
           ('说', AppColors.zhuHongDeep, tr('말하기'), () => openPane(context, (_) => const SpeakingPracticeScreen())),
           ('字', AppColors.copper, tr('한자 배우기'), () => openPane(context, (_) => const HanziHubScreen(learn: true))),
-          ('青', AppColors.tan, tr('패밀리 한자'), () => openPane(context, (_) => const FamilyHanziScreen())),
-          ('法', AppColors.moLight, tr('문법'), () => openPane(context, (_) => const GrammarMenuScreen())),
         ]),
+        _section(tr('문법')),
+        _NavRow(
+          seal: '法',
+          sealColor: AppColors.moLight,
+          title: tr('문법'),
+          subtitle: tr('기능어 · 문형'),
+          onTap: () => openPane(context, (_) => const GrammarMenuScreen()),
+        ),
         _section(tr('회화')),
         const DialogueHomeScreen(embedded: true),
-        _section(tr('스토리')),
+        _section(tr('단어')),
+        _NavRow(
+          seal: '崖',
+          sealColor: AppColors.copper,
+          title: tr('절벽 단어 R1~R4'),
+          subtitle: tr('영화·드라마 대사 빈도 2,500어 · 20어 단원 · 회화 단어 포함'),
+          onTap: () => openPane(context, (_) => const WordFreqScreen()),
+        ),
+        _NavRow(
+          seal: 'HSK',
+          sealColor: AppColors.feiCui,
+          title: tr('HSK 단어'),
+          subtitle: 'HSK1 506 · HSK2 750 · HSK3 953 · HSK4 972 · HSK5 1,059',
+          onTap: () => openPane(context, (_) => TopicVocabScreen(title: tr('HSK 단어'), asset: 'assets/data/vocab/hsk_words.json')),
+        ),
+        _section(tr('에피소드')),
         _NavRow(
           seal: '会话',
           title: tr('스토리 에피소드'),
           subtitle: tr('L1~L4 단원 · 진행 기록'),
           onTap: () => openPane(context, (_) => const LearnScreen()),
         ),
+        _section(tr('참고')),
         _NavRow(
-          seal: '故事',
-          sealColor: AppColors.hanyu,
-          title: tr('회화 (스토리 모음)'),
-          subtitle: 'Conversation',
-          onTap: () => openPane(context, (_) => const ConversationScreen()),
+          seal: '青',
+          sealColor: AppColors.tan,
+          title: tr('패밀리 한자'),
+          subtitle: tr('소리 부품이 같은 한자 가족 · 병음·성조'),
+          onTap: () => openPane(context, (_) => const FamilyHanziScreen())
         ),
       ]),
     ]);
@@ -386,9 +423,9 @@ class ExploreTab extends StatelessWidget {
       _NavRow(
         seal: '词汇',
         sealColor: AppColors.feiCui,
-        title: tr('단어'),
-        subtitle: tr('주제별 · 핵심어휘 · HSK 1~5급'),
-        onTap: () => openPane(context, (_) => const TopicVocabScreen(includeCoreWordset: true, extraAssets: ['assets/data/vocab/hsk_words.json'])),
+        title: tr('주제별 단어'),
+        subtitle: tr('여행 · 생활 주제별'),
+        onTap: () => openPane(context, (_) => const TopicVocabScreen()),
       ),
       _NavRow(
         seal: '表达',
@@ -410,7 +447,7 @@ class ExploreTab extends StatelessWidget {
 
 // ────────── 나 ──────────
 
-/// 나: 진행 · 앱 업데이트 + 프로필(계정·성과·학습자 프로필·설정).
+/// 프로필: 진행 + 프로필(계정·성과·학습자 프로필·설정·정보). 「앱 업데이트」 타일은 2026-11-07 삭제(배포는 Zealot·TestFlight).
 class MeTab extends StatelessWidget {
   const MeTab({super.key});
 
@@ -423,13 +460,6 @@ class MeTab extends StatelessWidget {
         title: tr('진행'),
         subtitle: tr('학습 기록 · 달성률'),
         onTap: () => openPane(context, (_) => const ProgressScreen()),
-      ),
-      _NavRow(
-        seal: '新',
-        sealColor: AppColors.feiCui,
-        title: tr('앱 업데이트'),
-        subtitle: tr('새 빌드 확인 · 내려받아 설치'),
-        onTap: () => openPane(context, (_) => const UpdateScreen()),
       ),
       _section(tr('프로필 · 설정')),
       const ProfileScreen(embedded: true),

@@ -100,12 +100,18 @@ flutter:
     - assets/data/dialogues/R1/travel/
     - assets/data/dialogues/R1/culture/
     - assets/data/dialogues/R2/love/
+    - assets/data/dialogues/R2/friends/
+    - assets/data/dialogues/R2/life/
+    - assets/data/dialogues/R2/travel/
+    - assets/data/dialogues/R2/culture/
     - assets/data/dialogues/R3/life/
     - assets/data/dialogues/R3/love/
     - assets/data/dialogues/R4/life/
     - assets/data/dialogues/R4/love/
-    - assets/data/hanzi/cliff/hanzi_top500_final.txt
+    - assets/data/hanzi/cliff/hanzi_cliff_zh.tsv   # 한자 절벽 2,000자(DB 시딩) — tools/hanzi_cliff_build.py
+    - assets/data/hanzi/hanzi_cliff.json           # 「절벽 한자」 단원(R1~R5)
     - assets/data/freq/lang_zh_with_regions.csv
+    - assets/data/freq/conv_words_zh.json   # 절벽 단어 「회화 단어 포함」 — tools/freq/conv_words.py
     - assets/data/freq/FINAL_wordset_for_conversation_app.tsv
     - assets/audio/hanzi/
     - assets/data/grammar/lesson1.json

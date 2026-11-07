@@ -1,0 +1,128 @@
+{
+ "id": "r2_life_a1",
+ "region": "R2",
+ "island": "life",
+ "kind": "short",
+ "draft": true,
+ "purpose": [
+  "life"
+ ],
+ "domain": [
+  "life"
+ ],
+ "title": "에어컨 수리",
+ "emoji": "❄️",
+ "scene": "에어컨 고쳐 달라고 했더니 집주인이 아들 소개를 시작한다.",
+ "speakers": {
+  "A": "{name}",
+  "B": "房东"
+ },
+ "learner_gender": "F",
+ "register": "polite",
+ "twist": 6,
+ "twist_type": "chaos",
+ "flags": [],
+ "variant": "north",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "A",
+   "zh": "阿姨，空调不冷了。",
+   "pinyin": "ā yí, kōng tiáo bù lěng le.",
+   "rd": "아 이, 쿵 탸오 부 렁 러.",
+   "ko": "아주머니, 에어컨이 안 시원해요.",
+   "note": "",
+   "tags": []
+  },
+  {
+   "num": 2,
+   "speaker": "B",
+   "zh": "我看看，是不是没电了？",
+   "pinyin": "wǒ kàn kàn, shì bú shì méi diàn le?",
+   "rd": "워 칸 칸, 스 부 스 메이 뎬 러?",
+   "ko": "어디 보자, 전기가 안 들어오나?",
+   "note": "",
+   "tags": []
+  },
+  {
+   "num": 3,
+   "speaker": "A",
+   "zh": "有电，就是不冷。",
+   "pinyin": "yǒu diàn, jiù shì bù lěng.",
+   "rd": "유 뎬, 주 스 부 렁.",
+   "ko": "전기는 들어오는데 안 시원해요.",
+   "note": "",
+   "tags": []
+  },
+  {
+   "num": 4,
+   "speaker": "B",
+   "zh": "我叫我儿子来修。",
+   "pinyin": "wǒ jiào wǒ ér zi lái xiū.",
+   "rd": "워 자오 워 얼 쯔 라이 슈.",
+   "ko": "우리 아들 불러서 고칠게.",
+   "note": "",
+   "tags": []
+  },
+  {
+   "num": 5,
+   "speaker": "A",
+   "zh": "他是修空调的吗？",
+   "pinyin": "tā shì xiū kōng tiáo de ma?",
+   "rd": "타 스 슈 쿵 탸오 더 마?",
+   "ko": "아드님이 에어컨 고치는 분이세요?",
+   "note": "",
+   "tags": []
+  },
+  {
+   "num": 6,
+   "speaker": "B",
+   "zh": "不是，他是医生，没女朋友。",
+   "pinyin": "bú shì, tā shì yī shēng, méi nǚ péng yǒu.",
+   "rd": "부 스, 타 스 이 성, 메이 뉘 펑 유.",
+   "ko": "아니, 의사야, 여자 친구 없어.",
+   "note": "",
+   "tags": []
+  },
+  {
+   "num": 7,
+   "speaker": "A",
+   "zh": "阿姨，我是说空调。",
+   "pinyin": "ā yí, wǒ shì shuō kōng tiáo.",
+   "rd": "아 이, 워 스 숴 쿵 탸오.",
+   "ko": "아주머니, 저는 에어컨 얘기예요.",
+   "note": "",
+   "tags": []
+  },
+  {
+   "num": 8,
+   "speaker": "B",
+   "zh": "他下午到，你穿好看点。",
+   "pinyin": "tā xià wǔ dào, nǐ chuān hǎo kàn diǎn.",
+   "rd": "타 샤 우 다오, 니 촨 하오 칸 뎬.",
+   "ko": "오후에 와, 예쁘게 입어.",
+   "note": "",
+   "tags": []
+  },
+  {
+   "num": 9,
+   "speaker": "A",
+   "zh": "那空调呢？",
+   "pinyin": "nà kōng tiáo ne?",
+   "rd": "나 쿵 탸오 너?",
+   "ko": "그럼 에어컨은요?",
+   "note": "",
+   "tags": []
+  },
+  {
+   "num": 10,
+   "speaker": "B",
+   "zh": "空调明天再说。",
+   "pinyin": "kōng tiáo míng tiān zài shuō.",
+   "rd": "쿵 탸오 밍 톈 짜이 숴.",
+   "ko": "에어컨은 내일 얘기하고.",
+   "note": "",
+   "tags": []
+  }
+ ]
+}

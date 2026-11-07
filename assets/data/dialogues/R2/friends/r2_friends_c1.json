@@ -1,0 +1,128 @@
+{
+ "id": "r2_friends_c1",
+ "region": "R2",
+ "island": "friends",
+ "kind": "chat",
+ "draft": true,
+ "purpose": [
+  "friends"
+ ],
+ "domain": [
+  "friends"
+ ],
+ "title": "저녁 투표",
+ "emoji": "🗳️",
+ "scene": "단톡방에서 저녁 메뉴 투표를 시작했는데 친구가 엄마를 초대한다.",
+ "speakers": {
+  "A": "{name}",
+  "B": "浩然"
+ },
+ "learner_gender": "F",
+ "register": "chat",
+ "twist": 7,
+ "twist_type": "chaos",
+ "flags": [],
+ "variant": "north",
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "A",
+   "zh": "今晚吃什么？我发个投票。",
+   "pinyin": "jīn wǎn chī shén me? wǒ fā gè tóu piào.",
+   "rd": "진 완 츠 선 머? 워 파 거 터우 퍄오.",
+   "ko": "오늘 저녁 뭐 먹지? 투표 올릴게.",
+   "note": "",
+   "tags": []
+  },
+  {
+   "num": 2,
+   "speaker": "B",
+   "zh": "好，我选火锅。",
+   "pinyin": "hǎo, wǒ xuǎn huǒ guō.",
+   "rd": "하오, 워 쉬안 훠 궈.",
+   "ko": "좋아, 난 훠궈.",
+   "note": "",
+   "tags": []
+  },
+  {
+   "num": 3,
+   "speaker": "A",
+   "zh": "小丽选了烤肉。",
+   "pinyin": "xiǎo lì xuǎn le kǎo ròu.",
+   "rd": "샤오 리 쉬안 러 카오 러우.",
+   "ko": "샤오리는 고기 골랐어.",
+   "note": "",
+   "tags": []
+  },
+  {
+   "num": 4,
+   "speaker": "B",
+   "zh": "她每次都选肉。",
+   "pinyin": "tā měi cì dōu xuǎn ròu.",
+   "rd": "타 메이 츠 더우 쉬안 러우.",
+   "ko": "걔는 맨날 고기야.",
+   "note": "",
+   "tags": []
+  },
+  {
+   "num": 5,
+   "speaker": "A",
+   "zh": "现在两票对两票。",
+   "pinyin": "xiàn zài liǎng piào duì liǎng piào.",
+   "rd": "셴 짜이 량 퍄오 두이 량 퍄오.",
+   "ko": "지금 2대 2야.",
+   "note": "",
+   "tags": []
+  },
+  {
+   "num": 6,
+   "speaker": "B",
+   "zh": "那我再拉一个人进群。",
+   "pinyin": "nà wǒ zài lā yí gè rén jìn qún.",
+   "rd": "나 워 짜이 라 이 거 런 진 췬.",
+   "ko": "그럼 한 명 더 초대할게.",
+   "note": "",
+   "tags": []
+  },
+  {
+   "num": 7,
+   "speaker": "A",
+   "zh": "谁？你拉了你妈？",
+   "pinyin": "shuí? nǐ lā le nǐ mā?",
+   "rd": "수이? 니 라 러 니 마?",
+   "ko": "누구? 너 엄마를 초대했어?",
+   "note": "",
+   "tags": []
+  },
+  {
+   "num": 8,
+   "speaker": "B",
+   "zh": "我妈选了回家吃饭。",
+   "pinyin": "wǒ mā xuǎn le huí jiā chī fàn.",
+   "rd": "워 마 쉬안 러 후이 자 츠 판.",
+   "ko": "우리 엄마가 집밥 골랐어.",
+   "note": "",
+   "tags": []
+  },
+  {
+   "num": 9,
+   "speaker": "A",
+   "zh": "阿姨还问我几点到。",
+   "pinyin": "ā yí hái wèn wǒ jǐ diǎn dào.",
+   "rd": "아 이 하이 원 워 지 뎬 다오.",
+   "ko": "어머니가 나 몇 시에 오냐고 물으셔.",
+   "note": "",
+   "tags": []
+  },
+  {
+   "num": 10,
+   "speaker": "B",
+   "zh": "恭喜，今晚你来我家。",
+   "pinyin": "gōng xǐ, jīn wǎn nǐ lái wǒ jiā.",
+   "rd": "궁 시, 진 완 니 라이 워 자.",
+   "ko": "축하해, 오늘 저녁 우리 집이야.",
+   "note": "",
+   "tags": []
+  }
+ ]
+}
