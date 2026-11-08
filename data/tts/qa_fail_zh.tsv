@@ -1,100 +1,100 @@
-조각	유사도	사유
-r1_culture_a10/04_0_f.wav	0.0	
-r1_culture_a2/06_0_m.wav	0.0	
-r1_culture_a4/06_0_m.wav	0.8823529411764706	
-r1_culture_a7/04_0_c.wav	0.8571428571428571	
-r1_culture_c3/02_0_m.wav	0.89	
-r1_culture_c4/03_0_c.wav	0.8823529411764706	
-r1_culture_c5/05_0_c.wav	0.0	
-r1_culture_c6/05_0_c.wav	0.89	
-r1_friends_a10/06_0_f.wav	0.89	
-r1_friends_a11/04_0_f.wav	0.0	
-r1_friends_a12/05_0_f.wav	0.89	
-r1_friends_a2/06_0_c.wav	0.0	
-r1_friends_c4/02_0_f.wav	0.0	
-r1_friends_c4/08_0_m.wav	0.0	
-r1_friends_c6/08_0_m.wav	0.89	
-r1_life_a13/02_0_m.wav	0.89	
-r1_life_a2/05_0_c.wav	0.0	
-r1_life_a8/05_0_c.wav	0.89	
-r1_life_a9/08_0_f.wav	0.5714285714285714	
-r1_life_a9/08_0_m.wav	0.5714285714285714	
-r1_love_a10/04_0_f.wav	0.89	
-r1_love_a10/04_0_m.wav	0.0	
-r1_love_a11/06_0_f.wav	0.89	
-r1_love_a13/07_0_c.wav	0.0	
-r1_love_a8/05_0_c.wav	0.89	
-r1_love_a9/02_0_f.wav	0.0	
-r1_love_a9/06_0_f.wav	0.0	
-r1_love_c1/03_0_c.wav	0.0	
-r1_love_c4/01_0_c.wav	0.89	
-r1_survival_s2/04_0_f.wav	0.89	
-r1_survival_s2/04_0_m.wav	0.0	
-r1_travel_a11/06_0_m.wav	0.89	
-r1_travel_a11/08_0_m.wav	0.8421052631578947	
-r1_travel_a12/01_0_c.wav	0.0	
-r1_travel_a4/02_0_c.wav	0.8571428571428571	
-r1_travel_a4/03_0_f.wav	0.875	
-r1_travel_a4/03_0_m.wav	0.875	
-r1_travel_a4/05_0_m.wav	0.89	
-r1_travel_a4/06_1_c.wav	0.8484848484848485	
-r1_travel_a5/02_0_m.wav	0.896551724137931	
-r1_travel_a6/04_0_c.wav	0.89	
-r1_travel_c3/05_0_m.wav	0.89	
-r1_travel_c5/01_0_f.wav	0.85	
-r1_travel_c5/01_0_m.wav	0.85	
-r1_travel_c5/04_0_c.wav	0.0	
-r3_life_l2_d01_1/05_0_c.wav	0.89	
-r3_life_l2_d01_2/04_0_f.wav	0.89	
-r3_life_l2_d01_2/04_0_m.wav	0.89	
-r3_life_l2_d02_1/02_0_c.wav	0.89	
-r3_life_l2_d09_1/07_0_f.wav	0.89	
-r3_life_l2_d09_1/07_0_m.wav	0.89	
-r3_life_l2_d16_2/02_0_m.wav	0.89	
-r3_life_l2_d16_2/08_0_f.wav	0.89	
-r3_life_l2_d18_1/06_0_f.wav	0.89	
-r3_love_l1_ep4_3/03_0_c.wav	0.0	
-r4_life_l2_d04_1/04_0_c.wav	0.89	
-r4_life_l2_d05_2/01_0_c.wav	0.8947368421052632	
-r4_life_l2_d06_1/05_0_f.wav	0.89	
-r4_life_l2_d06_1/05_0_m.wav	0.89	
-r4_life_l2_d07_1/04_0_m.wav	0.36363636363636365	
-r4_life_l2_d07_1/05_0_c.wav	0.89	
-r4_life_l2_d11_1/06_0_m.wav	0.8235294117647058	
-r4_life_l2_d11_2/02_0_f.wav	0.89	
-r4_life_l2_d11_2/02_0_m.wav	0.89	
-r4_life_l2_d12_1/07_0_c.wav	0.89	
-r4_life_l2_d12_1/08_0_f.wav	0.89	
-r4_life_l2_d12_1/08_0_m.wav	0.89	
-r4_life_l2_d13_1/02_0_c.wav	0.8571428571428571	
-r4_life_l2_d14_1/07_0_c.wav	0.89	
-r4_life_l2_d14_1/08_0_m.wav	0.89	
-r4_life_l2_d15_2/01_0_f.wav	0.89	
-r4_life_l2_d15_2/01_0_m.wav	0.89	
-r4_life_l2_d17_1/08_0_m.wav	0.89	
-r4_life_l2_d17_2/02_0_m.wav	0.89	
-r4_life_l2_d18_2/01_0_m.wav	0.0	
-r4_life_l2_d18_2/04_0_m.wav	0.0	
-r4_life_l2_d19_1/02_0_c.wav	0.8571428571428571	
-r4_life_l2_d19_1/07_0_c.wav	0.0	
-r4_life_l2_d20_1/08_0_c.wav	0.89	
-r4_life_l2_d21_2/01_0_c.wav	0.89	
-r4_life_l2_d22_1/05_0_f.wav	0.89	
-r4_life_l2_d22_1/05_0_m.wav	0.0	
-r4_love_l1_ep1_1/02_0_f.wav	0.8333333333333334	
-r4_love_l1_ep1_1/03_0_c.wav	0.89	
-r4_love_l1_ep1_2/07_0_c.wav	0.8571428571428571	
-r4_love_l1_ep1_3/05_0_c.wav	0.0	
-r4_love_l1_ep1_5/07_0_f.wav	0.8666666666666667	
-r4_love_l1_ep3_3/05_0_m.wav	0.89	
-r4_love_l1_ep3_3/07_0_f.wav	0.89	
-r4_love_l1_ep3_3/07_0_m.wav	0.89	
-r4_love_l1_ep3_3/08_0_f.wav	0.89	
-r4_love_l1_ep4_4/02_0_m.wav	0.89	
-r4_love_l3_d07_1/03_0_c.wav	0.0	
-r4_love_l3_d07_1/06_0_f.wav	0.0	
-r4_love_l3_d07_1/06_0_m.wav	0.0	
-r4_love_l3_d08_2/07_0_c.wav	0.0	
-r4_love_l3_d09_1/02_0_c.wav	0.89	
-r4_love_l3_d10_1/07_0_c.wav	0.89	
-r4_love_l4_d08/06_0_m.wav	0.89	
+조각	본문	받아쓰기	판정(오독=실제로 다르게 읽음)	다른 음절
+r1_culture_a10/04_0_f.wav	懂了！咚！咚！	懂啦?懂!懂!	판정	
+r1_culture_a2/06_0_m.wav	啊！我吃到了……	啊?我知道了	오독	chi→zhi
+r1_culture_a4/06_0_m.wav	水也是烫的啊！	这水也是烫的	판정	
+r1_culture_a7/04_0_c.wav	钟？不行不行！	卓鸥不行不行	오독	zhong→zhuoou
+r1_culture_c3/02_0_m.wav	不用转啦。	不用转了	판정	
+r1_culture_c4/03_0_c.wav	好啊好啊，等着～	好啊好啊,等着等。	판정	
+r1_culture_c5/05_0_c.wav	不用都说啊，就是打招呼。	你不用多说啊就是打招呼	오독	dou→duo
+r1_culture_c6/05_0_c.wav	说「谢谢」就行啦。	说谢谢就行了	판정	
+r1_friends_a10/06_0_f.wav	想我？眼睛闭着啊。	想我?眼睛闭长	오독	zhea→zhang
+r1_friends_a11/04_0_f.wav	啊，机器自己加速了！	啊 机械自己加速了	오독	qi→xie
+r1_friends_a12/05_0_f.wav	两个人怎么挡？	两个人怎么倒	오독	dang→dao
+r1_friends_a2/06_0_c.wav	哈哈哈，蛋糕在你头上！	哈哈哈哈,蛋糕在你头上。	판정	
+r1_friends_c4/02_0_f.wav	啊？我没发啊！	啊?我没发呀?	판정	
+r1_friends_c4/08_0_m.wav	悦！！！我不活了！	我不活了	오독	yue→
+r1_friends_c6/08_0_m.wav	……删好友。	伤好友。	오독	shan→shang
+r1_life_a13/02_0_m.wav	不用，就三箱啦。	不用,就算香了。	오독	san→suan
+r1_life_a2/05_0_c.wav	哈哈哈，买了十个什么啊？	哈哈哈 买了十个什么	판정	
+r1_life_a8/05_0_c.wav	呃……昨天点的。	昨天点的	판정	e→
+r1_life_a9/08_0_f.wav	一百斤……	100斤	판정	
+r1_life_a9/08_0_m.wav	一百斤……	100斤	판정	
+r1_love_a10/04_0_f.wav	诶……小丽，你手好大。	哎小丽,你手好大。	판정	ei→ai
+r1_love_a10/04_0_m.wav	诶……小丽，你手好大。	小丽,你手好大。	판정	ei→
+r1_love_a11/06_0_f.wav	一、二、三……十个了！	一二三十个啦	판정	
+r1_love_a13/07_0_c.wav	不管了，	不管了给试吵	오독	→geishichao
+r1_love_a8/05_0_c.wav	想跟你一起嘛！	想跟你一起吗	판정	
+r1_love_a9/02_0_f.wav	啊？我？为什么啊？	啊?我?为什么?	판정	
+r1_love_a9/06_0_f.wav	宝……宝贝，	Bubble Bay	오독	baobaobei→
+r1_love_c1/03_0_c.wav	啊啊，发错了！	啊 发错了	판정	
+r1_love_c4/01_0_c.wav	现在发张自拍嘛～	现在发张自拍吗?	판정	
+r1_survival_s2/04_0_f.wav	要！啊不，不要辣！	要?啊不,不要啦。	판정	
+r1_survival_s2/04_0_m.wav	要！啊不，不要辣！	要,啊不,不要了。	판정	
+r1_travel_a11/06_0_m.wav	大叔，别数……	大叔,别说。	오독	shu→shuo
+r1_travel_a11/08_0_m.wav	……腿废了。	心腿废了	판정	
+r1_travel_a12/01_0_c.wav	喏，两张票。	呢? 两张票?	오독	nuo→ne
+r1_travel_a4/02_0_c.wav	五十块，便宜了。	50块便宜了	판정	
+r1_travel_a4/03_0_f.wav	太贵啦！	太贵了	판정	
+r1_travel_a4/03_0_m.wav	太贵啦！	太贵了	판정	
+r1_travel_a4/05_0_m.wav	啊不对不对！是四十！	不对不对是四十	판정	
+r1_travel_a4/06_1_c.wav	四十，再送一个！	40,再送一个。	판정	
+r1_travel_a5/02_0_m.wav	啊？我是十二号啊……	啊?我是12号啊?	판정	
+r1_travel_a6/04_0_c.wav	嗯……您是明天的。	您是明天的	판정	n→
+r1_travel_c3/05_0_m.wav	买了，二十个。	来了,二十个。	오독	mai→lai
+r1_travel_c5/01_0_f.wav	到啦到啦！你在哪儿呢？	到了到了 你在哪呢	판정	
+r1_travel_c5/01_0_m.wav	到啦到啦！你在哪儿呢？	到了到了你在哪呢	판정	
+r1_travel_c5/04_0_c.wav	你发的是19:00啊……	你发的是9.0啊	판정	shi→
+r3_life_l2_d01_1/05_0_c.wav	都八点半啦！	都八点半了	판정	
+r3_life_l2_d01_2/04_0_f.wav	这次真的不一样嘛。	这次真的不一样吗	판정	
+r3_life_l2_d01_2/04_0_m.wav	这次真的不一样嘛。	这次真的不一样吗?	판정	
+r3_life_l2_d02_1/02_0_c.wav	又加班？	又嫁吧	오독	ban→ba
+r3_life_l2_d09_1/07_0_f.wav	这次是真的嘛！	這次是真的嗎?	판정	
+r3_life_l2_d09_1/07_0_m.wav	这次是真的嘛！	这次是真的吗?	판정	
+r3_life_l2_d16_2/02_0_m.wav	你还是关心我的嘛。	你还是关心我的吗	판정	
+r3_life_l2_d16_2/08_0_f.wav	那当然，我先去洗澡了。	那当然,我先去洗澡啦	판정	
+r3_life_l2_d18_1/06_0_f.wav	啊！你看我手机了？	哦 你看我手机了	판정	
+r3_love_l1_ep4_3/03_0_c.wav	哼，现在说这个没用。	哼 现在说这个没用	판정	
+r4_life_l2_d04_1/04_0_c.wav	沙尘暴来啦。	沙尘暴来了	판정	
+r4_life_l2_d05_2/01_0_c.wav	好啦好啦，对不起嘛。	好了好了 对不起嘛	판정	
+r4_life_l2_d06_1/05_0_f.wav	那是因为下雨嘛。	那是因為…下雨嗎?	판정	
+r4_life_l2_d06_1/05_0_m.wav	那是因为下雨嘛。	那是因为下雨吗?	판정	
+r4_life_l2_d07_1/04_0_m.wav	八百？抢钱啊！	 W haen, I can't be a little wulz!	오독	babaiqiangqiana→
+r4_life_l2_d07_1/05_0_c.wav	这是名牌嘛。	这是名牌吗?	판정	
+r4_life_l2_d11_1/06_0_m.wav	……也忘了。	别忘了	오독	ye→bie
+r4_life_l2_d11_2/02_0_f.wav	吃的最重要嘛。	吃的最重要吗	판정	
+r4_life_l2_d11_2/02_0_m.wav	吃的最重要嘛。	吃的最重要吗	판정	
+r4_life_l2_d12_1/07_0_c.wav	五十张里没有一张能看的。	第五十章里没有一张能看的	판정	
+r4_life_l2_d12_1/08_0_f.wav	那你教教我怎么拍嘛。	那你教教我怎么拍吗?	판정	
+r4_life_l2_d12_1/08_0_m.wav	那你教教我怎么拍嘛。	那你教教我怎么拍吗?	판정	
+r4_life_l2_d13_1/02_0_c.wav	怎么啦？	怎么了?	판정	
+r4_life_l2_d14_1/07_0_c.wav	哈哈，早点出门不就行了嘛。	哈哈 早点出门不就行了吗	판정	
+r4_life_l2_d14_1/08_0_m.wav	早出门也一样挤。	早出门也一样解	오독	ji→jie
+r4_life_l2_d15_2/01_0_f.wav	你喝一口试试嘛。	你喝一口试试吗	판정	
+r4_life_l2_d15_2/01_0_m.wav	你喝一口试试嘛。	你喝一口试试吗	판정	
+r4_life_l2_d17_1/08_0_m.wav	就玩了一会儿嘛！	救完了一会儿吗	판정	
+r4_life_l2_d17_2/02_0_m.wav	因为我们队一直输啊。	因为我们队一直说	오독	shua→shuo
+r4_life_l2_d18_2/01_0_m.wav	惊喜没有了，都怪你。	清洗没有了,都怪你。	오독	jing→qing
+r4_life_l2_d18_2/04_0_m.wav	不告诉你，这个是秘密。	我不告诉你,这个是秘密。	판정	
+r4_life_l2_d19_1/02_0_c.wav	怎么啦？	怎么了?	판정	
+r4_life_l2_d19_1/07_0_c.wav	五十个？哈哈哈。	五十个哈哈哈哈	판정	
+r4_life_l2_d20_1/08_0_c.wav	运动对身体好嘛。	运动对身体好吗?	판정	
+r4_life_l2_d21_2/01_0_c.wav	这次不一样嘛！	这子不一样吗?	오독	ci→zi
+r4_life_l2_d22_1/05_0_f.wav	呃……小丽，快来一下！	小力,快来一下。	판정	e→
+r4_life_l2_d22_1/05_0_m.wav	呃……小丽，快来一下！	小丽,快来一下。	판정	e→
+r4_love_l1_ep1_1/02_0_f.wav	我叫 Anna，你呢？	我叫安娜,你呢?	판정	→anna
+r4_love_l1_ep1_1/03_0_c.wav	我叫小丽，也可以叫我 Lily。	我叫小莉也可以叫我莉莉	판정	→lili
+r4_love_l1_ep1_2/07_0_c.wav	对哦，我忘了，哈哈。	对哦 我忘了	판정	
+r4_love_l1_ep1_3/05_0_c.wav	看了一个爱情片，有点儿老。	看了一个爱情片有点老	판정	
+r4_love_l1_ep1_5/07_0_f.wav	那周六见，Anna。	那周六见 安娜	판정	→anna
+r4_love_l1_ep3_3/05_0_m.wav	啊，不是不是… 也是，嘿嘿。	哦,不是不是也是,嘿嘿。	판정	
+r4_love_l1_ep3_3/07_0_f.wav	是太阳太大了嘛！	是太阳太大了吗?	판정	
+r4_love_l1_ep3_3/07_0_m.wav	是太阳太大了嘛！	是太阳太大了吗?	판정	
+r4_love_l1_ep3_3/08_0_f.wav	现在是晚上哦，Anna。	现在是晚上哦安娜	판정	→anna
+r4_love_l1_ep4_4/02_0_m.wav	你就是我的药嘛。	你就是我的药吗?	판정	
+r4_love_l3_d07_1/03_0_c.wav	好啊！去哪儿拍比较好呢？	好啊 去哪拍比较好呢	판정	
+r4_love_l3_d07_1/06_0_f.wav	那我们早点儿出发就行了。	那我们早点出发就行了	판정	
+r4_love_l3_d07_1/06_0_m.wav	那我们早点儿出发就行了。	那我们早点出发就行了	판정	
+r4_love_l3_d08_2/07_0_c.wav	哈哈，你说得跟小孩儿似的。	哈哈,你说的跟小孩似的	판정	
+r4_love_l3_d09_1/02_0_c.wav	我最喜欢画画儿。	我最喜欢画画。	판정	
+r4_love_l3_d10_1/07_0_c.wav	我常常在河边画画儿。	我常常在河边画画。	판정	
+r4_love_l4_d08/06_0_m.wav	刚才有点，现在不了。	刚才有点,现在不懒	오독	liao→lan
