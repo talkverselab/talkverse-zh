@@ -253,10 +253,6 @@ class _SoundSheetState extends State<_SoundSheet> {
                   borderRadius: BorderRadius.circular(8),
                   child: Container(color: Colors.white, padding: const EdgeInsets.all(8), child: Image.asset('assets/images/ipa/places_of_articulation.png', fit: BoxFit.contain)),
                 ),
-                Padding(
-                  padding: const EdgeInsets.only(top: 4),
-                  child: Text(tr('그림: Wikimedia Commons IPA 자료 (CC BY-SA) — 프로필 · 정보 · 라이선스'), style: const TextStyle(fontSize: 9, color: AppColors.muted)),
-                ),
               ],
             ],
             const SizedBox(height: 14),
