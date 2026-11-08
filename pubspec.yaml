@@ -83,6 +83,7 @@ flutter:
         - asset: assets/fonts/NotoSans.ttf
 
   assets:
+    - assets/images/ipa/places_of_articulation.png   # 병음 발음 시트 조음 위치 그림(Wikimedia Commons, CC BY-SA)
     - assets/fonts/licenses/   # 글꼴 OFL 전문(프로필 · 정보 → 글꼴 라이선스)
     - assets/data/audio_manifest.json
     - assets/data/version.json   # DB 업데이트 번호(db) — 데이터 바꾸면 이 번호만 올린다

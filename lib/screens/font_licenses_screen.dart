@@ -30,6 +30,12 @@ class FontLicensesScreen extends StatelessWidget {
           children: [
             Text(tr('이 앱의 글꼴은 모두 SIL Open Font License 1.1 로 배포됩니다. 눌러서 전문을 펼치세요.'), style: AppFonts.uiText(size: 13)),
             const SizedBox(height: 8),
+            // 그림 자료(2026-11-08) — 병음 발음 시트의 조음 위치 그림
+            ListTile(
+              contentPadding: const EdgeInsets.symmetric(horizontal: 4),
+              title: Text(tr('조음 위치 그림'), style: AppFonts.uiText(size: 14.5, weight: FontWeight.w600, color: AppColors.mo)),
+              subtitle: Text(tr('Wikimedia Commons IPA 자료 · CC BY-SA — 병음과 발음 화면의 자음 조음 위치 그림'), style: AppFonts.captionText()),
+            ),
             for (final (name, use, path) in fonts)
               Theme(
                 data: Theme.of(context).copyWith(dividerColor: Colors.transparent),
