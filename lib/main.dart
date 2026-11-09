@@ -35,7 +35,15 @@ void main() async {
   await AchievementService.instance.load();
   await Entitlement.load();
   Account.load(); // Talkverse ID(선택) — 저장된 로그인 표시 + 뒤에서 토큰 갱신(기다리지 않음)
-  unawaited(Purchase.configure({Entitlement.lang: ('com.talkverse.chineseUniverse.lifetime', 'lang_zh')}));
+  // 가격·상품 ID = Talkverse 공통(2026-11-09 사용자 최종 확정, ~/talkverse/PRICING.md — 앱 정가/할인가 30%). 스토어 등록은 사용자(docs/STORE_PRODUCTS.md).
+  unawaited(Purchase.configure(Entitlement.lang, const [
+    Plan('lang_zh_1m', 1, 3900, listKrw: 5500),
+    Plan('lang_zh_3m', 3, 9000, listKrw: 12900),
+    Plan('lang_zh_1y', 12, 19900, listKrw: 28500),
+    Plan('lang_zh_life', 0, 49000, listKrw: 69900),
+    Plan('all_1y', 12, 79000, listKrw: 112900, bundle: true),
+    Plan('all_life', 0, 329000, listKrw: 469000, bundle: true),
+  ]));
   // 그림(장면 컷·단어 그림) 기기 내려받기: 버전이 다르면 로딩 화면에서 받고 시작(사용자 지시 2026-11-04). 태블릿(짧은 변 600 이상)은 큰 컷.
   final needSync = await ContentSync.instance.init(large: _isLargeScreen(), female: LearnerPrefs.isFemale);
   runApp(ChineseUniverseApp(syncFirst: needSync));

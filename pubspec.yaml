@@ -40,6 +40,7 @@ dependencies:
   crypto: ^3.0.8
   in_app_purchase: ^3.3.1
   in_app_purchase_storekit: ^0.4.16
+  url_launcher: ^6.3.3   # 이용약관·개인정보처리방침 링크(출시 점검 2026-11-09)
 
 dev_dependencies:
   flutter_test:

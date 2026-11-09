@@ -11,7 +11,9 @@ import '../core/theme.dart';
 import '../widgets/chinese_decor.dart';
 import '../core/l10n.dart';
 import '../data/account.dart';
+import '../data/entitlement.dart';
 import '../data/purchase.dart';
+import '../widgets/legal_links.dart';
 import '../services/ko_reading.dart';
 import '../services/learner_prefs.dart';
 import '../widgets/achievement_desk.dart';
@@ -174,6 +176,8 @@ class _ProfileScreenState extends State<ProfileScreen> {
         items: [
           _SettingItem(icon: Icons.menu_book_outlined, title: tr('앱 소개'), subtitle: tr('절벽구간 — 단어·한자 기준과 산출 방식'), onTap: () => openPane(context, (_) => const AboutScreen())),
           _SettingItem(icon: Icons.info_outline, title: tr('앱 버전'), subtitle: _version),
+          _SettingItem(icon: Icons.description_outlined, title: tr('이용약관'), subtitle: 'talkverse.uk/terms', onTap: () => Legal.open(Legal.terms)),
+          _SettingItem(icon: Icons.privacy_tip_outlined, title: tr('개인정보처리방침'), subtitle: 'talkverse.uk/talkverse/zh/privacy', onTap: () => Legal.open(Legal.privacy)),
           _SettingItem(icon: Icons.copyright, title: tr('저작권'), subtitle: tr('중국어유니버스 · 2026')),
           _SettingItem(
             icon: Icons.font_download_outlined,
@@ -232,8 +236,8 @@ class _AccountSection extends StatelessWidget {
             ],
             _SettingItem(
               icon: Icons.workspace_premium_outlined,
-              title: tr('평생 이용권'),
-              subtitle: tr('한 번 결제 · 구독 아님 · 평생'),
+              title: tr('이용권'),
+              subtitle: Entitlement.premium ? tr('보유 중') : tr('1개월·3개월·1년·평생 · 구매 또는 이전 구매 복원'),
               onTap: () => PaywallScreen.show(context),
             ),
             _SettingItem(
@@ -243,7 +247,7 @@ class _AccountSection extends StatelessWidget {
                 'pending' => tr('확인 중…'),
                 'restored' => tr('복원했습니다'),
                 'nothing' => tr('복원할 구매가 없습니다'),
-                _ => tr('이전에 산 평생 이용권을 이 기기에서 다시 엽니다'),
+                _ => tr('이전에 산 이용권을 이 기기에서 다시 엽니다'),
               },
               onTap: Purchase.restore,
             ),
