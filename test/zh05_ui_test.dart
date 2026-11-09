@@ -7,6 +7,7 @@ import 'package:chinese_universe/core/theme.dart';
 import 'package:chinese_universe/screens/font_licenses_screen.dart';
 import 'package:chinese_universe/services/dialogue_service.dart';
 import 'package:chinese_universe/services/hanzi_family.dart';
+import 'package:chinese_universe/services/ko_reading.dart';
 import 'package:chinese_universe/services/pinyin_hangul.dart';
 import 'package:chinese_universe/services/shared_hanja_service.dart';
 import 'package:chinese_universe/widgets/episode_play_pane.dart';
@@ -130,6 +131,8 @@ void main() {
       tester.view.devicePixelRatio = 3;
       addTearDown(tester.view.reset);
       final d = _ep();
+      KoReadingPrefs.show.value = true; // 읽기 보조는 기본 꺼짐(2026-11-07 §6) — 이 시험은 켠 상태에서 본다
+      addTearDown(() => KoReadingPrefs.show.value = false);
       await tester.pumpWidget(MaterialApp(home: Scaffold(body: EpisodePlayPane(dialogue: d, initialIndex: 1, autoPlay: false))));
       await tester.pump();
 
