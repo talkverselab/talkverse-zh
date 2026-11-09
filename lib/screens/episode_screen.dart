@@ -2,6 +2,7 @@ import 'dart:convert';
 
 import 'package:drift/drift.dart' hide Column;
 import 'package:flutter/material.dart';
+import '../core/embed_env.dart';
 import 'package:flutter/services.dart' show rootBundle;
 
 import '../core/theme.dart';
@@ -49,9 +50,9 @@ class EpisodeCatalog {
     if (_loaded) return;
     for (final level in levels) {
       try {
-        final raw = await rootBundle.loadString(
+        final raw = await rootBundle.loadString(assetPath(
           'assets/data/dialogues/north/$level.json',
-        );
+        ));
         final data = json.decode(raw) as Map<String, dynamic>;
         final units =
             (data['episodes'] as List?) ?? (data['dialogues'] as List?) ?? [];

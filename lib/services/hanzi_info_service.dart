@@ -1,4 +1,5 @@
 import 'dart:convert';
+import '../core/embed_env.dart';
 import 'package:flutter/services.dart' show rootBundle;
 
 import 'pinyin_util.dart';
@@ -81,7 +82,7 @@ class HanziInfoService {
 
   Future<void> ensureLoaded() async {
     if (_loaded) return;
-    final raw = await rootBundle.loadString('assets/data/grammar/hanzi_info.json');
+    final raw = await rootBundle.loadString(assetPath('assets/data/grammar/hanzi_info.json'));
     final data = json.decode(raw) as Map<String, dynamic>;
     final m = <String, HanziInfo>{};
     final family = <String, List<String>>{};
@@ -105,7 +106,7 @@ class HanziInfoService {
     // HSK1-5 발음부 확장 데이터 병합 (큐레이션 우선)
     try {
       final extRaw =
-          await rootBundle.loadString('assets/data/hanzi/phonetic_ext.json');
+          await rootBundle.loadString(assetPath('assets/data/hanzi/phonetic_ext.json'));
       final ext = json.decode(extRaw) as Map<String, dynamic>;
       final chars = (ext['chars'] as Map?)?.cast<String, dynamic>() ?? {};
       chars.forEach((ch, v) {
@@ -145,7 +146,7 @@ class HanziInfoService {
     // 한국 훈음 (HSK1-5 전수)
     try {
       final koRaw =
-          await rootBundle.loadString('assets/data/hanzi/hanzi_ko.json');
+          await rootBundle.loadString(assetPath('assets/data/hanzi/hanzi_ko.json'));
       final ko = json.decode(koRaw) as Map<String, dynamic>;
       ko.forEach((ch, v) {
         if (ch.startsWith('_') || v is! String || v.isEmpty) return;

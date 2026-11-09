@@ -1,7 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:shared_preferences/shared_preferences.dart';
+import '../core/prefs.dart';
 
 import '../core/theme.dart';
 import '../data/db/app_database.dart';
@@ -43,7 +43,7 @@ class _SpeakingPracticeScreenState extends State<SpeakingPracticeScreen> {
   bool _anyLearned = false;
   int _stage = 0;
   List<_EpisodeEntry> _entries = [];
-  SharedPreferences? _prefs;
+  Prefs? _prefs;
 
   @override
   void initState() {
@@ -52,7 +52,7 @@ class _SpeakingPracticeScreenState extends State<SpeakingPracticeScreen> {
   }
 
   Future<void> _load() async {
-    _prefs = await SharedPreferences.getInstance();
+    _prefs = await Prefs.getInstance();
     _stage = (_prefs!.getInt(_kStagePref) ?? 0).clamp(0, _kLimits.length - 1);
     await EpisodeCatalog.instance.ensureLoaded();
     final turns = await appDb.select(appDb.turns).get();
@@ -278,7 +278,7 @@ class SpeakingTestScreen extends StatefulWidget {
 
 class _SpeakingTestScreenState extends State<SpeakingTestScreen>
     with SingleTickerProviderStateMixin {
-  SharedPreferences? _prefs;
+  Prefs? _prefs;
   bool _showHint = true;
   bool _sttReady = true;
 
@@ -308,7 +308,7 @@ class _SpeakingTestScreenState extends State<SpeakingTestScreen>
   }
 
   Future<void> _init() async {
-    _prefs = await SharedPreferences.getInstance();
+    _prefs = await Prefs.getInstance();
     _showHint = _prefs!.getBool(_kShowHint) ?? true;
     _sttReady = await SpeechService.instance.init();
     if (!mounted) return;

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../embed.dart' show switchLanguage;
 import 'package:package_info_plus/package_info_plus.dart';
 
 import 'font_licenses_screen.dart';
@@ -152,6 +153,9 @@ class _ProfileScreenState extends State<ProfileScreen> {
       const SizedBox(height: 8),
       _SettingsGroup(
         items: [
+          // 통합 앱(Talkverse)에서만: 다른 언어 앱으로(2026-11-09)
+          if (switchLanguage != null)
+            _SettingItem(icon: Icons.swap_horiz, title: tr('다른 언어 배우기'), subtitle: tr('Talkverse 의 다른 언어로 이동'), onTap: switchLanguage!),
           _SettingItem(
             icon: Icons.language,
             title: tr('언어 / Language'),

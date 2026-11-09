@@ -1,9 +1,10 @@
 import 'dart:convert';
+import '../../core/embed_env.dart';
 
 import 'package:csv/csv.dart';
 import 'package:drift/drift.dart';
 import 'package:flutter/services.dart' show rootBundle;
-import 'package:shared_preferences/shared_preferences.dart';
+import '../../core/prefs.dart';
 
 import '../../services/hanzi_cliff.dart';
 import 'app_database.dart';
@@ -17,7 +18,7 @@ class SeedLoader {
   static const _kDbVersion = 'db_version';
 
   Future<void> seedIfNeeded() async {
-    final prefs = await SharedPreferences.getInstance();
+    final prefs = await Prefs.getInstance();
     final bundled = await bundledVersion();
     if (prefs.getInt(_kDbVersion) == bundled) return;
 
@@ -31,7 +32,7 @@ class SeedLoader {
 
   static Future<int> bundledVersion() async {
     try {
-      final j = json.decode(await rootBundle.loadString('assets/data/version.json')) as Map<String, dynamic>;
+      final j = json.decode(await rootBundle.loadString(assetPath('assets/data/version.json'))) as Map<String, dynamic>;
       return (j['db'] as num).toInt();
     } catch (_) {
       return 0;
@@ -40,7 +41,7 @@ class SeedLoader {
 
   /// 한자 2,000자 — 절벽 재산출표(`tools/hanzi_cliff_build.py`): 순위·글자·빈도·누적%·HSK. phase = 절벽 구간(HanziCliff).
   Future<void> _seedHanzi() async {
-    final raw = await rootBundle.loadString('assets/data/hanzi/cliff/hanzi_cliff_zh.tsv');
+    final raw = await rootBundle.loadString(assetPath('assets/data/hanzi/cliff/hanzi_cliff_zh.tsv'));
     final batch = <Insertable<HanziRow>>[];
     for (final line in raw.split('\n')) {
       final parts = line.trim().split('\t');
@@ -59,7 +60,7 @@ class SeedLoader {
   }
 
   Future<void> _seedWords() async {
-    final raw = await rootBundle.loadString('assets/data/freq/lang_zh_with_regions.csv');
+    final raw = await rootBundle.loadString(assetPath('assets/data/freq/lang_zh_with_regions.csv'));
     final rows = const CsvToListConverter(eol: '\n').convert(raw);
     final batch = <Insertable<WordRow>>[];
     for (var i = 1; i < rows.length; i++) {

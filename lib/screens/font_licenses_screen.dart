@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../core/embed_env.dart';
 import 'package:flutter/services.dart' show rootBundle;
 
 import '../core/l10n.dart';
@@ -40,7 +41,7 @@ class FontLicensesScreen extends StatelessWidget {
                   childrenPadding: const EdgeInsets.fromLTRB(4, 0, 4, 16),
                   children: [
                     FutureBuilder<String>(
-                      future: rootBundle.loadString(path),
+                      future: rootBundle.loadString(assetPath(path)),
                       builder: (context, snap) => SelectableText(
                         snap.data ?? (snap.hasError ? tr('라이선스 파일을 읽지 못했어요.') : '…'),
                         style: AppFonts.uiText(size: 11.5, height: 1.5),

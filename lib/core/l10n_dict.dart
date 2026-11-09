@@ -405,6 +405,8 @@ const Map<String, String> kDictEn = {
   '보유 중': 'Owned',
   '이전에 산 이용권을 이 기기에서 다시 엽니다': 'Unlock a pass you bought before on this device',
   '지금 있는 병음·한자·단어·회화·복습은 계속 무료': 'Current pinyin, characters, words, dialogues and review stay free',
+  '다른 언어 배우기': 'Learn another language',
+  'Talkverse 의 다른 언어로 이동': 'Switch to another Talkverse language',
 };
 
 const Map<String, String> kDictJa = {
@@ -796,6 +798,8 @@ const Map<String, String> kDictJa = {
   '보유 중': '所有中',
   '이전에 산 이용권을 이 기기에서 다시 엽니다': '以前購入した利用券をこの端末で再度有効にします',
   '지금 있는 병음·한자·단어·회화·복습은 계속 무료': '今あるピンイン・漢字・単語・会話・復習は引き続き無料',
+  '다른 언어 배우기': '他の言語を学ぶ',
+  'Talkverse 의 다른 언어로 이동': 'Talkverse の他の言語へ',
 };
 
 const Map<String, String> kDictZh = {
@@ -1187,4 +1191,6 @@ const Map<String, String> kDictZh = {
   '보유 중': '已拥有',
   '이전에 산 이용권을 이 기기에서 다시 엽니다': '在此设备上恢复以前购买的会员',
   '지금 있는 병음·한자·단어·회화·복습은 계속 무료': '现有的拼音·汉字·单词·会话·复习继续免费',
+  '다른 언어 배우기': '学习其他语言',
+  'Talkverse 의 다른 언어로 이동': '切换到 Talkverse 的其他语言',
 };

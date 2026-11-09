@@ -3,7 +3,7 @@ import 'dart:convert';
 import 'dart:io';
 
 import 'package:flutter/foundation.dart' show debugPrint;
-import 'package:shared_preferences/shared_preferences.dart';
+import '../core/prefs.dart';
 
 import 'content_sync.dart';
 import 'learner_prefs.dart';
@@ -14,7 +14,7 @@ import 'learner_prefs.dart';
 /// - 목록 `GET https://auth.talkverse.uk/art/zh/manifest?level=R1` (level 생략 = 전체, word = 중국어 간체 단어)
 ///   → `{lang, level, count, base, items:[{id, rank, level, word, reading, ko, en, pos, key_1024, key_512}]}`
 /// - 그림 = `base + key` (512·1024 webp, 1년 캐시). 한·중·일은 같은 그림을 쓰고 앱이 톤만 바꾼다.
-/// 매니페스트는 SharedPreferences 에 하루 캐시하고, 없거나 비어 있으면(2026-11-02 현재 zh 는 0개) 그림 없이 카드가 그대로 나온다.
+/// 매니페스트는 Prefs 에 하루 캐시하고, 없거나 비어 있으면(2026-11-02 현재 zh 는 0개) 그림 없이 카드가 그대로 나온다.
 class ArtService {
   ArtService._();
   static final ArtService instance = ArtService._();
@@ -82,7 +82,7 @@ class ArtService {
   Future<void> _ensure() => _loading ??= _load();
 
   Future<void> _load() async {
-    final prefs = await SharedPreferences.getInstance();
+    final prefs = await Prefs.getInstance();
     final at = prefs.getInt(_prefAt) ?? 0;
     final cached = prefs.getString(_prefKey);
     final fresh = DateTime.now().millisecondsSinceEpoch - at < _ttl.inMilliseconds;
@@ -179,7 +179,7 @@ class SceneArtService {
   }
 
   Future<void> _load() async {
-    final prefs = await SharedPreferences.getInstance();
+    final prefs = await Prefs.getInstance();
     final at = prefs.getInt(_prefAt) ?? 0;
     final cached = prefs.getString(_prefKey);
     final fresh = DateTime.now().millisecondsSinceEpoch - at < _ttl.inMilliseconds;

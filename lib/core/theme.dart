@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'embed_env.dart';
 
 /// 컬러 팔레트 — talkverse.uk 톤(2026-10-26).
 ///
@@ -65,11 +66,12 @@ const List<BoxShadow> kCardShadow = [
 /// 테마 `fontFamilyFallback` 이 NotoSansSC 라 Pretendard 글자 속 중국어도 시스템 글꼴로 새지 않는다.
 class AppFonts {
   AppFonts._();
-  static const ui = 'Pretendard';
-  static const zh = 'NotoSansSC';
-  static const glyph = 'LXGWWenKai';
-  static const pinyin = 'NotoSans';
-  static const List<String> fallback = [zh];
+  // 통합 앱(패키지)에서는 글꼴 이름에 packages/chinese_universe/ 가 붙는다(fontName, 2026-11-09)
+  static String get ui => fontName('Pretendard');
+  static String get zh => fontName('NotoSansSC');
+  static String get glyph => fontName('LXGWWenKai');
+  static String get pinyin => fontName('NotoSans');
+  static List<String> get fallback => [zh];
 
   // 크기 표(논리 픽셀)
   static const double glyphBig = 60; // 팝업·한자 배우기 큰 자형
@@ -86,7 +88,7 @@ class AppFonts {
 
   /// 중국어 본문(대사·단어).
   static TextStyle zhText({double size = line, FontWeight weight = FontWeight.w500, Color color = AppColors.mo, double height = 1.45}) =>
-      TextStyle(fontFamily: zh, fontFamilyFallback: const [ui], fontSize: size, fontWeight: weight, fontVariations: _w(weight), color: color, height: height);
+      TextStyle(fontFamily: zh, fontFamilyFallback: [ui], fontSize: size, fontWeight: weight, fontVariations: _w(weight), color: color, height: height);
 
   /// 큰 한자 자형(Medium 한 벌).
   static TextStyle glyphText({double size = glyphBig, Color color = AppColors.mo, double height = 1.1}) =>
@@ -151,7 +153,7 @@ class AppTheme {
         bodyColor: AppColors.moLight,
         displayColor: AppColors.mo,
       ),
-      appBarTheme: const AppBarTheme(
+      appBarTheme: AppBarTheme(
         centerTitle: true,
         elevation: 0,
         scrolledUnderElevation: 0,

@@ -121,7 +121,7 @@ class _LemmaTextState extends State<LemmaText> {
         ? given
         : given.copyWith(
             fontFamily: AppFonts.zh,
-            fontFamilyFallback: const [AppFonts.ui],
+            fontFamilyFallback: [AppFonts.ui],
             fontVariations: [FontVariation.weight((given.fontWeight ?? FontWeight.w400).value.toDouble())],
           );
     final segs = _split();

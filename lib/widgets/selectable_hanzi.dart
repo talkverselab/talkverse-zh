@@ -83,7 +83,7 @@ class _SelectableHanziTextState extends State<SelectableHanziText> {
         ? given
         : given.copyWith(
             fontFamily: AppFonts.zh,
-            fontFamilyFallback: const [AppFonts.ui],
+            fontFamilyFallback: [AppFonts.ui],
             fontVariations: [FontVariation.weight((given.fontWeight ?? FontWeight.w400).value.toDouble())],
           );
 

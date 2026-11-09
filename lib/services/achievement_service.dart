@@ -1,8 +1,9 @@
 import 'dart:convert';
+import '../core/embed_env.dart';
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart' show rootBundle;
-import 'package:shared_preferences/shared_preferences.dart';
+import '../core/prefs.dart';
 
 import '../review/review_service.dart';
 import 'dialogue_service.dart';
@@ -11,7 +12,7 @@ import 'review_cards.dart';
 /// 성과 기록·집계 — 일본어앱 `achievement_service.dart` 를 옮김(시안 02 §5, 2026-11-02).
 ///
 /// **센다**: 편 완주(「모든 문장 듣기」 끝까지) · 라이트너 단계/졸업(ReviewService) · 핵심 표현(그림 카드 맞음/틀림) · 한자 팝업으로 본 글자 수 · 빈도 커버율.
-/// **안 센다**: 앱 오픈·스트릭·포인트·순위. 저장은 SharedPreferences `achievements_v1`(JSON 하나).
+/// **안 센다**: 앱 오픈·스트릭·포인트·순위. 저장은 Prefs `achievements_v1`(JSON 하나).
 class AchievementService {
   AchievementService._();
   static final AchievementService instance = AchievementService._();
@@ -31,7 +32,7 @@ class AchievementService {
   Future<void> load() async {
     if (_loaded) return;
     try {
-      final raw = (await SharedPreferences.getInstance()).getString(_key);
+      final raw = (await Prefs.getInstance()).getString(_key);
       if (raw != null) {
         final j = json.decode(raw) as Map<String, dynamic>;
         (j['episodes'] as Map<String, dynamic>? ?? {}).forEach((k, v) => _episodes[k] = v.toString());
@@ -48,7 +49,7 @@ class AchievementService {
   Future<void> _save() async {
     changes.value++;
     final data = json.encode({'episodes': _episodes, 'kanji': _kanji.toList(), 'cards': _cards, 'daily': _daily});
-    (await SharedPreferences.getInstance()).setString(_key, data);
+    (await Prefs.getInstance()).setString(_key, data);
   }
 
   void _bump(String what, [int n = 1]) {
@@ -158,7 +159,7 @@ class AchievementService {
     if (_freq != null) return;
     final freq = <String, double>{};
     try {
-      final raw = await rootBundle.loadString('assets/data/freq/lang_zh_with_regions.csv');
+      final raw = await rootBundle.loadString(assetPath('assets/data/freq/lang_zh_with_regions.csv'));
       for (final line in raw.split('\n').skip(1)) {
         final p = line.trim().split(',');
         if (p.length < 4) continue;

@@ -1,8 +1,9 @@
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
+import '../core/embed_env.dart';
 import 'package:flutter/services.dart' show rootBundle;
-import 'package:shared_preferences/shared_preferences.dart';
+import '../core/prefs.dart';
 
 import '../core/theme.dart';
 import '../services/lexicon_service.dart';
@@ -17,7 +18,7 @@ import '../core/l10n.dart';
 /// 외우기 모드: 전체 보기 / 한자·독음 가림 / 뜻 가림.
 enum StudyMode { all, hideZh, hideKo }
 
-/// 외운 단어 저장소 (zh 기준, SharedPreferences 영구 저장).
+/// 외운 단어 저장소 (zh 기준, Prefs 영구 저장).
 class MemorizedStore {
   MemorizedStore._();
   static const _key = 'memorized_words';
@@ -27,7 +28,7 @@ class MemorizedStore {
 
   static Future<void> load() async {
     if (_loaded) return;
-    final p = await SharedPreferences.getInstance();
+    final p = await Prefs.getInstance();
     _set.addAll(p.getStringList(_key) ?? const []);
     _loaded = true;
     version.value++;
@@ -38,7 +39,7 @@ class MemorizedStore {
   static Future<void> toggle(String zh) async {
     if (!_set.remove(zh)) _set.add(zh);
     version.value++;
-    final p = await SharedPreferences.getInstance();
+    final p = await Prefs.getInstance();
     await p.setStringList(_key, _set.toList());
   }
 }
@@ -79,7 +80,7 @@ class VocabCatalog {
 
   Future<void> ensureLoaded(String asset) async {
     if (_byAsset.containsKey(asset)) return;
-    final raw = await rootBundle.loadString(asset);
+    final raw = await rootBundle.loadString(assetPath(asset));
     final data = json.decode(raw) as Map<String, dynamic>;
     _byAsset[asset] = [
       for (final t in (data['themes'] as List).whereType<Map>())

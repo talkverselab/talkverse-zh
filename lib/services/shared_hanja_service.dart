@@ -1,7 +1,7 @@
 import 'dart:convert';
+import '../core/embed_env.dart';
 import 'dart:io';
 
-import 'package:path_provider/path_provider.dart';
 
 /// 한자 공용 DB(한자유니버스가 관리하는 Cloudflare D1 `hanja-db` 의 `hanja_chars` · `hanja_alias` · `hanja_mnemonic`)를
 /// 읽기 전용으로 받아 기기에 캐시한다. 규칙은 한자 세션의 SHARED_DB.md (§1 코드, §10 자형별 GIF,
@@ -175,7 +175,7 @@ class SharedHanjaService {
   static Directory? debugCacheDir;
 
   Future<File> _cacheFile() async {
-    final dir = debugCacheDir ?? await getApplicationSupportDirectory();
+    final dir = debugCacheDir ?? Directory(await dataDir());
     return File('${dir.path}/$_cacheName');
   }
 }

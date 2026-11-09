@@ -1,6 +1,7 @@
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
+import '../core/embed_env.dart';
 import 'package:drift/drift.dart' show OrderingTerm;
 import 'package:flutter/services.dart' show rootBundle;
 
@@ -53,7 +54,7 @@ class _WordFreqScreenState extends State<WordFreqScreen> {
     final cliff = [for (final r in rows) if (r.rank > 0 && (r.region ?? '').isNotEmpty) _Word(r.rank, r.word, r.region!)];
     final conv = <_Word>[];
     try {
-      final j = jsonDecode(await rootBundle.loadString('assets/data/freq/conv_words_zh.json')) as Map<String, dynamic>;
+      final j = jsonDecode(await rootBundle.loadString(assetPath('assets/data/freq/conv_words_zh.json'))) as Map<String, dynamic>;
       for (final w in j['words'] as List) {
         final m = w as Map;
         conv.add(_Word(null, m['word'] as String, tr('회화'))

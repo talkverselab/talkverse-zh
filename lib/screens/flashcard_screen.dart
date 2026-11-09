@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../core/embed_env.dart';
 import 'package:flutter/services.dart' show rootBundle;
 
 import '../core/theme.dart';
@@ -25,7 +26,7 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
   }
 
   Future<void> _load() async {
-    final raw = await rootBundle.loadString('assets/data/hanzi/cliff/hanzi_cliff_zh.tsv');
+    final raw = await rootBundle.loadString(assetPath('assets/data/hanzi/cliff/hanzi_cliff_zh.tsv'));
     final cards = <_Card>[];
     for (final line in raw.split('\n').take(40)) {
       final trimmed = line.trim();

@@ -1,4 +1,5 @@
 import 'dart:convert';
+import '../core/embed_env.dart';
 
 import 'package:flutter/services.dart' show rootBundle;
 
@@ -27,7 +28,7 @@ class LexiconService {
     // 글자: 단계 자료의 병음이 단어장보다 정확하므로 먼저 넣는다.
     for (final asset in ['assets/data/hanzi/hanzi_stages.json', 'assets/data/hanzi/hanzi_hsk1500.json']) {
       try {
-        final j = jsonDecode(await rootBundle.loadString(asset)) as Map<String, dynamic>;
+        final j = jsonDecode(await rootBundle.loadString(assetPath(asset))) as Map<String, dynamic>;
         for (final st in j['stages'] as List) {
           for (final c in (st as Map)['chars'] as List) {
             final ch = c['char'] as String;
@@ -40,7 +41,7 @@ class LexiconService {
       } catch (_) {}
     }
     try {
-      final j = jsonDecode(await rootBundle.loadString('assets/data/vocab/hsk_words.json')) as Map<String, dynamic>;
+      final j = jsonDecode(await rootBundle.loadString(assetPath('assets/data/vocab/hsk_words.json'))) as Map<String, dynamic>;
       for (final t in j['themes'] as List) {
         for (final s in (t as Map)['sections'] as List) {
           for (final w in (s as Map)['words'] as List) {
@@ -52,7 +53,7 @@ class LexiconService {
     } catch (_) {}
     // 회화 레마 보충 단어(단어장 미수록분, uk 세션 2026-11-04) — 레마 칩이 회색으로 남지 않게.
     try {
-      final j = jsonDecode(await rootBundle.loadString('assets/data/vocab/conv_extra.json')) as Map<String, dynamic>;
+      final j = jsonDecode(await rootBundle.loadString(assetPath('assets/data/vocab/conv_extra.json'))) as Map<String, dynamic>;
       for (final w in j['words'] as List) {
         final zh = (w as Map)['zh'] as String;
         _bySimp.putIfAbsent(zh, () => LexEntry(simp: zh, pinyin: (w['pinyin'] as String?) ?? '', meanings: [if (w['ko'] != null) w['ko'] as String]));

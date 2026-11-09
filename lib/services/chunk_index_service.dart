@@ -1,4 +1,5 @@
 import 'dart:convert';
+import '../core/embed_env.dart';
 
 import 'package:flutter/services.dart' show rootBundle;
 
@@ -78,7 +79,7 @@ class ChunkIndexService {
     for (final n in [1]) {
       final Map<String, dynamic> data;
       try {
-        final raw = await rootBundle.loadString('assets/data/grammar/lesson$n.json');
+        final raw = await rootBundle.loadString(assetPath('assets/data/grammar/lesson$n.json'));
         data = json.decode(raw) as Map<String, dynamic>;
       } catch (_) {
         continue;
@@ -120,7 +121,7 @@ class ChunkIndexService {
         final Map<String, dynamic> data;
         try {
           final raw =
-              await rootBundle.loadString('assets/data/dialogues/$dialect/$level.json');
+              await rootBundle.loadString(assetPath('assets/data/dialogues/$dialect/$level.json'));
           data = json.decode(raw) as Map<String, dynamic>;
         } catch (_) {
           continue;

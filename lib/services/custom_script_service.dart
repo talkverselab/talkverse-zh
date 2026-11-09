@@ -3,7 +3,7 @@ import 'dart:io';
 import 'dart:math';
 
 import 'package:flutter/foundation.dart' show debugPrint;
-import 'package:shared_preferences/shared_preferences.dart';
+import '../core/prefs.dart';
 
 import '../data/account.dart';
 import 'dialogue_service.dart';
@@ -123,7 +123,7 @@ class CustomScriptService {
 
   Future<void> ensureLoaded() async {
     if (_loaded) return;
-    final prefs = await SharedPreferences.getInstance();
+    final prefs = await Prefs.getInstance();
     _device = prefs.getString(_prefDevice) ?? '';
     if (_device.isEmpty) {
       const chars = 'abcdefghijklmnopqrstuvwxyz0123456789';
@@ -145,7 +145,7 @@ class CustomScriptService {
   }
 
   Future<void> _save() async {
-    final prefs = await SharedPreferences.getInstance();
+    final prefs = await Prefs.getInstance();
     await prefs.setString(_prefItems, json.encode(_items.map((e) => e.toJson()).toList()));
   }
 

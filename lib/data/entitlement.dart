@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:shared_preferences/shared_preferences.dart';
+import '../core/prefs.dart';
 
 import '../screens/paywall_screen.dart';
 import 'account.dart';
@@ -14,10 +14,10 @@ class Entitlement {
   static bool get premium => _local || Account.has(lang) || Purchase.owns(lang);
 
   /// 기기 제작용 스위치(시험용).
-  static Future<void> load() async => _local = (await SharedPreferences.getInstance()).getBool('premium') ?? false;
+  static Future<void> load() async => _local = (await Prefs.getInstance()).getBool('premium') ?? false;
   static Future<void> set(bool v) async {
     _local = v;
-    (await SharedPreferences.getInstance()).setBool('premium', v);
+    (await Prefs.getInstance()).setBool('premium', v);
   }
 
   static Future<void> showPaywall(BuildContext context) => PaywallScreen.show(context);

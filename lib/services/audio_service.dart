@@ -1,4 +1,5 @@
 import 'dart:convert';
+import '../core/embed_env.dart';
 
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/services.dart' show rootBundle;
@@ -25,7 +26,7 @@ class AudioService {
       ));
     }
     try {
-      final raw = await rootBundle.loadString('assets/data/audio_manifest.json');
+      final raw = await rootBundle.loadString(assetPath('assets/data/audio_manifest.json'));
       final data = json.decode(raw) as Map<String, dynamic>;
       final hanzi = (data['hanzi'] as Map<String, dynamic>?) ?? {};
       _hanziMap = hanzi.map((k, v) => MapEntry(k, v.toString()));
@@ -46,7 +47,13 @@ class AudioService {
     final assetPath = path.startsWith('assets/') ? path.substring('assets/'.length) : path;
     try {
       await _player.stop();
-      await _player.play(AssetSource(assetPath));
+      if (embedded) {
+        // 통합 앱: 패키지 에셋은 packages/<패키지>/assets/… — AudioCache 의 기본 접두(assets/)를 끈다
+        _player.audioCache = AudioCache(prefix: '');
+        await _player.play(AssetSource('packages/$packageName/$path'));
+      } else {
+        await _player.play(AssetSource(assetPath));
+      }
       return true;
     } catch (e) {
       return false;

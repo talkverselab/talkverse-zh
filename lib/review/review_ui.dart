@@ -3,6 +3,7 @@
 import 'dart:io';
 
 import 'package:flutter/material.dart';
+import '../core/embed_env.dart';
 
 import '../services/content_sync.dart';
 import 'review_engine.dart';
@@ -201,7 +202,7 @@ class _ReviewSessionScreenState extends State<ReviewSessionScreen> {
       final src = face.asset!;
       image = src.startsWith('http://') || src.startsWith('https://')
           ? Image(image: artProvider(src), fit: BoxFit.contain, errorBuilder: (_, __, ___) => const SizedBox.shrink())
-          : Image.asset(src, fit: BoxFit.contain, errorBuilder: (_, __, ___) => const SizedBox.shrink());
+          : Image.asset(assetPath(src), fit: BoxFit.contain, errorBuilder: (_, __, ___) => const SizedBox.shrink());
     }
     return Padding(
       padding: const EdgeInsets.fromLTRB(20, 16, 20, 20),

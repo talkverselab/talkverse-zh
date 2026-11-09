@@ -1,4 +1,5 @@
 import 'dart:convert';
+import '../core/embed_env.dart';
 
 import 'package:flutter/services.dart' show rootBundle;
 
@@ -26,7 +27,7 @@ class ReviewCards {
 
   Future<void> _load() async {
     try {
-      final j = json.decode(await rootBundle.loadString(asset)) as Map<String, dynamic>;
+      final j = json.decode(await rootBundle.loadString(assetPath(asset))) as Map<String, dynamic>;
       for (final t in (j['themes'] as List).whereType<Map>()) {
         if (!themes.contains(t['id'])) continue;
         for (final s in (t['sections'] as List).whereType<Map>()) {

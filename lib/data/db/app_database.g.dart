@@ -3608,7 +3608,7 @@ final class $$TurnsTableReferences
   static MultiTypedResultKey<$AnnotationsTable, List<AnnotationRow>>
   _annotationsRefsTable(_$AppDatabase db) => MultiTypedResultKey.fromTable(
     db.annotations,
-    aliasName: $_aliasNameGenerator(db.turns.id, db.annotations.turnId),
+    aliasName: 'turns__id__annotations__turn_id',
   );
 
   $$AnnotationsTableProcessedTableManager get annotationsRefs {
@@ -3626,7 +3626,7 @@ final class $$TurnsTableReferences
   static MultiTypedResultKey<$UserProgressTable, List<UserProgressRow>>
   _userProgressRefsTable(_$AppDatabase db) => MultiTypedResultKey.fromTable(
     db.userProgress,
-    aliasName: $_aliasNameGenerator(db.turns.id, db.userProgress.turnId),
+    aliasName: 'turns__id__user_progress__turn_id',
   );
 
   $$UserProgressTableProcessedTableManager get userProgressRefs {
@@ -4124,7 +4124,7 @@ final class $$HanziTableReferences
   static MultiTypedResultKey<$HanziProgressTable, List<HanziProgressRow>>
   _hanziProgressRefsTable(_$AppDatabase db) => MultiTypedResultKey.fromTable(
     db.hanziProgress,
-    aliasName: $_aliasNameGenerator(db.hanzi.char, db.hanziProgress.char),
+    aliasName: 'hanzi__char__hanzi_progress__char',
   );
 
   $$HanziProgressTableProcessedTableManager get hanziProgressRefs {
@@ -4915,9 +4915,8 @@ final class $$AnnotationsTableReferences
     extends BaseReferences<_$AppDatabase, $AnnotationsTable, AnnotationRow> {
   $$AnnotationsTableReferences(super.$_db, super.$_table, super.$_typedResult);
 
-  static $TurnsTable _turnIdTable(_$AppDatabase db) => db.turns.createAlias(
-    $_aliasNameGenerator(db.annotations.turnId, db.turns.id),
-  );
+  static $TurnsTable _turnIdTable(_$AppDatabase db) =>
+      db.turns.createAlias('annotations__turn_id__turns__id');
 
   $$TurnsTableProcessedTableManager get turnId {
     final $_column = $_itemColumn<int>('turn_id')!;
@@ -5295,9 +5294,8 @@ final class $$UserProgressTableReferences
     extends BaseReferences<_$AppDatabase, $UserProgressTable, UserProgressRow> {
   $$UserProgressTableReferences(super.$_db, super.$_table, super.$_typedResult);
 
-  static $TurnsTable _turnIdTable(_$AppDatabase db) => db.turns.createAlias(
-    $_aliasNameGenerator(db.userProgress.turnId, db.turns.id),
-  );
+  static $TurnsTable _turnIdTable(_$AppDatabase db) =>
+      db.turns.createAlias('user_progress__turn_id__turns__id');
 
   $$TurnsTableProcessedTableManager get turnId {
     final $_column = $_itemColumn<int>('turn_id')!;
@@ -5616,9 +5614,8 @@ final class $$HanziProgressTableReferences
     super.$_typedResult,
   );
 
-  static $HanziTable _charTable(_$AppDatabase db) => db.hanzi.createAlias(
-    $_aliasNameGenerator(db.hanziProgress.char, db.hanzi.char),
-  );
+  static $HanziTable _charTable(_$AppDatabase db) =>
+      db.hanzi.createAlias('hanzi_progress__char__hanzi__char');
 
   $$HanziTableProcessedTableManager get char {
     final $_column = $_itemColumn<String>('char')!;

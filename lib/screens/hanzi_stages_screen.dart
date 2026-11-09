@@ -1,5 +1,6 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
+import '../core/embed_env.dart';
 import 'package:flutter/services.dart' show rootBundle;
 
 import '../core/theme.dart';
@@ -165,7 +166,7 @@ class _HanziStagesScreenState extends State<HanziStagesScreen> {
   }
 
   Future<void> _load() async {
-    final raw = await rootBundle.loadString(widget.asset);
+    final raw = await rootBundle.loadString(assetPath(widget.asset));
     setState(() {
       _data = json.decode(raw) as Map<String, dynamic>;
       _loading = false;

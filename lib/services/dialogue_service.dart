@@ -1,8 +1,9 @@
 import 'dart:convert';
+import '../core/embed_env.dart';
 
 import 'package:flutter/foundation.dart' show visibleForTesting;
 import 'package:flutter/services.dart' show AssetManifest, rootBundle;
-import 'package:shared_preferences/shared_preferences.dart';
+import '../core/prefs.dart';
 
 import '../core/l10n.dart';
 import 'learner_prefs.dart';
@@ -179,7 +180,7 @@ class DialogueService {
   String? get lastOpenedId => _lastOpened;
   Future<void> setLastOpened(String id) async {
     _lastOpened = id;
-    (await SharedPreferences.getInstance()).setString(_prefLast, id);
+    (await Prefs.getInstance()).setString(_prefLast, id);
   }
 
   final Map<String, Dialogue> _byId = {};
@@ -199,7 +200,7 @@ class DialogueService {
   }
   Future<void> setLevel(String lv) async {
     _level = lv;
-    (await SharedPreferences.getInstance()).setString(_prefLevel, lv);
+    (await Prefs.getInstance()).setString(_prefLevel, lv);
   }
 
   Future<void> ensureLoaded() async {
@@ -220,14 +221,14 @@ class DialogueService {
   }
 
   Future<void> _load() async {
-    final prefs = await SharedPreferences.getInstance();
+    final prefs = await Prefs.getInstance();
     _level = prefs.getString(_prefLevel) ?? 'R1';
     _lastOpened = prefs.getString(_prefLast);
     final manifest = await AssetManifest.loadFromAssetBundle(rootBundle);
-    final paths = manifest.listAssets().where((p) => RegExp(r'^assets/data/dialogues/R[0-4]/[^/]+/[^/]+\.json$').hasMatch(p));
+    final paths = manifest.listAssets().where((p) => RegExp(r'^assets/data/dialogues/R[0-4]/[^/]+/[^/]+\.json$').hasMatch(stripAssetPrefix(p)));
     for (final p in paths) {
       try {
-        final j = json.decode(await rootBundle.loadString(p)) as Map<String, dynamic>;
+        final j = json.decode(await rootBundle.loadString(assetPath(p))) as Map<String, dynamic>;
         if (j['draft'] == true) continue; // 초안(Grok 재작성·검수 전)은 앱에 안 보인다 — 2026-11-07
         final d = Dialogue.fromJson(j);
         if (d.turns.isNotEmpty) _byId[d.id] = d;

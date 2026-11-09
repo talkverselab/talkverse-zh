@@ -1,5 +1,6 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
+import '../core/embed_env.dart';
 import 'package:flutter/services.dart' show rootBundle;
 
 import 'package:flutter/services.dart' show Clipboard, ClipboardData;
@@ -35,7 +36,7 @@ class _GrammarLessonScreenState extends State<GrammarLessonScreen> {
   }
 
   Future<void> _load() async {
-    final raw = await rootBundle.loadString('assets/data/grammar/lesson${widget.lessonNum}.json');
+    final raw = await rootBundle.loadString(assetPath('assets/data/grammar/lesson${widget.lessonNum}.json'));
     setState(() {
       _data = json.decode(raw) as Map<String, dynamic>;
       _loading = false;
