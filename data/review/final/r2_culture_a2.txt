@@ -1,0 +1,10 @@
+1 B: 你今年多大了？有对象吗？ / Nǐ jīnnián duō dà le? Yǒu duìxiàng ma? / 올해 몇 살이야? 사귀는 사람 있어? / 对象 = 사귀는 사람 / cheerful
+2 A: 阿姨，我二十五，还没有。 / Āyí, wǒ èrshíwǔ, hái méiyǒu. / 이모, 스물다섯이고요, 아직 없어요. / 还没有 = 아직 없다 / polite
+3 B: 一个月赚多少钱？ / Yí ge yuè zhuàn duōshao qián? / 한 달에 얼마 벌어? / 赚 = 돈을 벌다 / excited
+4 A: 这个……不太方便说。 / Zhège…… bú tài fāngbiàn shuō. / 그건…… 말씀드리기가 좀. / 不太方便 = 좀 곤란하다 / stiff
+5 B: 那什么时候买房？什么时候结婚？ / Nà shénme shíhou mǎi fáng? Shénme shíhou jiéhūn? / 그럼 집은 언제 사? 결혼은 언제 해? / 买房 = 집을 사다 / excited
+6 A: 阿姨，您尝尝这个饺子，我包的！ / Āyí, nín chángchang zhège jiǎozi, wǒ bāo de! / 이모, 이 만두 좀 드셔 보세요, 제가 빚었어요! / 尝尝 = 맛보다 / cheerful
+7 B: 哟，会包饺子了？挺好吃的。 / Yō, huì bāo jiǎozi le? Tǐng hǎochī de. / 어머, 만두도 빚을 줄 알아? 꽤 맛있네. / 挺……的 = 꽤 ~하다 / amused
+8 A: 那您多吃几个。 / Nà nín duō chī jǐ ge. / 그럼 몇 개 더 드세요. / 多吃 = 많이 먹다 / polite
+9 B: 别想换话题。我朋友的女儿也二十五…… / Bié xiǎng huàn huàtí. Wǒ péngyou de nǚ'ér yě èrshíwǔ…… / 말 돌리지 마. 내 친구 딸도 스물다섯인데…… / 换话题 = 화제를 바꾸다 / teasing
+10 A: 阿姨，我再去包几个饺子！ / Āyí, wǒ zài qù bāo jǐ ge jiǎozi! / 이모, 저 만두 몇 개 더 빚으러 갈게요! / 再去 = 또 가다 / flustered

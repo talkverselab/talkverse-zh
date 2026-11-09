@@ -1,0 +1,10 @@
+1 B: 小伙子，请问这个地方怎么走？ / Xiǎohuǒzi, qǐngwèn zhège dìfang zěnme zǒu? / 젊은이, 여기 어떻게 가요? / 怎么走 = 어떻게 가요 / polite
+2 A: 我也去那儿，跟我走吧。 / Wǒ yě qù nàr, gēn wǒ zǒu ba. / 저도 거기 가요, 따라오세요. / 跟 = ~을 따라 / cheerful
+3 B: 太好了！老王、老李，快过来！ / Tài hǎo le! Lǎo Wáng, Lǎo Lǐ, kuài guòlái! / 잘됐다! 라오왕, 라오리, 빨리 와! / 老+성 = 친한 어른 호칭 / excited
+4 A: 你们一共几位？ / Nǐmen yígòng jǐ wèi? / 모두 몇 분이세요? / 位 = 분(높여 세는 말) / polite
+5 B: 四个，都是我大学同学。 / Sì ge, dōu shì wǒ dàxué tóngxué. / 넷이요, 다 대학 동창이에요. / 同学 = 동창 / cheerful
+6 A: 先说好，我也是第一次来。 / Xiān shuō hǎo, wǒ yě shì dì yī cì lái. / 미리 말씀드리는데, 저도 처음 와요. / 先说好 = 미리 말해 두다 / flustered
+7 B: 没事，你有地图就行。 / Méishì, nǐ yǒu dìtú jiù xíng. / 괜찮아요, 지도만 있으면 돼요. / 就行 = ~하면 된다 / gentle
+8 A: 往前走五百米，右边就是。……到了！ / Wǎng qián zǒu wǔbǎi mǐ, yòubian jiù shì. ……Dào le! / 앞으로 500미터 가면 오른쪽이에요. ……도착했어요! / 往前 = 앞으로 / cheerful
+9 B: 谢谢你！你一个人来的？跟我们一起吃午饭吧。 / Xièxie nǐ! Nǐ yí ge rén lái de? Gēn wǒmen yìqǐ chī wǔfàn ba. / 고마워요! 혼자 왔어요? 우리랑 같이 점심 먹어요. / 一起 = 같이 / gentle
+10 A: 真的吗？那我来点菜，练练中文！ / Zhēn de ma? Nà wǒ lái diǎn cài, liànlian Zhōngwén! / 정말요? 그럼 제가 주문할게요, 중국어 연습 좀 하게요! / 点菜 = 요리를 주문하다 / excited

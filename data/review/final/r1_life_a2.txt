@@ -1,0 +1,7 @@
+1 B: 我家门口有个快递，写着你的名字。 / Wǒ jiā ménkǒu yǒu ge kuàidì, xiězhe nǐ de míngzi. / 우리 집 문 앞에 택배가 있는데, 네 이름이 쓰여 있어. / 快递 = 택배 / surprised
+2 A: 啊？不会吧……我写的是我家地址啊。 / Á? Bú huì ba…… wǒ xiě de shì wǒ jiā dìzhǐ a. / 어? 설마…… 우리 집 주소 썼는데. / 地址 = 주소 / flustered
+3 B: 上面是我家的地址。 / Shàngmiàn shì wǒ jiā de dìzhǐ. / 우리 집 주소가 쓰여 있는데. / 上面 = 위에 / amused
+4 A: 完了，上次给你寄东西，地址没改！ / Wán le, shàng cì gěi nǐ jì dōngxi, dìzhǐ méi gǎi! / 망했다, 저번에 너한테 뭐 보내고 주소를 안 바꿨어! / 改 = 바꾸다 / flustered
+5 B: 哈哈，里面是什么？我给你送过去。 / Hāha, lǐmiàn shì shénme? Wǒ gěi nǐ sòng guòqù. / 하하, 안에 뭐야? 내가 갖다줄게. / 送过去 = 갖다주다 / amused
+6 A: 别别别！……那本来就是给你的生日礼物。 / Bié bié bié! ……Nà běnlái jiù shì gěi nǐ de shēngrì lǐwù. / 아냐 아냐! ……그거 원래 너 줄 생일 선물이야. / 本来 = 원래 / shy
+7 B: 那我现在就拆。不还你了！ / Nà wǒ xiànzài jiù chāi. Bù huán nǐ le! / 그럼 지금 바로 뜯을래. 안 돌려줘! / 拆 = 뜯다 / excited

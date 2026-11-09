@@ -1,8 +1,8 @@
-1 A: 下雨了！伞带了没？ / Xià yǔ le! Sǎn dài le méi? / 비 온다! 우산 챙겼어? / 带伞 = 우산을 챙기다
-2 B: 带了！快看我这个！ / Dài le! Kuài kàn wǒ zhège! / 챙겼지! 빨리 이거 봐! / 带了 = 챙겼다
-3 A: 锅盖？？你开玩笑吧！ / Guōgài?? Nǐ kāi wánxiào ba! / 냄비 뚜껑?? 장난이지! / 锅盖 = 냄비 뚜껑
-4 B: 真的能挡雨啊！ / Zhēn de néng dǎng yǔ a! / 진짜 비 막을 수 있어! / 挡雨 = 비를 막다
-5 A: 两个人怎么挡？ / Liǎng ge rén zěnme dǎng? / 둘이 어떻게 막아? / 怎么 = 어떻게
-6 B: 还有呢！再看这个！ / Hái yǒu ne! Zài kàn zhège! / 하나 더 있어! 이것도 봐! / 还有 = 더 있다
-7 A: 平底锅？！你全拿了？ / Píngdǐguō?! Nǐ quán ná le? / 프라이팬?! 부엌을 다 들고 왔어? / 平底锅 = 프라이팬
-8 B: 快走啊！大家都在看！ / Kuài zǒu a! Dàjiā dōu zài kàn! / 빨리 가! 다들 쳐다봐! / 在看 = 보고 있다
+1 A: 下雨了！你带伞了没？ / Xià yǔ le! Nǐ dài sǎn le méi? / 비 온다! 우산 챙겼어? / 带伞 = 우산을 챙기다 / surprised
+2 B: 带了！你看，我早就准备好了。 / Dài le! Nǐ kàn, wǒ zǎo jiù zhǔnbèi hǎo le. / 챙겼지! 봐, 진작 준비했어. / 早就 = 진작 / cheerful
+3 A: 这把伞……怎么这么眼熟？ / Zhè bǎ sǎn…… zěnme zhème yǎnshú? / 이 우산…… 왜 이렇게 낯익지? / 眼熟 = 낯익다, 把 = 우산 세는 말 / surprised
+4 B: 是吗？很多人都有这种伞。 / Shì ma? Hěn duō rén dōu yǒu zhè zhǒng sǎn. / 그래? 이런 우산 다들 있잖아. / 这种 = 이런 종류 / flustered
+5 A: 上面写着我的名字啊。 / Shàngmiàn xiězhe wǒ de míngzi a. / 위에 내 이름 쓰여 있잖아. / 写着 = 쓰여 있다 / tsukkomi
+6 B: 啊……上个月下雨借的，忘了还你。 / Á…… shàng ge yuè xià yǔ jiè de, wàng le huán nǐ. / 아…… 지난달 비 올 때 빌린 거야, 돌려주는 걸 깜빡했어. / 借·还 = 빌리다·돌려주다 / flustered
+7 A: 难怪我找了一个月！ / Nánguài wǒ zhǎo le yí ge yuè! / 어쩐지 한 달 내내 찾았지! / 难怪 = 어쩐지 / tsukkomi
+8 B: 对不起！今天我送你回家……我们打一把伞。 / Duìbuqǐ! Jīntiān wǒ sòng nǐ huí jiā…… wǒmen dǎ yì bǎ sǎn. / 미안! 오늘 집까지 데려다줄게…… 우산 하나 같이 쓰자. / 打伞 = 우산을 쓰다 / shy

@@ -1,0 +1,7 @@
+1 B: 您好，外卖到了，在门口～ / Nín hǎo, wàimài dào le, zài ménkǒu～ / 안녕하세요, 배달 도착했어요, 문 앞이에요～ / 外卖 = 배달 음식 / polite
+2 A: 好的，放门口就行，谢谢！ / Hǎo de, fàng ménkǒu jiù xíng, xièxie! / 네, 문 앞에 두시면 돼요, 감사해요! / 就行 = ~하면 된다 / polite
+3 B: 备注写着"不要筷子"，真的不要吗？ / Bèizhù xiězhe "bú yào kuàizi", zhēn de bú yào ma? / 요청 사항에 "젓가락 필요 없음"이라고 돼 있는데, 정말 필요 없으세요? / 备注 = 요청 사항 / polite
+4 A: 啊？我想写的是"不要辣"！ / Á? Wǒ xiǎng xiě de shì "bú yào là"! / 네? 저는 "안 맵게"라고 쓰려던 건데요! / 想写 = 쓰려고 하다 / flustered
+5 B: 那可能有点辣……筷子我给您放了一双。 / Nà kěnéng yǒudiǎn là…… kuàizi wǒ gěi nín fàng le yì shuāng. / 그럼 좀 매울 수도 있어요…… 젓가락은 한 벌 넣어 드렸어요. / 双 = 벌(젓가락 세는 말) / gentle
+6 A: 谢谢您！下次我好好写。 / Xièxie nín! Xià cì wǒ hǎohǎo xiě. / 감사해요! 다음엔 제대로 쓸게요. / 好好 = 제대로 / shy
+7 B: 不客气，记得给个好评哦～ / Bú kèqi, jìde gěi ge hǎopíng o～ / 천만에요, 좋은 평가 잊지 마세요～ / 好评 = 좋은 평가 / cheerful

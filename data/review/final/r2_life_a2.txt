@@ -1,0 +1,10 @@
+1 A: 叔叔，您家声音有点大。 / Shūshu, nín jiā shēngyīn yǒudiǎn dà. / 아저씨, 댁 소리가 좀 커요. / 声音 = 소리 / polite
+2 B: 不好意思，我在练歌，下星期比赛。 / Bù hǎoyìsi, wǒ zài liàn gē, xià xīngqī bǐsài. / 미안해요, 노래 연습 중이에요, 다음 주가 대회라. / 练 = 연습하다 / flustered
+3 A: 现在是晚上十一点了。 / Xiànzài shì wǎnshang shíyī diǎn le. / 지금 밤 11시예요. / 晚上 = 밤 / stiff
+4 B: 哎呀，我没注意时间。 / Āiyā, wǒ méi zhùyì shíjiān. / 아이고, 시간을 못 봤네요. / 注意 = 신경 쓰다 / flustered
+5 A: 我明天要早起上班。 / Wǒ míngtiān yào zǎo qǐ shàngbān. / 저 내일 일찍 출근해야 해서요. / 早起 = 일찍 일어나다 / polite
+6 B: 明白明白，以后十点以前练。 / Míngbai míngbai, yǐhòu shí diǎn yǐqián liàn. / 알았어요 알았어요, 앞으로 10시 전에만 할게요. / 以前 = ~전 / polite
+7 A: 谢谢叔叔。比赛加油！ / Xièxie shūshu. Bǐsài jiāyóu! / 감사해요. 대회 힘내세요! / 加油 = 힘내 / cheerful
+8 B: 不过……你洗澡的时候也唱歌吧？ / Búguò…… nǐ xǐzǎo de shíhou yě chàng gē ba? / 그런데…… 학생도 샤워할 때 노래하죠? / 洗澡 = 샤워하다 / teasing
+9 A: 啊？您听得见？ / Á? Nín tīng de jiàn? / 네? 들려요? / 听得见 = 들리다 / flustered
+10 B: 每天早上七点，挺好听的。 / Měitiān zǎoshang qī diǎn, tǐng hǎotīng de. / 매일 아침 7시요, 꽤 듣기 좋던데요. / 好听 = 듣기 좋다 / amused

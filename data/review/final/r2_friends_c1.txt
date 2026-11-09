@@ -1,0 +1,10 @@
+1 A: 今晚吃什么？我发个投票。 / Jīnwǎn chī shénme? Wǒ fā ge tóupiào. / 오늘 저녁 뭐 먹지? 투표 올릴게. / 投票 = 투표 / cheerful
+2 B: 好，我选火锅。 / Hǎo, wǒ xuǎn huǒguō. / 좋아, 난 훠궈. / 选 = 고르다 / cheerful
+3 A: 小丽选了烤肉。 / Xiǎolì xuǎn le kǎoròu. / 샤오리는 고기구이 골랐어. / 烤肉 = 고기구이 / neutral
+4 B: 她每次都选肉。 / Tā měi cì dōu xuǎn ròu. / 걔는 매번 고기야. / 每次 = 매번 / amused
+5 A: 现在两票对两票。 / Xiànzài liǎng piào duì liǎng piào. / 지금 2대 2야. / 对 = 대(맞섬) / worried
+6 B: 那去那家火锅烤肉都有的店吧！ / Nà qù nà jiā huǒguō kǎoròu dōu yǒu de diàn ba! / 그럼 훠궈랑 고기구이 둘 다 있는 그 가게 가자! / 都有 = 다 있다 / excited
+7 A: 好主意！我打电话订位子。 / Hǎo zhǔyi! Wǒ dǎ diànhuà dìng wèizi. / 좋은 생각! 내가 전화해서 자리 예약할게. / 订位子 = 자리를 예약하다 / cheerful
+8 B: 订到了吗？几点？ / Dìng dào le ma? Jǐ diǎn? / 예약됐어? 몇 시? / 订到 = 예약이 되다 / cheerful
+9 A: 老板说今天周一，休息…… / Lǎobǎn shuō jīntiān zhōuyī, xiūxi…… / 사장님이 오늘 월요일이라 쉰대…… / 休息 = 쉬다(휴무) / sad
+10 B: ……那还是重新投票吧。 / ……Nà háishi chóngxīn tóupiào ba. / ……그럼 다시 투표하자. / 重新 = 다시 / tsukkomi

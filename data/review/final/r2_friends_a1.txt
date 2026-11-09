@@ -1,0 +1,10 @@
+1 A: 你怎么又不洗碗？ / Nǐ zěnme yòu bù xǐ wǎn? / 너 왜 또 설거지 안 해? / 洗碗 = 설거지하다 / annoyed
+2 B: 我忘了，明天一定洗。 / Wǒ wàng le, míngtiān yídìng xǐ. / 깜빡했어, 내일 꼭 할게. / 一定 = 꼭 / flustered
+3 A: 我们写个值日表，贴在冰箱上吧。 / Wǒmen xiě ge zhírìbiǎo, tiē zài bīngxiāng shang ba. / 우리 당번표 써서 냉장고에 붙이자. / 值日表 = 당번표 / stiff
+4 B: 好啊。单号你洗，双号我洗？ / Hǎo a. Dān hào nǐ xǐ, shuāng hào wǒ xǐ? / 좋아. 홀수 날은 네가, 짝수 날은 내가? / 单号·双号 = 홀수·짝수 날 / cheerful
+5 A: 行。那倒垃圾呢？ / Xíng. Nà dào lājī ne? / 그래. 쓰레기 버리는 건? / 倒垃圾 = 쓰레기를 버리다 / neutral
+6 B: 也一样。还有，晚上十点以后别唱歌。 / Yě yíyàng. Hái yǒu, wǎnshang shí diǎn yǐhòu bié chàng gē. / 그것도 똑같이. 그리고 밤 10시 넘으면 노래하지 마. / 以后 = 이후 / teasing
+7 A: 那你也别打游戏打到两点！ / Nà nǐ yě bié dǎ yóuxì dǎ dào liǎng diǎn! / 그럼 너도 새벽 2시까지 게임하지 마! / 打到 = ~까지 하다 / tsukkomi
+8 B: 好好好，都写上。 / Hǎo hǎo hǎo, dōu xiěshàng. / 알았어 알았어, 다 적자. / 写上 = 적어 넣다 / amused
+9 A: 今天几号？ / Jīntiān jǐ hào? / 오늘 며칠이지? / 几号 = 며칠 / neutral
+10 B: 十一号，单号……今天你洗。 / Shíyī hào, dān hào…… jīntiān nǐ xǐ. / 11일, 홀수 날…… 오늘은 네가 해. / 今天 = 오늘 / teasing

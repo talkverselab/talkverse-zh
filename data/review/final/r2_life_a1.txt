@@ -1,0 +1,10 @@
+1 A: 阿姨，空调不冷了。 / Āyí, kōngtiáo bù lěng le. / 아주머니, 에어컨이 안 시원해요. / 空调 = 에어컨 / worried
+2 B: 我看看。是不是没电了？ / Wǒ kànkan. Shì bu shì méi diàn le? / 어디 보자. 전기가 안 들어오나? / 是不是 = ~아닐까 / gentle
+3 A: 有电，就是一直吹热风。 / Yǒu diàn, jiùshì yìzhí chuī rè fēng. / 전기는 들어오는데, 계속 더운 바람만 나와요. / 吹 = 불다 / worried
+4 B: 遥控器给我看看。 / Yáokòngqì gěi wǒ kànkan. / 리모컨 좀 줘 봐. / 遥控器 = 리모컨 / neutral
+5 A: 在这儿。是不是坏了？ / Zài zhèr. Shì bu shì huài le? / 여기요. 고장 난 거예요? / 坏 = 고장 나다 / worried
+6 B: 没坏。你开的是"制热"。 / Méi huài. Nǐ kāi de shì "zhìrè". / 안 고장 났어. "난방"을 켰잖아. / 制热·制冷 = 난방·냉방 / amused
+7 A: 啊？我以为那是"制冷"…… / Á? Wǒ yǐwéi nà shì "zhìlěng"…… / 네? 그게 "냉방"인 줄 알았어요…… / 以为 = ~인 줄 알다 / flustered
+8 B: 雪花是冷风，太阳是热风。 / Xuěhuā shì lěng fēng, tàiyáng shì rè fēng. / 눈송이가 찬 바람이고, 해가 더운 바람이야. / 雪花 = 눈송이 / gentle
+9 A: 谢谢阿姨！三天了，我还以为是天气太热。 / Xièxie āyí! Sān tiān le, wǒ hái yǐwéi shì tiānqì tài rè. / 감사해요! 사흘째인데, 날씨가 너무 더운 줄만 알았어요. / 还以为 = ~인 줄만 알았다 / shy
+10 B: 下次先给我发个微信，别热坏了。 / Xià cì xiān gěi wǒ fā ge wēixìn, bié rè huài le. / 다음엔 먼저 위챗 보내, 더위 먹지 말고. / 热坏 = 더위 먹다 / gentle

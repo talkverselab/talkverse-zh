@@ -1,0 +1,8 @@
+1 A: 浩然，我们拍一张吧！ / Hàorán, wǒmen pāi yì zhāng ba! / 하오란, 우리 한 장 찍자! / 拍一张 = 한 장 찍다 / cheerful
+2 B: 好，来，一、二—— / Hǎo, lái, yī, èr—— / 좋아, 자, 하나, 둘—— / 来 = 자(시작할 때) / cheerful
+3 A: 等等！后面有人走过去了。 / Děngděng! Hòumiàn yǒu rén zǒu guòqù le. / 잠깐! 뒤로 사람이 지나갔어. / 走过去 = 지나가다 / flustered
+4 B: 没事，再来一张。 / Méishì, zài lái yì zhāng. / 괜찮아, 한 장 더. / 再来一张 = 한 장 더 / gentle
+5 A: 你的手太短了，拍不到我们两个。 / Nǐ de shǒu tài duǎn le, pāi bú dào wǒmen liǎng ge. / 네 팔이 너무 짧아서 우리 둘이 다 안 나와. / 拍不到 = 안 찍히다 / tsukkomi
+6 B: 那请别人帮忙。您好，能帮我们拍一张吗？ / Nà qǐng biérén bāngmáng. Nín hǎo, néng bāng wǒmen pāi yì zhāng ma? / 그럼 다른 사람한테 부탁하자. 저기요, 사진 한 장 찍어 주실 수 있어요? / 能帮我们……吗 = ~해 주실 수 있어요? / polite
+7 A: 哇，拍得真好！……可是你闭眼了。 / Wā, pāi de zhēn hǎo! ……Kěshì nǐ bì yǎn le. / 와, 진짜 잘 찍었다! ……근데 너 눈 감았어. / 闭眼 = 눈을 감다 / amused
+8 B: 因为我一直在看你啊。再拍一张吧。 / Yīnwèi wǒ yìzhí zài kàn nǐ a. Zài pāi yì zhāng ba. / 계속 너만 보고 있었으니까. 한 장 더 찍자. / 一直 = 계속 / shy

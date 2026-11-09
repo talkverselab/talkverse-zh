@@ -13,6 +13,8 @@ for id_ in sys.argv[1:]:
         n=int(m.group(1)); old=e['turns'][n-1] if n-1<len(e['turns']) else {'tags':[]}
         t={'num':n,'speaker':m.group(2),'zh':parts[0],'pinyin':parts[1],'rd':'','ko':parts[2],
            'note':parts[3] if len(parts)>3 else old.get('note',''),'tags':old.get('tags',[])}
+        for k in ('ui','at'):  # 채팅 편의 말풍선·시각은 그대로 둔다(2026-11-09)
+            if old.get(k): t[k]=old[k]
         emo=parts[4] if len(parts)>4 else old.get('emotion')
         if emo:
             if '|' in emo or ':' in emo:

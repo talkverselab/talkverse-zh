@@ -12,14 +12,14 @@
  ],
  "title": "저녁 투표",
  "emoji": "🗳️",
- "scene": "단톡방에서 저녁 메뉴 투표를 시작했는데 친구가 엄마를 초대한다.",
+ "scene": "단톡방 저녁 메뉴 투표가 2대 2로 갈려, 둘 다 되는 가게를 찾는다.",
  "speakers": {
   "A": "{name}",
   "B": "浩然"
  },
  "learner_gender": "F",
  "register": "chat",
- "twist": 7,
+ "twist": 9,
  "twist_type": "chaos",
  "flags": [],
  "variant": "north",
@@ -28,101 +28,361 @@
    "num": 1,
    "speaker": "A",
    "zh": "今晚吃什么？我发个投票。",
-   "pinyin": "jīn wǎn chī shén me? wǒ fā gè tóu piào.",
-   "rd": "진 완 츠 선 머? 워 파 거 터우 퍄오.",
+   "pinyin": "Jīnwǎn chī shénme? Wǒ fā ge tóupiào.",
+   "rd": "진완 츠 선머? 워 파 거 터우퍄오.",
    "ko": "오늘 저녁 뭐 먹지? 투표 올릴게.",
-   "note": "",
-   "tags": []
+   "note": "投票 = 투표",
+   "tags": [],
+   "emotion": "cheerful",
+   "lemmas": [
+    [
+     "今晚",
+     "今晚",
+     "jīn wǎn"
+    ],
+    [
+     "吃",
+     "吃",
+     "chī"
+    ],
+    [
+     "什么",
+     "什么",
+     "shén me"
+    ],
+    [
+     "发",
+     "发",
+     "fā"
+    ],
+    [
+     "个",
+     "个",
+     "gè"
+    ],
+    [
+     "投票",
+     "投票",
+     "tóu piào"
+    ]
+   ]
   },
   {
    "num": 2,
    "speaker": "B",
    "zh": "好，我选火锅。",
-   "pinyin": "hǎo, wǒ xuǎn huǒ guō.",
-   "rd": "하오, 워 쉬안 훠 궈.",
+   "pinyin": "Hǎo, wǒ xuǎn huǒguō.",
+   "rd": "하오, 워 쉬안 훠궈.",
    "ko": "좋아, 난 훠궈.",
-   "note": "",
-   "tags": []
+   "note": "选 = 고르다",
+   "tags": [],
+   "emotion": "cheerful",
+   "lemmas": [
+    [
+     "好",
+     "好",
+     "hǎo"
+    ],
+    [
+     "选",
+     "选",
+     "xuǎn"
+    ],
+    [
+     "火",
+     "火",
+     "huǒ"
+    ],
+    [
+     "锅",
+     "锅",
+     "guō"
+    ]
+   ]
   },
   {
    "num": 3,
    "speaker": "A",
    "zh": "小丽选了烤肉。",
-   "pinyin": "xiǎo lì xuǎn le kǎo ròu.",
-   "rd": "샤오 리 쉬안 러 카오 러우.",
-   "ko": "샤오리는 고기 골랐어.",
-   "note": "",
-   "tags": []
+   "pinyin": "Xiǎolì xuǎn le kǎoròu.",
+   "rd": "샤오리 쉬안 러 카오러우.",
+   "ko": "샤오리는 고기구이 골랐어.",
+   "note": "烤肉 = 고기구이",
+   "tags": [],
+   "emotion": "neutral",
+   "lemmas": [
+    [
+     "选",
+     "选",
+     "xuǎn"
+    ],
+    [
+     "烤肉",
+     "烤肉",
+     "kǎo ròu"
+    ]
+   ]
   },
   {
    "num": 4,
    "speaker": "B",
    "zh": "她每次都选肉。",
-   "pinyin": "tā měi cì dōu xuǎn ròu.",
+   "pinyin": "Tā měi cì dōu xuǎn ròu.",
    "rd": "타 메이 츠 더우 쉬안 러우.",
-   "ko": "걔는 맨날 고기야.",
-   "note": "",
-   "tags": []
+   "ko": "걔는 매번 고기야.",
+   "note": "每次 = 매번",
+   "tags": [],
+   "emotion": "amused",
+   "lemmas": [
+    [
+     "每次",
+     "每次",
+     "měi cì"
+    ],
+    [
+     "都",
+     "都",
+     "dōu"
+    ],
+    [
+     "选",
+     "选",
+     "xuǎn"
+    ],
+    [
+     "肉",
+     "肉",
+     "ròu"
+    ]
+   ]
   },
   {
    "num": 5,
    "speaker": "A",
    "zh": "现在两票对两票。",
-   "pinyin": "xiàn zài liǎng piào duì liǎng piào.",
-   "rd": "셴 짜이 량 퍄오 두이 량 퍄오.",
+   "pinyin": "Xiànzài liǎng piào duì liǎng piào.",
+   "rd": "셴짜이 량 퍄오 두이 량 퍄오.",
    "ko": "지금 2대 2야.",
-   "note": "",
-   "tags": []
+   "note": "对 = 대(맞섬)",
+   "tags": [],
+   "emotion": "worried",
+   "lemmas": [
+    [
+     "现在",
+     "现在",
+     "xiàn zài"
+    ],
+    [
+     "两票",
+     "票",
+     "piào"
+    ],
+    [
+     "两票",
+     "票",
+     "piào"
+    ]
+   ]
   },
   {
    "num": 6,
    "speaker": "B",
-   "zh": "那我再拉一个人进群。",
-   "pinyin": "nà wǒ zài lā yí gè rén jìn qún.",
-   "rd": "나 워 짜이 라 이 거 런 진 췬.",
-   "ko": "그럼 한 명 더 초대할게.",
-   "note": "",
-   "tags": []
+   "zh": "那去那家火锅烤肉都有的店吧！🤩",
+   "pinyin": "Nà qù nà jiā huǒguō kǎoròu dōu yǒu de diàn ba!",
+   "rd": "나 취 나 자 훠궈 카오러우 더우 유 더 뎬 바!",
+   "ko": "그럼 훠궈랑 고기구이 둘 다 있는 그 가게 가자!",
+   "note": "都有 = 다 있다",
+   "tags": [],
+   "emotion": "excited",
+   "lemmas": [
+    [
+     "那",
+     "那",
+     "nà"
+    ],
+    [
+     "去",
+     "去",
+     "qù"
+    ],
+    [
+     "那",
+     "那",
+     "nà"
+    ],
+    [
+     "家",
+     "家",
+     "jiā"
+    ],
+    [
+     "火",
+     "火",
+     "huǒ"
+    ],
+    [
+     "锅",
+     "锅",
+     "guō"
+    ],
+    [
+     "烤肉",
+     "烤肉",
+     "kǎo ròu"
+    ],
+    [
+     "都",
+     "都",
+     "dōu"
+    ],
+    [
+     "有",
+     "有",
+     "yǒu"
+    ],
+    [
+     "店",
+     "店",
+     "diàn"
+    ]
+   ]
   },
   {
    "num": 7,
    "speaker": "A",
-   "zh": "谁？你拉了你妈？",
-   "pinyin": "shuí? nǐ lā le nǐ mā?",
-   "rd": "수이? 니 라 러 니 마?",
-   "ko": "누구? 너 엄마를 초대했어?",
-   "note": "",
-   "tags": []
+   "zh": "好主意！我打电话订位子。",
+   "pinyin": "Hǎo zhǔyi! Wǒ dǎ diànhuà dìng wèizi.",
+   "rd": "하오 주이! 워 다 뎬화 딩 웨이쯔.",
+   "ko": "좋은 생각! 내가 전화해서 자리 예약할게.",
+   "note": "订位子 = 자리를 예약하다",
+   "tags": [],
+   "emotion": "cheerful",
+   "lemmas": [
+    [
+     "好",
+     "好",
+     "hǎo"
+    ],
+    [
+     "主意",
+     "主意",
+     "zhǔ yì"
+    ],
+    [
+     "打电话",
+     "打电话",
+     "dǎ diàn huà"
+    ],
+    [
+     "订",
+     "订",
+     "dìng"
+    ],
+    [
+     "位",
+     "位",
+     "wèi"
+    ],
+    [
+     "子",
+     "子",
+     "zi"
+    ]
+   ]
   },
   {
    "num": 8,
    "speaker": "B",
-   "zh": "我妈选了回家吃饭。",
-   "pinyin": "wǒ mā xuǎn le huí jiā chī fàn.",
-   "rd": "워 마 쉬안 러 후이 자 츠 판.",
-   "ko": "우리 엄마가 집밥 골랐어.",
-   "note": "",
-   "tags": []
+   "zh": "订到了吗？几点？",
+   "pinyin": "Dìng dào le ma? Jǐ diǎn?",
+   "rd": "딩 다오 러 마? 지 뎬?",
+   "ko": "예약됐어? 몇 시?",
+   "note": "订到 = 예약이 되다",
+   "tags": [],
+   "emotion": "cheerful",
+   "lemmas": [
+    [
+     "订",
+     "订",
+     "dìng"
+    ],
+    [
+     "到",
+     "到",
+     "dào"
+    ],
+    [
+     "几点",
+     "点",
+     "diǎn"
+    ]
+   ]
   },
   {
    "num": 9,
    "speaker": "A",
-   "zh": "阿姨还问我几点到。",
-   "pinyin": "ā yí hái wèn wǒ jǐ diǎn dào.",
-   "rd": "아 이 하이 원 워 지 뎬 다오.",
-   "ko": "어머니가 나 몇 시에 오냐고 물으셔.",
-   "note": "",
-   "tags": []
+   "zh": "老板说今天周一，休息……",
+   "pinyin": "Lǎobǎn shuō jīntiān zhōuyī, xiūxi……",
+   "rd": "라오반 숴 진톈 저우이, 슈시……",
+   "ko": "사장님이 오늘 월요일이라 쉰대……",
+   "note": "休息 = 쉬다(휴무)",
+   "tags": [],
+   "emotion": "sad",
+   "lemmas": [
+    [
+     "老板",
+     "老板",
+     "lǎo bǎn"
+    ],
+    [
+     "说",
+     "说",
+     "shuō"
+    ],
+    [
+     "今天",
+     "今天",
+     "jīn tiān"
+    ],
+    [
+     "休息",
+     "休息",
+     "xiū xī"
+    ]
+   ]
   },
   {
    "num": 10,
    "speaker": "B",
-   "zh": "恭喜，今晚你来我家。",
-   "pinyin": "gōng xǐ, jīn wǎn nǐ lái wǒ jiā.",
-   "rd": "궁 시, 진 완 니 라이 워 자.",
-   "ko": "축하해, 오늘 저녁 우리 집이야.",
-   "note": "",
-   "tags": []
+   "zh": "……那还是重新投票吧。🙄",
+   "pinyin": "……Nà háishi chóngxīn tóupiào ba.",
+   "rd": "……나 하이스 충신 터우퍄오 바.",
+   "ko": "……그럼 다시 투표하자.",
+   "note": "重新 = 다시",
+   "tags": [],
+   "emotion": "tsukkomi",
+   "lemmas": [
+    [
+     "那",
+     "那",
+     "nà"
+    ],
+    [
+     "重新",
+     "重新",
+     "chóng xīn"
+    ],
+    [
+     "投票",
+     "投票",
+     "tóu piào"
+    ]
+   ]
   }
- ]
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r2_friends_c1_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ }
 }

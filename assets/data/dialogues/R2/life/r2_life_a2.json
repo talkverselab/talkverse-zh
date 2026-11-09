@@ -12,15 +12,15 @@
  ],
  "title": "옆집 노래",
  "emoji": "🎤",
- "scene": "밤늦게 노래하는 옆집 아저씨에게 항의하러 갔다가 듀엣이 된다.",
+ "scene": "밤 11시, 노래 연습하는 옆집 아저씨에게 소리가 크다고 말하러 간다.",
  "speakers": {
   "A": "{name}",
   "B": "大叔"
  },
  "learner_gender": "M",
  "register": "polite",
- "twist": 6,
- "twist_type": "chaos",
+ "twist": 8,
+ "twist_type": "reveal",
  "flags": [],
  "variant": "north",
  "turns": [
@@ -28,101 +28,346 @@
    "num": 1,
    "speaker": "A",
    "zh": "叔叔，您家声音有点大。",
-   "pinyin": "shū shū, nín jiā shēng yīn yǒu diǎn dà.",
-   "rd": "수 수, 닌 자 성 인 유 뎬 다.",
+   "pinyin": "Shūshu, nín jiā shēngyīn yǒudiǎn dà.",
+   "rd": "수수, 닌 자 성인 유뎬 다.",
    "ko": "아저씨, 댁 소리가 좀 커요.",
-   "note": "",
-   "tags": []
+   "note": "声音 = 소리",
+   "tags": [],
+   "emotion": "polite",
+   "lemmas": [
+    [
+     "叔叔",
+     "叔叔",
+     "shū shū"
+    ],
+    [
+     "家",
+     "家",
+     "jiā"
+    ],
+    [
+     "声音",
+     "声音",
+     "shēng yīn"
+    ],
+    [
+     "有点",
+     "有点",
+     "yǒu diǎn"
+    ],
+    [
+     "大",
+     "大",
+     "dà"
+    ]
+   ]
   },
   {
    "num": 2,
    "speaker": "B",
-   "zh": "我在练唱歌，下星期比赛。",
-   "pinyin": "wǒ zài liàn chàng gē, xià xīng qī bǐ sài.",
-   "rd": "워 짜이 롄 창 거, 샤 싱 치 비 싸이.",
-   "ko": "노래 연습 중이야, 다음 주 대회거든.",
-   "note": "",
-   "tags": []
+   "zh": "不好意思，我在练歌，下星期比赛。",
+   "pinyin": "Bù hǎoyìsi, wǒ zài liàn gē, xià xīngqī bǐsài.",
+   "rd": "부 하오이쓰, 워 짜이 롄 거, 샤 싱치 비싸이.",
+   "ko": "미안해요, 노래 연습 중이에요, 다음 주가 대회라.",
+   "note": "练 = 연습하다",
+   "tags": [],
+   "emotion": "flustered",
+   "lemmas": [
+    [
+     "不好意思",
+     "不好意思",
+     "bù hǎo yì sī"
+    ],
+    [
+     "练",
+     "练",
+     "liàn"
+    ],
+    [
+     "歌",
+     "歌",
+     "gē"
+    ],
+    [
+     "下",
+     "下",
+     "xià"
+    ],
+    [
+     "星期",
+     "星期",
+     "xīng qī"
+    ],
+    [
+     "比赛",
+     "比赛",
+     "bǐ sài"
+    ]
+   ]
   },
   {
    "num": 3,
    "speaker": "A",
-   "zh": "现在是晚上十一点。",
-   "pinyin": "xiàn zài shì wǎn shàng shí yì diǎn.",
-   "rd": "셴 짜이 스 완 상 스 이 뎬.",
+   "zh": "现在是晚上十一点了。",
+   "pinyin": "Xiànzài shì wǎnshang shíyī diǎn le.",
+   "rd": "셴짜이 스 완상 스이 뎬 러.",
    "ko": "지금 밤 11시예요.",
-   "note": "",
-   "tags": []
+   "note": "晚上 = 밤",
+   "tags": [],
+   "emotion": "stiff",
+   "lemmas": [
+    [
+     "现在",
+     "现在",
+     "xiàn zài"
+    ],
+    [
+     "是",
+     "是",
+     "shì"
+    ],
+    [
+     "晚上",
+     "晚上",
+     "wǎn shàng"
+    ],
+    [
+     "十一点",
+     "点",
+     "diǎn"
+    ]
+   ]
   },
   {
    "num": 4,
    "speaker": "B",
-   "zh": "你听听，这句好不好？",
-   "pinyin": "nǐ tīng tīng, zhè jù hǎo bù hǎo?",
-   "rd": "니 팅 팅, 저 쥐 하오 부 하오?",
-   "ko": "들어 봐, 이 소절 어때?",
-   "note": "",
-   "tags": []
+   "zh": "哎呀，我没注意时间。",
+   "pinyin": "Āiyā, wǒ méi zhùyì shíjiān.",
+   "rd": "아이야, 워 메이 주이 스젠.",
+   "ko": "아이고, 시간을 못 봤네요.",
+   "note": "注意 = 신경 쓰다",
+   "tags": [],
+   "emotion": "flustered",
+   "lemmas": [
+    [
+     "没",
+     "没",
+     "méi"
+    ],
+    [
+     "注意",
+     "注意",
+     "zhù yì"
+    ],
+    [
+     "时间",
+     "时间",
+     "shí jiān"
+    ]
+   ]
   },
   {
    "num": 5,
    "speaker": "A",
-   "zh": "挺好的，但是我明天上班。",
-   "pinyin": "tǐng hǎo de, dàn shì wǒ míng tiān shàng bān.",
-   "rd": "팅 하오 더, 단 스 워 밍 톈 상 반.",
-   "ko": "좋은데요, 저 내일 출근해요.",
-   "note": "",
-   "tags": []
+   "zh": "我明天要早起上班。",
+   "pinyin": "Wǒ míngtiān yào zǎo qǐ shàngbān.",
+   "rd": "워 밍톈 야오 짜오 치 상반.",
+   "ko": "저 내일 일찍 출근해야 해서요.",
+   "note": "早起 = 일찍 일어나다",
+   "tags": [],
+   "emotion": "polite",
+   "lemmas": [
+    [
+     "明天",
+     "明天",
+     "míng tiān"
+    ],
+    [
+     "要",
+     "要",
+     "yào"
+    ],
+    [
+     "早",
+     "早",
+     "zǎo"
+    ],
+    [
+     "起",
+     "起",
+     "qǐ"
+    ],
+    [
+     "上班",
+     "上班",
+     "shàng bān"
+    ]
+   ]
   },
   {
    "num": 6,
    "speaker": "B",
-   "zh": "你也唱一句！",
-   "pinyin": "nǐ yě chàng yī jù!",
-   "rd": "니 예 창 이 쥐!",
-   "ko": "너도 한 소절 해 봐!",
-   "note": "",
-   "tags": []
+   "zh": "明白明白，以后十点以前练。",
+   "pinyin": "Míngbai míngbai, yǐhòu shí diǎn yǐqián liàn.",
+   "rd": "밍바이 밍바이, 이허우 스 뎬 이첸 롄.",
+   "ko": "알았어요 알았어요, 앞으로 10시 전에만 할게요.",
+   "note": "以前 = ~전",
+   "tags": [],
+   "emotion": "polite",
+   "lemmas": [
+    [
+     "以后",
+     "以后",
+     "yǐ hòu"
+    ],
+    [
+     "十点",
+     "点",
+     "diǎn"
+    ],
+    [
+     "以前",
+     "以前",
+     "yǐ qián"
+    ],
+    [
+     "练",
+     "练",
+     "liàn"
+    ]
+   ]
   },
   {
    "num": 7,
    "speaker": "A",
-   "zh": "我不会……",
-   "pinyin": "wǒ bú huì ……",
-   "rd": "워 부 후이 ……",
-   "ko": "저 못 해요…",
-   "note": "",
-   "tags": []
+   "zh": "谢谢叔叔。比赛加油！",
+   "pinyin": "Xièxie shūshu. Bǐsài jiāyóu!",
+   "rd": "셰셰 수수. 비싸이 자유!",
+   "ko": "감사해요. 대회 힘내세요!",
+   "note": "加油 = 힘내",
+   "tags": [],
+   "emotion": "cheerful",
+   "lemmas": [
+    [
+     "叔叔",
+     "叔叔",
+     "shū shū"
+    ],
+    [
+     "比赛",
+     "比赛",
+     "bǐ sài"
+    ],
+    [
+     "加油",
+     "加油",
+     "jiā yóu"
+    ]
+   ]
   },
   {
    "num": 8,
    "speaker": "B",
-   "zh": "我教你，很简单。",
-   "pinyin": "wǒ jiào nǐ, hěn jiǎn dān.",
-   "rd": "워 자오 니, 헌 젠 단.",
-   "ko": "내가 가르쳐 줄게, 쉬워.",
-   "note": "",
-   "tags": []
+   "zh": "不过……你洗澡的时候也唱歌吧？😜",
+   "pinyin": "Búguò…… nǐ xǐzǎo de shíhou yě chàng gē ba?",
+   "rd": "부궈…… 니 시짜오 더 스허우 예 창 거 바?",
+   "ko": "그런데…… 학생도 샤워할 때 노래하죠?",
+   "note": "洗澡 = 샤워하다",
+   "tags": [],
+   "emotion": "teasing",
+   "lemmas": [
+    [
+     "洗澡",
+     "洗澡",
+     "xǐ zǎo"
+    ],
+    [
+     "时候",
+     "时候",
+     "shí hòu"
+    ],
+    [
+     "也",
+     "也",
+     "yě"
+    ],
+    [
+     "唱歌",
+     "唱歌",
+     "chàng gē"
+    ]
+   ]
   },
   {
    "num": 9,
    "speaker": "A",
-   "zh": "叔叔，我们几点比赛？",
-   "pinyin": "shū shū, wǒ men jǐ diǎn bǐ sài?",
-   "rd": "수 수, 워 먼 지 뎬 비 싸이?",
-   "ko": "아저씨, 우리 몇 시 대회예요?",
-   "note": "",
-   "tags": []
+   "zh": "啊？您听得见？",
+   "pinyin": "Á? Nín tīng de jiàn?",
+   "rd": "아? 닌 팅 더 젠?",
+   "ko": "네? 들려요?",
+   "note": "听得见 = 들리다",
+   "tags": [],
+   "emotion": "flustered",
+   "lemmas": [
+    [
+     "您",
+     "您",
+     "nín"
+    ],
+    [
+     "听",
+     "听",
+     "tīng"
+    ],
+    [
+     "见",
+     "见",
+     "jiàn"
+    ]
+   ]
   },
   {
    "num": 10,
    "speaker": "B",
-   "zh": "下星期，你唱第二段。",
-   "pinyin": "xià xīng qī, nǐ chàng dì èr duàn.",
-   "rd": "샤 싱 치, 니 창 디 얼 돤.",
-   "ko": "다음 주, 넌 2절이야.",
-   "note": "",
-   "tags": []
+   "zh": "每天早上七点，挺好听的。",
+   "pinyin": "Měitiān zǎoshang qī diǎn, tǐng hǎotīng de.",
+   "rd": "메이톈 짜오상 치 뎬, 팅 하오팅 더.",
+   "ko": "매일 아침 7시요, 꽤 듣기 좋던데요.",
+   "note": "好听 = 듣기 좋다",
+   "tags": [],
+   "emotion": "amused",
+   "lemmas": [
+    [
+     "每天",
+     "每天",
+     "měi tiān"
+    ],
+    [
+     "早上",
+     "早上",
+     "zǎo shàng"
+    ],
+    [
+     "七点",
+     "点",
+     "diǎn"
+    ],
+    [
+     "挺",
+     "挺",
+     "tǐng"
+    ],
+    [
+     "好听",
+     "好听",
+     "hǎo tīng"
+    ]
+   ]
   }
- ]
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r2_life_a2_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ }
 }

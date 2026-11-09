@@ -1,8 +1,8 @@
-1 B: 哇，搬家！要帮忙吗？ / Wā, bānjiā! Yào bāngmáng ma? / 와, 이사! 도와줄까? / 搬家 = 이사하다
-2 A: 不用，就三箱啦。 / Bú yòng, jiù sān xiāng la. / 괜찮아, 딱 세 상자야. / 箱 = 상자(양사)
-3 B: 三箱？楼下有三十箱呢。 / Sān xiāng? Lóu xià yǒu sānshí xiāng ne. / 세 상자? 아래층에 서른 상자 있던데. / 楼下 = 아래층
-4 A: 啊，完了……是我妈寄的。 / À, wán le…… shì wǒ mā jì de. / 아, 망했다…… 우리 엄마가 보낸 거야. / 寄 = 부치다
-5 B: 寄的都是什么啊？ / Jì de dōu shì shénme a? / 보낸 게 다 뭔데? / 什么 = 무엇
-6 A: 泡菜！全是泡菜。 / Pàocài! Quán shì pàocài. / 김치! 전부 김치. / 泡菜 = 김치
-7 B: 三十箱？那我常来吃哦。 / Sānshí xiāng? Nà wǒ cháng lái chī o. / 서른 상자? 그럼 내가 자주 먹으러 올게. / 常 = 자주
-8 A: ……你家冰箱够大吗？ / …… Nǐ jiā bīngxiāng gòu dà ma? / ……너네 집 냉장고는 충분히 커? / 冰箱 = 냉장고
+1 B: 哇，搬家！要帮忙吗？ / Wā, bān jiā! Yào bāngmáng ma? / 와, 이사하네! 도와줄까? / 搬家 = 이사하다 / excited
+2 A: 不用，就三箱。 / Búyòng, jiù sān xiāng. / 괜찮아, 딱 세 상자야. / 箱 = 상자(세는 말) / cheerful
+3 B: 楼下还有一箱，写着你的名字。 / Lóuxià hái yǒu yì xiāng, xiězhe nǐ de míngzi. / 아래층에 한 상자 더 있던데, 네 이름 쓰여 있어. / 楼下 = 아래층 / surprised
+4 A: 啊，那是我妈寄的。很重吧？ / À, nà shì wǒ mā jì de. Hěn zhòng ba? / 아, 그건 우리 엄마가 부친 거야. 무겁지? / 寄 = 부치다 / flustered
+5 B: 特别重！里面是什么啊？ / Tèbié zhòng! Lǐmiàn shì shénme a? / 엄청 무거워! 안에 뭐야? / 特别 = 아주 / surprised
+6 A: 泡菜，十斤泡菜。 / Pàocài, shí jīn pàocài. / 김치, 김치 열 근(5킬로). / 斤 = 근(500g) / shy
+7 B: 十斤？那我常来吃哦。 / Shí jīn? Nà wǒ cháng lái chī o. / 열 근? 그럼 나 자주 먹으러 올게. / 常 = 자주 / teasing
+8 A: 好啊，你帮我搬上来，我分你一半。 / Hǎo a, nǐ bāng wǒ bān shànglái, wǒ fēn nǐ yíbàn. / 좋아, 들어다 주면 반 나눠 줄게. / 分 = 나누다 / cheerful

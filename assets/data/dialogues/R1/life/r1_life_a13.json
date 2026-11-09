@@ -11,15 +11,15 @@
  ],
  "title": "이사 첫날",
  "emoji": "📦",
- "scene": "샤오리네 옆집으로 이사한 날. 박스가 너무 많다.",
+ "scene": "샤오리네 옆집으로 이사한 날. 짐은 세 상자뿐인데, 아래층에 상자가 하나 더 와 있다.",
  "speakers": {
   "A": "{name}",
   "B": "小丽"
  },
  "learner_gender": "M",
  "register": "casual",
- "twist": 4,
- "twist_type": "chaos",
+ "twist": 6,
+ "twist_type": "reveal",
  "flags": [],
  "variant": "north",
  "turns": [
@@ -27,13 +27,14 @@
    "num": 1,
    "speaker": "B",
    "zh": "哇，搬家！要帮忙吗？🤩",
-   "pinyin": "Wā, bānjiā! Yào bāngmáng ma?",
-   "rd": "와, 반자! 야오 방망 마?",
-   "ko": "와, 이사! 도와줄까?",
+   "pinyin": "Wā, bān jiā! Yào bāngmáng ma?",
+   "rd": "와, 반 자! 야오 방망 마?",
+   "ko": "와, 이사하네! 도와줄까?",
    "note": "搬家 = 이사하다",
    "tags": [
     "form:吗"
    ],
+   "emotion": "excited",
    "lemmas": [
     [
      "搬家",
@@ -50,20 +51,20 @@
      "帮忙",
      "bāng máng"
     ]
-   ],
-   "emotion": "excited"
+   ]
   },
   {
    "num": 2,
    "speaker": "A",
-   "zh": "不用，就三箱啦。😄",
-   "pinyin": "Bú yòng, jiù sān xiāng la.",
-   "rd": "부 융, 주 싼 샹 라.",
+   "zh": "不用，就三箱。",
+   "pinyin": "Búyòng, jiù sān xiāng.",
+   "rd": "부융, 주 싼 샹.",
    "ko": "괜찮아, 딱 세 상자야.",
-   "note": "箱 = 상자(양사)",
+   "note": "箱 = 상자(세는 말)",
    "tags": [
     "form:就"
    ],
+   "emotion": "cheerful",
    "lemmas": [
     [
      "不用",
@@ -80,60 +81,65 @@
      "箱",
      "xiāng"
     ]
-   ],
-   "emotion": "cheerful"
+   ]
   },
   {
    "num": 3,
    "speaker": "B",
-   "zh": "三箱？楼下有三十箱呢。😮",
-   "pinyin": "Sān xiāng? Lóu xià yǒu sānshí xiāng ne.",
-   "rd": "싼 샹? 러우 샤 유 싼스 샹 너.",
-   "ko": "세 상자? 아래층에 서른 상자 있던데.",
+   "zh": "楼下还有一箱，写着你的名字。",
+   "pinyin": "Lóuxià hái yǒu yì xiāng, xiězhe nǐ de míngzi.",
+   "rd": "러우샤 하이 유 이 샹, 셰저 니 더 밍쯔.",
+   "ko": "아래층에 한 상자 더 있던데, 네 이름 쓰여 있어.",
    "note": "楼下 = 아래층",
    "tags": [
     "form:有"
    ],
+   "emotion": "surprised",
    "lemmas": [
-    [
-     "三箱",
-     "箱",
-     "xiāng"
-    ],
     [
      "楼下",
      "楼下",
      "lóu xià"
     ],
     [
-     "有",
-     "有",
-     "yǒu"
+     "还有",
+     "还有",
+     "hái yǒu"
     ],
     [
-     "箱",
+     "一箱",
      "箱",
      "xiāng"
+    ],
+    [
+     "写",
+     "写",
+     "xiě"
+    ],
+    [
+     "名字",
+     "名字",
+     "míng zì"
     ]
-   ],
-   "emotion": "surprised"
+   ]
   },
   {
    "num": 4,
    "speaker": "A",
-   "zh": "啊，完了……是我妈寄的。",
-   "pinyin": "À, wán le…… shì wǒ mā jì de.",
-   "rd": "아, 완 러…… 스 워 마 지 더.",
-   "ko": "아, 망했다…… 우리 엄마가 보낸 거야.",
+   "zh": "啊，那是我妈寄的。很重吧？😳",
+   "pinyin": "À, nà shì wǒ mā jì de. Hěn zhòng ba?",
+   "rd": "아, 나 스 워 마 지 더. 헌 중 바?",
+   "ko": "아, 그건 우리 엄마가 부친 거야. 무겁지?",
    "note": "寄 = 부치다",
    "tags": [
     "form:的"
    ],
+   "emotion": "flustered",
    "lemmas": [
     [
-     "完",
-     "完",
-     "wán"
+     "那",
+     "那",
+     "nà"
     ],
     [
      "是",
@@ -149,31 +155,46 @@
      "寄",
      "寄",
      "jì"
+    ],
+    [
+     "很",
+     "很",
+     "hěn"
+    ],
+    [
+     "重",
+     "重",
+     "zhòng"
     ]
-   ],
-   "emotion": "flustered"
+   ]
   },
   {
    "num": 5,
    "speaker": "B",
-   "zh": "寄的都是什么啊？😮",
-   "pinyin": "Jì de dōu shì shénme a?",
-   "rd": "지 더 더우 스 선머 아?",
-   "ko": "보낸 게 다 뭔데?",
-   "note": "什么 = 무엇",
+   "zh": "特别重！里面是什么啊？😮",
+   "pinyin": "Tèbié zhòng! Lǐmiàn shì shénme a?",
+   "rd": "터볘 중! 리몐 스 선머 아?",
+   "ko": "엄청 무거워! 안에 뭐야?",
+   "note": "特别 = 아주",
    "tags": [
     "form:什么"
    ],
+   "emotion": "surprised",
    "lemmas": [
     [
-     "寄",
-     "寄",
-     "jì"
+     "特别",
+     "特别",
+     "tè bié"
     ],
     [
-     "都",
-     "都",
-     "dōu"
+     "重",
+     "重",
+     "zhòng"
+    ],
+    [
+     "里面",
+     "里面",
+     "lǐ miàn"
     ],
     [
      "是",
@@ -185,20 +206,20 @@
      "什么",
      "shén me"
     ]
-   ],
-   "emotion": "surprised"
+   ]
   },
   {
    "num": 6,
    "speaker": "A",
-   "zh": "泡菜！全是泡菜。",
-   "pinyin": "Pàocài! Quán shì pàocài.",
-   "rd": "파오차이! 취안 스 파오차이.",
-   "ko": "김치! 전부 김치.",
-   "note": "泡菜 = 김치",
+   "zh": "泡菜，十斤泡菜。",
+   "pinyin": "Pàocài, shí jīn pàocài.",
+   "rd": "파오차이, 스 진 파오차이.",
+   "ko": "김치, 김치 열 근(5킬로).",
+   "note": "斤 = 근(500g)",
    "tags": [
     "form:全"
    ],
+   "emotion": "shy",
    "lemmas": [
     [
      "泡菜",
@@ -206,39 +227,34 @@
      "pào cài"
     ],
     [
-     "全",
-     "全",
-     "quán"
-    ],
-    [
-     "是",
-     "是",
-     "shì"
+     "十斤",
+     "斤",
+     "jīn"
     ],
     [
      "泡菜",
      "泡菜",
      "pào cài"
     ]
-   ],
-   "emotion": "shout"
+   ]
   },
   {
    "num": 7,
    "speaker": "B",
-   "zh": "三十箱？那我常来吃哦。😜",
-   "pinyin": "Sānshí xiāng? Nà wǒ cháng lái chī o.",
-   "rd": "싼스 샹? 나 워 창 라이 츠 오.",
-   "ko": "서른 상자? 그럼 내가 자주 먹으러 올게.",
+   "zh": "十斤？那我常来吃哦。😜",
+   "pinyin": "Shí jīn? Nà wǒ cháng lái chī o.",
+   "rd": "스 진? 나 워 창 라이 츠 오.",
+   "ko": "열 근? 그럼 나 자주 먹으러 올게.",
    "note": "常 = 자주",
    "tags": [
     "form:数"
    ],
+   "emotion": "teasing",
    "lemmas": [
     [
-     "箱",
-     "箱",
-     "xiāng"
+     "十斤",
+     "斤",
+     "jīn"
     ],
     [
      "那",
@@ -260,43 +276,47 @@
      "吃",
      "chī"
     ]
-   ],
-   "emotion": "teasing"
+   ]
   },
   {
    "num": 8,
    "speaker": "A",
-   "zh": "……你家冰箱够大吗？🙄",
-   "pinyin": "…… Nǐ jiā bīngxiāng gòu dà ma?",
-   "rd": "…… 니 자 빙샹 거우 다 마?",
-   "ko": "……너네 집 냉장고는 충분히 커?",
-   "note": "冰箱 = 냉장고",
+   "zh": "好啊，你帮我搬上来，我分你一半。",
+   "pinyin": "Hǎo a, nǐ bāng wǒ bān shànglái, wǒ fēn nǐ yíbàn.",
+   "rd": "하오 아, 니 방 워 반 상라이, 워 펀 니 이반.",
+   "ko": "좋아, 들어다 주면 반 나눠 줄게.",
+   "note": "分 = 나누다",
    "tags": [
     "form:吗"
    ],
+   "emotion": "cheerful",
    "lemmas": [
     [
-     "家",
-     "家",
-     "jiā"
+     "好",
+     "好",
+     "hǎo"
     ],
     [
-     "冰箱",
-     "冰箱",
-     "bīng xiāng"
+     "帮",
+     "帮",
+     "bāng"
     ],
     [
-     "够",
-     "够",
-     "gòu"
+     "搬",
+     "搬",
+     "bān"
     ],
     [
-     "大",
-     "大",
-     "dà"
+     "上来",
+     "上来",
+     "shàng lái"
+    ],
+    [
+     "分",
+     "分",
+     "fēn"
     ]
-   ],
-   "emotion": "tsukkomi"
+   ]
   }
  ],
  "review": {

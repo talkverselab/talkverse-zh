@@ -9,16 +9,16 @@
  "domain": [
   "friends"
  ],
- "title": "둘이 찍자고 했는데",
+ "title": "한 장 더",
  "emoji": "🤳",
- "scene": "공원에서 하오란과 셀카 한 장. 그런데 찍을 때마다 사람이 늘어난다.",
+ "scene": "공원에서 하오란과 셀카. 팔이 짧아 둘이 다 안 나와서 지나가던 사람에게 부탁한다.",
  "speakers": {
   "A": "{name}",
   "B": "浩然"
  },
  "learner_gender": "F",
  "register": "casual",
- "twist": 5,
+ "twist": 7,
  "twist_type": "chaos",
  "flags": [],
  "variant": "north",
@@ -26,15 +26,21 @@
   {
    "num": 1,
    "speaker": "A",
-   "zh": "浩然，拍一张吧！😄",
-   "pinyin": "Hàorán, pāi yì zhāng ba!",
-   "rd": "하오란, 파이 이 장 바!",
-   "ko": "하오란, 한 장 찍자!",
-   "note": "……吧 = ~하자",
+   "zh": "浩然，我们拍一张吧！😄",
+   "pinyin": "Hàorán, wǒmen pāi yì zhāng ba!",
+   "rd": "하오란, 워먼 파이 이 장 바!",
+   "ko": "하오란, 우리 한 장 찍자!",
+   "note": "拍一张 = 한 장 찍다",
    "tags": [
     "form:吧"
    ],
+   "emotion": "cheerful",
    "lemmas": [
+    [
+     "我们",
+     "我们",
+     "wǒ men"
+    ],
     [
      "拍",
      "拍",
@@ -45,40 +51,45 @@
      "一张",
      "yī zhāng"
     ]
-   ],
-   "emotion": "cheerful"
+   ]
   },
   {
    "num": 2,
    "speaker": "B",
-   "zh": "来，一、二——",
-   "pinyin": "Lái, yī, èr——",
-   "rd": "라이, 이, 얼——",
-   "ko": "자, 하나, 둘——",
+   "zh": "好，来，一、二——",
+   "pinyin": "Hǎo, lái, yī, èr——",
+   "rd": "하오, 라이, 이, 얼——",
+   "ko": "좋아, 자, 하나, 둘——",
    "note": "来 = 자(시작할 때)",
    "tags": [
     "expr:来"
    ],
+   "emotion": "cheerful",
    "lemmas": [
+    [
+     "好",
+     "好",
+     "hǎo"
+    ],
     [
      "来",
      "来",
      "lái"
     ]
-   ],
-   "emotion": "cheerful"
+   ]
   },
   {
    "num": 3,
    "speaker": "A",
-   "zh": "等等！后面有人！",
-   "pinyin": "Děngděng! Hòumiàn yǒu rén!",
-   "rd": "덩덩! 허우몐 유 런!",
-   "ko": "잠깐! 뒤에 사람 있어!",
-   "note": "等等 = 잠깐만",
+   "zh": "等等！后面有人走过去了。",
+   "pinyin": "Děngděng! Hòumiàn yǒu rén zǒu guòqù le.",
+   "rd": "덩덩! 허우몐 유 런 쩌우 궈취 러.",
+   "ko": "잠깐! 뒤로 사람이 지나갔어.",
+   "note": "走过去 = 지나가다",
    "tags": [
     "expr:等等"
    ],
+   "emotion": "flustered",
    "lemmas": [
     [
      "后面",
@@ -89,31 +100,31 @@
      "有人",
      "有人",
      "yǒu rén"
-    ]
-   ],
-   "emotion": "shout",
-   "segs": [
-    [
-     "shout",
-     "等等！"
     ],
     [
-     "surprised",
-     "后面有人！"
+     "走",
+     "走",
+     "zǒu"
+    ],
+    [
+     "过去",
+     "过去",
+     "guò qù"
     ]
    ]
   },
   {
    "num": 4,
    "speaker": "B",
-   "zh": "没事，让他一起。",
-   "pinyin": "Méishì, ràng tā yìqǐ.",
-   "rd": "메이스, 랑 타 이치.",
-   "ko": "괜찮아, 같이 찍게 해.",
-   "note": "没事 = 괜찮아",
+   "zh": "没事，再来一张。",
+   "pinyin": "Méishì, zài lái yì zhāng.",
+   "rd": "메이스, 짜이 라이 이 장.",
+   "ko": "괜찮아, 한 장 더.",
+   "note": "再来一张 = 한 장 더",
    "tags": [
     "expr:没事"
    ],
+   "emotion": "gentle",
    "lemmas": [
     [
      "没",
@@ -126,114 +137,59 @@
      "shì"
     ],
     [
-     "让",
-     "让",
-     "ràng"
-    ],
-    [
-     "一起",
-     "一起",
-     "yì qǐ"
-    ]
-   ],
-   "emotion": "gentle"
-  },
-  {
-   "num": 5,
-   "speaker": "A",
-   "zh": "狗也来了？！",
-   "pinyin": "Gǒu yě lái le?!",
-   "rd": "거우 예 라이 러?!",
-   "ko": "강아지도 왔어?!",
-   "note": "还有 = ~도 있어",
-   "tags": [
-    "form:还有"
-   ],
-   "lemmas": [
-    [
-     "狗",
-     "狗",
-     "gǒu"
-    ],
-    [
-     "也",
-     "也",
-     "yě"
+     "再",
+     "再",
+     "zài"
     ],
     [
      "来",
      "来",
      "lái"
-    ]
-   ],
-   "emotion": "surprised"
-  },
-  {
-   "num": 6,
-   "speaker": "B",
-   "zh": "还有妈妈！看这里！",
-   "pinyin": "Hái yǒu māma! Kàn zhèlǐ!",
-   "rd": "하이 유 마마! 칸 저리!",
-   "ko": "엄마도! 여기 봐!",
-   "note": "大家 = 여러분·다들",
-   "tags": [
-    "expr:哈哈"
-   ],
-   "lemmas": [
-    [
-     "还有",
-     "还有",
-     "hái yǒu"
     ],
     [
-     "妈妈",
-     "妈妈",
-     "mā mā"
-    ],
-    [
-     "看",
-     "看",
-     "kàn"
-    ],
-    [
-     "这里",
-     "这里",
-     "zhè lǐ"
-    ]
-   ],
-   "emotion": "surprised",
-   "segs": [
-    [
-     "surprised",
-     "还有妈妈！"
-    ],
-    [
-     "cheerful",
-     "看这里！"
+     "一张",
+     "一张",
+     "yī zhāng"
     ]
    ]
   },
   {
-   "num": 7,
+   "num": 5,
    "speaker": "A",
-   "zh": "这是我们两个的……你最好看。",
-   "pinyin": "Zhè shì wǒmen liǎng ge de…… nǐ zuì hǎokàn.",
-   "rd": "저 스 워먼 량 거 더…… 니 쭈이 하오칸.",
-   "ko": "이거 우리 둘 거잖아…… 네가 제일 예뻐.",
-   "note": "啊 = 말끝 감정",
+   "zh": "你的手太短了，拍不到我们两个。",
+   "pinyin": "Nǐ de shǒu tài duǎn le, pāi bú dào wǒmen liǎng ge.",
+   "rd": "니 더 서우 타이 돤 러, 파이 부 다오 워먼 량 거.",
+   "ko": "네 팔이 너무 짧아서 우리 둘이 다 안 나와.",
+   "note": "拍不到 = 안 찍히다",
    "tags": [
-    "particle:啊"
+    "form:还有"
    ],
+   "emotion": "tsukkomi",
    "lemmas": [
     [
-     "这",
-     "这",
-     "zhè"
+     "手",
+     "手",
+     "shǒu"
     ],
     [
-     "是",
-     "是",
-     "shì"
+     "太",
+     "太",
+     "tài"
+    ],
+    [
+     "短",
+     "短",
+     "duǎn"
+    ],
+    [
+     "拍",
+     "拍",
+     "pāi"
+    ],
+    [
+     "不到",
+     "不到",
+     "bú dào"
     ],
     [
      "我们",
@@ -244,57 +200,158 @@
      "两个",
      "两个",
      "liǎng gè"
-    ],
-    [
-     "最",
-     "最",
-     "zuì"
-    ],
-    [
-     "好看",
-     "好看",
-     "hǎo kàn"
     ]
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "B",
+   "zh": "那请别人帮忙。您好，能帮我们拍一张吗？🙏",
+   "pinyin": "Nà qǐng biérén bāngmáng. Nín hǎo, néng bāng wǒmen pāi yì zhāng ma?",
+   "rd": "나 칭 볘런 방망. 닌 하오, 넝 방 워먼 파이 이 장 마?",
+   "ko": "그럼 다른 사람한테 부탁하자. 저기요, 사진 한 장 찍어 주실 수 있어요?",
+   "note": "能帮我们……吗 = ~해 주실 수 있어요?",
+   "tags": [
+    "expr:哈哈"
    ],
-   "emotion": "tsukkomi",
-   "segs": [
+   "emotion": "polite",
+   "lemmas": [
     [
-     "tsukkomi",
-     "这是我们两个的……"
+     "那",
+     "那",
+     "nà"
     ],
     [
-     "shy",
-     "你最好看。"
+     "请",
+     "请",
+     "qǐng"
+    ],
+    [
+     "别人",
+     "别人",
+     "bié rén"
+    ],
+    [
+     "帮忙",
+     "帮忙",
+     "bāng máng"
+    ],
+    [
+     "好",
+     "好",
+     "hǎo"
+    ],
+    [
+     "能",
+     "能",
+     "néng"
+    ],
+    [
+     "帮",
+     "帮",
+     "bāng"
+    ],
+    [
+     "我们",
+     "我们",
+     "wǒ men"
+    ],
+    [
+     "拍",
+     "拍",
+     "pāi"
+    ],
+    [
+     "一张",
+     "一张",
+     "yī zhāng"
+    ]
+   ]
+  },
+  {
+   "num": 7,
+   "speaker": "A",
+   "zh": "哇，拍得真好！……可是你闭眼了。",
+   "pinyin": "Wā, pāi de zhēn hǎo! ……Kěshì nǐ bì yǎn le.",
+   "rd": "와, 파이 더 전 하오! ……커스 니 비 옌 러.",
+   "ko": "와, 진짜 잘 찍었다! ……근데 너 눈 감았어.",
+   "note": "闭眼 = 눈을 감다",
+   "tags": [
+    "particle:啊"
+   ],
+   "emotion": "amused",
+   "lemmas": [
+    [
+     "拍",
+     "拍",
+     "pāi"
+    ],
+    [
+     "真",
+     "真",
+     "zhēn"
+    ],
+    [
+     "好",
+     "好",
+     "hǎo"
+    ],
+    [
+     "闭",
+     "闭",
+     "bì"
+    ],
+    [
+     "眼",
+     "眼",
+     "yǎn"
     ]
    ]
   },
   {
    "num": 8,
    "speaker": "B",
-   "zh": "你也是啊。😊",
-   "pinyin": "Nǐ yě shì a.",
-   "rd": "니 예 스 아.",
-   "ko": "너도야.",
-   "note": "笑得…… = 웃는 게 ~해",
+   "zh": "因为我一直在看你啊。再拍一张吧。😊",
+   "pinyin": "Yīnwèi wǒ yìzhí zài kàn nǐ a. Zài pāi yì zhāng ba.",
+   "rd": "인웨이 워 이즈 짜이 칸 니 아. 짜이 파이 이 장 바.",
+   "ko": "계속 너만 보고 있었으니까. 한 장 더 찍자.",
+   "note": "一直 = 계속",
    "tags": [
     "form:得"
    ],
+   "emotion": "shy",
    "lemmas": [
     [
-     "也",
-     "也",
-     "yě"
+     "一直",
+     "一直",
+     "yì zhí"
     ],
     [
-     "是",
-     "是",
-     "shì"
+     "看",
+     "看",
+     "kàn"
+    ],
+    [
+     "再",
+     "再",
+     "zài"
+    ],
+    [
+     "拍",
+     "拍",
+     "pāi"
+    ],
+    [
+     "一张",
+     "一张",
+     "yī zhāng"
     ]
-   ],
-   "emotion": "shy"
+   ]
   }
  ],
  "review": {
-  "grok_rewrite": "data/review/r1_friends_a1_grok_rewrite.md"
+  "grok_rewrite": "data/review/r1_friends_a1_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
  }
 }
