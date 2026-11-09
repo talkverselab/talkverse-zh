@@ -17,7 +17,7 @@
 
 ## 남은 일
 1. **음성 오독 22조각 재생성** — 목록 `data/tts/qa_fail_zh.tsv`(판정 「오독」), 작업 파일 `~/tts_work/zh/retake_jobs.json`(출력 `out/zh/retake/`). uk 에 "시험 준비됨" 보냄 → **uk 가 PC 차례를 줄 때만**(태국어 전편 뒤). 받은 뒤 qa → 가장 나은 판으로 pack `--upload`(그 편만) → audio_zh.json·리뷰 재생성 → uk 에 "GPU 끝"·"REVIEW_zh 갱신".
-2. **Grok R2 재작성**(11/9 재개 — 공지 `~/logs/rc/RELAY_grok_20261109.md`: 자기 크롬을 켜고 `ssh macmini4 /usr/bin/python3 ~/talkverse-uk/tools/grok_cookie_sync.py 9231 <자기 포트>` 로 쿠키 동기화, uk 의 방은 건드리지 말 것, **한자 세션에 대행 요청 금지**) — 남은 8편, 한 방에서(`data/review/grok_room.txt`, `tools/grok/room.sh`), 요청 형식 5번째 칸 = 감정. 끝난 2편(`r2_love_a1`·`r2_friends_a1`) 검수 미반영(friends_a1 10턴 집주인 반전 복구). 반영 `tools/grok/apply_final.py`(감정·이모지·음성 계획까지 자동) → `~/.venvs/zh/bin/python tools/add_lemmas.py` → 컷 `scene_prompts.py` + `cuts_one.sh`(LIMIT 처리 `grok_image.py` 에 아직 없음).
+2. **Grok R2 재작성**(11/9 재개 — 공지 `~/logs/rc/RELAY_grok_20261109.md`: 자기 크롬을 켜고 `ssh macmini4 /usr/bin/python3 ~/talkverse-uk/tools/grok_cookie_sync.py 9231 <자기 포트>` 로 쿠키 동기화, uk 의 방은 건드리지 말 것, **한자 세션에 대행 요청 금지**) — **프롬프트 최소화**(11/9 지시): 규칙은 문서에 한 번, 방 첫 메시지에서 "파일 이름 한 줄만 보낸다" 약속, 이후 채팅은 한 줄만, 그림이 달라지면 최초 통과 그림 기준(이미 만든 건 그대로) — 남은 8편, 한 방에서(`data/review/grok_room.txt`, `tools/grok/room.sh`), 요청 형식 5번째 칸 = 감정. 끝난 2편(`r2_love_a1`·`r2_friends_a1`) 검수 미반영(friends_a1 10턴 집주인 반전 복구). 반영 `tools/grok/apply_final.py`(감정·이모지·음성 계획까지 자동) → `~/.venvs/zh/bin/python tools/add_lemmas.py` → 컷 `scene_prompts.py` + `cuts_one.sh`(LIMIT 처리 `grok_image.py` 에 아직 없음).
 3. **출시 전**(지금 심사는 한자앱만): 탐색 탭 「맞춤 회화 만들기 — 준비 중」 줄 제거 또는 완성, 임시 조음 그림 교체, 스토어 상품 등록(사용자), 서버 `/me/purchases` 새 ID(uk).
 4. 결정 대기: 한자 절벽 결과(`data/cliff/`)를 uk 사이트에 반영할지.
 
