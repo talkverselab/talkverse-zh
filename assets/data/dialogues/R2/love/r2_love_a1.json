@@ -29,12 +29,13 @@
   {
    "num": 1,
    "speaker": "B",
-   "zh": "你手机亮了，这是我吧？😉",
-   "pinyin": "nǐ shǒu jī liàng le, zhè shì wǒ ba?",
-   "rd": "니 서우 지 량 러, 저 스 워 바?",
-   "ko": "네 폰 켜졌다, 이거 나지?",
-   "note": "",
+   "zh": "你手机亮了。这是我吧？😜",
+   "pinyin": "Nǐ shǒujī liàng le. Zhè shì wǒ ba?",
+   "rd": "니 서우지 량 러. 저 스 워 바?",
+   "ko": "네 폰 켜졌다. 이거 나지?",
+   "note": "亮 = (화면이) 켜지다",
    "tags": [],
+   "emotion": "teasing",
    "lemmas": [
     [
      "手机",
@@ -62,11 +63,12 @@
    "num": 2,
    "speaker": "A",
    "zh": "别看！这个不能看！",
-   "pinyin": "bié kàn! zhè ge bù néng kàn!",
-   "rd": "볘 칸! 저 거 부 넝 칸!",
-   "ko": "보지 마! 이건 안 돼!",
-   "note": "",
+   "pinyin": "Bié kàn! Zhège bù néng kàn!",
+   "rd": "볘 칸! 저거 부 넝 칸!",
+   "ko": "보지 마! 이건 보면 안 돼!",
+   "note": "不能 = ~하면 안 된다",
    "tags": [],
+   "emotion": "flustered",
    "lemmas": [
     [
      "别",
@@ -98,13 +100,19 @@
   {
    "num": 3,
    "speaker": "B",
-   "zh": "我都看见了，是我的背影。",
-   "pinyin": "wǒ dōu kàn jiàn le, shì wǒ de bèi yǐng.",
-   "rd": "워 더우 칸 젠 러, 스 워 더 베이 잉.",
-   "ko": "다 봤어, 내 뒷모습이잖아.",
-   "note": "",
+   "zh": "晚了，我都看见了。是我的背影。",
+   "pinyin": "Wǎn le, wǒ dōu kànjiàn le. Shì wǒ de bèiyǐng.",
+   "rd": "완 러, 워 더우 칸젠 러. 스 워 더 베이잉.",
+   "ko": "늦었어, 다 봤어. 내 뒷모습이잖아.",
+   "note": "背影 = 뒷모습",
    "tags": [],
+   "emotion": "amused",
    "lemmas": [
+    [
+     "晚",
+     "晚",
+     "wǎn"
+    ],
     [
      "都",
      "都",
@@ -136,11 +144,12 @@
    "num": 4,
    "speaker": "A",
    "zh": "那是……随便选的图片。",
-   "pinyin": "nà shì …… suí biàn xuǎn de tú piàn.",
-   "rd": "나 스 …… 쑤이 볜 쉬안 더 투 폔.",
+   "pinyin": "Nà shì…… suíbiàn xuǎn de túpiàn.",
+   "rd": "나 스…… 쑤이볜 쉬안 더 투폔.",
    "ko": "그건… 그냥 고른 사진이야.",
-   "note": "",
+   "note": "随便 = 아무렇게나",
    "tags": [],
+   "emotion": "flustered",
    "lemmas": [
     [
      "那",
@@ -172,17 +181,28 @@
   {
    "num": 5,
    "speaker": "B",
-   "zh": "随便选到我？",
-   "pinyin": "suí biàn xuǎn dào wǒ?",
-   "rd": "쑤이 볜 쉬안 다오 워?",
-   "ko": "그냥 골랐는데 나야?",
-   "note": "",
+   "zh": "随便一选，就选到我了？",
+   "pinyin": "Suíbiàn yì xuǎn, jiù xuǎn dào wǒ le?",
+   "rd": "쑤이볜 이 쉬안, 주 쉬안 다오 워 러?",
+   "ko": "그냥 골랐는데 딱 내가 골라졌어?",
+   "note": "一……就…… = ~하자마자",
    "tags": [],
+   "emotion": "teasing",
    "lemmas": [
     [
      "随便",
      "随便",
      "suí biàn"
+    ],
+    [
+     "选",
+     "选",
+     "xuǎn"
+    ],
+    [
+     "就",
+     "就",
+     "jiù"
     ],
     [
      "选",
@@ -199,12 +219,13 @@
   {
    "num": 6,
    "speaker": "A",
-   "zh": "我不知道怎么解释。",
-   "pinyin": "wǒ bù zhī dào zěn me jiě shì.",
-   "rd": "워 부 즈 다오 쩐 머 제 스.",
-   "ko": "뭐라고 설명해야 할지 모르겠어.",
-   "note": "",
+   "zh": "我……不知道怎么解释。",
+   "pinyin": "Wǒ…… bù zhīdào zěnme jiěshì.",
+   "rd": "워…… 부 즈다오 쩐머 제스.",
+   "ko": "나… 뭐라고 설명해야 할지 모르겠어.",
+   "note": "解释 = 설명하다",
    "tags": [],
+   "emotion": "shy",
    "lemmas": [
     [
      "不",
@@ -231,12 +252,13 @@
   {
    "num": 7,
    "speaker": "B",
-   "zh": "不用解释，换一张吧。😉",
-   "pinyin": "bù yòng jiě shì, huàn yī zhāng ba.",
-   "rd": "부 융 제 스, 환 이 장 바.",
-   "ko": "설명 안 해도 돼, 바꾸자.",
-   "note": "",
+   "zh": "不用解释。换一张吧。🥰",
+   "pinyin": "Bú yòng jiěshì. Huàn yì zhāng ba.",
+   "rd": "부 융 제스. 환 이 장 바.",
+   "ko": "설명 안 해도 돼. 다른 걸로 바꾸자.",
+   "note": "换 = 바꾸다",
    "tags": [],
+   "emotion": "gentle",
    "lemmas": [
     [
      "不用",
@@ -264,11 +286,12 @@
    "num": 8,
    "speaker": "A",
    "zh": "你生气了？",
-   "pinyin": "nǐ shēng qì le?",
-   "rd": "니 성 치 러?",
+   "pinyin": "Nǐ shēngqì le?",
+   "rd": "니 성치 러?",
    "ko": "화났어?",
-   "note": "",
+   "note": "生气 = 화나다",
    "tags": [],
+   "emotion": "worried",
    "lemmas": [
     [
      "生气",
@@ -280,13 +303,19 @@
   {
    "num": 9,
    "speaker": "B",
-   "zh": "这张不好看，我拍给你。",
-   "pinyin": "zhè zhāng bù hǎo kàn, wǒ pāi gěi nǐ.",
-   "rd": "저 장 부 하오 칸, 워 파이 게이 니.",
-   "ko": "이건 안 예뻐, 내가 찍어 줄게.",
-   "note": "",
+   "zh": "没有。这张拍得不好看，我给你拍一张。",
+   "pinyin": "Méiyǒu. Zhè zhāng pāi de bù hǎokàn, wǒ gěi nǐ pāi yì zhāng.",
+   "rd": "메이유. 저 장 파이 더 부 하오칸, 워 게이 니 파이 이 장.",
+   "ko": "아니. 이건 잘 안 나왔어, 내가 한 장 찍어 줄게.",
+   "note": "拍得 = 찍은 정도가",
    "tags": [],
+   "emotion": "gentle",
    "lemmas": [
+    [
+     "没有",
+     "没有",
+     "méi yǒu"
+    ],
     [
      "这",
      "这",
@@ -296,6 +325,11 @@
      "张",
      "张",
      "zhāng"
+    ],
+    [
+     "拍",
+     "拍",
+     "pāi"
     ],
     [
      "不",
@@ -311,18 +345,24 @@
      "拍",
      "拍",
      "pāi"
+    ],
+    [
+     "一张",
+     "一张",
+     "yī zhāng"
     ]
    ]
   },
   {
    "num": 10,
    "speaker": "A",
-   "zh": "那……你看着我拍吗？🤔",
-   "pinyin": "nà …… nǐ kàn zhe wǒ pāi ma?",
-   "rd": "나 …… 니 칸 저 워 파이 마?",
-   "ko": "그럼… 나 보면서 찍을 거야?",
-   "note": "",
+   "zh": "那……这次是正面吗？😊",
+   "pinyin": "Nà…… zhè cì shì zhèngmiàn ma?",
+   "rd": "나…… 저 츠 스 정몐 마?",
+   "ko": "그럼… 이번엔 앞모습이야?",
+   "note": "正面 = 앞모습, 정면",
    "tags": [],
+   "emotion": "shy",
    "lemmas": [
     [
      "那",
@@ -330,16 +370,31 @@
      "nà"
     ],
     [
-     "看着",
-     "看着",
-     "kàn zhe"
+     "这次",
+     "这次",
+     "zhè cì"
     ],
     [
-     "拍",
-     "拍",
-     "pāi"
+     "是",
+     "是",
+     "shì"
+    ],
+    [
+     "正",
+     "正",
+     "zhèng"
+    ],
+    [
+     "面",
+     "面",
+     "miàn"
     ]
    ]
   }
- ]
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r2_love_a1_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ }
 }

@@ -1,0 +1,10 @@
+1 A: 糟了，最后一班车走了。 / Zāo le, zuìhòu yì bān chē zǒu le. / 큰일 났다, 막차 갔어. / 最后一班车 = 막차 / worried
+2 B: 打车呢？ / Dǎchē ne? / 택시는? / 打车 = 택시를 타다 / neutral
+3 A: 我看看……要等四十分钟。 / Wǒ kànkan…… yào děng sìshí fēnzhōng. / 어디 보자… 40분 기다려야 해. / 要 = ~해야 한다 / sad
+4 B: 酒店离这儿多远？ / Jiǔdiàn lí zhèr duō yuǎn? / 호텔 여기서 얼마나 멀어? / 离 = ~에서 / neutral
+5 A: 三公里。那边有一辆共享单车。 / Sān gōnglǐ. Nàbiān yǒu yí liàng gòngxiǎng dānchē. / 3킬로. 저기 공유 자전거 한 대 있어. / 共享单车 = 공유 자전거 / cheerful
+6 B: 只有一辆？我们两个人啊。 / Zhǐ yǒu yí liàng? Wǒmen liǎng ge rén a. / 한 대뿐이야? 우리 둘인데. / 只有 = ~밖에 없다 / tsukkomi
+7 A: 你骑，我在旁边走，慢慢回去。 / Nǐ qí, wǒ zài pángbiān zǒu, mànman huíqu. / 네가 타, 나는 옆에서 걸을게, 천천히 가자. / 旁边 = 옆 / gentle
+8 B: 那多累。我推车，我们一起走吧。 / Nà duō lèi. Wǒ tuī chē, wǒmen yìqǐ zǒu ba. / 그럼 힘들잖아. 내가 자전거 끌게, 같이 걷자. / 推 = 밀다, 끌다 / gentle
+9 A: 走三公里，要四十分钟呢。 / Zǒu sān gōnglǐ, yào sìshí fēnzhōng ne. / 3킬로 걸으면 40분 걸리는데. / 要 = (시간이) 걸리다 / amused
+10 B: 跟你走的话，四十分钟不长。 / Gēn nǐ zǒu dehuà, sìshí fēnzhōng bù cháng. / 너랑 걷는 거면 40분도 안 길어. / ……的话 = ~라면 / shy

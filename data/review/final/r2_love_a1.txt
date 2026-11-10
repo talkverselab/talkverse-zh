@@ -1,0 +1,10 @@
+1 B: 你手机亮了。这是我吧？ / Nǐ shǒujī liàng le. Zhè shì wǒ ba? / 네 폰 켜졌다. 이거 나지? / 亮 = (화면이) 켜지다 / teasing
+2 A: 别看！这个不能看！ / Bié kàn! Zhège bù néng kàn! / 보지 마! 이건 보면 안 돼! / 不能 = ~하면 안 된다 / flustered
+3 B: 晚了，我都看见了。是我的背影。 / Wǎn le, wǒ dōu kànjiàn le. Shì wǒ de bèiyǐng. / 늦었어, 다 봤어. 내 뒷모습이잖아. / 背影 = 뒷모습 / amused
+4 A: 那是……随便选的图片。 / Nà shì…… suíbiàn xuǎn de túpiàn. / 그건… 그냥 고른 사진이야. / 随便 = 아무렇게나 / flustered
+5 B: 随便一选，就选到我了？ / Suíbiàn yì xuǎn, jiù xuǎn dào wǒ le? / 그냥 골랐는데 딱 내가 골라졌어? / 一……就…… = ~하자마자 / teasing
+6 A: 我……不知道怎么解释。 / Wǒ…… bù zhīdào zěnme jiěshì. / 나… 뭐라고 설명해야 할지 모르겠어. / 解释 = 설명하다 / shy
+7 B: 不用解释。换一张吧。 / Bú yòng jiěshì. Huàn yì zhāng ba. / 설명 안 해도 돼. 다른 걸로 바꾸자. / 换 = 바꾸다 / gentle
+8 A: 你生气了？ / Nǐ shēngqì le? / 화났어? / 生气 = 화나다 / worried
+9 B: 没有。这张拍得不好看，我给你拍一张。 / Méiyǒu. Zhè zhāng pāi de bù hǎokàn, wǒ gěi nǐ pāi yì zhāng. / 아니. 이건 잘 안 나왔어, 내가 한 장 찍어 줄게. / 拍得 = 찍은 정도가 / gentle
+10 A: 那……这次是正面吗？ / Nà…… zhè cì shì zhèngmiàn ma? / 그럼… 이번엔 앞모습이야? / 正面 = 앞모습, 정면 / shy

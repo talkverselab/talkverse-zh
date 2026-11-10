@@ -1,0 +1,10 @@
+1 A: 我想跟一个人说"我喜欢你"。 / Wǒ xiǎng gēn yí ge rén shuō "wǒ xǐhuan nǐ". / 어떤 사람한테 "좋아해"라고 말하고 싶어. / 跟……说 = ~에게 말하다 / shy
+2 B: 谁啊？我帮你练习。 / Shéi a? Wǒ bāng nǐ liànxí. / 누군데? 내가 연습 도와줄게. / 练习 = 연습하다 / excited
+3 A: 你站这儿，就当是他。 / Nǐ zhàn zhèr, jiù dàng shì tā. / 여기 서서, 그 사람이라고 쳐. / 当 = ~로 치다 / stiff
+4 B: 好，开始吧。 / Hǎo, kāishǐ ba. / 좋아, 시작해. / 开始 = 시작하다 / teasing
+5 A: 我……喜欢你很久了。 / Wǒ…… xǐhuan nǐ hěn jiǔ le. / 나… 너 오래전부터 좋아했어. / 很久 = 오래 / shy
+6 B: 不错！声音大一点，再说一遍。 / Búcuò! Shēngyīn dà yìdiǎn, zài shuō yí biàn. / 괜찮아! 목소리 좀 크게, 한 번 더. / 再……一遍 = 한 번 더 / cheerful
+7 A: 我喜欢你，真的。 / Wǒ xǐhuan nǐ, zhēn de. / 좋아해, 진짜로. / 真的 = 진짜로 / gentle
+8 B: 等等，你为什么一直看着我的眼睛？ / Děngdeng, nǐ wèishénme yìzhí kànzhe wǒ de yǎnjing? / 잠깐, 왜 계속 내 눈을 보고 말해? / 一直 = 계속 / surprised
+9 A: 因为……这不是练习。 / Yīnwèi…… zhè bú shì liànxí. / 왜냐면… 이건 연습이 아니니까. / 因为 = 왜냐하면 / shy
+10 B: 那我也不用练习了。我也喜欢你。 / Nà wǒ yě bú yòng liànxí le. Wǒ yě xǐhuan nǐ. / 그럼 나도 연습 안 해도 되겠네. 나도 좋아해. / 不用 = ~할 필요 없다 / gentle

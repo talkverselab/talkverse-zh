@@ -1,0 +1,10 @@
+1 A: 服务员，买单！我来。 / Fúwùyuán, mǎidān! Wǒ lái. / 여기요, 계산이요! 제가 낼게요. / 买单 = 계산하다 / excited
+2 B: 放下！今天我请。 / Fàngxià! Jīntiān wǒ qǐng. / 내려놔! 오늘은 내가 살게. / 请 = 한턱내다 / shout
+3 A: 上次你请了，这次该我了。 / Shàng cì nǐ qǐng le, zhè cì gāi wǒ le. / 저번에 네가 샀잖아, 이번엔 내 차례야. / 该我了 = 내 차례다 / annoyed
+4 B: 把手机给我。 / Bǎ shǒujī gěi wǒ. / 폰 이리 줘. / 把 = ~을 / teasing
+5 A: 别抢，我已经扫了。 / Bié qiǎng, wǒ yǐjīng sǎo le. / 뺏지 마, 벌써 찍었어. / 扫 = (QR을) 찍다 / excited
+6 B: 我也扫了。 / Wǒ yě sǎo le. / 나도 찍었는데. / 也 = ~도 / surprised
+7 A: 等等，怎么付了两次？ / Děngdeng, zěnme fù le liǎng cì? / 잠깐, 왜 두 번 결제됐지? / 付 = 지불하다 / worried
+8 B: 服务员在笑，说"谢谢两位老板"。 / Fúwùyuán zài xiào, shuō "xièxie liǎng wèi lǎobǎn". / 종업원이 웃으면서 "두 분 사장님 감사합니다"래. / 老板 = 사장님(손님 호칭) / amused
+9 A: 那多付的钱怎么办？ / Nà duō fù de qián zěnme bàn? / 그럼 더 낸 돈은 어떡해? / 多付 = 더 내다 / worried
+10 B: 别退了，再点一个菜吧。 / Bié tuì le, zài diǎn yí ge cài ba. / 환불하지 말고, 요리 하나 더 시키자. / 退 = 환불하다 / cheerful

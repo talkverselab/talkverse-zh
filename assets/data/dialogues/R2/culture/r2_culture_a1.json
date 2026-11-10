@@ -27,22 +27,18 @@
   {
    "num": 1,
    "speaker": "A",
-   "zh": "服务员，我来买单！",
-   "pinyin": "fú wù yuán, wǒ lái mǎi dān!",
-   "rd": "푸 우 위안, 워 라이 마이 단!",
-   "ko": "여기요, 제가 계산할게요!",
-   "note": "",
+   "zh": "服务员，买单！我来。",
+   "pinyin": "Fúwùyuán, mǎidān! Wǒ lái.",
+   "rd": "푸우위안, 마이단! 워 라이.",
+   "ko": "여기요, 계산이요! 제가 낼게요.",
+   "note": "买单 = 계산하다",
    "tags": [],
+   "emotion": "excited",
    "lemmas": [
     [
      "服务员",
      "服务员",
      "fú wù yuán"
-    ],
-    [
-     "来",
-     "来",
-     "lái"
     ],
     [
      "买",
@@ -53,18 +49,24 @@
      "单",
      "单",
      "dān"
+    ],
+    [
+     "来",
+     "来",
+     "lái"
     ]
    ]
   },
   {
    "num": 2,
    "speaker": "B",
-   "zh": "放下！今天我请！",
-   "pinyin": "fàng xià! jīn tiān wǒ qǐng!",
-   "rd": "팡 샤! 진 톈 워 칭!",
-   "ko": "내려놔! 오늘은 내가 살게!",
-   "note": "",
+   "zh": "放下！今天我请。",
+   "pinyin": "Fàngxià! Jīntiān wǒ qǐng.",
+   "rd": "팡샤! 진톈 워 칭.",
+   "ko": "내려놔! 오늘은 내가 살게.",
+   "note": "请 = 한턱내다",
    "tags": [],
+   "emotion": "shout",
    "lemmas": [
     [
      "放下",
@@ -86,12 +88,13 @@
   {
    "num": 3,
    "speaker": "A",
-   "zh": "上次你请了，这次我来。",
-   "pinyin": "shàng cì nǐ qǐng le, zhè cì wǒ lái.",
-   "rd": "상 츠 니 칭 러, 저 츠 워 라이.",
-   "ko": "저번에 네가 샀잖아, 이번엔 내가.",
-   "note": "",
+   "zh": "上次你请了，这次该我了。",
+   "pinyin": "Shàng cì nǐ qǐng le, zhè cì gāi wǒ le.",
+   "rd": "상 츠 니 칭 러, 저 츠 가이 워 러.",
+   "ko": "저번에 네가 샀잖아, 이번엔 내 차례야.",
+   "note": "该我了 = 내 차례다",
    "tags": [],
+   "emotion": "annoyed",
    "lemmas": [
     [
      "上次",
@@ -109,21 +112,22 @@
      "zhè cì"
     ],
     [
-     "来",
-     "来",
-     "lái"
+     "该",
+     "该",
+     "gāi"
     ]
    ]
   },
   {
    "num": 4,
    "speaker": "B",
-   "zh": "你手机给我。",
-   "pinyin": "nǐ shǒu jī gěi wǒ.",
-   "rd": "니 서우 지 게이 워.",
+   "zh": "把手机给我。",
+   "pinyin": "Bǎ shǒujī gěi wǒ.",
+   "rd": "바 서우지 게이 워.",
    "ko": "폰 이리 줘.",
-   "note": "",
+   "note": "把 = ~을",
    "tags": [],
+   "emotion": "teasing",
    "lemmas": [
     [
      "手机",
@@ -135,12 +139,13 @@
   {
    "num": 5,
    "speaker": "A",
-   "zh": "你别抢，我已经扫了。",
-   "pinyin": "nǐ bié qiǎng, wǒ yǐ jīng sǎo le.",
-   "rd": "니 볘 창, 워 이 징 싸오 러.",
+   "zh": "别抢，我已经扫了。",
+   "pinyin": "Bié qiǎng, wǒ yǐjīng sǎo le.",
+   "rd": "볘 창, 워 이징 싸오 러.",
    "ko": "뺏지 마, 벌써 찍었어.",
-   "note": "",
+   "note": "扫 = (QR을) 찍다",
    "tags": [],
+   "emotion": "excited",
    "lemmas": [
     [
      "别",
@@ -168,11 +173,12 @@
    "num": 6,
    "speaker": "B",
    "zh": "我也扫了。",
-   "pinyin": "wǒ yě sǎo le.",
+   "pinyin": "Wǒ yě sǎo le.",
    "rd": "워 예 싸오 러.",
    "ko": "나도 찍었는데.",
-   "note": "",
+   "note": "也 = ~도",
    "tags": [],
+   "emotion": "surprised",
    "lemmas": [
     [
      "也",
@@ -190,11 +196,12 @@
    "num": 7,
    "speaker": "A",
    "zh": "等等，怎么付了两次？",
-   "pinyin": "děng děng, zěn me fù le liǎng cì?",
-   "rd": "덩 덩, 쩐 머 푸 러 량 츠?",
+   "pinyin": "Děngdeng, zěnme fù le liǎng cì?",
+   "rd": "덩덩, 쩐머 푸 러 량 츠?",
    "ko": "잠깐, 왜 두 번 결제됐지?",
-   "note": "",
+   "note": "付 = 지불하다",
    "tags": [],
+   "emotion": "worried",
    "lemmas": [
     [
      "怎么",
@@ -216,12 +223,13 @@
   {
    "num": 8,
    "speaker": "B",
-   "zh": "服务员说，谢谢老板！",
-   "pinyin": "fú wù yuán shuō, xiè xiè lǎo bǎn!",
-   "rd": "푸 우 위안 숴, 셰 셰 라오 반!",
-   "ko": "종업원이 사장님 감사합니다래!",
-   "note": "",
+   "zh": "服务员在笑，说\"谢谢两位老板\"。",
+   "pinyin": "Fúwùyuán zài xiào, shuō \"xièxie liǎng wèi lǎobǎn\".",
+   "rd": "푸우위안 짜이 샤오, 숴 \"셰셰 량 웨이 라오반\".",
+   "ko": "종업원이 웃으면서 \"두 분 사장님 감사합니다\"래.",
+   "note": "老板 = 사장님(손님 호칭)",
    "tags": [],
+   "emotion": "amused",
    "lemmas": [
     [
      "服务员",
@@ -229,9 +237,19 @@
      "fú wù yuán"
     ],
     [
+     "笑",
+     "笑",
+     "xiào"
+    ],
+    [
      "说",
      "说",
      "shuō"
+    ],
+    [
+     "两位",
+     "两位",
+     "liǎng wèi"
     ],
     [
      "老板",
@@ -243,12 +261,13 @@
   {
    "num": 9,
    "speaker": "A",
-   "zh": "那多付的钱呢？🤔",
-   "pinyin": "nà duō fù de qián ne?",
-   "rd": "나 둬 푸 더 첸 너?",
-   "ko": "그럼 더 낸 돈은?",
-   "note": "",
+   "zh": "那多付的钱怎么办？",
+   "pinyin": "Nà duō fù de qián zěnme bàn?",
+   "rd": "나 둬 푸 더 첸 쩐머 반?",
+   "ko": "그럼 더 낸 돈은 어떡해?",
+   "note": "多付 = 더 내다",
    "tags": [],
+   "emotion": "worried",
    "lemmas": [
     [
      "那",
@@ -269,23 +288,34 @@
      "钱",
      "钱",
      "qián"
+    ],
+    [
+     "怎么办",
+     "怎么办",
+     "zěn me bàn"
     ]
    ]
   },
   {
    "num": 10,
    "speaker": "B",
-   "zh": "算了，再点一个菜吧。😉",
-   "pinyin": "suàn le, zài diǎn yí gè cài ba.",
-   "rd": "쏸 러, 짜이 뎬 이 거 차이 바.",
-   "ko": "됐어, 요리 하나 더 시키자.",
-   "note": "",
+   "zh": "别退了，再点一个菜吧。😄",
+   "pinyin": "Bié tuì le, zài diǎn yí ge cài ba.",
+   "rd": "볘 투이 러, 짜이 뎬 이 거 차이 바.",
+   "ko": "환불하지 말고, 요리 하나 더 시키자.",
+   "note": "退 = 환불하다",
    "tags": [],
+   "emotion": "cheerful",
    "lemmas": [
     [
-     "算了",
-     "算",
-     "suàn"
+     "别",
+     "别",
+     "bié"
+    ],
+    [
+     "退",
+     "退",
+     "tuì"
     ],
     [
      "再",
@@ -309,5 +339,10 @@
     ]
    ]
   }
- ]
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r2_culture_a1_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ }
 }
