@@ -17,6 +17,7 @@
 
 - **11/9 오후 회화 일상 원칙(§9) 점검**: 반전 있는 101편을 읽고 일상과 동떨어진 14편을 다시 씀(`7f2a34f`) — R1 8편(`r1_friends_a1·a5·a12`, `r1_life_a13·a2·c1`, `r1_travel_c2·c4`) · R2 6편(`r2_culture_a2`, `r2_friends_a1·c1`, `r2_life_a1·a2`, `r2_travel_a1`). 반전·설렘은 비율 그대로, 일상 장면 안에서. 나머지 87편은 현실적인 꼬임이라 그대로 둠. 장면 컷 그림은 14편 모두 옛 장면 → uk 그림 차례에 다시.
 - **11/10**: R2 남은 4편(`r2_culture_a1`·`r2_love_a1`·`r2_love_a2`·`r2_travel_a2`)을 Grok 없이 세션 검수로 확정(`856f1b0`, Grok 은 주간 한도 11/16 초기화) — 감정 열·음성 계획까지. 이로써 **R1·R2 회화 전편 검수 끝**(음성 없는 편은 R2 10편 + 다시 쓴 R1 8편). 자산 업로드 점검: 장면 컷 549장·음성 3,444줄(220편) 모두 R2·D1 에 있음, 미업로드 없음.
+- **11/11 성조연습 개편**(사용자 지시, uk 전달: 「4성 매트릭스를 성조연습으로… 단어 2개 → 3개 → 4개」「그다음엔 문장」 — **낱말 개수**, uk 가 사용자 확인) `775c4a3`: 화면 `lib/screens/tone_drill_screen.dart`(묶음 10개 = 2글자 낱말 4 + R1 문장 1, 2개부터 각자 3연속 통과하면 하나 추가, 잠금 없음, 문장은 겹쳐 보기·참고 점수만, 격자 = 진도 지도), 채점 `lib/services/pitch_coach.dart` + 모듈 `packages/talkverse_pitch`(**uk 담당 원본 `~/talkverse/talkverse-pitch` 의 복사본 — 여기서 고치지 말고 판정 어긋난 사례(낱말·말한 성조·나온 판정)를 uk 에 보낸 뒤 새 원본을 다시 복사**), 자료 `tools/build_tone_drill.py` → `assets/data/tone_drill.json`. 문턱값은 합성음 기준 — 첫 빌드는 사용자가 직접 말해 보고 판정 확인용. 1음절 준비 화면은 아직 옛 ToneAnalyzer 판정(uk 권고: `scoreMandarinTone` 으로 바꾸기 — 남은 일).
 - HSK 1~5급 단어 목록(4,240) `~/talkverse/_shared/zh_hsk1-5_words.csv` 를 uk 에 넘김(그림 대조·공유 표시는 uk 몫, 사용자 지시).
 
 ## 남은 일
