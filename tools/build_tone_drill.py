@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """성조연습 자료 → assets/data/tone_drill.json. 2026-11-11 사용자 지시(uk 전달): 「두 낱말만 놓고 반복 → 세 낱말 → 네 낱말」「그다음엔 문장」
-  묶음 10개 = 2글자 낱말 4개(성조 칸이 서로 다르게, 20칸을 두 번씩 고루) + 문장 1줄. 앞 묶음은 뚜렷이 다른 칸, 뒤로 갈수록 헷갈리는 짝·변조·경성.
+  묶음 50개 = 2글자 낱말 4개(성조 칸이 서로 다르게, 기본 10묶음 틀을 5번 — 칸마다 낱말 10개; 11/11 사용자 「연습량이 훨씬 많아야」) + 문장 1줄. 앞 묶음은 뚜렷이 다른 칸, 뒤로 갈수록 헷갈리는 짝·변조·경성.
   ~/.venvs/tts_zh/bin/python tools/build_tone_drill.py
 - 낱말: HSK 1~5급 단어 중 글자별 성조(pypinyin, 낱말 문맥)를 뽑아 단어장 rd 와 **병음 철자·성조 둘 다** 맞는 것만. 一·儿·다른 문자 든 낱말은 뺀다
   (一 변조는 채점 모듈이 안 하므로). 不 는 사전 성조(4)로 두면 모듈이 不+4성→2성을 처리한다.
@@ -64,7 +64,7 @@ def contour(wav):
 ROUNDS = [  # (앞 두 칸 = 처음에 번갈아 낼 뚜렷한 짝)
     ['1-1', '4-4', '2-2', '1-4'], ['4-1', '2-4', '1-2', '4-2'], ['2-1', '3-1', '3-4', '4-3'], ['1-3', '2-3', '3-2', '3-3'], ['1-0', '4-0', '2-0', '3-0'],
     ['1-1', '2-2', '2-3', '3-2'], ['4-4', '3-3', '2-1', '3-0'], ['1-2', '2-4', '4-2', '1-0'], ['1-3', '3-1', '4-3', '3-4'], ['1-4', '4-1', '2-0', '4-0'],
-]
+] * 5
 
 
 def candidates():
@@ -95,26 +95,29 @@ def pick_sentence(words, cellwords, cands, used):
             if r and r['dur'] >= 0.5: return c, r
 
 
+ORDER = [f'{a}-{b}' for a in (1, 2, 3, 4) for b in (1, 2, 3, 4, 0)]   # 메뉴 = 성조 조합(11/11 사용자 「1성 1성 / 1성 2성 / 이렇게 메뉴를 구성해」)
+PER = 12   # 조합마다 낱말 12개 = 묶음 3개(낱말 4 + 문장)
+
+
 def main():
     ws, drop = words()
     cands = candidates(); text = ''.join(c['h'] for c in cands)
     cells = {}
-    for w in sorted([w for w in ws if len(w['zh']) == 2], key=lambda w: (w['zh'] not in text, w['lv'])):   # 회화에 나오는 낱말 먼저
-        cells.setdefault(f"{w['t'][0]}-{w['t'][1]}", []).append(w)
-    seen_cell, used, rounds = {}, set(), []
-    for cs in ROUNDS:
-        words_ = []
-        for c in cs:
-            k = seen_cell.get(c, 0); seen_cell[c] = k + 1
-            words_.append({**cells[c][k], 'cell': c})
-        c, r = pick_sentence(words_, [cells[x] for x in cs], cands, used); used.add((c['ep'], c['turn']))
-        rounds.append({'words': words_, 'sentence': {'ep': c['ep'], 'turn': c['turn'], 'zh': c['zh'], 'pinyin': c['pinyin'], 'ko': c['ko'], 'ref': r}})
-    out = {'_meta': '성조연습 자료 — tools/build_tone_drill.py 가 만든다(손으로 고치지 말 것)',
-           'cells': {k: v[:10] for k, v in sorted(cells.items())}, 'rounds': rounds}
+    for w in sorted([w for w in ws if len(w['zh']) == 2], key=lambda w: (w['zh'] not in text, w['lv'])):   # 회화에 나오는 낱말 먼저, 쉬운 급부터
+        cells.setdefault(f"{w['t'][0]}-{w['t'][1]}", []).append({**w, 'cell': f"{w['t'][0]}-{w['t'][1]}"})
+    used, combos = set(), []
+    for k in ORDER:
+        ws_ = cells[k][:PER]; rounds = []
+        for j in range(0, len(ws_) - 3, 4):
+            g = ws_[j:j + 4]
+            c, r = pick_sentence(g, [cells[k]], cands, used); used.add((c['ep'], c['turn']))
+            rounds.append({'words': g, 'sentence': {'ep': c['ep'], 'turn': c['turn'], 'zh': c['zh'], 'pinyin': c['pinyin'], 'ko': c['ko'], 'ref': r}})
+        combos.append({'cell': k, 'rounds': rounds})
+    out = {'_meta': '성조연습 자료 — tools/build_tone_drill.py 가 만든다(손으로 고치지 말 것)', 'combos': combos}
     json.dump(out, open(f'{ROOT}/assets/data/tone_drill.json', 'w', encoding='utf-8'), ensure_ascii=False, separators=(',', ':'))
-    print('낱말 통과', len(ws), '뺌', drop, '| 칸', {k: len(v) for k, v in sorted(cells.items())}, '| 문장 후보', len(cands))
-    for i, r in enumerate(rounds, 1):
-        print(f"{i:2d}", ' '.join(f"{w['zh']}({w['cell']})" for w in r['words']), '|', r['sentence']['zh'])
+    print('낱말 통과', len(ws), '뺌', drop, '| 문장 후보', len(cands))
+    for cb in combos:
+        print(cb['cell'], ' / '.join(' '.join(w['zh'] for w in r['words']) + ' | ' + r['sentence']['zh'] for r in cb['rounds']))
 
 
 if __name__ == '__main__':

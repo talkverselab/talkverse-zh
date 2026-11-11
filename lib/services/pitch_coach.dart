@@ -38,12 +38,17 @@ class DrillRound {
   final DrillSentence sentence;
 }
 
-class ToneDrillData {
-  ToneDrillData(this.cells, this.rounds);
-
-  /// '1-4' → 그 칸 낱말(진도 지도·듣기용).
-  final Map<String, List<DrillWord>> cells;
+/// 메뉴 한 줄 = 성조 조합(1성 1성, 1성 2성 …) — 묶음 3개(낱말 12개).
+class DrillCombo {
+  DrillCombo(this.cell, this.rounds);
+  final String cell;
   final List<DrillRound> rounds;
+  List<DrillWord> get words => [for (final r in rounds) ...r.words];
+}
+
+class ToneDrillData {
+  ToneDrillData(this.combos);
+  final List<DrillCombo> combos;
 }
 
 class SentenceResult {
@@ -58,44 +63,62 @@ class PitchCoach {
   static final PitchCoach instance = PitchCoach._();
 
   static const _kHz = 'pitch_coach_hz_v1'; // 그 사람 평소 음높이 — 최근 유성 칸 Hz(최대 3000개)
-  static const _kDone = 'pitch_coach_done_v1'; // 끝낸 칸·낱말 묶음
+  // 진도(2026-11-11 사용자 지시): 판정은 참고용 — 통과가 아니라 연습한 횟수로. 낱말마다 5번, 단 하루에 한 번만 세서 5일에 나눠 하면 완료.
+  static const _kDays = 'pitch_coach_days_v1'; // {낱말: [yyyy-mm-dd …]}
+  static const daysToFinish = 5;
 
   ToneDrillData? _data;
   List<double> _hz = [];
-  Set<String> _done = {};
+  Map<String, List<String>> _days = {};
   bool _loaded = false;
 
   Future<ToneDrillData> data() async {
     if (_data != null) return _data!;
     final j = jsonDecode(await rootBundle.loadString('assets/data/tone_drill.json')) as Map<String, dynamic>;
     List<DrillWord> ws(List l) => [for (final w in l) DrillWord.fromJson(w)];
-    return _data = ToneDrillData(
-      {for (final e in (j['cells'] as Map<String, dynamic>).entries) e.key: ws(e.value)},
-      [for (final r in j['rounds']) DrillRound(ws(r['words']), DrillSentence.fromJson(r['sentence']))],
-    );
+    return _data = ToneDrillData([
+      for (final c in j['combos'])
+        DrillCombo(c['cell'], [for (final r in c['rounds']) DrillRound(ws(r['words']), DrillSentence.fromJson(r['sentence']))]),
+    ]);
   }
 
   Future<void> _load() async {
     if (_loaded) return;
     final p = await SharedPreferences.getInstance();
     _hz = [for (final v in p.getStringList(_kHz) ?? const <String>[]) double.tryParse(v) ?? 0]..removeWhere((v) => v <= 0);
-    _done = (p.getStringList(_kDone) ?? const <String>[]).toSet();
+    try {
+      final j = jsonDecode(p.getString(_kDays) ?? '{}') as Map<String, dynamic>;
+      _days = {for (final e in j.entries) e.key: [for (final d in e.value) d as String]};
+    } catch (_) {
+      _days = {};
+    }
     _loaded = true;
   }
 
-  Future<bool> isDone(String key) async {
-    await _load();
-    return _done.contains(key);
+  static String _today() {
+    final n = DateTime.now();
+    return '${n.year}-${n.month.toString().padLeft(2, '0')}-${n.day.toString().padLeft(2, '0')}';
   }
 
-  Future<Set<String>> doneKeys() async {
+  /// 연습한 날 수(최대 5).
+  Future<int> days(String word) async {
     await _load();
-    return {..._done};
+    return (_days[word]?.length ?? 0).clamp(0, daysToFinish);
   }
 
-  Future<void> markDone(String key) async {
+  /// 오늘 이미 센 낱말인가.
+  Future<bool> countedToday(String word) async {
     await _load();
-    if (_done.add(key)) (await SharedPreferences.getInstance()).setStringList(_kDone, _done.toList());
+    return _days[word]?.contains(_today()) ?? false;
+  }
+
+  /// 한 번 말해 보면(판정과 무관하게) 오늘 연습으로 센다 — 하루 한 번만.
+  Future<void> countPractice(String word) async {
+    await _load();
+    final l = _days.putIfAbsent(word, () => []);
+    if (l.contains(_today())) return;
+    l.add(_today());
+    (await SharedPreferences.getInstance()).setString(_kDays, jsonEncode(_days));
   }
 
   /// 기기에 모인 평소 음높이. 처음 몇 번은 없다(그때는 발화 가운뎃값으로 대신).
@@ -120,9 +143,48 @@ class PitchCoach {
   Future<SequenceScore> scoreWord(DrillWord w, {void Function(double)? onLevel}) async {
     await _load();
     final t = await _record(wordSeconds(w.tones.length), onLevel);
-    final r = scoreMandarinSequence(t, w.tones, hanzi: w.zh.split(''), speakerMedianHz: medianHz);
+    final r = _levelOk(scoreMandarinSequence(t, w.tones, hanzi: w.zh.split(''), speakerMedianHz: medianHz));
     await _remember(t);
     return r;
+  }
+
+  /// 1성 = 높이가 아니라 평평함(2026-11-11 사용자 지시 「피치 높이 자체는 문제가 되지 않는 것 같아. 1성 1성으로 주욱 이어지면 잘했어요 해줘」).
+  /// 모듈(uk 담당)은 평소 음높이보다 높은지도 보는데, 앱에서 1성 음절은 평평하면(오르내림 3반음 이하) 통과로 고치고 「더 높게」 힌트를 뺀다.
+  /// 1성이 이어지면(1+1) 두 음절 높이가 비슷해야(평균 차 3반음 이하) 「주욱 이어진」 것으로 본다. uk 에 알림 — 모듈이 바뀌면 이 덧칠을 걷어 낼 것.
+  static const _flat = 3.0;
+  SequenceScore _levelOk(SequenceScore r) {
+    if (!r.valid) return r;
+    final ss = r.syllables;
+    final out = <SyllableScore>[];
+    for (var i = 0; i < ss.length; i++) {
+      final s = ss[i], c = s.contour;
+      if (!s.target.accepted.contains(1) || c == null) {
+        out.add(s);
+        continue;
+      }
+      var ok = c.range <= _flat;
+      for (final j in [i - 1, i + 1]) {
+        if (j < 0 || j >= ss.length || !ss[j].target.accepted.contains(1) || ss[j].contour == null) continue;
+        if ((ss[j].contour!.mean - c.mean).abs() > _flat) ok = false;
+      }
+      final hints = [...?s.tone?.hints]..remove('higher');
+      out.add(SyllableScore(
+        target: s.target,
+        verdict: ok ? ToneVerdict.good : s.verdict,
+        from: s.from,
+        to: s.to,
+        contour: c,
+        tone: s.tone == null
+            ? null
+            : ToneScore(
+                target: s.tone!.target,
+                heard: ok ? 1 : s.tone!.heard,
+                scores: s.tone!.scores,
+                verdict: ok ? ToneVerdict.good : s.tone!.verdict,
+                hints: ok ? const [] : hints),
+      ));
+    }
+    return SequenceScore(out, r.refHz);
   }
 
   /// 문장: 음절별 판정 없이 기준 곡선과 모양만 견준다(참고 점수).
