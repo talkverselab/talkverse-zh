@@ -248,7 +248,7 @@ class LearnTab extends StatelessWidget {
         _section(tr('기초')),
         _BasicsRow(items: [
           ('拼', AppColors.zhuHong, tr('병음과 발음'), () => openPane(context, (_) => const PinyinChartScreen())),
-          ('声', AppColors.tone4, tr('성조연습'), () => openPane(context, (_) => const ToneDrillHubScreen())),
+          ('声', AppColors.tone4, tr('성조연습'), () => openPane(context, (_) => const ToneDrillStartScreen())),
           ('说', AppColors.zhuHongDeep, tr('말하기'), () => openPane(context, (_) => const SpeakingPracticeScreen())),
           ('字', AppColors.copper, tr('한자 배우기'), () => openPane(context, (_) => const HanziHubScreen(learn: true))),
         ]),

@@ -4,6 +4,7 @@
 // ignore_for_file: lines_longer_than_80_chars
 
 const Map<String, String> kDictEn = {
+  '묶음 목록': 'Rounds',
   '3개': '3 words',
   '4개': '4 words',
   'ma·ba… 한 글자로 네 성조 익히기': 'Learn the four tones on one syllable (ma, ba…)',
@@ -442,6 +443,7 @@ const Map<String, String> kDictEn = {
 };
 
 const Map<String, String> kDictJa = {
+  '묶음 목록': 'セット一覧',
   '3개': '3語',
   '4개': '4語',
   'ma·ba… 한 글자로 네 성조 익히기': 'ma・ba…一音節で四声を練習',
@@ -867,6 +869,7 @@ const Map<String, String> kDictJa = {
 };
 
 const Map<String, String> kDictZh = {
+  '묶음 목록': '组列表',
   '3개': '3个',
   '4개': '4个',
   'ma·ba… 한 글자로 네 성조 익히기': '用 ma、ba… 单字练四声',

@@ -16,7 +16,10 @@ import 'tone_practice_screen.dart';
 /// 묶음 10개(낱말 4 + 문장 1, tools/build_tone_drill.py). 채점은 talkverse_pitch(uk 담당 — 여기서 고치지 말 것).
 /// 단계 잠금 없이 권장 순서만 보여 준다. 4×4+경성 격자는 진도 지도(통과한 칸 표시, 누르면 듣기).
 class ToneDrillHubScreen extends StatefulWidget {
-  const ToneDrillHubScreen({super.key});
+  const ToneDrillHubScreen({super.key, this.onPick});
+
+  /// 바로 연습 화면에서 열었으면 묶음을 고를 때 그 화면으로 돌아가 바꾼다.
+  final void Function(int index)? onPick;
 
   @override
   State<ToneDrillHubScreen> createState() => _ToneDrillHubScreenState();
@@ -85,7 +88,14 @@ class _ToneDrillHubScreenState extends State<ToneDrillHubScreen> {
                       style: const TextStyle(fontWeight: FontWeight.w700, color: AppColors.mo, fontSize: 16)),
                   subtitle: Text(d.rounds[i].words.map((w) => _cellLabel(w.cell)).join('  '), style: const TextStyle(fontSize: 11)),
                   trailing: const Icon(Icons.chevron_right),
-                  onTap: () => _open(ToneRoundScreen(index: i, round: d.rounds[i])),
+                  onTap: () {
+                    if (widget.onPick != null) {
+                      widget.onPick!(i);
+                      Navigator.pop(context);
+                    } else {
+                      _open(ToneRoundScreen(index: i, round: d.rounds[i]));
+                    }
+                  },
                 ),
               const SizedBox(height: 12),
               const BrushDivider(),
@@ -167,11 +177,50 @@ String _hint(String k) => switch (k) {
     };
 String _toneName(int t) => t == 0 ? tr('경성') : trf('{0}성', [t]);
 
+/// 메뉴 「성조연습」 = 바로 연습(2026-11-11 사용자 지시 「성조연습 누르면 바로 듣기가 나오게」) — 안 끝낸 첫 묶음을 열고 낱말 소리부터 들려준다.
+/// 묶음 목록·진도 지도는 위 버튼으로.
+class ToneDrillStartScreen extends StatefulWidget {
+  const ToneDrillStartScreen({super.key});
+
+  @override
+  State<ToneDrillStartScreen> createState() => _ToneDrillStartScreenState();
+}
+
+class _ToneDrillStartScreenState extends State<ToneDrillStartScreen> {
+  int? _i;
+  ToneDrillData? _d;
+
+  @override
+  void initState() {
+    super.initState();
+    () async {
+      final d = await PitchCoach.instance.data();
+      final done = await PitchCoach.instance.doneKeys();
+      var i = 0;
+      while (i < d.rounds.length - 1 && done.contains('round:$i')) {
+        i++;
+      }
+      if (mounted) setState(() => (_d = d, _i = i));
+    }();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final d = _d, i = _i;
+    if (d == null || i == null) return const Scaffold(backgroundColor: AppColors.xuanZhi, body: Center(child: CircularProgressIndicator()));
+    return ToneRoundScreen(key: ValueKey(i), index: i, round: d.rounds[i], fromMenu: true, onPick: (n) => setState(() => _i = n));
+  }
+}
+
 /// 묶음 하나: 낱말 2개 → 3개 → 4개(각자 3번 연속 통과하면 하나 추가) → 문장.
 class ToneRoundScreen extends StatefulWidget {
-  const ToneRoundScreen({super.key, required this.index, required this.round});
+  const ToneRoundScreen({super.key, required this.index, required this.round, this.fromMenu = false, this.onPick});
   final int index;
   final DrillRound round;
+
+  /// 메뉴에서 바로 연 화면이면 위에 「묶음 목록」 버튼, 끝내면 다음 묶음으로.
+  final bool fromMenu;
+  final void Function(int index)? onPick;
 
   @override
   State<ToneRoundScreen> createState() => _ToneRoundScreenState();
@@ -196,6 +245,17 @@ class _ToneRoundScreenState extends State<ToneRoundScreen> {
   DrillWord get _w => _ws[_cur];
 
   @override
+  void initState() {
+    super.initState();
+    WidgetsBinding.instance.addPostFrameCallback((_) => _say());
+  }
+
+  /// 낱말이 바뀔 때마다 먼저 들려준다.
+  void _say() {
+    if (mounted && !_sentence && !_recording) TtsService.instance.speak(_w.zh);
+  }
+
+  @override
   void dispose() {
     ToneAnalyzer.instance.cancel();
     DialogueAudio.instance.stop();
@@ -214,11 +274,14 @@ class _ToneRoundScreenState extends State<ToneRoundScreen> {
     return idx.last;
   }
 
-  void _next() => setState(() {
-        _last = _cur;
-        _cur = _pick();
-        _score = null;
-      });
+  void _next() {
+    setState(() {
+      _last = _cur;
+      _cur = _pick();
+      _score = null;
+    });
+    _say();
+  }
 
   void _advance({bool manual = false}) {
     if (_active < _ws.length) {
@@ -229,11 +292,13 @@ class _ToneRoundScreenState extends State<ToneRoundScreen> {
         _score = null;
         _note = trf('새 낱말 추가 — 이제 {0}개', [_active]);
       });
+      _say();
     } else {
       setState(() {
         _sentence = true;
         _note = null;
       });
+      _playSentence();
     }
   }
 
@@ -271,7 +336,12 @@ class _ToneRoundScreenState extends State<ToneRoundScreen> {
         _miss[_cur]++;
       }
     });
-    if (r.valid && [for (var i = 0; i < _active; i++) _streak[i]].every((s) => s >= _need)) _advance();
+    if (r.valid && [for (var i = 0; i < _active; i++) _streak[i]].every((s) => s >= _need)) {
+      _advance();
+    } else if (r.passed) {
+      await Future.delayed(const Duration(milliseconds: 1200)); // 판정을 잠깐 보여 준 뒤 다음 낱말
+      if (mounted && !_recording) _next();
+    }
   }
 
   Future<void> _recordSentence() async {
@@ -296,7 +366,20 @@ class _ToneRoundScreenState extends State<ToneRoundScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: AppColors.xuanZhi,
-      appBar: AppBar(title: Text(trf('성조연습 · 묶음 {0}', [widget.index + 1]))),
+      appBar: AppBar(
+        title: Text(trf('성조연습 · 묶음 {0}', [widget.index + 1])),
+        actions: [
+          if (widget.fromMenu)
+            TextButton.icon(
+              onPressed: () async {
+                await Navigator.push(context, MaterialPageRoute(builder: (_) => ToneDrillHubScreen(onPick: widget.onPick)));
+              },
+              icon: const Icon(Icons.grid_on, size: 16),
+              label: Text(tr('묶음 목록')),
+              style: TextButton.styleFrom(foregroundColor: AppColors.mo),
+            ),
+        ],
+      ),
       body: SafeArea(
         top: false,
         child: ListView(padding: const EdgeInsets.all(16), children: [
@@ -468,7 +551,12 @@ class _ToneRoundScreenState extends State<ToneRoundScreen> {
               ? null
               : () async {
                   await PitchCoach.instance.markDone('round:${widget.index}');
-                  if (mounted) Navigator.pop(context);
+                  if (!mounted) return;
+                  if (widget.onPick != null) {
+                    widget.onPick!((widget.index + 1) % 10);
+                  } else {
+                    Navigator.pop(context);
+                  }
                 },
           child: Text(tr('묶음 끝내기')),
         ),
