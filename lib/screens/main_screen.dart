@@ -26,8 +26,7 @@ import 'profile_screen.dart';
 import 'progress_screen.dart';
 import 'sentence_flashcard_screen.dart';
 import 'speaking_practice_screen.dart';
-import 'tone_matrix_screen.dart';
-import 'tone_practice_screen.dart';
+import 'tone_drill_screen.dart';
 import 'topic_vocab_screen.dart';
 import 'word_freq_screen.dart';
 
@@ -249,8 +248,7 @@ class LearnTab extends StatelessWidget {
         _section(tr('기초')),
         _BasicsRow(items: [
           ('拼', AppColors.zhuHong, tr('병음과 발음'), () => openPane(context, (_) => const PinyinChartScreen())),
-          ('声', AppColors.tone4, tr('성조연습'), () => openPane(context, (_) => const TonePracticeScreen())),
-          ('四', AppColors.tone1, tr('4성 매트릭스'), () => openPane(context, (_) => const ToneMatrixScreen())),
+          ('声', AppColors.tone4, tr('성조연습'), () => openPane(context, (_) => const ToneDrillHubScreen())),
           ('说', AppColors.zhuHongDeep, tr('말하기'), () => openPane(context, (_) => const SpeakingPracticeScreen())),
           ('字', AppColors.copper, tr('한자 배우기'), () => openPane(context, (_) => const HanziHubScreen(learn: true))),
         ]),

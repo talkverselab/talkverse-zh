@@ -60,6 +60,16 @@ class ToneAnalyzer {
     double seconds = 1.6,
     void Function(double level)? onLevel,
   }) async {
+    final b = await recordPcm(seconds: seconds, onLevel: onLevel);
+    final bd = ByteData.sublistView(b);
+    return analyze([for (var i = 0; i + 1 < b.length; i += 2) bd.getInt16(i, Endian.little)]);
+  }
+
+  /// [seconds] 동안 녹음해 16kHz 모노 PCM16(little endian) 바이트를 돌려준다 — 성조연습 채점(talkverse_pitch)용.
+  Future<Uint8List> recordPcm({
+    required double seconds,
+    void Function(double level)? onLevel,
+  }) async {
     final stream = await _rec.startStream(const RecordConfig(
       encoder: AudioEncoder.pcm16bits,
       sampleRate: sampleRate,
@@ -68,27 +78,24 @@ class ToneAnalyzer {
       echoCancel: false,
       noiseSuppress: true,
     ));
-    final chunks = <int>[];
-    final done = Completer<void>();
+    final out = BytesBuilder(copy: true);
     late final StreamSubscription sub;
     sub = stream.listen((bytes) {
-      final bd = ByteData.sublistView(bytes);
-      double sum = 0;
-      for (var i = 0; i + 1 < bytes.length; i += 2) {
-        final v = bd.getInt16(i, Endian.little);
-        chunks.add(v);
-        sum += v * v;
-      }
+      out.add(bytes);
       if (onLevel != null && bytes.length > 2) {
+        final bd = ByteData.sublistView(bytes);
+        double sum = 0;
+        for (var i = 0; i + 1 < bytes.length; i += 2) {
+          final v = bd.getInt16(i, Endian.little);
+          sum += v * v;
+        }
         onLevel(math.sqrt(sum / (bytes.length / 2)) / 32768);
       }
-    }, onDone: () {
-      if (!done.isCompleted) done.complete();
     });
     await Future.delayed(Duration(milliseconds: (seconds * 1000).round()));
     await _rec.stop();
     await sub.cancel();
-    return analyze(chunks);
+    return out.takeBytes();
   }
 
   Future<void> cancel() async {

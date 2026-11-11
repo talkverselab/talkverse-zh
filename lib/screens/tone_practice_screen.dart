@@ -6,7 +6,6 @@ import '../core/theme.dart';
 import '../services/tone_analyzer.dart';
 import '../services/tts_service.dart';
 import '../widgets/chinese_decor.dart';
-import 'tone_matrix_screen.dart';
 import '../core/l10n.dart';
 
 /// 성조 연습 — 목표 성조를 듣고 따라 말하면 피치 곡선을 추적해 4성 판정.
@@ -96,16 +95,7 @@ class _TonePracticeScreenState extends State<TonePracticeScreen> {
     return Scaffold(
       backgroundColor: AppColors.xuanZhi,
       appBar: AppBar(
-        title: Text(tr('성조 연습')),
-        actions: [
-          TextButton.icon(
-            onPressed: () => Navigator.push(
-                context, MaterialPageRoute(builder: (_) => const ToneMatrixScreen())),
-            icon: const Icon(Icons.grid_on, size: 16),
-            label: Text(tr('4성 매트릭스')),
-            style: TextButton.styleFrom(foregroundColor: AppColors.mo),
-          ),
-        ],
+        title: Text(tr('준비: 한 글자 성조')),
       ),
       body: SafeArea(
         // 아이폰 홈 표시줄·갤럭시 제스처 바 아래로 내용이 깔리지 않게

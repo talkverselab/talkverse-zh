@@ -1133,6 +1133,13 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "3.4.0+1"
+  talkverse_pitch:
+    dependency: "direct main"
+    description:
+      path: "packages/talkverse_pitch"
+      relative: true
+    source: path
+    version: "0.1.0"
   term_glyph:
     dependency: transitive
     description:

@@ -32,6 +32,8 @@ dependencies:
   lpinyin: ^2.0.3
   record: ^6.2.1
   pitch_detector_dart: ^0.0.7
+  talkverse_pitch:   # 성조 채점 모듈(uk 담당 원본 ~/talkverse/talkverse-pitch 를 복사 — CI 가 저장소 밖 경로를 못 봐서)
+    path: packages/talkverse_pitch
   http: ^1.6.0
   flutter_web_auth_2: ^5.1.0
   flutter_secure_storage: ^11.2.0
@@ -86,6 +88,7 @@ flutter:
     - assets/images/ipa/places_of_articulation.png   # 병음 발음 시트 조음 위치 그림(임시 — 출시 전 Grok 그림으로 교체)
     - assets/fonts/licenses/   # 글꼴 OFL 전문(프로필 · 정보 → 글꼴 라이선스)
     - assets/data/audio_manifest.json
+    - assets/data/tone_drill.json   # 성조연습 묶음(tools/build_tone_drill.py)
     - assets/data/version.json   # DB 업데이트 번호(db) — 데이터 바꾸면 이 번호만 올린다
     - assets/data/dialogues/north/L1.json
     - assets/data/dialogues/north/L2.json
