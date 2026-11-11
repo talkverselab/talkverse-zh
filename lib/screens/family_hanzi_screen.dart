@@ -118,6 +118,8 @@ class _FamilyHanziScreenState extends State<FamilyHanziScreen> {
             _legend(tr('경성'), AppColors.toneNeutral),
             _legend(tr('▢ 구리 테두리 = 소리 같음'), AppColors.copper),
           ]),
+          const SizedBox(height: 4),
+          Text(tr('동음자 = 소리·성조 같음 · 형제 = 성조만 다름 · 친척 = 소리 다름'), style: AppFonts.captionText(size: 11)),
           const SizedBox(height: 12),
           TextField(
             onChanged: (v) => setState(() => _query = v),
@@ -183,14 +185,25 @@ class _FamilyCard extends StatelessWidget {
       const SizedBox(height: 10),
       Expanded(
         child: SingleChildScrollView(
-          child: Wrap(spacing: 6, runSpacing: 6, children: [
-            for (final m in group.members)
-              FamilyGlyphTile(
-                ch: m,
-                pinyin: pinyinOf(m),
-                sameSound: sameSound(pinyinOf(m), pPy),
-                onTap: () => showHanziSheet(context, m),
-              ),
+          // 수준: 동음자(소리·성조 같음) → 형제(성조만 다름) → 친척(소리 다름)
+          child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+            for (final (k, label) in [(0, tr('동음자')), (1, tr('형제')), (2, tr('친척'))])
+              if (group.members.any((m) => kinship(pinyinOf(m), pPy) == k)) ...[
+                Padding(
+                  padding: const EdgeInsets.only(bottom: 4),
+                  child: Text(label, style: AppFonts.captionText(size: 11, weight: FontWeight.w700, color: k == 2 ? AppColors.muted : AppColors.copperDeep)),
+                ),
+                Wrap(spacing: 6, runSpacing: 6, children: [
+                  for (final m in group.members.where((m) => kinship(pinyinOf(m), pPy) == k))
+                    FamilyGlyphTile(
+                      ch: m,
+                      pinyin: pinyinOf(m),
+                      sameSound: k < 2,
+                      onTap: () => showHanziSheet(context, m),
+                    ),
+                ]),
+                const SizedBox(height: 10),
+              ],
           ]),
         ),
       ),

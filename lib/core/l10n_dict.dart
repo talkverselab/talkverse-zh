@@ -4,6 +4,11 @@
 // ignore_for_file: lines_longer_than_80_chars
 
 const Map<String, String> kDictEn = {
+  '동음자': 'Same sound',
+  '형제': 'Siblings',
+  '친척': 'Relatives',
+  '동음자 = 소리·성조 같음 · 형제 = 성조만 다름 · 친척 = 소리 다름': 'Same sound = same syllable and tone · Siblings = tone differs · Relatives = sound differs',
+  'L2~L4 단원 · 진행 기록': 'Units L2–L4 · progress',
   '성조 조합을 골라 2글자 낱말을 따라 말해요. 처음엔 2개만 번갈아 나오고, 몇 번 말하면 하나씩 늘어나요. 마지막엔 문장이에요.\n곡선과 판정은 참고용이에요. 낱말마다 하루 한 번씩, 5일 동안 말해 보면 완료예요.\n녹음은 이 기기 안에서만 분석해요.': 'Pick a tone pair and repeat 2-syllable words. Two words alternate at first, and one more is added after a few tries. A sentence comes last.\nCurves and verdicts are for reference only. Say each word once a day for 5 days to complete it.\nRecordings are analyzed only on this device.',
   '완료 {0}/{1}': 'Done {0}/{1}',
   '좋아요': 'Good',
@@ -453,6 +458,11 @@ const Map<String, String> kDictEn = {
 };
 
 const Map<String, String> kDictJa = {
+  '동음자': '同音字',
+  '형제': '兄弟',
+  '친척': '親戚',
+  '동음자 = 소리·성조 같음 · 형제 = 성조만 다름 · 친척 = 소리 다름': '同音字 = 音も声調も同じ · 兄弟 = 声調だけ違う · 親戚 = 音が違う',
+  'L2~L4 단원 · 진행 기록': 'L2~L4 単元 · 進行記録',
   '성조 조합을 골라 2글자 낱말을 따라 말해요. 처음엔 2개만 번갈아 나오고, 몇 번 말하면 하나씩 늘어나요. 마지막엔 문장이에요.\n곡선과 판정은 참고용이에요. 낱말마다 하루 한 번씩, 5일 동안 말해 보면 완료예요.\n녹음은 이 기기 안에서만 분석해요.': '声調の組み合わせを選び、2音節の単語をまねして言います。最初は2語だけ交互に出て、何回か言うと1語ずつ増えます。最後は文です。\n曲線と判定は参考です。単語ごとに1日1回、5日言えば完了です。\n録音はこの端末の中だけで分析します。',
   '완료 {0}/{1}': '完了 {0}/{1}',
   '좋아요': 'いいですね',
@@ -889,6 +899,11 @@ const Map<String, String> kDictJa = {
 };
 
 const Map<String, String> kDictZh = {
+  '동음자': '同音字',
+  '형제': '兄弟',
+  '친척': '亲戚',
+  '동음자 = 소리·성조 같음 · 형제 = 성조만 다름 · 친척 = 소리 다름': '同音字 = 音和声调都相同 · 兄弟 = 只有声调不同 · 亲戚 = 读音不同',
+  'L2~L4 단원 · 진행 기록': 'L2~L4 单元 · 学习记录',
   '성조 조합을 골라 2글자 낱말을 따라 말해요. 처음엔 2개만 번갈아 나오고, 몇 번 말하면 하나씩 늘어나요. 마지막엔 문장이에요.\n곡선과 판정은 참고용이에요. 낱말마다 하루 한 번씩, 5일 동안 말해 보면 완료예요.\n녹음은 이 기기 안에서만 분석해요.': '选一个声调组合，跟读双音节词。开始只交替出现2个词，说几次后再加一个。最后是句子。\n曲线和判定仅供参考。每个词每天说一次，坚持5天就完成。\n录音只在本机分析。',
   '완료 {0}/{1}': '完成 {0}/{1}',
   '좋아요': '不错',

@@ -281,7 +281,7 @@ class LearnTab extends StatelessWidget {
         _NavRow(
           seal: '会话',
           title: tr('스토리 에피소드'),
-          subtitle: tr('L1~L4 단원 · 진행 기록'),
+          subtitle: tr('L2~L4 단원 · 진행 기록'),
           onTap: () => openPane(context, (_) => const LearnScreen()),
         ),
         _section(tr('참고')),
@@ -498,6 +498,7 @@ class _LearnScreenState extends State<LearnScreen> {
 
     final items = <_LessonItem>[];
     for (final level in EpisodeCatalog.levels) {
+      if (level == 'L1') continue; // 2026-11-11 사용자 지시 「L1 스토리 지워」 — 목록에서 뺀다(자료·기록은 그대로)
       final metas = EpisodeCatalog.instance.forLevel(level);
       if (metas.isEmpty) continue;
       items.add(_LessonItem.header(

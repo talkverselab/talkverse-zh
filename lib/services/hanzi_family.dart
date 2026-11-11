@@ -19,6 +19,16 @@ bool sameSound(String memberPy, String rootPy) {
   return PinyinUtil.stripTones(memberPy.split(RegExp(r'[\s,/]')).first) == PinyinUtil.stripTones(rootPy.split(RegExp(r'[\s,/]')).first);
 }
 
+/// 발음부와의 거리(2026-11-11 사용자 지시 「패밀리 한자 동음자 형제 친척 이렇게 수준을 나눠줘」):
+/// 0 동음자 = 소리·성조까지 같음, 1 형제 = 음절은 같고 성조만 다름, 2 친척 = 소리가 다름(병음을 모르면 친척).
+int kinship(String memberPy, String rootPy) {
+  String first(String p) => p.split(RegExp(r'[\s,/]')).first.trim().toLowerCase();
+  final a = first(memberPy), b = first(rootPy);
+  if (a.isEmpty || b.isEmpty) return 2;
+  if (a == b) return 0;
+  return PinyinUtil.stripTones(a) == PinyinUtil.stripTones(b) ? 1 : 2;
+}
+
 /// 한 글자가 속한 발음부 가족(발음부 글자 + 구성원, 회화 빈도순).
 class HanziFamily {
   final String phonetic;
