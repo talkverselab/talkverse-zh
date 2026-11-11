@@ -131,11 +131,9 @@ Color _vColor(ToneVerdict v) => switch (v) { ToneVerdict.good => _good, ToneVerd
 String _vLabel(ToneVerdict v) => switch (v) { ToneVerdict.good => tr('좋아요'), ToneVerdict.close => tr('거의'), ToneVerdict.off => tr('다르게 들려요') };
 String _hint(String k) => switch (k) {
       'keep_level' => tr('끝까지 평평하게'),
-      'higher' => tr('더 높게'),
       'end_higher' => tr('끝을 더 올려요'),
       'middle_lower' => tr('가운데를 더 낮게'),
       'fall_more' => tr('더 확 떨어뜨려요'),
-      'start_higher' => tr('더 높은 데서 시작'),
       _ => k,
     };
 String _toneName(int t) => t == 0 ? tr('경성') : trf('{0}성', [t]);

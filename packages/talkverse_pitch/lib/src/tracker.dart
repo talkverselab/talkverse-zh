@@ -48,15 +48,22 @@ Float64List pcm16ToFloat(Uint8List bytes) {
   return out;
 }
 
-/// YIN(차이 함수 + 누적 평균 정규화) 음높이 추적.
+/// 음높이 추적: YIN 의 차이 함수(누적 평균 정규화)로 칸마다 후보 주기를 여럿 뽑고,
+/// 칸 사이가 매끄럽게 이어지는 길을 골라 잇는다(유성·무성 가름도 그 길에서 정한다).
+///
+/// 칸마다 가장 깊은 골짜기 하나만 믿으면, 갈라지는 3성 바닥·숨 섞인 음절 끝·낮은 남자
+/// 목소리처럼 주기성이 흐린 칸에서 배음이나 무성으로 튄다. 후보를 남겨 두고 앞뒤 칸과
+/// 가장 자연스럽게 이어지는 것을 고르면 그런 칸도 이웃의 음높이를 따라 이어진다.
 class PitchTracker {
   const PitchTracker({
     this.sampleRate = 16000,
     this.minHz = 70,
     this.maxHz = 500,
     this.hopSeconds = 0.01,
-    this.threshold = 0.15,
-    this.voicingCutoff = 0.3,
+    this.voicingCutoff = 0.5,
+    this.switchCost = 0.15,
+    this.jumpCost = 0.08,
+    this.candidates = 5,
     this.relativeSilence = 0.1,
     this.absoluteSilence = 0.003,
     this.minRunFrames = 3,
@@ -67,11 +74,18 @@ class PitchTracker {
   final double maxHz;
   final double hopSeconds;
 
-  /// 첫 골짜기를 고르는 기준(YIN 논문의 0.1~0.15).
-  final double threshold;
-
-  /// 이 값보다 주기성이 나쁘면 무성음으로 본다.
+  /// 소리가 있는 칸을 무성으로 두는 값. 골짜기 깊이(0 = 완전한 주기)가 이보다 얕은 칸은
+  /// 이웃과 잘 이어질 때만 유성이 된다.
   final double voicingCutoff;
+
+  /// 유성↔무성으로 바뀔 때마다 드는 값(한두 칸짜리 깜빡임을 막는다).
+  final double switchCost;
+
+  /// 이웃 칸과 음높이가 벌어질 때 반음마다 드는 값(1반음까지는 없음 — 성조가 움직이는 폭).
+  final double jumpCost;
+
+  /// 칸마다 남겨 두는 후보 수.
+  final int candidates;
 
   /// 가장 큰 칸의 세기 대비 이 비율 밑은 무음.
   final double relativeSilence;
@@ -86,12 +100,13 @@ class PitchTracker {
     final w = math.max(tauMax, (0.025 * sampleRate).round());
     final hop = math.max(1, (hopSeconds * sampleRate).round());
     final need = w + tauMax;
-    final d = Float64List(tauMax + 1);
+    final d = Float64List(tauMax + 2);
 
     final times = <double>[];
-    final hzs = <double>[];
-    final dmins = <double>[];
     final rmss = <double>[];
+    // 칸마다 후보: 음높이(반음, 임의 기준)와 골짜기 깊이.
+    final candSt = <List<double>>[];
+    final candDepth = <List<double>>[];
     var maxRms = 0.0;
 
     for (var s = 0; s + need <= x.length; s += hop) {
@@ -116,88 +131,119 @@ class PitchTracker {
         running += d[tau];
         d[tau] = running > 0 ? d[tau] * tau / running : 1.0;
       }
+      d[tauMax + 1] = d[tauMax];
 
-      var best = -1;
+      // 골짜기(둘레보다 낮은 곳)를 깊은 순으로 [candidates] 개.
+      final taus = <int>[];
       for (var tau = tauMin; tau <= tauMax; tau++) {
-        if (d[tau] < threshold) {
-          while (tau + 1 <= tauMax && d[tau + 1] < d[tau]) {
-            tau++;
-          }
-          best = tau;
-          break;
-        }
+        if (d[tau] < 0.9 && d[tau] <= d[tau - 1] && d[tau] < d[tau + 1]) taus.add(tau);
       }
-      if (best < 0) {
-        var m = double.infinity;
-        for (var tau = tauMin; tau <= tauMax; tau++) {
-          if (d[tau] < m) {
-            m = d[tau];
-            best = tau;
-          }
-        }
-      }
-      var tauF = best.toDouble();
-      if (best > 1 && best < tauMax) {
-        final a = d[best - 1], b = d[best], c = d[best + 1];
+      taus.sort((a, b) => d[a].compareTo(d[b]));
+      final st = <double>[], depth = <double>[];
+      for (final tau in taus.take(candidates)) {
+        var tauF = tau.toDouble();
+        final a = d[tau - 1], b = d[tau], c = d[tau + 1];
         final den = a - 2 * b + c;
-        if (den.abs() > 1e-12) tauF += 0.5 * (a - c) / den;
+        if (den.abs() > 1e-12) tauF += (0.5 * (a - c) / den).clamp(-1.0, 1.0);
+        st.add(12 * math.log(sampleRate / tauF) / math.ln2);
+        depth.add(math.max(0.0, b));
       }
       times.add((s + need / 2) / sampleRate);
-      hzs.add(sampleRate / tauF);
-      dmins.add(d[best]);
       rmss.add(rms);
+      candSt.add(st);
+      candDepth.add(depth);
     }
 
     final n = times.length;
     final gate = math.max(absoluteSilence, relativeSilence * maxRms);
-    final hz = List<double?>.generate(
-      n,
-      (i) => (rmss[i] >= gate && dmins[i] <= voicingCutoff) ? hzs[i] : null,
-    );
 
-    // 옥타브 튐 바로잡기: 둘레(±4칸) 가운뎃값의 두 배·절반 근처면 되돌린다.
-    final fixed = List<double?>.from(hz);
+    // 가장 싼 길 찾기. 상태 0 = 무성, 1.. = 그 칸의 후보.
+    // 같은 깊이면 높은 쪽(짧은 주기)을 고른다 — 주기의 배수에도 똑같은 골짜기가 생기므로.
+    const inf = 1e18;
+    const octaveBias = 0.03;
+    final top = 12 * math.log(maxHz) / math.ln2;
+    final back = <Int32List>[];
+    var prevCost = Float64List(0);
+    var prevSt = const <double>[];
     for (var i = 0; i < n; i++) {
-      final h = hz[i];
-      if (h == null) continue;
-      final near = <double>[];
-      for (var k = math.max(0, i - 4); k <= math.min(n - 1, i + 4); k++) {
-        final v = hz[k];
-        if (v != null) near.add(v);
+      final st = candSt[i], depth = candDepth[i];
+      final loud = rmss[i] >= gate;
+      final cost = Float64List(st.length + 1);
+      final from = Int32List(st.length + 1);
+      for (var k = 0; k <= st.length; k++) {
+        final own = k == 0
+            ? (loud ? voicingCutoff : 0.0)
+            : (loud ? depth[k - 1] + octaveBias * (top - st[k - 1]) / 12 : inf);
+        if (i == 0) {
+          cost[k] = own;
+          continue;
+        }
+        var best = inf;
+        var arg = 0;
+        for (var p = 0; p < prevCost.length; p++) {
+          double move;
+          if (k == 0 || p == 0) {
+            move = k == p ? 0.0 : switchCost;
+          } else {
+            final gap = (st[k - 1] - prevSt[p - 1]).abs();
+            move = math.min(1.2, jumpCost * math.max(0.0, gap - 1.0));
+          }
+          final c = prevCost[p] + move;
+          if (c < best) {
+            best = c;
+            arg = p;
+          }
+        }
+        cost[k] = best + own;
+        from[k] = arg;
       }
-      if (near.length < 3) continue;
-      near.sort();
-      final ratio = h / near[near.length ~/ 2];
-      if (ratio > 1.7 && ratio < 2.3) {
-        fixed[i] = h / 2;
-      } else if (ratio > 0.43 && ratio < 0.6) {
-        fixed[i] = h * 2;
+      back.add(from);
+      prevCost = cost;
+      prevSt = st;
+    }
+    final state = Int32List(n);
+    if (n > 0) {
+      var k = 0;
+      for (var p = 1; p < prevCost.length; p++) {
+        if (prevCost[p] < prevCost[k]) k = p;
+      }
+      for (var i = n - 1; i >= 0; i--) {
+        state[i] = k;
+        k = back[i][k];
       }
     }
+
+    final hz = List<double?>.generate(
+      n,
+      (i) => state[i] == 0 ? null : math.pow(2, candSt[i][state[i] - 1] / 12).toDouble(),
+    );
 
     // 너무 짧은 유성 구간 버리기.
     var i = 0;
     while (i < n) {
-      if (fixed[i] == null) {
+      if (hz[i] == null) {
         i++;
         continue;
       }
       var j = i;
-      while (j < n && fixed[j] != null) {
+      while (j < n && hz[j] != null) {
         j++;
       }
       if (j - i < minRunFrames) {
         for (var k = i; k < j; k++) {
-          fixed[k] = null;
+          hz[k] = null;
         }
       }
       i = j;
     }
 
+    double depthAt(int k) => state[k] > 0
+        ? candDepth[k][state[k] - 1]
+        : (candDepth[k].isEmpty ? 1.0 : candDepth[k].first);
     return PitchTrack(
       [
         for (var k = 0; k < n; k++)
-          PitchFrame(times[k], fixed[k], (1 - dmins[k]).clamp(0.0, 1.0), rmss[k])
+          PitchFrame(times[k], hz[k], (1 - depthAt(k)).clamp(0.0, 1.0), rmss[k])
       ],
       hop / sampleRate,
     );

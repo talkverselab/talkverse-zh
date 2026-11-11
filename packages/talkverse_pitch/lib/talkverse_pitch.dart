@@ -7,3 +7,4 @@ export 'src/contour.dart';
 export 'src/mandarin.dart';
 export 'src/compare.dart';
 export 'src/sequence.dart';
+export 'src/word_match.dart';

@@ -143,48 +143,9 @@ class PitchCoach {
   Future<SequenceScore> scoreWord(DrillWord w, {void Function(double)? onLevel}) async {
     await _load();
     final t = await _record(wordSeconds(w.tones.length), onLevel);
-    final r = _levelOk(scoreMandarinSequence(t, w.tones, hanzi: w.zh.split(''), speakerMedianHz: medianHz));
+    final r = scoreMandarinSequence(t, w.tones, hanzi: w.zh.split(''), speakerMedianHz: medianHz);
     await _remember(t);
     return r;
-  }
-
-  /// 1성 = 높이가 아니라 평평함(2026-11-11 사용자 지시 「피치 높이 자체는 문제가 되지 않는 것 같아. 1성 1성으로 주욱 이어지면 잘했어요 해줘」).
-  /// 모듈(uk 담당)은 평소 음높이보다 높은지도 보는데, 앱에서 1성 음절은 평평하면(오르내림 3반음 이하) 통과로 고치고 「더 높게」 힌트를 뺀다.
-  /// 1성이 이어지면(1+1) 두 음절 높이가 비슷해야(평균 차 3반음 이하) 「주욱 이어진」 것으로 본다. uk 에 알림 — 모듈이 바뀌면 이 덧칠을 걷어 낼 것.
-  static const _flat = 3.0;
-  SequenceScore _levelOk(SequenceScore r) {
-    if (!r.valid) return r;
-    final ss = r.syllables;
-    final out = <SyllableScore>[];
-    for (var i = 0; i < ss.length; i++) {
-      final s = ss[i], c = s.contour;
-      if (!s.target.accepted.contains(1) || c == null) {
-        out.add(s);
-        continue;
-      }
-      var ok = c.range <= _flat;
-      for (final j in [i - 1, i + 1]) {
-        if (j < 0 || j >= ss.length || !ss[j].target.accepted.contains(1) || ss[j].contour == null) continue;
-        if ((ss[j].contour!.mean - c.mean).abs() > _flat) ok = false;
-      }
-      final hints = [...?s.tone?.hints]..remove('higher');
-      out.add(SyllableScore(
-        target: s.target,
-        verdict: ok ? ToneVerdict.good : s.verdict,
-        from: s.from,
-        to: s.to,
-        contour: c,
-        tone: s.tone == null
-            ? null
-            : ToneScore(
-                target: s.tone!.target,
-                heard: ok ? 1 : s.tone!.heard,
-                scores: s.tone!.scores,
-                verdict: ok ? ToneVerdict.good : s.tone!.verdict,
-                hints: ok ? const [] : hints),
-      ));
-    }
-    return SequenceScore(out, r.refHz);
   }
 
   /// 문장: 음절별 판정 없이 기준 곡선과 모양만 견준다(참고 점수).

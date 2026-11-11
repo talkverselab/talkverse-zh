@@ -1,8 +1,17 @@
+import 'dart:convert';
 import 'dart:math' as math;
 
 import 'contour.dart';
 import 'mandarin.dart';
+import 'mandarin_word_data.dart';
 import 'tracker.dart';
+import 'word_match.dart';
+
+/// 모듈에 들어 있는 두 음절 낱말 본보기(자료가 비어 있으면 빈 모델).
+final ToneWordModel mandarinWordModel = mandarinWordModelJson.isEmpty
+    ? ToneWordModel(const {})
+    : ToneWordModel.fromJson(
+        jsonDecode(mandarinWordModelJson) as Map<String, dynamic>);
 
 /// 낱말·짧은 구(2~4음절)의 성조를 음절마다 채점한다.
 /// 흐름: 사전 성조 → [surfaceTones](이어 말할 때 실제로 나는 꼴) → [splitSyllables] → 음절별 채점.
@@ -58,6 +67,40 @@ class _Run {
   int from; // 칸 번호(포함)
   int to; // 칸 번호(포함)
   int get length => to - from + 1;
+}
+
+/// 이어 말한 구간에서 음높이가 급히 다시 올라가는 칸(없으면 null).
+/// 앞 음절이 내려간 끝에 뒤 음절의 높은 시작이 바로 붙는 4-4·4-1·3-1·2-1 같은 조합은
+/// 소리 세기가 꺼지지 않아도 여기가 음절 경계다. 한 음절 안에서는 2성도 칸(10ms)마다
+/// 1반음을 넘게 오르지 않으므로, 앞 두 칸의 높은 쪽보다 뒤 두 칸의 낮은 쪽이
+/// [minJump] 반음 넘게 높으면 다시 올린 것으로 본다(한 칸짜리 튐에는 걸리지 않는다).
+int? _pitchReset(List<PitchFrame> f, int lo, int hi, {double minJump = 3}) {
+  int? at;
+  var jump = minJump;
+  for (var x = lo; x <= hi; x++) {
+    if (!f[x].voiced) continue;
+    var before = 0.0, after = double.infinity;
+    var nb = 0, na = 0;
+    for (var k = x - 1; k >= 0 && k >= x - 4 && nb < 2; k--) {
+      if (f[k].voiced) {
+        before = math.max(before, f[k].hz!);
+        nb++;
+      }
+    }
+    for (var k = x; k < f.length && k <= x + 3 && na < 2; k++) {
+      if (f[k].voiced) {
+        after = math.min(after, f[k].hz!);
+        na++;
+      }
+    }
+    if (nb < 2 || na < 2) continue;
+    final up = 12 * math.log(after / before) / math.ln2;
+    if (up > jump) {
+      jump = up;
+      at = x;
+    }
+  }
+  return at;
 }
 
 /// 음높이 기록을 [n] 음절로 나눈다.
@@ -122,15 +165,27 @@ List<PitchTrack> splitSyllables(PitchTrack track, int n) {
     for (var c = 1; c < count[k]; c++) {
       final expect = r.from + (r.length * c / count[k]).round();
       final w = math.max(2, (r.length * 0.3 / count[k]).round());
-      var at = expect;
-      var low = double.infinity;
-      for (var x = math.max(r.from + 3, expect - w);
-          x <= math.min(r.to - 3, expect + w);
-          x++) {
-        final e = (f[x - 1].rms + f[x].rms + f[x + 1].rms) / 3;
-        if (e < low) {
-          low = e;
-          at = x;
+      // 소리 세기가 꺼졌다 다시 커지는 골만 경계로 쓴다. 세기가 한쪽으로만 줄어들면
+      // (골이 없으면) 가장 작은 곳이 찾는 범위 끝에 걸려 엉뚱한 데를 자르므로 어림 자리를 쓴다.
+      double e(int x) => (f[x - 1].rms + f[x].rms + f[x + 1].rms) / 3;
+      final lo = math.max(r.from + 3, expect - w);
+      final hi = math.min(r.to - 3, expect + w);
+      var at = expect.clamp(r.from + 1, r.to);
+      final reset = _pitchReset(f, math.max(r.from + 3, expect - 2 * w), math.min(r.to - 3, expect + 2 * w));
+      if (reset != null) {
+        at = reset;
+      } else {
+        var low = double.infinity;
+        for (var x = lo; x <= hi; x++) {
+          final v = e(x);
+          if (v < low) {
+            low = v;
+            at = x;
+          }
+        }
+        if (lo <= hi && (at == lo || at == hi)) {
+          final edgeIn = at == lo ? math.max(r.from + 1, lo - 3) : math.min(r.to - 1, hi + 3);
+          if (e(edgeIn) <= low) at = expect.clamp(lo, hi);
         }
       }
       cuts.add(at);
@@ -168,8 +223,11 @@ class SyllableScore {
 }
 
 class SequenceScore {
-  const SequenceScore(this.syllables, this.refHz);
+  const SequenceScore(this.syllables, this.refHz, {this.method = 'rules'});
   final List<SyllableScore> syllables;
+
+  /// 'word' = 낱말 통째로 본보기와 견줌, 'rules' = 음절별 특징.
+  final String method;
 
   /// 채점 기준으로 쓴 평소 음높이.
   final double refHz;
@@ -192,13 +250,18 @@ class SequenceScore {
       : 0;
 }
 
-/// [tones] = 사전 성조(0~4) 목록. [speakerMedianHz] 가 없으면 이 발화의 가운뎃값을 쓴다
-/// (그러면 "전체가 높은지 낮은지"는 못 가린다 — 누적한 [SpeakerRange] 를 주는 것이 원칙).
+/// [tones] = 사전 성조(0~4) 목록. [speakerMedianHz] 가 없으면 이 발화의 가운뎃값을 쓴다.
+///
+/// 두 음절이고 [wordModel](기본 = 모듈에 든 본보기)이 있으면 낱말을 통째로 본보기와 견준다 —
+/// 목소리 높이·오르내림 폭은 보지 않고 모양만 본다. 그 밖의 길이는 음절별 특징으로 본다.
+/// [rulesOnly] 는 견주어 볼 때만.
 SequenceScore scoreMandarinSequence(
   PitchTrack track,
   List<int> tones, {
   List<String>? hanzi,
   double? speakerMedianHz,
+  ToneWordModel? wordModel,
+  bool rulesOnly = false,
 }) {
   final hz = track.voicedHz;
   if (hz.isEmpty) return const SequenceScore([], 0);
@@ -207,6 +270,54 @@ SequenceScore scoreMandarinSequence(
   if (parts.length != tones.length) return SequenceScore(const [], ref);
   final targets = surfaceTones(tones, hanzi: hanzi);
   final connected = tones.length > 1;
+
+  final model = wordModel ?? mandarinWordModel;
+  if (!rulesOnly && tones.length == 2 && !model.isEmpty) {
+    final m = matchToneWord(track, model);
+    if (m != null) {
+      final j = judgeToneWord(
+          m, [for (final t in targets) t.neutral ? const {0} : t.accepted]);
+      final out = <SyllableScore>[];
+      for (var i = 0; i < 2; i++) {
+        final p = parts[i];
+        final tg = targets[i];
+        ToneScore? tone;
+        if (!tg.neutral) {
+          var target = tg.accepted.first;
+          for (final t in tg.accepted) {
+            if ((j.scores[i][t] ?? 0) > (j.scores[i][target] ?? 0)) target = t;
+          }
+          tone = ToneScore(
+            target: target,
+            heard: j.heard[i] != 0
+                ? j.heard[i]
+                : const [1, 2, 3, 4].reduce((a, b) =>
+                    (j.scores[i][b] ?? 0) > (j.scores[i][a] ?? 0) ? b : a),
+            scores: {for (final t in const [1, 2, 3, 4]) t: j.scores[i][t] ?? 0},
+            verdict: j.verdicts[i],
+            hints: j.verdicts[i] == ToneVerdict.good
+                ? const []
+                : [
+                    const {
+                      1: 'keep_level',
+                      2: 'end_higher',
+                      3: 'middle_lower',
+                      4: 'fall_more'
+                    }[target]!
+                  ],
+          );
+        }
+        out.add(SyllableScore(
+            target: tg,
+            verdict: j.verdicts[i],
+            from: p.frames.first.time,
+            to: p.frames.last.time,
+            contour: Contour.fromTrack(p, refHz: ref, minVoicedFrames: 4),
+            tone: tone));
+      }
+      return SequenceScore(out, ref, method: 'word');
+    }
+  }
 
   final out = <SyllableScore>[];
   for (var i = 0; i < parts.length; i++) {
@@ -227,8 +338,9 @@ SequenceScore scoreMandarinSequence(
       continue;
     }
     if (c == null) {
+      // 너무 짧아 못 쟀다 — 틀렸다고 하지 않는다.
       out.add(SyllableScore(
-          target: tg, verdict: ToneVerdict.off, from: from, to: to));
+          target: tg, verdict: ToneVerdict.close, from: from, to: to));
       continue;
     }
     ToneScore? best;
