@@ -3,7 +3,7 @@
 규칙의 기준은 `CLAUDE.md`(서명·배포·공개 저장소). 이 파일은 지금 상태와 남은 일만. 옛 내용(2026-10-11 Zealot 설정 메모)은 모두 끝났거나 낡아서 지웠다.
 
 ## 지금 상태
-- 마지막 앱 커밋 `7f2a34f`(master, 푸시됨). 최신 빌드: **Zealot 중국어유니버스 빌드 23** https://apps.talkverse.uk/vpiwj/462 · **TestFlight 2611111933**(11/11 성조연습 개편). PC `D:\OneDrive\app project\chinese-universe\` 백업.
+- 마지막 앱 커밋 `775c4a3`(master, 푸시됨). 최신 빌드: **Zealot 중국어유니버스 빌드 23** https://apps.talkverse.uk/vpiwj/462 · **TestFlight 2611111933**(11/11 성조연습 개편). PC `D:\OneDrive\app project\chinese-universe\` 백업.
 - 배포 규칙: 고치면 push → CI APK → `ZEALOT_FROM_CI=1 tools/zealot_push.sh "<한 줄>"` + `bash tools/ios_release.sh`, 보고에 둘 다. 맥에는 업로드 키가 없다(CI 빌드만 덮어 설치됨). CI 가 러너 NDK 손상으로 실패하면 `gh run rerun <id> --failed`.
 - 작업 트리의 `android/ ios/ assets/data/{north,south,hanzi/cliff...}` 수정 표시는 옛날부터 있던 줄바꿈 차이 — 커밋하지 말 것(내용 변경 없음).
 
