@@ -3,7 +3,7 @@
 규칙의 기준은 `CLAUDE.md`(서명·배포·공개 저장소). 이 파일은 지금 상태와 남은 일만. 옛 내용(2026-10-11 Zealot 설정 메모)은 모두 끝났거나 낡아서 지웠다.
 
 ## 지금 상태
-- 마지막 앱 커밋 `775c4a3`(master, 푸시됨). 최신 빌드: **Zealot 중국어유니버스 빌드 23** https://apps.talkverse.uk/vpiwj/462 · **TestFlight 2611111933**(11/11 성조연습 개편). PC `D:\OneDrive\app project\chinese-universe\` 백업.
+- 마지막 앱 커밋 `3982ef6`(master, 푸시됨). 최신 빌드: **Zealot 중국어유니버스 빌드 27** https://apps.talkverse.uk/vpiwj/477 · **TestFlight 2611112148**(11/11 성조연습 개편). PC `D:\OneDrive\app project\chinese-universe\` 백업.
 - 배포 규칙: 고치면 push → CI APK → `ZEALOT_FROM_CI=1 tools/zealot_push.sh "<한 줄>"` + `bash tools/ios_release.sh`, 보고에 둘 다. 맥에는 업로드 키가 없다(CI 빌드만 덮어 설치됨). CI 가 러너 NDK 손상으로 실패하면 `gh run rerun <id> --failed`.
 - 작업 트리의 `android/ ios/ assets/data/{north,south,hanzi/cliff...}` 수정 표시는 옛날부터 있던 줄바꿈 차이 — 커밋하지 말 것(내용 변경 없음).
 
@@ -17,7 +17,7 @@
 
 - **11/9 오후 회화 일상 원칙(§9) 점검**: 반전 있는 101편을 읽고 일상과 동떨어진 14편을 다시 씀(`7f2a34f`) — R1 8편(`r1_friends_a1·a5·a12`, `r1_life_a13·a2·c1`, `r1_travel_c2·c4`) · R2 6편(`r2_culture_a2`, `r2_friends_a1·c1`, `r2_life_a1·a2`, `r2_travel_a1`). 반전·설렘은 비율 그대로, 일상 장면 안에서. 나머지 87편은 현실적인 꼬임이라 그대로 둠. 장면 컷 그림은 14편 모두 옛 장면 → uk 그림 차례에 다시.
 - **11/10**: R2 남은 4편(`r2_culture_a1`·`r2_love_a1`·`r2_love_a2`·`r2_travel_a2`)을 Grok 없이 세션 검수로 확정(`856f1b0`, Grok 은 주간 한도 11/16 초기화) — 감정 열·음성 계획까지. 이로써 **R1·R2 회화 전편 검수 끝**(음성 없는 편은 R2 10편 + 다시 쓴 R1 8편). 자산 업로드 점검: 장면 컷 549장·음성 3,444줄(220편) 모두 R2·D1 에 있음, 미업로드 없음.
-- **11/11 성조연습 개편**(사용자 지시, uk 전달: 「4성 매트릭스를 성조연습으로… 단어 2개 → 3개 → 4개」「그다음엔 문장」 — **낱말 개수**, uk 가 사용자 확인) `775c4a3`: 화면 `lib/screens/tone_drill_screen.dart`(묶음 10개 = 2글자 낱말 4 + R1 문장 1, 2개부터 각자 3연속 통과하면 하나 추가, 잠금 없음, 문장은 겹쳐 보기·참고 점수만, 격자 = 진도 지도), 채점 `lib/services/pitch_coach.dart` + 모듈 `packages/talkverse_pitch`(**uk 담당 원본 `~/talkverse/talkverse-pitch` 의 복사본 — 여기서 고치지 말고 판정 어긋난 사례(낱말·말한 성조·나온 판정)를 uk 에 보낸 뒤 새 원본을 다시 복사**), 자료 `tools/build_tone_drill.py` → `assets/data/tone_drill.json`. 문턱값은 합성음 기준 — 첫 빌드는 사용자가 직접 말해 보고 판정 확인용. 1음절 준비 화면은 아직 옛 ToneAnalyzer 판정(uk 권고: `scoreMandarinTone` 으로 바꾸기 — 남은 일).
+- **11/11 성조연습 개편**(사용자 지시 모음, 마지막 `3982ef6`): 메뉴 = 성조 조합 20개(「1성 1성 / 1성 2성 / 이렇게 메뉴를 구성해」), 조합마다 낱말 12 = 묶음 3(낱말 2→3→4개 → 문장), 말하면 바로 다음 낱말, **판정은 참고용**(「학습자에게 스트레스를 주진 않을 거야」) — 진도 = 낱말마다 하루 한 번 세서 5일이면 완료(`PitchCoach.countPractice`). 화면 `lib/screens/tone_drill_screen.dart`, 채점 `lib/services/pitch_coach.dart` + `packages/talkverse_pitch`(**uk 담당 원본 `~/talkverse/talkverse-pitch` 1ba2b2c 복사본 — 여기서 고치지 말고 사례(낱말·말한 것·화면)를 uk 에 보낸 뒤 다시 복사**; 두 음절은 원어민 TTS 본보기와 통째 비교), 자료 `tools/build_tone_drill.py` → `assets/data/tone_drill.json`. Tonara(공개 1음절 모델)는 TTS 시험에서 더 나빠 안 씀. 시험 자료 `~/talkverse/talkverse-pitch-data/`. 1음절 준비 화면은 아직 옛 ToneAnalyzer 판정(남은 일). 같은 날: 스토리 에피소드에서 L1 숨김, 패밀리 한자 동음자·형제·친척 구분(`597b84e`).
 - HSK 1~5급 단어 목록(4,240) `~/talkverse/_shared/zh_hsk1-5_words.csv` 를 uk 에 넘김(그림 대조·공유 표시는 uk 몫, 사용자 지시).
 
 ## 남은 일
