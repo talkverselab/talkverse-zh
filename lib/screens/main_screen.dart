@@ -23,6 +23,7 @@ import 'hanzi_stages_screen.dart';
 import 'phonetic_roots_screen.dart';
 import 'pinyin_chart_screen.dart';
 import 'sense_course_screen.dart';
+import 'hanzi_practice_screen.dart';
 import 'profile_screen.dart';
 import 'progress_screen.dart';
 import 'sentence_flashcard_screen.dart';
@@ -415,6 +416,13 @@ class ExploreTab extends StatelessWidget {
         ),
       ),
       _section(tr('한자')),
+      _NavRow(
+        seal: '练字',
+        sealColor: AppColors.copperDeep,
+        title: tr('한자 연습'),
+        subtitle: tr('패밀리가 큰 한자부터 · 하루 3자'),
+        onTap: () => openPane(context, (_) => const KanjiPracticeScreen()),
+      ),
       _NavRow(
         seal: '声旁',
         sealColor: const Color(0xFF6A1B9A),
