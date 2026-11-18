@@ -1,13 +1,15 @@
+import 'dart:async';
 import 'dart:convert';
 import '../core/embed_env.dart';
 
-import 'package:flutter/foundation.dart' show visibleForTesting;
+import 'package:flutter/foundation.dart' show ValueNotifier, visibleForTesting;
 import 'package:flutter/services.dart' show AssetManifest, rootBundle;
 import '../core/prefs.dart';
 
 import '../core/l10n.dart';
 import 'learner_prefs.dart';
 import 'pinyin_hangul.dart';
+import 'script_sync.dart';
 
 /// 새 회화(R0~R4, 주제별 JSON) 로더 — 일본어앱 구조를 옮김(2026-11-02).
 ///
@@ -132,6 +134,28 @@ class Dialogue {
       );
   bool get isChat => kind == 'chat';
   /// 화자 표시 이름: `{name}`(학습자 자리) → 「나」, 그 밖의 중괄호는 뗀다.
+  /// 화면에 보일 장면 설명 — 원고의 「학습자」를 이름(없으면 「나」)으로(일본어앱 빌드 111과 같음, 사용자 지시 2026-11-18 「일본어 앱만큼」).
+  String get sceneShown => scene.contains('학습자') ? scene.replaceAllMapped(RegExp(r'학습자(이|가|은|는|을|를|와|과|의|에게|도|만)?'), (m) => _me(m.group(1))) : scene;
+
+  /// 학습자 이름 + 그 이름에 맞는 조사. 이름이 없으면 「나」(나가→내가).
+  String _me(String? j) {
+    final n = LearnerPrefs.name.value.trim();
+    if (n.isEmpty) {
+      if (j == '가' || j == '이') return '내가';
+      if (j == '의') return '나의';
+      return '나${j == null ? '' : const {'은': '는', '을': '를', '과': '와'}[j] ?? j}';
+    }
+    if (j == null) return n;
+    final c = n.codeUnitAt(n.length - 1);
+    final hangul = c >= 0xAC00 && c <= 0xD7A3;
+    final batchim = hangul ? (c - 0xAC00) % 28 != 0 : false;
+    const pair = {'이': ['이', '가'], '가': ['이', '가'], '은': ['은', '는'], '는': ['은', '는'], '을': ['을', '를'], '를': ['을', '를'], '과': ['과', '와'], '와': ['과', '와']};
+    final p = pair[j];
+    if (p == null) return '$n$j';
+    if (!hangul) return '$n${p[1] == '가' ? '이(가)' : p[1] == '는' ? '은(는)' : p[1] == '를' ? '을(를)' : '와(과)'}';
+    return '$n${batchim ? p[0] : p[1]}';
+  }
+
   String speakerName(String sp) {
     final raw = speakers[sp] ?? sp;
     if (raw.contains('{name}')) return LearnerPrefs.name.value.isNotEmpty ? LearnerPrefs.name.value : tr('나');
@@ -224,17 +248,42 @@ class DialogueService {
     final prefs = await Prefs.getInstance();
     _level = prefs.getString(_prefLevel) ?? 'R1';
     _lastOpened = prefs.getString(_prefLast);
+    await _readAll();
+    _loaded = true;
+    // 서버에 더 새 원고가 있으면 뒤에서 받아 다시 읽는다(없거나 실패하면 그대로) — 2026-11-18, docs/CONTENT_SYNC.md 원고 받기
+    unawaited(ScriptSync.instance.refresh().then((changed) async {
+      if (!changed) return;
+      await _readAll();
+      revision.value++;
+    }));
+  }
+
+  /// 원고가 서버 판으로 바뀌어 다시 읽힐 때마다 오른다.
+  final ValueNotifier<int> revision = ValueNotifier(0);
+
+  /// 앱 안 편 + 서버에서 받은 새 편을 읽는다. 각 파일은 덮어쓴 판이 있으면 그것([ScriptSync]).
+  Future<void> _readAll() async {
+    final sync = ScriptSync.instance;
+    await sync.init();
     final manifest = await AssetManifest.loadFromAssetBundle(rootBundle);
-    final paths = manifest.listAssets().where((p) => RegExp(r'^assets/data/dialogues/R[0-4]/[^/]+/[^/]+\.json$').hasMatch(stripAssetPrefix(p)));
-    for (final p in paths) {
+    final pat = RegExp(r'^assets/data/dialogues/R[0-4]/[^/]+/[^/]+\.json$');
+    // 매니페스트 키는 통합 앱이면 packages/chinese_universe/ 가 붙어 있다 — 접두를 떼고 견준다
+    final rels = <String>{
+      for (final p in manifest.listAssets().map(stripAssetPrefix).where(pat.hasMatch)) p.substring('assets/data/'.length),
+      ...sync.added.where((p) => pat.hasMatch('assets/data/$p')),
+    }..removeAll(sync.removed);
+    final next = <String, Dialogue>{};
+    for (final rel in rels) {
       try {
-        final j = json.decode(await rootBundle.loadString(assetPath(p))) as Map<String, dynamic>;
+        final j = json.decode(await sync.load(rel)) as Map<String, dynamic>;
         if (j['draft'] == true) continue; // 초안(Grok 재작성·검수 전)은 앱에 안 보인다 — 2026-11-07
         final d = Dialogue.fromJson(j);
-        if (d.turns.isNotEmpty) _byId[d.id] = d;
+        if (d.turns.isNotEmpty) next[d.id] = d;
       } catch (_) {}
     }
-    _loaded = true;
+    _byId
+      ..clear()
+      ..addAll(next);
   }
 
   bool get isLoaded => _loaded;

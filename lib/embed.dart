@@ -20,6 +20,7 @@ import 'services/content_sync.dart';
 import 'services/hanzi_info_service.dart';
 import 'services/ko_reading.dart';
 import 'services/learner_prefs.dart';
+import 'services/script_sync.dart';
 import 'services/shared_hanja_service.dart';
 
 export 'core/embed_env.dart' show embedded;
@@ -62,6 +63,11 @@ Future<void> embedInit({bool standalone = false}) async {
     Plan('all_1y', 12, 79000, listKrw: 112900, bundle: true),
     Plan('all_life', 0, 329000, listKrw: 469000, bundle: true),
   ]));
+  // 회화 원고는 켤 때마다 무조건 서버 판을 확인해 받는다 — 그림·음성 내려받기(선택·「나중에」)와 따로(사용자 지시 2026-11-17·18, 일본어앱과 같음).
+  // 느린 망에서는 startupWait 까지만 기다리고 앱을 연다(받기는 뒤에서 이어지고, 끝나면 회화 목록을 다시 읽는다).
+  try {
+    await ScriptSync.instance.refresh().timeout(ScriptSync.startupWait);
+  } catch (_) {}
   // 그림(장면 컷·단어 그림)·회화 음성 기기 내려받기: 버전이 다르면 로딩 화면에서 받고 시작(2026-11-04). 태블릿(짧은 변 600 이상)은 큰 컷.
   _syncFirst = await ContentSync.instance.init(large: _isLargeScreen(), female: LearnerPrefs.isFemale);
   // 한자 공용 DB(발음부·외우는 방법·GIF·쓰기 범위) — 화면을 막지 않고 뒤에서 받는다.

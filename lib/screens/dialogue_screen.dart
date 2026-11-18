@@ -190,7 +190,7 @@ class _ContinueReadingCardState extends State<ContinueReadingCard> {
                     const SizedBox(height: 4),
                     Text(d.title, maxLines: 1, overflow: TextOverflow.ellipsis, style: AppFonts.titleText(size: 20)),
                     const SizedBox(height: 3),
-                    Text(d.scene, maxLines: 1, overflow: TextOverflow.ellipsis, style: AppFonts.uiText(size: 13)),
+                    Text(d.sceneShown, maxLines: 1, overflow: TextOverflow.ellipsis, style: AppFonts.uiText(size: 13)),
                     const SizedBox(height: 10),
                     Row(children: [
                       Expanded(
@@ -303,7 +303,7 @@ class DialogueListScreen extends StatelessWidget {
                     child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
                       Text(d.title, style: AppFonts.uiText(size: 15, weight: FontWeight.w600, color: AppColors.mo)),
                       const SizedBox(height: 2),
-                      Text('${d.isChat ? '💬 ' : ''}${d.scene}', maxLines: 1, overflow: TextOverflow.ellipsis, style: AppFonts.captionText(size: 12)),
+                      Text('${d.isChat ? '💬 ' : ''}${d.sceneShown}', maxLines: 1, overflow: TextOverflow.ellipsis, style: AppFonts.captionText(size: 12)),
                     ]),
                   ),
                   const SizedBox(width: 8),
