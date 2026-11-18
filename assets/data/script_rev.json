@@ -131,7 +131,7 @@
 "dialogues/R3/love/r3_love_l4_d12.json": "31f750ac9ade",
 "dialogues/R4/life/r4_life_l2_d02_2.json": "22fab4174263",
 "dialogues/R4/life/r4_life_l2_d03_1.json": "7ad9bb9ead33",
-"dialogues/R4/life/r4_life_l2_d03_2.json": "dc8f395eee5c",
+"dialogues/R4/life/r4_life_l2_d03_2.json": "27ec3bb302bd",
 "dialogues/R4/life/r4_life_l2_d04_1.json": "10f156893691",
 "dialogues/R4/life/r4_life_l2_d04_2.json": "e40257e838c6",
 "dialogues/R4/life/r4_life_l2_d05_1.json": "6c65f6612e19",
@@ -173,11 +173,11 @@
 "dialogues/R4/love/r4_love_l1_ep1_5.json": "e6c1c1aaaf62",
 "dialogues/R4/love/r4_love_l1_ep2_1.json": "902e07a34d18",
 "dialogues/R4/love/r4_love_l1_ep2_2.json": "a7667222450a",
-"dialogues/R4/love/r4_love_l1_ep2_3.json": "b074388ef93f",
+"dialogues/R4/love/r4_love_l1_ep2_3.json": "a4b1c401b2b3",
 "dialogues/R4/love/r4_love_l1_ep2_4.json": "572f59dc882f",
 "dialogues/R4/love/r4_love_l1_ep3_1.json": "a29ef4d1f754",
 "dialogues/R4/love/r4_love_l1_ep3_2.json": "4a3acbbff3a1",
-"dialogues/R4/love/r4_love_l1_ep3_3.json": "250b73af12fb",
+"dialogues/R4/love/r4_love_l1_ep3_3.json": "ee2457da418f",
 "dialogues/R4/love/r4_love_l1_ep3_4.json": "597cc31b9223",
 "dialogues/R4/love/r4_love_l1_ep4_2.json": "bd54b13b5912",
 "dialogues/R4/love/r4_love_l1_ep4_4.json": "1de9fc13fe86",
@@ -232,5 +232,5 @@
 "dialogues/R4/love/r4_love_l4_d10.json": "8040a0f02792",
 "grammar/sense_course.json": "f08d46589f7e"
 },
-"rev": 3
+"rev": 4
 }
