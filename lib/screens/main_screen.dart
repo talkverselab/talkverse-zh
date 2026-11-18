@@ -22,6 +22,7 @@ import 'grammar_test_screen.dart';
 import 'hanzi_stages_screen.dart';
 import 'phonetic_roots_screen.dart';
 import 'pinyin_chart_screen.dart';
+import 'sense_course_screen.dart';
 import 'profile_screen.dart';
 import 'progress_screen.dart';
 import 'sentence_flashcard_screen.dart';
@@ -245,6 +246,15 @@ class LearnTab extends StatelessWidget {
         ),
         ContinueReadingCard(level: DialogueService.instance.startLevel),
         const SizedBox(height: 10),
+        // 언어감각 과정 — 외울 대화는 Grok 이 다시 써야 내보낸다(2026-11-18 사용자 지시 「클로드 초안 - 그록 다이얼로그 작성으로 붙여넣기」). 그때까지 숨김.
+        if (kShowSenseCourse) _section(tr('정규과정')),
+        if (kShowSenseCourse) _NavRow(
+          seal: '语感',
+          sealColor: AppColors.zhuHong,
+          title: tr('언어감각 익히기'),
+          subtitle: tr('L1 어순부터 L10까지 · 영상 → 대화 통째로 외우기'),
+          onTap: () => openPane(context, (_) => const SenseCourseScreen()),
+        ),
         _section(tr('기초')),
         _BasicsRow(items: [
           ('拼', AppColors.zhuHong, tr('병음과 발음'), () => openPane(context, (_) => const PinyinChartScreen())),

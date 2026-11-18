@@ -39,6 +39,7 @@ dependencies:
   flutter_secure_storage: ^11.2.0
   sign_in_with_apple: ^8.2.0
   crypto: ^3.0.8
+  video_player: ^2.14.1   # 언어감각 과정 회차 영상(서버에서 바로 재생, 2026-11-18 일본어앱과 같게)
   in_app_purchase: ^3.3.1
   in_app_purchase_storekit: ^0.4.16
   url_launcher: ^6.3.3   # 이용약관·개인정보처리방침 링크(출시 점검 2026-11-09)
@@ -88,6 +89,7 @@ flutter:
     - assets/images/ipa/places_of_articulation.png   # 병음 발음 시트 조음 위치 그림(임시 — 출시 전 Grok 그림으로 교체)
     - assets/fonts/licenses/   # 글꼴 OFL 전문(프로필 · 정보 → 글꼴 라이선스)
     - assets/data/audio_manifest.json
+    - assets/data/grammar/sense_course.json   # 언어감각 과정(tools/sense/build_sense_course.py) — 서버 원고로도 받음
     - assets/data/script_rev.json   # 회화 원고 기준표(rev·파일별 sha) — tools/script_publish.py, 서버 판이 더 새것이면 앱이 받는다
     - assets/data/tone_drill.json   # 성조연습 묶음(tools/build_tone_drill.py)
     - assets/data/version.json   # DB 업데이트 번호(db) — 데이터 바꾸면 이 번호만 올린다

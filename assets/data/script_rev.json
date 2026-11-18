@@ -229,7 +229,8 @@
 "dialogues/R4/love/r4_love_l4_d07.json": "47fc48332843",
 "dialogues/R4/love/r4_love_l4_d08.json": "a0f074a6b23f",
 "dialogues/R4/love/r4_love_l4_d09.json": "7a9c473edeab",
-"dialogues/R4/love/r4_love_l4_d10.json": "8040a0f02792"
+"dialogues/R4/love/r4_love_l4_d10.json": "8040a0f02792",
+"grammar/sense_course.json": "f08d46589f7e"
 },
-"rev": 1
+"rev": 2
 }
