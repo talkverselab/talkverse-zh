@@ -16,7 +16,7 @@ import '../services/tts_service.dart';
 /// 회차 = 문법 짧은 설명(points.tip) → 감 익히는 문장(points.sentences). 데이터 `assets/data/grammar/sense_course.json`(tools/sense/build_sense_course.py).
 /// 내용은 간단하게 시작해 차차 늘린다 — 회차를 늘리려면 JSON 에 lessons 만 더하면 된다.
 /// 메인 메뉴에 보일지 — 외울 대화를 Grok 대사로 바꾼 뒤 true(2026-11-18).
-const kShowSenseCourse = false;
+const kShowSenseCourse = true;
 
 const _kDoneKey = 'sense_course_done';
 const _kAsset = 'assets/data/grammar/sense_course.json';
