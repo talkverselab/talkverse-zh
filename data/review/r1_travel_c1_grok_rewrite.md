@@ -1,9 +1,12 @@
-1 B: 山上？？你在哪😱 / Shān shàng?? Nǐ zài nǎ 😱 / 산 위?? 너 어디야😱 / 위치 보고 바로 터지는 당황을 이모지로 더 세게
-2 A: 妈看风景有人帮我 / Mā kàn fēngjǐng yǒu rén bāng wǒ / 엄마 경치 보고 있어 누가 도와줘 / 도움 한 마디로 오해 씨앗을 심어 초안과 완전히 다름
-3 B: 谁？男的吗吃了没 / Shéi? Nán de ma chī le méi / 누구? 남자야? 밥 먹었어 / 남자 의심을 밥 챙기기와 겹쳐 카오스 키움
-4 A: 妈你怎么会中文 / Mā nǐ zěnme huì Zhōngwén / 엄마 너 어떻게 중국어 할 줄 알아 / 중국어 놀라움이 오해와 동시에 터지게
-5 B: 我在学那人谁啊 / Wǒ zài xué nà rén shéi a / 배우는 중이야 그 사람 누구야 / 공부 사실과 추궁을 한 줄에 붙여 피크
-6 A: 妈好想你是路人 / Mā hǎo xiǎng nǐ shì lùrén / 엄마 너무 보고 싶어 길 가는 사람이야 / 심쿵 한 줄에 해명을 붙여 여운
-7 B: 我也想你别跟男的 / Wǒ yě xiǎng nǐ bié gēn nán de / 나도 보고 싶어 남자 따라다니지 마 / 마음 표현 뒤에 되치기로 재미 마무리
-추천 표현: 你在哪 / Nǐ zài nǎ / 어디야
-吃饭了没 / Chī fàn le méi / 밥 먹었어
+=== r1_travel_c1
+title: 엄마 위치 공유
+scene: 혼자 여행 중인 학습자. 엄마가 위치 공유를 보고 걱정 폭탄 문자를 보낸다.
+B: 妈妈
+register: chat
+1 B | 你在哪啊？怎么上山了？ | Nǐ zài nǎ a? Zěnme shàng shān le? | 너 어디야? 어떻게 산에 올라간 거야? | 在哪 = 어디에 있다 | emotion=worried
+2 A | 妈妈，我在看风景呢。 | Māma, wǒ zài kàn fēngjǐng ne. | 엄마, 경치 보고 있어요. | 风景 = 경치 | emotion=gentle
+3 B | 饭吃了吗？衣服穿得够暖吗？ | Fàn chī le ma? Yīfu chuān de gòu nuǎn ma? | 밥은 먹었어? 옷은 충분히 따뜻하게 입었어? | 穿得够 = 충분히 입다 | emotion=worried
+4 A | 妈妈，你怎么用中文写啊？ | Māma, nǐ zěnme yòng Zhōngwén xiě a? | 엄마, 왜 중국어로 쓰시는 거예요? | 用 = 쓰다/사용하다 | emotion=surprised
+5 B | 我在学呢！你走了以后我天天学。 | Wǒ zài xué ne! Nǐ zǒu le yǐhòu wǒ tiāntiān xué. | 배우는 중이야! 너 떠난 뒤로 매일 공부해. | 以后 = ~한 뒤 | emotion=excited
+6 A | 妈妈，我想你了。 | Māma, wǒ xiǎng nǐ le. | 엄마, 보고 싶어요. | 想你了 = 보고 싶어졌다 | emotion=sad
+7 B | 我也想你。快点下山吧！ | Wǒ yě xiǎng nǐ. Kuài diǎn xià shān ba! | 나도 보고 싶어. 빨리 산에서 내려와! | 下山 = 산에서 내려오다 | emotion=gentle

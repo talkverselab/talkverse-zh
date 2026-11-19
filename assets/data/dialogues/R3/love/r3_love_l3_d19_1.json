@@ -19,14 +19,16 @@
   {
    "num": 1,
    "speaker": "A",
-   "zh": "已经三天没有她的消息了。",
-   "pinyin": "Yǐjīng sān tiān méiyǒu tā de xiāoxi le.",
+   "zh": "已经三天没她的消息了。",
+   "pinyin": "Yǐjīng sān tiān méi tā de xiāoxi le.",
+   "rd": "이징 싼 톈 메이 타 더 샤오시 러.",
    "ko": "벌써 사흘째 그녀에게서 소식이 없다.",
-   "note": "시간+没+동사 '~동안 안 했다'",
+   "note": "没+동사 = ~동안 안 했다",
    "tags": [
     "시량보어",
     "독백"
    ],
+   "emotion": "sad",
    "lemmas": [
     [
      "已经",
@@ -39,30 +41,30 @@
      "tiān"
     ],
     [
-     "没有",
-     "没有",
-     "méi yǒu"
+     "没",
+     "没",
+     "méi"
     ],
     [
      "消息",
      "消息",
      "xiāo xī"
     ]
-   ],
-   "rd": "이징 싼 톈 메이유 타 더 샤오시 러.",
-   "emotion": "sad"
+   ]
   },
   {
    "num": 2,
    "speaker": "B",
-   "zh": "手机安静得让人心烦。",
-   "pinyin": "Shǒujī ānjìng de ràng rén xīnfán.",
+   "zh": "手机安静得让人着急。",
+   "pinyin": "Shǒujī ānjìng de ràng rén zhāojí.",
+   "rd": "서우지 안징 더 랑 런 자오지.",
    "ko": "휴대폰이 조용해서 사람 속이 터진다.",
-   "note": "정도보어 得 + 사역동사 让",
+   "note": "得 = 정도, 让 = ~하게 하다",
    "tags": [
     "정도보어",
     "让"
    ],
+   "emotion": "annoyed",
    "lemmas": [
     [
      "手机",
@@ -80,30 +82,25 @@
      "rén"
     ],
     [
-     "心",
-     "心",
-     "xīn"
-    ],
-    [
-     "烦",
-     "烦",
-     "fán"
+     "着急",
+     "着急",
+     "zháo jí"
     ]
-   ],
-   "rd": "서우지 안징 더 랑 런 신판.",
-   "emotion": "annoyed"
+   ]
   },
   {
    "num": 3,
    "speaker": "A",
-   "zh": "我是不是说错话了？",
-   "pinyin": "Wǒ shì bu shì shuō cuò huà le?",
+   "zh": "是不是我说错话了？",
+   "pinyin": "Shì bu shì wǒ shuō cuò huà le?",
+   "rd": "스 부 스 워 숴 춰 화 러?",
    "ko": "내가 말을 잘못한 걸까?",
-   "note": "是不是 확인의문 + 결과보어 错",
+   "note": "是不是 = 확인, 错 = 잘못하다",
    "tags": [
     "是不是",
     "결과보어"
    ],
+   "emotion": "worried",
    "lemmas": [
     [
      "是不是",
@@ -125,36 +122,31 @@
      "话",
      "huà"
     ]
-   ],
-   "rd": "워 스 부 스 숴 춰 화 러?",
-   "emotion": "worried"
+   ]
   },
   {
    "num": 4,
    "speaker": "B",
-   "zh": "他为什么一句话也不发？",
-   "pinyin": "Tā wèishénme yí jù huà yě bù fā?",
+   "zh": "他怎么一句也不发？",
+   "pinyin": "Tā zěnme yī jù yě bù fā?",
+   "rd": "타 쩐머 이 쥐 예 부 파?",
    "ko": "저 사람은 왜 한마디도 안 보내는 거야?",
-   "note": "'一…也不' 전면 부정",
+   "note": "一…也不 = 하나도 ~않다",
    "tags": [
     "一…也不",
     "원망"
    ],
+   "emotion": "annoyed",
    "lemmas": [
     [
-     "为什么",
-     "为什么",
-     "wèi shén me"
+     "怎么",
+     "怎么",
+     "zěn me"
     ],
     [
      "一句",
      "一句",
      "yī jù"
-    ],
-    [
-     "话",
-     "话",
-     "huà"
     ],
     [
      "也",
@@ -171,21 +163,21 @@
      "发",
      "fā"
     ]
-   ],
-   "rd": "타 웨이선머 이 쥐 화 예 부 파?",
-   "emotion": "annoyed"
+   ]
   },
   {
    "num": 5,
    "speaker": "A",
-   "zh": "打开聊天框，又关上了。",
-   "pinyin": "Dǎkāi liáotiān kuàng, yòu guānshàng le.",
+   "zh": "打开聊天又关上了。",
+   "pinyin": "Dǎkāi liáotiān yòu guān shàng le.",
+   "rd": "다카이 랴오톈 유 관 상 러.",
    "ko": "채팅창을 열었다가, 또 닫아버렸다.",
-   "note": "又 '또' (동작의 반복) + 결과보어 上",
+   "note": "又 = 또, 上 = 결과",
    "tags": [
     "又",
     "독백"
    ],
+   "emotion": "sad",
    "lemmas": [
     [
      "打开",
@@ -203,11 +195,6 @@
      "tiān"
     ],
     [
-     "框",
-     "框",
-     "kuāng"
-    ],
-    [
      "又",
      "又",
      "yòu"
@@ -217,21 +204,21 @@
      "关上",
      "guān shàng"
     ]
-   ],
-   "rd": "다카이 랴오톈 쾅, 유 관상 러.",
-   "emotion": "sad"
+   ]
   },
   {
    "num": 6,
    "speaker": "B",
    "zh": "写了又删，删了又写。",
    "pinyin": "Xiě le yòu shān, shān le yòu xiě.",
+   "rd": "셰 러 유 산, 산 러 유 셰.",
    "ko": "썼다가 지우고, 지웠다가 또 쓴다.",
-   "note": "'V了又V' 반복 구조",
+   "note": "V了又V = 반복",
    "tags": [
     "V了又V",
     "망설임"
    ],
+   "emotion": "sad",
    "lemmas": [
     [
      "写",
@@ -263,21 +250,21 @@
      "写",
      "xiě"
     ]
-   ],
-   "rd": "셰 러 유 산, 산 러 유 셰.",
-   "emotion": "sad"
+   ]
   },
   {
    "num": 7,
    "speaker": "A",
-   "zh": "面子有什么用呢？😢",
-   "pinyin": "Miànzi yǒu shénme yòng ne?",
+   "zh": "面子有什么用啊？😢",
+   "pinyin": "Miànzi yǒu shénme yòng a?",
+   "rd": "몐쯔 유 선머 융 아?",
    "ko": "체면이 다 무슨 소용이야?",
-   "note": "'有什么用' 반어 표현 + 관용어 面子 (체면·자존심)",
+   "note": "有什么用 = 무슨 소용, 面子 = 체면",
    "tags": [
     "반어문",
     "후회"
    ],
+   "emotion": "sad",
    "lemmas": [
     [
      "面子",
@@ -294,21 +281,21 @@
      "什么",
      "shén me"
     ]
-   ],
-   "rd": "몐쯔 유 선머 융 너?",
-   "emotion": "sad"
+   ]
   },
   {
    "num": 8,
    "speaker": "B",
-   "zh": "生气是假的，想他是真的。",
-   "pinyin": "Shēngqì shì jiǎ de, xiǎng tā shì zhēn de.",
+   "zh": "生气是假的，想你是真的。",
+   "pinyin": "Shēngqì shì jiǎ de, xiǎng nǐ shì zhēn de.",
+   "rd": "성치 스 자 더, 샹 니 스 전 더.",
    "ko": "화난 건 가짜고, 보고 싶은 게 진짜야.",
-   "note": "'是…的' 대비 구문 (真/假)",
+   "note": "是…的 = 대비 강조",
    "tags": [
     "是…的",
     "본심"
    ],
+   "emotion": "gentle",
    "lemmas": [
     [
      "生气",
@@ -340,9 +327,12 @@
      "真的",
      "zhēn de"
     ]
-   ],
-   "rd": "성치 스 자 더, 샹 타 스 전 더.",
-   "emotion": "gentle"
+   ]
   }
- ]
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r3_love_l3_d19_1_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ }
 }

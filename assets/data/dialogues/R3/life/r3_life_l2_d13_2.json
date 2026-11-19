@@ -21,12 +21,14 @@
    "speaker": "A",
    "zh": "所以我在想要不要换手机。",
    "pinyin": "Suǒyǐ wǒ zài xiǎng yào bu yào huàn shǒujī.",
+   "rd": "쒀이 워 짜이 샹 야오 부 야오 환 서우지.",
    "ko": "그래서 폰 바꿀까 고민 중이야.",
-   "note": "在+동사 진행 + 要不要 정반의문",
+   "note": "在+동사 = 진행, 要不要 = ~할까 말까",
    "tags": [
     "phone",
     "question:要不要"
    ],
+   "emotion": "worried",
    "lemmas": [
     [
      "想要",
@@ -48,21 +50,21 @@
      "手机",
      "shǒu jī"
     ]
-   ],
-   "rd": "쒀이 워 짜이 샹 야오 부 야오 환 서우지.",
-   "emotion": "worried"
+   ]
   },
   {
    "num": 2,
    "speaker": "B",
-   "zh": "你上周不是刚发工资就花完了吗？🙄",
-   "pinyin": "Nǐ shàng zhōu bú shì gāng fā gōngzī jiù huā wán le ma?",
+   "zh": "你上周刚发工资就花完了？",
+   "pinyin": "Nǐ shàng zhōu gāng fā gōngzī jiù huā wán le?",
+   "rd": "니 상 저우 강 파 궁쯔 주 화 완 러?",
    "ko": "너 지난주에 월급 받자마자 다 쓰지 않았어?",
-   "note": "刚……就 (하자마자) + 결과보어 完",
+   "note": "刚……就 = 하자마자, 完 = 다 해버리다",
    "tags": [
     "money",
     "complement:完"
    ],
+   "emotion": "tsukkomi",
    "lemmas": [
     [
      "上周",
@@ -99,42 +101,42 @@
      "完",
      "wán"
     ]
-   ],
-   "rd": "니 상 저우 부 스 강 파 궁쯔 주 화 완 러 마?",
-   "emotion": "tsukkomi"
+   ]
   },
   {
    "num": 3,
    "speaker": "A",
    "zh": "别提了，心疼。",
    "pinyin": "Bié tí le, xīnténg.",
+   "rd": "볘 티 러, 신텅.",
    "ko": "말도 마, 속 쓰려.",
-   "note": "别提了 (말도 꺼내지 마) 관용구",
+   "note": "别提了 = 말도 꺼내지 마",
    "tags": [
     "complaint",
     "idiom:别提了"
    ],
+   "emotion": "sad",
    "lemmas": [
     [
      "心疼",
      "心疼",
      "xīn téng"
     ]
-   ],
-   "rd": "볘 티 러, 신텅.",
-   "emotion": "sad"
+   ]
   },
   {
    "num": 4,
    "speaker": "B",
-   "zh": "先贴个膜，忍到下个月吧。🥰",
-   "pinyin": "Xiān tiē gè mó, rěn dào xià gè yuè ba.",
+   "zh": "先贴膜，撑到下个月。",
+   "pinyin": "Xiān tiē mó, chēng dào xià ge yuè.",
+   "rd": "셴 톄 모, 청 다오 샤 거 웨.",
    "ko": "일단 필름 붙이고 다음 달까지 버텨.",
-   "note": "先 (우선) + 동사+到 (~까지 ~하다)",
+   "note": "先 = 우선, 到 = ~까지",
    "tags": [
     "advice",
     "complement:到"
    ],
+   "emotion": "gentle",
    "lemmas": [
     [
      "先",
@@ -142,19 +144,14 @@
      "xiān"
     ],
     [
-     "贴",
-     "贴",
-     "tiē"
+     "贴膜",
+     "贴膜",
+     "tiē mó"
     ],
     [
-     "个膜",
-     "个膜",
-     "gè mó"
-    ],
-    [
-     "忍",
-     "忍",
-     "rěn"
+     "撑",
+     "撑",
+     "chēng"
     ],
     [
      "到",
@@ -166,21 +163,21 @@
      "下个月",
      "xià gè yuè"
     ]
-   ],
-   "rd": "셴 톄 거 모, 런 다오 샤 거 웨 바.",
-   "emotion": "gentle"
+   ]
   },
   {
    "num": 5,
    "speaker": "A",
-   "zh": "好吧，手机你要坚持住啊。😏",
-   "pinyin": "Hǎo ba, shǒujī nǐ yào jiānchí zhù a.",
+   "zh": "好，手机你得撑住。",
+   "pinyin": "Hǎo, shǒujī nǐ děi chēng zhù.",
+   "rd": "하오, 서우지 니 데이 청 주.",
    "ko": "알았어, 폰아 버텨줘야 한다.",
-   "note": "결과보어 住 (단단히 유지함)",
+   "note": "住 = 단단히 유지하다",
    "tags": [
     "humor",
     "complement:住"
    ],
+   "emotion": "amused",
    "lemmas": [
     [
      "好",
@@ -193,34 +190,24 @@
      "shǒu jī"
     ],
     [
-     "要",
-     "要",
-     "yào"
-    ],
-    [
-     "坚持",
-     "坚持",
-     "jiān chí"
-    ],
-    [
-     "住",
-     "住",
-     "zhù"
+     "撑住",
+     "撑住",
+     "chēng zhù"
     ]
-   ],
-   "rd": "하오 바, 서우지 니 야오 젠츠 주 아.",
-   "emotion": "amused"
+   ]
   },
   {
    "num": 6,
    "speaker": "B",
-   "zh": "别担心，我陪你一起省钱。",
-   "pinyin": "Bié dānxīn, wǒ péi nǐ yìqǐ shěngqián.",
+   "zh": "别担心，我也一起省。",
+   "pinyin": "Bié dānxīn, wǒ yě yīqǐ shěng.",
+   "rd": "볘 단신, 워 예 이치 성.",
    "ko": "걱정 마, 나도 같이 아껴줄게.",
-   "note": null,
+   "note": "",
    "tags": [
     "ext"
    ],
+   "emotion": "gentle",
    "lemmas": [
     [
      "别",
@@ -233,9 +220,9 @@
      "dān xīn"
     ],
     [
-     "陪",
-     "陪",
-     "péi"
+     "也",
+     "也",
+     "yě"
     ],
     [
      "一起",
@@ -246,26 +233,21 @@
      "省",
      "省",
      "shěng"
-    ],
-    [
-     "钱",
-     "钱",
-     "qián"
     ]
-   ],
-   "rd": "볘 단신, 워 페이 니 이치 성첸.",
-   "emotion": "gentle"
+   ]
   },
   {
    "num": 7,
    "speaker": "A",
    "zh": "真的？那太好了。",
-   "pinyin": "Zhēnde? nà tàihǎole.",
+   "pinyin": "Zhēn de? Nà tài hǎo le.",
+   "rd": "전 더? 나 타이 하오 러.",
    "ko": "진짜? 그럼 완전 좋지.",
-   "note": null,
+   "note": "",
    "tags": [
     "ext"
    ],
+   "emotion": "surprised",
    "lemmas": [
     [
      "真的",
@@ -287,30 +269,20 @@
      "好",
      "hǎo"
     ]
-   ],
-   "rd": "전더? 나 타이하오러.",
-   "emotion": "surprised",
-   "segs": [
-    [
-     "surprised",
-     "真的？"
-    ],
-    [
-     "cheerful",
-     "那太好了。"
-    ]
    ]
   },
   {
    "num": 8,
    "speaker": "B",
-   "zh": "至少这个月不许乱花钱哦。😜",
-   "pinyin": "Zhìshǎo zhège yuè bùxǔ luànhuāqián ó.",
+   "zh": "至少这个月别乱花。",
+   "pinyin": "Zhìshǎo zhè ge yuè bié luàn huā.",
+   "rd": "즈사오 저 거 웨 볘 롼 화.",
    "ko": "적어도 이번 달엔 막 쓰면 안 돼.",
-   "note": null,
+   "note": "",
    "tags": [
     "ext"
    ],
+   "emotion": "teasing",
    "lemmas": [
     [
      "至少",
@@ -328,9 +300,9 @@
      "yuè"
     ],
     [
-     "不许",
-     "不许",
-     "bù xǔ"
+     "别",
+     "别",
+     "bié"
     ],
     [
      "乱",
@@ -341,15 +313,13 @@
      "花",
      "花",
      "huā"
-    ],
-    [
-     "钱",
-     "钱",
-     "qián"
     ]
-   ],
-   "rd": "즈사오 저거 웨 부쉬 롼화첸 오.",
-   "emotion": "teasing"
+   ]
   }
- ]
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r3_life_l2_d13_2_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ }
 }

@@ -21,12 +21,14 @@
    "speaker": "A",
    "zh": "没问题，交给我吧！😄",
    "pinyin": "Méi wèntí, jiāo gěi wǒ ba!",
+   "rd": "메이 원티, 자오 게이 워 바!",
    "ko": "문제없어, 나한테 맡겨!",
-   "note": "동사 + 给 (수여의 대상)",
+   "note": "给=수여의 대상",
    "tags": [
     "약속",
     "자신감"
    ],
+   "emotion": "cheerful",
    "lemmas": [
     [
      "没",
@@ -43,21 +45,21 @@
      "交给",
      "jiāo gěi"
     ]
-   ],
-   "rd": "메이 원티, 자오 게이 워 바!",
-   "emotion": "cheerful"
+   ]
   },
   {
    "num": 2,
    "speaker": "B",
    "zh": "这是我们第一次一起旅行。",
    "pinyin": "Zhè shì wǒmen dì yī cì yìqǐ lǚxíng.",
+   "rd": "저 스 워먼 디 이 츠 이치 뤼싱.",
    "ko": "우리 처음으로 같이 가는 여행이네.",
-   "note": "서수 第一次 (첫 번째)",
+   "note": "第一次=첫 번째",
    "tags": [
     "설렘",
     "기념"
    ],
+   "emotion": "shy",
    "lemmas": [
     [
      "这",
@@ -89,21 +91,21 @@
      "旅行",
      "lǚ xíng"
     ]
-   ],
-   "rd": "저 스 워먼 디 이 츠 이치 뤼싱.",
-   "emotion": "shy"
+   ]
   },
   {
    "num": 3,
    "speaker": "A",
-   "zh": "所以我又开心又紧张。",
-   "pinyin": "Suǒyǐ wǒ yòu kāixīn yòu jǐnzhāng.",
+   "zh": "所以我又兴奋又紧张。",
+   "pinyin": "Suǒyǐ wǒ yòu xīngfèn yòu jǐnzhāng.",
+   "rd": "쒀이 워 유 싱펀 유 진장.",
    "ko": "그래서 나 신나면서도 떨려.",
-   "note": "又…又… (두 상태 병렬)",
+   "note": "又…又…=두 상태 병렬",
    "tags": [
     "감정",
     "又…又"
    ],
+   "emotion": "flustered",
    "lemmas": [
     [
      "又",
@@ -111,9 +113,9 @@
      "yòu"
     ],
     [
-     "开心",
-     "开心",
-     "kāi xīn"
+     "兴奋",
+     "兴奋",
+     "xīng fèn"
     ],
     [
      "又",
@@ -125,21 +127,21 @@
      "紧张",
      "jǐn zhāng"
     ]
-   ],
-   "rd": "쒀이 워 유 카이신 유 진장.",
-   "emotion": "flustered"
+   ]
   },
   {
    "num": 4,
    "speaker": "B",
-   "zh": "紧张什么呀？有我呢！😜",
-   "pinyin": "Jǐnzhāng shénme ya? Yǒu wǒ ne!",
+   "zh": "紧张什么？有我呢！😜",
+   "pinyin": "Jǐnzhāng shénme? Yǒu wǒ ne!",
+   "rd": "진장 선머? 유 워 너!",
    "ko": "떨긴 뭘 떨어? 내가 있잖아!",
-   "note": "어기조사 呢 (사실 환기·안심)",
+   "note": "呢=사실 환기",
    "tags": [
     "안심",
     "애정"
    ],
+   "emotion": "teasing",
    "lemmas": [
     [
      "紧张",
@@ -156,31 +158,26 @@
      "有",
      "yǒu"
     ]
-   ],
-   "rd": "진장 선머 야? 유 워 너!",
-   "emotion": "teasing"
+   ]
   },
   {
    "num": 5,
    "speaker": "A",
-   "zh": "好，真希望周末快点到。",
-   "pinyin": "Hǎo, zhēn xīwàng zhōumò kuài diǎn dào.",
+   "zh": "好，希望周末快点来。",
+   "pinyin": "Hǎo, xīwàng zhōumò kuàidiǎn lái.",
+   "rd": "하오, 시왕 저우모 콰이뎬 라이.",
    "ko": "좋아, 주말이 빨리 왔으면 좋겠다.",
-   "note": "希望 + 절 (소망 표현)",
+   "note": "希望=소망",
    "tags": [
     "설렘",
     "소망"
    ],
+   "emotion": "excited",
    "lemmas": [
     [
      "好",
      "好",
      "hǎo"
-    ],
-    [
-     "真",
-     "真",
-     "zhēn"
     ],
     [
      "希望",
@@ -203,24 +200,24 @@
      "diǎn"
     ],
     [
-     "到",
-     "到",
-     "dào"
+     "来",
+     "来",
+     "lái"
     ]
-   ],
-   "rd": "하오, 전 시왕 저우모 콰이 뎬 다오.",
-   "emotion": "excited"
+   ]
   },
   {
    "num": 6,
    "speaker": "B",
    "zh": "我也是，已经开始收拾行李了。",
-   "pinyin": "Wǒ yě shì, yǐjīng kāishǐ shōushí xínglǐ le.",
+   "pinyin": "Wǒ yě shì, yǐjīng kāishǐ shōushi xíngli le.",
+   "rd": "워 예 스, 이징 카이스 서우스 싱리 러.",
    "ko": "나도, 벌써 짐 챙기기 시작했어.",
-   "note": null,
+   "note": "",
    "tags": [
     "ext"
    ],
+   "emotion": "excited",
    "lemmas": [
     [
      "也",
@@ -252,20 +249,20 @@
      "行李",
      "xíng lǐ"
     ]
-   ],
-   "rd": "워 예 스, 이징 카이스 서우스 싱리 러.",
-   "emotion": "excited"
+   ]
   },
   {
    "num": 7,
    "speaker": "A",
-   "zh": "别忘了带你的相机。",
-   "pinyin": "Biéwàngle dài nǐ de xiàngjī.",
+   "zh": "别忘了带相机。",
+   "pinyin": "Bié wàng le dài xiàngjī.",
+   "rd": "볘 왕 러 다이 샹지.",
    "ko": "카메라 챙기는 거 잊지 마.",
-   "note": null,
+   "note": "",
    "tags": [
     "ext"
    ],
+   "emotion": "gentle",
    "lemmas": [
     [
      "别",
@@ -287,20 +284,20 @@
      "相机",
      "xiàng jī"
     ]
-   ],
-   "rd": "볘왕러 다이 니 더 샹지.",
-   "emotion": "gentle"
+   ]
   },
   {
    "num": 8,
    "speaker": "B",
-   "zh": "放心，我早就准备好了。",
-   "pinyin": "Fàngxīn, wǒ zǎojiù zhǔnbèi hǎo le.",
+   "zh": "放心，早就准备好了。",
+   "pinyin": "Fàngxīn, zǎojiù zhǔnbèi hǎo le.",
+   "rd": "팡신, 짜오주 준베이 하오 러.",
    "ko": "걱정 마, 진작에 다 준비했어.",
-   "note": null,
+   "note": "",
    "tags": [
     "ext"
    ],
+   "emotion": "cheerful",
    "lemmas": [
     [
      "放心",
@@ -322,9 +319,12 @@
      "好",
      "hǎo"
     ]
-   ],
-   "rd": "팡신, 워 짜오주 준베이 하오 러.",
-   "emotion": "cheerful"
+   ]
   }
- ]
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r4_love_l3_d11_2_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ }
 }

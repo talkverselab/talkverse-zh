@@ -21,12 +21,14 @@
    "speaker": "A",
    "zh": "小丽，我们去旅行吧！🤩",
    "pinyin": "Xiǎolì, wǒmen qù lǚxíng ba!",
+   "rd": "샤오리, 워먼 취 뤼싱 바!",
    "ko": "샤오리, 우리 여행 가자!",
-   "note": "청유 어기조사 吧",
+   "note": "吧=청유",
    "tags": [
     "여행",
     "제안"
    ],
+   "emotion": "excited",
    "lemmas": [
     [
      "我们",
@@ -43,21 +45,21 @@
      "旅行",
      "lǚ xíng"
     ]
-   ],
-   "rd": "샤오리, 워먼 취 뤼싱 바!",
-   "emotion": "excited"
+   ]
   },
   {
    "num": 2,
    "speaker": "B",
-   "zh": "好啊！你想去哪儿？",
-   "pinyin": "Hǎo a! Nǐ xiǎng qù nǎr?",
+   "zh": "好！想去哪儿？",
+   "pinyin": "Hǎo! Xiǎng qù nǎr?",
+   "rd": "하오! 샹 취 날?",
    "ko": "좋아! 어디 가고 싶은데?",
-   "note": "의문대명사 哪儿",
+   "note": "哪儿=어디",
    "tags": [
     "여행",
     "질문"
    ],
+   "emotion": "cheerful",
    "lemmas": [
     [
      "好",
@@ -79,21 +81,21 @@
      "哪儿",
      "nǎ ér"
     ]
-   ],
-   "rd": "하오 아! 니 샹 취 날?",
-   "emotion": "cheerful"
+   ]
   },
   {
    "num": 3,
    "speaker": "A",
-   "zh": "我一直想去西安看看。",
-   "pinyin": "Wǒ yìzhí xiǎng qù Xī'ān kànkan.",
+   "zh": "我一直想去西安。",
+   "pinyin": "Wǒ yìzhí xiǎng qù Xī'ān.",
+   "rd": "워 이즈 샹 취 시'안.",
    "ko": "나 계속 시안에 가 보고 싶었어.",
-   "note": "부사 一直 (줄곧)",
+   "note": "一直=줄곧",
    "tags": [
     "시안",
     "소망"
    ],
+   "emotion": "gentle",
    "lemmas": [
     [
      "一直",
@@ -119,27 +121,22 @@
      "安",
      "安",
      "ān"
-    ],
-    [
-     "看看",
-     "看看",
-     "kàn kàn"
     ]
-   ],
-   "rd": "워 이즈 샹 취 시'안 칸칸.",
-   "emotion": "gentle"
+   ]
   },
   {
    "num": 4,
    "speaker": "B",
-   "zh": "西安有很多好吃的！",
-   "pinyin": "Xī'ān yǒu hěn duō hǎochī de!",
+   "zh": "西安好吃的特别多！",
+   "pinyin": "Xī'ān hǎochī de tèbié duō!",
+   "rd": "시'안 하오츠 더 터볘 둬!",
    "ko": "시안에는 맛있는 게 진짜 많아!",
-   "note": "好吃的 — 的로 명사화",
+   "note": "的=명사화",
    "tags": [
     "음식",
     "시안"
    ],
+   "emotion": "excited",
    "lemmas": [
     [
      "西",
@@ -152,35 +149,35 @@
      "ān"
     ],
     [
-     "有",
-     "有",
-     "yǒu"
-    ],
-    [
-     "很多",
-     "很多",
-     "hěn duō"
-    ],
-    [
      "好吃",
      "好吃",
      "hǎo chī"
+    ],
+    [
+     "特别",
+     "特别",
+     "tè bié"
+    ],
+    [
+     "多",
+     "多",
+     "duō"
     ]
-   ],
-   "rd": "시'안 유 헌 둬 하오츠 더!",
-   "emotion": "excited"
+   ]
   },
   {
    "num": 5,
    "speaker": "A",
    "zh": "还有兵马俑，特别有名。",
    "pinyin": "Hái yǒu Bīngmǎyǒng, tèbié yǒumíng.",
+   "rd": "하이 유 빙마융, 터볘 유밍.",
    "ko": "병마용도 있잖아, 엄청 유명해.",
-   "note": "还有 (추가 나열)",
+   "note": "还有=추가 나열",
    "tags": [
     "관광",
     "시안"
    ],
+   "emotion": "cheerful",
    "lemmas": [
     [
      "还有",
@@ -202,21 +199,21 @@
      "有名",
      "yǒu míng"
     ]
-   ],
-   "rd": "하이 유 빙마융, 터볘 유밍.",
-   "emotion": "cheerful"
+   ]
   },
   {
    "num": 6,
    "speaker": "B",
-   "zh": "我们坐高铁去还是坐飞机去？",
-   "pinyin": "Wǒmen zuò gāotiě qù háishi zuò fēijī qù?",
+   "zh": "我们坐高铁还是飞机？",
+   "pinyin": "Wǒmen zuò gāotiě háishì fēijī?",
+   "rd": "워먼 쭤 가오톄 하이스 페이지?",
    "ko": "우리 고속철 타고 갈까, 비행기 타고 갈까?",
-   "note": "선택의문문 还是",
+   "note": "还是=선택 의문",
    "tags": [
     "교통",
     "还是"
    ],
+   "emotion": "neutral",
    "lemmas": [
     [
      "我们",
@@ -234,40 +231,25 @@
      "gāo tiě"
     ],
     [
-     "去",
-     "去",
-     "qù"
-    ],
-    [
-     "坐",
-     "坐",
-     "zuò"
-    ],
-    [
      "飞机",
      "飞机",
      "fēi jī"
-    ],
-    [
-     "去",
-     "去",
-     "qù"
     ]
-   ],
-   "rd": "워먼 쭤 가오톄 취 하이스 쭤 페이지 취?",
-   "emotion": "neutral"
+   ]
   },
   {
    "num": 7,
    "speaker": "A",
    "zh": "坐高铁吧，路上可以聊天。",
    "pinyin": "Zuò gāotiě ba, lùshang kěyǐ liáotiān.",
+   "rd": "쭤 가오톄 바, 루상 커이 랴오톈.",
    "ko": "고속철 타자, 가는 길에 수다 떨 수 있잖아.",
-   "note": "조동사 可以 (가능)",
+   "note": "可以=가능",
    "tags": [
     "교통",
     "제안"
    ],
+   "emotion": "gentle",
    "lemmas": [
     [
      "坐",
@@ -294,22 +276,27 @@
      "天",
      "tiān"
     ]
-   ],
-   "rd": "쭤 가오톄 바, 루상 커이 랴오톈.",
-   "emotion": "gentle"
+   ]
   },
   {
    "num": 8,
    "speaker": "B",
-   "zh": "我来订票，你订酒店。",
-   "pinyin": "Wǒ lái dìng piào, nǐ dìng jiǔdiàn.",
+   "zh": "票我来订，酒店你来订。",
+   "pinyin": "Piào wǒ lái dìng, jiǔdiàn nǐ lái dìng.",
+   "rd": "퍄오 워 라이 딩, 주뎬 니 라이 딩.",
    "ko": "표는 내가 예매할게, 호텔은 네가 해.",
-   "note": "来 + 동사 (자청해서 ~하다)",
+   "note": "来=자청해서 ~하다",
    "tags": [
     "계획",
     "분담"
    ],
+   "emotion": "cheerful",
    "lemmas": [
+    [
+     "票",
+     "票",
+     "piào"
+    ],
     [
      "来",
      "来",
@@ -321,23 +308,26 @@
      "dìng"
     ],
     [
-     "票",
-     "票",
-     "piào"
+     "酒店",
+     "酒店",
+     "jiǔ diàn"
+    ],
+    [
+     "来",
+     "来",
+     "lái"
     ],
     [
      "订",
      "订",
      "dìng"
-    ],
-    [
-     "酒店",
-     "酒店",
-     "jiǔ diàn"
     ]
-   ],
-   "rd": "워 라이 딩 퍄오, 니 딩 주뎬.",
-   "emotion": "cheerful"
+   ]
   }
- ]
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r4_love_l3_d11_1_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ }
 }

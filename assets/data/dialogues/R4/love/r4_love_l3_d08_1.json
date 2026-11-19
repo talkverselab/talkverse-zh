@@ -19,14 +19,16 @@
   {
    "num": 1,
    "speaker": "B",
-   "zh": "马克，我们定几条恋爱规则吧。😄",
-   "pinyin": "Mǎkè, wǒmen dìng jǐ tiáo liàn'ài guīzé ba.",
-   "ko": "마크, 우리 연애 규칙 몇 개 정하자.",
-   "note": "양사 条 (규칙·조항), 동사 定",
+   "zh": "{name}，我们定几条恋爱规则吧。😄",
+   "pinyin": "{name}, wǒmen dìng jǐ tiáo liàn'ài guīzé ba.",
+   "rd": "{name}, 워먼 딩 지 탸오 롄'아이 구이쩌 바.",
+   "ko": "{name}, 우리 연애 규칙 몇 개 정하자.",
+   "note": "条=규칙 양사, 定=정하다",
    "tags": [
     "양사 条",
     "규칙"
    ],
+   "emotion": "cheerful",
    "lemmas": [
     [
      "我们",
@@ -53,21 +55,21 @@
      "规则",
      "guī zé"
     ]
-   ],
-   "rd": "마커, 워먼 딩 지 탸오 롄'아이 구이쩌 바.",
-   "emotion": "cheerful"
+   ]
   },
   {
    "num": 2,
    "speaker": "A",
    "zh": "好主意！第一条是什么？",
    "pinyin": "Hǎo zhǔyi! Dì yī tiáo shì shénme?",
+   "rd": "하오 주이! 디 이 탸오 스 선머?",
    "ko": "좋은 생각이야! 첫 번째 규칙은 뭐야?",
-   "note": "서수 접두사 第 (第一条)",
+   "note": "第=서수 접두사",
    "tags": [
     "서수 第",
     "好主意"
    ],
+   "emotion": "excited",
    "lemmas": [
     [
      "好",
@@ -94,21 +96,21 @@
      "什么",
      "shén me"
     ]
-   ],
-   "rd": "하오 주이! 디 이 탸오 스 선머?",
-   "emotion": "excited"
+   ]
   },
   {
    "num": 3,
    "speaker": "B",
    "zh": "再忙也要每天联系一次。",
    "pinyin": "Zài máng yě yào měi tiān liánxì yí cì.",
+   "rd": "짜이 망 예 야오 메이 톈 롄시 이 츠.",
    "ko": "아무리 바빠도 매일 한 번은 연락하기.",
-   "note": "再…也 '아무리 ~해도', 동량보어 一次",
+   "note": "再…也=아무리 ~해도, 一次=한 번",
    "tags": [
     "再…也",
     "동량보어"
    ],
+   "emotion": "stiff",
    "lemmas": [
     [
      "再",
@@ -145,21 +147,21 @@
      "一次",
      "yī cì"
     ]
-   ],
-   "rd": "짜이 망 예 야오 메이 톈 롄시 이 츠.",
-   "emotion": "stiff"
+   ]
   },
   {
    "num": 4,
    "speaker": "A",
-   "zh": "没问题，我睡觉前都会想你。",
-   "pinyin": "Méi wèntí, wǒ shuìjiào qián dōu huì xiǎng nǐ.",
+   "zh": "没问题，我睡觉前都想你。",
+   "pinyin": "Méi wèntí, wǒ shuìjiào qián dōu xiǎng nǐ.",
+   "rd": "메이 원티, 워 수이자오 첸 더우 샹 니.",
    "ko": "문제없어, 난 자기 전마다 네 생각 하는걸.",
-   "note": "동사구+前 '~하기 전에'",
+   "note": "前=~하기 전에",
    "tags": [
     "…前",
     "달달함"
    ],
+   "emotion": "gentle",
    "lemmas": [
     [
      "没",
@@ -187,30 +189,25 @@
      "dōu"
     ],
     [
-     "会",
-     "会",
-     "huì"
-    ],
-    [
      "想",
      "想",
      "xiǎng"
     ]
-   ],
-   "rd": "메이 원티, 워 수이자오 첸 더우 후이 샹 니.",
-   "emotion": "gentle"
+   ]
   },
   {
    "num": 5,
    "speaker": "B",
    "zh": "第二，生气的话要说出来。",
-   "pinyin": "Dì èr, shēngqì dehuà yào shuō chūlai.",
+   "pinyin": "Dì èr, shēngqì de huà yào shuō chūlái.",
+   "rd": "디 얼, 성치 더 화 야오 숴 추라이.",
    "ko": "둘째, 화나면 꼭 말로 표현하기.",
-   "note": "가정 …的话 '~라면', 방향보어 出来",
+   "note": "的话=~라면, 出来=표현하다",
    "tags": [
     "…的话",
     "솔직함"
    ],
+   "emotion": "stiff",
    "lemmas": [
     [
      "第二",
@@ -227,21 +224,21 @@
      "出来",
      "chū lái"
     ]
-   ],
-   "rd": "디 얼, 성치 더화 야오 숴 추라이.",
-   "emotion": "stiff"
+   ]
   },
   {
    "num": 6,
    "speaker": "A",
-   "zh": "对，别把心事放在心里。",
-   "pinyin": "Duì, bié bǎ xīnshì fàng zài xīnli.",
+   "zh": "对，别把烦恼放在心里。",
+   "pinyin": "Duì, bié bǎ fánnǎo fàng zài xīnli.",
+   "rd": "두이, 볘 바 판나오 팡 짜이 신리.",
    "ko": "맞아, 고민을 마음속에 담아 두지 말자.",
-   "note": "把…放在… '~을 ~에 두다'",
+   "note": "把…放在=…을 …에 두다",
    "tags": [
     "把자문",
     "心事"
    ],
+   "emotion": "gentle",
    "lemmas": [
     [
      "别",
@@ -249,14 +246,9 @@
      "bié"
     ],
     [
-     "心",
-     "心",
-     "xīn"
-    ],
-    [
-     "事",
-     "事",
-     "shì"
+     "烦恼",
+     "烦恼",
+     "fán nǎo"
     ],
     [
      "放在",
@@ -268,21 +260,21 @@
      "心里",
      "xīn lǐ"
     ]
-   ],
-   "rd": "두이, 볘 바 신스 팡 짜이 신리.",
-   "emotion": "gentle"
+   ]
   },
   {
    "num": 7,
    "speaker": "B",
    "zh": "还有，不许对别的女生太好。",
    "pinyin": "Hái yǒu, bùxǔ duì bié de nǚshēng tài hǎo.",
+   "rd": "하이 유, 부쉬 두이 볘 더 뉘성 타이 하오.",
    "ko": "그리고, 다른 여자한테 너무 잘해 주기 금지.",
-   "note": "금지 표현 不许 '~해서는 안 된다'",
+   "note": "不许=~해서는 안 된다",
    "tags": [
     "不许",
     "질투"
    ],
+   "emotion": "annoyed",
    "lemmas": [
     [
      "还有",
@@ -314,21 +306,21 @@
      "好",
      "hǎo"
     ]
-   ],
-   "rd": "하이 유, 부쉬 두이 볘 더 뉘성 타이 하오.",
-   "emotion": "annoyed"
+   ]
   },
   {
    "num": 8,
    "speaker": "A",
-   "zh": "哈哈，原来你也会吃醋啊。😜",
-   "pinyin": "Hāhā, yuánlái nǐ yě huì chīcù a.",
+   "zh": "哈哈，原来你也会吃醋。",
+   "pinyin": "Hāhā, yuánlái nǐ yě huì chīcù.",
+   "rd": "하하, 위안라이 니 예 후이 츠추.",
    "ko": "하하, 너도 질투할 줄 아는구나.",
-   "note": "原来 '알고 보니', 관용어 吃醋 '질투하다'",
+   "note": "原来=알고 보니, 吃醋=질투하다",
    "tags": [
     "原来",
     "吃醋"
    ],
+   "emotion": "teasing",
    "lemmas": [
     [
      "原来",
@@ -350,9 +342,12 @@
      "吃醋",
      "chī cù"
     ]
-   ],
-   "rd": "하하, 위안라이 니 예 후이 츠추 아.",
-   "emotion": "teasing"
+   ]
   }
- ]
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r4_love_l3_d08_1_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ }
 }

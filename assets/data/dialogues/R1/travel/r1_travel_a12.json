@@ -28,15 +28,25 @@
   {
    "num": 1,
    "speaker": "B",
-   "zh": "喏，两张票。",
-   "pinyin": "Nuò, liǎng zhāng piào.",
-   "rd": "눠, 량 장 퍄오.",
-   "ko": "자, 표 두 장.",
+   "zh": "喏这是两张票。",
+   "pinyin": "Nuò zhè shì liǎng zhāng piào.",
+   "rd": "눠 저 스 량 장 퍄오.",
+   "ko": "자 여기 표 두 장이야.",
    "note": "票 = 표",
    "tags": [
     "form:给"
    ],
    "lemmas": [
+    [
+     "这",
+     "这",
+     "zhè"
+    ],
+    [
+     "是",
+     "是",
+     "shì"
+    ],
     [
      "两张",
      "张",
@@ -254,6 +264,7 @@
  "review": {
   "grok_rewrite": "data/review/r1_travel_a12_grok_rewrite.md",
   "model": "전문가",
-  "final": "세션 리뷰"
+  "final": "세션 리뷰",
+  "r1_lines_1120": "#1 Grok(빠른) 다시 씀 — TTS 오독(tools/grok/zh_rw/out/r1_lines.md)"
  }
 }

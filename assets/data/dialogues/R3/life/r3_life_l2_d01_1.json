@@ -21,12 +21,14 @@
    "speaker": "B",
    "zh": "你起床了没？",
    "pinyin": "Nǐ qǐchuáng le méi?",
+   "rd": "니 치촹 러 메이?",
    "ko": "일어났어 안 일어났어?",
-   "note": "문말 没 의문문 (~했어 안 했어?)",
+   "note": "문말 没 = ~했어 안 했어?",
    "tags": [
     "daily",
     "question:没"
    ],
+   "emotion": "annoyed",
    "lemmas": [
     [
      "起床",
@@ -38,47 +40,47 @@
      "没",
      "méi"
     ]
-   ],
-   "rd": "니 치촹 러 메이?",
-   "emotion": "annoyed"
+   ]
   },
   {
    "num": 2,
    "speaker": "A",
-   "zh": "起了起了。",
-   "pinyin": "Qǐ le qǐ le.",
+   "zh": "起来了起来了。",
+   "pinyin": "Qǐlái le qǐlái le.",
+   "rd": "치라이 러 치라이 러.",
    "ko": "일어났어 일어났어.",
-   "note": "동사 중복으로 다급함·건성 대답 표현",
+   "note": "동사 중복 = 다급하거나 건성인 대답",
    "tags": [
     "daily",
     "repetition"
    ],
+   "emotion": "flustered",
    "lemmas": [
     [
-     "起",
-     "起",
-     "qǐ"
+     "起来",
+     "起来",
+     "qǐ lái"
     ],
     [
-     "起",
-     "起",
-     "qǐ"
+     "起来",
+     "起来",
+     "qǐ lái"
     ]
-   ],
-   "rd": "치 러 치 러.",
-   "emotion": "flustered"
+   ]
   },
   {
    "num": 3,
    "speaker": "B",
-   "zh": "骗人！你声音还没醒呢。🙄",
-   "pinyin": "Piàn rén! Nǐ shēngyīn hái méi xǐng ne.",
+   "zh": "骗人！声音还没醒呢。🙄",
+   "pinyin": "Piànrén! Shēngyīn hái méi xǐng ne.",
+   "rd": "폔런! 성인 하이 메이 싱 너.",
    "ko": "거짓말! 목소리가 아직 안 깼는데.",
-   "note": "还没…呢 (아직 ~안 했다, 상태 지속)",
+   "note": "还没…呢 = 아직 ~하지 않았다",
    "tags": [
     "particle:呢",
     "banter"
    ],
+   "emotion": "tsukkomi",
    "lemmas": [
     [
      "骗",
@@ -110,21 +112,21 @@
      "醒",
      "xǐng"
     ]
-   ],
-   "rd": "폔 런! 니 성인 하이 메이 싱 너.",
-   "emotion": "tsukkomi"
+   ]
   },
   {
    "num": 4,
    "speaker": "A",
-   "zh": "好吧，刚醒。",
-   "pinyin": "Hǎo ba, gāng xǐng.",
+   "zh": "好啦，我刚醒。",
+   "pinyin": "Hǎo la, wǒ gāng xǐng.",
+   "rd": "하오 라, 워 강 싱.",
    "ko": "알았어, 방금 깼어.",
-   "note": "부사 刚 (방금 막 ~했다)",
+   "note": "刚 = 방금 막",
    "tags": [
     "adverb:刚",
     "daily"
    ],
+   "emotion": "flustered",
    "lemmas": [
     [
      "好",
@@ -141,21 +143,21 @@
      "醒",
      "xǐng"
     ]
-   ],
-   "rd": "하오 바, 강 싱.",
-   "emotion": "flustered"
+   ]
   },
   {
    "num": 5,
    "speaker": "B",
    "zh": "都八点半啦！😤",
    "pinyin": "Dōu bā diǎn bàn la!",
+   "rd": "더우 바 뎬 반 라!",
    "ko": "벌써 8시 반이야!",
-   "note": "都…啦 (벌써 ~라고! 놀람 강조)",
+   "note": "都…啦 = 벌써 ~라고 강조",
    "tags": [
     "particle:啦",
     "time"
    ],
+   "emotion": "shout",
    "lemmas": [
     [
      "都",
@@ -167,21 +169,21 @@
      "点半",
      "diǎn bàn"
     ]
-   ],
-   "rd": "더우 바 뎬 반 라!",
-   "emotion": "shout"
+   ]
   },
   {
    "num": 6,
    "speaker": "A",
    "zh": "啊？完了完了！",
-   "pinyin": "Á? Wán le wán le!",
+   "pinyin": "A? Wán le wán le!",
+   "rd": "아? 완 러 완 러!",
    "ko": "어? 망했다 망했어!",
-   "note": "完了 (망했다, 구어 관용 표현)",
+   "note": "完了 = 망했다 (구어)",
    "tags": [
     "exclamation",
     "chaos"
    ],
+   "emotion": "flustered",
    "lemmas": [
     [
      "完",
@@ -193,21 +195,21 @@
      "完",
      "wán"
     ]
-   ],
-   "rd": "아? 완 러 완 러!",
-   "emotion": "flustered"
+   ]
   },
   {
    "num": 7,
    "speaker": "B",
    "zh": "别刷牙了，快跑吧。😜",
    "pinyin": "Bié shuāyá le, kuài pǎo ba.",
+   "rd": "볘 솨야 러, 콰이 파오 바.",
    "ko": "양치 하지 말고 빨리 뛰어.",
-   "note": "别…了 (하던 것도 하지 마) + 명령 吧",
+   "note": "别…了 = 하지 마, 吧 = 명령",
    "tags": [
     "negation:别",
     "particle:吧"
    ],
+   "emotion": "teasing",
    "lemmas": [
     [
      "别",
@@ -229,21 +231,21 @@
      "跑",
      "pǎo"
     ]
-   ],
-   "rd": "볘 솨야 러, 콰이 파오 바.",
-   "emotion": "teasing"
+   ]
   },
   {
    "num": 8,
    "speaker": "A",
    "zh": "不刷牙怎么见人啊！😤",
    "pinyin": "Bù shuāyá zěnme jiàn rén a!",
+   "rd": "부 솨야 쩐머 젠 런 아!",
    "ko": "양치 안 하고 어떻게 사람을 만나!",
-   "note": "怎么 반문 용법 (어떻게 ~하냐)",
+   "note": "怎么 = 어떻게 ~하냐 (반문)",
    "tags": [
     "rhetorical",
     "particle:啊"
    ],
+   "emotion": "shout",
    "lemmas": [
     [
      "不",
@@ -270,9 +272,12 @@
      "人",
      "rén"
     ]
-   ],
-   "rd": "부 솨야 쩐머 젠 런 아!",
-   "emotion": "shout"
+   ]
   }
- ]
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r3_life_l2_d01_1_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ }
 }

@@ -19,14 +19,16 @@
   {
    "num": 1,
    "speaker": "B",
-   "zh": "羊肉、牛肉、青菜，够吗？🤔",
-   "pinyin": "Yángròu, niúròu, qīngcài, gòu ma?",
+   "zh": "羊肉、牛肉、蔬菜，够吗？🤔",
+   "pinyin": "Yángròu, niúròu, shūcài, gòu ma?",
+   "rd": "양러우, 뉴러우, 수차이, 거우 마?",
    "ko": "양고기, 소고기, 야채, 충분해요?",
-   "note": "나열 + 够 (충분하다)",
+   "note": "够은 ‘충분하다’.",
    "tags": [
     "food",
     "particle:吗"
    ],
+   "emotion": "neutral",
    "lemmas": [
     [
      "羊",
@@ -49,35 +51,30 @@
      "ròu"
     ],
     [
-     "青",
-     "青",
-     "qīng"
-    ],
-    [
-     "菜",
-     "菜",
-     "cài"
+     "蔬菜",
+     "蔬菜",
+     "shū cài"
     ],
     [
      "够",
      "够",
      "gòu"
     ]
-   ],
-   "rd": "양러우, 뉴러우, 칭차이, 거우 마?",
-   "emotion": "neutral"
+   ]
   },
   {
    "num": 2,
    "speaker": "A",
    "zh": "再来一个土豆，我爱土豆。",
    "pinyin": "Zài lái yí ge tǔdòu, wǒ ài tǔdòu.",
+   "rd": "짜이 라이 이 거 투더우, 워 아이 투더우.",
    "ko": "감자 하나 추가요, 저 감자 사랑해요.",
-   "note": "再来一个 (하나 더) 주문 표현",
+   "note": "再来一个은 ‘하나 더’ 주문 표현.",
    "tags": [
     "food",
     "function:再"
    ],
+   "emotion": "cheerful",
    "lemmas": [
     [
      "再",
@@ -109,21 +106,21 @@
      "土豆",
      "tǔ dòu"
     ]
-   ],
-   "rd": "짜이 라이 이 거 투더우, 워 아이 투더우.",
-   "emotion": "cheerful"
+   ]
   },
   {
    "num": 3,
    "speaker": "B",
    "zh": "好，再来两瓶可乐。",
    "pinyin": "Hǎo, zài lái liǎng píng kělè.",
+   "rd": "하오, 짜이 라이 량 핑 커러.",
    "ko": "네, 콜라도 두 병 추가요.",
-   "note": "两瓶 (양사 瓶)",
+   "note": "两瓶은 양사 瓶.",
    "tags": [
     "food",
     "function:再"
    ],
+   "emotion": "polite",
    "lemmas": [
     [
      "好",
@@ -150,21 +147,21 @@
      "可乐",
      "kě lè"
     ]
-   ],
-   "rd": "하오, 짜이 라이 량 핑 커러.",
-   "emotion": "polite"
+   ]
   },
   {
    "num": 4,
    "speaker": "A",
-   "zh": "哇，锅来了！好香啊！🤩",
-   "pinyin": "Wā, guō lái le! Hǎo xiāng a!",
+   "zh": "哇，锅来了！好香！",
+   "pinyin": "Wa, guō lái le! Hǎo xiāng!",
+   "rd": "와, 궈 라이 러! 하오 샹!",
    "ko": "와, 냄비 나왔다! 냄새 좋다!",
-   "note": "来了 + 好香 감탄",
+   "note": "来了은 ‘나왔다’, 好香은 감탄.",
    "tags": [
     "food",
     "particle:啊"
    ],
+   "emotion": "excited",
    "lemmas": [
     [
      "锅",
@@ -186,21 +183,21 @@
      "香",
      "xiāng"
     ]
-   ],
-   "rd": "와, 궈 라이 러! 하오 샹 아!",
-   "emotion": "excited"
+   ]
   },
   {
    "num": 5,
    "speaker": "B",
-   "zh": "小心，很烫！",
-   "pinyin": "Xiǎoxīn, hěn tàng!",
+   "zh": "小心，烫！",
+   "pinyin": "Xiǎoxīn, tàng!",
+   "rd": "샤오신, 탕!",
    "ko": "조심해요, 뜨거워요!",
-   "note": "小心 (조심) + 烫",
+   "note": "小心은 ‘조심’, 烫은 ‘뜨겁다’.",
    "tags": [
     "care",
     "hook:hot"
    ],
+   "emotion": "worried",
    "lemmas": [
     [
      "小心",
@@ -208,30 +205,25 @@
      "xiǎo xīn"
     ],
     [
-     "很",
-     "很",
-     "hěn"
-    ],
-    [
      "烫",
      "烫",
      "tàng"
     ]
-   ],
-   "rd": "샤오신, 헌 탕!",
-   "emotion": "worried"
+   ]
   },
   {
    "num": 6,
    "speaker": "A",
-   "zh": "没事，我不怕烫… 啊，烫！",
-   "pinyin": "Méishì, wǒ bú pà tàng… a, tàng!",
+   "zh": "没事，我不怕烫……啊，烫！",
+   "pinyin": "Méishì, wǒ bú pà tàng…… A, tàng!",
+   "rd": "메이스, 워 부 파 탕…… 아, 탕!",
    "ko": "괜찮아요, 저 뜨거운 거 안 무서워요… 앗, 뜨거!",
-   "note": "没事",
+   "note": "没事은 ‘괜찮다’.",
    "tags": [
     "joke",
     "particle:啊"
    ],
+   "emotion": "cheerful",
    "lemmas": [
     [
      "没",
@@ -253,18 +245,6 @@
      "烫",
      "tàng"
     ]
-   ],
-   "rd": "메이스, 워 부 파 탕… 아, 탕!",
-   "emotion": "cheerful",
-   "segs": [
-    [
-     "cheerful",
-     "没事，我不怕烫…"
-    ],
-    [
-     "shout",
-     "啊，烫！"
-    ]
    ]
   },
   {
@@ -272,33 +252,35 @@
    "speaker": "B",
    "zh": "哈哈哈，我说了吧！😏",
    "pinyin": "Hāhāhā, wǒ shuō le ba!",
+   "rd": "하하하, 워 숴 러 바!",
    "ko": "하하하, 내가 말했잖아요!",
-   "note": "我说了吧 (거봐)",
+   "note": "我说了吧은 ‘거봐’.",
    "tags": [
     "tease",
     "particle:吧"
    ],
+   "emotion": "amused",
    "lemmas": [
     [
      "说",
      "说",
      "shuō"
     ]
-   ],
-   "rd": "하하하, 워 숴 러 바!",
-   "emotion": "amused"
+   ]
   },
   {
    "num": 8,
    "speaker": "A",
-   "zh": "给我一杯水，快快快！",
-   "pinyin": "Gěi wǒ yì bēi shuǐ, kuài kuài kuài!",
+   "zh": "给我一杯水，快！",
+   "pinyin": "Gěi wǒ yì bēi shuǐ, kuài!",
+   "rd": "게이 워 이 베이 수이, 콰이!",
    "ko": "물 한 잔 주세요, 빨리빨리!",
-   "note": "给我 + 一杯 (양사 杯)",
+   "note": "给我은 ‘给我’, 一杯은 양사 杯.",
    "tags": [
     "joke",
     "function:给"
    ],
+   "emotion": "flustered",
    "lemmas": [
     [
      "一杯",
@@ -314,20 +296,13 @@
      "快",
      "快",
      "kuài"
-    ],
-    [
-     "快",
-     "快",
-     "kuài"
-    ],
-    [
-     "快",
-     "快",
-     "kuài"
     ]
-   ],
-   "rd": "게이 워 이 베이 수이, 콰이 콰이 콰이!",
-   "emotion": "flustered"
+   ]
   }
- ]
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r4_love_l1_ep2_3_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ }
 }

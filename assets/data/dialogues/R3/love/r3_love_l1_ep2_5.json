@@ -21,12 +21,14 @@
    "speaker": "B",
    "zh": "慢慢学，我教你呀。🥰",
    "pinyin": "Mànmàn xué, wǒ jiāo nǐ ya.",
+   "rd": "만만 쉐, 워 자오 니 야.",
    "ko": "천천히 배워요, 내가 가르쳐 줄게요.",
-   "note": "慢慢 + 教 (가르치다) + 呀",
+   "note": "慢慢 = 천천히, 呀 = 부드러운 어미",
    "tags": [
     "care",
     "particle:呀"
    ],
+   "emotion": "gentle",
    "lemmas": [
     [
      "慢慢",
@@ -43,21 +45,21 @@
      "教",
      "jiào"
     ]
-   ],
-   "rd": "만만 쉐, 워 자오 니 야.",
-   "emotion": "gentle"
+   ]
   },
   {
    "num": 2,
    "speaker": "A",
    "zh": "真的？那我天天找你。",
    "pinyin": "Zhēn de? Nà wǒ tiāntiān zhǎo nǐ.",
+   "rd": "전 더? 나 워 톈톈 자오 니.",
    "ko": "정말요? 그럼 매일 찾아갈 거예요.",
-   "note": "天天 (매일) + 找",
+   "note": "天天 = 매일",
    "tags": [
     "flirt",
     "hook:everyday"
    ],
+   "emotion": "surprised",
    "lemmas": [
     [
      "真的",
@@ -79,18 +81,6 @@
      "找",
      "zhǎo"
     ]
-   ],
-   "rd": "전 더? 나 워 톈톈 자오 니.",
-   "emotion": "surprised",
-   "segs": [
-    [
-     "surprised",
-     "真的？"
-    ],
-    [
-     "cheerful",
-     "那我天天找你。"
-    ]
    ]
   },
   {
@@ -98,12 +88,14 @@
    "speaker": "B",
    "zh": "看你的表现哦。😜",
    "pinyin": "Kàn nǐ de biǎoxiàn o.",
+   "rd": "칸 니 더 뱌오셴 오.",
    "ko": "하기 나름이에요.",
-   "note": "看你的表现 (네 하기에 달렸다) + 哦",
+   "note": "看你的表现 = 네 하기에 달렸다",
    "tags": [
     "tease",
     "particle:哦"
    ],
+   "emotion": "teasing",
    "lemmas": [
     [
      "看",
@@ -115,21 +107,21 @@
      "表现",
      "biǎo xiàn"
     ]
-   ],
-   "rd": "칸 니 더 뱌오셴 오.",
-   "emotion": "teasing"
+   ]
   },
   {
    "num": 4,
    "speaker": "A",
    "zh": "服务员，买单！我请客。",
    "pinyin": "Fúwùyuán, mǎidān! Wǒ qǐngkè.",
+   "rd": "푸우위안, 마이단! 워 칭커.",
    "ko": "저기요, 계산이요! 제가 살게요.",
-   "note": "买单 (계산) + 请客 (한턱내다)",
+   "note": "买单 = 계산, 请客 = 한턱내다",
    "tags": [
     "food",
     "culture"
    ],
+   "emotion": "shout",
    "lemmas": [
     [
      "服务员",
@@ -151,18 +143,6 @@
      "请客",
      "qǐng kè"
     ]
-   ],
-   "rd": "푸우위안, 마이단! 워 칭커.",
-   "emotion": "shout",
-   "segs": [
-    [
-     "shout",
-     "服务员，买单！"
-    ],
-    [
-     "cheerful",
-     "我请客。"
-    ]
    ]
   },
   {
@@ -170,12 +150,14 @@
    "speaker": "B",
    "zh": "说好了，下次我请。",
    "pinyin": "Shuō hǎo le, xià cì wǒ qǐng.",
+   "rd": "숴 하오 러, 샤 츠 워 칭.",
    "ko": "약속한 거예요, 다음엔 제가 살게요.",
-   "note": "说好了 (약속했다) + 下次",
+   "note": "说好了 = 약속했다",
    "tags": [
     "promise",
     "hook:nexttime"
    ],
+   "emotion": "polite",
    "lemmas": [
     [
      "说",
@@ -197,21 +179,21 @@
      "请",
      "qǐng"
     ]
-   ],
-   "rd": "숴 하오 러, 샤 츠 워 칭.",
-   "emotion": "polite"
+   ]
   },
   {
    "num": 6,
    "speaker": "A",
-   "zh": "下次？那就是还有下次！",
-   "pinyin": "Xià cì? Nà jiùshì hái yǒu xià cì!",
+   "zh": "下次？那还有下次啊！🤩",
+   "pinyin": "Xià cì? Nà hái yǒu xià cì a!",
+   "rd": "샤 츠? 나 하이 유 샤 츠 아!",
    "ko": "다음이요? 그럼 다음이 있다는 거네요!",
-   "note": "还有 (또 있다) 재치",
+   "note": "还有 = 또 있다",
    "tags": [
     "flirt",
     "function:有"
    ],
+   "emotion": "excited",
    "lemmas": [
     [
      "下次",
@@ -224,11 +206,6 @@
      "nà"
     ],
     [
-     "就是",
-     "就是",
-     "jiù shì"
-    ],
-    [
      "还有",
      "还有",
      "hái yǒu"
@@ -238,21 +215,21 @@
      "下次",
      "xià cì"
     ]
-   ],
-   "rd": "샤 츠? 나 주스 하이 유 샤 츠!",
-   "emotion": "excited"
+   ]
   },
   {
    "num": 7,
    "speaker": "B",
-   "zh": "吃饱了吗？我们去走走吧。🥰",
-   "pinyin": "Chī bǎo le ma? Wǒmen qù zǒuzou ba.",
+   "zh": "吃饱了吗？我们走走。",
+   "pinyin": "Chī bǎo le ma? Wǒmen zǒuzou.",
+   "rd": "츠 바오 러 마? 워먼 쩌우쩌우.",
    "ko": "배불러요? 우리 좀 걸어요.",
-   "note": "吃饱了 + 走走 (동사 중첩)",
+   "note": "吃饱了 = 배부르다, 走走 = 좀 걷다",
    "tags": [
     "plan",
     "particle:吧"
    ],
+   "emotion": "gentle",
    "lemmas": [
     [
      "吃",
@@ -270,11 +247,6 @@
      "wǒ men"
     ],
     [
-     "去",
-     "去",
-     "qù"
-    ],
-    [
      "走",
      "走",
      "zǒu"
@@ -284,21 +256,21 @@
      "走",
      "zǒu"
     ]
-   ],
-   "rd": "츠 바오 러 마? 워먼 취 쩌우쩌우 바.",
-   "emotion": "gentle"
+   ]
   },
   {
    "num": 8,
    "speaker": "A",
-   "zh": "好啊，今天月亮真好看。",
-   "pinyin": "Hǎo a, jīntiān yuèliang zhēn hǎokàn.",
+   "zh": "好，今天月亮真好看。",
+   "pinyin": "Hǎo, jīntiān yuèliang zhēn hǎokàn.",
+   "rd": "하오, 진톈 웨량 전 하오칸.",
    "ko": "좋아요, 오늘 달이 진짜 예쁘네요.",
-   "note": "月亮 낭만 마무리",
+   "note": "月亮 = 달",
    "tags": [
     "flirt",
     "hook:moon"
    ],
+   "emotion": "gentle",
    "lemmas": [
     [
      "好",
@@ -325,9 +297,12 @@
      "好看",
      "hǎo kàn"
     ]
-   ],
-   "rd": "하오 아, 진톈 웨량 전 하오칸.",
-   "emotion": "gentle"
+   ]
   }
- ]
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r3_love_l1_ep2_5_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ }
 }

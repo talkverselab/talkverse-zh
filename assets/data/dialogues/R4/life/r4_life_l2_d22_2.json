@@ -19,24 +19,21 @@
   {
    "num": 1,
    "speaker": "A",
-   "zh": "视频里没说火这么大……",
-   "pinyin": "Shìpín li méi shuō huǒ zhème dà……",
+   "zh": "视频没说火这么大啊…😳",
+   "pinyin": "Shìpín méi shuō huǒ zhème dà a…",
+   "rd": "스핀 메이 숴 훠 저머 다 아…",
    "ko": "영상에선 불이 이렇게 센 줄 몰랐단 말야…",
-   "note": "没说: '말해주지 않았다' 남 탓 변명. 这么+형용사 '이렇게 ~하다'.",
+   "note": "没说는 ‘말해주지 않았다’, 这么+형용사는 ‘이렇게 ~하다’.",
    "tags": [
     "没",
     "这么"
    ],
+   "emotion": "flustered",
    "lemmas": [
     [
      "视频",
      "视频",
      "shì pín"
-    ],
-    [
-     "里",
-     "里",
-     "lǐ"
     ],
     [
      "没",
@@ -63,21 +60,21 @@
      "大",
      "dà"
     ]
-   ],
-   "rd": "스핀 리 메이 숴 훠 저머 다……",
-   "emotion": "flustered"
+   ]
   },
   {
    "num": 2,
    "speaker": "B",
    "zh": "锅也坏了吧？🙄",
    "pinyin": "Guō yě huài le ba?",
+   "rd": "궈 예 화이 러 바?",
    "ko": "냄비도 망가졌지?",
-   "note": "吧?: 추측 확인 '~지?'. 坏了 '망가졌다'.",
+   "note": "吧는 추측 확인 ‘~지?’, 坏了는 ‘망가졌다’.",
    "tags": [
     "吧",
     "坏了"
    ],
+   "emotion": "tsukkomi",
    "lemmas": [
     [
      "锅",
@@ -94,21 +91,21 @@
      "坏",
      "huài"
     ]
-   ],
-   "rd": "궈 예 화이 러 바?",
-   "emotion": "tsukkomi"
+   ]
   },
   {
    "num": 3,
    "speaker": "A",
-   "zh": "那个……我们点外卖吧。😳",
-   "pinyin": "Nàge……wǒmen diǎn wàimài ba.",
+   "zh": "那个…我们点外卖吧。😳",
+   "pinyin": "Nàge… Wǒmen diǎn wàimài ba.",
+   "rd": "나거… 워먼 뎬 와이마이 바.",
    "ko": "저기… 우리 배달 시키자.",
-   "note": "点外卖: '배달을 주문하다' 필수 생활 표현.",
+   "note": "点外卖는 ‘배달을 주문하다’.",
    "tags": [
     "点外卖",
     "제안"
    ],
+   "emotion": "flustered",
    "lemmas": [
     [
      "那个",
@@ -130,21 +127,21 @@
      "外卖",
      "wài mài"
     ]
-   ],
-   "rd": "나거……워먼 뎬 와이마이 바.",
-   "emotion": "flustered"
+   ]
   },
   {
    "num": 4,
    "speaker": "B",
    "zh": "早就该点了！",
    "pinyin": "Zǎo jiù gāi diǎn le!",
+   "rd": "짜오 주 가이 뎬 러!",
    "ko": "진작에 시켰어야지!",
-   "note": "早就该…了: '진작 ~했어야 했다' 뒤늦은 후회·타박.",
+   "note": "早就该…了는 ‘진작 ~했어야 했다’는 뒤늦은 타박.",
    "tags": [
     "早就",
     "该…了"
    ],
+   "emotion": "annoyed",
    "lemmas": [
     [
      "早就",
@@ -161,21 +158,21 @@
      "点",
      "diǎn"
     ]
-   ],
-   "rd": "짜오 주 가이 뎬 러!",
-   "emotion": "annoyed"
+   ]
   },
   {
    "num": 5,
    "speaker": "A",
-   "zh": "下次我做汤，汤不会黑。",
-   "pinyin": "Xià cì wǒ zuò tāng, tāng bú huì hēi.",
+   "zh": "下次煮汤，汤不会黑。",
+   "pinyin": "Xià cì zhǔ tāng, tāng bú huì hēi.",
+   "rd": "샤 츠 주 탕, 탕 부 후이 헤이.",
    "ko": "다음엔 국 끓일게, 국은 안 까매지니까.",
-   "note": "不会: '~할 리 없다' 가능성 부정. 굴하지 않는 유머.",
+   "note": "不会는 ‘~할 리 없다’는 가능성 부정.",
    "tags": [
     "不会",
     "유머"
    ],
+   "emotion": "cheerful",
    "lemmas": [
     [
      "下次",
@@ -183,14 +180,9 @@
      "xià cì"
     ],
     [
-     "做",
-     "做",
-     "zuò"
-    ],
-    [
-     "汤",
-     "汤",
-     "tāng"
+     "煮汤",
+     "煮汤",
+     "zhǔ tāng"
     ],
     [
      "汤",
@@ -207,20 +199,20 @@
      "黑",
      "hēi"
     ]
-   ],
-   "rd": "샤 츠 워 쭤 탕, 탕 부 후이 헤이.",
-   "emotion": "cheerful"
+   ]
   },
   {
    "num": 6,
    "speaker": "B",
-   "zh": "我很怀疑，但还是给你机会。",
-   "pinyin": "Wǒ hěn huáiyí, dàn háishì gěi nǐ jīhuì.",
+   "zh": "虽然很怀疑，还是给你机会。",
+   "pinyin": "Suīrán hěn huáiyí, háishì gěi nǐ jīhuì.",
+   "rd": "쑤이란 헌 화이이, 하이스 게이 니 지후이.",
    "ko": "많이 의심스럽지만, 그래도 기회는 줄게.",
-   "note": null,
+   "note": "",
    "tags": [
     "ext"
    ],
+   "emotion": "teasing",
    "lemmas": [
     [
      "很",
@@ -237,50 +229,50 @@
      "机会",
      "jī huì"
     ]
-   ],
-   "rd": "워 헌 화이이, 단 하이스 게이 니 지후이.",
-   "emotion": "teasing"
+   ]
   },
   {
    "num": 7,
    "speaker": "A",
-   "zh": "谢谢老婆，我肯定进步。",
-   "pinyin": "Xièxiè lǎopó, wǒ kěndìng jìnbù.",
+   "zh": "谢谢宝贝，肯定会进步的。",
+   "pinyin": "Xièxie bǎobèi, kěndìng huì jìnbù de.",
+   "rd": "셰셰 바오베이, 컨딩 후이 진부 더.",
    "ko": "고마워 자기야, 분명 나아질 거야.",
-   "note": null,
+   "note": "",
    "tags": [
     "ext"
    ],
+   "emotion": "cheerful",
    "lemmas": [
-    [
-     "老婆",
-     "老婆",
-     "lǎo pó"
-    ],
     [
      "肯定",
      "肯定",
      "kěn dìng"
     ],
     [
+     "会",
+     "会",
+     "huì"
+    ],
+    [
      "进步",
      "进步",
      "jìn bù"
     ]
-   ],
-   "rd": "셰셰 라오포, 워 컨딩 진부.",
-   "emotion": "cheerful"
+   ]
   },
   {
    "num": 8,
    "speaker": "B",
-   "zh": "先把厨房打扫干净吧。😐",
-   "pinyin": "Xiān bǎ chúfáng dǎsǎo gānjìng ba.",
+   "zh": "先把厨房打扫干净。",
+   "pinyin": "Xiān bǎ chúfáng dǎsǎo gānjìng.",
+   "rd": "셴 바 추팡 다싸오 간징.",
    "ko": "일단 주방부터 깨끗이 치워.",
-   "note": null,
+   "note": "",
    "tags": [
     "ext"
    ],
+   "emotion": "stiff",
    "lemmas": [
     [
      "先",
@@ -302,9 +294,12 @@
      "干净",
      "gān jìng"
     ]
-   ],
-   "rd": "셴 바 추팡 다싸오 간징 바.",
-   "emotion": "stiff"
+   ]
   }
- ]
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r4_life_l2_d22_2_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ }
 }

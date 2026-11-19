@@ -19,14 +19,16 @@
   {
    "num": 1,
    "speaker": "A",
-   "zh": "我不想学了……",
-   "pinyin": "Wǒ bù xiǎng xué le……",
-   "ko": "나 공부 그만하고 싶어…",
-   "note": "不想+동사+了: '더는 ~하고 싶지 않다' 상태 변화.",
+   "zh": "我不想学了。",
+   "pinyin": "Wǒ bù xiǎng xué le.",
+   "rd": "워 부 샹 쉐 러.",
+   "ko": "나 공부 그만하고 싶어.",
+   "note": "不想+동사+了: 더는 ~하고 싶지 않다",
    "tags": [
     "不想…了",
     "불평"
    ],
+   "emotion": "sad",
    "lemmas": [
     [
      "不想",
@@ -38,42 +40,42 @@
      "学",
      "xué"
     ]
-   ],
-   "rd": "워 부 샹 쉐 러……",
-   "emotion": "sad"
+   ]
   },
   {
    "num": 2,
    "speaker": "B",
    "zh": "怎么啦？😟",
-   "pinyin": "Zěnme la?",
+   "pinyin": "Zěnme lā?",
+   "rd": "쩐머 라?",
    "ko": "왜 그래?",
-   "note": "怎么啦(=怎么了): 걱정하며 이유 묻기. 啦는 부드러운 어기.",
+   "note": "怎么啦: 무슨 일이야",
    "tags": [
     "怎么啦",
     "어기조사"
    ],
+   "emotion": "worried",
    "lemmas": [
     [
      "怎么",
      "怎么",
      "zěn me"
     ]
-   ],
-   "rd": "쩐머 라?",
-   "emotion": "worried"
+   ]
   },
   {
    "num": 3,
    "speaker": "A",
-   "zh": "HSK的语法太难了。",
-   "pinyin": "HSK de yǔfǎ tài nán le.",
+   "zh": "语法太难了。",
+   "pinyin": "Yǔfǎ tài nán le.",
+   "rd": "위파 타이 난 러.",
    "ko": "HSK 문법 너무 어려워.",
-   "note": "太…了: '너무 ~하다' 감탄·불평 필수 패턴.",
+   "note": "太…了: 너무 ~하다",
    "tags": [
     "太…了",
     "语法"
    ],
+   "emotion": "sad",
    "lemmas": [
     [
      "语法",
@@ -90,21 +92,21 @@
      "难",
      "nán"
     ]
-   ],
-   "rd": "HSK 더 위파 타이 난 러.",
-   "emotion": "sad"
+   ]
   },
   {
    "num": 4,
    "speaker": "A",
    "zh": "汉字也太多了！",
    "pinyin": "Hànzì yě tài duō le!",
+   "rd": "한쯔 예 타이 둬 러!",
    "ko": "한자도 너무 많아!",
-   "note": "也: 앞 불평에 하나 더 얹기. 병렬 불만 표현.",
+   "note": "也: 앞 불평에 더하기",
    "tags": [
     "也",
     "불평"
    ],
+   "emotion": "annoyed",
    "lemmas": [
     [
      "汉字",
@@ -126,21 +128,21 @@
      "多",
      "duō"
     ]
-   ],
-   "rd": "한쯔 예 타이 둬 러!",
-   "emotion": "annoyed"
+   ]
   },
   {
    "num": 5,
    "speaker": "B",
-   "zh": "你已经很棒了嘛。🥰",
-   "pinyin": "Nǐ yǐjīng hěn bàng le ma.",
+   "zh": "你已经学得很好了嘛。🥰",
+   "pinyin": "Nǐ yǐjīng xué de hěn hǎo le ma.",
+   "rd": "니 이징 쉐 더 헌 하오 러 마.",
    "ko": "너 이미 충분히 잘하잖아.",
-   "note": "已经…了: '이미 ~하다'. 嘛로 '당연하잖아' 위로 어투.",
+   "note": "已经…了嘛: 이미 ~하잖아",
    "tags": [
     "已经",
     "嘛"
    ],
+   "emotion": "gentle",
    "lemmas": [
     [
      "已经",
@@ -148,30 +150,35 @@
      "yǐ jīng"
     ],
     [
+     "学",
+     "学",
+     "xué"
+    ],
+    [
      "很",
      "很",
      "hěn"
     ],
     [
-     "棒",
-     "棒",
-     "bàng"
+     "好",
+     "好",
+     "hǎo"
     ]
-   ],
-   "rd": "니 이징 헌 방 러 마.",
-   "emotion": "gentle"
+   ]
   },
   {
    "num": 6,
    "speaker": "A",
-   "zh": "昨天我写错了五十个词。",
-   "pinyin": "Zuótiān wǒ xiě cuò le wǔshí ge cí.",
-   "ko": "어제 단어 50개 틀리게 썼어.",
-   "note": "写错: 동사+결과보어 错 '잘못 쓰다'.",
+   "zh": "昨天写错了五十个单词。",
+   "pinyin": "Zuótiān xiěcuò le wǔshí ge dāncí.",
+   "rd": "쭤톈 셰춰 러 우스 거 단츠.",
+   "ko": "어제 단어 오십 개 틀리게 썼어.",
+   "note": "写错: 잘못 쓰다",
    "tags": [
     "결과보어",
     "错"
    ],
+   "emotion": "sad",
    "lemmas": [
     [
      "昨天",
@@ -194,46 +201,51 @@
      "gè"
     ],
     [
+     "单",
+     "单",
+     "dān"
+    ],
+    [
      "词",
      "词",
      "cí"
     ]
-   ],
-   "rd": "쭤톈 워 셰 춰 러 우스 거 츠.",
-   "emotion": "sad"
+   ]
   },
   {
    "num": 7,
    "speaker": "B",
-   "zh": "五十个？哈哈哈。😏",
-   "pinyin": "Wǔshí ge? Hāhāhā.",
-   "ko": "50개? 하하하.",
-   "note": "수사 반복으로 되묻기. 웃음으로 분위기 전환.",
+   "zh": "五十个？哈哈。😏",
+   "pinyin": "Wǔshí ge? Hāhā.",
+   "rd": "우스 거? 하하.",
+   "ko": "오십 개? 하하하.",
+   "note": "수사 반복: 되묻기",
    "tags": [
     "되묻기",
     "유머"
    ],
+   "emotion": "amused",
    "lemmas": [
     [
      "五十个",
      "个",
      "gè"
     ]
-   ],
-   "rd": "우스 거? 하하하.",
-   "emotion": "amused"
+   ]
   },
   {
    "num": 8,
    "speaker": "A",
-   "zh": "你别笑啊！😒",
-   "pinyin": "Nǐ bié xiào a!",
+   "zh": "别笑啊！😒",
+   "pinyin": "Bié xiào a!",
+   "rd": "볘 샤오 아!",
    "ko": "웃지 마!",
-   "note": "别+동사: 금지 명령 '~하지 마'. 啊로 어리광 어투.",
+   "note": "别+동사+啊: ~하지 마",
    "tags": [
     "别",
     "명령문"
    ],
+   "emotion": "annoyed",
    "lemmas": [
     [
      "别",
@@ -245,9 +257,12 @@
      "笑",
      "xiào"
     ]
-   ],
-   "rd": "니 볘 샤오 아!",
-   "emotion": "annoyed"
+   ]
   }
- ]
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r4_life_l2_d19_1_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ }
 }

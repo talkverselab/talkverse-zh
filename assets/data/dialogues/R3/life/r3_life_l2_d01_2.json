@@ -19,14 +19,16 @@
   {
    "num": 1,
    "speaker": "B",
-   "zh": "那你就迟到吧。😜",
-   "pinyin": "Nà nǐ jiù chídào ba.",
+   "zh": "那就迟到吧。😜",
+   "pinyin": "Nà jiù chídào ba.",
+   "rd": "나 주 츠다오 바.",
    "ko": "그럼 그냥 지각하든가.",
-   "note": "那…就…吧 (그럼 그냥 ~해)",
+   "note": "那…就…吧 = 그럼 그냥 ~해",
    "tags": [
     "adverb:就",
     "banter"
    ],
+   "emotion": "teasing",
    "lemmas": [
     [
      "那",
@@ -43,21 +45,21 @@
      "迟到",
      "chí dào"
     ]
-   ],
-   "rd": "나 니 주 츠다오 바.",
-   "emotion": "teasing"
+   ]
   },
   {
    "num": 2,
    "speaker": "A",
    "zh": "我打车，还来得及。",
-   "pinyin": "Wǒ dǎchē, hái láidejí.",
+   "pinyin": "Wǒ dǎchē, hái láidéjí.",
+   "rd": "워 다처, 하이 라이더지.",
    "ko": "택시 탈게, 아직 안 늦었어.",
-   "note": "가능보어 来得及 (시간에 댈 수 있다)",
+   "note": "来得及 = 시간에 댈 수 있다",
    "tags": [
     "complement:来得及",
     "daily"
    ],
+   "emotion": "flustered",
    "lemmas": [
     [
      "打车",
@@ -74,21 +76,21 @@
      "来得及",
      "lái de jí"
     ]
-   ],
-   "rd": "워 다처, 하이 라이더지.",
-   "emotion": "flustered"
+   ]
   },
   {
    "num": 3,
    "speaker": "B",
    "zh": "上周你也这么说的。",
    "pinyin": "Shàng zhōu nǐ yě zhème shuō de.",
+   "rd": "상 저우 니 예 저머 숴 더.",
    "ko": "지난주에도 그렇게 말했거든.",
-   "note": "문말 的 (과거 사실 강조, 是…的 생략형)",
+   "note": "문말 的 = 과거 사실 강조",
    "tags": [
     "structure:是的",
     "banter"
    ],
+   "emotion": "tsukkomi",
    "lemmas": [
     [
      "上周",
@@ -110,21 +112,21 @@
      "说",
      "shuō"
     ]
-   ],
-   "rd": "상 저우 니 예 저머 숴 더.",
-   "emotion": "tsukkomi"
+   ]
   },
   {
    "num": 4,
    "speaker": "A",
    "zh": "这次真的不一样嘛。😳",
    "pinyin": "Zhè cì zhēn de bù yīyàng ma.",
+   "rd": "저 츠 전 더 부 이양 마.",
    "ko": "이번엔 진짜 다르다니까.",
-   "note": "어기조사 嘛 (당연하다는 어감·응석)",
+   "note": "嘛 = 당연하다는 어감",
    "tags": [
     "particle:嘛",
     "banter"
    ],
+   "emotion": "flustered",
    "lemmas": [
     [
      "这次",
@@ -146,21 +148,21 @@
      "一样",
      "yī yàng"
     ]
-   ],
-   "rd": "저 츠 전 더 부 이양 마.",
-   "emotion": "flustered"
+   ]
   },
   {
    "num": 5,
    "speaker": "B",
-   "zh": "快去吧，晚上请我吃饭。",
-   "pinyin": "Kuài qù ba, wǎnshang qǐng wǒ chīfàn.",
+   "zh": "快走，晚上请我吃饭。",
+   "pinyin": "Kuài zǒu, wǎnshang qǐng wǒ chīfàn.",
+   "rd": "콰이 쩌우, 완상 칭 워 츠판.",
    "ko": "빨리 가, 저녁에 밥 사.",
-   "note": "请+사람+동사 (한턱내다 구문)",
+   "note": "请+사람+동사 = 한턱내다",
    "tags": [
     "structure:请",
     "positive"
    ],
+   "emotion": "teasing",
    "lemmas": [
     [
      "快",
@@ -168,9 +170,9 @@
      "kuài"
     ],
     [
-     "去",
-     "去",
-     "qù"
+     "走",
+     "走",
+     "zǒu"
     ],
     [
      "晚上",
@@ -187,25 +189,25 @@
      "吃饭",
      "chī fàn"
     ]
-   ],
-   "rd": "콰이 취 바, 완상 칭 워 츠판.",
-   "emotion": "teasing"
+   ]
   },
   {
    "num": 6,
    "speaker": "A",
-   "zh": "好，我挂了，我跑了！",
-   "pinyin": "Hǎo, wǒ guà le, wǒ pǎo le!",
+   "zh": "行，挂了，我跑了！",
+   "pinyin": "Xíng, guà le, wǒ pǎo le!",
+   "rd": "싱, 과 러, 워 파오 러!",
    "ko": "그래, 끊는다, 뛴다!",
-   "note": null,
+   "note": "",
    "tags": [
     "ext"
    ],
+   "emotion": "shout",
    "lemmas": [
     [
-     "好",
-     "好",
-     "hǎo"
+     "行",
+     "行",
+     "xíng"
     ],
     [
      "挂",
@@ -217,20 +219,20 @@
      "跑",
      "pǎo"
     ]
-   ],
-   "rd": "하오, 워 과 러, 워 파오 러!",
-   "emotion": "shout"
+   ]
   },
   {
    "num": 7,
    "speaker": "B",
-   "zh": "加油，别摔倒啊。😏",
-   "pinyin": "Jiāyóu, bié shuāidǎo a.",
+   "zh": "加油，别摔了。",
+   "pinyin": "Jiāyóu, bié shuāi le.",
+   "rd": "자유, 볘 솨이 러.",
    "ko": "힘내, 넘어지지 말고.",
-   "note": null,
+   "note": "",
    "tags": [
     "ext"
    ],
+   "emotion": "amused",
    "lemmas": [
     [
      "加油",
@@ -243,24 +245,24 @@
      "bié"
     ],
     [
-     "摔倒",
-     "摔倒",
-     "shuāi dǎo"
+     "摔",
+     "摔",
+     "shuāi"
     ]
-   ],
-   "rd": "자유, 볘 솨이다오 아.",
-   "emotion": "amused"
+   ]
   },
   {
    "num": 8,
    "speaker": "A",
    "zh": "到公司了，没迟到！",
    "pinyin": "Dào gōngsī le, méi chídào!",
+   "rd": "다오 궁쓰 러, 메이 츠다오!",
    "ko": "회사 도착, 지각 안 했어!",
-   "note": null,
+   "note": "",
    "tags": [
     "ext"
    ],
+   "emotion": "excited",
    "lemmas": [
     [
      "到",
@@ -282,9 +284,12 @@
      "迟到",
      "chí dào"
     ]
-   ],
-   "rd": "다오 궁쓰 러, 메이 츠다오!",
-   "emotion": "excited"
+   ]
   }
- ]
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r3_life_l2_d01_2_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ }
 }

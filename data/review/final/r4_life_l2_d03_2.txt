@@ -1,0 +1,8 @@
+1 B: 我也不知道嘛。 / Wǒ yě bù zhīdào ma. / 나도 모른단 말이야. / 嘛 는 응석·투정 어감. / flustered
+2 A: 我们已经选了一个小时了。 / Wǒmen yǐjīng xuǎn le yí ge xiǎoshí le. / 우리 한 시간째 고르고 있어. / 了…了 는 지금까지 ~한 지. / annoyed
+3 B: 那我们猜拳定吧。 / Nà wǒmen cāiquán dìng ba. / 그럼 가위바위보로 정하자. / 吧 는 청유. / cheerful
+4 A: 你赢了，那吃什么？ / Nǐ yíng le, nà chī shénme? / 네가 이겼네… 그래서 뭐 먹어? / 了 는 완료, 那 는 화제 전환. / annoyed
+5 B: 嗯……随便吧。 / En…… suíbiàn ba. / 음… 아무거나. / 随便 는 아무거나. / teasing
+6 A: 算了，我来点外卖。 / Suàn le, wǒ lái diǎn wàimài. / 됐다, 그냥 내가 배달 시킬게. /  / annoyed
+7 B: 你要点什么啊？ / Nǐ yào diǎn shénme a? / 뭐 시키게? /  / neutral
+8 A: 会吓你一跳，等着吧。 / Huì xià nǐ yí tiào, děngzhe ba. / 깜짝 놀랄 거니까 기다려 봐. /  / teasing

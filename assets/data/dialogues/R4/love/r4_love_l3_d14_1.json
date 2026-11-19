@@ -19,14 +19,16 @@
   {
    "num": 1,
    "speaker": "B",
-   "zh": "你的脸色怎么这么难看？",
-   "pinyin": "Nǐ de liǎnsè zěnme zhème nánkàn?",
+   "zh": "你脸色怎么这么不好？",
+   "pinyin": "Nǐ liǎnsè zěnme zhème bù hǎo?",
+   "rd": "니 롄써 쩐머 저머 부 하오?",
    "ko": "너 얼굴색이 왜 이렇게 안 좋아?",
-   "note": "怎么这么 (왜 이렇게)",
+   "note": "‘怎么这么’는 ‘왜 이렇게’",
    "tags": [
     "걱정",
     "건강"
    ],
+   "emotion": "worried",
    "lemmas": [
     [
      "脸色",
@@ -44,25 +46,25 @@
      "zhè me"
     ],
     [
-     "难看",
-     "难看",
-     "nán kàn"
+     "不好",
+     "不好",
+     "bù hǎo"
     ]
-   ],
-   "rd": "니 더 롄써 쩐머 저머 난칸?",
-   "emotion": "worried"
+   ]
   },
   {
    "num": 2,
    "speaker": "A",
    "zh": "我好像感冒了，头疼。",
    "pinyin": "Wǒ hǎoxiàng gǎnmào le, tóu téng.",
+   "rd": "워 하오샹 간마오 러, 터우 텅.",
    "ko": "나 감기 걸린 것 같아, 머리가 아파.",
-   "note": "부사 好像 (~인 것 같다)",
+   "note": "‘好像’은 ‘~인 것 같다’",
    "tags": [
     "감기",
     "증상"
    ],
+   "emotion": "sad",
    "lemmas": [
     [
      "好像",
@@ -84,21 +86,21 @@
      "疼",
      "téng"
     ]
-   ],
-   "rd": "워 하오샹 간마오 러, 터우 텅.",
-   "emotion": "sad"
+   ]
   },
   {
    "num": 3,
    "speaker": "B",
    "zh": "发烧了吗？让我摸摸。",
-   "pinyin": "Fā shāo le ma? Ràng wǒ mōmo.",
+   "pinyin": "Fāshāo le ma? Ràng wǒ mōmo.",
+   "rd": "파사오 러 마? 랑 워 모모.",
    "ko": "열 나? 내가 만져 볼게.",
-   "note": "사역동사 让 + 동사 중첩",
+   "note": "‘让’은 사역, ‘摸摸’는 동사 중첩",
    "tags": [
     "걱정",
     "사역문"
    ],
+   "emotion": "worried",
    "lemmas": [
     [
      "发烧",
@@ -120,21 +122,21 @@
      "摸",
      "mō"
     ]
-   ],
-   "rd": "파 사오 러 마? 랑 워 모모.",
-   "emotion": "worried"
+   ]
   },
   {
    "num": 4,
    "speaker": "A",
-   "zh": "有一点儿热，没关系。",
-   "pinyin": "Yǒu yìdiǎnr rè, méi guānxi.",
+   "zh": "有一点儿热，不过没事。",
+   "pinyin": "Yǒu yìdiǎnr rè, búguò méishì.",
+   "rd": "유 이뎬얼 러, 부궈 메이스.",
    "ko": "조금 뜨겁긴 한데, 괜찮아.",
-   "note": "有一点儿 + 형용사 (약간 ~하다)",
+   "note": "‘有一点儿’은 ‘약간 ~하다’",
    "tags": [
     "증상",
     "강한척"
    ],
+   "emotion": "neutral",
    "lemmas": [
     [
      "有",
@@ -152,25 +154,30 @@
      "rè"
     ],
     [
-     "没关系",
-     "没关系",
-     "méi guān xì"
+     "没",
+     "没",
+     "méi"
+    ],
+    [
+     "事",
+     "事",
+     "shì"
     ]
-   ],
-   "rd": "유 이뎬얼 러, 메이 관시.",
-   "emotion": "neutral"
+   ]
   },
   {
    "num": 5,
    "speaker": "B",
-   "zh": "什么没关系！快去躺着！",
-   "pinyin": "Shénme méi guānxi! Kuài qù tǎng zhe!",
+   "zh": "什么没事！快去躺着！",
+   "pinyin": "Shénme méishì! Kuài qù tǎngzhe!",
+   "rd": "선머 메이스! 콰이 취 탕저!",
    "ko": "괜찮긴 뭐가 괜찮아! 빨리 가서 누워 있어!",
-   "note": "지속 조사 着 (누운 상태 유지)",
+   "note": "‘着’는 상태 지속",
    "tags": [
     "걱정",
     "명령"
    ],
+   "emotion": "shout",
    "lemmas": [
     [
      "什么",
@@ -178,9 +185,14 @@
      "shén me"
     ],
     [
-     "没关系",
-     "没关系",
-     "méi guān xì"
+     "没",
+     "没",
+     "méi"
+    ],
+    [
+     "事",
+     "事",
+     "shì"
     ],
     [
      "快",
@@ -197,21 +209,21 @@
      "躺",
      "tǎng"
     ]
-   ],
-   "rd": "선머 메이 관시! 콰이 취 탕 저!",
-   "emotion": "shout"
+   ]
   },
   {
    "num": 6,
    "speaker": "B",
    "zh": "我给你煮一碗粥。",
    "pinyin": "Wǒ gěi nǐ zhǔ yì wǎn zhōu.",
+   "rd": "워 게이 니 주 이 완 저우.",
    "ko": "내가 죽 한 그릇 끓여 줄게.",
-   "note": "개사 给 + 양사 碗",
+   "note": "‘给’는 ‘~에게’, ‘碗’은 그릇 양사",
    "tags": [
     "죽",
     "보살핌"
    ],
+   "emotion": "gentle",
    "lemmas": [
     [
      "煮",
@@ -228,21 +240,21 @@
      "粥",
      "zhōu"
     ]
-   ],
-   "rd": "워 게이 니 주 이 완 저우.",
-   "emotion": "gentle"
+   ]
   },
   {
    "num": 7,
    "speaker": "A",
-   "zh": "不用了，我吃点药就行。",
-   "pinyin": "Bú yòng le, wǒ chī diǎn yào jiù xíng.",
+   "zh": "不用了，吃点药就行。",
+   "pinyin": "Búyòng le, chī diǎn yào jiù xíng.",
+   "rd": "부융 러, 츠 뎬 야오 주 싱.",
    "ko": "됐어, 약만 좀 먹으면 돼.",
-   "note": "…就行 (~하면 된다)",
+   "note": "‘就行’은 ‘~하면 된다’",
    "tags": [
     "사양",
     "약"
    ],
+   "emotion": "sad",
    "lemmas": [
     [
      "不用",
@@ -274,31 +286,31 @@
      "行",
      "xíng"
     ]
-   ],
-   "rd": "부 융 러, 워 츠 뎬 야오 주 싱.",
-   "emotion": "sad"
+   ]
   },
   {
    "num": 8,
    "speaker": "B",
-   "zh": "生病要好好吃饭才行。",
-   "pinyin": "Shēngbìng yào hǎohāo chī fàn cái xíng.",
+   "zh": "病了才得好好吃饭。",
+   "pinyin": "Bìng le cái děi hǎohǎo chī fàn.",
+   "rd": "빙 러 차이 데이 하오하오 츠 판.",
    "ko": "아플 땐 밥 잘 먹어야 낫는 거야.",
-   "note": "부사 才 (~해야 비로소)",
+   "note": "‘才’는 ‘~해야 비로소’",
    "tags": [
     "보살핌",
     "잔소리"
    ],
+   "emotion": "stiff",
    "lemmas": [
     [
-     "生病",
-     "生病",
-     "shēng bìng"
+     "病",
+     "病",
+     "bìng"
     ],
     [
-     "要",
-     "要",
-     "yào"
+     "才",
+     "才",
+     "cái"
     ],
     [
      "好好",
@@ -309,20 +321,13 @@
      "吃饭",
      "吃饭",
      "chī fàn"
-    ],
-    [
-     "才",
-     "才",
-     "cái"
-    ],
-    [
-     "行",
-     "行",
-     "xíng"
     ]
-   ],
-   "rd": "성빙 야오 하오하오 츠 판 차이 싱.",
-   "emotion": "stiff"
+   ]
   }
- ]
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r4_love_l3_d14_1_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ }
 }

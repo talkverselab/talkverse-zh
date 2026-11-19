@@ -19,50 +19,47 @@
   {
    "num": 1,
    "speaker": "B",
-   "zh": "你看这件外套怎么样？",
-   "pinyin": "Nǐ kàn zhè jiàn wàitào zěnmeyàng?",
+   "zh": "这件大衣怎么样？",
+   "pinyin": "Zhè jiàn dàyī zěnmeyàng?",
+   "rd": "저 젠 다이 쩐머양?",
    "ko": "이 코트 어때 보여?",
-   "note": "의류 양사 件 + 怎么样",
+   "note": "件 는 의류 양사.",
    "tags": [
     "measure:件",
     "shopping"
    ],
+   "emotion": "cheerful",
    "lemmas": [
-    [
-     "看",
-     "看",
-     "kàn"
-    ],
     [
      "这件",
      "这件",
      "zhè jiàn"
     ],
     [
-     "外套",
-     "外套",
-     "wài tào"
+     "大衣",
+     "大衣",
+     "dà yī"
     ],
     [
      "怎么样",
      "怎么样",
      "zěn me yàng"
     ]
-   ],
-   "rd": "니 칸 저 젠 와이타오 쩐머양?",
-   "emotion": "cheerful"
+   ]
   },
   {
    "num": 2,
    "speaker": "A",
    "zh": "好看！多少钱？",
    "pinyin": "Hǎokàn! Duōshao qián?",
+   "rd": "하오칸! 둬사오 첸?",
    "ko": "예쁘다! 얼마야?",
-   "note": "多少钱 (가격 묻기 기본 표현)",
+   "note": "多少钱 는 가격 묻기.",
    "tags": [
     "question:多少",
     "positive"
    ],
+   "emotion": "cheerful",
    "lemmas": [
     [
      "好看",
@@ -79,62 +76,42 @@
      "钱",
      "qián"
     ]
-   ],
-   "rd": "하오칸! 둬사오 첸?",
-   "emotion": "cheerful"
+   ]
   },
   {
    "num": 3,
    "speaker": "B",
-   "zh": "八百。",
-   "pinyin": "Bābǎi.",
+   "zh": "八百块。",
+   "pinyin": "Bābǎi kuài.",
+   "rd": "바바이 콰이.",
    "ko": "800위안.",
-   "note": "숫자 읽기 (백 단위 百)",
+   "note": "百 는 백.",
    "tags": [
     "number",
     "shopping"
    ],
-   "lemmas": [],
-   "rd": "바바이.",
-   "emotion": "neutral"
+   "emotion": "neutral",
+   "lemmas": [
+    [
+     "八百块",
+     "块",
+     "kuài"
+    ]
+   ]
   },
   {
    "num": 4,
    "speaker": "A",
-   "zh": "八百？抢钱啊！😤",
-   "pinyin": "Bābǎi? Qiǎng qián a!",
+   "zh": "八百？这是抢钱啊！😤",
+   "pinyin": "Bābǎi? Zhè shì qiǎngqián a!",
+   "rd": "바바이? 저 스 창첸 아!",
    "ko": "800? 이건 강도지!",
-   "note": "抢钱 (돈을 뺏다, 비싸다는 과장 표현)",
+   "note": "抢钱 는 비싸다는 과장.",
    "tags": [
     "colloquial",
     "chaos"
    ],
-   "lemmas": [
-    [
-     "抢",
-     "抢",
-     "qiǎng"
-    ],
-    [
-     "钱",
-     "钱",
-     "qián"
-    ]
-   ],
-   "rd": "바바이? 창 첸 아!",
-   "emotion": "shout"
-  },
-  {
-   "num": 5,
-   "speaker": "B",
-   "zh": "这是名牌嘛。😳",
-   "pinyin": "Zhè shì míngpái ma.",
-   "ko": "이거 브랜드 거란 말이야.",
-   "note": "嘛 (당연함 어필)",
-   "tags": [
-    "particle:嘛",
-    "shopping"
-   ],
+   "emotion": "shout",
    "lemmas": [
     [
      "这",
@@ -147,30 +124,61 @@
      "shì"
     ],
     [
-     "名",
-     "名",
-     "míng"
+     "抢",
+     "抢",
+     "qiǎng"
     ],
     [
-     "牌",
-     "牌",
-     "pái"
+     "钱",
+     "钱",
+     "qián"
     ]
+   ]
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "zh": "这是品牌的嘛。😳",
+   "pinyin": "Zhè shì pǐnpái de ma.",
+   "rd": "저 스 핀파이 더 마.",
+   "ko": "이거 브랜드 거란 말이야.",
+   "note": "嘛 는 당연함.",
+   "tags": [
+    "particle:嘛",
+    "shopping"
    ],
-   "rd": "저 스 밍파이 마.",
-   "emotion": "flustered"
+   "emotion": "flustered",
+   "lemmas": [
+    [
+     "这",
+     "这",
+     "zhè"
+    ],
+    [
+     "是",
+     "是",
+     "shì"
+    ],
+    [
+     "品牌",
+     "品牌",
+     "pǐn pái"
+    ]
+   ]
   },
   {
    "num": 6,
    "speaker": "A",
    "zh": "网上肯定更便宜。",
    "pinyin": "Wǎngshàng kěndìng gèng piányi.",
+   "rd": "왕상 컨딩 겅 폔이.",
    "ko": "인터넷이 분명 더 쌀걸.",
-   "note": "비교 부사 更 (더욱) + 肯定 (분명히)",
+   "note": "更 는 더욱, 肯定 는 분명히.",
    "tags": [
     "adverb:更",
     "shopping"
    ],
+   "emotion": "neutral",
    "lemmas": [
     [
      "网上",
@@ -192,56 +200,64 @@
      "便宜",
      "pián yi"
     ]
-   ],
-   "rd": "왕상 컨딩 겅 폔이.",
-   "emotion": "neutral"
+   ]
   },
   {
    "num": 7,
    "speaker": "B",
-   "zh": "你查一下呗。😜",
-   "pinyin": "Nǐ chá yīxià bei.",
+   "zh": "那你搜一下呗。😜",
+   "pinyin": "Nà nǐ sōu yíxià bei.",
+   "rd": "나 니 써우 이샤 베이.",
    "ko": "그럼 검색해 보든가.",
-   "note": "동사+一下 (좀 ~해보다) + 어기조사 呗",
+   "note": "一下 는 좀 ~해보다, 呗 는 가벼운 어기.",
    "tags": [
     "structure:一下",
     "particle:呗"
    ],
+   "emotion": "teasing",
    "lemmas": [
     [
-     "查",
-     "查",
-     "chá"
+     "那",
+     "那",
+     "nà"
+    ],
+    [
+     "搜",
+     "搜",
+     "sōu"
     ],
     [
      "一下",
      "一下",
      "yī xià"
     ]
-   ],
-   "rd": "니 차 이샤 베이.",
-   "emotion": "teasing"
+   ]
   },
   {
    "num": 8,
    "speaker": "A",
    "zh": "哇，网上只要三百五。",
-   "pinyin": "Wā, wǎngshàng zhǐ yào sānbǎi wǔ.",
+   "pinyin": "Wa, wǎngshàng zhǐyào sānbǎi wǔ.",
+   "rd": "와, 왕상 즈야오 싼바이 우.",
    "ko": "와, 인터넷은 350밖에 안 해.",
-   "note": "只要 (겨우 ~밖에 안 든다)",
+   "note": "只要 는 겨우 ~밖에.",
    "tags": [
     "adverb:只",
     "chaos"
    ],
+   "emotion": "surprised",
    "lemmas": [
     [
      "网上",
      "网上",
      "wǎng shàng"
     ]
-   ],
-   "rd": "와, 왕상 즈 야오 싼바이 우.",
-   "emotion": "surprised"
+   ]
   }
- ]
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r4_life_l2_d07_1_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ }
 }

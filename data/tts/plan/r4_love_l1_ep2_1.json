@@ -8,21 +8,9 @@
    "segs": [
     [
      "shout",
-     "Mark！这儿，这儿！"
+     "{name}！这儿，这儿！"
     ]
-   ],
-   "f": {
-    "text": "Anna！这儿，这儿！",
-    "reading": "Anna! Zhèr, zhèr!",
-    "rd": "Anna! 절, 절!",
-    "ko": "Anna! 여기요, 여기!",
-    "segs": [
-     [
-      "shout",
-      "Anna！这儿，这儿！"
-     ]
-    ]
-   }
+   ]
   },
   "2": {
    "segs": [

@@ -1,0 +1,8 @@
+1 B: 你都想了三天了。 / Nǐ dōu xiǎng le sān tiān le. / 너 벌써 사흘째 생각 중이잖아. / ‘了…了’로 지속 기간 강조 / annoyed
+2 A: 异地恋也不是不可能。 / Yìdì liàn yě bú shì bù kěnéng. / 장거리 연애도 불가능한 건 아니잖아. / ‘不是不…’ 이중부정 / neutral
+3 B: 说得容易，做起来呢？ / Shuō de róngyì, zuò qǐlai ne? / 말은 쉽지, 실제로 해보면? / ‘得’ 정도보어 + ‘V起来’ / tsukkomi
+4 A: 我们每天视频通话啊。 / Wǒmen měitiān shìpín tōnghuà a. / 우리 매일 영상통화 하면 되잖아. / ‘每’ + 시간명사 + ‘啊’ / flustered
+5 B: 视频能代替拥抱吗？ / Shìpín néng dàitì yōngbào ma? / 영상통화가 진짜 포옹을 대신할 수 있어? / ‘能’ + 반문 / sad
+6 A: 距离不是问题，心才是。 / Jùlí bú shì wèntí, xīn cái shì. / 거리는 문제가 아니야, 마음이 문제지. / ‘才’로 ‘~야말로’ 강조 / gentle
+7 B: 这台词是从哪学的？ / Zhè táicí shì cóng nǎ xué de? / 그 대사는 대체 어디서 배운 거야? / ‘是…的’ + ‘从’ 출처 / tsukkomi
+8 A: 我是认真的，别开玩笑。 / Wǒ shì rènzhēn de, bié kāi wánxiào. / 나 진심이야, 농담하지 마. / ‘是…的’ 강조 + ‘开玩笑’ / annoyed

@@ -1,0 +1,8 @@
+1 A: 我爱踢足球，特别调皮。 / Wǒ ài tī zúqiú, tèbié tiáopí. / 나 축구 엄청 좋아했고, 완전 개구쟁이였어. / 爱+동사 = ~하기를 즐기다 / amused
+2 B: 真想看看你小时候的照片。 / Zhēn xiǎng kànkan nǐ xiǎoshíhou de zhàopiàn. / 네 어릴 때 사진 진짜 보고 싶다. / 看看 = 가볍게 보다 / cheerful
+3 A: 下次给你看，别笑啊。 / Xià cì gěi nǐ kàn, bié xiào a. / 다음에 보여 줄게, 웃으면 안 돼. / 别…啊 = ~하지 마 / shy
+4 B: 我不会笑的，放心。 / Wǒ bú huì xiào de, fàngxīn. / 안 웃을 거야, 안심해. / 会…的 = 확신 / gentle
+5 A: 能知道你以前的样子真好。 / Néng zhīdào nǐ yǐqián de yàngzi zhēn hǎo. / 네 예전 모습을 알게 돼서 참 좋다. / 以前 = ~이전 / gentle
+6 B: 以后我们多拍点照片吧。 / Yǐhòu wǒmen duō pāi diǎn zhàopiàn ba. / 앞으로 우리 사진 더 많이 찍자. /  / gentle
+7 A: 对，把每时每刻都记下来。 / Duì, bǎ měi shí měi kè dōu jì xiàlái. / 맞아, 순간순간을 다 기록해 두자. /  / gentle
+8 B: 这本相册我好好留着。 / Zhè běn xiàngcè wǒ hǎohǎo liúzhe. / 이 앨범, 내가 소중히 간직할게. /  / gentle

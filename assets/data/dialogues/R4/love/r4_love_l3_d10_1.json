@@ -19,19 +19,21 @@
   {
    "num": 1,
    "speaker": "B",
-   "zh": "你看，这是我小时候的照片。",
-   "pinyin": "Nǐ kàn, zhè shì wǒ xiǎoshíhou de zhàopiàn.",
+   "zh": "看看，这是我小时候的照片。",
+   "pinyin": "Kànkan, zhè shì wǒ xiǎoshíhou de zhàopiàn.",
+   "rd": "칸칸, 저 스 워 샤오스허우 더 자오폔.",
    "ko": "봐 봐, 이거 내 어릴 때 사진이야.",
-   "note": "시간명사 小时候 + 的 관형어",
+   "note": "小时候=어릴 때, 的=관형어",
    "tags": [
     "사진",
     "추억"
    ],
+   "emotion": "cheerful",
    "lemmas": [
     [
-     "看",
-     "看",
-     "kàn"
+     "看看",
+     "看看",
+     "kàn kàn"
     ],
     [
      "这",
@@ -53,21 +55,21 @@
      "照片",
      "zhào piān"
     ]
-   ],
-   "rd": "니 칸, 저 스 워 샤오스허우 더 자오폔.",
-   "emotion": "cheerful"
+   ]
   },
   {
    "num": 2,
    "speaker": "A",
-   "zh": "哇，这个小女孩太可爱了！",
-   "pinyin": "Wā, zhège xiǎo nǚhái tài kě'ài le!",
+   "zh": "哇，这个小朋友太可爱了！",
+   "pinyin": "Wā, zhège xiǎopéngyou tài kě'ài le!",
+   "rd": "와, 저거 샤오펑유 타이 커'아이 러!",
    "ko": "와, 이 꼬마 너무 귀엽다!",
-   "note": "太…了 감탄 표현",
+   "note": "太…了=너무 ~하다",
    "tags": [
     "감탄",
     "칭찬"
    ],
+   "emotion": "excited",
    "lemmas": [
     [
      "这个",
@@ -75,14 +77,9 @@
      "zhè ge"
     ],
     [
-     "小",
-     "小",
-     "xiǎo"
-    ],
-    [
-     "女孩",
-     "女孩",
-     "nǚ hái"
+     "小朋友",
+     "小朋友",
+     "xiǎo péng yǒu"
     ],
     [
      "太",
@@ -94,21 +91,21 @@
      "可爱",
      "kě ài"
     ]
-   ],
-   "rd": "와, 저거 샤오 뉘하이 타이 커'아이 러!",
-   "emotion": "excited"
+   ]
   },
   {
    "num": 3,
    "speaker": "B",
    "zh": "那时候我才五岁。",
    "pinyin": "Nà shíhou wǒ cái wǔ suì.",
+   "rd": "나 스허우 워 차이 우 쑤이.",
    "ko": "그때 나 겨우 다섯 살이었어.",
-   "note": "부사 才 (겨우, ~밖에)",
+   "note": "才=겨우",
    "tags": [
     "나이",
     "추억"
    ],
+   "emotion": "shy",
    "lemmas": [
     [
      "那",
@@ -130,21 +127,21 @@
      "岁",
      "suì"
     ]
-   ],
-   "rd": "나 스허우 워 차이 우 쑤이.",
-   "emotion": "shy"
+   ]
   },
   {
    "num": 4,
    "speaker": "A",
    "zh": "你是在四川长大的吗？🤔",
-   "pinyin": "Nǐ shì zài Sìchuān zhǎng dà de ma?",
+   "pinyin": "Nǐ shì zài Sìchuān zhǎngdà de ma?",
+   "rd": "니 스 짜이 쓰촨 장다 더 마?",
    "ko": "너 쓰촨에서 자란 거야?",
-   "note": "是…的 강조 구문 (장소 강조)",
+   "note": "是…的=장소 강조",
    "tags": [
     "고향",
     "是…的"
    ],
+   "emotion": "neutral",
    "lemmas": [
     [
      "是",
@@ -161,21 +158,21 @@
      "长大",
      "zhǎng dà"
     ]
-   ],
-   "rd": "니 스 짜이 쓰촨 장 다 더 마?",
-   "emotion": "neutral"
+   ]
   },
   {
    "num": 5,
    "speaker": "B",
-   "zh": "对，我是在外婆家长大的。",
-   "pinyin": "Duì, wǒ shì zài wàipó jiā zhǎng dà de.",
+   "zh": "嗯，我是在外婆家长大的。",
+   "pinyin": "Èn, wǒ shì zài wàipójiā zhǎngdà de.",
+   "rd": "언, 워 스 짜이 와이포자 장다 더.",
    "ko": "응, 나 외할머니 집에서 자랐어.",
-   "note": "是…的 구문으로 대답",
+   "note": "是…的=강조 대답",
    "tags": [
     "할머니",
     "가족"
    ],
+   "emotion": "gentle",
    "lemmas": [
     [
      "是",
@@ -202,21 +199,21 @@
      "长大",
      "zhǎng dà"
     ]
-   ],
-   "rd": "두이, 워 스 짜이 와이포 자 장 다 더.",
-   "emotion": "gentle"
+   ]
   },
   {
    "num": 6,
    "speaker": "A",
-   "zh": "小时候你喜欢做什么？",
-   "pinyin": "Xiǎoshíhou nǐ xǐhuan zuò shénme?",
+   "zh": "小时候喜欢做什么？",
+   "pinyin": "Xiǎoshíhou xǐhuan zuò shénme?",
+   "rd": "샤오스허우 시환 쭤 선머?",
    "ko": "어릴 때 뭐 하는 거 좋아했어?",
-   "note": "시간사가 문장 앞에 오는 어순",
+   "note": "시간사 전치",
    "tags": [
     "질문",
     "추억"
    ],
+   "emotion": "gentle",
    "lemmas": [
     [
      "小时候",
@@ -238,21 +235,21 @@
      "什么",
      "shén me"
     ]
-   ],
-   "rd": "샤오스허우 니 시환 쭤 선머?",
-   "emotion": "gentle"
+   ]
   },
   {
    "num": 7,
    "speaker": "B",
-   "zh": "我常常在河边画画儿。",
-   "pinyin": "Wǒ chángcháng zài hébiān huà huàr.",
+   "zh": "我常常在河边画画。",
+   "pinyin": "Wǒ chángcháng zài hébiān huàhuà.",
+   "rd": "워 창창 짜이 허볜 화화.",
    "ko": "나 자주 강가에서 그림 그렸어.",
-   "note": "빈도부사 常常",
+   "note": "常常=자주",
    "tags": [
     "그림",
     "추억"
    ],
+   "emotion": "gentle",
    "lemmas": [
     [
      "常常",
@@ -278,27 +275,22 @@
      "画",
      "画",
      "huà"
-    ],
-    [
-     "儿",
-     "儿",
-     "ér"
     ]
-   ],
-   "rd": "워 창창 짜이 허볜 화 활.",
-   "emotion": "gentle"
+   ]
   },
   {
    "num": 8,
    "speaker": "B",
-   "zh": "你小时候是什么样的？",
-   "pinyin": "Nǐ xiǎoshíhou shì shénme yàng de?",
+   "zh": "你小时候是什么样的孩子？",
+   "pinyin": "Nǐ xiǎoshíhou shì shénme yàng de háizi?",
+   "rd": "니 샤오스허우 스 선머 양 더 하이쯔?",
    "ko": "너는 어릴 때 어떤 아이였어?",
-   "note": "什么样的 (어떤 모습의)",
+   "note": "什么样的=어떤 모습의",
    "tags": [
     "질문",
     "호기심"
    ],
+   "emotion": "cheerful",
    "lemmas": [
     [
      "小时候",
@@ -314,10 +306,18 @@
      "什么样",
      "什么样",
      "shén me yàng"
+    ],
+    [
+     "孩子",
+     "孩子",
+     "hái zi"
     ]
-   ],
-   "rd": "니 샤오스허우 스 선머 양 더?",
-   "emotion": "cheerful"
+   ]
   }
- ]
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r4_love_l3_d10_1_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ }
 }

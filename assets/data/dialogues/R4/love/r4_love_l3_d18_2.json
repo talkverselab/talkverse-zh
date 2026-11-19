@@ -19,19 +19,26 @@
   {
    "num": 1,
    "speaker": "B",
-   "zh": "认真的人就不会想走！",
-   "pinyin": "Rènzhēn de rén jiù bú huì xiǎng zǒu!",
+   "zh": "真心的人就不会想离开！",
+   "pinyin": "Zhēnxīn de rén jiù bú huì xiǎng líkāi!",
+   "rd": "전신 더 런 주 부 후이 샹 리카이!",
    "ko": "진심인 사람은 애초에 떠날 생각을 안 해!",
-   "note": "就 논리적 귀결 + 会 가능성 부정",
+   "note": "‘就’ 귀결 + ‘会’ 부정",
    "tags": [
     "就",
     "갈등"
    ],
+   "emotion": "shout",
    "lemmas": [
     [
-     "认真",
-     "认真",
-     "rèn zhēn"
+     "真",
+     "真",
+     "zhēn"
+    ],
+    [
+     "心",
+     "心",
+     "xīn"
     ],
     [
      "人",
@@ -54,25 +61,25 @@
      "xiǎng"
     ],
     [
-     "走",
-     "走",
-     "zǒu"
+     "离开",
+     "离开",
+     "lí kāi"
     ]
-   ],
-   "rd": "런전 더 런 주 부 후이 샹 쩌우!",
-   "emotion": "shout"
+   ]
   },
   {
    "num": 2,
    "speaker": "A",
-   "zh": "我什么时候说我想走了？",
-   "pinyin": "Wǒ shénme shíhou shuō wǒ xiǎng zǒu le?",
+   "zh": "我什么时候说想走了？",
+   "pinyin": "Wǒ shénme shíhou shuō xiǎng zǒu le?",
+   "rd": "워 선머 스허우 숴 샹 쩌우 러?",
    "ko": "내가 언제 떠나고 싶다고 했어?",
-   "note": "의문사 什么时候의 반어 용법",
+   "note": "‘什么时候’ 반어 용법",
    "tags": [
     "반어문",
     "항변"
    ],
+   "emotion": "annoyed",
    "lemmas": [
     [
      "什么",
@@ -99,26 +106,26 @@
      "走",
      "zǒu"
     ]
-   ],
-   "rd": "워 선머 스허우 숴 워 샹 쩌우 러?",
-   "emotion": "annoyed"
+   ]
   },
   {
    "num": 3,
    "speaker": "B",
-   "zh": "你考虑本身就是答案。",
-   "pinyin": "Nǐ kǎolǜ běnshēn jiù shì dá'àn.",
+   "zh": "你犹豫本身就是答案。",
+   "pinyin": "Nǐ yóuyù běnshēn jiù shì dá'àn.",
+   "rd": "니 유위 번선 주 스 다'안.",
    "ko": "네가 고민한다는 것 자체가 이미 답이야.",
-   "note": "本身 '그 자체' + 就是 단정",
+   "note": "‘本身’ + ‘就是’ 단정",
    "tags": [
     "本身",
     "갈등"
    ],
+   "emotion": "sad",
    "lemmas": [
     [
-     "考虑",
-     "考虑",
-     "kǎo lǜ"
+     "犹豫",
+     "犹豫",
+     "yóu yù"
     ],
     [
      "本身",
@@ -135,21 +142,21 @@
      "答案",
      "dá àn"
     ]
-   ],
-   "rd": "니 카오뤼 번선 주 스 다'안.",
-   "emotion": "sad"
+   ]
   },
   {
    "num": 4,
    "speaker": "A",
-   "zh": "小丽，你听我解释……",
-   "pinyin": "Xiǎolì, nǐ tīng wǒ jiěshì……",
-   "ko": "샤오리, 내 설명 좀 들어봐……",
-   "note": "겸어문 '听我+동사' (내가 ~하는 걸 듣다)",
+   "zh": "小丽，听我解释一下。",
+   "pinyin": "Xiǎolì, tīng wǒ jiěshì yíxià.",
+   "rd": "샤오리, 팅 워 제스 이샤.",
+   "ko": "샤오리, 내 설명 좀 들어봐.",
+   "note": "‘听我+동사’ 겸어문",
    "tags": [
     "겸어문",
     "호소"
    ],
+   "emotion": "flustered",
    "lemmas": [
     [
      "听",
@@ -160,22 +167,27 @@
      "解释",
      "解释",
      "jiě shì"
+    ],
+    [
+     "一下",
+     "一下",
+     "yī xià"
     ]
-   ],
-   "rd": "샤오리, 니 팅 워 제스……",
-   "emotion": "flustered"
+   ]
   },
   {
    "num": 5,
    "speaker": "B",
-   "zh": "不听，我要去睡了。",
-   "pinyin": "Bù tīng, wǒ yào qù shuì le.",
+   "zh": "不听，我要睡觉了。",
+   "pinyin": "Bù tīng, wǒ yào shuìjiào le.",
+   "rd": "부 팅, 워 야오 수이자오 러.",
    "ko": "안 들어, 나 잘 거야.",
-   "note": "'要…了' 임박 표현",
+   "note": "‘要…了’ 임박 표현",
    "tags": [
     "要…了",
     "갈등"
    ],
+   "emotion": "annoyed",
    "lemmas": [
     [
      "不",
@@ -193,35 +205,25 @@
      "yào"
     ],
     [
-     "去",
-     "去",
-     "qù"
-    ],
-    [
-     "睡",
-     "睡",
-     "shuì"
+     "睡觉",
+     "睡觉",
+     "shuì jiào"
     ]
-   ],
-   "rd": "부 팅, 워 야오 취 수이 러.",
-   "emotion": "annoyed"
+   ]
   },
   {
    "num": 6,
    "speaker": "A",
-   "zh": "小丽，开开门，好好说话。",
-   "pinyin": "Xiǎolì, kāi kāimén, hǎohǎo shuōhuà.",
+   "zh": "小丽，开门，我们谈谈。",
+   "pinyin": "Xiǎolì, kāi mén, wǒmen tántan.",
+   "rd": "샤오리, 카이 먼, 워먼 탄탄.",
    "ko": "샤오리, 문 좀 열어 봐, 얘기 좀 하자.",
-   "note": null,
+   "note": "",
    "tags": [
     "ext"
    ],
+   "emotion": "worried",
    "lemmas": [
-    [
-     "开",
-     "开",
-     "kāi"
-    ],
     [
      "开",
      "开",
@@ -233,29 +235,34 @@
      "mén"
     ],
     [
-     "好好",
-     "好好",
-     "hǎo hǎo"
+     "我们",
+     "我们",
+     "wǒ men"
     ],
     [
-     "说话",
-     "说话",
-     "shuō huà"
+     "谈",
+     "谈",
+     "tán"
+    ],
+    [
+     "谈",
+     "谈",
+     "tán"
     ]
-   ],
-   "rd": "샤오리, 카이 카이먼, 하오하오 숴화.",
-   "emotion": "worried"
+   ]
   },
   {
    "num": 7,
    "speaker": "B",
    "zh": "没什么好说的，晚安。",
-   "pinyin": "Méishénme hǎo shuō de, wǎnān.",
+   "pinyin": "Méi shénme hǎo shuō de, wǎn'ān.",
+   "rd": "메이 선머 하오 숴 더, 완'안.",
    "ko": "할 말 없어, 잘 자.",
-   "note": null,
+   "note": "",
    "tags": [
     "ext"
    ],
+   "emotion": "stiff",
    "lemmas": [
     [
      "没什么",
@@ -277,20 +284,20 @@
      "晚安",
      "wǎn ān"
     ]
-   ],
-   "rd": "메이선머 하오 숴 더, 완안.",
-   "emotion": "stiff"
+   ]
   },
   {
    "num": 8,
    "speaker": "A",
-   "zh": "好吧，那我们冷静两天再说。",
-   "pinyin": "Hǎo ba, nà wǒmen lěngjìng liǎngtiān zàishuō.",
+   "zh": "好，那我们冷静两天再谈。",
+   "pinyin": "Hǎo, nà wǒmen lěngjìng liǎng tiān zài tán.",
+   "rd": "하오, 나 워먼 렁징 량 톈 짜이 탄.",
    "ko": "알았어, 그럼 우리 이틀만 진정하고 다시 얘기하자.",
-   "note": null,
+   "note": "",
    "tags": [
     "ext"
    ],
+   "emotion": "sad",
    "lemmas": [
     [
      "好",
@@ -316,10 +323,23 @@
      "两天",
      "天",
      "tiān"
+    ],
+    [
+     "再",
+     "再",
+     "zài"
+    ],
+    [
+     "谈",
+     "谈",
+     "tán"
     ]
-   ],
-   "rd": "하오 바, 나 워먼 렁징 량톈 짜이숴.",
-   "emotion": "sad"
+   ]
   }
- ]
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r4_love_l3_d18_2_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ }
 }

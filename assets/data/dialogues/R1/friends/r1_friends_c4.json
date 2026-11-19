@@ -246,15 +246,20 @@
   {
    "num": 8,
    "speaker": "A",
-   "zh": "悦！！！我不活了！",
-   "pinyin": "Yuè!!! Wǒ bù huó le!",
-   "rd": "웨!!! 워 부 훠 러!",
-   "ko": "위에!!! 나 못 살아!",
+   "zh": "悦我真的不活了！",
+   "pinyin": "Yuè wǒ zhēn de bù huó le!",
+   "rd": "웨 워 전 더 부 훠 러!",
+   "ko": "위에 나 진짜 못 살아!",
    "note": "不活了 = 못 살겠다",
    "tags": [
     "form:感叹"
    ],
    "lemmas": [
+    [
+     "真的",
+     "真的",
+     "zhēn de"
+    ],
     [
      "不",
      "不",
@@ -272,6 +277,7 @@
  "review": {
   "grok_rewrite": "data/review/r1_friends_c4_grok_rewrite.md",
   "model": "전문가",
-  "final": "세션 리뷰"
+  "final": "세션 리뷰",
+  "r1_lines_1120": "#8 Grok(빠른) 다시 씀 — TTS 오독(tools/grok/zh_rw/out/r1_lines.md)"
  }
 }

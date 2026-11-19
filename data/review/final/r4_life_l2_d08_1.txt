@@ -1,0 +1,8 @@
+1 B: 我好像感冒了。 / Wǒ hǎoxiàng gǎnmào le. / 나 감기 걸린 것 같아. / 好像 는 ~인 것 같다. / sad
+2 A: 严重吗？发烧没？ / Yánzhòng ma? Fāshāo méi? / 심해? 열은 나 안 나? / 没 는 ~했어 안 했어. / worried
+3 B: 有点儿，头也疼。 / Yǒudiǎnr, tóu yě téng. / 조금, 머리도 아파. / 有点儿 는 좀 (부정적). / sad
+4 A: 药吃了吗？ / Yào chī le ma? / 약은 먹었어? / 목적어 전치는 주제화. / worried
+5 B: 家里药都没了。 / Jiālǐ yào dōu méi le. / 집에 약이 다 떨어졌어. / 没…了 는 다 떨어졌다. / sad
+6 A: 等着，我买了送过去。 / Děngzhe, wǒ mǎi le sòng guòqù. / 기다려, 바로 사서 갈게. / 着 는 지속, 연동문. / gentle
+7 B: 没事，你在上班呢。 / Méishì, nǐ zài shàngbān ne. / 괜찮아, 너 지금 일하는 중이잖아. / 在…呢 는 지금 ~하는 중. / worried
+8 A: 女朋友比工作重要。 / Nǚpéngyou bǐ gōngzuò zhòngyào. / 여자친구가 일보다 중요하지. / 比 는 비교. / gentle

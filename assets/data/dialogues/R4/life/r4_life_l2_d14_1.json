@@ -19,45 +19,47 @@
   {
    "num": 1,
    "speaker": "A",
-   "zh": "我快被挤死了。",
-   "pinyin": "Wǒ kuài bèi jǐ sǐ le.",
+   "zh": "我被挤得快死了。",
+   "pinyin": "Wǒ bèi jǐ de kuài sǐ le.",
+   "rd": "워 베이 지 더 콰이 쓰 러.",
    "ko": "나 압사당할 뻔했어.",
-   "note": "被 피동문 + 快……了 (곧 ~할 지경)",
+   "note": "被+快……了: 곧 ~할 지경이다",
    "tags": [
     "commute",
     "passive:被"
    ],
+   "emotion": "annoyed",
    "lemmas": [
-    [
-     "快",
-     "快",
-     "kuài"
-    ],
     [
      "挤",
      "挤",
      "jǐ"
     ],
     [
+     "快",
+     "快",
+     "kuài"
+    ],
+    [
      "死",
      "死",
      "sǐ"
     ]
-   ],
-   "rd": "워 콰이 베이 지 쓰 러.",
-   "emotion": "annoyed"
+   ]
   },
   {
    "num": 2,
    "speaker": "B",
-   "zh": "又坐早高峰地铁啦？😏",
-   "pinyin": "Yòu zuò zǎogāofēng dìtiě la?",
+   "zh": "你又坐高峰地铁啦？😏",
+   "pinyin": "Nǐ yòu zuò gāofēng dìtiě lā?",
+   "rd": "니 유 쭤 가오펑 디톄 라?",
    "ko": "또 출근 러시아워 지하철 탔어?",
-   "note": "又 (또) + 어기조사 啦",
+   "note": "又……啦: 또 ~했구나",
    "tags": [
     "commute",
     "particle:啦"
    ],
+   "emotion": "amused",
    "lemmas": [
     [
      "又",
@@ -70,30 +72,25 @@
      "zuò"
     ],
     [
-     "早",
-     "早",
-     "zǎo"
-    ],
-    [
      "地铁",
      "地铁",
      "dì tiě"
     ]
-   ],
-   "rd": "유 쭤 짜오가오펑 디톄 라?",
-   "emotion": "amused"
+   ]
   },
   {
    "num": 3,
    "speaker": "A",
-   "zh": "人多得上不去车。",
-   "pinyin": "Rén duō de shàng bu qù chē.",
-   "ko": "사람이 많아서 못 탈 정도야.",
-   "note": "가능보어 부정형 上不去 (올라탈 수 없다)",
+   "zh": "人太多根本上不去。",
+   "pinyin": "Rén tài duō gēnběn shàng bu qù.",
+   "rd": "런 타이 둬 건번 상 부 취.",
+   "ko": "사람이 너무 많아서 못 탈 정도야.",
+   "note": "上不去: 올라탈 수 없다",
    "tags": [
     "commute",
     "complement:上不去"
    ],
+   "emotion": "annoyed",
    "lemmas": [
     [
      "人",
@@ -101,9 +98,19 @@
      "rén"
     ],
     [
+     "太",
+     "太",
+     "tài"
+    ],
+    [
      "多",
      "多",
      "duō"
+    ],
+    [
+     "根本",
+     "根本",
+     "gēn běn"
     ],
     [
      "上",
@@ -119,27 +126,22 @@
      "去",
      "去",
      "qù"
-    ],
-    [
-     "车",
-     "车",
-     "chē"
     ]
-   ],
-   "rd": "런 둬 더 상 부 취 처.",
-   "emotion": "annoyed"
+   ]
   },
   {
    "num": 4,
    "speaker": "A",
-   "zh": "等了三趟才上来。",
-   "pinyin": "Děng le sān tàng cái shànglai.",
+   "zh": "过了三趟才上去。",
+   "pinyin": "Guò le sān tàng cái shàng qù.",
+   "rd": "궈 러 싼 탕 차이 상 취.",
    "ko": "세 대나 보내고 겨우 탔어.",
-   "note": "才 (겨우, 그제서야) + 양사 趟",
+   "note": "才+趟: 겨우 ~대에 타다",
    "tags": [
     "commute",
     "adverb:才"
    ],
+   "emotion": "sad",
    "lemmas": [
     [
      "三趟",
@@ -152,25 +154,25 @@
      "cái"
     ],
     [
-     "上来",
-     "上来",
-     "shàng lái"
+     "上去",
+     "上去",
+     "shàng qù"
     ]
-   ],
-   "rd": "덩 러 싼 탕 차이 상라이.",
-   "emotion": "sad"
+   ]
   },
   {
    "num": 5,
    "speaker": "B",
-   "zh": "辛苦啦，我在家上班真幸福。",
-   "pinyin": "Xīnkǔ la, wǒ zài jiā shàngbān zhēn xìngfú.",
+   "zh": "辛苦啦，我在家工作真幸福。",
+   "pinyin": "Xīnkǔ lā, wǒ zài jiā gōngzuò zhēn xìngfú.",
+   "rd": "신쿠 라, 워 짜이 자 궁쭤 전 싱푸.",
    "ko": "고생이네, 난 집에서 일해서 진짜 행복해.",
-   "note": "在+장소+동사 어순",
+   "note": "在+장소+동사: 장소에서 ~하다",
    "tags": [
     "work",
     "preposition:在"
    ],
+   "emotion": "teasing",
    "lemmas": [
     [
      "辛苦",
@@ -183,25 +185,25 @@
      "zài jiā"
     ],
     [
-     "上班",
-     "上班",
-     "shàng bān"
+     "工作",
+     "工作",
+     "gōng zuò"
     ]
-   ],
-   "rd": "신쿠 라, 워 짜이 자 상반 전 싱푸.",
-   "emotion": "teasing"
+   ]
   },
   {
    "num": 6,
    "speaker": "A",
-   "zh": "你别气我啊。😒",
-   "pinyin": "Nǐ bié qì wǒ a.",
+   "zh": "别气我行不行。",
+   "pinyin": "Bié qì wǒ xíng bu xíng.",
+   "rd": "볘 치 워 싱 부 싱.",
    "ko": "너 나 약 올리지 마.",
-   "note": "别+동사 금지 + 气 (약 올리다)",
+   "note": "别+气: ~하지 마, 약 올리다",
    "tags": [
     "banter",
     "prohibition:别"
    ],
+   "emotion": "annoyed",
    "lemmas": [
     [
      "别",
@@ -212,22 +214,32 @@
      "气",
      "气",
      "qì"
+    ],
+    [
+     "行",
+     "行",
+     "xíng"
+    ],
+    [
+     "不行",
+     "不行",
+     "bù xíng"
     ]
-   ],
-   "rd": "니 볘 치 워 아.",
-   "emotion": "annoyed"
+   ]
   },
   {
    "num": 7,
    "speaker": "B",
-   "zh": "哈哈，早点出门不就行了嘛。😜",
-   "pinyin": "Hāhā, zǎo diǎn chūmén bú jiù xíng le ma.",
-   "ko": "하하, 일찍 나가면 되잖아.",
-   "note": "不就……了嘛 (~하면 되잖아) 반문",
+   "zh": "早点儿出不就行了嘛。😜",
+   "pinyin": "Zǎo diǎnr chū bù jiù xíng le ma.",
+   "rd": "짜오 뎬얼 추 부 주 싱 러 마.",
+   "ko": "일찍 나가면 되잖아.",
+   "note": "不就……了嘛: ~하면 되잖아",
    "tags": [
     "banter",
     "pattern:不就了嘛"
    ],
+   "emotion": "teasing",
    "lemmas": [
     [
      "早",
@@ -240,9 +252,14 @@
      "diǎn"
     ],
     [
-     "出门",
-     "出门",
-     "chū mén"
+     "儿",
+     "儿",
+     "ér"
+    ],
+    [
+     "出",
+     "出",
+     "chū"
     ],
     [
      "不",
@@ -259,21 +276,21 @@
      "行",
      "xíng"
     ]
-   ],
-   "rd": "하하, 짜오 뎬 추먼 부 주 싱 러 마.",
-   "emotion": "teasing"
+   ]
   },
   {
    "num": 8,
    "speaker": "A",
-   "zh": "早出门也一样挤。",
-   "pinyin": "Zǎo chūmén yě yíyàng jǐ.",
+   "zh": "早出也一样挤。",
+   "pinyin": "Zǎo chū yě yíyàng jǐ.",
+   "rd": "짜오 추 예 이양 지.",
    "ko": "일찍 나가도 똑같이 붐벼.",
-   "note": "也一样 (역시 마찬가지로)",
+   "note": "也一样: 역시 마찬가지다",
    "tags": [
     "complaint",
     "adverb:一样"
    ],
+   "emotion": "annoyed",
    "lemmas": [
     [
      "早",
@@ -281,9 +298,9 @@
      "zǎo"
     ],
     [
-     "出门",
-     "出门",
-     "chū mén"
+     "出",
+     "出",
+     "chū"
     ],
     [
      "也",
@@ -300,9 +317,12 @@
      "挤",
      "jǐ"
     ]
-   ],
-   "rd": "짜오 추먼 예 이양 지.",
-   "emotion": "annoyed"
+   ]
   }
- ]
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r4_life_l2_d14_1_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ }
 }

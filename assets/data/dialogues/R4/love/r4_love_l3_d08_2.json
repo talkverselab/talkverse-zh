@@ -21,12 +21,14 @@
    "speaker": "B",
    "zh": "当然了！你不吃醋吗？😒",
    "pinyin": "Dāngrán le! Nǐ bù chīcù ma?",
+   "rd": "당란 러! 니 부 츠추 마?",
    "ko": "당연하지! 넌 질투 안 해?",
-   "note": "当然了 '당연하다', 부정 의문",
+   "note": "当然了=당연하다",
    "tags": [
     "当然",
     "반문"
    ],
+   "emotion": "annoyed",
    "lemmas": [
     [
      "当然",
@@ -43,21 +45,21 @@
      "吃醋",
      "chī cù"
     ]
-   ],
-   "rd": "당란 러! 니 부 츠추 마?",
-   "emotion": "annoyed"
+   ]
   },
   {
    "num": 2,
    "speaker": "A",
-   "zh": "我也会，所以要互相信任。",
-   "pinyin": "Wǒ yě huì, suǒyǐ yào hùxiāng xìnrèn.",
+   "zh": "我也吃，所以要互相相信。",
+   "pinyin": "Wǒ yě chī, suǒyǐ yào hùxiāng xiāngxìn.",
+   "rd": "워 예 츠, 쒀이 야오 후샹 샹신.",
    "ko": "나도 해, 그러니까 서로 믿어야지.",
-   "note": "접속사 所以, 부사 互相 '서로'",
+   "note": "所以=그래서, 互相=서로",
    "tags": [
     "所以",
     "互相"
    ],
+   "emotion": "gentle",
    "lemmas": [
     [
      "也",
@@ -65,9 +67,9 @@
      "yě"
     ],
     [
-     "会",
-     "会",
-     "huì"
+     "吃",
+     "吃",
+     "chī"
     ],
     [
      "要",
@@ -80,25 +82,25 @@
      "hù xiāng"
     ],
     [
-     "信任",
-     "信任",
-     "xìn rèn"
+     "相信",
+     "相信",
+     "xiāng xìn"
     ]
-   ],
-   "rd": "워 예 후이, 쒀이 야오 후샹 신런.",
-   "emotion": "gentle"
+   ]
   },
   {
    "num": 3,
    "speaker": "B",
-   "zh": "最后一条，吵架了也要好好沟通。",
-   "pinyin": "Zuìhòu yì tiáo, chǎojià le yě yào hǎohāo gōutōng.",
+   "zh": "最后一条，吵架也要好好说。",
+   "pinyin": "Zuìhòu yì tiáo, chǎojià yě yào hǎohāo shuō.",
+   "rd": "쭈이허우 이 탸오, 차오자 예 야오 하오하오 숴.",
    "ko": "마지막 규칙, 싸워도 꼭 잘 대화하기.",
-   "note": "부사 好好(hǎohāo)+동사 '제대로 ~하다'",
+   "note": "好好=제대로 ~하다",
    "tags": [
     "好好+동사",
     "沟通"
    ],
+   "emotion": "neutral",
    "lemmas": [
     [
      "最后",
@@ -131,35 +133,30 @@
      "hǎo hǎo"
     ],
     [
-     "沟通",
-     "沟通",
-     "gōu tōng"
+     "说",
+     "说",
+     "shuō"
     ]
-   ],
-   "rd": "쭈이허우 이 탸오, 차오자 러 예 야오 하오하오 거우퉁.",
-   "emotion": "neutral"
+   ]
   },
   {
    "num": 4,
    "speaker": "A",
-   "zh": "我们的感情会越来越好的。",
-   "pinyin": "Wǒmen de gǎnqíng huì yuèláiyuè hǎo de.",
+   "zh": "我们会越来越好的。",
+   "pinyin": "Wǒmen huì yuèláiyuè hǎo de.",
+   "rd": "워먼 후이 웨라이웨 하오 더.",
    "ko": "우리 사이는 점점 더 좋아질 거야.",
-   "note": "越来越 '점점 더', 확신의 会…的",
+   "note": "越来越=점점 더, 会…的=확신",
    "tags": [
     "越来越",
     "会…的"
    ],
+   "emotion": "gentle",
    "lemmas": [
     [
      "我们",
      "我们",
      "wǒ men"
-    ],
-    [
-     "感情",
-     "感情",
-     "gǎn qíng"
     ],
     [
      "会",
@@ -176,21 +173,21 @@
      "好",
      "hǎo"
     ]
-   ],
-   "rd": "워먼 더 간칭 후이 웨라이웨 하오 더.",
-   "emotion": "gentle"
+   ]
   },
   {
    "num": 5,
    "speaker": "B",
-   "zh": "拉钩！谁也不能变心哦！🤩",
-   "pinyin": "Lāgōu! Shéi yě bù néng biànxīn o!",
+   "zh": "拉钩！谁也不许变心！",
+   "pinyin": "Lāgōu! Shéi yě bùxǔ biànxīn!",
+   "rd": "라거우! 세이 예 부쉬 볜신!",
    "ko": "손가락 걸자! 누구도 변심하면 안 돼!",
-   "note": "의문사 谁+也+부정 '아무도 ~않다'",
+   "note": "谁也不=아무도 ~않다",
    "tags": [
     "谁也不",
     "拉钩"
    ],
+   "emotion": "excited",
    "lemmas": [
     [
      "拉钩",
@@ -208,9 +205,9 @@
      "yě"
     ],
     [
-     "不能",
-     "不能",
-     "bù néng"
+     "不许",
+     "不许",
+     "bù xǔ"
     ],
     [
      "变",
@@ -222,20 +219,20 @@
      "心",
      "xīn"
     ]
-   ],
-   "rd": "라거우! 세이 예 부 넝 볜신 오!",
-   "emotion": "excited"
+   ]
   },
   {
    "num": 6,
    "speaker": "A",
-   "zh": "拉钩上吊，一百年不变。",
-   "pinyin": "Lāgōu shàngdiào, yìbǎinián bùbiàn.",
+   "zh": "拉钩盖章，一百年也不变。",
+   "pinyin": "Lāgōu gàizhāng, yìbǎi nián yě bú biàn.",
+   "rd": "라거우 가이장, 이바이 녠 예 부 볜.",
    "ko": "손가락 걸고 도장 찍었으니, 백 년이 지나도 안 변해.",
-   "note": null,
+   "note": "",
    "tags": [
     "ext"
    ],
+   "emotion": "cheerful",
    "lemmas": [
     [
      "拉钩",
@@ -243,14 +240,14 @@
      "lā gōu"
     ],
     [
-     "上吊",
-     "上吊",
-     "shàng diào"
-    ],
-    [
      "一百年",
      "年",
      "nián"
+    ],
+    [
+     "也",
+     "也",
+     "yě"
     ],
     [
      "不",
@@ -262,20 +259,20 @@
      "变",
      "biàn"
     ]
-   ],
-   "rd": "라거우 상댜오, 이바이녠 부볜.",
-   "emotion": "cheerful"
+   ]
   },
   {
    "num": 7,
    "speaker": "B",
-   "zh": "哈哈，你说得跟小孩儿似的。",
-   "pinyin": "Hāhā, nǐ shuō dé gēn xiǎoháiér shìde.",
+   "zh": "哈哈，说得跟小孩儿似的。",
+   "pinyin": "Hāhā, shuō de gēn xiǎoháir shìde.",
+   "rd": "하하, 숴 더 건 샤오하일 스더.",
    "ko": "하하, 완전 애처럼 말하네.",
-   "note": null,
+   "note": "",
    "tags": [
     "ext"
    ],
+   "emotion": "amused",
    "lemmas": [
     [
      "说",
@@ -287,25 +284,30 @@
      "小孩儿",
      "xiǎo hái ér"
     ]
-   ],
-   "rd": "하하, 니 숴 더 건 샤오하이얼 스더.",
-   "emotion": "amused"
+   ]
   },
   {
    "num": 8,
    "speaker": "A",
-   "zh": "认真的！我们一定要做到。",
-   "pinyin": "Rènzhēn de! wǒmen yídìng yào zuòdào.",
+   "zh": "真心的！我们一定要守住。",
+   "pinyin": "Zhēnxīn de! Wǒmen yídìng yào shǒuzhù.",
+   "rd": "전신 더! 워먼 이딩 야오 서우주.",
    "ko": "진심이야! 우리 꼭 지키자.",
-   "note": null,
+   "note": "",
    "tags": [
     "ext"
    ],
+   "emotion": "excited",
    "lemmas": [
     [
-     "认真",
-     "认真",
-     "rèn zhēn"
+     "真",
+     "真",
+     "zhēn"
+    ],
+    [
+     "心",
+     "心",
+     "xīn"
     ],
     [
      "我们",
@@ -323,13 +325,21 @@
      "yào"
     ],
     [
-     "做到",
-     "做到",
-     "zuò dào"
+     "守",
+     "守",
+     "shǒu"
+    ],
+    [
+     "住",
+     "住",
+     "zhù"
     ]
-   ],
-   "rd": "런전 더! 워먼 이딩 야오 쭤다오.",
-   "emotion": "excited"
+   ]
   }
- ]
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r4_love_l3_d08_2_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ }
 }

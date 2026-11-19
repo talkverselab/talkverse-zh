@@ -1,0 +1,13 @@
+=== r4_love_l3_d16_1
+title: 습관 ①
+scene: 함께 지내는 시간이 길어지며 알게 된 서로의 소소한 습관을 이야기한다.
+B: 小丽
+register: 반말(친구·연인)
+1 B | 我发现你有个习惯。 | Wǒ fāxiàn nǐ yǒu ge xíguàn. | 나 너한테 습관 하나 있는 거 발견했어. | ‘发现’ 뒤에 목적어절 | emotion=teasing
+2 A | 什么习惯？快说说。 | Shénme xíguàn? Kuài shuōshuo. | 무슨 습관? 빨리 말해 봐. | ‘说说’는 동사 중첩 | emotion=surprised
+3 B | 你一紧张就摸头发。 | Nǐ yì jǐnzhāng jiù mō tóufa. | 너 긴장하면 바로 머리를 만지더라. | ‘一…就…’는 ‘~하기만 하면 곧’ | emotion=teasing
+4 A | 真的？我自己都不知道。 | Zhēn de? Wǒ zìjǐ dōu bù zhīdào. | 진짜? 나 자신도 몰랐는데. | ‘都’는 ‘~조차도’ | emotion=surprised
+5 A | 其实我也发现你一个习惯。 | Qíshí wǒ yě fāxiàn nǐ yí ge xíguàn. | 사실 나도 네 습관 하나 발견했어. | ‘其实’는 ‘사실은’ | emotion=teasing
+6 B | 是吗？说说看。 | Shì ma? Shuōshuo kàn. | 그래? 말해 봐 봐. | 동사 중첩+‘看’은 ‘~해 보다’ | emotion=surprised
+7 A | 你心情好的时候会哼歌。 | Nǐ xīnqíng hǎo de shíhou huì hēng gē. | 너 기분 좋을 때 콧노래 부르잖아. | ‘…的时候’는 ‘~할 때’, ‘哼歌’는 콧노래 | emotion=teasing
+8 B | 哎呀，被你发现了！ | Āiya, bèi nǐ fāxiàn le! | 아이참, 너한테 들켜 버렸네! | ‘被’는 피동문 | emotion=flustered

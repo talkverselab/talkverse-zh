@@ -19,13 +19,15 @@
   {
    "num": 1,
    "speaker": "A",
-   "zh": "对，他是我最好的朋友。",
-   "pinyin": "Duì, tā shì wǒ zuì hǎo de péngyou.",
+   "zh": "嗯，他是我最亲的朋友。",
+   "pinyin": "Èn, tā shì wǒ zuì qīn de péngyou.",
+   "rd": "언, 타 스 워 쭈이 친 더 펑유.",
    "ko": "응, 걔가 내 제일 친한 친구니까.",
-   "note": "최상급 부사 最",
+   "note": "最=가장",
    "tags": [
     "최상급 最"
    ],
+   "emotion": "neutral",
    "lemmas": [
     [
      "是",
@@ -33,30 +35,35 @@
      "shì"
     ],
     [
-     "最好",
-     "最好",
-     "zuì hǎo"
+     "最",
+     "最",
+     "zuì"
+    ],
+    [
+     "亲",
+     "亲",
+     "qīn"
     ],
     [
      "朋友",
      "朋友",
      "péng yǒu"
     ]
-   ],
-   "rd": "두이, 타 스 워 쭈이 하오 더 펑유.",
-   "emotion": "neutral"
+   ]
   },
   {
    "num": 2,
    "speaker": "B",
-   "zh": "其实我把你的照片发给闺蜜了。",
-   "pinyin": "Qíshí wǒ bǎ nǐ de zhàopiàn fā gěi guīmì le.",
+   "zh": "其实我把你照片发给闺蜜了。",
+   "pinyin": "Qíshí wǒ bǎ nǐ zhàopiàn fā gěi guīmì le.",
+   "rd": "치스 워 바 니 자오폔 파 게이 구이미 러.",
    "ko": "사실 나 네 사진 절친한테 이미 보냈어.",
-   "note": "把자문 (把+목적어+동사+给)",
+   "note": "把…发给=…을 …에게 보내다",
    "tags": [
     "把자문",
     "闺蜜"
    ],
+   "emotion": "shy",
    "lemmas": [
     [
      "其实",
@@ -78,20 +85,20 @@
      "闺蜜",
      "guī mì"
     ]
-   ],
-   "rd": "치스 워 바 니 더 자오폔 파 게이 구이미 러.",
-   "emotion": "shy"
+   ]
   },
   {
    "num": 3,
    "speaker": "A",
-   "zh": "什么？你已经告诉她了？",
-   "pinyin": "Shénme? Nǐ yǐjīng gàosu tā le?",
+   "zh": "什么？已经说了？",
+   "pinyin": "Shénme? Yǐjīng shuō le?",
+   "rd": "선머? 이징 숴 러?",
    "ko": "뭐? 벌써 말했다고?",
-   "note": "已经…了 완료 강조",
+   "note": "已经…了=이미 ~했다",
    "tags": [
     "已经…了"
    ],
+   "emotion": "surprised",
    "lemmas": [
     [
      "什么",
@@ -104,25 +111,25 @@
      "yǐ jīng"
     ],
     [
-     "告诉",
-     "告诉",
-     "gào sù"
+     "说",
+     "说",
+     "shuō"
     ]
-   ],
-   "rd": "선머? 니 이징 가오쑤 타 러?",
-   "emotion": "surprised"
+   ]
   },
   {
    "num": 4,
    "speaker": "B",
-   "zh": "对不起嘛，我太开心了！",
-   "pinyin": "Duìbuqǐ ma, wǒ tài kāixīn le!",
+   "zh": "对不起嘛，太开心了！",
+   "pinyin": "Duìbuqǐ ma, tài kāixīn le!",
+   "rd": "두이부치 마, 타이 카이신 러!",
    "ko": "미안해~ 너무 기뻤단 말이야!",
-   "note": "어기조사 嘛 (애교·변명의 어감)",
+   "note": "嘛=애교·변명 어감",
    "tags": [
     "어기조사 嘛",
     "太…了"
    ],
+   "emotion": "cheerful",
    "lemmas": [
     [
      "对不起",
@@ -139,21 +146,21 @@
      "开心",
      "kāi xīn"
     ]
-   ],
-   "rd": "두이부치 마, 워 타이 카이신 러!",
-   "emotion": "cheerful"
+   ]
   },
   {
    "num": 5,
    "speaker": "A",
-   "zh": "哈哈，那我们正式公开吧！😏",
-   "pinyin": "Hāhā, nà wǒmen zhèngshì gōngkāi ba!",
+   "zh": "哈哈，那我们正式公布吧！😏",
+   "pinyin": "Hāhā, nà wǒmen zhèngshì gōngbù ba!",
+   "rd": "하하, 나 워먼 정스 궁부 바!",
    "ko": "하하, 그럼 우리 공식 발표하자!",
-   "note": "청유의 吧, 부사 正式",
+   "note": "正式=공식적으로, 吧=청유",
    "tags": [
     "청유 吧",
     "공개"
    ],
+   "emotion": "amused",
    "lemmas": [
     [
      "那",
@@ -171,24 +178,24 @@
      "zhèng shì"
     ],
     [
-     "公开",
-     "公开",
-     "gōng kāi"
+     "公布",
+     "公布",
+     "gōng bù"
     ]
-   ],
-   "rd": "하하, 나 워먼 정스 궁카이 바!",
-   "emotion": "amused"
+   ]
   },
   {
    "num": 6,
    "speaker": "B",
    "zh": "好，我现在就发朋友圈！",
    "pinyin": "Hǎo, wǒ xiànzài jiù fā péngyǒuquān!",
+   "rd": "하오, 워 셴짜이 주 파 펑유취안!",
    "ko": "좋아, 나 지금 바로 모멘트에 올릴게!",
-   "note": null,
+   "note": "",
    "tags": [
     "ext"
    ],
+   "emotion": "excited",
    "lemmas": [
     [
      "好",
@@ -220,30 +227,25 @@
      "圈",
      "quān"
     ]
-   ],
-   "rd": "하오, 워 셴짜이 주 파 펑유취안!",
-   "emotion": "excited"
+   ]
   },
   {
    "num": 7,
    "speaker": "A",
-   "zh": "等等，先让我看看照片。",
-   "pinyin": "Děngděng, xiān ràng wǒ kànkàn zhàopiān.",
+   "zh": "等等，先给我看看照片。",
+   "pinyin": "Děngděng, xiān gěi wǒ kànkan zhàopiàn.",
+   "rd": "덩덩, 셴 게이 워 칸칸 자오폔.",
    "ko": "잠깐, 먼저 사진부터 나 보여줘.",
-   "note": null,
+   "note": "",
    "tags": [
     "ext"
    ],
+   "emotion": "flustered",
    "lemmas": [
     [
      "先",
      "先",
      "xiān"
-    ],
-    [
-     "让",
-     "让",
-     "ràng"
     ],
     [
      "看看",
@@ -255,20 +257,20 @@
      "照片",
      "zhào piān"
     ]
-   ],
-   "rd": "덩덩, 셴 랑 워 칸칸 자오폔.",
-   "emotion": "flustered"
+   ]
   },
   {
    "num": 8,
    "speaker": "B",
-   "zh": "已经发出去啦，收不回来了！",
-   "pinyin": "Yǐjīng fāchū qù la, shōu bù huílái le!",
+   "zh": "已经发了，撤不了了！",
+   "pinyin": "Yǐjīng fā le, chè bu liǎo le!",
+   "rd": "이징 파 러, 처 부 랴오 러!",
    "ko": "이미 올렸어, 이제 취소 못 해!",
-   "note": null,
+   "note": "",
    "tags": [
     "ext"
    ],
+   "emotion": "teasing",
    "lemmas": [
     [
      "已经",
@@ -276,33 +278,26 @@
      "yǐ jīng"
     ],
     [
-     "发出",
-     "发出",
-     "fā chū"
+     "发",
+     "发",
+     "fā"
     ],
     [
-     "去",
-     "去",
-     "qù"
+     "撤",
+     "撤",
+     "chè"
     ],
     [
-     "收",
-     "收",
-     "shōu"
-    ],
-    [
-     "不",
-     "不",
-     "bù"
-    ],
-    [
-     "回来",
-     "回来",
-     "huí lái"
+     "不了",
+     "不了",
+     "bù liǎo"
     ]
-   ],
-   "rd": "이징 파추 취 라, 서우 부 후이라이 러!",
-   "emotion": "teasing"
+   ]
   }
- ]
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r4_love_l3_d01_2_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ }
 }

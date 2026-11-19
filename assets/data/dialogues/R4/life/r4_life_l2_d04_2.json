@@ -21,12 +21,14 @@
    "speaker": "A",
    "zh": "好是好，可是没爆米花。",
    "pinyin": "Hǎo shì hǎo, kěshì méi bàomǐhuā.",
+   "rd": "하오 스 하오, 커스 메이 바오미화.",
    "ko": "좋긴 좋은데, 팝콘이 없어.",
-   "note": "A是A，可是… (~하긴 한데 그러나)",
+   "note": "A是A，可是… 는 ~하긴 한데.",
    "tags": [
     "structure:A是A",
     "banter"
    ],
+   "emotion": "sad",
    "lemmas": [
     [
      "好",
@@ -53,21 +55,21 @@
      "爆米花",
      "bào mǐ huā"
     ]
-   ],
-   "rd": "하오 스 하오, 커스 메이 바오미화.",
-   "emotion": "sad"
+   ]
   },
   {
    "num": 2,
    "speaker": "B",
    "zh": "冰箱里有薯片啊。😄",
-   "pinyin": "Bīngxiāng li yǒu shǔpiàn a.",
+   "pinyin": "Bīngxiāng lǐ yǒu shǔpiàn a.",
+   "rd": "빙샹 리 유 수폔 아.",
    "ko": "냉장고에 감자칩 있잖아.",
-   "note": "방위사 里 + 有 존재문",
+   "note": "里 는 안, 有 는 있다.",
    "tags": [
     "structure:有",
     "food"
    ],
+   "emotion": "cheerful",
    "lemmas": [
     [
      "冰箱",
@@ -89,21 +91,21 @@
      "薯片",
      "shǔ piàn"
     ]
-   ],
-   "rd": "빙샹 리 유 수폔 아.",
-   "emotion": "cheerful"
+   ]
   },
   {
    "num": 3,
    "speaker": "A",
    "zh": "那是我的！你什么时候发现的？",
    "pinyin": "Nà shì wǒ de! Nǐ shénme shíhou fāxiàn de?",
+   "rd": "나 스 워 더! 니 선머 스허우 파셴 더?",
    "ko": "그거 내 건데! 언제 찾아낸 거야?",
-   "note": "是…的 구문 (과거 발생 시점 강조)",
+   "note": "是…的 는 과거 시점 강조.",
    "tags": [
     "structure:是的",
     "chaos"
    ],
+   "emotion": "shout",
    "lemmas": [
     [
      "那",
@@ -130,31 +132,21 @@
      "发现",
      "fā xiàn"
     ]
-   ],
-   "rd": "나 스 워 더! 니 선머 스허우 파셴 더?",
-   "emotion": "shout",
-   "segs": [
-    [
-     "shout",
-     "那是我的！"
-    ],
-    [
-     "surprised",
-     "你什么时候发现的？"
-    ]
    ]
   },
   {
    "num": 4,
    "speaker": "B",
    "zh": "上周就吃了一半啦。😜",
-   "pinyin": "Shàng zhōu jiù chī le yībàn la.",
+   "pinyin": "Shàngzhōu jiù chī le yíbàn la.",
+   "rd": "상저우 주 츠 러 이반 라.",
    "ko": "지난주에 벌써 반 먹었지롱.",
-   "note": "부사 就 (이미/벌써) + 啦",
+   "note": "就 는 벌써, 啦 는 알림.",
    "tags": [
     "adverb:就",
     "humor"
    ],
+   "emotion": "teasing",
    "lemmas": [
     [
      "上周",
@@ -171,21 +163,21 @@
      "吃",
      "chī"
     ]
-   ],
-   "rd": "상 저우 주 츠 러 이반 라.",
-   "emotion": "teasing"
+   ]
   },
   {
    "num": 5,
    "speaker": "A",
    "zh": "小丽！你这个薯片小偷！",
    "pinyin": "Xiǎolì! Nǐ zhège shǔpiàn xiǎotōu!",
+   "rd": "샤오리! 니 저거 수폔 샤오터우!",
    "ko": "샤오리! 이 감자칩 도둑아!",
-   "note": "你这个+명사 (친근한 타박 호칭)",
+   "note": "你这个+명사 는 친근한 타박.",
    "tags": [
     "structure:你这个",
     "chaos"
    ],
+   "emotion": "shout",
    "lemmas": [
     [
      "这个",
@@ -207,20 +199,20 @@
      "偷",
      "tōu"
     ]
-   ],
-   "rd": "샤오리! 니 저거 수폔 샤오터우!",
-   "emotion": "shout"
+   ]
   },
   {
    "num": 6,
    "speaker": "B",
-   "zh": "别生气嘛，我再买一包。",
-   "pinyin": "Biéshēngqì ma, wǒ zài mǎi yībāo.",
+   "zh": "别生气，我再给你买一包。",
+   "pinyin": "Bié shēngqì, wǒ zài gěi nǐ mǎi yì bāo.",
+   "rd": "볘 성치, 워 짜이 게이 니 마이 이 바오.",
    "ko": "화내지 마, 내가 한 봉지 더 사줄게.",
-   "note": null,
+   "note": "",
    "tags": [
     "ext"
    ],
+   "emotion": "flustered",
    "lemmas": [
     [
      "别",
@@ -247,20 +239,20 @@
      "包",
      "bāo"
     ]
-   ],
-   "rd": "볘성치 마, 워 짜이 마이 이바오.",
-   "emotion": "flustered"
+   ]
   },
   {
    "num": 7,
    "speaker": "A",
    "zh": "现在超市都关门了吧？🙄",
    "pinyin": "Xiànzài chāoshì dōu guānmén le ba?",
+   "rd": "셴짜이 차오스 더우 관먼 러 바?",
    "ko": "지금 마트 다 문 닫았을걸?",
-   "note": null,
+   "note": "",
    "tags": [
     "ext"
    ],
+   "emotion": "tsukkomi",
    "lemmas": [
     [
      "现在",
@@ -287,25 +279,30 @@
      "门",
      "mén"
     ]
-   ],
-   "rd": "셴짜이 차오스 더우 관먼 러 바?",
-   "emotion": "tsukkomi"
+   ]
   },
   {
    "num": 8,
    "speaker": "B",
-   "zh": "那我们分着吃剩下的。",
-   "pinyin": "Nà wǒmen fēnzhe chī shèngxià de.",
+   "zh": "那剩下的我们分着吃吧。😏",
+   "pinyin": "Nà shèngxià de wǒmen fēnzhe chī ba.",
+   "rd": "나 성샤 더 워먼 펀저 츠 바.",
    "ko": "그럼 남은 거 나눠 먹자.",
-   "note": null,
+   "note": "",
    "tags": [
     "ext"
    ],
+   "emotion": "amused",
    "lemmas": [
     [
      "那",
      "那",
      "nà"
+    ],
+    [
+     "剩下",
+     "剩下",
+     "shèng xià"
     ],
     [
      "我们",
@@ -321,15 +318,13 @@
      "吃",
      "吃",
      "chī"
-    ],
-    [
-     "剩下",
-     "剩下",
-     "shèng xià"
     ]
-   ],
-   "rd": "나 워먼 펀저 츠 성샤 더.",
-   "emotion": "amused"
+   ]
   }
- ]
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r4_life_l2_d04_2_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ }
 }

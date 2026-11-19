@@ -1,0 +1,13 @@
+=== r4_love_l3_d09_2
+title: 취미교환 ②
+scene: 주말 오후, 서로의 취미인 그림과 등산을 가르쳐 주기로 하는 두 사람.
+B: 小丽
+register: 반말(친구·연인)
+1 B | 没关系，慢慢练就好了。 | Méi guānxi, mànman liàn jiù hǎo le. | 괜찮아, 천천히 연습하면 돼. | 慢慢=천천히, 就好了=~하면 된다 | emotion=gentle
+2 A | 下周末我带你去爬山。 | Xià zhōumò wǒ dài nǐ qù páshān. | 다음 주말엔 내가 등산 데려갈게. | 带…去=데리고 가다 | emotion=cheerful
+3 B | 爬山会不会很累？ | Páshān huì bu huì hěn lèi? | 등산 많이 힘들지 않을까? | 会不会=정반의문 | emotion=worried
+4 A | 一边爬一边歇就不累。 | Yìbiān pá yìbiān xiē jiù bú lèi. | 오르면서 쉬엄쉬엄 가면 안 힘들어. | 一边…一边…=동시에 | emotion=gentle
+5 B | 跟你在一起就很开心。 | Gēn nǐ zài yìqǐ jiù hěn kāixīn. | 좋아, 너랑 같이 있으면 그냥 즐거워. | 跟…在一起=~와 함께 | emotion=shy
+6 A | 那我们从下周开始互相教。 | Nà wǒmen cóng xià zhōu kāishǐ hùxiāng jiāo. | 그럼 우리 다음 주부터 서로 가르치자. |  | emotion=cheerful
+7 B | 说好了，谁也不许偷懒。 | Shuō hǎo le, shéi yě bùxǔ tōulǎn. | 약속이야, 누구도 게으름 피우면 안 돼. |  | emotion=teasing
+8 A | 好，一起加油变得更好！ | Hǎo, yìqǐ jiāyóu biàn de gèng hǎo! | 좋아, 같이 힘내서 더 잘하게 되자! |  | emotion=excited

@@ -19,29 +19,21 @@
   {
    "num": 1,
    "speaker": "B",
-   "zh": "那我在店里试，回家网上买。",
-   "pinyin": "Nà wǒ zài diànli shì, huíjiā wǎngshàng mǎi.",
+   "zh": "先试穿再回家网购。",
+   "pinyin": "Xiān shìchuān zài huíjiā wǎnggòu.",
+   "rd": "셴 스촨 짜이 후이자 왕거우.",
    "ko": "그럼 매장에서 입어보고 집 가서 인터넷으로 사야지.",
-   "note": "연동문 (동작의 순차 연결)",
+   "note": "연동문은 동작 순서.",
    "tags": [
     "structure:连动",
     "humor"
    ],
+   "emotion": "cheerful",
    "lemmas": [
     [
-     "那",
-     "那",
-     "nà"
-    ],
-    [
-     "店",
-     "店",
-     "diàn"
-    ],
-    [
-     "里",
-     "里",
-     "lǐ"
+     "先",
+     "先",
+     "xiān"
     ],
     [
      "试",
@@ -49,35 +41,45 @@
      "shì"
     ],
     [
+     "穿",
+     "穿",
+     "chuān"
+    ],
+    [
+     "再",
+     "再",
+     "zài"
+    ],
+    [
      "回家",
      "回家",
      "huí jiā"
     ],
     [
-     "网上",
-     "网上",
-     "wǎng shàng"
+     "网",
+     "网",
+     "wǎng"
     ],
     [
-     "买",
-     "买",
-     "mǎi"
+     "购",
+     "购",
+     "gòu"
     ]
-   ],
-   "rd": "나 워 짜이 뎬리 스, 후이자 왕상 마이.",
-   "emotion": "cheerful"
+   ]
   },
   {
    "num": 2,
    "speaker": "A",
    "zh": "你可真是购物天才。",
-   "pinyin": "Nǐ kě zhēnshi gòuwù tiāncái.",
+   "pinyin": "Nǐ kě zhēn shì gòuwù tiāncái.",
+   "rd": "니 커 전 스 거우우 톈차이.",
    "ko": "너 진짜 쇼핑 천재다.",
-   "note": "부사 可 (구어체 강조)",
+   "note": "可 는 구어체 강조.",
    "tags": [
     "adverb:可",
     "positive"
    ],
+   "emotion": "tsukkomi",
    "lemmas": [
     [
      "可",
@@ -99,21 +101,21 @@
      "天才",
      "tiān cái"
     ]
-   ],
-   "rd": "니 커 전스 거우우 톈차이.",
-   "emotion": "tsukkomi"
+   ]
   },
   {
    "num": 3,
    "speaker": "B",
    "zh": "那你的呢？也买一件？",
-   "pinyin": "Nà nǐ de ne? Yě mǎi yī jiàn?",
+   "pinyin": "Nà nǐ de ne? Yě mǎi yí jiàn?",
+   "rd": "나 니 더 너? 예 마이 이 젠?",
    "ko": "그럼 네 건? 너도 한 벌 살래?",
-   "note": "的 명사화 (你的 = 네 것) + 呢",
+   "note": "的 는 명사화, 呢 는 화제.",
    "tags": [
     "structure:的",
     "shopping"
    ],
+   "emotion": "cheerful",
    "lemmas": [
     [
      "那",
@@ -135,26 +137,31 @@
      "一件",
      "yī jiàn"
     ]
-   ],
-   "rd": "나 니 더 너? 예 마이 이 젠?",
-   "emotion": "cheerful"
+   ]
   },
   {
    "num": 4,
    "speaker": "A",
-   "zh": "我上个月的还没穿过呢。🤔",
-   "pinyin": "Wǒ shàng ge yuè de hái méi chuān guo ne.",
+   "zh": "上个月买的还没穿过。",
+   "pinyin": "Shàng ge yuè mǎi de hái méi chuān guò.",
+   "rd": "상 거 웨 마이 더 하이 메이 촨 궈.",
    "ko": "지난달에 산 것도 아직 안 입어봤어.",
-   "note": "还没…过 (아직 ~해본 적 없다)",
+   "note": "还没…过 는 아직 해본 적 없다.",
    "tags": [
     "aspect:过",
     "negative"
    ],
+   "emotion": "neutral",
    "lemmas": [
     [
      "上个月",
      "上个月",
      "shàng gè yuè"
+    ],
+    [
+     "买",
+     "买",
+     "mǎi"
     ],
     [
      "还",
@@ -171,21 +178,21 @@
      "穿",
      "chuān"
     ]
-   ],
-   "rd": "워 상 거 웨 더 하이 메이 촨 궈 너.",
-   "emotion": "neutral"
+   ]
   },
   {
    "num": 5,
    "speaker": "B",
-   "zh": "那这件就当你送我的啦。😜",
-   "pinyin": "Nà zhè jiàn jiù dāng nǐ sòng wǒ de la.",
+   "zh": "那这件就当我送你的。",
+   "pinyin": "Nà zhè jiàn jiù dāng wǒ sòng nǐ de.",
+   "rd": "나 저 젠 주 당 워 쑹 니 더.",
    "ko": "그럼 이건 네가 나한테 선물한 걸로 치자.",
-   "note": "동사 当 (~로 치다/간주하다)",
+   "note": "当 는 ~로 치다.",
    "tags": [
     "verb:当",
     "humor"
    ],
+   "emotion": "teasing",
    "lemmas": [
     [
      "那",
@@ -207,75 +214,70 @@
      "送",
      "sòng"
     ]
-   ],
-   "rd": "나 저 젠 주 당 니 쑹 워 더 라.",
-   "emotion": "teasing"
+   ]
   },
   {
    "num": 6,
    "speaker": "A",
-   "zh": "好吧好吧，算我送的。",
-   "pinyin": "Hǎo ba hǎo ba, suàn wǒ sòng de.",
+   "zh": "行行，当我送的吧。😏",
+   "pinyin": "Xíng xíng, dāng wǒ sòng de ba.",
+   "rd": "싱 싱, 당 워 쑹 더 바.",
    "ko": "알았어 알았어, 내가 선물한 걸로 하자.",
-   "note": null,
+   "note": "",
    "tags": [
     "ext"
    ],
+   "emotion": "amused",
    "lemmas": [
     [
-     "好",
-     "好",
-     "hǎo"
+     "行",
+     "行",
+     "xíng"
     ],
     [
-     "好",
-     "好",
-     "hǎo"
-    ],
-    [
-     "算",
-     "算",
-     "suàn"
+     "行",
+     "行",
+     "xíng"
     ],
     [
      "送",
      "送",
      "sòng"
     ]
-   ],
-   "rd": "하오 바 하오 바, 쏸 워 쑹 더.",
-   "emotion": "amused"
+   ]
   },
   {
    "num": 7,
    "speaker": "B",
-   "zh": "谢谢老公，爱你哦。😄",
-   "pinyin": "Xièxiè lǎogōng, ài nǐ ó.",
+   "zh": "谢谢宝贝，爱你。",
+   "pinyin": "Xièxie bǎobèi, ài nǐ.",
+   "rd": "셰셰 바오베이, 아이 니.",
    "ko": "고마워 자기야, 사랑해.",
-   "note": null,
+   "note": "",
    "tags": [
     "ext"
    ],
+   "emotion": "cheerful",
    "lemmas": [
     [
      "爱",
      "爱",
      "ài"
     ]
-   ],
-   "rd": "셰셰 라오궁, 아이 니 오.",
-   "emotion": "cheerful"
+   ]
   },
   {
    "num": 8,
    "speaker": "A",
-   "zh": "下次记得先查价格啊。🙄",
-   "pinyin": "Xiàcì jìde xiānchá jiàgé a.",
+   "zh": "下次先搜价格别忘了。",
+   "pinyin": "Xiàcì xiān sōu jiàgé bié wàng le.",
+   "rd": "샤츠 셴 써우 자거 볘 왕 러.",
    "ko": "다음엔 먼저 가격 검색하는 거 잊지 마.",
-   "note": null,
+   "note": "",
    "tags": [
     "ext"
    ],
+   "emotion": "tsukkomi",
    "lemmas": [
     [
      "下次",
@@ -283,28 +285,36 @@
      "xià cì"
     ],
     [
-     "记得",
-     "记得",
-     "jì de"
-    ],
-    [
      "先",
      "先",
      "xiān"
     ],
     [
-     "查",
-     "查",
-     "chá"
+     "搜",
+     "搜",
+     "sōu"
     ],
     [
      "价格",
      "价格",
      "jià gé"
+    ],
+    [
+     "别",
+     "别",
+     "bié"
+    ],
+    [
+     "忘",
+     "忘",
+     "wàng"
     ]
-   ],
-   "rd": "샤츠 지더 셴차 자거 아.",
-   "emotion": "tsukkomi"
+   ]
   }
- ]
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r4_life_l2_d07_2_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ }
 }

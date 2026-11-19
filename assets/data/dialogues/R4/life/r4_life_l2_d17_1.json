@@ -21,12 +21,14 @@
    "speaker": "B",
    "zh": "你昨晚去哪儿了？",
    "pinyin": "Nǐ zuówǎn qù nǎr le?",
+   "rd": "니 쭤완 취 날 러?",
    "ko": "너 어젯밤에 어디 갔었어?",
-   "note": "去哪儿+了: 과거 행선지 묻기. 문미 了로 이미 일어난 일 표현.",
+   "note": "去哪儿了는 과거 행선지를 묻는 표현.",
    "tags": [
     "의문문",
     "了"
    ],
+   "emotion": "annoyed",
    "lemmas": [
     [
      "昨",
@@ -48,21 +50,21 @@
      "哪儿",
      "nǎ ér"
     ]
-   ],
-   "rd": "니 쭤완 취 날 러?",
-   "emotion": "annoyed"
+   ]
   },
   {
    "num": 2,
    "speaker": "B",
    "zh": "我给你发了十条消息！",
    "pinyin": "Wǒ gěi nǐ fā le shí tiáo xiāoxi!",
+   "rd": "워 게이 니 파 러 스 탸오 샤오시!",
    "ko": "내가 메시지 열 개나 보냈잖아!",
-   "note": "给+사람+동사: '~에게 ~해주다'. 메시지 양사는 条.",
+   "note": "给+사람+동사는 ‘~에게 ~하다’, 条는 메시지 양사.",
    "tags": [
     "给",
     "양사"
    ],
+   "emotion": "shout",
    "lemmas": [
     [
      "发",
@@ -79,21 +81,21 @@
      "消息",
      "xiāo xī"
     ]
-   ],
-   "rd": "워 게이 니 파 러 스 탸오 샤오시!",
-   "emotion": "shout"
+   ]
   },
   {
    "num": 3,
    "speaker": "A",
    "zh": "对不起对不起！",
    "pinyin": "Duìbuqǐ duìbuqǐ!",
-   "ko": "미안미안!",
-   "note": "사과 표현 중첩으로 다급함 강조. 채팅체에서 흔한 반복.",
+   "rd": "두이부치 두이부치!",
+   "ko": "미안 미안!",
+   "note": "사과 표현을 반복하면 다급함이 강조된다.",
    "tags": [
     "사과",
     "중첩"
    ],
+   "emotion": "flustered",
    "lemmas": [
     [
      "对不起",
@@ -105,21 +107,21 @@
      "对不起",
      "duì bù qǐ"
     ]
-   ],
-   "rd": "두이부치 두이부치!",
-   "emotion": "flustered"
+   ]
   },
   {
    "num": 4,
    "speaker": "A",
    "zh": "我手机没电了。",
    "pinyin": "Wǒ shǒujī méi diàn le.",
+   "rd": "워 서우지 메이 뎬 러.",
    "ko": "나 폰 배터리 나갔었어.",
-   "note": "没电了: '배터리가 없다'. 变化의 了로 상태 변화 표현.",
+   "note": "没电了는 ‘배터리가 없다’는 상태 변화.",
    "tags": [
     "没…了",
     "변명"
    ],
+   "emotion": "flustered",
    "lemmas": [
     [
      "手机",
@@ -136,21 +138,21 @@
      "电",
      "diàn"
     ]
-   ],
-   "rd": "워 서우지 메이 뎬 러.",
-   "emotion": "flustered"
+   ]
   },
   {
    "num": 5,
    "speaker": "B",
-   "zh": "真的吗？大伟说你在打游戏。",
-   "pinyin": "Zhēn de ma? Dàwěi shuō nǐ zài dǎ yóuxì.",
+   "zh": "真的？大伟说你在打游戏。",
+   "pinyin": "Zhēn de? Dàwěi shuō nǐ zài dǎ yóuxì.",
+   "rd": "전 더? 다웨이 숴 니 짜이 다 유시.",
    "ko": "진짜? 다웨이가 너 게임하고 있다던데.",
-   "note": "在+동사: 진행형. 打游戏 '게임을 하다'는 打를 씀.",
+   "note": "在+동사는 진행형, 打游戏는 ‘게임을 하다’.",
    "tags": [
     "진행형",
     "打游戏"
    ],
+   "emotion": "tsukkomi",
    "lemmas": [
     [
      "真的",
@@ -172,42 +174,42 @@
      "游戏",
      "yóu xì"
     ]
-   ],
-   "rd": "전 더 마? 다웨이 숴 니 짜이 다 유시.",
-   "emotion": "tsukkomi"
+   ]
   },
   {
    "num": 6,
    "speaker": "A",
-   "zh": "啊……那个……",
-   "pinyin": "À……nàge……",
+   "zh": "那个，我……",
+   "pinyin": "Nàge, wǒ……",
+   "rd": "나거, 워……",
    "ko": "아… 그게…",
-   "note": "那个: 말문이 막힐 때 쓰는 필러(음… 그게…).",
+   "note": "那个는 말문이 막힐 때 쓰는 필러.",
    "tags": [
     "필러",
     "회화체"
    ],
+   "emotion": "flustered",
    "lemmas": [
     [
      "那个",
      "那个",
      "nà ge"
     ]
-   ],
-   "rd": "아……나거……",
-   "emotion": "flustered"
+   ]
   },
   {
    "num": 7,
    "speaker": "B",
-   "zh": "你还想骗我？",
-   "pinyin": "Nǐ hái xiǎng piàn wǒ?",
+   "zh": "还想骗我吗？😒",
+   "pinyin": "Hái xiǎng piàn wǒ ma?",
+   "rd": "하이 샹 폔 워 마?",
    "ko": "아직도 날 속이려고?",
-   "note": "还+동사: '여전히/그래도 또'. 骗 '속이다'.",
+   "note": "还+동사는 ‘여전히/그래도 또’, 骗은 ‘속이다’.",
    "tags": [
     "还",
     "骗"
    ],
+   "emotion": "annoyed",
    "lemmas": [
     [
      "还",
@@ -224,21 +226,21 @@
      "骗",
      "piàn"
     ]
-   ],
-   "rd": "니 하이 샹 폔 워?",
-   "emotion": "annoyed"
+   ]
   },
   {
    "num": 8,
    "speaker": "A",
    "zh": "就玩了一会儿嘛！😳",
    "pinyin": "Jiù wán le yíhuìr ma!",
+   "rd": "주 완 러 이후일 마!",
    "ko": "그냥 잠깐만 했다니까!",
-   "note": "就…嘛: '겨우 ~일 뿐이잖아' 억울함 어투. 一会儿 '잠깐'.",
+   "note": "就…嘛는 ‘겨우 ~일 뿐이잖아’는 억울한 어투.",
    "tags": [
     "嘛",
     "一会儿"
    ],
+   "emotion": "flustered",
    "lemmas": [
     [
      "就",
@@ -255,9 +257,12 @@
      "一会儿",
      "yī huì er"
     ]
-   ],
-   "rd": "주 완 러 이후일 마!",
-   "emotion": "flustered"
+   ]
   }
- ]
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r4_life_l2_d17_1_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ }
 }

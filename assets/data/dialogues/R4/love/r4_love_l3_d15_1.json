@@ -20,13 +20,15 @@
    "num": 1,
    "speaker": "A",
    "zh": "小丽，你的梦想是什么？",
-   "pinyin": "Xiǎo Lì, nǐ de mèngxiǎng shì shénme?",
+   "pinyin": "Xiǎolì, nǐ de mèngxiǎng shì shénme?",
+   "rd": "샤오리, 니 더 멍샹 스 선머?",
    "ko": "샤오리, 네 꿈은 뭐야?",
-   "note": "명사 梦想 + 의문사 什么",
+   "note": "‘梦想’과 ‘什么’로 꿈을 물어봄",
    "tags": [
     "꿈",
     "질문"
    ],
+   "emotion": "neutral",
    "lemmas": [
     [
      "梦想",
@@ -43,21 +45,21 @@
      "什么",
      "shén me"
     ]
-   ],
-   "rd": "샤오 리, 니 더 멍샹 스 선머?",
-   "emotion": "neutral"
+   ]
   },
   {
    "num": 2,
    "speaker": "B",
-   "zh": "我想开一个自己的展览。",
-   "pinyin": "Wǒ xiǎng kāi yí gè zìjǐ de zhǎnlǎn.",
+   "zh": "我想开自己的画展。",
+   "pinyin": "Wǒ xiǎng kāi zìjǐ de huàzhǎn.",
+   "rd": "워 샹 카이 쯔지 더 화잔.",
    "ko": "나만의 전시회를 열고 싶어.",
-   "note": "재귀대명사 自己 (자신의)",
+   "note": "‘自己’는 ‘자신의’",
    "tags": [
     "전시회",
     "꿈"
    ],
+   "emotion": "shy",
    "lemmas": [
     [
      "想",
@@ -70,35 +72,35 @@
      "kāi"
     ],
     [
-     "一个",
-     "一个",
-     "yí gè"
-    ],
-    [
      "自己",
      "自己",
      "zì jǐ"
     ],
     [
-     "展览",
-     "展览",
-     "zhǎn lǎn"
+     "画",
+     "画",
+     "huà"
+    ],
+    [
+     "展",
+     "展",
+     "zhǎn"
     ]
-   ],
-   "rd": "워 샹 카이 이 거 쯔지 더 잔란.",
-   "emotion": "shy"
+   ]
   },
   {
    "num": 3,
    "speaker": "A",
-   "zh": "画展吗？那太棒了！",
-   "pinyin": "Huàzhǎn ma? Nà tài bàng le!",
+   "zh": "画展？那太酷了！",
+   "pinyin": "Huàzhǎn? Nà tài kù le!",
+   "rd": "화잔? 나 타이 쿠 러!",
    "ko": "그림 전시회? 그거 진짜 멋지다!",
-   "note": "太…了 (감탄)",
+   "note": "‘太…了’는 감탄",
    "tags": [
     "응원",
     "감탄"
    ],
+   "emotion": "excited",
    "lemmas": [
     [
      "画",
@@ -114,23 +116,33 @@
      "那",
      "那",
      "nà"
+    ],
+    [
+     "太酷",
+     "太酷",
+     "tài kù"
     ]
-   ],
-   "rd": "화잔 마? 나 타이 방 러!",
-   "emotion": "excited"
+   ]
   },
   {
    "num": 4,
    "speaker": "B",
-   "zh": "可是我觉得还差得远呢。😟",
-   "pinyin": "Kěshì wǒ juéde hái chà de yuǎn ne.",
+   "zh": "可我觉得还差得远呢。😟",
+   "pinyin": "Kě wǒ juéde hái chà de yuǎn ne.",
+   "rd": "커 워 줴더 하이 차 더 위안 너.",
    "ko": "근데 아직 한참 멀었다고 생각해.",
-   "note": "정도보어 差得远 (한참 부족하다)",
+   "note": "‘差得远’은 ‘한참 부족하다’",
    "tags": [
     "겸손",
     "고민"
    ],
+   "emotion": "worried",
    "lemmas": [
+    [
+     "可",
+     "可",
+     "kě"
+    ],
     [
      "觉得",
      "觉得",
@@ -151,21 +163,21 @@
      "远",
      "yuǎn"
     ]
-   ],
-   "rd": "커스 워 줴더 하이 차 더 위안 너.",
-   "emotion": "worried"
+   ]
   },
   {
    "num": 5,
    "speaker": "A",
    "zh": "别这么说，你画得那么好。",
    "pinyin": "Bié zhème shuō, nǐ huà de nàme hǎo.",
+   "rd": "볘 저머 숴, 니 화 더 나머 하오.",
    "ko": "그런 말 마, 너 그림 그렇게 잘 그리면서.",
-   "note": "那么 + 형용사 (그렇게 ~한)",
+   "note": "‘那么’는 ‘그렇게 ~한’",
    "tags": [
     "격려",
     "칭찬"
    ],
+   "emotion": "gentle",
    "lemmas": [
     [
      "别",
@@ -197,42 +209,36 @@
      "好",
      "hǎo"
     ]
-   ],
-   "rd": "볘 저머 숴, 니 화 더 나머 하오.",
-   "emotion": "gentle"
+   ]
   },
   {
    "num": 6,
    "speaker": "B",
-   "zh": "谢谢你。你的梦想呢？😊",
-   "pinyin": "Xièxie nǐ. Nǐ de mèngxiǎng ne?",
+   "zh": "谢谢。你的呢？😊",
+   "pinyin": "Xièxie. Nǐ de ne?",
+   "rd": "셰셰. 니 더 너?",
    "ko": "고마워. 네 꿈은 뭔데?",
-   "note": "생략 의문문 呢 (~는?)",
+   "note": "‘呢’는 생략 의문문",
    "tags": [
     "질문",
     "呢"
    ],
-   "lemmas": [
-    [
-     "梦想",
-     "梦想",
-     "mèng xiǎng"
-    ]
-   ],
-   "rd": "셰셰 니. 니 더 멍샹 너?",
-   "emotion": "shy"
+   "emotion": "shy",
+   "lemmas": []
   },
   {
    "num": 7,
    "speaker": "A",
    "zh": "我想在中国开一家公司。",
    "pinyin": "Wǒ xiǎng zài Zhōngguó kāi yì jiā gōngsī.",
+   "rd": "워 샹 짜이 중궈 카이 이 자 궁쓰.",
    "ko": "중국에서 회사를 하나 차리고 싶어.",
-   "note": "양사 家 (가게·회사 세는 단위)",
+   "note": "‘家’는 회사 세는 양사",
    "tags": [
     "창업",
     "꿈"
    ],
+   "emotion": "cheerful",
    "lemmas": [
     [
      "想",
@@ -259,21 +265,21 @@
      "公司",
      "gōng sī"
     ]
-   ],
-   "rd": "워 샹 짜이 중궈 카이 이 자 궁쓰.",
-   "emotion": "cheerful"
+   ]
   },
   {
    "num": 8,
    "speaker": "B",
    "zh": "哇，什么样的公司？",
-   "pinyin": "Wā, shénme yàng de gōngsī?",
+   "pinyin": "Wa, shénme yàng de gōngsī?",
+   "rd": "와, 선머 양 더 궁쓰?",
    "ko": "와, 어떤 회사?",
-   "note": "什么样的 (어떤 종류의)",
+   "note": "‘什么样的’는 ‘어떤 종류의’",
    "tags": [
     "호기심",
     "질문"
    ],
+   "emotion": "surprised",
    "lemmas": [
     [
      "什么样",
@@ -285,9 +291,12 @@
      "公司",
      "gōng sī"
     ]
-   ],
-   "rd": "와, 선머 양 더 궁쓰?",
-   "emotion": "surprised"
+   ]
   }
- ]
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r4_love_l3_d15_1_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ }
 }

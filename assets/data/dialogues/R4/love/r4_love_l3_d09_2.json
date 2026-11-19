@@ -20,13 +20,15 @@
    "num": 1,
    "speaker": "B",
    "zh": "没关系，慢慢练就好了。",
-   "pinyin": "Méi guānxi, mànmàn liàn jiù hǎo le.",
+   "pinyin": "Méi guānxi, mànman liàn jiù hǎo le.",
+   "rd": "메이 관시, 만만 롄 주 하오 러.",
    "ko": "괜찮아, 천천히 연습하면 돼.",
-   "note": "형용사 중첩 慢慢 + …就好了",
+   "note": "慢慢=천천히, 就好了=~하면 된다",
    "tags": [
     "위로",
     "격려"
    ],
+   "emotion": "gentle",
    "lemmas": [
     [
      "没关系",
@@ -53,21 +55,21 @@
      "好",
      "hǎo"
     ]
-   ],
-   "rd": "메이 관시, 만만 롄 주 하오 러.",
-   "emotion": "gentle"
+   ]
   },
   {
    "num": 2,
    "speaker": "A",
    "zh": "下周末我带你去爬山。",
-   "pinyin": "Xià zhōumò wǒ dài nǐ qù pá shān.",
+   "pinyin": "Xià zhōumò wǒ dài nǐ qù páshān.",
+   "rd": "샤 저우모 워 다이 니 취 파산.",
    "ko": "다음 주말엔 내가 등산 데려갈게.",
-   "note": "연동문 带…去 (데리고 가다)",
+   "note": "带…去=데리고 가다",
    "tags": [
     "등산",
     "약속"
    ],
+   "emotion": "cheerful",
    "lemmas": [
     [
      "下",
@@ -94,21 +96,21 @@
      "爬山",
      "pá shān"
     ]
-   ],
-   "rd": "샤 저우모 워 다이 니 취 파 산.",
-   "emotion": "cheerful"
+   ]
   },
   {
    "num": 3,
    "speaker": "B",
    "zh": "爬山会不会很累？",
-   "pinyin": "Pá shān huì bu huì hěn lèi?",
+   "pinyin": "Páshān huì bu huì hěn lèi?",
+   "rd": "파산 후이 부 후이 헌 레이?",
    "ko": "등산 많이 힘들지 않을까?",
-   "note": "정반의문문 会不会",
+   "note": "会不会=정반의문",
    "tags": [
     "걱정",
     "의문문"
    ],
+   "emotion": "worried",
    "lemmas": [
     [
      "爬山",
@@ -135,21 +137,21 @@
      "累",
      "lèi"
     ]
-   ],
-   "rd": "파 산 후이 부 후이 헌 레이?",
-   "emotion": "worried"
+   ]
   },
   {
    "num": 4,
    "speaker": "A",
-   "zh": "一边爬一边休息，不累。",
-   "pinyin": "Yìbiān pá yìbiān xiūxi, bú lèi.",
+   "zh": "一边爬一边歇就不累。",
+   "pinyin": "Yìbiān pá yìbiān xiē jiù bú lèi.",
+   "rd": "이볜 파 이볜 셰 주 부 레이.",
    "ko": "오르면서 쉬엄쉬엄 가면 안 힘들어.",
-   "note": "一边…一边… (동시 동작)",
+   "note": "一边…一边…=동시에",
    "tags": [
     "등산",
     "一边"
    ],
+   "emotion": "gentle",
    "lemmas": [
     [
      "一边",
@@ -167,9 +169,14 @@
      "yī biān"
     ],
     [
-     "休息",
-     "休息",
-     "xiū xī"
+     "歇",
+     "歇",
+     "xiē"
+    ],
+    [
+     "就",
+     "就",
+     "jiù"
     ],
     [
      "不",
@@ -181,27 +188,22 @@
      "累",
      "lèi"
     ]
-   ],
-   "rd": "이볜 파 이볜 슈시, 부 레이.",
-   "emotion": "gentle"
+   ]
   },
   {
    "num": 5,
    "speaker": "B",
-   "zh": "好，跟你在一起就开心。",
-   "pinyin": "Hǎo, gēn nǐ zài yìqǐ jiù kāixīn.",
+   "zh": "跟你在一起就很开心。",
+   "pinyin": "Gēn nǐ zài yìqǐ jiù hěn kāixīn.",
+   "rd": "건 니 짜이 이치 주 헌 카이신.",
    "ko": "좋아, 너랑 같이 있으면 그냥 즐거워.",
-   "note": "개사구 跟…在一起",
+   "note": "跟…在一起=~와 함께",
    "tags": [
     "애정",
     "감정"
    ],
+   "emotion": "shy",
    "lemmas": [
-    [
-     "好",
-     "好",
-     "hǎo"
-    ],
     [
      "一起",
      "一起",
@@ -213,24 +215,29 @@
      "jiù"
     ],
     [
+     "很",
+     "很",
+     "hěn"
+    ],
+    [
      "开心",
      "开心",
      "kāi xīn"
     ]
-   ],
-   "rd": "하오, 건 니 짜이 이치 주 카이신.",
-   "emotion": "shy"
+   ]
   },
   {
    "num": 6,
    "speaker": "A",
-   "zh": "那我们下周就开始互相教。",
-   "pinyin": "Nà wǒmen xiàzhōu jiù kāishǐ hùxiāng jiào.",
+   "zh": "那我们从下周开始互相教。",
+   "pinyin": "Nà wǒmen cóng xià zhōu kāishǐ hùxiāng jiāo.",
+   "rd": "나 워먼 충 샤 저우 카이스 후샹 자오.",
    "ko": "그럼 우리 다음 주부터 서로 가르치자.",
-   "note": null,
+   "note": "",
    "tags": [
     "ext"
    ],
+   "emotion": "cheerful",
    "lemmas": [
     [
      "那",
@@ -248,11 +255,6 @@
      "xià zhōu"
     ],
     [
-     "就",
-     "就",
-     "jiù"
-    ],
-    [
      "开始",
      "开始",
      "kāi shǐ"
@@ -267,30 +269,30 @@
      "教",
      "jiào"
     ]
-   ],
-   "rd": "나 워먼 샤저우 주 카이스 후샹 자오.",
-   "emotion": "cheerful"
+   ]
   },
   {
    "num": 7,
    "speaker": "B",
-   "zh": "一言为定，谁也不能偷懒。",
-   "pinyin": "Yīyánwéidìng, shuí yě bùnéng tōulǎn.",
+   "zh": "说好了，谁也不许偷懒。",
+   "pinyin": "Shuō hǎo le, shéi yě bùxǔ tōulǎn.",
+   "rd": "숴 하오 러, 세이 예 부쉬 터우란.",
    "ko": "약속이야, 누구도 게으름 피우면 안 돼.",
-   "note": null,
+   "note": "",
    "tags": [
     "ext"
    ],
+   "emotion": "teasing",
    "lemmas": [
     [
-     "言",
-     "言",
-     "yán"
+     "说",
+     "说",
+     "shuō"
     ],
     [
-     "定",
-     "定",
-     "dìng"
+     "好",
+     "好",
+     "hǎo"
     ],
     [
      "谁",
@@ -303,29 +305,29 @@
      "yě"
     ],
     [
-     "不能",
-     "不能",
-     "bù néng"
+     "不许",
+     "不许",
+     "bù xǔ"
     ],
     [
      "偷懒",
      "偷懒",
      "tōu lǎn"
     ]
-   ],
-   "rd": "이옌웨이딩, 수이 예 부넝 터우란.",
-   "emotion": "teasing"
+   ]
   },
   {
    "num": 8,
    "speaker": "A",
-   "zh": "好，一起加油变得更厉害！",
-   "pinyin": "Hǎo, yìqǐ jiāyóu biàndé gèng lìhài!",
+   "zh": "好，一起加油变得更好！",
+   "pinyin": "Hǎo, yìqǐ jiāyóu biàn de gèng hǎo!",
+   "rd": "하오, 이치 자유 볜 더 겅 하오!",
    "ko": "좋아, 같이 힘내서 더 잘하게 되자!",
-   "note": null,
+   "note": "",
    "tags": [
     "ext"
    ],
+   "emotion": "excited",
    "lemmas": [
     [
      "好",
@@ -348,18 +350,16 @@
      "biàn dé"
     ],
     [
-     "更",
-     "更",
-     "gèng"
-    ],
-    [
-     "厉害",
-     "厉害",
-     "lì hài"
+     "更好",
+     "更好",
+     "gèng hǎo"
     ]
-   ],
-   "rd": "하오, 이치 자유 볜더 겅 리하이!",
-   "emotion": "excited"
+   ]
   }
- ]
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r4_love_l3_d09_2_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ }
 }

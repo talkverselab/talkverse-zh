@@ -19,14 +19,16 @@
   {
    "num": 1,
    "speaker": "B",
-   "zh": "好好好，不笑了。",
-   "pinyin": "Hǎo hǎo hǎo, bú xiào le.",
+   "zh": "好好好，我不笑了。",
+   "pinyin": "Hǎo hǎo hǎo, wǒ bù xiào le.",
+   "rd": "하오 하오 하오, 워 부 샤오 러.",
    "ko": "알았어 알았어, 안 웃을게.",
-   "note": "好 삼연발: 달래는 구어체. 不…了 '이제 안 ~할게'.",
+   "note": "好好好는 달래는 말, 不…了는 이제 안 ~할게.",
    "tags": [
     "不…了",
     "회화체"
    ],
+   "emotion": "amused",
    "lemmas": [
     [
      "好好",
@@ -48,32 +50,22 @@
      "笑",
      "xiào"
     ]
-   ],
-   "rd": "하오 하오 하오, 부 샤오 러.",
-   "emotion": "amused"
+   ]
   },
   {
    "num": 2,
    "speaker": "B",
-   "zh": "考完我带你去吃火锅。",
-   "pinyin": "Kǎo wán wǒ dài nǐ qù chī huǒguō.",
+   "zh": "考完试我带你去吃火锅。",
+   "pinyin": "Kǎo wán shì wǒ dài nǐ qù chī huǒguō.",
+   "rd": "카오 완 스 워 다이 니 취 츠 훠궈.",
    "ko": "시험 끝나면 훠궈 먹으러 데려갈게.",
-   "note": "考完: 동사+完 '다 끝내다'. 带你去: '데리고 가다' 연동문.",
+   "note": "考完은 다 끝내다, 带你去는 데리고 가다.",
    "tags": [
     "完",
     "带…去"
    ],
+   "emotion": "gentle",
    "lemmas": [
-    [
-     "考",
-     "考",
-     "kǎo"
-    ],
-    [
-     "完",
-     "完",
-     "wán"
-    ],
     [
      "带",
      "带",
@@ -99,21 +91,21 @@
      "锅",
      "guō"
     ]
-   ],
-   "rd": "카오 완 워 다이 니 취 츠 훠궈.",
-   "emotion": "gentle"
+   ]
   },
   {
    "num": 3,
    "speaker": "A",
    "zh": "真的？那我现在就去学习！",
    "pinyin": "Zhēn de? Nà wǒ xiànzài jiù qù xuéxí!",
+   "rd": "전 더? 나 워 셴짜이 주 취 쉐시!",
    "ko": "진짜? 그럼 지금 당장 공부하러 간다!",
-   "note": "就: '바로, 당장' 즉시성 강조.",
+   "note": "就는 바로, 당장.",
    "tags": [
     "就",
     "반전"
    ],
+   "emotion": "surprised",
    "lemmas": [
     [
      "真的",
@@ -145,32 +137,27 @@
      "学习",
      "xué xí"
     ]
-   ],
-   "rd": "전 더? 나 워 셴짜이 주 취 쉐시!",
-   "emotion": "surprised",
-   "segs": [
-    [
-     "surprised",
-     "真的？"
-    ],
-    [
-     "excited",
-     "那我现在就去学习！"
-    ]
    ]
   },
   {
    "num": 4,
    "speaker": "B",
-   "zh": "你为了火锅才学习吗？🙄",
-   "pinyin": "Nǐ wèile huǒguō cái xuéxí ma?",
+   "zh": "你是为了火锅才学习的？",
+   "pinyin": "Nǐ shì wèile huǒguō cái xuéxí de?",
+   "rd": "니 스 웨이러 훠궈 차이 쉐시 더?",
    "ko": "너 훠궈 때문에 공부하는 거야?",
-   "note": "为了+명사: '~을 위해서'. 才로 '그제서야/겨우' 뉘앙스.",
+   "note": "为了은 ~을 위해서, 才는 그제서야.",
    "tags": [
     "为了",
     "才"
    ],
+   "emotion": "tsukkomi",
    "lemmas": [
+    [
+     "是",
+     "是",
+     "shì"
+    ],
     [
      "火",
      "火",
@@ -191,21 +178,21 @@
      "学习",
      "xué xí"
     ]
-   ],
-   "rd": "니 웨이러 훠궈 차이 쉐시 마?",
-   "emotion": "tsukkomi"
+   ]
   },
   {
    "num": 5,
    "speaker": "A",
-   "zh": "火锅就是我的老师。",
-   "pinyin": "Huǒguō jiù shì wǒ de lǎoshī.",
+   "zh": "火锅就是我的老师啊。😏",
+   "pinyin": "Huǒguō jiùshì wǒ de lǎoshī a.",
+   "rd": "훠궈 주스 워 더 라오스 아.",
    "ko": "훠궈가 곧 내 스승이지.",
-   "note": "就是: '바로 ~이다' 단언 강조. 너스레 마무리.",
+   "note": "就是는 바로 ~이다.",
    "tags": [
     "就是",
     "유머"
    ],
+   "emotion": "amused",
    "lemmas": [
     [
      "火",
@@ -227,20 +214,20 @@
      "老师",
      "lǎo shī"
     ]
-   ],
-   "rd": "훠궈 주 스 워 더 라오스.",
-   "emotion": "amused"
+   ]
   },
   {
    "num": 6,
    "speaker": "B",
-   "zh": "那你今天要好好拜师啦。😜",
-   "pinyin": "Nà nǐ jīntiān yào hǎohǎo bàishī la.",
+   "zh": "那今天得好好跟老师学了。",
+   "pinyin": "Nà jīntiān děi hǎohǎo gēn lǎoshī xué le.",
+   "rd": "나 진톈 데이 하오하오 건 라오스 쉐 러.",
    "ko": "그럼 오늘 스승님께 잘 배워야겠네.",
-   "note": null,
+   "note": "",
    "tags": [
     "ext"
    ],
+   "emotion": "teasing",
    "lemmas": [
     [
      "那",
@@ -253,44 +240,39 @@
      "jīn tiān"
     ],
     [
-     "要",
-     "要",
-     "yào"
-    ],
-    [
      "好好",
      "好好",
      "hǎo hǎo"
     ],
     [
-     "拜",
-     "拜",
-     "bài"
+     "老师",
+     "老师",
+     "lǎo shī"
     ],
     [
-     "师",
-     "师",
-     "shī"
+     "学",
+     "学",
+     "xué"
     ]
-   ],
-   "rd": "나 니 진톈 야오 하오하오 바이스 라.",
-   "emotion": "teasing"
+   ]
   },
   {
    "num": 7,
    "speaker": "A",
-   "zh": "我这就去看书了。",
-   "pinyin": "Wǒ zhè jiù qù kànshū le.",
+   "zh": "我现在就去学习了。",
+   "pinyin": "Wǒ xiànzài jiù qù xuéxí le.",
+   "rd": "워 셴짜이 주 취 쉐시 러.",
    "ko": "지금 바로 공부하러 갈게.",
-   "note": null,
+   "note": "",
    "tags": [
     "ext"
    ],
+   "emotion": "cheerful",
    "lemmas": [
     [
-     "这",
-     "这",
-     "zhè"
+     "现在",
+     "现在",
+     "xiàn zài"
     ],
     [
      "就",
@@ -303,29 +285,24 @@
      "qù"
     ],
     [
-     "看",
-     "看",
-     "kàn"
-    ],
-    [
-     "书",
-     "书",
-     "shū"
+     "学习",
+     "学习",
+     "xué xí"
     ]
-   ],
-   "rd": "워 저 주 취 칸수 러.",
-   "emotion": "cheerful"
+   ]
   },
   {
    "num": 8,
    "speaker": "B",
-   "zh": "加油，考完请你吃辣的。",
-   "pinyin": "Jiāyóu, kǎowán qǐng nǐ chī là de.",
+   "zh": "加油，考完我请你吃辣的。",
+   "pinyin": "Jiāyóu, kǎo wán wǒ qǐng nǐ chī là de.",
+   "rd": "자유, 카오 완 워 칭 니 츠 라 더.",
    "ko": "화이팅, 시험 끝나면 매운 거 사줄게.",
-   "note": null,
+   "note": "",
    "tags": [
     "ext"
    ],
+   "emotion": "gentle",
    "lemmas": [
     [
      "加油",
@@ -357,9 +334,12 @@
      "辣",
      "là"
     ]
-   ],
-   "rd": "자유, 카오완 칭 니 츠 라 더.",
-   "emotion": "gentle"
+   ]
   }
- ]
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r3_life_l2_d19_2_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ }
 }

@@ -1,0 +1,51 @@
+=== r1_lines
+아래 10줄은 음성 합성기가 계속 잘못 읽는 줄이다(짧은 감탄·말줄임·외마디). 표시(>>)한 줄만 같은 뜻·같은 감정으로 새로 써라 — 음성이 또렷이 읽을 수 있는 완결된 문장으로(4~14자, 감탄사만·말줄임만으로 끝내지 말 것). 앞뒤 줄은 맥락이고 고치지 않는다.
+답 형식(코드 블록 하나, 10줄만): `편id 번호 화자 | 중국어 | 병음 | 한국어 | note | emotion=값`
+
+## r1_culture_a2 — 설날 밤, 샤오리 가족과 만두를 빚는다. 하나에만 동전이 들어 있다.
+   r1_culture_a2 5 B | 对，吃到的人明年好运！ | Duì, chī dào de rén míngnián hǎo yùn! | 응, 먹은 사람은 내년에 운이 좋대! | 明年 = 내년 | emotion=cheerful
+>> r1_culture_a2 6 A | 啊！我吃到了……三个？！ | À! Wǒ chī dào le…… sān ge?! | 앗! 나 먹었어…… 세 개?! | 吃到 = 먹게 되다 | emotion=surprised:啊！我吃到了……|shout:三个？！
+   r1_culture_a2 7 B | 我都放在你那盘里了。 | Wǒ dōu fàng zài nǐ nà pán lǐ le. | 내가 다 네 접시에 넣었어. | 放在 = ~에 넣다 | emotion=shy
+
+## r1_culture_a7 — 샤오리 할아버지 댁. 학습자가 준비한 선물은 예쁜 탁상시계.
+   r1_culture_a7 3 A | 一个钟，超好看的。 | Yí ge zhōng, chāo hǎokàn de. | 시계, 완전 예뻐. | 钟 = 시계 | emotion=excited
+>> r1_culture_a7 4 B | 钟？不行不行！ | Zhōng? Bù xíng bù xíng! | 시계? 안 돼 안 돼! | 不行 = 안 된다 | emotion=shout
+   r1_culture_a7 5 A | 为什么？很贵的！ | Wèishénme? Hěn guì de! | 왜? 엄청 비싼 건데! | 贵 = 비싸다 | emotion=surprised
+
+## r1_culture_c5 — 아침마다 하오란이 「밥 먹었어?」라고 묻는다. 학습자는 매번 진지하게 메뉴를 보고한다.
+   r1_culture_c5 4 A | 米饭、鱼、汤，还有苹果 | Mǐfàn, yú, tāng, hái yǒu píngguǒ | 밥, 생선, 국, 그리고 사과🍎 | 还有 = 그리고 | emotion=cheerful
+>> r1_culture_c5 5 B | 不用都说啊，就是打招呼。 | Bú yòng dōu shuō a, jiù shì dǎ zhāohu. | 다 말 안 해도 돼, 그냥 인사야. | 打招呼 = 인사하다 | emotion=tsukkomi
+   r1_culture_c5 6 A | 啊？像「你好」？ | À? Xiàng nǐ hǎo? | 어? 「안녕」처럼? | 像 = ~처럼 | emotion=surprised
+
+## r1_friends_a10 — 시험 전날 밤. 하오란이 같이 밤새자더니 10분 만에 잠들었다.
+   r1_friends_a10 5 B | 没有……我在想你。 | Méiyǒu…… wǒ zài xiǎng nǐ. | 아니…… 너 생각하고 있었어. | 想 = 생각하다·그리워하다 | emotion=gentle
+>> r1_friends_a10 6 A | 想我？眼睛闭着啊。🙄 | Xiǎng wǒ? Yǎnjing bìzhe a. | 나를? 눈 감고 있잖아. | 闭着 = 감은 채 | emotion=tsukkomi
+   r1_friends_a10 7 B | ……就五分钟。再五分钟。 | …… Jiù wǔ fēnzhōng. Zài wǔ fēnzhōng. | ……딱 5분. 5분만 더. | 再 = 더 | emotion=gentle
+
+## r1_friends_a11 — 위에가 학습자를 헬스장에 끌고 왔다. 첫 기구부터 사달이 난다.
+   r1_friends_a11 3 B | 才两分钟就废了？ | Cái liǎng fēnzhōng jiù fèi le? | 겨우 2분인데 끝났다고? | 才 = 겨우 | emotion=tsukkomi
+>> r1_friends_a11 4 A | 啊，机器自己加速了！ | À, jīqì zìjǐ jiāsù le! | 아, 기계가 혼자 빨라져! | 加速 = 가속하다 | emotion=flustered
+   r1_friends_a11 5 B | 你按着加速键呢！🙄 | Nǐ ànzhe jiāsù jiàn ne! | 너 가속 버튼 누르고 있잖아! | 按着 = 누르고 있다 | emotion=tsukkomi
+
+## r1_friends_c4 — 학습자의 폰이 주머니에서 혼자 위에에게 음성 메시지 열 개를 보냈다.
+   r1_friends_c4 7 B | 已经发群里了，嘿嘿。😜 | Yǐjīng fā qún li le, hēihēi. | 벌써 단톡방에 올렸지, 헤헤. | 群 = 단톡방 | emotion=teasing
+>> r1_friends_c4 8 A | 悦！！！我不活了！ | Yuè!!! Wǒ bù huó le! | 위에!!! 나 못 살아! | 不活了 = 못 살겠다 | emotion=shout
+
+## r1_love_a13 — 샤오리가 두 손에 짐을 든 채 머리를 묶어 달라고 한다.
+   r1_love_a13 6 A | 像一棵小树苗。 | Xiàng yì kē xiǎo shùmiáo. | 작은 묘목 같아. | 像 = ~같다 | emotion=amused
+>> r1_love_a13 7 B | 不管了，你扎的就好看。 | Bù guǎn le, nǐ zhā de jiù hǎokàn. | 됐어, 네가 묶은 거면 예뻐. | 不管 = 상관없다 | emotion=annoyed:不管了，|gentle:你扎的就好看。
+   r1_love_a13 8 A | ……你这样真的好看。 | …… Nǐ zhèyàng zhēn de hǎokàn. | ……너 이래도 진짜 예뻐. | 这样 = 이렇게 | emotion=gentle
+
+## r1_travel_a11 — 만리장성. 열심히 계단을 세어 주는 아저씨 때문에 학습자는 더 지친다.
+   r1_travel_a11 5 B | 我帮你数，别怕！一！ | Wǒ bāng nǐ shǔ, bié pà! Yī! | 내가 세 줄게요, 겁내지 마요! 하나! | 数 = 세다 | emotion=excited
+>> r1_travel_a11 6 A | 大叔，别数……好累…… | Dàshū, bié shǔ…… hǎo lèi…… | 아저씨, 세지 마세요…… 힘들어요…… | 累 = 피곤하다 | emotion=annoyed:大叔，别数……|sad:好累……
+   r1_travel_a11 7 B | 二百九十九，三百！到了！ | Èrbǎi jiǔshíjiǔ, sānbǎi! Dào le! | 299, 300! 다 왔어요! | 到了 = 도착했다 | emotion=excited
+
+## r1_travel_a12 — 역 앞. 위에가 기차표 두 장을 들고 나타난다.
+>> r1_travel_a12 1 B | 喏，两张票。 | Nuò, liǎng zhāng piào. | 자, 표 두 장. | 票 = 표 | emotion=cheerful
+   r1_travel_a12 2 A | 啊？我的？我没买啊。😮 | À? Wǒ de? Wǒ méi mǎi a. | 어? 내 거? 나 안 샀는데. | 没买 = 사지 않았다 | emotion=surprised
+
+## r1_travel_c3 — 여행 중인 학습자가 샤오리에게 기념품 뭐 살지 묻는다. 샤오리의 대답은 「아무거나」.
+   r1_travel_c3 4 B | 可爱死了！买买！ | Kěài sǐ le! Mǎi mǎi! | 귀여워 죽겠네! 사 사! | ~死了 = ~해 죽겠다 | emotion=excited
+>> r1_travel_c3 5 A | 买了，二十个。 | Mǎi le, èrshí ge. | 샀어, 스무 개. | 二十 = 20 | emotion=cheerful
+   r1_travel_c3 6 B | 二十个？！你疯了？！ | Èrshí ge?! Nǐ fēng le?! | 스무 개?! 너 미쳤어?! | 疯了 = 미쳤다 | emotion=shout

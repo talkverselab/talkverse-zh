@@ -171,10 +171,10 @@
   {
    "num": 6,
    "speaker": "A",
-   "zh": "大叔，别数……好累……",
-   "pinyin": "Dàshū, bié shǔ…… hǎo lèi……",
-   "rd": "다수, 볘 수…… 하오 레이……",
-   "ko": "아저씨, 세지 마세요…… 힘들어요……",
+   "zh": "大叔别数了我好累。",
+   "pinyin": "Dàshū bié shǔ le wǒ hǎo lèi.",
+   "rd": "다수 볘 수 러 워 하오 레이.",
+   "ko": "아저씨 세지 마세요 너무 힘들어요.",
    "note": "累 = 피곤하다",
    "tags": [
     "form:不用"
@@ -201,17 +201,7 @@
      "lèi"
     ]
    ],
-   "emotion": "annoyed",
-   "segs": [
-    [
-     "annoyed",
-     "大叔，别数……"
-    ],
-    [
-     "sad",
-     "好累……"
-    ]
-   ]
+   "emotion": "annoyed"
   },
   {
    "num": 7,
@@ -282,6 +272,7 @@
  "review": {
   "grok_rewrite": "data/review/r1_travel_a11_grok_rewrite.md",
   "model": "전문가",
-  "final": "세션 리뷰"
+  "final": "세션 리뷰",
+  "r1_lines_1120": "#6 Grok(빠른) 다시 씀 — TTS 오독(tools/grok/zh_rw/out/r1_lines.md)"
  }
 }

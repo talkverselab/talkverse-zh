@@ -1,0 +1,13 @@
+=== r4_love_l3_d04_1
+title: 왕형 ①
+scene: 회사 동료 王哥가 둘 사이를 눈치채자, 소문 관리를 상의한다.
+B: 小丽
+register: 반말(친구·연인)
+1 A | 小丽，今天王哥突然问我了。 | Xiǎolì, jīntiān Wánggē tūrán wèn wǒ le. | 샤오리, 오늘 왕형이 갑자기 물어봤어. | 突然=갑자기 | emotion=flustered
+2 B | 问什么了？发现什么了吗？ | Wèn shénme le? Fāxiàn shénme le ma? | 뭘 물어봤는데? 뭐 눈치챈 거야? | 发现=알아차리다, 吗=의문 | emotion=worried
+3 A | 问我是不是在谈恋爱。 | Wèn wǒ shìbushì zài tánliàn'ài. | 나한테 연애하는 거 아니냐고 물었어. | 是不是=확인 의문, 谈恋爱=연애하다 | emotion=flustered
+4 B | 天哪！你是怎么回答的？ | Tiān na! Nǐ shì zěnme huídá de? | 세상에! 그래서 뭐라고 대답했어? | 是…的=방식을 묻다 | emotion=surprised
+5 A | 我一下子脸就红了。 | Wǒ yíxiàzi liǎn jiù hóng le. | 얼굴이 순식간에 빨개져 버렸어. | 一下子=순식간에, 就=바로 | emotion=shy
+6 B | 哈哈，那不就等于承认了吗？ | Hāhā, nà bú jiù děngyú chéngrèn le ma? | 하하, 그럼 인정한 거나 마찬가지잖아? | 不就…吗=반문, 等于=~와 같다 | emotion=amused
+7 A | 王哥说他早就看出来了。 | Wánggē shuō tā zǎojiù kàn chūlái le. | 왕형이 진작에 알아봤대. | 看出来=알아채다, 早就=진작에 | emotion=flustered
+8 B | 公司里不会传出去吧？ | Gōngsī li bú huì chuán chūqù ba? | 회사에 소문 퍼지는 거 아니야? | 传出去=퍼져 나가다 | emotion=worried

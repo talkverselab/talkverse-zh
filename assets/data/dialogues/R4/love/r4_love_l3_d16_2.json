@@ -19,20 +19,17 @@
   {
    "num": 1,
    "speaker": "A",
-   "zh": "还有，你吃饭吃得特别快。",
-   "pinyin": "Hái yǒu, nǐ chī fàn chī de tèbié kuài.",
+   "zh": "而且你吃饭吃得很快。",
+   "pinyin": "Érqiě nǐ chīfàn chī de hěn kuài.",
+   "rd": "얼체 니 츠판 츠 더 헌 콰이.",
    "ko": "그리고 너 밥 엄청 빨리 먹더라.",
-   "note": "동사 반복 + 정도보어 得",
+   "note": "동사 반복+‘得’ 정도보어",
    "tags": [
     "습관",
     "정도보어"
    ],
+   "emotion": "teasing",
    "lemmas": [
-    [
-     "还有",
-     "还有",
-     "hái yǒu"
-    ],
     [
      "吃饭",
      "吃饭",
@@ -44,30 +41,25 @@
      "chī"
     ],
     [
-     "特别",
-     "特别",
-     "tè bié"
-    ],
-    [
-     "快",
-     "快",
-     "kuài"
+     "很快",
+     "很快",
+     "hěn kuài"
     ]
-   ],
-   "rd": "하이 유, 니 츠 판 츠 더 터볘 콰이.",
-   "emotion": "teasing"
+   ]
   },
   {
    "num": 2,
    "speaker": "B",
    "zh": "四川人都这样，哈哈。😏",
-   "pinyin": "Sìchuān rén dōu zhèyàng, hāhā.",
+   "pinyin": "Sìchuān rén dōu zhèyàng, hāha.",
+   "rd": "쓰촨 런 더우 저양, 하하.",
    "ko": "쓰촨 사람은 다 그래, 하하.",
-   "note": "都 (전체 총괄)",
+   "note": "‘都’는 전체 총괄",
    "tags": [
     "유머",
     "쓰촨"
    ],
+   "emotion": "amused",
    "lemmas": [
     [
      "四川",
@@ -89,41 +81,26 @@
      "这样",
      "zhè yàng"
     ]
-   ],
-   "rd": "쓰촨 런 더우 저양, 하하.",
-   "emotion": "amused"
+   ]
   },
   {
    "num": 3,
    "speaker": "B",
-   "zh": "在一起越久，越了解对方。",
-   "pinyin": "Zài yìqǐ yuè jiǔ, yuè liǎojiě duìfāng.",
+   "zh": "在一起越久越了解对方。",
+   "pinyin": "Zài yìqǐ yuè jiǔ yuè liǎojiě duìfāng.",
+   "rd": "짜이 이치 웨 주 웨 랴오제 두이팡.",
    "ko": "같이 있는 시간이 길수록 서로를 더 알게 돼.",
-   "note": "越…越… (~할수록 ~하다)",
+   "note": "‘越…越…’는 ‘~할수록 ~하다’",
    "tags": [
     "감정",
     "越…越"
    ],
+   "emotion": "gentle",
    "lemmas": [
     [
      "一起",
      "一起",
      "yì qǐ"
-    ],
-    [
-     "越",
-     "越",
-     "yuè"
-    ],
-    [
-     "久",
-     "久",
-     "jiǔ"
-    ],
-    [
-     "越",
-     "越",
-     "yuè"
     ],
     [
      "了解",
@@ -135,27 +112,22 @@
      "对方",
      "duì fāng"
     ]
-   ],
-   "rd": "짜이 이치 웨 주, 웨 랴오제 두이팡.",
-   "emotion": "gentle"
+   ]
   },
   {
    "num": 4,
    "speaker": "A",
-   "zh": "是啊，连习惯都知道了。",
-   "pinyin": "Shì a, lián xíguàn dōu zhīdào le.",
+   "zh": "对，连习惯都知道了。",
+   "pinyin": "Duì, lián xíguàn dōu zhīdào le.",
+   "rd": "두이, 롄 시관 더우 즈다오 러.",
    "ko": "맞아, 습관까지 다 알게 됐잖아.",
-   "note": "连…都… (~조차도)",
+   "note": "‘连…都…’는 ‘~조차도’",
    "tags": [
     "공감",
     "连…都"
    ],
+   "emotion": "cheerful",
    "lemmas": [
-    [
-     "是",
-     "是",
-     "shì"
-    ],
     [
      "习惯",
      "习惯",
@@ -171,21 +143,21 @@
      "知道",
      "zhī dào"
     ]
-   ],
-   "rd": "스 아, 롄 시관 더우 즈다오 러.",
-   "emotion": "cheerful"
+   ]
   },
   {
    "num": 5,
    "speaker": "B",
-   "zh": "以后我们会更了解彼此的。",
-   "pinyin": "Yǐhòu wǒmen huì gèng liǎojiě bǐcǐ de.",
+   "zh": "以后我们会更了解对方的。",
+   "pinyin": "Yǐhòu wǒmen huì gèng liǎojiě duìfāng de.",
+   "rd": "이허우 워먼 후이 겅 랴오제 두이팡 더.",
    "ko": "앞으로 우리 서로를 더 잘 알게 될 거야.",
-   "note": "会…的 (미래에 대한 확신)",
+   "note": "‘会…的’는 미래에 대한 확신",
    "tags": [
     "애정",
     "미래"
    ],
+   "emotion": "gentle",
    "lemmas": [
     [
      "以后",
@@ -213,24 +185,24 @@
      "liǎo jiě"
     ],
     [
-     "彼此",
-     "彼此",
-     "bǐ cǐ"
+     "对方",
+     "对方",
+     "duì fāng"
     ]
-   ],
-   "rd": "이허우 워먼 후이 겅 랴오제 비츠 더.",
-   "emotion": "gentle"
+   ]
   },
   {
    "num": 6,
    "speaker": "A",
-   "zh": "那我也要继续观察你。",
-   "pinyin": "Nà wǒ yě yào jìxù guānchá nǐ.",
+   "zh": "那我也得继续观察你。",
+   "pinyin": "Nà wǒ yě děi jìxù guānchá nǐ.",
+   "rd": "나 워 예 데이 지쉬 관차 니.",
    "ko": "그럼 나도 계속 너 관찰해야겠다.",
-   "note": null,
+   "note": "",
    "tags": [
     "ext"
    ],
+   "emotion": "teasing",
    "lemmas": [
     [
      "那",
@@ -243,11 +215,6 @@
      "yě"
     ],
     [
-     "要",
-     "要",
-     "yào"
-    ],
-    [
      "继续",
      "继续",
      "jì xù"
@@ -257,20 +224,20 @@
      "观察",
      "guān chá"
     ]
-   ],
-   "rd": "나 워 예 야오 지쉬 관차 니.",
-   "emotion": "teasing"
+   ]
   },
   {
    "num": 7,
    "speaker": "B",
-   "zh": "别光观察，也要爱护我哦。😜",
-   "pinyin": "Biéguāng guānchá, yě yào àihù wǒ ó.",
+   "zh": "别光观察，也得疼我啊。😜",
+   "pinyin": "Bié guāng guānchá, yě děi téng wǒ a.",
+   "rd": "볘 광 관차, 예 데이 텅 워 아.",
    "ko": "관찰만 하지 말고, 아껴도 줘야지.",
-   "note": null,
+   "note": "",
    "tags": [
     "ext"
    ],
+   "emotion": "teasing",
    "lemmas": [
     [
      "观察",
@@ -283,29 +250,24 @@
      "yě"
     ],
     [
-     "要",
-     "要",
-     "yào"
-    ],
-    [
-     "爱护",
-     "爱护",
-     "ài hù"
+     "疼",
+     "疼",
+     "téng"
     ]
-   ],
-   "rd": "볘광 관차, 예 야오 아이후 워 오.",
-   "emotion": "teasing"
+   ]
   },
   {
    "num": 8,
    "speaker": "A",
-   "zh": "放心，我会一直宠着你。",
-   "pinyin": "Fàngxīn, wǒhuì yìzhí chǒng zhe nǐ.",
+   "zh": "放心，我会一直疼你。",
+   "pinyin": "Fàngxīn, wǒ huì yìzhí téng nǐ.",
+   "rd": "팡신, 워 후이 이즈 텅 니.",
    "ko": "걱정 마, 계속 예뻐해 줄게.",
-   "note": null,
+   "note": "",
    "tags": [
     "ext"
    ],
+   "emotion": "gentle",
    "lemmas": [
     [
      "放心",
@@ -323,13 +285,16 @@
      "yì zhí"
     ],
     [
-     "宠",
-     "宠",
-     "chǒng"
+     "疼",
+     "疼",
+     "téng"
     ]
-   ],
-   "rd": "팡신, 워후이 이즈 충 저 니.",
-   "emotion": "gentle"
+   ]
   }
- ]
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r4_love_l3_d16_2_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ }
 }

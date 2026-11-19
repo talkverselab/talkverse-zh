@@ -1,0 +1,8 @@
+1 A: 难怪这么懂吃！ / Nánguài zhème dǒng chī! / 어쩐지 이렇게 먹는 걸 잘 알더라! / 难怪는 ‘어쩐지’, 懂은 ‘알다’. / amused
+2 B: 小时候每天在店里帮忙。 / Xiǎoshíhou měitiān zài diàn lǐ bāngmáng. / 어릴 때 매일 가게에서 도왔어요. / 小时候은 ‘어릴 때’, 帮忙은 ‘돕다’. / gentle
+3 A: 真好，想去看看。 / Zhēn hǎo, xiǎng qù kànkan. / 좋네요, 가보고 싶어요. / 去看看은 동사 중첩 ‘가보다’. / gentle
+4 B: 去我老家？这么快见家长？ / Qù wǒ lǎojiā? Zhème kuài jiàn jiāzhǎng? / 우리 고향에요? 벌써 부모님 뵈러 가게요? / 见家长은 ‘부모님 뵙기’. / teasing
+5 A: 啊，不是不是……也是，嘿嘿。 / A, bú shì bú shì…… Yě shì, hēihēi. / 아, 아니 아니… 맞기도 하고요, 헤헤. / 不是…也是는 양보 후 인정. / flustered
+6 B: 脸红了！哈哈哈。 / Liǎn hóng le! Hāhāhā. / 얼굴 빨개졌어요! 하하하. / 脸红了는 얼굴이 붉어지는 변화. / amused
+7 A: 太阳太晒了嘛！ / Tàiyáng tài shài le ma! / 해가 너무 세서 그래요! / 嘛는 핑계 어투. / flustered
+8 B: 现在是晚上哦，{name}。 / Xiànzài shì wǎnshang ō, {name}. / 지금 밤인데요, {name}. / 现在은 ‘지금’, 哦는 지적. / tsukkomi

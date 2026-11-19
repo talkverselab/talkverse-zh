@@ -21,12 +21,14 @@
    "speaker": "B",
    "zh": "大伟又在群里发消息了。",
    "pinyin": "Dàwěi yòu zài qún lǐ fā xiāoxi le.",
+   "rd": "다웨이 유 짜이 췬 리 파 샤오시 러.",
    "ko": "다웨이가 또 단톡방에 메시지 보냈어.",
-   "note": "又……了 (또 반복됨)",
+   "note": "又…了 는 또 반복.",
    "tags": [
     "chat",
     "grammar:又了"
    ],
+   "emotion": "neutral",
    "lemmas": [
     [
      "又",
@@ -53,21 +55,21 @@
      "消息",
      "xiāo xī"
     ]
-   ],
-   "rd": "다웨이 유 짜이 췬 리 파 샤오시 러.",
-   "emotion": "neutral"
+   ]
   },
   {
    "num": 2,
    "speaker": "A",
-   "zh": "他说什么？",
-   "pinyin": "Tā shuō shénme?",
+   "zh": "他说什么了？",
+   "pinyin": "Tā shuō shénme le?",
+   "rd": "타 숴 선머 러?",
    "ko": "걔가 뭐래?",
-   "note": "의문사 什么 의문문",
+   "note": "什么 는 무엇.",
    "tags": [
     "chat",
     "question"
    ],
+   "emotion": "neutral",
    "lemmas": [
     [
      "说",
@@ -79,21 +81,21 @@
      "什么",
      "shén me"
     ]
-   ],
-   "rd": "타 숴 선머?",
-   "emotion": "neutral"
+   ]
   },
   {
    "num": 3,
    "speaker": "B",
    "zh": "他说周六一起吃饭。",
    "pinyin": "Tā shuō zhōuliù yìqǐ chīfàn.",
+   "rd": "타 숴 저우류 이치 츠판.",
    "ko": "토요일에 같이 밥 먹재.",
-   "note": "说로 간접 인용 (전달 화법)",
+   "note": "说 는 간접 인용.",
    "tags": [
     "plan",
     "reported-speech"
    ],
+   "emotion": "neutral",
    "lemmas": [
     [
      "说",
@@ -110,21 +112,21 @@
      "吃饭",
      "chī fàn"
     ]
-   ],
-   "rd": "타 숴 저우류 이치 츠판.",
-   "emotion": "neutral"
+   ]
   },
   {
    "num": 4,
    "speaker": "A",
    "zh": "周六我要加班啊。😒",
    "pinyin": "Zhōuliù wǒ yào jiābān a.",
+   "rd": "저우류 워 야오 자반 아.",
    "ko": "토요일에 나 야근해야 돼.",
-   "note": "要 (해야 함) + 어기조사 啊",
+   "note": "要 는 해야 함.",
    "tags": [
     "work",
     "particle:啊"
    ],
+   "emotion": "annoyed",
    "lemmas": [
     [
      "要",
@@ -136,21 +138,21 @@
      "加班",
      "jiā bān"
     ]
-   ],
-   "rd": "저우류 워 야오 자반 아.",
-   "emotion": "annoyed"
+   ]
   },
   {
    "num": 5,
    "speaker": "B",
-   "zh": "那我说周日？",
-   "pinyin": "Nà wǒ shuō zhōurì?",
+   "zh": "那改周日怎么样？",
+   "pinyin": "Nà gǎi zhōurì zěnmeyàng?",
+   "rd": "나 가이 저우르 쩐머양?",
    "ko": "그럼 일요일이라고 할까?",
-   "note": "那 (그럼) 화제 이어받기",
+   "note": "那 는 그럼 이어받기.",
    "tags": [
     "plan",
     "connector:那"
    ],
+   "emotion": "neutral",
    "lemmas": [
     [
      "那",
@@ -158,30 +160,35 @@
      "nà"
     ],
     [
-     "说",
-     "说",
-     "shuō"
+     "改",
+     "改",
+     "gǎi"
     ],
     [
      "日",
      "日",
      "rì"
+    ],
+    [
+     "怎么样",
+     "怎么样",
+     "zěn me yàng"
     ]
-   ],
-   "rd": "나 워 숴 저우르?",
-   "emotion": "neutral"
+   ]
   },
   {
    "num": 6,
    "speaker": "A",
    "zh": "行，周日可以。",
    "pinyin": "Xíng, zhōurì kěyǐ.",
+   "rd": "싱, 저우르 커이.",
    "ko": "좋아, 일요일 괜찮아.",
-   "note": "구어체 승낙 行 (오케이)",
+   "note": "行 는 오케이.",
    "tags": [
     "plan",
     "colloquial"
    ],
+   "emotion": "cheerful",
    "lemmas": [
     [
      "行",
@@ -193,21 +200,21 @@
      "日",
      "rì"
     ]
-   ],
-   "rd": "싱, 저우르 커이.",
-   "emotion": "cheerful"
+   ]
   },
   {
    "num": 7,
    "speaker": "B",
-   "zh": "他又说周日他有事。",
-   "pinyin": "Tā yòu shuō zhōurì tā yǒu shì.",
+   "zh": "他又说周日有事。",
+   "pinyin": "Tā yòu shuō zhōurì yǒushì.",
+   "rd": "타 유 숴 저우르 유스.",
    "ko": "걔가 또 일요일엔 일이 있대.",
-   "note": "有事 (볼일이 있다)",
+   "note": "有事 는 볼일이 있다.",
    "tags": [
     "chaos",
     "expression:有事"
    ],
+   "emotion": "annoyed",
    "lemmas": [
     [
      "又",
@@ -234,21 +241,21 @@
      "事",
      "shì"
     ]
-   ],
-   "rd": "타 유 숴 저우르 타 유 스.",
-   "emotion": "annoyed"
+   ]
   },
   {
    "num": 8,
    "speaker": "A",
-   "zh": "那他到底哪天有空？",
-   "pinyin": "Nà tā dàodǐ nǎ tiān yǒu kòng?",
+   "zh": "那他到底什么时候有空？",
+   "pinyin": "Nà tā dàodǐ shénme shíhou yǒu kòng?",
+   "rd": "나 타 다오디 선머 스허우 유 쿵?",
    "ko": "그럼 걔 대체 언제 시간 되는데?",
-   "note": "到底 (도대체) 추궁 부사",
+   "note": "到底 는 도대체.",
    "tags": [
     "chaos",
     "adverb:到底"
    ],
+   "emotion": "annoyed",
    "lemmas": [
     [
      "那",
@@ -261,14 +268,14 @@
      "dào dǐ"
     ],
     [
-     "哪",
-     "哪",
-     "nǎ"
+     "什么",
+     "什么",
+     "shén me"
     ],
     [
-     "天",
-     "天",
-     "tiān"
+     "时候",
+     "时候",
+     "shí hòu"
     ],
     [
      "有",
@@ -280,9 +287,12 @@
      "空",
      "kōng"
     ]
-   ],
-   "rd": "나 타 다오디 나 톈 유 쿵?",
-   "emotion": "annoyed"
+   ]
   }
- ]
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r4_life_l2_d10_1_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ }
 }

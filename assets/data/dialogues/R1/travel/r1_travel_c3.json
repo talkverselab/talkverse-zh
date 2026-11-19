@@ -151,10 +151,10 @@
   {
    "num": 5,
    "speaker": "A",
-   "zh": "买了，二十个。",
-   "pinyin": "Mǎi le, èrshí ge.",
-   "rd": "마이 러, 얼스 거.",
-   "ko": "샀어, 스무 개.",
+   "zh": "我买了二十个。",
+   "pinyin": "Wǒ mǎi le èrshí ge.",
+   "rd": "워 마이 러 얼스 거.",
+   "ko": "나 스무 개 샀어.",
    "note": "二十 = 20",
    "tags": [
     "form:了"
@@ -277,6 +277,7 @@
  "review": {
   "grok_rewrite": "data/review/r1_travel_c3_grok_rewrite.md",
   "model": "전문가",
-  "final": "세션 리뷰"
+  "final": "세션 리뷰",
+  "r1_lines_1120": "#5 Grok(빠른) 다시 씀 — TTS 오독(tools/grok/zh_rw/out/r1_lines.md)"
  }
 }

@@ -20,13 +20,15 @@
    "num": 1,
    "speaker": "A",
    "zh": "连梦里她都在生气。",
-   "pinyin": "Lián mèng lǐ tā dōu zài shēngqì.",
+   "pinyin": "Lián mèng li tā dōu zài shēngqì.",
+   "rd": "롄 멍 리 타 더우 짜이 성치.",
    "ko": "꿈속에서까지 그녀는 화가 나 있다.",
-   "note": "'连…都' 강조 구문 (~조차)",
+   "note": "‘连…都’로 ‘~조차’ 강조",
    "tags": [
     "连…都",
     "꿈"
    ],
+   "emotion": "sad",
    "lemmas": [
     [
      "都",
@@ -38,21 +40,21 @@
      "生气",
      "shēng qì"
     ]
-   ],
-   "rd": "롄 멍 리 타 더우 짜이 성치.",
-   "emotion": "sad"
+   ]
   },
   {
    "num": 2,
    "speaker": "B",
    "zh": "冰箱里还有他爱吃的饺子。",
-   "pinyin": "Bīngxiāng lǐ hái yǒu tā ài chī de jiǎozi.",
+   "pinyin": "Bīngxiāng li hái yǒu tā ài chī de jiǎozi.",
+   "rd": "빙샹 리 하이 유 타 아이 츠 더 자오쯔.",
    "ko": "냉장고엔 아직 그가 좋아하는 만두가 있는데.",
-   "note": "존재문 '장소+里+有' + 관형절",
+   "note": "존재문 ‘里+有’ + 관형절",
    "tags": [
     "존재문",
     "그리움"
    ],
+   "emotion": "sad",
    "lemmas": [
     [
      "冰箱",
@@ -84,26 +86,26 @@
      "饺子",
      "jiǎo zi"
     ]
-   ],
-   "rd": "빙샹 리 하이 유 타 아이 츠 더 자오쯔.",
-   "emotion": "sad"
+   ]
   },
   {
    "num": 3,
    "speaker": "A",
-   "zh": "够了，再等就是傻瓜。",
-   "pinyin": "Gòu le, zài děng jiù shì shǎguā.",
+   "zh": "算了，再等下去就傻了。",
+   "pinyin": "Suàn le, zài děng xiàqù jiù shǎ le.",
+   "rd": "쏸 러, 짜이 덩 샤취 주 사 러.",
    "ko": "됐어, 더 기다리면 바보지.",
-   "note": "'再…就…' 조건 관계",
+   "note": "‘再…就…’ 조건 관계",
    "tags": [
     "再…就",
     "결심"
    ],
+   "emotion": "annoyed",
    "lemmas": [
     [
-     "够",
-     "够",
-     "gòu"
+     "算了",
+     "算",
+     "suàn"
     ],
     [
      "再",
@@ -111,35 +113,35 @@
      "zài"
     ],
     [
-     "就是",
-     "就是",
-     "jiù shì"
+     "下去",
+     "下去",
+     "xià qù"
+    ],
+    [
+     "就",
+     "就",
+     "jiù"
     ],
     [
      "傻",
      "傻",
      "shǎ"
-    ],
-    [
-     "瓜",
-     "瓜",
-     "guā"
     ]
-   ],
-   "rd": "거우 러, 짜이 덩 주 스 사과.",
-   "emotion": "annoyed"
+   ]
   },
   {
    "num": 4,
    "speaker": "B",
-   "zh": "如果他现在打来，我就接。",
-   "pinyin": "Rúguǒ tā xiànzài dǎ lái, wǒ jiù jiē.",
+   "zh": "如果现在来电话，我就接。",
+   "pinyin": "Rúguǒ xiànzài lái diànhuà, wǒ jiù jiē.",
+   "rd": "루궈 셴짜이 라이 뎬화, 워 주 제.",
    "ko": "지금 전화 오면, 바로 받아줄 거야.",
-   "note": "'如果…就…' 가정문",
+   "note": "‘如果…就…’ 가정문",
    "tags": [
     "如果…就",
     "화해"
    ],
+   "emotion": "worried",
    "lemmas": [
     [
      "现在",
@@ -147,14 +149,14 @@
      "xiàn zài"
     ],
     [
-     "打",
-     "打",
-     "dǎ"
-    ],
-    [
      "来",
      "来",
      "lái"
+    ],
+    [
+     "电话",
+     "电话",
+     "diàn huà"
     ],
     [
      "就",
@@ -166,21 +168,21 @@
      "接",
      "jiē"
     ]
-   ],
-   "rd": "루궈 타 셴짜이 다 라이, 워 주 제.",
-   "emotion": "worried"
+   ]
   },
   {
    "num": 5,
    "speaker": "A",
-   "zh": "走，去她最爱的火锅店！",
-   "pinyin": "Zǒu, qù tā zuì ài de huǒguō diàn!",
+   "zh": "走，去她最喜欢的火锅店！",
+   "pinyin": "Zǒu, qù tā zuì xǐhuan de huǒguō diàn!",
+   "rd": "쩌우, 취 타 쭈이 시환 더 훠궈 뎬!",
    "ko": "가자, 그녀가 제일 좋아하는 훠궈집으로!",
-   "note": "청유의 走 + 최상급 最 + 관형어 的",
+   "note": "‘走’ 청유 + ‘最’ + ‘的’",
    "tags": [
     "最",
     "결심"
    ],
+   "emotion": "excited",
    "lemmas": [
     [
      "走",
@@ -198,9 +200,9 @@
      "zuì"
     ],
     [
-     "爱",
-     "爱",
-     "ài"
+     "喜欢",
+     "喜欢",
+     "xǐ huān"
     ],
     [
      "火",
@@ -217,26 +219,21 @@
      "店",
      "diàn"
     ]
-   ],
-   "rd": "쩌우, 취 타 쭈이 아이 더 훠궈 뎬!",
-   "emotion": "excited"
+   ]
   },
   {
    "num": 6,
    "speaker": "B",
-   "zh": "干脆，我也去吃火锅冷静一下。",
-   "pinyin": "Gāncuì, wǒ yě qù chīhuǒguō lěngjìng yīxià.",
+   "zh": "不如我也去吃火锅冷静一下。",
+   "pinyin": "Bùrú wǒ yě qù chī huǒguō lěngjìng yíxià.",
+   "rd": "부루 워 예 취 츠 훠궈 렁징 이샤.",
    "ko": "차라리, 나도 마음 좀 가라앉히러 훠궈나 먹으러 가야겠다.",
-   "note": null,
+   "note": "",
    "tags": [
     "ext"
    ],
+   "emotion": "neutral",
    "lemmas": [
-    [
-     "干脆",
-     "干脆",
-     "gān cuì"
-    ],
     [
      "也",
      "也",
@@ -272,30 +269,25 @@
      "一下",
      "yī xià"
     ]
-   ],
-   "rd": "간추이, 워 예 취 츠훠궈 렁징 이샤.",
-   "emotion": "neutral"
+   ]
   },
   {
    "num": 7,
    "speaker": "A",
-   "zh": "刚好，我也想去那家店。",
-   "pinyin": "Gānghǎo, wǒ yě xiǎng qù nàjiādiàn.",
+   "zh": "正好，我也想去那家店。",
+   "pinyin": "Zhènghǎo, wǒ yě xiǎng qù nà jiā diàn.",
+   "rd": "정하오, 워 예 샹 취 나 자 뎬.",
    "ko": "마침, 나도 그 가게에 가고 싶었어.",
-   "note": null,
+   "note": "",
    "tags": [
     "ext"
    ],
+   "emotion": "surprised",
    "lemmas": [
     [
-     "刚",
-     "刚",
-     "gāng"
-    ],
-    [
-     "好",
-     "好",
-     "hǎo"
+     "正好",
+     "正好",
+     "zhèng hǎo"
     ],
     [
      "也",
@@ -327,25 +319,25 @@
      "店",
      "diàn"
     ]
-   ],
-   "rd": "강하오, 워 예 샹 취 나자뎬.",
-   "emotion": "surprised"
+   ]
   },
   {
    "num": 8,
    "speaker": "B",
-   "zh": "取了号，坐在门口等着。",
-   "pinyin": "Qǔ le hào, zuòzài ménkǒu děng zhe.",
+   "zh": "拿了号，坐在门口等。",
+   "pinyin": "Ná le hào, zuò zài ménkǒu děng.",
+   "rd": "나 러 하오, 쭤 짜이 먼커우 덩.",
    "ko": "번호표를 받고, 입구에 앉아 기다린다.",
-   "note": null,
+   "note": "",
    "tags": [
     "ext"
    ],
+   "emotion": "worried",
    "lemmas": [
     [
-     "取",
-     "取",
-     "qǔ"
+     "拿",
+     "拿",
+     "ná"
     ],
     [
      "号",
@@ -362,9 +354,12 @@
      "门口",
      "mén kǒu"
     ]
-   ],
-   "rd": "취 러 하오, 쭤짜이 먼커우 덩 저.",
-   "emotion": "worried"
+   ]
   }
- ]
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r4_love_l3_d19_2_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ }
 }

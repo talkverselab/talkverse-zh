@@ -21,12 +21,14 @@
    "speaker": "B",
    "zh": "喝吧喝吧，慢点儿吃。",
    "pinyin": "Hē ba hē ba, màn diǎnr chī.",
+   "rd": "허 바 허 바, 만 뎬얼 츠.",
    "ko": "마셔요 마셔, 천천히 먹어요.",
-   "note": "慢点儿 (천천히)",
+   "note": "慢点儿은 ‘천천히’.",
    "tags": [
     "care",
     "particle:吧"
    ],
+   "emotion": "gentle",
    "lemmas": [
     [
      "喝",
@@ -58,26 +60,26 @@
      "吃",
      "chī"
     ]
-   ],
-   "rd": "허 바 허 바, 만 뎬얼 츠.",
-   "emotion": "gentle"
+   ]
   },
   {
    "num": 2,
    "speaker": "A",
-   "zh": "这个牛肉真好吃！",
-   "pinyin": "Zhège niúròu zhēn hǎochī!",
+   "zh": "这牛肉真好吃！",
+   "pinyin": "Zhè niúròu zhēn hǎochī!",
+   "rd": "저 뉴러우 전 하오츠!",
    "ko": "이 소고기 진짜 맛있다!",
-   "note": "真好吃 감탄",
+   "note": "真好吃은 감탄.",
    "tags": [
     "food",
     "praise"
    ],
+   "emotion": "excited",
    "lemmas": [
     [
-     "这个",
-     "这个",
-     "zhè ge"
+     "这",
+     "这",
+     "zhè"
     ],
     [
      "牛",
@@ -99,21 +101,21 @@
      "好吃",
      "hǎo chī"
     ]
-   ],
-   "rd": "저거 뉴러우 전 하오츠!",
-   "emotion": "excited"
+   ]
   },
   {
    "num": 3,
    "speaker": "B",
-   "zh": "对吧？我常来这家。",
-   "pinyin": "Duì ba? Wǒ cháng lái zhè jiā.",
+   "zh": "对吧？我常来这儿。",
+   "pinyin": "Duì ba? Wǒ cháng lái zhèr.",
+   "rd": "두이 바? 워 창 라이 절.",
    "ko": "그렇죠? 저 여기 자주 와요.",
-   "note": "对吧 + 常 (자주)",
+   "note": "对吧은 확인, 常은 ‘자주’.",
    "tags": [
     "smalltalk",
     "particle:吧"
    ],
+   "emotion": "cheerful",
    "lemmas": [
     [
      "常",
@@ -126,30 +128,25 @@
      "lái"
     ],
     [
-     "这",
-     "这",
-     "zhè"
-    ],
-    [
-     "家",
-     "家",
-     "jiā"
+     "这儿",
+     "这儿",
+     "zhè ér"
     ]
-   ],
-   "rd": "두이 바? 워 창 라이 저 자.",
-   "emotion": "cheerful"
+   ]
   },
   {
    "num": 4,
    "speaker": "A",
    "zh": "和谁来？朋友吗？😟",
    "pinyin": "Hé shéi lái? Péngyou ma?",
+   "rd": "허 세이 라이? 펑유 마?",
    "ko": "누구랑 와요? 친구랑?",
-   "note": "和谁 (누구와) + 吗",
+   "note": "和谁은 ‘누구와’.",
    "tags": [
     "question",
     "hook:jealous"
    ],
+   "emotion": "worried",
    "lemmas": [
     [
      "谁",
@@ -166,21 +163,21 @@
      "朋友",
      "péng yǒu"
     ]
-   ],
-   "rd": "허 세이 라이? 펑유 마?",
-   "emotion": "worried"
+   ]
   },
   {
    "num": 5,
    "speaker": "B",
-   "zh": "怎么？你吃醋啦？😜",
-   "pinyin": "Zěnme? Nǐ chīcù la?",
+   "zh": "怎么？吃醋了？",
+   "pinyin": "Zěnme? Chīcù le?",
+   "rd": "쩐머? 츠추 러?",
    "ko": "왜요? 질투해요?",
-   "note": "吃醋 (질투하다, 식초 먹다) 관용어",
+   "note": "吃醋는 ‘질투하다’는 관용어.",
    "tags": [
     "tease",
     "particle:啦"
    ],
+   "emotion": "teasing",
    "lemmas": [
     [
      "怎么",
@@ -192,21 +189,21 @@
      "吃醋",
      "chī cù"
     ]
-   ],
-   "rd": "쩐머? 니 츠추 라?",
-   "emotion": "teasing"
+   ]
   },
   {
    "num": 6,
    "speaker": "A",
-   "zh": "没有没有… 有一点。",
-   "pinyin": "Méiyǒu méiyǒu… yǒu yìdiǎn.",
+   "zh": "没有没有……有一点。",
+   "pinyin": "Méiyǒu méiyǒu…… Yǒu yìdiǎn.",
+   "rd": "메이유 메이유…… 유 이뎬.",
    "ko": "아니에요 아니에요… 조금은요.",
-   "note": "有一点 (조금 있다) 솔직 유머",
+   "note": "有一点은 ‘조금 있다’.",
    "tags": [
     "flirt",
     "function:有"
    ],
+   "emotion": "flustered",
    "lemmas": [
     [
      "没有",
@@ -228,21 +225,21 @@
      "一点",
      "yì diǎn"
     ]
-   ],
-   "rd": "메이유 메이유… 유 이뎬.",
-   "emotion": "flustered"
+   ]
   },
   {
    "num": 7,
    "speaker": "B",
-   "zh": "放心，都是女朋友，女的朋友。",
-   "pinyin": "Fàngxīn, dōu shì nǚ péngyou, nǚ de péngyou.",
-   "ko": "안심해요, 다 여자친구… 아니, '여자인 친구'예요.",
-   "note": "女朋友 vs 女的朋友 말장난",
+   "zh": "放心，都是女朋友……不是，女的朋友。",
+   "pinyin": "Fàngxīn, dōu shì nǚpéngyou…… Bú shì, nǚ de péngyou.",
+   "rd": "팡신, 더우 스 뉘펑유…… 부 스, 뉘 더 펑유.",
+   "ko": "안심해요, 다 여자친구… 아니, ‘여자인 친구’예요.",
+   "note": "女朋友는 여자친구, 女的朋友는 여자인 친구.",
    "tags": [
     "joke",
     "hook:wordplay"
    ],
+   "emotion": "amused",
    "lemmas": [
     [
      "放心",
@@ -274,21 +271,21 @@
      "朋友",
      "péng yǒu"
     ]
-   ],
-   "rd": "팡신, 더우 스 뉘 펑유, 뉘 더 펑유.",
-   "emotion": "amused"
+   ]
   },
   {
    "num": 8,
    "speaker": "A",
    "zh": "哈哈，中文太难了！",
-   "pinyin": "Hāhā, zhōngwén tài nán le!",
+   "pinyin": "Hāhā, Zhōngwén tài nán le!",
+   "rd": "하하, 중원 타이 난 러!",
    "ko": "하하, 중국어 너무 어려워요!",
-   "note": "太…了",
+   "note": "太…了는 감탄.",
    "tags": [
     "joke",
     "topic:chinese"
    ],
+   "emotion": "amused",
    "lemmas": [
     [
      "中文",
@@ -305,9 +302,12 @@
      "难",
      "nán"
     ]
-   ],
-   "rd": "하하, 중원 타이 난 러!",
-   "emotion": "amused"
+   ]
   }
- ]
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r4_love_l1_ep2_4_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ }
 }

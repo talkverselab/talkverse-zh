@@ -19,14 +19,16 @@
   {
    "num": 1,
    "speaker": "A",
-   "zh": "那你怎么不去走路呢？🙄",
-   "pinyin": "Nà nǐ zěnme bú qù zǒulù ne?",
+   "zh": "那你怎么不走路呢？🙄",
+   "pinyin": "Nà nǐ zěnme bù zǒulù ne?",
+   "rd": "나 니 쩐머 부 쩌우루 너?",
    "ko": "그럼 넌 왜 안 걷는데?",
-   "note": "怎么不…呢: '왜 ~하지 않느냐' 반문 패턴. 走路 '걷다'",
+   "note": "怎么不…呢는 ‘왜 ~하지 않느냐’는 반문.",
    "tags": [
     "怎么不",
     "呢"
    ],
+   "emotion": "tsukkomi",
    "lemmas": [
     [
      "那",
@@ -44,30 +46,25 @@
      "bù"
     ],
     [
-     "去",
-     "去",
-     "qù"
-    ],
-    [
      "走路",
      "走路",
      "zǒu lù"
     ]
-   ],
-   "rd": "나 니 쩐머 부 취 쩌우루 너?",
-   "emotion": "tsukkomi"
+   ]
   },
   {
    "num": 2,
    "speaker": "B",
-   "zh": "我又不用上班，哈哈。😜",
-   "pinyin": "Wǒ yòu bú yòng shàngbān, hāhā.",
+   "zh": "我又不用上班啊，哈哈。😜",
+   "pinyin": "Wǒ yòu bùyòng shàngbān a, hāhā.",
+   "rd": "워 유 부융 상반 아, 하하.",
    "ko": "난 출근 안 해도 되거든, 하하.",
-   "note": "又不: '~한 것도 아닌데' 뻔뻔 반박 어투. 不用 '~할 필요 없다'.",
+   "note": "又不는 ‘~한 것도 아닌데’, 不用은 ‘할 필요 없다’.",
    "tags": [
     "又不",
     "不用"
    ],
+   "emotion": "teasing",
    "lemmas": [
     [
      "又",
@@ -84,21 +81,21 @@
      "上班",
      "shàng bān"
     ]
-   ],
-   "rd": "워 유 부 융 상반, 하하.",
-   "emotion": "teasing"
+   ]
   },
   {
    "num": 3,
    "speaker": "A",
    "zh": "太不公平了吧！😒",
    "pinyin": "Tài bù gōngpíng le ba!",
+   "rd": "타이 부 궁핑 러 바!",
    "ko": "너무 불공평한 거 아냐!",
-   "note": "太不…了: 부정형 강조. 吧로 항의성 감탄.",
+   "note": "太不…了는 부정형 강조, 吧는 항의성 감탄.",
    "tags": [
     "太…了",
     "항의"
    ],
+   "emotion": "annoyed",
    "lemmas": [
     [
      "太",
@@ -115,21 +112,21 @@
      "公平",
      "gōng píng"
     ]
-   ],
-   "rd": "타이 부 궁핑 러 바!",
-   "emotion": "annoyed"
+   ]
   },
   {
    "num": 4,
    "speaker": "B",
-   "zh": "那找一个中间的，好不好？",
-   "pinyin": "Nà zhǎo yí ge zhōngjiān de, hǎo bu hǎo?",
+   "zh": "那找个中间的，好不好？",
+   "pinyin": "Nà zhǎo ge zhōngjiān de, hǎo bù hǎo?",
+   "rd": "나 자오 거 중젠 더, 하오 부 하오?",
    "ko": "그럼 중간쯤인 데 찾자, 어때?",
-   "note": "好不好: 정반의문으로 부드러운 타협 제안.",
+   "note": "好不好는 정반의문으로 부드러운 타협 제안.",
    "tags": [
     "好不好",
     "타협"
    ],
+   "emotion": "gentle",
    "lemmas": [
     [
      "那",
@@ -142,9 +139,9 @@
      "zhǎo"
     ],
     [
-     "一个",
-     "一个",
-     "yí gè"
+     "个",
+     "个",
+     "gè"
     ],
     [
      "中间",
@@ -161,21 +158,21 @@
      "不好",
      "bù hǎo"
     ]
-   ],
-   "rd": "나 자오 이 거 중젠 더, 하오 부 하오?",
-   "emotion": "gentle"
+   ]
   },
   {
    "num": 5,
    "speaker": "A",
    "zh": "行吧，听你的。",
    "pinyin": "Xíng ba, tīng nǐ de.",
+   "rd": "싱 바, 팅 니 더.",
    "ko": "그래 알았어, 네 말 들을게.",
-   "note": "听你的: '네 말대로 할게' 양보 표현. 行吧 '그러자 뭐'.",
+   "note": "听你的는 ‘네 말대로 할게’, 行吧는 ‘그러자 뭐’.",
    "tags": [
     "听你的",
     "양보"
    ],
+   "emotion": "amused",
    "lemmas": [
     [
      "行",
@@ -187,26 +184,21 @@
      "听",
      "tīng"
     ]
-   ],
-   "rd": "싱 바, 팅 니 더.",
-   "emotion": "amused"
+   ]
   },
   {
    "num": 6,
    "speaker": "B",
-   "zh": "太好了，那我们周末去看房。",
-   "pinyin": "Tàihǎole, nà wǒmen zhōumò qùkànfáng.",
+   "zh": "好，那周末去看房子。",
+   "pinyin": "Hǎo, nà zhōumò qù kàn fángzi.",
+   "rd": "하오, 나 저우모 취 칸 팡쯔.",
    "ko": "좋아, 그럼 주말에 집 보러 가자.",
-   "note": null,
+   "note": "",
    "tags": [
     "ext"
    ],
+   "emotion": "cheerful",
    "lemmas": [
-    [
-     "太",
-     "太",
-     "tài"
-    ],
     [
      "好",
      "好",
@@ -216,11 +208,6 @@
      "那",
      "那",
      "nà"
-    ],
-    [
-     "我们",
-     "我们",
-     "wǒ men"
     ],
     [
      "周末",
@@ -238,30 +225,25 @@
      "kàn"
     ],
     [
-     "房",
-     "房",
-     "fáng"
+     "房子",
+     "房子",
+     "fáng zi"
     ]
-   ],
-   "rd": "타이하오러, 나 워먼 저우모 취칸팡.",
-   "emotion": "cheerful"
+   ]
   },
   {
    "num": 7,
    "speaker": "A",
-   "zh": "好，希望能找到合适的。",
-   "pinyin": "Hǎo, xīwàng néng zhǎodào héshì de.",
+   "zh": "嗯，希望能找到合适的。",
+   "pinyin": "Èn, xīwàng néng zhǎodào héshì de.",
+   "rd": "언, 시왕 넝 자오다오 허스 더.",
    "ko": "응, 딱 맞는 데 찾았으면 좋겠다.",
-   "note": null,
+   "note": "",
    "tags": [
     "ext"
    ],
+   "emotion": "gentle",
    "lemmas": [
-    [
-     "好",
-     "好",
-     "hǎo"
-    ],
     [
      "希望",
      "希望",
@@ -282,25 +264,30 @@
      "合适",
      "hé shì"
     ]
-   ],
-   "rd": "하오, 시왕 넝 자오다오 허스 더.",
-   "emotion": "gentle"
+   ]
   },
   {
    "num": 8,
    "speaker": "B",
-   "zh": "一定可以，我们一起加油。",
-   "pinyin": "Yídìng kěyǐ, wǒmen yìqǐ jiāyóu.",
+   "zh": "肯定行的，我们一起加油。",
+   "pinyin": "Kěndìng xíng de, wǒmen yìqǐ jiāyóu.",
+   "rd": "컨딩 싱 더, 워먼 이치 자유.",
    "ko": "분명 될 거야, 우리 같이 힘내자.",
-   "note": null,
+   "note": "",
    "tags": [
     "ext"
    ],
+   "emotion": "cheerful",
    "lemmas": [
     [
-     "一定",
-     "一定",
-     "yí dìng"
+     "肯定",
+     "肯定",
+     "kěn dìng"
+    ],
+    [
+     "行",
+     "行",
+     "xíng"
     ],
     [
      "我们",
@@ -317,9 +304,12 @@
      "加油",
      "jiā yóu"
     ]
-   ],
-   "rd": "이딩 커이, 워먼 이치 자유.",
-   "emotion": "cheerful"
+   ]
   }
- ]
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r4_life_l2_d20_2_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ }
 }

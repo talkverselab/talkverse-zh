@@ -1,0 +1,13 @@
+=== r4_love_l1_ep2_4
+title: 식사 ④
+scene: 첫 만남 식당 — 주문 · 매운맛 · 젓가락 · 계산 · 산책 제안
+B: 小丽
+register: 반말(친구·연인)
+1 B | 喝吧喝吧，慢点儿吃。 | Hē ba hē ba, màn diǎnr chī. | 마셔요 마셔, 천천히 먹어요. | 慢点儿은 ‘천천히’. | emotion=gentle
+2 A | 这牛肉真好吃！ | Zhè niúròu zhēn hǎochī! | 이 소고기 진짜 맛있다! | 真好吃은 감탄. | emotion=excited
+3 B | 对吧？我常来这儿。 | Duì ba? Wǒ cháng lái zhèr. | 그렇죠? 저 여기 자주 와요. | 对吧은 확인, 常은 ‘자주’. | emotion=cheerful
+4 A | 和谁来？朋友吗？ | Hé shéi lái? Péngyou ma? | 누구랑 와요? 친구랑? | 和谁은 ‘누구와’. | emotion=worried
+5 B | 怎么？吃醋了？ | Zěnme? Chīcù le? | 왜요? 질투해요? | 吃醋는 ‘질투하다’는 관용어. | emotion=teasing
+6 A | 没有没有……有一点。 | Méiyǒu méiyǒu…… Yǒu yìdiǎn. | 아니에요 아니에요… 조금은요. | 有一点은 ‘조금 있다’. | emotion=flustered
+7 B | 放心，都是女朋友……不是，女的朋友。 | Fàngxīn, dōu shì nǚpéngyou…… Bú shì, nǚ de péngyou. | 안심해요, 다 여자친구… 아니, ‘여자인 친구’예요. | 女朋友는 여자친구, 女的朋友는 여자인 친구. | emotion=amused
+8 A | 哈哈，中文太难了！ | Hāhā, Zhōngwén tài nán le! | 하하, 중국어 너무 어려워요! | 太…了는 감탄. | emotion=amused

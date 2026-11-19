@@ -1,0 +1,13 @@
+=== r4_life_l2_d04_1
+title: 날씨 ①
+scene: 공원 데이트 날 갑자기 닥친 황사와 비, 집콕으로 계획 변경
+B: 小丽
+register: 반말(친구·연인)
+1 A | 今天去公园吧？ | Jīntiān qù gōngyuán ba? | 오늘 공원 갈까? | 吧 는 청유. | emotion=cheerful
+2 B | 你看窗外了吗？ | Nǐ kàn chuāngwài le ma? | 창밖 봤어? | 了吗 는 했어? | emotion=tsukkomi
+3 A | 哇，天怎么黄了？ | Wa, tiān zěnme huáng le? | 와, 하늘이 왜 노래졌어? | 了 는 상태 변화. | emotion=surprised
+4 B | 沙尘暴来啦。 | Shāchénbào lái la. | 황사 왔잖아. | 啦 는 알림+감탄. | emotion=amused
+5 A | 北京天气太吓人了。 | Běijīng tiānqì tài xiàrén le. | 베이징 날씨 진짜 무섭다. | 太…了 는 너무 ~하다. | emotion=annoyed
+6 B | 一会儿可能还下雨。 | Yíhuìr kěnéng hái xià yǔ. | 이따가 비까지 올지도 몰라. | 可能 는 아마도. | emotion=worried
+7 A | 那计划全完了。 | Nà jìhuà quán wán le. | 그럼 계획 다 끝났네. | 全 는 전부, 完了 는 끝. | emotion=sad
+8 B | 在家看电影不好吗？ | Zài jiā kàn diànyǐng bù hǎo ma? | 집에서 영화 보면 좋잖아? | 不…吗 는 반문. | emotion=gentle

@@ -21,12 +21,14 @@
    "speaker": "B",
    "zh": "票买好了，下周五出发！",
    "pinyin": "Piào mǎi hǎo le, xià zhōu wǔ chūfā!",
+   "rd": "퍄오 마이 하오 러, 샤 저우 우 추파!",
    "ko": "표 다 샀어, 다음 주 금요일 출발!",
-   "note": "결과보어 好 '동작의 완성'",
+   "note": "‘好’ 결과보어로 완성",
    "tags": [
     "결과보어",
     "기차"
    ],
+   "emotion": "excited",
    "lemmas": [
     [
      "票",
@@ -53,21 +55,21 @@
      "出发",
      "chū fā"
     ]
-   ],
-   "rd": "퍄오 마이 하오 러, 샤 저우 우 추파!",
-   "emotion": "excited"
+   ]
   },
   {
    "num": 2,
    "speaker": "A",
    "zh": "去成都的高铁要几个小时？",
    "pinyin": "Qù Chéngdū de gāotiě yào jǐ ge xiǎoshí?",
+   "rd": "취 청두 더 가오톄 야오 지 거 샤오스?",
    "ko": "청두 가는 고속철은 몇 시간 걸려?",
-   "note": "要+시간 '(시간이) 걸리다' + 의문사 几",
+   "note": "‘要+시간’ + ‘几’",
    "tags": [
     "要+시간",
     "여행"
    ],
+   "emotion": "neutral",
    "lemmas": [
     [
      "去",
@@ -99,21 +101,21 @@
      "小时",
      "xiǎo shí"
     ]
-   ],
-   "rd": "취 청두 더 가오톄 야오 지 거 샤오스?",
-   "emotion": "neutral"
+   ]
   },
   {
    "num": 3,
    "speaker": "B",
    "zh": "八个小时，你可以背单词。",
    "pinyin": "Bā ge xiǎoshí, nǐ kěyǐ bèi dāncí.",
+   "rd": "바 거 샤오스, 니 커이 베이 단츠.",
    "ko": "여덟 시간, 너 단어 외우기 딱 좋겠네.",
-   "note": "可以 제안 용법 '~하면 되겠다'",
+   "note": "‘可以’ 제안 용법",
    "tags": [
     "可以",
     "유머"
    ],
+   "emotion": "teasing",
    "lemmas": [
     [
      "八个",
@@ -140,21 +142,21 @@
      "词",
      "cí"
     ]
-   ],
-   "rd": "바 거 샤오스, 니 커이 베이 단츠.",
-   "emotion": "teasing"
+   ]
   },
   {
    "num": 4,
    "speaker": "A",
-   "zh": "我在练习：叔叔阿姨好！",
-   "pinyin": "Wǒ zài liànxí: shūshu āyí hǎo!",
+   "zh": "我在练习。叔叔阿姨好！",
+   "pinyin": "Wǒ zài liànxí. Shūshu āyí hǎo!",
+   "rd": "워 짜이 롄시. 수수 아이 하오!",
    "ko": "나 연습 중이야. 아버님 어머님 안녕하세요!",
-   "note": "진행의 在 + 호칭 인사 표현",
+   "note": "‘在’ 진행 + 호칭 인사",
    "tags": [
     "진행 在",
     "인사"
    ],
+   "emotion": "stiff",
    "lemmas": [
     [
      "练习",
@@ -171,21 +173,21 @@
      "好",
      "hǎo"
     ]
-   ],
-   "rd": "워 짜이 롄시: 수수 아이 하오!",
-   "emotion": "stiff"
+   ]
   },
   {
    "num": 5,
    "speaker": "B",
-   "zh": "哈哈，跟第一次见我时一样。",
-   "pinyin": "Hāhā, gēn dì yī cì jiàn wǒ shí yíyàng.",
+   "zh": "哈哈，跟我第一次见你一样。",
+   "pinyin": "Hāha, gēn wǒ dì-yī cì jiàn nǐ yíyàng.",
+   "rd": "하하, 건 워 디-이 츠 젠 니 이양.",
    "ko": "하하, 나 처음 만났을 때랑 똑같네.",
-   "note": "'跟…一样' 동등 비교",
+   "note": "‘跟…一样’ 동등 비교",
    "tags": [
     "跟…一样",
     "추억"
    ],
+   "emotion": "amused",
    "lemmas": [
     [
      "第一次",
@@ -198,35 +200,30 @@
      "jiàn"
     ],
     [
-     "时",
-     "时",
-     "shí"
-    ],
-    [
      "一样",
      "一样",
      "yī yàng"
     ]
-   ],
-   "rd": "하하, 건 디 이 츠 젠 워 스 이양.",
-   "emotion": "amused"
+   ]
   },
   {
    "num": 6,
    "speaker": "A",
-   "zh": "你爸爸最喜欢什么？",
-   "pinyin": "Nǐ bàba zuì xǐhuan shénme?",
+   "zh": "你爸最喜欢什么？",
+   "pinyin": "Nǐ bà zuì xǐhuan shénme?",
+   "rd": "니 바 쭈이 시환 선머?",
    "ko": "너희 아버지는 뭘 제일 좋아하셔?",
-   "note": "최상급 부사 最",
+   "note": "‘最’ 최상급",
    "tags": [
     "最",
     "상견례"
    ],
+   "emotion": "neutral",
    "lemmas": [
     [
-     "爸爸",
-     "爸爸",
-     "bà bà"
+     "爸",
+     "爸",
+     "bà"
     ],
     [
      "最",
@@ -243,21 +240,21 @@
      "什么",
      "shén me"
     ]
-   ],
-   "rd": "니 바바 쭈이 시환 선머?",
-   "emotion": "neutral"
+   ]
   },
   {
    "num": 7,
    "speaker": "B",
-   "zh": "白酒，不过你千万别多喝。",
-   "pinyin": "Báijiǔ, búguò nǐ qiānwàn bié duō hē.",
+   "zh": "白酒。不过你千万别喝多。",
+   "pinyin": "Báijiǔ. Búguò nǐ qiānwàn bié hē duō.",
+   "rd": "바이주. 부궈 니 첸완 볘 허 둬.",
    "ko": "백주. 근데 너 절대 많이 마시면 안 돼.",
-   "note": "'千万别' 강한 금지 표현",
+   "note": "‘千万别’ 강한 금지",
    "tags": [
     "千万别",
     "술"
    ],
+   "emotion": "worried",
    "lemmas": [
     [
      "白酒",
@@ -270,30 +267,30 @@
      "bié"
     ],
     [
-     "多",
-     "多",
-     "duō"
-    ],
-    [
      "喝",
      "喝",
      "hē"
+    ],
+    [
+     "多",
+     "多",
+     "duō"
     ]
-   ],
-   "rd": "바이주, 부궈 니 첸완 볘 둬 허.",
-   "emotion": "worried"
+   ]
   },
   {
    "num": 8,
    "speaker": "A",
-   "zh": "放心，我会说“我开车”。",
-   "pinyin": "Fàngxīn, wǒ huì shuō “wǒ kāichē”.",
-   "ko": "걱정 마, '저 운전해야 해서요'라고 할게.",
-   "note": "조동사 会 '~할 것이다' + 인용",
+   "zh": "放心，我会说“我要开车”。",
+   "pinyin": "Fàngxīn, wǒ huì shuō “wǒ yào kāi chē”.",
+   "rd": "팡신, 워 후이 숴 \"워 야오 카이 처\".",
+   "ko": "걱정 마, ‘저 운전해야 해서요’라고 할게.",
+   "note": "‘会’ + 인용",
    "tags": [
     "会",
     "유머"
    ],
+   "emotion": "cheerful",
    "lemmas": [
     [
      "放心",
@@ -311,13 +308,21 @@
      "shuō"
     ],
     [
+     "要",
+     "要",
+     "yào"
+    ],
+    [
      "开车",
      "开车",
      "kāi chē"
     ]
-   ],
-   "rd": "팡신, 워 후이 숴 “워 카이처”.",
-   "emotion": "cheerful"
+   ]
   }
- ]
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r4_love_l3_d22_1_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ }
 }

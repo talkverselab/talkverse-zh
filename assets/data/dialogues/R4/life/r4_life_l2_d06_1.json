@@ -19,14 +19,16 @@
   {
    "num": 1,
    "speaker": "A",
-   "zh": "我办了健身卡！",
-   "pinyin": "Wǒ bàn le jiànshēn kǎ!",
+   "zh": "我办了健身卡了！",
+   "pinyin": "Wǒ bàn le jiànshēn kǎ le!",
+   "rd": "워 반 러 젠선 카 러!",
    "ko": "나 헬스장 등록했어!",
-   "note": "동사 办 (카드·수속을 만들다) + 了",
+   "note": "办 는 수속/카드 만들다.",
    "tags": [
     "verb:办",
     "positive"
    ],
+   "emotion": "excited",
    "lemmas": [
     [
      "办",
@@ -43,21 +45,21 @@
      "卡",
      "kǎ"
     ]
-   ],
-   "rd": "워 반 러 젠선 카!",
-   "emotion": "excited"
+   ]
   },
   {
    "num": 2,
    "speaker": "B",
    "zh": "哦？这是第几次了？",
-   "pinyin": "Ó? Zhè shì dì jǐ cì le?",
+   "pinyin": "O? Zhè shì dì jǐ cì le?",
+   "rd": "오? 저 스 디 지 츠 러?",
    "ko": "오? 이번이 몇 번째더라?",
-   "note": "서수 第 + 동량사 次 (몇 번째)",
+   "note": "第 + 次 는 몇 번째.",
    "tags": [
     "measure:次",
     "banter"
    ],
+   "emotion": "teasing",
    "lemmas": [
     [
      "这",
@@ -74,21 +76,21 @@
      "第几次",
      "dì jǐ cì"
     ]
-   ],
-   "rd": "오? 저 스 디 지 츠 러?",
-   "emotion": "teasing"
+   ]
   },
   {
    "num": 3,
    "speaker": "A",
    "zh": "这次不一样！",
-   "pinyin": "Zhè cì bù yīyàng!",
+   "pinyin": "Zhè cì bù yíyàng!",
+   "rd": "저 츠 부 이양!",
    "ko": "이번엔 달라!",
-   "note": "不一样 (다르다) 강조 표현",
+   "note": "不一样 는 다르다.",
    "tags": [
     "adjective:一样",
     "banter"
    ],
+   "emotion": "excited",
    "lemmas": [
     [
      "这次",
@@ -105,21 +107,21 @@
      "一样",
      "yī yàng"
     ]
-   ],
-   "rd": "저 츠 부 이양!",
-   "emotion": "excited"
+   ]
   },
   {
    "num": 4,
    "speaker": "B",
-   "zh": "上次你才去了三天。",
-   "pinyin": "Shàng cì nǐ cái qù le sān tiān.",
+   "zh": "上次才去了三天啊。🙄",
+   "pinyin": "Shàngcì cái qù le sān tiān a.",
+   "rd": "상츠 차이 취 러 싼 톈 아.",
    "ko": "지난번엔 겨우 3일 가고 끝났잖아.",
-   "note": "부사 才 (겨우 ~밖에, 기대 이하 강조)",
+   "note": "才 는 겨우.",
    "tags": [
     "complement:时量",
     "banter"
    ],
+   "emotion": "tsukkomi",
    "lemmas": [
     [
      "上次",
@@ -141,47 +143,57 @@
      "天",
      "tiān"
     ]
-   ],
-   "rd": "상 츠 니 차이 취 러 싼 톈.",
-   "emotion": "tsukkomi"
+   ]
   },
   {
    "num": 5,
    "speaker": "A",
-   "zh": "那是因为下雨嘛。😳",
-   "pinyin": "Nà shì yīnwèi xià yǔ ma.",
+   "zh": "因为下雨才没去的。",
+   "pinyin": "Yīnwèi xià yǔ cái méi qù de.",
+   "rd": "인웨이 샤 위 차이 메이 취 더.",
    "ko": "그건 비가 와서 그랬던 거잖아.",
-   "note": "因为 (~때문에, 원인 표현)",
+   "note": "因为 는 ~때문에.",
    "tags": [
     "conjunction:因为",
     "excuse"
    ],
+   "emotion": "flustered",
    "lemmas": [
-    [
-     "那",
-     "那",
-     "nà"
-    ],
     [
      "下雨",
      "下雨",
      "xià yǔ"
+    ],
+    [
+     "才",
+     "才",
+     "cái"
+    ],
+    [
+     "没",
+     "没",
+     "méi"
+    ],
+    [
+     "去",
+     "去",
+     "qù"
     ]
-   ],
-   "rd": "나 스 인웨이 샤 위 마.",
-   "emotion": "flustered"
+   ]
   },
   {
    "num": 6,
    "speaker": "B",
    "zh": "健身房在室内呀。🙄",
    "pinyin": "Jiànshēnfáng zài shìnèi ya.",
+   "rd": "젠선팡 짜이 스네이 야.",
    "ko": "헬스장은 실내거든.",
-   "note": "在+장소 (위치 표현) + 呀",
+   "note": "在+장소 는 위치.",
    "tags": [
     "preposition:在",
     "humor"
    ],
+   "emotion": "tsukkomi",
    "lemmas": [
     [
      "健身",
@@ -203,21 +215,21 @@
      "内",
      "nèi"
     ]
-   ],
-   "rd": "젠선팡 짜이 스네이 야.",
-   "emotion": "tsukkomi"
+   ]
   },
   {
    "num": 7,
    "speaker": "A",
-   "zh": "……路上会淋湿的。",
-   "pinyin": "…… Lùshang huì lín shī de.",
+   "zh": "路上会淋湿的。",
+   "pinyin": "Lùshang huì lín shī de.",
+   "rd": "루상 후이 린 스 더.",
    "ko": "…가는 길에 젖는단 말이야.",
-   "note": "会…的 (~할 거야, 확신) + 결과보어 湿",
+   "note": "会…的 는 확신, 湿 는 결과.",
    "tags": [
     "structure:会的",
     "excuse"
    ],
+   "emotion": "flustered",
    "lemmas": [
     [
      "路上",
@@ -234,21 +246,21 @@
      "淋湿",
      "lín shī"
     ]
-   ],
-   "rd": "…… 루상 후이 린 스 더.",
-   "emotion": "flustered"
+   ]
   },
   {
    "num": 8,
    "speaker": "B",
    "zh": "借口真多哈。😏",
    "pinyin": "Jièkǒu zhēn duō ha.",
+   "rd": "제커우 전 둬 하.",
    "ko": "핑계 참 많다?",
-   "note": "어기조사 哈 (가벼운 놀림·확인)",
+   "note": "哈 는 가벼운 놀림.",
    "tags": [
     "particle:哈",
     "banter"
    ],
+   "emotion": "amused",
    "lemmas": [
     [
      "借",
@@ -270,9 +282,12 @@
      "多",
      "duō"
     ]
-   ],
-   "rd": "제커우 전 둬 하.",
-   "emotion": "amused"
+   ]
   }
- ]
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r4_life_l2_d06_1_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ }
 }

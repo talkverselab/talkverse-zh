@@ -1,0 +1,13 @@
+=== r3_love_l3_d20_1
+title: 재회 ①
+scene: 첫 데이트 장소였던 훠궈집 앞, 두 사람이 우연처럼 마주친다.
+B: 小丽
+register: 반말(친구·연인)
+1 A | 小丽？你怎么也在这儿？ | Xiǎo Lì? Nǐ zěnme yě zài zhèr? | 샤오리? 네가 여긴 어떻게? | 怎么 = 어떻게/왜, 也 = 도 | emotion=surprised
+2 B | 我……我就是路过。 | Wǒ…… wǒ jiùshì lùguò. | 나… 나는 그냥 지나가던 길이야. | 就是 = 그냥 ~일 뿐 | emotion=flustered
+3 A | 路过？手里还拿着号牌呢。 | Lùguò? Shǒu li hái názhe hàopái ne. | 지나가는데? 손에 대기표는 왜 들고 있어? | 着 = 지속 상태 | emotion=tsukkomi
+4 B | 一个人也能吃火锅。 | Yī ge rén yě néng chī huǒguō. | 혼자서도 훠궈 먹을 수 있거든. | 也 = ~라도 | emotion=flustered
+5 A | 还记得吗？我们第一次约会。 | Hái jìde ma? Wǒmen dì yī cì yuēhuì. | 기억나? 우리 첫 데이트. | 第…次 = 첫 번째 | emotion=gentle
+6 B | 你把毛肚掉进鸳鸯锅了。 | Nǐ bǎ máodǔ diào jìn yuānyāngguō le. | 너 그때 천엽을 반반 냄비에 빠뜨렸잖아. | 把…进 = ~을 ~에 넣다 | emotion=amused
+7 A | 那天你笑得眼泪都出来了。 | Nà tiān nǐ xiào de yǎnlèi dōu chūlái le. | 그날 너 눈물 나도록 웃었지. | 得 = 정도, 都 = 강조 | emotion=gentle
+8 B | 三天没见，你瘦了。 | Sān tiān méi jiàn, nǐ shòu le. | 사흘 못 본 사이에, 너 야위었네. | 了 = 변화 | emotion=gentle

@@ -21,12 +21,14 @@
    "speaker": "B",
    "zh": "一会儿？五个小时呢！🙄",
    "pinyin": "Yíhuìr? Wǔ ge xiǎoshí ne!",
+   "rd": "이후일? 우 거 샤오스 너!",
    "ko": "잠깐? 다섯 시간이거든!",
-   "note": "상대 말 되받아치기 + 呢로 사실 강조.",
+   "note": "상대 말을 되받아치고 呢로 사실을 강조한다.",
    "tags": [
     "呢",
     "반박"
    ],
+   "emotion": "tsukkomi",
    "lemmas": [
     [
      "一会儿",
@@ -43,21 +45,21 @@
      "小时",
      "xiǎo shí"
     ]
-   ],
-   "rd": "이후일? 우 거 샤오스 너!",
-   "emotion": "tsukkomi"
+   ]
   },
   {
    "num": 2,
    "speaker": "A",
-   "zh": "因为我们队一直输啊。😳",
-   "pinyin": "Yīnwèi wǒmen duì yìzhí shū a.",
+   "zh": "我们队一直在输啊。😳",
+   "pinyin": "Wǒmen duì yìzhí zài shū a.",
+   "rd": "워먼 두이 이즈 짜이 수 아.",
    "ko": "우리 팀이 계속 져서 그랬단 말야.",
-   "note": "一直: '계속'. 输 '지다' (반대말 赢).",
+   "note": "一直는 ‘계속’, 输는 ‘지다’.",
    "tags": [
     "一直",
     "输"
    ],
+   "emotion": "flustered",
    "lemmas": [
     [
      "我们",
@@ -79,21 +81,21 @@
      "输",
      "shū"
     ]
-   ],
-   "rd": "인웨이 워먼 두이 이즈 수 아.",
-   "emotion": "flustered"
+   ]
   },
   {
    "num": 3,
    "speaker": "B",
-   "zh": "那你赢了吗？😜",
-   "pinyin": "Nà nǐ yíng le ma?",
+   "zh": "那你们赢了吗？😜",
+   "pinyin": "Nà nǐmen yíng le ma?",
+   "rd": "나 니먼 잉 러 마?",
    "ko": "그래서 이겼어?",
-   "note": "那: '그럼/그래서' 화제 이어받기. 赢 '이기다'.",
+   "note": "那는 ‘그럼/그래서’ 화제를 이어받는다.",
    "tags": [
     "那",
     "赢"
    ],
+   "emotion": "teasing",
    "lemmas": [
     [
      "那",
@@ -101,25 +103,30 @@
      "nà"
     ],
     [
+     "你们",
+     "你们",
+     "nǐ men"
+    ],
+    [
      "赢",
      "赢",
      "yíng"
     ]
-   ],
-   "rd": "나 니 잉 러 마?",
-   "emotion": "teasing"
+   ]
   },
   {
    "num": 4,
    "speaker": "A",
-   "zh": "……也输了。",
-   "pinyin": "……Yě shū le.",
-   "ko": "…그것도 졌어.",
-   "note": "也: '역시/그것도'. 짧은 대답으로 머쓱함 표현.",
+   "zh": "也输了。",
+   "pinyin": "Yě shū le.",
+   "rd": "예 수 러.",
+   "ko": "그것도 졌어.",
+   "note": "也는 ‘역시/그것도’라는 뜻.",
    "tags": [
     "也",
     "유머"
    ],
+   "emotion": "sad",
    "lemmas": [
     [
      "也",
@@ -131,21 +138,21 @@
      "输",
      "shū"
     ]
-   ],
-   "rd": "……예 수 러.",
-   "emotion": "sad"
+   ]
   },
   {
    "num": 5,
    "speaker": "B",
    "zh": "哈哈，活该！",
    "pinyin": "Hāhā, huógāi!",
+   "rd": "하하, 훠가이!",
    "ko": "하하, 쌤통이다!",
-   "note": "活该: '쌤통이다, 자업자득'. 친한 사이 놀림 표현.",
+   "note": "活该는 ‘쌤통이다, 자업자득’.",
    "tags": [
     "活该",
     "회화체"
    ],
+   "emotion": "amused",
    "lemmas": [
     [
      "活",
@@ -157,20 +164,20 @@
      "该",
      "gāi"
     ]
-   ],
-   "rd": "하하, 훠가이!",
-   "emotion": "amused"
+   ]
   },
   {
    "num": 6,
    "speaker": "A",
-   "zh": "别笑了，我心情很不好。",
-   "pinyin": "Biéxiào le, wǒ xīnqíng hěn bùhǎo.",
+   "zh": "别笑了，我真的不开心。",
+   "pinyin": "Bié xiào le, wǒ zhēn de bù kāixīn.",
+   "rd": "볘 샤오 러, 워 전 더 부 카이신.",
    "ko": "웃지 마, 나 기분 진짜 안 좋아.",
-   "note": null,
+   "note": "",
    "tags": [
     "ext"
    ],
+   "emotion": "annoyed",
    "lemmas": [
     [
      "别",
@@ -183,34 +190,34 @@
      "xiào"
     ],
     [
-     "心情",
-     "心情",
-     "xīn qíng"
+     "真的",
+     "真的",
+     "zhēn de"
     ],
     [
-     "很",
-     "很",
-     "hěn"
+     "不",
+     "不",
+     "bù"
     ],
     [
-     "不好",
-     "不好",
-     "bù hǎo"
+     "开心",
+     "开心",
+     "kāi xīn"
     ]
-   ],
-   "rd": "볘샤오 러, 워 신칭 헌 부하오.",
-   "emotion": "annoyed"
+   ]
   },
   {
    "num": 7,
    "speaker": "B",
-   "zh": "那就早点睡吧，别再打了。",
-   "pinyin": "Nà jiù zǎodiǎn shuì ba, bié zài dǎ le.",
+   "zh": "那就早点睡，别再玩了。",
+   "pinyin": "Nà jiù zǎodiǎn shuì, bié zài wán le.",
+   "rd": "나 주 짜오뎬 수이, 볘 짜이 완 러.",
    "ko": "그럼 일찍 자, 더 하지 말고.",
-   "note": null,
+   "note": "",
    "tags": [
     "ext"
    ],
+   "emotion": "gentle",
    "lemmas": [
     [
      "那",
@@ -248,29 +255,29 @@
      "zài"
     ],
     [
-     "打",
-     "打",
-     "dǎ"
+     "玩",
+     "玩",
+     "wán"
     ]
-   ],
-   "rd": "나 주 짜오뎬 수이 바, 볘 짜이 다 러.",
-   "emotion": "gentle"
+   ]
   },
   {
    "num": 8,
    "speaker": "A",
-   "zh": "好，晚安，别生气了哈。🥰",
-   "pinyin": "Hǎo, wǎnān, biéshēngqì le hā.",
+   "zh": "知道了，晚安，别生气了。",
+   "pinyin": "Zhīdào le, wǎn'ān, bié shēngqì le.",
+   "rd": "즈다오 러, 완'안, 볘 성치 러.",
    "ko": "알았어, 잘 자, 화 풀어.",
-   "note": null,
+   "note": "",
    "tags": [
     "ext"
    ],
+   "emotion": "gentle",
    "lemmas": [
     [
-     "好",
-     "好",
-     "hǎo"
+     "知道",
+     "知道",
+     "zhī dào"
     ],
     [
      "晚安",
@@ -287,9 +294,12 @@
      "生气",
      "shēng qì"
     ]
-   ],
-   "rd": "하오, 완안, 볘성치 러 하.",
-   "emotion": "gentle"
+   ]
   }
- ]
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r4_life_l2_d17_2_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ }
 }

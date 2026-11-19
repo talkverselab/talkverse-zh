@@ -21,12 +21,14 @@
    "speaker": "A",
    "zh": "我还在公司呢。😢",
    "pinyin": "Wǒ hái zài gōngsī ne.",
+   "rd": "워 하이 짜이 궁쓰 너.",
    "ko": "나 아직 회사야.",
-   "note": "在…呢 (아직 ~에 있다, 상태 지속)",
+   "note": "在…呢 = 아직 ~에 있다",
    "tags": [
     "particle:呢",
     "work"
    ],
+   "emotion": "sad",
    "lemmas": [
     [
      "还",
@@ -38,21 +40,21 @@
      "公司",
      "gōng sī"
     ]
-   ],
-   "rd": "워 하이 짜이 궁쓰 너.",
-   "emotion": "sad"
+   ]
   },
   {
    "num": 2,
    "speaker": "B",
-   "zh": "又加班？",
-   "pinyin": "Yòu jiābān?",
+   "zh": "又加班啊？😟",
+   "pinyin": "Yòu jiābān a?",
+   "rd": "유 자반 아?",
    "ko": "또 야근이야?",
-   "note": "부사 又 (또, 이미 반복된 일)",
+   "note": "又 = 또 (반복)",
    "tags": [
     "adverb:又",
     "work"
    ],
+   "emotion": "worried",
    "lemmas": [
     [
      "又",
@@ -64,21 +66,21 @@
      "加班",
      "jiā bān"
     ]
-   ],
-   "rd": "유 자반?",
-   "emotion": "worried"
+   ]
   },
   {
    "num": 3,
    "speaker": "A",
    "zh": "王哥给了我一堆活儿。",
    "pinyin": "Wáng gē gěi le wǒ yī duī huór.",
+   "rd": "왕 거 게이 러 워 이 두이 훨.",
    "ko": "왕 형이 일을 한 무더기 줬어.",
-   "note": "양사 堆 (무더기) + 儿화 活儿(일)",
+   "note": "堆 = 무더기, 活儿 = 일",
    "tags": [
     "measure:堆",
     "negative"
    ],
+   "emotion": "annoyed",
    "lemmas": [
     [
      "一堆",
@@ -95,42 +97,42 @@
      "儿",
      "ér"
     ]
-   ],
-   "rd": "왕 거 게이 러 워 이 두이 훨.",
-   "emotion": "annoyed"
+   ]
   },
   {
    "num": 4,
    "speaker": "B",
-   "zh": "可怜的宝宝。",
-   "pinyin": "Kělián de bǎobao.",
+   "zh": "可怜的小宝贝。",
+   "pinyin": "Kělián de xiǎo bǎobèi.",
+   "rd": "커롄 더 샤오 바오베이.",
    "ko": "불쌍한 우리 아기.",
-   "note": "的 관형어 수식 (형용사+的+명사)",
+   "note": "的 = 형용사 수식",
    "tags": [
     "structure:的",
     "affection"
    ],
+   "emotion": "teasing",
    "lemmas": [
     [
      "可怜",
      "可怜",
      "kě lián"
     ]
-   ],
-   "rd": "커롄 더 바오바오.",
-   "emotion": "teasing"
+   ]
   },
   {
    "num": 5,
    "speaker": "A",
    "zh": "我快饿死了。",
    "pinyin": "Wǒ kuài è sǐ le.",
+   "rd": "워 콰이 어 쓰 러.",
    "ko": "배고파 죽기 직전이야.",
-   "note": "快…了 (곧 ~한다) + 死了 과장 표현",
+   "note": "快…了 = 곧 ~한다, 死了 = 과장",
    "tags": [
     "structure:快了",
     "exaggeration"
    ],
+   "emotion": "sad",
    "lemmas": [
     [
      "快",
@@ -147,31 +149,36 @@
      "死",
      "sǐ"
     ]
-   ],
-   "rd": "워 콰이 어 쓰 러.",
-   "emotion": "sad"
+   ]
   },
   {
    "num": 6,
    "speaker": "B",
-   "zh": "给你点了奶茶，看门口。",
-   "pinyin": "Gěi nǐ diǎn le nǎichá, kàn ménkǒu.",
+   "zh": "奶茶给你点好了，看门口。",
+   "pinyin": "Nǎichá gěi nǐ diǎn hǎo le, kàn ménkǒu.",
+   "rd": "나이차 게이 니 뎬 하오 러, 칸 먼커우.",
    "ko": "밀크티 시켜놨어, 입구 봐봐.",
-   "note": "개사 给 (~에게 ~해 주다)",
+   "note": "给 = ~에게 해 주다",
    "tags": [
     "preposition:给",
     "positive"
    ],
+   "emotion": "gentle",
    "lemmas": [
+    [
+     "奶茶",
+     "奶茶",
+     "nǎi chá"
+    ],
     [
      "点",
      "点",
      "diǎn"
     ],
     [
-     "奶茶",
-     "奶茶",
-     "nǎi chá"
+     "好",
+     "好",
+     "hǎo"
     ],
     [
      "看",
@@ -183,21 +190,21 @@
      "门口",
      "mén kǒu"
     ]
-   ],
-   "rd": "게이 니 뎬 러 나이차, 칸 먼커우.",
-   "emotion": "gentle"
+   ]
   },
   {
    "num": 7,
    "speaker": "A",
    "zh": "真的假的？",
    "pinyin": "Zhēn de jiǎ de?",
+   "rd": "전 더 자 더?",
    "ko": "진짜야 가짜야?",
-   "note": "真的假的 (진짜? 구어 감탄 의문)",
+   "note": "真的假的 = 진짜?",
    "tags": [
     "colloquial",
     "surprise"
    ],
+   "emotion": "surprised",
    "lemmas": [
     [
      "真的",
@@ -209,26 +216,26 @@
      "假",
      "jiǎ"
     ]
-   ],
-   "rd": "전 더 자 더?",
-   "emotion": "surprised"
+   ]
   },
   {
    "num": 8,
    "speaker": "A",
-   "zh": "到了！你太好了吧！🤩",
-   "pinyin": "Dào le! Nǐ tài hǎo le ba!",
+   "zh": "来了！你太好了吧！🤩",
+   "pinyin": "Lái le! Nǐ tài hǎo le ba!",
+   "rd": "라이 러! 니 타이 하오 러 바!",
    "ko": "왔다! 너 진짜 최고다!",
-   "note": "太…了 감탄 구문 + 吧 (감탄 강조)",
+   "note": "太…了 = 너무 ~하다, 吧 = 감탄",
    "tags": [
     "structure:太了",
     "positive"
    ],
+   "emotion": "excited",
    "lemmas": [
     [
-     "到",
-     "到",
-     "dào"
+     "来",
+     "来",
+     "lái"
     ],
     [
      "太",
@@ -240,9 +247,12 @@
      "好",
      "hǎo"
     ]
-   ],
-   "rd": "다오 러! 니 타이 하오 러 바!",
-   "emotion": "excited"
+   ]
   }
- ]
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r3_life_l2_d02_1_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ }
 }

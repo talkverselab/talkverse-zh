@@ -26,16 +26,17 @@
   {
    "num": 1,
    "speaker": "B",
-   "zh": "你在哪？怎么在山上？",
-   "pinyin": "Nǐ zài nǎ? Zěnme zài shān shang?",
-   "rd": "니 짜이 나? 쩐머 짜이 산 상?",
-   "ko": "너 어디야? 왜 산에 있어?",
-   "note": "在哪 = 어디야",
+   "zh": "你在哪啊？怎么上山了？",
+   "pinyin": "Nǐ zài nǎ a? Zěnme shàng shān le?",
+   "rd": "니 짜이 나 아? 쩐머 상 산 러?",
+   "ko": "너 어디야? 어떻게 산에 올라간 거야?",
+   "note": "在哪 = 어디에 있다",
    "tags": [
     "form:在"
    ],
    "ui": "bubble",
    "at": "21:11",
+   "emotion": "worried",
    "lemmas": [
     [
      "哪",
@@ -48,37 +49,32 @@
      "zěn me"
     ],
     [
-     "山",
-     "山",
-     "shān"
-    ],
-    [
      "上",
      "上",
      "shàng"
+    ],
+    [
+     "山",
+     "山",
+     "shān"
     ]
-   ],
-   "emotion": "worried"
+   ]
   },
   {
    "num": 2,
    "speaker": "A",
-   "zh": "妈，我在看风景。",
-   "pinyin": "Mā, wǒ zài kàn fēngjǐng.",
-   "rd": "마, 워 짜이 칸 펑징.",
-   "ko": "엄마, 경치 보고 있어.",
+   "zh": "妈妈，我在看风景呢。🥰",
+   "pinyin": "Māma, wǒ zài kàn fēngjǐng ne.",
+   "rd": "마마, 워 짜이 칸 펑징 너.",
+   "ko": "엄마, 경치 보고 있어요.",
    "note": "风景 = 경치",
    "tags": [
     "form:在"
    ],
    "ui": "bubble",
    "at": "21:12",
+   "emotion": "gentle",
    "lemmas": [
-    [
-     "妈",
-     "妈",
-     "mā"
-    ],
     [
      "看",
      "看",
@@ -89,27 +85,37 @@
      "风景",
      "fēng jǐng"
     ]
-   ],
-   "emotion": "gentle"
+   ]
   },
   {
    "num": 3,
    "speaker": "B",
-   "zh": "吃饭了吗？穿得够吗？😟",
-   "pinyin": "Chīfàn le ma? Chuān de gòu ma?",
-   "rd": "츠판 러 마? 촨 더 거우 마?",
-   "ko": "밥은? 옷은 따뜻하게 입었어?",
+   "zh": "饭吃了吗？衣服穿得够暖吗？😟",
+   "pinyin": "Fàn chī le ma? Yīfu chuān de gòu nuǎn ma?",
+   "rd": "판 츠 러 마? 이푸 촨 더 거우 놘 마?",
+   "ko": "밥은 먹었어? 옷은 충분히 따뜻하게 입었어?",
    "note": "穿得够 = 충분히 입다",
    "tags": [
     "form:得"
    ],
    "ui": "bubble",
    "at": "21:13",
+   "emotion": "worried",
    "lemmas": [
     [
-     "吃饭",
-     "吃饭",
-     "chī fàn"
+     "饭",
+     "饭",
+     "fàn"
+    ],
+    [
+     "吃",
+     "吃",
+     "chī"
+    ],
+    [
+     "衣服",
+     "衣服",
+     "yī fú"
     ],
     [
      "穿",
@@ -120,29 +126,29 @@
      "够",
      "够",
      "gòu"
+    ],
+    [
+     "暖",
+     "暖",
+     "nuǎn"
     ]
-   ],
-   "emotion": "worried"
+   ]
   },
   {
    "num": 4,
    "speaker": "A",
-   "zh": "……妈，你怎么用中文？",
-   "pinyin": "…… Mā, nǐ zěnme yòng Zhōngwén?",
-   "rd": "…… 마, 니 쩐머 융 중원?",
-   "ko": "……엄마, 왜 중국어로 써?",
-   "note": "用 = 쓰다",
+   "zh": "妈妈，你怎么用中文写啊？😮",
+   "pinyin": "Māma, nǐ zěnme yòng Zhōngwén xiě a?",
+   "rd": "마마, 니 쩐머 융 중원 셰 아?",
+   "ko": "엄마, 왜 중국어로 쓰시는 거예요?",
+   "note": "用 = 쓰다/사용하다",
    "tags": [
     "form:用"
    ],
    "ui": "bubble",
    "at": "21:14",
+   "emotion": "surprised",
    "lemmas": [
-    [
-     "妈",
-     "妈",
-     "mā"
-    ],
     [
      "怎么",
      "怎么",
@@ -152,16 +158,20 @@
      "中文",
      "中文",
      "zhōng wén"
+    ],
+    [
+     "写",
+     "写",
+     "xiě"
     ]
-   ],
-   "emotion": "surprised"
+   ]
   },
   {
    "num": 5,
    "speaker": "B",
-   "zh": "我在学！你走了以后，我每天学。",
-   "pinyin": "Wǒ zài xué! Nǐ zǒu le yǐhòu, wǒ měitiān xué.",
-   "rd": "워 짜이 쉐! 니 쩌우 러 이허우, 워 메이톈 쉐.",
+   "zh": "我在学呢！你走了以后我天天学。",
+   "pinyin": "Wǒ zài xué ne! Nǐ zǒu le yǐhòu wǒ tiāntiān xué.",
+   "rd": "워 짜이 쉐 너! 니 쩌우 러 이허우 워 톈톈 쉐.",
    "ko": "배우는 중이야! 너 떠난 뒤로 매일 공부해.",
    "note": "以后 = ~한 뒤",
    "tags": [
@@ -169,6 +179,7 @@
    ],
    "ui": "bubble",
    "at": "21:15",
+   "emotion": "excited",
    "lemmas": [
     [
      "学",
@@ -186,58 +197,53 @@
      "yǐ hòu"
     ],
     [
-     "每天",
-     "每天",
-     "měi tiān"
+     "天天",
+     "天天",
+     "tiān tiān"
     ],
     [
      "学",
      "学",
      "xué"
     ]
-   ],
-   "emotion": "excited"
+   ]
   },
   {
    "num": 6,
    "speaker": "A",
-   "zh": "妈……我想你了。",
-   "pinyin": "Mā…… wǒ xiǎng nǐ le.",
-   "rd": "마…… 워 샹 니 러.",
-   "ko": "엄마…… 보고 싶어.",
-   "note": "想你了 = 보고 싶어",
+   "zh": "妈妈，我想你了。",
+   "pinyin": "Māma, wǒ xiǎng nǐ le.",
+   "rd": "마마, 워 샹 니 러.",
+   "ko": "엄마, 보고 싶어요.",
+   "note": "想你了 = 보고 싶어졌다",
    "tags": [
     "expr:想你了"
    ],
    "ui": "bubble",
    "at": "21:16",
+   "emotion": "sad",
    "lemmas": [
-    [
-     "妈",
-     "妈",
-     "mā"
-    ],
     [
      "想",
      "想",
      "xiǎng"
     ]
-   ],
-   "emotion": "sad"
+   ]
   },
   {
    "num": 7,
    "speaker": "B",
-   "zh": "我也想你。还有，快下山！",
-   "pinyin": "Wǒ yě xiǎng nǐ. Hái yǒu, kuài xià shān!",
-   "rd": "워 예 샹 니. 하이 유, 콰이 샤 산!",
-   "ko": "나도. 그리고, 빨리 산에서 내려와!",
+   "zh": "我也想你。快点下山吧！🥰",
+   "pinyin": "Wǒ yě xiǎng nǐ. Kuài diǎn xià shān ba!",
+   "rd": "워 예 샹 니. 콰이 뎬 샤 산 바!",
+   "ko": "나도 보고 싶어. 빨리 산에서 내려와!",
    "note": "下山 = 산에서 내려오다",
    "tags": [
     "form:快"
    ],
    "ui": "bubble",
    "at": "21:17",
+   "emotion": "gentle",
    "lemmas": [
     [
      "也",
@@ -250,14 +256,14 @@
      "xiǎng"
     ],
     [
-     "还有",
-     "还有",
-     "hái yǒu"
-    ],
-    [
      "快",
      "快",
      "kuài"
+    ],
+    [
+     "点",
+     "点",
+     "diǎn"
     ],
     [
      "下",
@@ -269,18 +275,12 @@
      "山",
      "shān"
     ]
-   ],
-   "emotion": "gentle",
-   "segs": [
-    [
-     "gentle",
-     "我也想你。"
-    ],
-    [
-     "shout",
-     "还有，快下山！"
-    ]
    ]
   }
- ]
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r1_travel_c1_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ }
 }

@@ -19,24 +19,21 @@
   {
    "num": 1,
    "speaker": "B",
-   "zh": "那我们点最辣的吧，嘿嘿。😜",
-   "pinyin": "Nà wǒmen diǎn zuì là de ba, hēihēi.",
+   "zh": "那点最辣的吧，嘿嘿。😜",
+   "pinyin": "Nà diǎn zuì là de ba, hēihēi.",
+   "rd": "나 뎬 쭈이 라 더 바, 헤이헤이.",
    "ko": "그럼 제일 매운 걸로 시켜요, 헤헤.",
-   "note": "点 (주문하다) + 最 + 吧",
+   "note": "点은 ‘주문하다’, 最는 최상급.",
    "tags": [
     "tease",
     "particle:吧"
    ],
+   "emotion": "teasing",
    "lemmas": [
     [
      "那",
      "那",
      "nà"
-    ],
-    [
-     "我们",
-     "我们",
-     "wǒ men"
     ],
     [
      "点",
@@ -53,36 +50,36 @@
      "辣",
      "là"
     ]
-   ],
-   "rd": "나 워먼 뎬 쭈이 라 더 바, 헤이헤이.",
-   "emotion": "teasing"
+   ]
   },
   {
    "num": 2,
    "speaker": "A",
-   "zh": "等等，一半一半可以吗？😳",
-   "pinyin": "Děngdeng, yíbàn yíbàn kěyǐ ma?",
+   "zh": "等等，一半可以吗？😳",
+   "pinyin": "Děngděng, yíbàn kěyǐ ma?",
+   "rd": "덩덩, 이반 커이 마?",
    "ko": "잠깐만요, 반반은 안 될까요?",
-   "note": "等等 (잠깐) + 一半 (절반)",
+   "note": "等等은 ‘잠깐’, 一半은 ‘절반’.",
    "tags": [
     "joke",
     "particle:吗"
    ],
-   "lemmas": [],
-   "rd": "덩덩, 이반 이반 커이 마?",
-   "emotion": "flustered"
+   "emotion": "flustered",
+   "lemmas": []
   },
   {
    "num": 3,
    "speaker": "B",
    "zh": "哈哈，好，鸳鸯锅！",
-   "pinyin": "Hāhā, hǎo, yuānyāng guō!",
+   "pinyin": "Hāhā, hǎo, yuānyāngguō!",
+   "rd": "하하, 하오, 위안양궈!",
    "ko": "하하, 좋아요, 반반 냄비(위안양궈)!",
-   "note": "鸳鸯锅 (반반 훠궈) 문화",
+   "note": "鸳鸯锅는 반반 훠궈.",
    "tags": [
     "food",
     "culture"
    ],
+   "emotion": "amused",
    "lemmas": [
     [
      "好",
@@ -94,26 +91,36 @@
      "鸳鸯锅",
      "yuān yāng guō"
     ]
-   ],
-   "rd": "하하, 하오, 위안양 궈!",
-   "emotion": "amused"
+   ]
   },
   {
    "num": 4,
    "speaker": "A",
-   "zh": "服务员！点菜！",
-   "pinyin": "Fúwùyuán! Diǎn cài!",
+   "zh": "服务员！我们要点菜！",
+   "pinyin": "Fúwùyuán! Wǒmen yào diǎn cài!",
+   "rd": "푸우위안! 워먼 야오 뎬 차이!",
    "ko": "저기요! 주문할게요!",
-   "note": "服务员 부르기 (식당 표현)",
+   "note": "服务员은 식당에서 종업원 부르기.",
    "tags": [
     "food",
     "culture"
    ],
+   "emotion": "shout",
    "lemmas": [
     [
      "服务员",
      "服务员",
      "fú wù yuán"
+    ],
+    [
+     "我们",
+     "我们",
+     "wǒ men"
+    ],
+    [
+     "要",
+     "要",
+     "yào"
     ],
     [
      "点",
@@ -125,21 +132,21 @@
      "菜",
      "cài"
     ]
-   ],
-   "rd": "푸우위안! 뎬 차이!",
-   "emotion": "shout"
+   ]
   },
   {
    "num": 5,
    "speaker": "B",
-   "zh": "你的发音真不错嘛。😜",
-   "pinyin": "Nǐ de fāyīn zhēn búcuò ma.",
+   "zh": "发音还不错嘛。😜",
+   "pinyin": "Fāyīn hái búcuò ma.",
+   "rd": "파인 하이 부춰 마.",
    "ko": "발음 꽤 좋은데요.",
-   "note": "어기조사 嘛 (인정) + 不错",
+   "note": "嘛는 인정하는 어기조사, 不错은 ‘괜찮다’.",
    "tags": [
     "praise",
     "particle:嘛"
    ],
+   "emotion": "teasing",
    "lemmas": [
     [
      "发",
@@ -152,30 +159,30 @@
      "yīn"
     ],
     [
-     "真",
-     "真",
-     "zhēn"
+     "还",
+     "还",
+     "hái"
     ],
     [
      "不错",
      "不错",
      "bù cuò"
     ]
-   ],
-   "rd": "니 더 파인 전 부춰 마.",
-   "emotion": "teasing"
+   ]
   },
   {
    "num": 6,
    "speaker": "A",
    "zh": "我练了一个星期呢。😊",
    "pinyin": "Wǒ liàn le yí ge xīngqī ne.",
+   "rd": "워 롄 러 이 거 싱치 너.",
    "ko": "일주일 연습했거든요.",
-   "note": "练 + 了 + 呢 (자랑)",
+   "note": "练了…呢는 완료와 자랑 어기.",
    "tags": [
     "joke",
     "particle:呢"
    ],
+   "emotion": "shy",
    "lemmas": [
     [
      "练",
@@ -192,57 +199,52 @@
      "星期",
      "xīng qī"
     ]
-   ],
-   "rd": "워 롄 러 이 거 싱치 너.",
-   "emotion": "shy"
+   ]
   },
   {
    "num": 7,
    "speaker": "B",
-   "zh": "就为了今天？好可爱。",
-   "pinyin": "Jiù wèile jīntiān? Hǎo kě'ài.",
+   "zh": "为了今天？太可爱了。",
+   "pinyin": "Wèile jīntiān? Tài kě'ài le.",
+   "rd": "웨이러 진톈? 타이 커'아이 러.",
    "ko": "오늘을 위해서요? 너무 귀엽다.",
-   "note": "为了 (~을 위해) + 可爱",
+   "note": "为了는 ‘~을 위해’, 可爱는 ‘귀엽다’.",
    "tags": [
     "flirt",
     "hook:cute"
    ],
+   "emotion": "teasing",
    "lemmas": [
-    [
-     "就",
-     "就",
-     "jiù"
-    ],
     [
      "今天",
      "今天",
      "jīn tiān"
     ],
     [
-     "好",
-     "好",
-     "hǎo"
+     "太",
+     "太",
+     "tài"
     ],
     [
      "可爱",
      "可爱",
      "kě ài"
     ]
-   ],
-   "rd": "주 웨이러 진톈? 하오 커'아이.",
-   "emotion": "teasing"
+   ]
   },
   {
    "num": 8,
    "speaker": "A",
    "zh": "别笑我啦，快点菜吧。😳",
    "pinyin": "Bié xiào wǒ la, kuài diǎn cài ba.",
+   "rd": "볘 샤오 워 라, 콰이 뎬 차이 바.",
    "ko": "놀리지 마요, 빨리 주문해요.",
-   "note": "别…啦 + 快…吧",
+   "note": "别…啦는 금지, 快…吧는 재촉 제안.",
    "tags": [
     "tease",
     "particle:啦"
    ],
+   "emotion": "flustered",
    "lemmas": [
     [
      "别",
@@ -269,9 +271,12 @@
      "菜",
      "cài"
     ]
-   ],
-   "rd": "볘 샤오 워 라, 콰이 뎬 차이 바.",
-   "emotion": "flustered"
+   ]
   }
- ]
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r4_love_l1_ep2_2_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ }
 }

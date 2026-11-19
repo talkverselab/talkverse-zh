@@ -21,12 +21,14 @@
    "speaker": "A",
    "zh": "大伟订了一家川菜馆。",
    "pinyin": "Dàwěi dìng le yì jiā chuāncàiguǎn.",
+   "rd": "다웨이 딩 러 이 자 촨차이관.",
    "ko": "다웨이가 쓰촨요리집을 예약했어.",
-   "note": "양사 家 (가게·식당), 동태조사 了",
+   "note": "家=가게 양사, 了=완료",
    "tags": [
     "양사 家",
     "예약"
    ],
+   "emotion": "neutral",
    "lemmas": [
     [
      "订",
@@ -43,21 +45,21 @@
      "川菜馆",
      "chuān cài guǎn"
     ]
-   ],
-   "rd": "다웨이 딩 러 이 자 촨차이관.",
-   "emotion": "neutral"
+   ]
   },
   {
    "num": 2,
    "speaker": "B",
-   "zh": "川菜？那我可太高兴了！",
-   "pinyin": "Chuāncài? Nà wǒ kě tài gāoxìng le!",
+   "zh": "川菜？那我可太开心了！",
+   "pinyin": "Chuāncài? Nà wǒ kě tài kāixīn le!",
+   "rd": "촨차이? 나 워 커 타이 카이신 러!",
    "ko": "쓰촨요리? 그럼 나야 완전 신나지!",
-   "note": "강조 부사 可 (可太…了)",
+   "note": "可=강조, 太…了=너무 ~하다",
    "tags": [
     "부사 可",
     "고향 음식"
    ],
+   "emotion": "excited",
    "lemmas": [
     [
      "川菜",
@@ -80,25 +82,25 @@
      "tài"
     ],
     [
-     "高兴",
-     "高兴",
-     "gāo xìng"
+     "开心",
+     "开心",
+     "kāi xīn"
     ]
-   ],
-   "rd": "촨차이? 나 워 커 타이 가오싱 러!",
-   "emotion": "excited"
+   ]
   },
   {
    "num": 3,
    "speaker": "A",
    "zh": "他知道你是四川人，特意选的。",
    "pinyin": "Tā zhīdào nǐ shì Sìchuānrén, tèyì xuǎn de.",
+   "rd": "타 즈다오 니 스 쓰촨런, 터이 쉬안 더.",
    "ko": "네가 쓰촨 사람인 거 알고 일부러 고른 거야.",
-   "note": "부사 特意 '일부러', 강조의 的",
+   "note": "特意=일부러, 的=강조",
    "tags": [
     "特意",
     "강조 的"
    ],
+   "emotion": "gentle",
    "lemmas": [
     [
      "知道",
@@ -135,21 +137,21 @@
      "选",
      "xuǎn"
     ]
-   ],
-   "rd": "타 즈다오 니 스 쓰촨런, 터이 쉬안 더.",
-   "emotion": "gentle"
+   ]
   },
   {
    "num": 4,
    "speaker": "B",
    "zh": "你朋友想得真周到。",
    "pinyin": "Nǐ péngyou xiǎng de zhēn zhōudào.",
+   "rd": "니 펑유 샹 더 전 저우다오.",
    "ko": "네 친구 정말 세심하게 생각해 주네.",
-   "note": "정도보어 得 (想得周到)",
+   "note": "得=정도보어",
    "tags": [
     "정도보어",
     "周到"
    ],
+   "emotion": "cheerful",
    "lemmas": [
     [
      "朋友",
@@ -171,21 +173,21 @@
      "到",
      "dào"
     ]
-   ],
-   "rd": "니 펑유 샹 더 전 저우다오.",
-   "emotion": "cheerful"
+   ]
   },
   {
    "num": 5,
    "speaker": "A",
    "zh": "到时候你就知道他多有意思了。",
-   "pinyin": "Dàoshíhou nǐ jiù zhīdào tā duō yǒuyìsi le.",
+   "pinyin": "Dào shíhou nǐ jiù zhīdào tā duō yǒu yìsi le.",
+   "rd": "다오 스허우 니 주 즈다오 타 둬 유 이쓰 러.",
    "ko": "가 보면 걔가 얼마나 재밌는지 알게 될 거야.",
-   "note": "감탄의 多+형용사, 到时候 '그때 가서'",
+   "note": "多=얼마나, 到时候=그때 가서",
    "tags": [
     "多+형용사",
     "到时候"
    ],
+   "emotion": "cheerful",
    "lemmas": [
     [
      "到",
@@ -217,30 +219,25 @@
      "有意思",
      "yǒu yì si"
     ]
-   ],
-   "rd": "다오스허우 니 주 즈다오 타 둬 유이쓰 러.",
-   "emotion": "cheerful"
+   ]
   },
   {
    "num": 6,
    "speaker": "B",
-   "zh": "我现在就有点儿期待了。",
-   "pinyin": "Wǒ xiànzài jiù yǒudiǎnér qīdài le.",
+   "zh": "我已经有点儿期待了。",
+   "pinyin": "Wǒ yǐjīng yǒudiǎnr qīdài le.",
+   "rd": "워 이징 유뎬얼 치다이 러.",
    "ko": "나 벌써 조금 기대되기 시작했어.",
-   "note": null,
+   "note": "",
    "tags": [
     "ext"
    ],
+   "emotion": "shy",
    "lemmas": [
     [
-     "现在",
-     "现在",
-     "xiàn zài"
-    ],
-    [
-     "就",
-     "就",
-     "jiù"
+     "已经",
+     "已经",
+     "yǐ jīng"
     ],
     [
      "有点儿",
@@ -252,20 +249,20 @@
      "期待",
      "qī dài"
     ]
-   ],
-   "rd": "워 셴짜이 주 유뎬얼 치다이 러.",
-   "emotion": "shy"
+   ]
   },
   {
    "num": 7,
    "speaker": "A",
    "zh": "放心，你们俩肯定合得来。",
-   "pinyin": "Fàngxīn, nǐmen liǎ kěndìng hédelái.",
+   "pinyin": "Fàngxīn, nǐmen liǎ kěndìng hé de lái.",
+   "rd": "팡신, 니먼 랴 컨딩 허 더 라이.",
    "ko": "안심해, 너희 둘 분명 잘 맞을 거야.",
-   "note": null,
+   "note": "",
    "tags": [
     "ext"
    ],
+   "emotion": "gentle",
    "lemmas": [
     [
      "放心",
@@ -297,20 +294,20 @@
      "来",
      "lái"
     ]
-   ],
-   "rd": "팡신, 니먼 랴 컨딩 허더라이.",
-   "emotion": "gentle"
+   ]
   },
   {
    "num": 8,
    "speaker": "B",
-   "zh": "那周六见，我先去准备一下。",
-   "pinyin": "Nà zhōuliù jiàn, wǒ xiān qù zhǔnbèi yīxià.",
+   "zh": "那周六见，我先去准备了。",
+   "pinyin": "Nà zhōuliù jiàn, wǒ xiān qù zhǔnbèi le.",
+   "rd": "나 저우류 젠, 워 셴 취 준베이 러.",
    "ko": "그럼 토요일에 봐, 나 먼저 준비하러 갈게.",
-   "note": null,
+   "note": "",
    "tags": [
     "ext"
    ],
+   "emotion": "cheerful",
    "lemmas": [
     [
      "那",
@@ -336,15 +333,13 @@
      "准备",
      "准备",
      "zhǔn bèi"
-    ],
-    [
-     "一下",
-     "一下",
-     "yī xià"
     ]
-   ],
-   "rd": "나 저우류 젠, 워 셴 취 준베이 이샤.",
-   "emotion": "cheerful"
+   ]
   }
- ]
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r4_love_l3_d03_2_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ }
 }

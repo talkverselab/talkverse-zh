@@ -19,14 +19,16 @@
   {
    "num": 1,
    "speaker": "B",
-   "zh": "Mark！这儿，这儿！",
-   "pinyin": "Mark! Zhèr, zhèr!",
-   "ko": "Mark! 여기요, 여기!",
-   "note": "这儿 (여기) 부르기",
+   "zh": "{name}！这儿，这儿！",
+   "pinyin": "{name}! Zhèr, zhèr!",
+   "rd": "{name}! 절, 절!",
+   "ko": "{name}! 여기요, 여기!",
+   "note": "这儿은 ‘여기’ 부르기.",
    "tags": [
     "greeting",
     "topic:place"
    ],
+   "emotion": "shout",
    "lemmas": [
     [
      "这儿",
@@ -38,21 +40,21 @@
      "这儿",
      "zhè ér"
     ]
-   ],
-   "rd": "Mark! 절, 절!",
-   "emotion": "shout"
+   ]
   },
   {
    "num": 2,
    "speaker": "A",
    "zh": "小丽！你来得真早。",
    "pinyin": "Xiǎolì! Nǐ lái de zhēn zǎo.",
+   "rd": "샤오리! 니 라이 더 전 짜오.",
    "ko": "샤오리! 진짜 일찍 왔네요.",
-   "note": "得 정도보어 (来得早)",
+   "note": "得는 정도보어, 来得早는 ‘일찍 오다’.",
    "tags": [
     "greeting",
     "function:得"
    ],
+   "emotion": "surprised",
    "lemmas": [
     [
      "来",
@@ -69,21 +71,21 @@
      "早",
      "zǎo"
     ]
-   ],
-   "rd": "샤오리! 니 라이 더 전 짜오.",
-   "emotion": "surprised"
+   ]
   },
   {
    "num": 3,
    "speaker": "B",
    "zh": "我也刚到，坐吧。🥰",
    "pinyin": "Wǒ yě gāng dào, zuò ba.",
+   "rd": "워 예 강 다오, 쭤 바.",
    "ko": "저도 방금 왔어요, 앉아요.",
-   "note": "刚 (방금) + 吧 권유",
+   "note": "刚은 ‘방금’, 吧는 권유.",
    "tags": [
     "greeting",
     "particle:吧"
    ],
+   "emotion": "gentle",
    "lemmas": [
     [
      "也",
@@ -105,21 +107,21 @@
      "坐",
      "zuò"
     ]
-   ],
-   "rd": "워 예 강 다오, 쭤 바.",
-   "emotion": "gentle"
+   ]
   },
   {
    "num": 4,
    "speaker": "A",
    "zh": "这家店人真多啊。😮",
    "pinyin": "Zhè jiā diàn rén zhēn duō a.",
+   "rd": "저 자 뎬 런 전 둬 아.",
    "ko": "이 가게 사람 진짜 많네요.",
-   "note": "这家店 + 真…啊 감탄",
+   "note": "这家店은 ‘이 가게’, 真…啊는 감탄.",
    "tags": [
     "smalltalk",
     "particle:啊"
    ],
+   "emotion": "surprised",
    "lemmas": [
     [
      "这",
@@ -151,21 +153,21 @@
      "多",
      "duō"
     ]
-   ],
-   "rd": "저 자 뎬 런 전 둬 아.",
-   "emotion": "surprised"
+   ]
   },
   {
    "num": 5,
    "speaker": "B",
    "zh": "对，这儿的火锅很有名。",
    "pinyin": "Duì, zhèr de huǒguō hěn yǒumíng.",
+   "rd": "두이, 절 더 훠궈 헌 유밍.",
    "ko": "네, 여기 훠궈가 유명해요.",
-   "note": "有名 (유명하다)",
+   "note": "有名은 ‘유명하다’.",
    "tags": [
     "food",
     "hook:hotpot"
    ],
+   "emotion": "neutral",
    "lemmas": [
     [
      "这儿",
@@ -192,21 +194,21 @@
      "有名",
      "yǒu míng"
     ]
-   ],
-   "rd": "두이, 절 더 훠궈 헌 유밍.",
-   "emotion": "neutral"
+   ]
   },
   {
    "num": 6,
    "speaker": "A",
    "zh": "火锅！我一直想吃！",
    "pinyin": "Huǒguō! Wǒ yìzhí xiǎng chī!",
+   "rd": "훠궈! 워 이즈 샹 츠!",
    "ko": "훠궈! 계속 먹고 싶었어요!",
-   "note": "一直 (줄곧) + 想",
+   "note": "一直는 ‘줄곧’, 想은 의지.",
    "tags": [
     "food",
     "function:想"
    ],
+   "emotion": "excited",
    "lemmas": [
     [
      "火",
@@ -233,21 +235,21 @@
      "吃",
      "chī"
     ]
-   ],
-   "rd": "훠궈! 워 이즈 샹 츠!",
-   "emotion": "excited"
+   ]
   },
   {
    "num": 7,
    "speaker": "B",
    "zh": "你能吃辣吗？😜",
    "pinyin": "Nǐ néng chī là ma?",
+   "rd": "니 넝 츠 라 마?",
    "ko": "매운 거 먹을 수 있어요?",
-   "note": "能 (가능) + 吃辣",
+   "note": "能은 가능, 吃辣은 ‘매운 거 먹다’.",
    "tags": [
     "question",
     "particle:吗"
    ],
+   "emotion": "teasing",
    "lemmas": [
     [
      "能",
@@ -264,21 +266,21 @@
      "辣",
      "là"
     ]
-   ],
-   "rd": "니 넝 츠 라 마?",
-   "emotion": "teasing"
+   ]
   },
   {
    "num": 8,
    "speaker": "A",
    "zh": "当然！韩国人不怕辣。",
    "pinyin": "Dāngrán! Hánguó rén bú pà là.",
+   "rd": "당란! 한궈 런 부 파 라.",
    "ko": "당연하죠! 한국인은 매운 거 안 무서워해요.",
-   "note": "不怕 (두렵지 않다)",
+   "note": "不怕은 ‘두렵지 않다’.",
    "tags": [
     "joke",
     "topic:korea"
    ],
+   "emotion": "excited",
    "lemmas": [
     [
      "当然",
@@ -300,9 +302,12 @@
      "辣",
      "là"
     ]
-   ],
-   "rd": "당란! 한궈 런 부 파 라.",
-   "emotion": "excited"
+   ]
   }
- ]
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r4_love_l1_ep2_1_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ }
 }

@@ -1,0 +1,8 @@
+1 B: 真心的人就不会想离开！ / Zhēnxīn de rén jiù bú huì xiǎng líkāi! / 진심인 사람은 애초에 떠날 생각을 안 해! / ‘就’ 귀결 + ‘会’ 부정 / shout
+2 A: 我什么时候说想走了？ / Wǒ shénme shíhou shuō xiǎng zǒu le? / 내가 언제 떠나고 싶다고 했어? / ‘什么时候’ 반어 용법 / annoyed
+3 B: 你犹豫本身就是答案。 / Nǐ yóuyù běnshēn jiù shì dá'àn. / 네가 고민한다는 것 자체가 이미 답이야. / ‘本身’ + ‘就是’ 단정 / sad
+4 A: 小丽，听我解释一下。 / Xiǎolì, tīng wǒ jiěshì yíxià. / 샤오리, 내 설명 좀 들어봐. / ‘听我+동사’ 겸어문 / flustered
+5 B: 不听，我要睡觉了。 / Bù tīng, wǒ yào shuìjiào le. / 안 들어, 나 잘 거야. / ‘要…了’ 임박 표현 / annoyed
+6 A: 小丽，开门，我们谈谈。 / Xiǎolì, kāi mén, wǒmen tántan. / 샤오리, 문 좀 열어 봐, 얘기 좀 하자. /  / worried
+7 B: 没什么好说的，晚安。 / Méi shénme hǎo shuō de, wǎn'ān. / 할 말 없어, 잘 자. /  / stiff
+8 A: 好，那我们冷静两天再谈。 / Hǎo, nà wǒmen lěngjìng liǎng tiān zài tán. / 알았어, 그럼 우리 이틀만 진정하고 다시 얘기하자. /  / sad

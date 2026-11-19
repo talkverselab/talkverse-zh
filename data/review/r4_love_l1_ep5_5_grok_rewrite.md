@@ -1,0 +1,13 @@
+=== r4_love_l1_ep5_5
+title: 미래 ⑤
+scene: 관계 확정 — 장래 계획 · 언어 교환 · 부모님 인사 약속 · 고백
+B: 小丽
+register: 반말(친구·연인)
+1 A | 见面！春节一起回四川！ | Jiànmiàn! Chūnjié yìqǐ huí Sìchuān! | 만나! 춘절에 같이 쓰촨 가자! | 春节=설, 回=돌아가다 | emotion=excited
+2 B | 我爸会考你中文的哦。 | Wǒ bà huì kǎo nǐ Zhōngwén de o. | 우리 아빠가 중국어 시험 볼 거야. | 考=시험 보다, 会…的=할 것이다, 哦=경고/여운 | emotion=teasing
+3 A | 没问题，现在开始复习！ | Méi wèntí, xiànzài kāishǐ fùxí! | 문제없어, 지금부터 복습 시작! | 开始=시작하다, 复习=복습하다 | emotion=excited
+4 B | 先复习最重要的一句。 | Xiān fùxí zuì zhòngyào de yí jù. | 제일 중요한 한 마디부터 복습해. | 最重要的=가장 중요한, 一句=한 마디 | emotion=teasing
+5 A | 哪一句？ | Nǎ yí jù? | 어떤 말? | 哪=어느 | emotion=neutral
+6 B | 叔叔阿姨好，我是小丽的男朋友。 | Shūshu āyí hǎo, wǒ shì Xiǎolì de nánpéngyou. | 아버님 어머님 안녕하세요, 저는 샤오리의 남자친구입니다. | 叔叔阿姨=부모님 호칭, 男朋友=남자친구 | emotion=gentle
+7 A | 男朋友……马上背下来！ | Nánpéngyou……mǎshàng bèi xiàlái! | 남자친구…! 바로 외울게! | 马上=곧장, 背下来=외워버리다 | emotion=excited
+8 B | 傻瓜，路还长着呢。 | Shǎguā, lù hái chángzhe ne. | 바보, 앞으로 갈 길이 아직 길어. | 傻瓜=바보(애칭), 呢=여운 | emotion=teasing

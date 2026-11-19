@@ -1,0 +1,13 @@
+=== r4_life_l2_d20_2
+title: 이사 ②
+scene: 이사 갈 집을 고르며 역세권파 Mark와 조용한 동네파 小丽가 맞붙는다.
+B: 小丽
+register: 반말(친구·연인)
+1 A | 那你怎么不走路呢？ | Nà nǐ zěnme bù zǒulù ne? | 그럼 넌 왜 안 걷는데? | 怎么不…呢는 ‘왜 ~하지 않느냐’는 반문. | emotion=tsukkomi
+2 B | 我又不用上班啊，哈哈。 | Wǒ yòu bùyòng shàngbān a, hāhā. | 난 출근 안 해도 되거든, 하하. | 又不는 ‘~한 것도 아닌데’, 不用은 ‘할 필요 없다’. | emotion=teasing
+3 A | 太不公平了吧！ | Tài bù gōngpíng le ba! | 너무 불공평한 거 아냐! | 太不…了는 부정형 강조, 吧는 항의성 감탄. | emotion=annoyed
+4 B | 那找个中间的，好不好？ | Nà zhǎo ge zhōngjiān de, hǎo bù hǎo? | 그럼 중간쯤인 데 찾자, 어때? | 好不好는 정반의문으로 부드러운 타협 제안. | emotion=gentle
+5 A | 行吧，听你的。 | Xíng ba, tīng nǐ de. | 그래 알았어, 네 말 들을게. | 听你的는 ‘네 말대로 할게’, 行吧는 ‘그러자 뭐’. | emotion=amused
+6 B | 好，那周末去看房子。 | Hǎo, nà zhōumò qù kàn fángzi. | 좋아, 그럼 주말에 집 보러 가자. |  | emotion=cheerful
+7 A | 嗯，希望能找到合适的。 | Èn, xīwàng néng zhǎodào héshì de. | 응, 딱 맞는 데 찾았으면 좋겠다. |  | emotion=gentle
+8 B | 肯定行的，我们一起加油。 | Kěndìng xíng de, wǒmen yìqǐ jiāyóu. | 분명 될 거야, 우리 같이 힘내자. |  | emotion=cheerful

@@ -20,13 +20,15 @@
    "num": 1,
    "speaker": "B",
    "zh": "我真是服了你了。",
-   "pinyin": "Wǒ zhēnshi fú le nǐ le.",
+   "pinyin": "Wǒ zhēn shì fú le nǐ le.",
+   "rd": "워 전 스 푸 러 니 러.",
    "ko": "너한테 진짜 두 손 들었다.",
-   "note": "구어 표현 服了 (졌다, 못 말린다)",
+   "note": "服了 는 졌다, 못 말린다.",
    "tags": [
     "banter",
     "expression:服了"
    ],
+   "emotion": "tsukkomi",
    "lemmas": [
     [
      "真是",
@@ -38,21 +40,21 @@
      "服",
      "fú"
     ]
-   ],
-   "rd": "워 전스 푸 러 니 러.",
-   "emotion": "tsukkomi"
+   ]
   },
   {
    "num": 2,
    "speaker": "A",
    "zh": "吃的最重要嘛。😳",
    "pinyin": "Chī de zuì zhòngyào ma.",
+   "rd": "츠 더 쭈이 중야오 마.",
    "ko": "먹는 게 제일 중요하잖아.",
-   "note": "동사+的 명사화 (먹을 것) + 嘛",
+   "note": "的 는 명사화, 嘛 는 어기.",
    "tags": [
     "food",
     "grammar:的명사화"
    ],
+   "emotion": "flustered",
    "lemmas": [
     [
      "吃",
@@ -69,21 +71,21 @@
      "重要",
      "zhòng yào"
     ]
-   ],
-   "rd": "츠 더 쭈이 중야오 마.",
-   "emotion": "flustered"
+   ]
   },
   {
    "num": 3,
    "speaker": "B",
-   "zh": "衣服我来收拾，你别动了。",
-   "pinyin": "Yīfu wǒ lái shōushi, nǐ bié dòng le.",
+   "zh": "衣服我来收，你别动了。",
+   "pinyin": "Yīfu wǒ lái shōu, nǐ bié dòng le.",
+   "rd": "이푸 워 라이 서우, 니 볘 둥 러.",
    "ko": "옷은 내가 쌀게, 넌 손대지 마.",
-   "note": "我来+동사 (내가 할게) + 别……了",
+   "note": "我来 는 내가 할게, 别…了 는 금지.",
    "tags": [
     "daily",
     "pattern:我来"
    ],
+   "emotion": "annoyed",
    "lemmas": [
     [
      "衣服",
@@ -96,9 +98,9 @@
      "lái"
     ],
     [
-     "收拾",
-     "收拾",
-     "shōu shí"
+     "收",
+     "收",
+     "shōu"
     ],
     [
      "别",
@@ -110,21 +112,21 @@
      "动",
      "dòng"
     ]
-   ],
-   "rd": "이푸 워 라이 서우스, 니 볘 둥 러.",
-   "emotion": "annoyed"
+   ]
   },
   {
    "num": 4,
    "speaker": "A",
    "zh": "那我负责吃零食。",
    "pinyin": "Nà wǒ fùzé chī língshí.",
+   "rd": "나 워 푸쩌 츠 링스.",
    "ko": "그럼 난 간식 먹는 거 담당할게.",
-   "note": "负责+동사구 (~을 담당하다)",
+   "note": "负责 는 ~을 담당하다.",
    "tags": [
     "humor",
     "verb:负责"
    ],
+   "emotion": "teasing",
    "lemmas": [
     [
      "那",
@@ -146,21 +148,21 @@
      "零食",
      "líng shí"
     ]
-   ],
-   "rd": "나 워 푸쩌 츠 링스.",
-   "emotion": "teasing"
+   ]
   },
   {
    "num": 5,
    "speaker": "B",
    "zh": "你负责搬行李！",
    "pinyin": "Nǐ fùzé bān xíngli!",
+   "rd": "니 푸쩌 반 싱리!",
    "ko": "너는 짐 나르기 담당이야!",
-   "note": "같은 구문 되받아치기 (负责 반복)",
+   "note": "负责 반복으로 되받아침.",
    "tags": [
     "banter",
     "verb:负责"
    ],
+   "emotion": "shout",
    "lemmas": [
     [
      "负责",
@@ -177,55 +179,55 @@
      "行李",
      "xíng lǐ"
     ]
-   ],
-   "rd": "니 푸쩌 반 싱리!",
-   "emotion": "shout"
+   ]
   },
   {
    "num": 6,
    "speaker": "A",
-   "zh": "遵命，行李箱交给我。",
-   "pinyin": "Zūnmìng, xínglǐxiāng jiāogěi wǒ.",
+   "zh": "行行，箱子交给我。",
+   "pinyin": "Xíng xíng, xiāngzi jiāo gěi wǒ.",
+   "rd": "싱 싱, 샹쯔 자오 게이 워.",
    "ko": "네네, 캐리어는 나한테 맡겨.",
-   "note": null,
+   "note": "",
    "tags": [
     "ext"
    ],
+   "emotion": "amused",
    "lemmas": [
     [
-     "命",
-     "命",
-     "mìng"
+     "行",
+     "行",
+     "xíng"
     ],
     [
-     "行李",
-     "行李",
-     "xíng lǐ"
+     "行",
+     "行",
+     "xíng"
     ],
     [
-     "箱",
-     "箱",
-     "xiāng"
+     "箱子",
+     "箱子",
+     "xiāng zi"
     ],
     [
      "交给",
      "交给",
      "jiāo gěi"
     ]
-   ],
-   "rd": "쭌밍, 싱리샹 자오게이 워.",
-   "emotion": "amused"
+   ]
   },
   {
    "num": 7,
    "speaker": "B",
-   "zh": "牙刷充电器我都带好了。",
-   "pinyin": "Yáshuā chōngdiànqì wǒ dōu dài hǎo le.",
+   "zh": "牙刷充电器我都带了。",
+   "pinyin": "Yáshuā chōngdiànqì wǒ dōu dài le.",
+   "rd": "야솨 충뎬치 워 더우 다이 러.",
    "ko": "칫솔이랑 충전기는 내가 다 챙겼어.",
-   "note": null,
+   "note": "",
    "tags": [
     "ext"
    ],
+   "emotion": "neutral",
    "lemmas": [
     [
      "牙刷",
@@ -246,26 +248,21 @@
      "带",
      "带",
      "dài"
-    ],
-    [
-     "好",
-     "好",
-     "hǎo"
     ]
-   ],
-   "rd": "야솨 충뎬치 워 더우 다이 하오 러.",
-   "emotion": "neutral"
+   ]
   },
   {
    "num": 8,
    "speaker": "A",
-   "zh": "有你在真是太好了。",
-   "pinyin": "Yǒu nǐ zài zhēnshì tàihǎole.",
+   "zh": "有你真好。",
+   "pinyin": "Yǒu nǐ zhēn hǎo.",
+   "rd": "유 니 전 하오.",
    "ko": "네가 있어서 진짜 다행이다.",
-   "note": null,
+   "note": "",
    "tags": [
     "ext"
    ],
+   "emotion": "gentle",
    "lemmas": [
     [
      "有",
@@ -273,23 +270,21 @@
      "yǒu"
     ],
     [
-     "真是",
-     "真是",
-     "zhēn shì"
-    ],
-    [
-     "太",
-     "太",
-     "tài"
+     "真",
+     "真",
+     "zhēn"
     ],
     [
      "好",
      "好",
      "hǎo"
     ]
-   ],
-   "rd": "유 니 짜이 전스 타이하오러.",
-   "emotion": "gentle"
+   ]
   }
- ]
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r4_life_l2_d11_2_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ }
 }

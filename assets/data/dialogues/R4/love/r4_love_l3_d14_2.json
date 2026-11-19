@@ -19,14 +19,16 @@
   {
    "num": 1,
    "speaker": "A",
-   "zh": "好吧，听你的。",
-   "pinyin": "Hǎo ba, tīng nǐ de.",
+   "zh": "好，听你的。",
+   "pinyin": "Hǎo, tīng nǐ de.",
+   "rd": "하오, 팅 니 더.",
    "ko": "알았어, 네 말 들을게.",
-   "note": "관용 표현 听你的 (네 말대로 할게)",
+   "note": "‘听你的’는 ‘네 말대로 할게’",
    "tags": [
     "순응",
     "관용표현"
    ],
+   "emotion": "neutral",
    "lemmas": [
     [
      "好",
@@ -38,26 +40,31 @@
      "听",
      "tīng"
     ]
-   ],
-   "rd": "하오 바, 팅 니 더.",
-   "emotion": "neutral"
+   ]
   },
   {
    "num": 2,
    "speaker": "B",
-   "zh": "粥好了，小心烫啊。😟",
-   "pinyin": "Zhōu hǎo le, xiǎoxīn tàng a.",
+   "zh": "粥煮好了，小心烫。",
+   "pinyin": "Zhōu zhǔ hǎo le, xiǎoxīn tàng.",
+   "rd": "저우 주 하오 러, 샤오신 탕.",
    "ko": "죽 다 됐어, 뜨거우니까 조심해.",
-   "note": "형용사 好 + 了 (완성됨)",
+   "note": "‘好了’는 완성됨을 나타냄",
    "tags": [
     "죽",
     "배려"
    ],
+   "emotion": "worried",
    "lemmas": [
     [
      "粥",
      "粥",
      "zhōu"
+    ],
+    [
+     "煮",
+     "煮",
+     "zhǔ"
     ],
     [
      "好",
@@ -74,21 +81,21 @@
      "烫",
      "tàng"
     ]
-   ],
-   "rd": "저우 하오 러, 샤오신 탕 아.",
-   "emotion": "worried"
+   ]
   },
   {
    "num": 3,
    "speaker": "A",
-   "zh": "真好喝，你煮得真棒。",
-   "pinyin": "Zhēn hǎo hē, nǐ zhǔ de zhēn bàng.",
+   "zh": "真好吃，你煮得真棒。",
+   "pinyin": "Zhēn hǎochī, nǐ zhǔ de zhēn bàng.",
+   "rd": "전 하오츠, 니 주 더 전 방.",
    "ko": "진짜 맛있다, 너 진짜 잘 끓인다.",
-   "note": "정도보어 得 (煮得棒)",
+   "note": "‘得’는 정도보어",
    "tags": [
     "칭찬",
     "감동"
    ],
+   "emotion": "cheerful",
    "lemmas": [
     [
      "真",
@@ -96,14 +103,9 @@
      "zhēn"
     ],
     [
-     "好",
-     "好",
-     "hǎo"
-    ],
-    [
-     "喝",
-     "喝",
-     "hē"
+     "好吃",
+     "好吃",
+     "hǎo chī"
     ],
     [
      "煮",
@@ -120,26 +122,26 @@
      "棒",
      "bàng"
     ]
-   ],
-   "rd": "전 하오 허, 니 주 더 전 방.",
-   "emotion": "cheerful"
+   ]
   },
   {
    "num": 4,
    "speaker": "B",
-   "zh": "喝完好好睡一觉吧。🥰",
-   "pinyin": "Hē wán hǎohāo shuì yí jiào ba.",
+   "zh": "吃完好好睡一觉。",
+   "pinyin": "Chī wán hǎohǎo shuì yí jiào.",
+   "rd": "츠 완 하오하오 수이 이 자오.",
    "ko": "다 먹고 푹 한숨 자.",
-   "note": "결과보어 完 (다 ~하다)",
+   "note": "‘完’은 결과보어",
    "tags": [
     "보살핌",
     "결과보어"
    ],
+   "emotion": "gentle",
    "lemmas": [
     [
-     "喝",
-     "喝",
-     "hē"
+     "吃",
+     "吃",
+     "chī"
     ],
     [
      "完",
@@ -166,21 +168,21 @@
      "觉",
      "jué"
     ]
-   ],
-   "rd": "허 완 하오하오 수이 이 자오 바.",
-   "emotion": "gentle"
+   ]
   },
   {
    "num": 5,
    "speaker": "A",
-   "zh": "有你在，我马上就好了。",
-   "pinyin": "Yǒu nǐ zài, wǒ mǎshàng jiù hǎo le.",
+   "zh": "有你在，马上就会好。",
+   "pinyin": "Yǒu nǐ zài, mǎshàng jiù huì hǎo.",
+   "rd": "유 니 짜이, 마상 주 후이 하오.",
    "ko": "네가 곁에 있으니 금방 나을 것 같아.",
-   "note": "马上就… (곧, 금방)",
+   "note": "‘马上就’는 ‘곧, 금방’",
    "tags": [
     "애정",
     "감동"
    ],
+   "emotion": "shy",
    "lemmas": [
     [
      "有",
@@ -198,24 +200,29 @@
      "jiù"
     ],
     [
+     "会",
+     "会",
+     "huì"
+    ],
+    [
      "好",
      "好",
      "hǎo"
     ]
-   ],
-   "rd": "유 니 짜이, 워 마상 주 하오 러.",
-   "emotion": "shy"
+   ]
   },
   {
    "num": 6,
    "speaker": "B",
-   "zh": "快睡吧，我在旁边陪着你。",
-   "pinyin": "Kuàishuìba, wǒ zài pángbiān péi zhe nǐ.",
+   "zh": "快睡吧，我在旁边看着。",
+   "pinyin": "Kuài shuì ba, wǒ zài pángbiān kànzhe.",
+   "rd": "콰이 수이 바, 워 짜이 팡볜 칸저.",
    "ko": "빨리 자, 내가 옆에서 지켜줄게.",
-   "note": null,
+   "note": "",
    "tags": [
     "ext"
    ],
+   "emotion": "gentle",
    "lemmas": [
     [
      "快",
@@ -233,54 +240,54 @@
      "páng biān"
     ],
     [
-     "陪",
-     "陪",
-     "péi"
+     "看着",
+     "看着",
+     "kàn zhe"
     ]
-   ],
-   "rd": "콰이수이바, 워 짜이 팡볜 페이 저 니.",
-   "emotion": "gentle"
+   ]
   },
   {
    "num": 7,
    "speaker": "A",
-   "zh": "谢谢你，小丽，辛苦你了。",
-   "pinyin": "Xièxiè nǐ, xiǎolì, xīnkǔ nǐ le.",
+   "zh": "谢谢你，小丽，辛苦了。",
+   "pinyin": "Xièxie nǐ, Xiǎolì, xīnkǔ le.",
+   "rd": "셰셰 니, 샤오리, 신쿠 러.",
    "ko": "고마워, 샤오리, 고생했어.",
-   "note": null,
+   "note": "",
    "tags": [
     "ext"
    ],
+   "emotion": "gentle",
    "lemmas": [
     [
      "辛苦",
      "辛苦",
      "xīn kǔ"
     ]
-   ],
-   "rd": "셰셰 니, 샤오리, 신쿠 니 러.",
-   "emotion": "gentle"
+   ]
   },
   {
    "num": 8,
    "speaker": "B",
-   "zh": "别客气，这是应该的。",
-   "pinyin": "Bié kèqì, zhèshì yīnggāi de.",
+   "zh": "说什么呢，这是应该的。",
+   "pinyin": "Shuō shénme ne, zhè shì yīnggāi de.",
+   "rd": "숴 선머 너, 저 스 잉가이 더.",
    "ko": "무슨 소리야, 당연히 해야 할 일인걸.",
-   "note": null,
+   "note": "",
    "tags": [
     "ext"
    ],
+   "emotion": "cheerful",
    "lemmas": [
     [
-     "别",
-     "别",
-     "bié"
+     "说",
+     "说",
+     "shuō"
     ],
     [
-     "客气",
-     "客气",
-     "kè qì"
+     "什么",
+     "什么",
+     "shén me"
     ],
     [
      "这",
@@ -297,9 +304,12 @@
      "应该",
      "yīng gāi"
     ]
-   ],
-   "rd": "볘 커치, 저스 잉가이 더.",
-   "emotion": "cheerful"
+   ]
   }
- ]
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r4_love_l3_d14_2_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ }
 }

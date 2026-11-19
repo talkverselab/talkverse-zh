@@ -1,0 +1,8 @@
+1 B: 你给我拍的照片发给我。 / Nǐ gěi wǒ pāi de zhàopiàn fā gěi wǒ. / 네가 찍어준 사진 나한테 보내줘. / 给+대상+동사: ~에게 ~해 주다 / polite
+2 A: 发了，快看看！ / Fā le, kuài kànkan! / 보냈어, 빨리 봐! / 快+동사: 빨리 ~해라 (재촉) / cheerful
+3 B: 腿怎么这么短！ / Tuǐ zěnme zhème duǎn! / 다리가 왜 이렇게 짧아! / 这么+형용사: 이렇게나 ~하다 / shout
+4 A: 我觉得挺好看的。 / Wǒ juéde tǐng hǎokàn de. / 난 꽤 예쁘게 나온 것 같아. / 挺……的: 꽤 ~하다 / flustered
+5 B: 马上重拍！ / Mǎshàng chóng pāi! / 당장 다시 찍어! / 重+동사: 처음부터 다시 ~하다 / shout
+6 A: 都拍了五十张了。 / Dōu pāi le wǔshí zhāng le. / 벌써 오십 장이나 찍었는데. / 都……了: 벌써 ~나 했다 / sad
+7 B: 五十张里没有一张好看的。 / Wǔshí zhāng lǐ méiyǒu yì zhāng hǎokàn de. / 오십 장 중에 봐줄 만한 게 한 장도 없어. / 没有一+양사: 하나도 없다 / annoyed
+8 A: 那你教教我怎么拍。 / Nà nǐ jiāojiāo wǒ zěnme pāi. / 그럼 어떻게 찍는지 좀 가르쳐 줘. / 동사 중첩: 가볍게 좀 ~하다 / flustered

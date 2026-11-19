@@ -21,12 +21,14 @@
    "speaker": "A",
    "zh": "你喝一口试试嘛。😜",
    "pinyin": "Nǐ hē yì kǒu shìshi ma.",
-   "ko": "한 모금만 마셔 봐 봐.",
-   "note": "동사구+试试 (한번 해보다) + 嘛",
+   "rd": "니 허 이 커우 스스 마.",
+   "ko": "한 모금만 마셔 봐.",
+   "note": "试试+嘛: 한번 해봐",
    "tags": [
     "coffee",
     "pattern:试试"
    ],
+   "emotion": "teasing",
    "lemmas": [
     [
      "喝",
@@ -48,21 +50,21 @@
      "试",
      "shì"
     ]
-   ],
-   "rd": "니 허 이 커우 스스 마.",
-   "emotion": "teasing"
+   ]
   },
   {
    "num": 2,
    "speaker": "B",
-   "zh": "好吧……哇，好凉快！",
-   "pinyin": "Hǎo ba……wā, hǎo liángkuai!",
-   "ko": "알았어……우와, 완전 시원해!",
-   "note": "好+형용사 감탄 (엄청 ~하다)",
+   "zh": "好吧，好凉快啊！😒",
+   "pinyin": "Hǎo ba, hǎo liángkuai a!",
+   "rd": "하오 바, 하오 량콰이 아!",
+   "ko": "알았어, 완전 시원해!",
+   "note": "好+형용사: 엄청 ~하다",
    "tags": [
     "reaction",
     "exclamation:好"
    ],
+   "emotion": "annoyed",
    "lemmas": [
     [
      "好",
@@ -79,31 +81,21 @@
      "凉快",
      "liáng kuài"
     ]
-   ],
-   "rd": "하오 바……와, 하오 량콰이!",
-   "emotion": "annoyed",
-   "segs": [
-    [
-     "annoyed",
-     "好吧……"
-    ],
-    [
-     "surprised",
-     "哇，好凉快！"
-    ]
    ]
   },
   {
    "num": 3,
    "speaker": "A",
-   "zh": "怎么样？我说得对吧？😜",
-   "pinyin": "Zěnmeyàng? Wǒ shuō de duì ba?",
+   "zh": "怎么样，我说得对吧？😜",
+   "pinyin": "Zěnmeyàng, wǒ shuō de duì ba?",
+   "rd": "쩐머양, 워 숴 더 두이 바?",
    "ko": "어때? 내 말 맞지?",
-   "note": "정도보어 得 (说得对: 맞게 말하다)",
+   "note": "得: 맞게 말하다",
    "tags": [
     "banter",
     "complement:得"
    ],
+   "emotion": "teasing",
    "lemmas": [
     [
      "怎么样",
@@ -115,26 +107,31 @@
      "说",
      "shuō"
     ]
-   ],
-   "rd": "쩐머양? 워 숴 더 두이 바?",
-   "emotion": "teasing"
+   ]
   },
   {
    "num": 4,
    "speaker": "B",
-   "zh": "但是我还是爱热拿铁。",
-   "pinyin": "Dànshì wǒ háishi ài rè nátiě.",
+   "zh": "可我还是喜欢热拿铁。",
+   "pinyin": "Kě wǒ háishi xǐhuan rè nátiě.",
+   "rd": "커 워 하이스 시환 러 나톄.",
    "ko": "그래도 난 역시 핫 라떼가 좋아.",
-   "note": "还是 (그래도 역시, 변함없이)",
+   "note": "还是: 그래도 역시",
    "tags": [
     "coffee",
     "adverb:还是"
    ],
+   "emotion": "stiff",
    "lemmas": [
     [
-     "爱",
-     "爱",
-     "ài"
+     "可",
+     "可",
+     "kě"
+    ],
+    [
+     "喜欢",
+     "喜欢",
+     "xǐ huān"
     ],
     [
      "热",
@@ -151,27 +148,22 @@
      "铁",
      "tiě"
     ]
-   ],
-   "rd": "단스 워 하이스 아이 러 나톄.",
-   "emotion": "stiff"
+   ]
   },
   {
    "num": 5,
    "speaker": "A",
-   "zh": "行行行，各喝各的。",
-   "pinyin": "Xíng xíng xíng, gè hē gè de.",
+   "zh": "行行，各喝各的。",
+   "pinyin": "Xíng xíng, gè hē gè de.",
+   "rd": "싱 싱, 거 허 거 더.",
    "ko": "그래 그래, 각자 마시자.",
-   "note": "各V各的 (각자 알아서 ~하다)",
+   "note": "各V各的: 각자 알아서 ~하다",
    "tags": [
     "humor",
     "pattern:各各的"
    ],
+   "emotion": "amused",
    "lemmas": [
-    [
-     "行",
-     "行",
-     "xíng"
-    ],
     [
      "行",
      "行",
@@ -197,20 +189,20 @@
      "各",
      "gè"
     ]
-   ],
-   "rd": "싱 싱 싱, 거 허 거 더.",
-   "emotion": "amused"
+   ]
   },
   {
    "num": 6,
    "speaker": "B",
-   "zh": "不过你的冰美式确实好喝。",
-   "pinyin": "Bùguò nǐ de bīng měishì quèshí hǎohē.",
+   "zh": "不过你的冰美式真挺好喝的。",
+   "pinyin": "Búguò nǐ de bīng měishì zhēn tǐng hǎohē de.",
+   "rd": "부궈 니 더 빙 메이스 전 팅 하오허 더.",
    "ko": "근데 네 아이스 아메리카노 진짜 맛있긴 하다.",
-   "note": null,
+   "note": "",
    "tags": [
     "ext"
    ],
+   "emotion": "shy",
    "lemmas": [
     [
      "冰",
@@ -228,9 +220,14 @@
      "shì"
     ],
     [
-     "确实",
-     "确实",
-     "què shí"
+     "真",
+     "真",
+     "zhēn"
+    ],
+    [
+     "挺",
+     "挺",
+     "tǐng"
     ],
     [
      "好",
@@ -242,20 +239,20 @@
      "喝",
      "hē"
     ]
-   ],
-   "rd": "부궈 니 더 빙 메이스 췌스 하오허.",
-   "emotion": "shy"
+   ]
   },
   {
    "num": 7,
    "speaker": "A",
-   "zh": "看吧，我说得没错吧？😜",
-   "pinyin": "Kànba, wǒ shuō dé méicuò ba?",
+   "zh": "看吧，我说得没错吧。😜",
+   "pinyin": "Kàn ba, wǒ shuō de méicuò ba.",
+   "rd": "칸 바, 워 숴 더 메이춰 바.",
    "ko": "봐봐, 내 말이 맞지?",
-   "note": null,
+   "note": "",
    "tags": [
     "ext"
    ],
+   "emotion": "teasing",
    "lemmas": [
     [
      "看吧",
@@ -272,30 +269,25 @@
      "没错",
      "méi cuò"
     ]
-   ],
-   "rd": "칸바, 워 숴 더 메이춰 바?",
-   "emotion": "teasing"
+   ]
   },
   {
    "num": 8,
    "speaker": "B",
-   "zh": "下次也许试试更冰的。",
-   "pinyin": "Xiàcì yěxǔ shìshì gèngbīng de.",
+   "zh": "下次试试更凉快的吧。😄",
+   "pinyin": "Xià cì shìshi gèng liángkuai de ba.",
+   "rd": "샤 츠 스스 겅 량콰이 더 바.",
    "ko": "다음엔 더 시원한 것도 한번 시도해볼까.",
-   "note": null,
+   "note": "",
    "tags": [
     "ext"
    ],
+   "emotion": "cheerful",
    "lemmas": [
     [
      "下次",
      "下次",
      "xià cì"
-    ],
-    [
-     "也许",
-     "也许",
-     "yě xǔ"
     ],
     [
      "试",
@@ -313,13 +305,16 @@
      "gèng"
     ],
     [
-     "冰",
-     "冰",
-     "bīng"
+     "凉快",
+     "凉快",
+     "liáng kuài"
     ]
-   ],
-   "rd": "샤츠 예쉬 스스 겅빙 더.",
-   "emotion": "cheerful"
+   ]
   }
- ]
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r4_life_l2_d15_2_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ }
 }

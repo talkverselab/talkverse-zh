@@ -1,0 +1,13 @@
+=== r4_love_l4_d04
+title: 카페
+scene: 카페 옆 테이블 남자의 노트북을 핑계로 여자가 말을 건다
+B: 悦
+register: 반말(친구·연인)
+1 B | 你电脑贴纸好可爱。 | Nǐ diànnǎo tiēzhǐ hǎo kě'ài. | 노트북 스티커 진짜 귀엽다. | ‘贴纸’ + ‘好+형용사’ | emotion=cheerful
+2 A | 谢谢，朋友送的。 | Xièxie, péngyou sòng de. | 고마워, 친구가 준 거야. | ‘送的’ 的 명사화 | emotion=polite
+3 B | 你经常来这家？ | Nǐ jīngcháng lái zhè jiā? | 여기 자주 와? | ‘经常’ + ‘家’ 양사 | emotion=cheerful
+4 A | 差不多每天都来。 | Chàbuduō měitiān dōu lái. | 거의 매일 오지. | ‘差不多’ + ‘每…都’ | emotion=neutral
+5 B | 难怪看着眼熟。 | Nánguài kànzhe yǎnshú. | 어쩐지 낯이 익더라. | ‘难怪’ + ‘眼熟’ | emotion=teasing
+6 A | 是吗？真巧啊。 | Shì ma? Zhēn qiǎo a. | 그래? 진짜 신기한 우연이네. | ‘真巧’ 감탄 | emotion=surprised
+7 B | 那明天一起喝一杯？ | Nà míngtiān yìqǐ hē yì bēi? | 그럼 내일 같이 한잔할래? | 어조사 없는 구어 의문 | emotion=teasing
+8 A | 好，就这么说定了。 | Hǎo, jiù zhème shuō dìng le. | 좋아, 그렇게 정한 거다. | ‘就这么’ + ‘说定了’ | emotion=cheerful

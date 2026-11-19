@@ -19,14 +19,16 @@
   {
    "num": 1,
    "speaker": "B",
-   "zh": "哈哈，你像吃药一样。",
-   "pinyin": "Hāhā, nǐ xiàng chī yào yíyàng.",
+   "zh": "哈哈，像吃药一样。",
+   "pinyin": "Hāhā, xiàng chī yào yíyàng.",
+   "rd": "하하, 샹 츠 야오 이양.",
    "ko": "하하, 약 먹는 것 같잖아.",
-   "note": "像…一样 (~같다) 비유",
+   "note": "像…一样=~와 같다",
    "tags": [
     "joke",
     "function:像"
    ],
+   "emotion": "amused",
    "lemmas": [
     [
      "像",
@@ -48,21 +50,21 @@
      "一样",
      "yī yàng"
     ]
-   ],
-   "rd": "하하, 니 샹 츠 야오 이양.",
-   "emotion": "amused"
+   ]
   },
   {
    "num": 2,
    "speaker": "A",
    "zh": "你就是我的药嘛。😜",
    "pinyin": "Nǐ jiùshì wǒ de yào ma.",
+   "rd": "니 주스 워 더 야오 마.",
    "ko": "네가 바로 내 약이잖아.",
-   "note": "就是 강조 + 嘛 능청",
+   "note": "就是=바로 ~이다, 嘛=능청",
    "tags": [
     "flirt",
     "particle:嘛"
    ],
+   "emotion": "teasing",
    "lemmas": [
     [
      "就是",
@@ -74,62 +76,52 @@
      "药",
      "yào"
     ]
-   ],
-   "rd": "니 주스 워 더 야오 마.",
-   "emotion": "teasing"
+   ]
   },
   {
    "num": 3,
    "speaker": "B",
-   "zh": "哎呀，好肉麻！",
-   "pinyin": "Āiyā, hǎo ròumá!",
+   "zh": "哎哟，太肉麻了！",
+   "pinyin": "Āiyō, tài ròumá le!",
+   "rd": "아이요, 타이 러우마 러!",
    "ko": "아이고, 완전 느끼해!",
-   "note": "肉麻 (닭살 돋다)",
+   "note": "肉麻=닭살 돋다, 느끼하다",
    "tags": [
     "tease",
     "culture"
    ],
+   "emotion": "tsukkomi",
    "lemmas": [
     [
-     "好",
-     "好",
-     "hǎo"
+     "太",
+     "太",
+     "tài"
     ],
     [
      "肉",
      "肉",
      "ròu"
     ]
-   ],
-   "rd": "아이야, 하오 러우마!",
-   "emotion": "tsukkomi"
+   ]
   },
   {
    "num": 4,
    "speaker": "A",
-   "zh": "肉麻？这是什么意思？",
-   "pinyin": "Ròumá? Zhè shì shénme yìsi?",
+   "zh": "肉麻？什么意思啊？😮",
+   "pinyin": "Ròumá? Shénme yìsi a?",
+   "rd": "러우마? 선머 이쓰 아?",
    "ko": "러우마? 그게 무슨 뜻이야?",
-   "note": "什么意思 (뜻 묻기) 학습자 리얼리티",
+   "note": "什么意思=무슨 뜻",
    "tags": [
     "question",
     "topic:chinese"
    ],
+   "emotion": "surprised",
    "lemmas": [
     [
      "肉",
      "肉",
      "ròu"
-    ],
-    [
-     "这",
-     "这",
-     "zhè"
-    ],
-    [
-     "是",
-     "是",
-     "shì"
     ],
     [
      "什么",
@@ -141,21 +133,21 @@
      "意思",
      "yì si"
     ]
-   ],
-   "rd": "러우마? 저 스 선머 이쓰?",
-   "emotion": "surprised"
+   ]
   },
   {
    "num": 5,
    "speaker": "B",
-   "zh": "就是……太甜了，受不了！",
-   "pinyin": "Jiùshì…… tài tián le, shòu bu liǎo!",
-   "ko": "그러니까…… 너무 달아서 못 견디겠다는 뜻!",
-   "note": "受不了 (견딜 수 없다) 가능보어",
+   "zh": "就是太甜了，受不了！",
+   "pinyin": "Jiùshì tài tián le, shòu bu liǎo!",
+   "rd": "주스 타이 톈 러, 서우 부 랴오!",
+   "ko": "그러니까 너무 달아서 못 견디겠다는 뜻!",
+   "note": "受不了=견딜 수 없다",
    "tags": [
     "culture",
     "topic:chinese"
    ],
+   "emotion": "flustered",
    "lemmas": [
     [
      "就是",
@@ -177,21 +169,21 @@
      "受不了",
      "shòu bù liǎo"
     ]
-   ],
-   "rd": "주스…… 타이 톈 러, 서우 부 랴오!",
-   "emotion": "flustered"
+   ]
   },
   {
    "num": 6,
    "speaker": "A",
-   "zh": "那我以后天天肉麻。",
-   "pinyin": "Nà wǒ yǐhòu tiāntiān ròumá.",
+   "zh": "那我以后天天肉麻你。",
+   "pinyin": "Nà wǒ yǐhòu tiāntiān ròumá nǐ.",
+   "rd": "나 워 이허우 톈톈 러우마 니.",
    "ko": "그럼 앞으로 매일 느끼하게 할래.",
-   "note": "배운 단어 바로 사용 유머",
+   "note": "肉麻=느끼하게 하다",
    "tags": [
     "joke",
     "hook:learning"
    ],
+   "emotion": "teasing",
    "lemmas": [
     [
      "那",
@@ -213,45 +205,48 @@
      "肉",
      "ròu"
     ]
-   ],
-   "rd": "나 워 이허우 톈톈 러우마.",
-   "emotion": "teasing"
+   ]
   },
   {
    "num": 7,
    "speaker": "B",
    "zh": "饶了我吧！哈哈哈。😏",
    "pinyin": "Ráo le wǒ ba! Hāhāhā.",
+   "rd": "라오 러 워 바! 하하하.",
    "ko": "좀 봐줘! 하하하.",
-   "note": "饶了我吧 (살려줘/봐줘)",
+   "note": "饶了我吧=봐줘, 살려줘",
    "tags": [
     "joke",
     "particle:吧"
    ],
+   "emotion": "amused",
    "lemmas": [
     [
      "饶",
      "饶",
      "ráo"
     ]
-   ],
-   "rd": "라오 러 워 바! 하하하.",
-   "emotion": "amused"
+   ]
   },
   {
    "num": 8,
    "speaker": "A",
-   "zh": "所以… 你原谅我了？",
-   "pinyin": "Suǒyǐ… nǐ yuánliàng wǒ le?",
+   "zh": "所以……原谅我了吗？😊",
+   "pinyin": "Suǒyǐ……yuánliàng wǒ le ma?",
+   "rd": "쒀이……위안량 워 러 마?",
    "ko": "그래서… 나 용서한 거야?",
-   "note": "所以 + 了 변화 확인",
+   "note": "所以=그래서, 了=변화",
    "tags": [
     "apology",
     "function:了"
    ],
-   "lemmas": [],
-   "rd": "쒀이… 니 위안량 워 러?",
-   "emotion": "shy"
+   "emotion": "shy",
+   "lemmas": []
   }
- ]
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r4_love_l1_ep4_4_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ }
 }

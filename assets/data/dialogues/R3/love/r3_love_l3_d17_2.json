@@ -19,14 +19,16 @@
   {
    "num": 1,
    "speaker": "A",
-   "zh": "这是一个很好的升职机会。",
-   "pinyin": "Zhè shì yí ge hěn hǎo de shēngzhí jīhuì.",
+   "zh": "这是个很好的晋升机会。",
+   "pinyin": "Zhè shì ge hěn hǎo de jìnshēng jīhuì.",
+   "rd": "저 스 거 헌 하오 더 진성 지후이.",
    "ko": "이건 정말 좋은 승진 기회란 말이야.",
-   "note": "관형어 표지 的 (수식 구조)",
+   "note": "的 = 관형어 표지",
    "tags": [
     "관형어",
     "직장"
    ],
+   "emotion": "worried",
    "lemmas": [
     [
      "这",
@@ -39,9 +41,9 @@
      "shì"
     ],
     [
-     "一个",
-     "一个",
-     "yí gè"
+     "个",
+     "个",
+     "gè"
     ],
     [
      "很",
@@ -54,35 +56,25 @@
      "hǎo"
     ],
     [
-     "升",
-     "升",
-     "shēng"
-    ],
-    [
-     "职",
-     "职",
-     "zhí"
-    ],
-    [
      "机会",
      "机会",
      "jī huì"
     ]
-   ],
-   "rd": "저 스 이 거 헌 하오 더 성즈 지후이.",
-   "emotion": "worried"
+   ]
   },
   {
    "num": 2,
    "speaker": "B",
    "zh": "机会重要，还是我重要？",
    "pinyin": "Jīhuì zhòngyào, háishi wǒ zhòngyào?",
+   "rd": "지후이 중야오, 하이스 워 중야오?",
    "ko": "기회가 중요해, 아니면 내가 중요해?",
-   "note": "선택의문문 还是",
+   "note": "还是 = 아니면",
    "tags": [
     "还是",
     "갈등"
    ],
+   "emotion": "sad",
    "lemmas": [
     [
      "机会",
@@ -99,21 +91,21 @@
      "重要",
      "zhòng yào"
     ]
-   ],
-   "rd": "지후이 중야오, 하이스 워 중야오?",
-   "emotion": "sad"
+   ]
   },
   {
    "num": 3,
    "speaker": "A",
-   "zh": "别这样，我也很难受啊。😢",
-   "pinyin": "Bié zhèyàng, wǒ yě hěn nánshòu a.",
+   "zh": "别这样啊，我也很难受。",
+   "pinyin": "Bié zhèyàng a, wǒ yě hěn nánshòu.",
+   "rd": "볘 저양 아, 워 예 헌 난서우.",
    "ko": "이러지 마, 나도 정말 괴롭단 말이야.",
-   "note": "금지 别 + 어기조사 啊 (호소)",
+   "note": "别…啊 = ~하지 마",
    "tags": [
     "금지문",
     "감정"
    ],
+   "emotion": "sad",
    "lemmas": [
     [
      "别",
@@ -140,21 +132,21 @@
      "难受",
      "nán shòu"
     ]
-   ],
-   "rd": "볘 저양, 워 예 헌 난서우 아.",
-   "emotion": "sad"
+   ]
   },
   {
    "num": 4,
    "speaker": "B",
-   "zh": "难受的人不只你一个。",
-   "pinyin": "Nánshòu de rén bù zhǐ nǐ yí ge.",
+   "zh": "难受的不只你一个。",
+   "pinyin": "Nánshòu de bùzhǐ nǐ yī ge.",
+   "rd": "난서우 더 부즈 니 이 거.",
    "ko": "괴로운 사람이 너 하나뿐인 줄 알아?",
-   "note": "不只 '~뿐만이 아니다'",
+   "note": "不只 = ~뿐만이 아니다",
    "tags": [
     "不只",
     "감정"
    ],
+   "emotion": "annoyed",
    "lemmas": [
     [
      "难受",
@@ -162,40 +154,30 @@
      "nán shòu"
     ],
     [
-     "人",
-     "人",
-     "rén"
-    ],
-    [
-     "不",
-     "不",
-     "bù"
-    ],
-    [
-     "只",
-     "只",
-     "zhǐ"
+     "不只",
+     "不只",
+     "bù zhǐ"
     ],
     [
      "一个",
      "一个",
      "yí gè"
     ]
-   ],
-   "rd": "난서우 더 런 부 즈 니 이 거.",
-   "emotion": "annoyed"
+   ]
   },
   {
    "num": 5,
    "speaker": "A",
    "zh": "我们冷静一下再谈，好吗？😟",
-   "pinyin": "Wǒmen lěngjìng yíxià zài tán, hǎo ma?",
+   "pinyin": "Wǒmen lěngjìng yīxià zài tán, hǎo ma?",
+   "rd": "워먼 렁징 이샤 짜이 탄, 하오 마?",
    "ko": "우리 좀 진정하고 다시 얘기하자, 응?",
-   "note": "동사+一下 (완화) + 再 '그 다음에'",
+   "note": "一下 = 완화, 再 = 그 다음에",
    "tags": [
     "一下",
     "再"
    ],
+   "emotion": "worried",
    "lemmas": [
     [
      "我们",
@@ -227,20 +209,20 @@
      "好",
      "hǎo"
     ]
-   ],
-   "rd": "워먼 렁징 이샤 짜이 탄, 하오 마?",
-   "emotion": "worried"
+   ]
   },
   {
    "num": 6,
    "speaker": "B",
-   "zh": "好，我先回家想一想。",
-   "pinyin": "Hǎo, wǒxiān huíjiā xiǎngyīxiǎng.",
+   "zh": "好，我先回家想想。",
+   "pinyin": "Hǎo, wǒ xiān huí jiā xiǎngxiang.",
+   "rd": "하오, 워 셴 후이 자 샹샹.",
    "ko": "그래, 나 먼저 집에 가서 생각 좀 해 볼게.",
-   "note": null,
+   "note": "",
    "tags": [
     "ext"
    ],
+   "emotion": "sad",
    "lemmas": [
     [
      "好",
@@ -267,20 +249,20 @@
      "想",
      "xiǎng"
     ]
-   ],
-   "rd": "하오, 워셴 후이자 샹이샹.",
-   "emotion": "sad"
+   ]
   },
   {
    "num": 7,
    "speaker": "A",
    "zh": "那我明天给你打电话。",
-   "pinyin": "Nà wǒ míngtiān gěi nǐ dǎdiànhuà.",
+   "pinyin": "Nà wǒ míngtiān gěi nǐ dǎ diànhuà.",
+   "rd": "나 워 밍톈 게이 니 다 뎬화.",
    "ko": "그럼 내일 내가 전화할게.",
-   "note": null,
+   "note": "",
    "tags": [
     "ext"
    ],
+   "emotion": "gentle",
    "lemmas": [
     [
      "那",
@@ -297,20 +279,20 @@
      "打电话",
      "dǎ diàn huà"
     ]
-   ],
-   "rd": "나 워 밍톈 게이 니 다뎬화.",
-   "emotion": "gentle"
+   ]
   },
   {
    "num": 8,
    "speaker": "B",
-   "zh": "嗯，早点休息吧。😢",
-   "pinyin": "Ń, zǎodiǎn xiūxī ba.",
+   "zh": "嗯，早点休息。",
+   "pinyin": "Ǹg, zǎodiǎn xiūxi.",
+   "rd": "응, 짜오뎬 슈시.",
    "ko": "응, 일찍 좀 쉬어.",
-   "note": null,
+   "note": "",
    "tags": [
     "ext"
    ],
+   "emotion": "sad",
    "lemmas": [
     [
      "早",
@@ -327,9 +309,12 @@
      "休息",
      "xiū xī"
     ]
-   ],
-   "rd": "Ń, 짜오뎬 슈시 바.",
-   "emotion": "sad"
+   ]
   }
- ]
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r3_love_l3_d17_2_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ }
 }

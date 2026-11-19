@@ -1,0 +1,13 @@
+=== r3_love_l3_d21_2
+title: 결심 ②
+scene: 훠궈를 다 먹은 밤, Mark가 베이징에 남기로 한 결심을 밝힌다.
+B: 小丽
+register: 반말(친구·연인)
+1 A | 我在北京找到一份新工作。 | Wǒ zài Běijīng zhǎodào yī fèn xīn gōngzuò. | 베이징에서 새 일자리 구했어. | 在+장소 = 장소, 份 = 일(양사) | emotion=cheerful
+2 B | 真的假的？这么快？ | Zhēn de jiǎ de? Zhème kuài? | 진짜? 벌써? | 真的假的 = 진짜?, 这么 = 이렇게 | emotion=surprised
+3 A | 为了你，我比外卖还快。 | Wèile nǐ, wǒ bǐ wàimài hái kuài. | 너를 위해서라면, 나 배달보다 빨라. | 为了 = 위해서, 比 = 비교 | emotion=teasing
+4 B | 傻瓜，我怎么这么爱你。 | Shǎguā, wǒ zěnme zhème ài nǐ. | 바보, 내가 널 어쩜 이렇게 사랑하니. | 怎么这么 = 어떻게 이렇게 | emotion=amused
+5 A | 以后的每一天，我们一起过。 | Yǐhòu de měi yī tiān, wǒmen yīqǐ guò. | 앞으로의 매일을, 우리 함께 보내자. | 每一天 = 매일 | emotion=gentle
+6 B | 那得跟我结婚，说到做到。 | Nà děi gēn wǒ jiéhūn, shuōdào zuòdào. | 그럼 나랑 결혼해야 해, 말한 대로 지켜. |  | emotion=teasing
+7 A | 当然，一辈子不后悔。 | Dāngrán, yī bèizi bù hòuhuǐ. | 당연하지, 평생 후회 안 할게. |  | emotion=excited
+8 B | 拉钩，我们说定了。 | Lāgōu, wǒmen shuōdìng le. | 손가락 걸자, 우리 약속한 거다. |  | emotion=cheerful

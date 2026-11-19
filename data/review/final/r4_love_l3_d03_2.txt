@@ -1,0 +1,8 @@
+1 A: 大伟订了一家川菜馆。 / Dàwěi dìng le yì jiā chuāncàiguǎn. / 다웨이가 쓰촨요리집을 예약했어. / 家=가게 양사, 了=완료 / neutral
+2 B: 川菜？那我可太开心了！ / Chuāncài? Nà wǒ kě tài kāixīn le! / 쓰촨요리? 그럼 나야 완전 신나지! / 可=강조, 太…了=너무 ~하다 / excited
+3 A: 他知道你是四川人，特意选的。 / Tā zhīdào nǐ shì Sìchuānrén, tèyì xuǎn de. / 네가 쓰촨 사람인 거 알고 일부러 고른 거야. / 特意=일부러, 的=강조 / gentle
+4 B: 你朋友想得真周到。 / Nǐ péngyou xiǎng de zhēn zhōudào. / 네 친구 정말 세심하게 생각해 주네. / 得=정도보어 / cheerful
+5 A: 到时候你就知道他多有意思了。 / Dào shíhou nǐ jiù zhīdào tā duō yǒu yìsi le. / 가 보면 걔가 얼마나 재밌는지 알게 될 거야. / 多=얼마나, 到时候=그때 가서 / cheerful
+6 B: 我已经有点儿期待了。 / Wǒ yǐjīng yǒudiǎnr qīdài le. / 나 벌써 조금 기대되기 시작했어. /  / shy
+7 A: 放心，你们俩肯定合得来。 / Fàngxīn, nǐmen liǎ kěndìng hé de lái. / 안심해, 너희 둘 분명 잘 맞을 거야. /  / gentle
+8 B: 那周六见，我先去准备了。 / Nà zhōuliù jiàn, wǒ xiān qù zhǔnbèi le. / 그럼 토요일에 봐, 나 먼저 준비하러 갈게. /  / cheerful

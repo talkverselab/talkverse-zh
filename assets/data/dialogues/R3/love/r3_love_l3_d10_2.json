@@ -19,20 +19,17 @@
   {
    "num": 1,
    "speaker": "A",
-   "zh": "我特别爱踢足球，很调皮。",
-   "pinyin": "Wǒ tèbié ài tī zúqiú, hěn tiáopí.",
+   "zh": "我爱踢足球，特别调皮。",
+   "pinyin": "Wǒ ài tī zúqiú, tèbié tiáopí.",
+   "rd": "워 아이 티 쭈추, 터볘 탸오피.",
    "ko": "나 축구 엄청 좋아했고, 완전 개구쟁이였어.",
-   "note": "동사 爱 + 동사구 (~하기를 즐기다)",
+   "note": "爱+동사 = ~하기를 즐기다",
    "tags": [
     "축구",
     "추억"
    ],
+   "emotion": "amused",
    "lemmas": [
-    [
-     "特别",
-     "特别",
-     "tè bié"
-    ],
     [
      "爱",
      "爱",
@@ -44,30 +41,30 @@
      "tī zú qiú"
     ],
     [
-     "很",
-     "很",
-     "hěn"
+     "特别",
+     "特别",
+     "tè bié"
     ],
     [
      "调皮",
      "调皮",
      "tiáo pí"
     ]
-   ],
-   "rd": "워 터볘 아이 티 쭈추, 헌 탸오피.",
-   "emotion": "amused"
+   ]
   },
   {
    "num": 2,
    "speaker": "B",
    "zh": "真想看看你小时候的照片。",
    "pinyin": "Zhēn xiǎng kànkan nǐ xiǎoshíhou de zhàopiàn.",
+   "rd": "전 샹 칸칸 니 샤오스허우 더 자오폔.",
    "ko": "네 어릴 때 사진 진짜 보고 싶다.",
-   "note": "동사 중첩 看看 (가볍게 ~해 보다)",
+   "note": "看看 = 가볍게 보다",
    "tags": [
     "사진",
     "호기심"
    ],
+   "emotion": "cheerful",
    "lemmas": [
     [
      "真",
@@ -94,21 +91,21 @@
      "照片",
      "zhào piān"
     ]
-   ],
-   "rd": "전 샹 칸칸 니 샤오스허우 더 자오폔.",
-   "emotion": "cheerful"
+   ]
   },
   {
    "num": 3,
    "speaker": "A",
-   "zh": "下次我给你看，别笑我啊。😊",
-   "pinyin": "Xià cì wǒ gěi nǐ kàn, bié xiào wǒ a.",
+   "zh": "下次给你看，别笑啊。😊",
+   "pinyin": "Xià cì gěi nǐ kàn, bié xiào a.",
+   "rd": "샤 츠 게이 니 칸, 볘 샤오 아.",
    "ko": "다음에 보여 줄게, 웃으면 안 돼.",
-   "note": "금지 표현 别 + 어기조사 啊",
+   "note": "别…啊 = ~하지 마",
    "tags": [
     "약속",
     "유머"
    ],
+   "emotion": "shy",
    "lemmas": [
     [
      "下次",
@@ -130,21 +127,21 @@
      "笑",
      "xiào"
     ]
-   ],
-   "rd": "샤 츠 워 게이 니 칸, 볘 샤오 워 아.",
-   "emotion": "shy"
+   ]
   },
   {
    "num": 4,
    "speaker": "B",
-   "zh": "我不会笑你的，放心吧。🥰",
-   "pinyin": "Wǒ bú huì xiào nǐ de, fàngxīn ba.",
+   "zh": "我不会笑的，放心。",
+   "pinyin": "Wǒ bú huì xiào de, fàngxīn.",
+   "rd": "워 부 후이 샤오 더, 팡신.",
    "ko": "안 웃을 거야, 안심해.",
-   "note": "会…的 (확신의 어기)",
+   "note": "会…的 = 확신",
    "tags": [
     "약속",
     "안심"
    ],
+   "emotion": "gentle",
    "lemmas": [
     [
      "不会",
@@ -161,26 +158,31 @@
      "放心",
      "fàng xīn"
     ]
-   ],
-   "rd": "워 부 후이 샤오 니 더, 팡신 바.",
-   "emotion": "gentle"
+   ]
   },
   {
    "num": 5,
    "speaker": "A",
-   "zh": "认识你以前的样子，真好。",
-   "pinyin": "Rènshi nǐ yǐqián de yàngzi, zhēn hǎo.",
+   "zh": "能知道你以前的样子真好。",
+   "pinyin": "Néng zhīdào nǐ yǐqián de yàngzi zhēn hǎo.",
+   "rd": "넝 즈다오 니 이첸 더 양쯔 전 하오.",
    "ko": "네 예전 모습을 알게 돼서 참 좋다.",
-   "note": "명사 + 以前 (~이전의)",
+   "note": "以前 = ~이전",
    "tags": [
     "애정",
     "감정"
    ],
+   "emotion": "gentle",
    "lemmas": [
     [
-     "认识",
-     "认识",
-     "rèn shí"
+     "能",
+     "能",
+     "néng"
+    ],
+    [
+     "知道",
+     "知道",
+     "zhī dào"
     ],
     [
      "以前",
@@ -202,20 +204,20 @@
      "好",
      "hǎo"
     ]
-   ],
-   "rd": "런스 니 이첸 더 양쯔, 전 하오.",
-   "emotion": "gentle"
+   ]
   },
   {
    "num": 6,
    "speaker": "B",
-   "zh": "以后我们要拍更多照片。",
-   "pinyin": "Yǐhòu wǒmen yào pāi gèng duō zhàopiān.",
+   "zh": "以后我们多拍点照片吧。🥰",
+   "pinyin": "Yǐhòu wǒmen duō pāi diǎn zhàopiàn ba.",
+   "rd": "이허우 워먼 둬 파이 뎬 자오폔 바.",
    "ko": "앞으로 우리 사진 더 많이 찍자.",
-   "note": null,
+   "note": "",
    "tags": [
     "ext"
    ],
+   "emotion": "gentle",
    "lemmas": [
     [
      "以后",
@@ -228,9 +230,9 @@
      "wǒ men"
     ],
     [
-     "要",
-     "要",
-     "yào"
+     "多",
+     "多",
+     "duō"
     ],
     [
      "拍",
@@ -238,44 +240,49 @@
      "pāi"
     ],
     [
-     "更",
-     "更",
-     "gèng"
-    ],
-    [
-     "多",
-     "多",
-     "duō"
+     "点",
+     "点",
+     "diǎn"
     ],
     [
      "照片",
      "照片",
      "zhào piān"
     ]
-   ],
-   "rd": "이허우 워먼 야오 파이 겅 둬 자오폔.",
-   "emotion": "gentle"
+   ]
   },
   {
    "num": 7,
    "speaker": "A",
-   "zh": "对，把每个瞬间都记录下来。",
-   "pinyin": "Duì, bǎ měigè shùnjiān dōu jìlùxiàlái.",
+   "zh": "对，把每时每刻都记下来。",
+   "pinyin": "Duì, bǎ měi shí měi kè dōu jì xiàlái.",
+   "rd": "두이, 바 메이 스 메이 커 더우 지 샤라이.",
    "ko": "맞아, 순간순간을 다 기록해 두자.",
-   "note": null,
+   "note": "",
    "tags": [
     "ext"
    ],
+   "emotion": "gentle",
    "lemmas": [
     [
-     "每个",
-     "每个",
-     "měi gè"
+     "每",
+     "每",
+     "měi"
     ],
     [
-     "瞬间",
-     "瞬间",
-     "shùn jiān"
+     "时",
+     "时",
+     "shí"
+    ],
+    [
+     "每",
+     "每",
+     "měi"
+    ],
+    [
+     "刻",
+     "刻",
+     "kè"
     ],
     [
      "都",
@@ -283,29 +290,29 @@
      "dōu"
     ],
     [
-     "记录",
-     "记录",
-     "jì lù"
+     "记",
+     "记",
+     "jì"
     ],
     [
      "下来",
      "下来",
      "xià lái"
     ]
-   ],
-   "rd": "두이, 바 메이거 순젠 더우 지루샤라이.",
-   "emotion": "gentle"
+   ]
   },
   {
    "num": 8,
    "speaker": "B",
-   "zh": "这本相册我要好好收着。",
-   "pinyin": "Zhèběn xiàngcè wǒyào hǎohǎo shōuzhe.",
+   "zh": "这本相册我好好留着。",
+   "pinyin": "Zhè běn xiàngcè wǒ hǎohǎo liúzhe.",
+   "rd": "저 번 샹처 워 하오하오 류저.",
    "ko": "이 앨범, 내가 소중히 간직할게.",
-   "note": null,
+   "note": "",
    "tags": [
     "ext"
    ],
+   "emotion": "gentle",
    "lemmas": [
     [
      "这",
@@ -328,23 +335,21 @@
      "cè"
     ],
     [
-     "要",
-     "要",
-     "yào"
-    ],
-    [
      "好好",
      "好好",
      "hǎo hǎo"
     ],
     [
-     "收",
-     "收",
-     "shōu"
+     "留",
+     "留",
+     "liú"
     ]
-   ],
-   "rd": "저번 샹처 워야오 하오하오 서우저.",
-   "emotion": "gentle"
+   ]
   }
- ]
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r3_love_l3_d10_2_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ }
 }

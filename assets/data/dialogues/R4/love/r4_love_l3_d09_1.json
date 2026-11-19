@@ -21,12 +21,14 @@
    "speaker": "A",
    "zh": "小丽，你最大的爱好是什么？",
    "pinyin": "Xiǎolì, nǐ zuì dà de àihào shì shénme?",
+   "rd": "샤오리, 니 쭈이 다 더 아이하오 스 선머?",
    "ko": "샤오리, 네 제일 큰 취미가 뭐야?",
-   "note": "관형어 조사 的 (最大的爱好)",
+   "note": "的=관형어 조사",
    "tags": [
     "취미",
     "질문"
    ],
+   "emotion": "neutral",
    "lemmas": [
     [
      "最大",
@@ -48,21 +50,21 @@
      "什么",
      "shén me"
     ]
-   ],
-   "rd": "샤오리, 니 쭈이 다 더 아이하오 스 선머?",
-   "emotion": "neutral"
+   ]
   },
   {
    "num": 2,
    "speaker": "B",
-   "zh": "我最喜欢画画儿。",
-   "pinyin": "Wǒ zuì xǐhuan huà huàr.",
+   "zh": "我最喜欢画画。",
+   "pinyin": "Wǒ zuì xǐhuan huàhuà.",
+   "rd": "워 쭈이 시환 화화.",
    "ko": "나는 그림 그리는 게 제일 좋아.",
-   "note": "부사 最 (최상급 표현)",
+   "note": "最=가장",
    "tags": [
     "취미",
     "그림"
    ],
+   "emotion": "cheerful",
    "lemmas": [
     [
      "最",
@@ -83,27 +85,22 @@
      "画",
      "画",
      "huà"
-    ],
-    [
-     "儿",
-     "儿",
-     "ér"
     ]
-   ],
-   "rd": "워 쭈이 시환 화 활.",
-   "emotion": "cheerful"
+   ]
   },
   {
    "num": 3,
    "speaker": "B",
    "zh": "你呢？你喜欢做什么？",
    "pinyin": "Nǐ ne? Nǐ xǐhuan zuò shénme?",
+   "rd": "니 너? 니 시환 쭤 선머?",
    "ko": "너는? 너는 뭐 하는 거 좋아해?",
-   "note": "어기조사 呢 (되묻기)",
+   "note": "呢=되묻기",
    "tags": [
     "질문",
     "呢"
    ],
+   "emotion": "neutral",
    "lemmas": [
     [
      "喜欢",
@@ -120,21 +117,21 @@
      "什么",
      "shén me"
     ]
-   ],
-   "rd": "니 너? 니 시환 쭤 선머?",
-   "emotion": "neutral"
+   ]
   },
   {
    "num": 4,
    "speaker": "A",
-   "zh": "我喜欢爬山，特别舒服。",
-   "pinyin": "Wǒ xǐhuan pá shān, tèbié shūfu.",
+   "zh": "我喜欢爬山，特别痛快。",
+   "pinyin": "Wǒ xǐhuan páshān, tèbié tòngkuài.",
+   "rd": "워 시환 파산, 터볘 퉁콰이.",
    "ko": "나는 등산이 좋아, 진짜 상쾌하거든.",
-   "note": "부사 特别 (정도 강조)",
+   "note": "特别=특별히",
    "tags": [
     "등산",
     "감정"
    ],
+   "emotion": "cheerful",
    "lemmas": [
     [
      "喜欢",
@@ -152,25 +149,25 @@
      "tè bié"
     ],
     [
-     "舒服",
-     "舒服",
-     "shū fú"
+     "痛快",
+     "痛快",
+     "tòng kuài"
     ]
-   ],
-   "rd": "워 시환 파 산, 터볘 수푸.",
-   "emotion": "cheerful"
+   ]
   },
   {
    "num": 5,
    "speaker": "B",
    "zh": "那我们互相教吧！🤩",
    "pinyin": "Nà wǒmen hùxiāng jiāo ba!",
+   "rd": "나 워먼 후샹 자오 바!",
    "ko": "그럼 우리 서로 가르쳐 주자!",
-   "note": "부사 互相 + 청유 어기조사 吧",
+   "note": "互相=서로, 吧=청유",
    "tags": [
     "제안",
     "互相"
    ],
+   "emotion": "excited",
    "lemmas": [
     [
      "那",
@@ -192,21 +189,21 @@
      "教",
      "jiào"
     ]
-   ],
-   "rd": "나 워먼 후샹 자오 바!",
-   "emotion": "excited"
+   ]
   },
   {
    "num": 6,
    "speaker": "A",
-   "zh": "好主意！先教我画画吧。🤩",
-   "pinyin": "Hǎo zhǔyi! Xiān jiāo wǒ huà huà ba.",
+   "zh": "好主意！先教我画画。",
+   "pinyin": "Hǎo zhǔyi! Xiān jiāo wǒ huàhuà.",
+   "rd": "하오 주이! 셴 자오 워 화화.",
    "ko": "좋은 생각이야! 먼저 나한테 그림 가르쳐 줘.",
-   "note": "부사 先 + 이중목적어 동사 教",
+   "note": "先=먼저, 教=가르치다",
    "tags": [
     "제안",
     "그림"
    ],
+   "emotion": "excited",
    "lemmas": [
     [
      "好",
@@ -238,26 +235,36 @@
      "画",
      "huà"
     ]
-   ],
-   "rd": "하오 주이! 셴 자오 워 화 화 바.",
-   "emotion": "excited"
+   ]
   },
   {
    "num": 7,
    "speaker": "B",
-   "zh": "你先画一只小猫试试。",
-   "pinyin": "Nǐ xiān huà yì zhī xiǎo māo shìshi.",
+   "zh": "先试试画一只猫。",
+   "pinyin": "Xiān shìshi huà yì zhī māo.",
+   "rd": "셴 스스 화 이 즈 마오.",
    "ko": "먼저 고양이 한 마리 그려 봐.",
-   "note": "양사 只 + 동사 중첩 试试 (시도)",
+   "note": "只=마리 양사, 试试=시도",
    "tags": [
     "그림",
     "시도"
    ],
+   "emotion": "gentle",
    "lemmas": [
     [
      "先",
      "先",
      "xiān"
+    ],
+    [
+     "试",
+     "试",
+     "shì"
+    ],
+    [
+     "试",
+     "试",
+     "shì"
     ],
     [
      "画",
@@ -270,40 +277,25 @@
      "yī zhī"
     ],
     [
-     "小",
-     "小",
-     "xiǎo"
-    ],
-    [
      "猫",
      "猫",
      "māo"
-    ],
-    [
-     "试",
-     "试",
-     "shì"
-    ],
-    [
-     "试",
-     "试",
-     "shì"
     ]
-   ],
-   "rd": "니 셴 화 이 즈 샤오 마오 스스.",
-   "emotion": "gentle"
+   ]
   },
   {
    "num": 8,
    "speaker": "A",
-   "zh": "哈哈，我画得太难看了！",
-   "pinyin": "Hāhā, wǒ huà de tài nánkàn le!",
+   "zh": "哈哈，我画得太差了！",
+   "pinyin": "Hāhā, wǒ huà de tài chà le!",
+   "rd": "하하, 워 화 더 타이 차 러!",
    "ko": "하하, 나 너무 못 그렸어!",
-   "note": "정도보어 得 + 太…了",
+   "note": "得=정도보어, 太…了=너무 ~하다",
    "tags": [
     "유머",
     "정도보어"
    ],
+   "emotion": "amused",
    "lemmas": [
     [
      "画",
@@ -316,13 +308,16 @@
      "tài"
     ],
     [
-     "难看",
-     "难看",
-     "nán kàn"
+     "差",
+     "差",
+     "chà"
     ]
-   ],
-   "rd": "하하, 워 화 더 타이 난칸 러!",
-   "emotion": "amused"
+   ]
   }
- ]
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r4_love_l3_d09_1_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ }
 }

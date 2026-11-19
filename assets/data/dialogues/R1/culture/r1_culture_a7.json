@@ -116,19 +116,29 @@
   {
    "num": 4,
    "speaker": "B",
-   "zh": "钟？不行不行！",
-   "pinyin": "Zhōng? Bù xíng bù xíng!",
-   "rd": "중? 부 싱 부 싱!",
-   "ko": "시계? 안 돼 안 돼!",
-   "note": "不行 = 안 된다",
+   "zh": "送钟真的不行啊！😤",
+   "pinyin": "Sòng zhōng zhēn de bù xíng a!",
+   "rd": "쑹 중 전 더 부 싱 아!",
+   "ko": "시계 선물하는 건 정말 안 돼!",
+   "note": "送钟 = 시계를 주다",
    "tags": [
     "form:不能"
    ],
    "lemmas": [
     [
-     "不行",
-     "不行",
-     "bù xíng"
+     "送",
+     "送",
+     "sòng"
+    ],
+    [
+     "钟",
+     "钟",
+     "zhōng"
+    ],
+    [
+     "真的",
+     "真的",
+     "zhēn de"
     ],
     [
      "不行",
@@ -287,6 +297,7 @@
  "review": {
   "grok_rewrite": "data/review/r1_culture_a7_grok_rewrite.md",
   "model": "전문가",
-  "final": "세션 리뷰"
+  "final": "세션 리뷰",
+  "r1_lines_1120": "#4 Grok(빠른) 다시 씀 — TTS 오독(tools/grok/zh_rw/out/r1_lines.md)"
  }
 }

@@ -1,0 +1,8 @@
+1 B: {name}！这儿，这儿！ / {name}! Zhèr, zhèr! / {name}! 여기요, 여기! / 这儿은 ‘여기’ 부르기. / shout
+2 A: 小丽！你来得真早。 / Xiǎolì! Nǐ lái de zhēn zǎo. / 샤오리! 진짜 일찍 왔네요. / 得는 정도보어, 来得早는 ‘일찍 오다’. / surprised
+3 B: 我也刚到，坐吧。 / Wǒ yě gāng dào, zuò ba. / 저도 방금 왔어요, 앉아요. / 刚은 ‘방금’, 吧는 권유. / gentle
+4 A: 这家店人真多啊。 / Zhè jiā diàn rén zhēn duō a. / 이 가게 사람 진짜 많네요. / 这家店은 ‘이 가게’, 真…啊는 감탄. / surprised
+5 B: 对，这儿的火锅很有名。 / Duì, zhèr de huǒguō hěn yǒumíng. / 네, 여기 훠궈가 유명해요. / 有名은 ‘유명하다’. / neutral
+6 A: 火锅！我一直想吃！ / Huǒguō! Wǒ yìzhí xiǎng chī! / 훠궈! 계속 먹고 싶었어요! / 一直는 ‘줄곧’, 想은 의지. / excited
+7 B: 你能吃辣吗？ / Nǐ néng chī là ma? / 매운 거 먹을 수 있어요? / 能은 가능, 吃辣은 ‘매운 거 먹다’. / teasing
+8 A: 当然！韩国人不怕辣。 / Dāngrán! Hánguó rén bú pà là. / 당연하죠! 한국인은 매운 거 안 무서워해요. / 不怕은 ‘두렵지 않다’. / excited

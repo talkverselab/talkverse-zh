@@ -1,0 +1,8 @@
+1 A: 好好，快教我！ / Hǎo hǎo, kuài jiāo wǒ! / 좋아 좋아, 빨리 가르쳐 줘! / ‘快’는 재촉 명령 / excited
+2 B: “巴适”是很好的意思。 / “Bāshì” shì hěn hǎo de yìsi. / ‘바스’는 ‘아주 좋다’는 뜻이야. / ‘…的意思’는 ‘~의 뜻’ / neutral
+3 A: 巴适！今天真巴适啊！ / Bāshì! Jīntiān zhēn bāshì a! / 바스! 오늘 진짜 바스하네! / ‘真’은 감탄 강조 / excited
+4 B: 哈哈，外婆听到一定会高兴的。 / Hāha, wàipó tīngdào yídìng huì gāoxìng de. / 하하, 할머니가 들으시면 분명 좋아하실 거야. / ‘听到’의 ‘到’는 결과보어, ‘一定’은 ‘반드시’ / amused
+5 A: 下次带我去看外婆吧。 / Xiàcì dài wǒ qù kàn wàipó ba. / 다음엔 나 데리고 할머니 뵈러 가자. / ‘带…去’는 연동문, ‘吧’는 청유 / cheerful
+6 B: 好啊，外婆一定会做好吃的。 / Hǎo a, wàipó yídìng huì zuò hǎochī de. / 좋아, 할머니가 분명 맛있는 거 해 주실 거야. /  / gentle
+7 A: 太好了，我最爱吃辣的。 / Tài hǎo le, wǒ zuì ài chī là de. / 너무 좋다, 나 매운 거 제일 좋아해. /  / excited
+8 B: 那你可得做好准备哦。 / Nà nǐ kě děi zuò hǎo zhǔnbèi o. / 그럼 마음의 준비 단단히 해 둬. /  / teasing

@@ -21,12 +21,14 @@
    "speaker": "B",
    "zh": "我是设计师，在家工作。",
    "pinyin": "Wǒ shì shèjìshī, zài jiā gōngzuò.",
+   "rd": "워 스 서지스, 짜이 자 궁쭤.",
    "ko": "저는 디자이너예요, 집에서 일해요.",
-   "note": "是 직업 + 在家工作 (재택근무)",
+   "note": "是는 직업, 在家工作은 재택근무.",
    "tags": [
     "self-intro",
     "topic:job"
    ],
+   "emotion": "polite",
    "lemmas": [
     [
      "是",
@@ -53,21 +55,21 @@
      "工作",
      "gōng zuò"
     ]
-   ],
-   "rd": "워 스 서지스, 짜이 자 궁쭤.",
-   "emotion": "polite"
+   ]
   },
   {
    "num": 2,
    "speaker": "A",
    "zh": "好厉害！平时喜欢做什么？",
    "pinyin": "Hǎo lìhai! Píngshí xǐhuan zuò shénme?",
+   "rd": "하오 리하이! 핑스 시환 쭤 선머?",
    "ko": "멋지다! 평소에 뭐 하는 거 좋아해요?",
-   "note": "好+형용사 감탄 + 平时",
+   "note": "好+형용사는 감탄, 平时는 ‘평소에’.",
    "tags": [
     "praise",
     "question"
    ],
+   "emotion": "excited",
    "lemmas": [
     [
      "好",
@@ -99,21 +101,21 @@
      "什么",
      "shén me"
     ]
-   ],
-   "rd": "하오 리하이! 핑스 시환 쭤 선머?",
-   "emotion": "excited"
+   ]
   },
   {
    "num": 3,
    "speaker": "B",
-   "zh": "我喜欢看电影，还有画画。",
-   "pinyin": "Wǒ xǐhuan kàn diànyǐng, háiyǒu huà huà.",
+   "zh": "喜欢看电影，还有画画。",
+   "pinyin": "Xǐhuan kàn diànyǐng, hái yǒu huàhuà.",
+   "rd": "시환 칸 뎬잉, 하이 유 화화.",
    "ko": "영화 보는 거 좋아하고, 그림도 그려요.",
-   "note": "还有 나열",
+   "note": "还有는 나열할 때 쓴다.",
    "tags": [
     "hobby",
     "hook:movie"
    ],
+   "emotion": "gentle",
    "lemmas": [
     [
      "喜欢",
@@ -145,21 +147,21 @@
      "画",
      "huà"
     ]
-   ],
-   "rd": "워 시환 칸 뎬잉, 하이유 화 화.",
-   "emotion": "gentle"
+   ]
   },
   {
    "num": 4,
    "speaker": "A",
-   "zh": "我也爱看电影！最近看了什么？",
-   "pinyin": "Wǒ yě ài kàn diànyǐng! Zuìjìn kàn le shénme?",
+   "zh": "我也喜欢电影！最近看了什么？",
+   "pinyin": "Wǒ yě xǐhuan diànyǐng! Zuìjìn kàn le shénme?",
+   "rd": "워 예 시환 뎬잉! 쭈이진 칸 러 선머?",
    "ko": "저도 영화 좋아해요! 최근에 뭐 봤어요?",
-   "note": "也 + 了 완료 의문",
+   "note": "也는 ‘저도’, 了는 완료 의문.",
    "tags": [
     "hobby",
     "function:了"
    ],
+   "emotion": "excited",
    "lemmas": [
     [
      "也",
@@ -167,14 +169,9 @@
      "yě"
     ],
     [
-     "爱",
-     "爱",
-     "ài"
-    ],
-    [
-     "看",
-     "看",
-     "kàn"
+     "喜欢",
+     "喜欢",
+     "xǐ huān"
     ],
     [
      "电影",
@@ -196,21 +193,21 @@
      "什么",
      "shén me"
     ]
-   ],
-   "rd": "워 예 아이 칸 뎬잉! 쭈이진 칸 러 선머?",
-   "emotion": "excited"
+   ]
   },
   {
    "num": 5,
    "speaker": "B",
-   "zh": "看了一个爱情片，有点儿老。",
-   "pinyin": "Kàn le yí ge àiqíng piàn, yǒudiǎnr lǎo.",
+   "zh": "看了一部爱情片，有点儿老。",
+   "pinyin": "Kàn le yí bù àiqíngpiàn, yǒudiǎnr lǎo.",
+   "rd": "칸 러 이 부 아이칭폔, 유뎬얼 라오.",
    "ko": "로맨스 영화 하나 봤는데 좀 옛날 거예요.",
-   "note": "有点儿 (약간, 부정적 뉘앙스)",
+   "note": "有点儿은 ‘약간’ 부정적 뉘앙스.",
    "tags": [
     "hobby",
     "hook:romance"
    ],
+   "emotion": "neutral",
    "lemmas": [
     [
      "看",
@@ -218,9 +215,9 @@
      "kàn"
     ],
     [
-     "一个",
-     "一个",
-     "yí gè"
+     "一部",
+     "一部",
+     "yī bù"
     ],
     [
      "爱情",
@@ -242,21 +239,21 @@
      "老",
      "lǎo"
     ]
-   ],
-   "rd": "칸 러 이 거 아이칭 폔, 유뎬얼 라오.",
-   "emotion": "neutral"
+   ]
   },
   {
    "num": 6,
    "speaker": "A",
    "zh": "爱情片啊？我喜欢，嘿嘿。😜",
-   "pinyin": "Àiqíng piàn a? Wǒ xǐhuan, hēihēi.",
+   "pinyin": "Àiqíngpiàn a? Wǒ xǐhuan, hēihēi.",
+   "rd": "아이칭폔 아? 워 시환, 헤이헤이.",
    "ko": "로맨스 영화요? 저 좋아해요, 헤헤.",
-   "note": "어기조사 啊 (되물음) + 嘿嘿",
+   "note": "啊는 되물음 어기조사.",
    "tags": [
     "joke",
     "particle:啊"
    ],
+   "emotion": "teasing",
    "lemmas": [
     [
      "爱情",
@@ -273,52 +270,47 @@
      "喜欢",
      "xǐ huān"
     ]
-   ],
-   "rd": "아이칭 폔 아? 워 시환, 헤이헤이.",
-   "emotion": "teasing"
+   ]
   },
   {
    "num": 7,
    "speaker": "B",
-   "zh": "你这个人有意思，嘿嘿。😏",
-   "pinyin": "Nǐ zhège rén yǒu yìsi, hēihēi.",
+   "zh": "你真有意思，嘿嘿。😏",
+   "pinyin": "Nǐ zhēn yǒu yìsi, hēihēi.",
+   "rd": "니 전 유 이쓰, 헤이헤이.",
    "ko": "당신 재밌는 사람이네요, 헤헤.",
-   "note": "有意思 (재미있다)",
+   "note": "有意思는 ‘재미있다’.",
    "tags": [
     "flirt",
     "particle:嘿"
    ],
+   "emotion": "amused",
    "lemmas": [
     [
-     "这个",
-     "这个",
-     "zhè ge"
-    ],
-    [
-     "人",
-     "人",
-     "rén"
+     "真",
+     "真",
+     "zhēn"
     ],
     [
      "有意思",
      "有意思",
      "yǒu yì si"
     ]
-   ],
-   "rd": "니 저거 런 유 이쓰, 헤이헤이.",
-   "emotion": "amused"
+   ]
   },
   {
    "num": 8,
    "speaker": "A",
    "zh": "对了，你家在北京哪儿？",
-   "pinyin": "Duì le, nǐ jiā zài Běijīng nǎr?",
+   "pinyin": "Duìle, nǐ jiā zài Běijīng nǎr?",
+   "rd": "두이러, 니 자 짜이 베이징 날?",
    "ko": "맞다, 집이 베이징 어디예요?",
-   "note": "对了 화제 전환 + 在…哪儿",
+   "note": "对了는 화제 전환, 在…哪儿은 위치 묻기.",
    "tags": [
     "question",
     "topic:place"
    ],
+   "emotion": "neutral",
    "lemmas": [
     [
      "家",
@@ -335,9 +327,12 @@
      "哪儿",
      "nǎ ér"
     ]
-   ],
-   "rd": "두이 러, 니 자 짜이 베이징 날?",
-   "emotion": "neutral"
+   ]
   }
- ]
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r4_love_l1_ep1_3_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ }
 }

@@ -161,10 +161,10 @@
   {
    "num": 6,
    "speaker": "A",
-   "zh": "想我？眼睛闭着啊。🙄",
-   "pinyin": "Xiǎng wǒ? Yǎnjing bìzhe a.",
-   "rd": "샹 워? 옌징 비저 아.",
-   "ko": "나를? 눈 감고 있잖아.",
+   "zh": "想我还把眼睛闭上啊。🙄",
+   "pinyin": "Xiǎng wǒ hái bǎ yǎnjing bì shàng a.",
+   "rd": "샹 워 하이 바 옌징 비 상 아.",
+   "ko": "나를 생각하면서 눈을 감고 있다고?",
    "note": "闭着 = 감은 채",
    "tags": [
     "form:着"
@@ -176,6 +176,11 @@
      "xiǎng"
     ],
     [
+     "还",
+     "还",
+     "hái"
+    ],
+    [
      "眼睛",
      "眼睛",
      "yǎn jīng"
@@ -184,6 +189,11 @@
      "闭",
      "闭",
      "bì"
+    ],
+    [
+     "上",
+     "上",
+     "shàng"
     ]
    ],
    "emotion": "tsukkomi"
@@ -262,6 +272,7 @@
  "review": {
   "grok_rewrite": "data/review/r1_friends_a10_grok_rewrite.md",
   "model": "전문가",
-  "final": "세션 리뷰"
+  "final": "세션 리뷰",
+  "r1_lines_1120": "#6 Grok(빠른) 다시 씀 — TTS 오독(tools/grok/zh_rw/out/r1_lines.md)"
  }
 }

@@ -19,14 +19,16 @@
   {
    "num": 1,
    "speaker": "A",
-   "zh": "明天你跟我一起去吧。😄",
-   "pinyin": "Míngtiān nǐ gēn wǒ yīqǐ qù ba.",
+   "zh": "明天跟我一起去吧。😄",
+   "pinyin": "Míngtiān gēn wǒ yīqǐ qù ba.",
+   "rd": "밍톈 건 워 이치 취 바.",
    "ko": "내일 너도 나랑 같이 가자.",
-   "note": "跟…一起 (~와 함께)",
+   "note": "跟…一起 = ~와 함께",
    "tags": [
     "preposition:跟",
     "invite"
    ],
+   "emotion": "cheerful",
    "lemmas": [
     [
      "明天",
@@ -43,21 +45,21 @@
      "去",
      "qù"
     ]
-   ],
-   "rd": "밍톈 니 건 워 이치 취 바.",
-   "emotion": "cheerful"
+   ]
   },
   {
    "num": 2,
    "speaker": "B",
-   "zh": "我？我要工作呢。😳",
-   "pinyin": "Wǒ? Wǒ yào gōngzuò ne.",
+   "zh": "我？我要上班呢。😳",
+   "pinyin": "Wǒ? Wǒ yào shàngbān ne.",
+   "rd": "워? 워 야오 상반 너.",
    "ko": "나? 나 일해야 하는데.",
-   "note": "조동사 要 (~해야 한다) + 呢",
+   "note": "要…呢 = ~해야 한다",
    "tags": [
     "modal:要",
     "excuse"
    ],
+   "emotion": "flustered",
    "lemmas": [
     [
      "要",
@@ -65,25 +67,25 @@
      "yào"
     ],
     [
-     "工作",
-     "工作",
-     "gōng zuò"
+     "上班",
+     "上班",
+     "shàng bān"
     ]
-   ],
-   "rd": "워? 워 야오 궁쭤 너.",
-   "emotion": "flustered"
+   ]
   },
   {
    "num": 3,
    "speaker": "A",
-   "zh": "现在谁找借口啊？😜",
-   "pinyin": "Xiànzài shéi zhǎo jièkǒu a?",
+   "zh": "现在谁在找借口啊？😜",
+   "pinyin": "Xiànzài shuí zài zhǎo jièkǒu a?",
+   "rd": "셴짜이 수이 짜이 자오 제커우 아?",
    "ko": "지금 누가 핑계 대는 거야?",
-   "note": "의문사 谁 반문 (되받아치기)",
+   "note": "谁 = 반문 (되받아치기)",
    "tags": [
     "rhetorical",
     "humor"
    ],
+   "emotion": "teasing",
    "lemmas": [
     [
      "现在",
@@ -110,32 +112,22 @@
      "口",
      "kǒu"
     ]
-   ],
-   "rd": "셴짜이 세이 자오 제커우 아?",
-   "emotion": "teasing"
+   ]
   },
   {
    "num": 4,
    "speaker": "B",
-   "zh": "好吧好吧，去就去。",
-   "pinyin": "Hǎo ba hǎo ba, qù jiù qù.",
+   "zh": "去就去吧。😒",
+   "pinyin": "Qù jiù qù ba.",
+   "rd": "취 주 취 바.",
    "ko": "알았어 알았어, 가면 가지 뭐.",
-   "note": "A就A (그래 ~하면 되잖아, 마지못한 승낙)",
+   "note": "A就A = 마지못한 승낙",
    "tags": [
     "structure:A就A",
     "positive"
    ],
+   "emotion": "annoyed",
    "lemmas": [
-    [
-     "好",
-     "好",
-     "hǎo"
-    ],
-    [
-     "好",
-     "好",
-     "hǎo"
-    ],
     [
      "去",
      "去",
@@ -151,21 +143,21 @@
      "去",
      "qù"
     ]
-   ],
-   "rd": "하오 바 하오 바, 취 주 취.",
-   "emotion": "annoyed"
+   ]
   },
   {
    "num": 5,
    "speaker": "A",
-   "zh": "一言为定，跑三公里哦。😜",
-   "pinyin": "Yīyán wéidìng, pǎo sān gōnglǐ o.",
+   "zh": "一言为定，跑三公里。",
+   "pinyin": "Yīyánwéidìng, pǎo sān gōnglǐ.",
+   "rd": "이옌웨이딩, 파오 싼 궁리.",
    "ko": "약속한 거다, 3킬로 뛰는 거야.",
-   "note": "성어 一言为定 (한번 말했으면 끝, 약속 확정)",
+   "note": "一言为定 = 한번 말했으면 끝",
    "tags": [
     "idiom:一言为定",
     "positive"
    ],
+   "emotion": "teasing",
    "lemmas": [
     [
      "言",
@@ -187,20 +179,20 @@
      "公里",
      "gōng lǐ"
     ]
-   ],
-   "rd": "이옌 웨이딩, 파오 싼 궁리 오.",
-   "emotion": "teasing"
+   ]
   },
   {
    "num": 6,
    "speaker": "B",
-   "zh": "三公里？你不是也没跑过吗？🙄",
-   "pinyin": "Sān gōnglǐ? nǐ búshì yě méi pǎo guò ma?",
+   "zh": "三公里？你也没跑过吧？🙄",
+   "pinyin": "Sān gōnglǐ? Nǐ yě méi pǎo guo ba?",
+   "rd": "싼 궁리? 니 예 메이 파오 궈 바?",
    "ko": "3킬로? 너도 뛰어본 적 없잖아?",
-   "note": null,
+   "note": "",
    "tags": [
     "ext"
    ],
+   "emotion": "tsukkomi",
    "lemmas": [
     [
      "公里",
@@ -222,20 +214,20 @@
      "跑",
      "pǎo"
     ]
-   ],
-   "rd": "싼 궁리? 니 부스 예 메이 파오 궈 마?",
-   "emotion": "tsukkomi"
+   ]
   },
   {
    "num": 7,
    "speaker": "A",
-   "zh": "明天开始，我们互相监督。",
-   "pinyin": "Míngtiān kāishǐ, wǒmen hùxiāngjiāndū.",
+   "zh": "明天起我们互相监督。",
+   "pinyin": "Míngtiān qǐ wǒmen hùxiāng jiāndū.",
+   "rd": "밍톈 치 워먼 후샹 젠두.",
    "ko": "내일부터 우리 서로 감시하자.",
-   "note": null,
+   "note": "",
    "tags": [
     "ext"
    ],
+   "emotion": "excited",
    "lemmas": [
     [
      "明天",
@@ -243,9 +235,9 @@
      "míng tiān"
     ],
     [
-     "开始",
-     "开始",
-     "kāi shǐ"
+     "起",
+     "起",
+     "qǐ"
     ],
     [
      "我们",
@@ -262,35 +254,30 @@
      "监督",
      "jiān dū"
     ]
-   ],
-   "rd": "밍톈 카이스, 워먼 후샹젠두.",
-   "emotion": "excited"
+   ]
   },
   {
    "num": 8,
    "speaker": "B",
-   "zh": "说好了，谁先放弃谁请客。",
-   "pinyin": "Shuōhǎo le, shuí xiān fàngqì shuí qǐngkè.",
+   "zh": "一言为定，先放弃的人请客。",
+   "pinyin": "Yīyánwéidìng, xiān fàngqì de rén qǐngkè.",
+   "rd": "이옌웨이딩, 셴 팡치 더 런 칭커.",
    "ko": "약속한 거다, 먼저 포기하는 사람이 쏘기.",
-   "note": null,
+   "note": "",
    "tags": [
     "ext"
    ],
+   "emotion": "teasing",
    "lemmas": [
     [
-     "说",
-     "说",
-     "shuō"
+     "言",
+     "言",
+     "yán"
     ],
     [
-     "好",
-     "好",
-     "hǎo"
-    ],
-    [
-     "谁",
-     "谁",
-     "shuí"
+     "定",
+     "定",
+     "dìng"
     ],
     [
      "先",
@@ -303,18 +290,21 @@
      "fàng qì"
     ],
     [
-     "谁",
-     "谁",
-     "shuí"
+     "人",
+     "人",
+     "rén"
     ],
     [
      "请客",
      "请客",
      "qǐng kè"
     ]
-   ],
-   "rd": "숴하오 러, 수이 셴 팡치 수이 칭커.",
-   "emotion": "teasing"
+   ]
   }
- ]
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r3_life_l2_d06_2_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ }
 }

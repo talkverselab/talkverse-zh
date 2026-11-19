@@ -21,12 +21,14 @@
    "speaker": "A",
    "zh": "别担心，他答应帮我们保密。",
    "pinyin": "Bié dānxīn, tā dāying bāng wǒmen bǎomì.",
+   "rd": "볘 단신, 타 다잉 방 워먼 바오미.",
    "ko": "걱정 마, 비밀 지켜 주기로 약속했어.",
-   "note": "겸어문 帮+사람+동사, 答应 '승낙하다'",
+   "note": "帮+동사 = ~를 도와 ~하다, 答应 = 승낙하다",
    "tags": [
     "겸어문",
     "保密"
    ],
+   "emotion": "gentle",
    "lemmas": [
     [
      "别",
@@ -58,37 +60,22 @@
      "保密",
      "bǎo mì"
     ]
-   ],
-   "rd": "볘 단신, 타 다잉 방 워먼 바오미.",
-   "emotion": "gentle"
+   ]
   },
   {
    "num": 2,
    "speaker": "B",
-   "zh": "王哥人还挺靠谱的。",
-   "pinyin": "Wáng gē rén hái tǐng kàopǔ de.",
+   "zh": "王哥挺靠谱的。",
+   "pinyin": "Wáng gē tǐng kàopǔ de.",
+   "rd": "왕 거 팅 카오푸 더.",
    "ko": "왕형 사람 꽤 믿음직하네.",
-   "note": "挺…的 '꽤 ~하다', 구어 靠谱",
+   "note": "挺…的 = 꽤 ~하다, 靠谱 = 믿음직하다",
    "tags": [
     "挺…的",
     "靠谱"
    ],
+   "emotion": "cheerful",
    "lemmas": [
-    [
-     "人",
-     "人",
-     "rén"
-    ],
-    [
-     "还",
-     "还",
-     "hái"
-    ],
-    [
-     "挺",
-     "挺",
-     "tǐng"
-    ],
     [
      "靠",
      "靠",
@@ -99,21 +86,21 @@
      "谱",
      "pǔ"
     ]
-   ],
-   "rd": "왕 거 런 하이 팅 카오푸 더.",
-   "emotion": "cheerful"
+   ]
   },
   {
    "num": 3,
    "speaker": "A",
    "zh": "不过他让我请他喝酒。",
-   "pinyin": "Búguò tā ràng wǒ qǐng tā hē jiǔ.",
+   "pinyin": "Búguò tā ràng wǒ qǐng tā hējiǔ.",
+   "rd": "부궈 타 랑 워 칭 타 허주.",
    "ko": "근데 나한테 술 한잔 사라더라.",
-   "note": "사역동사 让 + 겸어문 请",
+   "note": "让 = ~하게 하다, 请 = 사다",
    "tags": [
     "사역 让",
     "접속사 不过"
    ],
+   "emotion": "amused",
    "lemmas": [
     [
      "让",
@@ -135,21 +122,21 @@
      "酒",
      "jiǔ"
     ]
-   ],
-   "rd": "부궈 타 랑 워 칭 타 허 주.",
-   "emotion": "amused"
+   ]
   },
   {
    "num": 4,
    "speaker": "B",
-   "zh": "应该的！这顿我们一起请。",
-   "pinyin": "Yīnggāi de! Zhè dùn wǒmen yìqǐ qǐng.",
+   "zh": "应该的！这顿我们一起出。",
+   "pinyin": "Yīnggāi de! Zhè dùn wǒmen yīqǐ chū.",
+   "rd": "잉가이 더! 저 둔 워먼 이치 추.",
    "ko": "당연히 사야지! 이번 건 우리 같이 내자.",
-   "note": "양사 顿 (식사·술자리), 应该的 '당연한 일'",
+   "note": "顿 = 한 끼/한 차례, 应该的 = 당연한 일",
    "tags": [
     "양사 顿",
     "관용표현"
    ],
+   "emotion": "cheerful",
    "lemmas": [
     [
      "应该",
@@ -177,25 +164,25 @@
      "yì qǐ"
     ],
     [
-     "请",
-     "请",
-     "qǐng"
+     "出",
+     "出",
+     "chū"
     ]
-   ],
-   "rd": "잉가이 더! 저 둔 워먼 이치 칭.",
-   "emotion": "cheerful"
+   ]
   },
   {
    "num": 5,
    "speaker": "A",
-   "zh": "好，那就这么说定了。",
-   "pinyin": "Hǎo, nà jiù zhème shuōdìng le.",
+   "zh": "好，那就说定了。",
+   "pinyin": "Hǎo, nà jiù shuōdìng le.",
+   "rd": "하오, 나 주 숴딩 러.",
    "ko": "좋아, 그럼 그렇게 정한 거다.",
-   "note": "결과보어 定 (说定 '말로 확정하다')",
+   "note": "定 = 확정하다",
    "tags": [
     "결과보어",
     "약속 확정"
    ],
+   "emotion": "cheerful",
    "lemmas": [
     [
      "好",
@@ -213,11 +200,6 @@
      "jiù"
     ],
     [
-     "这么",
-     "这么",
-     "zhè me"
-    ],
-    [
      "说",
      "说",
      "shuō"
@@ -227,20 +209,20 @@
      "定",
      "dìng"
     ]
-   ],
-   "rd": "하오, 나 주 저머 숴딩 러.",
-   "emotion": "cheerful"
+   ]
   },
   {
    "num": 6,
    "speaker": "B",
    "zh": "对了，什么时候请他吃饭？",
-   "pinyin": "Duì le, shénme shíhòu qǐng tā chīfàn?",
+   "pinyin": "Duì le, shénme shíhou qǐng tā chīfàn?",
+   "rd": "두이 러, 선머 스허우 칭 타 츠판?",
    "ko": "맞다, 언제 걔한테 밥 살 거야?",
-   "note": null,
+   "note": "",
    "tags": [
     "ext"
    ],
+   "emotion": "neutral",
    "lemmas": [
     [
      "什么",
@@ -262,20 +244,20 @@
      "吃饭",
      "chī fàn"
     ]
-   ],
-   "rd": "두이 러, 선머 스허우 칭 타 츠판?",
-   "emotion": "neutral"
+   ]
   },
   {
    "num": 7,
    "speaker": "A",
-   "zh": "就定在这个周末吧。😄",
-   "pinyin": "Jiùdìng zài zhège zhōumò ba.",
+   "zh": "就定这周末吧。😄",
+   "pinyin": "Jiù dìng zhè zhōumò ba.",
+   "rd": "주 딩 저 저우모 바.",
    "ko": "이번 주말로 정하자.",
-   "note": null,
+   "note": "",
    "tags": [
     "ext"
    ],
+   "emotion": "cheerful",
    "lemmas": [
     [
      "就",
@@ -288,29 +270,29 @@
      "dìng"
     ],
     [
-     "这个",
-     "这个",
-     "zhè ge"
+     "这",
+     "这",
+     "zhè"
     ],
     [
      "周末",
      "周末",
      "zhōu mò"
     ]
-   ],
-   "rd": "주딩 짜이 저거 저우모 바.",
-   "emotion": "cheerful"
+   ]
   },
   {
    "num": 8,
    "speaker": "B",
-   "zh": "好，那我先去订个位置。",
-   "pinyin": "Hǎo, nà wǒ xiānqù dìnggè wèizhì.",
+   "zh": "好，那我先去订位子。",
+   "pinyin": "Hǎo, nà wǒ xiān qù dìng wèizi.",
+   "rd": "하오, 나 워 셴 취 딩 웨이쯔.",
    "ko": "좋아, 그럼 내가 먼저 자리 예약할게.",
-   "note": null,
+   "note": "",
    "tags": [
     "ext"
    ],
+   "emotion": "cheerful",
    "lemmas": [
     [
      "好",
@@ -338,18 +320,21 @@
      "dìng"
     ],
     [
-     "个",
-     "个",
-     "gè"
+     "位",
+     "位",
+     "wèi"
     ],
     [
-     "位置",
-     "位置",
-     "wèi zhì"
+     "子",
+     "子",
+     "zi"
     ]
-   ],
-   "rd": "하오, 나 워 셴취 딩거 웨이즈.",
-   "emotion": "cheerful"
+   ]
   }
- ]
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r3_love_l3_d04_2_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ }
 }

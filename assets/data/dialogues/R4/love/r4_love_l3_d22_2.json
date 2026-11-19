@@ -19,14 +19,16 @@
   {
    "num": 1,
    "speaker": "B",
-   "zh": "我们坐高铁去，你开什么车？",
-   "pinyin": "Wǒmen zuò gāotiě qù, nǐ kāi shénme chē?",
+   "zh": "我们坐高铁去，开什么车啊？🙄",
+   "pinyin": "Wǒmen zuò gāotiě qù, kāi shénme chē a?",
+   "rd": "워먼 쭤 가오톄 취, 카이 선머 처 아?",
    "ko": "우리 고속철 타고 가는데, 무슨 운전을 해?",
-   "note": "연동문 '坐…去' + 什么 반어 용법",
+   "note": "‘坐…去’ 연동 + ‘什么’ 반어",
    "tags": [
     "연동문",
     "유머"
    ],
+   "emotion": "tsukkomi",
    "lemmas": [
     [
      "我们",
@@ -63,21 +65,21 @@
      "车",
      "chē"
     ]
-   ],
-   "rd": "워먼 쭤 가오톄 취, 니 카이 선머 처?",
-   "emotion": "tsukkomi"
+   ]
   },
   {
    "num": 2,
    "speaker": "A",
    "zh": "那我就说医生不让喝。",
    "pinyin": "Nà wǒ jiù shuō yīshēng bú ràng hē.",
+   "rd": "나 워 주 숴 이성 부 랑 허.",
    "ko": "그럼 의사가 못 마시게 한다고 하지 뭐.",
-   "note": "사역 让의 부정형 '不让' (~못 하게 하다)",
+   "note": "‘不让’ 사역 부정",
    "tags": [
     "不让",
     "핑계"
    ],
+   "emotion": "amused",
    "lemmas": [
     [
      "那",
@@ -114,31 +116,31 @@
      "喝",
      "hē"
     ]
-   ],
-   "rd": "나 워 주 숴 이성 부 랑 허.",
-   "emotion": "amused"
+   ]
   },
   {
    "num": 3,
    "speaker": "B",
-   "zh": "妈妈那关更难，她话很多。",
-   "pinyin": "Māma nà guān gèng nán, tā huà hěn duō.",
+   "zh": "妈这关更难，话特别多。",
+   "pinyin": "Mā zhè guān gèng nán, huà tèbié duō.",
+   "rd": "마 저 관 겅 난, 화 터볘 둬.",
    "ko": "엄마 관문이 더 어려워, 말씀이 엄청 많으시거든.",
-   "note": "비교 부사 更 '더욱'",
+   "note": "‘更’는 ‘더욱’",
    "tags": [
     "更",
     "상견례"
    ],
+   "emotion": "worried",
    "lemmas": [
     [
-     "妈妈",
-     "妈妈",
-     "mā mā"
+     "妈",
+     "妈",
+     "mā"
     ],
     [
-     "那",
-     "那",
-     "nà"
+     "这",
+     "这",
+     "zhè"
     ],
     [
      "关",
@@ -161,30 +163,40 @@
      "huà"
     ],
     [
-     "很多",
-     "很多",
-     "hěn duō"
+     "特别",
+     "特别",
+     "tè bié"
+    ],
+    [
+     "多",
+     "多",
+     "duō"
     ]
-   ],
-   "rd": "마마 나 관 겅 난, 타 화 헌 둬.",
-   "emotion": "worried"
+   ]
   },
   {
    "num": 4,
    "speaker": "A",
-   "zh": "没关系，我的耳朵很结实。",
-   "pinyin": "Méi guānxi, wǒ de ěrduo hěn jiēshi.",
+   "zh": "没事，我耳朵很结实。",
+   "pinyin": "Méishì, wǒ ěrduo hěn jiēshi.",
+   "rd": "메이스, 워 얼둬 헌 제스.",
    "ko": "괜찮아, 내 귀는 아주 튼튼하니까.",
-   "note": "'주어+술어(형용사)' 묘사문 + 유머 표현",
+   "note": "주어+형용사 묘사",
    "tags": [
     "형용사술어문",
     "유머"
    ],
+   "emotion": "amused",
    "lemmas": [
     [
-     "没关系",
-     "没关系",
-     "méi guān xì"
+     "没",
+     "没",
+     "méi"
+    ],
+    [
+     "事",
+     "事",
+     "shì"
     ],
     [
      "耳朵",
@@ -201,21 +213,21 @@
      "结实",
      "jiē shí"
     ]
-   ],
-   "rd": "메이 관시, 워 더 얼둬 헌 제스.",
-   "emotion": "amused"
+   ]
   },
   {
    "num": 5,
    "speaker": "B",
    "zh": "别紧张，他们一定会喜欢你。",
    "pinyin": "Bié jǐnzhāng, tāmen yídìng huì xǐhuan nǐ.",
+   "rd": "볘 진장, 타먼 이딩 후이 시환 니.",
    "ko": "긴장하지 마, 두 분 분명히 널 좋아하실 거야.",
-   "note": "'一定会' 확신의 미래 표현",
+   "note": "‘一定会’ 확신의 미래",
    "tags": [
     "一定会",
     "격려"
    ],
+   "emotion": "gentle",
    "lemmas": [
     [
      "别",
@@ -247,20 +259,20 @@
      "喜欢",
      "xǐ huān"
     ]
-   ],
-   "rd": "볘 진장, 타먼 이딩 후이 시환 니.",
-   "emotion": "gentle"
+   ]
   },
   {
    "num": 6,
    "speaker": "A",
-   "zh": "希望我能顺利通过考验。",
-   "pinyin": "Xīwàng wǒnéng shùnlì tōngguò kǎoyàn.",
+   "zh": "希望能顺利通过这关。",
+   "pinyin": "Xīwàng néng shùnlì tōngguò zhè guān.",
+   "rd": "시왕 넝 순리 퉁궈 저 관.",
    "ko": "이 시험을 잘 통과할 수 있으면 좋겠다.",
-   "note": null,
+   "note": "",
    "tags": [
     "ext"
    ],
+   "emotion": "worried",
    "lemmas": [
     [
      "希望",
@@ -278,49 +290,49 @@
      "shùn lì"
     ],
     [
-     "考验",
-     "考验",
-     "kǎo yàn"
+     "这",
+     "这",
+     "zhè"
+    ],
+    [
+     "关",
+     "关",
+     "guān"
     ]
-   ],
-   "rd": "시왕 워넝 순리 퉁궈 카오옌.",
-   "emotion": "worried"
+   ]
   },
   {
    "num": 7,
    "speaker": "B",
-   "zh": "别怕，有我在你身边呢。🥰",
-   "pinyin": "Biépà, yǒu wǒ zài nǐ shēnbiān ne.",
+   "zh": "别怕，我在你身边呢。🥰",
+   "pinyin": "Bié pà, wǒ zài nǐ shēnbiān ne.",
+   "rd": "볘 파, 워 짜이 니 선볜 너.",
    "ko": "무서워하지 마, 내가 네 곁에 있잖아.",
-   "note": null,
+   "note": "",
    "tags": [
     "ext"
    ],
+   "emotion": "gentle",
    "lemmas": [
-    [
-     "有",
-     "有",
-     "yǒu"
-    ],
     [
      "身边",
      "身边",
      "shēn biān"
     ]
-   ],
-   "rd": "볘파, 유 워 짜이 니 선볜 너.",
-   "emotion": "gentle"
+   ]
   },
   {
    "num": 8,
    "speaker": "A",
-   "zh": "好，那我们出发去成都吧！🤩",
-   "pinyin": "Hǎo, nà wǒmen chūfā qù chéngdū ba!",
+   "zh": "好，那我们出发去成都！",
+   "pinyin": "Hǎo, nà wǒmen chūfā qù Chéngdū!",
+   "rd": "하오, 나 워먼 추파 취 청두!",
    "ko": "좋아, 그럼 우리 청두로 출발하자!",
-   "note": null,
+   "note": "",
    "tags": [
     "ext"
    ],
+   "emotion": "excited",
    "lemmas": [
     [
      "好",
@@ -352,9 +364,12 @@
      "成都",
      "chéng dū"
     ]
-   ],
-   "rd": "하오, 나 워먼 추파 취 청두 바!",
-   "emotion": "excited"
+   ]
   }
- ]
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r4_love_l3_d22_2_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ }
 }

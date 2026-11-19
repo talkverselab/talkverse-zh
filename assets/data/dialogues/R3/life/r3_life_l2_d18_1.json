@@ -21,12 +21,14 @@
    "speaker": "B",
    "zh": "你最近怎么怪怪的？",
    "pinyin": "Nǐ zuìjìn zěnme guàiguài de?",
+   "rd": "니 쭈이진 쩐머 과이과이 더?",
    "ko": "너 요즘 왜 이렇게 수상해?",
-   "note": "형용사 중첩 怪怪的: '좀 이상한' 뉘앙스 완화+생동감.",
+   "note": "怪怪的 = 좀 이상한",
    "tags": [
     "중첩",
     "怎么"
    ],
+   "emotion": "annoyed",
    "lemmas": [
     [
      "最近",
@@ -48,42 +50,42 @@
      "怪",
      "guài"
     ]
-   ],
-   "rd": "니 쭈이진 쩐머 과이과이 더?",
-   "emotion": "annoyed"
+   ]
   },
   {
    "num": 2,
    "speaker": "A",
    "zh": "我？没有啊。😳",
    "pinyin": "Wǒ? Méiyǒu a.",
+   "rd": "워? 메이유 아.",
    "ko": "나? 아닌데.",
-   "note": "没有啊: 부인할 때 상투 표현. 啊로 어색하게 태연한 척.",
+   "note": "没有啊 = 부인할 때 상투 표현",
    "tags": [
     "부정",
     "啊"
    ],
+   "emotion": "flustered",
    "lemmas": [
     [
      "没有",
      "没有",
      "méi yǒu"
     ]
-   ],
-   "rd": "워? 메이유 아.",
-   "emotion": "flustered"
+   ]
   },
   {
    "num": 3,
    "speaker": "B",
-   "zh": "你偷偷跟大伟发消息。",
-   "pinyin": "Nǐ tōutōu gēn Dàwěi fā xiāoxi.",
+   "zh": "你偷偷跟大伟发消息了。",
+   "pinyin": "Nǐ tōutōu gēn Dà Wěi fā xiāoxi le.",
+   "rd": "니 터우터우 건 다 웨이 파 샤오시 러.",
    "ko": "너 몰래 다웨이랑 메시지 주고받았잖아.",
-   "note": "偷偷: '몰래'. 跟+사람: '~와 함께/에게'.",
+   "note": "偷偷 = 몰래, 跟 = ~와",
    "tags": [
     "偷偷",
     "跟"
    ],
+   "emotion": "annoyed",
    "lemmas": [
     [
      "偷偷",
@@ -100,21 +102,21 @@
      "消息",
      "xiāo xī"
     ]
-   ],
-   "rd": "니 터우터우 건 다웨이 파 샤오시.",
-   "emotion": "annoyed"
+   ]
   },
   {
    "num": 4,
    "speaker": "A",
    "zh": "那是……工作的事！",
-   "pinyin": "Nà shì……gōngzuò de shì!",
+   "pinyin": "Nà shì…… gōngzuò de shì!",
+   "rd": "나 스…… 궁쭤 더 스!",
    "ko": "그건… 일 얘기야!",
-   "note": "…的事: '~에 관한 일'. 말 더듬기로 거짓말 티내기.",
+   "note": "…的事 = ~에 관한 일",
    "tags": [
     "的",
     "변명"
    ],
+   "emotion": "flustered",
    "lemmas": [
     [
      "那",
@@ -136,21 +138,21 @@
      "事",
      "shì"
     ]
-   ],
-   "rd": "나 스……궁쭤 더 스!",
-   "emotion": "flustered"
+   ]
   },
   {
    "num": 5,
    "speaker": "B",
-   "zh": "我都看见了，\"蛋糕\"两个字。",
-   "pinyin": "Wǒ dōu kànjiàn le, \"dàngāo\" liǎng ge zì.",
+   "zh": "我都看见了，有“蛋糕”。",
+   "pinyin": "Wǒ dōu kànjiàn le, yǒu “dàngāo”.",
+   "rd": "워 더우 칸젠 러, 유 \"당아오\".",
    "ko": "나 다 봤어, '케이크' 두 글자.",
-   "note": "看见: 결과보어 见 '보였다/봤다'. 都로 '전부 다' 강조.",
+   "note": "看见 = 봤다, 都 = 전부",
    "tags": [
     "결과보어",
     "都"
    ],
+   "emotion": "tsukkomi",
    "lemmas": [
     [
      "都",
@@ -163,35 +165,30 @@
      "kàn jiàn"
     ],
     [
+     "有",
+     "有",
+     "yǒu"
+    ],
+    [
      "蛋糕",
      "蛋糕",
      "dàn gāo"
-    ],
-    [
-     "两个",
-     "两个",
-     "liǎng gè"
-    ],
-    [
-     "字",
-     "字",
-     "zì"
     ]
-   ],
-   "rd": "워 더우 칸젠 러, \"당아오\" 량 거 쯔.",
-   "emotion": "tsukkomi"
+   ]
   },
   {
    "num": 6,
    "speaker": "A",
-   "zh": "啊！你看我手机了？",
-   "pinyin": "À! Nǐ kàn wǒ shǒujī le?",
+   "zh": "你看我手机了？",
+   "pinyin": "Nǐ kàn wǒ shǒujī le?",
+   "rd": "니 칸 워 서우지 러?",
    "ko": "앗! 내 폰 봤어?",
-   "note": "평서문+了를 올려 읽어 놀란 의문 표현.",
+   "note": "了 = 놀란 의문",
    "tags": [
     "了",
     "놀람"
    ],
+   "emotion": "surprised",
    "lemmas": [
     [
      "看",
@@ -203,21 +200,21 @@
      "手机",
      "shǒu jī"
     ]
-   ],
-   "rd": "아! 니 칸 워 서우지 러?",
-   "emotion": "surprised"
+   ]
   },
   {
    "num": 7,
    "speaker": "B",
-   "zh": "是你自己放在桌子上的呀。🙄",
-   "pinyin": "Shì nǐ zìjǐ fàng zài zhuōzi shang de ya.",
+   "zh": "是你放在桌上的。",
+   "pinyin": "Shì nǐ fàng zài zhuō shàng de.",
+   "rd": "스 니 팡 짜이 줘 상 더.",
    "ko": "네가 직접 책상 위에 올려놨거든.",
-   "note": "是…的 강조구문 + 放在: '~에 놓다' 결과 표현.",
+   "note": "是…的 = 강조, 放在 = ~에 놓다",
    "tags": [
     "是…的",
     "放在"
    ],
+   "emotion": "tsukkomi",
    "lemmas": [
     [
      "是",
@@ -225,40 +222,35 @@
      "shì"
     ],
     [
-     "自己",
-     "自己",
-     "zì jǐ"
-    ],
-    [
      "放在",
      "放在",
      "fàng zài"
     ],
     [
-     "桌子",
-     "桌子",
-     "zhuō zi"
+     "桌",
+     "桌",
+     "zhuō"
     ],
     [
      "上",
      "上",
      "shàng"
     ]
-   ],
-   "rd": "스 니 쯔지 팡 짜이 줘쯔 상 더 야.",
-   "emotion": "tsukkomi"
+   ]
   },
   {
    "num": 8,
    "speaker": "A",
    "zh": "好吧，是给你准备的生日蛋糕。",
    "pinyin": "Hǎo ba, shì gěi nǐ zhǔnbèi de shēngrì dàngāo.",
+   "rd": "하오 바, 스 게이 니 준베이 더 성르 당아오.",
    "ko": "알았어, 너 주려고 준비한 생일 케이크야.",
-   "note": "给你准备的: 给+대상+동사+的 수식 구조.",
+   "note": "给你准备的 = 너에게 준비한",
    "tags": [
     "给",
     "관형어"
    ],
+   "emotion": "shy",
    "lemmas": [
     [
      "好",
@@ -285,9 +277,12 @@
      "蛋糕",
      "dàn gāo"
     ]
-   ],
-   "rd": "하오 바, 스 게이 니 준베이 더 성르 당아오.",
-   "emotion": "shy"
+   ]
   }
- ]
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r3_life_l2_d18_1_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ }
 }

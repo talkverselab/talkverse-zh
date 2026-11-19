@@ -20,13 +20,15 @@
    "num": 1,
    "speaker": "A",
    "zh": "小丽，今天王哥突然问我了。",
-   "pinyin": "Xiǎolì, jīntiān Wáng gē tūrán wèn wǒ le.",
+   "pinyin": "Xiǎolì, jīntiān Wánggē tūrán wèn wǒ le.",
+   "rd": "샤오리, 진톈 왕거 투란 원 워 러.",
    "ko": "샤오리, 오늘 왕형이 갑자기 물어봤어.",
-   "note": "부사 突然 '갑자기'",
+   "note": "突然=갑자기",
    "tags": [
     "부사 突然",
     "회사"
    ],
+   "emotion": "flustered",
    "lemmas": [
     [
      "今天",
@@ -43,21 +45,21 @@
      "问",
      "wèn"
     ]
-   ],
-   "rd": "샤오리, 진톈 왕 거 투란 원 워 러.",
-   "emotion": "flustered"
+   ]
   },
   {
    "num": 2,
    "speaker": "B",
-   "zh": "问什么？他发现什么了吗？😟",
-   "pinyin": "Wèn shénme? Tā fāxiàn shénme le ma?",
+   "zh": "问什么了？发现什么了吗？😟",
+   "pinyin": "Wèn shénme le? Fāxiàn shénme le ma?",
+   "rd": "원 선머 러? 파셴 선머 러 마?",
    "ko": "뭘 물어봤는데? 뭐 눈치챈 거야?",
-   "note": "동사 发现 '알아차리다', 어기조사 吗",
+   "note": "发现=알아차리다, 吗=의문",
    "tags": [
     "发现",
     "의문문"
    ],
+   "emotion": "worried",
    "lemmas": [
     [
      "问",
@@ -79,21 +81,21 @@
      "什么",
      "shén me"
     ]
-   ],
-   "rd": "원 선머? 타 파셴 선머 러 마?",
-   "emotion": "worried"
+   ]
   },
   {
    "num": 3,
    "speaker": "A",
-   "zh": "他问我是不是谈恋爱了。",
-   "pinyin": "Tā wèn wǒ shì bu shì tán liàn'ài le.",
+   "zh": "问我是不是在谈恋爱。",
+   "pinyin": "Wèn wǒ shìbushì zài tánliàn'ài.",
+   "rd": "원 워 스부스 짜이 탄롄'아이.",
    "ko": "나한테 연애하는 거 아니냐고 물었어.",
-   "note": "확인 의문 是不是, 谈恋爱 '연애하다'",
+   "note": "是不是=확인 의문, 谈恋爱=연애하다",
    "tags": [
     "是不是",
     "谈恋爱"
    ],
+   "emotion": "flustered",
    "lemmas": [
     [
      "问",
@@ -115,21 +117,21 @@
      "恋爱",
      "liàn ài"
     ]
-   ],
-   "rd": "타 원 워 스 부 스 탄 롄'아이 러.",
-   "emotion": "flustered"
+   ]
   },
   {
    "num": 4,
    "speaker": "B",
-   "zh": "天哪！那你怎么回答的？",
-   "pinyin": "Tiān na! Nà nǐ zěnme huídá de?",
+   "zh": "天哪！你是怎么回答的？",
+   "pinyin": "Tiān na! Nǐ shì zěnme huídá de?",
+   "rd": "톈 나! 니 스 쩐머 후이다 더?",
    "ko": "세상에! 그래서 뭐라고 대답했어?",
-   "note": "是…的 구문 (방식 묻기, 是 생략)",
+   "note": "是…的=방식을 묻다",
    "tags": [
     "是…的",
     "감탄사"
    ],
+   "emotion": "surprised",
    "lemmas": [
     [
      "天",
@@ -142,9 +144,9 @@
      "nǎ"
     ],
     [
-     "那",
-     "那",
-     "nà"
+     "是",
+     "是",
+     "shì"
     ],
     [
      "怎么",
@@ -156,31 +158,26 @@
      "回答",
      "huí dá"
     ]
-   ],
-   "rd": "톈 나! 나 니 쩐머 후이다 더?",
-   "emotion": "surprised"
+   ]
   },
   {
    "num": 5,
    "speaker": "A",
-   "zh": "我的脸一下子就红了。",
-   "pinyin": "Wǒ de liǎn yíxiàzi jiù hóng le.",
+   "zh": "我一下子脸就红了。",
+   "pinyin": "Wǒ yíxiàzi liǎn jiù hóng le.",
+   "rd": "워 이샤쯔 롄 주 훙 러.",
    "ko": "얼굴이 순식간에 빨개져 버렸어.",
-   "note": "一下子 '순식간에' + 就",
+   "note": "一下子=순식간에, 就=바로",
    "tags": [
     "一下子",
     "변화의 了"
    ],
+   "emotion": "shy",
    "lemmas": [
     [
-     "脸",
-     "脸",
-     "liǎn"
-    ],
-    [
-     "一下子",
-     "一下子",
-     "yī xià zi"
+     "一下子脸",
+     "下子脸",
+     "xià zi liǎn"
     ],
     [
      "就",
@@ -192,21 +189,21 @@
      "红",
      "hóng"
     ]
-   ],
-   "rd": "워 더 롄 이샤쯔 주 훙 러.",
-   "emotion": "shy"
+   ]
   },
   {
    "num": 6,
    "speaker": "B",
    "zh": "哈哈，那不就等于承认了吗？😏",
    "pinyin": "Hāhā, nà bú jiù děngyú chéngrèn le ma?",
+   "rd": "하하, 나 부 주 덩위 청런 러 마?",
    "ko": "하하, 그럼 인정한 거나 마찬가지잖아?",
-   "note": "반문 不就…吗, 等于 '~와 같다'",
+   "note": "不就…吗=반문, 等于=~와 같다",
    "tags": [
     "반문",
     "等于"
    ],
+   "emotion": "amused",
    "lemmas": [
     [
      "那",
@@ -233,21 +230,21 @@
      "承认",
      "chéng rèn"
     ]
-   ],
-   "rd": "하하, 나 부 주 덩위 청런 러 마?",
-   "emotion": "amused"
+   ]
   },
   {
    "num": 7,
    "speaker": "A",
    "zh": "王哥说他早就看出来了。",
-   "pinyin": "Wáng gē shuō tā zǎojiù kàn chūlai le.",
+   "pinyin": "Wánggē shuō tā zǎojiù kàn chūlái le.",
+   "rd": "왕거 숴 타 짜오주 칸 추라이 러.",
    "ko": "왕형이 진작에 알아봤대.",
-   "note": "파생 방향보어 看出来 '알아채다', 早就",
+   "note": "看出来=알아채다, 早就=진작에",
    "tags": [
     "방향보어 파생",
     "早就"
    ],
+   "emotion": "flustered",
    "lemmas": [
     [
      "说",
@@ -269,21 +266,21 @@
      "出来",
      "chū lái"
     ]
-   ],
-   "rd": "왕 거 숴 타 짜오주 칸 추라이 러.",
-   "emotion": "flustered"
+   ]
   },
   {
    "num": 8,
    "speaker": "B",
-   "zh": "公司里会不会传出去啊？😟",
-   "pinyin": "Gōngsī li huì bu huì chuán chūqu a?",
+   "zh": "公司里不会传出去吧？😟",
+   "pinyin": "Gōngsī li bú huì chuán chūqù ba?",
+   "rd": "궁쓰 리 부 후이 촨 추취 바?",
    "ko": "회사에 소문 퍼지는 거 아니야?",
-   "note": "방향보어 出去 (传出去 '퍼져 나가다')",
+   "note": "传出去=퍼져 나가다",
    "tags": [
     "방향보어",
     "会不会"
    ],
+   "emotion": "worried",
    "lemmas": [
     [
      "公司",
@@ -294,11 +291,6 @@
      "里",
      "里",
      "lǐ"
-    ],
-    [
-     "会",
-     "会",
-     "huì"
     ],
     [
      "不会",
@@ -315,9 +307,12 @@
      "出去",
      "chū qù"
     ]
-   ],
-   "rd": "궁쓰 리 후이 부 후이 촨 추취 아?",
-   "emotion": "worried"
+   ]
   }
- ]
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r4_love_l3_d04_1_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ }
 }

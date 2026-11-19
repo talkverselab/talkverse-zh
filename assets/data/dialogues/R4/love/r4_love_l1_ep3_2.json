@@ -19,14 +19,16 @@
   {
    "num": 1,
    "speaker": "B",
-   "zh": "哇，会做饭的男人最帅！",
-   "pinyin": "Wā, huì zuò fàn de nánrén zuì shuài!",
+   "zh": "哇，会做饭的男生最帅！",
+   "pinyin": "Wa, huì zuòfàn de nánshēng zuì shuài!",
+   "rd": "와, 후이 쭤판 더 난성 쭈이 솨이!",
    "ko": "와, 요리하는 남자가 제일 멋있어요!",
-   "note": "会…的+명사 수식 + 最帅",
+   "note": "会…的는 수식, 最帅는 ‘제일 멋있다’.",
    "tags": [
     "praise",
     "flirt"
    ],
+   "emotion": "excited",
    "lemmas": [
     [
      "会",
@@ -39,30 +41,30 @@
      "zuò fàn"
     ],
     [
-     "男人",
-     "男人",
-     "nán rén"
+     "男生",
+     "男生",
+     "nán shēng"
     ],
     [
      "最",
      "最",
      "zuì"
     ]
-   ],
-   "rd": "와, 후이 쭤 판 더 난런 쭈이 솨이!",
-   "emotion": "excited"
+   ]
   },
   {
    "num": 2,
    "speaker": "A",
    "zh": "那我天天给你做，哈哈。😜",
    "pinyin": "Nà wǒ tiāntiān gěi nǐ zuò, hāhā.",
+   "rd": "나 워 톈톈 게이 니 쭤, 하하.",
    "ko": "그럼 매일 해줄게요, 하하.",
-   "note": "给你做 (~해 주다)",
+   "note": "给你做은 ‘~해 주다’.",
    "tags": [
     "flirt",
     "function:给"
    ],
+   "emotion": "teasing",
    "lemmas": [
     [
      "那",
@@ -79,31 +81,26 @@
      "做",
      "zuò"
     ]
-   ],
-   "rd": "나 워 톈톈 게이 니 쭤, 하하.",
-   "emotion": "teasing"
+   ]
   },
   {
    "num": 3,
    "speaker": "A",
-   "zh": "小丽，你家人都在北京吗？🤔",
-   "pinyin": "Xiǎolì, nǐ jiārén dōu zài Běijīng ma?",
+   "zh": "小丽，家人都在北京吗？🤔",
+   "pinyin": "Xiǎolì, jiārén dōu zài Běijīng ma?",
+   "rd": "샤오리, 자런 더우 짜이 베이징 마?",
    "ko": "샤오리, 가족들 다 베이징에 있어요?",
-   "note": "都 (모두) + 在",
+   "note": "都은 ‘모두’, 在은 위치.",
    "tags": [
     "family",
     "question"
    ],
+   "emotion": "neutral",
    "lemmas": [
     [
-     "家",
-     "家",
-     "jiā"
-    ],
-    [
-     "人",
-     "人",
-     "rén"
+     "家人",
+     "家人",
+     "jiā rén"
     ],
     [
      "都",
@@ -115,52 +112,52 @@
      "北京",
      "běi jīng"
     ]
-   ],
-   "rd": "샤오리, 니 자런 더우 짜이 베이징 마?",
-   "emotion": "neutral"
+   ]
   },
   {
    "num": 4,
    "speaker": "B",
-   "zh": "不，我老家在四川。",
-   "pinyin": "Bù, wǒ lǎojiā zài Sìchuān.",
+   "zh": "不是，老家是四川。",
+   "pinyin": "Bú shì, lǎojiā shì Sìchuān.",
+   "rd": "부 스, 라오자 스 쓰촨.",
    "ko": "아니요, 고향은 쓰촨이에요.",
-   "note": "老家 (고향)",
+   "note": "老家는 ‘고향’.",
    "tags": [
     "family",
     "hook:sichuan"
    ],
+   "emotion": "neutral",
    "lemmas": [
-    [
-     "不",
-     "不",
-     "bù"
-    ],
     [
      "老家",
      "老家",
      "lǎo jiā"
     ],
     [
+     "是",
+     "是",
+     "shì"
+    ],
+    [
      "四川",
      "四川",
      "sì chuān"
     ]
-   ],
-   "rd": "부, 워 라오자 짜이 쓰촨.",
-   "emotion": "neutral"
+   ]
   },
   {
    "num": 5,
    "speaker": "A",
-   "zh": "四川！怪不得你能吃辣！",
-   "pinyin": "Sìchuān! Guàibude nǐ néng chī là!",
+   "zh": "四川！怪不得那么能吃辣！",
+   "pinyin": "Sìchuān! Guàibude nàme néng chī là!",
+   "rd": "쓰촨! 과이부더 나머 넝 츠 라!",
    "ko": "쓰촨! 어쩐지 매운 걸 잘 먹더라!",
-   "note": "怪不得 (어쩐지)",
+   "note": "怪不得는 ‘어쩐지’.",
    "tags": [
     "joke",
     "callback:ep2"
    ],
+   "emotion": "surprised",
    "lemmas": [
     [
      "四川",
@@ -178,6 +175,11 @@
      "bù dé"
     ],
     [
+     "那么",
+     "那么",
+     "nà me"
+    ],
+    [
      "能",
      "能",
      "néng"
@@ -192,21 +194,21 @@
      "辣",
      "là"
     ]
-   ],
-   "rd": "쓰촨! 과이부더 니 넝 츠 라!",
-   "emotion": "surprised"
+   ]
   },
   {
    "num": 6,
    "speaker": "B",
-   "zh": "哈哈，对，我们家无辣不欢。",
-   "pinyin": "Hāhā, duì, wǒmen jiā wú là bù huān.",
+   "zh": "哈哈对，我们家无辣不欢。",
+   "pinyin": "Hāhā duì, wǒmen jiā wú là bù huān.",
+   "rd": "하하 두이, 워먼 자 우 라 부 환.",
    "ko": "하하 맞아요, 우리 집은 매운 거 없으면 못 살아요.",
-   "note": "无辣不欢 (매운 것 없인 못 산다) 관용",
+   "note": "无辣不欢은 ‘매운 것 없인 못 산다’ 관용.",
    "tags": [
     "family",
     "culture"
    ],
+   "emotion": "amused",
    "lemmas": [
     [
      "我们",
@@ -238,22 +240,27 @@
      "欢",
      "huān"
     ]
-   ],
-   "rd": "하하, 두이, 워먼 자 우 라 부 환.",
-   "emotion": "amused"
+   ]
   },
   {
    "num": 7,
    "speaker": "A",
-   "zh": "你爸爸妈妈做什么的？",
-   "pinyin": "Nǐ bàba māma zuò shénme de?",
+   "zh": "你父母做什么的？",
+   "pinyin": "Nǐ fùmǔ zuò shénme de?",
+   "rd": "니 푸무 쭤 선머 더?",
    "ko": "부모님은 무슨 일 하세요?",
-   "note": "做什么的 직업 묻기",
+   "note": "做什么的은 직업 묻기.",
    "tags": [
     "family",
     "question"
    ],
+   "emotion": "neutral",
    "lemmas": [
+    [
+     "父母",
+     "父母",
+     "fù mǔ"
+    ],
     [
      "做",
      "做",
@@ -264,21 +271,21 @@
      "什么",
      "shén me"
     ]
-   ],
-   "rd": "니 바바 마마 쭤 선머 더?",
-   "emotion": "neutral"
+   ]
   },
   {
    "num": 8,
    "speaker": "B",
-   "zh": "开了一家小饭馆，三十年了。",
-   "pinyin": "Kāi le yì jiā xiǎo fànguǎn, sānshí nián le.",
+   "zh": "开小餐馆，开了三十年了。",
+   "pinyin": "Kāi xiǎo cānguǎn, kāi le sānshí nián le.",
+   "rd": "카이 샤오 찬관, 카이 러 싼스 녠 러.",
    "ko": "작은 식당을 하세요, 30년 됐어요.",
-   "note": "开店 + 了…了 지속",
+   "note": "开店은 ‘가게를 하다’, 了…了는 지속.",
    "tags": [
     "family",
     "hook:restaurant"
    ],
+   "emotion": "cheerful",
    "lemmas": [
     [
      "开",
@@ -286,28 +293,31 @@
      "kāi"
     ],
     [
-     "一家",
-     "一家",
-     "yī jiā"
-    ],
-    [
      "小",
      "小",
      "xiǎo"
     ],
     [
-     "饭馆",
-     "饭馆",
-     "fàn guǎn"
+     "餐馆",
+     "餐馆",
+     "cān guǎn"
+    ],
+    [
+     "开",
+     "开",
+     "kāi"
     ],
     [
      "三十年",
      "年",
      "nián"
     ]
-   ],
-   "rd": "카이 러 이 자 샤오 판관, 싼스 녠 러.",
-   "emotion": "cheerful"
+   ]
   }
- ]
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r4_love_l1_ep3_2_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ }
 }

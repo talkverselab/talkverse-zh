@@ -19,14 +19,16 @@
   {
    "num": 1,
    "speaker": "B",
-   "zh": "织得不好，你别笑话我。",
-   "pinyin": "Zhī de bù hǎo, nǐ bié xiàohua wǒ.",
+   "zh": "织得不好，别笑话我。",
+   "pinyin": "Zhī de bù hǎo, bié xiàohua wǒ.",
+   "rd": "즈 더 부 하오, 볘 샤오화 워.",
    "ko": "잘 못 떴어, 놀리지 마.",
-   "note": "정도보어 得 (织得不好)",
+   "note": "得=정도보어",
    "tags": [
     "정도보어",
     "겸손 표현"
    ],
+   "emotion": "shy",
    "lemmas": [
     [
      "织",
@@ -48,21 +50,21 @@
      "笑话",
      "xiào huà"
     ]
-   ],
-   "rd": "즈 더 부 하오, 니 볘 샤오화 워.",
-   "emotion": "shy"
+   ]
   },
   {
    "num": 2,
    "speaker": "A",
    "zh": "怎么会！这是最好的礼物。",
    "pinyin": "Zěnme huì! Zhè shì zuì hǎo de lǐwù.",
+   "rd": "쩐머 후이! 저 스 쭈이 하오 더 리우.",
    "ko": "무슨 소리야! 이게 최고의 선물이지.",
-   "note": "반문 표현 怎么会 '그럴 리가'",
+   "note": "怎么会=그럴 리가",
    "tags": [
     "반문",
     "칭찬"
    ],
+   "emotion": "gentle",
    "lemmas": [
     [
      "怎么",
@@ -94,21 +96,21 @@
      "礼物",
      "lǐ wù"
     ]
-   ],
-   "rd": "쩐머 후이! 저 스 쭈이 하오 더 리우.",
-   "emotion": "gentle"
+   ]
   },
   {
    "num": 3,
    "speaker": "B",
    "zh": "冬天戴上就不冷了。",
-   "pinyin": "Dōngtiān dàishang jiù bù lěng le.",
+   "pinyin": "Dōngtiān dài shàng jiù bù lěng le.",
+   "rd": "둥톈 다이 상 주 부 렁 러.",
    "ko": "겨울에 이거 하면 안 추울 거야.",
-   "note": "변화의 了 (不冷了), 부사 就",
+   "note": "了=변화, 就=바로",
    "tags": [
     "변화의 了",
     "부사 就"
    ],
+   "emotion": "gentle",
    "lemmas": [
     [
      "冬天",
@@ -140,21 +142,21 @@
      "冷",
      "lěng"
     ]
-   ],
-   "rd": "둥톈 다이상 주 부 렁 러.",
-   "emotion": "gentle"
+   ]
   },
   {
    "num": 4,
    "speaker": "A",
    "zh": "我会一直戴着的。",
    "pinyin": "Wǒ huì yìzhí dàizhe de.",
+   "rd": "워 후이 이즈 다이저 더.",
    "ko": "계속 하고 다닐게.",
-   "note": "지속의 着 + 확신의 会…的",
+   "note": "着=지속, 会…的=확신",
    "tags": [
     "지속 着",
     "会…的"
    ],
+   "emotion": "gentle",
    "lemmas": [
     [
      "我会",
@@ -171,21 +173,21 @@
      "戴",
      "dài"
     ]
-   ],
-   "rd": "워 후이 이즈 다이저 더.",
-   "emotion": "gentle"
+   ]
   },
   {
    "num": 5,
    "speaker": "B",
    "zh": "希望我们每天都这么幸福。",
    "pinyin": "Xīwàng wǒmen měi tiān dōu zhème xìngfú.",
+   "rd": "시왕 워먼 메이 톈 더우 저머 싱푸.",
    "ko": "우리 매일 이렇게 행복했으면 좋겠어.",
-   "note": "每…都 '매(번)마다 모두'",
+   "note": "每…都=매번 모두",
    "tags": [
     "每…都",
     "希望"
    ],
+   "emotion": "gentle",
    "lemmas": [
     [
      "希望",
@@ -217,20 +219,20 @@
      "幸福",
      "xìng fú"
     ]
-   ],
-   "rd": "시왕 워먼 메이 톈 더우 저머 싱푸.",
-   "emotion": "gentle"
+   ]
   },
   {
    "num": 6,
    "speaker": "A",
-   "zh": "我也希望，一直这样幸福。",
-   "pinyin": "Wǒ yě xīwàng, yìzhí zhèyàng xìngfú.",
+   "zh": "我也希望一直这样幸福。",
+   "pinyin": "Wǒ yě xīwàng yìzhí zhèyàng xìngfú.",
+   "rd": "워 예 시왕 이즈 저양 싱푸.",
    "ko": "나도 바라, 계속 이렇게 행복했으면.",
-   "note": null,
+   "note": "",
    "tags": [
     "ext"
    ],
+   "emotion": "gentle",
    "lemmas": [
     [
      "也",
@@ -257,20 +259,20 @@
      "幸福",
      "xìng fú"
     ]
-   ],
-   "rd": "워 예 시왕, 이즈 저양 싱푸.",
-   "emotion": "gentle"
+   ]
   },
   {
    "num": 7,
    "speaker": "B",
-   "zh": "那我们拍张照纪念一下吧。😄",
-   "pinyin": "Nà wǒmen pāi zhāngzhào jìniàn yīxià ba.",
+   "zh": "那我们拍照纪念一下吧。😄",
+   "pinyin": "Nà wǒmen pāizhào jìniàn yíxià ba.",
+   "rd": "나 워먼 파이자오 지녠 이샤 바.",
    "ko": "그럼 우리 사진 찍어서 기념하자.",
-   "note": null,
+   "note": "",
    "tags": [
     "ext"
    ],
+   "emotion": "cheerful",
    "lemmas": [
     [
      "那",
@@ -283,9 +285,9 @@
      "wǒ men"
     ],
     [
-     "拍",
-     "拍",
-     "pāi"
+     "拍照",
+     "拍照",
+     "pāi zhào"
     ],
     [
      "纪念",
@@ -297,20 +299,20 @@
      "一下",
      "yī xià"
     ]
-   ],
-   "rd": "나 워먼 파이 장자오 지녠 이샤 바.",
-   "emotion": "cheerful"
+   ]
   },
   {
    "num": 8,
    "speaker": "A",
    "zh": "好，来，笑一个！",
-   "pinyin": "Hǎo, lái, xiào yígè!",
+   "pinyin": "Hǎo, lái, xiào yí ge!",
+   "rd": "하오, 라이, 샤오 이 거!",
    "ko": "좋아, 자 웃어 봐!",
-   "note": null,
+   "note": "",
    "tags": [
     "ext"
    ],
+   "emotion": "cheerful",
    "lemmas": [
     [
      "好",
@@ -332,9 +334,12 @@
      "一个",
      "yí gè"
     ]
-   ],
-   "rd": "하오, 라이, 샤오 이거!",
-   "emotion": "cheerful"
+   ]
   }
- ]
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r4_love_l3_d02_2_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ }
 }

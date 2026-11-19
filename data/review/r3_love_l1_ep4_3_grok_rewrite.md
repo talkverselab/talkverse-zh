@@ -1,0 +1,13 @@
+=== r3_love_l1_ep4_3
+title: 갈등 ③
+scene: 연락 두절 오해 — 서운함 · 변명 · 질투 · 사과 · 화해 (반말 전환)
+B: 小丽
+register: 반말(친구·연인)
+1 B | 刚才你说什么？ | Gāngcái nǐ shuō shénme? | 방금 뭐라고 했어? | 刚才 = 방금 | emotion=surprised
+2 A | 我说心里只有你。 | Wǒ shuō xīnli zhǐyǒu nǐ. | 내 마음엔 너뿐이라고 했어. | 只有 = 오직 ~만 | emotion=gentle
+3 B | 哼，现在说也没用。 | Hēng, xiànzài shuō yě méiyòng. | 흥, 지금 그런 말 해도 소용없어. | 没用 = 소용없다 | emotion=annoyed
+4 A | 那怎么做才原谅我？ | Nà zěnme zuò cái yuánliàng wǒ? | 그럼 어떻게 해야 용서해 줄 거야? | 怎么做才 = 어떻게 해야 | emotion=worried
+5 B | 让我想想……请我吃火锅。 | Ràng wǒ xiǎngxiang…… qǐng wǒ chī huǒguō. | 생각 좀 해보고… 훠궈 사줘. |  | emotion=teasing
+6 A | 没问题！最辣的那家！ | Méi wèntí! Zuì là de nà jiā! | 문제없어! 제일 매운 그 집! | 最…的那家 = 가장 ~한 그 집 | emotion=excited
+7 B | 以后每天都发消息。 | Yǐhòu měitiān dōu fā xiāoxi. | 그리고 앞으로 매일 메시지 보내기. | 以后 = 앞으로, 每天 = 매일 | emotion=teasing
+8 A | 一天三次，早中晚！ | Yī tiān sān cì, zǎo zhōng wǎn! | 하루 세 번, 아침 점심 저녁! | 次 = 횟수 | emotion=cheerful

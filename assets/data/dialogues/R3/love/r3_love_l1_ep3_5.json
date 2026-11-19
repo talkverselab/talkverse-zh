@@ -19,20 +19,17 @@
   {
    "num": 1,
    "speaker": "A",
-   "zh": "哇，你妈妈好年轻！",
-   "pinyin": "Wā, nǐ māma hǎo niánqīng!",
+   "zh": "哇，阿姨好年轻！",
+   "pinyin": "Wa, āyí hǎo niánqīng!",
+   "rd": "와, 아이 하오 녠칭!",
    "ko": "와, 어머니 진짜 젊으시다!",
-   "note": "好+형용사 감탄",
+   "note": "好+형용사 = 감탄",
    "tags": [
     "praise",
     "family"
    ],
+   "emotion": "surprised",
    "lemmas": [
-    [
-     "妈妈",
-     "妈妈",
-     "mā mā"
-    ],
     [
      "好",
      "好",
@@ -43,21 +40,21 @@
      "年轻",
      "nián qīng"
     ]
-   ],
-   "rd": "와, 니 마마 하오 녠칭!",
-   "emotion": "surprised"
+   ]
   },
   {
    "num": 2,
    "speaker": "B",
    "zh": "大家都这么说，嘿嘿。😏",
    "pinyin": "Dàjiā dōu zhème shuō, hēihēi.",
+   "rd": "다자 더우 저머 숴, 헤이헤이.",
    "ko": "다들 그렇게 말해요, 헤헤.",
-   "note": "大家都 + 这么说",
+   "note": "大家都 = 다들",
    "tags": [
     "family",
     "particle:嘿"
    ],
+   "emotion": "amused",
    "lemmas": [
     [
      "大家",
@@ -79,57 +76,47 @@
      "说",
      "shuō"
     ]
-   ],
-   "rd": "다자 더우 저머 숴, 헤이헤이.",
-   "emotion": "amused"
+   ]
   },
   {
    "num": 3,
    "speaker": "A",
-   "zh": "你和妈妈长得很像。",
-   "pinyin": "Nǐ hé māma zhǎng de hěn xiàng.",
+   "zh": "你长得像阿姨。",
+   "pinyin": "Nǐ zhǎng de xiàng āyí.",
+   "rd": "니 장 더 샹 아이.",
    "ko": "어머니랑 많이 닮았어요.",
-   "note": "长得像 (닮았다) 得 보어",
+   "note": "长得像 = 닮았다",
    "tags": [
     "praise",
     "function:得"
    ],
+   "emotion": "cheerful",
    "lemmas": [
-    [
-     "妈妈",
-     "妈妈",
-     "mā mā"
-    ],
     [
      "长",
      "长",
      "zhǎng"
     ],
     [
-     "很",
-     "很",
-     "hěn"
-    ],
-    [
      "像",
      "像",
      "xiàng"
     ]
-   ],
-   "rd": "니 허 마마 장 더 헌 샹.",
-   "emotion": "cheerful"
+   ]
   },
   {
    "num": 4,
    "speaker": "B",
-   "zh": "其实… 我妈问过你的事。",
-   "pinyin": "Qíshí… wǒ mā wèn guo nǐ de shì.",
+   "zh": "其实……妈妈问过你。",
+   "pinyin": "Qíshí…… māma wèn guo nǐ.",
+   "rd": "치스…… 마마 원 궈 니.",
    "ko": "사실… 엄마가 당신에 대해 물어봤어요.",
-   "note": "其实 + 过 경험",
+   "note": "其实 = 사실, 过 = 경험",
    "tags": [
     "family",
     "hook:parents"
    ],
+   "emotion": "shy",
    "lemmas": [
     [
      "其实",
@@ -137,35 +124,30 @@
      "qí shí"
     ],
     [
-     "妈",
-     "妈",
-     "mā"
+     "妈妈",
+     "妈妈",
+     "mā mā"
     ],
     [
      "问",
      "问",
      "wèn"
-    ],
-    [
-     "事",
-     "事",
-     "shì"
     ]
-   ],
-   "rd": "치스… 워 마 원 궈 니 더 스.",
-   "emotion": "shy"
+   ]
   },
   {
    "num": 5,
    "speaker": "A",
-   "zh": "真的吗？她说什么了？",
-   "pinyin": "Zhēn de ma? Tā shuō shénme le?",
+   "zh": "真的？她说什么了？",
+   "pinyin": "Zhēn de? Tā shuō shénme le?",
+   "rd": "전 더? 타 숴 선머 러?",
    "ko": "정말요? 뭐라고 하셨어요?",
-   "note": "说什么了 완료 의문",
+   "note": "说什么了 = 뭐라고 했나",
    "tags": [
     "question",
     "function:了"
    ],
+   "emotion": "surprised",
    "lemmas": [
     [
      "真的",
@@ -182,21 +164,21 @@
      "什么",
      "shén me"
     ]
-   ],
-   "rd": "전 더 마? 타 숴 선머 러?",
-   "emotion": "surprised"
+   ]
   },
   {
    "num": 6,
    "speaker": "B",
-   "zh": "她问：外国人能相信吗？😟",
-   "pinyin": "Tā wèn: wàiguó rén néng xiāngxìn ma?",
+   "zh": "她问“外国人能相信吗？”",
+   "pinyin": "Tā wèn “wàiguórén néng xiāngxìn ma?”",
+   "rd": "타 원 \"와이궈런 넝 샹신 마?\"",
    "ko": "'외국인은 믿을 수 있니?'라고 물으셨어요.",
-   "note": "能 + 相信",
+   "note": "能 = 할 수 있다",
    "tags": [
     "family",
     "hook:worry"
    ],
+   "emotion": "worried",
    "lemmas": [
     [
      "问",
@@ -223,21 +205,21 @@
      "相信",
      "xiāng xìn"
     ]
-   ],
-   "rd": "타 원: 와이궈 런 넝 샹신 마?",
-   "emotion": "worried"
+   ]
   },
   {
    "num": 7,
    "speaker": "A",
-   "zh": "我会证明给她看的。",
-   "pinyin": "Wǒ huì zhèngmíng gěi tā kàn de.",
+   "zh": "我会证明给你看的。",
+   "pinyin": "Wǒ huì zhèngmíng gěi nǐ kàn de.",
+   "rd": "워 후이 정밍 게이 니 칸 더.",
    "ko": "제가 증명해 보일 거예요.",
-   "note": "会…的 (확신) + 证明给…看",
+   "note": "会…的 = 확신, 证明给…看 = 증명해 보이다",
    "tags": [
     "promise",
     "function:会"
    ],
+   "emotion": "gentle",
    "lemmas": [
     [
      "我会",
@@ -254,30 +236,33 @@
      "看",
      "kàn"
     ]
-   ],
-   "rd": "워 후이 정밍 게이 타 칸 더.",
-   "emotion": "gentle"
+   ]
   },
   {
    "num": 8,
    "speaker": "B",
-   "zh": "嗯，我相信你。",
-   "pinyin": "Ǹg, wǒ xiāngxìn nǐ.",
+   "zh": "嗯，我相信。",
+   "pinyin": "Ǹg, wǒ xiāngxìn.",
+   "rd": "응, 워 샹신.",
    "ko": "응, 믿어요.",
-   "note": "어기조사 嗯 + 相信 (신뢰) — 반말 전환 시작",
+   "note": "嗯 = 응, 相信 = 믿다",
    "tags": [
     "feeling",
     "particle:嗯"
    ],
+   "emotion": "gentle",
    "lemmas": [
     [
      "相信",
      "相信",
      "xiāng xìn"
     ]
-   ],
-   "rd": "Ǹg, 워 샹신 니.",
-   "emotion": "gentle"
+   ]
   }
- ]
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r3_love_l1_ep3_5_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ }
 }

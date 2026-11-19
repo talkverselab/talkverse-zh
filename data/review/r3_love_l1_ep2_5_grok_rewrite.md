@@ -1,0 +1,13 @@
+=== r3_love_l1_ep2_5
+title: 식사 ⑤
+scene: 첫 만남 식당 — 주문 · 매운맛 · 젓가락 · 계산 · 산책 제안
+B: 小丽
+register: 반말(친구·연인)
+1 B | 慢慢学，我教你呀。 | Mànmàn xué, wǒ jiāo nǐ ya. | 천천히 배워요, 내가 가르쳐 줄게요. | 慢慢 = 천천히, 呀 = 부드러운 어미 | emotion=gentle
+2 A | 真的？那我天天找你。 | Zhēn de? Nà wǒ tiāntiān zhǎo nǐ. | 정말요? 그럼 매일 찾아갈 거예요. | 天天 = 매일 | emotion=surprised
+3 B | 看你的表现哦。 | Kàn nǐ de biǎoxiàn o. | 하기 나름이에요. | 看你的表现 = 네 하기에 달렸다 | emotion=teasing
+4 A | 服务员，买单！我请客。 | Fúwùyuán, mǎidān! Wǒ qǐngkè. | 저기요, 계산이요! 제가 살게요. | 买单 = 계산, 请客 = 한턱내다 | emotion=shout
+5 B | 说好了，下次我请。 | Shuō hǎo le, xià cì wǒ qǐng. | 약속한 거예요, 다음엔 제가 살게요. | 说好了 = 약속했다 | emotion=polite
+6 A | 下次？那还有下次啊！ | Xià cì? Nà hái yǒu xià cì a! | 다음이요? 그럼 다음이 있다는 거네요! | 还有 = 또 있다 | emotion=excited
+7 B | 吃饱了吗？我们走走。 | Chī bǎo le ma? Wǒmen zǒuzou. | 배불러요? 우리 좀 걸어요. | 吃饱了 = 배부르다, 走走 = 좀 걷다 | emotion=gentle
+8 A | 好，今天月亮真好看。 | Hǎo, jīntiān yuèliang zhēn hǎokàn. | 좋아요, 오늘 달이 진짜 예쁘네요. | 月亮 = 달 | emotion=gentle

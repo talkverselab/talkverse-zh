@@ -1,0 +1,13 @@
+=== r2_love_l3_d01_1
+title: 공식화 ①
+scene: 정식으로 사귀기 시작한 두 사람, 주변에 알릴지 말지 상의한다.
+B: 小丽
+register: 반말(친구·연인)
+1 A | 小丽，有件事想跟你商量。 | Xiǎo Lì, yǒu jiàn shì xiǎng gēn nǐ shāngliang. | 샤오리, 너랑 상의하고 싶은 일이 하나 있어. | 跟…商量 = ~와 상의하다, 件 = 일(양사) | emotion=shy
+2 B | 什么事？说吧，别紧张。 | Shénme shì? Shuō ba, bié jǐnzhāng. | 무슨 일인데? 말해 봐, 긴장하지 말고. | 别+동사 = ~하지 마 | emotion=gentle
+3 A | 我们谈恋爱，要不要告诉朋友？ | Wǒmen tán liàn'ài, yào bu yào gàosu péngyou? | 우리 사귀는 거, 친구들한테 알릴까 말까? | 要不要 = ~할까 말까 | emotion=shy
+4 B | 我正想问你呢！ | Wǒ zhèng xiǎng wèn nǐ ne! | 나도 마침 너한테 물어보려던 참이었어! | 正…呢 = 마침 ~하던 중 | emotion=excited
+5 A | 真的？我们想到一起了。 | Zhēn de? Wǒmen xiǎng dào yīqǐ le. | 진짜? 우리 생각이 통했네. | 到 = 결과보어(생각이 맞다) | emotion=surprised
+6 B | 不想再偷偷摸摸见面了。 | Bù xiǎng zài tōutōumōmō jiànmiàn le. | 더는 몰래몰래 만나고 싶지 않아. | 偷偷摸摸 = 몰래몰래, 不想再 = 더는 ~하고 싶지 않다 | emotion=gentle
+7 A | 对，想让朋友们都知道。 | Duì, xiǎng ràng péngyoumen dōu zhīdào. | 맞아, 친구들이 다 알게 하고 싶어. | 让 = ~하게 하다 | emotion=cheerful
+8 B | 那你想先告诉谁？大伟？ | Nà nǐ xiǎng xiān gàosu shuí? Dà Wěi? | 그럼 누구한테 먼저 말할 거야? 다웨이? | 先 = 먼저, 谁 = 누구 | emotion=teasing

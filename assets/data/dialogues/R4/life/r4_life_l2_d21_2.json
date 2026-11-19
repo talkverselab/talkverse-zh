@@ -21,12 +21,14 @@
    "speaker": "B",
    "zh": "这次不一样嘛！😳",
    "pinyin": "Zhè cì bù yíyàng ma!",
+   "rd": "저 츠 부 이양 마!",
    "ko": "이번엔 다르다니까!",
-   "note": "不一样: '다르다'. 嘛로 떼쓰는 어투.",
+   "note": "不一样는 ‘다르다’, 嘛는 떼쓰는 어투.",
    "tags": [
     "不一样",
     "嘛"
    ],
+   "emotion": "flustered",
    "lemmas": [
     [
      "这次",
@@ -43,26 +45,26 @@
      "一样",
      "yī yàng"
     ]
-   ],
-   "rd": "저 츠 부 이양 마!",
-   "emotion": "flustered"
+   ]
   },
   {
    "num": 2,
    "speaker": "A",
-   "zh": "好吧好吧，就一只哦。😏",
-   "pinyin": "Hǎo ba hǎo ba, jiù yì zhī o.",
+   "zh": "好好好，就一只哦。😏",
+   "pinyin": "Hǎo hǎo hǎo, jiù yì zhī ō.",
+   "rd": "하오 하오 하오, 주 이 즈 오.",
    "ko": "알았어 알았어, 딱 한 마리만이야.",
-   "note": "就: '딱 ~만' 한정. 哦로 다짐 받는 어투.",
+   "note": "就는 ‘딱 ~만’ 한정, 哦는 다짐 받는 어투.",
    "tags": [
     "就",
     "哦"
    ],
+   "emotion": "amused",
    "lemmas": [
     [
-     "好",
-     "好",
-     "hǎo"
+     "好好",
+     "好好",
+     "hǎo hǎo"
     ],
     [
      "好",
@@ -79,21 +81,21 @@
      "一只",
      "yī zhī"
     ]
-   ],
-   "rd": "하오 바 하오 바, 주 이 즈 오.",
-   "emotion": "amused"
+   ]
   },
   {
    "num": 3,
    "speaker": "B",
-   "zh": "太好了！那两只呢？😜",
+   "zh": "太好了！那两只呢？🤩",
    "pinyin": "Tài hǎo le! Nà liǎng zhī ne?",
+   "rd": "타이 하오 러! 나 량 즈 너?",
    "ko": "앗싸! 그럼 두 마리는?",
-   "note": "…呢?: 명사구+呢로 '~는 어때?' 슬쩍 흥정.",
+   "note": "명사구+呢는 ‘~는 어때?’ 슬쩍 흥정.",
    "tags": [
     "呢",
     "반전"
    ],
+   "emotion": "excited",
    "lemmas": [
     [
      "太",
@@ -115,18 +117,6 @@
      "只",
      "zhǐ"
     ]
-   ],
-   "rd": "타이 하오 러! 나 량 즈 너?",
-   "emotion": "excited",
-   "segs": [
-    [
-     "excited",
-     "太好了！"
-    ],
-    [
-     "teasing",
-     "那两只呢？"
-    ]
    ]
   },
   {
@@ -134,47 +124,49 @@
    "speaker": "A",
    "zh": "小丽！",
    "pinyin": "Xiǎolì!",
+   "rd": "샤오리!",
    "ko": "샤오리!",
-   "note": "이름만 외쳐 경고·어이없음 표현. 억양이 곧 의미.",
+   "note": "이름만 외쳐 경고나 어이없음을 표현한다.",
    "tags": [
     "호칭",
     "유머"
    ],
-   "lemmas": [],
-   "rd": "샤오리!",
-   "emotion": "shout"
+   "emotion": "shout",
+   "lemmas": []
   },
   {
    "num": 5,
    "speaker": "B",
-   "zh": "开玩笑的啦，哈哈。😏",
-   "pinyin": "Kāi wánxiào de la, hāhā.",
+   "zh": "开玩笑的啦。😏",
+   "pinyin": "Kāi wánxiào de la.",
+   "rd": "카이 완샤오 더 라.",
    "ko": "농담이야, 하하.",
-   "note": "开玩笑的: '농담이야'. 啦로 장난스럽게 수습.",
+   "note": "开玩笑的는 ‘농담이야’, 啦는 장난스럽게 수습.",
    "tags": [
     "开玩笑",
     "啦"
    ],
+   "emotion": "amused",
    "lemmas": [
     [
      "开玩笑",
      "开玩笑",
      "kāi wán xiào"
     ]
-   ],
-   "rd": "카이 완샤오 더 라, 하하.",
-   "emotion": "amused"
+   ]
   },
   {
    "num": 6,
    "speaker": "A",
-   "zh": "吓死我了，你可别乱来。",
-   "pinyin": "Xiàsǐ wǒ le, nǐ kěbié luànlái.",
+   "zh": "吓我一跳，别乱来啊。🙄",
+   "pinyin": "Xià wǒ yí tiào, bié luànlái a.",
+   "rd": "샤 워 이 탸오, 볘 롼라이 아.",
    "ko": "깜짝 놀랐잖아, 함부로 굴지 마.",
-   "note": null,
+   "note": "",
    "tags": [
     "ext"
    ],
+   "emotion": "tsukkomi",
    "lemmas": [
     [
      "吓",
@@ -182,14 +174,9 @@
      "xià"
     ],
     [
-     "死",
-     "死",
-     "sǐ"
-    ],
-    [
-     "可",
-     "可",
-     "kě"
+     "跳",
+     "跳",
+     "tiào"
     ],
     [
      "别",
@@ -206,30 +193,25 @@
      "来",
      "lái"
     ]
-   ],
-   "rd": "샤쓰 워 러, 니 커볘 롼라이.",
-   "emotion": "tsukkomi"
+   ]
   },
   {
    "num": 7,
    "speaker": "B",
-   "zh": "那我们先去朋友家看看猫吧。😄",
-   "pinyin": "Nà wǒmen xiān qù péngyǒujiā kànkàn māo ba.",
+   "zh": "那先去朋友家看看猫吧。😄",
+   "pinyin": "Nà xiān qù péngyou jiā kànkan māo ba.",
+   "rd": "나 셴 취 펑유 자 칸칸 마오 바.",
    "ko": "그럼 우선 친구네 가서 고양이 보자.",
-   "note": null,
+   "note": "",
    "tags": [
     "ext"
    ],
+   "emotion": "cheerful",
    "lemmas": [
     [
      "那",
      "那",
      "nà"
-    ],
-    [
-     "我们",
-     "我们",
-     "wǒ men"
     ],
     [
      "先",
@@ -261,20 +243,20 @@
      "猫",
      "māo"
     ]
-   ],
-   "rd": "나 워먼 셴 취 펑유자 칸칸 마오 바.",
-   "emotion": "cheerful"
+   ]
   },
   {
    "num": 8,
    "speaker": "A",
-   "zh": "好，就今天下午去。",
-   "pinyin": "Hǎo, jiù jīntiānxiàwǔ qù.",
+   "zh": "好，今天下午就去。",
+   "pinyin": "Hǎo, jīntiān xiàwǔ jiù qù.",
+   "rd": "하오, 진톈 샤우 주 취.",
    "ko": "좋아, 오늘 오후에 바로 가자.",
-   "note": null,
+   "note": "",
    "tags": [
     "ext"
    ],
+   "emotion": "cheerful",
    "lemmas": [
     [
      "好",
@@ -291,9 +273,12 @@
      "去",
      "qù"
     ]
-   ],
-   "rd": "하오, 주 진톈샤우 취.",
-   "emotion": "cheerful"
+   ]
   }
- ]
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r4_life_l2_d21_2_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ }
 }

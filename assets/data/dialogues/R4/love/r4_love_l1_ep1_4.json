@@ -19,40 +19,37 @@
   {
    "num": 1,
    "speaker": "B",
-   "zh": "在朝阳区，你呢？🤔",
-   "pinyin": "Zài Cháoyáng qū, nǐ ne?",
+   "zh": "在朝阳，你呢？🤔",
+   "pinyin": "Zài Cháoyáng, nǐ ne?",
+   "rd": "짜이 차오양, 니 너?",
    "ko": "차오양구요, 당신은요?",
-   "note": "在 위치 + 呢 되묻기",
+   "note": "在은 위치, 呢는 되묻기.",
    "tags": [
     "question",
     "particle:呢"
    ],
+   "emotion": "neutral",
    "lemmas": [
     [
      "朝",
      "朝",
      "cháo"
-    ],
-    [
-     "区",
-     "区",
-     "qū"
     ]
-   ],
-   "rd": "짜이 차오양 취, 니 너?",
-   "emotion": "neutral"
+   ]
   },
   {
    "num": 2,
    "speaker": "A",
-   "zh": "其实公司让我来北京上班了，我也住朝阳！",
-   "pinyin": "Qíshí gōngsī ràng wǒ lái Běijīng shàngbān le, wǒ yě zhù Cháoyáng!",
+   "zh": "其实公司让我来北京工作，我也住朝阳！",
+   "pinyin": "Qíshí gōngsī ràng wǒ lái Běijīng gōngzuò, wǒ yě zhù Cháoyáng!",
+   "rd": "치스 궁쓰 랑 워 라이 베이징 궁쭤, 워 예 주 차오양!",
    "ko": "사실 회사에서 베이징으로 보내서 지금 여기서 일해요, 저도 차오양 살아요!",
-   "note": "其实 + 让 사역",
+   "note": "其实는 ‘사실’, 让은 사역.",
    "tags": [
     "hook:near",
     "particle:呢"
    ],
+   "emotion": "excited",
    "lemmas": [
     [
      "其实",
@@ -80,9 +77,9 @@
      "běi jīng"
     ],
     [
-     "上班",
-     "上班",
-     "shàng bān"
+     "工作",
+     "工作",
+     "gōng zuò"
     ],
     [
      "也",
@@ -99,21 +96,21 @@
      "朝",
      "cháo"
     ]
-   ],
-   "rd": "치스 궁쓰 랑 워 라이 베이징 상반 러, 워 예 주 차오양!",
-   "emotion": "excited"
+   ]
   },
   {
    "num": 3,
    "speaker": "B",
-   "zh": "真巧啊，缘分吧？😜",
-   "pinyin": "Zhēn qiǎo a, yuánfèn ba?",
+   "zh": "真巧，是缘分吧？😮",
+   "pinyin": "Zhēn qiǎo, shì yuánfèn ba?",
+   "rd": "전 차오, 스 위안펀 바?",
    "ko": "진짜 신기하다, 인연인가 봐요?",
-   "note": "真巧 + 어기조사 吧 (추측)",
+   "note": "真巧는 ‘진짜 신기하다’, 吧는 추측.",
    "tags": [
     "flirt",
     "particle:吧"
    ],
+   "emotion": "surprised",
    "lemmas": [
     [
      "真",
@@ -126,21 +123,14 @@
      "qiǎo"
     ],
     [
+     "是",
+     "是",
+     "shì"
+    ],
+    [
      "缘分",
      "缘分",
      "yuán fēn"
-    ]
-   ],
-   "rd": "전 차오 아, 위안펀 바?",
-   "emotion": "surprised",
-   "segs": [
-    [
-     "surprised",
-     "真巧啊，"
-    ],
-    [
-     "teasing",
-     "缘分吧？"
     ]
    ]
   },
@@ -149,12 +139,14 @@
    "speaker": "A",
    "zh": "是缘分！那我们见一面吧？🤩",
    "pinyin": "Shì yuánfèn! Nà wǒmen jiàn yí miàn ba?",
+   "rd": "스 위안펀! 나 워먼 젠 이 몐 바?",
    "ko": "인연이죠! 그럼 우리 한번 만날까요?",
-   "note": "那 (그럼) + 吧 (제안)",
+   "note": "那는 ‘그럼’, 吧는 제안.",
    "tags": [
     "request",
     "particle:吧"
    ],
+   "emotion": "excited",
    "lemmas": [
     [
      "是",
@@ -186,21 +178,21 @@
      "一面",
      "yí miàn"
     ]
-   ],
-   "rd": "스 위안펀! 나 워먼 젠 이 몐 바?",
-   "emotion": "excited"
+   ]
   },
   {
    "num": 5,
    "speaker": "B",
    "zh": "这么快？让我想想哦。😳",
-   "pinyin": "Zhème kuài? Ràng wǒ xiǎngxiang o.",
+   "pinyin": "Zhème kuài? Ràng wǒ xiǎngxiang ō.",
+   "rd": "저머 콰이? 랑 워 샹샹 오.",
    "ko": "이렇게 빨리요? 생각 좀 해볼게요.",
-   "note": "这么 + 让我想想 + 哦",
+   "note": "这么는 ‘이렇게’, 让我想想은 ‘생각 좀 하게 해’.",
    "tags": [
     "tease",
     "particle:哦"
    ],
+   "emotion": "flustered",
    "lemmas": [
     [
      "这么",
@@ -227,21 +219,21 @@
      "想",
      "xiǎng"
     ]
-   ],
-   "rd": "저머 콰이? 랑 워 샹샹 오.",
-   "emotion": "flustered"
+   ]
   },
   {
    "num": 6,
    "speaker": "A",
-   "zh": "别想太久啊，我会难过的。",
-   "pinyin": "Bié xiǎng tài jiǔ a, wǒ huì nánguò de.",
+   "zh": "别想太久，我会伤心的。",
+   "pinyin": "Bié xiǎng tài jiǔ, wǒ huì shāngxīn de.",
+   "rd": "볘 샹 타이 주, 워 후이 상신 더.",
    "ko": "너무 오래 생각하지 마요, 저 슬퍼질 거예요.",
-   "note": "别 금지 + 会…的 (확신)",
+   "note": "别은 금지, 会…的는 확신.",
    "tags": [
     "flirt",
     "function:会"
    ],
+   "emotion": "teasing",
    "lemmas": [
     [
      "别",
@@ -259,30 +251,30 @@
      "wǒ huì"
     ],
     [
-     "难过",
-     "难过",
-     "nán guò"
+     "伤心",
+     "伤心",
+     "shāng xīn"
     ]
-   ],
-   "rd": "볘 샹 타이 주 아, 워 후이 난궈 더.",
-   "emotion": "teasing"
+   ]
   },
   {
    "num": 7,
    "speaker": "B",
-   "zh": "好啦好啦，见吧，哈哈。😏",
-   "pinyin": "Hǎo la hǎo la, jiàn ba, hāhā.",
+   "zh": "好好好啦，见见，哈哈。😏",
+   "pinyin": "Hǎo hǎo hǎo la, jiànjian, hāhā.",
+   "rd": "하오 하오 하오 라, 젠젠, 하하.",
    "ko": "알았어요 알았어요, 만나요, 하하.",
-   "note": "어기조사 啦 (승낙 강조)",
+   "note": "啦는 승낙을 강조하는 어기조사.",
    "tags": [
     "accept",
     "particle:啦"
    ],
+   "emotion": "amused",
    "lemmas": [
     [
-     "好",
-     "好",
-     "hǎo"
+     "好好",
+     "好好",
+     "hǎo hǎo"
     ],
     [
      "好",
@@ -293,22 +285,27 @@
      "见",
      "见",
      "jiàn"
+    ],
+    [
+     "见",
+     "见",
+     "jiàn"
     ]
-   ],
-   "rd": "하오 라 하오 라, 젠 바, 하하.",
-   "emotion": "amused"
+   ]
   },
   {
    "num": 8,
    "speaker": "A",
-   "zh": "太好了！周六可以吗？🤩",
-   "pinyin": "Tài hǎo le! Zhōuliù kěyǐ ma?",
+   "zh": "太好了！星期六可以吗？🤩",
+   "pinyin": "Tài hǎo le! Xīngqīliù kěyǐ ma?",
+   "rd": "타이 하오 러! 싱치류 커이 마?",
    "ko": "너무 좋아요! 토요일 괜찮아요?",
-   "note": "太…了 감탄 + 可以吗",
+   "note": "太…了는 감탄, 可以吗는 가능 여부.",
    "tags": [
     "plan",
     "particle:吗"
    ],
+   "emotion": "excited",
    "lemmas": [
     [
      "太",
@@ -319,10 +316,18 @@
      "好",
      "好",
      "hǎo"
+    ],
+    [
+     "星期",
+     "星期",
+     "xīng qī"
     ]
-   ],
-   "rd": "타이 하오 러! 저우류 커이 마?",
-   "emotion": "excited"
+   ]
   }
- ]
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r4_love_l1_ep1_4_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ }
 }

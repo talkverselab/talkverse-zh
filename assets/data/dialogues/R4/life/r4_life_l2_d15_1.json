@@ -20,13 +20,15 @@
    "num": 1,
    "speaker": "A",
    "zh": "出来喝咖啡吧，我请。",
-   "pinyin": "Chūlai hē kāfēi ba, wǒ qǐng.",
+   "pinyin": "Chūlái hē kāfēi ba, wǒ qǐng.",
+   "rd": "추라이 허 카페이 바, 워 칭.",
    "ko": "나와서 커피 마시자, 내가 살게.",
-   "note": "방향보어 出来 + 我请 (내가 쏜다)",
+   "note": "出来 는 방향, 我请 는 내가 쏜다.",
    "tags": [
     "coffee",
     "complement:出来"
    ],
+   "emotion": "cheerful",
    "lemmas": [
     [
      "出来",
@@ -38,21 +40,21 @@
      "请",
      "qǐng"
     ]
-   ],
-   "rd": "추라이 허 카페이 바, 워 칭.",
-   "emotion": "cheerful"
+   ]
   },
   {
    "num": 2,
    "speaker": "B",
-   "zh": "好呀，给我点热拿铁。",
-   "pinyin": "Hǎo ya, gěi wǒ diǎn rè nátiě.",
+   "zh": "好，给我点热拿铁。",
+   "pinyin": "Hǎo, gěi wǒ diǎn rè nátiě.",
+   "rd": "하오, 게이 워 뎬 러 나톄.",
    "ko": "좋아, 나 핫 라떼 시켜줘.",
-   "note": "给+대상+동사 (~에게 시켜주다)",
+   "note": "给 는 ~에게 시켜주다.",
    "tags": [
     "coffee",
     "preposition:给"
    ],
+   "emotion": "cheerful",
    "lemmas": [
     [
      "好",
@@ -79,21 +81,21 @@
      "铁",
      "tiě"
     ]
-   ],
-   "rd": "하오 야, 게이 워 뎬 러 나톄.",
-   "emotion": "cheerful"
+   ]
   },
   {
    "num": 3,
    "speaker": "A",
    "zh": "这么热的天喝热的？",
    "pinyin": "Zhème rè de tiān hē rè de?",
+   "rd": "저머 러 더 톈 허 러 더?",
    "ko": "이렇게 더운 날에 뜨거운 걸 마신다고?",
-   "note": "这么+형용사 + 형용사+的 명사화",
+   "note": "这么 는 이렇게, 的 는 명사화.",
    "tags": [
     "banter",
     "degree:这么"
    ],
+   "emotion": "surprised",
    "lemmas": [
     [
      "这么",
@@ -120,26 +122,26 @@
      "热",
      "rè"
     ]
-   ],
-   "rd": "저머 러 더 톈 허 러 더?",
-   "emotion": "surprised"
+   ]
   },
   {
    "num": 4,
    "speaker": "B",
-   "zh": "冰的对身体不好。",
-   "pinyin": "Bīng de duì shēntǐ bù hǎo.",
+   "zh": "凉的对身体不好。",
+   "pinyin": "Liáng de duì shēntǐ bù hǎo.",
+   "rd": "량 더 두이 선티 부 하오.",
    "ko": "차가운 건 몸에 안 좋아.",
-   "note": "对……不好 (~에 안 좋다)",
+   "note": "对……不好 는 ~에 안 좋다.",
    "tags": [
     "health",
     "preposition:对"
    ],
+   "emotion": "stiff",
    "lemmas": [
     [
-     "冰",
-     "冰",
-     "bīng"
+     "凉",
+     "凉",
+     "liáng"
     ],
     [
      "对",
@@ -156,21 +158,21 @@
      "不好",
      "bù hǎo"
     ]
-   ],
-   "rd": "빙 더 두이 선티 부 하오.",
-   "emotion": "stiff"
+   ]
   },
   {
    "num": 5,
    "speaker": "A",
-   "zh": "夏天就要喝冰美式啊！🤩",
-   "pinyin": "Xiàtiān jiù yào hē bīng měishì a!",
+   "zh": "夏天就喝冰美式！",
+   "pinyin": "Xiàtiān jiù hē bīng měishì!",
+   "rd": "샤톈 주 허 빙 메이스!",
    "ko": "여름엔 아이스 아메리카노지!",
-   "note": "就 (바로 그거다, 당연 강조)",
+   "note": "就 는 바로 그거다.",
    "tags": [
     "coffee",
     "adverb:就"
    ],
+   "emotion": "excited",
    "lemmas": [
     [
      "夏天",
@@ -178,9 +180,9 @@
      "xià tiān"
     ],
     [
-     "就要",
-     "就要",
-     "jiù yào"
+     "就",
+     "就",
+     "jiù"
     ],
     [
      "喝",
@@ -202,21 +204,21 @@
      "式",
      "shì"
     ]
-   ],
-   "rd": "샤톈 주 야오 허 빙 메이스 아!",
-   "emotion": "excited"
+   ]
   },
   {
    "num": 6,
    "speaker": "B",
    "zh": "你们韩国人一年四季都喝冰的。",
-   "pinyin": "Nǐmen Hánguó rén yì nián sìjì dōu hē bīng de.",
+   "pinyin": "Nǐmen Hánguórén yìnián sìjì dōu hē bīng de.",
+   "rd": "니먼 한궈런 이녠 쓰지 더우 허 빙 더.",
    "ko": "너네 한국 사람들은 사계절 내내 아이스 마시더라.",
-   "note": "一年四季+都 (일 년 내내 다)",
+   "note": "一年四季都 는 일 년 내내 다.",
    "tags": [
     "culture",
     "adverb:都"
    ],
+   "emotion": "tsukkomi",
    "lemmas": [
     [
      "你们",
@@ -258,21 +260,21 @@
      "冰",
      "bīng"
     ]
-   ],
-   "rd": "니먼 한궈 런 이 녠 쓰지 더우 허 빙 더.",
-   "emotion": "tsukkomi"
+   ]
   },
   {
    "num": 7,
    "speaker": "A",
-   "zh": "冬天也得是冰美式。",
-   "pinyin": "Dōngtiān yě děi shì bīng měishì.",
+   "zh": "冬天也得喝冰美式。",
+   "pinyin": "Dōngtiān yě děi hē bīng měishì.",
+   "rd": "둥톈 예 데이 허 빙 메이스.",
    "ko": "겨울에도 아아여야지.",
-   "note": "得 děi (반드시 ~해야 한다)",
+   "note": "得 는 반드시 ~해야 한다.",
    "tags": [
     "humor",
     "modal:得"
    ],
+   "emotion": "cheerful",
    "lemmas": [
     [
      "冬天",
@@ -285,9 +287,9 @@
      "yě"
     ],
     [
-     "是",
-     "是",
-     "shì"
+     "喝",
+     "喝",
+     "hē"
     ],
     [
      "冰",
@@ -304,21 +306,21 @@
      "式",
      "shì"
     ]
-   ],
-   "rd": "둥톈 예 데이 스 빙 메이스.",
-   "emotion": "cheerful"
+   ]
   },
   {
    "num": 8,
    "speaker": "B",
-   "zh": "冬天喝冰的？我不懂你们。",
-   "pinyin": "Dōngtiān hē bīng de? Wǒ bù dǒng nǐmen.",
+   "zh": "冬天喝冰的？我真不懂。",
+   "pinyin": "Dōngtiān hē bīng de? Wǒ zhēn bù dǒng.",
+   "rd": "둥톈 허 빙 더? 워 전 부 둥.",
    "ko": "겨울에 아이스를? 너희 이해 안 돼.",
-   "note": "懂 (이해하다) 부정형",
+   "note": "懂 는 이해하다.",
    "tags": [
     "banter",
     "verb:懂"
    ],
+   "emotion": "tsukkomi",
    "lemmas": [
     [
      "冬天",
@@ -336,6 +338,11 @@
      "bīng"
     ],
     [
+     "真",
+     "真",
+     "zhēn"
+    ],
+    [
      "不",
      "不",
      "bù"
@@ -344,15 +351,13 @@
      "懂",
      "懂",
      "dǒng"
-    ],
-    [
-     "你们",
-     "你们",
-     "nǐ men"
     ]
-   ],
-   "rd": "둥톈 허 빙 더? 워 부 둥 니먼.",
-   "emotion": "tsukkomi"
+   ]
   }
- ]
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r4_life_l2_d15_1_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ }
 }

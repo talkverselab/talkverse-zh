@@ -1,6 +1,6 @@
 """세션 리뷰 최종본(final/<id>.txt: 'n S: zh / pinyin / ko [/ note [/ 감정]]')을 편 JSON 에 반영.
 감정(2026-11-07): 16개 값 하나, 또는 `감정:부분|감정:부분` → turns[].emotion / segs. 음성 계획(data/tts/plan)은 여기서 자동으로 만들어진다(tools/tts/plan_from_episode.py)."""
-import json,sys,glob,re,subprocess
+import json,sys,glob,re,subprocess,os
 R='/Users/talkverse/talkverse/zh'
 for id_ in sys.argv[1:]:
     p=glob.glob(f'{R}/assets/data/dialogues/R*/*/{id_}.json')[0]
@@ -23,7 +23,7 @@ for id_ in sys.argv[1:]:
             else: t['emotion']=emo.strip()
         turns.append(t)
     e['turns']=turns
-    e['review']={'grok_rewrite':f'data/review/{id_}_grok_rewrite.md','model':'전문가','final':'세션 리뷰'}
+    e['review']={'grok_rewrite':f'data/review/{id_}_grok_rewrite.md','model':os.environ.get('GROK_MODEL','전문가'),'final':os.environ.get('GROK_FINAL','세션 리뷰')}
     json.dump(e,open(p,'w',encoding='utf-8'),ensure_ascii=False,indent=1)
     subprocess.run(['dart','run','tool/fill_rd.dart',p],cwd=R,capture_output=True)
     print(id_,len(turns),'턴 반영', '감정 없는 턴', sum(1 for t in turns if not t.get('emotion')))

@@ -1,0 +1,8 @@
+1 B: 我是设计师，在家工作。 / Wǒ shì shèjìshī, zài jiā gōngzuò. / 저는 디자이너예요, 집에서 일해요. / 是는 직업, 在家工作은 재택근무. / polite
+2 A: 好厉害！平时喜欢做什么？ / Hǎo lìhai! Píngshí xǐhuan zuò shénme? / 멋지다! 평소에 뭐 하는 거 좋아해요? / 好+형용사는 감탄, 平时는 ‘평소에’. / excited
+3 B: 喜欢看电影，还有画画。 / Xǐhuan kàn diànyǐng, hái yǒu huàhuà. / 영화 보는 거 좋아하고, 그림도 그려요. / 还有는 나열할 때 쓴다. / gentle
+4 A: 我也喜欢电影！最近看了什么？ / Wǒ yě xǐhuan diànyǐng! Zuìjìn kàn le shénme? / 저도 영화 좋아해요! 최근에 뭐 봤어요? / 也는 ‘저도’, 了는 완료 의문. / excited
+5 B: 看了一部爱情片，有点儿老。 / Kàn le yí bù àiqíngpiàn, yǒudiǎnr lǎo. / 로맨스 영화 하나 봤는데 좀 옛날 거예요. / 有点儿은 ‘약간’ 부정적 뉘앙스. / neutral
+6 A: 爱情片啊？我喜欢，嘿嘿。 / Àiqíngpiàn a? Wǒ xǐhuan, hēihēi. / 로맨스 영화요? 저 좋아해요, 헤헤. / 啊는 되물음 어기조사. / teasing
+7 B: 你真有意思，嘿嘿。 / Nǐ zhēn yǒu yìsi, hēihēi. / 당신 재밌는 사람이네요, 헤헤. / 有意思는 ‘재미있다’. / amused
+8 A: 对了，你家在北京哪儿？ / Duìle, nǐ jiā zài Běijīng nǎr? / 맞다, 집이 베이징 어디예요? / 对了는 화제 전환, 在…哪儿은 위치 묻기. / neutral

@@ -19,14 +19,16 @@
   {
    "num": 1,
    "speaker": "A",
-   "zh": "可是什么？告诉我。",
-   "pinyin": "Kěshì shénme? Gàosu wǒ.",
-   "ko": "그런데 뭐? 말해줘.",
-   "note": "재촉",
+   "zh": "可是什么？快说啊。😟",
+   "pinyin": "Kěshì shénme? Kuài shuō a.",
+   "rd": "커스 선머? 콰이 숴 아.",
+   "ko": "그런데 뭐? 빨리 말해.",
+   "note": "",
    "tags": [
     "question",
     "honest"
    ],
+   "emotion": "worried",
    "lemmas": [
     [
      "什么",
@@ -34,25 +36,30 @@
      "shén me"
     ],
     [
-     "告诉",
-     "告诉",
-     "gào sù"
+     "快",
+     "快",
+     "kuài"
+    ],
+    [
+     "说",
+     "说",
+     "shuō"
     ]
-   ],
-   "rd": "커스 선머? 가오쑤 워.",
-   "emotion": "worried"
+   ]
   },
   {
    "num": 2,
    "speaker": "B",
-   "zh": "我不想你为我放弃什么。",
-   "pinyin": "Wǒ bù xiǎng nǐ wèi wǒ fàngqì shénme.",
+   "zh": "不想你为我放弃什么。",
+   "pinyin": "Bù xiǎng nǐ wèi wǒ fàngqì shénme.",
+   "rd": "부 샹 니 웨이 워 팡치 선머.",
    "ko": "네가 나 때문에 뭔가 포기하는 건 싫어.",
-   "note": "为 (~을 위해) + 放弃 (포기)",
+   "note": "为=위해서, 放弃=포기하다",
    "tags": [
     "feeling",
     "function:为"
    ],
+   "emotion": "sad",
    "lemmas": [
     [
      "不想",
@@ -69,21 +76,21 @@
      "什么",
      "shén me"
     ]
-   ],
-   "rd": "워 부 샹 니 웨이 워 팡치 선머.",
-   "emotion": "sad"
+   ]
   },
   {
    "num": 3,
    "speaker": "A",
    "zh": "留在你身边不是放弃。",
-   "pinyin": "Liú zài nǐ shēnbiān bú shì fàngqì.",
+   "pinyin": "Liú zài nǐ shēnbiān búshì fàngqì.",
+   "rd": "류 짜이 니 선볜 부스 팡치.",
    "ko": "네 곁에 남는 건 포기가 아니야.",
-   "note": "身边 (곁)",
+   "note": "身边=곁",
    "tags": [
     "confession",
     "hook:stay"
    ],
+   "emotion": "gentle",
    "lemmas": [
     [
      "留",
@@ -100,22 +107,27 @@
      "放弃",
      "fàng qì"
     ]
-   ],
-   "rd": "류 짜이 니 선볜 부 스 팡치.",
-   "emotion": "gentle"
+   ]
   },
   {
    "num": 4,
    "speaker": "A",
-   "zh": "是选择。",
-   "pinyin": "Shì xuǎnzé.",
+   "zh": "这是选择。",
+   "pinyin": "Zhè shì xuǎnzé.",
+   "rd": "저 스 쉬안쩌.",
    "ko": "선택이야.",
-   "note": "选择 (선택) 짧은 강조",
+   "note": "选择=선택",
    "tags": [
     "confession",
     "hook:choice"
    ],
+   "emotion": "gentle",
    "lemmas": [
+    [
+     "这",
+     "这",
+     "zhè"
+    ],
     [
      "是",
      "是",
@@ -126,21 +138,21 @@
      "选择",
      "xuǎn zé"
     ]
-   ],
-   "rd": "스 쉬안쩌.",
-   "emotion": "gentle"
+   ]
   },
   {
    "num": 5,
    "speaker": "B",
-   "zh": "你什么时候变得这么会说话？",
-   "pinyin": "Nǐ shénme shíhou biàn de zhème huì shuōhuà?",
+   "zh": "你什么时候变得会说话了？",
+   "pinyin": "Nǐ shénme shíhou biàn de huì shuōhuà le?",
+   "rd": "니 선머 스허우 볜 더 후이 숴화 러?",
    "ko": "언제 이렇게 말을 잘하게 됐어?",
-   "note": "变得 (변하다) + 会说话 (말주변)",
+   "note": "变得=변하다, 会说话=말주변이 있다",
    "tags": [
     "praise",
     "function:得"
    ],
+   "emotion": "teasing",
    "lemmas": [
     [
      "什么",
@@ -158,11 +170,6 @@
      "biàn dé"
     ],
     [
-     "这么",
-     "这么",
-     "zhè me"
-    ],
-    [
      "会",
      "会",
      "huì"
@@ -172,52 +179,47 @@
      "说话",
      "shuō huà"
     ]
-   ],
-   "rd": "니 선머 스허우 볜 더 저머 후이 숴화?",
-   "emotion": "teasing"
+   ]
   },
   {
    "num": 6,
    "speaker": "A",
    "zh": "跟你学的呀。😊",
    "pinyin": "Gēn nǐ xué de ya.",
+   "rd": "건 니 쉐 더 야.",
    "ko": "너한테 배운 거지.",
-   "note": "跟…学 (~에게 배우다) + 呀",
+   "note": "跟…学=~에게 배우다, 呀=능청",
    "tags": [
     "flirt",
     "particle:呀"
    ],
+   "emotion": "shy",
    "lemmas": [
     [
      "学",
      "学",
      "xué"
     ]
-   ],
-   "rd": "건 니 쉐 더 야.",
-   "emotion": "shy"
+   ]
   },
   {
    "num": 7,
    "speaker": "B",
-   "zh": "那以后我教你韩语吧… 啊不对！",
-   "pinyin": "Nà yǐhòu wǒ jiāo nǐ Hányǔ ba… a bú duì!",
+   "zh": "那我教你韩语……啊反了！",
+   "pinyin": "Nà wǒ jiāo nǐ Hányǔ……ā fǎn le!",
+   "rd": "나 워 자오 니 한위……아 판 러!",
    "ko": "그럼 앞으로 내가 한국어 가르쳐줄게… 아 반대다!",
-   "note": "말 꼬임 유머 (한국어는 Mark 모어)",
+   "note": "",
    "tags": [
     "joke",
     "particle:吧"
    ],
+   "emotion": "flustered",
    "lemmas": [
     [
      "那",
      "那",
      "nà"
-    ],
-    [
-     "以后",
-     "以后",
-     "yǐ hòu"
     ],
     [
      "教",
@@ -235,25 +237,25 @@
      "yǔ"
     ],
     [
-     "不",
-     "不",
-     "bù"
+     "反",
+     "反",
+     "fǎn"
     ]
-   ],
-   "rd": "나 이허우 워 자오 니 한위 바… 아 부 두이!",
-   "emotion": "flustered"
+   ]
   },
   {
    "num": 8,
    "speaker": "A",
    "zh": "哈哈，你教我中文，我教你韩语！",
-   "pinyin": "Hāhā, nǐ jiāo wǒ zhōngwén, wǒ jiāo nǐ Hányǔ!",
+   "pinyin": "Hāhā, nǐ jiāo wǒ Zhōngwén, wǒ jiāo nǐ Hányǔ!",
+   "rd": "하하, 니 자오 워 중원, 워 자오 니 한위!",
    "ko": "하하, 넌 나한테 중국어, 난 너한테 한국어!",
-   "note": "언어 교환 구조",
+   "note": "",
    "tags": [
     "plan",
     "hook:exchange"
    ],
+   "emotion": "amused",
    "lemmas": [
     [
      "教",
@@ -280,9 +282,12 @@
      "语",
      "yǔ"
     ]
-   ],
-   "rd": "하하, 니 자오 워 중원, 워 자오 니 한위!",
-   "emotion": "amused"
+   ]
   }
- ]
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r4_love_l1_ep5_3_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ }
 }

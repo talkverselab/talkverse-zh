@@ -19,14 +19,16 @@
   {
    "num": 1,
    "speaker": "B",
-   "zh": "你的电脑贴纸好可爱。",
-   "pinyin": "Nǐ de diànnǎo tiēzhǐ hǎo kě'ài.",
+   "zh": "你电脑贴纸好可爱。",
+   "pinyin": "Nǐ diànnǎo tiēzhǐ hǎo kě'ài.",
+   "rd": "니 뎬나오 톄즈 하오 커'아이.",
    "ko": "노트북 스티커 진짜 귀엽다.",
-   "note": "贴纸는 '스티커'. 好+형용사로 감탄하며 자연스럽게 말문을 연다.",
+   "note": "‘贴纸’ + ‘好+형용사’",
    "tags": [
     "말걸기",
     "칭찬"
    ],
+   "emotion": "cheerful",
    "lemmas": [
     [
      "电脑",
@@ -53,21 +55,21 @@
      "可爱",
      "kě ài"
     ]
-   ],
-   "rd": "니 더 뎬나오 톄즈 하오 커'아이.",
-   "emotion": "cheerful"
+   ]
   },
   {
    "num": 2,
    "speaker": "A",
    "zh": "谢谢，朋友送的。",
    "pinyin": "Xièxie, péngyou sòng de.",
+   "rd": "셰셰, 펑유 쑹 더.",
    "ko": "고마워, 친구가 준 거야.",
-   "note": "送的 뒤에 명사가 생략된 형태. '~가 준 것'이라는 的 명사화 용법.",
+   "note": "‘送的’ 的 명사화",
    "tags": [
     "的명사화",
     "대답"
    ],
+   "emotion": "polite",
    "lemmas": [
     [
      "朋友",
@@ -79,21 +81,21 @@
      "送",
      "sòng"
     ]
-   ],
-   "rd": "셰셰, 펑유 쑹 더.",
-   "emotion": "polite"
+   ]
   },
   {
    "num": 3,
    "speaker": "B",
-   "zh": "你经常来这家店吗？😄",
-   "pinyin": "Nǐ jīngcháng lái zhè jiā diàn ma?",
+   "zh": "你经常来这家？",
+   "pinyin": "Nǐ jīngcháng lái zhè jiā?",
+   "rd": "니 징창 라이 저 자?",
    "ko": "여기 자주 와?",
-   "note": "经常은 '자주'라는 빈도 부사. 가게를 셀 때는 양사 家를 쓴다.",
+   "note": "‘经常’ + ‘家’ 양사",
    "tags": [
     "빈도부사",
     "질문"
    ],
+   "emotion": "cheerful",
    "lemmas": [
     [
      "经常",
@@ -114,27 +116,22 @@
      "家",
      "家",
      "jiā"
-    ],
-    [
-     "店",
-     "店",
-     "diàn"
     ]
-   ],
-   "rd": "니 징창 라이 저 자 뎬 마?",
-   "emotion": "cheerful"
+   ]
   },
   {
    "num": 4,
    "speaker": "A",
    "zh": "差不多每天都来。",
    "pinyin": "Chàbuduō měitiān dōu lái.",
+   "rd": "차부둬 메이톈 더우 라이.",
    "ko": "거의 매일 오지.",
-   "note": "差不多는 '거의'. 每…都는 '매번 다 ~하다'로 항상 짝을 이룬다.",
+   "note": "‘差不多’ + ‘每…都’",
    "tags": [
     "每…都",
     "구어체"
    ],
+   "emotion": "neutral",
    "lemmas": [
     [
      "差不多",
@@ -156,21 +153,21 @@
      "来",
      "lái"
     ]
-   ],
-   "rd": "차부둬 메이톈 더우 라이.",
-   "emotion": "neutral"
+   ]
   },
   {
    "num": 5,
    "speaker": "B",
-   "zh": "难怪我觉得你眼熟。",
-   "pinyin": "Nánguài wǒ juéde nǐ yǎnshú.",
+   "zh": "难怪看着眼熟。",
+   "pinyin": "Nánguài kànzhe yǎnshú.",
+   "rd": "난과이 칸저 옌수.",
    "ko": "어쩐지 낯이 익더라.",
-   "note": "难怪는 '어쩐지 ~하더라'라며 이유를 깨달았을 때 쓴다. 眼熟는 '낯익다'.",
+   "note": "‘难怪’ + ‘眼熟’",
    "tags": [
     "难怪",
     "플러팅"
    ],
+   "emotion": "teasing",
    "lemmas": [
     [
      "难",
@@ -183,9 +180,9 @@
      "guài"
     ],
     [
-     "觉得",
-     "觉得",
-     "jué de"
+     "看着",
+     "看着",
+     "kàn zhe"
     ],
     [
      "眼",
@@ -197,31 +194,26 @@
      "熟",
      "shú"
     ]
-   ],
-   "rd": "난과이 워 줴더 니 옌수.",
-   "emotion": "teasing"
+   ]
   },
   {
    "num": 6,
    "speaker": "A",
-   "zh": "是吗？那真巧啊。😮",
-   "pinyin": "Shì ma? Nà zhēn qiǎo a.",
+   "zh": "是吗？真巧啊。😮",
+   "pinyin": "Shì ma? Zhēn qiǎo a.",
+   "rd": "스 마? 전 차오 아.",
    "ko": "그래? 진짜 신기한 우연이네.",
-   "note": "巧는 '공교롭다, 우연이 잘 맞다'. 真巧는 우연한 만남에 자주 쓰는 감탄.",
+   "note": "‘真巧’ 감탄",
    "tags": [
     "감탄",
     "우연"
    ],
+   "emotion": "surprised",
    "lemmas": [
     [
      "是",
      "是",
      "shì"
-    ],
-    [
-     "那",
-     "那",
-     "nà"
     ],
     [
      "真",
@@ -233,21 +225,21 @@
      "巧",
      "qiǎo"
     ]
-   ],
-   "rd": "스 마? 나 전 차오 아.",
-   "emotion": "surprised"
+   ]
   },
   {
    "num": 7,
    "speaker": "B",
    "zh": "那明天一起喝一杯？",
    "pinyin": "Nà míngtiān yìqǐ hē yì bēi?",
+   "rd": "나 밍톈 이치 허 이 베이?",
    "ko": "그럼 내일 같이 한잔할래?",
-   "note": "의문조사 없이 끝을 올려 묻는 구어체 의문문. 주어를 생략해 더 가볍게 들린다.",
+   "note": "어조사 없는 구어 의문",
    "tags": [
     "제안",
     "다음약속"
    ],
+   "emotion": "teasing",
    "lemmas": [
     [
      "那",
@@ -274,21 +266,21 @@
      "杯",
      "bēi"
     ]
-   ],
-   "rd": "나 밍톈 이치 허 이 베이?",
-   "emotion": "teasing"
+   ]
   },
   {
    "num": 8,
    "speaker": "A",
-   "zh": "好啊，就这么说定了。",
-   "pinyin": "Hǎo a, jiù zhème shuōdìng le.",
+   "zh": "好，就这么说定了。",
+   "pinyin": "Hǎo, jiù zhème shuō dìng le.",
+   "rd": "하오, 주 저머 숴 딩 러.",
    "ko": "좋아, 그렇게 정한 거다.",
-   "note": "说定了는 '말로 확정했다'는 뜻. 就这么는 '이대로, 그렇게'로 결정을 굳힌다.",
+   "note": "‘就这么’ + ‘说定了’",
    "tags": [
     "약속확정",
     "구어체"
    ],
+   "emotion": "cheerful",
    "lemmas": [
     [
      "好",
@@ -315,9 +307,12 @@
      "定",
      "dìng"
     ]
-   ],
-   "rd": "하오 아, 주 저머 숴딩 러.",
-   "emotion": "cheerful"
+   ]
   }
- ]
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r4_love_l4_d04_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ }
 }

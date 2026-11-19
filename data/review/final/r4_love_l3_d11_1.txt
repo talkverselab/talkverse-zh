@@ -1,0 +1,8 @@
+1 A: 小丽，我们去旅行吧！ / Xiǎolì, wǒmen qù lǚxíng ba! / 샤오리, 우리 여행 가자! / 吧=청유 / excited
+2 B: 好！想去哪儿？ / Hǎo! Xiǎng qù nǎr? / 좋아! 어디 가고 싶은데? / 哪儿=어디 / cheerful
+3 A: 我一直想去西安。 / Wǒ yìzhí xiǎng qù Xī'ān. / 나 계속 시안에 가 보고 싶었어. / 一直=줄곧 / gentle
+4 B: 西安好吃的特别多！ / Xī'ān hǎochī de tèbié duō! / 시안에는 맛있는 게 진짜 많아! / 的=명사화 / excited
+5 A: 还有兵马俑，特别有名。 / Hái yǒu Bīngmǎyǒng, tèbié yǒumíng. / 병마용도 있잖아, 엄청 유명해. / 还有=추가 나열 / cheerful
+6 B: 我们坐高铁还是飞机？ / Wǒmen zuò gāotiě háishì fēijī? / 우리 고속철 타고 갈까, 비행기 타고 갈까? / 还是=선택 의문 / neutral
+7 A: 坐高铁吧，路上可以聊天。 / Zuò gāotiě ba, lùshang kěyǐ liáotiān. / 고속철 타자, 가는 길에 수다 떨 수 있잖아. / 可以=가능 / gentle
+8 B: 票我来订，酒店你来订。 / Piào wǒ lái dìng, jiǔdiàn nǐ lái dìng. / 표는 내가 예매할게, 호텔은 네가 해. / 来=자청해서 ~하다 / cheerful

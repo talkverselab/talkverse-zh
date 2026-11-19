@@ -20,13 +20,15 @@
    "num": 1,
    "speaker": "B",
    "zh": "我看完最后一集了！",
-   "pinyin": "Wǒ kàn wán zuìhòu yī jí le!",
+   "pinyin": "Wǒ kàn wán zuìhòu yì jí le!",
+   "rd": "워 칸 완 쭈이허우 이 지 러!",
    "ko": "나 마지막 화 다 봤어!",
-   "note": "결과보어 完 (다 ~하다)",
+   "note": "完 는 다 ~하다.",
    "tags": [
     "complement:完",
     "drama"
    ],
+   "emotion": "excited",
    "lemmas": [
     [
      "看",
@@ -48,27 +50,22 @@
      "集",
      "jí"
     ]
-   ],
-   "rd": "워 칸 완 쭈이허우 이 지 러!",
-   "emotion": "excited"
+   ]
   },
   {
    "num": 2,
    "speaker": "A",
-   "zh": "停！别说！我还没看！",
-   "pinyin": "Tíng! Bié shuō! Wǒ hái méi kàn!",
+   "zh": "别说！我还没看呢！😤",
+   "pinyin": "Bié shuō! Wǒ hái méi kàn ne!",
+   "rd": "볘 숴! 워 하이 메이 칸 너!",
    "ko": "멈춰! 말하지 마! 나 아직 안 봤어!",
-   "note": "别+동사 (금지 명령)",
+   "note": "别+동사 는 금지.",
    "tags": [
     "negation:别",
     "chaos"
    ],
+   "emotion": "shout",
    "lemmas": [
-    [
-     "停",
-     "停",
-     "tíng"
-    ],
     [
      "还",
      "还",
@@ -84,21 +81,21 @@
      "看",
      "kàn"
     ]
-   ],
-   "rd": "팅! 볘 숴! 워 하이 메이 칸!",
-   "emotion": "shout"
+   ]
   },
   {
    "num": 3,
    "speaker": "B",
-   "zh": "男主角最后……",
-   "pinyin": "Nán zhǔjué zuìhòu……",
+   "zh": "男主最后……",
+   "pinyin": "Nánzhǔ zuìhòu……",
+   "rd": "난주 쭈이허우……",
    "ko": "남주가 마지막에…",
-   "note": "最后 (마지막에, 시간 부사어)",
+   "note": "最后 는 마지막에.",
    "tags": [
     "adverb:最后",
     "banter"
    ],
+   "emotion": "teasing",
    "lemmas": [
     [
      "男",
@@ -111,30 +108,25 @@
      "zhǔ"
     ],
     [
-     "角",
-     "角",
-     "jiǎo"
-    ],
-    [
      "最后",
      "最后",
      "zuì hòu"
     ]
-   ],
-   "rd": "난 주줴 쭈이허우……",
-   "emotion": "teasing"
+   ]
   },
   {
    "num": 4,
    "speaker": "A",
    "zh": "闭嘴闭嘴闭嘴！",
    "pinyin": "Bìzuǐ bìzuǐ bìzuǐ!",
+   "rd": "비쭈이 비쭈이 비쭈이!",
    "ko": "입 다물어 다물어 다물라고!",
-   "note": "동사 반복 (강한 어감의 구어체)",
+   "note": "동사 반복은 강한 구어.",
    "tags": [
     "repetition",
     "chaos"
    ],
+   "emotion": "shout",
    "lemmas": [
     [
      "闭",
@@ -166,42 +158,42 @@
      "嘴",
      "zuǐ"
     ]
-   ],
-   "rd": "비쭈이 비쭈이 비쭈이!",
-   "emotion": "shout"
+   ]
   },
   {
    "num": 5,
    "speaker": "B",
-   "zh": "哈哈，他结婚了哦。😜",
-   "pinyin": "Hāhā, tā jiéhūn le o.",
+   "zh": "他结婚了哦。😜",
+   "pinyin": "Tā jiéhūn le o.",
+   "rd": "타 제훈 러 오.",
    "ko": "하하, 걔 결혼했다?",
-   "note": "어기조사 哦 (슬쩍 알려주는 어감)",
+   "note": "哦 는 슬쩍 알려주는 어기.",
    "tags": [
     "particle:哦",
     "humor"
    ],
+   "emotion": "teasing",
    "lemmas": [
     [
      "结婚",
      "结婚",
      "jié hūn"
     ]
-   ],
-   "rd": "하하, 타 제훈 러 오.",
-   "emotion": "teasing"
+   ]
   },
   {
    "num": 6,
    "speaker": "A",
-   "zh": "你说了！你真的说了！",
-   "pinyin": "Nǐ shuō le! Nǐ zhēn de shuō le!",
+   "zh": "你说了！真的说了！",
+   "pinyin": "Nǐ shuō le! Zhēnde shuō le!",
+   "rd": "니 숴 러! 전더 숴 러!",
    "ko": "말했어! 진짜 말해버렸어!",
-   "note": "了 (동작 완료) + 真的 강조",
+   "note": "了 는 완료, 真的 는 강조.",
    "tags": [
     "aspect:了",
     "chaos"
    ],
+   "emotion": "shout",
    "lemmas": [
     [
      "说",
@@ -218,21 +210,21 @@
      "说",
      "shuō"
     ]
-   ],
-   "rd": "니 숴 러! 니 전 더 숴 러!",
-   "emotion": "shout"
+   ]
   },
   {
    "num": 7,
    "speaker": "B",
-   "zh": "跟谁结的我没说呀。😜",
-   "pinyin": "Gēn shéi jié de wǒ méi shuō ya.",
+   "zh": "跟谁结的我没说啊。😜",
+   "pinyin": "Gēn shéi jié de wǒ méi shuō a.",
+   "rd": "건 세이 제 더 워 메이 숴 아.",
    "ko": "누구랑 했는지는 말 안 했잖아.",
-   "note": "개사 跟 (~와) + 是…的 생략형",
+   "note": "跟 는 ~와, 是…的 생략.",
    "tags": [
     "preposition:跟",
     "humor"
    ],
+   "emotion": "teasing",
    "lemmas": [
     [
      "谁",
@@ -254,21 +246,21 @@
      "说",
      "shuō"
     ]
-   ],
-   "rd": "건 세이 제 더 워 메이 숴 야.",
-   "emotion": "teasing"
+   ]
   },
   {
    "num": 8,
    "speaker": "A",
    "zh": "我不听我不听。",
    "pinyin": "Wǒ bù tīng wǒ bù tīng.",
+   "rd": "워 부 팅 워 부 팅.",
    "ko": "안 들어 안 들을 거야.",
-   "note": "문장 반복 (떼쓰기 구어 표현)",
+   "note": "문장 반복은 떼쓰기.",
    "tags": [
     "repetition",
     "banter"
    ],
+   "emotion": "annoyed",
    "lemmas": [
     [
      "不",
@@ -290,9 +282,12 @@
      "听",
      "tīng"
     ]
-   ],
-   "rd": "워 부 팅 워 부 팅.",
-   "emotion": "annoyed"
+   ]
   }
- ]
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r4_life_l2_d05_1_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ }
 }

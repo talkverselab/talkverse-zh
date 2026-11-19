@@ -20,13 +20,15 @@
    "num": 1,
    "speaker": "A",
    "zh": "小丽，我们认识多久了？",
-   "pinyin": "Xiǎolì, wǒmen rènshi duō jiǔ le?",
+   "pinyin": "Xiǎolì, wǒmen rènshi duōjiǔ le?",
+   "rd": "샤오리, 워먼 런스 둬주 러?",
    "ko": "샤오리, 우리 알고 지낸 지 얼마나 됐지?",
-   "note": "认识 + 多久了",
+   "note": "认识多久了=알고 지낸 지 얼마나 됐다",
    "tags": [
     "feeling",
     "function:了"
    ],
+   "emotion": "gentle",
    "lemmas": [
     [
      "我们",
@@ -43,21 +45,21 @@
      "多久",
      "duō jiǔ"
     ]
-   ],
-   "rd": "샤오리, 워먼 런스 둬 주 러?",
-   "emotion": "gentle"
+   ]
   },
   {
    "num": 2,
    "speaker": "B",
    "zh": "三个月了，怎么了？",
    "pinyin": "Sān ge yuè le, zěnme le?",
+   "rd": "싼 거 웨 러, 쩐머 러?",
    "ko": "3개월 됐지, 왜?",
-   "note": "怎么了 (왜 그래)",
+   "note": "怎么了=왜 그래",
    "tags": [
     "question",
     "function:了"
    ],
+   "emotion": "neutral",
    "lemmas": [
     [
      "三个",
@@ -74,21 +76,21 @@
      "怎么",
      "zěn me"
     ]
-   ],
-   "rd": "싼 거 웨 러, 쩐머 러?",
-   "emotion": "neutral"
+   ]
   },
   {
    "num": 3,
    "speaker": "A",
    "zh": "感觉像三年一样。",
    "pinyin": "Gǎnjué xiàng sān nián yíyàng.",
+   "rd": "간줴 샹 싼 녠 이양.",
    "ko": "3년 같은 느낌이야.",
-   "note": "感觉 + 像…一样",
+   "note": "感觉像…一样=~같이 느껴지다",
    "tags": [
     "feeling",
     "function:像"
    ],
+   "emotion": "gentle",
    "lemmas": [
     [
      "感觉",
@@ -110,21 +112,21 @@
      "一样",
      "yī yàng"
     ]
-   ],
-   "rd": "간줴 샹 싼 녠 이양.",
-   "emotion": "gentle"
+   ]
   },
   {
    "num": 4,
    "speaker": "B",
-   "zh": "是嫌我烦了吗？！😒",
-   "pinyin": "Shì xián wǒ fán le ma?!",
+   "zh": "你是嫌我烦了？！",
+   "pinyin": "Nǐ shì xián wǒ fán le?!",
+   "rd": "니 스 셴 워 판 러?!",
    "ko": "내가 귀찮아졌다는 거야?!",
-   "note": "嫌 (싫어하다) + 烦",
+   "note": "嫌=싫어하다, 烦=귀찮다",
    "tags": [
     "tease",
     "particle:吗"
    ],
+   "emotion": "annoyed",
    "lemmas": [
     [
      "是",
@@ -141,21 +143,21 @@
      "烦",
      "fán"
     ]
-   ],
-   "rd": "스 셴 워 판 러 마?!",
-   "emotion": "annoyed"
+   ]
   },
   {
    "num": 5,
    "speaker": "A",
    "zh": "不是！是太幸福了！",
-   "pinyin": "Bú shì! Shì tài xìngfú le!",
+   "pinyin": "Búshì! Shì tài xìngfú le!",
+   "rd": "부스! 스 타이 싱푸 러!",
    "ko": "아니야! 너무 행복하다는 거야!",
-   "note": "幸福 (행복) + 太…了",
+   "note": "太…了=너무 ~하다, 幸福=행복",
    "tags": [
     "feeling",
     "hook:happy"
    ],
+   "emotion": "flustered",
    "lemmas": [
     [
      "是",
@@ -172,21 +174,21 @@
      "幸福",
      "xìng fú"
     ]
-   ],
-   "rd": "부 스! 스 타이 싱푸 러!",
-   "emotion": "flustered"
+   ]
   },
   {
    "num": 6,
    "speaker": "B",
    "zh": "吓我一跳，哈哈。😏",
    "pinyin": "Xià wǒ yí tiào, hāhā.",
+   "rd": "샤 워 이 탸오, 하하.",
    "ko": "깜짝 놀랐잖아, 하하.",
-   "note": "吓一跳 (깜짝 놀라다)",
+   "note": "吓一跳=깜짝 놀라다",
    "tags": [
     "joke",
     "culture"
    ],
+   "emotion": "amused",
    "lemmas": [
     [
      "吓",
@@ -198,31 +200,26 @@
      "跳",
      "tiào"
     ]
-   ],
-   "rd": "샤 워 이 탸오, 하하.",
-   "emotion": "amused"
+   ]
   },
   {
    "num": 7,
    "speaker": "A",
-   "zh": "我想问你一件事。",
-   "pinyin": "Wǒ xiǎng wèn nǐ yí jiàn shì.",
+   "zh": "有一件事想问你。",
+   "pinyin": "Yǒu yí jiàn shì xiǎng wèn nǐ.",
+   "rd": "유 이 젠 스 샹 원 니.",
    "ko": "물어보고 싶은 게 하나 있어.",
-   "note": "一件事 (양사 件)",
+   "note": "一件事=한 가지 일",
    "tags": [
     "question",
     "function:想"
    ],
+   "emotion": "shy",
    "lemmas": [
     [
-     "想",
-     "想",
-     "xiǎng"
-    ],
-    [
-     "问",
-     "问",
-     "wèn"
+     "有",
+     "有",
+     "yǒu"
     ],
     [
      "一件",
@@ -233,22 +230,32 @@
      "事",
      "事",
      "shì"
+    ],
+    [
+     "想",
+     "想",
+     "xiǎng"
+    ],
+    [
+     "问",
+     "问",
+     "wèn"
     ]
-   ],
-   "rd": "워 샹 원 니 이 젠 스.",
-   "emotion": "shy"
+   ]
   },
   {
    "num": 8,
    "speaker": "B",
-   "zh": "你说吧，我听着呢。🥰",
-   "pinyin": "Nǐ shuō ba, wǒ tīng zhe ne.",
+   "zh": "说吧，我听着呢。🥰",
+   "pinyin": "Shuō ba, wǒ tīngzhe ne.",
+   "rd": "숴 바, 워 팅저 너.",
    "ko": "말해, 듣고 있어.",
-   "note": "着 지속 + 呢",
+   "note": "着=지속, 呢=진행",
    "tags": [
     "listen",
     "particle:呢"
    ],
+   "emotion": "gentle",
    "lemmas": [
     [
      "说",
@@ -260,9 +267,12 @@
      "听",
      "tīng"
     ]
-   ],
-   "rd": "니 숴 바, 워 팅 저 너.",
-   "emotion": "gentle"
+   ]
   }
- ]
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r4_love_l1_ep5_1_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ }
 }

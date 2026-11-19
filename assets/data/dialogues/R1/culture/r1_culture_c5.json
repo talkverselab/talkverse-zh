@@ -171,10 +171,10 @@
   {
    "num": 5,
    "speaker": "B",
-   "zh": "不用都说啊，就是打招呼。",
-   "pinyin": "Bú yòng dōu shuō a, jiù shì dǎ zhāohu.",
-   "rd": "부 융 더우 숴 아, 주 스 다 자오후.",
-   "ko": "다 말 안 해도 돼, 그냥 인사야.",
+   "zh": "不用全都说出来就是打招呼。",
+   "pinyin": "Bú yòng quán dōu shuō chūlái jiù shì dǎ zhāohu.",
+   "rd": "부 융 취안 더우 숴 추라이 주 스 다 자오후.",
+   "ko": "전부 다 말할 필요 없어 그냥 인사야.",
    "note": "打招呼 = 인사하다",
    "tags": [
     "form:不用"
@@ -186,14 +186,19 @@
      "bù yòng"
     ],
     [
-     "都",
-     "都",
-     "dōu"
+     "全都",
+     "全都",
+     "quán dōu"
     ],
     [
      "说",
      "说",
      "shuō"
+    ],
+    [
+     "出来",
+     "出来",
+     "chū lái"
     ],
     [
      "就是",
@@ -312,6 +317,7 @@
  "review": {
   "grok_rewrite": "data/review/r1_culture_c5_grok_rewrite.md",
   "model": "전문가",
-  "final": "세션 리뷰"
+  "final": "세션 리뷰",
+  "r1_lines_1120": "#5 Grok(빠른) 다시 씀 — TTS 오독(tools/grok/zh_rw/out/r1_lines.md)"
  }
 }

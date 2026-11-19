@@ -19,14 +19,16 @@
   {
    "num": 1,
    "speaker": "B",
-   "zh": "哇，城墙上风景真美！",
-   "pinyin": "Wā, chéngqiáng shang fēngjǐng zhēn měi!",
+   "zh": "哇，城墙上的风景真美！",
+   "pinyin": "Wā, chéngqiáng shàng de fēngjǐng zhēn měi!",
+   "rd": "와, 청창 상 더 펑징 전 메이!",
    "ko": "와, 성벽 위 풍경 진짜 예쁘다!",
-   "note": "방위사 上 (~위)",
+   "note": "上=~위",
    "tags": [
     "풍경",
     "감탄"
    ],
+   "emotion": "excited",
    "lemmas": [
     [
      "城",
@@ -58,21 +60,21 @@
      "美",
      "měi"
     ]
-   ],
-   "rd": "와, 청창 상 펑징 전 메이!",
-   "emotion": "excited"
+   ]
   },
   {
    "num": 2,
    "speaker": "A",
-   "zh": "是啊，比照片漂亮多了。",
-   "pinyin": "Shì a, bǐ zhàopiàn piàoliang duō le.",
+   "zh": "是啊，比照片美多了。",
+   "pinyin": "Shì a, bǐ zhàopiàn měi duō le.",
+   "rd": "스 아, 비 자오폔 메이 둬 러.",
    "ko": "그러게, 사진보다 훨씬 예뻐.",
-   "note": "比 비교문 + 多了 (훨씬)",
+   "note": "比=비교, 多了=훨씬",
    "tags": [
     "비교문",
     "풍경"
    ],
+   "emotion": "cheerful",
    "lemmas": [
     [
      "是",
@@ -85,30 +87,25 @@
      "zhào piān"
     ],
     [
-     "漂亮",
-     "漂亮",
-     "piào liàng"
-    ],
-    [
-     "多",
-     "多",
-     "duō"
+     "美多",
+     "美多",
+     "měi duō"
     ]
-   ],
-   "rd": "스 아, 비 자오폔 퍄오량 둬 러.",
-   "emotion": "cheerful"
+   ]
   },
   {
    "num": 3,
    "speaker": "B",
    "zh": "我们租两辆自行车吧！🤩",
    "pinyin": "Wǒmen zū liǎng liàng zìxíngchē ba!",
+   "rd": "워먼 쭈 량 량 쯔싱처 바!",
    "ko": "우리 자전거 두 대 빌리자!",
-   "note": "양사 辆 (차량 세는 단위)",
+   "note": "辆=차량 양사",
    "tags": [
     "자전거",
     "제안"
    ],
+   "emotion": "excited",
    "lemmas": [
     [
      "我们",
@@ -130,21 +127,21 @@
      "自行车",
      "zì xíng chē"
     ]
-   ],
-   "rd": "워먼 쭈 량 량 쯔싱처 바!",
-   "emotion": "excited"
+   ]
   },
   {
    "num": 4,
    "speaker": "A",
    "zh": "好！看谁骑得快！",
    "pinyin": "Hǎo! Kàn shéi qí de kuài!",
+   "rd": "하오! 칸 세이 치 더 콰이!",
    "ko": "좋아! 누가 빨리 타나 보자!",
-   "note": "정도보어 得 (骑得快)",
+   "note": "得=정도보어",
    "tags": [
     "장난",
     "정도보어"
    ],
+   "emotion": "excited",
    "lemmas": [
     [
      "好",
@@ -171,21 +168,21 @@
      "快",
      "kuài"
     ]
-   ],
-   "rd": "하오! 칸 세이 치 더 콰이!",
-   "emotion": "excited"
+   ]
   },
   {
    "num": 5,
    "speaker": "B",
    "zh": "慢一点儿，等等我！",
-   "pinyin": "Màn yìdiǎnr, děngdeng wǒ!",
+   "pinyin": "Màn yìdiǎnr, děngděng wǒ!",
+   "rd": "만 이뎬얼, 덩덩 워!",
    "ko": "좀 천천히 가, 나 기다려 줘!",
-   "note": "형용사 + 一点儿, 동사 중첩 等等",
+   "note": "一点儿=좀, 等等=중첩",
    "tags": [
     "장난",
     "요청"
    ],
+   "emotion": "shout",
    "lemmas": [
     [
      "慢",
@@ -197,42 +194,42 @@
      "一点儿",
      "yì diǎn ér"
     ]
-   ],
-   "rd": "만 이뎬얼, 덩덩 워!",
-   "emotion": "shout"
+   ]
   },
   {
    "num": 6,
    "speaker": "A",
    "zh": "哈哈，我在这儿等你呢。😏",
    "pinyin": "Hāhā, wǒ zài zhèr děng nǐ ne.",
+   "rd": "하하, 워 짜이 절 덩 니 너.",
    "ko": "하하, 나 여기서 너 기다리고 있잖아.",
-   "note": "在 + 呢 (진행·지속)",
+   "note": "在…呢=진행·지속",
    "tags": [
     "장난",
     "진행형"
    ],
+   "emotion": "amused",
    "lemmas": [
     [
      "这儿",
      "这儿",
      "zhè ér"
     ]
-   ],
-   "rd": "하하, 워 짜이 절 덩 니 너.",
-   "emotion": "amused"
+   ]
   },
   {
    "num": 7,
    "speaker": "B",
-   "zh": "你看，太阳快下山了。",
-   "pinyin": "Nǐ kàn, tàiyáng kuài xià shān le.",
+   "zh": "看，太阳快要落了。",
+   "pinyin": "Kàn, tàiyáng kuài yào luò le.",
+   "rd": "칸, 타이양 콰이 야오 뤄 러.",
    "ko": "봐, 해가 곧 지려고 해.",
-   "note": "快…了 (임박 표현)",
+   "note": "快…了=임박",
    "tags": [
     "노을",
     "快…了"
    ],
+   "emotion": "gentle",
    "lemmas": [
     [
      "看",
@@ -245,35 +242,30 @@
      "tài yáng"
     ],
     [
-     "快",
-     "快",
-     "kuài"
+     "快要",
+     "快要",
+     "kuài yào"
     ],
     [
-     "下",
-     "下",
-     "xià"
-    ],
-    [
-     "山",
-     "山",
-     "shān"
+     "落",
+     "落",
+     "luò"
     ]
-   ],
-   "rd": "니 칸, 타이양 콰이 샤 산 러.",
-   "emotion": "gentle"
+   ]
   },
   {
    "num": 8,
    "speaker": "A",
-   "zh": "夕阳下的你，更好看。",
-   "pinyin": "Xīyáng xià de nǐ, gèng hǎokàn.",
+   "zh": "夕阳下的你更美。",
+   "pinyin": "Xīyáng xià de nǐ gèng měi.",
+   "rd": "시양 샤 더 니 겅 메이.",
    "ko": "노을 아래 있는 네가 더 예뻐.",
-   "note": "부사 更 (더욱)",
+   "note": "更=더욱",
    "tags": [
     "고백",
     "로맨스"
    ],
+   "emotion": "gentle",
    "lemmas": [
     [
      "夕",
@@ -286,18 +278,21 @@
      "xià"
     ],
     [
-     "更好",
-     "更好",
-     "gèng hǎo"
+     "更",
+     "更",
+     "gèng"
     ],
     [
-     "看",
-     "看",
-     "kàn"
+     "美",
+     "美",
+     "měi"
     ]
-   ],
-   "rd": "시양 샤 더 니, 겅 하오칸.",
-   "emotion": "gentle"
+   ]
   }
- ]
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r4_love_l3_d12_1_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ }
 }

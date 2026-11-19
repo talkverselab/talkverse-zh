@@ -19,19 +19,21 @@
   {
    "num": 1,
    "speaker": "A",
-   "zh": "见！春节一起回四川！",
-   "pinyin": "Jiàn! Chūnjié yìqǐ huí Sìchuān!",
+   "zh": "见面！春节一起回四川！",
+   "pinyin": "Jiànmiàn! Chūnjié yìqǐ huí Sìchuān!",
+   "rd": "젠몐! 춘제 이치 후이 쓰촨!",
    "ko": "만나! 춘절에 같이 쓰촨 가자!",
-   "note": "春节 + 回 callback",
+   "note": "春节=설, 回=돌아가다",
    "tags": [
     "plan",
     "callback:ep3"
    ],
+   "emotion": "excited",
    "lemmas": [
     [
-     "见",
-     "见",
-     "jiàn"
+     "见面",
+     "见面",
+     "jiàn miàn"
     ],
     [
      "春节",
@@ -53,21 +55,21 @@
      "四川",
      "sì chuān"
     ]
-   ],
-   "rd": "젠! 춘제 이치 후이 쓰촨!",
-   "emotion": "excited"
+   ]
   },
   {
    "num": 2,
    "speaker": "B",
    "zh": "我爸会考你中文的哦。😜",
-   "pinyin": "Wǒ bà huì kǎo nǐ zhōngwén de o.",
+   "pinyin": "Wǒ bà huì kǎo nǐ Zhōngwén de o.",
+   "rd": "워 바 후이 카오 니 중원 더 오.",
    "ko": "우리 아빠가 중국어 시험 볼 거야.",
-   "note": "考 (시험보다) + 会…的 + 哦",
+   "note": "考=시험 보다, 会…的=할 것이다, 哦=경고/여운",
    "tags": [
     "tease",
     "particle:哦"
    ],
+   "emotion": "teasing",
    "lemmas": [
     [
      "爸",
@@ -89,21 +91,21 @@
      "中文",
      "zhōng wén"
     ]
-   ],
-   "rd": "워 바 후이 카오 니 중원 더 오.",
-   "emotion": "teasing"
+   ]
   },
   {
    "num": 3,
    "speaker": "A",
-   "zh": "没问题，我现在开始复习！",
-   "pinyin": "Méi wèntí, wǒ xiànzài kāishǐ fùxí!",
+   "zh": "没问题，现在开始复习！",
+   "pinyin": "Méi wèntí, xiànzài kāishǐ fùxí!",
+   "rd": "메이 원티, 셴짜이 카이스 푸시!",
    "ko": "문제없어, 지금부터 복습 시작!",
-   "note": "开始 + 复习",
+   "note": "开始=시작하다, 复习=복습하다",
    "tags": [
     "promise",
     "topic:chinese"
    ],
+   "emotion": "excited",
    "lemmas": [
     [
      "没",
@@ -130,21 +132,21 @@
      "复习",
      "fù xí"
     ]
-   ],
-   "rd": "메이 원티, 워 셴짜이 카이스 푸시!",
-   "emotion": "excited"
+   ]
   },
   {
    "num": 4,
    "speaker": "B",
    "zh": "先复习最重要的一句。",
    "pinyin": "Xiān fùxí zuì zhòngyào de yí jù.",
+   "rd": "셴 푸시 쭈이 중야오 더 이 쥐.",
    "ko": "제일 중요한 한 마디부터 복습해.",
-   "note": "最重要的 + 一句",
+   "note": "最重要的=가장 중요한, 一句=한 마디",
    "tags": [
     "tease",
     "hook:test"
    ],
+   "emotion": "teasing",
    "lemmas": [
     [
      "先",
@@ -171,20 +173,20 @@
      "一句",
      "yī jù"
     ]
-   ],
-   "rd": "셴 푸시 쭈이 중야오 더 이 쥐.",
-   "emotion": "teasing"
+   ]
   },
   {
    "num": 5,
    "speaker": "A",
    "zh": "哪一句？",
    "pinyin": "Nǎ yí jù?",
+   "rd": "나 이 쥐?",
    "ko": "어떤 말?",
-   "note": "哪 (어느)",
+   "note": "哪=어느",
    "tags": [
     "question"
    ],
+   "emotion": "neutral",
    "lemmas": [
     [
      "哪",
@@ -196,21 +198,21 @@
      "一句",
      "yī jù"
     ]
-   ],
-   "rd": "나 이 쥐?",
-   "emotion": "neutral"
+   ]
   },
   {
    "num": 6,
    "speaker": "B",
    "zh": "叔叔阿姨好，我是小丽的男朋友。",
-   "pinyin": "Shūshu āyí hǎo, wǒ shì Xiǎolì de nán péngyou.",
-   "ko": "'아버님 어머님 안녕하세요, 저는 샤오리의 남자친구입니다.'",
-   "note": "叔叔阿姨 호칭 문화 + 男朋友 공식화!",
+   "pinyin": "Shūshu āyí hǎo, wǒ shì Xiǎolì de nánpéngyou.",
+   "rd": "수수 아이 하오, 워 스 샤오리 더 난펑유.",
+   "ko": "아버님 어머님 안녕하세요, 저는 샤오리의 남자친구입니다.",
+   "note": "叔叔阿姨=부모님 호칭, 男朋友=남자친구",
    "tags": [
     "confession",
     "culture"
    ],
+   "emotion": "gentle",
    "lemmas": [
     [
      "叔叔",
@@ -232,21 +234,21 @@
      "男朋友",
      "nán péng yǒu"
     ]
-   ],
-   "rd": "수수 아이 하오, 워 스 샤오리 더 난 펑유.",
-   "emotion": "gentle"
+   ]
   },
   {
    "num": 7,
    "speaker": "A",
-   "zh": "男朋友…！我马上背下来！",
-   "pinyin": "Nán péngyou…! Wǒ mǎshàng bèi xiàlái!",
+   "zh": "男朋友……马上背下来！",
+   "pinyin": "Nánpéngyou……mǎshàng bèi xiàlái!",
+   "rd": "난펑유……마상 베이 샤라이!",
    "ko": "남자친구…! 바로 외울게!",
-   "note": "马上 (곧장) + 背下来 (외워버리다) 방향보어",
+   "note": "马上=곧장, 背下来=외워버리다",
    "tags": [
     "joke",
     "hook:boyfriend"
    ],
+   "emotion": "excited",
    "lemmas": [
     [
      "男朋友",
@@ -268,21 +270,21 @@
      "下来",
      "xià lái"
     ]
-   ],
-   "rd": "난 펑유…! 워 마상 베이 샤라이!",
-   "emotion": "excited"
+   ]
   },
   {
    "num": 8,
    "speaker": "B",
-   "zh": "傻瓜，以后的路还长呢。😜",
-   "pinyin": "Shǎguā, yǐhòu de lù hái cháng ne.",
+   "zh": "傻瓜，路还长着呢。😜",
+   "pinyin": "Shǎguā, lù hái chángzhe ne.",
+   "rd": "사과, 루 하이 창저 너.",
    "ko": "바보, 앞으로 갈 길이 아직 길어.",
-   "note": "傻瓜 (바보, 애칭) + 呢 여운 — 시즌 마무리",
+   "note": "傻瓜=바보(애칭), 呢=여운",
    "tags": [
     "feeling",
     "particle:呢"
    ],
+   "emotion": "teasing",
    "lemmas": [
     [
      "傻",
@@ -293,11 +295,6 @@
      "瓜",
      "瓜",
      "guā"
-    ],
-    [
-     "以后",
-     "以后",
-     "yǐ hòu"
     ],
     [
      "路",
@@ -314,9 +311,12 @@
      "长",
      "zhǎng"
     ]
-   ],
-   "rd": "사과, 이허우 더 루 하이 창 너.",
-   "emotion": "teasing"
+   ]
   }
- ]
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r4_love_l1_ep5_5_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ }
 }

@@ -19,14 +19,16 @@
   {
    "num": 1,
    "speaker": "B",
-   "zh": "……当我没说。",
-   "pinyin": "……Dāng wǒ méi shuō.",
+   "zh": "当我没说吧。😳",
+   "pinyin": "Dāng wǒ méi shuō ba.",
+   "rd": "당 워 메이 숴 바.",
    "ko": "…방금 말 못 들은 걸로 해.",
-   "note": "当我没说: '내가 말 안 한 셈 쳐' 철회 관용 표현.",
+   "note": "当我没说는 ‘내가 말 안 한 셈 쳐’ 철회 표현.",
    "tags": [
     "当",
     "관용표현"
    ],
+   "emotion": "flustered",
    "lemmas": [
     [
      "没",
@@ -38,21 +40,21 @@
      "说",
      "shuō"
     ]
-   ],
-   "rd": "……당 워 메이 숴.",
-   "emotion": "flustered"
+   ]
   },
   {
    "num": 2,
    "speaker": "A",
-   "zh": "王哥也说你有这个习惯。",
-   "pinyin": "Wáng gē yě shuō nǐ yǒu zhège xíguàn.",
+   "zh": "王哥也说你有这习惯。",
+   "pinyin": "Wáng gē yě shuō nǐ yǒu zhè xíguàn.",
+   "rd": "왕 거 예 숴 니 유 저 시관.",
    "ko": "왕 형도 너 그 버릇 있다던데.",
-   "note": "간접 인용: 사람+说+문장 '~가 ~라고 말하다'.",
+   "note": "사람+说+문장은 간접 인용.",
    "tags": [
     "说",
     "간접인용"
    ],
+   "emotion": "teasing",
    "lemmas": [
     [
      "也",
@@ -70,30 +72,30 @@
      "yǒu"
     ],
     [
-     "这个",
-     "这个",
-     "zhè ge"
+     "这",
+     "这",
+     "zhè"
     ],
     [
      "习惯",
      "习惯",
      "xí guàn"
     ]
-   ],
-   "rd": "왕 거 예 숴 니 유 저거 시관.",
-   "emotion": "teasing"
+   ]
   },
   {
    "num": 3,
    "speaker": "B",
-   "zh": "好啊，你们说我坏话！",
-   "pinyin": "Hǎo a, nǐmen shuō wǒ huàihuà!",
+   "zh": "好啊，你们说我坏话？",
+   "pinyin": "Hǎo a, nǐmen shuō wǒ huàihuà?",
+   "rd": "하오 아, 니먼 숴 워 화이화?",
    "ko": "잘들 논다, 내 뒷담화를 해?",
-   "note": "说坏话: '험담하다'. 好啊는 여기서 반어적 발끈.",
+   "note": "说坏话는 ‘험담하다’, 好啊는 반어적 발끈.",
    "tags": [
     "说坏话",
     "반어"
    ],
+   "emotion": "annoyed",
    "lemmas": [
     [
      "好",
@@ -120,21 +122,21 @@
      "话",
      "huà"
     ]
-   ],
-   "rd": "하오 아, 니먼 숴 워 화이화!",
-   "emotion": "annoyed"
+   ]
   },
   {
    "num": 4,
    "speaker": "A",
-   "zh": "不是坏话，是可爱的话。",
-   "pinyin": "Bú shì huàihuà, shì kě'ài de huà.",
+   "zh": "不是坏话，是说你可爱。",
+   "pinyin": "Bú shì huàihuà, shì shuō nǐ kě'ài.",
+   "rd": "부 스 화이화, 스 숴 니 커'아이.",
    "ko": "뒷담화 아니고 귀엽다는 얘기였어.",
-   "note": "不是A，是B로 재치있게 수습. 형용사+的+명사 수식.",
+   "note": "不是A，是B로 재치있게 수습.",
    "tags": [
     "不是…是…",
     "수습"
    ],
+   "emotion": "gentle",
    "lemmas": [
     [
      "坏",
@@ -152,25 +154,30 @@
      "shì"
     ],
     [
+     "说",
+     "说",
+     "shuō"
+    ],
+    [
      "可爱",
      "可爱",
      "kě ài"
     ]
-   ],
-   "rd": "부 스 화이화, 스 커'아이 더 화.",
-   "emotion": "gentle"
+   ]
   },
   {
    "num": 5,
    "speaker": "B",
-   "zh": "哎呀……又被你骗了。",
-   "pinyin": "Āiyā……yòu bèi nǐ piàn le.",
+   "zh": "哎呀…又被你骗了。",
+   "pinyin": "Āiya… Yòu bèi nǐ piàn le.",
+   "rd": "아이야… 유 베이 니 폔 러.",
    "ko": "아이야… 또 너한테 넘어갔네.",
-   "note": "被자문: 被+행위자+동사 '~에게 당하다'. 又…了 '또'.",
+   "note": "被자문은 ‘~에게 당하다’, 又…了는 ‘또’.",
    "tags": [
     "被",
     "又…了"
    ],
+   "emotion": "shy",
    "lemmas": [
     [
      "又",
@@ -182,20 +189,20 @@
      "骗",
      "piàn"
     ]
-   ],
-   "rd": "아이야……유 베이 니 폔 러.",
-   "emotion": "shy"
+   ]
   },
   {
    "num": 6,
    "speaker": "A",
    "zh": "哈哈，这次算我赢了。",
-   "pinyin": "Hāhā, zhècì suàn wǒ yíng le.",
+   "pinyin": "Hāhā, zhè cì suàn wǒ yíng le.",
+   "rd": "하하, 저 츠 쏸 워 잉 러.",
    "ko": "하하, 이번엔 내가 이긴 걸로.",
-   "note": null,
+   "note": "",
    "tags": [
     "ext"
    ],
+   "emotion": "amused",
    "lemmas": [
     [
      "这次",
@@ -212,20 +219,20 @@
      "赢",
      "yíng"
     ]
-   ],
-   "rd": "하하, 저츠 쏸 워 잉 러.",
-   "emotion": "amused"
+   ]
   },
   {
    "num": 7,
    "speaker": "B",
-   "zh": "下次我一定会赢回来。",
-   "pinyin": "Xiàcì wǒ yídìng huì yínghuílái.",
+   "zh": "下次我一定赢回来。",
+   "pinyin": "Xià cì wǒ yídìng yíng huílái.",
+   "rd": "샤 츠 워 이딩 잉 후이라이.",
    "ko": "다음엔 반드시 이겨줄 거야.",
-   "note": null,
+   "note": "",
    "tags": [
     "ext"
    ],
+   "emotion": "cheerful",
    "lemmas": [
     [
      "下次",
@@ -238,11 +245,6 @@
      "yí dìng"
     ],
     [
-     "会",
-     "会",
-     "huì"
-    ],
-    [
      "赢",
      "赢",
      "yíng"
@@ -252,20 +254,20 @@
      "回来",
      "huí lái"
     ]
-   ],
-   "rd": "샤츠 워 이딩 후이 잉후이라이.",
-   "emotion": "cheerful"
+   ]
   },
   {
    "num": 8,
    "speaker": "A",
-   "zh": "好，我等着看你怎么赢。",
-   "pinyin": "Hǎo, wǒ děng zhe kàn nǐ zěnme yíng.",
+   "zh": "好啊，我等着看你怎么赢。",
+   "pinyin": "Hǎo a, wǒ děngzhe kàn nǐ zěnme yíng.",
+   "rd": "하오 아, 워 덩저 칸 니 쩐머 잉.",
    "ko": "그래, 어떻게 이기는지 기대해볼게.",
-   "note": null,
+   "note": "",
    "tags": [
     "ext"
    ],
+   "emotion": "teasing",
    "lemmas": [
     [
      "好",
@@ -287,9 +289,12 @@
      "赢",
      "yíng"
     ]
-   ],
-   "rd": "하오, 워 덩 저 칸 니 쩐머 잉.",
-   "emotion": "teasing"
+   ]
   }
- ]
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r4_life_l2_d23_2_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ }
 }

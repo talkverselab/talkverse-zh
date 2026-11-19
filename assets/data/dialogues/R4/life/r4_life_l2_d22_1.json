@@ -19,40 +19,47 @@
   {
    "num": 1,
    "speaker": "A",
-   "zh": "今晚我做饭！",
-   "pinyin": "Jīnwǎn wǒ zuòfàn!",
+   "zh": "今天晚上我做饭！",
+   "pinyin": "Jīntiān wǎnshang wǒ zuòfàn!",
+   "rd": "진톈 완상 워 쭤판!",
    "ko": "오늘 저녁은 내가 요리한다!",
-   "note": "做饭: '밥을 하다, 요리하다' 이합사.",
+   "note": "做饭: 요리하다",
    "tags": [
     "做饭",
     "선언"
    ],
+   "emotion": "excited",
    "lemmas": [
     [
-     "今晚",
-     "今晚",
-     "jīn wǎn"
+     "今天",
+     "今天",
+     "jīn tiān"
+    ],
+    [
+     "晚上",
+     "晚上",
+     "wǎn shàng"
     ],
     [
      "做饭",
      "做饭",
      "zuò fàn"
     ]
-   ],
-   "rd": "진완 워 쭤판!",
-   "emotion": "excited"
+   ]
   },
   {
    "num": 2,
    "speaker": "B",
-   "zh": "真的假的？你会做吗？😮",
-   "pinyin": "Zhēn de jiǎ de? Nǐ huì zuò ma?",
+   "zh": "真的假的？你会吗？😮",
+   "pinyin": "Zhēn de jiǎ de? Nǐ huì ma?",
+   "rd": "전 더 자 더? 니 후이 마?",
    "ko": "실화야? 너 할 줄 알아?",
-   "note": "真的假的: '진짜야 가짜야' 구어 리액션. 会: 배워서 할 줄 앎.",
+   "note": "真的假的+会: 진짜야? 할 줄 안다",
    "tags": [
     "真的假的",
     "会"
    ],
+   "emotion": "surprised",
    "lemmas": [
     [
      "真的",
@@ -68,27 +75,22 @@
      "会",
      "会",
      "huì"
-    ],
-    [
-     "做",
-     "做",
-     "zuò"
     ]
-   ],
-   "rd": "전 더 자 더? 니 후이 쭤 마?",
-   "emotion": "surprised"
+   ]
   },
   {
    "num": 3,
    "speaker": "A",
-   "zh": "我看了视频，很简单。",
-   "pinyin": "Wǒ kàn le shìpín, hěn jiǎndān.",
+   "zh": "看了视频，特别简单。",
+   "pinyin": "Kàn le shìpín, tèbié jiǎndān.",
+   "rd": "칸 러 스핀, 터볘 젠단.",
    "ko": "영상 봤는데 완전 쉬워.",
-   "note": "동사+了+목적어: 완료. 플래그 세우는 자신감.",
+   "note": "看了+목적어: 완료",
    "tags": [
     "了",
     "视频"
    ],
+   "emotion": "cheerful",
    "lemmas": [
     [
      "看",
@@ -101,51 +103,51 @@
      "shì pín"
     ],
     [
-     "很",
-     "很",
-     "hěn"
+     "特别",
+     "特别",
+     "tè bié"
     ],
     [
      "简单",
      "简单",
      "jiǎn dān"
     ]
-   ],
-   "rd": "워 칸 러 스핀, 헌 젠단.",
-   "emotion": "cheerful"
+   ]
   },
   {
    "num": 4,
    "speaker": "B",
-   "zh": "好吧，我等着。",
-   "pinyin": "Hǎo ba, wǒ děng zhe.",
+   "zh": "行，我等着。",
+   "pinyin": "Xíng, wǒ děngzhe.",
+   "rd": "싱, 워 덩저.",
    "ko": "그래, 기다려 볼게.",
-   "note": "동사+着: 지속 상태 '기다리고 있을게'.",
+   "note": "等着: 기다리고 있을게",
    "tags": [
     "着",
     "지속"
    ],
+   "emotion": "teasing",
    "lemmas": [
     [
-     "好",
-     "好",
-     "hǎo"
+     "行",
+     "行",
+     "xíng"
     ]
-   ],
-   "rd": "하오 바, 워 덩 저.",
-   "emotion": "teasing"
+   ]
   },
   {
    "num": 5,
    "speaker": "A",
-   "zh": "呃……小丽，快来一下！",
-   "pinyin": "È……Xiǎolì, kuài lái yíxià!",
-   "ko": "어… 샤오리, 빨리 좀 와봐!",
-   "note": "快+동사: 재촉. 一下로 부탁 완화 '좀 ~해봐'.",
+   "zh": "小丽，快来一下！",
+   "pinyin": "Xiǎo Lì, kuài lái yíxià!",
+   "rd": "샤오 리, 콰이 라이 이샤!",
+   "ko": "샤오리, 빨리 좀 와봐!",
+   "note": "快+一下: 재촉하며 좀 ~해",
    "tags": [
     "快",
     "一下"
    ],
+   "emotion": "flustered",
    "lemmas": [
     [
      "快",
@@ -162,26 +164,31 @@
      "一下",
      "yī xià"
     ]
-   ],
-   "rd": "어……샤오리, 콰이 라이 이샤!",
-   "emotion": "flustered"
+   ]
   },
   {
    "num": 6,
    "speaker": "B",
-   "zh": "怎么了？什么味道？！",
-   "pinyin": "Zěnme le? Shénme wèidào?!",
+   "zh": "怎么了？这什么味道？！",
+   "pinyin": "Zěnme le? Zhè shénme wèidào?!",
+   "rd": "쩐머 러? 저 선머 웨이다오?!",
    "ko": "왜 그래? 이게 무슨 냄새야?!",
-   "note": "味道: '냄새/맛'. 什么+명사로 놀란 반문.",
+   "note": "什么+味道: 무슨 냄새",
    "tags": [
     "味道",
     "놀람"
    ],
+   "emotion": "surprised",
    "lemmas": [
     [
      "怎么",
      "怎么",
      "zěn me"
+    ],
+    [
+     "这",
+     "这",
+     "zhè"
     ],
     [
      "什么",
@@ -193,21 +200,21 @@
      "味道",
      "wèi dào"
     ]
-   ],
-   "rd": "쩐머 러? 선머 웨이다오?!",
-   "emotion": "surprised"
+   ]
   },
   {
    "num": 7,
    "speaker": "A",
-   "zh": "鱼有点儿黑了……",
-   "pinyin": "Yú yǒudiǎnr hēi le……",
-   "ko": "생선이 좀 까매졌어…",
-   "note": "有点儿+형용사: 부정적 '좀 ~하다'. 了로 변화.",
+   "zh": "鱼有点儿黑了…",
+   "pinyin": "Yú yǒudiǎnr hēi le.",
+   "rd": "위 유뎬얼 헤이 러.",
+   "ko": "생선이 좀 까매졌어.",
+   "note": "有点儿+了: 좀 ~해졌다",
    "tags": [
     "有点儿",
     "변화의 了"
    ],
+   "emotion": "flustered",
    "lemmas": [
     [
      "鱼",
@@ -224,27 +231,22 @@
      "黑",
      "hēi"
     ]
-   ],
-   "rd": "위 유뎬얼 헤이 러……",
-   "emotion": "flustered"
+   ]
   },
   {
    "num": 8,
    "speaker": "B",
-   "zh": "这不是有点儿，是全黑了！",
-   "pinyin": "Zhè bú shì yǒudiǎnr, shì quán hēi le!",
+   "zh": "不是有点儿，是全黑了！",
+   "pinyin": "Búshì yǒudiǎnr, shì quán hēi le!",
+   "rd": "부스 유뎬얼, 스 취안 헤이 러!",
    "ko": "좀이 아니라 완전 새까맣거든!",
-   "note": "不是A，是B: 'A가 아니라 B다' 정정 패턴. 全 '완전히'.",
+   "note": "不是A是B+全: 정정, 완전히",
    "tags": [
     "不是…是…",
     "全"
    ],
+   "emotion": "tsukkomi",
    "lemmas": [
-    [
-     "这",
-     "这",
-     "zhè"
-    ],
     [
      "有点儿",
      "有点儿",
@@ -265,9 +267,12 @@
      "黑",
      "hēi"
     ]
-   ],
-   "rd": "저 부 스 유뎬얼, 스 취안 헤이 러!",
-   "emotion": "tsukkomi"
+   ]
   }
- ]
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r4_life_l2_d22_1_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ }
 }

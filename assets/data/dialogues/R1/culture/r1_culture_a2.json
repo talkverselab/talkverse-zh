@@ -194,15 +194,20 @@
   {
    "num": 6,
    "speaker": "A",
-   "zh": "啊！我吃到了……三个？！",
-   "pinyin": "À! Wǒ chī dào le…… sān ge?!",
-   "rd": "아! 워 츠 다오 러…… 싼 거?!",
-   "ko": "앗! 나 먹었어…… 세 개?!",
+   "zh": "我居然吃到三个了！",
+   "pinyin": "Wǒ jūrán chī dào sān ge le!",
+   "rd": "워 쥐란 츠 다오 싼 거 러!",
+   "ko": "나 설마 세 개나 먹었어!",
    "note": "吃到 = 먹게 되다",
    "tags": [
     "form:到"
    ],
    "lemmas": [
+    [
+     "居然",
+     "居然",
+     "jū rán"
+    ],
     [
      "吃",
      "吃",
@@ -219,17 +224,7 @@
      "sān gè"
     ]
    ],
-   "emotion": "surprised",
-   "segs": [
-    [
-     "surprised",
-     "啊！我吃到了……"
-    ],
-    [
-     "shout",
-     "三个？！"
-    ]
-   ]
+   "emotion": "surprised"
   },
   {
    "num": 7,
@@ -295,6 +290,7 @@
  "review": {
   "grok_rewrite": "data/review/r1_culture_a2_grok_rewrite.md",
   "model": "전문가",
-  "final": "세션 리뷰 — Grok 표현 일부 채택, 존댓말·문장부호·논리 바로잡음"
+  "final": "세션 리뷰 — Grok 표현 일부 채택, 존댓말·문장부호·논리 바로잡음",
+  "r1_lines_1120": "#6 Grok(빠른) 다시 씀 — TTS 오독(tools/grok/zh_rw/out/r1_lines.md)"
  }
 }

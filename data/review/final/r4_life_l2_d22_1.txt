@@ -1,0 +1,8 @@
+1 A: 今天晚上我做饭！ / Jīntiān wǎnshang wǒ zuòfàn! / 오늘 저녁은 내가 요리한다! / 做饭: 요리하다 / excited
+2 B: 真的假的？你会吗？ / Zhēn de jiǎ de? Nǐ huì ma? / 실화야? 너 할 줄 알아? / 真的假的+会: 진짜야? 할 줄 안다 / surprised
+3 A: 看了视频，特别简单。 / Kàn le shìpín, tèbié jiǎndān. / 영상 봤는데 완전 쉬워. / 看了+목적어: 완료 / cheerful
+4 B: 行，我等着。 / Xíng, wǒ děngzhe. / 그래, 기다려 볼게. / 等着: 기다리고 있을게 / teasing
+5 A: 小丽，快来一下！ / Xiǎo Lì, kuài lái yíxià! / 샤오리, 빨리 좀 와봐! / 快+一下: 재촉하며 좀 ~해 / flustered
+6 B: 怎么了？这什么味道？！ / Zěnme le? Zhè shénme wèidào?! / 왜 그래? 이게 무슨 냄새야?! / 什么+味道: 무슨 냄새 / surprised
+7 A: 鱼有点儿黑了… / Yú yǒudiǎnr hēi le. / 생선이 좀 까매졌어. / 有点儿+了: 좀 ~해졌다 / flustered
+8 B: 不是有点儿，是全黑了！ / Búshì yǒudiǎnr, shì quán hēi le! / 좀이 아니라 완전 새까맣거든! / 不是A是B+全: 정정, 완전히 / tsukkomi

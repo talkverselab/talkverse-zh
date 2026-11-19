@@ -21,12 +21,14 @@
    "speaker": "B",
    "zh": "你学了多久了？",
    "pinyin": "Nǐ xué le duō jiǔ le?",
+   "rd": "니 쉐 러 둬 주 러?",
    "ko": "얼마나 배웠어요?",
-   "note": "了…了 지속 기간 묻기",
+   "note": "了…了는 지속 기간을 묻는다.",
    "tags": [
     "question",
     "function:了"
    ],
+   "emotion": "neutral",
    "lemmas": [
     [
      "学",
@@ -38,22 +40,27 @@
      "多久",
      "duō jiǔ"
     ]
-   ],
-   "rd": "니 쉐 러 둬 주 러?",
-   "emotion": "neutral"
+   ]
   },
   {
    "num": 2,
    "speaker": "A",
-   "zh": "一年了，还不太会说。",
-   "pinyin": "Yì nián le, hái bú tài huì shuō.",
+   "zh": "学了一年，还不太会说。",
+   "pinyin": "Xué le yì nián, hái bú tài huì shuō.",
+   "rd": "쉐 러 이 녠, 하이 부 타이 후이 숴.",
    "ko": "1년 됐는데 아직 말은 잘 못해요.",
-   "note": "不太 + 会 (능력)",
+   "note": "不太+会는 능력이 부족함을 나타낸다.",
    "tags": [
     "self-intro",
     "function:会"
    ],
+   "emotion": "shy",
    "lemmas": [
+    [
+     "学",
+     "学",
+     "xué"
+    ],
     [
      "一年",
      "一年",
@@ -79,21 +86,21 @@
      "说",
      "shuō"
     ]
-   ],
-   "rd": "이 녠 러, 하이 부 타이 후이 숴.",
-   "emotion": "shy"
+   ]
   },
   {
    "num": 3,
    "speaker": "B",
-   "zh": "已经很棒了！为什么学中文？",
-   "pinyin": "Yǐjīng hěn bàng le! Wèishénme xué zhōngwén?",
+   "zh": "已经很厉害了！为什么学中文？",
+   "pinyin": "Yǐjīng hěn lìhai le! Wèishénme xué Zhōngwén?",
+   "rd": "이징 헌 리하이 러! 웨이선머 쉐 중원?",
    "ko": "벌써 대단한데요! 왜 중국어를 배워요?",
-   "note": "已经…了 + 为什么 의문",
+   "note": "已经…了는 ‘이미 ~하다’, 为什么는 이유 의문.",
    "tags": [
     "question",
     "praise"
    ],
+   "emotion": "cheerful",
    "lemmas": [
     [
      "已经",
@@ -106,9 +113,9 @@
      "hěn"
     ],
     [
-     "棒",
-     "棒",
-     "bàng"
+     "厉害",
+     "厉害",
+     "lì hài"
     ],
     [
      "为什么",
@@ -125,21 +132,21 @@
      "中文",
      "zhōng wén"
     ]
-   ],
-   "rd": "이징 헌 방 러! 웨이선머 쉐 중원?",
-   "emotion": "cheerful"
+   ]
   },
   {
    "num": 4,
    "speaker": "A",
-   "zh": "因为我喜欢中国菜，哈哈。😏",
-   "pinyin": "Yīnwèi wǒ xǐhuan zhōngguó cài, hāhā.",
+   "zh": "因为喜欢中国菜，哈哈。😏",
+   "pinyin": "Yīnwèi xǐhuan Zhōngguó cài, hāhā.",
+   "rd": "인웨이 시환 중궈 차이, 하하.",
    "ko": "중국 음식을 좋아해서요, 하하.",
-   "note": "因为 이유 + 喜欢",
+   "note": "因为는 이유, 喜欢은 ‘좋아하다’.",
    "tags": [
     "hobby",
     "hook:food"
    ],
+   "emotion": "amused",
    "lemmas": [
     [
      "喜欢",
@@ -156,21 +163,21 @@
      "菜",
      "cài"
     ]
-   ],
-   "rd": "인웨이 워 시환 중궈 차이, 하하.",
-   "emotion": "amused"
+   ]
   },
   {
    "num": 5,
    "speaker": "B",
    "zh": "哈哈，我也是！你会用筷子吗？😏",
    "pinyin": "Hāhā, wǒ yě shì! Nǐ huì yòng kuàizi ma?",
+   "rd": "하하, 워 예 스! 니 후이 융 콰이쯔 마?",
    "ko": "하하, 저도요! 젓가락 쓸 줄 알아요?",
-   "note": "我也是 공감 + 会 (기능)",
+   "note": "我也是는 공감, 会는 기능·능력.",
    "tags": [
     "hobby",
     "particle:吗"
    ],
+   "emotion": "amused",
    "lemmas": [
     [
      "也",
@@ -192,21 +199,21 @@
      "筷子",
      "kuài zi"
     ]
-   ],
-   "rd": "하하, 워 예 스! 니 후이 융 콰이쯔 마?",
-   "emotion": "amused"
+   ]
   },
   {
    "num": 6,
    "speaker": "A",
-   "zh": "当然会，我是韩国人嘛。😏",
-   "pinyin": "Dāngrán huì, wǒ shì Hánguó rén ma.",
+   "zh": "当然会啊，我是韩国人嘛。😏",
+   "pinyin": "Dāngrán huì a, wǒ shì Hánguó rén ma.",
+   "rd": "당란 후이 아, 워 스 한궈 런 마.",
    "ko": "당연하죠, 한국 사람이잖아요.",
-   "note": "어기조사 嘛 (당연함)",
+   "note": "嘛는 당연함을 나타내는 어기조사.",
    "tags": [
     "joke",
     "particle:嘛"
    ],
+   "emotion": "amused",
    "lemmas": [
     [
      "当然",
@@ -233,42 +240,42 @@
      "人",
      "rén"
     ]
-   ],
-   "rd": "당란 후이, 워 스 한궈 런 마.",
-   "emotion": "amused"
+   ]
   },
   {
    "num": 7,
    "speaker": "B",
-   "zh": "对哦，我忘了，哈哈。😳",
-   "pinyin": "Duì o, wǒ wàng le, hāhā.",
+   "zh": "哦，我忘了，哈哈。😳",
+   "pinyin": "Ō, wǒ wàng le, hāhā.",
+   "rd": "오, 워 왕 러, 하하.",
    "ko": "맞다, 깜빡했네요, 하하.",
-   "note": "어기조사 哦 (깨달음) + 忘了",
+   "note": "哦는 깨달음 어기조사, 忘了는 ‘잊어버렸다’.",
    "tags": [
     "joke",
     "particle:哦"
    ],
+   "emotion": "flustered",
    "lemmas": [
     [
      "忘",
      "忘",
      "wàng"
     ]
-   ],
-   "rd": "두이 오, 워 왕 러, 하하.",
-   "emotion": "flustered"
+   ]
   },
   {
    "num": 8,
    "speaker": "A",
-   "zh": "小丽，你做什么工作？",
-   "pinyin": "Xiǎolì, nǐ zuò shénme gōngzuò?",
+   "zh": "小丽做什么工作？",
+   "pinyin": "Xiǎolì zuò shénme gōngzuò?",
+   "rd": "샤오리 쭤 선머 궁쭤?",
    "ko": "샤오리 씨는 무슨 일 해요?",
-   "note": "做什么工作 직업 묻기",
+   "note": "做什么工作은 직업을 묻는다.",
    "tags": [
     "question",
     "topic:job"
    ],
+   "emotion": "polite",
    "lemmas": [
     [
      "做",
@@ -285,9 +292,12 @@
      "工作",
      "gōng zuò"
     ]
-   ],
-   "rd": "샤오리, 니 쭤 선머 궁쭤?",
-   "emotion": "polite"
+   ]
   }
- ]
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r4_love_l1_ep1_2_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ }
 }

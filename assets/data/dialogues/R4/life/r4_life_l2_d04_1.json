@@ -21,12 +21,14 @@
    "speaker": "A",
    "zh": "今天去公园吧？😄",
    "pinyin": "Jīntiān qù gōngyuán ba?",
+   "rd": "진톈 취 궁위안 바?",
    "ko": "오늘 공원 갈까?",
-   "note": "청유 吧 (~하자/할까?)",
+   "note": "吧 는 청유.",
    "tags": [
     "particle:吧",
     "date"
    ],
+   "emotion": "cheerful",
    "lemmas": [
     [
      "今天",
@@ -43,21 +45,21 @@
      "公园",
      "gōng yuán"
     ]
-   ],
-   "rd": "진톈 취 궁위안 바?",
-   "emotion": "cheerful"
+   ]
   },
   {
    "num": 2,
    "speaker": "B",
    "zh": "你看窗外了吗？🙄",
    "pinyin": "Nǐ kàn chuāngwài le ma?",
+   "rd": "니 칸 촹와이 러 마?",
    "ko": "창밖 봤어?",
-   "note": "了吗 의문문 (~했어?)",
+   "note": "了吗 는 했어?",
    "tags": [
     "question:了吗",
     "weather"
    ],
+   "emotion": "tsukkomi",
    "lemmas": [
     [
      "看",
@@ -74,21 +76,21 @@
      "外",
      "wài"
     ]
-   ],
-   "rd": "니 칸 촹와이 러 마?",
-   "emotion": "tsukkomi"
+   ]
   },
   {
    "num": 3,
    "speaker": "A",
    "zh": "哇，天怎么黄了？",
-   "pinyin": "Wā, tiān zěnme huáng le?",
+   "pinyin": "Wa, tiān zěnme huáng le?",
+   "rd": "와, 톈 쩐머 황 러?",
    "ko": "와, 하늘이 왜 노래졌어?",
-   "note": "형용사+了 (상태 변화의 了)",
+   "note": "了 는 상태 변화.",
    "tags": [
     "aspect:了",
     "weather"
    ],
+   "emotion": "surprised",
    "lemmas": [
     [
      "天",
@@ -105,42 +107,42 @@
      "黄",
      "huáng"
     ]
-   ],
-   "rd": "와, 톈 쩐머 황 러?",
-   "emotion": "surprised"
+   ]
   },
   {
    "num": 4,
    "speaker": "B",
    "zh": "沙尘暴来啦。😏",
    "pinyin": "Shāchénbào lái la.",
+   "rd": "사천바오 라이 라.",
    "ko": "황사 왔잖아.",
-   "note": "어기조사 啦 (=了+啊, 알림+감탄)",
+   "note": "啦 는 알림+감탄.",
    "tags": [
     "particle:啦",
     "weather"
    ],
+   "emotion": "amused",
    "lemmas": [
     [
      "来",
      "来",
      "lái"
     ]
-   ],
-   "rd": "사천바오 라이 라.",
-   "emotion": "amused"
+   ]
   },
   {
    "num": 5,
    "speaker": "A",
-   "zh": "北京的天气太可怕了。",
-   "pinyin": "Běijīng de tiānqì tài kěpà le.",
+   "zh": "北京天气太吓人了。",
+   "pinyin": "Běijīng tiānqì tài xiàrén le.",
+   "rd": "베이징 톈치 타이 샤런 러.",
    "ko": "베이징 날씨 진짜 무섭다.",
-   "note": "太…了 감탄 (너무 ~하다)",
+   "note": "太…了 는 너무 ~하다.",
    "tags": [
     "structure:太了",
     "negative"
    ],
+   "emotion": "annoyed",
    "lemmas": [
     [
      "北京",
@@ -156,22 +158,32 @@
      "太",
      "太",
      "tài"
+    ],
+    [
+     "吓",
+     "吓",
+     "xià"
+    ],
+    [
+     "人",
+     "人",
+     "rén"
     ]
-   ],
-   "rd": "베이징 더 톈치 타이 커파 러.",
-   "emotion": "annoyed"
+   ]
   },
   {
    "num": 6,
    "speaker": "B",
-   "zh": "一会儿可能还下雨呢。😟",
-   "pinyin": "Yīhuìr kěnéng hái xià yǔ ne.",
+   "zh": "一会儿可能还下雨。",
+   "pinyin": "Yíhuìr kěnéng hái xià yǔ.",
+   "rd": "이후일 컨엉 하이 샤 위.",
    "ko": "이따가 비까지 올지도 몰라.",
-   "note": "可能 (아마도, 추측 표현)",
+   "note": "可能 는 아마도.",
    "tags": [
     "adverb:可能",
     "weather"
    ],
+   "emotion": "worried",
    "lemmas": [
     [
      "一会儿",
@@ -193,21 +205,21 @@
      "下雨",
      "xià yǔ"
     ]
-   ],
-   "rd": "이후일 컨엉 하이 샤 위 너.",
-   "emotion": "worried"
+   ]
   },
   {
    "num": 7,
    "speaker": "A",
    "zh": "那计划全完了。",
    "pinyin": "Nà jìhuà quán wán le.",
+   "rd": "나 지화 취안 완 러.",
    "ko": "그럼 계획 다 끝났네.",
-   "note": "부사 全 (전부) + 完了 (끝장이다)",
+   "note": "全 는 전부, 完了 는 끝.",
    "tags": [
     "adverb:全",
     "negative"
    ],
+   "emotion": "sad",
    "lemmas": [
     [
      "那",
@@ -229,21 +241,21 @@
      "完",
      "wán"
     ]
-   ],
-   "rd": "나 지화 취안 완 러.",
-   "emotion": "sad"
+   ]
   },
   {
    "num": 8,
    "speaker": "B",
    "zh": "在家看电影不好吗？🥰",
    "pinyin": "Zài jiā kàn diànyǐng bù hǎo ma?",
+   "rd": "짜이 자 칸 뎬잉 부 하오 마?",
    "ko": "집에서 영화 보면 좋잖아?",
-   "note": "不…吗 반문 (~하지 않아?)",
+   "note": "不…吗 는 반문.",
    "tags": [
     "rhetorical",
     "positive"
    ],
+   "emotion": "gentle",
    "lemmas": [
     [
      "在家",
@@ -265,9 +277,12 @@
      "不好",
      "bù hǎo"
     ]
-   ],
-   "rd": "짜이 자 칸 뎬잉 부 하오 마?",
-   "emotion": "gentle"
+   ]
   }
- ]
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r4_life_l2_d04_1_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ }
 }

@@ -21,12 +21,14 @@
    "speaker": "B",
    "zh": "路上小心，别跑。",
    "pinyin": "Lùshang xiǎoxīn, bié pǎo.",
+   "rd": "루상 샤오신, 볘 파오.",
    "ko": "길 조심하고, 뛰지는 마.",
-   "note": "别 금지 (걱정에서 나온 만류)",
+   "note": "别 = ~하지 마",
    "tags": [
     "care",
     "prohibition:别"
    ],
+   "emotion": "gentle",
    "lemmas": [
     [
      "路上",
@@ -48,42 +50,42 @@
      "跑",
      "pǎo"
     ]
-   ],
-   "rd": "루상 샤오신, 볘 파오.",
-   "emotion": "gentle"
+   ]
   },
   {
    "num": 2,
    "speaker": "A",
-   "zh": "你还是关心我的嘛。😜",
-   "pinyin": "Nǐ háishi guānxīn wǒ de ma.",
+   "zh": "你还是关心我的。",
+   "pinyin": "Nǐ háishi guānxīn wǒ de.",
+   "rd": "니 하이스 관신 워 더.",
    "ko": "그래도 날 걱정해 주네.",
-   "note": "还是……的 (역시 ~하긴 하다)",
+   "note": "还是……的 = 역시 ~하긴 하다",
    "tags": [
     "sweet",
     "particle:嘛"
    ],
+   "emotion": "teasing",
    "lemmas": [
     [
      "关心",
      "关心",
      "guān xīn"
     ]
-   ],
-   "rd": "니 하이스 관신 워 더 마.",
-   "emotion": "teasing"
+   ]
   },
   {
    "num": 3,
    "speaker": "B",
-   "zh": "谁关心你了，快点回来。",
-   "pinyin": "Shéi guānxīn nǐ le, kuài diǎn huílai.",
+   "zh": "谁关心你了，快来。",
+   "pinyin": "Shuí guānxīn nǐ le, kuài lái.",
+   "rd": "수이 관신 니 러, 콰이 라이.",
    "ko": "누가 널 걱정한대, 빨리 와.",
-   "note": "谁……了 반어 (츤데레 부정)",
+   "note": "谁……了 = 반어 (부정)",
    "tags": [
     "banter",
     "rhetorical:谁"
    ],
+   "emotion": "shy",
    "lemmas": [
     [
      "谁",
@@ -101,35 +103,30 @@
      "kuài"
     ],
     [
-     "点",
-     "点",
-     "diǎn"
-    ],
-    [
-     "回来",
-     "回来",
-     "huí lái"
+     "来",
+     "来",
+     "lái"
     ]
-   ],
-   "rd": "세이 관신 니 러, 콰이 뎬 후이라이.",
-   "emotion": "shy"
+   ]
   },
   {
    "num": 4,
    "speaker": "A",
-   "zh": "我带了你爱吃的蛋糕哦。😄",
-   "pinyin": "Wǒ dài le nǐ ài chī de dàngāo o.",
+   "zh": "买了你爱吃的蛋糕哦。😄",
+   "pinyin": "Mǎi le nǐ ài chī de dàngāo o.",
+   "rd": "마이 러 니 아이 츠 더 당아오 오.",
    "ko": "네가 좋아하는 케이크 사 왔어.",
-   "note": "관형절 你爱吃的+명사 + 哦",
+   "note": "你爱吃的 = 네가 좋아하는",
    "tags": [
     "sweet",
     "particle:哦"
    ],
+   "emotion": "cheerful",
    "lemmas": [
     [
-     "带",
-     "带",
-     "dài"
+     "买",
+     "买",
+     "mǎi"
     ],
     [
      "爱",
@@ -146,35 +143,35 @@
      "蛋糕",
      "dàn gāo"
     ]
-   ],
-   "rd": "워 다이 러 니 아이 츠 더 당아오 오.",
-   "emotion": "cheerful"
+   ]
   },
   {
    "num": 5,
    "speaker": "B",
-   "zh": "……原谅你啦。😊",
-   "pinyin": "……Yuánliàng nǐ la.",
-   "ko": "……용서해 준다.",
-   "note": "어기조사 啦 (못 이기는 척 마무리)",
+   "zh": "原谅你啦。😊",
+   "pinyin": "Yuánliàng nǐ la.",
+   "rd": "위안량 니 라.",
+   "ko": "용서해 준다.",
+   "note": "啦 = 못 이기는 척 마무리",
    "tags": [
     "reconcile",
     "particle:啦"
    ],
-   "lemmas": [],
-   "rd": "……위안량 니 라.",
-   "emotion": "shy"
+   "emotion": "shy",
+   "lemmas": []
   },
   {
    "num": 6,
    "speaker": "A",
-   "zh": "太好了，蛋糕给你留了最大块。",
-   "pinyin": "Tàihǎole, dàngāo gěi nǐ liú le zuìdà kuài.",
+   "zh": "太好了，蛋糕最大块留给你了。",
+   "pinyin": "Tài hǎo le, dàngāo zuì dà kuài liú gěi nǐ le.",
+   "rd": "타이 하오 러, 당아오 쭈이 다 콰이 류 게이 니 러.",
    "ko": "잘됐다, 케이크 제일 큰 조각 남겨놨어.",
-   "note": null,
+   "note": "",
    "tags": [
     "ext"
    ],
+   "emotion": "cheerful",
    "lemmas": [
     [
      "太",
@@ -192,11 +189,6 @@
      "dàn gāo"
     ],
     [
-     "留",
-     "留",
-     "liú"
-    ],
-    [
      "最大",
      "最大",
      "zuì dà"
@@ -205,57 +197,52 @@
      "块",
      "块",
      "kuài"
+    ],
+    [
+     "留",
+     "留",
+     "liú"
     ]
-   ],
-   "rd": "타이하오러, 당아오 게이 니 류 러 쭈이다 콰이.",
-   "emotion": "cheerful"
+   ]
   },
   {
    "num": 7,
    "speaker": "B",
-   "zh": "你真的很懂我。",
-   "pinyin": "Nǐ zhēnde hěn dǒng wǒ.",
+   "zh": "你真了解我。",
+   "pinyin": "Nǐ zhēn liǎojiě wǒ.",
+   "rd": "니 전 랴오제 워.",
    "ko": "너 진짜 날 잘 아네.",
-   "note": null,
+   "note": "",
    "tags": [
     "ext"
    ],
+   "emotion": "gentle",
    "lemmas": [
     [
-     "真的",
-     "真的",
-     "zhēn de"
+     "真",
+     "真",
+     "zhēn"
     ],
     [
-     "很",
-     "很",
-     "hěn"
-    ],
-    [
-     "懂",
-     "懂",
-     "dǒng"
+     "了解",
+     "了解",
+     "liǎo jiě"
     ]
-   ],
-   "rd": "니 전더 헌 둥 워.",
-   "emotion": "gentle"
+   ]
   },
   {
    "num": 8,
    "speaker": "A",
-   "zh": "那当然，我先去洗澡了。",
-   "pinyin": "Nà dāngrán, wǒ xiān qù xǐzǎo le.",
+   "zh": "当然，我先去洗澡了。",
+   "pinyin": "Dāngrán, wǒ xiān qù xǐzǎo le.",
+   "rd": "당란, 워 셴 취 시짜오 러.",
    "ko": "당연하지, 나 먼저 씻으러 갈게.",
-   "note": null,
+   "note": "",
    "tags": [
     "ext"
    ],
+   "emotion": "cheerful",
    "lemmas": [
-    [
-     "那",
-     "那",
-     "nà"
-    ],
     [
      "当然",
      "当然",
@@ -276,9 +263,12 @@
      "洗澡",
      "xǐ zǎo"
     ]
-   ],
-   "rd": "나 당란, 워 셴 취 시짜오 러.",
-   "emotion": "cheerful"
+   ]
   }
- ]
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r3_life_l2_d16_2_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ }
 }

@@ -1,0 +1,13 @@
+=== r3_life_l2_d19_2
+title: 시험 ②
+scene: HSK 시험 공부에 지친 Mark를 小丽가 훠궈로 달랜다.
+B: 小丽
+register: 반말(친구·연인)
+1 B | 好好好，我不笑了。 | Hǎo hǎo hǎo, wǒ bù xiào le. | 알았어 알았어, 안 웃을게. | 好好好는 달래는 말, 不…了는 이제 안 ~할게. | emotion=amused
+2 B | 考完试我带你去吃火锅。 | Kǎo wán shì wǒ dài nǐ qù chī huǒguō. | 시험 끝나면 훠궈 먹으러 데려갈게. | 考完은 다 끝내다, 带你去는 데리고 가다. | emotion=gentle
+3 A | 真的？那我现在就去学习！ | Zhēn de? Nà wǒ xiànzài jiù qù xuéxí! | 진짜? 그럼 지금 당장 공부하러 간다! | 就는 바로, 당장. | emotion=surprised
+4 B | 你是为了火锅才学习的？ | Nǐ shì wèile huǒguō cái xuéxí de? | 너 훠궈 때문에 공부하는 거야? | 为了은 ~을 위해서, 才는 그제서야. | emotion=tsukkomi
+5 A | 火锅就是我的老师啊。 | Huǒguō jiùshì wǒ de lǎoshī a. | 훠궈가 곧 내 스승이지. | 就是는 바로 ~이다. | emotion=amused
+6 B | 那今天得好好跟老师学了。 | Nà jīntiān děi hǎohǎo gēn lǎoshī xué le. | 그럼 오늘 스승님께 잘 배워야겠네. |  | emotion=teasing
+7 A | 我现在就去学习了。 | Wǒ xiànzài jiù qù xuéxí le. | 지금 바로 공부하러 갈게. |  | emotion=cheerful
+8 B | 加油，考完我请你吃辣的。 | Jiāyóu, kǎo wán wǒ qǐng nǐ chī là de. | 화이팅, 시험 끝나면 매운 거 사줄게. |  | emotion=gentle

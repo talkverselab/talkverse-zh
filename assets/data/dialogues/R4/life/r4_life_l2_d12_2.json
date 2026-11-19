@@ -20,13 +20,15 @@
    "num": 1,
    "speaker": "B",
    "zh": "蹲下来拍，显腿长。",
-   "pinyin": "Dūn xiàlai pāi, xiǎn tuǐ cháng.",
+   "pinyin": "Dūn xiàlái pāi, xiǎn tuǐ cháng.",
+   "rd": "둔 샤라이 파이, 셴 투이 창.",
    "ko": "쪼그려 앉아서 찍어, 다리가 길어 보여.",
-   "note": "방향보어 下来 + 显… (~해 보이다, 사진 구어 显腿长)",
+   "note": "下来 는 방향, 显 는 ~해 보이다.",
    "tags": [
     "photo",
     "complement:下来"
    ],
+   "emotion": "stiff",
    "lemmas": [
     [
      "蹲下来",
@@ -53,21 +55,21 @@
      "长",
      "zhǎng"
     ]
-   ],
-   "rd": "둔 샤라이 파이, 셴 투이 창.",
-   "emotion": "stiff"
+   ]
   },
   {
    "num": 2,
    "speaker": "A",
    "zh": "好好好，再来一次。",
    "pinyin": "Hǎo hǎo hǎo, zài lái yí cì.",
+   "rd": "하오 하오 하오, 짜이 라이 이 츠.",
    "ko": "알았어 알았어, 한 번 더 가자.",
-   "note": "再……一次 (다시 한 번)",
+   "note": "再……一次 는 다시 한 번.",
    "tags": [
     "photo",
     "adverb:再"
    ],
+   "emotion": "annoyed",
    "lemmas": [
     [
      "好好",
@@ -94,21 +96,21 @@
      "一次",
      "yī cì"
     ]
-   ],
-   "rd": "하오 하오 하오, 짜이 라이 이 츠.",
-   "emotion": "annoyed"
+   ]
   },
   {
    "num": 3,
    "speaker": "B",
    "zh": "这张不错嘛！有进步。",
    "pinyin": "Zhè zhāng búcuò ma! Yǒu jìnbù.",
+   "rd": "저 장 부춰 마! 유 진부.",
    "ko": "이 장은 괜찮네! 발전했어.",
-   "note": "不错 (괜찮다) + 嘛 (의외의 만족)",
+   "note": "不错 는 괜찮다, 嘛 는 의외 만족.",
    "tags": [
     "praise",
     "particle:嘛"
    ],
+   "emotion": "cheerful",
    "lemmas": [
     [
      "这",
@@ -135,21 +137,21 @@
      "进步",
      "jìn bù"
     ]
-   ],
-   "rd": "저 장 부춰 마! 유 진부.",
-   "emotion": "cheerful"
+   ]
   },
   {
    "num": 4,
    "speaker": "A",
    "zh": "我可是拍了一百张。",
    "pinyin": "Wǒ kěshì pāi le yìbǎi zhāng.",
+   "rd": "워 커스 파이 러 이바이 장.",
    "ko": "나 무려 100장 찍었거든.",
-   "note": "可是 (무려 ~거든, 강조 부사)",
+   "note": "可是 는 무려 강조.",
    "tags": [
     "humor",
     "emphasis:可是"
    ],
+   "emotion": "tsukkomi",
    "lemmas": [
     [
      "拍",
@@ -161,21 +163,21 @@
      "张",
      "zhāng"
     ]
-   ],
-   "rd": "워 커스 파이 러 이바이 장.",
-   "emotion": "tsukkomi"
+   ]
   },
   {
    "num": 5,
    "speaker": "B",
-   "zh": "辛苦啦，晚上请你吃好吃的。",
-   "pinyin": "Xīnkǔ la, wǎnshang qǐng nǐ chī hǎochī de.",
+   "zh": "辛苦了，晚上请你吃好吃的。",
+   "pinyin": "Xīnkǔ le, wǎnshang qǐng nǐ chī hǎochī de.",
+   "rd": "신쿠 러, 완상 칭 니 츠 하오츠 더.",
    "ko": "수고했어, 저녁에 맛있는 거 사줄게.",
-   "note": "请+사람+동사 (~에게 사주다)",
+   "note": "请 는 ~에게 사주다.",
    "tags": [
     "sweet",
     "verb:请"
    ],
+   "emotion": "gentle",
    "lemmas": [
     [
      "辛苦",
@@ -202,20 +204,20 @@
      "好吃",
      "hǎo chī"
     ]
-   ],
-   "rd": "신쿠 라, 완상 칭 니 츠 하오츠 더.",
-   "emotion": "gentle"
+   ]
   },
   {
    "num": 6,
    "speaker": "A",
-   "zh": "太好了，那我要吃烤肉！",
-   "pinyin": "Tàihǎole, nà wǒ yào chī kǎoròu!",
+   "zh": "太好了，我要吃肉！",
+   "pinyin": "Tài hǎo le, wǒ yào chī ròu!",
+   "rd": "타이 하오 러, 워 야오 츠 러우!",
    "ko": "좋았어, 그럼 나 고기 먹을래!",
-   "note": null,
+   "note": "",
    "tags": [
     "ext"
    ],
+   "emotion": "excited",
    "lemmas": [
     [
      "太",
@@ -228,11 +230,6 @@
      "hǎo"
     ],
     [
-     "那",
-     "那",
-     "nà"
-    ],
-    [
      "要",
      "要",
      "yào"
@@ -243,34 +240,34 @@
      "chī"
     ],
     [
-     "烤肉",
-     "烤肉",
-     "kǎo ròu"
+     "肉",
+     "肉",
+     "ròu"
     ]
-   ],
-   "rd": "타이하오러, 나 워 야오 츠 카오러우!",
-   "emotion": "excited"
+   ]
   },
   {
    "num": 7,
    "speaker": "B",
-   "zh": "没问题，走吧走吧。😄",
-   "pinyin": "Méi wèntí, zǒu ba zǒu ba.",
+   "zh": "好，走走走。",
+   "pinyin": "Hǎo, zǒu zǒu zǒu.",
+   "rd": "하오, 쩌우 쩌우 쩌우.",
    "ko": "콜, 가자 가자.",
-   "note": null,
+   "note": "",
    "tags": [
     "ext"
    ],
+   "emotion": "cheerful",
    "lemmas": [
     [
-     "没",
-     "没",
-     "méi"
+     "好",
+     "好",
+     "hǎo"
     ],
     [
-     "问题",
-     "问题",
-     "wèn tí"
+     "走",
+     "走",
+     "zǒu"
     ],
     [
      "走",
@@ -282,20 +279,20 @@
      "走",
      "zǒu"
     ]
-   ],
-   "rd": "메이 원티, 쩌우 바 쩌우 바.",
-   "emotion": "cheerful"
+   ]
   },
   {
    "num": 8,
    "speaker": "A",
-   "zh": "下次拍照我肯定更厉害了。",
-   "pinyin": "Xiàcì pāizhào wǒ kěndìng gèng lìhài le.",
+   "zh": "下次我一定拍得更好。",
+   "pinyin": "Xiàcì wǒ yídìng pāi de gèng hǎo.",
+   "rd": "샤츠 워 이딩 파이 더 겅 하오.",
    "ko": "다음엔 사진 진짜 더 잘 찍을 거야.",
-   "note": null,
+   "note": "",
    "tags": [
     "ext"
    ],
+   "emotion": "cheerful",
    "lemmas": [
     [
      "下次",
@@ -303,28 +300,26 @@
      "xià cì"
     ],
     [
-     "拍照",
-     "拍照",
-     "pāi zhào"
+     "一定",
+     "一定",
+     "yí dìng"
     ],
     [
-     "肯定",
-     "肯定",
-     "kěn dìng"
+     "拍",
+     "拍",
+     "pāi"
     ],
     [
-     "更",
-     "更",
-     "gèng"
-    ],
-    [
-     "厉害",
-     "厉害",
-     "lì hài"
+     "更好",
+     "更好",
+     "gèng hǎo"
     ]
-   ],
-   "rd": "샤츠 파이자오 워 컨딩 겅 리하이 러.",
-   "emotion": "cheerful"
+   ]
   }
- ]
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r4_life_l2_d12_2_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ }
 }

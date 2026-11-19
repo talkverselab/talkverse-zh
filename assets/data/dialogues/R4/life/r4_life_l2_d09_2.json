@@ -21,12 +21,14 @@
    "speaker": "A",
    "zh": "别啊，工资会哭的。",
    "pinyin": "Bié a, gōngzī huì kū de.",
+   "rd": "볘 아, 궁쯔 후이 쿠 더.",
    "ko": "안 돼, 월급이 울 거야.",
-   "note": "别 금지 + 会……的 (확신 어투)",
+   "note": "别 는 금지, 会…的 는 확신.",
    "tags": [
     "humor",
     "grammar:会的"
    ],
+   "emotion": "flustered",
    "lemmas": [
     [
      "别",
@@ -48,21 +50,21 @@
      "哭",
      "kū"
     ]
-   ],
-   "rd": "볘 아, 궁쯔 후이 쿠 더.",
-   "emotion": "flustered"
+   ]
   },
   {
    "num": 2,
    "speaker": "B",
-   "zh": "刚才谁说要请客的？",
-   "pinyin": "Gāngcái shéi shuō yào qǐngkè de?",
+   "zh": "刚才谁说请客的？",
+   "pinyin": "Gāngcái shéi shuō qǐngkè de?",
+   "rd": "강차이 세이 숴 칭커 더?",
    "ko": "방금 누가 쏜다고 했더라?",
-   "note": "刚才 (방금) + 의문사 谁로 추궁",
+   "note": "刚才 는 방금, 谁 는 추궁.",
    "tags": [
     "banter",
     "question"
    ],
+   "emotion": "tsukkomi",
    "lemmas": [
     [
      "刚才",
@@ -80,30 +82,25 @@
      "shuō"
     ],
     [
-     "要",
-     "要",
-     "yào"
-    ],
-    [
      "请客",
      "请客",
      "qǐng kè"
     ]
-   ],
-   "rd": "강차이 세이 숴 야오 칭커 더?",
-   "emotion": "tsukkomi"
+   ]
   },
   {
    "num": 3,
    "speaker": "A",
    "zh": "好好好，你赢了。",
    "pinyin": "Hǎo hǎo hǎo, nǐ yíng le.",
+   "rd": "하오 하오 하오, 니 잉 러.",
    "ko": "알았어 알았어, 네가 이겼어.",
-   "note": "好 반복으로 체념, 어기조사 了",
+   "note": "好 반복은 체념.",
    "tags": [
     "banter",
     "particle:了"
    ],
+   "emotion": "annoyed",
    "lemmas": [
     [
      "好好",
@@ -120,26 +117,31 @@
      "赢",
      "yíng"
     ]
-   ],
-   "rd": "하오 하오 하오, 니 잉 러.",
-   "emotion": "annoyed"
+   ]
   },
   {
    "num": 4,
    "speaker": "B",
-   "zh": "那再加一杯奶茶哦。😜",
-   "pinyin": "Nà zài jiā yì bēi nǎichá o.",
+   "zh": "那就再加一杯奶茶哦。😜",
+   "pinyin": "Nà jiù zài jiā yì bēi nǎichá o.",
+   "rd": "나 주 짜이 자 이 베이 나이차 오.",
    "ko": "그럼 밀크티 한 잔 추가야.",
-   "note": "再 (추가로 더) + 어기조사 哦",
+   "note": "再 는 추가로, 哦 는 어기.",
    "tags": [
     "food",
     "particle:哦"
    ],
+   "emotion": "teasing",
    "lemmas": [
     [
      "那",
      "那",
      "nà"
+    ],
+    [
+     "就",
+     "就",
+     "jiù"
     ],
     [
      "再",
@@ -161,21 +163,21 @@
      "奶茶",
      "nǎi chá"
     ]
-   ],
-   "rd": "나 짜이 자 이 베이 나이차 오.",
-   "emotion": "teasing"
+   ]
   },
   {
    "num": 5,
    "speaker": "A",
-   "zh": "我的钱包已经空了……",
-   "pinyin": "Wǒ de qiánbāo yǐjīng kōng le……",
+   "zh": "我钱包已经空了……",
+   "pinyin": "Wǒ qiánbāo yǐjīng kōng le……",
+   "rd": "워 첸바오 이징 쿵 러……",
    "ko": "내 지갑 벌써 텅 비었어……",
-   "note": "已经……了 (이미 ~해 버림)",
+   "note": "已经…了 는 이미 ~해 버림.",
    "tags": [
     "money",
     "grammar:已经了"
    ],
+   "emotion": "sad",
    "lemmas": [
     [
      "钱包",
@@ -192,20 +194,20 @@
      "空",
      "kōng"
     ]
-   ],
-   "rd": "워 더 첸바오 이징 쿵 러……",
-   "emotion": "sad"
+   ]
   },
   {
    "num": 6,
    "speaker": "B",
-   "zh": "哈哈，下个月继续加油吧。😏",
-   "pinyin": "Hāhā, xiàgèyuè jìxù jiāyóu ba.",
+   "zh": "哈哈，下个月继续加油。",
+   "pinyin": "Hāhā, xià ge yuè jìxù jiāyóu.",
+   "rd": "하하, 샤 거 웨 지쉬 자유.",
    "ko": "하하, 다음 달에도 계속 화이팅하자.",
-   "note": null,
+   "note": "",
    "tags": [
     "ext"
    ],
+   "emotion": "amused",
    "lemmas": [
     [
      "下个月",
@@ -222,20 +224,20 @@
      "加油",
      "jiā yóu"
     ]
-   ],
-   "rd": "하하, 샤거웨 지쉬 자유 바.",
-   "emotion": "amused"
+   ]
   },
   {
    "num": 7,
    "speaker": "A",
    "zh": "这个月又要吃土了。",
-   "pinyin": "Zhège yuè yòu yào chī tǔ le.",
+   "pinyin": "Zhè ge yuè yòu yào chī tǔ le.",
+   "rd": "저 거 웨 유 야오 츠 투 러.",
    "ko": "이번 달도 또 궁상떨어야겠네.",
-   "note": null,
+   "note": "",
    "tags": [
     "ext"
    ],
+   "emotion": "sad",
    "lemmas": [
     [
      "这个",
@@ -267,26 +269,21 @@
      "土",
      "tǔ"
     ]
-   ],
-   "rd": "저거 웨 유 야오 츠 투 러.",
-   "emotion": "sad"
+   ]
   },
   {
    "num": 8,
    "speaker": "B",
-   "zh": "至少我们吃得很开心呀。😄",
-   "pinyin": "Zhìshǎo wǒmen chī dé hěn kāixīn ya.",
+   "zh": "可是我们吃得很开心啊。😄",
+   "pinyin": "Kěshì wǒmen chī de hěn kāixīn a.",
+   "rd": "커스 워먼 츠 더 헌 카이신 아.",
    "ko": "그래도 우린 맛있게 먹었잖아.",
-   "note": null,
+   "note": "",
    "tags": [
     "ext"
    ],
+   "emotion": "cheerful",
    "lemmas": [
-    [
-     "至少",
-     "至少",
-     "zhì shǎo"
-    ],
     [
      "我们",
      "我们",
@@ -307,9 +304,12 @@
      "开心",
      "kāi xīn"
     ]
-   ],
-   "rd": "즈사오 워먼 츠 더 헌 카이신 야.",
-   "emotion": "cheerful"
+   ]
   }
- ]
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r4_life_l2_d09_2_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ }
 }

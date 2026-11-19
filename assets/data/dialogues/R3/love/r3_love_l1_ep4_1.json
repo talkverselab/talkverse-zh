@@ -19,14 +19,16 @@
   {
    "num": 1,
    "speaker": "B",
-   "zh": "你昨天为什么不回我？",
-   "pinyin": "Nǐ zuótiān wèishénme bù huí wǒ?",
+   "zh": "昨天怎么不回我？",
+   "pinyin": "Zuótiān zěnme bù huí wǒ?",
+   "rd": "쭤톈 쩐머 부 후이 워?",
    "ko": "어제 왜 답장 안 했어?",
-   "note": "回 (답장하다) — 반말 시작",
+   "note": "回 = 답장하다",
    "tags": [
     "conflict",
     "question"
    ],
+   "emotion": "annoyed",
    "lemmas": [
     [
      "昨天",
@@ -34,9 +36,9 @@
      "zuó tiān"
     ],
     [
-     "为什么",
-     "为什么",
-     "wèi shén me"
+     "怎么",
+     "怎么",
+     "zěn me"
     ],
     [
      "不",
@@ -48,21 +50,21 @@
      "回",
      "huí"
     ]
-   ],
-   "rd": "니 쭤톈 웨이선머 부 후이 워?",
-   "emotion": "annoyed"
+   ]
   },
   {
    "num": 2,
    "speaker": "A",
    "zh": "对不起，手机没电了。",
    "pinyin": "Duìbuqǐ, shǒujī méi diàn le.",
+   "rd": "두이부치, 서우지 메이 뎬 러.",
    "ko": "미안해, 폰 배터리가 없었어.",
-   "note": "没电了 (방전) + 了 변화",
+   "note": "没电了 = 방전됐다",
    "tags": [
     "apology",
     "function:了"
    ],
+   "emotion": "flustered",
    "lemmas": [
     [
      "对不起",
@@ -84,21 +86,21 @@
      "电",
      "diàn"
     ]
-   ],
-   "rd": "두이부치, 서우지 메이 뎬 러.",
-   "emotion": "flustered"
+   ]
   },
   {
    "num": 3,
    "speaker": "B",
-   "zh": "一整天都没电吗？🙄",
-   "pinyin": "Yì zhěng tiān dōu méi diàn ma?",
+   "zh": "一整天都没电？",
+   "pinyin": "Yī zhěng tiān dōu méi diàn?",
+   "rd": "이 정 톈 더우 메이 뎬?",
    "ko": "하루 종일 배터리가 없었다고?",
-   "note": "一整天 + 都 강조",
+   "note": "一整天都 = 하루 종일 다",
    "tags": [
     "conflict",
     "particle:吗"
    ],
+   "emotion": "tsukkomi",
    "lemmas": [
     [
      "一整天",
@@ -120,26 +122,31 @@
      "电",
      "diàn"
     ]
-   ],
-   "rd": "이 정 톈 더우 메이 뎬 마?",
-   "emotion": "tsukkomi"
+   ]
   },
   {
    "num": 4,
    "speaker": "A",
-   "zh": "我加班到很晚，真的。",
-   "pinyin": "Wǒ jiābān dào hěn wǎn, zhēn de.",
+   "zh": "加班加到很晚，真的。",
+   "pinyin": "Jiābān jiā dào hěn wǎn, zhēn de.",
+   "rd": "자반 자 다오 헌 완, 전 더.",
    "ko": "야근을 늦게까지 했어, 진짜야.",
-   "note": "加班 (야근) + 到…晚",
+   "note": "加班 = 야근, 到…晚 = ~까지 늦게",
    "tags": [
     "excuse",
     "topic:job"
    ],
+   "emotion": "flustered",
    "lemmas": [
     [
      "加班",
      "加班",
      "jiā bān"
+    ],
+    [
+     "加",
+     "加",
+     "jiā"
     ],
     [
      "到",
@@ -161,21 +168,21 @@
      "真的",
      "zhēn de"
     ]
-   ],
-   "rd": "워 자반 다오 헌 완, 전 더.",
-   "emotion": "flustered"
+   ]
   },
   {
    "num": 5,
    "speaker": "B",
    "zh": "发一条消息要几秒？",
-   "pinyin": "Fā yì tiáo xiāoxi yào jǐ miǎo?",
+   "pinyin": "Fā yī tiáo xiāoxi yào jǐ miǎo?",
+   "rd": "파 이 탸오 샤오시 야오 지 먀오?",
    "ko": "메시지 하나 보내는 데 몇 초 걸려?",
-   "note": "一条消息 (양사 条) + 要 (걸리다)",
+   "note": "一条消息 = 메시지 하나",
    "tags": [
     "conflict",
     "function:要"
    ],
+   "emotion": "annoyed",
    "lemmas": [
     [
      "发",
@@ -202,21 +209,21 @@
      "秒",
      "miǎo"
     ]
-   ],
-   "rd": "파 이 탸오 샤오시 야오 지 먀오?",
-   "emotion": "annoyed"
+   ]
   },
   {
    "num": 6,
    "speaker": "A",
    "zh": "你说得对，是我不好。",
    "pinyin": "Nǐ shuō de duì, shì wǒ bù hǎo.",
+   "rd": "니 숴 더 두이, 스 워 부 하오.",
    "ko": "네 말이 맞아, 내가 잘못했어.",
-   "note": "说得对 + 是我不好 (사과 공식)",
+   "note": "说得对 = 말이 맞다, 是我不好 = 내가 잘못",
    "tags": [
     "apology",
     "function:得"
    ],
+   "emotion": "sad",
    "lemmas": [
     [
      "说",
@@ -233,42 +240,42 @@
      "不好",
      "bù hǎo"
     ]
-   ],
-   "rd": "니 숴 더 두이, 스 워 부 하오.",
-   "emotion": "sad"
+   ]
   },
   {
    "num": 7,
    "speaker": "B",
    "zh": "我等了你一晚上呢。😢",
-   "pinyin": "Wǒ děng le nǐ yì wǎnshang ne.",
+   "pinyin": "Wǒ děng le nǐ yī wǎnshang ne.",
+   "rd": "워 덩 러 니 이 완상 너.",
    "ko": "나 밤새 기다렸단 말이야.",
-   "note": "等了…一晚上 + 呢 (서운함)",
+   "note": "等了…一晚上 = 밤새 기다렸다",
    "tags": [
     "feeling",
     "particle:呢"
    ],
+   "emotion": "sad",
    "lemmas": [
     [
      "晚上",
      "晚上",
      "wǎn shàng"
     ]
-   ],
-   "rd": "워 덩 러 니 이 완상 너.",
-   "emotion": "sad"
+   ]
   },
   {
    "num": 8,
    "speaker": "A",
    "zh": "对不起，让你担心了。",
    "pinyin": "Duìbuqǐ, ràng nǐ dānxīn le.",
+   "rd": "두이부치, 랑 니 단신 러.",
    "ko": "미안해, 걱정하게 했네.",
-   "note": "让 (~하게 하다) 사역",
+   "note": "让 = ~하게 하다",
    "tags": [
     "apology",
     "function:让"
    ],
+   "emotion": "gentle",
    "lemmas": [
     [
      "对不起",
@@ -285,9 +292,12 @@
      "担心",
      "dān xīn"
     ]
-   ],
-   "rd": "두이부치, 랑 니 단신 러.",
-   "emotion": "gentle"
+   ]
   }
- ]
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r3_love_l1_ep4_1_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ }
 }

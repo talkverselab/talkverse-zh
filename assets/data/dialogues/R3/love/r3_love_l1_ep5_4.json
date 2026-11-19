@@ -20,13 +20,15 @@
    "num": 1,
    "speaker": "B",
    "zh": "一言为定！",
-   "pinyin": "Yì yán wéi dìng!",
+   "pinyin": "Yīyánwéidìng!",
+   "rd": "이옌웨이딩!",
    "ko": "약속한 거다!",
-   "note": "一言为定 (한 마디로 정하다) 성어",
+   "note": "一言为定 = 한 마디로 정하다",
    "tags": [
     "promise",
     "culture"
    ],
+   "emotion": "cheerful",
    "lemmas": [
     [
      "言",
@@ -38,21 +40,21 @@
      "定",
      "dìng"
     ]
-   ],
-   "rd": "이 옌 웨이 딩!",
-   "emotion": "cheerful"
+   ]
   },
   {
    "num": 2,
    "speaker": "A",
    "zh": "先教你一句：사랑해。",
-   "pinyin": "Xiān jiāo nǐ yí jù: saranghae.",
+   "pinyin": "Xiān jiāo nǐ yī jù: saranghae.",
+   "rd": "셴 자오 니 이 쥐: 싸랑하어.",
    "ko": "먼저 한 마디 가르쳐줄게: 사랑해.",
-   "note": "一句 (양사 句) + 한국어 고백",
+   "note": "一句 = 한 마디",
    "tags": [
     "confession",
     "hook:saranghae"
    ],
+   "emotion": "gentle",
    "lemmas": [
     [
      "先",
@@ -69,21 +71,21 @@
      "一句",
      "yī jù"
     ]
-   ],
-   "rd": "셴 자오 니 이 쥐: 싸랑하어.",
-   "emotion": "gentle"
+   ]
   },
   {
    "num": 3,
    "speaker": "B",
    "zh": "什么意思？",
    "pinyin": "Shénme yìsi?",
+   "rd": "선머 이쓰?",
    "ko": "무슨 뜻이야?",
-   "note": "什么意思 되묻기",
+   "note": "什么意思 = 무슨 뜻",
    "tags": [
     "question",
     "topic:korean"
    ],
+   "emotion": "neutral",
    "lemmas": [
     [
      "什么",
@@ -95,21 +97,21 @@
      "意思",
      "yì si"
     ]
-   ],
-   "rd": "선머 이쓰?",
-   "emotion": "neutral"
+   ]
   },
   {
    "num": 4,
    "speaker": "A",
    "zh": "就是——我爱你。",
-   "pinyin": "Jiùshì —— wǒ ài nǐ.",
+   "pinyin": "Jiùshì——wǒ ài nǐ.",
+   "rd": "주스——워 아이 니.",
    "ko": "그러니까—— 사랑해.",
-   "note": "我爱你 정식 고백",
+   "note": "我爱你 = 사랑해",
    "tags": [
     "confession",
     "hook:iloveyou"
    ],
+   "emotion": "shy",
    "lemmas": [
     [
      "就是",
@@ -121,21 +123,21 @@
      "爱",
      "ài"
     ]
-   ],
-   "rd": "주스 —— 워 아이 니.",
-   "emotion": "shy"
+   ]
   },
   {
    "num": 5,
    "speaker": "B",
-   "zh": "……我也是。",
-   "pinyin": "…… Wǒ yě shì.",
-   "ko": "……나도.",
-   "note": "我也是 수락",
+   "zh": "我也是。",
+   "pinyin": "Wǒ yě shì.",
+   "rd": "워 예 스.",
+   "ko": "나도.",
+   "note": "我也是 = 나도 그렇다",
    "tags": [
     "confession",
     "hook:accept"
    ],
+   "emotion": "shy",
    "lemmas": [
     [
      "也",
@@ -147,42 +149,42 @@
      "是",
      "shì"
     ]
-   ],
-   "rd": "…… 워 예 스.",
-   "emotion": "shy"
+   ]
   },
   {
    "num": 6,
    "speaker": "B",
-   "zh": "사랑해，说得对吗？😊",
-   "pinyin": "Saranghae, shuō de duì ma?",
+   "zh": "사랑해，我说得对吗？😊",
+   "pinyin": "Saranghae, wǒ shuō de duì ma?",
+   "rd": "싸랑하어, 워 숴 더 두이 마?",
    "ko": "사랑해, 맞게 말했어?",
-   "note": "배운 말 바로 사용 + 得 보어",
+   "note": "得 = 결과보어",
    "tags": [
     "confession",
     "function:得"
    ],
+   "emotion": "shy",
    "lemmas": [
     [
      "说",
      "说",
      "shuō"
     ]
-   ],
-   "rd": "싸랑하어, 숴 더 두이 마?",
-   "emotion": "shy"
+   ]
   },
   {
    "num": 7,
    "speaker": "A",
    "zh": "完美！一百分！",
-   "pinyin": "Wánměi! Yìbǎi fēn!",
+   "pinyin": "Wánměi! Yī bǎi fēn!",
+   "rd": "완메이! 이 바이 펀!",
    "ko": "완벽해! 100점!",
-   "note": "完美 + 分 (점수)",
+   "note": "完美 = 완벽, 分 = 점수",
    "tags": [
     "praise",
     "joke"
    ],
+   "emotion": "excited",
    "lemmas": [
     [
      "完美",
@@ -194,21 +196,21 @@
      "分",
      "fēn"
     ]
-   ],
-   "rd": "완메이! 이바이 펀!",
-   "emotion": "excited"
+   ]
   },
   {
    "num": 8,
    "speaker": "B",
-   "zh": "那… 你要见我爸妈吗？😊",
-   "pinyin": "Nà… nǐ yào jiàn wǒ bà mā ma?",
+   "zh": "那……你要见家长吗？😊",
+   "pinyin": "Nà…… nǐ yào jiàn jiāzhǎng ma?",
+   "rd": "나…… 니 야오 젠 자장 마?",
    "ko": "그럼… 우리 부모님 만날래?",
-   "note": "要 (의향) + 见家长 callback",
+   "note": "要 = 의향, 见家长 = 부모님 만나다",
    "tags": [
     "family",
     "callback:ep3"
    ],
+   "emotion": "shy",
    "lemmas": [
     [
      "那",
@@ -226,18 +228,16 @@
      "jiàn"
     ],
     [
-     "爸",
-     "爸",
-     "bà"
-    ],
-    [
-     "妈",
-     "妈",
-     "mā"
+     "家长",
+     "家长",
+     "jiā zhǎng"
     ]
-   ],
-   "rd": "나… 니 야오 젠 워 바 마 마?",
-   "emotion": "shy"
+   ]
   }
- ]
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r3_love_l1_ep5_4_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ }
 }

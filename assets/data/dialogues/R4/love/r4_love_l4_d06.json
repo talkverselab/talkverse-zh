@@ -21,12 +21,14 @@
    "speaker": "B",
    "zh": "你也喜欢这本书？",
    "pinyin": "Nǐ yě xǐhuan zhè běn shū?",
+   "rd": "니 예 시환 저 번 수?",
    "ko": "너도 이 책 좋아해?",
-   "note": "也는 '~도'. 공통점을 짚으며 말을 거는 가장 자연스러운 방법.",
+   "note": "‘也’로 공통점 지적",
    "tags": [
     "也",
     "말걸기"
    ],
+   "emotion": "surprised",
    "lemmas": [
     [
      "也",
@@ -53,21 +55,21 @@
      "书",
      "shū"
     ]
-   ],
-   "rd": "니 예 시환 저 번 수?",
-   "emotion": "surprised"
+   ]
   },
   {
    "num": 2,
    "speaker": "A",
-   "zh": "嗯，看了好几遍了。",
-   "pinyin": "Èn, kànle hǎojǐ biàn le.",
+   "zh": "嗯，看了好几遍。",
+   "pinyin": "Ńg, kàn le hǎojǐ biàn.",
+   "rd": "응, 칸 러 하오지 볜.",
    "ko": "응, 몇 번이나 읽었어.",
-   "note": "好几는 '여러, 몇 번이나'. 遍은 처음부터 끝까지 한 번을 세는 동량사.",
+   "note": "‘好几’ + ‘遍’ 동량사",
    "tags": [
     "동량사",
     "好几"
    ],
+   "emotion": "cheerful",
    "lemmas": [
     [
      "看",
@@ -79,21 +81,21 @@
      "好几遍",
      "hǎo jǐ biàn"
     ]
-   ],
-   "rd": "언, 칸러 하오지 볜 러.",
-   "emotion": "cheerful"
+   ]
   },
   {
    "num": 3,
    "speaker": "B",
    "zh": "眼光不错嘛。😜",
    "pinyin": "Yǎnguāng búcuò ma.",
+   "rd": "옌광 부춰 마.",
    "ko": "안목 좋은데?",
-   "note": "眼光은 '안목'. 嘛는 '당연하지 않냐'는 어감을 더하는 어기조사.",
+   "note": "‘眼光’ + ‘嘛’",
    "tags": [
     "칭찬",
     "어기조사"
    ],
+   "emotion": "teasing",
    "lemmas": [
     [
      "眼光",
@@ -105,21 +107,21 @@
      "不错",
      "bù cuò"
     ]
-   ],
-   "rd": "옌광 부춰 마.",
-   "emotion": "teasing"
+   ]
   },
   {
    "num": 4,
    "speaker": "A",
-   "zh": "你也看过吗？😄",
-   "pinyin": "Nǐ yě kànguo ma?",
+   "zh": "你也看过？",
+   "pinyin": "Nǐ yě kàn guo?",
+   "rd": "니 예 칸 궈?",
    "ko": "너도 읽어 봤어?",
-   "note": "동사+过는 '~해 본 적 있다'는 경험을 나타낸다.",
+   "note": "‘看过’ 경험",
    "tags": [
     "경험过",
     "질문"
    ],
+   "emotion": "cheerful",
    "lemmas": [
     [
      "也",
@@ -131,26 +133,26 @@
      "看过",
      "kàn guò"
     ]
-   ],
-   "rd": "니 예 칸궈 마?",
-   "emotion": "cheerful"
+   ]
   },
   {
    "num": 5,
    "speaker": "B",
-   "zh": "看过，结局我都哭了。",
-   "pinyin": "Kànguo, jiéjú wǒ dōu kū le.",
+   "zh": "看了，结局都哭了。",
+   "pinyin": "Kàn le, jiéjú dōu kū le.",
+   "rd": "칸 러, 제쥐 더우 쿠 러.",
    "ko": "읽었지, 결말에서 울기까지 했어.",
-   "note": "结局는 '결말'. 都는 여기서 '~하기까지 했다'는 정도 강조로 쓰였다.",
+   "note": "‘结局’ + ‘都’ 강조",
    "tags": [
     "都강조",
     "감상"
    ],
+   "emotion": "sad",
    "lemmas": [
     [
-     "看过",
-     "看过",
-     "kàn guò"
+     "看",
+     "看",
+     "kàn"
     ],
     [
      "结",
@@ -172,21 +174,21 @@
      "哭",
      "kū"
     ]
-   ],
-   "rd": "칸궈, 제쥐 워 더우 쿠 러.",
-   "emotion": "sad"
+   ]
   },
   {
    "num": 6,
    "speaker": "A",
    "zh": "我也是！太感人了。",
    "pinyin": "Wǒ yě shì! Tài gǎnrén le.",
+   "rd": "워 예 스! 타이 간런 러.",
    "ko": "나도! 진짜 감동이었어.",
-   "note": "太…了는 '너무 ~하다' 감탄 구문. 感人은 '감동적이다'.",
+   "note": "‘太…了’ + ‘感人’",
    "tags": [
     "太…了",
     "공감"
    ],
+   "emotion": "excited",
    "lemmas": [
     [
      "也",
@@ -213,21 +215,21 @@
      "人",
      "rén"
     ]
-   ],
-   "rd": "워 예 스! 타이 간런 러.",
-   "emotion": "excited"
+   ]
   },
   {
    "num": 7,
    "speaker": "B",
    "zh": "找个地方聊聊呗？😜",
    "pinyin": "Zhǎo ge dìfang liáoliao bei?",
+   "rd": "자오 거 디팡 랴오랴오 베이?",
    "ko": "어디 가서 얘기 좀 더 할까?",
-   "note": "找个地方은 '자리를 찾다'. 동사 중첩 聊聊+呗로 부담 없이 제안한다.",
+   "note": "‘找个地方’ + ‘聊聊呗’",
    "tags": [
     "제안",
     "동사중첩"
    ],
+   "emotion": "teasing",
    "lemmas": [
     [
      "找",
@@ -254,21 +256,21 @@
      "聊",
      "liáo"
     ]
-   ],
-   "rd": "자오 거 디팡 랴오랴오 베이?",
-   "emotion": "teasing"
+   ]
   },
   {
    "num": 8,
    "speaker": "A",
-   "zh": "好啊，楼下就有咖啡店。",
-   "pinyin": "Hǎo a, lóuxià jiù yǒu kāfēidiàn.",
+   "zh": "好，楼下就有咖啡。",
+   "pinyin": "Hǎo, lóuxià jiù yǒu kāfēi.",
+   "rd": "하오, 러우샤 주 유 카페이.",
    "ko": "좋아, 바로 아래층에 카페 있어.",
-   "note": "楼下는 '아래층'. 就有는 '바로 ~에 있다'며 가까움을 강조하는 존현문.",
+   "note": "‘楼下’ + ‘就有’",
    "tags": [
     "존현문",
     "수락"
    ],
+   "emotion": "cheerful",
    "lemmas": [
     [
      "好",
@@ -294,15 +296,13 @@
      "咖啡",
      "咖啡",
      "kā fēi"
-    ],
-    [
-     "店",
-     "店",
-     "diàn"
     ]
-   ],
-   "rd": "하오 아, 러우샤 주 유 카페이뎬.",
-   "emotion": "cheerful"
+   ]
   }
- ]
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r4_love_l4_d06_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ }
 }

@@ -21,12 +21,14 @@
    "speaker": "B",
    "zh": "我也不知道嘛。😳",
    "pinyin": "Wǒ yě bù zhīdào ma.",
+   "rd": "워 예 부 즈다오 마.",
    "ko": "나도 모른단 말이야.",
-   "note": "어기조사 嘛 (응석·투정 어감)",
+   "note": "嘛 는 응석·투정 어감.",
    "tags": [
     "particle:嘛",
     "banter"
    ],
+   "emotion": "flustered",
    "lemmas": [
     [
      "也",
@@ -43,21 +45,21 @@
      "知道",
      "zhī dào"
     ]
-   ],
-   "rd": "워 예 부 즈다오 마.",
-   "emotion": "flustered"
+   ]
   },
   {
    "num": 2,
    "speaker": "A",
-   "zh": "我们点了一个小时了。",
-   "pinyin": "Wǒmen diǎn le yī ge xiǎoshí le.",
+   "zh": "我们已经选了一个小时了。",
+   "pinyin": "Wǒmen yǐjīng xuǎn le yí ge xiǎoshí le.",
+   "rd": "워먼 이징 쉬안 러 이 거 샤오스 러.",
    "ko": "우리 한 시간째 고르고 있어.",
-   "note": "了…了 구문 (지금까지 ~한 지 얼마 됐다)",
+   "note": "了…了 는 지금까지 ~한 지.",
    "tags": [
     "structure:了了",
     "chaos"
    ],
+   "emotion": "annoyed",
    "lemmas": [
     [
      "我们",
@@ -65,9 +67,14 @@
      "wǒ men"
     ],
     [
-     "点",
-     "点",
-     "diǎn"
+     "已经",
+     "已经",
+     "yǐ jīng"
+    ],
+    [
+     "选",
+     "选",
+     "xuǎn"
     ],
     [
      "一个",
@@ -79,21 +86,21 @@
      "小时",
      "xiǎo shí"
     ]
-   ],
-   "rd": "워먼 뎬 러 이 거 샤오스 러.",
-   "emotion": "annoyed"
+   ]
   },
   {
    "num": 3,
    "speaker": "B",
-   "zh": "那石头剪刀布决定吧。😄",
-   "pinyin": "Nà shítou jiǎndāo bù juédìng ba.",
+   "zh": "那我们猜拳定吧。😄",
+   "pinyin": "Nà wǒmen cāiquán dìng ba.",
+   "rd": "나 워먼 차이취안 딩 바.",
    "ko": "그럼 가위바위보로 정하자.",
-   "note": "청유 吧 (~하자)",
+   "note": "吧 는 청유.",
    "tags": [
     "particle:吧",
     "game"
    ],
+   "emotion": "cheerful",
    "lemmas": [
     [
      "那",
@@ -101,35 +108,35 @@
      "nà"
     ],
     [
-     "石头",
-     "石头",
-     "shí tou"
+     "我们",
+     "我们",
+     "wǒ men"
     ],
     [
-     "剪刀",
-     "剪刀",
-     "jiǎn dāo"
+     "猜拳",
+     "猜拳",
+     "cāi quán"
     ],
     [
-     "决定",
-     "决定",
-     "jué dìng"
+     "定",
+     "定",
+     "dìng"
     ]
-   ],
-   "rd": "나 스터우 젠다오 부 줴딩 바.",
-   "emotion": "cheerful"
+   ]
   },
   {
    "num": 4,
    "speaker": "A",
-   "zh": "你赢了……那吃什么？",
-   "pinyin": "Nǐ yíng le…… nà chī shénme?",
+   "zh": "你赢了，那吃什么？",
+   "pinyin": "Nǐ yíng le, nà chī shénme?",
+   "rd": "니 잉 러, 나 츠 선머?",
    "ko": "네가 이겼네… 그래서 뭐 먹어?",
-   "note": "了 완료 + 那 (화제 전환 접속)",
+   "note": "了 는 완료, 那 는 화제 전환.",
    "tags": [
     "aspect:了",
     "chaos"
    ],
+   "emotion": "annoyed",
    "lemmas": [
     [
      "赢",
@@ -151,41 +158,41 @@
      "什么",
      "shén me"
     ]
-   ],
-   "rd": "니 잉 러…… 나 츠 선머?",
-   "emotion": "annoyed"
+   ]
   },
   {
    "num": 5,
    "speaker": "B",
-   "zh": "嗯……随便。",
-   "pinyin": "Èn…… suíbiàn.",
+   "zh": "嗯……随便吧。😜",
+   "pinyin": "En…… suíbiàn ba.",
+   "rd": "언…… 쑤이볜 바.",
    "ko": "음… 아무거나.",
-   "note": "随便",
+   "note": "随便 는 아무거나.",
    "tags": [
     "colloquial:随便",
     "humor"
    ],
+   "emotion": "teasing",
    "lemmas": [
     [
      "随便",
      "随便",
      "suí biàn"
     ]
-   ],
-   "rd": "언…… 쑤이볜.",
-   "emotion": "teasing"
+   ]
   },
   {
    "num": 6,
    "speaker": "A",
-   "zh": "算了，我直接点外卖了。",
-   "pinyin": "Suànle, wǒ zhíjiē diǎn wàimài le.",
+   "zh": "算了，我来点外卖。",
+   "pinyin": "Suàn le, wǒ lái diǎn wàimài.",
+   "rd": "쏸 러, 워 라이 뎬 와이마이.",
    "ko": "됐다, 그냥 내가 배달 시킬게.",
-   "note": null,
+   "note": "",
    "tags": [
     "ext"
    ],
+   "emotion": "annoyed",
    "lemmas": [
     [
      "算了",
@@ -193,9 +200,9 @@
      "suàn"
     ],
     [
-     "直接",
-     "直接",
-     "zhí jiē"
+     "来",
+     "来",
+     "lái"
     ],
     [
      "点",
@@ -207,21 +214,26 @@
      "外卖",
      "wài mài"
     ]
-   ],
-   "rd": "쏸러, 워 즈제 뎬 와이마이 러.",
-   "emotion": "annoyed"
+   ]
   },
   {
    "num": 7,
    "speaker": "B",
-   "zh": "点什么？",
-   "pinyin": "Diǎn shénme?",
+   "zh": "你要点什么啊？😮",
+   "pinyin": "Nǐ yào diǎn shénme a?",
+   "rd": "니 야오 뎬 선머 아?",
    "ko": "뭐 시키게?",
-   "note": null,
+   "note": "",
    "tags": [
     "ext"
    ],
+   "emotion": "neutral",
    "lemmas": [
+    [
+     "要",
+     "要",
+     "yào"
+    ],
     [
      "点",
      "点",
@@ -232,39 +244,42 @@
      "什么",
      "shén me"
     ]
-   ],
-   "rd": "뎬 선머?",
-   "emotion": "neutral"
+   ]
   },
   {
    "num": 8,
    "speaker": "A",
-   "zh": "惊喜，你就等着吧。😜",
-   "pinyin": "Jīngxǐ, nǐ jiù děng zhe ba.",
+   "zh": "会吓你一跳，等着吧。😜",
+   "pinyin": "Huì xià nǐ yí tiào, děngzhe ba.",
+   "rd": "후이 샤 니 이 탸오, 덩저 바.",
    "ko": "깜짝 놀랄 거니까 기다려 봐.",
-   "note": null,
+   "note": "",
    "tags": [
     "ext"
    ],
+   "emotion": "teasing",
    "lemmas": [
     [
-     "惊",
-     "惊",
-     "jīng"
+     "会",
+     "会",
+     "huì"
     ],
     [
-     "喜",
-     "喜",
-     "xǐ"
+     "吓",
+     "吓",
+     "xià"
     ],
     [
-     "就",
-     "就",
-     "jiù"
+     "跳",
+     "跳",
+     "tiào"
     ]
-   ],
-   "rd": "징시, 니 주 덩 저 바.",
-   "emotion": "teasing"
+   ]
   }
- ]
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r4_life_l2_d03_2_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ }
 }

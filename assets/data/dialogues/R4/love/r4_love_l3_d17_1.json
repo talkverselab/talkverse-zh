@@ -19,14 +19,16 @@
   {
    "num": 1,
    "speaker": "A",
-   "zh": "小丽，我有件事要告诉你。",
-   "pinyin": "Xiǎolì, wǒ yǒu jiàn shì yào gàosu nǐ.",
+   "zh": "小丽，我有件事要跟你说。",
+   "pinyin": "Xiǎolì, wǒ yǒu jiàn shì yào gēn nǐ shuō.",
+   "rd": "샤오리, 워 유 젠 스 야오 건 니 숴.",
    "ko": "샤오리, 너한테 할 말이 있어.",
-   "note": "양사 件 + '要+동사' (해야 할 일)",
+   "note": "‘件’ 양사 + ‘要+동사’",
    "tags": [
     "양사",
     "고백"
    ],
+   "emotion": "stiff",
    "lemmas": [
     [
      "有",
@@ -49,25 +51,25 @@
      "yào"
     ],
     [
-     "告诉",
-     "告诉",
-     "gào sù"
+     "说",
+     "说",
+     "shuō"
     ]
-   ],
-   "rd": "샤오리, 워 유 젠 스 야오 가오쑤 니.",
-   "emotion": "stiff"
+   ]
   },
   {
    "num": 2,
    "speaker": "B",
-   "zh": "你的表情好严肃，吓我一跳。",
-   "pinyin": "Nǐ de biǎoqíng hǎo yánsù, xià wǒ yí tiào.",
+   "zh": "你表情怎么这么严肃，吓我一跳。",
+   "pinyin": "Nǐ biǎoqíng zěnme zhème yánsù, xià wǒ yí tiào.",
+   "rd": "니 뱌오칭 쩐머 저머 옌쑤, 샤 워 이 탸오.",
    "ko": "표정이 왜 이렇게 심각해, 깜짝 놀랐잖아.",
-   "note": "관용표현 '吓一跳' (깜짝 놀라다)",
+   "note": "‘吓一跳’는 ‘깜짝 놀라다’",
    "tags": [
     "관용어",
     "감정"
    ],
+   "emotion": "surprised",
    "lemmas": [
     [
      "表情",
@@ -75,9 +77,14 @@
      "biǎo qíng"
     ],
     [
-     "好",
-     "好",
-     "hǎo"
+     "怎么",
+     "怎么",
+     "zěn me"
+    ],
+    [
+     "这么",
+     "这么",
+     "zhè me"
     ],
     [
      "严肃",
@@ -94,21 +101,21 @@
      "跳",
      "tiào"
     ]
-   ],
-   "rd": "니 더 뱌오칭 하오 옌쑤, 샤 워 이 탸오.",
-   "emotion": "surprised"
+   ]
   },
   {
    "num": 3,
    "speaker": "A",
-   "zh": "公司可能要把我调回首尔。",
-   "pinyin": "Gōngsī kěnéng yào bǎ wǒ diào huí Shǒu'ěr.",
+   "zh": "公司可能把我调回首尔。",
+   "pinyin": "Gōngsī kěnéng bǎ wǒ diào huí Shǒu'ěr.",
+   "rd": "궁쓰 컨엉 바 워 댜오 후이 서우'얼.",
    "ko": "회사가 나를 서울로 다시 발령 낼지도 몰라.",
-   "note": "把자문 + 방향보어 回",
+   "note": "‘把’자문 + 방향보어 ‘回’",
    "tags": [
     "把자문",
     "직장"
    ],
+   "emotion": "worried",
    "lemmas": [
     [
      "公司",
@@ -119,11 +126,6 @@
      "可能",
      "可能",
      "kě néng"
-    ],
-    [
-     "要",
-     "要",
-     "yào"
     ],
     [
      "调",
@@ -140,21 +142,21 @@
      "首",
      "shǒu"
     ]
-   ],
-   "rd": "궁쓰 컨엉 야오 바 워 댜오 후이 서우'얼.",
-   "emotion": "worried"
+   ]
   },
   {
    "num": 4,
    "speaker": "B",
    "zh": "什么？什么时候的事？",
    "pinyin": "Shénme? Shénme shíhou de shì?",
+   "rd": "선머? 선머 스허우 더 스?",
    "ko": "뭐? 언제 나온 얘기야?",
-   "note": "의문사 什么 / 什么时候",
+   "note": "‘什么’/‘什么时候’",
    "tags": [
     "의문사",
     "충격"
    ],
+   "emotion": "surprised",
    "lemmas": [
     [
      "什么",
@@ -176,22 +178,27 @@
      "事",
      "shì"
     ]
-   ],
-   "rd": "선머? 선머 스허우 더 스?",
-   "emotion": "surprised"
+   ]
   },
   {
    "num": 5,
    "speaker": "A",
-   "zh": "上午王哥突然告诉我的。",
-   "pinyin": "Shàngwǔ Wáng gē tūrán gàosu wǒ de.",
+   "zh": "是上午王哥突然告诉我的。",
+   "pinyin": "Shì shàngwǔ Wáng gē tūrán gàosu wǒ de.",
+   "rd": "스 상우 왕 거 투란 가오쑤 워 더.",
    "ko": "오전에 왕 형이 갑자기 알려준 거야.",
-   "note": "(是)…的 구문 — 이미 일어난 일의 시점·주체 강조",
+   "note": "‘是…的’로 시점·주체 강조",
    "tags": [
     "是…的",
     "직장"
    ],
+   "emotion": "neutral",
    "lemmas": [
+    [
+     "是",
+     "是",
+     "shì"
+    ],
     [
      "上午",
      "上午",
@@ -207,21 +214,21 @@
      "告诉",
      "gào sù"
     ]
-   ],
-   "rd": "상우 왕 거 투란 가오쑤 워 더.",
-   "emotion": "neutral"
+   ]
   },
   {
    "num": 6,
    "speaker": "B",
    "zh": "那你是怎么回答的？",
    "pinyin": "Nà nǐ shì zěnme huídá de?",
+   "rd": "나 니 스 쩐머 후이다 더?",
    "ko": "그래서 넌 뭐라고 대답했는데?",
-   "note": "是…的 의문형 (방식 묻기)",
+   "note": "‘是…的’ 의문형으로 방식 묻기",
    "tags": [
     "是…的",
     "질문"
    ],
+   "emotion": "worried",
    "lemmas": [
     [
      "那",
@@ -243,21 +250,21 @@
      "回答",
      "huí dá"
     ]
-   ],
-   "rd": "나 니 스 쩐머 후이다 더?",
-   "emotion": "worried"
+   ]
   },
   {
    "num": 7,
    "speaker": "A",
-   "zh": "我说我需要时间考虑。",
-   "pinyin": "Wǒ shuō wǒ xūyào shíjiān kǎolǜ.",
+   "zh": "我说需要时间想想。",
+   "pinyin": "Wǒ shuō xūyào shíjiān xiǎngxiang.",
+   "rd": "워 숴 쉬야오 스젠 샹샹.",
    "ko": "생각할 시간이 필요하다고 했어.",
-   "note": "需要+명사+동사 구조",
+   "note": "‘需要+명사+동사’ 구조",
    "tags": [
     "需要",
     "간접화법"
    ],
+   "emotion": "neutral",
    "lemmas": [
     [
      "说",
@@ -275,30 +282,35 @@
      "shí jiān"
     ],
     [
-     "考虑",
-     "考虑",
-     "kǎo lǜ"
+     "想",
+     "想",
+     "xiǎng"
+    ],
+    [
+     "想",
+     "想",
+     "xiǎng"
     ]
-   ],
-   "rd": "워 숴 워 쉬야오 스젠 카오뤼.",
-   "emotion": "neutral"
+   ]
   },
   {
    "num": 8,
    "speaker": "B",
-   "zh": "考虑？这还用考虑吗？😒",
-   "pinyin": "Kǎolǜ? Zhè hái yòng kǎolǜ ma?",
+   "zh": "想？这还用想吗？😒",
+   "pinyin": "Xiǎng? Zhè hái yòng xiǎng ma?",
+   "rd": "샹? 저 하이 융 샹 마?",
    "ko": "생각? 이게 생각할 일이야?",
-   "note": "반어문 '还用…吗' (~할 필요도 없다)",
+   "note": "‘还用…吗’는 반어문",
    "tags": [
     "반어문",
     "갈등"
    ],
+   "emotion": "annoyed",
    "lemmas": [
     [
-     "考虑",
-     "考虑",
-     "kǎo lǜ"
+     "想",
+     "想",
+     "xiǎng"
     ],
     [
      "这",
@@ -311,13 +323,16 @@
      "hái"
     ],
     [
-     "考虑",
-     "考虑",
-     "kǎo lǜ"
+     "想",
+     "想",
+     "xiǎng"
     ]
-   ],
-   "rd": "카오뤼? 저 하이 융 카오뤼 마?",
-   "emotion": "annoyed"
+   ]
   }
- ]
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r4_love_l3_d17_1_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ }
 }

@@ -1,0 +1,8 @@
+1 A: 小丽，你最大的爱好是什么？ / Xiǎolì, nǐ zuì dà de àihào shì shénme? / 샤오리, 네 제일 큰 취미가 뭐야? / 的=관형어 조사 / neutral
+2 B: 我最喜欢画画。 / Wǒ zuì xǐhuan huàhuà. / 나는 그림 그리는 게 제일 좋아. / 最=가장 / cheerful
+3 B: 你呢？你喜欢做什么？ / Nǐ ne? Nǐ xǐhuan zuò shénme? / 너는? 너는 뭐 하는 거 좋아해? / 呢=되묻기 / neutral
+4 A: 我喜欢爬山，特别痛快。 / Wǒ xǐhuan páshān, tèbié tòngkuài. / 나는 등산이 좋아, 진짜 상쾌하거든. / 特别=특별히 / cheerful
+5 B: 那我们互相教吧！ / Nà wǒmen hùxiāng jiāo ba! / 그럼 우리 서로 가르쳐 주자! / 互相=서로, 吧=청유 / excited
+6 A: 好主意！先教我画画。 / Hǎo zhǔyi! Xiān jiāo wǒ huàhuà. / 좋은 생각이야! 먼저 나한테 그림 가르쳐 줘. / 先=먼저, 教=가르치다 / excited
+7 B: 先试试画一只猫。 / Xiān shìshi huà yì zhī māo. / 먼저 고양이 한 마리 그려 봐. / 只=마리 양사, 试试=시도 / gentle
+8 A: 哈哈，我画得太差了！ / Hāhā, wǒ huà de tài chà le! / 하하, 나 너무 못 그렸어! / 得=정도보어, 太…了=너무 ~하다 / amused

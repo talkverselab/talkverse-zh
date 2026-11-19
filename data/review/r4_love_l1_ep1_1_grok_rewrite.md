@@ -1,0 +1,13 @@
+=== r4_love_l1_ep1_1
+title: 매칭 ①
+scene: Mark 매칭앱 첫 메시지 → 小丽 자기소개 → 약속 호출 → Lily↔小丽 hook
+B: 小丽
+register: 반말(친구·연인)
+1 A | 你好啊！ | Nǐ hǎo a! | 안녕하세요! | 啊는 감정·친근함을 더하는 어기조사. | emotion=cheerful
+2 A | 我是{name}，你呢？ | Wǒ shì {name}, nǐ ne? | 저는 {name}입니다, 당신은요? | 呢는 되묻기 어기조사. | emotion=polite
+3 B | 我是小丽，也可以叫我Lily。 | Wǒ shì Xiǎolì, yě kěyǐ jiào wǒ Lily. | 저는 샤오리예요, Lily라고 불러도 돼요. | 也…可以는 ‘~해도 된다’는 허락. | emotion=polite
+4 A | 我想认识你，可以吗？ | Wǒ xiǎng rènshi nǐ, kěyǐ ma? | 알고 지내고 싶어요, 괜찮을까요? | 想은 의지, 吗는 의문. | emotion=shy
+5 B | 好呀，你是哪国人？ | Hǎo ya, nǐ shì nǎ guó rén? | 좋아요, 어느 나라 사람이에요? | 呀는 부드러운 승낙, 是…人은 국적 묻기. | emotion=cheerful
+6 A | 我是韩国人，在首尔工作。 | Wǒ shì Hánguó rén, zài Shǒu'ěr gōngzuò. | 저는 한국 사람이고, 서울에서 일해요. | 是는 국적, 在…工作은 장소에서 일하다. | emotion=polite
+7 B | 不过你的中文很好啊！ | Búguò nǐ de Zhōngwén hěn hǎo a! | 근데... 중국어 잘하시네요! | 不过는 화제 전환, 的는 소유. | emotion=surprised
+8 A | 哪里哪里，还在学呢。 | Nǎlǐ nǎlǐ, hái zài xué ne. | 아니에요, 아직 배우는 중이에요. | 哪里哪里는 겸손, 在…呢는 진행. | emotion=shy

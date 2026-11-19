@@ -21,59 +21,61 @@
    "speaker": "A",
    "zh": "你好啊！😄",
    "pinyin": "Nǐ hǎo a!",
+   "rd": "니 하오 아!",
    "ko": "안녕하세요!",
-   "note": "어기조사 啊 (감정·친근)",
+   "note": "啊는 감정·친근함을 더하는 어기조사.",
    "tags": [
     "greeting",
     "particle:啊"
    ],
+   "emotion": "cheerful",
    "lemmas": [
     [
      "你好",
      "你好",
      "nǐ hǎo"
     ]
-   ],
-   "rd": "니 하오 아!",
-   "emotion": "cheerful"
+   ]
   },
   {
    "num": 2,
    "speaker": "A",
-   "zh": "我叫 Mark，你呢？🙏",
-   "pinyin": "Wǒ jiào Mark, nǐ ne?",
-   "ko": "저는 Mark입니다, 당신은요?",
-   "note": "어기조사 呢 (되묻기)",
+   "zh": "我是{name}，你呢？🙏",
+   "pinyin": "Wǒ shì {name}, nǐ ne?",
+   "rd": "워 스 {name}, 니 너?",
+   "ko": "저는 {name}입니다, 당신은요?",
+   "note": "呢는 되묻기 어기조사.",
    "tags": [
     "self-intro",
     "particle:呢"
    ],
+   "emotion": "polite",
    "lemmas": [
     [
-     "叫",
-     "叫",
-     "jiào"
+     "是",
+     "是",
+     "shì"
     ]
-   ],
-   "rd": "워 자오 Mark, 니 너?",
-   "emotion": "polite"
+   ]
   },
   {
    "num": 3,
    "speaker": "B",
-   "zh": "我叫小丽，也可以叫我 Lily。",
-   "pinyin": "Wǒ jiào Xiǎolì, yě kěyǐ jiào wǒ Lily.",
+   "zh": "我是小丽，也可以叫我Lily。",
+   "pinyin": "Wǒ shì Xiǎolì, yě kěyǐ jiào wǒ Lily.",
+   "rd": "워 스 샤오리, 예 커이 자오 워 Lily.",
    "ko": "저는 샤오리예요, Lily라고 불러도 돼요.",
-   "note": "자기소개 + 也…可以",
+   "note": "也…可以는 ‘~해도 된다’는 허락.",
    "tags": [
     "self-intro",
     "hook:naming"
    ],
+   "emotion": "polite",
    "lemmas": [
     [
-     "叫",
-     "叫",
-     "jiào"
+     "是",
+     "是",
+     "shì"
     ],
     [
      "也",
@@ -85,21 +87,21 @@
      "叫",
      "jiào"
     ]
-   ],
-   "rd": "워 자오 샤오리, 예 커이 자오 워 Lily.",
-   "emotion": "polite"
+   ]
   },
   {
    "num": 4,
    "speaker": "A",
-   "zh": "想认识你，可以吗？😊",
-   "pinyin": "Xiǎng rènshi nǐ, kěyǐ ma?",
+   "zh": "我想认识你，可以吗？😊",
+   "pinyin": "Wǒ xiǎng rènshi nǐ, kěyǐ ma?",
+   "rd": "워 샹 런스 니, 커이 마?",
    "ko": "알고 지내고 싶어요, 괜찮을까요?",
-   "note": "想 의지 + 吗 의문",
+   "note": "想은 의지, 吗는 의문.",
    "tags": [
     "request",
     "particle:吗"
    ],
+   "emotion": "shy",
    "lemmas": [
     [
      "想",
@@ -111,22 +113,27 @@
      "认识",
      "rèn shí"
     ]
-   ],
-   "rd": "샹 런스 니, 커이 마?",
-   "emotion": "shy"
+   ]
   },
   {
    "num": 5,
    "speaker": "B",
-   "zh": "可以呀，你是哪国人？",
-   "pinyin": "Kěyǐ ya, nǐ shì nǎ guó rén?",
+   "zh": "好呀，你是哪国人？",
+   "pinyin": "Hǎo ya, nǐ shì nǎ guó rén?",
+   "rd": "하오 야, 니 스 나 궈 런?",
    "ko": "좋아요, 어느 나라 사람이에요?",
-   "note": "어기조사 呀 (부드러운 승낙) + 是…人 국적 묻기",
+   "note": "呀는 부드러운 승낙, 是…人은 국적 묻기.",
    "tags": [
     "question",
     "particle:呀"
    ],
+   "emotion": "cheerful",
    "lemmas": [
+    [
+     "好",
+     "好",
+     "hǎo"
+    ],
     [
      "是",
      "是",
@@ -147,21 +154,21 @@
      "人",
      "rén"
     ]
-   ],
-   "rd": "커이 야, 니 스 나 궈 런?",
-   "emotion": "cheerful"
+   ]
   },
   {
    "num": 6,
    "speaker": "A",
    "zh": "我是韩国人，在首尔工作。",
    "pinyin": "Wǒ shì Hánguó rén, zài Shǒu'ěr gōngzuò.",
+   "rd": "워 스 한궈 런, 짜이 서우'얼 궁쭤.",
    "ko": "저는 한국 사람이고, 서울에서 일해요.",
-   "note": "是 + 在…工作",
+   "note": "是는 국적, 在…工作은 장소에서 일하다.",
    "tags": [
     "self-intro",
     "function:是"
    ],
+   "emotion": "polite",
    "lemmas": [
     [
      "是",
@@ -188,21 +195,21 @@
      "工作",
      "gōng zuò"
     ]
-   ],
-   "rd": "워 스 한궈 런, 짜이 서우'얼 궁쭤.",
-   "emotion": "polite"
+   ]
   },
   {
    "num": 7,
    "speaker": "B",
-   "zh": "不过…… 你的中文很好！",
-   "pinyin": "Búguò…… nǐ de zhōngwén hěn hǎo!",
+   "zh": "不过你的中文很好啊！😮",
+   "pinyin": "Búguò nǐ de Zhōngwén hěn hǎo a!",
+   "rd": "부궈 니 더 중원 헌 하오 아!",
    "ko": "근데... 중국어 잘하시네요!",
-   "note": "不过 (그런데, 화제 전환) + 的 소유",
+   "note": "不过는 화제 전환, 的는 소유.",
    "tags": [
     "praise",
     "expression:不过"
    ],
+   "emotion": "surprised",
    "lemmas": [
     [
      "中文",
@@ -219,21 +226,21 @@
      "好",
      "hǎo"
     ]
-   ],
-   "rd": "부궈…… 니 더 중원 헌 하오!",
-   "emotion": "surprised"
+   ]
   },
   {
    "num": 8,
    "speaker": "A",
-   "zh": "哪里哪里，我还在学呢。😊",
-   "pinyin": "Nǎli nǎli, wǒ hái zài xué ne.",
+   "zh": "哪里哪里，还在学呢。😊",
+   "pinyin": "Nǎlǐ nǎlǐ, hái zài xué ne.",
+   "rd": "나리 나리, 하이 짜이 쉐 너.",
    "ko": "아니에요, 아직 배우는 중이에요.",
-   "note": "哪里哪里 겸손 + 在…呢 진행",
+   "note": "哪里哪里는 겸손, 在…呢는 진행.",
    "tags": [
     "humble",
     "particle:呢"
    ],
+   "emotion": "shy",
    "lemmas": [
     [
      "哪里",
@@ -255,9 +262,12 @@
      "学",
      "xué"
     ]
-   ],
-   "rd": "나리 나리, 워 하이 짜이 쉐 너.",
-   "emotion": "shy"
+   ]
   }
- ]
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r4_love_l1_ep1_1_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ }
 }

@@ -19,14 +19,16 @@
   {
    "num": 1,
    "speaker": "A",
-   "zh": "我做了一个重要的决定。",
-   "pinyin": "Wǒ zuò le yí ge zhòngyào de juédìng.",
+   "zh": "我做了一个重要决定。",
+   "pinyin": "Wǒ zuò le yī ge zhòngyào juédìng.",
+   "rd": "워 쭤 러 이 거 중야오 줴딩.",
    "ko": "나 중요한 결정을 하나 했어.",
-   "note": "완료의 了 + 수량사+관형어 어순",
+   "note": "了 = 완료, 一个 = 수량사",
    "tags": [
     "완료 了",
     "결심"
    ],
+   "emotion": "neutral",
    "lemmas": [
     [
      "做",
@@ -48,21 +50,21 @@
      "决定",
      "jué dìng"
     ]
-   ],
-   "rd": "워 쭤 러 이 거 중야오 더 줴딩.",
-   "emotion": "neutral"
+   ]
   },
   {
    "num": 2,
    "speaker": "B",
-   "zh": "你说吧，我准备好了。",
-   "pinyin": "Nǐ shuō ba, wǒ zhǔnbèi hǎo le.",
+   "zh": "说吧，我准备好了。",
+   "pinyin": "Shuō ba, wǒ zhǔnbèi hǎo le.",
+   "rd": "숴 바, 워 준베이 하오 러.",
    "ko": "말해 봐, 나 마음의 준비 됐어.",
-   "note": "결과보어 好 (완료·완비)",
+   "note": "好 = 완료·완비",
    "tags": [
     "결과보어",
     "긴장"
    ],
+   "emotion": "worried",
    "lemmas": [
     [
      "说",
@@ -79,27 +81,22 @@
      "好",
      "hǎo"
     ]
-   ],
-   "rd": "니 숴 바, 워 준베이 하오 러.",
-   "emotion": "worried"
+   ]
   },
   {
    "num": 3,
    "speaker": "A",
-   "zh": "我拒绝了回首尔的调动。",
-   "pinyin": "Wǒ jùjué le huí Shǒu'ěr de diàodòng.",
+   "zh": "回首尔的调动，我拒绝了。",
+   "pinyin": "Huí Shǒu'ěr de diàodòng, wǒ jùjué le.",
+   "rd": "후이 서우'얼 더 댜오둥, 워 쥐줴 러.",
    "ko": "서울 발령, 거절했어.",
-   "note": "동사+了 + 관형절(回首尔的)이 목적어 수식",
+   "note": "了 = 완료, 的 = 관형",
    "tags": [
     "관형절",
     "직장"
    ],
+   "emotion": "neutral",
    "lemmas": [
-    [
-     "拒绝",
-     "拒绝",
-     "jù jué"
-    ],
     [
      "回",
      "回",
@@ -114,23 +111,27 @@
      "调动",
      "调动",
      "diào dòng"
+    ],
+    [
+     "拒绝",
+     "拒绝",
+     "jù jué"
     ]
-   ],
-   "rd": "워 쥐줴 러 후이 서우얼 더 댜오둥.",
-   "rd_manual": true,
-   "emotion": "neutral"
+   ]
   },
   {
    "num": 4,
    "speaker": "B",
-   "zh": "什么？升职的机会呢？😮",
-   "pinyin": "Shénme? Shēngzhí de jīhuì ne?",
+   "zh": "什么？晋升机会呢？😤",
+   "pinyin": "Shénme? Jìnshēng jīhuì ne?",
+   "rd": "선머? 진성 지후이 너?",
    "ko": "뭐? 승진 기회는 어쩌고?",
-   "note": "명사+呢 생략 의문문 ('~는?')",
+   "note": "呢 = ~는?",
    "tags": [
     "呢 의문문",
     "놀람"
    ],
+   "emotion": "shout",
    "lemmas": [
     [
      "什么",
@@ -138,31 +139,9 @@
      "shén me"
     ],
     [
-     "升",
-     "升",
-     "shēng"
-    ],
-    [
-     "职",
-     "职",
-     "zhí"
-    ],
-    [
      "机会",
      "机会",
      "jī huì"
-    ]
-   ],
-   "rd": "선머? 성즈 더 지후이 너?",
-   "emotion": "shout",
-   "segs": [
-    [
-     "shout",
-     "什么？"
-    ],
-    [
-     "surprised",
-     "升职的机会呢？"
     ]
    ]
   },
@@ -170,13 +149,15 @@
    "num": 5,
    "speaker": "A",
    "zh": "机会可以再找，你只有一个。",
-   "pinyin": "Jīhuì kěyǐ zài zhǎo, nǐ zhǐ yǒu yí ge.",
+   "pinyin": "Jīhuì kěyǐ zài zhǎo, nǐ zhǐyǒu yī ge.",
+   "rd": "지후이 커이 짜이 자오, 니 즈유 이 거.",
    "ko": "기회는 또 찾으면 되지만, 너는 하나뿐이야.",
-   "note": "再 '다시' (미래의 반복) — 又와 구분",
+   "note": "再 = 다시 (미래)",
    "tags": [
     "再 vs 又",
     "고백"
    ],
+   "emotion": "gentle",
    "lemmas": [
     [
      "机会",
@@ -198,21 +179,21 @@
      "一个",
      "yí gè"
     ]
-   ],
-   "rd": "지후이 커이 짜이 자오, 니 즈 유 이 거.",
-   "emotion": "gentle"
+   ]
   },
   {
    "num": 6,
    "speaker": "B",
-   "zh": "马克，你不会后悔吗？😟",
-   "pinyin": "Mǎkè, nǐ bú huì hòuhuǐ ma?",
-   "ko": "마크, 너 후회 안 하겠어?",
-   "note": "会 미래 가능성 + 부정 의문",
+   "zh": "{name}，你不会后悔吗？😟",
+   "pinyin": "{name}, nǐ bú huì hòuhuǐ ma?",
+   "rd": "{name}, 니 부 후이 허우후이 마?",
+   "ko": "{name}, 너 후회 안 하겠어?",
+   "note": "会 = 미래 가능성",
    "tags": [
     "会",
     "걱정"
    ],
+   "emotion": "worried",
    "lemmas": [
     [
      "不会",
@@ -224,33 +205,21 @@
      "后悔",
      "hòu huǐ"
     ]
-   ],
-   "rd": "마커, 니 부 후이 허우후이 마?",
-   "emotion": "worried",
-   "f": {
-    "text": "安娜，你不会后悔吗？",
-    "reading": "Ānnà, nǐ bú huì hòuhuǐ ma?",
-    "rd": "안나, 니 부 후이 허우후이 마?",
-    "ko": "안나, 너 후회 안 하겠어?",
-    "segs": [
-     [
-      "worried",
-      "安娜，你不会后悔吗？"
-     ]
-    ]
-   }
+   ]
   },
   {
    "num": 7,
    "speaker": "A",
-   "zh": "离开你才会让我后悔。",
-   "pinyin": "Líkāi nǐ cái huì ràng wǒ hòuhuǐ.",
+   "zh": "离开你才是会让我后悔的。",
+   "pinyin": "Líkāi nǐ cái shì huì ràng wǒ hòuhuǐ de.",
+   "rd": "리카이 니 차이 스 후이 랑 워 허우후이 더.",
    "ko": "너를 떠나는 게 오히려 후회할 일이지.",
-   "note": "才 '~야말로' + 사역 让",
+   "note": "才 = ~야말로, 让 = ~하게 하다",
    "tags": [
     "才",
     "고백"
    ],
+   "emotion": "gentle",
    "lemmas": [
     [
      "离开",
@@ -261,6 +230,11 @@
      "才",
      "才",
      "cái"
+    ],
+    [
+     "是",
+     "是",
+     "shì"
     ],
     [
      "会",
@@ -277,21 +251,21 @@
      "后悔",
      "hòu huǐ"
     ]
-   ],
-   "rd": "리카이 니 차이 후이 랑 워 허우후이.",
-   "emotion": "gentle"
+   ]
   },
   {
    "num": 8,
    "speaker": "B",
    "zh": "那工作怎么办？",
    "pinyin": "Nà gōngzuò zěnme bàn?",
+   "rd": "나 궁쭤 쩐머 반?",
    "ko": "그럼 일은 어떡해?",
-   "note": "관용표현 怎么办 '어떻게 하지'",
+   "note": "怎么办 = 어떻게 하지",
    "tags": [
     "怎么办",
     "현실"
    ],
+   "emotion": "worried",
    "lemmas": [
     [
      "那",
@@ -308,9 +282,12 @@
      "怎么办",
      "zěn me bàn"
     ]
-   ],
-   "rd": "나 궁쭤 쩐머 반?",
-   "emotion": "worried"
+   ]
   }
- ]
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r3_love_l3_d21_1_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ }
 }

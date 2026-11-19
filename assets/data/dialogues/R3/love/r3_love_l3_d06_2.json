@@ -21,12 +21,14 @@
    "speaker": "A",
    "zh": "我教你，先学打招呼。",
    "pinyin": "Wǒ jiāo nǐ, xiān xué dǎ zhāohu.",
+   "rd": "워 자오 니, 셴 쉐 다 자오후.",
    "ko": "내가 가르쳐 줄게, 인사부터 배우자.",
-   "note": "이합사 打招呼 '인사하다'",
+   "note": "打招呼 = 인사하다",
    "tags": [
     "이합사",
     "인사"
    ],
+   "emotion": "cheerful",
    "lemmas": [
     [
      "教",
@@ -53,21 +55,21 @@
      "招呼",
      "zhāo hū"
     ]
-   ],
-   "rd": "워 자오 니, 셴 쉐 다 자오후.",
-   "emotion": "cheerful"
+   ]
   },
   {
    "num": 2,
    "speaker": "B",
-   "zh": "对了，去你家要脱鞋吧？😉",
-   "pinyin": "Duìle, qù nǐ jiā yào tuō xié ba?",
+   "zh": "对了，去你家得脱鞋吧？😉",
+   "pinyin": "Duì le, qù nǐ jiā děi tuō xié ba?",
+   "rd": "두이 러, 취 니 자 데이 퉈 셰 바?",
    "ko": "맞다, 너희 집 가면 신발 벗어야 하지?",
-   "note": "추측의 吧 '~겠지?'",
+   "note": "吧 = ~겠지 (추측)",
    "tags": [
     "추측 吧",
     "생활 문화"
    ],
+   "emotion": "neutral",
    "lemmas": [
     [
      "去",
@@ -80,11 +82,6 @@
      "jiā"
     ],
     [
-     "要",
-     "要",
-     "yào"
-    ],
-    [
      "脱",
      "脱",
      "tuō"
@@ -94,21 +91,21 @@
      "鞋",
      "xié"
     ]
-   ],
-   "rd": "두이러, 취 니 자 야오 퉈 셰 바?",
-   "emotion": "neutral"
+   ]
   },
   {
    "num": 3,
    "speaker": "A",
-   "zh": "对，跟中国有点儿不一样。",
-   "pinyin": "Duì, gēn Zhōngguó yǒudiǎnr bù yíyàng.",
+   "zh": "嗯，跟中国有点不一样。",
+   "pinyin": "Ǹg, gēn Zhōngguó yǒudiǎn bù yīyàng.",
+   "rd": "응, 건 중궈 유뎬 부 이양.",
    "ko": "응, 중국이랑은 조금 달라.",
-   "note": "비교 표현 跟…不一样",
+   "note": "跟…不一样 = ~와 다르다",
    "tags": [
     "跟…不一样",
     "비교"
    ],
+   "emotion": "neutral",
    "lemmas": [
     [
      "中国",
@@ -116,9 +113,9 @@
      "zhōng guó"
     ],
     [
-     "有点儿",
-     "有点儿",
-     "yǒu diǎn ér"
+     "有点",
+     "有点",
+     "yǒu diǎn"
     ],
     [
      "不",
@@ -130,26 +127,31 @@
      "一样",
      "yī yàng"
     ]
-   ],
-   "rd": "두이, 건 중궈 유뎬얼 부 이양.",
-   "emotion": "neutral"
+   ]
   },
   {
    "num": 4,
    "speaker": "B",
-   "zh": "没关系，我学得很快的。",
-   "pinyin": "Méi guānxi, wǒ xué de hěn kuài de.",
+   "zh": "没事，我学得很快。",
+   "pinyin": "Méishì, wǒ xué de hěn kuài.",
+   "rd": "메이스, 워 쉐 더 헌 콰이.",
    "ko": "괜찮아, 나 배우는 거 엄청 빨라.",
-   "note": "정도보어 得 (学得快)",
+   "note": "得 = 정도보어 (学得快)",
    "tags": [
     "정도보어",
     "자신감"
    ],
+   "emotion": "cheerful",
    "lemmas": [
     [
-     "没关系",
-     "没关系",
-     "méi guān xì"
+     "没",
+     "没",
+     "méi"
+    ],
+    [
+     "事",
+     "事",
+     "shì"
     ],
     [
      "学",
@@ -161,21 +163,21 @@
      "很快",
      "hěn kuài"
     ]
-   ],
-   "rd": "메이 관시, 워 쉐 더 헌 콰이 더.",
-   "emotion": "cheerful"
+   ]
   },
   {
    "num": 5,
    "speaker": "A",
-   "zh": "有你在，我什么都不怕。",
-   "pinyin": "Yǒu nǐ zài, wǒ shénme dōu bú pà.",
+   "zh": "有你在我什么都不怕。",
+   "pinyin": "Yǒu nǐ zài wǒ shénme dōu bù pà.",
+   "rd": "유 니 짜이 워 선머 더우 부 파.",
    "ko": "네가 있으면 난 아무것도 안 무서워.",
-   "note": "의문사+都+부정 전면 부정 '아무것도 ~않다'",
+   "note": "什么都 = 아무것도 ~않다",
    "tags": [
     "什么都不",
     "고백"
    ],
+   "emotion": "gentle",
    "lemmas": [
     [
      "有",
@@ -192,20 +194,20 @@
      "都",
      "dōu"
     ]
-   ],
-   "rd": "유 니 짜이, 워 선머 더우 부 파.",
-   "emotion": "gentle"
+   ]
   },
   {
    "num": 6,
    "speaker": "B",
-   "zh": "那我们什么时候去见你父母？",
-   "pinyin": "Nà wǒmen shénme shíhòu qù jiàn nǐ fùmǔ?",
+   "zh": "那我们什么时候去见你爸妈？",
+   "pinyin": "Nà wǒmen shénme shíhou qù jiàn nǐ bàma?",
+   "rd": "나 워먼 선머 스허우 취 젠 니 바마?",
    "ko": "그럼 우리 언제 너희 부모님 뵈러 가?",
-   "note": null,
+   "note": "",
    "tags": [
     "ext"
    ],
+   "emotion": "shy",
    "lemmas": [
     [
      "那",
@@ -238,24 +240,29 @@
      "jiàn"
     ],
     [
-     "父母",
-     "父母",
-     "fù mǔ"
+     "爸",
+     "爸",
+     "bà"
+    ],
+    [
+     "妈",
+     "妈",
+     "mā"
     ]
-   ],
-   "rd": "나 워먼 선머 스허우 취 젠 니 푸무?",
-   "emotion": "shy"
+   ]
   },
   {
    "num": 7,
    "speaker": "A",
-   "zh": "下个月他们正好来北京。",
-   "pinyin": "Xiàgèyuè tāmen zhènghǎo lái běijīng.",
+   "zh": "下个月正好他们来北京。",
+   "pinyin": "Xià ge yuè zhènghǎo tāmen lái Běijīng.",
+   "rd": "샤 거 웨 정하오 타먼 라이 베이징.",
    "ko": "다음 달에 마침 두 분이 베이징 오셔.",
-   "note": null,
+   "note": "",
    "tags": [
     "ext"
    ],
+   "emotion": "cheerful",
    "lemmas": [
     [
      "下个月",
@@ -263,14 +270,14 @@
      "xià gè yuè"
     ],
     [
-     "他们",
-     "他们",
-     "tā men"
-    ],
-    [
      "正好",
      "正好",
      "zhèng hǎo"
+    ],
+    [
+     "他们",
+     "他们",
+     "tā men"
     ],
     [
      "来",
@@ -282,20 +289,20 @@
      "北京",
      "běi jīng"
     ]
-   ],
-   "rd": "샤거웨 타먼 정하오 라이 베이징.",
-   "emotion": "cheerful"
+   ]
   },
   {
    "num": 8,
    "speaker": "B",
    "zh": "太好了，我一定好好表现。",
-   "pinyin": "Tàihǎole, wǒ yídìng hǎohǎo biǎoxiàn.",
+   "pinyin": "Tài hǎo le, wǒ yīdìng hǎohǎo biǎoxiàn.",
+   "rd": "타이 하오 러, 워 이딩 하오하오 뱌오셴.",
    "ko": "잘됐다, 나 꼭 잘 보일게.",
-   "note": null,
+   "note": "",
    "tags": [
     "ext"
    ],
+   "emotion": "excited",
    "lemmas": [
     [
      "太",
@@ -322,9 +329,12 @@
      "表现",
      "biǎo xiàn"
     ]
-   ],
-   "rd": "타이하오러, 워 이딩 하오하오 뱌오셴.",
-   "emotion": "excited"
+   ]
   }
- ]
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r3_love_l3_d06_2_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ }
 }

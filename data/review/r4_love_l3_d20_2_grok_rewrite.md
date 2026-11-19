@@ -1,0 +1,13 @@
+=== r4_love_l3_d20_2
+title: 재회 ②
+scene: 첫 데이트 장소였던 훠궈집 앞, 두 사람이 우연처럼 마주친다.
+B: 小丽
+register: 반말(친구·연인)
+1 A | 对不起，是我让你难过了。 | Duìbuqǐ, shì wǒ ràng nǐ nánguò le. | 미안해, 내가 널 힘들게 했어. | ‘让’ 사역 + ‘是’ 주어 강조 | emotion=sad
+2 B | 我也错了，话说得太重了。 | Wǒ yě cuò le, huà shuō de tài zhòng le. | 나도 잘못했어, 말이 너무 심했어. | ‘得’ 정도보어 + ‘太…了’ | emotion=sad
+3 A | 别哭，辣椒还没上呢。 | Bié kū, làjiāo hái méi shàng ne. | 울지 마, 아직 고추도 안 나왔는데. | ‘还没…呢’ 미완료 | emotion=teasing
+4 B | 讨厌，这眼泪是被你弄出来的！ | Tǎoyàn, zhè yǎnlèi shì bèi nǐ nòng chūlái de! | 미워, 이 눈물은 너 때문에 난 거야! | ‘被’ 피동 + ‘是…的’ | emotion=annoyed
+5 A | 进去吧，吃清汤的，像那天一样。 | Jìnqù ba, chī qīngtāng de, xiàng nà tiān yíyàng. | 들어가자, 순한 맛으로, 그날처럼. | ‘像…一样’ 비유 | emotion=gentle
+6 B | 好，这次谁也不许再生气。 | Hǎo, zhè cì shéi yě bù xǔ zài shēngqì. | 좋아, 이번엔 누구도 다시 화내기 없기야. |  | emotion=gentle
+7 A | 说好了，进去！ | Shuō hǎo le, jìnqù! | 약속이야, 들어가자! |  | emotion=cheerful
+8 B | 谢谢你一直没放弃我。 | Xièxie nǐ yìzhí méi fàngqì wǒ. | 고마워, 끝까지 날 포기하지 않아 줘서. |  | emotion=gentle

@@ -1,0 +1,13 @@
+=== r4_love_l3_d13_1
+title: 할머니 ①
+scene: 샤오리가 외할머니 이야기를 들려주며 쓰촨 사투리 한 마디를 가르쳐 준다.
+B: 小丽
+register: 반말(친구·연인)
+1 B | 昨天我跟外婆打电话了。 | Zuótiān wǒ gēn wàipó dǎ diànhuà le. | 어제 외할머니랑 전화했어. | ‘跟’은 ‘~와/과’, ‘了’는 완료를 나타냄 | emotion=neutral
+2 A | 外婆身体还好吗？ | Wàipó shēntǐ hái hǎo ma? | 할머니 몸은 여전히 괜찮으셔? | ‘还’은 ‘여전히, 아직도’ | emotion=worried
+3 B | 挺好的，也问了你。 | Tǐng hǎo de, yě wèn le nǐ. | 꽤 좋으셔, 네 얘기도 물어보셨어. | ‘挺…的’는 ‘꽤 ~하다’ | emotion=cheerful
+4 A | 真的吗？外婆认识我？ | Zhēn de ma? Wàipó rènshi wǒ? | 진짜? 할머니가 나를 아셔? | ‘真的吗’는 놀람의 되묻기 | emotion=surprised
+5 B | 我经常跟她说你。 | Wǒ jīngcháng gēn tā shuō nǐ. | 내가 자주 네 얘기 하거든. | ‘跟…说’는 ‘~에게 말하다’ | emotion=shy
+6 B | 是外婆把我养大的。 | Shì wàipó bǎ wǒ yǎng dà de. | 어릴 때 외할머니가 날 키워 주셨어. | ‘是…的’ 강조와 ‘把’자문 | emotion=gentle
+7 A | 怪不得你那么想她。 | Guàibude nǐ nàme xiǎng tā. | 어쩐지 네가 그렇게 그리워하더라. | ‘怪不得’는 ‘어쩐지 ~더라’ | emotion=gentle
+8 B | 我教你一句四川话！ | Wǒ jiāo nǐ yí jù Sìchuān huà! | 내가 쓰촨 사투리 한 마디 가르쳐 줄게! | ‘句’는 말·문장 세는 양사 | emotion=cheerful

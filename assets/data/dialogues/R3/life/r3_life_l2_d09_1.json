@@ -19,40 +19,42 @@
   {
    "num": 1,
    "speaker": "A",
-   "zh": "发工资啦！🤩",
-   "pinyin": "Fā gōngzī la!",
+   "zh": "工资到啦！🤩",
+   "pinyin": "Gōngzī dào la!",
+   "rd": "궁쯔 다오 라!",
    "ko": "월급 들어왔어!",
-   "note": "어기조사 啦 (완료+신남 강조)",
+   "note": "啦 = 완료+신남 강조",
    "tags": [
     "money",
     "particle:啦"
    ],
+   "emotion": "excited",
    "lemmas": [
-    [
-     "发",
-     "发",
-     "fā"
-    ],
     [
      "工资",
      "工资",
      "gōng zī"
+    ],
+    [
+     "到",
+     "到",
+     "dào"
     ]
-   ],
-   "rd": "파 궁쯔 라!",
-   "emotion": "excited"
+   ]
   },
   {
    "num": 2,
    "speaker": "B",
    "zh": "哇，请客请客！",
-   "pinyin": "Wā, qǐngkè qǐngkè!",
+   "pinyin": "Wa, qǐngkè qǐngkè!",
+   "rd": "와, 칭커 칭커!",
    "ko": "우와, 한턱 쏴 쏴!",
-   "note": "동사 중첩으로 재촉하는 구어 표현",
+   "note": "동사 중첩 = 재촉하는 구어",
    "tags": [
     "money",
     "reduplication"
    ],
+   "emotion": "excited",
    "lemmas": [
     [
      "请客",
@@ -64,21 +66,21 @@
      "请客",
      "qǐng kè"
     ]
-   ],
-   "rd": "와, 칭커 칭커!",
-   "emotion": "excited"
+   ]
   },
   {
    "num": 3,
    "speaker": "A",
    "zh": "今晚吃火锅怎么样？",
-   "pinyin": "Jīn wǎn chī huǒguō zěnmeyàng?",
+   "pinyin": "Jīnwǎn chī huǒguō zěnmeyàng?",
+   "rd": "진완 츠 훠궈 쩐머양?",
    "ko": "오늘 밤 훠궈 어때?",
-   "note": "제안 표현 怎么样 (~어때?)",
+   "note": "怎么样 = ~어때?",
    "tags": [
     "food",
     "suggestion"
    ],
+   "emotion": "cheerful",
    "lemmas": [
     [
      "今晚",
@@ -105,21 +107,21 @@
      "怎么样",
      "zěn me yàng"
     ]
-   ],
-   "rd": "진 완 츠 훠궈 쩐머양?",
-   "emotion": "cheerful"
+   ]
   },
   {
    "num": 4,
    "speaker": "B",
    "zh": "你不是说要省钱吗？🙄",
    "pinyin": "Nǐ bú shì shuō yào shěngqián ma?",
+   "rd": "니 부 스 숴 야오 성첸 마?",
    "ko": "너 돈 아낀다고 하지 않았어?",
-   "note": "반문 구문 不是……吗",
+   "note": "不是……吗 = 반문",
    "tags": [
     "money",
     "rhetorical"
    ],
+   "emotion": "tsukkomi",
    "lemmas": [
     [
      "说",
@@ -141,21 +143,21 @@
      "钱",
      "qián"
     ]
-   ],
-   "rd": "니 부 스 숴 야오 성첸 마?",
-   "emotion": "tsukkomi"
+   ]
   },
   {
    "num": 5,
    "speaker": "A",
    "zh": "明天开始省。",
    "pinyin": "Míngtiān kāishǐ shěng.",
+   "rd": "밍톈 카이스 성.",
    "ko": "내일부터 아낄 거야.",
-   "note": "시간사+开始 (내일부터 시작)",
+   "note": "开始 = ~부터 시작",
    "tags": [
     "money",
     "time"
    ],
+   "emotion": "flustered",
    "lemmas": [
     [
      "明天",
@@ -172,21 +174,21 @@
      "省",
      "shěng"
     ]
-   ],
-   "rd": "밍톈 카이스 성.",
-   "emotion": "flustered"
+   ]
   },
   {
    "num": 6,
    "speaker": "B",
    "zh": "你每个月都这么说。",
-   "pinyin": "Nǐ měi gè yuè dōu zhème shuō.",
+   "pinyin": "Nǐ měi ge yuè dōu zhème shuō.",
+   "rd": "니 메이 거 웨 더우 저머 숴.",
    "ko": "너 매달 그렇게 말하잖아.",
-   "note": "每……都 (매번 다 ~하다)",
+   "note": "每……都 = 매번 다",
    "tags": [
     "banter",
     "grammar:每都"
    ],
+   "emotion": "tsukkomi",
    "lemmas": [
     [
      "每个",
@@ -213,21 +215,21 @@
      "说",
      "shuō"
     ]
-   ],
-   "rd": "니 메이 거 웨 더우 저머 숴.",
-   "emotion": "tsukkomi"
+   ]
   },
   {
    "num": 7,
    "speaker": "A",
    "zh": "这次是真的嘛！😳",
    "pinyin": "Zhè cì shì zhēn de ma!",
+   "rd": "저 츠 스 전 더 마!",
    "ko": "이번엔 진짜라니까!",
-   "note": "어기조사 嘛 (당연함·항변)",
+   "note": "嘛 = 당연함·항변",
    "tags": [
     "banter",
     "particle:嘛"
    ],
+   "emotion": "flustered",
    "lemmas": [
     [
      "这次",
@@ -244,36 +246,31 @@
      "真的",
      "zhēn de"
     ]
-   ],
-   "rd": "저 츠 스 전 더 마!",
-   "emotion": "flustered"
+   ]
   },
   {
    "num": 8,
    "speaker": "B",
-   "zh": "好吧，那我要吃最贵的。",
-   "pinyin": "Hǎo ba, nà wǒ yào chī zuì guì de.",
+   "zh": "行，那我吃最贵的。",
+   "pinyin": "Xíng, nà wǒ chī zuì guì de.",
+   "rd": "싱, 나 워 츠 쭈이 구이 더.",
    "ko": "좋아, 그럼 난 제일 비싼 거 먹을래.",
-   "note": "最+형용사+的 (최상급 명사화)",
+   "note": "最…的 = 최상급",
    "tags": [
     "food",
     "grammar:最的"
    ],
+   "emotion": "teasing",
    "lemmas": [
     [
-     "好",
-     "好",
-     "hǎo"
+     "行",
+     "行",
+     "xíng"
     ],
     [
      "那",
      "那",
      "nà"
-    ],
-    [
-     "要",
-     "要",
-     "yào"
     ],
     [
      "吃",
@@ -290,9 +287,12 @@
      "贵",
      "guì"
     ]
-   ],
-   "rd": "하오 바, 나 워 야오 츠 쭈이 구이 더.",
-   "emotion": "teasing"
+   ]
   }
- ]
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r3_life_l2_d09_1_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ }
 }

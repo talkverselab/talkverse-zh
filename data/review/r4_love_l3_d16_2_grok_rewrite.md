@@ -1,0 +1,13 @@
+=== r4_love_l3_d16_2
+title: 습관 ②
+scene: 함께 지내는 시간이 길어지며 알게 된 서로의 소소한 습관을 이야기한다.
+B: 小丽
+register: 반말(친구·연인)
+1 A | 而且你吃饭吃得很快。 | Érqiě nǐ chīfàn chī de hěn kuài. | 그리고 너 밥 엄청 빨리 먹더라. | 동사 반복+‘得’ 정도보어 | emotion=teasing
+2 B | 四川人都这样，哈哈。 | Sìchuān rén dōu zhèyàng, hāha. | 쓰촨 사람은 다 그래, 하하. | ‘都’는 전체 총괄 | emotion=amused
+3 B | 在一起越久越了解对方。 | Zài yìqǐ yuè jiǔ yuè liǎojiě duìfāng. | 같이 있는 시간이 길수록 서로를 더 알게 돼. | ‘越…越…’는 ‘~할수록 ~하다’ | emotion=gentle
+4 A | 对，连习惯都知道了。 | Duì, lián xíguàn dōu zhīdào le. | 맞아, 습관까지 다 알게 됐잖아. | ‘连…都…’는 ‘~조차도’ | emotion=cheerful
+5 B | 以后我们会更了解对方的。 | Yǐhòu wǒmen huì gèng liǎojiě duìfāng de. | 앞으로 우리 서로를 더 잘 알게 될 거야. | ‘会…的’는 미래에 대한 확신 | emotion=gentle
+6 A | 那我也得继续观察你。 | Nà wǒ yě děi jìxù guānchá nǐ. | 그럼 나도 계속 너 관찰해야겠다. |  | emotion=teasing
+7 B | 别光观察，也得疼我啊。 | Bié guāng guānchá, yě děi téng wǒ a. | 관찰만 하지 말고, 아껴도 줘야지. |  | emotion=teasing
+8 A | 放心，我会一直疼你。 | Fàngxīn, wǒ huì yìzhí téng nǐ. | 걱정 마, 계속 예뻐해 줄게. |  | emotion=gentle

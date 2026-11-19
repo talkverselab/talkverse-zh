@@ -19,14 +19,16 @@
   {
    "num": 1,
    "speaker": "B",
-   "zh": "那今晚谁洗碗呢？😜",
-   "pinyin": "Nà jīnwǎn shéi xǐwǎn ne?",
+   "zh": "那今晚洗碗谁来呢？😜",
+   "pinyin": "Nà jīnwǎn xǐwǎn shéi lái ne?",
+   "rd": "나 진완 시완 세이 라이 너?",
    "ko": "그럼 오늘 밤 설거지는 누가 하지?",
-   "note": "의문사 谁 + 呢 (그럼 ~는?)",
+   "note": "谁 + 呢 는 그럼 누가?",
    "tags": [
     "question:谁",
     "banter"
    ],
+   "emotion": "teasing",
    "lemmas": [
     [
      "那",
@@ -39,11 +41,6 @@
      "jīn wǎn"
     ],
     [
-     "谁",
-     "谁",
-     "shuí"
-    ],
-    [
      "洗",
      "洗",
      "xǐ"
@@ -52,22 +49,32 @@
      "碗",
      "碗",
      "wǎn"
+    ],
+    [
+     "谁",
+     "谁",
+     "shuí"
+    ],
+    [
+     "来",
+     "来",
+     "lái"
     ]
-   ],
-   "rd": "나 진완 세이 시완 너?",
-   "emotion": "teasing"
+   ]
   },
   {
    "num": 2,
    "speaker": "A",
-   "zh": "啊？原来有条件啊。🙄",
-   "pinyin": "Á? Yuánlái yǒu tiáojiàn a.",
+   "zh": "原来还有条件啊。🙄",
+   "pinyin": "Yuánlái hái yǒu tiáojiàn a.",
+   "rd": "위안라이 하이 유 탸오젠 아.",
    "ko": "어? 알고 보니 조건이 있었네.",
-   "note": "原来 (알고 보니 ~였다)",
+   "note": "原来 는 알고 보니.",
    "tags": [
     "adverb:原来",
     "chaos"
    ],
+   "emotion": "tsukkomi",
    "lemmas": [
     [
      "原来",
@@ -75,35 +82,35 @@
      "yuán lái"
     ],
     [
-     "有",
-     "有",
-     "yǒu"
+     "还有",
+     "还有",
+     "hái yǒu"
     ],
     [
      "条件",
      "条件",
      "tiáo jiàn"
     ]
-   ],
-   "rd": "아? 위안라이 유 탸오젠 아.",
-   "emotion": "tsukkomi"
+   ]
   },
   {
    "num": 3,
    "speaker": "B",
-   "zh": "世界上没有免费的奶茶。",
-   "pinyin": "Shìjiè shang méiyǒu miǎnfèi de nǎichá.",
+   "zh": "世上没有免费奶茶。",
+   "pinyin": "Shìshàng méiyǒu miǎnfèi nǎichá.",
+   "rd": "스상 메이유 몐페이 나이차.",
    "ko": "세상에 공짜 밀크티는 없어.",
-   "note": "장소+没有 존재문 (~에 ~이 없다)",
+   "note": "没有 는 존재 부정.",
    "tags": [
     "structure:没有",
     "humor"
    ],
+   "emotion": "teasing",
    "lemmas": [
     [
-     "世界",
-     "世界",
-     "shì jiè"
+     "世",
+     "世",
+     "shì"
     ],
     [
      "上",
@@ -125,21 +132,21 @@
      "奶茶",
      "nǎi chá"
     ]
-   ],
-   "rd": "스제 상 메이유 몐페이 더 나이차.",
-   "emotion": "teasing"
+   ]
   },
   {
    "num": 4,
    "speaker": "A",
-   "zh": "行行行，我洗。",
-   "pinyin": "Xíng xíng xíng, wǒ xǐ.",
+   "zh": "行行，我来洗吧。😒",
+   "pinyin": "Xíng xíng, wǒ lái xǐ ba.",
+   "rd": "싱 싱, 워 라이 시 바.",
    "ko": "알았어 알았어, 내가 할게.",
-   "note": "行 (좋아/알았어, 승낙) 반복으로 체념 어감",
+   "note": "行 반복은 체념하며 승낙.",
    "tags": [
     "colloquial:行",
     "banter"
    ],
+   "emotion": "annoyed",
    "lemmas": [
     [
      "行",
@@ -152,36 +159,31 @@
      "xíng"
     ],
     [
-     "行",
-     "行",
-     "xíng"
+     "来",
+     "来",
+     "lái"
     ],
     [
      "洗",
      "洗",
      "xǐ"
     ]
-   ],
-   "rd": "싱 싱 싱, 워 시.",
-   "emotion": "annoyed"
+   ]
   },
   {
    "num": 5,
    "speaker": "B",
-   "zh": "加油，早点回来呀。🥰",
-   "pinyin": "Jiāyóu, zǎo diǎn huílái ya.",
+   "zh": "早点回来呀。🥰",
+   "pinyin": "Zǎodiǎn huílái ya.",
+   "rd": "짜오뎬 후이라이 야.",
    "ko": "힘내, 일찍 들어와.",
-   "note": "형용사+点 (좀 ~하게) + 어기조사 呀",
+   "note": "点 는 좀, 呀 는 부드러운 어기.",
    "tags": [
     "particle:呀",
     "positive"
    ],
+   "emotion": "gentle",
    "lemmas": [
-    [
-     "加油",
-     "加油",
-     "jiā yóu"
-    ],
     [
      "早",
      "早",
@@ -197,26 +199,21 @@
      "回来",
      "huí lái"
     ]
-   ],
-   "rd": "자유, 짜오 뎬 후이라이 야.",
-   "emotion": "gentle"
+   ]
   },
   {
    "num": 6,
    "speaker": "A",
-   "zh": "好，我马上出发。",
-   "pinyin": "Hǎo, wǒ mǎshàng chūfā.",
+   "zh": "嗯，我马上出发。",
+   "pinyin": "En, wǒ mǎshàng chūfā.",
+   "rd": "언, 워 마상 추파.",
    "ko": "응, 지금 바로 출발할게.",
-   "note": null,
+   "note": "",
    "tags": [
     "ext"
    ],
+   "emotion": "cheerful",
    "lemmas": [
-    [
-     "好",
-     "好",
-     "hǎo"
-    ],
     [
      "马上",
      "马上",
@@ -227,20 +224,20 @@
      "出发",
      "chū fā"
     ]
-   ],
-   "rd": "하오, 워 마상 추파.",
-   "emotion": "cheerful"
+   ]
   },
   {
    "num": 7,
    "speaker": "B",
-   "zh": "路上小心点。",
-   "pinyin": "Lùshàng xiǎoxīn diǎn.",
+   "zh": "路上小心啊。🥰",
+   "pinyin": "Lùshang xiǎoxīn a.",
+   "rd": "루상 샤오신 아.",
    "ko": "가는 길 조심해.",
-   "note": null,
+   "note": "",
    "tags": [
     "ext"
    ],
+   "emotion": "gentle",
    "lemmas": [
     [
      "路上",
@@ -251,26 +248,21 @@
      "小心",
      "小心",
      "xiǎo xīn"
-    ],
-    [
-     "点",
-     "点",
-     "diǎn"
     ]
-   ],
-   "rd": "루상 샤오신 뎬.",
-   "emotion": "gentle"
+   ]
   },
   {
    "num": 8,
    "speaker": "A",
-   "zh": "到家啦，还是你最好。",
-   "pinyin": "Dàojiā la, háishì nǐ zuìhǎo.",
+   "zh": "到家了，还是你最好。",
+   "pinyin": "Dàojiā le, háishì nǐ zuì hǎo.",
+   "rd": "다오자 러, 하이스 니 쭈이 하오.",
    "ko": "집 왔다, 역시 네가 최고야.",
-   "note": null,
+   "note": "",
    "tags": [
     "ext"
    ],
+   "emotion": "cheerful",
    "lemmas": [
     [
      "到",
@@ -287,9 +279,12 @@
      "最好",
      "zuì hǎo"
     ]
-   ],
-   "rd": "다오자 라, 하이스 니 쭈이하오.",
-   "emotion": "cheerful"
+   ]
   }
- ]
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r4_life_l2_d02_2_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ }
 }

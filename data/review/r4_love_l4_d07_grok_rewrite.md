@@ -1,0 +1,13 @@
+=== r4_love_l4_d07
+title: 콘서트
+scene: 공연장 입장 줄에서 혼자 온 남자에게 여자가 먼저 말을 건다
+B: 悦
+register: 반말(친구·연인)
+1 B | 你也一个人来看演唱会？ | Nǐ yě yí ge rén lái kàn yǎnchànghuì? | 너도 혼자 콘서트 보러 왔어? | ‘一个人’ + ‘也’ | emotion=cheerful
+2 A | 嗯，朋友临时有事。 | Ńg, péngyou línshí yǒu shì. | 응, 친구가 갑자기 일이 생겨서. | ‘临时有事’ | emotion=neutral
+3 B | 太巧了，我也一个人来的。 | Tài qiǎo le, wǒ yě yí ge rén lái de. | 완전 우연이다, 나도 혼자 왔거든. | ‘太巧了’ | emotion=surprised
+4 A | 看来我们挺有缘的。 | Kànlái wǒmen tǐng yǒuyuán de. | 우리 꽤 인연이 있나 보네. | ‘看来’ + ‘有缘’ | emotion=teasing
+5 B | 你最喜欢他哪首歌？ | Nǐ zuì xǐhuan tā nǎ shǒu gē? | 이 가수 노래 중에 뭐가 제일 좋아? | ‘首’ 양사 | emotion=cheerful
+6 A | 太多了，一时说不上来。 | Tài duō le, yìshí shuō bu shànglái. | 너무 많아서 바로 못 고르겠는데. | ‘一时’ + ‘说不上来’ | emotion=amused
+7 B | 加个微信，散场再聊。 | Jiā ge wēixìn, sànchǎng zài liáo. | 위챗 추가하자, 끝나고 같이 얘기해. | ‘加微信’ + ‘散场’ | emotion=cheerful
+8 A | 好，我正想说呢。 | Hǎo, wǒ zhèng xiǎng shuō ne. | 좋아, 나도 막 그 말 하려던 참이었어. | ‘正…呢’ | emotion=shy

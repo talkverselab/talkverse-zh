@@ -19,14 +19,16 @@
   {
    "num": 1,
    "speaker": "A",
-   "zh": "明年我可能回韩国工作。",
-   "pinyin": "Míngnián wǒ kěnéng huí Hánguó gōngzuò.",
+   "zh": "明年可能回韩国工作。",
+   "pinyin": "Míngnián kěnéng huí Hánguó gōngzuò.",
+   "rd": "밍녠 컨엉 후이 한궈 궁쭤.",
    "ko": "내년에 한국 돌아가서 일할지도 몰라.",
-   "note": "可能 (아마) + 回…工作",
+   "note": "可能=아마, 回…工作=돌아가 일하다",
    "tags": [
     "future",
     "hook:choice"
    ],
+   "emotion": "worried",
    "lemmas": [
     [
      "明年",
@@ -53,21 +55,21 @@
      "工作",
      "gōng zuò"
     ]
-   ],
-   "rd": "밍녠 워 컨엉 후이 한궈 궁쭤.",
-   "emotion": "worried"
+   ]
   },
   {
    "num": 2,
    "speaker": "B",
-   "zh": "……什么时候决定的？",
-   "pinyin": "…… Shénme shíhou juédìng de?",
-   "ko": "……언제 결정한 거야?",
-   "note": "是…的 구문 (시점 강조)",
+   "zh": "什么时候决定的？",
+   "pinyin": "Shénme shíhou juédìng de?",
+   "rd": "선머 스허우 줴딩 더?",
+   "ko": "언제 결정한 거야?",
+   "note": "是…的=시점을 강조하다",
    "tags": [
     "feeling",
     "function:的"
    ],
+   "emotion": "sad",
    "lemmas": [
     [
      "什么",
@@ -84,21 +86,21 @@
      "决定",
      "jué dìng"
     ]
-   ],
-   "rd": "…… 선머 스허우 줴딩 더?",
-   "emotion": "sad"
+   ]
   },
   {
    "num": 3,
    "speaker": "A",
    "zh": "还没决定，所以想问你。",
    "pinyin": "Hái méi juédìng, suǒyǐ xiǎng wèn nǐ.",
+   "rd": "하이 메이 줴딩, 쒀이 샹 원 니.",
    "ko": "아직 결정 안 했어, 그래서 너한테 묻고 싶어.",
-   "note": "还没 (아직 안) + 所以",
+   "note": "还没=아직 안, 所以=그래서",
    "tags": [
     "honest",
     "function:没"
    ],
+   "emotion": "gentle",
    "lemmas": [
     [
      "还",
@@ -125,21 +127,21 @@
      "问",
      "wèn"
     ]
-   ],
-   "rd": "하이 메이 줴딩, 쒀이 샹 원 니.",
-   "emotion": "gentle"
+   ]
   },
   {
    "num": 4,
    "speaker": "B",
-   "zh": "问我？这是你的工作呀。😮",
-   "pinyin": "Wèn wǒ? Zhè shì nǐ de gōngzuò ya.",
+   "zh": "问我？那是你的事呀。😮",
+   "pinyin": "Wèn wǒ? Nà shì nǐ de shì ya.",
+   "rd": "원 워? 나 스 니 더 스 야.",
    "ko": "나한테 묻는다고? 네 일이잖아.",
-   "note": "呀 (반문)",
+   "note": "呀=반문, 놀람",
    "tags": [
     "question",
     "particle:呀"
    ],
+   "emotion": "surprised",
    "lemmas": [
     [
      "问",
@@ -147,9 +149,9 @@
      "wèn"
     ],
     [
-     "这",
-     "这",
-     "zhè"
+     "那",
+     "那",
+     "nà"
     ],
     [
      "是",
@@ -157,25 +159,25 @@
      "shì"
     ],
     [
-     "工作",
-     "工作",
-     "gōng zuò"
+     "事",
+     "事",
+     "shì"
     ]
-   ],
-   "rd": "원 워? 저 스 니 더 궁쭤 야.",
-   "emotion": "surprised"
+   ]
   },
   {
    "num": 5,
    "speaker": "A",
-   "zh": "因为我的未来里有你。",
-   "pinyin": "Yīnwèi wǒ de wèilái li yǒu nǐ.",
+   "zh": "因为我未来里有你。",
+   "pinyin": "Yīnwèi wǒ wèilái li yǒu nǐ.",
+   "rd": "인웨이 워 웨이라이 리 유 니.",
    "ko": "내 미래 안에 네가 있으니까.",
-   "note": "未来 (미래) + 有",
+   "note": "未来=미래, 有=있다",
    "tags": [
     "confession",
     "hook:future"
    ],
+   "emotion": "gentle",
    "lemmas": [
     [
      "未来",
@@ -192,35 +194,41 @@
      "有",
      "yǒu"
     ]
-   ],
-   "rd": "인웨이 워 더 웨이라이 리 유 니.",
-   "emotion": "gentle"
+   ]
   },
   {
    "num": 6,
    "speaker": "B",
-   "zh": "Mark……",
-   "pinyin": "Mark……",
-   "ko": "Mark……",
-   "note": "감정 침묵",
+   "zh": "{name}……我在听。",
+   "pinyin": "{name}……wǒ zài tīng.",
+   "rd": "{name}……워 짜이 팅.",
+   "ko": "{name}…… 듣고 있어.",
+   "note": "",
    "tags": [
     "feeling"
    ],
-   "lemmas": [],
-   "rd": "Mark……",
-   "emotion": "shy"
+   "emotion": "shy",
+   "lemmas": [
+    [
+     "听",
+     "听",
+     "tīng"
+    ]
+   ]
   },
   {
    "num": 7,
    "speaker": "A",
-   "zh": "如果我留在中国，你开心吗？🥰",
-   "pinyin": "Rúguǒ wǒ liú zài Zhōngguó, nǐ kāixīn ma?",
+   "zh": "如果我留在中国，你高兴吗？🥰",
+   "pinyin": "Rúguǒ wǒ liú zài Zhōngguó, nǐ gāoxìng ma?",
+   "rd": "루궈 워 류 짜이 중궈, 니 가오싱 마?",
    "ko": "내가 중국에 남으면, 기뻐?",
-   "note": "如果 (만약) 가정문",
+   "note": "如果=만약",
    "tags": [
     "question",
     "function:如果"
    ],
+   "emotion": "gentle",
    "lemmas": [
     [
      "留",
@@ -233,25 +241,25 @@
      "zhōng guó"
     ],
     [
-     "开心",
-     "开心",
-     "kāi xīn"
+     "高兴",
+     "高兴",
+     "gāo xìng"
     ]
-   ],
-   "rd": "루궈 워 류 짜이 중궈, 니 카이신 마?",
-   "emotion": "gentle"
+   ]
   },
   {
    "num": 8,
    "speaker": "B",
-   "zh": "当然开心，可是……",
-   "pinyin": "Dāngrán kāixīn, kěshì……",
+   "zh": "当然高兴，可是……",
+   "pinyin": "Dāngrán gāoxìng, kěshì……",
+   "rd": "당란 가오싱, 커스……",
    "ko": "당연히 기쁘지, 그런데……",
-   "note": "可是 (그러나) 전환",
+   "note": "可是=그러나",
    "tags": [
     "feeling",
     "function:可是"
    ],
+   "emotion": "sad",
    "lemmas": [
     [
      "当然",
@@ -259,13 +267,16 @@
      "dāng rán"
     ],
     [
-     "开心",
-     "开心",
-     "kāi xīn"
+     "高兴",
+     "高兴",
+     "gāo xìng"
     ]
-   ],
-   "rd": "당란 카이신, 커스……",
-   "emotion": "sad"
+   ]
   }
- ]
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r4_love_l1_ep5_2_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ }
 }

@@ -1,0 +1,8 @@
+1 B: 我妈想跟你视频聊聊。 / Wǒ mā xiǎng gēn nǐ shìpín liáoliao. / 우리 엄마가 너랑 영상통화로 얘기하고 싶대. / 聊聊=좀 이야기하다(중첩) / neutral
+2 A: 什么？跟你爸妈视频？ / Shénme? Gēn nǐ bàma shìpín? / 뭐? 너희 부모님이랑 영상통화를? / 跟=~와 / surprised
+3 B: 别怕，我们先练习一下。 / Bié pà, wǒmen xiān liànxí yíxià. / 겁내지 마, 우리 먼저 연습 좀 해 보자. / 一下=좀 ~해 보다 / gentle
+4 A: 好，我该叫他们什么？ / Hǎo, wǒ gāi jiào tāmen shénme? / 좋아, 두 분을 뭐라고 불러야 해? / 叫=부르다(이중목적어) / worried
+5 B: 叫叔叔阿姨就可以了。 / Jiào shūshu āyí jiù kěyǐ le. / 아저씨 아주머니라고 부르면 돼. / 就可以了=~하면 된다 / neutral
+6 A: 叔叔阿姨好，我叫{name}。 / Shūshu āyí hǎo, wǒ jiào {name}. / 아저씨 아주머니 안녕하세요, 저는 {name}입니다. / 我叫=자기소개 / stiff
+7 B: 声音再大一点儿，别低头。 / Shēngyīn zài dà yìdiǎnr, bié dītóu. / 목소리 좀 더 크게, 고개 숙이지 말고. / 再…一点儿=좀 더 ~하게 / stiff
+8 A: 要是问工资怎么办？ / Yàoshi wèn gōngzī zěnme bàn? / 두 분이 월급 물어보시면 어떡해? / 要是…怎么办=만약 ~하면 어쩌지 / worried

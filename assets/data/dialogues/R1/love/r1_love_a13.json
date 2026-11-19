@@ -263,24 +263,29 @@
   {
    "num": 7,
    "speaker": "B",
-   "zh": "不管了，你扎的就好看。",
-   "pinyin": "Bù guǎn le, nǐ zhā de jiù hǎokàn.",
-   "rd": "부 관 러, 니 자 더 주 하오칸.",
-   "ko": "됐어, 네가 묶은 거면 예뻐.",
+   "zh": "不管怎么样你扎的都好看。",
+   "pinyin": "Bù guǎn zěnmeyàng nǐ zhā de dōu hǎokàn.",
+   "rd": "부 관 쩐머양 니 자 더 더우 하오칸.",
+   "ko": "어쨌든 네가 묶은 거면 예뻐.",
    "note": "不管 = 상관없다",
    "tags": [
     "form:就"
    ],
    "lemmas": [
     [
+     "怎么样",
+     "怎么样",
+     "zěn me yàng"
+    ],
+    [
      "扎",
      "扎",
      "zhā"
     ],
     [
-     "就",
-     "就",
-     "jiù"
+     "都",
+     "都",
+     "dōu"
     ],
     [
      "好看",
@@ -288,17 +293,7 @@
      "hǎo kàn"
     ]
    ],
-   "emotion": "annoyed",
-   "segs": [
-    [
-     "annoyed",
-     "不管了，"
-    ],
-    [
-     "gentle",
-     "你扎的就好看。"
-    ]
-   ]
+   "emotion": "gentle"
   },
   {
    "num": 8,
@@ -334,6 +329,7 @@
  "review": {
   "grok_rewrite": "data/review/r1_love_a13_grok_rewrite.md",
   "model": "전문가",
-  "final": "세션 리뷰"
+  "final": "세션 리뷰",
+  "r1_lines_1120": "#7 Grok(빠른) 다시 씀 — TTS 오독(tools/grok/zh_rw/out/r1_lines.md)"
  }
 }

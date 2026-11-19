@@ -21,12 +21,14 @@
    "speaker": "A",
    "zh": "对不起，是我让你难过了。",
    "pinyin": "Duìbuqǐ, shì wǒ ràng nǐ nánguò le.",
+   "rd": "두이부치, 스 워 랑 니 난궈 러.",
    "ko": "미안해, 내가 널 힘들게 했어.",
-   "note": "사역동사 让 + 是 주어 강조",
+   "note": "‘让’ 사역 + ‘是’ 주어 강조",
    "tags": [
     "让",
     "사과"
    ],
+   "emotion": "sad",
    "lemmas": [
     [
      "对不起",
@@ -48,31 +50,26 @@
      "难过",
      "nán guò"
     ]
-   ],
-   "rd": "두이부치, 스 워 랑 니 난궈 러.",
-   "emotion": "sad"
+   ]
   },
   {
    "num": 2,
    "speaker": "B",
-   "zh": "我也有错，话说得太重了。",
-   "pinyin": "Wǒ yě yǒu cuò, huà shuō de tài zhòng le.",
+   "zh": "我也错了，话说得太重了。",
+   "pinyin": "Wǒ yě cuò le, huà shuō de tài zhòng le.",
+   "rd": "워 예 춰 러, 화 숴 더 타이 중 러.",
    "ko": "나도 잘못했어, 말이 너무 심했어.",
-   "note": "정도보어 得 + '太…了'",
+   "note": "‘得’ 정도보어 + ‘太…了’",
    "tags": [
     "太…了",
     "화해"
    ],
+   "emotion": "sad",
    "lemmas": [
     [
      "也",
      "也",
      "yě"
-    ],
-    [
-     "有",
-     "有",
-     "yǒu"
     ],
     [
      "错",
@@ -99,21 +96,21 @@
      "重",
      "zhòng"
     ]
-   ],
-   "rd": "워 예 유 춰, 화 숴 더 타이 중 러.",
-   "emotion": "sad"
+   ]
   },
   {
    "num": 3,
    "speaker": "A",
    "zh": "别哭，辣椒还没上呢。😜",
    "pinyin": "Bié kū, làjiāo hái méi shàng ne.",
+   "rd": "볘 쿠, 라자오 하이 메이 상 너.",
    "ko": "울지 마, 아직 고추도 안 나왔는데.",
-   "note": "'还没…呢' 미완료 표현",
+   "note": "‘还没…呢’ 미완료",
    "tags": [
     "还没…呢",
     "유머"
    ],
+   "emotion": "teasing",
    "lemmas": [
     [
      "别",
@@ -145,26 +142,31 @@
      "上",
      "shàng"
     ]
-   ],
-   "rd": "볘 쿠, 라자오 하이 메이 상 너.",
-   "emotion": "teasing"
+   ]
   },
   {
    "num": 4,
    "speaker": "B",
-   "zh": "讨厌，眼泪是被你气的！",
-   "pinyin": "Tǎoyàn, yǎnlèi shì bèi nǐ qì de!",
+   "zh": "讨厌，这眼泪是被你弄出来的！",
+   "pinyin": "Tǎoyàn, zhè yǎnlèi shì bèi nǐ nòng chūlái de!",
+   "rd": "타오옌, 저 옌레이 스 베이 니 눙 추라이 더!",
    "ko": "미워, 이 눈물은 너 때문에 난 거야!",
-   "note": "被자문 (피동) + 是…的",
+   "note": "‘被’ 피동 + ‘是…的’",
    "tags": [
     "被자문",
     "애교"
    ],
+   "emotion": "annoyed",
    "lemmas": [
     [
      "讨厌",
      "讨厌",
      "tǎo yàn"
+    ],
+    [
+     "这",
+     "这",
+     "zhè"
     ],
     [
      "眼泪",
@@ -177,25 +179,30 @@
      "shì"
     ],
     [
-     "气",
-     "气",
-     "qì"
+     "弄",
+     "弄",
+     "nòng"
+    ],
+    [
+     "出来",
+     "出来",
+     "chū lái"
     ]
-   ],
-   "rd": "타오옌, 옌레이 스 베이 니 치 더!",
-   "emotion": "annoyed"
+   ]
   },
   {
    "num": 5,
    "speaker": "A",
-   "zh": "进去吧，微辣，像那天一样。",
-   "pinyin": "Jìnqù ba, wēi là, xiàng nà tiān yíyàng.",
+   "zh": "进去吧，吃清汤的，像那天一样。",
+   "pinyin": "Jìnqù ba, chī qīngtāng de, xiàng nà tiān yíyàng.",
+   "rd": "진취 바, 츠 칭탕 더, 샹 나 톈 이양.",
    "ko": "들어가자, 순한 맛으로, 그날처럼.",
-   "note": "'像…一样' 비유 구문",
+   "note": "‘像…一样’ 비유",
    "tags": [
     "像…一样",
     "훠궈"
    ],
+   "emotion": "gentle",
    "lemmas": [
     [
      "进去",
@@ -203,14 +210,19 @@
      "jìn qù"
     ],
     [
-     "微",
-     "微",
-     "wēi"
+     "吃",
+     "吃",
+     "chī"
     ],
     [
-     "辣",
-     "辣",
-     "là"
+     "清",
+     "清",
+     "qīng"
+    ],
+    [
+     "汤",
+     "汤",
+     "tāng"
     ],
     [
      "像",
@@ -232,20 +244,20 @@
      "一样",
      "yī yàng"
     ]
-   ],
-   "rd": "진취 바, 웨이 라, 샹 나 톈 이양.",
-   "emotion": "gentle"
+   ]
   },
   {
    "num": 6,
    "speaker": "B",
    "zh": "好，这次谁也不许再生气。",
-   "pinyin": "Hǎo, zhècì shuí yě bùxǔ zài shēngqì.",
+   "pinyin": "Hǎo, zhè cì shéi yě bù xǔ zài shēngqì.",
+   "rd": "하오, 저 츠 세이 예 부 쉬 짜이 성치.",
    "ko": "좋아, 이번엔 누구도 다시 화내기 없기야.",
-   "note": null,
+   "note": "",
    "tags": [
     "ext"
    ],
+   "emotion": "gentle",
    "lemmas": [
     [
      "好",
@@ -282,50 +294,50 @@
      "生气",
      "shēng qì"
     ]
-   ],
-   "rd": "하오, 저츠 수이 예 부쉬 짜이 성치.",
-   "emotion": "gentle"
+   ]
   },
   {
    "num": 7,
    "speaker": "A",
-   "zh": "一言为定，进去吧！😄",
-   "pinyin": "Yīyánwéidìng, jìnqù ba!",
+   "zh": "说好了，进去！",
+   "pinyin": "Shuō hǎo le, jìnqù!",
+   "rd": "숴 하오 러, 진취!",
    "ko": "약속이야, 들어가자!",
-   "note": null,
+   "note": "",
    "tags": [
     "ext"
    ],
+   "emotion": "cheerful",
    "lemmas": [
     [
-     "言",
-     "言",
-     "yán"
+     "说",
+     "说",
+     "shuō"
     ],
     [
-     "定",
-     "定",
-     "dìng"
+     "好",
+     "好",
+     "hǎo"
     ],
     [
      "进去",
      "进去",
      "jìn qù"
     ]
-   ],
-   "rd": "이옌웨이딩, 진취 바!",
-   "emotion": "cheerful"
+   ]
   },
   {
    "num": 8,
    "speaker": "B",
-   "zh": "谢谢你，一直没有放弃我。",
-   "pinyin": "Xièxiè nǐ, yìzhí méiyǒu fàngqì wǒ.",
+   "zh": "谢谢你一直没放弃我。",
+   "pinyin": "Xièxie nǐ yìzhí méi fàngqì wǒ.",
+   "rd": "셰셰 니 이즈 메이 팡치 워.",
    "ko": "고마워, 끝까지 날 포기하지 않아 줘서.",
-   "note": null,
+   "note": "",
    "tags": [
     "ext"
    ],
+   "emotion": "gentle",
    "lemmas": [
     [
      "一直",
@@ -333,18 +345,21 @@
      "yì zhí"
     ],
     [
-     "没有",
-     "没有",
-     "méi yǒu"
+     "没",
+     "没",
+     "méi"
     ],
     [
      "放弃",
      "放弃",
      "fàng qì"
     ]
-   ],
-   "rd": "셰셰 니, 이즈 메이유 팡치 워.",
-   "emotion": "gentle"
+   ]
   }
- ]
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r4_love_l3_d20_2_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ }
 }
