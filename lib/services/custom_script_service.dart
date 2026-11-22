@@ -11,8 +11,7 @@ import 'dialogue_service.dart';
 /// 맞춤 회화(고유 스크립트) — 일본어앱에서 옮김(2026-11-02). 계약은 일본어앱 `docs/CUSTOM_SCRIPT_API.md` 와 같은 모양.
 ///
 /// 도메인·상황·레벨을 고르면 Cloudflare 에 요청이 ID 로 저장되고, 코드 서버가 편을 만들어 같은 ID 에 넣는다.
-/// **중국어 엔드포인트(`/api/script/zh`)는 서버 쪽이 아직 없다** — [serverReady] 가 false 인 동안 [create] 는
-/// 서버를 부르지 않고 'not_ready' 를 돌려주고, 화면은 「준비 중」을 보인다. 서버가 열리면 true 로 바꾼다.
+/// 서버 `/api/script/zh`(11/22 uk 확인). [serverReady] 가 false 면 [create] 는 서버를 부르지 않고 'not_ready' 를 돌려준다.
 class CustomScriptItem {
   final String id;
   String status; // queued · writing · ready · failed · local(서버에 못 보냄)
@@ -97,8 +96,11 @@ class CustomScriptService {
 
   static const baseUrl = 'https://talkverse.uk/api/script/zh';
 
-  /// 서버(`/api/script/zh`) 준비 여부 — 요청은 보류 중(2026-11-02).
-  static const serverReady = false;
+  /// 서버(`/api/script/zh`) 준비 여부 — 11/22 uk 확인: 언어별로 저장·거름이 이미 된다. 메뉴를 보일지는 [kCustomScriptLive](화면 쪽)가 정한다.
+  static const serverReady = true;
+
+  /// 서버가 마지막으로 알려 준 한 달 한도(없으면 null).
+  int? lastLimit;
   static const _prefItems = 'custom_scripts_v1';
   static const _prefDevice = 'device_id';
   static const levels = ['R0', 'R1', 'R2', 'R3'];
@@ -159,6 +161,15 @@ class CustomScriptService {
     if (res == null) return (item: null, error: 'offline');
     final (code, j) = res;
     if (code == 402) return (item: null, error: 'paid_required');
+    // 한도(일본어앱 2026-11-09 과 같게): 유료 한 달 5편·종합 10편, 하루 1편(한국 시간). 서버가 429 로 알린다.
+    if (code == 429) {
+      final e = (j['error'] ?? '').toString();
+      if (e == 'monthly_limit') {
+        lastLimit = (j['limit'] as num?)?.toInt() ?? lastLimit;
+        return (item: null, error: 'monthly_limit');
+      }
+      if (e == 'daily_limit') return (item: null, error: 'daily_limit');
+    }
     if (code != 200 && code != 201 || j['id'] == null) return (item: null, error: (j['error'] ?? 'HTTP $code').toString());
     final it = CustomScriptItem(
       id: j['id'] as String,

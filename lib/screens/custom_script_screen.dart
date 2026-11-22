@@ -15,7 +15,7 @@ import 'dialogue_screen.dart';
 
 /// 「맞춤 회화 만들기」 — 일본어앱에서 옮김(2026-11-02). 도메인(주제) · 상황 · 레벨을 고르면 그 사람만의 편 1개를 서버가 만든다.
 /// 위: 「내 맞춤 회화」 서랍 / 아래: 입력 3단계 + 만들기.
-/// 중국어 서버(`/api/script/zh`)가 아직 없어서 만들기를 누르면 「준비 중」 안내만 한다(CustomScriptService.serverReady).
+/// 메뉴는 [kCustomScriptLive] 가 true 일 때만 보인다(일본어앱과 같게, 보일지는 사용자 결정 대기 — 11/22 uk).
 class CustomScriptScreen extends StatefulWidget {
   const CustomScriptScreen({super.key});
   @override
@@ -87,6 +87,10 @@ class _CustomScriptScreenState extends State<CustomScriptScreen> {
         }
       case 'offline':
         _snack(tr('지금은 만들 수 없어요. 잠시 뒤 다시 시도해 주세요'), AppColors.copper);
+      case 'monthly_limit':
+        _snack(trf('이번 달 맞춤 회화를 모두 만들었어요({0}편). 다음 달 1일(한국 시간)에 다시 만들 수 있어요', [_svc.lastLimit ?? 5]), AppColors.tan);
+      case 'daily_limit':
+        _snack(tr('맞춤 회화는 하루 1편까지예요. 내일(한국 시간) 다시 만들어 주세요'), AppColors.tan);
       default:
         _snack('${tr('오류')}: ${r.error}', AppColors.copper);
     }
@@ -359,12 +363,15 @@ class _Row extends StatelessWidget {
       );
 }
 
+/// 맞춤 회화 메뉴를 보일지 — 일본어앱 kCustomScriptLive 와 같게. 사용자 결정 전까지 false(메뉴 숨김, 11/22 uk).
+const bool kCustomScriptLive = false;
+
 /// 주제별 회화 홈 상단 진입 카드.
 class CustomScriptEntryCard extends StatelessWidget {
   const CustomScriptEntryCard({super.key});
   // 시안 zh05: 홈의 주인공은 「이어서 읽기」 하나 — 맞춤 회화는 상자 없이 조용한 한 줄로.
   /// 서버(`/api/script/zh`)가 생기기 전에는 숨긴다(11/22 「막힌거 각자 판단대로」 — 「준비 중」 줄 제거로 고름).
-  static bool get visible => CustomScriptService.serverReady;
+  static bool get visible => kCustomScriptLive;
   @override
   Widget build(BuildContext context) => !visible ? const SizedBox.shrink() : InkWell(
         onTap: () => openPane(context, (_) => const CustomScriptScreen()),
