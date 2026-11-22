@@ -330,8 +330,7 @@ class _Memorize extends StatelessWidget {
     final jaStyle = AppFonts.zhText(size: 19, weight: FontWeight.w700);
     const koStyle = TextStyle(fontSize: 14, color: AppColors.mo, height: 1.45);
     return Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
-      LessonVideo(url: video),
-      const SizedBox(height: 12),
+      if (video.isNotEmpty) ...[LessonVideo(url: video), const SizedBox(height: 12)],   // 영상이 없으면 빈 「영상 준비 중」 칸을 안 보인다(11/22 심사 대비)
       Container(
         padding: const EdgeInsets.all(12),
         decoration: BoxDecoration(color: AppColors.xuanZhiDeep, borderRadius: BorderRadius.circular(10)),
