@@ -19,7 +19,28 @@ class DialogueAudio {
   Completer<void>? _wait;
   int _gen = 0;
 
-  AudioLine? line(String episodeId, int turn) => ContentSync.instance.audioIndex[episodeId]?[turn]?[LearnerPrefs.isFemale ? 'f' : 'm'];
+  /// 그 턴의 녹음 음성. 대사가 바뀌어 녹음 본문이 지금 대사와 다르면(옛 음성) 없는 것으로 본다 → 기기 TTS·지금 대사.
+  /// 새 녹음이 서버에 올라오면 본문이 맞아 다시 녹음이 먼저 나온다(11/22 사용자 「음성이 없는건 TTS로」).
+  AudioLine? line(String episodeId, int turn) {
+    final l = ContentSync.instance.audioIndex[episodeId]?[turn]?[LearnerPrefs.isFemale ? 'f' : 'm'];
+    if (l == null || l.text.isEmpty) return l;
+    final d = DialogueService.instance.byId(episodeId);
+    if (d == null) return l;
+    for (final t in d.turns) {
+      if (t.num == turn) return sameLine(l.text, t.zh) ? l : null;
+    }
+    return l;
+  }
+
+  static final _paren = RegExp(r'[（(][^)）]*[)）]');
+  static final _nonHan = RegExp(r'[^\u4e00-\u9fff]');
+  static String _han(String s) => s.replaceAll(_paren, '').replaceAll(_nonHan, '');
+
+  /// 녹음 본문과 지금 대사가 같은 말인가 — 한자만 견주고, {name} 자리는 이름(한자 0~4자) 아무거나.
+  static bool sameLine(String audioText, String zh) {
+    final parts = zh.replaceAll(_paren, '').split('{name}').map(_han).map(RegExp.escape);
+    return RegExp('^${parts.join('[\\u4e00-\\u9fff]{0,4}')}\$').hasMatch(_han(audioText));
+  }
 
   /// 음성이 있는 턴은 그 음성의 본문(이름이 든 학습자 성별판) — 듣는 말과 글이 같아야 한다. 없으면 null.
   String? textOf(String episodeId, int turn) {
