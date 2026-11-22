@@ -121,6 +121,7 @@ flutter:
     - assets/data/freq/conv_words_zh.json   # 절벽 단어 「회화 단어 포함」 — tools/freq/conv_words.py
     - assets/data/freq/FINAL_wordset_for_conversation_app.tsv
     - assets/audio/hanzi/
+    - assets/data/grammar/steps.json   # 문법 스텝 1~10 목록 — 서버 원고로도 받음(11/23)
     - assets/data/grammar/lesson1.json
     - assets/data/grammar/hanzi_info.json
     - assets/data/hanzi/hanzi_stages.json

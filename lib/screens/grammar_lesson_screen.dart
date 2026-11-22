@@ -1,11 +1,9 @@
-import 'dart:convert';
 import 'package:flutter/material.dart';
-import '../core/embed_env.dart';
-import 'package:flutter/services.dart' show rootBundle;
 
 import 'package:flutter/services.dart' show Clipboard, ClipboardData;
 
 import '../core/theme.dart';
+import '../services/grammar_steps.dart';
 import '../services/ko_reading.dart';
 import '../services/memo_service.dart';
 import '../services/tts_service.dart';
@@ -17,7 +15,8 @@ import '../core/l10n.dart';
 
 class GrammarLessonScreen extends StatefulWidget {
   final int lessonNum;
-  const GrammarLessonScreen({super.key, this.lessonNum = 1});
+  final String? file; // 스텝 파일(assets/data/ 아래) — 없으면 grammar/lesson<n>.json
+  const GrammarLessonScreen({super.key, this.lessonNum = 1, this.file});
 
   @override
   State<GrammarLessonScreen> createState() => _GrammarLessonScreenState();
@@ -36,9 +35,11 @@ class _GrammarLessonScreenState extends State<GrammarLessonScreen> {
   }
 
   Future<void> _load() async {
-    final raw = await rootBundle.loadString(assetPath('assets/data/grammar/lesson${widget.lessonNum}.json'));
+    // 서버 원고에 새 판이 있으면 그것(11/23 「DB업데이트 하면서 업뎃되게」)
+    final d = await GrammarSteps.content(widget.file ?? 'grammar/lesson${widget.lessonNum}.json');
+    if (!mounted) return;
     setState(() {
-      _data = json.decode(raw) as Map<String, dynamic>;
+      _data = d;
       _loading = false;
     });
   }
@@ -145,7 +146,7 @@ class _GrammarLessonScreenState extends State<GrammarLessonScreen> {
             icon: const Icon(Icons.quiz_outlined),
             onPressed: () => Navigator.push(
               context,
-              MaterialPageRoute(builder: (_) => const GrammarTestScreen()),
+              MaterialPageRoute(builder: (_) => GrammarTestScreen(file: widget.file)),
             ),
           ),
           IconButton(
@@ -332,7 +333,7 @@ class _GrammarLessonScreenState extends State<GrammarLessonScreen> {
           InkWell(
             onTap: () => Navigator.push(
               context,
-              MaterialPageRoute(builder: (_) => const GrammarTestScreen()),
+              MaterialPageRoute(builder: (_) => GrammarTestScreen(file: widget.file)),
             ),
             child: Container(
               width: double.infinity,
@@ -615,17 +616,34 @@ class _ExampleRow extends StatelessWidget {
 
 
 /// 문법 통합 메뉴 — L1/L2 선택.
-class GrammarMenuScreen extends StatelessWidget {
+/// 문법 메뉴 — 스텝 1~10 틀. 목록·제목·내용은 [GrammarSteps](서버 원고 → 앱 묶음), 내용 없는 스텝은 숨김(11/23).
+class GrammarMenuScreen extends StatefulWidget {
   const GrammarMenuScreen({super.key});
 
   @override
+  State<GrammarMenuScreen> createState() => _GrammarMenuScreenState();
+}
+
+class _GrammarMenuScreenState extends State<GrammarMenuScreen> {
+  static const _colors = [Color(0xFF8B0000), Color(0xFF9A5F38), Color(0xFF0E7C8C), Color(0xFF4B44D6), Color(0xFF43A047), Color(0xFFB77548), Color(0xFF1E88E5), Color(0xFFE86A8C), Color(0xFF425466), Color(0xFFC19E6D)];
+  List<GrammarStep>? _steps;
+
+  @override
+  void initState() {
+    super.initState();
+    GrammarSteps.visible().then((v) {
+      if (mounted) setState(() => _steps = v);
+    });
+  }
+
+  @override
   Widget build(BuildContext context) {
-    Widget card(String title, String sub, int lesson, Color color) {
+    Widget card(String title, String sub, int lesson, Color color, String file) {
       return InkWell(
         onTap: () => Navigator.push(
           context,
           MaterialPageRoute(
-              builder: (_) => GrammarLessonScreen(lessonNum: lesson)),
+              builder: (_) => GrammarLessonScreen(lessonNum: lesson, file: file)),
         ),
         child: Container(
           padding: const EdgeInsets.all(18),
@@ -683,13 +701,17 @@ class GrammarMenuScreen extends StatelessWidget {
       body: SafeArea(
         // 아이폰 홈 표시줄·갤럭시 제스처 바 아래로 내용이 깔리지 않게
         top: false,
-        child: ListView(
-          padding: const EdgeInsets.all(16),
-          children: [
-            card(tr('문법 L1'), tr('기능어 40개 × 3문장 드릴'), 1, const Color(0xFF8B0000)),
-            const SizedBox(height: 10),
-          ],
-        ),
+        child: _steps == null
+            ? const Center(child: CircularProgressIndicator())
+            : ListView(
+                padding: const EdgeInsets.all(16),
+                children: [
+                  for (final st in _steps!) ...[
+                    card(tr(st.title), tr(st.subtitle), st.step, _colors[(st.step - 1) % _colors.length], st.file),
+                    const SizedBox(height: 10),
+                  ],
+                ],
+              ),
       ),
     );
   }

@@ -230,7 +230,10 @@
 "dialogues/R4/love/r4_love_l4_d08.json": "a583eff08874",
 "dialogues/R4/love/r4_love_l4_d09.json": "0d610b2b9f1c",
 "dialogues/R4/love/r4_love_l4_d10.json": "45fd9ca140e2",
-"grammar/sense_course.json": "f08d46589f7e"
+"grammar/hanzi_info.json": "090f3febc697",
+"grammar/lesson1.json": "fd0fbd6043a5",
+"grammar/sense_course.json": "f08d46589f7e",
+"grammar/steps.json": "973f1b2ca373"
 },
-"rev": 6
+"rev": 7
 }

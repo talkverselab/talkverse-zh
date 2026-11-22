@@ -1,0 +1,95 @@
+{
+ "_note": "문법 스텝 목록 — 앱은 이 파일(서버 원고가 있으면 그것)로 메뉴를 그린다. 내용 파일이 없거나 비면 그 스텝은 숨김.",
+ "steps": [
+  {
+   "step": 1,
+   "title": "문법 L1",
+   "subtitle": "기능어 40개 × 3문장 드릴",
+   "file": "grammar/lesson1.json"
+  },
+  {
+   "step": 2,
+   "title": "문법 L2",
+   "subtitle": "",
+   "file": "grammar/lesson2.json"
+  },
+  {
+   "step": 3,
+   "title": "문법 L3",
+   "subtitle": "",
+   "file": "grammar/lesson3.json"
+  },
+  {
+   "step": 4,
+   "title": "문법 L4",
+   "subtitle": "",
+   "file": "grammar/lesson4.json"
+  },
+  {
+   "step": 5,
+   "title": "문법 L5",
+   "subtitle": "",
+   "file": "grammar/lesson5.json"
+  },
+  {
+   "step": 6,
+   "title": "문법 L6",
+   "subtitle": "",
+   "file": "grammar/lesson6.json"
+  },
+  {
+   "step": 7,
+   "title": "문법 L7",
+   "subtitle": "",
+   "file": "grammar/lesson7.json"
+  },
+  {
+   "step": 8,
+   "title": "문법 L8",
+   "subtitle": "",
+   "file": "grammar/lesson8.json"
+  },
+  {
+   "step": 9,
+   "title": "문법 L9",
+   "subtitle": "",
+   "file": "grammar/lesson9.json"
+  },
+  {
+   "step": 10,
+   "title": "문법 L10",
+   "subtitle": "",
+   "file": "grammar/lesson10.json"
+  },
+  {
+   "step": 11,
+   "title": "문법 L11",
+   "subtitle": "",
+   "file": "grammar/lesson11.json"
+  },
+  {
+   "step": 12,
+   "title": "문법 L12",
+   "subtitle": "",
+   "file": "grammar/lesson12.json"
+  },
+  {
+   "step": 13,
+   "title": "문법 L13",
+   "subtitle": "",
+   "file": "grammar/lesson13.json"
+  },
+  {
+   "step": 14,
+   "title": "문법 L14",
+   "subtitle": "",
+   "file": "grammar/lesson14.json"
+  },
+  {
+   "step": 15,
+   "title": "문법 L15",
+   "subtitle": "",
+   "file": "grammar/lesson15.json"
+  }
+ ]
+}

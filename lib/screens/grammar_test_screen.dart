@@ -1,8 +1,6 @@
 import 'dart:convert';
 import 'dart:math';
 import 'package:flutter/material.dart';
-import '../core/embed_env.dart';
-import 'package:flutter/services.dart' show rootBundle;
 
 import '../core/theme.dart';
 import '../services/lexicon_service.dart';
@@ -10,10 +8,12 @@ import '../services/ko_reading.dart';
 import '../services/tts_service.dart';
 import '../widgets/chinese_decor.dart';
 import '../widgets/selectable_hanzi.dart';
+import '../services/script_sync.dart';
 import '../core/l10n.dart';
 
 class GrammarTestScreen extends StatefulWidget {
-  const GrammarTestScreen({super.key});
+  final String? file; // 스텝 파일(assets/data/ 아래) — 없으면 grammar/lesson1.json
+  const GrammarTestScreen({super.key, this.file});
 
   @override
   State<GrammarTestScreen> createState() => _GrammarTestScreenState();
@@ -67,7 +67,7 @@ class _GrammarTestScreenState extends State<GrammarTestScreen> {
   }
 
   Future<void> _load() async {
-    final raw = await rootBundle.loadString(assetPath('assets/data/grammar/lesson1.json'));
+    final raw = await ScriptSync.instance.load(widget.file ?? 'grammar/lesson1.json'); // 서버 원고 우선(11/23)
     final data = json.decode(raw) as Map<String, dynamic>;
     _chunks = (data['chunks'] as Map?)?.cast<String, dynamic>();
     final patterns = (data['patterns'] as List?) ?? [];
@@ -91,7 +91,7 @@ class _GrammarTestScreenState extends State<GrammarTestScreen> {
     cards.shuffle(Random());
 
     // hanzi_info 로드 (단일 한자 뜻)
-    final hRaw = await rootBundle.loadString(assetPath('assets/data/grammar/hanzi_info.json'));
+    final hRaw = await ScriptSync.instance.load('grammar/hanzi_info.json');
     _hanziInfo = json.decode(hRaw) as Map<String, dynamic>;
 
     // lex 로드 (단일 한자 병음용)

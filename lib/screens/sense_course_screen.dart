@@ -25,7 +25,22 @@ class SenseCourse {
   static Map<String, dynamic>? _cache;
   static Future<Map<String, dynamic>> load() async =>
       // loadString 은 큰 파일을 다른 isolate 에서 풀어 위젯 테스트가 멈춘다 — 바이트로 읽어 여기서 푼다.
-      _cache ??= json.decode(await ScriptSync.instance.load(_kAsset.substring('assets/data/'.length))) as Map<String, dynamic>;
+      _cache ??= withoutEmpty(json.decode(await ScriptSync.instance.load(_kAsset.substring('assets/data/'.length))) as Map<String, dynamic>);
+
+  /// 내용 없는 회차·급은 뺀다 — 급 수·제목·순서는 데이터(서버 원고 우선)가 정하고, 빈 급은 「준비 중」 없이 숨김(11/23).
+  static Map<String, dynamic> withoutEmpty(Map<String, dynamic> d) {
+    bool has(Map<String, dynamic> ls) =>
+        ls['open'] != null || ((ls['sentences'] as List?)?.isNotEmpty ?? false) || ((ls['points'] as List?)?.isNotEmpty ?? false);
+    final levels = <Map<String, dynamic>>[];
+    for (final lv in ((d['levels'] as List?) ?? const []).whereType<Map>()) {
+      final ls = [for (final l in ((lv['lessons'] as List?) ?? const []).whereType<Map>()) if (has(l.cast<String, dynamic>())) l.cast<String, dynamic>()];
+      if (ls.isNotEmpty) levels.add({...lv.cast<String, dynamic>(), 'lessons': ls});
+    }
+    return {...d, 'levels': levels};
+  }
+
+  @visibleForTesting
+  static void debugClear() => _cache = null;
 
   static Future<Set<String>> done() async => ((await Prefs.getInstance()).getStringList(_kDoneKey) ?? const []).toSet();
 
