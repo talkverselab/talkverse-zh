@@ -50,14 +50,14 @@ class _DialogueHomeScreenState extends State<DialogueHomeScreen> {
               child: Center(child: CircularProgressIndicator(color: AppColors.copper)),
             ),
           ]
-        : DialogueHomeList.items(context, level: level, toggle: widget.embedded ? toggle : null, continueCard: !widget.embedded);
+        : DialogueHomeList.items(context, level: level, toggle: widget.embedded && svc.hasR0 ? toggle : null, continueCard: !widget.embedded);
     // 「배우기」 탭 안(앱바·스크롤 없이 바깥 ListView 에 들어감) — 「이어서 읽기」는 탭이 맨 위에 따로 둔다
     if (widget.embedded) return Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: items);
     return Scaffold(
       backgroundColor: AppColors.xuanZhi,
       appBar: AppBar(
         title: Text(tr('회화')),
-        actions: [Padding(padding: const EdgeInsets.only(right: 8), child: toggle)],
+        actions: [if (svc.hasR0) Padding(padding: const EdgeInsets.only(right: 8), child: toggle)],
       ),
       body: SafeArea(
         top: false,
@@ -105,7 +105,7 @@ class DialogueHomeList {
       if (continueCard) ...[ContinueReadingCard(level: svc.startLevel), const SizedBox(height: 18)],
       if (CustomScriptEntryCard.visible) ...[const CustomScriptEntryCard(), const SizedBox(height: 6)],
       if (toggle != null) Align(alignment: Alignment.centerLeft, child: toggle),
-      Padding(
+      if (svc.hasR0) Padding(
         padding: const EdgeInsets.fromLTRB(6, 2, 6, 6),
         child: Text(
           level == 'R0' ? tr('왕초보: 문장이 짧은 편만 모았어요. 익숙해지면 초보로 올라오세요.') : tr('초보가 기본입니다. 너무 힘들면 「왕초보」로 바꾸세요 — 문장이 짧은 편들만 모아 보여 줍니다.'),

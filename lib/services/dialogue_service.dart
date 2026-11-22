@@ -211,8 +211,11 @@ class DialogueService {
   bool _loaded = false;
   String _level = 'R1';
 
-  /// 사용자 레벨 모드(R0 왕초보 / R1 초보). 기본 R1.
-  String get level => _level;
+  /// 사용자 레벨 모드(R0 왕초보 / R1 초보). 기본 R1. 왕초보 편이 아직 없으면 초보로 본다(11/22 심사 대비 — 빈 「준비 중」 목록 안 보이게).
+  String get level => _level == 'R0' && !hasR0 ? 'R1' : _level;
+
+  /// 왕초보(R0) 편이 있는가 — 없으면 왕초보·초보 스위치와 안내 문구를 숨긴다.
+  bool get hasR0 => count('R0') > 0;
 
   /// 홈이 처음 보여 줄 레벨: 사용자 모드에 편이 있으면 그것, 없으면 편이 있는 가장 낮은 레벨(없으면 모드 그대로).
   String get startLevel {
