@@ -452,7 +452,7 @@ class ExploreTab extends StatelessWidget {
         subtitle: tr('Expression · 필수표현'),
         onTap: () => openPane(context, (_) => TopicVocabScreen(title: tr('주제별 표현'), asset: 'assets/data/vocab/travel_expressions.json')),
       ),
-      _NavRow(
+      if (CustomScriptEntryCard.visible) _NavRow(
         seal: '✨',
         sealColor: AppColors.copper,
         title: tr('맞춤 회화 만들기'),

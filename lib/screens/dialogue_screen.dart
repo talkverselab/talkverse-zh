@@ -103,8 +103,7 @@ class DialogueHomeList {
     final svc = DialogueService.instance;
     return [
       if (continueCard) ...[ContinueReadingCard(level: svc.startLevel), const SizedBox(height: 18)],
-      const CustomScriptEntryCard(),
-      const SizedBox(height: 6),
+      if (CustomScriptEntryCard.visible) ...[const CustomScriptEntryCard(), const SizedBox(height: 6)],
       if (toggle != null) Align(alignment: Alignment.centerLeft, child: toggle),
       Padding(
         padding: const EdgeInsets.fromLTRB(6, 2, 6, 6),

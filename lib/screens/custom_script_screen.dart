@@ -363,8 +363,10 @@ class _Row extends StatelessWidget {
 class CustomScriptEntryCard extends StatelessWidget {
   const CustomScriptEntryCard({super.key});
   // 시안 zh05: 홈의 주인공은 「이어서 읽기」 하나 — 맞춤 회화는 상자 없이 조용한 한 줄로.
+  /// 서버(`/api/script/zh`)가 생기기 전에는 숨긴다(11/22 「막힌거 각자 판단대로」 — 「준비 중」 줄 제거로 고름).
+  static bool get visible => CustomScriptService.serverReady;
   @override
-  Widget build(BuildContext context) => InkWell(
+  Widget build(BuildContext context) => !visible ? const SizedBox.shrink() : InkWell(
         onTap: () => openPane(context, (_) => const CustomScriptScreen()),
         borderRadius: BorderRadius.circular(10),
         child: Padding(
