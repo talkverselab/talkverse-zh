@@ -113,7 +113,7 @@ class DialogueHomeList {
         ),
       ),
       for (final lv in DialogueService.levels)
-        if (lv != 'R0' && lv != 'R1' || lv == level) ...[
+        if ((lv != 'R0' && lv != 'R1' || lv == level) && svc.count(lv) > 0) ...[   // 편이 없는 급은 안 보인다(11/22 심사 대비)
           _LevelHeader(lv: lv, count: svc.count(lv)),
           if (svc.count(lv) == 0)
             Padding(

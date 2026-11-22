@@ -737,7 +737,7 @@ class _SharedHanjaCard extends StatelessWidget {
                 children: [
                   Row(
                     children: [
-                      Text(tr('외우는 방법'), style: AppFonts.captionText(weight: FontWeight.w600, color: AppColors.copper)),
+                      if (mn != null) Text(tr('외우는 방법'), style: AppFonts.captionText(weight: FontWeight.w600, color: AppColors.copper)),
                       const Spacer(),
                       if (write != null)
                         Text(write, style: AppFonts.captionText(size: 11, color: AppColors.feiCui)),
@@ -751,11 +751,7 @@ class _SharedHanjaCard extends StatelessWidget {
                       padding: const EdgeInsets.only(top: 4),
                       child: Text(mn.origin!, style: AppFonts.uiText(size: 12.5, height: 1.5)),
                     ),
-                  if (mn == null)
-                    Text(
-                      tr('준비 중'),
-                      style: const TextStyle(fontSize: 12, color: AppColors.moLight),
-                    ),
+                  // 외우기 도움말이 없으면 아무것도 안 보인다(「준비 중」 자리표시는 11/22 심사 대비로 뺌)
                 ],
               ),
             ),

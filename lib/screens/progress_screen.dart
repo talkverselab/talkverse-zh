@@ -201,11 +201,7 @@ class _ProgressScreenState extends State<ProgressScreen> {
                         _ => AppColors.jinDeep,
                       },
                     )),
-                const SizedBox(height: 8),
-                Text(
-                  tr('문법·한자·발음 진행 기록은 준비 중이에요.'),
-                  style: TextStyle(fontSize: 11, color: AppColors.moLight),
-                ),
+                // 「문법·한자·발음 진행 기록은 준비 중이에요.」 자리표시는 11/22 심사 대비로 뺌(기록이 생기면 그때 줄을 넣는다)
               ],
             ),
     );
