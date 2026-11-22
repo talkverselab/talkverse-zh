@@ -12,6 +12,7 @@ import '../services/tts_service.dart';
 import '../widgets/chinese_decor.dart';
 import 'about_screen.dart';
 import 'chunk_search_screen.dart';
+import 'curriculum_screen.dart';
 import 'custom_script_screen.dart';
 import 'dialogue_screen.dart';
 import 'episode_screen.dart';
@@ -247,6 +248,9 @@ class LearnTab extends StatelessWidget {
         ),
         ContinueReadingCard(level: DialogueService.instance.startLevel),
         const SizedBox(height: 10),
+        // 토크버스 커리큘럼 — 전 언어 공통(~/talkverse/CURRICULUM_SPEC.md, 2026-11-22 사용자 지시). 회화 메뉴 위.
+        const CurriculumHomeCard(),
+        const SizedBox(height: 4),
         // 언어감각 과정 — 외울 대화는 Grok 이 다시 써야 내보낸다(2026-11-18 사용자 지시 「클로드 초안 - 그록 다이얼로그 작성으로 붙여넣기」). 그때까지 숨김.
         if (kShowSenseCourse) _section(tr('정규과정')),
         if (kShowSenseCourse) _NavRow(

@@ -74,11 +74,11 @@ void main() {
     expect(missing, lessThan(turns.length ~/ 50), reason: '$missing / ${turns.length} 턴에 lemmas 없음');
   });
 
-  testWidgets('빈 레벨은 「준비 중」, 오늘의 컷은 편이 있는 레벨에서', (tester) async {
+  testWidgets('빈 레벨은 숨김(11/22 심사 대비), 오늘의 컷은 편이 있는 레벨에서', (tester) async {
     DialogueService.instance.debugSetDialogues([_ep('r3_love_t1', 'R3')]);
     await tester.pumpWidget(const MaterialApp(home: DialogueHomeScreen()));
     await tester.pump();
-    expect(find.textContaining('준비 중'), findsWidgets); // R1(사용자 모드)·R2·R4 는 비어 있음
+    expect(find.textContaining('준비 중'), findsNothing); // 편 없는 R1·R2·R4 는 안 보인다
     expect(find.text('오늘의 컷'), findsOneWidget);
     expect(find.textContaining('r3_love_t1'), findsWidgets);
     await tester.pump(const Duration(seconds: 1));
