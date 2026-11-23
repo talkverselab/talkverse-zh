@@ -45,6 +45,8 @@ class _CurriculumScreenState extends State<CurriculumScreen> {
   Future<void> _setLevel(String lv) async {
     _st.level = lv;
     await _svc.save();
+    final opts = _svc.pickOptions;
+    if (!opts.contains(_pickCount)) _pickCount = opts.contains(5) ? 5 : opts[opts.length ~/ 2];
     setState(() {
       _levelPick = false;
       _picked.clear();
@@ -70,8 +72,10 @@ class _CurriculumScreenState extends State<CurriculumScreen> {
     final ds = [for (final id in c.dialogueIds) DialogueService.instance.byId(id)].whereType<Dialogue>().toList();
     final per = examPerDialogue(ds.length);
     final seed = DateTime.now().millisecondsSinceEpoch;
-    final qs = [for (final d in ds) ...buildQuestions(d, limit: per, pool: ds, seed: seed)]..shuffle();
-    final res = await openFull<QuizResult>(context, (_) => CurriculumQuizScreen(title: tr('코스 시험'), questions: qs.take(30).toList(), mode: QuizMode.exam));
+    final dq = [for (final d in ds) ...buildQuestions(d, limit: per, pool: ds, seed: seed)]..shuffle();
+    final qs = await _svc.withWords(dq.take(30).toList(), seed: seed); // HSK 준비 급수면 단어 문제 반반(서버 wordMix)
+    if (!mounted) return;
+    final res = await openFull<QuizResult>(context, (_) => CurriculumQuizScreen(title: tr('코스 시험'), questions: qs, mode: QuizMode.exam));
     if (res == null || !mounted) return;
     final passed = _st.recordExam(res.correct, res.total, res.wrongDialogues, _svc.today);
     await _svc.save();
@@ -82,8 +86,8 @@ class _CurriculumScreenState extends State<CurriculumScreen> {
       builder: (ctx) => AlertDialog(
         title: Text(passed ? tr('코스 통과!') : tr('조금만 더')),
         content: Text(passed
-            ? trf('{0}점 — 80점을 넘었어요. 다음 코스를 골라요.', [scorePercent(res.correct, res.total)])
-            : trf('{0}점 — 80점이 넘어야 통과예요. 틀린 편만 다시 연습하고 시험을 봐요.', [scorePercent(res.correct, res.total)])),
+            ? trf('{0}점 — {1}점을 넘었어요. 다음 코스를 골라요.', [scorePercent(res.correct, res.total), _svc.passPercent])
+            : trf('{0}점 — {1}점이 넘어야 통과예요. 틀린 편만 다시 연습하고 시험을 봐요.', [scorePercent(res.correct, res.total), _svc.passPercent])),
         actions: [TextButton(onPressed: () => Navigator.pop(ctx), child: Text(tr('확인')))],
       ),
     );
@@ -318,7 +322,7 @@ class _CurriculumScreenState extends State<CurriculumScreen> {
           style: FilledButton.styleFrom(backgroundColor: AppColors.mo, padding: const EdgeInsets.symmetric(vertical: 12)),
           onPressed: c.allPracticed && ds.isNotEmpty ? _exam : null,
           icon: const Icon(Icons.flag, size: 18),
-          label: Text(c.allPracticed ? tr('코스 시험 보기 (80% 이상 통과)') : tr('모든 편을 연습하면 시험이 열려요')),
+          label: Text(c.allPracticed ? trf('코스 시험 보기 ({0}% 이상 통과)', [_svc.passPercent]) : tr('모든 편을 연습하면 시험이 열려요')),
         ),
       ),
       if (_svc.levelDone(lv) && _svc.nextLevel(lv) != null) ...[
@@ -340,7 +344,7 @@ class _CurriculumScreenState extends State<CurriculumScreen> {
     return [
       Text(tr('다이얼로그 고르기'), style: const TextStyle(fontWeight: FontWeight.w800, color: AppColors.mo, fontSize: 15)),
       const SizedBox(height: 2),
-      Text(tr('이 편들로 연습하고, 코스 시험에서 80% 이상이면 다음 코스로 넘어가요.'), style: const TextStyle(fontSize: 12.5, color: AppColors.muted)),
+      Text(trf('이 편들로 연습하고, 코스 시험에서 {0}% 이상이면 다음 코스로 넘어가요.', [_svc.passPercent]), style: const TextStyle(fontSize: 12.5, color: AppColors.muted)),
       if (doneLevel && next != null) ...[
         const SizedBox(height: 8),
         _card(
@@ -350,6 +354,7 @@ class _CurriculumScreenState extends State<CurriculumScreen> {
       ],
       const SizedBox(height: 10),
       CoursePickBar(
+        options: _svc.pickOptions,
         count: _pickCount,
         onCount: (n) => setState(() {
           _pickCount = n;
@@ -402,14 +407,15 @@ class CoursePickBar extends StatelessWidget {
   final int count;
   final ValueChanged<int> onCount;
   final VoidCallback onRecommend;
-  const CoursePickBar({super.key, required this.count, required this.onCount, required this.onRecommend});
+  final List<int> options; // 판의 pick(없으면 3·5·10)
+  const CoursePickBar({super.key, required this.count, required this.onCount, required this.onRecommend, this.options = kPickDefault});
   @override
   Widget build(BuildContext context) => Wrap(
         spacing: 6,
         runSpacing: 4,
         crossAxisAlignment: WrapCrossAlignment.center,
         children: [
-          for (final n in const [3, 5, 10]) ChoiceChip(label: Text(trf('{0}편', [n])), selected: count == n, onSelected: (_) => onCount(n)),
+          for (final n in options) ChoiceChip(label: Text(trf('{0}편', [n])), selected: count == n, onSelected: (_) => onCount(n)),
           TextButton.icon(onPressed: onRecommend, icon: const Icon(Icons.auto_awesome, size: 16), label: Text(tr('추천으로 채우기'))),
         ],
       );
@@ -487,7 +493,8 @@ class _CurriculumPracticeScreenState extends State<CurriculumPracticeScreen> {
     _stop = true;
     await DialogueAudio.instance.stop();
     final svc = CurriculumService.instance;
-    final qs = buildQuestions(d, limit: 10, pool: svc.levelList(d.region), seed: DateTime.now().millisecondsSinceEpoch);
+    final seed = DateTime.now().millisecondsSinceEpoch;
+    final qs = await svc.withWords(buildQuestions(d, limit: 10, pool: svc.levelList(d.region), seed: seed), cap: 20, seed: seed);
     if (!mounted) return;
     final res = await openFull<QuizResult>(context, (_) => CurriculumQuizScreen(title: d.title, questions: qs, mode: QuizMode.practice));
     if (res == null || !mounted) return;
@@ -601,10 +608,10 @@ class _CurriculumQuizScreenState extends State<CurriculumQuizScreen> {
       if (ok) {
         _correct++;
       } else {
-        _wrong.add(q.dialogueId);
+        if (q.dialogueId.isNotEmpty) _wrong.add(q.dialogueId);
       }
     });
-    if (widget.mode != QuizMode.exam) {
+    if (widget.mode != QuizMode.exam && q.kind != 'word') {
       final svc = CurriculumService.instance;
       svc.state.grade(q.lineId, ok, svc.today, countReview: widget.mode == QuizMode.review);
       await svc.save();
@@ -655,7 +662,7 @@ class _CurriculumQuizScreenState extends State<CurriculumQuizScreen> {
       const SizedBox(height: 8),
       Text('${_i + 1} / ${qs.length}', style: const TextStyle(fontSize: 12, color: AppColors.muted)),
       const SizedBox(height: 12),
-      Text(q.kind == 'blank' ? tr('빈칸에 들어갈 말은?') : tr('뜻으로 맞는 것을 고르세요.'), style: const TextStyle(fontSize: 13, color: AppColors.moLight, fontWeight: FontWeight.w600)),
+      Text(q.kind == 'blank' ? tr('빈칸에 들어갈 말은?') : q.kind == 'word' ? tr('이 단어의 뜻은?') : tr('뜻으로 맞는 것을 고르세요.'), style: const TextStyle(fontSize: 13, color: AppColors.moLight, fontWeight: FontWeight.w600)),
       const SizedBox(height: 8),
       Text(q.prompt, style: const TextStyle(fontSize: 20, color: AppColors.mo, height: 1.4, fontWeight: FontWeight.w600)),
       if (q.hint.isNotEmpty) ...[const SizedBox(height: 4), Text(q.hint, style: const TextStyle(fontSize: 13, color: AppColors.muted))],

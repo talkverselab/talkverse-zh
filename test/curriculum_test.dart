@@ -149,6 +149,38 @@ const _plan = '''{"rev": 1, "stages": [
  "prep": [{"id": "hsk", "title": "HSK 준비", "levels": [{"id": "HSK1", "title": "HSK 1급", "dialogueIds": ["a1"]}, {"id": "HSK2", "title": "HSK 2급", "dialogueIds": []}]}]}''';
 
 void planTests() {
+  test('§12 덧붙임: 판의 pick·pass·daily 를 읽고, 없으면 3·5·10 / 80 / 1·2·3 — 통과 판정에 pass 를 씀', () {
+    final p = CurriculumPlan.parse('{"rev":1,"stages":[{"n":1,"title":"1단계","dialogueIds":["a1"],"pick":[2,4],"pass":70,"daily":{"light":2,"normal":4,"focus":6}},{"n":2,"dialogueIds":["a2"]}]}')!;
+    final a = p.stages.first, b = p.stages.last;
+    expect((a.pick.join(','), a.pass, a.daily.toString()), ('2,4', 70, {1: 2, 2: 4, 3: 6}.toString()));
+    expect((b.pick.join(','), b.pass, b.daily.toString(), b.title), ('3,5,10', 80, {1: 1, 2: 2, 3: 3}.toString(), '2단계'));
+    final st = CurriculumState(level: '1')
+      ..dailyMap = a.daily
+      ..passPercent = a.pass
+      ..course = Course('c', ['x']);
+    expect(st.newLeft('2026-11-23'), 4); // 보통 = 판의 normal 4
+    expect(st.recordExam(7, 10, {}, '2026-11-23'), isTrue); // 70점 = 이 단계 통과
+    st.passPercent = 80;
+    st.course = Course('c2', ['y']);
+    expect(st.recordExam(7, 10, {'y'}, '2026-11-23'), isFalse);
+  });
+
+  test('§12 HSK 단어 섞기: 서버 wordMix(없으면 0.5) 비율, 상한 30, 단어 문제는 편 id 없음', () {
+    final p = CurriculumPlan.parse(_plan.replaceFirst('"dialogueIds": ["a1"]}', '"dialogueIds": ["a1"], "wordSet": "hsk1", "wordMix": 0.25}'))!;
+    expect((p.prepLevels.first.wordSet, p.prepLevels.first.wordMix, p.prepLevels.last.wordMix), ('hsk1', 0.25, 0.5));
+    final words = [for (var i = 0; i < 40; i++) (zh: '词$i', rd: 'c$i', ko: '뜻$i')];
+    final dq = [for (var i = 0; i < 10; i++) CurQuestion('d$i', 1, 'meaning', '你好', '', const ['a', 'b', 'c', 'd'], 0)];
+    final m = mixWords(dq, words, 0.5, seed: 1);
+    expect(m.length, 20);
+    final w = m.where((q) => q.kind == 'word').toList();
+    expect(w.length, 10);
+    expect(w.every((q) => q.dialogueId.isEmpty && q.choices.toSet().length == 4 && q.choices[q.answer] == '뜻${q.prompt.substring(1)}'), isTrue);
+    final big = mixWords([...dq, ...dq, ...dq], words, 0.5, seed: 2);
+    expect((big.length, big.where((q) => q.kind == 'word').length), (30, 15));
+    expect(mixWords(dq, words, 0, seed: 3).length, 10);
+    expect(mixWords(dq, words.take(3).toList(), 0.5).length, 10); // 단어가 모자라면 안 섞음
+  });
+
   test('§12 판: 앱에 없는 편은 건너뛰고, 편 없는 단계·급수는 숨김, 옛 R 값은 단계로', () {
     final p = CurriculumPlan.parse(_plan)!;
     expect(p.stages.map((u) => u.key), ['1', '2', '3']);

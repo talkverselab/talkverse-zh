@@ -22,6 +22,22 @@ const kReviewSteps = [1, 3, 7];
 
 /// 통과 기준(%) — 사용자 원문 「80% 이상이 넘으면 코스가 넘어가고」.
 const kPassPercent = 80;
+const kPickDefault = [3, 5, 10];
+const kDailyDefault = {1: 1, 2: 2, 3: 3};
+
+/// 판 JSON 의 pick·pass·daily(§12 덧붙임 — 「커리큘럼 내용은 모두 DB 에서」). 없거나 이상하면 기본값.
+List<int> _pick(Object? v) {
+  final l = [for (final x in (v is List ? v : const [])) if (x is num && x > 0) x.toInt()];
+  return l.isEmpty ? kPickDefault : l;
+}
+
+int _pass(Object? v) => v is num && v > 0 && v <= 100 ? v.toInt() : kPassPercent;
+
+Map<int, int> _daily(Object? v) {
+  if (v is! Map) return kDailyDefault;
+  int g(String k, int d) => v[k] is num && (v[k] as num) > 0 ? (v[k] as num).toInt() : d;
+  return {1: g('light', 1), 2: g('normal', 2), 3: g('focus', 3)};
+}
 
 /// 점수 = 정답 수 / 문제 수, 소수점 버림.
 int scorePercent(int correct, int total) => total <= 0 ? 0 : (correct * 100) ~/ total;
@@ -73,7 +89,9 @@ class Course {
 /// `curriculum_v1` 한 벌. 기준 형식 + `today`(오늘 한 양 — 홈 카드 진행 막대용, 기준 문서에 없는 칸이라 uk 에 알림).
 class CurriculumState {
   String? level;
-  int dailyGoal; // 새 편 수: 1 가볍게 · 2 보통 · 3 집중
+  int dailyGoal; // 하루 목표 칸: 1 가볍게 · 2 보통 · 3 집중 — 실제 새 편 수는 [dailyMap](판의 daily)
+  Map<int, int> dailyMap = kDailyDefault; // 저장 안 함 — 서비스가 지금 단계의 판 값으로 채움
+  int passPercent = kPassPercent; // 저장 안 함 — 지금 단계의 판 pass
   Course? course;
   final List<String> passedDialogues;
   final List<ReviewItem> review;
@@ -133,7 +151,7 @@ class CurriculumState {
   List<ReviewItem> dueReview(String today) => review.where((r) => r.due.compareTo(today) <= 0).toList();
 
   /// 오늘 남은 새 편 수.
-  int newLeft(String today) => max(0, dailyGoal - (todayDay == today ? todayNew : 0));
+  int newLeft(String today) => max(0, (dailyMap[dailyGoal] ?? dailyGoal) - (todayDay == today ? todayNew : 0));
 
   /// 오늘 분량을 다 했나(복습 0 + 새 편 목표 채움).
   bool dayDone(String today) => dueReview(today).isEmpty && newLeft(today) == 0;
@@ -192,7 +210,7 @@ class CurriculumState {
     if (c == null) return false;
     final s = scorePercent(correct, total);
     c.examScores.add(s);
-    if (s >= kPassPercent) {
+    if (s >= passPercent) {
       c.passedAt = today;
       for (final id in c.dialogueIds) {
         if (!passedDialogues.contains(id)) passedDialogues.add(id);
@@ -289,7 +307,13 @@ class CurUnit {
   final String key, title, desc;
   final List<String> ids;
   final bool prep;
-  const CurUnit(this.key, this.title, this.desc, this.ids, {this.prep = false});
+  final String wordSet; // 준비 급수의 단어 묶음(hsk1~4) — 앱 HSK 단어장 급수 칸
+  final double wordMix; // 문제 중 단어 문제 비율(서버 값, 없으면 0.5)
+  final List<int> pick; // 고를 편 수(서버 값, 없으면 3·5·10)
+  final int pass; // 통과 점수(서버 값, 없으면 80)
+  final Map<int, int> daily; // 하루 새 편 수: 1 가볍게 · 2 보통 · 3 집중(서버 light·normal·focus, 없으면 1·2·3)
+  const CurUnit(this.key, this.title, this.desc, this.ids,
+      {this.prep = false, this.wordSet = '', this.wordMix = 0.5, this.pick = kPickDefault, this.pass = kPassPercent, this.daily = kDailyDefault});
 }
 
 /// 커리큘럼 판(§12) — 서버 `GET https://talkverse.uk/api/curriculum/zh` 또는 앱 묶음 `assets/curriculum_zh.json`.
@@ -306,12 +330,14 @@ class CurriculumPlan {
       List<String> ids(Map m) => [for (final x in (m['dialogueIds'] as List? ?? const [])) '$x'];
       final st = [
         for (final m in (j['stages'] as List? ?? const []).whereType<Map>())
-          CurUnit('${m['n']}', '${m['title'] ?? '${m['n']}단계'}', '${m['desc'] ?? ''}', ids(m)),
+          CurUnit('${m['n']}', '${m['title'] ?? '${m['n']}단계'}', '${m['desc'] ?? ''}', ids(m), pick: _pick(m['pick']), pass: _pass(m['pass']), daily: _daily(m['daily'])),
       ];
       final prep = (j['prep'] as List? ?? const []).whereType<Map>().toList();
       final pl = [
         for (final p in prep)
-          for (final m in (p['levels'] as List? ?? const []).whereType<Map>()) CurUnit('${m['id']}', '${m['title'] ?? m['id']}', '', ids(m), prep: true),
+          for (final m in (p['levels'] as List? ?? const []).whereType<Map>()) CurUnit('${m['id']}', '${m['title'] ?? m['id']}', '', ids(m),
+              prep: true, wordSet: '${m['wordSet'] ?? ''}', wordMix: ((m['wordMix'] as num?)?.toDouble() ?? 0.5).clamp(0.0, 0.9),
+              pick: _pick(m['pick']), pass: _pass(m['pass']), daily: _daily(m['daily'])),
       ];
       if (st.isEmpty) return null;
       return CurriculumPlan((j['rev'] as num?)?.toInt() ?? 0, st, prep.isEmpty ? '' : '${prep.first['title'] ?? ''}', pl);
@@ -319,6 +345,38 @@ class CurriculumPlan {
       return null;
     }
   }
+}
+
+/// 급수 단어 하나(HSK 단어장).
+typedef CurWord = ({String zh, String rd, String ko});
+
+/// 단어 뜻 4지선다(kind 'word', 편 id 없음 — 복습 대기열·편 연습 표시에 안 들어감).
+List<CurQuestion> wordQuestions(List<CurWord> words, int n, {int seed = 0}) {
+  if (n <= 0 || words.length < 4) return const [];
+  final rnd = Random(seed);
+  final pick = [...words]..shuffle(rnd);
+  final kos = {for (final w in words) w.ko};
+  return [
+    for (final w in pick.take(n))
+      () {
+        final wrong = (kos.toList()..remove(w.ko)..shuffle(rnd)).take(3).toList();
+        final ch = [w.ko, ...wrong]..shuffle(rnd);
+        return CurQuestion('', 0, 'word', w.zh, w.rd, ch, ch.indexOf(w.ko));
+      }(),
+  ];
+}
+
+/// 회화 문제 [qs] 에 단어 문제를 [mix] 비율로 섞는다(회화 n 개면 단어 ≈ n·mix/(1−mix)). [cap] = 전체 상한.
+List<CurQuestion> mixWords(List<CurQuestion> qs, List<CurWord> words, double mix, {int cap = 30, int seed = 0}) {
+  if (mix <= 0 || words.length < 4 || qs.isEmpty) return qs;
+  var nw = (qs.length * mix / (1 - mix)).round();
+  var nd = qs.length;
+  if (nd + nw > cap) {
+    nw = (cap * mix).round();
+    nd = cap - nw;
+  }
+  final out = [...qs.take(nd), ...wordQuestions(words, nw, seed: seed)]..shuffle(Random(seed + 1));
+  return out;
 }
 
 /// 옛 저장값(회화 레벨 R0~R5) → 단계 번호(§12 기본 대응: R0·R1 → 1, R2 → 2 …).
@@ -397,7 +455,19 @@ class CurriculumService {
   void _migrateLevel() {
     final lv = state.level;
     if (plan != null && lv != null && lv.startsWith('R')) state.level = stageOfRegion(lv);
+    applyUnit();
   }
+
+  /// 지금 단계의 판 값(pass·daily)을 상태에 건다 — 레벨을 바꾸거나 판이 바뀔 때마다.
+  void applyUnit() {
+    final u = state.level == null ? null : unit(state.level!);
+    state.passPercent = u?.pass ?? kPassPercent;
+    state.dailyMap = u?.daily ?? kDailyDefault;
+  }
+
+  /// 지금 단계의 고를 편 수·통과 점수(화면 문구용).
+  List<int> get pickOptions => (state.level == null ? null : unit(state.level!))?.pick ?? kPickDefault;
+  int get passPercent => state.passPercent;
 
   Future<void> ensureLoaded() async {
     if (_loaded) return;
@@ -415,6 +485,7 @@ class CurriculumService {
   }
 
   Future<void> save() async {
+    applyUnit();
     await (await Prefs.getInstance()).setString(key, json.encode(state.toJson()));
     changed.value++;
   }
@@ -446,6 +517,35 @@ class CurriculumService {
   List<String> get prepKeys => plan == null ? const [] : [for (final u in plan!.prepLevels) if (levelList(u.key).isNotEmpty) u.key];
 
   String get prepTitle => plan?.prepTitle ?? '';
+
+  final Map<String, List<CurWord>> _words = {};
+
+  /// 단어 묶음(hsk1~hsk5) — 앱 HSK 단어장(assets/data/vocab/hsk_words.json)의 급수 칸.
+  Future<List<CurWord>> words(String set) async {
+    if (set.isEmpty) return const [];
+    if (_words.containsKey(set)) return _words[set]!;
+    var out = <CurWord>[];
+    try {
+      final j = json.decode(await rootBundle.loadString(assetPath('assets/data/vocab/hsk_words.json'))) as Map;
+      for (final t in (j['themes'] as List).whereType<Map>()) {
+        if (t['id'] != set) continue;
+        out = [
+          for (final sec in (t['sections'] as List? ?? const []).whereType<Map>())
+            for (final w in (sec['words'] as List? ?? const []).whereType<Map>())
+              if ('${w['zh'] ?? ''}'.isNotEmpty && '${w['ko'] ?? ''}'.isNotEmpty) (zh: '${w['zh']}', rd: '${w['rd'] ?? ''}', ko: '${w['ko']}'),
+        ];
+      }
+    } catch (_) {}
+    return _words[set] = out;
+  }
+
+  /// 지금 고른 키가 단어 묶음이 있는 준비 급수면 그 문제를 섞는다(아니면 그대로).
+  Future<List<CurQuestion>> withWords(List<CurQuestion> qs, {int cap = 30, int seed = 0}) async {
+    final key = state.level;
+    final u = key == null ? null : unit(key);
+    if (u == null || !u.prep || u.wordSet.isEmpty) return qs;
+    return mixWords(qs, await words(u.wordSet), u.wordMix, cap: cap, seed: seed);
+  }
 
   /// 화면 이름: 판의 제목(「1단계」·「HSK 1급」), 판이 없으면 「R1 초보」.
   String unitTitle(String key) => unit(key)?.title ?? '$key ${DialogueService.levelKo[key] ?? ''}'.trim();
