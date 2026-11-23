@@ -1,8 +1,12 @@
+import 'dart:async';
 import 'dart:convert';
+import 'dart:io';
 import 'dart:math';
 
 import 'package:flutter/foundation.dart';
+import 'package:flutter/services.dart' show rootBundle;
 
+import '../core/embed_env.dart';
 import '../core/prefs.dart';
 import 'dialogue_service.dart';
 import 'learner_prefs.dart';
@@ -280,6 +284,46 @@ List<String> recommend(List<Dialogue> levelList, Set<String> passed, Set<String>
   return out;
 }
 
+/// 단계·준비 급수 하나(§12). key = 단계 번호('1'~'5') 또는 준비 급수 id('HSK1' 등).
+class CurUnit {
+  final String key, title, desc;
+  final List<String> ids;
+  final bool prep;
+  const CurUnit(this.key, this.title, this.desc, this.ids, {this.prep = false});
+}
+
+/// 커리큘럼 판(§12) — 서버 `GET https://talkverse.uk/api/curriculum/zh` 또는 앱 묶음 `assets/curriculum_zh.json`.
+class CurriculumPlan {
+  final int rev;
+  final List<CurUnit> stages;
+  final String prepTitle;
+  final List<CurUnit> prepLevels;
+  const CurriculumPlan(this.rev, this.stages, this.prepTitle, this.prepLevels);
+
+  static CurriculumPlan? parse(String raw) {
+    try {
+      final j = json.decode(raw) as Map;
+      List<String> ids(Map m) => [for (final x in (m['dialogueIds'] as List? ?? const [])) '$x'];
+      final st = [
+        for (final m in (j['stages'] as List? ?? const []).whereType<Map>())
+          CurUnit('${m['n']}', '${m['title'] ?? '${m['n']}단계'}', '${m['desc'] ?? ''}', ids(m)),
+      ];
+      final prep = (j['prep'] as List? ?? const []).whereType<Map>().toList();
+      final pl = [
+        for (final p in prep)
+          for (final m in (p['levels'] as List? ?? const []).whereType<Map>()) CurUnit('${m['id']}', '${m['title'] ?? m['id']}', '', ids(m), prep: true),
+      ];
+      if (st.isEmpty) return null;
+      return CurriculumPlan((j['rev'] as num?)?.toInt() ?? 0, st, prep.isEmpty ? '' : '${prep.first['title'] ?? ''}', pl);
+    } catch (_) {
+      return null;
+    }
+  }
+}
+
+/// 옛 저장값(회화 레벨 R0~R5) → 단계 번호(§12 기본 대응: R0·R1 → 1, R2 → 2 …).
+String stageOfRegion(String r) => r == 'R0' ? '1' : (RegExp(r'^R([1-5])$').firstMatch(r)?.group(1) ?? r);
+
 class CurriculumService {
   CurriculumService._();
   static final CurriculumService instance = CurriculumService._();
@@ -294,16 +338,80 @@ class CurriculumService {
   DateTime Function() now = DateTime.now;
   String get today => ymd(now());
 
+  static const planAsset = 'assets/curriculum_zh.json';
+  static const planUrl = 'https://talkverse.uk/api/curriculum/zh';
+  static const _planKey = 'curriculum_plan';
+
+  /// 단계 목록·편 목록(§12). 없으면(읽기 실패) 옛 동작 — 회화 레벨 R 기준.
+  CurriculumPlan? plan;
+
+  /// 시험용 — 서버 받기를 바꿔 끼운다(null 을 돌려주면 서버 없음).
+  @visibleForTesting
+  Future<String?> Function(String url)? debugFetch;
+
+  @visibleForTesting
+  void debugReset() {
+    _loaded = false;
+    plan = null;
+    state = CurriculumState();
+  }
+
+  Future<void> _loadPlan() async {
+    final prefs = await Prefs.getInstance();
+    CurriculumPlan? best;
+    try {
+      best = CurriculumPlan.parse(await rootBundle.loadString(assetPath(planAsset)));
+    } catch (_) {}
+    final saved = prefs.getString(_planKey);
+    final sp = saved == null ? null : CurriculumPlan.parse(saved);
+    if (sp != null && (best == null || sp.rev > best.rev)) best = sp;
+    plan = best;
+  }
+
+  /// 서버 판이 더 새것이면 받아 저장하고 바꿔 쓴다. 바뀌었으면 true.
+  Future<bool> refreshPlan() async {
+    String? raw;
+    try {
+      raw = await (debugFetch ?? _get)(planUrl);
+    } catch (_) {}
+    final p = raw == null ? null : CurriculumPlan.parse(raw);
+    if (p == null || (plan != null && p.rev <= plan!.rev)) return false;
+    plan = p;
+    await (await Prefs.getInstance()).setString(_planKey, raw!);
+    _migrateLevel();
+    changed.value++;
+    return true;
+  }
+
+  static Future<String?> _get(String url) async {
+    final c = HttpClient()..connectionTimeout = const Duration(seconds: 8);
+    try {
+      final r = await (await c.getUrl(Uri.parse(url))).close().timeout(const Duration(seconds: 10));
+      if (r.statusCode != 200) return null;
+      return await r.transform(utf8.decoder).join();
+    } finally {
+      c.close();
+    }
+  }
+
+  void _migrateLevel() {
+    final lv = state.level;
+    if (plan != null && lv != null && lv.startsWith('R')) state.level = stageOfRegion(lv);
+  }
+
   Future<void> ensureLoaded() async {
     if (_loaded) return;
     await DialogueService.instance.ensureLoaded();
+    await _loadPlan();
     final raw = (await Prefs.getInstance()).getString(key);
     if (raw != null) {
       try {
         state = CurriculumState.fromJson(json.decode(raw) as Map);
       } catch (_) {}
     }
+    _migrateLevel();
     _loaded = true;
+    unawaited(refreshPlan());
   }
 
   Future<void> save() async {
@@ -311,7 +419,36 @@ class CurriculumService {
     changed.value++;
   }
 
-  List<Dialogue> levelList([String? level]) => DialogueService.instance.list(region: level ?? state.level);
+  CurUnit? unit(String key) {
+    final p = plan;
+    if (p == null) return null;
+    for (final u in [...p.stages, ...p.prepLevels]) {
+      if (u.key == key) return u;
+    }
+    return null;
+  }
+
+  /// 단계(또는 준비 급수)의 편 — 판에 있는 편 id 중 앱에 있는 것만. 판이 없거나 모르는 키면 회화 레벨로.
+  List<Dialogue> levelList([String? level]) {
+    final key = level ?? state.level;
+    final u = key == null ? null : unit(key);
+    if (u == null) return DialogueService.instance.list(region: key);
+    final svc = DialogueService.instance;
+    return [for (final id in u.ids) ?svc.byId(id)];
+  }
+
+  /// 편이 있는 단계 키(판이 없으면 회화 레벨).
+  List<String> get stageKeys => plan == null
+      ? [for (final lv in DialogueService.levels) if (DialogueService.instance.count(lv) > 0) lv]
+      : [for (final u in plan!.stages) if (levelList(u.key).isNotEmpty) u.key];
+
+  /// 편이 있는 준비 급수 키(HSK 준비 — 없으면 빈 목록).
+  List<String> get prepKeys => plan == null ? const [] : [for (final u in plan!.prepLevels) if (levelList(u.key).isNotEmpty) u.key];
+
+  String get prepTitle => plan?.prepTitle ?? '';
+
+  /// 화면 이름: 판의 제목(「1단계」·「HSK 1급」), 판이 없으면 「R1 초보」.
+  String unitTitle(String key) => unit(key)?.title ?? '$key ${DialogueService.levelKo[key] ?? ''}'.trim();
 
   /// 레벨의 편을 모두 통과했나.
   bool levelDone(String level) {
@@ -319,13 +456,11 @@ class CurriculumService {
     return l.isNotEmpty && l.every((d) => state.passedDialogues.contains(d.id));
   }
 
-  /// 다음 레벨(편이 있는 것), 없으면 null.
+  /// 같은 줄(단계면 단계, 준비면 준비)의 다음 키, 없으면 null.
   String? nextLevel(String level) {
-    const lv = DialogueService.levels;
-    for (var i = lv.indexOf(level) + 1; i < lv.length; i++) {
-      if (DialogueService.instance.count(lv[i]) > 0) return lv[i];
-    }
-    return null;
+    final keys = prepKeys.contains(level) ? prepKeys : stageKeys;
+    final i = keys.indexOf(level);
+    return i >= 0 && i + 1 < keys.length ? keys[i + 1] : null;
   }
 
   Future<void> startCourse(List<String> ids) async {

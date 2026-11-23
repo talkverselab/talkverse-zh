@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'package:chinese_universe/screens/curriculum_screen.dart';
 import 'package:chinese_universe/services/curriculum_service.dart';
 import 'package:chinese_universe/services/dialogue_service.dart';
@@ -14,6 +15,7 @@ Dialogue _d(String id, String island, int n) => Dialogue.fromJson({
     });
 
 void main() {
+  planTests();
   group('점수 80% 경계', () {
     test('소수점 버림', () {
       expect(scorePercent(7, 9), 77);
@@ -137,4 +139,52 @@ void main() {
       expect(find.byType(ChoiceChip), findsNWidgets(3));
     });
   }
+}
+
+// ── §12 단계·HSK 준비(서버 판) ──
+const _plan = '''{"rev": 1, "stages": [
+  {"n": 1, "title": "1단계", "dialogueIds": ["a1", "a2", "없는편"]},
+  {"n": 2, "title": "2단계", "dialogueIds": ["없는편"]},
+  {"n": 3, "title": "3단계", "dialogueIds": ["b1"]}],
+ "prep": [{"id": "hsk", "title": "HSK 준비", "levels": [{"id": "HSK1", "title": "HSK 1급", "dialogueIds": ["a1"]}, {"id": "HSK2", "title": "HSK 2급", "dialogueIds": []}]}]}''';
+
+void planTests() {
+  test('§12 판: 앱에 없는 편은 건너뛰고, 편 없는 단계·급수는 숨김, 옛 R 값은 단계로', () {
+    final p = CurriculumPlan.parse(_plan)!;
+    expect(p.stages.map((u) => u.key), ['1', '2', '3']);
+    expect(p.prepLevels.map((u) => u.key), ['HSK1', 'HSK2']);
+    expect(CurriculumPlan.parse('{"stages": []}'), isNull);
+    expect(CurriculumPlan.parse('깨진 JSON'), isNull);
+    expect([stageOfRegion('R0'), stageOfRegion('R1'), stageOfRegion('R4'), stageOfRegion('3')], ['1', '1', '4', '3']);
+    final svc = CurriculumService.instance;
+    DialogueService.instance.debugSetDialogues([
+      for (final id in ['a1', 'a2', 'b1'])
+        Dialogue.fromJson({'id': id, 'region': 'R1', 'title': id, 'turns': [{'num': 1, 'speaker': 'A', 'zh': '你好', 'ko': '안녕'}]}),
+    ]);
+    svc.plan = p;
+    expect(svc.stageKeys, ['1', '3']);
+    expect(svc.levelList('1').map((d) => d.id), ['a1', 'a2']);
+    expect(svc.prepKeys, ['HSK1']);
+    expect(svc.prepTitle, 'HSK 준비');
+    expect(svc.unitTitle('3'), '3단계');
+    expect(svc.nextLevel('1'), '3');
+    expect(svc.nextLevel('HSK1'), isNull);
+    svc.plan = null;
+    expect(svc.unitTitle('R1'), 'R1 초보');
+  });
+
+  test('§12 서버 판: rev 가 더 높을 때만 바꿔 씀, 서버 없으면 그대로', () async {
+    SharedPreferences.setMockInitialValues({});
+    final svc = CurriculumService.instance;
+    svc.plan = CurriculumPlan.parse(_plan);
+    svc.debugFetch = (_) async => null;
+    expect(await svc.refreshPlan(), isFalse);
+    svc.debugFetch = (_) async => _plan; // 같은 rev
+    expect(await svc.refreshPlan(), isFalse);
+    svc.debugFetch = (_) async => _plan.replaceFirst('"rev": 1', '"rev": 2').replaceFirst('"3단계"', '"새 3단계"');
+    expect(await svc.refreshPlan(), isTrue);
+    expect(svc.unitTitle('3'), '새 3단계');
+    svc.debugFetch = null;
+    svc.plan = null;
+  });
 }

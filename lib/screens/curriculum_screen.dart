@@ -126,7 +126,7 @@ class _CurriculumScreenState extends State<CurriculumScreen> {
           if (!_loading && _st.level != null && !_levelPick)
             TextButton(
               onPressed: () => setState(() => _levelPick = true),
-              child: Text('${_st.level} ${tr(DialogueService.levelKo[_st.level] ?? '')}', style: const TextStyle(fontWeight: FontWeight.w800, color: AppColors.zhuHong)),
+              child: Text(tr(_svc.unitTitle(_st.level!)), style: const TextStyle(fontWeight: FontWeight.w800, color: AppColors.zhuHong)),
             ),
         ],
       ),
@@ -141,32 +141,48 @@ class _CurriculumScreenState extends State<CurriculumScreen> {
 
   // ── 레벨 고르기 ──
   List<Widget> _levelPicker() {
-    final lowest = DialogueService.levels.firstWhere((l) => DialogueService.instance.count(l) > 0, orElse: () => 'R1');
-    return [
-      Text(tr('회화 레벨을 골라요'), style: const TextStyle(fontSize: 18, fontWeight: FontWeight.w800, color: AppColors.mo)),
-      const SizedBox(height: 4),
-      Text(tr('처음이면 가장 낮은 레벨부터 권해요. 문법 레벨과는 따로예요.'), style: const TextStyle(fontSize: 12.5, color: AppColors.muted)),
-      const SizedBox(height: 12),
-      for (final lv in DialogueService.levels)
-        if (DialogueService.instance.count(lv) > 0)
-          _card(
-            onTap: () => _setLevel(lv),
-            selected: _st.level == lv,
-            child: Row(children: [
-              SealStamp(text: lv, size: 40, color: AppColors.zhuHong),
-              const SizedBox(width: 12),
-              Expanded(
-                child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-                  Text(tr(DialogueService.levelKo[lv] ?? lv), style: const TextStyle(fontWeight: FontWeight.w800, color: AppColors.mo)),
-                  Text(
-                    trf('{0}편 · 통과 {1}', [DialogueService.instance.count(lv), _svc.levelList(lv).where((d) => _st.passedDialogues.contains(d.id)).length]),
-                    style: const TextStyle(fontSize: 12, color: AppColors.muted),
-                  ),
-                ]),
+    final stages = _svc.stageKeys;
+    final lowest = stages.isEmpty ? 'R1' : stages.first;
+    final plan = _svc.plan != null;
+    Widget row(String lv, {bool prep = false}) {
+      final list = _svc.levelList(lv);
+      final u = _svc.unit(lv);
+      return _card(
+        onTap: () => _setLevel(lv),
+        selected: _st.level == lv,
+        child: Row(children: [
+          SealStamp(text: prep ? lv.replaceAll(RegExp(r'[^0-9]'), '') : lv, size: 40, color: prep ? AppColors.feiCui : AppColors.zhuHong),
+          const SizedBox(width: 12),
+          Expanded(
+            child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+              Text(plan ? tr(_svc.unitTitle(lv)) : tr(DialogueService.levelKo[lv] ?? lv), style: const TextStyle(fontWeight: FontWeight.w800, color: AppColors.mo)),
+              if (u != null && u.desc.isNotEmpty) Text(u.desc, style: const TextStyle(fontSize: 12, color: AppColors.moLight)),
+              Text(
+                trf('{0}편 · 통과 {1}', [list.length, list.where((d) => _st.passedDialogues.contains(d.id)).length]),
+                style: const TextStyle(fontSize: 12, color: AppColors.muted),
               ),
-              if (_st.level == null && lv == lowest) _pill(tr('추천'), AppColors.feiCui),
             ]),
           ),
+          if (_st.level == null && lv == lowest) _pill(tr('추천'), AppColors.feiCui),
+        ]),
+      );
+    }
+
+    final prep = _svc.prepKeys;
+    return [
+      Text(plan ? tr('단계를 골라요') : tr('회화 레벨을 골라요'), style: const TextStyle(fontSize: 18, fontWeight: FontWeight.w800, color: AppColors.mo)),
+      const SizedBox(height: 4),
+      Text(plan ? tr('처음이면 1단계부터 권해요. 문법 레벨과는 따로예요.') : tr('처음이면 가장 낮은 레벨부터 권해요. 문법 레벨과는 따로예요.'), style: const TextStyle(fontSize: 12.5, color: AppColors.muted)),
+      const SizedBox(height: 12),
+      for (final lv in stages) row(lv),
+      // HSK 준비(§12, zh 만) — 서버 판의 prep 대로. 비어 있으면 칸 없음.
+      if (prep.isNotEmpty) ...[
+        Padding(
+          padding: const EdgeInsets.fromLTRB(2, 14, 2, 8),
+          child: Text(tr(_svc.prepTitle.isEmpty ? 'HSK 준비' : _svc.prepTitle), key: const ValueKey('cur-prep'), style: const TextStyle(fontSize: 15, fontWeight: FontWeight.w800, color: AppColors.mo)),
+        ),
+        for (final lv in prep) row(lv, prep: true),
+      ],
     ];
   }
 
@@ -309,7 +325,7 @@ class _CurriculumScreenState extends State<CurriculumScreen> {
         const SizedBox(height: 12),
         _card(
           onTap: () => _setLevel(_svc.nextLevel(lv)!),
-          child: Text(trf('{0} 편을 모두 통과했어요 → {1} 로', [lv, _svc.nextLevel(lv)!]), style: const TextStyle(fontWeight: FontWeight.w800, color: AppColors.feiCui)),
+          child: Text(trf('{0} 편을 모두 통과했어요 → {1} 로', [tr(_svc.unitTitle(lv)), tr(_svc.unitTitle(_svc.nextLevel(lv)!))]), style: const TextStyle(fontWeight: FontWeight.w800, color: AppColors.feiCui)),
         ),
       ],
     ];
@@ -329,7 +345,7 @@ class _CurriculumScreenState extends State<CurriculumScreen> {
         const SizedBox(height: 8),
         _card(
           onTap: () => _setLevel(next),
-          child: Text(trf('{0} 편을 모두 통과했어요 → {1} 로', [lv, next]), style: const TextStyle(fontWeight: FontWeight.w800, color: AppColors.feiCui)),
+          child: Text(trf('{0} 편을 모두 통과했어요 → {1} 로', [tr(_svc.unitTitle(lv)), tr(_svc.unitTitle(next))]), style: const TextStyle(fontWeight: FontWeight.w800, color: AppColors.feiCui)),
         ),
       ],
       const SizedBox(height: 10),

@@ -122,6 +122,7 @@ flutter:
     - assets/data/freq/FINAL_wordset_for_conversation_app.tsv
     - assets/audio/hanzi/
     - assets/data/grammar/steps.json   # 문법 스텝 1~10 목록 — 서버 원고로도 받음(11/23)
+    - assets/curriculum_zh.json   # 토크버스 커리큘럼 단계·HSK 준비(서버 /api/curriculum/zh 가 더 새것이면 그것, 11/23)
     - assets/data/grammar/lesson1.json
     - assets/data/grammar/hanzi_info.json
     - assets/data/hanzi/hanzi_stages.json
