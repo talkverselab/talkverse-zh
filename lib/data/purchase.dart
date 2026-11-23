@@ -79,8 +79,9 @@ class Purchase {
     if (kIsWeb || !(Platform.isIOS || Platform.isAndroid)) return;
     if (ownStream) _sub ??= InAppPurchase.instance.purchaseStream.listen(onPurchaseUpdates, onError: (_) => status.value = 'error');
     await reloadProducts();
-    // 시작 때 조용히 복원 조회(PAYWALL_SPEC §4) — 결과는 스트림으로 와서 _grant 가 기기에 적는다(화면 안내 없음)
-    if (ownStream) {
+    // 시작 때 조용히 복원 조회는 안드로이드만(PAYWALL_SPEC §4 · 11/23 uk) — iOS 는 restorePurchases 가 Apple ID 암호 창을 띄울 수 있어
+    // 미완료 거래 자동 수신(purchaseStream) + 「구매 복원」 단추만 쓴다.
+    if (ownStream && Platform.isAndroid) {
       try {
         if (await InAppPurchase.instance.isAvailable()) await InAppPurchase.instance.restorePurchases();
       } catch (_) {}
