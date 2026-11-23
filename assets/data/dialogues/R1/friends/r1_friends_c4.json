@@ -273,11 +273,5 @@
    ],
    "emotion": "shout"
   }
- ],
- "review": {
-  "grok_rewrite": "data/review/r1_friends_c4_grok_rewrite.md",
-  "model": "전문가",
-  "final": "세션 리뷰",
-  "r1_lines_1120": "#8 Grok(빠른) 다시 씀 — TTS 오독(tools/grok/zh_rw/out/r1_lines.md)"
- }
+ ]
 }

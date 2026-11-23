@@ -166,6 +166,9 @@ class TopicVocabScreen extends StatefulWidget {
     this.extraAssets = const [],
   });
 
+  /// 여행·생활 주제별 단어·표현 데이터(travel_words·travel_expressions)가 들어 있나 — 지금은 비어 있어 메뉴를 숨긴다(11/23 심사 점검). 데이터를 채우면 true.
+  static const hasTravelData = false;
+
   @override
   State<TopicVocabScreen> createState() => _TopicVocabScreenState();
 }

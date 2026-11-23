@@ -529,6 +529,16 @@ const Map<String, String> kDictEn = {
   '{0}점 — {1}점이 넘어야 통과예요. 틀린 편만 다시 연습하고 시험을 봐요.': '{0}% — you need {1} to pass. Practise the missed dialogues and try again.',
   '코스 시험 보기 ({0}% 이상 통과)': 'Take the course test ({0}% to pass)',
   '이 편들로 연습하고, 코스 시험에서 {0}% 이상이면 다음 코스로 넘어가요.': 'Practise these, then score {0}% or more on the course test to move on.',
+  // 심사 점검(11/23)
+  '📋 메모 {0}개를 클립보드에 복사했어요': '📋 Copied {0} memos to the clipboard',
+  '이메일로 로그인': 'Sign in with email',
+  '한자 자료를 아직 받지 못했어요. 인터넷에 연결한 뒤 다시 열어 주세요.': 'Character data hasn\'t downloaded yet. Connect to the internet and open again.',
+  '구독 해지: 아이폰 설정 → 내 이름(Apple ID) → 구독 → Talkverse → 구독 취소': 'Cancel: iPhone Settings → your name (Apple ID) → Subscriptions → Talkverse → Cancel',
+  '구독 해지: Google Play → 프로필 → 결제 및 정기 결제 → 정기 결제 → Talkverse → 해지': 'Cancel: Google Play → profile → Payments & subscriptions → Subscriptions → Talkverse → Cancel',
+  '결제는 App Store 에서 처리됩니다. 표시 가격은 스토어 가격을 따르며 세금이 포함될 수 있습니다. 숨은 요금은 없습니다.': 'Payment is handled by the App Store. Prices follow the store and may include tax. No hidden fees.',
+  '결제는 Google Play 에서 처리됩니다. 표시 가격은 스토어 가격을 따르며 세금이 포함될 수 있습니다. 숨은 요금은 없습니다.': 'Payment is handled by Google Play. Prices follow the store and may include tax. No hidden fees.',
+  '로그인하면 아이폰·아이패드 어디서나': 'Sign in to use it on iPhone and iPad',
+  '로그인하면 휴대폰·태블릿 어디서나': 'Sign in to use it on phone and tablet',
 };
 
 const Map<String, String> kDictJa = {
@@ -1044,6 +1054,16 @@ const Map<String, String> kDictJa = {
   '{0}점 — {1}점이 넘어야 통과예요. 틀린 편만 다시 연습하고 시험을 봐요.': '{0}点 — 合格は{1}点以上。間違えた回だけ練習して再挑戦。',
   '코스 시험 보기 ({0}% 이상 통과)': 'コース試験を受ける（{0}%以上で合格）',
   '이 편들로 연습하고, 코스 시험에서 {0}% 이상이면 다음 코스로 넘어가요.': 'この回で練習し、コース試験で{0}%以上なら次のコースへ。',
+  // 심사 점검(11/23)
+  '📋 메모 {0}개를 클립보드에 복사했어요': '📋 メモ{0}件をクリップボードにコピーしました',
+  '이메일로 로그인': 'メールでログイン',
+  '한자 자료를 아직 받지 못했어요. 인터넷에 연결한 뒤 다시 열어 주세요.': '漢字データをまだ受け取っていません。インターネットに接続してから開き直してください。',
+  '구독 해지: 아이폰 설정 → 내 이름(Apple ID) → 구독 → Talkverse → 구독 취소': '解約: iPhoneの設定 → 自分の名前(Apple ID) → サブスクリプション → Talkverse → キャンセル',
+  '구독 해지: Google Play → 프로필 → 결제 및 정기 결제 → 정기 결제 → Talkverse → 해지': '解約: Google Play → プロフィール → お支払いと定期購入 → 定期購入 → Talkverse → 解約',
+  '결제는 App Store 에서 처리됩니다. 표시 가격은 스토어 가격을 따르며 세금이 포함될 수 있습니다. 숨은 요금은 없습니다.': 'お支払いはApp Storeで処理されます。表示価格はストア価格に従い、税金が含まれる場合があります。隠れた料金はありません。',
+  '결제는 Google Play 에서 처리됩니다. 표시 가격은 스토어 가격을 따르며 세금이 포함될 수 있습니다. 숨은 요금은 없습니다.': 'お支払いはGoogle Playで処理されます。表示価格はストア価格に従い、税金が含まれる場合があります。隠れた料金はありません。',
+  '로그인하면 아이폰·아이패드 어디서나': 'ログインすればiPhone・iPadどこでも',
+  '로그인하면 휴대폰·태블릿 어디서나': 'ログインすればスマホ・タブレットどこでも',
 };
 
 const Map<String, String> kDictZh = {
@@ -1559,4 +1579,14 @@ const Map<String, String> kDictZh = {
   '{0}점 — {1}점이 넘어야 통과예요. 틀린 편만 다시 연습하고 시험을 봐요.': '{0}分 — 需要{1}分才能通过。重练答错的会话后再考。',
   '코스 시험 보기 ({0}% 이상 통과)': '参加课程考试（{0}%以上通过）',
   '이 편들로 연습하고, 코스 시험에서 {0}% 이상이면 다음 코스로 넘어가요.': '用这些会话练习，课程考试达到{0}%以上就进入下一课程。',
+  // 심사 점검(11/23)
+  '📋 메모 {0}개를 클립보드에 복사했어요': '📋 已将 {0} 条笔记复制到剪贴板',
+  '이메일로 로그인': '用邮箱登录',
+  '한자 자료를 아직 받지 못했어요. 인터넷에 연결한 뒤 다시 열어 주세요.': '汉字资料尚未下载。请连接网络后重新打开。',
+  '구독 해지: 아이폰 설정 → 내 이름(Apple ID) → 구독 → Talkverse → 구독 취소': '取消订阅：iPhone 设置 → 你的名字(Apple ID) → 订阅 → Talkverse → 取消',
+  '구독 해지: Google Play → 프로필 → 결제 및 정기 결제 → 정기 결제 → Talkverse → 해지': '取消订阅：Google Play → 个人资料 → 付款和订阅 → 订阅 → Talkverse → 取消',
+  '결제는 App Store 에서 처리됩니다. 표시 가격은 스토어 가격을 따르며 세금이 포함될 수 있습니다. 숨은 요금은 없습니다.': '付款由 App Store 处理。显示价格以商店为准，可能含税。没有隐藏费用。',
+  '결제는 Google Play 에서 처리됩니다. 표시 가격은 스토어 가격을 따르며 세금이 포함될 수 있습니다. 숨은 요금은 없습니다.': '付款由 Google Play 处理。显示价格以商店为准，可能含税。没有隐藏费用。',
+  '로그인하면 아이폰·아이패드 어디서나': '登录后 iPhone·iPad 都能用',
+  '로그인하면 휴대폰·태블릿 어디서나': '登录后手机·平板都能用',
 };

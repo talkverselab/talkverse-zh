@@ -109,7 +109,7 @@ class _GrammarLessonScreenState extends State<GrammarLessonScreen> {
     if (!mounted) return;
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(
-        content: Text(trf('📋 메모 {0}개 클립보드 복사됨 — Claude 한테 paste!', [memos.length])),
+        content: Text(trf('📋 메모 {0}개를 클립보드에 복사했어요', [memos.length])),
         backgroundColor: AppColors.feiCui,
         duration: const Duration(seconds: 4),
       ),

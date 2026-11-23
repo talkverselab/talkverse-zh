@@ -330,9 +330,5 @@
    ],
    "emotion": "shy"
   }
- ],
- "review": {
-  "grok_rewrite": "data/review/r1_love_a2_grok_rewrite.md",
-  "model": "전문가"
- }
+ ]
 }

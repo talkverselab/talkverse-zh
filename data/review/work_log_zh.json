@@ -1,0 +1,1150 @@
+{
+ "r1_culture_a10": {
+  "grok_rewrite": "data/review/r1_culture_a10_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ },
+ "r1_culture_a11": {
+  "grok_rewrite": "data/review/r1_culture_a11_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ },
+ "r1_culture_a12": {
+  "grok_rewrite": "data/review/r1_culture_a12_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ },
+ "r1_culture_a2": {
+  "grok_rewrite": "data/review/r1_culture_a2_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰 — Grok 표현 일부 채택, 존댓말·문장부호·논리 바로잡음",
+  "r1_lines_1120": "#6 Grok(빠른) 다시 씀 — TTS 오독(tools/grok/zh_rw/out/r1_lines.md)"
+ },
+ "r1_culture_a3": {
+  "grok_rewrite": "data/review/r1_culture_a3_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ },
+ "r1_culture_a4": {
+  "grok_rewrite": "data/review/r1_culture_a4_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ },
+ "r1_culture_a5": {
+  "grok_rewrite": "data/review/r1_culture_a5_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ },
+ "r1_culture_a6": {
+  "grok_rewrite": "data/review/r1_culture_a6_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ },
+ "r1_culture_a7": {
+  "grok_rewrite": "data/review/r1_culture_a7_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰",
+  "r1_lines_1120": "#4 Grok(빠른) 다시 씀 — TTS 오독(tools/grok/zh_rw/out/r1_lines.md)"
+ },
+ "r1_culture_a8": {
+  "grok_rewrite": "data/review/r1_culture_a8_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ },
+ "r1_culture_a9": {
+  "grok_rewrite": "data/review/r1_culture_a9_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ },
+ "r1_culture_c1": {
+  "grok_rewrite": "data/review/r1_culture_c1_grok_rewrite.md"
+ },
+ "r1_culture_c2": {
+  "grok_rewrite": "data/review/r1_culture_c2_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ },
+ "r1_culture_c3": {
+  "grok_rewrite": "data/review/r1_culture_c3_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ },
+ "r1_culture_c4": {
+  "grok_rewrite": "data/review/r1_culture_c4_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ },
+ "r1_culture_c5": {
+  "grok_rewrite": "data/review/r1_culture_c5_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰",
+  "r1_lines_1120": "#5 Grok(빠른) 다시 씀 — TTS 오독(tools/grok/zh_rw/out/r1_lines.md)"
+ },
+ "r1_culture_c6": {
+  "grok_rewrite": "data/review/r1_culture_c6_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ },
+ "r1_friends_a1": {
+  "grok_rewrite": "data/review/r1_friends_a1_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ },
+ "r1_friends_a10": {
+  "grok_rewrite": "data/review/r1_friends_a10_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰",
+  "r1_lines_1120": "#6 Grok(빠른) 다시 씀 — TTS 오독(tools/grok/zh_rw/out/r1_lines.md)"
+ },
+ "r1_friends_a11": {
+  "grok_rewrite": "data/review/r1_friends_a11_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰",
+  "r1_lines_1120": "#4 Grok(빠른) 다시 씀 — TTS 오독(tools/grok/zh_rw/out/r1_lines.md)"
+ },
+ "r1_friends_a12": {
+  "grok_rewrite": "data/review/r1_friends_a12_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ },
+ "r1_friends_a2": {
+  "grok_rewrite": "data/review/r1_friends_a2_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰 — Grok 표현 일부 채택, 존댓말·문장부호·논리 바로잡음"
+ },
+ "r1_friends_a3": {
+  "grok_rewrite": "data/review/r1_friends_a3_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰 — Grok 표현 일부 채택, 존댓말·문장부호·논리 바로잡음"
+ },
+ "r1_friends_a4": {
+  "grok_rewrite": "data/review/r1_friends_a4_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ },
+ "r1_friends_a5": {
+  "grok_rewrite": "data/review/r1_friends_a5_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ },
+ "r1_friends_a6": {
+  "grok_rewrite": "data/review/r1_friends_a6_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ },
+ "r1_friends_a7": {
+  "grok_rewrite": "data/review/r1_friends_a7_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ },
+ "r1_friends_a8": {
+  "grok_rewrite": "data/review/r1_friends_a8_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ },
+ "r1_friends_a9": {
+  "grok_rewrite": "data/review/r1_friends_a9_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ },
+ "r1_friends_c1": {
+  "grok_rewrite": "data/review/r1_friends_c1_grok_rewrite.md",
+  "model": "전문가"
+ },
+ "r1_friends_c2": {
+  "grok_rewrite": "data/review/r1_friends_c2_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ },
+ "r1_friends_c3": {
+  "grok_rewrite": "data/review/r1_friends_c3_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ },
+ "r1_friends_c4": {
+  "grok_rewrite": "data/review/r1_friends_c4_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰",
+  "r1_lines_1120": "#8 Grok(빠른) 다시 씀 — TTS 오독(tools/grok/zh_rw/out/r1_lines.md)"
+ },
+ "r1_friends_c5": {
+  "grok_rewrite": "data/review/r1_friends_c5_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ },
+ "r1_friends_c6": {
+  "grok_rewrite": "data/review/r1_friends_c6_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ },
+ "r1_friends_c7": {
+  "grok_rewrite": "data/review/r1_friends_c7_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ },
+ "r1_life_a1": {
+  "grok_rewrite": "data/review/r1_life_a1_grok_rewrite.md"
+ },
+ "r1_life_a10": {
+  "grok_rewrite": "data/review/r1_life_a10_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ },
+ "r1_life_a11": {
+  "grok_rewrite": "data/review/r1_life_a11_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ },
+ "r1_life_a12": {
+  "grok_rewrite": "data/review/r1_life_a12_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ },
+ "r1_life_a13": {
+  "grok_rewrite": "data/review/r1_life_a13_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ },
+ "r1_life_a2": {
+  "grok_rewrite": "data/review/r1_life_a2_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ },
+ "r1_life_a3": {
+  "grok_rewrite": "data/review/r1_life_a3_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰 — Grok 표현 일부 채택, 존댓말·문장부호·논리 바로잡음"
+ },
+ "r1_life_a4": {
+  "grok_rewrite": "data/review/r1_life_a4_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ },
+ "r1_life_a5": {
+  "grok_rewrite": "data/review/r1_life_a5_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ },
+ "r1_life_a6": {
+  "grok_rewrite": "data/review/r1_life_a6_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ },
+ "r1_life_a7": {
+  "grok_rewrite": "data/review/r1_life_a7_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ },
+ "r1_life_a8": {
+  "grok_rewrite": "data/review/r1_life_a8_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ },
+ "r1_life_a9": {
+  "grok_rewrite": "data/review/r1_life_a9_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ },
+ "r1_life_c1": {
+  "grok_rewrite": "data/review/r1_life_c1_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ },
+ "r1_life_c2": {
+  "grok_rewrite": "data/review/r1_life_c2_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ },
+ "r1_life_c3": {
+  "grok_rewrite": "data/review/r1_life_c3_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ },
+ "r1_life_c4": {
+  "grok_rewrite": "data/review/r1_life_c4_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ },
+ "r1_life_c5": {
+  "grok_rewrite": "data/review/r1_life_c5_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ },
+ "r1_love_a1": {
+  "grok_rewrite": "data/review/r1_love_a1_grok_rewrite.md"
+ },
+ "r1_love_a10": {
+  "grok_rewrite": "data/review/r1_love_a10_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ },
+ "r1_love_a11": {
+  "grok_rewrite": "data/review/r1_love_a11_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ },
+ "r1_love_a12": {
+  "grok_rewrite": "data/review/r1_love_a12_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ },
+ "r1_love_a13": {
+  "grok_rewrite": "data/review/r1_love_a13_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰",
+  "r1_lines_1120": "#7 Grok(빠른) 다시 씀 — TTS 오독(tools/grok/zh_rw/out/r1_lines.md)"
+ },
+ "r1_love_a2": {
+  "grok_rewrite": "data/review/r1_love_a2_grok_rewrite.md",
+  "model": "전문가"
+ },
+ "r1_love_a3": {
+  "grok_rewrite": "data/review/r1_love_a3_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰 — Grok 표현 일부 채택, 존댓말·문장부호·논리 바로잡음"
+ },
+ "r1_love_a4": {
+  "grok_rewrite": "data/review/r1_love_a4_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰 — Grok 표현 일부 채택, 존댓말·문장부호·논리 바로잡음"
+ },
+ "r1_love_a5": {
+  "grok_rewrite": "data/review/r1_love_a5_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ },
+ "r1_love_a6": {
+  "grok_rewrite": "data/review/r1_love_a6_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ },
+ "r1_love_a7": {
+  "grok_rewrite": "data/review/r1_love_a7_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ },
+ "r1_love_a8": {
+  "grok_rewrite": "data/review/r1_love_a8_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ },
+ "r1_love_a9": {
+  "grok_rewrite": "data/review/r1_love_a9_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ },
+ "r1_love_c1": {
+  "grok_rewrite": "data/review/r1_love_c1_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ },
+ "r1_love_c2": {
+  "grok_rewrite": "data/review/r1_love_c2_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ },
+ "r1_love_c3": {
+  "grok_rewrite": "data/review/r1_love_c3_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ },
+ "r1_love_c4": {
+  "grok_rewrite": "data/review/r1_love_c4_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ },
+ "r1_survival_s1": {
+  "grok_rewrite": "data/review/r1_survival_s1_grok_rewrite.md"
+ },
+ "r1_survival_s2": {
+  "grok_rewrite": "data/review/r1_survival_s2_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰 — Grok 표현 일부 채택, 존댓말·문장부호·논리 바로잡음"
+ },
+ "r1_survival_s3": {
+  "grok_rewrite": "data/review/r1_survival_s3_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰 — Grok 표현 일부 채택, 존댓말·문장부호·논리 바로잡음"
+ },
+ "r1_travel_a1": {
+  "grok_rewrite": "data/review/r1_travel_a1_grok_rewrite.md"
+ },
+ "r1_travel_a10": {
+  "grok_rewrite": "data/review/r1_travel_a10_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ },
+ "r1_travel_a11": {
+  "grok_rewrite": "data/review/r1_travel_a11_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰",
+  "r1_lines_1120": "#6 Grok(빠른) 다시 씀 — TTS 오독(tools/grok/zh_rw/out/r1_lines.md)"
+ },
+ "r1_travel_a12": {
+  "grok_rewrite": "data/review/r1_travel_a12_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰",
+  "r1_lines_1120": "#1 Grok(빠른) 다시 씀 — TTS 오독(tools/grok/zh_rw/out/r1_lines.md)"
+ },
+ "r1_travel_a2": {
+  "grok_rewrite": "data/review/r1_travel_a2_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰 — Grok 표현 일부 채택, 존댓말·문장부호·논리 바로잡음"
+ },
+ "r1_travel_a3": {
+  "grok_rewrite": "data/review/r1_travel_a3_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰 — Grok 표현 일부 채택, 존댓말·문장부호·논리 바로잡음"
+ },
+ "r1_travel_a4": {
+  "grok_rewrite": "data/review/r1_travel_a4_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ },
+ "r1_travel_a5": {
+  "grok_rewrite": "data/review/r1_travel_a5_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ },
+ "r1_travel_a6": {
+  "grok_rewrite": "data/review/r1_travel_a6_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ },
+ "r1_travel_a7": {
+  "grok_rewrite": "data/review/r1_travel_a7_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ },
+ "r1_travel_a8": {
+  "grok_rewrite": "data/review/r1_travel_a8_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ },
+ "r1_travel_a9": {
+  "grok_rewrite": "data/review/r1_travel_a9_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ },
+ "r1_travel_c1": {
+  "grok_rewrite": "data/review/r1_travel_c1_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r1_travel_c2": {
+  "grok_rewrite": "data/review/r1_travel_c2_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ },
+ "r1_travel_c3": {
+  "grok_rewrite": "data/review/r1_travel_c3_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰",
+  "r1_lines_1120": "#5 Grok(빠른) 다시 씀 — TTS 오독(tools/grok/zh_rw/out/r1_lines.md)"
+ },
+ "r1_travel_c4": {
+  "grok_rewrite": "data/review/r1_travel_c4_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ },
+ "r1_travel_c5": {
+  "grok_rewrite": "data/review/r1_travel_c5_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ },
+ "r2_culture_a1": {
+  "grok_rewrite": "data/review/r2_culture_a1_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ },
+ "r2_culture_a2": {
+  "grok_rewrite": "data/review/r2_culture_a2_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ },
+ "r2_friends_a1": {
+  "grok_rewrite": "data/review/r2_friends_a1_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ },
+ "r2_friends_c1": {
+  "grok_rewrite": "data/review/r2_friends_c1_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ },
+ "r2_life_a1": {
+  "grok_rewrite": "data/review/r2_life_a1_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ },
+ "r2_life_a2": {
+  "grok_rewrite": "data/review/r2_life_a2_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ },
+ "r2_love_a1": {
+  "grok_rewrite": "data/review/r2_love_a1_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ },
+ "r2_love_a2": {
+  "grok_rewrite": "data/review/r2_love_a2_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ },
+ "r2_love_l3_d01_1": {
+  "grok_rewrite": "data/review/r2_love_l3_d01_1_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r2_travel_a1": {
+  "grok_rewrite": "data/review/r2_travel_a1_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ },
+ "r2_travel_a2": {
+  "grok_rewrite": "data/review/r2_travel_a2_grok_rewrite.md",
+  "model": "전문가",
+  "final": "세션 리뷰"
+ },
+ "r3_life_l2_d01_1": {
+  "grok_rewrite": "data/review/r3_life_l2_d01_1_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r3_life_l2_d01_2": {
+  "grok_rewrite": "data/review/r3_life_l2_d01_2_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r3_life_l2_d02_1": {
+  "grok_rewrite": "data/review/r3_life_l2_d02_1_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r3_life_l2_d06_2": {
+  "grok_rewrite": "data/review/r3_life_l2_d06_2_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r3_life_l2_d09_1": {
+  "grok_rewrite": "data/review/r3_life_l2_d09_1_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r3_life_l2_d13_2": {
+  "grok_rewrite": "data/review/r3_life_l2_d13_2_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r3_life_l2_d16_2": {
+  "grok_rewrite": "data/review/r3_life_l2_d16_2_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r3_life_l2_d18_1": {
+  "grok_rewrite": "data/review/r3_life_l2_d18_1_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r3_life_l2_d19_2": {
+  "grok_rewrite": "data/review/r3_life_l2_d19_2_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r3_love_l1_ep2_5": {
+  "grok_rewrite": "data/review/r3_love_l1_ep2_5_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r3_love_l1_ep3_5": {
+  "grok_rewrite": "data/review/r3_love_l1_ep3_5_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r3_love_l1_ep4_1": {
+  "grok_rewrite": "data/review/r3_love_l1_ep4_1_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r3_love_l1_ep4_3": {
+  "grok_rewrite": "data/review/r3_love_l1_ep4_3_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r3_love_l1_ep5_4": {
+  "grok_rewrite": "data/review/r3_love_l1_ep5_4_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r3_love_l3_d04_2": {
+  "grok_rewrite": "data/review/r3_love_l3_d04_2_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r3_love_l3_d06_1": {
+  "grok_rewrite": "data/review/r3_love_l3_d06_1_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r3_love_l3_d06_2": {
+  "grok_rewrite": "data/review/r3_love_l3_d06_2_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r3_love_l3_d07_2": {
+  "grok_rewrite": "data/review/r3_love_l3_d07_2_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r3_love_l3_d10_2": {
+  "grok_rewrite": "data/review/r3_love_l3_d10_2_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r3_love_l3_d17_2": {
+  "grok_rewrite": "data/review/r3_love_l3_d17_2_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r3_love_l3_d19_1": {
+  "grok_rewrite": "data/review/r3_love_l3_d19_1_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r3_love_l3_d20_1": {
+  "grok_rewrite": "data/review/r3_love_l3_d20_1_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r3_love_l3_d21_1": {
+  "grok_rewrite": "data/review/r3_love_l3_d21_1_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r3_love_l3_d21_2": {
+  "grok_rewrite": "data/review/r3_love_l3_d21_2_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r3_love_l3_d23_1": {
+  "grok_rewrite": "data/review/r3_love_l3_d23_1_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r3_love_l4_d11": {
+  "grok_rewrite": "data/review/r3_love_l4_d11_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r3_love_l4_d12": {
+  "grok_rewrite": "data/review/r3_love_l4_d12_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r4_life_l2_d02_2": {
+  "grok_rewrite": "data/review/r4_life_l2_d02_2_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r4_life_l2_d03_1": {
+  "grok_rewrite": "data/review/r4_life_l2_d03_1_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r4_life_l2_d03_2": {
+  "grok_rewrite": "data/review/r4_life_l2_d03_2_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r4_life_l2_d04_1": {
+  "grok_rewrite": "data/review/r4_life_l2_d04_1_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r4_life_l2_d04_2": {
+  "grok_rewrite": "data/review/r4_life_l2_d04_2_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r4_life_l2_d05_1": {
+  "grok_rewrite": "data/review/r4_life_l2_d05_1_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r4_life_l2_d05_2": {
+  "grok_rewrite": "data/review/r4_life_l2_d05_2_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r4_life_l2_d06_1": {
+  "grok_rewrite": "data/review/r4_life_l2_d06_1_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r4_life_l2_d07_1": {
+  "grok_rewrite": "data/review/r4_life_l2_d07_1_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r4_life_l2_d07_2": {
+  "grok_rewrite": "data/review/r4_life_l2_d07_2_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r4_life_l2_d08_1": {
+  "grok_rewrite": "data/review/r4_life_l2_d08_1_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r4_life_l2_d08_2": {
+  "grok_rewrite": "data/review/r4_life_l2_d08_2_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r4_life_l2_d09_2": {
+  "grok_rewrite": "data/review/r4_life_l2_d09_2_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r4_life_l2_d10_1": {
+  "grok_rewrite": "data/review/r4_life_l2_d10_1_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r4_life_l2_d10_2": {
+  "grok_rewrite": "data/review/r4_life_l2_d10_2_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r4_life_l2_d11_1": {
+  "grok_rewrite": "data/review/r4_life_l2_d11_1_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r4_life_l2_d11_2": {
+  "grok_rewrite": "data/review/r4_life_l2_d11_2_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r4_life_l2_d12_1": {
+  "grok_rewrite": "data/review/r4_life_l2_d12_1_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r4_life_l2_d12_2": {
+  "grok_rewrite": "data/review/r4_life_l2_d12_2_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r4_life_l2_d13_1": {
+  "grok_rewrite": "data/review/r4_life_l2_d13_1_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r4_life_l2_d14_1": {
+  "grok_rewrite": "data/review/r4_life_l2_d14_1_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r4_life_l2_d14_2": {
+  "grok_rewrite": "data/review/r4_life_l2_d14_2_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r4_life_l2_d15_1": {
+  "grok_rewrite": "data/review/r4_life_l2_d15_1_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r4_life_l2_d15_2": {
+  "grok_rewrite": "data/review/r4_life_l2_d15_2_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r4_life_l2_d16_1": {
+  "grok_rewrite": "data/review/r4_life_l2_d16_1_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r4_life_l2_d17_1": {
+  "grok_rewrite": "data/review/r4_life_l2_d17_1_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r4_life_l2_d17_2": {
+  "grok_rewrite": "data/review/r4_life_l2_d17_2_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r4_life_l2_d18_2": {
+  "grok_rewrite": "data/review/r4_life_l2_d18_2_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r4_life_l2_d19_1": {
+  "grok_rewrite": "data/review/r4_life_l2_d19_1_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r4_life_l2_d20_1": {
+  "grok_rewrite": "data/review/r4_life_l2_d20_1_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r4_life_l2_d20_2": {
+  "grok_rewrite": "data/review/r4_life_l2_d20_2_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r4_life_l2_d21_1": {
+  "grok_rewrite": "data/review/r4_life_l2_d21_1_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r4_life_l2_d21_2": {
+  "grok_rewrite": "data/review/r4_life_l2_d21_2_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r4_life_l2_d22_1": {
+  "grok_rewrite": "data/review/r4_life_l2_d22_1_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r4_life_l2_d22_2": {
+  "grok_rewrite": "data/review/r4_life_l2_d22_2_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r4_life_l2_d23_1": {
+  "grok_rewrite": "data/review/r4_life_l2_d23_1_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r4_life_l2_d23_2": {
+  "grok_rewrite": "data/review/r4_life_l2_d23_2_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r4_love_l1_ep1_1": {
+  "grok_rewrite": "data/review/r4_love_l1_ep1_1_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r4_love_l1_ep1_2": {
+  "grok_rewrite": "data/review/r4_love_l1_ep1_2_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r4_love_l1_ep1_3": {
+  "grok_rewrite": "data/review/r4_love_l1_ep1_3_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r4_love_l1_ep1_4": {
+  "grok_rewrite": "data/review/r4_love_l1_ep1_4_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r4_love_l1_ep1_5": {
+  "grok_rewrite": "data/review/r4_love_l1_ep1_5_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r4_love_l1_ep2_1": {
+  "grok_rewrite": "data/review/r4_love_l1_ep2_1_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r4_love_l1_ep2_2": {
+  "grok_rewrite": "data/review/r4_love_l1_ep2_2_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r4_love_l1_ep2_3": {
+  "grok_rewrite": "data/review/r4_love_l1_ep2_3_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r4_love_l1_ep2_4": {
+  "grok_rewrite": "data/review/r4_love_l1_ep2_4_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r4_love_l1_ep3_1": {
+  "grok_rewrite": "data/review/r4_love_l1_ep3_1_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r4_love_l1_ep3_2": {
+  "grok_rewrite": "data/review/r4_love_l1_ep3_2_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r4_love_l1_ep3_3": {
+  "grok_rewrite": "data/review/r4_love_l1_ep3_3_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r4_love_l1_ep3_4": {
+  "grok_rewrite": "data/review/r4_love_l1_ep3_4_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r4_love_l1_ep4_2": {
+  "grok_rewrite": "data/review/r4_love_l1_ep4_2_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r4_love_l1_ep4_4": {
+  "grok_rewrite": "data/review/r4_love_l1_ep4_4_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r4_love_l1_ep4_5": {
+  "grok_rewrite": "data/review/r4_love_l1_ep4_5_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r4_love_l1_ep5_1": {
+  "grok_rewrite": "data/review/r4_love_l1_ep5_1_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r4_love_l1_ep5_2": {
+  "grok_rewrite": "data/review/r4_love_l1_ep5_2_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r4_love_l1_ep5_3": {
+  "grok_rewrite": "data/review/r4_love_l1_ep5_3_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r4_love_l1_ep5_5": {
+  "grok_rewrite": "data/review/r4_love_l1_ep5_5_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r4_love_l3_d01_2": {
+  "grok_rewrite": "data/review/r4_love_l3_d01_2_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r4_love_l3_d02_1": {
+  "grok_rewrite": "data/review/r4_love_l3_d02_1_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r4_love_l3_d02_2": {
+  "grok_rewrite": "data/review/r4_love_l3_d02_2_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r4_love_l3_d03_1": {
+  "grok_rewrite": "data/review/r4_love_l3_d03_1_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r4_love_l3_d03_2": {
+  "grok_rewrite": "data/review/r4_love_l3_d03_2_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r4_love_l3_d04_1": {
+  "grok_rewrite": "data/review/r4_love_l3_d04_1_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r4_love_l3_d05_1": {
+  "grok_rewrite": "data/review/r4_love_l3_d05_1_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r4_love_l3_d05_2": {
+  "grok_rewrite": "data/review/r4_love_l3_d05_2_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r4_love_l3_d07_1": {
+  "grok_rewrite": "data/review/r4_love_l3_d07_1_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r4_love_l3_d08_1": {
+  "grok_rewrite": "data/review/r4_love_l3_d08_1_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r4_love_l3_d08_2": {
+  "grok_rewrite": "data/review/r4_love_l3_d08_2_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r4_love_l3_d09_1": {
+  "grok_rewrite": "data/review/r4_love_l3_d09_1_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r4_love_l3_d09_2": {
+  "grok_rewrite": "data/review/r4_love_l3_d09_2_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r4_love_l3_d10_1": {
+  "grok_rewrite": "data/review/r4_love_l3_d10_1_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r4_love_l3_d11_1": {
+  "grok_rewrite": "data/review/r4_love_l3_d11_1_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r4_love_l3_d11_2": {
+  "grok_rewrite": "data/review/r4_love_l3_d11_2_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r4_love_l3_d12_1": {
+  "grok_rewrite": "data/review/r4_love_l3_d12_1_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r4_love_l3_d12_2": {
+  "grok_rewrite": "data/review/r4_love_l3_d12_2_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r4_love_l3_d13_1": {
+  "grok_rewrite": "data/review/r4_love_l3_d13_1_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r4_love_l3_d13_2": {
+  "grok_rewrite": "data/review/r4_love_l3_d13_2_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r4_love_l3_d14_1": {
+  "grok_rewrite": "data/review/r4_love_l3_d14_1_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r4_love_l3_d14_2": {
+  "grok_rewrite": "data/review/r4_love_l3_d14_2_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r4_love_l3_d15_1": {
+  "grok_rewrite": "data/review/r4_love_l3_d15_1_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r4_love_l3_d15_2": {
+  "grok_rewrite": "data/review/r4_love_l3_d15_2_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r4_love_l3_d16_1": {
+  "grok_rewrite": "data/review/r4_love_l3_d16_1_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r4_love_l3_d16_2": {
+  "grok_rewrite": "data/review/r4_love_l3_d16_2_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r4_love_l3_d17_1": {
+  "grok_rewrite": "data/review/r4_love_l3_d17_1_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r4_love_l3_d18_1": {
+  "grok_rewrite": "data/review/r4_love_l3_d18_1_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r4_love_l3_d18_2": {
+  "grok_rewrite": "data/review/r4_love_l3_d18_2_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r4_love_l3_d19_2": {
+  "grok_rewrite": "data/review/r4_love_l3_d19_2_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r4_love_l3_d20_2": {
+  "grok_rewrite": "data/review/r4_love_l3_d20_2_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r4_love_l3_d22_1": {
+  "grok_rewrite": "data/review/r4_love_l3_d22_1_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r4_love_l3_d22_2": {
+  "grok_rewrite": "data/review/r4_love_l3_d22_2_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r4_love_l3_d23_2": {
+  "grok_rewrite": "data/review/r4_love_l3_d23_2_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r4_love_l4_d01": {
+  "grok_rewrite": "data/review/r4_love_l4_d01_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r4_love_l4_d02": {
+  "grok_rewrite": "data/review/r4_love_l4_d02_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r4_love_l4_d03": {
+  "grok_rewrite": "data/review/r4_love_l4_d03_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r4_love_l4_d04": {
+  "grok_rewrite": "data/review/r4_love_l4_d04_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r4_love_l4_d05": {
+  "grok_rewrite": "data/review/r4_love_l4_d05_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r4_love_l4_d06": {
+  "grok_rewrite": "data/review/r4_love_l4_d06_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r4_love_l4_d07": {
+  "grok_rewrite": "data/review/r4_love_l4_d07_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r4_love_l4_d08": {
+  "grok_rewrite": "data/review/r4_love_l4_d08_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r4_love_l4_d09": {
+  "grok_rewrite": "data/review/r4_love_l4_d09_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ },
+ "r4_love_l4_d10": {
+  "grok_rewrite": "data/review/r4_love_l4_d10_grok_rewrite.md",
+  "model": "빠른",
+  "final": "Grok 대사 그대로(형식만)"
+ }
+}

@@ -245,8 +245,5 @@
     ]
    ]
   }
- ],
- "review": {
-  "grok_rewrite": "data/review/r1_love_a1_grok_rewrite.md"
- }
+ ]
 }

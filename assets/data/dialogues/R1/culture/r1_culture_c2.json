@@ -314,10 +314,5 @@
    ],
    "emotion": "gentle"
   }
- ],
- "review": {
-  "grok_rewrite": "data/review/r1_culture_c2_grok_rewrite.md",
-  "model": "전문가",
-  "final": "세션 리뷰"
- }
+ ]
 }

@@ -23,7 +23,10 @@ for id_ in sys.argv[1:]:
             else: t['emotion']=emo.strip()
         turns.append(t)
     e['turns']=turns
-    e['review']={'grok_rewrite':f'data/review/{id_}_grok_rewrite.md','model':os.environ.get('GROK_MODEL','전문가'),'final':os.environ.get('GROK_FINAL','세션 리뷰')}
+    # 작업 기록은 앱·서버 원고에 넣지 않고 로컬 기록 파일에만(11/23 심사 점검 F — 공개 원고에 도구 이름 금지)
+    lp=f'{R}/data/review/work_log_zh.json'; L=json.load(open(lp,encoding='utf-8')) if os.path.exists(lp) else {}
+    L[id_]={'grok_rewrite':f'data/review/{id_}_grok_rewrite.md','model':os.environ.get('GROK_MODEL','전문가'),'final':os.environ.get('GROK_FINAL','세션 리뷰')}
+    json.dump(L,open(lp,'w',encoding='utf-8'),ensure_ascii=False,indent=1); e.pop('review',None)
     json.dump(e,open(p,'w',encoding='utf-8'),ensure_ascii=False,indent=1)
     subprocess.run(['dart','run','tool/fill_rd.dart',p],cwd=R,capture_output=True)
     print(id_,len(turns),'턴 반영', '감정 없는 턴', sum(1 for t in turns if not t.get('emotion')))

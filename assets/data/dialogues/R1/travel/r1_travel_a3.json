@@ -248,10 +248,5 @@
    ],
    "emotion": "gentle"
   }
- ],
- "review": {
-  "grok_rewrite": "data/review/r1_travel_a3_grok_rewrite.md",
-  "model": "전문가",
-  "final": "세션 리뷰 — Grok 표현 일부 채택, 존댓말·문장부호·논리 바로잡음"
- }
+ ]
 }

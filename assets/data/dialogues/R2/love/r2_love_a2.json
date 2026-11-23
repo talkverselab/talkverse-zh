@@ -340,10 +340,5 @@
     ]
    ]
   }
- ],
- "review": {
-  "grok_rewrite": "data/review/r2_love_a2_grok_rewrite.md",
-  "model": "전문가",
-  "final": "세션 리뷰"
- }
+ ]
 }

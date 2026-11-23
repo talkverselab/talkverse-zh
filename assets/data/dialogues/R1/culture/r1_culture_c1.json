@@ -266,8 +266,5 @@
    ],
    "emotion": "gentle"
   }
- ],
- "review": {
-  "grok_rewrite": "data/review/r1_culture_c1_grok_rewrite.md"
- }
+ ]
 }

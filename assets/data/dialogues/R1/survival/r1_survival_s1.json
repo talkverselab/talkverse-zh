@@ -265,8 +265,5 @@
    ],
    "emotion": "annoyed"
   }
- ],
- "review": {
-  "grok_rewrite": "data/review/r1_survival_s1_grok_rewrite.md"
- }
+ ]
 }

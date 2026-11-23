@@ -84,7 +84,7 @@ class _FamilyHanziScreenState extends State<FamilyHanziScreen> {
                 ? Center(
                     child: Padding(
                       padding: const EdgeInsets.all(24),
-                      child: Text(tr('준비 중 — 한자 공용 DB 를 아직 받지 못했어요. 인터넷에 연결한 뒤 다시 열어 주세요.'),
+                      child: Text(tr('한자 자료를 아직 받지 못했어요. 인터넷에 연결한 뒤 다시 열어 주세요.'),
                           textAlign: TextAlign.center, style: AppFonts.uiText(color: AppColors.muted, height: 1.5)),
                     ),
                   )

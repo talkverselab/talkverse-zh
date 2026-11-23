@@ -3,6 +3,8 @@
 회화 그림도 리뷰한다(2026-11-06 사용자 지시): 턴 한 쌍 위에 장면 컷(기본 + 여자 학습자 `_f`)을 놓고 컷마다 입력칸. 키 = `<편id>:cutN`, `<편id>_f:cutN`.
 그림 주소는 만들 때 서버 매니페스트에서 읽는다(584 폭 표시, 누르면 1168 원본). 이미지는 lazy 로딩 — 페이지에 넣지 않고 주소만."""
 import json, sys, html, datetime, urllib.request
+import os as _os_wl
+WORKLOG = json.load(open(_os_wl.path.join(_os_wl.path.dirname(_os_wl.path.abspath(__file__)), '..', 'data/review/work_log_zh.json'), encoding='utf-8')) if _os_wl.path.exists(_os_wl.path.join(_os_wl.path.dirname(_os_wl.path.abspath(__file__)), '..', 'data/review/work_log_zh.json')) else {}
 from pathlib import Path
 out = Path(sys.argv[1]); eps = [json.load(open(p, encoding='utf-8')) for p in sys.argv[2:]]
 _m = json.load(urllib.request.urlopen(urllib.request.Request(f'https://auth.talkverse.uk/art/zh/scene/manifest?t={datetime.datetime.now():%s}', headers={'User-Agent': 'talkverse-zh/0.1'}), timeout=30))
@@ -84,8 +86,9 @@ for e in eps:
             parts.append(cuts(e, (t['num'] + 1) // 2))
         parts.append(f"<div class='t {t['speaker']}'><div class=sp>{t['num']} {t['speaker']}{' · '+t['at'] if t.get('at') else ''}</div><div class=ja>{html.escape(t['zh'])}</div><div class=py>{html.escape(t.get('pinyin') or '')}</div><div class=rd>{html.escape(t.get('rd') or '')}</div><div class=ko>{html.escape(t['ko'])}</div><div class=nt>{html.escape(t.get('note') or '')}</div>{play(e['id'], t['num'])}"
                      f"<div class=rv><textarea data-k='{key}' placeholder='이 턴 리뷰…'></textarea><button onclick=\"sv(this)\">저장</button></div><div class=rs data-s='{key}'></div></div>")
-    if e.get('review', {}).get('final'):
-        parts.append(f"<div class=meta>최종: {html.escape(e['review']['final'])}</div>")
+    _rv = WORKLOG.get(e['id'], {})  # 작업 기록은 data/review/work_log_zh.json(11/23)
+    if _rv.get('final'):
+        parts.append(f"<div class=meta>최종: {html.escape(_rv['final'])}</div>")
 parts.append("""<script>
 const API='https://talkverse.uk/api/review/zh';  // uk 세션이 여는 저장 API(POST {key,text,at} / GET → {key:{text,at}})
 const LS='review_zh_v1';

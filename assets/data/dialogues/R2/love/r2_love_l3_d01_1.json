@@ -347,10 +347,5 @@
     ]
    ]
   }
- ],
- "review": {
-  "grok_rewrite": "data/review/r2_love_l3_d01_1_grok_rewrite.md",
-  "model": "빠른",
-  "final": "Grok 대사 그대로(형식만)"
- }
+ ]
 }

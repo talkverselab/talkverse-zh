@@ -313,10 +313,5 @@
    ],
    "emotion": "amused"
   }
- ],
- "review": {
-  "grok_rewrite": "data/review/r1_friends_a7_grok_rewrite.md",
-  "model": "전문가",
-  "final": "세션 리뷰"
- }
+ ]
 }

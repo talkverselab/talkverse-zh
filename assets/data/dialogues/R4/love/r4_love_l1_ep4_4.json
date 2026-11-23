@@ -243,10 +243,5 @@
    "emotion": "shy",
    "lemmas": []
   }
- ],
- "review": {
-  "grok_rewrite": "data/review/r4_love_l1_ep4_4_grok_rewrite.md",
-  "model": "빠른",
-  "final": "Grok 대사 그대로(형식만)"
- }
+ ]
 }

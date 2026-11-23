@@ -441,15 +441,16 @@ class ExploreTab extends StatelessWidget {
         subtitle: tr('소리 부품이 같은 한자 가족 · 병음·성조'),
         onTap: () => openPane(context, (_) => const FamilyHanziScreen()),
       ),
-      _section(tr('단어')),
-      _NavRow(
+      // 주제별 단어·표현은 데이터가 아직 비어 「준비 중」만 뜬다 — 데이터가 생기면 보임(11/23 심사 점검 E)
+      if (TopicVocabScreen.hasTravelData) _section(tr('단어')),
+      if (TopicVocabScreen.hasTravelData) _NavRow(
         seal: '词汇',
         sealColor: AppColors.feiCui,
         title: tr('주제별 단어'),
         subtitle: tr('여행 · 생활 주제별'),
         onTap: () => openPane(context, (_) => const TopicVocabScreen()),
       ),
-      _NavRow(
+      if (TopicVocabScreen.hasTravelData) _NavRow(
         seal: '表达',
         sealColor: AppColors.jinDeep,
         title: tr('표현'),

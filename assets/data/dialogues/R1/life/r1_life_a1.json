@@ -285,8 +285,5 @@
     ]
    ]
   }
- ],
- "review": {
-  "grok_rewrite": "data/review/r1_life_a1_grok_rewrite.md"
- }
+ ]
 }

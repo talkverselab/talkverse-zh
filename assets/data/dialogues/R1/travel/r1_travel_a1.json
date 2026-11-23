@@ -218,8 +218,5 @@
    ],
    "emotion": "cheerful"
   }
- ],
- "review": {
-  "grok_rewrite": "data/review/r1_travel_a1_grok_rewrite.md"
- }
+ ]
 }

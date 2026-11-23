@@ -277,10 +277,5 @@
     ]
    ]
   }
- ],
- "review": {
-  "grok_rewrite": "data/review/r1_travel_c1_grok_rewrite.md",
-  "model": "빠른",
-  "final": "Grok 대사 그대로(형식만)"
- }
+ ]
 }

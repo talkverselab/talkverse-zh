@@ -313,11 +313,5 @@
    ],
    "emotion": "teasing"
   }
- ],
- "review": {
-  "grok_rewrite": "data/review/r1_culture_c5_grok_rewrite.md",
-  "model": "전문가",
-  "final": "세션 리뷰",
-  "r1_lines_1120": "#5 Grok(빠른) 다시 씀 — TTS 오독(tools/grok/zh_rw/out/r1_lines.md)"
- }
+ ]
 }

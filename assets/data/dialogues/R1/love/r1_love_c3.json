@@ -270,10 +270,5 @@
    ],
    "emotion": "gentle"
   }
- ],
- "review": {
-  "grok_rewrite": "data/review/r1_love_c3_grok_rewrite.md",
-  "model": "전문가",
-  "final": "세션 리뷰"
- }
+ ]
 }
