@@ -1,6 +1,7 @@
 import 'package:chinese_universe/screens/sense_course_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:chinese_universe/data/entitlement.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 /// 과정 데이터 읽기가 실제 비동기로 돈다 — pumpAndSettle 대신 실제 시간으로 기다린다(일본어앱 시험과 같은 꼴).
@@ -32,6 +33,8 @@ void main() {
   }
 
   testWidgets('암기 회차 — 영상 없으면 칸 숨김·안내, 색 표시가 글자에 안 남음, 마침 → 참고를 건너뛰고 L2', (t) async {
+    await Entitlement.set(true); // L2 는 이용권(PAYWALL_SPEC) — 이 시험은 다음 급으로 넘어가는 흐름을 본다
+    addTearDown(() => Entitlement.set(false));
     t.view.physicalSize = const Size(320, 3000);
     t.view.devicePixelRatio = 1;
     addTearDown(t.view.reset);

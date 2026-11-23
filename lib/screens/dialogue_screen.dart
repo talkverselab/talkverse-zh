@@ -4,6 +4,7 @@ import '../core/l10n.dart';
 import '../core/platform.dart';
 import '../core/pane.dart';
 import '../core/theme.dart';
+import '../data/entitlement.dart';
 import '../services/achievement_service.dart';
 import '../services/dialogue_service.dart';
 import '../services/tts_service.dart';
@@ -168,7 +169,9 @@ class _ContinueReadingCardState extends State<ContinueReadingCard> {
     final same = svc.list(region: d.region, island: d.island);
     final done = same.where((e) => AchievementService.instance.isDone(e.id)).length;
     final pos = same.indexWhere((e) => e.id == d.id);
-    void open() => openPane(context, (_) => DialogueScreen(dialogue: d));
+    Future<void> open() async {
+      if (await Entitlement.gate(context, Entitlement.dialogueFree(d.region)) && context.mounted) openPane(context, (_) => DialogueScreen(dialogue: d));
+    }
     return Container(
       decoration: BoxDecoration(borderRadius: BorderRadius.circular(20), boxShadow: kCardShadow),
       child: Material(
@@ -291,7 +294,9 @@ class DialogueListScreen extends StatelessWidget {
             final d = list[i];
             final done = AchievementService.instance.isDone(d.id);
             return InkWell(
-              onTap: () => openPane(context, (_) => DialogueScreen(dialogue: d)),
+              onTap: () async {
+                if (await Entitlement.gate(context, Entitlement.dialogueFree(d.region)) && context.mounted) openPane(context, (_) => DialogueScreen(dialogue: d));
+              },
               borderRadius: BorderRadius.circular(10),
               child: Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 11),
@@ -306,9 +311,12 @@ class DialogueListScreen extends StatelessWidget {
                     ]),
                   ),
                   const SizedBox(width: 8),
-                  done
-                      ? const Icon(Icons.check_rounded, size: 16, color: AppColors.copper)
-                      : Text(trf('{0}턴', [d.turns.length]), style: AppFonts.captionText(size: 11)),
+                  if (!Entitlement.dialogueFree(d.region) && !Entitlement.premium)
+                    const LockBadge()
+                  else
+                    done
+                        ? const Icon(Icons.check_rounded, size: 16, color: AppColors.copper)
+                        : Text(trf('{0}턴', [d.turns.length]), style: AppFonts.captionText(size: 11)),
                 ]),
               ),
             );

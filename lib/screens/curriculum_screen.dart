@@ -4,6 +4,7 @@ import '../core/l10n.dart';
 import '../core/pane.dart';
 import '../core/platform.dart';
 import '../core/theme.dart';
+import '../data/entitlement.dart';
 import '../services/curriculum_service.dart';
 import '../services/dialogue_audio.dart';
 import '../services/dialogue_service.dart';
@@ -43,6 +44,8 @@ class _CurriculumScreenState extends State<CurriculumScreen> {
   }
 
   Future<void> _setLevel(String lv) async {
+    if (!await Entitlement.gate(context, _svc.unitFree(lv))) return; // 2단계~·HSK 준비는 이용권(PAYWALL_SPEC)
+    if (!mounted) return;
     _st.level = lv;
     await _svc.save();
     final opts = _svc.pickOptions;
@@ -138,7 +141,24 @@ class _CurriculumScreenState extends State<CurriculumScreen> {
           ? const Center(child: CircularProgressIndicator())
           : ListView(
               padding: EdgeInsets.fromLTRB(16, 8, 16, 24 + bottomInset(context)),
-              children: _levelPick ? _levelPicker() : [_todayCard(), const SizedBox(height: 12), ..._courseBody()],
+              children: _levelPick
+                  ? _levelPicker()
+                  : (!_svc.unitFree(_st.level!) && !Entitlement.premium)
+                      // 이용권이 끝났거나 없는데 잠긴 단계에 있으면 — 코스 대신 자물쇠 안내(누르면 결제 화면)
+                      ? [
+                          _card(
+                            onTap: () async {
+                              await Entitlement.showPaywall(context);
+                              if (mounted) setState(() {});
+                            },
+                            child: Row(children: [
+                              const LockBadge(size: 22),
+                              const SizedBox(width: 10),
+                              Expanded(child: Text(tr('이 단계는 이용권으로 열려요. 1단계는 무료예요.'), style: const TextStyle(fontWeight: FontWeight.w700, color: AppColors.mo))),
+                            ]),
+                          ),
+                        ]
+                      : [_todayCard(), const SizedBox(height: 12), ..._courseBody()],
             ),
     );
   }
@@ -168,6 +188,7 @@ class _CurriculumScreenState extends State<CurriculumScreen> {
             ]),
           ),
           if (_st.level == null && lv == lowest) _pill(tr('추천'), AppColors.feiCui),
+          if (!_svc.unitFree(lv) && !Entitlement.premium) const LockBadge(size: 18),
         ]),
       );
     }

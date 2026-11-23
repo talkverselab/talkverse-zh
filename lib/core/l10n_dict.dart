@@ -539,6 +539,15 @@ const Map<String, String> kDictEn = {
   '결제는 Google Play 에서 처리됩니다. 표시 가격은 스토어 가격을 따르며 세금이 포함될 수 있습니다. 숨은 요금은 없습니다.': 'Payment is handled by Google Play. Prices follow the store and may include tax. No hidden fees.',
   '로그인하면 아이폰·아이패드 어디서나': 'Sign in to use it on iPhone and iPad',
   '로그인하면 휴대폰·태블릿 어디서나': 'Sign in to use it on phone and tablet',
+  // 이용권(11/23)
+  '이 단계는 이용권으로 열려요. 1단계는 무료예요.': 'This stage needs a pass. Stage 1 is free.',
+  '토크버스 커리큘럼 2단계 이상 · HSK 준비': 'Talkverse Curriculum stage 2+ · HSK prep',
+  '회화 2단계 이상(R2~) 전 편': 'Every dialogue from level 2 (R2+)',
+  '문법 3스텝부터 · 언어감각 2급부터': 'Grammar from step 3 · Language feel from level 2',
+  '1단계 회화·커리큘럼, 글자·발음·단어 기본, 문법 1~2스텝, 언어감각 1급은 무료': 'Free: stage 1 dialogues & curriculum, basic characters·pronunciation·words, grammar steps 1–2, language feel level 1',
+  '스토어에서 상품을 불러오지 못했어요. 잠시 뒤 다시 시도해 주세요.': 'Couldn\'t load products from the store. Please try again shortly.',
+  '다시 시도': 'Try again',
+  '잠시 뒤 다시 시도해 주세요': 'Please try again shortly',
 };
 
 const Map<String, String> kDictJa = {
@@ -1064,6 +1073,15 @@ const Map<String, String> kDictJa = {
   '결제는 Google Play 에서 처리됩니다. 표시 가격은 스토어 가격을 따르며 세금이 포함될 수 있습니다. 숨은 요금은 없습니다.': 'お支払いはGoogle Playで処理されます。表示価格はストア価格に従い、税金が含まれる場合があります。隠れた料金はありません。',
   '로그인하면 아이폰·아이패드 어디서나': 'ログインすればiPhone・iPadどこでも',
   '로그인하면 휴대폰·태블릿 어디서나': 'ログインすればスマホ・タブレットどこでも',
+  // 이용권(11/23)
+  '이 단계는 이용권으로 열려요. 1단계는 무료예요.': 'このステージは利用券で開きます。ステージ1は無料です。',
+  '토크버스 커리큘럼 2단계 이상 · HSK 준비': 'トークバース・カリキュラム ステージ2以上 · HSK対策',
+  '회화 2단계 이상(R2~) 전 편': '会話レベル2以上(R2~)の全回',
+  '문법 3스텝부터 · 언어감각 2급부터': '文法ステップ3から · 言語感覚2級から',
+  '1단계 회화·커리큘럼, 글자·발음·단어 기본, 문법 1~2스텝, 언어감각 1급은 무료': '無料: ステージ1の会話・カリキュラム、文字・発音・単語の基本、文法ステップ1~2、言語感覚1級',
+  '스토어에서 상품을 불러오지 못했어요. 잠시 뒤 다시 시도해 주세요.': 'ストアから商品を読み込めませんでした。しばらくしてからお試しください。',
+  '다시 시도': '再試行',
+  '잠시 뒤 다시 시도해 주세요': 'しばらくしてからお試しください',
 };
 
 const Map<String, String> kDictZh = {
@@ -1589,4 +1607,13 @@ const Map<String, String> kDictZh = {
   '결제는 Google Play 에서 처리됩니다. 표시 가격은 스토어 가격을 따르며 세금이 포함될 수 있습니다. 숨은 요금은 없습니다.': '付款由 Google Play 处理。显示价格以商店为准，可能含税。没有隐藏费用。',
   '로그인하면 아이폰·아이패드 어디서나': '登录后 iPhone·iPad 都能用',
   '로그인하면 휴대폰·태블릿 어디서나': '登录后手机·平板都能用',
+  // 이용권(11/23)
+  '이 단계는 이용권으로 열려요. 1단계는 무료예요.': '此阶段需要会员。第1阶段免费。',
+  '토크버스 커리큘럼 2단계 이상 · HSK 준비': 'Talkverse 课程第2阶段以上 · HSK备考',
+  '회화 2단계 이상(R2~) 전 편': '第2级(R2~)以上全部会话',
+  '문법 3스텝부터 · 언어감각 2급부터': '语法第3步起 · 语感第2级起',
+  '1단계 회화·커리큘럼, 글자·발음·단어 기본, 문법 1~2스텝, 언어감각 1급은 무료': '免费：第1阶段会话·课程、汉字·发音·单词基础、语法第1~2步、语感第1级',
+  '스토어에서 상품을 불러오지 못했어요. 잠시 뒤 다시 시도해 주세요.': '无法从商店加载商品。请稍后再试。',
+  '다시 시도': '重试',
+  '잠시 뒤 다시 시도해 주세요': '请稍后再试',
 };

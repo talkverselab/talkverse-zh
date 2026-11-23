@@ -312,8 +312,9 @@ class CurUnit {
   final List<int> pick; // 고를 편 수(서버 값, 없으면 3·5·10)
   final int pass; // 통과 점수(서버 값, 없으면 80)
   final Map<int, int> daily; // 하루 새 편 수: 1 가볍게 · 2 보통 · 3 집중(서버 light·normal·focus, 없으면 1·2·3)
+  final bool free; // 이용권 없이 열림(서버 free, 없으면 1단계만 true·준비 급수 false — PAYWALL_SPEC §2)
   const CurUnit(this.key, this.title, this.desc, this.ids,
-      {this.prep = false, this.wordSet = '', this.wordMix = 0.5, this.pick = kPickDefault, this.pass = kPassPercent, this.daily = kDailyDefault});
+      {this.prep = false, this.wordSet = '', this.wordMix = 0.5, this.pick = kPickDefault, this.pass = kPassPercent, this.daily = kDailyDefault, this.free = false});
 }
 
 /// 커리큘럼 판(§12) — 서버 `GET https://talkverse.uk/api/curriculum/zh` 또는 앱 묶음 `assets/curriculum_zh.json`.
@@ -322,7 +323,9 @@ class CurriculumPlan {
   final List<CurUnit> stages;
   final String prepTitle;
   final List<CurUnit> prepLevels;
-  const CurriculumPlan(this.rev, this.stages, this.prepTitle, this.prepLevels);
+  final int freeSteps; // 문법 스텝 무료 한도(서버, 없으면 2)
+  final int freeSenseLevels; // 언어감각 급 무료 한도(서버, 없으면 1)
+  const CurriculumPlan(this.rev, this.stages, this.prepTitle, this.prepLevels, {this.freeSteps = 2, this.freeSenseLevels = 1});
 
   static CurriculumPlan? parse(String raw) {
     try {
@@ -330,17 +333,19 @@ class CurriculumPlan {
       List<String> ids(Map m) => [for (final x in (m['dialogueIds'] as List? ?? const [])) '$x'];
       final st = [
         for (final m in (j['stages'] as List? ?? const []).whereType<Map>())
-          CurUnit('${m['n']}', '${m['title'] ?? '${m['n']}단계'}', '${m['desc'] ?? ''}', ids(m), pick: _pick(m['pick']), pass: _pass(m['pass']), daily: _daily(m['daily'])),
+          CurUnit('${m['n']}', '${m['title'] ?? '${m['n']}단계'}', '${m['desc'] ?? ''}', ids(m), pick: _pick(m['pick']), pass: _pass(m['pass']), daily: _daily(m['daily']),
+              free: m['free'] is bool ? m['free'] as bool : '${m['n']}' == '1'),
       ];
       final prep = (j['prep'] as List? ?? const []).whereType<Map>().toList();
       final pl = [
         for (final p in prep)
           for (final m in (p['levels'] as List? ?? const []).whereType<Map>()) CurUnit('${m['id']}', '${m['title'] ?? m['id']}', '', ids(m),
               prep: true, wordSet: '${m['wordSet'] ?? ''}', wordMix: ((m['wordMix'] as num?)?.toDouble() ?? 0.5).clamp(0.0, 0.9),
-              pick: _pick(m['pick']), pass: _pass(m['pass']), daily: _daily(m['daily'])),
+              pick: _pick(m['pick']), pass: _pass(m['pass']), daily: _daily(m['daily']), free: m['free'] == true),
       ];
       if (st.isEmpty) return null;
-      return CurriculumPlan((j['rev'] as num?)?.toInt() ?? 0, st, prep.isEmpty ? '' : '${prep.first['title'] ?? ''}', pl);
+      return CurriculumPlan((j['rev'] as num?)?.toInt() ?? 0, st, prep.isEmpty ? '' : '${prep.first['title'] ?? ''}', pl,
+          freeSteps: (j['freeSteps'] as num?)?.toInt() ?? 2, freeSenseLevels: (j['freeSenseLevels'] as num?)?.toInt() ?? 1);
     } catch (_) {
       return null;
     }
@@ -517,6 +522,9 @@ class CurriculumService {
   List<String> get prepKeys => plan == null ? const [] : [for (final u in plan!.prepLevels) if (levelList(u.key).isNotEmpty) u.key];
 
   String get prepTitle => plan?.prepTitle ?? '';
+
+  /// 이용권 없이 열리는 단계·급수인가(판의 free; 판이 없으면 회화 레벨 R0·R1 만).
+  bool unitFree(String key) => unit(key)?.free ?? (key == 'R0' || key == 'R1' || key == '1');
 
   final Map<String, List<CurWord>> _words = {};
 

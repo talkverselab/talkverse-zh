@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show Clipboard, ClipboardData;
 
 import '../core/theme.dart';
+import '../data/entitlement.dart';
 import '../services/grammar_steps.dart';
 import '../services/ko_reading.dart';
 import '../services/memo_service.dart';
@@ -640,11 +641,12 @@ class _GrammarMenuScreenState extends State<GrammarMenuScreen> {
   Widget build(BuildContext context) {
     Widget card(String title, String sub, int lesson, Color color, String file) {
       return InkWell(
-        onTap: () => Navigator.push(
-          context,
-          MaterialPageRoute(
-              builder: (_) => GrammarLessonScreen(lessonNum: lesson, file: file)),
-        ),
+        onTap: () async {
+          // 문법 3스텝부터 이용권(PAYWALL_SPEC, 서버 freeSteps)
+          if (!await Entitlement.gate(context, Entitlement.stepFree(lesson)) || !context.mounted) return;
+          await Navigator.push(context, MaterialPageRoute(builder: (_) => GrammarLessonScreen(lessonNum: lesson, file: file)));
+          if (mounted) setState(() {});
+        },
         child: Container(
           padding: const EdgeInsets.all(18),
           decoration: BoxDecoration(
@@ -681,7 +683,7 @@ class _GrammarMenuScreenState extends State<GrammarMenuScreen> {
                   ],
                 ),
               ),
-              const Icon(Icons.chevron_right, color: AppColors.moLight),
+              if (!Entitlement.stepFree(lesson) && !Entitlement.premium) const LockBadge(size: 18) else const Icon(Icons.chevron_right, color: AppColors.moLight),
             ],
           ),
         ),
