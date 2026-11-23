@@ -35,6 +35,7 @@
 4. 결정 대기: 한자 절벽 결과(`data/cliff/`)를 uk 사이트에 반영할지.
 
 - **11/23 장면 컷 채우기 — 사용자 지시 「그록은 일단 멈춰」로 중단(11:5x)**: uk 「zh Grok 차례」로 R2 11·R3 27·R4 101편(139편) 컷 566장을 시작했다가 멈춤. 된 것 3장(`r2_culture_a1` cut1~3, 아직 서버에 안 올림). 요청문은 `data/review/art/<편>/cut*_req.md` 로 다 만들어 둠(`scene_prompts.py <json> ZS-<id>`, 남성판만 — `_f` 는 안 만듦). 편 목록 `data/review/art/cuts_pc_ids.txt`, 로그 `cuts_pc_1123.log`. **재개는 사용자 지시 뒤에만**: PC 크롬 `Start-ScheduledTask Grok-Chrome-zh-9261` → M6 `ssh -fN -L 9261:127.0.0.1:9261 pc` → 쿠키 `ssh macmini4 'ssh -fN -L 9261:127.0.0.1:9261 Administrator@100.127.143.37; /usr/bin/python3 ~/talkverse-uk/tools/grok_cookie_sync.py 9231 9261'` → `nohup xargs tools/grok/cuts_pc.sh < data/review/art/cuts_pc_ids.txt > data/review/art/cuts_pc_1123.log &`(이미 있는 jpg 는 건너뜀, 첨부는 PC `D:/grok_att/zh/` 에 올려 둠, 한 장 약 2분·대기 7분, 25장마다 새 방, 한도면 멈춤). 끝나면 컨택트시트 검수 → `tools/push_scenes.sh` → 크롬·터널 끄기.
+- **11/23 심사 수정·이용권(uk 전달, 사용자 「심사막을 부분 다 수정」·「1 2 모두 진행」)**: e4ab05a(원고 작업 기록 칸 → `data/review/work_log_zh.json`, 서버 rev 8) · 6572a75(이용권 잠금 — `~/talkverse/PAYWALL_SPEC.md`, 잠금 값은 커리큘럼 판 rev 2) · bd2189a(로그인 단추 = 서버 켜진 것만, 조용한 복원 안드로이드만). **단독 iOS(TestFlight) 빌드는 uk 요청으로 멈춤**(M6 디스크 — 통합 앱 1.0.0+15 로 한 번에) — 안드로이드 CI·Zealot 만(빌드 50).
 - 컷 개수 차이(uk 11/10 문의): `data/review/art` 569장 = 공개 컷 549장(D1 `art_scenes` 와 일치) + `_redo/` 20장. `_redo` 는 다시 그리기 전 옛 컷 보관본이라 **공개 안 함** — 푸시하지 말 것.
 
 ## 지울 후보(11/10 정리 때 남김 — 사용자 결정)
