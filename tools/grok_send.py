@@ -31,7 +31,7 @@ if attach:
     import os as _os
     doc = c.call('DOM.getDocument', depth=1)
     q = c.call('DOM.querySelector', nodeId=doc['root']['nodeId'], selector='input[type=file]')
-    files = [_os.path.abspath(x) for x in attach]
+    files = [x if re.match(r'^[A-Za-z]:[\\/]', x) else _os.path.abspath(x) for x in attach]  # PC 크롬이면 D:/… 경로 그대로(11/23)
     remote = _os.environ.get('GROK_REMOTE', 'macmini4')  # 브라우저가 M4 에 있다(2026-11-03 사용자 지시) — 첨부는 M4 경로여야 한다
     if remote:
         import subprocess
@@ -44,6 +44,10 @@ c.ev("document.querySelector('.ProseMirror').focus()")
 c.call('Input.insertText', text=text); time.sleep(1)
 c.ev("(()=>{const b=[...document.querySelectorAll('button')].find(e=>(e.getAttribute('aria-label')||'')==='제출');if(b)b.click()})()")
 time.sleep(3)
+for _ in range(20):   # 첨부가 아직 올라가는 중이면 제출 단추가 꺼져 있다 — 글이 남아 있으면 몇 번 더 누른다(11/23 PC 크롬)
+    if c.ev("document.querySelector('.ProseMirror').innerText.trim().length") <= 5: break
+    c.ev("(()=>{const b=[...document.querySelectorAll('button')].find(e=>(e.getAttribute('aria-label')||'')==='제출');if(b&&!b.disabled)b.click()})()")
+    time.sleep(3)
 left = c.ev("document.querySelector('.ProseMirror').innerText.trim().length")
 if left > 5:
     for typ in ('keyDown', 'keyUp'):

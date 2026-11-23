@@ -11,7 +11,8 @@ frag = a[a.index('--tab') + 1] if '--tab' in a else '1b47fbcb'
 wait = int(a[a.index('--wait') + 1]) if '--wait' in a else 600
 here = os.path.dirname(os.path.abspath(__file__))
 GEN = "[...document.querySelectorAll('img')].filter(i=>i.src.includes('/generated/')&&i.complete&&i.naturalWidth>0).map(i=>i.src)"
-before = set(g.CDP(g.tab(frag)).ev(GEN) or [])  # 보내기 전에 이미 있던 생성 이미지 — 새로 나타난 것만 받는다(같은 탭을 여러 작업이 써도 안전)
+before = set(g.CDP(g.tab(frag)).ev(GEN) or [])
+lim0 = g.CDP(g.tab(frag)).ev("(document.body.innerText.slice(-1500).match(/한도에 도달|limit reached|Rate limit|사용량 한도/g)||[]).length") or 0  # 보내기 전에 이미 있던 생성 이미지 — 새로 나타난 것만 받는다(같은 탭을 여러 작업이 써도 안전)
 cmd = ['/usr/bin/python3', f'{here}/grok_send.py', src, dst + '.md', '--tab', frag, '--wait', '45']
 if '--attach' in a: cmd += ['--attach', a[a.index('--attach') + 1]]
 subprocess.run(cmd, capture_output=True, text=True)
@@ -19,6 +20,9 @@ t0 = time.time()
 while time.time() - t0 < wait:
     c = g.CDP(g.tab(frag))
     busy = c.ev("!![...document.querySelectorAll('button')].find(e=>(e.getAttribute('aria-label')||'')==='응답 중지')")
+    lim = c.ev("(document.body.innerText.slice(-1500).match(/한도에 도달|limit reached|Rate limit|사용량 한도/g)||[]).length")
+    if lim and lim > lim0:
+        print('LIMIT'); sys.exit(3)
     new = [u for u in (c.ev(GEN) or []) if u not in before]
     if new and not busy:
         u = new[-1]
