@@ -12,7 +12,7 @@ for id in "$@"; do
     k=$(basename $req _req.md); [ -f data/review/art/$id/$k.jpg ] && continue
     [ $n -gt 0 ] && [ $((n % 25)) -eq 0 ] && newroom
     A=$ATT; [ -f data/review/art/$id/attach.txt ] && A="$ATT,$PA/$(basename $(head -1 data/review/art/$id/attach.txt))"
-    out=$(/usr/bin/python3 tools/grok_image.py $req data/review/art/$id/$k.jpg --tab grok.com --attach $A --wait 420 2>&1 | tail -1)
+    out=$(/usr/bin/python3 tools/grok_image.py $req data/review/art/$id/$k.jpg --tab grok.com --attach $A --wait 180 2>&1 | tail -1)
     n=$((n+1)); echo "$(date +%H:%M) $id $k $out"; rm -f data/review/art/$id/$k.jpg.md
     case "$out" in LIMIT*) curl -s "$B/json/close/$TID" >/dev/null; exit 3;; esac
   done
