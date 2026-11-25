@@ -68,11 +68,15 @@ def turns(ep):
         T = P['turns'][str(t['num'])]; row = {'num': t['num'], 'speaker': t['speaker']}
         for g in 'mf':
             X = T.get(g) or {}; F = fills(P, g)
-            segs = [(s[0], EMOJI.sub('', fill(s[-1], F, 'text')).strip()) for s in (X.get('segs') or T['segs'])]
+            raw = [EMOJI.sub('', fill(s[-1], F, 'text')).strip() for s in (X.get('segs') or T['segs'])]
+            # §5: 「…」은 읽히지 않게 뺀다(읽으면 늘어진다) — 쉼은 pack 이 넣는다(… 가 있던 조각 경계 0.25초, pause 표시)
+            segs = [(s[0], re.sub(r'\s+', ' ', r.replace('……', ' ').replace('…', ' ').replace('...', ' ')).strip(), r) for s, r in zip((X.get('segs') or T['segs']), raw)]
             segs = [s for s in segs if SIL.sub('', s[1])]
+            pause = [(r.startswith(('…', '...')), r.rstrip('。！？!?.,，').endswith(('…', '...'))) for _, _, r in segs]
+            segs = [(e, t) for e, t, _ in segs]
             row[g] = {'voice': ('am' if g == 'm' else 'af') if t['speaker'] == 'A' else P['cast'][t['speaker']],
                       'text': fill(X.get('text') or t['zh'], F, 'text'), 'reading': fill(X.get('reading') or t.get('pinyin', ''), F, 'reading'),
-                      'rd': fill(X.get('rd') or t.get('rd', ''), F, 'rd'), 'ko': fill(X.get('ko') or t.get('ko', ''), F, 'ko'), 'segs': segs}
+                      'rd': fill(X.get('rd') or t.get('rd', ''), F, 'rd'), 'ko': fill(X.get('ko') or t.get('ko', ''), F, 'ko'), 'segs': segs, 'pause': pause}
         if not row['m']['segs'] or not row['f']['segs']:
             continue
         row['same'] = row['m']['voice'] == row['f']['voice'] and row['m']['segs'] == row['f']['segs']
@@ -94,3 +98,32 @@ def seg_files(ep):
 def planned():
     """감정 계획이 있는 편 id(정렬)."""
     return sorted(os.path.basename(p)[:-5] for p in glob.glob(f'{R}/data/tts/plan/*.json') if os.path.basename(p)[:-5] in EP)
+
+
+def audio_stats(f):
+    """(최대 음량 dB, 잡음 바닥 dB 또는 None, 클리핑 샘플 비율) — §5(b189b0c): 잡음 바닥은 **무음 구간만**(-40dB 아래 50ms 창이 0.3초 이상 이어진 곳)의 RMS.
+    그런 구간이 없으면 None(검사 건너뜀 — 짧은 조각은 재지 않는다). numpy/soundfile 필요(검사 venv ~/.venvs/tts_zh)."""
+    import numpy as np, soundfile as sf
+    y, sr = sf.read(f, dtype='float32', always_2d=True); y = y.mean(axis=1)
+    if len(y) == 0:
+        return -99.0, None, 0.0
+    peak = 20 * np.log10(max(float(np.abs(y).max()), 1e-9))
+    n = max(int(sr * 0.05), 1); frames = y[:len(y) // n * n].reshape(-1, n)
+    rms = np.sqrt((frames ** 2).mean(axis=1)); db = 20 * np.log10(np.maximum(rms, 1e-9))
+    quiet = db < -40; runs = []; i = 0
+    while i < len(quiet):
+        if quiet[i]:
+            j = i
+            while j < len(quiet) and quiet[j]:
+                j += 1
+            if j - i >= 6:                      # 0.3초 이상
+                runs.append(frames[i:j].ravel())
+            i = j
+        else:
+            i += 1
+    nf = None
+    if runs:
+        seg = np.concatenate(runs); seg = seg[np.abs(seg) > 1e-5]   # 디지털 0 패딩 제외
+        nf = 20 * np.log10(float(np.sqrt((seg ** 2).mean()))) if len(seg) else -99.0
+    clip = float((np.abs(y) >= 0.999).mean())
+    return peak, nf, clip
