@@ -7,6 +7,7 @@ import 'package:flutter/rendering.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:talkverse_pitch/talkverse_pitch.dart';
 
 import 'package:chinese_universe/screens/tone_drill_screen.dart';
 import 'package:chinese_universe/services/dialogue_service.dart';
@@ -59,6 +60,24 @@ void main() {
     }
   });
 
+  test('변조: 3성+3성 앞은 2성, 다른 성조 앞 3성은 반3성, 不+4성은 2성 — 이름·안내에 그대로', () {
+    final a = surfaceTones([3, 3], hanzi: ['可', '以']);
+    expect([surfaceLabel(a[0]), surfaceLabel(a[1])], ['3성 → 2성', '3성']);
+    expect(sandhiNote(a, ['可', '以']), contains('2성으로 읽어요'));
+    final b = surfaceTones([3, 1], hanzi: ['老', '师']);
+    expect([surfaceLabel(b[0]), surfaceLabel(b[1])], ['반3성(낮게)', '1성']);
+    expect(sandhiNote(b, ['老', '师']), contains('반3성'));
+    final c = surfaceTones([4, 4], hanzi: ['不', '用']);
+    expect(surfaceLabel(c[0]), '4성 → 2성');
+    expect(sandhiNote(c, ['不', '用']), contains('bú'));
+    final d = surfaceTones([1, 3], hanzi: ['机', '场']);
+    expect([surfaceLabel(d[0]), surfaceLabel(d[1])], ['1성', '3성']);
+    expect(sandhiNote(d, ['机', '场']), isNull);
+    expect(surfaceLabel(surfaceTones([4, 0])[1]), '경성');
+    expect(comboReading('3-3'), contains('2성 3성'));
+    expect(comboReading('1-3'), isNull);
+  });
+
   testWidgets('화면: 조합 20칸이 뜨고, 묶음 화면이 채운 그래프로 그려진다', (t) async {
     SharedPreferences.setMockInitialValues({});
     // 테스트 환경에는 기기 TTS 가 없다 — 채널만 받아 준다
@@ -80,7 +99,8 @@ void main() {
     ));
     await t.pump(const Duration(milliseconds: 300));
     expect(t.takeException(), isNull);
-    expect(find.byType(CustomPaint), findsWidgets);
+    expect(find.byKey(const ValueKey('target-graph')), findsOneWidget); // 말하기 전에도 목표 곡선이 보인다
+    expect(find.byKey(const ValueKey('sandhi-note')), findsNothing); // 4성 1성은 변조 없음
     final out = Platform.environment['TONE_SHOT'];
     if (out != null) {
       await t.runAsync(() async {

@@ -108,7 +108,8 @@ class _ToneDrillHubScreenState extends State<ToneDrillHubScreen> {
             : Text(_cellLabel(c.cell), style: const TextStyle(fontSize: 11, fontWeight: FontWeight.w800, color: AppColors.mo)),
       ),
       title: Text(comboName(c.cell), style: const TextStyle(fontWeight: FontWeight.w800, color: AppColors.mo)),
-      subtitle: Text('${ws.take(4).map((w) => w.zh).join(' · ')} …  ${trf('완료 {0}/{1}', [done, ws.length])}', style: const TextStyle(fontSize: 12)),
+      subtitle: Text('${comboReading(c.cell) == null ? '' : '${comboReading(c.cell)}\n'}${ws.take(4).map((w) => w.zh).join(' · ')} …  ${trf('완료 {0}/{1}', [done, ws.length])}', style: const TextStyle(fontSize: 12)),
+      isThreeLine: comboReading(c.cell) != null,
       trailing: const Icon(Icons.chevron_right),
       onTap: () => _open(ToneComboScreen(combo: c)),
     );
@@ -117,6 +118,8 @@ class _ToneDrillHubScreenState extends State<ToneDrillHubScreen> {
 
 /// '1-2' → 「1성 2성」, '3-0' → 「3성 경성」.
 String comboName(String k) => '${_toneName(int.parse(k[0]))} ${_toneName(int.parse(k[2]))}';
+/// 조합을 실제로 읽는 법 — 변조가 있는 조합만(3성 3성 → 2성 3성, 3성 + 다른 성조 → 반3성).
+String? comboReading(String k) => k == '3-3' ? tr('읽을 때는 2성 3성 — 앞 3성이 2성으로 바뀌어요') : (k.startsWith('3-') ? tr('앞 3성은 낮게만 깔아요(반3성)') : null);
 String _cellLabel(String k) => k.endsWith('-0') ? trf('{0}·경', [k[0]]) : k.replaceAll('-', '·');
 
 Widget _badge(String s, Color c) => CircleAvatar(
@@ -421,7 +424,15 @@ class _ToneRoundScreenState extends State<ToneRoundScreen> {
       ),
       Center(child: Text(w.rd, style: const TextStyle(fontSize: 18, color: AppColors.moLight, fontStyle: FontStyle.italic))),
       Center(child: Text(w.ko, style: const TextStyle(fontSize: 13, color: AppColors.moLight))),
-      const SizedBox(height: 14),
+      if (sandhiNote(targets, chars) != null)
+        Padding(
+          padding: const EdgeInsets.only(top: 6),
+          child: Text(sandhiNote(targets, chars)!, key: const ValueKey('sandhi-note'), textAlign: TextAlign.center, style: const TextStyle(fontSize: 12, height: 1.4, fontWeight: FontWeight.w600, color: AppColors.zhuHongDeep)),
+        ),
+      const SizedBox(height: 10),
+      // 말하기 전에 이 낱말의 목표 곡선부터 보여 준다(실제로 내는 성조 — 변조 반영)
+      SizedBox(height: 116, child: CustomPaint(key: const ValueKey('target-graph'), painter: _SylPainter(targets, null), size: Size.infinite)),
+      const SizedBox(height: 12),
       Row(children: [
         Expanded(
           child: OutlinedButton.icon(
@@ -555,12 +566,57 @@ List<double> _ideal(SyllableTarget t) {
   return [for (var i = 0; i < 20; i++) lerp(k, i / 19)];
 }
 
-const _yMax = 8.0;
-double _y(double st, Size s) => s.height / 2 - (st.clamp(-_yMax, _yMax) / _yMax) * (s.height / 2 - 6);
+/// 그래프 세로 범위(반음, 위아래). 내 소리가 이 밖으로 나가면 범위를 넓혀 모양이 납작하게 잘리지 않게 한다
+/// (11/25 사용자 캡처: 낮게 내려간 소리가 바닥에 평평한 선으로 그려져 1성처럼 보였다).
+double _yMax = 8.0;
+const _labelH = 16.0; // 칸 위 성조 이름 자리
+double _y(double st, Size s) {
+  final half = (s.height - _labelH) / 2 - 6;
+  return _labelH + (s.height - _labelH) / 2 - (st.clamp(-_yMax, _yMax) / _yMax) * half;
+}
+
+double _rangeFor(Iterable<double> mine) {
+  var m = 8.0;
+  for (final v in mine) {
+    if (v.abs() > m) m = v.abs();
+  }
+  return m.clamp(8.0, 24.0) + (m > 8 ? 1 : 0);
+}
+
+/// 실제로 내는 성조 이름 — 변조가 있으면 그대로 적는다(3성+3성의 앞 = 2성, 다른 성조 앞 3성 = 반3성, 不+4성 = 2성).
+String surfaceLabel(SyllableTarget t) {
+  if (t.neutral) return tr('경성');
+  if (t.half) return tr('반3성(낮게)');
+  if (t.shown != t.lexical) return trf('{0}성 → {1}성', [t.lexical, t.shown]);
+  return trf('{0}성', [t.shown]);
+}
+
+/// 낱말 아래 한 줄 안내 — 변조가 있을 때만.
+String? sandhiNote(List<SyllableTarget> ts, List<String> chars) {
+  final out = <String>[];
+  for (var i = 0; i < ts.length; i++) {
+    final t = ts[i];
+    if (t.neutral) continue;
+    if (t.half) {
+      out.add(trf('{0}: 뒤에 다른 성조가 오면 3성은 낮게만 깔아요(반3성, 다시 올리지 않음)', [chars[i]]));
+    } else if (t.lexical == 3 && t.shown == 2) {
+      out.add(trf('{0}: 3성이 3성 앞에 오면 2성으로 읽어요', [chars[i]]));
+    } else if (t.lexical == 4 && t.shown == 2) {
+      out.add(trf('{0}: 不 는 4성 앞에서 2성(bú)으로 읽어요', [chars[i]]));
+    }
+  }
+  return out.isEmpty ? null : out.join('\n');
+}
 
 void _frame(Canvas c, Size s) {
   c.drawRect(Offset.zero & s, Paint()..color = AppColors.xuanZhiDeep);
-  c.drawLine(Offset(0, s.height / 2), Offset(s.width, s.height / 2), Paint()..color = AppColors.line..strokeWidth = 1);
+  c.drawLine(Offset(0, _y(0, s)), Offset(s.width, _y(0, s)), Paint()..color = AppColors.line..strokeWidth = 1);
+}
+
+void _boxLabel(Canvas c, String text, Rect box, Color color) {
+  final tp = TextPainter(text: TextSpan(text: text, style: TextStyle(fontSize: 11, fontWeight: FontWeight.w800, color: color)), textDirection: TextDirection.ltr, maxLines: 1, ellipsis: '…')
+    ..layout(maxWidth: box.width);
+  tp.paint(c, Offset(box.left + (box.width - tp.width) / 2, 2));
 }
 
 void _curve(Canvas c, List<double> v, Rect box, Size s, Paint p) {
@@ -609,6 +665,11 @@ class _SylPainter extends CustomPainter {
 
   @override
   void paint(Canvas c, Size s) {
+    final sc0 = score;
+    _yMax = _rangeFor([
+      if (sc0 != null && sc0.valid)
+        for (final x in sc0.syllables) ...?x.contour?.st,
+    ]);
     _frame(c, s);
     final n = targets.length, w = s.width / n;
     for (var i = 0; i < n; i++) {
@@ -616,6 +677,7 @@ class _SylPainter extends CustomPainter {
       if (i > 0) c.drawLine(Offset(i * w, 0), Offset(i * w, s.height), Paint()..color = AppColors.line);
       final tone = targets[i].shown;
       _area(c, _ideal(targets[i]), box, s, toneColor(tone == 0 ? null : tone));
+      _boxLabel(c, surfaceLabel(targets[i]), box, toneColor(tone == 0 ? null : tone));
       final sc = score;
       if (sc != null && sc.valid && sc.syllables[i].contour != null) {
         _curve(c, sc.syllables[i].contour!.st, box, s,
@@ -638,6 +700,7 @@ class _SentPainter extends CustomPainter {
 
   @override
   void paint(Canvas c, Size s) {
+    _yMax = _rangeFor([...ref.centered().st, ...?mine?.centered().st]);
     _frame(c, s);
     final box = Rect.fromLTWH(8, 0, s.width - 16, s.height);
     _area(c, ref.centered().st, box, s, AppColors.muted);
