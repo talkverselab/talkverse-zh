@@ -3,9 +3,9 @@
  "region": "R4",
  "island": "love",
  "kind": "long",
- "title": "매칭 ①",
+ "title": "언어교류앱 ①",
  "emoji": "💕",
- "scene": "Mark 매칭앱 첫 메시지 → 小丽 자기소개 → 약속 호출 → Lily↔小丽 hook",
+ "scene": "Mark 언어교류앱 첫 메시지 → 小丽 자기소개 → 약속 호출 → Lily↔小丽 hook",
  "speakers": {
   "A": "Mark",
   "B": "小丽"

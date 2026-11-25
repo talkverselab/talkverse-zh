@@ -3,7 +3,7 @@
  "dialect": "north",
  "version": "v5-2026-07-07",
  "schema": "v6-8turn-split",
- "title": "L1 — 매칭 narrative (200 turn)",
+ "title": "L1 — 언어교류앱 narrative (200 turn)",
  "description": "외국인 Mark 와 중국 여성 小丽 의 첫 만남 → 약속 → 가족 → 갈등 → 미래. 5 ep × 40 turn = 200.",
  "kpi": {
   "episodes": 25,
@@ -54,9 +54,9 @@
  "episodes": [
   {
    "id": "ep1_1",
-   "title": "매칭 ①",
+   "title": "언어교류앱 ①",
    "emoji": "💕",
-   "scenario": "Mark 매칭앱 첫 메시지 → 小丽 자기소개 → 약속 호출 → Lily↔小丽 hook",
+   "scenario": "Mark 언어교류앱 첫 메시지 → 小丽 자기소개 → 약속 호출 → Lily↔小丽 hook",
    "turns": [
     {
      "num": 1,
@@ -159,9 +159,9 @@
   },
   {
    "id": "ep1_2",
-   "title": "매칭 ②",
+   "title": "언어교류앱 ②",
    "emoji": "💕",
-   "scenario": "Mark 매칭앱 첫 메시지 → 小丽 자기소개 → 약속 호출 → Lily↔小丽 hook",
+   "scenario": "Mark 언어교류앱 첫 메시지 → 小丽 자기소개 → 약속 호출 → Lily↔小丽 hook",
    "turns": [
     {
      "num": 1,
@@ -264,9 +264,9 @@
   },
   {
    "id": "ep1_3",
-   "title": "매칭 ③",
+   "title": "언어교류앱 ③",
    "emoji": "💕",
-   "scenario": "Mark 매칭앱 첫 메시지 → 小丽 자기소개 → 약속 호출 → Lily↔小丽 hook",
+   "scenario": "Mark 언어교류앱 첫 메시지 → 小丽 자기소개 → 약속 호출 → Lily↔小丽 hook",
    "turns": [
     {
      "num": 1,
@@ -369,9 +369,9 @@
   },
   {
    "id": "ep1_4",
-   "title": "매칭 ④",
+   "title": "언어교류앱 ④",
    "emoji": "💕",
-   "scenario": "Mark 매칭앱 첫 메시지 → 小丽 자기소개 → 약속 호출 → Lily↔小丽 hook",
+   "scenario": "Mark 언어교류앱 첫 메시지 → 小丽 자기소개 → 약속 호출 → Lily↔小丽 hook",
    "turns": [
     {
      "num": 1,
@@ -474,9 +474,9 @@
   },
   {
    "id": "ep1_5",
-   "title": "매칭 ⑤",
+   "title": "언어교류앱 ⑤",
    "emoji": "💕",
-   "scenario": "Mark 매칭앱 첫 메시지 → 小丽 자기소개 → 약속 호출 → Lily↔小丽 hook",
+   "scenario": "Mark 언어교류앱 첫 메시지 → 小丽 자기소개 → 약속 호출 → Lily↔小丽 hook",
    "turns": [
     {
      "num": 1,

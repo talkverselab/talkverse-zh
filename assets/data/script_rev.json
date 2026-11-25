@@ -166,11 +166,11 @@
 "dialogues/R4/life/r4_life_l2_d22_2.json": "e45006cc3b1b",
 "dialogues/R4/life/r4_life_l2_d23_1.json": "8583b8f072b8",
 "dialogues/R4/life/r4_life_l2_d23_2.json": "8a93df29f88a",
-"dialogues/R4/love/r4_love_l1_ep1_1.json": "4780678f8339",
-"dialogues/R4/love/r4_love_l1_ep1_2.json": "26236e9a4a1c",
-"dialogues/R4/love/r4_love_l1_ep1_3.json": "e00ca1743b1b",
-"dialogues/R4/love/r4_love_l1_ep1_4.json": "13d0b1ee1451",
-"dialogues/R4/love/r4_love_l1_ep1_5.json": "430750a02a18",
+"dialogues/R4/love/r4_love_l1_ep1_1.json": "4c49cdaea77b",
+"dialogues/R4/love/r4_love_l1_ep1_2.json": "1a084ff8a3d0",
+"dialogues/R4/love/r4_love_l1_ep1_3.json": "1643d3169fae",
+"dialogues/R4/love/r4_love_l1_ep1_4.json": "3194fd2d2b9c",
+"dialogues/R4/love/r4_love_l1_ep1_5.json": "9c9958b27a0e",
 "dialogues/R4/love/r4_love_l1_ep2_1.json": "287794b84713",
 "dialogues/R4/love/r4_love_l1_ep2_2.json": "a05342041a62",
 "dialogues/R4/love/r4_love_l1_ep2_3.json": "6f83122863ca",
@@ -235,5 +235,5 @@
 "grammar/sense_course.json": "f08d46589f7e",
 "grammar/steps.json": "973f1b2ca373"
 },
-"rev": 8
+"rev": 9
 }

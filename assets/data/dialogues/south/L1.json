@@ -3,7 +3,7 @@
   "dialect": "north",
   "version": "v4-2026-05-17",
   "schema": "v4-L1-5ep40turn",
-  "title": "L1 — 매칭 narrative (200 turn)",
+  "title": "L1 — 언어교류앱 narrative (200 turn)",
   "description": "외국인 Mark 와 중국 여성 小丽 의 첫 만남 → 약속 → 가족 → 갈등 → 미래. 5 ep × 40 turn = 200.",
   "kpi": {
     "episodes_target": 5,
@@ -21,9 +21,9 @@
   "episodes": [
     {
       "id": "ep1",
-      "title": "매칭",
+      "title": "언어교류앱",
       "emoji": "💕",
-      "scenario": "Mark 매칭앱 첫 메시지 → 小丽 자기소개 → 약속 호출 → Lily↔小丽 hook",
+      "scenario": "Mark 언어교류앱 첫 메시지 → 小丽 자기소개 → 약속 호출 → Lily↔小丽 hook",
       "turns": [
         { "num": 1, "speaker": "A", "zh": "你好啊!", "pinyin": "Nǐ hǎo a!", "ko": "안녕하세요!", "note": "어기조사 啊 (감정·친근)", "tags": ["greeting", "particle:啊"] },
         { "num": 2, "speaker": "A", "zh": "你笑得真好看", "pinyin": "Nǐ xiào de zhēn hǎokàn", "ko": "웃는 모습 너무 좋아요", "note": "부사 真 + 보어 得", "tags": ["compliment", "complement:得"] },
