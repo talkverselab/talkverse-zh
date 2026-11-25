@@ -466,7 +466,7 @@ class _ToneRoundScreenState extends State<ToneRoundScreen> {
       const SizedBox(height: 6),
       SizedBox(height: 120, child: CustomPaint(painter: _SylPainter(targets, r), size: Size.infinite)),
       const SizedBox(height: 4),
-      Text(tr('점선 = 목표 · 실선 = 내 소리(평소 내 음높이 기준)'), style: const TextStyle(fontSize: 10, color: AppColors.moLight)),
+      Text(tr('채운 곡선 = 목표 · 선 = 내 소리(평소 내 음높이 기준)'), style: const TextStyle(fontSize: 10, color: AppColors.moLight)),
       const SizedBox(height: 6),
       Wrap(spacing: 6, runSpacing: 6, children: [
         for (var i = 0; i < r.syllables.length; i++)
@@ -563,13 +563,43 @@ void _frame(Canvas c, Size s) {
   c.drawLine(Offset(0, s.height / 2), Offset(s.width, s.height / 2), Paint()..color = AppColors.line..strokeWidth = 1);
 }
 
-void _curve(Canvas c, List<double> v, Rect box, Size s, Paint p, {bool dashed = false}) {
+void _curve(Canvas c, List<double> v, Rect box, Size s, Paint p) {
   if (v.length < 2) return;
   final pts = [for (var i = 0; i < v.length; i++) Offset(box.left + box.width * i / (v.length - 1), _y(v[i], s))];
-  for (var i = 0; i + 1 < pts.length; i++) {
-    if (dashed && i.isOdd) continue;
-    c.drawLine(pts[i], pts[i + 1], p);
+  final path = Path()..moveTo(pts.first.dx, pts.first.dy);
+  for (final o in pts.skip(1)) {
+    path.lineTo(o.dx, o.dy);
   }
+  c.drawPath(path, p..style = PaintingStyle.stroke..strokeJoin = StrokeJoin.round);
+}
+
+/// 본보기(목표) 곡선 = 아래가 채워진 그래프(11/25 사용자 지시 「긴 막대선 말고 아래가 채워진 그래프」). 곡선은 부드럽게 잇고 그 아래를 옅게 채운다.
+void _area(Canvas c, List<double> v, Rect box, Size s, Color color) {
+  if (v.length < 2) return;
+  final pts = [for (var i = 0; i < v.length; i++) Offset(box.left + box.width * i / (v.length - 1), _y(v[i], s))];
+  final line = Path()..moveTo(pts.first.dx, pts.first.dy);
+  for (var i = 0; i + 1 < pts.length; i++) {
+    final m = Offset((pts[i].dx + pts[i + 1].dx) / 2, (pts[i].dy + pts[i + 1].dy) / 2);
+    line.quadraticBezierTo(pts[i].dx, pts[i].dy, m.dx, m.dy);
+  }
+  line.lineTo(pts.last.dx, pts.last.dy);
+  final fill = Path.from(line)
+    ..lineTo(pts.last.dx, s.height)
+    ..lineTo(pts.first.dx, s.height)
+    ..close();
+  c.drawPath(
+      fill,
+      Paint()
+        ..shader = LinearGradient(begin: Alignment.topCenter, end: Alignment.bottomCenter, colors: [color.withValues(alpha: 0.45), color.withValues(alpha: 0.08)])
+            .createShader(Offset.zero & s));
+  c.drawPath(
+      line,
+      Paint()
+        ..color = color.withValues(alpha: 0.9)
+        ..style = PaintingStyle.stroke
+        ..strokeWidth = 2
+        ..strokeJoin = StrokeJoin.round
+        ..strokeCap = StrokeCap.round);
 }
 
 class _SylPainter extends CustomPainter {
@@ -585,12 +615,7 @@ class _SylPainter extends CustomPainter {
       final box = Rect.fromLTWH(i * w + 8, 0, w - 16, s.height);
       if (i > 0) c.drawLine(Offset(i * w, 0), Offset(i * w, s.height), Paint()..color = AppColors.line);
       final tone = targets[i].shown;
-      _curve(c, _ideal(targets[i]), box, s,
-          Paint()
-            ..color = toneColor(tone == 0 ? null : tone).withValues(alpha: 0.6)
-            ..strokeWidth = 3
-            ..strokeCap = StrokeCap.round,
-          dashed: true);
+      _area(c, _ideal(targets[i]), box, s, toneColor(tone == 0 ? null : tone));
       final sc = score;
       if (sc != null && sc.valid && sc.syllables[i].contour != null) {
         _curve(c, sc.syllables[i].contour!.st, box, s,
@@ -615,7 +640,7 @@ class _SentPainter extends CustomPainter {
   void paint(Canvas c, Size s) {
     _frame(c, s);
     final box = Rect.fromLTWH(8, 0, s.width - 16, s.height);
-    _curve(c, ref.centered().st, box, s, Paint()..color = AppColors.muted.withValues(alpha: 0.7)..strokeWidth = 3..strokeCap = StrokeCap.round);
+    _area(c, ref.centered().st, box, s, AppColors.muted);
     final m = mine;
     if (m != null) _curve(c, m.centered().st, box, s, Paint()..color = AppColors.zhuHong..strokeWidth = 3..strokeCap = StrokeCap.round);
   }

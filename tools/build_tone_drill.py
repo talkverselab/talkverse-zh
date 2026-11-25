@@ -11,6 +11,9 @@ from pypinyin import pinyin, Style
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 WAV = os.path.expanduser('~/tts_work/zh/all/wav')
+WAV_NEW = os.path.expanduser('~/tts_work/zh/run_1121/wav')   # 11/21~23 에 다시 만든 140편 — 이 편들은 여기 것이 지금 대사·지금 서버 음성
+# 뒤 글자를 흔히 경성으로 읽어 「앞 성조-뒤 성조」 본보기로 삼기 애매한 낱말(방향 보어·里·上 등) — 연습 낱말에서 뺀다(11/25 재검토)
+SKIP = set('知道 出来 出去 过来 上来 进来 下来 回来 起来 下去 上去 进去 回去 过去 家里 车上 哪里 手里 这里 那里 里面 外面 上面 下面 前面 后面 看见 没有 因为 西边 东边 南边 北边 左边 右边 外边 里边 那边 这边 想起 宝贝 口袋'.split())
 PITCH = os.path.join(ROOT, 'packages', 'talkverse_pitch')
 HAN = re.compile(r'^[一-鿿]+$')
 MARK = {'̄': 1, '́': 2, '̌': 3, '̀': 4}
@@ -43,7 +46,7 @@ def words():
         for sec in th['sections']:
             for w in sec['words']:
                 zh = w['zh']
-                if zh in seen or not HAN.match(zh) or not 2 <= len(zh) <= 4 or '一' in zh or zh.endswith('儿'): continue
+                if zh in seen or zh in SKIP or not HAN.match(zh) or not 2 <= len(zh) <= 4 or '一' in zh or zh.endswith('儿'): continue
                 seen.add(zh)
                 ct = char_tones(zh)
                 if not ct: drop += 1; continue
@@ -67,6 +70,9 @@ ROUNDS = [  # (앞 두 칸 = 처음에 번갈아 낼 뚜렷한 짝)
 ] * 5
 
 
+QA = {b: (json.load(open(f'{b}/qa.json', encoding='utf-8')) if os.path.exists(f'{b}/qa.json') else {}) for b in (WAV, WAV_NEW)}
+
+
 def candidates():
     """R1 회화에서 4~12글자 턴 중 음성 조각이 하나(_c)인 줄."""
     out = []
@@ -75,8 +81,12 @@ def candidates():
         for t in e['turns']:
             zh = t['zh']; h = re.sub(r'[^\u4e00-\u9fff]', '', zh)
             if '{name}' in zh or re.search(r'[0-9A-Za-z０-９]', zh) or not 4 <= len(h) <= 12: continue
-            segs = glob.glob(f'{WAV}/{ep}/{t["num"]:02d}_*.wav')
+            if '…' in zh or '—' in zh or '一' in h: continue   # 말끝을 흐리는 줄·一 변조가 든 줄은 따라 말할 본보기로 안 쓴다(11/25)
+            base = WAV_NEW if os.path.isdir(f'{WAV_NEW}/{ep}') else WAV
+            segs = glob.glob(f'{base}/{ep}/{t["num"]:02d}_*.wav')
             if len(segs) != 1 or not segs[0].endswith('_0_c.wav'): continue
+            q = QA[base].get(f'{ep}/{os.path.basename(segs[0])}', {})
+            if q.get('sim', 1) < 0.9: continue   # 받아쓰기 검사에 걸린 조각은 본보기로 안 쓴다(0.85 미만은 서버 목록에도 없음)
             out.append({'ep': ep, 'turn': t['num'], 'zh': zh, 'h': h, 'pinyin': t.get('pinyin', ''), 'ko': t['ko'], 'wav': segs[0]})
     return out
 

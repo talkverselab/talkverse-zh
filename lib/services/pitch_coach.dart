@@ -1,6 +1,8 @@
 import 'dart:convert';
 
 import 'package:flutter/services.dart';
+import '../core/embed_env.dart';
+import '../core/prefs.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:talkverse_pitch/talkverse_pitch.dart';
 
@@ -74,7 +76,7 @@ class PitchCoach {
 
   Future<ToneDrillData> data() async {
     if (_data != null) return _data!;
-    final j = jsonDecode(await rootBundle.loadString('assets/data/tone_drill.json')) as Map<String, dynamic>;
+    final j = jsonDecode(await rootBundle.loadString(assetPath('assets/data/tone_drill.json'))) as Map<String, dynamic>;
     List<DrillWord> ws(List l) => [for (final w in l) DrillWord.fromJson(w)];
     return _data = ToneDrillData([
       for (final c in j['combos'])
@@ -84,7 +86,17 @@ class PitchCoach {
 
   Future<void> _load() async {
     if (_loaded) return;
-    final p = await SharedPreferences.getInstance();
+    final p = await Prefs.getInstance();
+    // 옛 키(접두 없음, 11/11~)에 쌓인 연습 기록을 zh_ 접두 키로 한 번 옮긴다 — 통합 앱에서 다른 언어와 안 섞이게(11/25)
+    final old = await SharedPreferences.getInstance();
+    if (!p.containsKey(_kDays) && old.containsKey(_kDays)) {
+      await p.setString(_kDays, old.getString(_kDays) ?? '{}');
+      await old.remove(_kDays);
+    }
+    if (!p.containsKey(_kHz) && old.containsKey(_kHz)) {
+      await p.setStringList(_kHz, old.getStringList(_kHz) ?? const []);
+      await old.remove(_kHz);
+    }
     _hz = [for (final v in p.getStringList(_kHz) ?? const <String>[]) double.tryParse(v) ?? 0]..removeWhere((v) => v <= 0);
     try {
       final j = jsonDecode(p.getString(_kDays) ?? '{}') as Map<String, dynamic>;
@@ -118,7 +130,7 @@ class PitchCoach {
     final l = _days.putIfAbsent(word, () => []);
     if (l.contains(_today())) return;
     l.add(_today());
-    (await SharedPreferences.getInstance()).setString(_kDays, jsonEncode(_days));
+    (await Prefs.getInstance()).setString(_kDays, jsonEncode(_days));
   }
 
   /// 기기에 모인 평소 음높이. 처음 몇 번은 없다(그때는 발화 가운뎃값으로 대신).
@@ -129,7 +141,7 @@ class PitchCoach {
     if (v.length < 10) return;
     _hz = [..._hz, ...v];
     if (_hz.length > 3000) _hz = _hz.sublist(_hz.length - 3000);
-    (await SharedPreferences.getInstance()).setStringList(_kHz, [for (final x in _hz) x.toStringAsFixed(1)]);
+    (await Prefs.getInstance()).setStringList(_kHz, [for (final x in _hz) x.toStringAsFixed(1)]);
   }
 
   Future<PitchTrack> _record(double seconds, void Function(double)? onLevel) async {

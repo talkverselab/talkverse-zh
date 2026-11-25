@@ -548,6 +548,7 @@ const Map<String, String> kDictEn = {
   '스토어에서 상품을 불러오지 못했어요. 잠시 뒤 다시 시도해 주세요.': 'Couldn\'t load products from the store. Please try again shortly.',
   '다시 시도': 'Try again',
   '잠시 뒤 다시 시도해 주세요': 'Please try again shortly',
+  '채운 곡선 = 목표 · 선 = 내 소리(평소 내 음높이 기준)': 'Filled curve = target · line = your voice (relative to your usual pitch)',
 };
 
 const Map<String, String> kDictJa = {
@@ -1082,6 +1083,7 @@ const Map<String, String> kDictJa = {
   '스토어에서 상품을 불러오지 못했어요. 잠시 뒤 다시 시도해 주세요.': 'ストアから商品を読み込めませんでした。しばらくしてからお試しください。',
   '다시 시도': '再試行',
   '잠시 뒤 다시 시도해 주세요': 'しばらくしてからお試しください',
+  '채운 곡선 = 목표 · 선 = 내 소리(평소 내 음높이 기준)': '塗りつぶし = 目標 · 線 = 自分の声(ふだんの高さ基準)',
 };
 
 const Map<String, String> kDictZh = {
@@ -1616,4 +1618,5 @@ const Map<String, String> kDictZh = {
   '스토어에서 상품을 불러오지 못했어요. 잠시 뒤 다시 시도해 주세요.': '无法从商店加载商品。请稍后再试。',
   '다시 시도': '重试',
   '잠시 뒤 다시 시도해 주세요': '请稍后再试',
+  '채운 곡선 = 목표 · 선 = 내 소리(평소 내 음높이 기준)': '填充曲线 = 目标 · 线 = 我的声音(以平时音高为准)',
 };

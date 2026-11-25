@@ -1,4 +1,3 @@
-import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
 
@@ -362,12 +361,7 @@ class _ContourPainter extends CustomPainter {
       label.layout();
       label.paint(canvas, Offset(0, y - 6));
     }
-    void drawLine(List<double> pts, Color c, double sw, {bool dashed = false}) {
-      final p = Paint()
-        ..color = c
-        ..strokeWidth = sw
-        ..style = PaintingStyle.stroke
-        ..strokeCap = StrokeCap.round;
+    Path curve(List<double> pts) {
       final path = Path();
       for (var i = 0; i < pts.length; i++) {
         final x = pad + w * i / (pts.length - 1);
@@ -378,22 +372,40 @@ class _ContourPainter extends CustomPainter {
           path.lineTo(x, y);
         }
       }
-      if (dashed) {
-        final metrics = path.computeMetrics();
-        for (final m in metrics) {
-          var d = 0.0;
-          while (d < m.length) {
-            final next = math.min(m.length, d + 8);
-            canvas.drawPath(m.extractPath(d, next), p);
-            d = next + 6;
-          }
-        }
-      } else {
-        canvas.drawPath(path, p);
-      }
+      return path;
     }
-    drawLine(target, targetColor, 5, dashed: true);
-    if (user != null && user!.isNotEmpty) drawLine(user!, userColor, 3.5);
+
+    // 목표 성조 = 아래가 채워진 그래프(11/25 사용자 지시), 내 소리 = 그 위의 선
+    if (target.length > 1) {
+      final line = curve(target);
+      final fill = Path.from(line)
+        ..lineTo(pad + w, pad + h)
+        ..lineTo(pad, pad + h)
+        ..close();
+      canvas.drawPath(
+          fill,
+          Paint()
+            ..shader = LinearGradient(begin: Alignment.topCenter, end: Alignment.bottomCenter, colors: [targetColor.withValues(alpha: 0.45), targetColor.withValues(alpha: 0.08)])
+                .createShader(Offset.zero & size));
+      canvas.drawPath(
+          line,
+          Paint()
+            ..color = targetColor
+            ..style = PaintingStyle.stroke
+            ..strokeWidth = 2
+            ..strokeJoin = StrokeJoin.round
+            ..strokeCap = StrokeCap.round);
+    }
+    if (user != null && user!.length > 1) {
+      canvas.drawPath(
+          curve(user!),
+          Paint()
+            ..color = userColor
+            ..style = PaintingStyle.stroke
+            ..strokeWidth = 3.5
+            ..strokeJoin = StrokeJoin.round
+            ..strokeCap = StrokeCap.round);
+    }
   }
 
   @override
