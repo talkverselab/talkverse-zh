@@ -20,7 +20,8 @@ class Plan {
   final bool bundle;
   final int krw; // 앱 할인가(출시 기념·정기 할인 30%) — 스토어 판매가
   final int listKrw; // 앱 정가(할인 표기용, ~/talkverse/PRICING.md)
-  const Plan(this.id, this.months, this.krw, {this.listKrw = 0, this.bundle = false});
+  final bool exam; // 프로+시험(`lang_<코드>_exam_*`) — 시험 내용까지 연다(2026-11-28)
+  const Plan(this.id, this.months, this.krw, {this.listKrw = 0, this.bundle = false, this.exam = false});
   bool get lifetime => months == 0;
 }
 
@@ -52,6 +53,13 @@ class Purchase {
   static Plan? plan(String id) => plans.where((p) => p.id == id).firstOrNull;
 
   /// 이 언어를 열 수 있는가 — 언어 상품(lang_<코드>_*) 또는 종합(all_*) 중 기한이 남은 것이 있으면.
+  /// 시험 내용(HSK 4·5급)을 여는 상품을 가졌는가 — 프로+시험(`lang_<코드>_exam_*`)·언어 평생·종합(all_*). 프로(1m·3m·1y)만으로는 안 열린다.
+  static bool ownsExam(String code) {
+    final now = DateTime.now().millisecondsSinceEpoch;
+    return owned.value.entries.any((e) =>
+        (e.key.startsWith('lang_${code}_exam_') || e.key == 'lang_${code}_life' || e.key.startsWith('all_')) && (e.value == 0 || e.value > now));
+  }
+
   static bool owns(String code) {
     final now = DateTime.now().millisecondsSinceEpoch;
     return owned.value.entries.any((e) => (e.key.startsWith('lang_${code}_') || e.key.startsWith('all_')) && (e.value == 0 || e.value > now));

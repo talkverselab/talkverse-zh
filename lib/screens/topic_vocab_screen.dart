@@ -6,6 +6,7 @@ import 'package:flutter/services.dart' show rootBundle;
 import '../core/prefs.dart';
 
 import '../core/theme.dart';
+import '../data/entitlement.dart';
 import '../services/lexicon_service.dart';
 import '../services/chunk_index_service.dart';
 import '../services/ko_reading.dart';
@@ -248,15 +249,25 @@ class _TopicVocabScreenState extends State<TopicVocabScreen> {
                       itemCount: themes.length,
                       itemBuilder: (context, i) {
                         final t = themes[i];
+                        // HSK 4·5급 단어장은 프로+HSK(2026-11-28 확정) — 잠겨도 숨기지 않고 자물쇠(애플 3.1.1)
+                        final examLocked = Entitlement.examLevel(t.id) && !Entitlement.exam;
                         return InkWell(
-                          onTap: () => Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (_) => _ThemeDetailScreen(
-                                    theme: t,
-                                    gridMode: widget.asset
-                                        .contains('travel_words'))),
-                          ),
+                          onTap: () async {
+                            if (Entitlement.examLevel(t.id) && !await Entitlement.gate(context, false, exam: true)) {
+                              if (mounted) setState(() {});
+                              return;
+                            }
+                            if (!context.mounted) return;
+                            await Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (_) => _ThemeDetailScreen(
+                                      theme: t,
+                                      gridMode: widget.asset
+                                          .contains('travel_words'))),
+                            );
+                            if (mounted) setState(() {});
+                          },
                           child: Container(
                             padding: const EdgeInsets.all(12),
                             decoration: BoxDecoration(
@@ -268,7 +279,11 @@ class _TopicVocabScreenState extends State<TopicVocabScreen> {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
-                                Text(t.emoji, style: const TextStyle(fontSize: 26)),
+                                Row(children: [
+                                  Text(t.emoji, style: const TextStyle(fontSize: 26)),
+                                  const Spacer(),
+                                  if (examLocked) const LockBadge(size: 18),
+                                ]),
                                 const SizedBox(height: 6),
                                 Text(
                                   t.title,

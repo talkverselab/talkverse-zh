@@ -241,7 +241,7 @@ class _AccountSection extends StatelessWidget {
             _SettingItem(
               icon: Icons.workspace_premium_outlined,
               title: tr('이용권'),
-              subtitle: Entitlement.premium ? tr('보유 중') : tr('1개월·3개월·1년·평생 · 구매 또는 이전 구매 복원'),
+              subtitle: Entitlement.premium ? tr('보유 중') : tr('1개월·3개월·1년·프로+HSK·평생 · 구매 또는 이전 구매 복원'),
               onTap: () => PaywallScreen.show(context),
             ),
             _SettingItem(

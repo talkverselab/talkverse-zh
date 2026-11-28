@@ -59,7 +59,10 @@ Future<void> embedInit({bool standalone = false}) async {
     Plan('lang_zh_1m', 1, 3900, listKrw: 5500),
     Plan('lang_zh_3m', 3, 9000, listKrw: 12900),
     Plan('lang_zh_1y', 12, 19900, listKrw: 28500),
-    Plan('lang_zh_life', 0, 49000, listKrw: 69900),
+    Plan('lang_zh_exam_1m', 1, 5900, listKrw: 8400, exam: true),
+    Plan('lang_zh_exam_3m', 3, 13500, listKrw: 19300, exam: true),
+    Plan('lang_zh_exam_1y', 12, 29900, listKrw: 42700, exam: true),
+    Plan('lang_zh_life', 0, 65000, listKrw: 92900),
     Plan('all_1y', 12, 79000, listKrw: 112900, bundle: true),
     Plan('all_life', 0, 329000, listKrw: 469000, bundle: true),
   ]));

@@ -44,7 +44,7 @@ class _CurriculumScreenState extends State<CurriculumScreen> {
   }
 
   Future<void> _setLevel(String lv) async {
-    if (!await Entitlement.gate(context, _svc.unitFree(lv))) return; // 2단계~·HSK 준비는 이용권(PAYWALL_SPEC)
+    if (!await Entitlement.gate(context, _svc.unitFree(lv), exam: Entitlement.examLevel(lv))) return; // 2단계~·HSK 준비는 이용권(PAYWALL_SPEC), HSK 4·5급은 프로+HSK
     if (!mounted) return;
     _st.level = lv;
     await _svc.save();
@@ -143,12 +143,12 @@ class _CurriculumScreenState extends State<CurriculumScreen> {
               padding: EdgeInsets.fromLTRB(16, 8, 16, 24 + bottomInset(context)),
               children: _levelPick
                   ? _levelPicker()
-                  : (!_svc.unitFree(_st.level!) && !Entitlement.premium)
+                  : !Entitlement.open(_svc.unitFree(_st.level!), exam: Entitlement.examLevel(_st.level!))
                       // 이용권이 끝났거나 없는데 잠긴 단계에 있으면 — 코스 대신 자물쇠 안내(누르면 결제 화면)
                       ? [
                           _card(
                             onTap: () async {
-                              await Entitlement.showPaywall(context);
+                              await Entitlement.showPaywall(context, exam: Entitlement.examLevel(_st.level!));
                               if (mounted) setState(() {});
                             },
                             child: Row(children: [
@@ -188,7 +188,7 @@ class _CurriculumScreenState extends State<CurriculumScreen> {
             ]),
           ),
           if (_st.level == null && lv == lowest) _pill(tr('추천'), AppColors.feiCui),
-          if (!_svc.unitFree(lv) && !Entitlement.premium) const LockBadge(size: 18),
+          if (!Entitlement.open(_svc.unitFree(lv), exam: Entitlement.examLevel(lv))) const LockBadge(size: 18),
         ]),
       );
     }

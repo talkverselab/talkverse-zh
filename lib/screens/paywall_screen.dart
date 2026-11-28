@@ -13,9 +13,11 @@ import 'login_screen.dart';
 /// 스토어 규정: 가격·기간·자동 갱신·해지 방법을 구매 버튼 가까이, 평생은 「서비스 운영 기간 동안」, 구매 복원, 미리 선택된 상품 없음,
 /// 약관·개인정보처리방침 링크. 앱 안에서 사이트 가격을 안내·유도하지 않는다.
 class PaywallScreen extends StatefulWidget {
-  const PaywallScreen({super.key});
+  /// 시험 칸(HSK 4·5급)에서 열었나 — 「프로+HSK」 줄을 맨 위에 보인다.
+  final bool exam;
+  const PaywallScreen({super.key, this.exam = false});
 
-  static Future<void> show(BuildContext context) {
+  static Future<void> show(BuildContext context, {bool exam = false}) {
     Purchase.status.value = null;
     return showModalBottomSheet(
       context: context,
@@ -23,7 +25,7 @@ class PaywallScreen extends StatefulWidget {
       showDragHandle: true,
       backgroundColor: AppColors.xuanZhi,
       constraints: const BoxConstraints(maxWidth: 640),
-      builder: (_) => const PaywallScreen(),
+      builder: (_) => PaywallScreen(exam: exam),
     );
   }
 
@@ -55,11 +57,17 @@ class _PaywallScreenState extends State<PaywallScreen> {
     });
   }
 
-  String _title(Plan p) => switch ((p.bundle, p.months)) {
+  String _title(Plan p) => p.exam
+      ? switch (p.months) {
+          1 => tr('프로+HSK 1개월'),
+          3 => tr('프로+HSK 3개월'),
+          _ => tr('프로+HSK 1년'),
+        }
+      : switch ((p.bundle, p.months)) {
         (false, 1) => tr('1개월'),
         (false, 3) => tr('3개월'),
         (false, 12) => tr('1년'),
-        (false, _) => tr('평생 이용권(서비스 운영 기간 동안)'),
+        (false, _) => tr('평생 이용권(서비스 운영 기간 동안) — HSK 4·5급 포함'),
         (true, 12) => tr('종합 패키지 1년 — 모든 언어'),
         (true, _) => tr('종합 패키지 평생 — 모든 언어(서비스 운영 기간 동안)'),
       };
@@ -97,6 +105,8 @@ class _PaywallScreenState extends State<PaywallScreen> {
                   _row(Icons.check_circle, tr('회화 2단계 이상(R2~) 전 편')),
                   _row(Icons.check_circle, tr('문법 3스텝부터 · 언어감각 2급부터')),
                   if (kCustomScriptLive) _row(Icons.check_circle, tr('맞춤 회화 만들기')),
+                  // 시험 내용(2026-11-28 확정) — 프로만으로는 안 열린다
+                  _row(Icons.workspace_premium, tr('HSK 4·5급(단어장·HSK 준비)은 프로+HSK · 평생 · 종합 패키지에 포함')),
                   _row(Icons.check_circle_outline, tr('1단계 회화·커리큘럼, 글자·발음·단어 기본, 문법 1~2스텝, 언어감각 1급은 무료'), muted: true),
                   if (_loadFailed)
                     Padding(
@@ -112,9 +122,20 @@ class _PaywallScreenState extends State<PaywallScreen> {
                       ]),
                     ),
                   const SizedBox(height: 10),
-                  Text(tr('중국어'), style: const TextStyle(fontSize: 12.5, fontWeight: FontWeight.w800, color: AppColors.moLight)),
-                  const SizedBox(height: 6),
-                  for (final p in Purchase.plans.where((x) => !x.bundle)) _planTile(p, busy),
+                  // 시험 칸에서 열면 프로+HSK 가 먼저
+                  for (final g in widget.exam ? const ['exam', 'pro', 'life'] : const ['pro', 'exam', 'life']) ...[
+                    Text(
+                      switch (g) {
+                        'pro' => tr('중국어 프로 — HSK 3급까지'),
+                        'exam' => tr('프로+HSK — HSK 4·5급까지 전부'),
+                        _ => tr('중국어 평생'),
+                      },
+                      style: const TextStyle(fontSize: 12.5, fontWeight: FontWeight.w800, color: AppColors.moLight),
+                    ),
+                    const SizedBox(height: 6),
+                    for (final p in Purchase.plans.where((x) => !x.bundle && (g == 'exam' ? x.exam : g == 'life' ? x.lifetime : !x.exam && !x.lifetime))) _planTile(p, busy),
+                    const SizedBox(height: 4),
+                  ],
                   const SizedBox(height: 8),
                   Text(tr('종합 패키지 — Talkverse 모든 언어 앱'), style: const TextStyle(fontSize: 12.5, fontWeight: FontWeight.w800, color: AppColors.moLight)),
                   const SizedBox(height: 6),

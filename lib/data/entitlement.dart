@@ -23,7 +23,17 @@ class Entitlement {
     (await Prefs.getInstance()).setBool('premium', v);
   }
 
-  static Future<void> showPaywall(BuildContext context) => PaywallScreen.show(context);
+  /// 시험 내용(HSK 4·5급, 사용자 확정 2026-11-28 · ~/talkverse/PRICING.md「프로+시험」) — 프로+HSK(`lang_zh_exam_*`)·언어 평생·종합 1년·종합 평생이 연다.
+  /// 서버 권한 이름이 오기 전까지는 임시로 프로와 같다(uk 11-28 「권한 확인은 임시로 프로와 같게」). 규격이 오면 이 한 줄만 바꾼다.
+  static bool get exam => premium;
+
+  /// HSK 4·5급(커리큘럼 「HSK 준비」 HSK4·HSK5, 단어장 hsk4·hsk5)인가.
+  static bool examLevel(String key) => const {'HSK4', 'HSK5', 'hsk4', 'hsk5'}.contains(key);
+
+  /// 열려 있는가 — 시험 칸은 [exam], 나머지는 무료이거나 [premium].
+  static bool open(bool free, {bool exam = false}) => exam ? Entitlement.exam : (free || premium);
+
+  static Future<void> showPaywall(BuildContext context, {bool exam = false}) => PaywallScreen.show(context, exam: exam);
 
   static CurriculumPlan? get _plan => CurriculumService.instance.plan;
 
@@ -37,10 +47,11 @@ class Entitlement {
   static bool senseLevelFree(int n) => n <= (_plan?.freeSenseLevels ?? 1);
 
   /// 잠겨 있으면 결제 화면을 띄우고, 닫힌 뒤 열렸는지(true = 지나가도 됨)를 돌려준다.
-  static Future<bool> gate(BuildContext context, bool free) async {
-    if (free || premium) return true;
-    await PaywallScreen.show(context);
-    return premium;
+  /// [exam] = 시험 칸(HSK 4·5급) — 결제 화면이 「프로+HSK」 줄을 위에 보인다.
+  static Future<bool> gate(BuildContext context, bool free, {bool exam = false}) async {
+    if (open(free, exam: exam)) return true;
+    await PaywallScreen.show(context, exam: exam);
+    return open(free, exam: exam);
   }
 }
 
