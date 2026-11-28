@@ -1,6 +1,7 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+import 'package:chinese_universe/data/account.dart';
 import 'package:chinese_universe/data/entitlement.dart';
 import 'package:chinese_universe/data/purchase.dart';
 import 'package:chinese_universe/services/curriculum_service.dart';
@@ -39,7 +40,7 @@ void main() {
     svc.plan = null;
   });
 
-  test('HSK 4·5급 = 시험 칸: 상품별로 누가 여는지(프로만으로는 안 열림) · 화면 판정은 임시로 프로와 같음', () async {
+  test('HSK 4·5급 = 시험 칸: 상품별로 누가 여는지(프로만으로는 안 열림) · 서버 exam 항목', () async {
     expect([for (final k in ['HSK3', 'HSK4', 'HSK5', 'hsk3', 'hsk4', 'hsk5', '2']) Entitlement.examLevel(k)].join(','), 'false,true,true,false,true,true,false');
     final far = DateTime.now().add(const Duration(days: 30)).millisecondsSinceEpoch;
     final past = DateTime.now().subtract(const Duration(days: 1)).millisecondsSinceEpoch;
@@ -55,7 +56,19 @@ void main() {
     expect(who({'all_life': 0}), 'true/true');
     expect(who({'lang_ja_exam_1y': far}), 'false/false'); // 다른 언어
     Purchase.owned.value = const {};
-    // 서버 권한 규격 전까지: 시험 칸 판정 = 프로
+    // 서버 계정: 중국어 항목 exam:true(기한 남음)일 때만
+    Account.entitlements.value = const ['zh'];
+    expect(Entitlement.exam, isFalse); // 프로만 가진 계정
+    Account.examEnds.value = {'zh': far};
+    expect(Entitlement.exam, isTrue);
+    Account.examEnds.value = {'zh': past};
+    expect(Entitlement.exam, isFalse);
+    Account.examEnds.value = {'zh': 0};
+    expect(Entitlement.exam, isTrue);
+    Account.examEnds.value = {'ja': 0};
+    expect(Entitlement.exam, isFalse);
+    Account.examEnds.value = const {};
+    Account.entitlements.value = const [];
     await Entitlement.set(false);
     expect([Entitlement.open(false, exam: true), Entitlement.open(true, exam: true), Entitlement.open(true)].join(','), 'false,false,true');
     await Entitlement.set(true);

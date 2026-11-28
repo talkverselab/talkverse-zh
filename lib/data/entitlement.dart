@@ -24,8 +24,8 @@ class Entitlement {
   }
 
   /// 시험 내용(HSK 4·5급, 사용자 확정 2026-11-28 · ~/talkverse/PRICING.md「프로+시험」) — 프로+HSK(`lang_zh_exam_*`)·언어 평생·종합 1년·종합 평생이 연다.
-  /// 서버 권한 이름이 오기 전까지는 임시로 프로와 같다(uk 11-28 「권한 확인은 임시로 프로와 같게」). 규격이 오면 이 한 줄만 바꾼다.
-  static bool get exam => premium;
+  /// 서버: 이용권 응답의 중국어 항목 `exam === true`(uk 규격 11-28). 기기: 이 기기에서 산·복원한 시험 상품([Purchase.ownsExam]).
+  static bool get exam => _local || Account.hasExam(lang) || Purchase.ownsExam(lang);
 
   /// HSK 4·5급(커리큘럼 「HSK 준비」 HSK4·HSK5, 단어장 hsk4·hsk5)인가.
   static bool examLevel(String key) => const {'HSK4', 'HSK5', 'hsk4', 'hsk5'}.contains(key);

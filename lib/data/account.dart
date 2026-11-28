@@ -24,11 +24,31 @@ class Account {
   static const _store = FlutterSecureStorage();
   static final user = ValueNotifier<Map<String, dynamic>?>(null);
   static final entitlements = ValueNotifier<List<String>>(const []);
+  /// 시험 내용(중국어 HSK 4·5급)이 열린 언어 → 시험 기한(ms, 0 = 기한 없음). 서버 이용권 항목의 `exam`·`exam_ends_at`(uk 규격 2026-11-28).
+  static final examEnds = ValueNotifier<Map<String, int>>(const {});
   static String? _access;
   static DateTime _accessExp = DateTime.fromMillisecondsSinceEpoch(0);
 
   static bool get signedIn => user.value != null;
   static bool has(String lang) => entitlements.value.contains(lang);
+
+  /// 그 언어 항목이 `exam: true` 이고 기한(exam_ends_at)이 남았는가.
+  static bool hasExam(String lang) {
+    final end = examEnds.value[lang];
+    return end != null && (end == 0 || end > DateTime.now().millisecondsSinceEpoch);
+  }
+
+  /// exam_ends_at → ms. 없거나 못 읽으면 0(기한은 서버가 판단 — 응답에 exam:true 가 있으면 연다). 초·밀리초 숫자와 ISO 문자열을 받는다.
+  static int _endMs(Object? v) {
+    if (v is num) return v < 1e11 ? (v * 1000).toInt() : v.toInt();
+    if (v is String) return DateTime.tryParse(v)?.millisecondsSinceEpoch ?? 0;
+    return 0;
+  }
+
+  static Map<String, int> _examFrom(List list) => {
+        for (final e in list)
+          if (e is Map && e['exam'] == true) '${e['lang']}': _endMs(e['exam_ends_at']),
+      };
 
   /// 앱 시작 때: 저장된 사용자를 바로 보여 주고, 뒤에서 토큰을 갱신한다(오프라인이면 저장값 유지).
   static Future<void> load() async {
@@ -37,6 +57,8 @@ class Account {
       final e = await _store.read(key: 'tv_ent');
       if (u != null) user.value = jsonDecode(u) as Map<String, dynamic>;
       if (e != null) entitlements.value = (jsonDecode(e) as List).cast<String>();
+      final x = await _store.read(key: 'tv_ent_exam');
+      if (x != null) examEnds.value = (jsonDecode(x) as Map).map((k, v) => MapEntry('$k', (v as num).toInt()));
     } catch (_) {}
     if (user.value != null) refresh();
   }
@@ -120,8 +142,10 @@ class Account {
     await _store.write(key: 'tv_refresh', value: j['refresh_token'] as String);
     user.value = j['user'] as Map<String, dynamic>;
     entitlements.value = [for (final e in (j['entitlements'] as List)) (e as Map)['lang'] as String];
+    examEnds.value = _examFrom(j['entitlements'] as List);
     await _store.write(key: 'tv_user', value: jsonEncode(user.value));
     await _store.write(key: 'tv_ent', value: jsonEncode(entitlements.value));
+    await _store.write(key: 'tv_ent_exam', value: jsonEncode(examEnds.value));
   }
 
   /// refresh 토큰으로 새 access. 서버가 거부하면(만료·회수) 로그아웃 상태로.
@@ -172,8 +196,9 @@ class Account {
     _access = null;
     user.value = null;
     entitlements.value = const [];
+    examEnds.value = const {};
     // 우리 키만 지운다 — 통합 앱에서는 키체인을 다른 언어 패키지와 같이 쓴다(2026-11-09). tv_* 는 Talkverse 계정 공용 키.
-    for (final k in const ['tv_refresh', 'tv_user', 'tv_ent']) {
+    for (final k in const ['tv_refresh', 'tv_user', 'tv_ent', 'tv_ent_exam']) {
       await _store.delete(key: k);
     }
   }
