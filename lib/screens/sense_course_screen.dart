@@ -12,6 +12,7 @@ import '../core/theme.dart';
 import '../data/entitlement.dart';
 import '../services/ko_reading.dart';
 import '../services/tts_service.dart';
+import '../data/usage_pages.dart';
 
 /// 언어감각 익히기 — 정규과정. 일본어앱 같은 화면을 옮김(2026-11-18 사용자 지시 「지금 일본어 앱만큼」). L1~L10, 급마다 외울 대화 1회 + 참고.
 /// 회차 = 문법 짧은 설명(points.tip) → 감 익히는 문장(points.sentences). 데이터 `assets/data/grammar/sense_course.json`(tools/sense/build_sense_course.py).
@@ -211,7 +212,9 @@ class _SenseLessonScreenState extends State<SenseLessonScreen> {
   void initState() {
     super.initState();
     SenseCourse.load().then((d) {
-      if (mounted) setState(() => _all = SenseCourse.flat(d));
+      final all = SenseCourse.flat(d);
+      if (widget.index < all.length) UsagePages.view(UsagePages.sense('${all[widget.index].$2['id']}')); // 열람 기록
+      if (mounted) setState(() => _all = all);
     });
   }
 

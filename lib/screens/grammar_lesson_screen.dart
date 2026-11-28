@@ -13,6 +13,7 @@ import '../widgets/memo_toggle.dart';
 import '../widgets/selectable_hanzi.dart';
 import 'grammar_test_screen.dart';
 import '../core/l10n.dart';
+import '../data/usage_pages.dart';
 
 class GrammarLessonScreen extends StatefulWidget {
   final int lessonNum;
@@ -32,6 +33,7 @@ class _GrammarLessonScreenState extends State<GrammarLessonScreen> {
   @override
   void initState() {
     super.initState();
+    UsagePages.view(UsagePages.grammar(widget.lessonNum)); // 열람 기록
     _load();
   }
 

@@ -18,6 +18,7 @@ import '../widgets/legal_links.dart';
 import '../services/ko_reading.dart';
 import '../services/learner_prefs.dart';
 import '../widgets/achievement_desk.dart';
+import '../data/usage_pages.dart';
 
 /// 프로필 · 설정 — 계정(Talkverse ID·평생 이용권) · 성과 · 학습자 프로필(이름·성별 → 회화 「나」) · 설정 · 정보.
 /// embedded = 「나」 탭 안(앱바·스크롤 없이 바깥 ListView 에 들어감) — 일본어앱 구조(2026-11-02).
@@ -215,8 +216,22 @@ class _ProfileScreenState extends State<ProfileScreen> {
 
 /// Talkverse 계정(선택) — 로그인 전: 로그인 / 후: 이름·이메일·로그아웃·계정 삭제(스토어 심사 요구) + 평생 이용권·구매 복원.
 /// 한자앱 me_screen `_account` 를 옮김(2026-11-02).
-class _AccountSection extends StatelessWidget {
+class _AccountSection extends StatefulWidget {
   const _AccountSection();
+  @override
+  State<_AccountSection> createState() => _AccountSectionState();
+}
+
+class _AccountSectionState extends State<_AccountSection> {
+  ({int viewed, int total})? _usage; // 열람률(서버 /v1/usage/summary)
+
+  @override
+  void initState() {
+    super.initState();
+    UsagePages.summary(exam: Entitlement.exam).then((v) {
+      if (mounted && v != null) setState(() => _usage = v);
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -244,6 +259,14 @@ class _AccountSection extends StatelessWidget {
               subtitle: Entitlement.premium ? tr('보유 중') : tr('1개월·3개월·1년·프로+HSK·평생 · 구매 또는 이전 구매 복원'),
               onTap: () => PaywallScreen.show(context),
             ),
+            // 열람률(환불 규정 3항, uk 규격 11-28) — 로그인하고 이용권이 있을 때. 숫자는 서버 /v1/usage/summary
+            if (u != null && Entitlement.premium)
+              _SettingItem(
+                icon: Icons.visibility_outlined,
+                title: _usage == null ? tr('열람률') : trf('열람률 {0}% ({1}/{2} 화면)', [(_usage!.viewed * 100 / _usage!.total).floor(), _usage!.viewed, _usage!.total]),
+                subtitle: trf(UsagePages.refundLineKo, [UsagePages.refundNoPercent]),
+                onTap: () => Legal.open(UsagePages.refundUrl),
+              ),
             _SettingItem(
               icon: Icons.restore,
               title: tr('구매 복원'),

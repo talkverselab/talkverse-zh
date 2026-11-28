@@ -15,6 +15,7 @@ import '../widgets/chinese_decor.dart';
 import '../widgets/selectable_hanzi.dart';
 import '../core/platform.dart';
 import '../core/l10n.dart';
+import '../data/usage_pages.dart';
 
 /// 외우기 모드: 전체 보기 / 한자·독음 가림 / 뜻 가림.
 enum StudyMode { all, hideZh, hideKo }
@@ -333,6 +334,7 @@ class _ThemeDetailScreenState extends State<_ThemeDetailScreen> {
   @override
   void initState() {
     super.initState();
+    UsagePages.view(UsagePages.vocab(widget.theme.id)); // 열람 기록
     MemorizedStore.load().then((_) {
       if (mounted) setState(() {});
     });

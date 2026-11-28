@@ -11,6 +11,7 @@ import '../services/tts_service.dart';
 import '../widgets/episode_play_pane.dart';
 import 'custom_script_screen.dart';
 import 'dialogue_card_screen.dart';
+import '../data/usage_pages.dart';
 
 /// 새 회화(R0~R4) 주제 목록 → 편 목록 → 편 화면 — 시안 zh05 「확 트인 배치」(2026-11-03).
 /// 홈: 「이어서 읽기」 카드 하나가 주인공, 레벨 스위치·주제는 상자 없이 조용히. 편 화면 = 회화 리더([EpisodePlayPane]) 하나(폰·아이패드 공통).
@@ -342,6 +343,7 @@ class _DialogueScreenState extends State<DialogueScreen> {
   void initState() {
     super.initState();
     DialogueService.instance.setLastOpened(d.id);
+    UsagePages.view(UsagePages.conv(d.id)); // 열람 기록(환불 규정 열람률)
   }
 
   @override

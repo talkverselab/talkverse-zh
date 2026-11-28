@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import 'package:package_info_plus/package_info_plus.dart';
 
 import 'core/embed_env.dart';
 import 'core/l10n.dart';
@@ -22,6 +23,7 @@ import 'services/ko_reading.dart';
 import 'services/learner_prefs.dart';
 import 'services/script_sync.dart';
 import 'services/shared_hanja_service.dart';
+import 'usage_log.dart';
 
 export 'core/embed_env.dart' show embedded;
 export 'data/purchase.dart' show Purchase;
@@ -53,6 +55,13 @@ Future<void> embedInit({bool standalone = false}) async {
   await AchievementService.instance.load();
   await Entitlement.load();
   Account.load(); // Talkverse ID(선택) — 저장된 로그인 표시 + 뒤에서 토큰 갱신(기다리지 않음)
+  // 화면 열람 기록(환불 규정 열람률, uk 규격 11-28) — 학습 화면을 열 때 UsagePages.view, 앱이 뒤로 가면 보낸다. 실패해도 앱에 영향 없음.
+  int? build;
+  try {
+    build = int.tryParse((await PackageInfo.fromPlatform()).buildNumber);
+  } catch (_) {}
+  UsageLog.init(lang: Entitlement.lang, token: Account.accessToken, appBuild: build);
+  AppLifecycleListener(onPause: () => unawaited(UsageLog.flush()));
   Purchase.ownStream = standalone;
   // 가격·상품 ID = Talkverse 공통(2026-11-09 사용자 최종 확정, ~/talkverse/PRICING.md — 앱 정가/할인가 30%). 스토어 등록은 사용자(docs/STORE_PRODUCTS.md).
   unawaited(Purchase.configure(Entitlement.lang, const [

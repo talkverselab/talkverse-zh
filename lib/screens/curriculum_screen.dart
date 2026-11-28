@@ -10,6 +10,7 @@ import '../services/dialogue_audio.dart';
 import '../services/dialogue_service.dart';
 import '../services/learner_prefs.dart';
 import '../widgets/chinese_decor.dart';
+import '../data/usage_pages.dart';
 
 /// 토크버스 커리큘럼 — 전 언어 공통 기준(`~/talkverse/CURRICULUM_SPEC.md`, 2026-11-22). 일본어앱이 기준 구현.
 /// 레벨 고르기 → 다이얼로그 고르기(3·5·10) → 편마다 듣기·확인 문제 → 코스 시험(80% 이상 통과) → 다음 코스. 하루 분량·복습.
@@ -66,6 +67,7 @@ class _CurriculumScreenState extends State<CurriculumScreen> {
   }
 
   Future<void> _practice(Dialogue d) async {
+    if (_st.level != null) UsagePages.view(UsagePages.cur(_st.level!, d.id)); // 열람 기록
     await openFull(context, (_) => CurriculumPracticeScreen(dialogue: d));
     if (mounted) setState(() {});
   }

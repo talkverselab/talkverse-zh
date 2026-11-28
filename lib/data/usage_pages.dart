@@ -1,0 +1,59 @@
+import 'dart:convert';
+
+import 'package:http/http.dart' as http;
+
+import '../usage_log.dart';
+import 'account.dart';
+
+/// 화면 열람 기록(uk 규격 2026-11-28 `~/talkverse/_shared/talkverse_usage/USAGE_LOG.md`) — 화면 ID·환불 문구를 한 곳에.
+/// 화면 ID 는 `tool/usage_catalog.py` 가 만드는 목록(`tool/usage_catalog.json`)의 page 와 **글자까지 같아야** 한다 — 여기를 바꾸면 그 도구도 같이.
+///
+/// | 단위 | ID | tier |
+/// |---|---|---|
+/// | 회화 한 편 | `conv/<편 id>` | R0·R1 free, 그 밖 pro |
+/// | 커리큘럼 편 연습 | `cur/<단계·급수 key>/<편 id>` | 판의 free → free, HSK4·HSK5 → exam, 그 밖 pro |
+/// | 문법 스텝 | `grammar/step<n>` | freeSteps(기본 2) 까지 free, 그 밖 pro |
+/// | 언어감각 회차 | `sense/<회차 id>` | freeSenseLevels(기본 1) 급까지 free, 그 밖 pro |
+/// | 단어장 묶음 | `vocab/<묶음 id>` | hsk4·hsk5 exam, 그 밖 free |
+class UsagePages {
+  UsagePages._();
+
+  static String conv(String dialogueId) => 'conv/$dialogueId';
+  static String cur(String levelKey, String dialogueId) => 'cur/$levelKey/$dialogueId';
+  static String grammar(int step) => 'grammar/step$step';
+  static String sense(String lessonId) => 'sense/$lessonId';
+  static String vocab(String themeId) => 'vocab/$themeId';
+
+  /// 기록(실패해도 앱에 영향 없음).
+  static void view(String page) => UsageLog.view(page);
+
+  // 환불 기준 숫자 — uk 의 안(사용자가 바꿀 수 있음). 서버 `REFUND_RULE`·talkverse.uk/refund/ 와 함께 바꾼다.
+  static const refundNoPercent = 30;
+  static const refundUrl = 'https://talkverse.uk/refund/';
+
+  /// 「내 정보」·결제 화면의 한 줄(한국어 원문 — 화면에서 trf 로 감싼다).
+  static const refundLineKo = '유료 화면의 {0}% 이상을 열람하면 환불되지 않습니다';
+
+  /// 서버 열람률 — 유료 화면 중 연 수 / 전체. [exam] = 시험 권한이 있으면 exam 화면도 합친다(환불 규정: 프로+시험·평생·종합). 로그인 전·실패면 null.
+  static Future<({int viewed, int total})?> summary({bool exam = false}) async {
+    try {
+      final tok = await Account.accessToken();
+      if (tok == null || tok.isEmpty) return null;
+      final r = await http
+          .get(Uri.parse('https://auth.talkverse.uk/v1/usage/summary?lang=zh'), headers: {'Authorization': 'Bearer $tok'})
+          .timeout(const Duration(seconds: 10));
+      if (r.statusCode != 200) return null;
+      final j = json.decode(r.body) as Map;
+      var viewed = 0, total = 0;
+      for (final t in (j['tiers'] as List? ?? const []).whereType<Map>()) {
+        final tier = '${t['tier']}';
+        if (tier != 'pro' && !(exam && tier == 'exam')) continue;
+        viewed += (t['viewed'] as num?)?.toInt() ?? 0;
+        total += (t['total'] as num?)?.toInt() ?? 0;
+      }
+      return total == 0 ? null : (viewed: viewed, total: total);
+    } catch (_) {
+      return null;
+    }
+  }
+}
