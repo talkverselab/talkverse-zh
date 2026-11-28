@@ -10,7 +10,6 @@ void main() {
 
   test('ID 모양', () {
     expect(UsagePages.conv('r2_love_a2'), 'conv/r2_love_a2');
-    expect(UsagePages.cur('HSK4', 'r3_x_a1'), 'cur/HSK4/r3_x_a1');
     expect(UsagePages.grammar(3), 'grammar/step3');
     expect(UsagePages.sense('L1-talk'), 'sense/L1-talk');
     expect(UsagePages.vocab('hsk4'), 'vocab/hsk4');
@@ -25,9 +24,8 @@ void main() {
       final id = '${p['page']}';
       expect(re.hasMatch(id), isTrue, reason: id);
       expect(['free', 'pro', 'exam'], contains(p['tier']), reason: id);
-      expect(RegExp(r'^(conv/[^/]+|cur/[^/]+/[^/]+|grammar/step\d+|sense/[^/]+|vocab/[^/]+)$').hasMatch(id), isTrue, reason: id);
+      expect(RegExp(r'^(conv/[^/]+|grammar/step\d+|sense/[^/]+|vocab/[^/]+)$').hasMatch(id), isTrue, reason: id);
       if (id.startsWith('vocab/')) expect(p['tier'], const {'vocab/hsk4', 'vocab/hsk5'}.contains(id) ? 'exam' : 'free');
-      if (id.startsWith('cur/HSK4/') || id.startsWith('cur/HSK5/')) expect(p['tier'], 'exam');
       if (id.startsWith('conv/r1_')) expect(p['tier'], 'free');
     }
   });

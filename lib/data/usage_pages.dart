@@ -10,8 +10,7 @@ import 'account.dart';
 ///
 /// | 단위 | ID | tier |
 /// |---|---|---|
-/// | 회화 한 편 | `conv/<편 id>` | R0·R1 free, 그 밖 pro |
-/// | 커리큘럼 편 연습 | `cur/<단계·급수 key>/<편 id>` | 판의 free → free, HSK4·HSK5 → exam, 그 밖 pro |
+/// | 회화 한 편(회화 목록·커리큘럼 편 연습 어디서 열든) | `conv/<편 id>` | 그 편을 여는 가장 낮은 권한: 무료 경로(R0·R1, 무료 단계) free, 프로 pro, HSK4·5 경로뿐이면 exam |
 /// | 문법 스텝 | `grammar/step<n>` | freeSteps(기본 2) 까지 free, 그 밖 pro |
 /// | 언어감각 회차 | `sense/<회차 id>` | freeSenseLevels(기본 1) 급까지 free, 그 밖 pro |
 /// | 단어장 묶음 | `vocab/<묶음 id>` | hsk4·hsk5 exam, 그 밖 free |
@@ -19,7 +18,6 @@ class UsagePages {
   UsagePages._();
 
   static String conv(String dialogueId) => 'conv/$dialogueId';
-  static String cur(String levelKey, String dialogueId) => 'cur/$levelKey/$dialogueId';
   static String grammar(int step) => 'grammar/step$step';
   static String sense(String lessonId) => 'sense/$lessonId';
   static String vocab(String themeId) => 'vocab/$themeId';

@@ -67,7 +67,7 @@ class _CurriculumScreenState extends State<CurriculumScreen> {
   }
 
   Future<void> _practice(Dialogue d) async {
-    if (_st.level != null) UsagePages.view(UsagePages.cur(_st.level!, d.id)); // 열람 기록
+    UsagePages.view(UsagePages.conv(d.id)); // 열람 기록 — 같은 편은 어디서 열든 하나(uk 11-28)
     await openFull(context, (_) => CurriculumPracticeScreen(dialogue: d));
     if (mounted) setState(() {});
   }

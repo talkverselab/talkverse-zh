@@ -4,8 +4,8 @@
     python3 tool/usage_catalog.py [--build N] [--out tool/usage_catalog.json] [--offline]
 
 화면 ID·tier 규칙은 `lib/data/usage_pages.dart` 의 표와 같다(바꾸면 둘 다):
-  conv/<편 id>              회화 한 편        R0·R1 free, 그 밖 pro
-  cur/<단계·급수>/<편 id>    커리큘럼 편 연습   HSK4·HSK5 exam, 판의 free → free, 그 밖 pro
+  conv/<편 id>              회화 한 편        회화 목록·커리큘럼 어디서 열든 하나. tier = 여는 가장 낮은 권한
+                                              (회화 목록 R0·R1 free/그 밖 pro, 커리큘럼 무료 단계 free/HSK4·5 exam/그 밖 pro)
   grammar/step<n>           문법 스텝         freeSteps(기본 2)까지 free, 그 밖 pro
   sense/<회차 id>            언어감각 회차      freeSenseLevels(기본 1)급까지 free, 그 밖 pro
   vocab/<묶음 id>            HSK 단어장 묶음    hsk4·hsk5 exam, 그 밖 free
@@ -98,28 +98,30 @@ def main():
             sys.exit(f'화면 ID 규칙 위반: {page!r}')
         pages.append({'page': page, 'tier': tier, 'title': title})
 
-    # 회화 한 편
-    dialogues = {}
+    # 회화 한 편 — 회화 목록과 커리큘럼 편 연습이 같은 ID(uk 11-28). tier 는 경로 중 가장 낮은 권한
+    rank = {'free': 0, 'pro': 1, 'exam': 2}
+    dialogues, tiers = {}, {}
     for rel in sorted(p for p in sc.files() if DIALOGUE_RE.match(p)):
         d = sc.load(rel)
         did = d.get('id') or os.path.basename(rel)[:-5]
-        region = rel.split('/')[1]
         dialogues[did] = d
-        add(f'conv/{did}', 'free' if region in ('R0', 'R1') else 'pro', d.get('title', did))
-
-    # 커리큘럼 편 연습(단계·준비 급수별)
-    units = []
+        tiers[did] = 'free' if rel.split('/')[1] in ('R0', 'R1') else 'pro'
     for s in plan.get('stages', []):
         n = str(s['n'])
-        units.append((n, s.get('title') or f'{n}단계', s['free'] if isinstance(s.get('free'), bool) else n == '1', s.get('dialogueIds', [])))
+        free = s['free'] if isinstance(s.get('free'), bool) else n == '1'
+        for did in s.get('dialogueIds', []):
+            t = 'exam' if n in EXAM_KEYS else ('free' if free else 'pro')
+            if did in tiers and rank[t] < rank[tiers[did]]:
+                tiers[did] = t
     for p in plan.get('prep', []):
         for m in p.get('levels', []):
-            units.append((str(m['id']), m.get('title') or m['id'], m.get('free') is True, m.get('dialogueIds', [])))
-    for key, title, free, ids in units:
-        tier = 'exam' if key in EXAM_KEYS else ('free' if free else 'pro')
-        for did in ids:
-            if did in dialogues:  # 앱에 없는(숨긴) 편은 열 수 없다
-                add(f'cur/{key}/{did}', tier, f"{title} · {dialogues[did].get('title', did)}")
+            key = str(m['id'])
+            t = 'exam' if key in EXAM_KEYS else ('free' if m.get('free') is True else 'pro')
+            for did in m.get('dialogueIds', []):
+                if did in tiers and rank[t] < rank[tiers[did]]:
+                    tiers[did] = t
+    for did, d in dialogues.items():
+        add(f'conv/{did}', tiers[did], d.get('title', did))
 
     # 문법 스텝
     steps = sc.load('grammar/steps.json').get('steps', [])
