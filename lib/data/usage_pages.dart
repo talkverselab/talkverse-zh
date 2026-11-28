@@ -31,11 +31,14 @@ class UsagePages {
   static const refundNoPercent = 30;
   static const refundUrl = 'https://talkverse.uk/refund/';
 
-  /// 「내 정보」·결제 화면의 한 줄(한국어 원문 — 화면에서 trf 로 감싼다).
+  /// 「내 정보」의 한 줄(한국어 원문 — 화면에서 trf 로 감싼다). 숫자는 서버 rule.none_from 이 있으면 그것.
   static const refundLineKo = '유료 화면의 {0}% 이상을 열람하면 환불되지 않습니다';
 
+  /// 결제 화면(이용권 사는 화면)의 한 줄 — 앱 안 결제 환불은 스토어가 정한다(사용자 확정 11-28, uk 전달).
+  static const storeNoticeKo = '환불 심사 때 이용 기록이 스토어에 제공될 수 있습니다.';
+
   /// 서버 열람률 — 유료 화면 중 연 수 / 전체. [exam] = 시험 권한이 있으면 exam 화면도 합친다(환불 규정: 프로+시험·평생·종합). 로그인 전·실패면 null.
-  static Future<({int viewed, int total})?> summary({bool exam = false}) async {
+  static Future<({int viewed, int total, int nonePercent})?> summary({bool exam = false}) async {
     try {
       final tok = await Account.accessToken();
       if (tok == null || tok.isEmpty) return null;
@@ -51,7 +54,9 @@ class UsagePages {
         viewed += (t['viewed'] as num?)?.toInt() ?? 0;
         total += (t['total'] as num?)?.toInt() ?? 0;
       }
-      return total == 0 ? null : (viewed: viewed, total: total);
+      final nf = ((j['rule'] as Map?)?['none_from'] as num?)?.toDouble();
+      final pct = nf == null ? refundNoPercent : (nf <= 1 ? (nf * 100).round() : nf.round());
+      return total == 0 ? null : (viewed: viewed, total: total, nonePercent: pct);
     } catch (_) {
       return null;
     }

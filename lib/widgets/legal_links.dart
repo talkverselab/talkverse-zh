@@ -31,13 +31,13 @@ class LegalLinks extends StatelessWidget {
   }
 }
 
-/// 「유료 화면의 30% 이상을 열람하면 환불되지 않습니다」 + 환불 규정 링크(결제 화면, uk 규격 11-28). 숫자는 [UsagePages.refundNoPercent].
+/// 결제 화면의 한 줄 — 「환불 심사 때 이용 기록이 스토어에 제공될 수 있습니다.」+ 환불 규정 링크(사용자 확정 11-28; 30% 문구는 「내 정보」에만).
 class RefundNote extends StatelessWidget {
   const RefundNote({super.key});
   @override
   Widget build(BuildContext context) {
     return Wrap(alignment: WrapAlignment.center, crossAxisAlignment: WrapCrossAlignment.center, children: [
-      Text(trf(UsagePages.refundLineKo, [UsagePages.refundNoPercent]), textAlign: TextAlign.center, style: const TextStyle(fontSize: 11.5, color: AppColors.muted, height: 1.45)),
+      Text(tr(UsagePages.storeNoticeKo), textAlign: TextAlign.center, style: const TextStyle(fontSize: 11.5, color: AppColors.muted, height: 1.45)),
       TextButton(
         onPressed: () => Legal.open(UsagePages.refundUrl),
         child: Text(tr('환불 규정'), style: const TextStyle(fontSize: 12, color: AppColors.zhuHongDeep, fontWeight: FontWeight.w700, decoration: TextDecoration.underline)),

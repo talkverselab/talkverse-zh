@@ -223,7 +223,7 @@ class _AccountSection extends StatefulWidget {
 }
 
 class _AccountSectionState extends State<_AccountSection> {
-  ({int viewed, int total})? _usage; // 열람률(서버 /v1/usage/summary)
+  ({int viewed, int total, int nonePercent})? _usage; // 열람률(서버 /v1/usage/summary)
 
   @override
   void initState() {
@@ -264,7 +264,7 @@ class _AccountSectionState extends State<_AccountSection> {
               _SettingItem(
                 icon: Icons.visibility_outlined,
                 title: _usage == null ? tr('열람률') : trf('열람률 {0}% ({1}/{2} 화면)', [(_usage!.viewed * 100 / _usage!.total).floor(), _usage!.viewed, _usage!.total]),
-                subtitle: trf(UsagePages.refundLineKo, [UsagePages.refundNoPercent]),
+                subtitle: trf(UsagePages.refundLineKo, [_usage?.nonePercent ?? UsagePages.refundNoPercent]),
                 onTap: () => Legal.open(UsagePages.refundUrl),
               ),
             _SettingItem(

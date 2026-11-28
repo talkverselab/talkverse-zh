@@ -22,7 +22,10 @@ class UsageLog {
   UsageLog._();
 
   static const _base = 'https://auth.talkverse.uk';
-  static const _kQueue = 'tv_usage_queue', _kSent = 'tv_usage_sent', _kDay = 'tv_usage_day';
+  // 통합 앱에서는 언어 패키지마다 이 파일의 복사본이 따로 돈다 — 저장 키에 언어를 붙여 서로의 대기열을 덮어쓰지 않게 한다(v2, 2026-11-28).
+  static String get _kQueue => 'tv_usage_queue_${_lang ?? ''}';
+  static String get _kSent => 'tv_usage_sent_${_lang ?? ''}';
+  static String get _kDay => 'tv_usage_day_${_lang ?? ''}';
   static const _maxQueue = 2000, _batch = 200;
   static final _pageRe = RegExp(r'^[\w./:#-]{1,120}$');
 
